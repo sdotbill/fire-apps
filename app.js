@@ -24,6 +24,7 @@
       toast(
         key === "codex-press" ? "Codex Press is coming soon." :
         key === "night-owl" ? "Night Owl is coming soon." :
+        key === "infinity" ? "Infinity is coming soon." :
         "Download link coming soon."
       );
     });
