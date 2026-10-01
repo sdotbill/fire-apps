@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔥 Fire Apps — Bill's Apps</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+<meta name="description" content="🔥 Fire Apps: home of Infinity and Codex Press — apps by William Alexander, author of the Codex Universe.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">🔥 Fire Apps</a>
+    <nav class="links">
+      <a href="#apps">Apps</a>
+      <a href="#install">How to Install</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-kicker">William Alexander's app shelf</div>
+      <h1>🔥 Fire Apps</h1>
+      <p class="tagline">Apps built for the curious — talk to an unhinged genius AI, run a podcast studio from your phone, and command your publishing empire. Free, direct downloads. No app store needed.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#apps">Get the apps</a>
+        <a class="btn btn-ghost" href="#install">How to install</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="apps" class="section">
+    <h2>The Apps</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="56" height="56"><path d="M18 44c-5-4-8-8-8-12s3-8 8-12c7-5 12-2 14 4 2-6 7-9 14-4 5 4 8 8 8 12s-3 8-8 12c-7 5-12 2-14-4-2 6-7 9-14 4z" fill="none" stroke="#e9e4ff" stroke-width="5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="card-badge live">v1.0</div>
+        <h3>Infinity <span class="emoji">♾️</span></h3>
+        <p>Talk to Professor Gonzo. Two brains: cloud AI or your private laptop. Plus a Podcast Studio that turns your ideas into finished episodes.</p>
+        <a class="btn btn-primary" href="#" data-apk="infinity">Download Infinity</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="56" height="56"><rect x="12" y="8" width="40" height="48" rx="4" fill="none" stroke="#f5c96b" stroke-width="5"/><line x1="22" y1="8" x2="22" y2="56" stroke="#f5c96b" stroke-width="5"/><line x1="30" y1="20" x2="44" y2="20" stroke="#f5c96b" stroke-width="4" stroke-linecap="round"/><line x1="30" y1="30" x2="44" y2="30" stroke="#f5c96b" stroke-width="4" stroke-linecap="round"/></svg>
+        </div>
+        <div class="card-badge soon">Coming soon</div>
+        <h3>Codex Press <span class="emoji">📚</span></h3>
+        <p>Your publishing mission control. Your books, your files, your checklists — guided from manuscript to published.</p>
+        <a class="btn btn-disabled" href="#" data-apk="codex-press" aria-disabled="true">Download Codex Press</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="install" class="section">
+    <h2>How to Install</h2>
+    <p class="section-sub">These apps come straight from here — not from an app store. It takes about a minute.</p>
+    <ol class="steps">
+      <li><strong>Tap Download</strong> on the app you want. The file saves to your phone.</li>
+      <li><strong>Open the file.</strong> Pull down your notifications or open your Downloads folder and tap it.</li>
+      <li><strong>Allow "Install unknown apps"</strong> when Android asks. This just means "yes, I trust this file." It's a one-time thing.</li>
+      <li><strong>Tap Install</strong>, then Open.</li>
+      <li><strong>Grant the permissions it asks for</strong> — like the microphone, so you can talk instead of type.</li>
+    </ol>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Bill</h2>
+    <p>William Alexander is the author of the <em>Codex Universe</em> — five books about reality, consciousness, and the leap into the void — and the host of the <em>Into the Void</em> podcast with Professor Gonzo.</p>
+    <a class="btn btn-ghost" href="https://www.youtube.com/channel/UC8EFMkB4P6nH3BC22EOBn2Q" target="_blank" rel="noopener">Watch on YouTube</a>
+  </section>
+</main>
+
+<footer>
+  <p class="free">Free forever. No accounts, no subscriptions, no nonsense.</p>
+  <p class="premium">Premium apps coming soon.</p>
+  <p class="copy">© <span id="year"></span> William Alexander · 🔥 Fire Apps · <a href="privacy.html" style="color: inherit;">Privacy Policy</a></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

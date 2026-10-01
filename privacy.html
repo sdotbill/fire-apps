@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — 🔥 Fire Apps</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .policy { max-width: 720px; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  .policy h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+  .policy .updated { color: var(--muted); margin-bottom: 2rem; }
+  .policy h2 { font-size: 1.3rem; margin: 2rem 0 0.75rem; text-align: left; }
+  .policy p, .policy li { color: var(--muted); margin-bottom: 0.75rem; }
+  .policy ul { padding-left: 1.5rem; }
+  .policy strong { color: var(--text); }
+  .policy a { color: var(--purple-soft); }
+</style>
+</head>
+<body>
+<canvas id="stars"></canvas>
+<nav class="nav"><div class="nav-inner">
+  <a class="brand" href="index.html">🔥 Fire Apps</a>
+</div></nav>
+<main class="policy">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: September 30, 2026</p>
+
+  <p>This policy covers the apps published by <strong>Fire Apps</strong> (William Alexander):
+  <strong>Infinity</strong>, <strong>Codex Press</strong>, and <strong>Night Owl</strong>.
+  Plain version: <strong>your data stays on your phone. We don't sell anything, we don't run ads SDKs, and we don't track you.</strong></p>
+
+  <h2>♾️ Infinity</h2>
+  <ul>
+    <li><strong>On your device only:</strong> your Gemini API key, your laptop server address, app settings, chat history, and podcast projects are stored on your phone and never sent to us.</li>
+    <li><strong>Cloud chat mode:</strong> your messages are sent to Google's Gemini API so you get answers. That's Google's service — their privacy policy applies to that traffic.</li>
+    <li><strong>Laptop mode:</strong> messages go to your own computer over your own Wi-Fi. Nothing leaves your network.</li>
+    <li><strong>Web search toggle:</strong> when on, your question is sent to Google/Wikipedia/DuckDuckGo to fetch results.</li>
+    <li><strong>Speech:</strong> voice input/output uses your phone's built-in speech services.</li>
+    <li><strong>Crash logs:</strong> if the app crashes, a log file is saved to your Downloads folder so you can send it to us. It never uploads itself.</li>
+  </ul>
+
+  <h2>📚 Codex Press</h2>
+  <ul>
+    <li><strong>On your device only:</strong> your Google Drive sign-in token, Gemini API key, and per-book publishing profiles are stored on your phone.</li>
+    <li><strong>Google Drive:</strong> the app reads your Drive file names (read-only) to show your book packages. It cannot edit or delete your files.</li>
+    <li><strong>Gemini AI help:</strong> questions you ask the in-app assistant go to Google's Gemini API.</li>
+    <li><strong>Amazon/KDP:</strong> the app never logs into Amazon or KDP and never touches your Amazon credentials. You do the final upload tap yourself.</li>
+  </ul>
+
+  <h2>🦉 Night Owl</h2>
+  <ul>
+    <li><strong>On your device only:</strong> your API keys (Google Places, Gemini, Ticketmaster) and settings stay on your phone.</li>
+    <li><strong>Location search:</strong> the zipcode you enter is sent to Google's Places/Geocoding services to find nearby venues, photos, and maps links. We don't track your live GPS location — only the zipcode you type.</li>
+    <li><strong>Events:</strong> zipcode searches go to Ticketmaster's API for the free-events tab.</li>
+    <li><strong>Ask the Professor:</strong> your question plus the venue list goes to Google's Gemini API.</li>
+    <li><strong>Reviews:</strong> tapping "Review on Google" opens Google Maps so you can write a review there yourself. We never post reviews for you.</li>
+  </ul>
+
+  <h2>What we never do</h2>
+  <ul>
+    <li>No accounts, no sign-ups, no analytics SDKs, no advertising SDKs.</li>
+    <li>We don't sell, rent, or share your personal data with anyone.</li>
+    <li>API keys you paste into Settings are stored only in the app's private storage on your device.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>These apps are not directed at children under 13, and we do not knowingly collect data from children. (Night Owl lists adult venues and is intended for adults.)</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version will be posted on this page with a new date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: reach the developer through the contact email listed on our Google Play store pages.</p>
+
+  <p><a href="index.html">← Back to 🔥 Fire Apps</a></p>
+</main>
+<footer>
+  <p class="copy">© <span id="year"></span> William Alexander · 🔥 Fire Apps</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
