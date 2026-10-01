@@ -21,7 +21,11 @@
         return; // let the browser follow the real URL
       }
       e.preventDefault();
-      toast(key === "codex-press" ? "Codex Press is coming soon." : "Download link coming soon.");
+      toast(
+        key === "codex-press" ? "Codex Press is coming soon." :
+        key === "night-owl" ? "Night Owl is coming soon." :
+        "Download link coming soon."
+      );
     });
   });
 
