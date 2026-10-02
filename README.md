@@ -1,22 +1,15 @@
-# 🔥 Fire Apps
+# Premium Marketing Apps
 
-
-A growing collection of web apps — crafted with an ember-orange glow. 🧡🔥
-
+A collection of professional mobile tools by Premium Marketing LLC — podcast production, publishing control, and social media content creation. Free direct downloads, no app store needed.
 
 ## The Apps
 
-
 | App | Status |
 | --- | ------ |
-| **Infinity** | 🔜 Coming soon |
-| **Codex Press** | 🔜 Coming soon |
-| **Night Owl** | 🔜 Coming soon |
-| **Forge** | 🔜 Coming soon — A web app for generating social media posts for clients and tracking prospects |
-
+| **Forge Studio** | 🔜 Coming soon — podcast studio + AI avatar/video creator |
+| **Codex Press** | ✅ Live — publishing mission control for independent authors |
+| **Forge** | ✅ Live — social media content creation + client/prospect tracking (web app) |
 
 ## Theme
 
-
-Ember-orange is our fire — warm gradients, glowing accents, and a little bit of flame in every pixel.
-
+Deep navy and cyan, matching the Premium Marketing website — Sora headings, Inter body. Professional agency look.
