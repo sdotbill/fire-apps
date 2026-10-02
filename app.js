@@ -10,7 +10,7 @@
   // For now, placeholder hrefs ("#") are intercepted so nothing jumps.
   var APK_URLS = {
     // infinity: "https://example.com/infinity.apk",
-    // "codex-press": "https://example.com/codex-press.apk",
+    "codex-press": "downloads/codex-press.apk",
   };
 
   document.querySelectorAll("a[data-apk]").forEach(function (btn) {
