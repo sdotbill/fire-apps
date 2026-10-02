@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forge — Social Posts &amp; Pipeline for Freelancers</title>
+<meta name="description" content="Forge: a web app for generating social media posts for clients and tracking prospects. Your data stays in your browser.">
+<style>
+:root{
+  --bg:#0e1014; --panel:#161a21; --panel2:#1c222c; --border:#2a323e;
+  --text:#e9edf3; --muted:#98a1b1; --faint:#6b7484;
+  --accent:#ff7a1a; --accent-soft:rgba(255,122,26,.14);
+  --green:#35c47c; --red:#e5484d; --blue:#4b8dff; --gold:#e8b93e;
+  --radius:12px; --shadow:0 8px 28px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
+  line-height:1.5;min-height:100vh}
+a{color:var(--accent)}
+header.topbar{position:sticky;top:0;z-index:50;background:rgba(14,16,20,.94);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.brand{display:flex;align-items:center;gap:10px;padding:14px 18px 6px;max-width:1100px;margin:0 auto}
+.brand svg{width:34px;height:34px;flex:none}
+.brand h1{font-size:20px;margin:0;letter-spacing:.4px}
+.brand h1 span{color:var(--accent)}
+.brand p{margin:0;font-size:12px;color:var(--muted)}
+nav.tabs{max-width:1100px;margin:0 auto;display:flex;gap:4px;overflow-x:auto;
+  padding:8px 12px 10px;scrollbar-width:none}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs button{flex:1 0 auto;background:none;border:0;color:var(--muted);font-size:14px;
+  padding:10px 14px;border-radius:9px;cursor:pointer;white-space:nowrap;
+  display:flex;align-items:center;gap:8px;justify-content:center}
+nav.tabs button svg{width:17px;height:17px;flex:none}
+nav.tabs button:hover{background:var(--panel2);color:var(--text)}
+nav.tabs button.active{background:var(--accent-soft);color:var(--accent);font-weight:600}
+main{max-width:1100px;margin:0 auto;padding:18px 14px 90px}
+section.tab{display:none}
+section.tab.active{display:block;animation:fade .18s ease-in}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+h2{margin:4px 0 4px;font-size:22px}
+.sub{color:var(--muted);font-size:14px;margin:0 0 18px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);
+  padding:16px;margin-bottom:14px;box-shadow:var(--shadow)}
+.card h3{margin:0 0 10px;font-size:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:640px){.grid2{grid-template-columns:1fr}}
+label{display:block;font-size:13px;color:var(--muted);margin:10px 0 5px}
+label:first-child{margin-top:0}
+input[type=text],input[type=password],input[type=number],textarea,select{
+  width:100%;background:var(--panel2);border:1px solid var(--border);color:var(--text);
+  border-radius:9px;padding:10px 12px;font-size:15px;font-family:inherit}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:var(--accent)}
+textarea{min-height:76px;resize:vertical}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#14100a;
+  border:0;border-radius:9px;padding:11px 18px;font-size:15px;font-weight:700;cursor:pointer}
+.btn:hover{filter:brightness(1.08)}
+.btn:active{transform:translateY(1px)}
+.btn.ghost{background:var(--panel2);color:var(--text);border:1px solid var(--border);font-weight:600}
+.btn.danger{background:transparent;color:var(--red);border:1px solid var(--red)}
+.btn.small{padding:7px 12px;font-size:13px}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.notice{background:var(--accent-soft);border:1px solid rgba(255,122,26,.4);color:#ffc79a;
+  border-radius:10px;padding:12px 14px;font-size:14px;margin-bottom:14px}
+.notice.info{background:rgba(75,141,255,.12);border-color:rgba(75,141,255,.4);color:#bcd2ff}
+.list{display:flex;flex-direction:column;gap:10px}
+.rowitem{background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:12px 14px}
+.rowitem .title{font-weight:700;font-size:15px}
+.rowitem .meta{color:var(--muted);font-size:13px;margin-top:2px}
+.rowitem .actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;
+  text-transform:uppercase;letter-spacing:.5px}
+.pill.pending{background:rgba(232,185,62,.16);color:var(--gold);border:1px solid rgba(232,185,62,.5)}
+.pill.paid{background:rgba(53,196,124,.14);color:var(--green);border:1px solid rgba(53,196,124,.5)}
+.empty{color:var(--faint);text-align:center;padding:26px 10px;font-size:14px}
+/* Kanban */
+.kanban{display:grid;grid-template-columns:repeat(5,minmax(220px,1fr));gap:10px;overflow-x:auto;padding-bottom:8px}
+.kcol{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);
+  padding:10px;min-height:180px;display:flex;flex-direction:column;gap:8px}
+.kcol.dragover{border-color:var(--accent);background:var(--accent-soft)}
+.kcol h4{margin:2px 4px 6px;font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);
+  display:flex;justify-content:space-between;align-items:center}
+.kcol h4 .count{background:var(--panel2);border-radius:999px;padding:1px 9px;font-size:12px;color:var(--text)}
+.kcard{background:var(--panel2);border:1px solid var(--border);border-radius:9px;padding:10px;cursor:grab}
+.kcard:active{cursor:grabbing}
+.kcard .t{font-weight:700;font-size:14px}
+.kcard .b{color:var(--muted);font-size:12px}
+.kcard .n{font-size:12px;color:var(--faint);margin-top:4px;white-space:pre-wrap}
+.kcard .mv{display:flex;gap:6px;margin-top:8px}
+.kcard .mv button{flex:1;background:var(--panel);border:1px solid var(--border);color:var(--text);
+  border-radius:7px;padding:5px 0;font-size:13px;cursor:pointer}
+.kcard .mv button:hover{border-color:var(--accent);color:var(--accent)}
+/* Modal */
+.modalwrap{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:100;display:none;
+  align-items:center;justify-content:center;padding:18px}
+.modalwrap.open{display:flex}
+.modal{background:var(--panel);border:1px solid var(--border);border-radius:16px;max-width:560px;
+  width:100%;max-height:90vh;overflow-y:auto;padding:26px;box-shadow:var(--shadow)}
+.modal h2{margin-top:0}
+.modal ol{padding-left:20px;color:var(--text);font-size:14px}
+.modal ol li{margin-bottom:12px}
+.modal ol b{color:var(--accent)}
+.stepdot{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;
+  background:var(--accent-soft);color:var(--accent);border-radius:50%;font-weight:800;font-size:13px;margin-right:8px}
+/* Toast */
+#toast{position:fixed;left:50%;transform:translateX(-50%);bottom:26px;z-index:200;
+  background:var(--panel2);border:1px solid var(--border);color:var(--text);
+  padding:12px 20px;border-radius:999px;font-size:14px;box-shadow:var(--shadow);
+  opacity:0;pointer-events:none;transition:opacity .25s}
+#toast.show{opacity:1}
+.drafttext{white-space:pre-wrap;background:var(--panel);border:1px solid var(--border);
+  border-radius:9px;padding:12px;font-size:14px;margin-top:8px}
+.tag{font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:.5px}
+.footer{color:var(--faint);font-size:12px;text-align:center;padding:20px 0 40px;max-width:1100px;margin:0 auto}
+.paypalbox{margin-top:10px}
+details.help{margin-top:10px;font-size:13px;color:var(--muted)}
+details.help summary{cursor:pointer;color:var(--accent)}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+      <path d="M24 4c2 8 10 12 10 22a10 10 0 0 1-20 0c0-6 3-9 5-12 .8 2 2 3 5 3-.5-5 0-9 0-13z" fill="#ff7a1a"/>
+      <path d="M24 16c1 4 5 6 5 11a5 5 0 0 1-10 0c0-3 1.5-4.5 2.5-6 .4 1 1 1.5 2.5 1.5-.3-2.5 0-4.5 0-6.5z" fill="#ffb25e"/>
+      <rect x="10" y="38" width="28" height="5" rx="2.5" fill="#3a4350"/>
+    </svg>
+    <div>
+      <h1>Forge<span>.</span></h1>
+      <p>A web app for generating social media posts for clients and tracking prospects.</p>
+    </div>
+  </div>
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Forge sections">
+    <button data-tab="clients" role="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.4 3.4-5 6.5-5s5.7 1.6 6.5 5M16 4.5a3.5 3.5 0 0 1 0 7M18.5 15.3c1.7.8 2.7 2.3 3 4.7"/></svg>Clients</button>
+    <button data-tab="studio" role="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>Post Studio</button>
+    <button data-tab="pipeline" role="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Pipeline</button>
+    <button data-tab="payments" role="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="6" width="19" height="13" rx="2.5"/><path d="M2.5 10h19M6 15h4"/></svg>Payments</button>
+    <button data-tab="drive" role="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 18a4.5 4.5 0 1 1 .7-8.9A6 6 0 0 1 19.5 11 3.75 3.75 0 0 1 18 18.5H7z"/></svg>Drive</button>
+    <button data-tab="settings" role="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.55-1H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-1.55V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87 1.7 1.7 0 0 0 1.55 1H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.51 1z"/></svg>Settings</button>
+  </nav>
+</header>
+
+<main>
+<!-- ONBOARDING MODAL -->
+<div class="modalwrap" id="onboardModal" role="dialog" aria-modal="true" aria-labelledby="obTitle">
+  <div class="modal">
+    <h2 id="obTitle">Welcome to Forge 🔥</h2>
+    <p class="sub">Forge runs entirely in <b>your</b> browser. Your clients, drafts, prospects and payments are stored on <b>your</b> device — nothing is shared with anyone, and nothing belongs to anyone else.</p>
+    <p class="sub">To unlock everything, connect your <b>own</b> accounts in Settings:</p>
+    <ol>
+      <li><span class="stepdot">1</span><b>PayPal Client ID</b> — from your PayPal Developer Dashboard, so clients can pay you through PayPal checkout. Forge only ever uses your Client ID (never a secret) and only talks to paypal.com.</li>
+      <li><span class="stepdot">2</span><b>Google OAuth Client ID</b> — from your Google Cloud Console (create an OAuth client with this site's URL as an authorized origin/redirect). Lets you back up drafts and payments to <i>your own</i> Google Drive.</li>
+      <li><span class="stepdot">3</span><b>Gemini API key</b> <i>(optional)</i> — from Google AI Studio, for one-click AI draft generation. Without it, the built-in template composer still works great.</li>
+    </ol>
+    <div class="btnrow">
+      <button class="btn" id="obGoSettings">Open Settings</button>
+      <button class="btn ghost" id="obSkip">Explore first</button>
+    </div>
+  </div>
+</div>
+
+<!-- CLIENTS -->
+<section class="tab" id="tab-clients">
+  <h2>Clients</h2>
+  <p class="sub">The businesses you write for. Voice &amp; tone notes shape every draft you generate.</p>
+  <div class="card">
+    <h3 id="clientFormTitle">Add a client</h3>
+    <input type="hidden" id="clientId">
+    <div class="grid2">
+      <div><label for="clientName">Contact name</label><input type="text" id="clientName" placeholder="e.g. Dana" autocomplete="off"></div>
+      <div><label for="clientBiz">Business name</label><input type="text" id="clientBiz" placeholder="e.g. Dana's Bakery" autocomplete="off"></div>
+    </div>
+    <label for="clientContact">Contact info</label>
+    <input type="text" id="clientContact" placeholder="Phone, email, or however you reach them" autocomplete="off">
+    <label for="clientVoice">Voice &amp; tone notes</label>
+    <textarea id="clientVoice" placeholder="How do they sound? e.g. Warm and folksy, short sentences, loves exclamation points, never uses jargon…"></textarea>
+    <div class="btnrow">
+      <button class="btn" id="clientSave">Save client</button>
+      <button class="btn ghost" id="clientCancel" style="display:none">Cancel edit</button>
+    </div>
+  </div>
+  <div class="list" id="clientList"></div>
+</section>
+
+<!-- POST STUDIO -->
+<section class="tab" id="tab-studio">
+  <h2>Post Studio</h2>
+  <p class="sub">Pick a client, pick a platform, describe the topic — then generate a draft.</p>
+  <div id="studioNoKey" class="notice" style="display:none"></div>
+  <div class="card">
+    <div class="grid2">
+      <div><label for="studioClient">Client</label><select id="studioClient"></select></div>
+      <div><label for="studioPlatform">Platform</label>
+        <select id="studioPlatform">
+          <option>Facebook</option><option>Instagram</option><option>LinkedIn</option><option>X</option>
+        </select>
+      </div>
+    </div>
+    <label for="studioTopic">Topic / prompt</label>
+    <textarea id="studioTopic" placeholder="What should this post be about? e.g. Our new sourdough loaf launches Saturday — first 20 customers get a free sample."></textarea>
+    <div id="templateFields" style="display:none">
+      <label for="tplHook">Hook (first line)</label>
+      <input type="text" id="tplHook" placeholder="Grab attention in one line">
+      <label for="tplBody">Body</label>
+      <textarea id="tplBody" placeholder="The details — keep it in the client's voice"></textarea>
+      <label for="tplCta">Call to action</label>
+      <input type="text" id="tplCta" placeholder="e.g. Stop by Saturday — see you there!">
+      <label for="tplTags">Hashtags (optional)</label>
+      <input type="text" id="tplTags" placeholder="#local #fresh">
+    </div>
+    <div class="btnrow">
+      <button class="btn" id="generateBtn">✨ Generate draft</button>
+      <button class="btn ghost" id="saveDraftBtn" style="display:none">Save draft</button>
+    </div>
+    <div id="genStatus" class="sub" style="margin:12px 0 0"></div>
+    <div id="draftPreview" class="drafttext" style="display:none"></div>
+  </div>
+  <h3 style="margin-top:20px">Saved drafts</h3>
+  <div class="card" style="padding:12px">
+    <label for="draftFilter" style="margin-top:0">Filter by client</label>
+    <select id="draftFilter"></select>
+  </div>
+  <div class="list" id="draftList"></div>
+</section>
+
+<!-- PIPELINE -->
+<section class="tab" id="tab-pipeline">
+  <h2>Pipeline</h2>
+  <p class="sub">Track prospects from first contact to won. Drag cards between columns, or use the arrows.</p>
+  <div class="card">
+    <h3>Add a prospect</h3>
+    <div class="grid2">
+      <div><label for="prospectName">Name</label><input type="text" id="prospectName" placeholder="Contact name" autocomplete="off"></div>
+      <div><label for="prospectBiz">Business</label><input type="text" id="prospectBiz" placeholder="Business name" autocomplete="off"></div>
+    </div>
+    <label for="prospectNotes">Notes</label>
+    <input type="text" id="prospectNotes" placeholder="Where you met them, what they need…" autocomplete="off">
+    <div class="btnrow"><button class="btn" id="prospectAdd">Add prospect</button></div>
+  </div>
+  <div class="kanban" id="kanban"></div>
+</section>
+
+<!-- PAYMENTS -->
+<section class="tab" id="tab-payments">
+  <h2>Payments</h2>
+  <p class="sub">Create a payment request, then collect it with PayPal checkout — using <b>your</b> PayPal Client ID.</p>
+  <div id="payNoKey" class="notice" style="display:none"></div>
+  <div class="card">
+    <h3>New payment</h3>
+    <div class="grid2">
+      <div><label for="payClient">Client</label><select id="payClient"></select></div>
+      <div><label for="payAmount">Amount (USD)</label><input type="number" id="payAmount" min="0.01" step="0.01" placeholder="150.00"></div>
+    </div>
+    <label for="payDesc">Description</label>
+    <input type="text" id="payDesc" placeholder="e.g. October social media management" autocomplete="off">
+    <div class="btnrow"><button class="btn" id="payCreate">Create payment</button></div>
+  </div>
+  <h3 style="margin-top:20px">Payment log</h3>
+  <div class="list" id="payList"></div>
+</section>
+
+<!-- DRIVE -->
+<section class="tab" id="tab-drive">
+  <h2>Drive backup</h2>
+  <p class="sub">Sign in with <b>your</b> Google account and save your Forge data to <b>your own</b> Google Drive, in a folder called “Forge”.</p>
+  <div id="driveNoKey" class="notice" style="display:none"></div>
+  <div class="card" id="driveCard">
+    <h3>Connection</h3>
+    <div id="driveStatus" class="sub">Not connected.</div>
+    <div class="btnrow">
+      <button class="btn" id="driveConnect">Sign in with Google</button>
+      <button class="btn ghost" id="driveDisconnect" style="display:none">Disconnect</button>
+    </div>
+    <details class="help"><summary>Where does the Google OAuth Client ID come from?</summary>
+      <p>In the Google Cloud Console, create a project, enable the Google Drive API, then create an OAuth 2.0 Client ID (type: Web application). Add this page's URL as an <b>Authorized JavaScript origin</b>. Paste the Client ID into Settings. Forge only ever sends your token to googleapis.com.</p>
+    </details>
+  </div>
+  <div class="card" id="driveActions" style="display:none">
+    <h3>Back up to Drive</h3>
+    <p class="sub">Files are saved as JSON inside a “Forge” folder in your Drive.</p>
+    <div class="btnrow">
+      <button class="btn small" id="driveSaveDrafts">Save drafts</button>
+      <button class="btn small" id="driveSavePayments">Save payments</button>
+      <button class="btn small" id="driveSaveClients">Save clients</button>
+      <button class="btn small" id="driveSaveAll">Save everything</button>
+    </div>
+    <div id="driveMsg" class="sub" style="margin-top:12px"></div>
+  </div>
+</section>
+
+<!-- SETTINGS -->
+<section class="tab" id="tab-settings">
+  <h2>Settings</h2>
+  <p class="sub">Your own credentials, stored <b>only</b> in this browser's local storage. They are sent only to their provider's API — never anywhere else.</p>
+  <div class="card">
+    <h3>Connections</h3>
+    <label for="setPaypal">PayPal Client ID <span class="tag">(your PayPal Developer Dashboard → your app)</span></label>
+    <input type="text" id="setPaypal" placeholder="Paste your PayPal Client ID" autocomplete="off" spellcheck="false">
+    <details class="help"><summary>Where do I find this?</summary><p>Create a free app at the PayPal Developer Dashboard; copy the <b>Client ID</b> (not the secret — Forge never asks for it).</p></details>
+    <label for="setGoogle">Google OAuth Client ID <span class="tag">(your Google Cloud Console → OAuth client)</span></label>
+    <input type="text" id="setGoogle" placeholder="Paste your Google OAuth Client ID" autocomplete="off" spellcheck="false">
+    <label for="setGemini">Gemini API key <span class="tag">(optional — Google AI Studio)</span></label>
+    <input type="password" id="setGemini" placeholder="Paste your Gemini API key" autocomplete="off" spellcheck="false">
+    <div class="btnrow">
+      <button class="btn" id="settingsSave">Save settings</button>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Danger zone</h3>
+    <p class="sub">Permanently erase everything Forge stored in this browser — clients, drafts, prospects, payments, and settings.</p>
+    <button class="btn danger" id="wipeAll">Wipe all my data</button>
+  </div>
+</section>
+
+<div class="footer">Forge runs 100% in your browser. Your data never leaves your device except through the providers you connect yourself.</div>
+</main>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+"use strict";
+/* ============ Utilities ============ */
+const $ = id => document.getElementById(id);
+const esc = s => String(s == null ? "" : s)
+  .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
+  .replace(/"/g,"&quot;").replace(/'/g,"&#39;");
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2,8);
+const fmtDate = ts => { try { return new Date(ts).toLocaleString(); } catch(e){ return ""; } };
+const fmtMoney = n => "$" + Number(n).toFixed(2);
+let toastTimer = null;
+function toast(msg){
+  const t = $("toast"); t.textContent = msg; t.classList.add("show");
+  clearTimeout(toastTimer); toastTimer = setTimeout(()=>t.classList.remove("show"), 2600);
+}
+function loadScript(src){
+  return new Promise(resolve => {
+    try{
+      const s = document.createElement("script");
+      s.src = src; s.async = true;
+      s.onload = () => resolve(true);
+      s.onerror = () => resolve(false);
+      document.head.appendChild(s);
+      setTimeout(()=>resolve(false), 15000); // never hang forever
+    }catch(e){ resolve(false); }
+  });
+}
+function copyText(text, done){
+  const finish = () => { toast("Copied to clipboard"); if(done) done(); };
+  if (navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(finish).catch(()=>fallbackCopy(text, finish));
+  } else fallbackCopy(text, finish);
+}
+function fallbackCopy(text, done){
+  try{
+    const ta = document.createElement("textarea");
+    ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    document.execCommand("copy"); document.body.removeChild(ta); done();
+  }catch(e){ toast("Copy failed — long-press to copy manually"); }
+}
+
+/* ============ State (localStorage only) ============ */
+const LS_KEY = "forge_data_v1";
+const LS_ONBOARD = "forge_onboarded_v1";
+function blankState(){
+  return { clients:[], drafts:[], prospects:[], payments:[],
+           settings:{ paypalClientId:"", googleClientId:"", geminiKey:"" } };
+}
+let S = blankState();
+function loadState(){
+  try{
+    const raw = localStorage.getItem(LS_KEY);
+    if(raw){ const p = JSON.parse(raw); S = Object.assign(blankState(), p);
+      S.settings = Object.assign(blankState().settings, p.settings||{}); }
+  }catch(e){ S = blankState(); }
+}
+function saveState(){
+  try{ localStorage.setItem(LS_KEY, JSON.stringify(S)); }
+  catch(e){ toast("Storage is full — could not save"); }
+}
+
+/* ============ Tabs ============ */
+const TAB_IDS = ["clients","studio","pipeline","payments","drive","settings"];
+function showTab(id){
+  TAB_IDS.forEach(t => {
+    $("tab-"+t).classList.toggle("active", t===id);
+    document.querySelectorAll('#tabs button[data-tab="'+t+'"]').forEach(b=>b.classList.toggle("active", t===id));
+  });
+  if(id==="studio") refreshStudio();
+  if(id==="payments") renderPayments();
+  if(id==="drive") refreshDrive();
+  if(id==="pipeline") renderKanban();
+  try{ history.replaceState(null,"","#"+id); }catch(e){}
+}
+document.querySelectorAll('#tabs button').forEach(b =>
+  b.addEventListener("click", ()=>showTab(b.dataset.tab)));
+
+/* ============ Onboarding ============ */
+function maybeOnboard(){
+  let done = false;
+  try{ done = localStorage.getItem(LS_ONBOARD) === "1"; }catch(e){}
+  if(!done) $("onboardModal").classList.add("open");
+}
+function finishOnboard(goSettings){
+  try{ localStorage.setItem(LS_ONBOARD, "1"); }catch(e){}
+  $("onboardModal").classList.remove("open");
+  if(goSettings) showTab("settings");
+}
+$("obGoSettings").addEventListener("click", ()=>finishOnboard(true));
+$("obSkip").addEventListener("click", ()=>finishOnboard(false));
+
+/* ============ Clients ============ */
+function clientById(id){ return S.clients.find(c=>c.id===id); }
+function renderClients(){
+  const list = $("clientList");
+  if(!S.clients.length){ list.innerHTML = '<div class="empty">No clients yet — add your first one above.</div>'; return; }
+  list.innerHTML = S.clients.map(c =>
+    '<div class="rowitem"><div class="title">'+esc(c.name)+'</div>' +
+    (c.business ? '<div class="meta">'+esc(c.business)+'</div>' : "") +
+    (c.contact ? '<div class="meta">'+esc(c.contact)+'</div>' : "") +
+    (c.voice ? '<div class="meta" style="margin-top:6px"><span class="tag">Voice:</span> '+esc(c.voice)+'</div>' : "") +
+    '<div class="actions"><button class="btn ghost small" data-edit="'+c.id+'">Edit</button>' +
+    '<button class="btn ghost small" data-del="'+c.id+'">Delete</button></div></div>'
+  ).join("");
+  list.querySelectorAll("[data-edit]").forEach(b=>b.addEventListener("click",()=>editClient(b.dataset.edit)));
+  list.querySelectorAll("[data-del]").forEach(b=>b.addEventListener("click",()=>deleteClient(b.dataset.del)));
+}
+function resetClientForm(){
+  $("clientId").value=""; $("clientName").value=""; $("clientBiz").value="";
+  $("clientContact").value=""; $("clientVoice").value="";
+  $("clientFormTitle").textContent="Add a client"; $("clientCancel").style.display="none";
+}
+function editClient(id){
+  const c = clientById(id); if(!c) return;
+  $("clientId").value=c.id; $("clientName").value=c.name||""; $("clientBiz").value=c.business||"";
+  $("clientContact").value=c.contact||""; $("clientVoice").value=c.voice||"";
+  $("clientFormTitle").textContent="Edit client"; $("clientCancel").style.display="";
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+function deleteClient(id){
+  const c = clientById(id);
+  if(!confirm('Delete client "'+(c?c.name:"")+'"? Their drafts and payments stay in the log.')) return;
+  S.clients = S.clients.filter(x=>x.id!==id); saveState();
+  renderClients(); refreshClientSelects(); toast("Client deleted");
+}
+$("clientSave").addEventListener("click", ()=>{
+  const name = $("clientName").value.trim();
+  if(!name){ toast("Give the client a name"); $("clientName").focus(); return; }
+  const data = { name, business:$("clientBiz").value.trim(), contact:$("clientContact").value.trim(),
+                 voice:$("clientVoice").value.trim() };
+  const id = $("clientId").value;
+  if(id){ const c = clientById(id); if(c) Object.assign(c, data); toast("Client updated"); }
+  else { S.clients.push(Object.assign({id:uid(), createdAt:Date.now()}, data)); toast("Client added"); }
+  saveState(); resetClientForm(); renderClients(); refreshClientSelects();
+});
+$("clientCancel").addEventListener("click", resetClientForm);
+function refreshClientSelects(){
+  const opts = S.clients.length
+    ? S.clients.map(c=>'<option value="'+c.id+'">'+esc(c.name)+(c.business?' — '+esc(c.business):"")+'</option>').join("")
+    : '<option value="">(no clients yet)</option>';
+  $("studioClient").innerHTML = opts;
+  $("payClient").innerHTML = opts;
+  $("draftFilter").innerHTML = '<option value="">All clients</option>' + opts;
+}
+
+/* ============ Post Studio ============ */
+const PLATFORM_GUIDE = {
+  Facebook:"Conversational and warm. 1–3 short paragraphs. End with a question that invites comments.",
+  Instagram:"Start with a bold hook line, then line breaks for rhythm. Add 5–10 relevant hashtags at the end. Emojis sparingly.",
+  LinkedIn:"Professional and insight-led. Short paragraphs, a clear takeaway, no clickbait. Minimal emojis.",
+  X:"Punchy and under 280 characters. One idea, one hook. No hashtags unless essential (max 2)."
+};
+let pendingDraft = null; // {clientId, platform, topic, text}
+
+function refreshStudio(){
+  refreshClientSelects();
+  const key = (S.settings.geminiKey||"").trim();
+  const box = $("studioNoKey");
+  if(!key){
+    box.style.display = "";
+    box.innerHTML = '<b>AI generation is off.</b> Add your own Gemini API key in Settings to generate with AI — or use the template composer below, which works right now.';
+    $("templateFields").style.display = "";
+    $("generateBtn").textContent = "Compose draft";
+  }else{
+    box.style.display = "none";
+    $("templateFields").style.display = "none";
+    $("generateBtn").textContent = "✨ Generate draft";
+  }
+  renderDrafts();
+}
+$("generateBtn").addEventListener("click", async ()=>{
+  const clientId = $("studioClient").value;
+  const client = clientById(clientId);
+  if(!client){ toast("Add a client first"); showTab("clients"); return; }
+  const platform = $("studioPlatform").value;
+  const topic = $("studioTopic").value.trim();
+  if(!topic){ toast("Describe the topic first"); $("studioTopic").focus(); return; }
+  const key = (S.settings.geminiKey||"").trim();
+  if(key){ await generateWithGemini(client, platform, topic, key); }
+  else { composeFromTemplate(client, platform, topic); }
+});
+function composeFromTemplate(client, platform, topic){
+  const hook = $("tplHook").value.trim(), body = $("tplBody").value.trim(),
+        cta = $("tplCta").value.trim(), tags = $("tplTags").value.trim();
+  let parts = [];
+  if(hook) parts.push(hook);
+  if(platform==="X"){
+    let t = (hook ? hook+" " : "") + topic + (cta ? " "+cta : "");
+    if(t.length > 270) t = t.slice(0,267)+"…";
+    parts = [t];
+  }else{
+    parts.push(topic + (body ? "\n\n"+body : ""));
+    if(cta) parts.push(cta);
+    if(tags && platform!=="LinkedIn") parts.push("\n"+tags);
+  }
+  setPreview(client.id, platform, topic, parts.join("\n\n").replace(/\n{3,}/g,"\n\n"));
+  toast("Draft composed");
+}
+async function generateWithGemini(client, platform, topic, key){
+  const btn = $("generateBtn"); btn.disabled = true;
+  $("genStatus").textContent = "Generating with Gemini…";
+  const prompt =
+    "You are a social media copywriter. Write ONE "+platform+" post for the client below.\n\n" +
+    "Client contact name: "+(client.name||"")+"\n" +
+    "Business: "+(client.business||"")+"\n" +
+    "Voice & tone notes: "+(client.voice||"none provided — use a friendly, professional tone")+"\n" +
+    "Topic: "+topic+"\n\n" +
+    "Platform guidance: "+(PLATFORM_GUIDE[platform]||"")+"\n\n" +
+    "Return ONLY the post text. No commentary, no quotation marks around it, no labels.";
+  try{
+    const res = await fetch(
+      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key="+encodeURIComponent(key),
+      { method:"POST", headers:{ "Content-Type":"application/json" },
+        body: JSON.stringify({ contents:[{ parts:[{ text: prompt }] }] }) });
+    if(!res.ok) throw new Error("Gemini returned HTTP "+res.status);
+    const data = await res.json();
+    const text = data && data.candidates && data.candidates[0] &&
+                 data.candidates[0].content && data.candidates[0].content.parts &&
+                 data.candidates[0].content.parts.map(p=>p.text||"").join("");
+    if(!text || !text.trim()) throw new Error("Gemini returned an empty response");
+    setPreview(client.id, platform, topic, text.trim());
+    $("genStatus").textContent = "";
+    toast("Draft generated");
+  }catch(e){
+    $("genStatus").textContent = "";
+    toast("AI failed ("+(e.message||"network error")+") — check your key in Settings, or use the template composer.");
+    $("templateFields").style.display = "";
+  }finally{ btn.disabled = false; }
+}
+function setPreview(clientId, platform, topic, text){
+  pendingDraft = { clientId, platform, topic, text };
+  $("draftPreview").textContent = text;
+  $("draftPreview").style.display = "";
+  $("saveDraftBtn").style.display = "";
+}
+$("saveDraftBtn").addEventListener("click", ()=>{
+  if(!pendingDraft) return;
+  S.drafts.unshift(Object.assign({ id:uid(), createdAt:Date.now() }, pendingDraft));
+  saveState(); renderDrafts();
+  pendingDraft = null;
+  $("draftPreview").style.display="none"; $("saveDraftBtn").style.display="none";
+  $("studioTopic").value=""; $("tplHook").value=""; $("tplBody").value=""; $("tplCta").value=""; $("tplTags").value="";
+  toast("Draft saved");
+});
+function renderDrafts(){
+  const filter = $("draftFilter").value || "";
+  const list = $("draftList");
+  const items = S.drafts.filter(d => !filter || d.clientId===filter);
+  if(!items.length){ list.innerHTML = '<div class="empty">No drafts yet.</div>'; return; }
+  list.innerHTML = items.map(d => {
+    const c = clientById(d.clientId);
+    return '<div class="rowitem" data-draft="'+d.id+'">' +
+      '<div class="title">'+esc(c?c.name:"(deleted client)")+' <span class="tag">· '+esc(d.platform)+' · '+fmtDate(d.createdAt)+'</span></div>' +
+      '<div class="meta">'+esc(d.topic||"")+'</div>' +
+      '<div class="drafttext">'+esc(d.text)+'</div>' +
+      '<div class="actions"><button class="btn ghost small" data-copy="'+d.id+'">Copy</button>' +
+      '<button class="btn ghost small" data-ddel="'+d.id+'">Delete</button></div></div>';
+  }).join("");
+  list.querySelectorAll("[data-copy]").forEach(b=>b.addEventListener("click",()=>{
+    const d = S.drafts.find(x=>x.id===b.dataset.copy); if(d) copyText(d.text);
+  }));
+  list.querySelectorAll("[data-ddel]").forEach(b=>b.addEventListener("click",()=>{
+    if(!confirm("Delete this draft?")) return;
+    S.drafts = S.drafts.filter(x=>x.id!==b.dataset.ddel); saveState(); renderDrafts(); toast("Draft deleted");
+  }));
+}
+$("draftFilter").addEventListener("change", renderDrafts);
+
+/* ============ Pipeline (kanban) ============ */
+const STAGES = ["New Lead","Contacted","Proposal Sent","Won","Lost"];
+function renderKanban(){
+  const kb = $("kanban");
+  kb.innerHTML = STAGES.map(st => {
+    const cards = S.prospects.filter(p=>p.stage===st);
+    return '<div class="kcol" data-stage="'+esc(st)+'">' +
+      '<h4>'+esc(st)+' <span class="count">'+cards.length+'</span></h4>' +
+      cards.map(p => {
+        const i = STAGES.indexOf(st);
+        return '<div class="kcard" draggable="true" data-id="'+p.id+'">' +
+          '<div class="t">'+esc(p.name)+'</div>' +
+          (p.business?'<div class="b">'+esc(p.business)+'</div>':"") +
+          (p.notes?'<div class="n">'+esc(p.notes)+'</div>':"") +
+          '<div class="mv">' +
+            (i>0?'<button data-move="-1" title="Move back">◀</button>':"") +
+            '<button data-pdel title="Delete">✕</button>' +
+            (i<STAGES.length-1?'<button data-move="1" title="Move forward">▶</button>':"") +
+          '</div></div>';
+      }).join("") + '</div>';
+  }).join("");
+  // move / delete buttons
+  kb.querySelectorAll("[data-move]").forEach(b=>b.addEventListener("click",e=>{
+    e.stopPropagation();
+    const card = b.closest(".kcard"); const p = S.prospects.find(x=>x.id===card.dataset.id); if(!p) return;
+    const i = STAGES.indexOf(p.stage) + Number(b.dataset.move);
+    p.stage = STAGES[Math.max(0,Math.min(STAGES.length-1,i))];
+    saveState(); renderKanban();
+  }));
+  kb.querySelectorAll("[data-pdel]").forEach(b=>b.addEventListener("click",e=>{
+    e.stopPropagation();
+    const card = b.closest(".kcard");
+    if(!confirm("Remove this prospect?")) return;
+    S.prospects = S.prospects.filter(x=>x.id!==card.dataset.id);
+    saveState(); renderKanban(); toast("Prospect removed");
+  }));
+  // drag & drop
+  let dragId = null;
+  kb.querySelectorAll(".kcard").forEach(card=>{
+    card.addEventListener("dragstart",e=>{ dragId = card.dataset.id; e.dataTransfer.effectAllowed="move"; });
+    card.addEventListener("dragend",()=>{ dragId=null; kb.querySelectorAll(".kcol").forEach(c=>c.classList.remove("dragover")); });
+  });
+  kb.querySelectorAll(".kcol").forEach(col=>{
+    col.addEventListener("dragover",e=>{ e.preventDefault(); col.classList.add("dragover"); });
+    col.addEventListener("dragleave",()=>col.classList.remove("dragover"));
+    col.addEventListener("drop",e=>{
+      e.preventDefault(); col.classList.remove("dragover");
+      const p = S.prospects.find(x=>x.id===dragId); if(!p) return;
+      p.stage = col.dataset.stage; saveState(); renderKanban(); toast("Moved to "+p.stage);
+    });
+  });
+}
+$("prospectAdd").addEventListener("click", ()=>{
+  const name = $("prospectName").value.trim();
+  if(!name){ toast("Give the prospect a name"); $("prospectName").focus(); return; }
+  S.prospects.unshift({ id:uid(), name, business:$("prospectBiz").value.trim(),
+    notes:$("prospectNotes").value.trim(), stage:STAGES[0], createdAt:Date.now() });
+  saveState();
+  $("prospectName").value=""; $("prospectBiz").value=""; $("prospectNotes").value="";
+  renderKanban(); toast("Prospect added");
+});
+
+/* ============ Payments (PayPal — Client ID only, no secret) ============ */
+let paypalLoading = null;
+function ensurePayPal(){
+  const cid = (S.settings.paypalClientId||"").trim();
+  if(!cid) return Promise.resolve(false);
+  if(typeof window.paypal !== "undefined") return Promise.resolve(true);
+  if(paypalLoading) return paypalLoading;
+  paypalLoading = loadScript("https://www.paypal.com/sdk/js?client-id="+encodeURIComponent(cid)+"&currency=USD&intent=capture")
+    .then(ok => ok && typeof window.paypal !== "undefined");
+  return paypalLoading;
+}
+$("payCreate").addEventListener("click", ()=>{
+  const clientId = $("payClient").value;
+  if(!clientId){ toast("Add a client first"); showTab("clients"); return; }
+  const amount = Math.round(Number($("payAmount").value) * 100) / 100;
+  if(!(amount > 0)){ toast("Enter a valid amount"); $("payAmount").focus(); return; }
+  const desc = $("payDesc").value.trim() || "Services";
+  S.payments.unshift({ id:uid(), clientId, amount:amount.toFixed(2), description:desc,
+    status:"pending", createdAt:Date.now(), paypalOrderId:null });
+  saveState();
+  $("payAmount").value=""; $("payDesc").value="";
+  renderPayments(); toast("Payment created — pending");
+});
+function renderPayments(){
+  const box = $("payNoKey");
+  const cid = (S.settings.paypalClientId||"").trim();
+  if(!cid){
+    box.style.display = "";
+    box.innerHTML = '<b>PayPal is not connected.</b> Paste your own PayPal Client ID in Settings to collect payments. Forge never asks for your PayPal secret.';
+  } else box.style.display = "none";
+  const list = $("payList");
+  if(!S.payments.length){ list.innerHTML = '<div class="empty">No payments yet.</div>'; return; }
+  list.innerHTML = S.payments.map(p => {
+    const c = clientById(p.clientId);
+    return '<div class="rowitem" data-pay="'+p.id+'">' +
+      '<div class="title">'+fmtMoney(p.amount)+' <span class="pill '+(p.status==="paid"?"paid":"pending")+'">'+p.status+'</span></div>' +
+      '<div class="meta">'+esc(c?c.name:"(deleted client)")+' — '+esc(p.description)+'</div>' +
+      '<div class="meta">'+fmtDate(p.createdAt)+(p.paypalOrderId?' · PayPal order '+esc(p.paypalOrderId):"")+'</div>' +
+      '<div class="actions">' +
+        (p.status==="pending"
+          ? '<button class="btn small" data-paynow="'+p.id+'" '+(cid?"":"disabled")+'>Pay with PayPal</button>' +
+            '<button class="btn ghost small" data-pmark="'+p.id+'">Mark paid manually</button>'
+          : "") +
+        '<button class="btn ghost small" data-pdel="'+p.id+'">Delete</button></div>' +
+      '<div class="paypalbox" id="pp-'+p.id+'"></div></div>';
+  }).join("");
+  list.querySelectorAll("[data-paynow]").forEach(b=>b.addEventListener("click",()=>startPaypalCheckout(b.dataset.paynow)));
+  list.querySelectorAll("[data-pmark]").forEach(b=>b.addEventListener("click",()=>{
+    const p = S.payments.find(x=>x.id===b.dataset.pmark); if(!p) return;
+    if(!confirm("Mark this payment as paid?")) return;
+    p.status="paid"; saveState(); renderPayments(); toast("Marked paid");
+  }));
+  list.querySelectorAll("[data-pdel]").forEach(b=>b.addEventListener("click",()=>{
+    if(!confirm("Delete this payment record?")) return;
+    S.payments = S.payments.filter(x=>x.id!==b.dataset.pdel); saveState(); renderPayments(); toast("Payment deleted");
+  }));
+}
+async function startPaypalCheckout(paymentId){
+  const p = S.payments.find(x=>x.id===paymentId); if(!p || p.status!=="pending") return;
+  const host = $("pp-"+paymentId); if(!host) return;
+  host.innerHTML = '<div class="sub">Loading PayPal…</div>';
+  const ok = await ensurePayPal();
+  if(!ok){ host.innerHTML = '<div class="notice">Could not load PayPal. Check your connection and Client ID in Settings.</div>'; return; }
+  host.innerHTML = "";
+  try{
+    window.paypal.Buttons({
+      style:{ layout:"vertical", color:"gold", shape:"rect", label:"paypal" },
+      createOrder: (data, actions) => actions.order.create({
+        purchase_units:[{ amount:{ value: p.amount }, description: p.description.slice(0,120) }]
+      }),
+      onApprove: async (data, actions) => {
+        try{
+          const details = await actions.order.capture();
+          p.status = "paid";
+          p.paypalOrderId = (details && details.id) || data.orderID || null;
+          saveState(); renderPayments(); toast("Payment received — marked PAID");
+        }catch(e){ toast("Capture failed — payment not marked paid"); }
+      },
+      onError: () => { host.innerHTML = '<div class="notice">PayPal checkout hit an error. Please try again.</div>'; },
+      onCancel: () => { host.innerHTML = ""; }
+    }).render(host);
+  }catch(e){ host.innerHTML = '<div class="notice">Could not start PayPal checkout.</div>'; }
+}
+
+/* ============ Drive backup (Google Identity Services — your own OAuth client) ============ */
+let gisReady = null, tokenClient = null, gToken = null, driveFolderId = null;
+function ensureGIS(){
+  const cid = (S.settings.googleClientId||"").trim();
+  if(!cid) return Promise.resolve(false);
+  if(gisReady) return gisReady;
+  gisReady = loadScript("https://accounts.google.com/gsi/client").then(ok=>{
+    if(!ok || typeof google === "undefined" || !google.accounts || !google.accounts.oauth2) return false;
+    try{
+      tokenClient = google.accounts.oauth2.initTokenClient({
+        client_id: cid,
+        scope: "https://www.googleapis.com/auth/drive.file",
+        callback: (resp) => {
+          if(resp && resp.access_token){ gToken = resp.access_token; refreshDrive(); toast("Connected to Google Drive"); }
+          else { toast("Google sign-in failed"); }
+        }
+      });
+      return true;
+    }catch(e){ return false; }
+  });
+  return gisReady;
+}
+function refreshDrive(){
+  const box = $("driveNoKey");
+  const cid = (S.settings.googleClientId||"").trim();
+  if(!cid){
+    box.style.display = "";
+    box.innerHTML = '<b>Google is not connected.</b> Paste your own Google OAuth Client ID in Settings to back up to your Drive.';
+    $("driveConnect").disabled = true;
+  }else{
+    box.style.display = "none";
+    $("driveConnect").disabled = false;
+  }
+  const connected = !!gToken;
+  $("driveStatus").textContent = connected ? "Connected — ready to back up." : "Not connected.";
+  $("driveConnect").style.display = connected ? "none" : "";
+  $("driveDisconnect").style.display = connected ? "" : "none";
+  $("driveActions").style.display = connected ? "" : "none";
+}
+$("driveConnect").addEventListener("click", async ()=>{
+  const ok = await ensureGIS();
+  if(!ok || !tokenClient){ toast("Could not load Google sign-in — check your Client ID and connection."); return; }
+  try{ tokenClient.requestAccessToken({ prompt:"consent" }); }
+  catch(e){ toast("Google sign-in failed to start"); }
+});
+$("driveDisconnect").addEventListener("click", ()=>{
+  gToken = null; driveFolderId = null;
+  refreshDrive(); toast("Disconnected");
+});
+async function driveApi(path, opts){
+  opts = opts || {};
+  opts.headers = opts.headers || {};
+  opts.headers["Authorization"] = "Bearer " + gToken;
+  const res = await fetch("https://www.googleapis.com" + path, opts);
+  if(res.status === 401){ gToken = null; refreshDrive(); throw new Error("Google session expired — please sign in again."); }
+  if(!res.ok) throw new Error("Drive request failed (HTTP "+res.status+")");
+  return res.json();
+}
+async function getForgeFolder(){
+  if(driveFolderId) return driveFolderId;
+  const q = encodeURIComponent("name='Forge' and mimeType='application/vnd.google-apps.folder' and trashed=false");
+  const found = await driveApi("/drive/v3/files?q="+q+"&fields=files(id,name)&pageSize=1");
+  if(found.files && found.files.length){ driveFolderId = found.files[0].id; return driveFolderId; }
+  const created = await driveApi("/drive/v3/files", {
+    method:"POST", headers:{ "Content-Type":"application/json" },
+    body: JSON.stringify({ name:"Forge", mimeType:"application/vnd.google-apps.folder" })
+  });
+  driveFolderId = created.id; return driveFolderId;
+}
+async function saveToDrive(filename, obj){
+  if(!gToken){ toast("Sign in with Google first"); return; }
+  $("driveMsg").textContent = "Saving "+filename+"…";
+  try{
+    const folderId = await getForgeFolder();
+    const boundary = "forge"+Date.now();
+    const meta = JSON.stringify({ name:filename, parents:[folderId], mimeType:"application/json" });
+    const body = "--"+boundary+"\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n"+meta+
+      "\r\n--"+boundary+"\r\nContent-Type: application/json\r\n\r\n"+JSON.stringify(obj,null,2)+
+      "\r\n--"+boundary+"--";
+    const res = await fetch("https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart", {
+      method:"POST",
+      headers:{ "Authorization":"Bearer "+gToken, "Content-Type":"multipart/related; boundary="+boundary },
+      body: body
+    });
+    if(res.status===401){ gToken=null; refreshDrive(); throw new Error("Google session expired — please sign in again."); }
+    if(!res.ok) throw new Error("Upload failed (HTTP "+res.status+")");
+    $("driveMsg").textContent = "Saved "+filename+" to your Drive ▸ Forge folder.";
+    toast("Backed up to Drive");
+  }catch(e){ $("driveMsg").textContent = "Failed: "+e.message; }
+}
+const stamp = () => { const d=new Date(); const p=n=>String(n).padStart(2,"0");
+  return d.getFullYear()+"-"+p(d.getMonth()+1)+"-"+p(d.getDate())+"_"+p(d.getHours())+p(d.getMinutes()); };
+$("driveSaveDrafts").addEventListener("click", ()=>saveToDrive("forge-drafts-"+stamp()+".json", S.drafts));
+$("driveSavePayments").addEventListener("click", ()=>saveToDrive("forge-payments-"+stamp()+".json", S.payments));
+$("driveSaveClients").addEventListener("click", ()=>saveToDrive("forge-clients-"+stamp()+".json", S.clients));
+$("driveSaveAll").addEventListener("click", ()=>saveToDrive("forge-backup-"+stamp()+".json", S));
+
+/* ============ Settings ============ */
+function loadSettingsForm(){
+  $("setPaypal").value = S.settings.paypalClientId || "";
+  $("setGoogle").value = S.settings.googleClientId || "";
+  $("setGemini").value = S.settings.geminiKey || "";
+}
+$("settingsSave").addEventListener("click", ()=>{
+  S.settings.paypalClientId = $("setPaypal").value.trim();
+  S.settings.googleClientId = $("setGoogle").value.trim();
+  S.settings.geminiKey = $("setGemini").value.trim();
+  // reset cached SDK state so a changed key takes effect
+  paypalLoading = null; gisReady = null; tokenClient = null; gToken = null; driveFolderId = null;
+  if(typeof window.paypal !== "undefined"){ try{ delete window.paypal; }catch(e){} }
+  saveState(); refreshDrive(); renderPayments();
+  toast("Settings saved");
+});
+$("wipeAll").addEventListener("click", ()=>{
+  if(!confirm("Wipe EVERYTHING Forge stored in this browser? This cannot be undone.")) return;
+  if(!confirm("Last chance — delete all clients, drafts, prospects, payments and settings?")) return;
+  try{ localStorage.removeItem(LS_KEY); localStorage.removeItem(LS_ONBOARD); }catch(e){}
+  S = blankState(); gToken = null;
+  resetClientForm(); loadSettingsForm();
+  renderClients(); refreshClientSelects(); renderDrafts(); renderKanban(); renderPayments(); refreshDrive();
+  toast("All data wiped");
+  $("onboardModal").classList.add("open");
+});
+
+/* ============ Init ============ */
+function init(){
+  loadState();
+  loadSettingsForm();
+  renderClients();
+  refreshClientSelects();
+  renderDrafts();
+  renderKanban();
+  renderPayments();
+  refreshDrive();
+  maybeOnboard();
+  let start = "clients";
+  try{ const h = location.hash.replace("#",""); if(TAB_IDS.indexOf(h)>=0) start = h; }catch(e){}
+  showTab(start);
+}
+if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+else init();
+</script>
+</body>
+</html>
