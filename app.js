@@ -10,6 +10,7 @@
   // For now, placeholder hrefs ("#") are intercepted so nothing jumps.
   var APK_URLS = {
     "forge-press": "downloads/forge-press.apk",
+  "forge-leads": "downloads/forge-leads.apk",
     // forge-studio: "downloads/forge-studio.apk",
   };
 
@@ -23,7 +24,6 @@
       e.preventDefault();
       toast(
         key === "forge-studio" ? "Forge Studio is coming soon." :
-        key === "forge-leads" ? "Forge Leads is coming soon." :
         "Download link coming soon."
       );
     });
