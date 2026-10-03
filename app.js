@@ -10,13 +10,14 @@
   // For now, placeholder hrefs ("#") are intercepted so nothing jumps.
   var APK_URLS = {
     "forge-press": "downloads/forge-press.apk",
-  "forge-leads": "downloads/forge-leads.apk",
+    "forge-leads": "downloads/forge-leads.apk",
     "forge-studio": "downloads/forge-studio.apk",
   };
 
   document.querySelectorAll("a[data-apk]").forEach(function (btn) {
     btn.addEventListener("click", function (e) {
       var key = btn.getAttribute("data-apk");
+      if (APK_URLS[key]) {
         btn.setAttribute("href", APK_URLS[key]);
         return; // let the browser follow the real URL
       }
