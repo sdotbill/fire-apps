@@ -9,7 +9,7 @@
   // Download buttons: real URLs get wired in later via data-apk.
   // For now, placeholder hrefs ("#") are intercepted so nothing jumps.
   var APK_URLS = {
-    "codex-press": "downloads/codex-press.apk",
+    "forge-press": "downloads/forge-press.apk",
     // forge-studio: "downloads/forge-studio.apk",
   };
 
@@ -22,8 +22,8 @@
       }
       e.preventDefault();
       toast(
-        key === "codex-press" ? "Codex Press is coming soon." :
         key === "forge-studio" ? "Forge Studio is coming soon." :
+        key === "forge-leads" ? "Forge Leads is coming soon." :
         "Download link coming soon."
       );
     });
