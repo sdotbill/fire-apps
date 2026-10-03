@@ -3,29 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Forge — Social Posts &amp; Pipeline for Freelancers</title>
-<meta name="description" content="Forge: a web app for generating social media posts for clients and tracking prospects. Your data stays in your browser.">
+<title>Forge — AI-Powered Social Media Content &amp; Client Management</title>
+<meta name="description" content="Forge by Premium Marketing LLC: AI-powered social media content creation and client management. Your data stays in your browser.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#0e1014; --panel:#161a21; --panel2:#1c222c; --border:#2a323e;
   --text:#e9edf3; --muted:#98a1b1; --faint:#6b7484;
-  --accent:#ff7a1a; --accent-soft:rgba(255,122,26,.14);
+  --accent:#1d6fe0; --accent-soft:color-mix(in srgb, #1d6fe0 14%, transparent);
   --green:#35c47c; --red:#e5484d; --blue:#4b8dff; --gold:#e8b93e;
   --radius:12px; --shadow:0 8px 28px rgba(0,0,0,.35);
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--text);
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   line-height:1.5;min-height:100vh}
+h1,h2,h3{font-family:'Sora',Inter,sans-serif;letter-spacing:-.015em}
 a{color:var(--accent)}
 header.topbar{position:sticky;top:0;z-index:50;background:rgba(14,16,20,.94);
   backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
-.brand{display:flex;align-items:center;gap:10px;padding:14px 18px 6px;max-width:1100px;margin:0 auto}
-.brand svg{width:34px;height:34px;flex:none}
+.brand{display:flex;align-items:center;gap:12px;padding:14px 18px 6px;max-width:1100px;margin:0 auto}
+.brand img{width:40px;height:40px;border-radius:10px;flex:none;object-fit:cover;background:var(--panel2)}
 .brand h1{font-size:20px;margin:0;letter-spacing:.4px}
 .brand h1 span{color:var(--accent)}
 .brand p{margin:0;font-size:12px;color:var(--muted)}
+.powered{font-size:11px;color:var(--faint);border:1px solid var(--border);border-radius:999px;
+  padding:3px 10px;margin-left:auto;white-space:nowrap}
 nav.tabs{max-width:1100px;margin:0 auto;display:flex;gap:4px;overflow-x:auto;
   padding:8px 12px 10px;scrollbar-width:none}
 nav.tabs::-webkit-scrollbar{display:none}
@@ -53,15 +59,16 @@ input[type=text],input[type=password],input[type=number],textarea,select{
   border-radius:9px;padding:10px 12px;font-size:15px;font-family:inherit}
 input:focus,textarea:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:var(--accent)}
 textarea{min-height:76px;resize:vertical}
-.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#14100a;
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;
   border:0;border-radius:9px;padding:11px 18px;font-size:15px;font-weight:700;cursor:pointer}
-.btn:hover{filter:brightness(1.08)}
+.btn:hover{filter:brightness(1.12)}
 .btn:active{transform:translateY(1px)}
+.btn:disabled{opacity:.5;cursor:default}
 .btn.ghost{background:var(--panel2);color:var(--text);border:1px solid var(--border);font-weight:600}
 .btn.danger{background:transparent;color:var(--red);border:1px solid var(--red)}
 .btn.small{padding:7px 12px;font-size:13px}
 .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
-.notice{background:var(--accent-soft);border:1px solid rgba(255,122,26,.4);color:#ffc79a;
+.notice{background:var(--accent-soft);border:1px solid var(--accent);color:var(--text);
   border-radius:10px;padding:12px 14px;font-size:14px;margin-bottom:14px}
 .notice.info{background:rgba(75,141,255,.12);border-color:rgba(75,141,255,.4);color:#bcd2ff}
 .list{display:flex;flex-direction:column;gap:10px}
@@ -107,7 +114,7 @@ textarea{min-height:76px;resize:vertical}
 #toast{position:fixed;left:50%;transform:translateX(-50%);bottom:26px;z-index:200;
   background:var(--panel2);border:1px solid var(--border);color:var(--text);
   padding:12px 20px;border-radius:999px;font-size:14px;box-shadow:var(--shadow);
-  opacity:0;pointer-events:none;transition:opacity .25s}
+  opacity:0;pointer-events:none;transition:opacity .25s;max-width:90vw;text-align:center}
 #toast.show{opacity:1}
 .drafttext{white-space:pre-wrap;background:var(--panel);border:1px solid var(--border);
   border-radius:9px;padding:12px;font-size:14px;margin-top:8px}
@@ -116,26 +123,25 @@ textarea{min-height:76px;resize:vertical}
 .paypalbox{margin-top:10px}
 details.help{margin-top:10px;font-size:13px;color:var(--muted)}
 details.help summary{cursor:pointer;color:var(--accent)}
+
 </style>
 </head>
 <body>
 
 <header class="topbar">
   <div class="brand">
-    <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-      <path d="M24 4c2 8 10 12 10 22a10 10 0 0 1-20 0c0-6 3-9 5-12 .8 2 2 3 5 3-.5-5 0-9 0-13z" fill="#ff7a1a"/>
-      <path d="M24 16c1 4 5 6 5 11a5 5 0 0 1-10 0c0-3 1.5-4.5 2.5-6 .4 1 1 1.5 2.5 1.5-.3-2.5 0-4.5 0-6.5z" fill="#ffb25e"/>
-      <rect x="10" y="38" width="28" height="5" rx="2.5" fill="#3a4350"/>
-    </svg>
+    <img src="../assets/premium-marketing-logo.png" alt="Premium Marketing LLC logo">
     <div>
       <h1>Forge<span>.</span></h1>
-      <p>A web app for generating social media posts for clients and tracking prospects.</p>
+      <p>AI-powered social media content creation and client management.</p>
     </div>
+    <span class="powered">by Premium Marketing LLC</span>
   </div>
   <nav class="tabs" id="tabs" role="tablist" aria-label="Forge sections">
     <button data-tab="clients" role="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.4 3.4-5 6.5-5s5.7 1.6 6.5 5M16 4.5a3.5 3.5 0 0 1 0 7M18.5 15.3c1.7.8 2.7 2.3 3 4.7"/></svg>Clients</button>
     <button data-tab="studio" role="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>Post Studio</button>
     <button data-tab="pipeline" role="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Pipeline</button>
+    <button data-tab="audit" role="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>Free Audit</button>
     <button data-tab="payments" role="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="6" width="19" height="13" rx="2.5"/><path d="M2.5 10h19M6 15h4"/></svg>Payments</button>
     <button data-tab="drive" role="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 18a4.5 4.5 0 1 1 .7-8.9A6 6 0 0 1 19.5 11 3.75 3.75 0 0 1 18 18.5H7z"/></svg>Drive</button>
     <button data-tab="settings" role="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.55-1H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-1.55V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87 1.7 1.7 0 0 0 1.55 1H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.51 1z"/></svg>Settings</button>
@@ -146,7 +152,7 @@ details.help summary{cursor:pointer;color:var(--accent)}
 <!-- ONBOARDING MODAL -->
 <div class="modalwrap" id="onboardModal" role="dialog" aria-modal="true" aria-labelledby="obTitle">
   <div class="modal">
-    <h2 id="obTitle">Welcome to Forge 🔥</h2>
+    <h2 id="obTitle">Welcome to Forge</h2>
     <p class="sub">Forge runs entirely in <b>your</b> browser. Your clients, drafts, prospects and payments are stored on <b>your</b> device — nothing is shared with anyone, and nothing belongs to anyone else.</p>
     <p class="sub">To unlock everything, connect your <b>own</b> accounts in Settings:</p>
     <ol>
@@ -240,6 +246,28 @@ details.help summary{cursor:pointer;color:var(--accent)}
     <div class="btnrow"><button class="btn" id="prospectAdd">Add prospect</button></div>
   </div>
   <div class="kanban" id="kanban"></div>
+</section>
+
+<!-- FREE AUDIT -->
+<section class="tab" id="tab-audit">
+  <h2>Free Audit</h2>
+  <p class="sub">The front door of the funnel. Queue a growth audit, hand it to Dave with one tap, and track it until the report lands.</p>
+  <div class="card">
+    <h3>Queue a new audit</h3>
+    <div class="grid2">
+      <div><label for="auditBiz">Business name</label><input type="text" id="auditBiz" placeholder="e.g. Mike's Plumbing" autocomplete="off"></div>
+      <div><label for="auditCity">City</label><input type="text" id="auditCity" placeholder="e.g. Burton, MI" autocomplete="off"></div>
+    </div>
+    <div class="grid2">
+      <div><label for="auditTrade">Trade</label><input type="text" id="auditTrade" placeholder="e.g. plumber" autocomplete="off"></div>
+      <div><label for="auditContact">Contact (optional)</label><input type="text" id="auditContact" placeholder="Phone or email" autocomplete="off"></div>
+    </div>
+    <label for="auditNotes">Notes (optional)</label>
+    <input type="text" id="auditNotes" placeholder="Anything Dave should know&hellip;" autocomplete="off">
+    <div class="btnrow"><button class="btn" id="auditQueue">🔍 Queue audit</button></div>
+  </div>
+  <h3 style="margin-top:20px">Audit queue</h3>
+  <div class="list" id="auditList"></div>
 </section>
 
 <!-- PAYMENTS -->
@@ -364,7 +392,7 @@ function fallbackCopy(text, done){
 const LS_KEY = "forge_data_v1";
 const LS_ONBOARD = "forge_onboarded_v1";
 function blankState(){
-  return { clients:[], drafts:[], prospects:[], payments:[],
+  return { clients:[], drafts:[], prospects:[], payments:[], audits:[],
            settings:{ paypalClientId:"", googleClientId:"", geminiKey:"" } };
 }
 let S = blankState();
@@ -381,7 +409,7 @@ function saveState(){
 }
 
 /* ============ Tabs ============ */
-const TAB_IDS = ["clients","studio","pipeline","payments","drive","settings"];
+const TAB_IDS = ["clients","studio","audit","pipeline","payments","drive","settings"];
 function showTab(id){
   TAB_IDS.forEach(t => {
     $("tab-"+t).classList.toggle("active", t===id);
@@ -390,11 +418,58 @@ function showTab(id){
   if(id==="studio") refreshStudio();
   if(id==="payments") renderPayments();
   if(id==="drive") refreshDrive();
+  if(id==="audit") renderAudits();
   if(id==="pipeline") renderKanban();
   try{ history.replaceState(null,"","#"+id); }catch(e){}
 }
 document.querySelectorAll('#tabs button').forEach(b =>
   b.addEventListener("click", ()=>showTab(b.dataset.tab)));
+
+/* ============ Free Audit ============ */
+function auditMsg(a){
+  var m = "Run a growth audit on " + a.biz + " in " + a.city + " (" + a.trade + ").";
+  if(a.contact) m += " Contact: " + a.contact + ".";
+  if(a.notes) m += " Notes: " + a.notes;
+  return m;
+}
+$("auditQueue").addEventListener("click", ()=>{
+  var biz = $("auditBiz").value.trim(), city = $("auditCity").value.trim(), trade = $("auditTrade").value.trim();
+  if(!biz || !city || !trade){ toast("Business, city and trade — those three first"); return; }
+  S.audits.unshift({ id: uid(), biz: biz, city: city, trade: trade,
+    contact: $("auditContact").value.trim(), notes: $("auditNotes").value.trim(),
+    status: "queued", createdAt: Date.now() });
+  saveState(); renderAudits();
+  ["auditBiz","auditCity","auditTrade","auditContact","auditNotes"].forEach(id=>{ $(id).value=""; });
+  toast("Audit queued — tap \u2709\uFE0F to hand it to Dave");
+});
+function renderAudits(){
+  var list = $("auditList");
+  if(!S.audits.length){ list.innerHTML = '<div class="empty">No audits queued yet — this is where every free audit starts.</div>'; return; }
+  var badge = { queued:'<span class="tag">QUEUED</span>', sent:'<span class="tag">WITH DAVE</span>', delivered:'<span class="tag">DELIVERED</span>' };
+  list.innerHTML = S.audits.map(function(a){
+    return '<div class="card" style="margin-bottom:10px"><div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline">'
+      + '<b>' + esc(a.biz) + '</b>' + (badge[a.status]||"") + '</div>'
+      + '<div class="sub" style="margin:4px 0">' + esc(a.trade) + ' &middot; ' + esc(a.city)
+      + (a.contact ? ' &middot; ' + esc(a.contact) : '') + '<br>Queued ' + esc(fmtDate(a.createdAt)) + '</div>'
+      + '<div class="btnrow">'
+      + (a.status==="queued" ? '<button class="btn small" data-asend="' + a.id + '">\u2709\uFE0F Copy Dave message</button>' : '')
+      + (a.status==="sent" ? '<button class="btn small" data-adel="' + a.id + '">Mark delivered</button>' : '')
+      + '<button class="btn ghost small" data-adel2="' + a.id + '">Remove</button>'
+      + '</div></div>';
+  }).join("");
+  list.querySelectorAll("[data-asend]").forEach(b=>b.addEventListener("click",()=>{
+    var a = S.audits.find(x=>x.id===b.dataset.asend); if(!a) return;
+    copyText(auditMsg(a), ()=>{ a.status="sent"; saveState(); renderAudits(); toast("Copied — paste it to Dave and he runs it"); });
+  }));
+  list.querySelectorAll("[data-adel]").forEach(b=>b.addEventListener("click",()=>{
+    var a = S.audits.find(x=>x.id===b.dataset.adel); if(!a) return;
+    a.status="delivered"; saveState(); renderAudits(); toast("Marked delivered");
+  }));
+  list.querySelectorAll("[data-adel2]").forEach(b=>b.addEventListener("click",()=>{
+    if(!confirm("Remove this audit from the queue?")) return;
+    S.audits = S.audits.filter(x=>x.id!==b.dataset.adel2); saveState(); renderAudits();
+  }));
+}
 
 /* ============ Onboarding ============ */
 function maybeOnboard(){
@@ -848,11 +923,11 @@ $("settingsSave").addEventListener("click", ()=>{
 });
 $("wipeAll").addEventListener("click", ()=>{
   if(!confirm("Wipe EVERYTHING Forge stored in this browser? This cannot be undone.")) return;
-  if(!confirm("Last chance — delete all clients, drafts, prospects, payments and settings?")) return;
+  if(!confirm("Last chance \u2014 delete all clients, drafts, prospects, payments, audits and settings?")) return;
   try{ localStorage.removeItem(LS_KEY); localStorage.removeItem(LS_ONBOARD); }catch(e){}
   S = blankState(); gToken = null;
   resetClientForm(); loadSettingsForm();
-  renderClients(); refreshClientSelects(); renderDrafts(); renderKanban(); renderPayments(); refreshDrive();
+  renderClients(); refreshClientSelects(); renderDrafts(); renderAudits(); renderKanban(); renderPayments(); refreshDrive();
   toast("All data wiped");
   $("onboardModal").classList.add("open");
 });
@@ -864,6 +939,7 @@ function init(){
   renderClients();
   refreshClientSelects();
   renderDrafts();
+  renderAudits();
   renderKanban();
   renderPayments();
   refreshDrive();
