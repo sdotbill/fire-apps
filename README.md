@@ -7,7 +7,7 @@ A collection of professional mobile tools by Premium Marketing LLC — podcast p
 | App | Status |
 | --- | ------ |
 | **Forge Studio** | 🔜 Coming soon — podcast studio + AI avatar/video creator |
-| **Codex Press** | ✅ Live — publishing mission control for independent authors |
+| **Forge Press** | ✅ Live — publishing mission control for independent authors |
 | **Forge** | ✅ Live — social media content creation + client/prospect tracking (web app) |
 
 ## Theme
