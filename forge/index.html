@@ -326,11 +326,38 @@ details.help summary{cursor:pointer;color:var(--accent)}
     <h3>Connections</h3>
     <label for="setPaypal">PayPal Client ID <span class="tag">(your PayPal Developer Dashboard → your app)</span></label>
     <input type="text" id="setPaypal" placeholder="Paste your PayPal Client ID" autocomplete="off" spellcheck="false">
-    <details class="help"><summary>Where do I find this?</summary><p>Create a free app at the PayPal Developer Dashboard; copy the <b>Client ID</b> (not the secret — Forge never asks for it).</p></details>
+    <details class="help"><summary>Where do I find this? — step-by-step setup</summary>
+    <ol>
+      <li>Go to <b>developer.paypal.com</b> and log in with your PayPal account (a free business account works fine).</li>
+      <li>At the top of the dashboard, flip the toggle from <b>Sandbox</b> to <b>Live</b>.</li>
+      <li>Open <b>Apps &amp; Credentials</b>, then click <b>Create App</b>.</li>
+      <li>Name it something like <b>Forge</b> and click <b>Create App</b>.</li>
+      <li>On the app page, copy the <b>Client ID</b> (the long string of letters and numbers). You do <b>not</b> need the Secret — Forge never asks for it.</li>
+      <li>Paste the Client ID into the box above and hit <b>Save settings</b>. Done — you can now collect payments through PayPal checkout.</li>
+    </ol></details>
     <label for="setGoogle">Google OAuth Client ID <span class="tag">(your Google Cloud Console → OAuth client)</span></label>
     <input type="text" id="setGoogle" placeholder="Paste your Google OAuth Client ID" autocomplete="off" spellcheck="false">
+    <details class="help"><summary>Where do I find this? — step-by-step setup</summary>
+    <ol>
+      <li>Go to <b>console.cloud.google.com</b> and log in with your Google account.</li>
+      <li>Click the project dropdown at the very top → <b>New Project</b>. Name it something like <b>Forge</b>, click <b>Create</b>, then select it.</li>
+      <li>In the left menu, go to <b>APIs &amp; Services → Credentials</b>.</li>
+      <li>Click <b>Create Credentials → OAuth client ID</b>. First time only: Google asks you to configure the consent screen — choose <b>External</b>, fill in the app name and your email, and save.</li>
+      <li>Set <b>Application type</b> to <b>Web application</b> and name it <b>Forge</b>.</li>
+      <li>Under <b>Authorized JavaScript origins</b>, click <b>Add URI</b> and type exactly:<br><code>https://sdotbill.github.io</code></li>
+      <li>Click <b>Create</b>. A popup shows your Client ID (it ends in <b>.apps.googleusercontent.com</b>) — copy it.</li>
+      <li>Paste it into the box above and hit <b>Save settings</b>. Done — Forge can now back up your drafts and payments to your own Google Drive.</li>
+    </ol></details>
     <label for="setGemini">Gemini API key <span class="tag">(optional — Google AI Studio)</span></label>
     <input type="password" id="setGemini" placeholder="Paste your Gemini API key" autocomplete="off" spellcheck="false">
+    <details class="help"><summary>Where do I find this? — step-by-step setup</summary>
+    <ol>
+      <li>Go to <b>aistudio.google.com</b> and log in with your Google account.</li>
+      <li>Click <b>Get API Key</b> in the left menu.</li>
+      <li>Click <b>Create API key</b>. If it asks for a project, let it create a new one.</li>
+      <li>Copy the key (it starts with <b>AIza</b>).</li>
+      <li>Paste it into the box above and hit <b>Save settings</b>. Done — one-click AI draft generation is now on. It's free within generous limits; without it, the built-in template composer still works.</li>
+    </ol></details>
     <div class="btnrow">
       <button class="btn" id="settingsSave">Save settings</button>
     </div>
