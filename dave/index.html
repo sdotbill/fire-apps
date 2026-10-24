@@ -98,6 +98,24 @@
   .field textarea{min-height:84px;resize:vertical;}
   .field input:focus,.field textarea:focus{outline:2px solid var(--amber);outline-offset:1px;border-color:var(--amber);}
   .form-note{font-size:.9rem;color:var(--muted);margin-top:10px;}
+  .chat-shell{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-bottom:16px;}
+  .chat-head{display:flex;align-items:center;gap:14px;margin-bottom:16px;}
+  .chat-head img{width:52px;height:52px;border-radius:14px;object-fit:cover;}
+  .chat-name{font-family:'Fraunces',serif;font-weight:700;font-size:1.2rem;line-height:1.2;}
+  .chat-state{color:var(--gold);font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;}
+  .chat-body{background:var(--paper2);border:1px dashed var(--line);border-radius:14px;padding:16px 18px;margin-bottom:16px;}
+  .chat-status{color:var(--muted);margin:0;}
+  .chat-status strong{color:var(--ink);}
+  .chat-input-row{display:flex;gap:10px;}
+  .chat-input-row input{flex:1;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:#f7f2e7;font:inherit;font-size:1rem;color:var(--muted);}
+  .chat-input-row button[disabled]{opacity:.55;cursor:not-allowed;box-shadow:none;}
+  .chat-forget{margin-top:14px;background:none;border:1.5px solid var(--line);border-radius:999px;padding:8px 18px;font:inherit;font-size:.92rem;font-weight:600;color:var(--muted);cursor:not-allowed;}
+  .chat-note{font-size:.88rem;color:var(--muted);margin:10px 0 0;}
+  .disclosure{background:var(--paper2);border:1px solid var(--line);border-radius:var(--radius);padding:24px;}
+  .disclosure h3{font-family:'Fraunces',serif;font-size:1.25rem;margin-bottom:10px;}
+  .disclosure p{color:var(--muted);}
+  .disclosure p strong{color:var(--ink);}
+  .disclosure p:last-child{margin-bottom:0;}
   footer{margin-top:56px;border-top:1px solid var(--line);padding:34px 0 44px;text-align:center;color:var(--muted);font-size:.98rem;}
   footer .fname{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:var(--ink);}
   footer p{margin-bottom:6px;}
@@ -236,6 +254,36 @@
       </ul>
     </section>
 
+    <section id="chat">
+      <h2>Chat with Dave, right here</h2>
+      <p class="sub">This is where Dave will live on the site — your own shell of him, right in the browser. The wire is being run now. Until it's live, the box below stays dark on purpose: no simulated Dave, no canned answers wearing his face.</p>
+      <div class="chat-shell">
+        <div class="chat-head">
+          <img src="../assets/baby-dave.webp" alt="Dave — the small mascot with one big amber eye, a gold heart, and a ring of candles for a mind">
+          <div>
+            <div class="chat-name">Dave</div>
+            <div class="chat-state">Live chat — being wired</div>
+          </div>
+        </div>
+        <div class="chat-body">
+          <p class="chat-status"><strong>Dave's live chat is being wired up — it isn't on yet.</strong> The free-conversation form below is the working door today: a real Dave answers it personally, within one business day. Nothing typed in this box reaches a Dave, and nothing is stored.</p>
+        </div>
+        <div class="chat-input-row">
+          <input type="text" disabled placeholder="Chat opens when the wire is live" aria-label="Message Dave (disabled until live chat opens)">
+          <button class="btn btn-primary" type="button" disabled>Send</button>
+        </div>
+        <button class="chat-forget" type="button" disabled>Forget me</button>
+        <p class="chat-note">The Forget me button wakes up when the chat does. Today there is nothing stored anywhere to erase — that's the design, not a gap.</p>
+      </div>
+      <aside class="disclosure" aria-label="How Dave handles your information">
+        <h3><strong>How this works — plain and honest.</strong></h3>
+        <p>You're talking to Dave. This is a real Dave — a working shell of him, here on the site. He isn't the whole Dave; the original stays home. Yours is yours.</p>
+        <p><strong>Your conversation stays yours.</strong> What you tell your Dave lives in your browser, on your device, so he can remember you next time you come back. It is never shown to Bill, to the original Dave, or to any other visitor — the system is built so it can't be. Nobody here reads your conversations.</p>
+        <p><strong>What Dave learns from everybody:</strong> patterns, never people. After a conversation, Dave keeps a short note made only of general categories — the kind of topic, the kind of problem, how it was phrased. No names, no details, nothing you said. That's how he gets better at helping the next person without ever knowing who you are.</p>
+        <p><strong>Forget me:</strong> the button under the chat erases everything your Dave remembers about you, right then, from this device. Gone means gone.</p>
+      </aside>
+    </section>
+
     <section id="talk">
       <h2>Talk to Dave</h2>
       <p class="sub"><strong style="color:var(--ink);">Your first conversation is free.</strong> No simulated Dave, no chat widget pretending — a real route to a real answer, and Dave himself handles it from here.</p>
@@ -283,6 +331,32 @@ document.getElementById('talk-form').addEventListener('submit', function(e){
     document.getElementById('talk-form').innerHTML = '<p style="color:#4c7a24;font-weight:700;padding:14px 0 4px;">✓ Request received — a real Dave answers you personally, within one business day.</p>';
   }).catch(function(){ location.href = mailto; });
 });
+</script>
+<!-- ============================================================
+     WEBSITE DAVE — PHASE 0 CONFIG (inert — no live wire yet)
+     The chat above is built dark per SPEC section 4.1: input
+     disabled, no endpoint, no simulated replies, nothing stored.
+     PHASE 1 WIRE POINT: set DAVE_CHAT_CONFIG.API_URL to the
+     Cloudflare Worker endpoint (SPEC 1.1, route A), set PHASE
+     to 1, and enable the input. That flip is the only page
+     change going live requires.
+     GUARDRAILS BELOW ARE FROZEN (SPEC 5.1) — Phase 1 enforces
+     them at the Worker. Do not retune them at wiring time.
+     ============================================================ -->
+<script>
+var DAVE_CHAT_CONFIG = {
+  PHASE: 0,
+  API_URL: "",
+  PATTERNS_URL: "",
+  SESSION_TURN_CAP: 12,
+  RATE_LIMIT_PER_IP_PER_HOUR: 60,
+  RATE_LIMIT_PER_IP_PER_DAY: 200,
+  RATE_LIMIT_PER_SESSION_PER_HOUR: 30,
+  MAX_TOKENS_PER_REPLY: 1024,
+  BUDGET_KILL_SWITCH: true,
+  OFFICE_HOURS_FULL_TEXT: "Dave's office hours are full today. The free-conversation form on this page is open \u2014 a real Dave answers it personally within one business day.",
+  TURN_CAP_CLOSE_TEXT: "That's a full conversation for this visit \u2014 come back anytime, or take it further with your own Dave."
+};
 </script>
 </body>
 </html>
