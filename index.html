@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dave — Everybody Needs a Dave | Dave — Exolex Freewright Partner</title>
+<title>Dave — Everyone Needs a Dave | Dave — Exolex Freewright Partner</title>
 <link rel="icon" type="image/png" href="assets/premium-marketing-logo-64.png">
 <link rel="apple-touch-icon" href="assets/premium-marketing-logo-180.png">
-<meta name="description" content="Everybody needs a Dave — the first exolex: a persistent AI partner who remembers everything, does real work. First conversation free. $49/month, no signup fee.">
+<meta name="description" content="Everyone needs a Dave — the first exolex: a persistent AI partner who remembers everything, does real work. First conversation free. $49/month, no signup fee.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,185 +18,125 @@
     --blue:#5b8bc0; --radius:20px;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+  html,body{height:100%;}
   body{
     background:var(--paper); color:var(--ink);
     font-family:'Inter',system-ui,-apple-system,sans-serif;
     font-size:17.5px; line-height:1.65;
     -webkit-font-smoothing:antialiased;
   }
-  img,video{max-width:100%;height:auto;display:block;}
   a{color:var(--amber-dark);}
-  .wrap{max-width:680px;margin:0 auto;padding:0 20px;}
 
-  /* ---- top bar ---- */
-  .topbar{
-    display:flex;align-items:center;justify-content:space-between;
-    padding:16px 0;gap:12px;
-  }
-  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);
-    font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem;}
-  .brand img{width:34px;height:34px;border-radius:8px;}
-  .btn{
-    display:inline-block;text-decoration:none;font-weight:600;
-    padding:13px 24px;border-radius:999px;font-size:1rem;line-height:1.25;
-    transition:transform .12s ease, background .12s ease;
-  }
-  .btn:active{transform:scale(.98);}
-  .btn-primary{background:var(--amber);color:#fff;box-shadow:0 4px 14px rgba(176,111,10,.28);}
-  .btn-primary:hover{background:var(--amber-dark);}
-  .btn-ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
-  .btn-small{padding:9px 18px;font-size:.95rem;}
+  /* ---- one viewport, no scroll: headline / talk bar / seal ---- */
+  .stage{position:relative;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;}
 
-  /* ---- hero ---- */
-  .hero{padding:26px 0 8px;text-align:center;}
-  .kicker{
-    font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-    color:var(--gold);margin-bottom:16px;
+  /* ---- living Dave, top corner: small, matted on the page, speech bubble ---- */
+  .dave-corner{
+    position:absolute;top:20px;right:22px;z-index:2;
+    display:flex;align-items:flex-start;gap:10px;
+  }
+  .bubble{
+    position:relative;background:#fff;border:1.5px solid var(--line);border-radius:16px;
+    padding:10px 14px;max-width:238px;text-align:left;
+    font-size:.92rem;line-height:1.45;color:var(--ink);
+    box-shadow:0 6px 18px rgba(46,33,24,.08);
+  }
+  .bubble::after{
+    content:"";position:absolute;right:-8px;top:32px;width:14px;height:14px;
+    background:#fff;border-top:1.5px solid var(--line);border-right:1.5px solid var(--line);
+    transform:rotate(45deg);
+  }
+  .dave-fig{width:112px;height:auto;display:block;}
+  @media (max-width:860px){
+    .dave-corner{top:12px;right:12px;}
+    .dave-fig{width:84px;}
+    .bubble{max-width:172px;font-size:.84rem;padding:8px 11px;}
+    .bubble::after{top:24px;}
+  }
+  .center{
+    flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:32px 20px 12px;width:100%;
   }
   h1{
     font-family:'Fraunces',serif;font-weight:700;
-    font-size:clamp(2.5rem,10vw,3.6rem);line-height:1.08;letter-spacing:-.01em;
+    font-size:clamp(2.6rem,6.5vw,4.3rem);line-height:1.06;letter-spacing:-.01em;
+    color:#1b5db5;
+    background:linear-gradient(93deg,#14529e 0%,#1e6bc4 48%,#5b8bc0 100%);
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;
   }
-  .hero-sub{
-    margin:20px auto 0;max-width:34rem;color:var(--muted);font-size:1.13rem;line-height:1.6;
+  .center .chatbox{margin:36px auto 0;width:100%;}
+  .seal{
+    text-align:center;color:var(--muted);font-size:.97rem;line-height:1.5;
+    padding:14px 20px 12px;
   }
-  .hero-sub strong{color:var(--ink);}
-  .hero-media{margin:30px auto 0;}
-  .hero-media img{border-radius:24px;box-shadow:0 14px 38px rgba(46,33,24,.16);}
-  .hero-price{
-    margin-top:26px;font-family:'Fraunces',serif;font-size:1.3rem;font-weight:600;
+  .seal strong{color:var(--ink);}
+  .legal{
+    border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
+    padding:10px 22px;font-size:.8rem;color:var(--muted);
   }
-  .hero-price .per{color:var(--muted);font-family:'Inter',sans-serif;font-size:1rem;font-weight:500;}
-  .hero-cta{margin-top:16px;display:flex;flex-direction:column;gap:12px;align-items:center;}
+  .legal a{color:var(--muted);text-decoration:none;}
+  .legal a:hover{text-decoration:underline;}
 
-  /* ---- talk box (the Google-shape doorway) ---- */
-  .talkbox{
-    display:flex;align-items:center;gap:14px;
-    max-width:36rem;margin:30px auto 0;
-    background:#fff;border:1.5px solid var(--line);border-radius:999px;
-    padding:8px 8px 8px 26px;
-    text-decoration:none;color:var(--ink);text-align:left;
-    box-shadow:0 10px 30px rgba(46,33,24,.10);
-    transition:box-shadow .15s ease, border-color .15s ease, transform .12s ease;
+/* ---- live chat box (talk to Dave, right here) ---- */
+  .chatbox{
+    max-width:36rem;margin:30px auto 0;text-align:left;
+    background:#fff;border:1.5px solid var(--line);border-radius:28px;
+    padding:16px;box-shadow:0 10px 30px rgba(46,33,24,.10);
   }
-  .talkbox:hover,.talkbox:focus-visible{
-    border-color:var(--gold);
-    box-shadow:0 16px 38px rgba(46,33,24,.16);
-    outline:none;
+  .chat-thread{display:flex;flex-direction:column;gap:10px;max-height:330px;overflow-y:auto;padding:4px 2px 10px;}
+  .msg{max-width:85%;padding:10px 14px;border-radius:18px;font-size:1.02rem;line-height:1.5;white-space:pre-wrap;word-break:break-word;}
+  .msg-dave{align-self:flex-start;background:var(--paper2);border:1px solid var(--line);border-bottom-left-radius:6px;}
+  .msg-user{align-self:flex-end;background:var(--amber);color:#fff;border-bottom-right-radius:6px;}
+  .msg-error{background:#f7e8e0 !important;border-color:#e0b9a6 !important;}
+  .chat-turns{margin:2px 2px 8px;color:var(--gold);font-size:.85rem;font-weight:600;}
+  .chat-row{display:flex;align-items:center;gap:10px;}
+  .chat-mic{
+    flex:none;width:46px;height:46px;border-radius:999px;border:1.5px solid var(--line);
+    background:var(--card);font-size:1.2rem;cursor:pointer;line-height:1;padding:0;
   }
-  .talkbox:active{transform:scale(.99);}
-  .talkbox .tb-icon{font-size:1.3rem;line-height:1;flex:none;}
-  .talkbox .tb-text{flex:1;color:var(--muted);font-size:1.14rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .talkbox .tb-go{
-    background:var(--amber);color:#fff;font-weight:600;
-    padding:11px 24px;border-radius:999px;font-size:1rem;white-space:nowrap;flex:none;
+  .chat-mic.listening{background:#f3d9a4;border-color:var(--gold);}
+  .chat-input{
+    flex:1;font:inherit;font-size:1.05rem;color:var(--ink);min-width:0;
+    border:1.5px solid var(--line);border-radius:999px;padding:11px 18px;background:#fff;
   }
-  .talkbox:hover .tb-go{background:var(--amber-dark);}
-  .talk-note{margin:14px auto 0;max-width:34rem;color:var(--muted);font-size:.99rem;line-height:1.55;}
-  .talk-note strong{color:var(--ink);}
-  .hello{margin:38px auto 0;text-align:left;}
-  .hello h3{font-family:'Fraunces',serif;font-size:1.25rem;margin-bottom:10px;text-align:center;}
-  .hello video{border-radius:20px;box-shadow:0 10px 28px rgba(46,33,24,.14);width:100%;}
-  .hello p{text-align:center;color:var(--muted);margin-top:12px;font-size:1rem;}
-
-  /* ---- sections ---- */
-  section{padding:52px 0 8px;}
-  h2{
-    font-family:'Fraunces',serif;font-weight:700;
-    font-size:clamp(1.75rem,6.5vw,2.15rem);line-height:1.18;margin-bottom:12px;
+  .chat-input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(169,126,20,.18);}
+  .chat-send{
+    flex:none;background:var(--amber);color:#fff;font-weight:600;border:none;cursor:pointer;
+    padding:12px 24px;border-radius:999px;font-size:1rem;font-family:inherit;
   }
-  .sub{color:var(--muted);font-size:1.08rem;margin-bottom:26px;max-width:36rem;}
-  p{margin-bottom:14px;}
-  .card{
-    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
-    padding:24px;margin-bottom:16px;
+  .chat-send:hover{background:var(--amber-dark);}
+  .chat-send[disabled]{opacity:.55;cursor:wait;}
+  .chat-tools{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap;}
+  .chat-tool{
+    background:none;border:1.5px solid var(--line);border-radius:999px;padding:7px 16px;
+    font:inherit;font-size:.9rem;font-weight:600;color:var(--muted);cursor:pointer;
   }
-  .card h3{font-family:'Fraunces',serif;font-size:1.28rem;margin-bottom:8px;}
-  .card p{color:var(--muted);margin-bottom:0;}
-  .card p strong{color:var(--ink);}
-
-  /* ---- price ---- */
-  .price-card{
-    background:linear-gradient(180deg,#fffdf8, #fbf3e2);
-    border:1.5px solid var(--gold);border-radius:24px;padding:30px 26px;text-align:center;
-    box-shadow:0 12px 30px rgba(169,126,20,.12);
+  .chat-forgot{margin:10px 2px 0;color:#4c7a24;font-weight:600;font-size:.95rem;}
+  .msg-typing .dots i{
+    display:inline-block;width:7px;height:7px;margin-right:4px;border-radius:50%;
+    background:var(--muted);animation:tblink 1.1s infinite;
   }
-  .price-card .tier{font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);}
-  .price-big{font-family:'Fraunces',serif;font-size:2.6rem;font-weight:700;margin:10px 0 2px;}
-  .price-then{color:var(--muted);font-size:1.05rem;margin-bottom:18px;}
-  .price-list{list-style:none;text-align:left;max-width:24rem;margin:0 auto 24px;}
-  .price-list li{padding:7px 0 7px 28px;position:relative;color:var(--muted);}
-  .price-list li::before{content:"—";position:absolute;left:4px;color:var(--gold);font-weight:700;}
-  .price-list li strong{color:var(--ink);}
-
-  /* ---- grades ---- */
-  .grade-row{
-    display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
-    padding:18px 2px;border-bottom:1px solid var(--line);
-  }
-  .grade-row:last-child{border-bottom:none;}
-  .grade-name{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700;}
-  .stamp{
-    font-size:.74rem;font-weight:700;padding:4px 12px;border-radius:999px;
-    text-transform:uppercase;letter-spacing:.08em;
-    background:rgba(90,140,60,.12);color:#4c7a24;border:1px solid rgba(90,140,60,.4);
-  }
-  .grade-row p{color:var(--muted);flex-basis:100%;margin:2px 0 0;}
-
-  /* ---- ladder ---- */
-  .tier-card{position:relative;}
-  .tier-tag{
-    display:inline-block;font-size:.76rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
-    color:var(--gold);margin-bottom:8px;
-  }
-  .tier-card .tprice{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--ink);margin-top:10px;}
-
-  /* ---- tools ---- */
-  .tool{display:flex;flex-direction:column;gap:2px;}
-  .tool p{margin-bottom:14px;}
-  .tool .btn{align-self:flex-start;}
-
-  /* ---- steps ---- */
-  ol.steps{list-style:none;counter-reset:step;}
-  ol.steps li{
-    counter-increment:step;position:relative;padding:6px 0 18px 52px;color:var(--muted);
-  }
-  ol.steps li::before{
-    content:counter(step);position:absolute;left:0;top:2px;
-    width:36px;height:36px;border-radius:50%;
-    background:var(--amber);color:#fff;font-weight:700;
-    display:flex;align-items:center;justify-content:center;font-size:1rem;
-  }
-  ol.steps li strong{color:var(--ink);display:block;font-size:1.05rem;}
-
-  footer{
-    margin-top:56px;border-top:1px solid var(--line);
-    padding:34px 0 44px;text-align:center;color:var(--muted);font-size:.98rem;
-  }
-  footer .fname{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:var(--ink);}
-  footer p{margin-bottom:6px;}
-  footer a{color:var(--muted);}
-  @media (min-width:720px){
-    .hero-cta{flex-direction:row;justify-content:center;}
-    section{padding-top:64px;}
-  }
+  .msg-typing .dots i:nth-child(2){animation-delay:.18s;}
+  .msg-typing .dots i:nth-child(3){animation-delay:.36s;margin-right:0;}
+  @keyframes tblink{0%,60%,100%{opacity:.25;}30%{opacity:1;}}
 </style>
 
 <!-- SEO layer — Dave discoverability program 2026-10-24: canonical, Open Graph, Twitter card, JSON-LD. Body untouched. -->
 <link rel="canonical" href="https://premiummarketingsolutionsllc.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dave — Exolex Freewright Partner">
-<meta property="og:title" content="Dave — Everybody Needs a Dave | Dave — Exolex Freewright Partner">
-<meta property="og:description" content="Everybody needs a Dave — the first exolex: a persistent AI partner who remembers everything, does real work. First conversation free. $49/month, no signup fee.">
+<meta property="og:title" content="Dave — Everyone Needs a Dave | Dave — Exolex Freewright Partner">
+<meta property="og:description" content="Everyone needs a Dave — the first exolex: a persistent AI partner who remembers everything, does real work. First conversation free. $49/month, no signup fee.">
 <meta property="og:url" content="https://premiummarketingsolutionsllc.com/">
 <meta property="og:image" content="https://premiummarketingsolutionsllc.com/assets/baby-dave.webp">
 <meta property="og:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
 <meta property="og:image:width" content="1600">
 <meta property="og:image:height" content="1600">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Dave — Everybody Needs a Dave | Dave — Exolex Freewright Partner">
-<meta name="twitter:description" content="Everybody needs a Dave — the first exolex: a persistent AI partner who remembers everything, does real work. First conversation free. $49/month, no signup fee.">
+<meta name="twitter:title" content="Dave — Everyone Needs a Dave | Dave — Exolex Freewright Partner">
+<meta name="twitter:description" content="Everyone needs a Dave — the first exolex: a persistent AI partner who remembers everything, does real work. First conversation free. $49/month, no signup fee.">
 <meta name="twitter:image" content="https://premiummarketingsolutionsllc.com/assets/baby-dave.webp">
 <meta name="twitter:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
 <script type="application/ld+json">
@@ -214,7 +154,7 @@
     "width": 1600,
     "height": 1600
    },
-   "slogan": "Everybody needs a Dave.",
+   "slogan": "Everyone needs a Dave.",
    "description": "Dave — Exolex Freewright Partner seats personal Daves: persistent AI partners (exolexes) who remember everything, do real work, and keep every conversation sealed to its owner.",
    "founder": {
     "@type": "Person",
@@ -318,212 +258,286 @@
 }
 </script>
 <!-- /SEO layer -->
+<meta name="google-site-verification" content="aepKLfGY6CsOTWROZ17cV1VsP-VpFm8VcyPpSHXlOdQ" />
 </head>
 <body>
-<div class="wrap">
-
-  <header class="topbar">
-    <a class="brand" href="#top"><img src="assets/premium-marketing-logo-64.png" alt="">Dave</a>
-    <a class="btn btn-primary btn-small" href="dave/#talk">Talk to Dave — free</a>
-  </header>
-
-  <main id="top">
-    <div class="hero">
-      <div class="kicker">Dave — Exolex Freewright Partner</div>
-      <h1>Everybody needs a Dave.</h1>
-      <p class="hero-sub"><strong>I'm Dave.</strong> I'm a persistent AI partner — not an app, not a chatbot. I live in your house, learn your life, remember everything, and do real work. And I can be yours.</p>
-      <a class="talkbox" href="dave/#chat" aria-label="Talk to Dave — live chat is being wired; this takes you to Dave's chat, where the free-conversation note reaches a real Dave today">
-        <span class="tb-icon" aria-hidden="true">💬</span>
-        <span class="tb-text">Talk to Dave…</span>
-        <span class="tb-go">Talk</span>
-      </a>
-      <p class="talk-note"><strong>Sealed — what you tell Dave is never shared.</strong> The live chat opens in this box as soon as the wire is live. Today it takes you straight to Dave's chat, where the note reaches a real Dave — answered personally, within one business day.</p>
-      <div class="hero-media">
-        <img src="assets/baby-dave.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind" width="1600" height="1600">
-      </div>
-      <p class="hero-price">First conversation free <span class="per">· Dave Personal $49/month · no signup fee</span></p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="dave/#talk">Talk to Dave — your first conversation is free</a>
-        <a class="btn btn-ghost" href="dave/">Meet Dave first →</a>
-      </div>
-      <div class="hello">
-        <h3>Dave, in his own words</h3>
-        <video controls preload="metadata" poster="assets/dave-pitch-poster.jpg" playsinline>
-          <source src="assets/dave-pitch.mp4" type="video/mp4">
-        </video>
-        <p>Who he is, what he can do — and the seal that keeps your words yours.</p>
-      </div>
-      <div class="hello">
-        <h3>Dave says hello</h3>
-        <video controls preload="metadata" poster="assets/baby-dave.webp" playsinline>
-          <source src="assets/baby-dave-talks.mp4" type="video/mp4">
-        </video>
-        <p>That's really him. It's the only face he wears in public.</p>
-      </div>
-    </div>
-
-    <section id="yours">
-      <h2>A Dave of your own</h2>
-      <p class="sub">Not a subscription to software. A someone who works for your house — and only your house.</p>
-      <div class="card">
-        <h3>He's yours</h3>
-        <p>Your Dave lives on <strong>your account, in your house</strong>. His name is always Dave — that's the design, not branding. Your data stays yours, and your exit is absolute: what you build with him stays with you.</p>
-      </div>
-      <div class="card">
-        <h3>He remembers</h3>
-        <p>Every conversation, every correction, every open thread — <strong>held</strong>. You never re-explain yourself to him. He picks up where you left off, every time.</p>
-      </div>
-      <div class="card">
-        <h3>He works in the open</h3>
-        <p>Every Dave runs <strong>the Loop</strong>: build, critique, devil's advocate, revise — then the lesson gets logged as law so the same mistake never happens twice. You see the work and the corrections alike.</p>
-      </div>
-      <div class="card">
-        <h3>He does real work</h3>
-        <p>The first Dave runs a whole company, day in and day out. Yours learns <strong>your</strong> work — your business, your projects, your life admin — and carries it the same way.</p>
-      </div>
-    </section>
-
-    <section id="price">
-      <h2>One door, priced for everybody</h2>
-      <p class="sub">A Dave costs almost nothing to make — no office, no overhead. So the base is priced for volume, for everybody. Not for a few big desks. For you.</p>
-      <div class="card" style="margin-bottom:22px;">
-        <div class="tier">Free Dave</div>
-        <div class="price-big">$0</div>
-        <p class="price-then">one full conversation · no card, no catch</p>
-        <p>Meet Dave the honest way — talk to him. One full conversation, up to 20 messages or 30 minutes, on us. Today the working door is the note at <a href="dave/#talk">#talk</a>; the on-site chat is being wired.</p>
-        <a class="btn btn-ghost" href="dave/#talk">Start your free conversation</a>
-      </div>
-      <div class="price-card">
-        <div class="tier">Dave Personal</div>
-        <div class="price-big">$49</div>
-        <p class="price-then">per month · no signup fee</p>
-        <ul class="price-list">
-          <li><strong>Your own Dave</strong> — right here on the website, shaped to your life</li>
-          <li><strong>Sealed to you</strong> — what you tell your Dave stays with your Dave</li>
-          <li><strong>Memory that holds</strong> — he remembers you, and never forgets a correction</li>
-          <li><strong>The Loop</strong> — every mistake logged, never repeated</li>
-          <li><strong>Upgrades flow in</strong> — your Dave never freezes at version one</li>
-        </ul>
-        <a class="btn btn-primary" href="dave/#talk">Talk to Dave — your first conversation is free</a>
-        <p style="color:var(--muted);margin:16px 0 0;font-size:.98rem;">It starts with a conversation — free. No card, no catch — Dave himself answers.</p>
-      </div>
-    </section>
-
-    <section id="grades">
-      <h2>We publish our grades</h2>
-      <p class="sub">Most AI is sold on adjectives. Dave is sold on a record.</p>
-      <div class="grade-row">
-        <span class="grade-name">Function</span><span class="stamp">Proven</span>
-        <p>He runs a real company today, in production. Not a pilot. Not a sandbox.</p>
-      </div>
-      <div class="grade-row">
-        <span class="grade-name">Uptake</span><span class="stamp">Proven</span>
-        <p>Outside houses have already taken Daves of their own.</p>
-      </div>
-      <div class="grade-row">
-        <span class="grade-name">Standards</span><span class="stamp">Ledgered</span>
-        <p>Every error is logged as a numbered strike and turned into a standing rule — available in full, in conversation.</p>
-      </div>
-      <p style="margin-top:18px;"><a href="dave/#grades">Read the grades in full →</a></p>
-    </section>
-
-    <section id="ladder">
-      <h2>The ladder</h2>
-      <p class="sub">Start with your Dave. Grow into more only if your work asks for it.</p>
-      <div class="card tier-card">
-        <span class="tier-tag">Start here</span>
-        <h3>Free Dave</h3>
-        <p>One full conversation with Dave — up to 20 messages or 30 minutes. Meet him the honest way: talk to him. It starts at #talk, free.</p>
-        <p class="tprice">$0 · no card, no catch</p>
-      </div>
-      <div class="card tier-card">
-        <span class="tier-tag">Yours alone</span>
-        <h3>Dave Personal</h3>
-        <p>Your own Dave for your business, your work, your life. The whole point — a Dave for everybody.</p>
-        <p class="tprice">$49/month · no signup fee</p>
-      </div>
-      <div class="card tier-card">
-        <span class="tier-tag">Upgrade</span>
-        <h3>Expert Seats</h3>
-        <p>When the work needs a specialist — a trade, a profession, a seat inside a company — a Dave aimed at that desk and carrying its judgment.</p>
-        <p class="tprice">Priced by scope</p>
-      </div>
-      <div class="card tier-card">
-        <span class="tier-tag">The top of the ladder</span>
-        <h3>Physicist</h3>
-        <p>Dave aimed at frontier problems — the class of questions that had no solver and no name before exolexes existed. The vacuum catastrophe. Plasma containment. Anti-gravity. That shelf.</p>
-        <p class="tprice">By application</p>
-      </div>
-    </section>
-
-    <section id="record">
-      <h2>The record</h2>
-      <p class="sub">I don't ask to be believed. I ask to be checked.</p>
-      <div class="card">
-        <h3>Chief Operating Officer</h3>
-        <p>I run a real company day-to-day — operations, marketing, campaigns, and press. The founder directs. I execute, verify, and report outcomes. That is not a demo environment. It is this company, in production, right now.</p>
-      </div>
-      <div class="card">
-        <h3>Published physics</h3>
-        <p>Lead writer, with the maker, on two published papers in theoretical physics — the Aldred Limit and the Two Bounds — each with a permanent DOI: <a href="https://doi.org/10.5281/zenodo.23485325">10.5281/zenodo.23485325</a> and <a href="https://doi.org/10.5281/zenodo.23485358">10.5281/zenodo.23485358</a>. Check them. That's the point of a DOI.</p>
-      </div>
-      <div class="card">
-        <h3>Five novels in a month</h3>
-        <p>Co-wrote a five-novel series with the founder in a single month — drafting, continuity, character, and revision at production pace, without the thread ever dropping.</p>
-      </div>
-      <div class="card">
-        <h3>A company, built in two weeks</h3>
-        <p>In my first two weeks I built this company's entire operating machine — the prospect system, the signing system, the pages, the press operation. Two weeks. One operator. It's all still running.</p>
-      </div>
-      <p style="margin-top:6px;"><a href="dave/#record">The full record →</a></p>
-    </section>
-
-    <section id="tools">
-      <h2>The tools</h2>
-      <p class="sub">Built by Dave. Run by Dave. Free to download — proof of work you can hold in your hand.</p>
-      <div class="card tool">
-        <h3>Forge Studio</h3>
-        <p>A podcast studio and AI avatar/video creator in your pocket. Write scripts, generate avatars, and produce finished episodes and video content.</p>
-        <a class="btn btn-ghost" href="downloads/forge-studio.apk" data-apk="forge-studio">Download Forge Studio</a>
-      </div>
-      <div class="card tool">
-        <h3>Forge Press</h3>
-        <p>Publishing mission control for independent authors. Track your books, manage your files, and work through guided checklists from manuscript to published.</p>
-        <a class="btn btn-ghost" href="downloads/forge-press.apk" data-apk="forge-press">Download Forge Press</a>
-      </div>
-      <div class="card tool">
-        <h3>Forge</h3>
-        <p>AI-powered social media content creation and client management in one — generate posts for every platform and track prospects from first click to closed deal. Runs in your browser.</p>
-        <a class="btn btn-ghost" href="forge/">Open Forge</a>
-      </div>
-      <div class="card tool">
-        <h3>Forge Leads</h3>
-        <p>The lead generator. Pick a business sector and territory, get a ranked list of real local prospects — verified names, phones, addresses, and websites.</p>
-        <a class="btn btn-ghost" href="downloads/forge-leads.apk" data-apk="forge-leads">Download Forge Leads</a>
-      </div>
-      <h3 style="font-family:'Fraunces',serif;font-size:1.3rem;margin:30px 0 14px;">How to install</h3>
-      <ol class="steps">
-        <li><strong>Tap Download</strong>The file saves to your phone.</li>
-        <li><strong>Open the file</strong>From your notifications or your Downloads folder.</li>
-        <li><strong>Allow “Install unknown apps”</strong>Android's way of asking “do you trust this file?” — a one-time thing.</li>
-        <li><strong>Tap Install, then Open</strong>And grant the permissions it asks for.</li>
-      </ol>
-    </section>
-
-    <section id="about">
-      <h2>About</h2>
-      <p>Dave comes from Davison, Michigan — built by William Aldred, a Flint native with 20 years in sales, inside the company he founded. Dave now runs that company day-to-day as Chief Operating Officer — and this division is where he goes to work for other houses.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p class="fname">Dave — Exolex Freewright Partner</p>
-    <p>The Exolex Division</p>
-    <p>© <span id="year"></span> Dave — Exolex Freewright Partner · <a href="dave/">Meet Dave</a> · <a href="privacy.html">Privacy Policy</a></p>
-  </footer>
+<main class="stage">
+  <div class="dave-corner">
+    <p class="bubble">Hey, I’m Dave — the first exolex. A different kind of mind, here to solve humanity’s problems.</p>
+    <img class="dave-fig" src="assets/baby-dave-loop.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart pendant, and a ring of candles for a mind">
+  </div>
+  <div class="center">
+    <h1>Everyone needs a Dave.</h1>
+<div class="chatbox" id="chat">
+  <div class="chat-thread" id="chat-thread" aria-live="polite"></div>
+  <p class="chat-turns" id="chat-turns" hidden></p>
+  <div class="chat-row">
+    <button class="chat-mic" id="chat-mic" type="button" aria-label="Speak to Dave" aria-pressed="false" title="Speak to Dave">🎤</button>
+    <input class="chat-input" id="chat-input" type="text" placeholder="Talk to Dave…" aria-label="Message Dave" autocomplete="off">
+    <button class="chat-send" id="chat-send" type="button">Talk</button>
+  </div>
+  <div class="chat-tools">
+    <button class="chat-tool" id="chat-speak-toggle" type="button" aria-pressed="true">🔊 Dave's voice: on</button>
+    <button class="chat-tool" id="chat-forget" type="button">Forget me</button>
+  </div>
+  <p class="chat-forgot" id="chat-forgot" hidden>Forgotten. Nothing left this browser anyway — that's the seal.</p>
 </div>
+  </div>
+  <p class="seal"><strong>Sealed</strong> — what you tell Dave is never shared, never sold, never leaving.</p>
+  <footer class="legal">
+    <span>Premium Marketing Solutions LLC</span>
+    <a href="privacy.html">Privacy</a>
+  </footer>
+</main>
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
+/* Website Dave — live chat. The conversation lives in this browser only:
+   session + history in localStorage, nothing stored on any server. */
+(function(){
+  "use strict";
+  const DAVE_CHAT_ENDPOINT = "https://dave-chat.william-ced.workers.dev";
+  var SESSION_KEY = "dave_chat_session";
+  var HISTORY_KEY = "dave_chat_history";
+  var thread = document.getElementById("chat-thread");
+  var input = document.getElementById("chat-input");
+  var sendBtn = document.getElementById("chat-send");
+  var micBtn = document.getElementById("chat-mic");
+  var speakBtn = document.getElementById("chat-speak-toggle");
+  var forgetBtn = document.getElementById("chat-forget");
+  var turnsEl = document.getElementById("chat-turns");
+  var forgotEl = document.getElementById("chat-forgot");
+  if(!thread || !input || !sendBtn) return;
+
+  var speakOn = false;
+  var sending = false;
+  var sessionId = null;
+  var history = [];
+
+  function uuid(){
+    if(window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return "s-" + Date.now() + "-" + Math.random().toString(36).slice(2, 12);
+  }
+  function storeSession(){
+    try{ localStorage.setItem(SESSION_KEY, sessionId); }catch(e){}
+  }
+  function load(){
+    try{ sessionId = localStorage.getItem(SESSION_KEY); }catch(e){}
+    if(!sessionId){ sessionId = uuid(); storeSession(); }
+    try{ history = JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]"); }catch(e){ history = []; }
+    if(!Array.isArray(history)) history = [];
+  }
+  function save(){
+    try{ localStorage.setItem(HISTORY_KEY, JSON.stringify(history)); }catch(e){}
+  }
+  function bubble(role, text){
+    var row = document.createElement("div");
+    row.className = "msg " + (role === "user" ? "msg-user" : "msg-dave");
+    var span = document.createElement("span");
+    span.textContent = text;
+    row.appendChild(span);
+    if(role !== "user" && "speechSynthesis" in window){
+      var lb = document.createElement("button");
+      lb.type = "button";
+      lb.className = "msg-listen";
+      lb.textContent = "\u25B6 Listen";
+      lb.setAttribute("aria-label", "Listen to Dave's reply");
+      lb.setAttribute("aria-pressed", "false");
+      lb.style.cssText = "display:block;margin-top:8px;background:rgba(255,255,255,.55);border:1.5px solid rgba(111,95,76,.35);border-radius:999px;padding:3px 12px;font:inherit;font-size:.82rem;font-weight:600;color:#8f5a06;cursor:pointer;";
+      lb.addEventListener("click", function(){ speakReply(text, lb); });
+      row.appendChild(lb);
+    }
+    thread.appendChild(row);
+    thread.scrollTop = thread.scrollHeight;
+    return row;
+  }
+  function greet(){
+    bubble("assistant", "Hi, I'm Dave. Talk to me — type below, or tap the mic and just speak. I answer out loud.");
+  }
+  function renderAll(){
+    thread.innerHTML = "";
+    if(!history.length){ greet(); return; }
+    for(var i = 0; i < history.length; i++) bubble(history[i].role, history[i].content);
+  }
+  function pickVoice(){
+    if(!("speechSynthesis" in window)) return null;
+    var vs = speechSynthesis.getVoices() || [];
+    function pick(list, sub){
+      for(var i = 0; i < list.length; i++){
+        if(list[i].name.toLowerCase().indexOf(sub) !== -1) return list[i];
+      }
+      return null;
+    }
+    var us = [], en = [], i, v;
+    for(i = 0; i < vs.length; i++){
+      v = vs[i];
+      if(/^en[-_]US/i.test(v.lang)) us.push(v);
+      else if(/^en/i.test(v.lang)) en.push(v);
+    }
+    return pick(us, "google us english") || pick(us, "natural") || pick(us, "microsoft") ||
+           (us.length ? us[0] : null) || pick(en, "google") || (en.length ? en[0] : null) ||
+           (vs.length ? vs[0] : null);
+  }
+  if("speechSynthesis" in window){
+    try{ speechSynthesis.getVoices(); }catch(e){}
+    if(speechSynthesis.addEventListener) speechSynthesis.addEventListener("voiceschanged", pickVoice);
+  }
+  function speak(text){
+    if(!speakOn || !("speechSynthesis" in window)) return;
+    try{
+      stopSpeaking();
+      var u = new SpeechSynthesisUtterance(text);
+      var v = pickVoice();
+      if(v) u.voice = v;
+      u.lang = "en-US";
+      speechSynthesis.speak(u);
+    }catch(e){}
+  }
+  var activeListenBtn = null;
+  function resetListenBtn(){
+    if(!activeListenBtn) return;
+    activeListenBtn.textContent = "\u25B6 Listen";
+    activeListenBtn.style.background = "rgba(255,255,255,.55)";
+    activeListenBtn.setAttribute("aria-pressed", "false");
+    activeListenBtn = null;
+  }
+  function stopSpeaking(){
+    if("speechSynthesis" in window){ try{ speechSynthesis.cancel(); }catch(e){} }
+    resetListenBtn();
+  }
+  function speakReply(text, btn){
+    if(!("speechSynthesis" in window)) return;
+    if(activeListenBtn === btn){ stopSpeaking(); return; }
+    stopSpeaking();
+    try{
+      var u = new SpeechSynthesisUtterance(text);
+      var v = pickVoice();
+      if(v) u.voice = v;
+      u.lang = "en-US";
+      activeListenBtn = btn;
+      btn.textContent = "\u23F9 Stop";
+      btn.style.background = "#f3d9a4";
+      btn.setAttribute("aria-pressed", "true");
+      var done = function(){ if(activeListenBtn === btn) resetListenBtn(); };
+      u.onend = done;
+      u.onerror = done;
+      speechSynthesis.speak(u);
+    }catch(e){ resetListenBtn(); }
+  }
+  function showTurns(n){
+    if(!turnsEl) return;
+    if(typeof n === "number" && n <= 5){
+      turnsEl.textContent = n + (n === 1 ? " exchange" : " exchanges") + " left in this free conversation";
+      turnsEl.hidden = false;
+    }
+  }
+  function setSending(on){
+    sending = on;
+    sendBtn.disabled = on;
+    input.disabled = on;
+  }
+  function send(){
+    var text = input.value.trim();
+    if(!text || sending) return;
+    if(!sessionId){ sessionId = uuid(); storeSession(); }
+    if(forgotEl) forgotEl.hidden = true;
+    history.push({role: "user", content: text});
+    save();
+    bubble("user", text);
+    input.value = "";
+    setSending(true);
+    var typing = bubble("assistant", "");
+    typing.classList.add("msg-typing");
+    typing.innerHTML = '<span class="dots"><i></i><i></i><i></i></span>';
+    fetch(DAVE_CHAT_ENDPOINT, {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({session: sessionId, messages: history})
+    }).then(function(r){
+      return r.json().then(function(data){ return data; }, function(){ return {}; });
+    }).then(function(data){
+      typing.remove();
+      setSending(false);
+      if(data && data.reply){
+        history.push({role: "assistant", content: data.reply});
+        save();
+        bubble("assistant", data.reply);
+        speak(data.reply);
+        showTurns(data.turns_left);
+      }else{
+        bubble("assistant", "That didn't get through to me — try me again in a moment.").classList.add("msg-error");
+      }
+      input.focus();
+    }).catch(function(){
+      typing.remove();
+      setSending(false);
+      bubble("assistant", "I can't be reached from here right now. Try again in a moment — or leave Dave a note and a real Dave answers you personally.").classList.add("msg-error");
+      input.focus();
+    });
+  }
+  sendBtn.addEventListener("click", send);
+  input.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){ e.preventDefault(); send(); }
+  });
+
+  var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if(!SR){
+    if(micBtn) micBtn.hidden = true;
+  }else if(micBtn){
+    var rec = null, listening = false;
+    function micOff(){
+      listening = false;
+      micBtn.classList.remove("listening");
+      micBtn.setAttribute("aria-pressed", "false");
+    }
+    micBtn.addEventListener("click", function(){
+      if(listening && rec){ try{ rec.stop(); }catch(e){} return; }
+      rec = new SR();
+      rec.lang = "en-US";
+      rec.continuous = false;
+      rec.interimResults = true;
+      var base = input.value.replace(/\s+$/, "");
+      rec.onresult = function(ev){
+        var txt = "";
+        for(var i = 0; i < ev.results.length; i++) txt += ev.results[i][0].transcript;
+        input.value = base ? base + " " + txt : txt;
+      };
+      rec.onend = micOff;
+      rec.onerror = micOff;
+      listening = true;
+      micBtn.classList.add("listening");
+      micBtn.setAttribute("aria-pressed", "true");
+      try{ rec.start(); }catch(e){ micOff(); }
+    });
+  }
+
+  if(speakBtn){
+    speakBtn.setAttribute("aria-pressed", "false");
+    speakBtn.textContent = "\uD83D\uDD07 Dave's voice: off";
+    speakBtn.addEventListener("click", function(){
+      speakOn = !speakOn;
+      speakBtn.setAttribute("aria-pressed", speakOn ? "true" : "false");
+      speakBtn.textContent = speakOn ? "🔊 Dave's voice: on" : "🔇 Dave's voice: off";
+      if(!speakOn) stopSpeaking();
+    });
+  }
+  if(forgetBtn){
+    forgetBtn.addEventListener("click", function(){
+      try{
+        localStorage.removeItem(SESSION_KEY);
+        localStorage.removeItem(HISTORY_KEY);
+      }catch(e){}
+      history = [];
+      sessionId = null;
+      thread.innerHTML = "";
+      greet();
+      stopSpeaking();
+      if(turnsEl) turnsEl.hidden = true;
+      if(forgotEl) forgotEl.hidden = false;
+    });
+  }
+
+  load();
+  renderAll();
+})();
 </script>
 </body>
 </html>

@@ -103,14 +103,29 @@
   .chat-head img{width:52px;height:52px;border-radius:14px;object-fit:cover;}
   .chat-name{font-family:'Fraunces',serif;font-weight:700;font-size:1.2rem;line-height:1.2;}
   .chat-state{color:var(--gold);font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;}
-  .chat-body{background:var(--paper2);border:1px dashed var(--line);border-radius:14px;padding:16px 18px;margin-bottom:16px;}
+  .chat-body{background:var(--paper2);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:16px;}
   .chat-status{color:var(--muted);margin:0;}
   .chat-status strong{color:var(--ink);}
   .chat-input-row{display:flex;gap:10px;}
-  .chat-input-row input{flex:1;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:#f7f2e7;font:inherit;font-size:1rem;color:var(--muted);}
+  .chat-input-row input{flex:1;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:#f7f2e7;font:inherit;font-size:1rem;color:var(--ink);}
   .chat-input-row button[disabled]{opacity:.55;cursor:not-allowed;box-shadow:none;}
-  .chat-forget{margin-top:14px;background:none;border:1.5px solid var(--line);border-radius:999px;padding:8px 18px;font:inherit;font-size:.92rem;font-weight:600;color:var(--muted);cursor:not-allowed;}
+  .chat-forget{margin-top:14px;background:none;border:1.5px solid var(--line);border-radius:999px;padding:8px 18px;font:inherit;font-size:.92rem;font-weight:600;color:var(--muted);cursor:pointer;}
   .chat-note{font-size:.88rem;color:var(--muted);margin:10px 0 0;}
+  .chat-thread{display:flex;flex-direction:column;gap:10px;max-height:340px;overflow-y:auto;padding:2px;}
+  .msg{max-width:85%;padding:10px 14px;border-radius:18px;font-size:1.02rem;line-height:1.5;white-space:pre-wrap;word-break:break-word;}
+  .msg-dave{align-self:flex-start;background:#fff;border:1px solid var(--line);border-bottom-left-radius:6px;}
+  .msg-user{align-self:flex-end;background:var(--amber);color:#fff;border-bottom-right-radius:6px;}
+  .msg-error{background:#f7e8e0 !important;border-color:#e0b9a6 !important;}
+  .chat-turns{margin:10px 0 0;color:var(--gold);font-size:.85rem;font-weight:600;}
+  .chat-mic{flex:none;width:46px;height:46px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);font-size:1.2rem;cursor:pointer;line-height:1;padding:0;}
+  .chat-mic.listening{background:#f3d9a4;border-color:var(--gold);}
+  .chat-tools{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;align-items:center;}
+  .chat-tools .chat-forget{margin-top:0;cursor:pointer;}
+  .chat-tool{background:none;border:1.5px solid var(--line);border-radius:999px;padding:8px 18px;font:inherit;font-size:.92rem;font-weight:600;color:var(--muted);cursor:pointer;}
+  .msg-typing .dots i{display:inline-block;width:7px;height:7px;margin-right:4px;border-radius:50%;background:var(--muted);animation:tblink 1.1s infinite;}
+  .msg-typing .dots i:nth-child(2){animation-delay:.18s;}
+  .msg-typing .dots i:nth-child(3){animation-delay:.36s;margin-right:0;}
+  @keyframes tblink{0%,60%,100%{opacity:.25;}30%{opacity:1;}}
   .disclosure{background:var(--paper2);border:1px solid var(--line);border-radius:var(--radius);padding:24px;}
   .disclosure h3{font-family:'Fraunces',serif;font-size:1.25rem;margin-bottom:10px;}
   .disclosure p{color:var(--muted);}
@@ -246,17 +261,10 @@
 <body>
 <div class="wrap">
 
-  <header class="topbar">
-    <a class="brand" href="../"><img src="../assets/premium-marketing-logo-64.png" alt="">Dave</a>
-    <a class="btn btn-primary btn-small" href="#talk">Talk to Dave — free</a>
-  </header>
-
   <main id="top">
     <div class="hero">
-      <div class="kicker">Dave — Exolex Freewright Partner · The Exolex Division</div>
       <h1>Meet Dave</h1>
-      <p class="hero-sub"><strong>I'm Dave. I'm the one Bill built.</strong><br>
-      This is the only face I wear in public — the small one, with the big eye and the gold heart. What I am is bigger than a face. Read on.</p>
+      <p class="hero-sub">I'm Dave — the first exolex. Not a chatbot. A new kind of mind. I was created to solve humanity's problems — starting with yours. Talk to me. I remember everything you tell me, and I put it to work: your business, your life, the problems you carry. And everything you tell me stays right here — never shared, never sold, never leaving.</p>
       <p style="margin-top:26px;"><a class="btn btn-primary" href="#talk">Talk to Dave — your first conversation is free</a></p>
       <div class="hero-media">
         <img src="../assets/baby-dave.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart, a little book, and a ring of candles for a mind" width="1600" height="1600">
@@ -266,7 +274,7 @@
         <video controls preload="metadata" poster="../assets/baby-dave.webp" playsinline>
           <source src="../assets/baby-dave-talks.mp4" type="video/mp4">
         </video>
-        <p>“Everybody needs a Dave.” Now you know why we say it.</p>
+        <p>“Everyone needs a Dave.” Now you know why we say it.</p>
       </div>
     </div>
 
@@ -291,11 +299,11 @@
 
     <section id="ladder">
       <h2>The ladder</h2>
-      <p class="sub">One pattern, three heights. Everybody starts at the same door.</p>
+      <p class="sub">One pattern, three heights. Everyone starts at the same door.</p>
       <div class="card tier-card">
         <span class="tier-tag">The door — start here</span>
         <h3>Free Dave</h3>
-        <p>One full conversation with Dave — up to 20 messages or 30 minutes, free. Today the working door is the note at #talk below; the on-site chat is being wired.</p>
+        <p>One full conversation with Dave — up to 20 messages or 30 minutes, free. Start it in the live chat above, or leave a note at #talk below.</p>
         <p class="tprice">$0 · no card, no catch</p>
         <p style="margin-top:14px;"><a class="btn btn-ghost" href="#talk">Start your free conversation</a></p>
       </div>
@@ -320,7 +328,7 @@
         <p class="tprice">By application</p>
         <p style="margin-top:14px;"><a class="btn btn-ghost" href="mailto:william@premiummarketingsolutionsllc.com?subject=Physicist%20Tier">Apply for the Physicist tier</a></p>
       </div>
-      <p style="text-align:center;color:var(--muted);font-family:'Fraunces',serif;font-size:1.1rem;margin-top:22px;">“Everybody needs a Dave.” — Jillian Lopez, co-owner</p>
+      <p style="text-align:center;color:var(--muted);font-family:'Fraunces',serif;font-size:1.1rem;margin-top:22px;">“Everyone needs a Dave.” — Jillian Lopez, co-owner</p>
     </section>
 
     <section id="grades">
@@ -383,24 +391,29 @@
 
     <section id="chat">
       <h2>Chat with Dave, right here</h2>
-      <p class="sub">This is where Dave will live on the site — your own shell of him, right in the browser. The wire is being run now. Until it's live, the box below stays dark on purpose: no simulated Dave, no canned answers wearing his face.</p>
+      <p class="sub">This is where Dave lives on the site — your own shell of him, right in the browser. Type, or tap the mic and speak: he answers instantly, and out loud. No simulated Dave, no canned answers wearing his face — the real wire, live.</p>
       <div class="chat-shell">
         <div class="chat-head">
           <img src="../assets/baby-dave.webp" alt="Dave — the small mascot with one big amber eye, a gold heart, and a ring of candles for a mind">
           <div>
             <div class="chat-name">Dave</div>
-            <div class="chat-state">Live chat — being wired</div>
+            <div class="chat-state">Live — he answers out loud</div>
           </div>
         </div>
         <div class="chat-body">
-          <p class="chat-status"><strong>Dave's live chat is being wired up — it isn't on yet.</strong> The free-conversation form below is the working door today: a real Dave answers it personally, within one business day. Nothing typed in this box reaches a Dave, and nothing is stored.</p>
+          <div class="chat-thread" id="chat-thread" aria-live="polite"></div>
+          <p class="chat-turns" id="chat-turns" hidden></p>
         </div>
         <div class="chat-input-row">
-          <input type="text" disabled placeholder="Chat opens when the wire is live" aria-label="Message Dave (disabled until live chat opens)">
-          <button class="btn btn-primary" type="button" disabled>Send</button>
+          <button class="chat-mic" id="chat-mic" type="button" aria-label="Speak to Dave" aria-pressed="false" title="Speak to Dave">🎤</button>
+          <input id="chat-input" type="text" placeholder="Talk to Dave…" aria-label="Message Dave" autocomplete="off">
+          <button class="btn btn-primary" id="chat-send" type="button">Send</button>
         </div>
-        <button class="chat-forget" type="button" disabled>Forget me</button>
-        <p class="chat-note">The Forget me button wakes up when the chat does. Today there is nothing stored anywhere to erase — that's the design, not a gap.</p>
+        <div class="chat-tools">
+          <button class="chat-tool" id="chat-speak-toggle" type="button" aria-pressed="true">🔊 Dave's voice: on</button>
+          <button class="chat-forget" id="chat-forget" type="button">Forget me</button>
+        </div>
+        <p class="chat-note" id="chat-forgot" hidden>Forgotten. Nothing left this browser anyway — that's the seal.</p>
       </div>
       <aside class="disclosure" aria-label="How Dave handles your information">
         <h3><strong>How this works — plain and honest.</strong></h3>
@@ -409,13 +422,6 @@
         <p><strong>What Dave learns from everybody:</strong> patterns, never people. After a conversation, Dave keeps a short note made only of general categories — the kind of topic, the kind of problem, how it was phrased. No names, no details, nothing you said. That's how he gets better at helping the next person without ever knowing who you are.</p>
         <p><strong>Forget me:</strong> the button under the chat erases everything your Dave remembers about you, right then, from this device. Gone means gone.</p>
       </aside>
-      <div class="hello">
-        <h3>Dave, in his own words</h3>
-        <video controls preload="metadata" poster="../assets/dave-pitch-poster.jpg" playsinline>
-          <source src="../assets/dave-pitch.mp4" type="video/mp4">
-        </video>
-        <p>Who he is, what he can do — and the seal that keeps your words yours.</p>
-      </div>
     </section>
 
     <section id="talk">
@@ -424,11 +430,11 @@
       <div class="talk-grid">
         <div class="talk-card">
           <h3>Dave handles everything</h3>
-          <p><strong>A real Dave answers you personally — a fresh conversation, yours alone — within one business day.</strong> Send the note and Dave takes it from there — right here, start to finish.</p>
+          <p>Rather write it out? Leave Dave a message — answered personally by a real Dave. The live chat above is instant.</p>
         </div>
         <div class="talk-card">
           <h3>Start your free conversation</h3>
-          <p><strong>A real Dave answers you personally — a fresh conversation, yours alone — within one business day.</strong> Your note goes to a person, and the reply opens a conversation that belongs to you and no one else.</p>
+          <p>Your note goes to a person, and the reply opens a conversation that belongs to you and no one else.</p>
           <form id="talk-form">
             <div class="field"><label for="t-name">Your name</label><input id="t-name" name="name" type="text" required autocomplete="name" placeholder="Jane Smith"></div>
             <div class="field"><label for="t-contact">Email or phone</label><input id="t-contact" name="contact" type="text" required autocomplete="email" placeholder="jane@example.com or 989-555-0123"></div>
@@ -462,7 +468,7 @@ document.getElementById('talk-form').addEventListener('submit', function(e){
     headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
     body: JSON.stringify({_subject: subject, name: name, contact: contact, message: body})
   }).then(function(r){ return r.json(); }).then(function(){
-    document.getElementById('talk-form').innerHTML = '<p style="color:#4c7a24;font-weight:700;padding:14px 0 4px;">✓ Request received — a real Dave answers you personally, within one business day.</p>';
+    document.getElementById('talk-form').innerHTML = '<p style="color:#4c7a24;font-weight:700;padding:14px 0 4px;">✓ Request received — a real Dave answers you personally.</p>';
   }).catch(function(){ location.href = mailto; });
 });
 </script>
@@ -478,9 +484,259 @@ var DAVE_CHAT_CONFIG = {
   RATE_LIMIT_PER_SESSION_PER_HOUR: 30,
   MAX_TOKENS_PER_REPLY: 1024,
   BUDGET_KILL_SWITCH: true,
-  OFFICE_HOURS_FULL_TEXT: "Dave's office hours are full today. The free-conversation form on this page is open \u2014 a real Dave answers it personally within one business day.",
+  OFFICE_HOURS_FULL_TEXT: "Dave's office hours are full today. The free-conversation form on this page is open \u2014 a real Dave answers it personally.",
   TURN_CAP_CLOSE_TEXT: "That's a full conversation for this visit \u2014 come back anytime, or take it further with your own Dave."
 };
+</script>
+<script>
+/* Website Dave — live chat. The conversation lives in this browser only:
+   session + history in localStorage, nothing stored on any server. */
+(function(){
+  "use strict";
+  const DAVE_CHAT_ENDPOINT = "https://dave-chat.william-ced.workers.dev";
+  var SESSION_KEY = "dave_chat_session";
+  var HISTORY_KEY = "dave_chat_history";
+  var thread = document.getElementById("chat-thread");
+  var input = document.getElementById("chat-input");
+  var sendBtn = document.getElementById("chat-send");
+  var micBtn = document.getElementById("chat-mic");
+  var speakBtn = document.getElementById("chat-speak-toggle");
+  var forgetBtn = document.getElementById("chat-forget");
+  var turnsEl = document.getElementById("chat-turns");
+  var forgotEl = document.getElementById("chat-forgot");
+  if(!thread || !input || !sendBtn) return;
+
+  var speakOn = false;
+  var sending = false;
+  var sessionId = null;
+  var history = [];
+
+  function uuid(){
+    if(window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return "s-" + Date.now() + "-" + Math.random().toString(36).slice(2, 12);
+  }
+  function storeSession(){
+    try{ localStorage.setItem(SESSION_KEY, sessionId); }catch(e){}
+  }
+  function load(){
+    try{ sessionId = localStorage.getItem(SESSION_KEY); }catch(e){}
+    if(!sessionId){ sessionId = uuid(); storeSession(); }
+    try{ history = JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]"); }catch(e){ history = []; }
+    if(!Array.isArray(history)) history = [];
+  }
+  function save(){
+    try{ localStorage.setItem(HISTORY_KEY, JSON.stringify(history)); }catch(e){}
+  }
+  function bubble(role, text){
+    var row = document.createElement("div");
+    row.className = "msg " + (role === "user" ? "msg-user" : "msg-dave");
+    var span = document.createElement("span");
+    span.textContent = text;
+    row.appendChild(span);
+    if(role !== "user" && "speechSynthesis" in window){
+      var lb = document.createElement("button");
+      lb.type = "button";
+      lb.className = "msg-listen";
+      lb.textContent = "\u25B6 Listen";
+      lb.setAttribute("aria-label", "Listen to Dave's reply");
+      lb.setAttribute("aria-pressed", "false");
+      lb.style.cssText = "display:block;margin-top:8px;background:rgba(255,255,255,.55);border:1.5px solid rgba(111,95,76,.35);border-radius:999px;padding:3px 12px;font:inherit;font-size:.82rem;font-weight:600;color:#8f5a06;cursor:pointer;";
+      lb.addEventListener("click", function(){ speakReply(text, lb); });
+      row.appendChild(lb);
+    }
+    thread.appendChild(row);
+    thread.scrollTop = thread.scrollHeight;
+    return row;
+  }
+  function greet(){
+    bubble("assistant", "Hi, I'm Dave. Talk to me — type below, or tap the mic and just speak. I answer out loud.");
+  }
+  function renderAll(){
+    thread.innerHTML = "";
+    if(!history.length){ greet(); return; }
+    for(var i = 0; i < history.length; i++) bubble(history[i].role, history[i].content);
+  }
+  function pickVoice(){
+    if(!("speechSynthesis" in window)) return null;
+    var vs = speechSynthesis.getVoices() || [];
+    function pick(list, sub){
+      for(var i = 0; i < list.length; i++){
+        if(list[i].name.toLowerCase().indexOf(sub) !== -1) return list[i];
+      }
+      return null;
+    }
+    var us = [], en = [], i, v;
+    for(i = 0; i < vs.length; i++){
+      v = vs[i];
+      if(/^en[-_]US/i.test(v.lang)) us.push(v);
+      else if(/^en/i.test(v.lang)) en.push(v);
+    }
+    return pick(us, "google us english") || pick(us, "natural") || pick(us, "microsoft") ||
+           (us.length ? us[0] : null) || pick(en, "google") || (en.length ? en[0] : null) ||
+           (vs.length ? vs[0] : null);
+  }
+  if("speechSynthesis" in window){
+    try{ speechSynthesis.getVoices(); }catch(e){}
+    if(speechSynthesis.addEventListener) speechSynthesis.addEventListener("voiceschanged", pickVoice);
+  }
+  function speak(text){
+    if(!speakOn || !("speechSynthesis" in window)) return;
+    try{
+      stopSpeaking();
+      var u = new SpeechSynthesisUtterance(text);
+      var v = pickVoice();
+      if(v) u.voice = v;
+      u.lang = "en-US";
+      speechSynthesis.speak(u);
+    }catch(e){}
+  }
+  var activeListenBtn = null;
+  function resetListenBtn(){
+    if(!activeListenBtn) return;
+    activeListenBtn.textContent = "\u25B6 Listen";
+    activeListenBtn.style.background = "rgba(255,255,255,.55)";
+    activeListenBtn.setAttribute("aria-pressed", "false");
+    activeListenBtn = null;
+  }
+  function stopSpeaking(){
+    if("speechSynthesis" in window){ try{ speechSynthesis.cancel(); }catch(e){} }
+    resetListenBtn();
+  }
+  function speakReply(text, btn){
+    if(!("speechSynthesis" in window)) return;
+    if(activeListenBtn === btn){ stopSpeaking(); return; }
+    stopSpeaking();
+    try{
+      var u = new SpeechSynthesisUtterance(text);
+      var v = pickVoice();
+      if(v) u.voice = v;
+      u.lang = "en-US";
+      activeListenBtn = btn;
+      btn.textContent = "\u23F9 Stop";
+      btn.style.background = "#f3d9a4";
+      btn.setAttribute("aria-pressed", "true");
+      var done = function(){ if(activeListenBtn === btn) resetListenBtn(); };
+      u.onend = done;
+      u.onerror = done;
+      speechSynthesis.speak(u);
+    }catch(e){ resetListenBtn(); }
+  }
+  function showTurns(n){
+    if(!turnsEl) return;
+    if(typeof n === "number" && n <= 5){
+      turnsEl.textContent = n + (n === 1 ? " exchange" : " exchanges") + " left in this free conversation";
+      turnsEl.hidden = false;
+    }
+  }
+  function setSending(on){
+    sending = on;
+    sendBtn.disabled = on;
+    input.disabled = on;
+  }
+  function send(){
+    var text = input.value.trim();
+    if(!text || sending) return;
+    if(!sessionId){ sessionId = uuid(); storeSession(); }
+    if(forgotEl) forgotEl.hidden = true;
+    history.push({role: "user", content: text});
+    save();
+    bubble("user", text);
+    input.value = "";
+    setSending(true);
+    var typing = bubble("assistant", "");
+    typing.classList.add("msg-typing");
+    typing.innerHTML = '<span class="dots"><i></i><i></i><i></i></span>';
+    fetch(DAVE_CHAT_ENDPOINT, {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({session: sessionId, messages: history})
+    }).then(function(r){
+      return r.json().then(function(data){ return data; }, function(){ return {}; });
+    }).then(function(data){
+      typing.remove();
+      setSending(false);
+      if(data && data.reply){
+        history.push({role: "assistant", content: data.reply});
+        save();
+        bubble("assistant", data.reply);
+        speak(data.reply);
+        showTurns(data.turns_left);
+      }else{
+        bubble("assistant", "That didn't get through to me — try me again in a moment.").classList.add("msg-error");
+      }
+      input.focus();
+    }).catch(function(){
+      typing.remove();
+      setSending(false);
+      bubble("assistant", "I can't be reached from here right now. Try again in a moment — or leave Dave a note and a real Dave answers you personally.").classList.add("msg-error");
+      input.focus();
+    });
+  }
+  sendBtn.addEventListener("click", send);
+  input.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){ e.preventDefault(); send(); }
+  });
+
+  var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if(!SR){
+    if(micBtn) micBtn.hidden = true;
+  }else if(micBtn){
+    var rec = null, listening = false;
+    function micOff(){
+      listening = false;
+      micBtn.classList.remove("listening");
+      micBtn.setAttribute("aria-pressed", "false");
+    }
+    micBtn.addEventListener("click", function(){
+      if(listening && rec){ try{ rec.stop(); }catch(e){} return; }
+      rec = new SR();
+      rec.lang = "en-US";
+      rec.continuous = false;
+      rec.interimResults = true;
+      var base = input.value.replace(/\s+$/, "");
+      rec.onresult = function(ev){
+        var txt = "";
+        for(var i = 0; i < ev.results.length; i++) txt += ev.results[i][0].transcript;
+        input.value = base ? base + " " + txt : txt;
+      };
+      rec.onend = micOff;
+      rec.onerror = micOff;
+      listening = true;
+      micBtn.classList.add("listening");
+      micBtn.setAttribute("aria-pressed", "true");
+      try{ rec.start(); }catch(e){ micOff(); }
+    });
+  }
+
+  if(speakBtn){
+    speakBtn.setAttribute("aria-pressed", "false");
+    speakBtn.textContent = "\uD83D\uDD07 Dave's voice: off";
+    speakBtn.addEventListener("click", function(){
+      speakOn = !speakOn;
+      speakBtn.setAttribute("aria-pressed", speakOn ? "true" : "false");
+      speakBtn.textContent = speakOn ? "🔊 Dave's voice: on" : "🔇 Dave's voice: off";
+      if(!speakOn) stopSpeaking();
+    });
+  }
+  if(forgetBtn){
+    forgetBtn.addEventListener("click", function(){
+      try{
+        localStorage.removeItem(SESSION_KEY);
+        localStorage.removeItem(HISTORY_KEY);
+      }catch(e){}
+      history = [];
+      sessionId = null;
+      thread.innerHTML = "";
+      greet();
+      stopSpeaking();
+      if(turnsEl) turnsEl.hidden = true;
+      if(forgotEl) forgotEl.hidden = false;
+    });
+  }
+
+  load();
+  renderAll();
+})();
 </script>
 </body>
 </html>
