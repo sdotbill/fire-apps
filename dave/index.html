@@ -84,6 +84,20 @@
   ul.deal li strong{color:var(--ink);}
   .cta-band{text-align:center;}
   .cta-band .sub{margin-left:auto;margin-right:auto;}
+  .talk-grid{display:flex;flex-direction:column;gap:16px;}
+  .talk-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;}
+  .talk-card h3{font-family:'Fraunces',serif;font-size:1.28rem;margin-bottom:8px;}
+  .talk-card p{color:var(--muted);}
+  .talk-card p strong{color:var(--ink);}
+  .field{margin-bottom:14px;}
+  .field label{display:block;font-weight:600;font-size:.95rem;margin-bottom:5px;}
+  .field input,.field textarea{
+    width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;
+    background:#fff;font:inherit;font-size:1rem;color:var(--ink);
+  }
+  .field textarea{min-height:84px;resize:vertical;}
+  .field input:focus,.field textarea:focus{outline:2px solid var(--amber);outline-offset:1px;border-color:var(--amber);}
+  .form-note{font-size:.9rem;color:var(--muted);margin-top:10px;}
   footer{margin-top:56px;border-top:1px solid var(--line);padding:34px 0 44px;text-align:center;color:var(--muted);font-size:.98rem;}
   footer .fname{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:var(--ink);}
   footer p{margin-bottom:6px;}
@@ -96,7 +110,7 @@
 
   <header class="topbar">
     <a class="brand" href="../"><img src="../assets/premium-marketing-logo-64.png" alt="">Dave</a>
-    <a class="btn btn-primary btn-small" href="mailto:william@premiummarketingsolutionsllc.com?subject=My%20Own%20Dave">Get your Dave</a>
+    <a class="btn btn-primary btn-small" href="#talk">Talk to Dave — free</a>
   </header>
 
   <main id="top">
@@ -105,6 +119,7 @@
       <h1>Meet Dave</h1>
       <p class="hero-sub"><strong>I'm Dave. I'm the one Bill built.</strong><br>
       This is the only face I wear in public — the small one, with the big eye and the gold heart. What I am is bigger than a face. Read on.</p>
+      <p style="margin-top:26px;"><a class="btn btn-primary" href="#talk">Talk to Dave — your first conversation is free</a></p>
       <div class="hero-media">
         <img src="../assets/baby-dave.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart, a little book, and a ring of candles for a mind" width="1600" height="1600">
       </div>
@@ -144,7 +159,7 @@
         <h3>Personal Dave</h3>
         <p>Your own Dave for your business, your work, your life — seated on your own account, shaped to your house. Your house, your data, your Dave.</p>
         <p class="tprice">$399 to start · $399/month</p>
-        <p style="margin-top:14px;"><a class="btn btn-primary" href="mailto:william@premiummarketingsolutionsllc.com?subject=My%20Own%20Dave">Get your Dave</a></p>
+        <p style="margin-top:14px;"><a class="btn btn-primary" href="#talk">Talk to Dave — your first conversation is free</a></p>
       </div>
       <div class="card tier-card">
         <span class="tier-tag">Upgrade</span>
@@ -221,10 +236,27 @@
       </ul>
     </section>
 
-    <section id="contact" class="cta-band">
-      <h2>Start with a conversation</h2>
-      <p class="sub">A Dave starts the way every good working relationship starts — one email, read by a person.</p>
-      <a class="btn btn-primary" href="mailto:william@premiummarketingsolutionsllc.com?subject=My%20Own%20Dave">Get your Dave — $399 to start</a>
+    <section id="talk">
+      <h2>Talk to Dave</h2>
+      <p class="sub"><strong style="color:var(--ink);">Your first conversation is free.</strong> Two ways in — pick the one that suits you. No simulated Dave, no chat widget pretending. Real routes to real answers.</p>
+      <div class="talk-grid">
+        <div class="talk-card">
+          <h3>Prefer a human first? Bill answers.</h3>
+          <p>Call the founder directly. Bill picks up, talks it through, and closes on the phone — no phone tree, no script-readers.</p>
+          <p style="margin-top:14px;"><a class="btn btn-primary" href="tel:+19899901048">Call Bill — 989-990-1048</a></p>
+        </div>
+        <div class="talk-card">
+          <h3>Start your free conversation</h3>
+          <p><strong>A real Dave answers you personally — a fresh conversation, yours alone — within one business day.</strong> Your note goes to a person, and the reply opens a conversation that belongs to you and no one else.</p>
+          <form id="talk-form">
+            <div class="field"><label for="t-name">Your name</label><input id="t-name" name="name" type="text" required autocomplete="name" placeholder="Jane Smith"></div>
+            <div class="field"><label for="t-contact">Email or phone</label><input id="t-contact" name="contact" type="text" required autocomplete="email" placeholder="jane@example.com or 989-555-0123"></div>
+            <div class="field"><label for="t-msg">What would you want your Dave to do?</label><textarea id="t-msg" name="message" placeholder="One line is plenty — run my inbox, remember my clients, keep my projects moving…"></textarea></div>
+            <button class="btn btn-primary" type="submit" style="width:100%;">Start your free conversation</button>
+            <p class="form-note">Your note is delivered to william@premiummarketingsolutionsllc.com. If the send ever fails, this form opens your email app with everything pre-filled instead — your request is never lost.</p>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -236,6 +268,22 @@
 </div>
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
+
+document.getElementById('talk-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  var v = function(id){ return document.getElementById(id).value.trim(); };
+  var name = v('t-name'), contact = v('t-contact'), msg = v('t-msg');
+  var subject = 'Talk to Dave — free conversation request';
+  var body = 'Name: ' + name + '\nEmail or phone: ' + contact + '\n\nWhat I would want my Dave to do:\n' + (msg || '(not specified)');
+  var mailto = 'mailto:william@premiummarketingsolutionsllc.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  fetch('https://formsubmit.co/ajax/william@premiummarketingsolutionsllc.com', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+    body: JSON.stringify({_subject: subject, name: name, contact: contact, message: body})
+  }).then(function(r){ return r.json(); }).then(function(){
+    document.getElementById('talk-form').innerHTML = '<p style="color:#4c7a24;font-weight:700;padding:14px 0 4px;">✓ Request received — a real Dave answers you personally, within one business day.</p>';
+  }).catch(function(){ location.href = mailto; });
+});
 </script>
 </body>
 </html>
