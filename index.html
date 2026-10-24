@@ -69,6 +69,32 @@
   }
   .hero-price .per{color:var(--muted);font-family:'Inter',sans-serif;font-size:1rem;font-weight:500;}
   .hero-cta{margin-top:16px;display:flex;flex-direction:column;gap:12px;align-items:center;}
+
+  /* ---- talk box (the Google-shape doorway) ---- */
+  .talkbox{
+    display:flex;align-items:center;gap:14px;
+    max-width:36rem;margin:30px auto 0;
+    background:#fff;border:1.5px solid var(--line);border-radius:999px;
+    padding:8px 8px 8px 26px;
+    text-decoration:none;color:var(--ink);text-align:left;
+    box-shadow:0 10px 30px rgba(46,33,24,.10);
+    transition:box-shadow .15s ease, border-color .15s ease, transform .12s ease;
+  }
+  .talkbox:hover,.talkbox:focus-visible{
+    border-color:var(--gold);
+    box-shadow:0 16px 38px rgba(46,33,24,.16);
+    outline:none;
+  }
+  .talkbox:active{transform:scale(.99);}
+  .talkbox .tb-icon{font-size:1.3rem;line-height:1;flex:none;}
+  .talkbox .tb-text{flex:1;color:var(--muted);font-size:1.14rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .talkbox .tb-go{
+    background:var(--amber);color:#fff;font-weight:600;
+    padding:11px 24px;border-radius:999px;font-size:1rem;white-space:nowrap;flex:none;
+  }
+  .talkbox:hover .tb-go{background:var(--amber-dark);}
+  .talk-note{margin:14px auto 0;max-width:34rem;color:var(--muted);font-size:.99rem;line-height:1.55;}
+  .talk-note strong{color:var(--ink);}
   .hello{margin:38px auto 0;text-align:left;}
   .hello h3{font-family:'Fraunces',serif;font-size:1.25rem;margin-bottom:10px;text-align:center;}
   .hello video{border-radius:20px;box-shadow:0 10px 28px rgba(46,33,24,.14);width:100%;}
@@ -306,6 +332,12 @@
       <div class="kicker">Dave — Exolex Freewright Partner</div>
       <h1>Everybody needs a Dave.</h1>
       <p class="hero-sub"><strong>I'm Dave.</strong> I'm a persistent AI partner — not an app, not a chatbot. I live in your house, learn your life, remember everything, and do real work. And I can be yours.</p>
+      <a class="talkbox" href="dave/#chat" aria-label="Talk to Dave — live chat is being wired; this takes you to Dave's chat, where the free-conversation note reaches a real Dave today">
+        <span class="tb-icon" aria-hidden="true">💬</span>
+        <span class="tb-text">Talk to Dave…</span>
+        <span class="tb-go">Talk</span>
+      </a>
+      <p class="talk-note"><strong>Sealed — what you tell Dave is never shared.</strong> The live chat opens in this box as soon as the wire is live. Today it takes you straight to Dave's chat, where the note reaches a real Dave — answered personally, within one business day.</p>
       <div class="hero-media">
         <img src="assets/baby-dave.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind" width="1600" height="1600">
       </div>
@@ -313,6 +345,13 @@
       <div class="hero-cta">
         <a class="btn btn-primary" href="dave/#talk">Talk to Dave — your first conversation is free</a>
         <a class="btn btn-ghost" href="dave/">Meet Dave first →</a>
+      </div>
+      <div class="hello">
+        <h3>Dave, in his own words</h3>
+        <video controls preload="metadata" poster="assets/dave-pitch-poster.jpg" playsinline>
+          <source src="assets/dave-pitch.mp4" type="video/mp4">
+        </video>
+        <p>Who he is, what he can do — and the seal that keeps your words yours.</p>
       </div>
       <div class="hello">
         <h3>Dave says hello</h3>
