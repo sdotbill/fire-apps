@@ -32,7 +32,7 @@
 
   /* ---- living Dave, top corner: small, matted on the page, speech bubble ---- */
   .dave-corner{
-    position:absolute;top:20px;right:22px;z-index:2;
+    align-self:flex-end;padding:18px 22px 0;
     display:flex;align-items:flex-start;gap:10px;
   }
   .bubble{
@@ -48,14 +48,14 @@
   }
   .dave-fig{width:112px;height:auto;display:block;}
   @media (max-width:860px){
-    .dave-corner{top:12px;right:12px;}
+    .dave-corner{padding:12px 12px 0;}
     .dave-fig{width:84px;}
     .bubble{max-width:172px;font-size:.84rem;padding:8px 11px;}
     .bubble::after{top:24px;}
   }
   .center{
-    flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
-    text-align:center;padding:32px 20px 12px;width:100%;
+    flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
+    text-align:center;padding:6px 20px 12px;width:100%;
   }
   h1{
     font-family:'Fraunces',serif;font-weight:700;
@@ -65,7 +65,8 @@
     -webkit-background-clip:text;background-clip:text;
     -webkit-text-fill-color:transparent;
   }
-  .center .chatbox{margin:36px auto 0;width:100%;}
+  .center .chatbox{margin:14px auto 0;width:100%;}
+  h1{margin:24px 0 0;}
   .seal{
     text-align:center;color:var(--muted);font-size:.97rem;line-height:1.5;
     padding:14px 20px 12px;
@@ -267,15 +268,17 @@
     <img class="dave-fig" src="assets/baby-dave-loop.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart pendant, and a ring of candles for a mind">
   </div>
   <div class="center">
-    <h1>Everyone needs a Dave.</h1>
 <div class="chatbox" id="chat">
-  <div class="chat-thread" id="chat-thread" aria-live="polite"></div>
-  <p class="chat-turns" id="chat-turns" hidden></p>
   <div class="chat-row">
     <button class="chat-mic" id="chat-mic" type="button" aria-label="Speak to Dave" aria-pressed="false" title="Speak to Dave">🎤</button>
     <input class="chat-input" id="chat-input" type="text" placeholder="Talk to Dave…" aria-label="Message Dave" autocomplete="off">
     <button class="chat-send" id="chat-send" type="button">Talk</button>
   </div>
+  <p class="chat-turns" id="chat-turns" hidden></p>
+</div>
+    <h1>Everyone needs a Dave.</h1>
+<div class="chatbox">
+  <div class="chat-thread" id="chat-thread" aria-live="polite"></div>
   <div class="chat-tools">
     <button class="chat-tool" id="chat-speak-toggle" type="button" aria-pressed="true">🔊 Dave's voice: on</button>
     <button class="chat-tool" id="chat-forget" type="button">Forget me</button>
