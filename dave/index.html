@@ -533,7 +533,7 @@ var DAVE_CHAT_CONFIG = {
     var span = document.createElement("span");
     span.textContent = text;
     row.appendChild(span);
-    if(role !== "user" && "speechSynthesis" in window){
+    if(role !== "user"){
       var lb = document.createElement("button");
       lb.type = "button";
       lb.className = "msg-listen";
@@ -548,8 +548,11 @@ var DAVE_CHAT_CONFIG = {
     thread.scrollTop = thread.scrollHeight;
     return row;
   }
+  var GREETING_TEXT = "Hi, I'm Dave. Talk to me — type below, or tap the mic and just speak. I answer out loud.";
+  var GREETING_AUDIO_URL = "/assets/dave-greeting.mp3";
+  var activeAudio = null;
   function greet(){
-    bubble("assistant", "Hi, I'm Dave. Talk to me — type below, or tap the mic and just speak. I answer out loud.");
+    bubble("assistant", GREETING_TEXT);
   }
   function renderAll(){
     thread.innerHTML = "";
@@ -580,7 +583,18 @@ var DAVE_CHAT_CONFIG = {
     if(speechSynthesis.addEventListener) speechSynthesis.addEventListener("voiceschanged", pickVoice);
   }
   function speak(text){
-    if(!speakOn || !("speechSynthesis" in window)) return;
+    if(!speakOn) return;
+    if(text === GREETING_TEXT){
+      stopSpeaking();
+      var ga = new Audio(GREETING_AUDIO_URL);
+      activeAudio = ga;
+      ga.onended = function(){ if(activeAudio === ga) activeAudio = null; };
+      ga.onerror = function(){ if(activeAudio === ga) activeAudio = null; };
+      var gp = ga.play();
+      if(gp && gp.catch) gp.catch(function(){});
+      return;
+    }
+    if(!("speechSynthesis" in window)) return;
     try{
       stopSpeaking();
       var u = new SpeechSynthesisUtterance(text);
@@ -599,13 +613,28 @@ var DAVE_CHAT_CONFIG = {
     activeListenBtn = null;
   }
   function stopSpeaking(){
+    if(activeAudio){ try{ activeAudio.pause(); }catch(e){} activeAudio = null; }
     if("speechSynthesis" in window){ try{ speechSynthesis.cancel(); }catch(e){} }
     resetListenBtn();
   }
   function speakReply(text, btn){
-    if(!("speechSynthesis" in window)) return;
     if(activeListenBtn === btn){ stopSpeaking(); return; }
     stopSpeaking();
+    if(text === GREETING_TEXT){
+      activeListenBtn = btn;
+      btn.textContent = "\u23F9 Stop";
+      btn.style.background = "#f3d9a4";
+      btn.setAttribute("aria-pressed", "true");
+      var a = new Audio(GREETING_AUDIO_URL);
+      activeAudio = a;
+      var doneA = function(){ if(activeAudio === a) activeAudio = null; if(activeListenBtn === btn) resetListenBtn(); };
+      a.onended = doneA;
+      a.onerror = doneA;
+      var pr = a.play();
+      if(pr && pr.catch) pr.catch(doneA);
+      return;
+    }
+    if(!("speechSynthesis" in window)) return;
     try{
       var u = new SpeechSynthesisUtterance(text);
       var v = pickVoice();
