@@ -339,17 +339,7 @@ document.getElementById('talk-form').addEventListener('submit', function(e){
   }).catch(function(){ location.href = mailto; });
 });
 </script>
-<!-- ============================================================
-     WEBSITE DAVE — PHASE 0 CONFIG (inert — no live wire yet)
-     The chat above is built dark per SPEC section 4.1: input
-     disabled, no endpoint, no simulated replies, nothing stored.
-     PHASE 1 WIRE POINT: set DAVE_CHAT_CONFIG.API_URL to the
-     Cloudflare Worker endpoint (SPEC 1.1, route A), set PHASE
-     to 1, and enable the input. That flip is the only page
-     change going live requires.
-     GUARDRAILS BELOW ARE FROZEN (SPEC 5.1) — Phase 1 enforces
-     them at the Worker. Do not retune them at wiring time.
-     ============================================================ -->
+<!-- Website Dave chat — Phase 0 (dark). The config below is inert until the live wire lands. -->
 <script>
 var DAVE_CHAT_CONFIG = {
   PHASE: 0,
