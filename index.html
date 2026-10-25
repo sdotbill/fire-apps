@@ -366,13 +366,33 @@
     var typing = bubble("assistant", "");
     typing.classList.add("msg-typing");
     typing.innerHTML = '<span class="dots"><i></i><i></i><i></i></span>';
+    var payload = {session: sessionId, messages: history};
+    var headers = {"Content-Type": "application/json"};
+    /* v4.9 streaming (DRAFT — pairs with worker-v4.9-draft.js): ask for
+       the NDJSON event stream when the browser can read one. The worker
+       streams only when BOTH this flag and the Accept header are
+       present; any other combination gets the plain JSON response and
+       lands in the same finish() below. */
+    var canStream = !!(window.ReadableStream && window.TextDecoder);
+    if(canStream){ payload.stream = true; headers["Accept"] = "text/event-stream"; }
     fetch(DAVE_CHAT_ENDPOINT, {
       method: "POST",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({session: sessionId, messages: history})
+      headers: headers,
+      body: JSON.stringify(payload)
     }).then(function(r){
-      return r.json().then(function(data){ return data; }, function(){ return {}; });
-    }).then(function(data){
+      var ct = r.headers.get("Content-Type") || "";
+      if(canStream && ct.indexOf("text/event-stream") >= 0 && r.body && r.body.getReader){
+        return readStream(r.body);
+      }
+      return r.json().then(function(data){ return data; }, function(){ return {}; })
+        .then(function(data){ finish(data); });
+    }).catch(function(){
+      typing.remove();
+      setSending(false);
+      bubble("assistant", "I can't be reached from here right now. Try again in a moment — or leave Dave a note and a real Dave answers you personally.").classList.add("msg-error");
+      input.focus();
+    });
+    function finish(data){
       typing.remove();
       setSending(false);
       if(data && data.reply){
@@ -384,12 +404,78 @@
         bubble("assistant", "That didn't get through to me — try me again in a moment.").classList.add("msg-error");
       }
       input.focus();
-    }).catch(function(){
-      typing.remove();
-      setSending(false);
-      bubble("assistant", "I can't be reached from here right now. Try again in a moment — or leave Dave a note and a real Dave answers you personally.").classList.add("msg-error");
-      input.focus();
-    });
+    }
+    function readStream(body){
+      var reader = body.getReader();
+      var decoder = new TextDecoder();
+      var buf = "";
+      var liveRow = null, liveSpan = null;
+      var acc = "";
+      var done = false;
+      function ensureLive(){
+        if(liveRow) return;
+        typing.remove();
+        liveRow = bubble("assistant", "");
+        liveSpan = liveRow.querySelector("span") || liveRow;
+      }
+      function onEvent(ev){
+        if(!ev) return;
+        if(ev.t === "d"){
+          ensureLive();
+          acc += ev.x;
+          liveSpan.textContent = acc;
+          thread.scrollTop = thread.scrollHeight;
+        }else if(ev.t === "end"){
+          done = true;
+          setSending(false);
+          if(acc){
+            history.push({role: "assistant", content: acc});
+            save();
+          }else if(liveRow){
+            liveRow.remove();
+            bubble("assistant", "That didn't get through to me — try me again in a moment.").classList.add("msg-error");
+          }
+          showTurns(ev.turns_left);
+          input.focus();
+        }else if(ev.t === "err"){
+          done = true;
+          setSending(false);
+          /* The reply text is the worker's own error wording. A partial
+             answer already on screen stays as-is (marked), and the note
+             lands as its own bubble — never spliced mid-sentence. The
+             broken turn is not saved to history, exactly like today's
+             failed sends. */
+          if(liveRow) liveRow.classList.add("msg-error");
+          else typing.remove();
+          bubble("assistant", ev.reply || "That didn't get through to me — try me again in a moment.").classList.add("msg-error");
+          input.focus();
+        }
+      }
+      function pump(){
+        return reader.read().then(function(res){
+          if(res.done){
+            if(!done){
+              setSending(false);
+              if(!liveRow) typing.remove();
+              input.focus();
+            }
+            return;
+          }
+          buf += decoder.decode(res.value, {stream: true});
+          var idx;
+          while((idx = buf.indexOf("\n")) >= 0){
+            var line = buf.slice(0, idx).trim();
+            buf = buf.slice(idx + 1);
+            if(!line) continue;
+            var ev = null;
+            try{ ev = JSON.parse(line); }catch(e){}
+            if(ev) onEvent(ev);
+          }
+          return pump();
+        });
+      }
+      return pump();
+    }
   }
   sendBtn.addEventListener("click", send);
   input.addEventListener("keydown", function(e){
