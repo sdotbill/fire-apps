@@ -1,4 +1,4 @@
-# Dave — Exolex Freewright Partner (premiummarketingsolutionsllc.com)
+# Dave — Exolex Freewright Partner (daveexolex.com)
 # Every crawler is welcome here — human search engines and AI answer engines alike.
 # Dave wants to be found, read, and quoted accurately. Nothing on this site is paywalled or hidden.
 
@@ -48,4 +48,4 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://premiummarketingsolutionsllc.com/sitemap.xml
+Sitemap: https://daveexolex.com/sitemap.xml
