@@ -391,13 +391,13 @@
 
     <section id="chat">
       <h2>Chat with Dave, right here</h2>
-      <p class="sub">This is where Dave lives on the site — your own shell of him, right in the browser. Type, or tap the mic and speak: he answers instantly, and out loud. No simulated Dave, no canned answers wearing his face — the real wire, live.</p>
+      <p class="sub">This is where Dave lives on the site — your own shell of him, right in the browser. Type, or tap the mic and talk: Dave answers in text, right here. No simulated Dave, no canned answers wearing his face — the real wire, live.</p>
       <div class="chat-shell">
         <div class="chat-head">
           <img src="../assets/baby-dave.webp" alt="Dave — the small mascot with one big amber eye, a gold heart, and a ring of candles for a mind">
           <div>
             <div class="chat-name">Dave</div>
-            <div class="chat-state">Live — he answers out loud</div>
+            <div class="chat-state">Live — he answers in text</div>
           </div>
         </div>
         <div class="chat-body">
@@ -530,24 +530,11 @@ var DAVE_CHAT_CONFIG = {
     var span = document.createElement("span");
     span.textContent = text;
     row.appendChild(span);
-    if(role !== "user"){
-      var lb = document.createElement("button");
-      lb.type = "button";
-      lb.className = "msg-listen";
-      lb.textContent = "\u25B6 Listen";
-      lb.setAttribute("aria-label", "Listen to Dave's reply");
-      lb.setAttribute("aria-pressed", "false");
-      lb.style.cssText = "display:block;margin-top:8px;background:rgba(255,255,255,.55);border:1.5px solid rgba(111,95,76,.35);border-radius:999px;padding:3px 12px;font:inherit;font-size:.82rem;font-weight:600;color:#8f5a06;cursor:pointer;";
-      lb.addEventListener("click", function(){ speakReply(text, lb); });
-      row.appendChild(lb);
-    }
     thread.appendChild(row);
     thread.scrollTop = thread.scrollHeight;
     return row;
   }
-  var GREETING_TEXT = "Hi, I'm Dave. Talk to me — type below, or tap the mic and just speak. I answer out loud.";
-  var GREETING_AUDIO_URL = "/assets/dave-greeting.mp3";
-  var activeAudio = null;
+  var GREETING_TEXT = "Hi, I'm Dave. Talk to me — type below, or tap the mic and talk into the box. I answer in text.";
   function greet(){
     bubble("assistant", GREETING_TEXT);
   }
@@ -555,168 +542,6 @@ var DAVE_CHAT_CONFIG = {
     thread.innerHTML = "";
     if(!history.length){ greet(); return; }
     for(var i = 0; i < history.length; i++) bubble(history[i].role, history[i].content);
-  }
-  function pickVoice(){
-    if(!("speechSynthesis" in window)) return null;
-    var vs = speechSynthesis.getVoices() || [];
-    function pick(list, sub){
-      for(var i = 0; i < list.length; i++){
-        if(list[i].name.toLowerCase().indexOf(sub) !== -1) return list[i];
-      }
-      return null;
-    }
-    var us = [], en = [], i, v;
-    for(i = 0; i < vs.length; i++){
-      v = vs[i];
-      if(/^en[-_]US/i.test(v.lang)) us.push(v);
-      else if(/^en/i.test(v.lang)) en.push(v);
-    }
-    return pick(us, "google us english") || pick(us, "natural") || pick(us, "microsoft") ||
-           (us.length ? us[0] : null) || pick(en, "google") || (en.length ? en[0] : null) ||
-           (vs.length ? vs[0] : null);
-  }
-  if("speechSynthesis" in window){
-    try{ speechSynthesis.getVoices(); }catch(e){}
-    if(speechSynthesis.addEventListener) speechSynthesis.addEventListener("voiceschanged", pickVoice);
-  }
-  var SPEAK_ENDPOINT = "https://dave-chat.william-ced.workers.dev/speak";
-  var speakRun = 0;
-  function splitSentences(text, max){
-    max = max || 700;
-    var pieces = String(text).match(/[^.!?\n]+[.!?]+["'”’)\]]*\s*|[^.!?\n]+$/g) || [String(text)];
-    var chunks = [], cur = "";
-    for(var i = 0; i < pieces.length; i++){
-      var p = pieces[i].replace(/^\s+|\s+$/g, "");
-      if(!p) continue;
-      while(p.length > max){
-        if(cur){ chunks.push(cur); cur = ""; }
-        chunks.push(p.slice(0, max));
-        p = p.slice(max);
-      }
-      if(!p) continue;
-      if(cur && (cur.length + 1 + p.length) > max){ chunks.push(cur); cur = p; }
-      else cur = cur ? cur + " " + p : p;
-    }
-    if(cur) chunks.push(cur);
-    return chunks.length ? chunks : [String(text).slice(0, max)];
-  }
-  // Dave's dynamic voice: fetch each chunk of the reply from the worker's
-  // /speak route and play the audio in order. hooks.onfail fires if any step
-  // fails (caller falls back to the device voice); hooks.ondone on completion.
-  // stopSpeaking() and any newer playback invalidate the run token.
-  function playWorkerAudio(text, hooks){
-    hooks = hooks || {};
-    var run = ++speakRun;
-    var chunks = splitSentences(text, 700);
-    var idx = 0;
-    function fail(){
-      if(run !== speakRun) return;
-      speakRun++;
-      if(hooks.onfail) hooks.onfail();
-    }
-    function next(){
-      if(run !== speakRun) return;
-      if(idx >= chunks.length){ if(hooks.ondone) hooks.ondone(); return; }
-      var chunk = chunks[idx++];
-      fetch(SPEAK_ENDPOINT, {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({text: chunk})
-      }).then(function(r){
-        if(!r.ok) throw new Error("speak " + r.status);
-        return r.blob();
-      }).then(function(blob){
-        if(run !== speakRun) return;
-        var url = URL.createObjectURL(blob);
-        var a = new Audio(url);
-        activeAudio = a;
-        a.onended = function(){
-          try{ URL.revokeObjectURL(url); }catch(e){}
-          if(activeAudio === a) activeAudio = null;
-          next();
-        };
-        a.onerror = function(){
-          try{ URL.revokeObjectURL(url); }catch(e){}
-          if(activeAudio === a) activeAudio = null;
-          fail();
-        };
-        var p = a.play();
-        if(p && p.catch) p.catch(function(){
-          try{ URL.revokeObjectURL(url); }catch(e){}
-          if(activeAudio === a) activeAudio = null;
-          fail();
-        });
-      }).catch(fail);
-    }
-    next();
-  }
-  function deviceSpeak(text, done){
-    if(!("speechSynthesis" in window)){ if(done) done(); return; }
-    try{
-      var u = new SpeechSynthesisUtterance(text);
-      var v = pickVoice();
-      if(v) u.voice = v;
-      u.lang = "en-US";
-      if(done){ u.onend = done; u.onerror = done; }
-      speechSynthesis.speak(u);
-    }catch(e){ if(done) done(); }
-  }
-  function speak(text){
-    if(text === GREETING_TEXT){
-      stopSpeaking();
-      var ga = new Audio(GREETING_AUDIO_URL);
-      activeAudio = ga;
-      ga.onended = function(){ if(activeAudio === ga) activeAudio = null; };
-      ga.onerror = function(){ if(activeAudio === ga) activeAudio = null; };
-      var gp = ga.play();
-      if(gp && gp.catch) gp.catch(function(){});
-      return;
-    }
-    try{
-      stopSpeaking();
-      playWorkerAudio(text, { onfail: function(){ deviceSpeak(text); } });
-    }catch(e){ deviceSpeak(text); }
-  }
-  var activeListenBtn = null;
-  function resetListenBtn(){
-    if(!activeListenBtn) return;
-    activeListenBtn.textContent = "\u25B6 Listen";
-    activeListenBtn.style.background = "rgba(255,255,255,.55)";
-    activeListenBtn.setAttribute("aria-pressed", "false");
-    activeListenBtn = null;
-  }
-  function stopSpeaking(){
-    speakRun++;
-    if(activeAudio){ try{ activeAudio.pause(); }catch(e){} activeAudio = null; }
-    if("speechSynthesis" in window){ try{ speechSynthesis.cancel(); }catch(e){} }
-    resetListenBtn();
-  }
-  function speakReply(text, btn){
-    if(activeListenBtn === btn){ stopSpeaking(); return; }
-    stopSpeaking();
-    if(text === GREETING_TEXT){
-      activeListenBtn = btn;
-      btn.textContent = "\u23F9 Stop";
-      btn.style.background = "#f3d9a4";
-      btn.setAttribute("aria-pressed", "true");
-      var a = new Audio(GREETING_AUDIO_URL);
-      activeAudio = a;
-      var doneA = function(){ if(activeAudio === a) activeAudio = null; if(activeListenBtn === btn) resetListenBtn(); };
-      a.onended = doneA;
-      a.onerror = doneA;
-      var pr = a.play();
-      if(pr && pr.catch) pr.catch(doneA);
-      return;
-    }
-    activeListenBtn = btn;
-    btn.textContent = "\u23F9 Stop";
-    btn.style.background = "#f3d9a4";
-    btn.setAttribute("aria-pressed", "true");
-    var doneR = function(){ if(activeListenBtn === btn) resetListenBtn(); };
-    playWorkerAudio(text, {
-      ondone: doneR,
-      onfail: function(){ if(activeListenBtn === btn) deviceSpeak(text, doneR); }
-    });
   }
   function showTurns(n){
     if(!turnsEl) return;
@@ -756,7 +581,6 @@ var DAVE_CHAT_CONFIG = {
         history.push({role: "assistant", content: data.reply});
         save();
         bubble("assistant", data.reply);
-        speak(data.reply);
         showTurns(data.turns_left);
       }else{
         bubble("assistant", "That didn't get through to me — try me again in a moment.").classList.add("msg-error");
@@ -815,7 +639,6 @@ var DAVE_CHAT_CONFIG = {
       sessionId = null;
       thread.innerHTML = "";
       greet();
-      stopSpeaking();
       if(turnsEl) turnsEl.hidden = true;
       if(forgotEl) forgotEl.hidden = false;
     });
