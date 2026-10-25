@@ -573,6 +573,7 @@ var DAVE_CHAT_CONFIG = {
       var url = URL.createObjectURL(blob);
       var a = new Audio(url);
       speakAudio = a;
+      a.playbackRate = 1.12;
       a.onended = function(){ try{ URL.revokeObjectURL(url); }catch(e){} if(speakAudio === a) speakStop(); };
       a.onerror = function(){ if(speakAudio === a) speakStop(); };
       var p = a.play();
