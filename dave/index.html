@@ -410,7 +410,6 @@
           <button class="btn btn-primary" id="chat-send" type="button">Send</button>
         </div>
         <div class="chat-tools">
-          <button class="chat-tool" id="chat-speak-toggle" type="button" aria-pressed="true">🔊 Dave's voice: on</button>
           <button class="chat-forget" id="chat-forget" type="button">Forget me</button>
         </div>
         <p class="chat-note" id="chat-forgot" hidden>Forgotten. Nothing left this browser anyway — that's the seal.</p>
@@ -500,13 +499,11 @@ var DAVE_CHAT_CONFIG = {
   var input = document.getElementById("chat-input");
   var sendBtn = document.getElementById("chat-send");
   var micBtn = document.getElementById("chat-mic");
-  var speakBtn = document.getElementById("chat-speak-toggle");
   var forgetBtn = document.getElementById("chat-forget");
   var turnsEl = document.getElementById("chat-turns");
   var forgotEl = document.getElementById("chat-forgot");
   if(!thread || !input || !sendBtn) return;
 
-  var speakOn = false;
   var sending = false;
   var sessionId = null;
   var history = [];
@@ -665,7 +662,6 @@ var DAVE_CHAT_CONFIG = {
     }catch(e){ if(done) done(); }
   }
   function speak(text){
-    if(!speakOn) return;
     if(text === GREETING_TEXT){
       stopSpeaking();
       var ga = new Audio(GREETING_AUDIO_URL);
@@ -809,16 +805,6 @@ var DAVE_CHAT_CONFIG = {
     });
   }
 
-  if(speakBtn){
-    speakBtn.setAttribute("aria-pressed", "false");
-    speakBtn.textContent = "\uD83D\uDD07 Dave's voice: off";
-    speakBtn.addEventListener("click", function(){
-      speakOn = !speakOn;
-      speakBtn.setAttribute("aria-pressed", speakOn ? "true" : "false");
-      speakBtn.textContent = speakOn ? "🔊 Dave's voice: on" : "🔇 Dave's voice: off";
-      if(!speakOn) stopSpeaking();
-    });
-  }
   if(forgetBtn){
     forgetBtn.addEventListener("click", function(){
       try{
