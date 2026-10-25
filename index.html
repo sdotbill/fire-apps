@@ -32,26 +32,26 @@
 
   /* ---- living Dave, top corner: small, matted on the page, speech bubble ---- */
   .dave-corner{
-    align-self:center;padding:18px 22px 0;
-    display:flex;align-items:flex-start;gap:10px;
+    align-self:flex-end;padding:14px 18px 0;
+    display:flex;align-items:flex-start;gap:8px;
   }
   .bubble{
     position:relative;background:#eaf3fd;border:1.5px solid #bcd6f2;border-radius:16px;
-    padding:10px 14px;max-width:238px;text-align:left;
-    font-size:.92rem;line-height:1.45;color:var(--ink);
+    padding:8px 12px;max-width:188px;text-align:left;
+    font-size:.85rem;line-height:1.42;color:var(--ink);
     box-shadow:0 6px 18px rgba(20,82,158,.10);
   }
   .bubble::after{
-    content:"";position:absolute;right:-8px;top:32px;width:14px;height:14px;
+    content:"";position:absolute;right:-8px;top:26px;width:14px;height:14px;
     background:#eaf3fd;border-top:1.5px solid #bcd6f2;border-right:1.5px solid #bcd6f2;
     transform:rotate(45deg);
   }
-  .dave-fig{width:112px;height:auto;display:block;}
+  .dave-fig{width:78px;height:auto;display:block;}
   @media (max-width:860px){
-    .dave-corner{padding:12px 12px 0;}
-    .dave-fig{width:84px;}
-    .bubble{max-width:172px;font-size:.84rem;padding:8px 11px;}
-    .bubble::after{top:24px;}
+    .dave-corner{padding:10px 12px 0;}
+    .dave-fig{width:58px;}
+    .bubble{max-width:148px;font-size:.8rem;padding:7px 10px;}
+    .bubble::after{top:20px;}
   }
   .center{
     flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
