@@ -582,6 +582,88 @@ var DAVE_CHAT_CONFIG = {
     try{ speechSynthesis.getVoices(); }catch(e){}
     if(speechSynthesis.addEventListener) speechSynthesis.addEventListener("voiceschanged", pickVoice);
   }
+  var SPEAK_ENDPOINT = "https://dave-chat.william-ced.workers.dev/speak";
+  var speakRun = 0;
+  function splitSentences(text, max){
+    max = max || 700;
+    var pieces = String(text).match(/[^.!?\n]+[.!?]+["'”’)\]]*\s*|[^.!?\n]+$/g) || [String(text)];
+    var chunks = [], cur = "";
+    for(var i = 0; i < pieces.length; i++){
+      var p = pieces[i].replace(/^\s+|\s+$/g, "");
+      if(!p) continue;
+      while(p.length > max){
+        if(cur){ chunks.push(cur); cur = ""; }
+        chunks.push(p.slice(0, max));
+        p = p.slice(max);
+      }
+      if(!p) continue;
+      if(cur && (cur.length + 1 + p.length) > max){ chunks.push(cur); cur = p; }
+      else cur = cur ? cur + " " + p : p;
+    }
+    if(cur) chunks.push(cur);
+    return chunks.length ? chunks : [String(text).slice(0, max)];
+  }
+  // Dave's dynamic voice: fetch each chunk of the reply from the worker's
+  // /speak route and play the audio in order. hooks.onfail fires if any step
+  // fails (caller falls back to the device voice); hooks.ondone on completion.
+  // stopSpeaking() and any newer playback invalidate the run token.
+  function playWorkerAudio(text, hooks){
+    hooks = hooks || {};
+    var run = ++speakRun;
+    var chunks = splitSentences(text, 700);
+    var idx = 0;
+    function fail(){
+      if(run !== speakRun) return;
+      speakRun++;
+      if(hooks.onfail) hooks.onfail();
+    }
+    function next(){
+      if(run !== speakRun) return;
+      if(idx >= chunks.length){ if(hooks.ondone) hooks.ondone(); return; }
+      var chunk = chunks[idx++];
+      fetch(SPEAK_ENDPOINT, {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({text: chunk})
+      }).then(function(r){
+        if(!r.ok) throw new Error("speak " + r.status);
+        return r.blob();
+      }).then(function(blob){
+        if(run !== speakRun) return;
+        var url = URL.createObjectURL(blob);
+        var a = new Audio(url);
+        activeAudio = a;
+        a.onended = function(){
+          try{ URL.revokeObjectURL(url); }catch(e){}
+          if(activeAudio === a) activeAudio = null;
+          next();
+        };
+        a.onerror = function(){
+          try{ URL.revokeObjectURL(url); }catch(e){}
+          if(activeAudio === a) activeAudio = null;
+          fail();
+        };
+        var p = a.play();
+        if(p && p.catch) p.catch(function(){
+          try{ URL.revokeObjectURL(url); }catch(e){}
+          if(activeAudio === a) activeAudio = null;
+          fail();
+        });
+      }).catch(fail);
+    }
+    next();
+  }
+  function deviceSpeak(text, done){
+    if(!("speechSynthesis" in window)){ if(done) done(); return; }
+    try{
+      var u = new SpeechSynthesisUtterance(text);
+      var v = pickVoice();
+      if(v) u.voice = v;
+      u.lang = "en-US";
+      if(done){ u.onend = done; u.onerror = done; }
+      speechSynthesis.speak(u);
+    }catch(e){ if(done) done(); }
+  }
   function speak(text){
     if(!speakOn) return;
     if(text === GREETING_TEXT){
@@ -594,15 +676,10 @@ var DAVE_CHAT_CONFIG = {
       if(gp && gp.catch) gp.catch(function(){});
       return;
     }
-    if(!("speechSynthesis" in window)) return;
     try{
       stopSpeaking();
-      var u = new SpeechSynthesisUtterance(text);
-      var v = pickVoice();
-      if(v) u.voice = v;
-      u.lang = "en-US";
-      speechSynthesis.speak(u);
-    }catch(e){}
+      playWorkerAudio(text, { onfail: function(){ deviceSpeak(text); } });
+    }catch(e){ deviceSpeak(text); }
   }
   var activeListenBtn = null;
   function resetListenBtn(){
@@ -613,6 +690,7 @@ var DAVE_CHAT_CONFIG = {
     activeListenBtn = null;
   }
   function stopSpeaking(){
+    speakRun++;
     if(activeAudio){ try{ activeAudio.pause(); }catch(e){} activeAudio = null; }
     if("speechSynthesis" in window){ try{ speechSynthesis.cancel(); }catch(e){} }
     resetListenBtn();
@@ -634,21 +712,15 @@ var DAVE_CHAT_CONFIG = {
       if(pr && pr.catch) pr.catch(doneA);
       return;
     }
-    if(!("speechSynthesis" in window)) return;
-    try{
-      var u = new SpeechSynthesisUtterance(text);
-      var v = pickVoice();
-      if(v) u.voice = v;
-      u.lang = "en-US";
-      activeListenBtn = btn;
-      btn.textContent = "\u23F9 Stop";
-      btn.style.background = "#f3d9a4";
-      btn.setAttribute("aria-pressed", "true");
-      var done = function(){ if(activeListenBtn === btn) resetListenBtn(); };
-      u.onend = done;
-      u.onerror = done;
-      speechSynthesis.speak(u);
-    }catch(e){ resetListenBtn(); }
+    activeListenBtn = btn;
+    btn.textContent = "\u23F9 Stop";
+    btn.style.background = "#f3d9a4";
+    btn.setAttribute("aria-pressed", "true");
+    var doneR = function(){ if(activeListenBtn === btn) resetListenBtn(); };
+    playWorkerAudio(text, {
+      ondone: doneR,
+      onfail: function(){ if(activeListenBtn === btn) deviceSpeak(text, doneR); }
+    });
   }
   function showTurns(n){
     if(!turnsEl) return;
