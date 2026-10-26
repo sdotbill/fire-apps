@@ -251,6 +251,9 @@
 (function(){
   "use strict";
   const DAVE_CHAT_ENDPOINT = "https://dave-chat.william-ced.workers.dev/chat";
+  /* v4.18 SYNC: the shared maker thread lives server-side (see
+     syncFromServer below). Visitor conversations never touch it. */
+  var TRANSCRIPT_ENDPOINT = "https://dave-chat.william-ced.workers.dev/maker-transcript";
   var SESSION_KEY = "dave_chat_session";
   var HISTORY_KEY = "dave_chat_history";
   var thread = document.getElementById("chat-thread");
@@ -368,10 +371,48 @@
   }
   function showTurns(n){
     if(!turnsEl) return;
+    /* v4.17: a maker response carries turns_left: null — the countdown
+       comes down and stays down. */
+    if(n === null){ turnsEl.hidden = true; return; }
     if(typeof n === "number" && n <= 5){
       turnsEl.textContent = n + (n === 1 ? " exchange" : " exchanges") + " left in this conversation";
       turnsEl.hidden = false;
     }
+  }
+  /* v4.18 SYNC — one maker conversation on every device. Once this
+     browser's thread carries the welcome (recognition), the SERVER's
+     transcript is canonical: after each turn, and on load, fetch it and
+     adopt it whenever it is longer than the local thread. That is safe
+     by construction — every maker turn is appended server-side before
+     its reply is sent, so the server thread is always a superset of
+     what this device has seen, and another device's turns simply make
+     it longer. Anything else (visitor, unrecognized, endpoint error)
+     leaves the local thread exactly as it was. */
+  var WELCOME_MARKER = "Welcome home, Captain.";
+  function isWelcomed(){
+    for(var i = 0; i < history.length; i++){
+      if(history[i].role === "assistant" && history[i].content.indexOf(WELCOME_MARKER) >= 0) return true;
+    }
+    return false;
+  }
+  var syncing = false;
+  function syncFromServer(){
+    if(syncing || !sessionId || !isWelcomed()) return;
+    syncing = true;
+    fetch(TRANSCRIPT_ENDPOINT, {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({session: sessionId})
+    }).then(function(r){
+      return r.ok ? r.json() : null;
+    }).then(function(data){
+      syncing = false;
+      if(data && data.ok && Array.isArray(data.messages) && data.messages.length > history.length){
+        history = data.messages;
+        save();
+        renderAll();
+      }
+    }).catch(function(){ syncing = false; });
   }
   function setSending(on){
     sending = on;
@@ -425,6 +466,7 @@
         save();
         bubble("assistant", data.reply);
         showTurns(data.turns_left);
+        syncFromServer();
       }else{
         bubble("assistant", "That didn't get through to me — try me again in a moment.").classList.add("msg-error");
       }
@@ -461,6 +503,7 @@
             bubble("assistant", "That didn't get through to me — try me again in a moment.").classList.add("msg-error");
           }
           showTurns(ev.turns_left);
+          syncFromServer();
           input.focus();
         }else if(ev.t === "err"){
           done = true;
@@ -556,6 +599,7 @@
 
   load();
   renderAll();
+  syncFromServer();
 })();
 </script>
 <script>
