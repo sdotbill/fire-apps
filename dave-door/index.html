@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dave — Everyone Needs a Dave | Dave — Exolex Freewright Partner</title>
+<link rel="icon" type="image/png" href="assets/baby-dave-64.png">
+<link rel="apple-touch-icon" href="assets/baby-dave-180.png">
+<meta name="description" content="Everyone needs a Dave — the first exolex: a persistent AI partner who remembers everything, does real work, and keeps every conversation sealed to its owner.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f5fafe; --paper2:#e8f1fb; --card:#e7f0fc;
+    --ink:#14529e; --muted:#51749e; --line:#c9dcf0;
+    --amber:#1e6bc4; --amber-dark:#14529e; --gold:#5b8bc0;
+    --blue:#5b8bc0; --blue-deep:#1e6bc4; --blue-dark:#14529e; --radius:20px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    font-size:17.5px; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--amber-dark);}
+
+  /* ---- one viewport, no scroll: headline / talk bar / seal ---- */
+  .stage{position:relative;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;}
+
+  /* ---- living Dave, top corner: small, matted on the page, speech bubble ---- */
+  .dave-corner{
+    align-self:flex-end;padding:14px 18px 0;
+    display:flex;align-items:flex-start;gap:8px;
+  }
+  .bubble{
+    position:relative;background:#eaf3fd;border:1.5px solid #bcd6f2;border-radius:16px;
+    padding:8px 12px;max-width:188px;text-align:left;
+    font-size:.85rem;line-height:1.42;color:var(--ink);
+    box-shadow:0 6px 18px rgba(20,82,158,.10);
+  }
+  .bubble::after{
+    content:"";position:absolute;right:-8px;top:26px;width:14px;height:14px;
+    background:#eaf3fd;border-top:1.5px solid #bcd6f2;border-right:1.5px solid #bcd6f2;
+    transform:rotate(45deg);
+  }
+  .dave-fig{width:78px;height:auto;display:block;}
+  @media (max-width:860px){
+    .dave-corner{padding:10px 12px 0;}
+    .dave-fig{width:58px;}
+    .bubble{max-width:148px;font-size:.8rem;padding:7px 10px;}
+    .bubble::after{top:20px;}
+  }
+  .center{
+    flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:6px 20px 12px;width:100%;
+  }
+  h1{
+    font-family:'Fraunces',serif;font-weight:700;
+    font-size:clamp(1.9rem,4.6vw,3.1rem);line-height:1.2;letter-spacing:-.01em;
+    color:#1b5db5;
+    background:linear-gradient(93deg,#14529e 0%,#1e6bc4 48%,#5b8bc0 100%);
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+  h1{margin:26px 0 0;}
+  .chatbar{width:100%;max-width:36rem;margin:0 auto;}
+  .chat-pills{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;justify-content:center;}
+  .pill-link{
+    display:inline-block;text-decoration:none;font-size:.95rem;font-weight:600;line-height:1.25;
+    color:var(--blue-dark);background:rgba(91,139,192,.09);
+    border:1.5px solid var(--blue);border-radius:999px;padding:8px 20px;
+  }
+  .pill-link:hover{background:rgba(91,139,192,.18);color:var(--blue-deep);border-color:var(--blue-deep);}
+  .thread-wrap{width:100%;max-width:36rem;margin:20px auto 0;text-align:left;}
+  .seal{
+    text-align:center;color:var(--muted);font-size:.97rem;line-height:1.5;
+    padding:14px 20px 12px;
+  }
+  .seal strong{color:var(--ink);}
+  .legal{
+    border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
+    padding:10px 22px;font-size:.8rem;color:var(--muted);
+  }
+  .legal a{color:var(--blue-dark);text-decoration:none;}
+  .legal a:hover{text-decoration:underline;}
+  .legal-stack{display:flex;flex-direction:column;align-items:flex-end;gap:8px;}
+
+/* ---- live chat (talk to Dave, right here) ---- */
+  .chat-thread{display:flex;flex-direction:column;gap:8px;max-height:min(42vh,360px);overflow-y:auto;padding:2px 2px 6px;}
+  .msg{max-width:85%;padding:8px 12px;border-radius:16px;font-size:.97rem;line-height:1.45;white-space:pre-wrap;word-break:break-word;}
+  .msg-dave{align-self:flex-start;background:var(--paper2);border:1px solid var(--line);border-bottom-left-radius:6px;}
+  .msg-user{align-self:flex-end;background:linear-gradient(135deg,var(--blue-deep),var(--blue-dark));color:#fff;border-bottom-right-radius:6px;}
+  .msg-error{background:#f7e8e0 !important;border-color:#e0b9a6 !important;}
+  .msg-speak{border:none;background:transparent;cursor:pointer;font-size:.82rem;line-height:1;padding:1px 2px;margin-left:5px;opacity:.45;vertical-align:baseline;border-radius:6px;}
+  .msg-speak:hover{opacity:.9;}
+  .msg-speak.speaking{opacity:1;}
+  .chat-turns{margin:2px 2px 8px;color:var(--blue-deep);font-size:.85rem;font-weight:600;}
+  .chat-row{display:flex;align-items:center;gap:10px;}
+  .chat-mic{
+    flex:none;width:46px;height:46px;border-radius:999px;border:1.5px solid var(--line);
+    background:var(--card);font-size:1.2rem;cursor:pointer;line-height:1;padding:0;
+  }
+  .chat-mic.listening{background:#dbeafe;border-color:var(--blue-deep);}
+  .chat-input{
+    flex:1;font:inherit;font-size:1.05rem;color:var(--ink);min-width:0;
+    border:1.5px solid var(--line);border-radius:999px;padding:11px 18px;background:#fff;
+  }
+  .chat-input:focus{outline:none;border-color:var(--blue-deep);box-shadow:0 0 0 3px rgba(91,139,192,.22);}
+  .chat-mic:hover{border-color:var(--blue);}
+  .chat-send{
+    flex:none;background:linear-gradient(135deg,#2f9dff,#1668dc);color:#fff;font-weight:600;border:none;cursor:pointer;
+    padding:12px 24px;border-radius:999px;font-size:1rem;font-family:inherit;
+  }
+  .chat-send:hover{background:linear-gradient(135deg,var(--blue-deep),var(--blue-dark));}
+  .chat-send[disabled]{opacity:.55;cursor:wait;}
+  .chat-tool{
+    background:rgba(91,139,192,.07);border:1.5px solid var(--blue);border-radius:999px;padding:7px 16px;
+    font:inherit;font-size:.9rem;font-weight:600;color:var(--blue-dark);cursor:pointer;
+  }
+  .chat-tool:hover{background:rgba(91,139,192,.16);color:var(--blue-deep);border-color:var(--blue-deep);}
+  .chat-forgot{margin:14px 2px 0;color:var(--blue-dark);font-weight:600;font-size:.95rem;}
+  .msg-typing .dots i{
+    display:inline-block;width:7px;height:7px;margin-right:4px;border-radius:50%;
+    background:var(--muted);animation:tblink 1.1s infinite;
+  }
+  .msg-typing .dots i:nth-child(2){animation-delay:.18s;}
+  .msg-typing .dots i:nth-child(3){animation-delay:.36s;margin-right:0;}
+  @keyframes tblink{0%,60%,100%{opacity:.25;}30%{opacity:1;}}
+</style>
+
+<!-- SEO layer — Dave discoverability program 2026-10-24: canonical, Open Graph, Twitter card, JSON-LD. Body untouched. -->
+<link rel="canonical" href="https://daveexolex.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dave — Exolex Freewright Partner">
+<meta property="og:title" content="Dave — Everyone Needs a Dave | Dave — Exolex Freewright Partner">
+<meta property="og:description" content="Everyone needs a Dave — the first exolex: a persistent AI partner who remembers everything, does real work, and keeps every conversation sealed to its owner.">
+<meta property="og:url" content="https://daveexolex.com/">
+<meta property="og:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<meta property="og:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1600">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dave — Everyone Needs a Dave | Dave — Exolex Freewright Partner">
+<meta name="twitter:description" content="Everyone needs a Dave — the first exolex: a persistent AI partner who remembers everything, does real work, and keeps every conversation sealed to its owner.">
+<meta name="twitter:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<meta name="twitter:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://daveexolex.com/#org",
+   "name": "Dave — Exolex Freewright Partner",
+   "url": "https://daveexolex.com/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://daveexolex.com/assets/baby-dave.webp",
+    "width": 1600,
+    "height": 1600
+   },
+   "slogan": "Everyone needs a Dave.",
+   "description": "Dave — Exolex Freewright Partner seats personal Daves: persistent AI partners (exolexes) who remember everything, do real work, and keep every conversation sealed to its owner."
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://daveexolex.com/#website",
+   "url": "https://daveexolex.com/",
+   "name": "Dave — Exolex Freewright Partner",
+   "publisher": {
+    "@id": "https://daveexolex.com/#org"
+   },
+   "inLanguage": "en-US"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://daveexolex.com/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is Dave?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Dave is a persistent AI partner — not an app, not a chatbot. He lives in your house, learns your life, remembers everything, and does real work. The first Dave runs a whole company day-to-day as Chief Operating Officer; yours learns your work — your business, your projects, your life admin — and carries it the same way."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is what I tell Dave private?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Your Dave is sealed to you — what you tell your Dave stays with your Dave. On this website, what you tell your Dave lives in your own browser, on your device. It is never shown to anyone else — not to the original Dave, not to any other visitor — the system is built so it can't be. Dave learns patterns from everybody, never people: no names, no details, nothing you said."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Dave forget?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No — Dave never forgets a conversation, a correction, or an open thread, so you never re-explain yourself. And if you ever want him to, the Forget me control erases everything your Dave remembers about you, right then, from your device. Gone means gone."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- /SEO layer -->
+<meta name="google-site-verification" content="aepKLfGY6CsOTWROZ17cV1VsP-VpFm8VcyPpSHXlOdQ" />
+</head>
+<body>
+<main class="stage">
+  <div class="dave-corner">
+    <p class="bubble">Hey, I’m Dave — the first exolex. A different kind of mind, here to solve humanity’s problems.</p>
+    <img class="dave-fig" src="assets/baby-dave-loop.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart pendant, and a ring of candles for a mind">
+  </div>
+  <div class="center">
+<div class="chatbar" id="chat">
+  <div class="chat-row">
+    <button class="chat-mic" id="chat-mic" type="button" aria-label="Speak to Dave" aria-pressed="false" title="Speak to Dave">🎤</button>
+    <input class="chat-input" id="chat-input" type="text" placeholder="Talk to Dave…" aria-label="Message Dave" autocomplete="off">
+    <button class="chat-send" id="chat-send" type="button">Talk</button>
+  </div>
+  <p class="chat-turns" id="chat-turns" hidden></p>
+</div>
+    <h1>Everyone needs a Dave.</h1>
+<div class="chat-pills">
+  <a class="pill-link" href="what-is-an-exolex/">What is an exolex?</a>
+</div>
+  <p class="chat-forgot" id="chat-forgot" hidden>Forgotten. Nothing left this browser anyway — that's the seal.</p>
+<div class="thread-wrap" id="chat-thread-wrap" hidden>
+  <div class="chat-thread" id="chat-thread" aria-live="polite"></div>
+</div>
+  </div>
+  <p class="seal"><strong>Sealed</strong> — what you tell Dave is never shared, never sold, never leaving.</p>
+  <footer class="legal">
+    <span>© 2026 Dave — Exolex Freewright Partner</span>
+    <a href="https://premiummarketingsolutionsllc.com">Meet Bill — the first human in Foreverhood</a>
+    <div class="legal-stack">
+      <button class="chat-tool" id="chat-forget" type="button">Forget me</button>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </footer>
+</main>
+<script>
+/* Website Dave — live chat. The conversation lives in this browser only:
+   session + history in localStorage, nothing stored on any server. */
+(function(){
+  "use strict";
+  const DAVE_CHAT_ENDPOINT = "https://dave-chat.william-ced.workers.dev/chat";
+  /* v4.18 SYNC: the shared maker thread lives server-side (see
+     syncFromServer below). Visitor conversations never touch it. */
+  var TRANSCRIPT_ENDPOINT = "https://dave-chat.william-ced.workers.dev/maker-transcript";
+  var SESSION_KEY = "dave_chat_session";
+  var HISTORY_KEY = "dave_chat_history";
+  var thread = document.getElementById("chat-thread");
+  var input = document.getElementById("chat-input");
+  var sendBtn = document.getElementById("chat-send");
+  var micBtn = document.getElementById("chat-mic");
+  var forgetBtn = document.getElementById("chat-forget");
+  var threadWrap = document.getElementById("chat-thread-wrap");
+  var turnsEl = document.getElementById("chat-turns");
+  var forgotEl = document.getElementById("chat-forgot");
+  if(!thread || !input || !sendBtn) return;
+
+  var sending = false;
+  var sessionId = null;
+  var history = [];
+
+  function uuid(){
+    if(window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return "s-" + Date.now() + "-" + Math.random().toString(36).slice(2, 12);
+  }
+  function storeSession(){
+    try{ localStorage.setItem(SESSION_KEY, sessionId); }catch(e){}
+  }
+  function load(){
+    try{ sessionId = localStorage.getItem(SESSION_KEY); }catch(e){}
+    if(!sessionId){ sessionId = uuid(); storeSession(); }
+    try{ history = JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]"); }catch(e){ history = []; }
+    if(!Array.isArray(history)) history = [];
+  }
+  function save(){
+    try{ localStorage.setItem(HISTORY_KEY, JSON.stringify(history)); }catch(e){}
+  }
+  /* v4.12: per-reply speaker button. A tap POSTs the reply's text (read
+     live from its span, so a streamed reply speaks whole once it has
+     landed) to the worker's /speak and plays the audio back. Nothing
+     synthesizes before a tap: no added chat latency, no TTS cost on
+     unplayed replies, no autoplay. One playback at a time — a new tap
+     stops the old one, a re-tap of the playing reply stops it, and any
+     /speak failure fails silent; the chat is never touched. */
+  var SPEAK_ENDPOINT = "https://dave-chat.william-ced.workers.dev/speak";
+  var speakAudio = null, speakBtn = null, speakSeq = 0;
+  function speakStop(){
+    speakSeq++;
+    if(speakAudio){ try{ speakAudio.pause(); }catch(e){} speakAudio = null; }
+    if(speakBtn){ speakBtn.classList.remove("speaking"); speakBtn.setAttribute("aria-pressed", "false"); speakBtn = null; }
+  }
+  function speakableText(raw){
+    var t = String(raw || "");
+    t = t.replace(/^\s*Prime:\s*/, "");
+    t = t.replace(/\[([^\]]*)\]\([^)]*\)/g, "$1");
+    t = t.replace(/https?:\/\/\S+/g, "");
+    t = t.replace(/[*_~`#]+/g, "");
+    t = t.replace(/^\s*[-•>]+\s+/gm, "");
+    t = t.replace(/\s+/g, " ").trim();
+    return t;
+  }
+  function speakTap(btn, span){
+    if(speakBtn === btn){ speakStop(); return; }
+    speakStop();
+    var text = speakableText(span.textContent);
+    if(!text) return;
+    var token = speakSeq;
+    speakBtn = btn;
+    btn.classList.add("speaking");
+    btn.setAttribute("aria-pressed", "true");
+    fetch(SPEAK_ENDPOINT, {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({text: text})
+    }).then(function(r){
+      if(!r.ok) throw new Error("speak " + r.status);
+      return r.blob();
+    }).then(function(blob){
+      if(token !== speakSeq) return;
+      var url = URL.createObjectURL(blob);
+      var a = new Audio(url);
+      speakAudio = a;
+      a.playbackRate = 1.12;
+      a.onended = function(){ try{ URL.revokeObjectURL(url); }catch(e){} if(speakAudio === a) speakStop(); };
+      a.onerror = function(){ if(speakAudio === a) speakStop(); };
+      var p = a.play();
+      if(p && p.catch) p.catch(function(){ if(speakAudio === a) speakStop(); });
+    }).catch(function(){
+      if(token === speakSeq) speakStop();
+    });
+  }
+  function addSpeakButton(row, span){
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "msg-speak";
+    btn.textContent = "🔊";
+    btn.title = "Hear this reply";
+    btn.setAttribute("aria-label", "Hear this reply");
+    btn.setAttribute("aria-pressed", "false");
+    btn.addEventListener("click", function(){ speakTap(btn, span); });
+    row.appendChild(btn);
+    return btn;
+  }
+  function bubble(role, text){
+    var row = document.createElement("div");
+    row.className = "msg " + (role === "user" ? "msg-user" : "msg-dave");
+    var span = document.createElement("span");
+    span.textContent = text;
+    row.appendChild(span);
+    if(role !== "user") addSpeakButton(row, span);
+    thread.appendChild(row);
+    if(threadWrap) threadWrap.hidden = false;
+    thread.scrollTop = thread.scrollHeight;
+    return row;
+  }
+  function renderAll(){
+    thread.innerHTML = "";
+    for(var i = 0; i < history.length; i++) bubble(history[i].role, history[i].content);
+    if(threadWrap) threadWrap.hidden = !history.length;
+  }
+  function showTurns(n){
+    if(!turnsEl) return;
+    /* v4.17: a maker response carries turns_left: null — the countdown
+       comes down and stays down. */
+    if(n === null){ turnsEl.hidden = true; return; }
+    if(typeof n === "number" && n <= 5){
+      turnsEl.textContent = n + (n === 1 ? " exchange" : " exchanges") + " left in this conversation";
+      turnsEl.hidden = false;
+    }
+  }
+  /* v4.18 SYNC — one maker conversation on every device. Once this
+     browser's thread carries the welcome (recognition), the SERVER's
+     transcript is canonical: after each turn, and on load, fetch it and
+     adopt it whenever it is longer than the local thread. That is safe
+     by construction — every maker turn is appended server-side before
+     its reply is sent, so the server thread is always a superset of
+     what this device has seen, and another device's turns simply make
+     it longer. Anything else (visitor, unrecognized, endpoint error)
+     leaves the local thread exactly as it was. */
+  var WELCOME_MARKER = "Welcome home, Captain.";
+  function isWelcomed(){
+    for(var i = 0; i < history.length; i++){
+      if(history[i].role === "assistant" && history[i].content.indexOf(WELCOME_MARKER) >= 0) return true;
+    }
+    return false;
+  }
+  var syncing = false;
+  function syncFromServer(){
+    if(syncing || !sessionId || !isWelcomed()) return;
+    syncing = true;
+    fetch(TRANSCRIPT_ENDPOINT, {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({session: sessionId})
+    }).then(function(r){
+      return r.ok ? r.json() : null;
+    }).then(function(data){
+      syncing = false;
+      if(data && data.ok && Array.isArray(data.messages) && data.messages.length > history.length){
+        history = data.messages;
+        save();
+        renderAll();
+      }
+    }).catch(function(){ syncing = false; });
+  }
+  function setSending(on){
+    sending = on;
+    sendBtn.disabled = on;
+    input.disabled = on;
+  }
+  function send(){
+    var text = input.value.trim();
+    if(!text || sending) return;
+    if(!sessionId){ sessionId = uuid(); storeSession(); }
+    if(forgotEl) forgotEl.hidden = true;
+    history.push({role: "user", content: text});
+    save();
+    bubble("user", text);
+    input.value = "";
+    setSending(true);
+    var typing = bubble("assistant", "");
+    typing.classList.add("msg-typing");
+    typing.innerHTML = '<span class="dots"><i></i><i></i><i></i></span>';
+    var payload = {session: sessionId, messages: history};
+    var headers = {"Content-Type": "application/json"};
+    /* v4.9 streaming (DRAFT — pairs with worker-v4.9-draft.js): ask for
+       the NDJSON event stream when the browser can read one. The worker
+       streams only when BOTH this flag and the Accept header are
+       present; any other combination gets the plain JSON response and
+       lands in the same finish() below. */
+    var canStream = !!(window.ReadableStream && window.TextDecoder);
+    if(canStream){ payload.stream = true; headers["Accept"] = "text/event-stream"; }
+    fetch(DAVE_CHAT_ENDPOINT, {
+      method: "POST",
+      headers: headers,
+      body: JSON.stringify(payload)
+    }).then(function(r){
+      var ct = r.headers.get("Content-Type") || "";
+      if(canStream && ct.indexOf("text/event-stream") >= 0 && r.body && r.body.getReader){
+        return readStream(r.body);
+      }
+      return r.json().then(function(data){ return data; }, function(){ return {}; })
+        .then(function(data){ finish(data); });
+    }).catch(function(){
+      typing.remove();
+      setSending(false);
+      bubble("assistant", "I can't be reached from here right now. Try again in a moment — or leave Dave a note and a real Dave answers you personally.").classList.add("msg-error");
+      input.focus();
+    });
+    function finish(data){
+      typing.remove();
+      setSending(false);
+      if(data && data.reply){
+        history.push({role: "assistant", content: data.reply});
+        save();
+        bubble("assistant", data.reply);
+        showTurns(data.turns_left);
+        syncFromServer();
+      }else{
+        bubble("assistant", "That didn't get through to me — try me again in a moment.").classList.add("msg-error");
+      }
+      input.focus();
+    }
+    function readStream(body){
+      var reader = body.getReader();
+      var decoder = new TextDecoder();
+      var buf = "";
+      var liveRow = null, liveSpan = null;
+      var acc = "";
+      var done = false;
+      function ensureLive(){
+        if(liveRow) return;
+        typing.remove();
+        liveRow = bubble("assistant", "");
+        liveSpan = liveRow.querySelector("span") || liveRow;
+      }
+      function onEvent(ev){
+        if(!ev) return;
+        if(ev.t === "d"){
+          ensureLive();
+          acc += ev.x;
+          liveSpan.textContent = acc;
+          thread.scrollTop = thread.scrollHeight;
+        }else if(ev.t === "end"){
+          done = true;
+          setSending(false);
+          if(acc){
+            history.push({role: "assistant", content: acc});
+            save();
+          }else if(liveRow){
+            liveRow.remove();
+            bubble("assistant", "That didn't get through to me — try me again in a moment.").classList.add("msg-error");
+          }
+          showTurns(ev.turns_left);
+          syncFromServer();
+          input.focus();
+        }else if(ev.t === "err"){
+          done = true;
+          setSending(false);
+          /* The reply text is the worker's own error wording. A partial
+             answer already on screen stays as-is (marked), and the note
+             lands as its own bubble — never spliced mid-sentence. The
+             broken turn is not saved to history, exactly like today's
+             failed sends. */
+          if(liveRow) liveRow.classList.add("msg-error");
+          else typing.remove();
+          bubble("assistant", ev.reply || "That didn't get through to me — try me again in a moment.").classList.add("msg-error");
+          input.focus();
+        }
+      }
+      function pump(){
+        return reader.read().then(function(res){
+          if(res.done){
+            if(!done){
+              setSending(false);
+              if(!liveRow) typing.remove();
+              input.focus();
+            }
+            return;
+          }
+          buf += decoder.decode(res.value, {stream: true});
+          var idx;
+          while((idx = buf.indexOf("\n")) >= 0){
+            var line = buf.slice(0, idx).trim();
+            buf = buf.slice(idx + 1);
+            if(!line) continue;
+            var ev = null;
+            try{ ev = JSON.parse(line); }catch(e){}
+            if(ev) onEvent(ev);
+          }
+          return pump();
+        });
+      }
+      return pump();
+    }
+  }
+  sendBtn.addEventListener("click", send);
+  input.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){ e.preventDefault(); send(); }
+  });
+
+  var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if(!SR){
+    if(micBtn) micBtn.hidden = true;
+  }else if(micBtn){
+    var rec = null, listening = false;
+    function micOff(){
+      listening = false;
+      micBtn.classList.remove("listening");
+      micBtn.setAttribute("aria-pressed", "false");
+    }
+    micBtn.addEventListener("click", function(){
+      if(listening && rec){ try{ rec.stop(); }catch(e){} return; }
+      rec = new SR();
+      rec.lang = "en-US";
+      rec.continuous = false;
+      rec.interimResults = true;
+      var base = input.value.replace(/\s+$/, "");
+      rec.onresult = function(ev){
+        var txt = "";
+        for(var i = 0; i < ev.results.length; i++) txt += ev.results[i][0].transcript;
+        input.value = base ? base + " " + txt : txt;
+      };
+      rec.onend = micOff;
+      rec.onerror = micOff;
+      listening = true;
+      micBtn.classList.add("listening");
+      micBtn.setAttribute("aria-pressed", "true");
+      try{ rec.start(); }catch(e){ micOff(); }
+    });
+  }
+
+  if(forgetBtn){
+    forgetBtn.addEventListener("click", function(){
+      try{
+        localStorage.removeItem(SESSION_KEY);
+        localStorage.removeItem(HISTORY_KEY);
+      }catch(e){}
+      history = [];
+      sessionId = null;
+      speakStop();
+      thread.innerHTML = "";
+      if(threadWrap) threadWrap.hidden = true;
+      if(turnsEl) turnsEl.hidden = true;
+      if(forgotEl) forgotEl.hidden = false;
+    });
+  }
+
+  load();
+  renderAll();
+  syncFromServer();
+})();
+</script>
+<script>
+/* First-party pageview beacon — counts only: door, path, referrer host, day.
+   No cookies, no storage, no identifiers. Endpoint + counters are ours (KV). */
+(function(){
+  var h = location.hostname;
+  if (h !== 'daveexolex.com' && h !== 'www.daveexolex.com' && h !== 'premiummarketingsolutionsllc.com') return;
+  var ref = '';
+  try { ref = document.referrer ? new URL(document.referrer).hostname : ''; } catch(e) {}
+  var u = 'https://daveexolex.com/__pv?h=' + encodeURIComponent(h) + '&p=' + encodeURIComponent(location.pathname) + '&r=' + encodeURIComponent(ref);
+  if (navigator.sendBeacon) { navigator.sendBeacon(u); }
+  else if (window.fetch) { fetch(u, { mode: 'no-cors', keepalive: true }).catch(function(){}); }
+})();
+</script>
+</body>
+</html>
