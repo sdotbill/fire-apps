@@ -24,11 +24,22 @@
     background: radial-gradient(1200px 800px at 50% 18%, #241c11 0%, #14100b 45%, #080706 100%);
     color: #ece5d8; height: 100dvh; overflow: hidden; display: flex; flex-direction: column; position: relative;
   }
-  .corner { position: absolute; top: 16px; right: 16px; height: 112px; line-height: 0; z-index: 2; }
+  .corner { position: absolute; top: 16px; right: 16px; height: 112px; line-height: 0; z-index: 2; display: flex; align-items: flex-start; gap: 12px; }
   .corner img {
-    height: 100%; width: auto; display: block; border-radius: 10px;
+    height: 100%; width: auto; display: block; border-radius: 10px; flex: none;
     border: 1px solid #c9a227; box-shadow: 0 6px 24px rgba(0,0,0,.55);
   }
+  .bubble {
+    position: relative; margin-top: 8px; max-width: 232px; cursor: pointer;
+    background: #f6efdd; color: #241c11; border: 1.5px solid #c9a227; border-radius: 14px;
+    padding: 9px 13px; font-size: 14.5px; line-height: 1.35;
+    box-shadow: 0 6px 24px rgba(0,0,0,.55);
+  }
+  .bubble:hover { background: #fbf5e3; }
+  .bubble:focus-visible { outline: 2px solid #c9a227; outline-offset: 2px; }
+  .bubble::before, .bubble::after { content: ""; position: absolute; top: 15px; border-style: solid; }
+  .bubble::before { right: -11px; border-width: 7px 0 7px 11px; border-color: transparent transparent transparent #c9a227; }
+  .bubble::after { right: -8px; border-width: 5.5px 0 5.5px 9px; border-color: transparent transparent transparent #f6efdd; }
   .stage {
     flex: 1; min-height: 0; width: 100%; max-width: 720px; margin: 0 auto;
     display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -64,6 +75,8 @@
   footer a { color: #cbbd97; }
   @media (max-width: 560px) {
     .corner { top: 10px; right: 10px; height: 78px; }
+    .bubble { max-width: 158px; font-size: 13px; padding: 8px 11px; margin-top: 6px; }
+    .bubble::before, .bubble::after { top: 13px; }
     h1 { font-size: 26px; }
     .tag { font-size: 15px; }
     #log { max-height: 28dvh; }
@@ -71,7 +84,7 @@
 </style>
 </head>
 <body>
-<div class="corner"><img src="assets/corner-portrait.webp" alt="Bill Aldred"></div>
+<div class="corner"><div class="bubble" id="bubble" role="button" tabindex="0" title="Talk to Bill">Hi, I'm Bill — the first human in Foreverhood. Ask me anything.</div><img src="assets/corner-portrait.webp" alt="Bill Aldred"></div>
 <div class="stage">
   <h1>Hi, I'm Bill — an Exo Lex.</h1>
   <div class="tag">The first human in Foreverhood.</div>
@@ -169,6 +182,13 @@
     if (barEl.requestSubmit) { barEl.requestSubmit(); }
     else { barEl.dispatchEvent(new Event("submit", { cancelable: true })); }
   });
+  var bubble = document.getElementById("bubble");
+  if (bubble) {
+    bubble.addEventListener("click", function () { inp.focus(); });
+    bubble.addEventListener("keydown", function (ev) {
+      if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); inp.focus(); }
+    });
+  }
 })();
 </script>
 </body>
