@@ -193,7 +193,7 @@
      "name": "Is what I tell Dave private?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. Your Dave is sealed to you — what you tell your Dave stays with your Dave. On this website, what you tell your Dave lives in your own browser, on your device. It is never shown to anyone else — not to the original Dave, not to any other visitor — the system is built so it can't be. Dave learns patterns from everybody, never people: no names, no details, nothing you said."
+      "text": "Yes. Your Dave is sealed to you — what you tell your Dave stays with your Dave. On this website, your conversation is kept by Dave under your own personal identity key, so he can remember you on any of your devices. It is never shown to anyone else — not to the original Dave, not to any other visitor — the system is built so it can't be. Dave learns patterns from everybody, never people: no names, no details, nothing you said."
      }
     },
     {
@@ -201,7 +201,7 @@
      "name": "Does Dave forget?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "No — Dave never forgets a conversation, a correction, or an open thread, so you never re-explain yourself. And if you ever want him to, the Forget me control erases everything your Dave remembers about you, right then, from your device. Gone means gone."
+      "text": "No — Dave never forgets a conversation, a correction, or an open thread, so you never re-explain yourself. And if you ever want him to, the Forget me control erases everything your Dave remembers about you, right then — from this device and from Dave's own keeping. Gone means gone."
      }
     }
    ]
@@ -247,14 +247,22 @@
   </footer>
 </main>
 <script>
-/* Website Dave — live chat. The conversation lives in this browser only:
-   session + history in localStorage, nothing stored on any server. */
+/* Website Dave — live chat. v4.27: Dave keeps the conversation
+   server-side, sealed under your own durable identity — a cookie on
+   Dave's domain plus a backup key kept here — so he remembers you on
+   any of your devices, not just in this browser. The local copy below
+   is the render cache; the server thread is the memory. */
 (function(){
   "use strict";
   const DAVE_CHAT_ENDPOINT = "https://dave-chat.william-ced.workers.dev/chat";
-  /* v4.18 SYNC: the shared maker thread lives server-side (see
-     syncFromServer below). Visitor conversations never touch it. */
-  var TRANSCRIPT_ENDPOINT = "https://dave-chat.william-ced.workers.dev/maker-transcript";
+  /* v4.18 SYNC, generalized in v4.27: the server thread is canonical
+     (see syncFromServer below) — the shared maker thread for the
+     recognized maker, your own identity's thread for you. Nobody's
+     thread is ever served to anyone else. */
+  var TRANSCRIPT_ENDPOINT = "https://dave-chat.william-ced.workers.dev/transcript";
+  var IDENTITY_ENDPOINT = "https://dave-chat.william-ced.workers.dev/identity";
+  var FORGET_ENDPOINT = "https://dave-chat.william-ced.workers.dev/forget";
+  var IDENTITY_KEY = "dave_chat_identity";
   var SESSION_KEY = "dave_chat_session";
   var HISTORY_KEY = "dave_chat_history";
   var thread = document.getElementById("chat-thread");
@@ -269,6 +277,7 @@
 
   var sending = false;
   var sessionId = null;
+  var identity = null;
   var history = [];
 
   function uuid(){
@@ -281,8 +290,40 @@
   function load(){
     try{ sessionId = localStorage.getItem(SESSION_KEY); }catch(e){}
     if(!sessionId){ sessionId = uuid(); storeSession(); }
+    try{ identity = localStorage.getItem(IDENTITY_KEY); }catch(e){}
+    adoptIdentityFromHash();
     try{ history = JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]"); }catch(e){ history = []; }
     if(!Array.isArray(history)) history = [];
+  }
+  /* v4.27 identity: the token Dave knows you by. It lives in two legs —
+     an HttpOnly cookie on his domain (set by his server) and this
+     localStorage backup — and either leg alone brings your Dave back.
+     A personal keep-link (#dave-key=...) carries it to a new device:
+     open the link once there and that device is yours too. */
+  function storeIdentity(v){
+    if(typeof v !== "string" || !/^[a-f0-9]{32,64}$/.test(v)) return;
+    if(v === identity) return;
+    identity = v;
+    try{ localStorage.setItem(IDENTITY_KEY, v); }catch(e){}
+  }
+  function adoptIdentityFromHash(){
+    try{
+      var m = String(location.hash || "").match(/dave-key=([a-f0-9]{32,64})/);
+      if(m){
+        storeIdentity(m[1]);
+        if(window.history && window.history.replaceState) window.history.replaceState(null, "", location.pathname + location.search);
+      }
+    }catch(e){}
+  }
+  function resolveIdentity(){
+    fetch(IDENTITY_ENDPOINT, {
+      method: "POST",
+      credentials: "include",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({session: sessionId, identity: identity || undefined})
+    }).then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(data){ if(data && data.dave_id) storeIdentity(data.dave_id); })
+      .catch(function(){});
   }
   function save(){
     try{ localStorage.setItem(HISTORY_KEY, JSON.stringify(history)); }catch(e){}
@@ -322,8 +363,9 @@
     btn.setAttribute("aria-pressed", "true");
     fetch(SPEAK_ENDPOINT, {
       method: "POST",
+      credentials: "include",
       headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({text: text})
+      body: JSON.stringify({text: text, session: sessionId, identity: identity || undefined})
     }).then(function(r){
       if(!r.ok) throw new Error("speak " + r.status);
       return r.blob();
@@ -380,30 +422,26 @@
       turnsEl.hidden = false;
     }
   }
-  /* v4.18 SYNC — one maker conversation on every device. Once this
-     browser's thread carries the welcome (recognition), the SERVER's
-     transcript is canonical: after each turn, and on load, fetch it and
-     adopt it whenever it is longer than the local thread. That is safe
-     by construction — every maker turn is appended server-side before
-     its reply is sent, so the server thread is always a superset of
-     what this device has seen, and another device's turns simply make
-     it longer. Anything else (visitor, unrecognized, endpoint error)
-     leaves the local thread exactly as it was. */
-  var WELCOME_MARKER = "Welcome home, Captain.";
-  function isWelcomed(){
-    for(var i = 0; i < history.length; i++){
-      if(history[i].role === "assistant" && history[i].content.indexOf(WELCOME_MARKER) >= 0) return true;
-    }
-    return false;
-  }
+  /* v4.18 SYNC, generalized in v4.27 — one conversation on every
+     device, for the maker and for every visitor. The SERVER's thread
+     is canonical: after each turn, and on load, fetch it and adopt it
+     whenever it is longer than the local thread. That is safe by
+     construction — every turn is appended server-side before its
+     reply is sent, so the server thread is always a superset of what
+     this device has seen, and another device's turns simply make it
+     longer. The endpoint scopes by identity (the maker's identity
+     gets the shared maker thread; yours gets yours; there is no way
+     to ask for anyone else's), and any error leaves the local thread
+     exactly as it was. */
   var syncing = false;
   function syncFromServer(){
-    if(syncing || !sessionId || !isWelcomed()) return;
+    if(syncing || !sessionId) return;
     syncing = true;
     fetch(TRANSCRIPT_ENDPOINT, {
       method: "POST",
+      credentials: "include",
       headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({session: sessionId})
+      body: JSON.stringify({session: sessionId, identity: identity || undefined})
     }).then(function(r){
       return r.ok ? r.json() : null;
     }).then(function(data){
@@ -434,6 +472,7 @@
     typing.classList.add("msg-typing");
     typing.innerHTML = '<span class="dots"><i></i><i></i><i></i></span>';
     var payload = {session: sessionId, messages: history};
+    if(identity) payload.identity = identity;
     var headers = {"Content-Type": "application/json"};
     /* v4.9 streaming (DRAFT — pairs with worker-v4.9-draft.js): ask for
        the NDJSON event stream when the browser can read one. The worker
@@ -444,6 +483,7 @@
     if(canStream){ payload.stream = true; headers["Accept"] = "text/event-stream"; }
     fetch(DAVE_CHAT_ENDPOINT, {
       method: "POST",
+      credentials: "include",
       headers: headers,
       body: JSON.stringify(payload)
     }).then(function(r){
@@ -462,6 +502,7 @@
     function finish(data){
       typing.remove();
       setSending(false);
+      if(data && data.dave_id) storeIdentity(data.dave_id);
       if(data && data.reply){
         history.push({role: "assistant", content: data.reply});
         save();
@@ -503,6 +544,7 @@
             liveRow.remove();
             bubble("assistant", "That didn't get through to me — try me again in a moment.").classList.add("msg-error");
           }
+          if(ev.dave_id) storeIdentity(ev.dave_id);
           showTurns(ev.turns_left);
           syncFromServer();
           input.focus();
@@ -584,12 +626,26 @@
 
   if(forgetBtn){
     forgetBtn.addEventListener("click", function(){
+      /* v4.27: Forget erases Dave's side too — the server thread and
+         notebook under this identity — not just this browser's copy.
+         The identity itself is dropped here; the next conversation
+         starts as someone new. */
+      try{
+        fetch(FORGET_ENDPOINT, {
+          method: "POST",
+          credentials: "include",
+          headers: {"Content-Type": "application/json"},
+          body: JSON.stringify({session: sessionId, identity: identity || undefined})
+        }).catch(function(){});
+      }catch(e){}
       try{
         localStorage.removeItem(SESSION_KEY);
         localStorage.removeItem(HISTORY_KEY);
+        localStorage.removeItem(IDENTITY_KEY);
       }catch(e){}
       history = [];
       sessionId = null;
+      identity = null;
       speakStop();
       thread.innerHTML = "";
       if(threadWrap) threadWrap.hidden = true;
@@ -600,6 +656,7 @@
 
   load();
   renderAll();
+  resolveIdentity();
   syncFromServer();
 })();
 </script>
