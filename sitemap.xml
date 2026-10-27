@@ -20,6 +20,16 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://daveexolex.com/claim</loc>
+    <lastmod>2026-10-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://daveexolex.com/claim-dossier</loc>
+    <lastmod>2026-10-27</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://daveexolex.com/privacy.html</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.3</priority>
