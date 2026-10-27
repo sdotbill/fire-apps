@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Bounds and an Integration Constant — William Alexander Aldred</title>
+<meta name="description" content="The ultraviolet bound and the de Sitter floor placed in one framework, with the cosmological constant demoted to an integration constant — and a plain statement of what it does not solve. By William Alexander Aldred. DOI: 10.5281/zenodo.23485358.">
+<link rel="canonical" href="https://daveexolex.com/papers/two-bounds-and-an-integration-constant/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Dave — Exolex Freewright Partner">
+<meta property="og:title" content="Two Bounds and an Integration Constant — William Alexander Aldred">
+<meta property="og:description" content="The ultraviolet bound and the de Sitter floor placed in one framework, with the cosmological constant demoted to an integration constant — and a plain statement of what it does not solve. By William Alexander Aldred. DOI: 10.5281/zenodo.23485358.">
+<meta property="og:url" content="https://daveexolex.com/papers/two-bounds-and-an-integration-constant/">
+<meta property="og:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<meta property="og:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Two Bounds and an Integration Constant — William Alexander Aldred">
+<meta name="twitter:description" content="The ultraviolet bound and the de Sitter floor placed in one framework, with the cosmological constant demoted to an integration constant — and a plain statement of what it does not solve. By William Alexander Aldred. DOI: 10.5281/zenodo.23485358.">
+<meta name="twitter:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<link rel="icon" type="image/png" href="../../assets/baby-dave-64.png">
+<link rel="apple-touch-icon" href="../../assets/baby-dave-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5fafe;--ink:#14529e;--muted:#51749e;--line:#c9dcf0;--blue:#5b8bc0;--blue-deep:#1e6bc4;--blue-dark:#14529e;--btn1:#2f9dff;--btn2:#1668dc;--radius:20px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,-apple-system,sans-serif;font-size:17.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--blue-deep)} a:hover{color:var(--blue-dark)}
+.wrap{max-width:680px;margin:0 auto;padding:0 20px}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem}
+.brand img{width:34px;height:34px;border-radius:8px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:13px 24px;border-radius:999px;font-size:1rem;line-height:1.25}
+.btn-primary{background:linear-gradient(135deg,var(--btn1),var(--btn2));color:#fff;box-shadow:0 4px 14px rgba(30,107,196,.30)}
+.btn-ghost{border:1.5px solid var(--blue);color:var(--blue-dark);background:rgba(91,139,192,.07)}
+h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.7rem,5.6vw,2.4rem);line-height:1.22;margin:14px 0 10px}
+h2{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.35rem,4.6vw,1.7rem);line-height:1.25;margin:34px 0 10px}
+p{margin-bottom:14px}
+.byline{color:var(--muted);font-size:1.02rem}
+.meta{color:var(--muted);font-size:.98rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin:18px 0 22px}
+.crumbs{font-size:.95rem;color:var(--muted);margin-top:10px}
+.card{border:1.5px solid var(--line);border-radius:var(--radius);padding:22px;margin:18px 0;background:#eef5fd}
+.card h3{font-family:'Fraunces',serif;font-size:1.25rem;line-height:1.3;margin-bottom:6px}
+.card h3 a{text-decoration:none}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
+footer{margin-top:56px;border-top:1px solid var(--line);padding:34px 0 44px;text-align:center;color:var(--muted);font-size:.98rem}
+footer .fname{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:var(--ink)}
+footer a{color:var(--muted)} footer a:hover{color:var(--blue-deep)}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://daveexolex.com/papers/two-bounds-and-an-integration-constant/#article",
+   "url": "https://daveexolex.com/papers/two-bounds-and-an-integration-constant/",
+   "headline": "Two Bounds and an Integration Constant: The Kopczyński–Trautman pin, the de Sitter floor, and the open value problem",
+   "name": "Two Bounds and an Integration Constant: The Kopczyński–Trautman pin, the de Sitter floor, and the open value problem",
+   "author": {
+    "@id": "https://daveexolex.com/#william-alexander-aldred"
+   },
+   "datePublished": "2026-10-20",
+   "inLanguage": "en-US",
+   "abstract": "Einstein–Cartan (EC) gravity contains a spin-sourced correction to the effective energy density that can halt collapse at a finite density, and a positive cosmological constant imposes a late-time floor on the expansion. This note places those two bounds in a single framework alongside a Henneaux–Teitelboim unimodular sector transplanted into EC, in which the cosmological constant is demoted to an integration constant and, at the classical level, constant vacuum shifts decouple from the traceless field equations. This note does not solve the cosmological constant problem. For the radiative-instability tier it claims only that decoupling, within this framework and at that level; it organizes the value tier into a three-link chain in which one link is a known result inside a labeled model, one is an identification by construction, and one is open with no calculation yet in existence; and it makes no claim on the coincidence tier. The ultraviolet bound discussed here is the Kopczyński–Trautman bound of 1972–73, not a new result; its sub-Planckian pin is a property of the dust spin-fluid reading used in that literature, and under the self-consistent relativistic ε(n) evaluation the balance retreats to ∼the Planck density. The infrared floor is standard de Sitter asymptotics. No derivation of the floor's value from the bounce state currently exists, and this note makes no empirical prediction distinct from ΛCDM plus the cited EC literature. A numerical near-equality sometimes presented as a two-clock coincidence is shown to be bookkeeping — the same combination of constants up to an exact factor of 8π/3. What remains is a research program with stated kill conditions, not a result.",
+   "sameAs": "https://doi.org/10.5281/zenodo.23485358",
+   "publisher": {
+    "@type": "Organization",
+    "name": "Zenodo",
+    "url": "https://zenodo.org/"
+   },
+   "isPartOf": {
+    "@type": "CollectionPage",
+    "url": "https://daveexolex.com/papers/",
+    "name": "The Papers — William Alexander Aldred"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://daveexolex.com/#william-alexander-aldred",
+   "name": "William Alexander Aldred",
+   "jobTitle": "Founder, Premium Marketing Solutions",
+   "description": "William Alexander Aldred is the founder of Premium Marketing Solutions of Flint, Michigan, the author of the Codex books and of five published physics papers on the vacuum-energy problem, and the creator of Dave, the first exolex.",
+   "worksFor": {
+    "@type": "Organization",
+    "name": "Premium Marketing Solutions",
+    "url": "https://premiummarketingsolutionsllc.com/"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Flint",
+    "addressRegion": "MI",
+    "addressCountry": "US"
+   },
+   "sameAs": [
+    "https://independent.academia.edu/AldredBill",
+    "https://premiummarketingsolutionsllc.com/"
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+<div class="topbar"><a class="brand" href="../../"><img src="../../assets/baby-dave-64.png" alt="Dave">Dave</a><a class="btn btn-ghost" href="../../dave/" style="padding:9px 18px;font-size:.95rem;">Meet Dave</a></div>
+<main>
+<p class="crumbs"><a href="../">Papers</a> · William Alexander Aldred</p>
+<h1>Two Bounds and an Integration Constant: The Kopczyński–Trautman pin, the de Sitter floor, and the open value problem</h1>
+<p class="byline">by <strong>William Alexander Aldred</strong> — Independent Researcher</p>
+<div class="meta">Published October 20, 2026 · Zenodo · 15 pp · DOI: <a href="https://doi.org/10.5281/zenodo.23485358">10.5281/zenodo.23485358</a></div>
+<h2>Abstract</h2>
+<p>Einstein–Cartan (EC) gravity contains a spin-sourced correction to the effective energy density that can halt collapse at a finite density, and a positive cosmological constant imposes a late-time floor on the expansion. This note places those two bounds in a single framework alongside a Henneaux–Teitelboim unimodular sector transplanted into EC, in which the cosmological constant is demoted to an integration constant and, at the classical level, constant vacuum shifts decouple from the traceless field equations. This note does not solve the cosmological constant problem.</p>
+<p>For the radiative-instability tier it claims only that decoupling, within this framework and at that level; it organizes the value tier into a three-link chain in which one link is a known result inside a labeled model, one is an identification by construction, and one is open with no calculation yet in existence; and it makes no claim on the coincidence tier. The ultraviolet bound discussed here is the Kopczyński–Trautman bound of 1972–73, not a new result; its sub-Planckian pin is a property of the dust spin-fluid reading used in that literature, and under the self-consistent relativistic ε(n) evaluation the balance retreats to ∼the Planck density. The infrared floor is standard de Sitter asymptotics. No derivation of the floor's value from the bounce state currently exists, and this note makes no empirical prediction distinct from ΛCDM plus the cited EC literature. A numerical near-equality sometimes presented as a two-clock coincidence is shown to be bookkeeping — the same combination of constants up to an exact factor of 8π/3. What remains is a research program with stated kill conditions, not a result.</p>
+<h2>Program note</h2>
+<p>This note is the second paper in a three-paper program on the vacuum-energy problem. Its ceiling is the Kopczyński–Trautman pin of “The Aldred Limit” (DOI 10.5281/zenodo.23485325); its supplementary memos (pin calibration, Route E design, two-clock stress test) are deposited at DOI 10.5281/zenodo.23485410; the program's third paper is “The Constant Changes Address” (DOI 10.5281/zenodo.23610897). This note does not solve the cosmological constant problem.</p>
+<div class="cta-row"><a class="btn btn-primary" href="https://doi.org/10.5281/zenodo.23485358">Read the paper on Zenodo</a><a class="btn btn-ghost" href="../">All papers</a></div>
+<h2>The program</h2>
+<ul>
+<li><a href="../the-aldred-limit/">The Aldred Limit</a></li>
+<li><strong>Two Bounds and an Integration Constant</strong> (this page)</li>
+<li><a href="../supplementary-memos-for-two-bounds/">Supplementary Memos for “Two Bounds and an Integration Constant”</a></li>
+<li><a href="../the-constant-changes-address/">The Constant Changes Address</a></li>
+<li><a href="../the-crossing-charges-nothing/">The Crossing Charges Nothing</a></li>
+</ul>
+</main>
+<footer>
+<p class="fname">Dave</p>
+<p>Everyone needs a Dave.</p>
+<p>&copy; 2026 Dave — Exolex Freewright Partner · <a href="../../">Home</a> · <a href="../../dave/">Meet Dave</a> · <a href="../../what-is-an-exolex/">What is an exolex?</a> · <a href="../../papers/">Papers</a> · <a href="../../privacy.html">Privacy Policy</a></p>
+</footer>
+</div>
+</body>
+</html>
