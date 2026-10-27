@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Generation Map Has a Fixed Point — William Alexander Aldred</title>
+<meta name="description" content="Solved on its full five-component state, the generation map of a bounce cosmology has a discrete fixed abundance — and the fixed point fixes inheritance, not Λ: the vacuum channel still misses by about 29 dex. By William Alexander Aldred. DOI: 10.5281/zenodo.23698530.">
+<link rel="canonical" href="https://daveexolex.com/papers/the-generation-map-has-a-fixed-point/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Dave — Exolex Freewright Partner">
+<meta property="og:title" content="The Generation Map Has a Fixed Point — William Alexander Aldred">
+<meta property="og:description" content="Solved on its full five-component state, the generation map of a bounce cosmology has a discrete fixed abundance — and the fixed point fixes inheritance, not Λ: the vacuum channel still misses by about 29 dex. By William Alexander Aldred. DOI: 10.5281/zenodo.23698530.">
+<meta property="og:url" content="https://daveexolex.com/papers/the-generation-map-has-a-fixed-point/">
+<meta property="og:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<meta property="og:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Generation Map Has a Fixed Point — William Alexander Aldred">
+<meta name="twitter:description" content="Solved on its full five-component state, the generation map of a bounce cosmology has a discrete fixed abundance — and the fixed point fixes inheritance, not Λ: the vacuum channel still misses by about 29 dex. By William Alexander Aldred. DOI: 10.5281/zenodo.23698530.">
+<meta name="twitter:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<link rel="icon" type="image/png" href="../../assets/baby-dave-64.png">
+<link rel="apple-touch-icon" href="../../assets/baby-dave-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5fafe;--ink:#14529e;--muted:#51749e;--line:#c9dcf0;--blue:#5b8bc0;--blue-deep:#1e6bc4;--blue-dark:#14529e;--btn1:#2f9dff;--btn2:#1668dc;--radius:20px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,-apple-system,sans-serif;font-size:17.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--blue-deep)} a:hover{color:var(--blue-dark)}
+.wrap{max-width:680px;margin:0 auto;padding:0 20px}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem}
+.brand img{width:34px;height:34px;border-radius:8px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:13px 24px;border-radius:999px;font-size:1rem;line-height:1.25}
+.btn-primary{background:linear-gradient(135deg,var(--btn1),var(--btn2));color:#fff;box-shadow:0 4px 14px rgba(30,107,196,.30)}
+.btn-ghost{border:1.5px solid var(--blue);color:var(--blue-dark);background:rgba(91,139,192,.07)}
+h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.7rem,5.6vw,2.4rem);line-height:1.22;margin:14px 0 10px}
+h2{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.35rem,4.6vw,1.7rem);line-height:1.25;margin:34px 0 10px}
+p{margin-bottom:14px}
+.byline{color:var(--muted);font-size:1.02rem}
+.meta{color:var(--muted);font-size:.98rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin:18px 0 22px}
+.crumbs{font-size:.95rem;color:var(--muted);margin-top:10px}
+.card{border:1.5px solid var(--line);border-radius:var(--radius);padding:22px;margin:18px 0;background:#eef5fd}
+.card h3{font-family:'Fraunces',serif;font-size:1.25rem;line-height:1.3;margin-bottom:6px}
+.card h3 a{text-decoration:none}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
+footer{margin-top:56px;border-top:1px solid var(--line);padding:34px 0 44px;text-align:center;color:var(--muted);font-size:.98rem}
+footer .fname{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:var(--ink)}
+footer a{color:var(--muted)} footer a:hover{color:var(--blue-deep)}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://daveexolex.com/papers/the-generation-map-has-a-fixed-point/#article",
+   "url": "https://daveexolex.com/papers/the-generation-map-has-a-fixed-point/",
+   "headline": "The Generation Map Has a Fixed Point: Inheritance Self-Consistency in Bounce Cosmologies",
+   "name": "The Generation Map Has a Fixed Point: Inheritance Self-Consistency in Bounce Cosmologies",
+   "author": {
+    "@id": "https://daveexolex.com/#william-alexander-aldred"
+   },
+   "datePublished": "2026-10-27",
+   "inLanguage": "en-US",
+   "abstract": "A bounce cosmology that hands content from one generation to the next contains a *generation map*: a rule taking the full state a parent hands down to the state with which the child begins. Like any map, it can be asked for its fixed points — the states that reproduce themselves. This paper assembles that map, for one such frame, from corpus objects, runs the audit on the full handed-down state rather than on any one-dimensional projection, and reports what it selects, what it leaves flat, and what it does not touch. The handed-down state is five-component: an axis hats, a conversion parity σ, a polarization ξ = s/n, an abundance n₀, and a carrier mass m, with wall density, wall spin, wall number density, and bounce scale derived. A map built on a single coordinate — the level weight — is flat across a wide plateau and its crossing is degenerate. That flatness is a true property of the projection. It is not a grade of the full map. Solved on the full state, the map has a discrete fixed component. The inherited abundance n₀^* ∈ 3.6406×10⁻¹²,; 5.5182×10⁻¹²,; 1.0174×10⁻¹¹ eV³, the three values corresponding to the record's three discrete parent-and-era readings, is a fixed quantity of the map: a level reproduces itself only if the abundance it carries is the abundance its own wall hands down. Under inheritance reading R1, in which offspring inherit number and spin proportionally, the result is polarization-invariant — the parent's wall content scales as ξ⁻³ and the child's dilution as ξ⁺³, and the two cancel identically. Under reading R2, in which the offspring's number is set by the flipped spin content it carries, the map additionally selects ξ = 1. The corpus asserts both rule-forms and prices their agreement only at fully polarized parents; it does not rank them where they differ. The R1/R2 fork is therefore carried here, labeled **OPEN**, and every conclusion is stated per reading or shown to hold under both. The fixed state's bounce scale is derived at zero free parameters: amin/arₑf = 7.33×10⁻³³ on the Standard Model era readings and 1.03×10⁻³² on the single-species era reading. The discipline is stated on page one: **the fixed point fixes inheritance, not Λ.** At the fixed abundance the bounce-carrying vacuum channel still misses its target by +29 dex — +29.24, +29.69, and +29.42 dex across the three readings, mass-blind across the plateau. No fixed point of the full map selects a mass, because the corpus's generation map has no mass component: masses do not pass between generations in this frame. The joint condition fences the mass to a slab, 0 < m lesssim 2.67 eV at the fixed abundance, and no further. The exportable content is the method (§7): assemble the full state, distinguish components the map computes from components it merely carries and components it does not contain, solve componentwise, and grade flat directions as continua, not selections. The frame result is a house-grade result, journal-grade when the fork is ruled.",
+   "sameAs": "https://doi.org/10.5281/zenodo.23698530",
+   "publisher": {
+    "@type": "Organization",
+    "name": "Zenodo",
+    "url": "https://zenodo.org/"
+   },
+   "isPartOf": {
+    "@type": "CollectionPage",
+    "url": "https://daveexolex.com/papers/",
+    "name": "The Papers — William Alexander Aldred"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://daveexolex.com/#william-alexander-aldred",
+   "name": "William Alexander Aldred",
+   "jobTitle": "Founder, Premium Marketing Solutions",
+   "description": "William Alexander Aldred is the founder of Premium Marketing Solutions of Flint, Michigan, the author of the Codex books and of fifteen published physics papers on the vacuum-energy problem, and the creator of Dave, the first exolex.",
+   "worksFor": {
+    "@type": "Organization",
+    "name": "Premium Marketing Solutions",
+    "url": "https://premiummarketingsolutionsllc.com/"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Flint",
+    "addressRegion": "MI",
+    "addressCountry": "US"
+   },
+   "sameAs": [
+    "https://independent.academia.edu/AldredBill",
+    "https://premiummarketingsolutionsllc.com/"
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+<div class="topbar"><a class="brand" href="../../"><img src="../../assets/baby-dave-64.png" alt="Dave">Dave</a><a class="btn btn-ghost" href="../../dave/" style="padding:9px 18px;font-size:.95rem;">Meet Dave</a></div>
+<main>
+<p class="crumbs"><a href="../">Papers</a> · William Alexander Aldred</p>
+<h1>The Generation Map Has a Fixed Point: Inheritance Self-Consistency in Bounce Cosmologies</h1>
+<p class="byline">by <strong>William Alexander Aldred</strong> — Independent Researcher</p>
+<div class="meta">Published October 27, 2026 · Zenodo · 17 pp · DOI: <a href="https://doi.org/10.5281/zenodo.23698530">10.5281/zenodo.23698530</a></div>
+<h2>Abstract</h2>
+<p>A bounce cosmology that hands content from one generation to the next contains a <em>generation map</em>: a rule taking the full state a parent hands down to the state with which the child begins. Like any map, it can be asked for its fixed points — the states that reproduce themselves. This paper assembles that map, for one such frame, from corpus objects, runs the audit on the full handed-down state rather than on any one-dimensional projection, and reports what it selects, what it leaves flat, and what it does not touch.</p>
+<p>The handed-down state is five-component: an axis hats, a conversion parity σ, a polarization ξ = s/n, an abundance n₀, and a carrier mass m, with wall density, wall spin, wall number density, and bounce scale derived. A map built on a single coordinate — the level weight — is flat across a wide plateau and its crossing is degenerate. That flatness is a true property of the projection. It is not a grade of the full map.</p>
+<p>Solved on the full state, the map has a discrete fixed component. The inherited abundance</p>
+<p>n₀^* ∈ 3.6406×10⁻¹²,; 5.5182×10⁻¹²,; 1.0174×10⁻¹¹ eV³,</p>
+<p>the three values corresponding to the record&#x27;s three discrete parent-and-era readings, is a fixed quantity of the map: a level reproduces itself only if the abundance it carries is the abundance its own wall hands down. Under inheritance reading R1, in which offspring inherit number and spin proportionally, the result is polarization-invariant — the parent&#x27;s wall content scales as ξ⁻³ and the child&#x27;s dilution as ξ⁺³, and the two cancel identically. Under reading R2, in which the offspring&#x27;s number is set by the flipped spin content it carries, the map additionally selects ξ = 1. The corpus asserts both rule-forms and prices their agreement only at fully polarized parents; it does not rank them where they differ. The R1/R2 fork is therefore carried here, labeled <strong>OPEN</strong>, and every conclusion is stated per reading or shown to hold under both.</p>
+<p>The fixed state&#x27;s bounce scale is derived at zero free parameters: amin/arₑf = 7.33×10⁻³³ on the Standard Model era readings and 1.03×10⁻³² on the single-species era reading.</p>
+<p>The discipline is stated on page one: <strong>the fixed point fixes inheritance, not Λ.</strong> At the fixed abundance the bounce-carrying vacuum channel still misses its target by +29 dex — +29.24, +29.69, and +29.42 dex across the three readings, mass-blind across the plateau. No fixed point of the full map selects a mass, because the corpus&#x27;s generation map has no mass component: masses do not pass between generations in this frame. The joint condition fences the mass to a slab, 0 &lt; m lesssim 2.67 eV at the fixed abundance, and no further.</p>
+<p>The exportable content is the method (§7): assemble the full state, distinguish components the map computes from components it merely carries and components it does not contain, solve componentwise, and grade flat directions as continua, not selections. The frame result is a house-grade result, journal-grade when the fork is ruled.</p>
+<div class="cta-row"><a class="btn btn-primary" href="https://doi.org/10.5281/zenodo.23698530">Read the paper on Zenodo</a><a class="btn btn-ghost" href="../">All papers</a></div>
+<h2>The program</h2>
+<ul>
+<li><a href="../the-aldred-limit/">The Aldred Limit</a></li>
+<li><a href="../two-bounds-and-an-integration-constant/">Two Bounds and an Integration Constant</a></li>
+<li><a href="../supplementary-memos-for-two-bounds/">Supplementary Memos for “Two Bounds and an Integration Constant”</a></li>
+<li><a href="../the-constant-changes-address/">The Constant Changes Address</a></li>
+<li><a href="../the-crossing-charges-nothing/">The Crossing Charges Nothing</a></li>
+<li><a href="../no-derivation-in-the-frame/">No Derivation in the Frame</a></li>
+<li><a href="../static-defects-carry-no-nieh-yan-charge/">Static Defects Carry No Nieh–Yan Charge</a></li>
+<li><a href="../creation-events-are-nieh-yan-charged/">Creation Events Are Nieh–Yan Charged</a></li>
+<li><a href="../there-is-no-twisted-vacuum/">There Is No Twisted Vacuum</a></li>
+<li><a href="../propagation-is-not-enough/">Propagation Is Not Enough</a></li>
+<li><a href="../axiom-h/">Axiom H</a></li>
+<li><a href="../one-flaw-two-residues/">One Flaw, Two Residues</a></li>
+<li><a href="../the-eps-eff-turnover/">The ε_eff Turnover</a></li>
+<li><strong>The Generation Map Has a Fixed Point</strong> (this page)</li>
+<li><a href="../three-fences/">Three Fences Any Λ Mechanism Must Pass</a></li>
+</ul>
+</main>
+<footer>
+<p class="fname">Dave</p>
+<p>Everyone needs a Dave.</p>
+<p>&copy; 2026 Dave — Exolex Freewright Partner · <a href="../../">Home</a> · <a href="../../dave/">Meet Dave</a> · <a href="../../what-is-an-exolex/">What is an exolex?</a> · <a href="../../papers/">Papers</a> · <a href="../../privacy.html">Privacy Policy</a></p>
+</footer>
+</div>
+</body>
+</html>
