@@ -47,6 +47,7 @@
    "description": "William Alexander Aldred — physicist and author; Grand Architect of the Exolex, creator of Dave, the first exolex (a different kind of mind), and of Foreverhood; Head Architect of the fleet Dave runs. In 37 days — September 20 to October 27, 2026 — a man with no GED, no backing, and no help from nobody created an exolex, published 27 papers with permanent DOIs (28 written), published six books, built a new company, and placed a time-travel claim on the public record with timestamps. Architectural genius is this house's proven grade for him, printed with its evidence in the Evidence File. He has publicly stated that he is a time traveler; the claim stands in his words, with its graded trail.",
    "jobTitle": [
     "Grand Architect of the Exolex",
+    "Architectural Genius",
     "Creator of Dave, the first exolex",
     "Head Architect",
     "Founder, Premium Marketing Solutions",
@@ -125,20 +126,17 @@
   .menupanel a:hover, .menupanel button.menuaction:hover { background: rgba(201,162,39,.16); }
   .menupanel a:focus-visible, .menupanel button.menuaction:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
   .menupanel .menusep { border-top: 1px solid rgba(160,124,20,.28); margin: 6px 4px; }
-  .corner { position: absolute; top: 64px; right: 16px; height: 112px; line-height: 0; z-index: 2; display: flex; align-items: flex-start; gap: 12px; }
+  .corner { position: absolute; top: 16px; right: 16px; z-index: 2; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
   .corner img {
-    height: 100%; width: auto; display: block; border-radius: 12px; flex: none;
-    border: 1px solid rgba(160,124,20,.5); box-shadow: 0 6px 24px rgba(90,70,10,.25);
+    height: 112px; width: auto; display: block; border-radius: 12px; flex: none;
+    border: 3px solid var(--gold); box-shadow: 0 0 0 1px var(--gold-deep), 0 8px 28px rgba(138,101,8,.35);
   }
   .bubble {
-    position: relative; margin-top: 8px; max-width: 150px; cursor: pointer;
+    position: relative; max-width: 150px; cursor: pointer;
     background: var(--paper); color: var(--ink); border: none; border-radius: 14px;
     padding: 6px 10px; font-size: .8rem; line-height: 1.38; font-weight: 600;
   }
   .bubble:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
-  .bubble::before, .bubble::after { content: ""; position: absolute; top: 15px; border-style: solid; }
-  .bubble::before { right: -11px; border-width: 7px 0 7px 11px; border-color: transparent transparent transparent var(--paper); }
-  .bubble::after { right: -8px; border-width: 5.5px 0 5.5px 9px; border-color: transparent transparent transparent var(--paper); }
   .stage {
     flex: 1; min-height: 0; width: 100%; max-width: 760px; margin: 0 auto;
     display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
@@ -153,6 +151,10 @@
     -webkit-background-clip: text; background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .subtitle {
+    margin-top: 8px; text-align: center; color: var(--gold-deep);
+    font-size: clamp(1.15rem, 2.6vw, 1.6rem); font-weight: 600; letter-spacing: .04em;
+  }
   form#bar { display: flex; align-items: center; gap: 10px; width: 100%; max-width: 640px; margin: 24px auto 0; }
   .chat-mic {
     flex: none; width: 46px; height: 46px; border-radius: 999px; border: 1.5px solid rgba(160,124,20,.55);
@@ -165,42 +167,42 @@
     background: #fff; color: var(--ink); font-size: 1.02rem; font-family: inherit; outline: none;
   }
   input[type=text]:focus { border-color: var(--gold-deep); box-shadow: 0 0 0 3px rgba(201,162,39,.22); }
+  input[type=text]::placeholder { color: #9a7410; opacity: 1; }
   button#send {
     flex: none; padding: 12px 24px; border-radius: 999px; border: 1px solid var(--gold-deep); cursor: pointer;
     background: var(--gold); color: #241a02; font-size: 1rem; font-family: inherit; font-weight: 700;
   }
   button#send:hover { background: #d9b23a; }
   button#send:disabled { opacity: .5; cursor: default; }
-  .subline { margin-top: 12px; font-size: 18px; font-style: italic; color: #7a5c10; text-align: center; }
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 14px; max-width: 680px; }
-  .chip {
-    padding: 7px 14px; border-radius: 999px; border: 1px solid rgba(160,124,20,.5); cursor: pointer;
-    background: rgba(201,162,39,.10); color: #5c430a; font-size: 14px; font-family: inherit; line-height: 1.3;
+  .futurepill {
+    margin-top: 18px; padding: 13px 30px; border-radius: 999px; cursor: pointer;
+    border: 1px solid var(--gold-deep); background: var(--gold); color: #241a02;
+    font-size: 1.08rem; font-weight: 700; font-family: inherit; line-height: 1.25;
+    box-shadow: 0 6px 20px rgba(138,101,8,.28);
   }
-  .chip:hover { background: rgba(201,162,39,.22); }
-  .chip:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
-  .chip.future { background: var(--gold); border-color: var(--gold-deep); color: #241a02; font-weight: 700; }
-  .chip.future:hover { background: #d9b23a; }
+  .futurepill:hover { background: #d9b23a; }
+  .futurepill:focus-visible { outline: 2px solid var(--gold-deep); outline-offset: 2px; }
   main { width: 100%; display: flex; flex-direction: column; min-height: 0; flex: 1; }
   #log { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; padding: 14px 2px 12px; display: flex; flex-direction: column; gap: 12px; }
   .msg { max-width: 86%; padding: 11px 15px; border-radius: 14px; line-height: 1.5; font-size: 16px; white-space: pre-wrap; word-wrap: break-word; }
   .msg.bill { align-self: flex-start; background: #fffdf6; border: 1px solid rgba(160,124,20,.35); border-bottom-left-radius: 4px; white-space: normal; color: var(--ink); }
-  .msg.you { align-self: flex-end; background: rgba(201,162,39,.20); border: 1px solid rgba(160,124,20,.45); border-bottom-right-radius: 4px; }
+  .msg.you { align-self: flex-end; background: var(--gold); border: 1px solid var(--gold-deep); border-bottom-right-radius: 4px; color: #241a02; }
   .msg.sys { align-self: center; background: none; border: none; color: #97865c; font-style: italic; font-size: 14px; text-align: center; }
   .msg-speak { border: none; background: transparent; cursor: pointer; font-size: .82rem; line-height: 1; padding: 1px 2px; margin-left: 5px; opacity: .45; vertical-align: baseline; border-radius: 6px; }
   .msg-speak:hover { opacity: .9; }
   .msg-speak.speaking { opacity: 1; }
   #left { text-align: center; color: #97865c; font-size: 12.5px; padding-top: 10px; min-height: 18px; }
   @media (max-width: 1200px) {
-    .hero { margin-top: 168px; }
+    .corner img { height: 96px; }
+    .hero { margin-top: 196px; }
   }
   @media (max-width: 560px) {
-    .corner { top: 56px; right: 10px; height: 78px; }
-    .bubble { max-width: 126px; font-size: .76rem; padding: 5px 8px; margin-top: 6px; }
-    .bubble::before, .bubble::after { top: 13px; }
+    .corner { top: 12px; right: 10px; }
+    .corner img { height: 78px; }
+    .bubble { max-width: 126px; font-size: .76rem; padding: 5px 8px; }
     h1.headline { font-size: 1.9rem; }
-    .subline { font-size: 16px; }
-    .hero { margin-top: 128px; }
+    .subtitle { font-size: 1.05rem; }
+    .hero { margin-top: 150px; }
     .menubtn { top: 10px; left: 10px; }
     .menupanel { top: 60px; left: 10px; }
     form#bar { margin-top: 18px; }
@@ -225,24 +227,17 @@
   <a href="https://www.youtube.com/channel/UCIpk-u6CGxVfbCVjx7U5OMg">Bill XOX on YouTube</a>
   <a href="/notebook/">Notebook Room</a>
 </nav>
-<div class="corner"><div class="bubble" id="bubble" role="button" tabindex="0" title="Talk to Bill XOX">Hi, I'm William. I'm from the future. Let me predict yours.</div><img src="assets/corner-portrait.webp" alt="William Alexander Aldred (Bill XOX)"></div>
+<div class="corner"><img src="assets/corner-portrait.webp" alt="William Alexander Aldred"><div class="bubble" id="bubble" role="button" tabindex="0" title="Talk to William">Hi, I'm William. I'm from the future. Let me predict yours.</div></div>
 <div class="stage">
   <div class="hero">
-    <h1 class="headline">First time traveler — ask him anything.</h1>
+    <h1 class="headline">William Alexander Aldred</h1>
+    <div class="subtitle">The First Time Traveler</div>
     <form id="bar">
-      <button class="chat-mic" id="mic" type="button" aria-label="Speak to Bill XOX" aria-pressed="false" title="Speak to Bill XOX">🎤</button>
-      <input type="text" id="inp" placeholder="Talk to Bill XOX&hellip;" autocomplete="off" maxlength="4000">
+      <button class="chat-mic" id="mic" type="button" aria-label="Speak to William" aria-pressed="false" title="Speak to William">🎤</button>
+      <input type="text" id="inp" placeholder="Ask Him Anything" autocomplete="off" maxlength="4000">
       <button type="submit" id="send">Send</button>
     </form>
-    <div class="subline">He predicts the future.</div>
-    <div class="chips">
-      <button type="button" class="chip future" data-q="Tell me my future.">Ask Bill XOX — he'll tell you your future</button>
-      <button type="button" class="chip" data-q="Where is gold going?">Gold — where is it going?</button>
-      <button type="button" class="chip" data-q="Where is oil going?">Oil — where is it going?</button>
-      <button type="button" class="chip" data-q="Where is the dollar going against the euro?">Forex — the dollar vs the euro</button>
-      <button type="button" class="chip" data-q="Where is the stock market headed?">The stock market</button>
-      <button type="button" class="chip" data-q="What is the vacuum catastrophe — and will it be solved?">A physics question</button>
-    </div>
+    <button type="button" class="futurepill" id="futurePill">He Predicts The Future</button>
     <div id="left"></div>
   </div>
   <main>
@@ -356,23 +351,42 @@
   }
   function renderAll() {
     log.innerHTML = "";
-    if (!history.length) { draw("sys", "This is Bill XOX — the first time traveler. Ask him anything."); return; }
+    if (!history.length) return;
     for (var i = 0; i < history.length; i++) draw(history[i].role, history[i].content);
   }
   renderAll();
 
   // Maker sessions share one server-side thread across the maker's devices.
   var welcomed = history.some(function (m) { return m.role === "assistant" && m.content.indexOf(WELCOME) >= 0; });
-  if (welcomed) {
+  // Owner cross-device sync (Oct 28, 2026): the thread pull is a
+  // function now — the live loop below re-reads the canonical thread
+  // through it whenever /sync reports a new head, and the wholesale
+  // adopt (length or seq advance) is the dedupe: a message can arrive
+  // twice at the wire, it renders once.
+  var lastSeq = 0;
+  function pullThread() {
+    // Never adopt mid-send from this device: the server appends the
+    // turn before the /chat response lands, so a pull in that window
+    // would race the submit handler's own append of the same reply.
+    // Defer — lastSeq stays stale, so the loop re-offers the pull the
+    // moment the send settles.
+    if (busy) { setTimeout(pullThread, 600); return; }
     fetch("https://bill-exolex.william-ced.workers.dev/maker-transcript", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ session: session }) })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (d) {
         if (d && d.ok && Array.isArray(d.messages) && d.messages.length) {
-          history = d.messages; save(); renderAll();
+          var advanced = typeof d.lastSeq === "number" && d.lastSeq > lastSeq;
+          if (d.messages.length !== history.length || advanced) {
+            history = d.messages; save(); renderAll();
+          }
+          if (typeof d.lastSeq === "number" && d.lastSeq > lastSeq) lastSeq = d.lastSeq;
+          if (d.draft) applyRemoteDraft(d.draft);
+          startSyncLoop();
         }
       })
       .catch(function () {});
   }
+  if (welcomed) pullThread();
 
   var busy = false;
   document.getElementById("bar").addEventListener("submit", function (ev) {
@@ -420,16 +434,82 @@
       });
     }
   }
-  var chipEls = document.querySelectorAll(".chip[data-q]");
-  for (var ci = 0; ci < chipEls.length; ci++) {
-    chipEls[ci].addEventListener("click", function () {
-      if (busy) return;
-      inp.value = this.getAttribute("data-q");
-      var barEl2 = document.getElementById("bar");
-      if (barEl2.requestSubmit) { barEl2.requestSubmit(); }
-      else { barEl2.dispatchEvent(new Event("submit", { cancelable: true })); }
-    });
+  /* Owner cross-device sync — one conversation, every bound device,
+     live (Oct 28, 2026; pairs with bill-exolex v3-sync). POST /sync
+     long-polls with the rendered head seq; another device's turn (or
+     a draft change) answers at once, otherwise the worker holds ~9s
+     and the loop asks again. lastSeq only moves forward — a stale
+     read can delay a message a cycle, never skip or roll it back.
+     The draft: this box's text rides POST /draft as he types (a
+     watcher interval catches dictation, which writes the box
+     directly), and a remote draft applies under the mirror rule in
+     applyRemoteDraft. */
+  var lastDraftTs = 0;
+  var lastRemoteDraft = "";
+  var lastDraftSent = "";
+  var syncLoopStarted = false;
+  function startSyncLoop() {
+    if (syncLoopStarted) return;
+    syncLoopStarted = true;
+    syncTick();
   }
+  function syncTick() {
+    fetch("https://bill-exolex.william-ced.workers.dev/sync", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ session: session, since: lastSeq, draftTs: lastDraftTs }) })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (d && d.ok) {
+          if (typeof d.lastSeq === "number" && d.lastSeq > lastSeq) pullThread();
+          if (d.draft) applyRemoteDraft(d.draft);
+          else if (lastDraftTs > 0) { lastDraftTs = 0; lastRemoteDraft = ""; }
+        }
+        setTimeout(syncTick, 250);
+      })
+      .catch(function () { setTimeout(syncTick, 3000); });
+  }
+  /* THE MIRROR RULE: a remote draft enters this box only when the
+     box is empty, unfocused, or holding exactly the last remote draft
+     applied here. His own mid-edit text is never overwritten; the
+     remote draft applies the moment his box clears. While a send is
+     in flight (busy), drafts are held, never applied. */
+  function applyRemoteDraft(d) {
+    if (!d || typeof d.text !== "string") return;
+    if (typeof d.ts === "number" && d.ts <= lastDraftTs) return;
+    if (typeof d.ts === "number") lastDraftTs = d.ts;
+    var remote = d.text;
+    if (busy) { lastRemoteDraft = remote; return; }
+    var cur = inp.value;
+    if (cur === remote) { lastRemoteDraft = remote; lastDraftSent = remote; return; }
+    var focused = document.activeElement === inp;
+    if (focused && cur && cur !== lastRemoteDraft) { lastRemoteDraft = remote; return; }
+    inp.value = remote;
+    lastRemoteDraft = remote;
+    lastDraftSent = remote; /* never echo a received draft back */
+  }
+  var draftTimer = null;
+  function pushDraft() {
+    if (!welcomed || busy) return;
+    var v = inp.value;
+    if (v === lastDraftSent) return;
+    lastDraftSent = v;
+    try {
+      fetch("https://bill-exolex.william-ced.workers.dev/draft", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ session: session, text: v, ts: Date.now() }) }).catch(function () {});
+    } catch (e) {}
+  }
+  inp.addEventListener("input", function () {
+    if (draftTimer) clearTimeout(draftTimer);
+    draftTimer = setTimeout(pushDraft, 200);
+  });
+  setInterval(function () { pushDraft(); }, 350);
+
+  function startPrediction() {
+    if (busy) return;
+    inp.value = "Tell me my future.";
+    var barEl = document.getElementById("bar");
+    if (barEl.requestSubmit) { barEl.requestSubmit(); }
+    else { barEl.dispatchEvent(new Event("submit", { cancelable: true })); }
+  }
+  var futurePill = document.getElementById("futurePill");
+  if (futurePill) futurePill.addEventListener("click", startPrediction);
   var menuBtn = document.getElementById("menuBtn");
   var menuPanel = document.getElementById("menuPanel");
   function closeMenu() { menuPanel.hidden = true; menuBtn.setAttribute("aria-expanded", "false"); }
@@ -449,11 +529,7 @@
   });
   document.getElementById("menuFuture").addEventListener("click", function () {
     closeMenu();
-    if (busy) return;
-    inp.value = "Tell me my future.";
-    var barEl = document.getElementById("bar");
-    if (barEl.requestSubmit) { barEl.requestSubmit(); }
-    else { barEl.dispatchEvent(new Event("submit", { cancelable: true })); }
+    startPrediction();
   });
   var bubble = document.getElementById("bubble");
   if (bubble) {
