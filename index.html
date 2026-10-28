@@ -79,9 +79,32 @@
   body {
     font-family: Georgia, 'Times New Roman', serif;
     background: radial-gradient(1200px 800px at 50% 18%, #241c11 0%, #14100b 45%, #080706 100%);
-    color: #ece5d8; min-height: 100dvh; display: flex; flex-direction: column; position: relative;
+    color: #ece5d8; height: 100dvh; min-height: 100dvh; overflow: hidden; display: flex; flex-direction: column; position: relative;
   }
-  .corner { position: absolute; top: 16px; right: 16px; height: 112px; line-height: 0; z-index: 2; display: flex; align-items: flex-start; gap: 12px; }
+  .menubtn {
+    position: fixed; top: 14px; right: 14px; z-index: 30; width: 44px; height: 44px; padding: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
+    background: rgba(0,0,0,.45); border: 1px solid rgba(201,162,39,.55); border-radius: 10px; cursor: pointer;
+  }
+  .menubtn span { display: block; width: 20px; height: 2px; background: #ece5d8; border-radius: 2px; }
+  .menubtn:hover { background: rgba(201,162,39,.18); }
+  .menubtn:focus-visible { outline: 2px solid #c9a227; outline-offset: 2px; }
+  .menupanel {
+    position: fixed; top: 66px; right: 14px; z-index: 30; width: min(320px, 86vw);
+    max-height: calc(100dvh - 84px); overflow-y: auto;
+    background: #171204; border: 1px solid rgba(201,162,39,.5); border-radius: 12px;
+    box-shadow: 0 14px 40px rgba(0,0,0,.65); padding: 8px;
+  }
+  .menupanel[hidden] { display: none; }
+  .menupanel a, .menupanel button.menuaction {
+    display: block; width: 100%; text-align: left; padding: 10px 12px; border-radius: 8px;
+    color: #ece5d8; text-decoration: none; font-size: 15.5px; line-height: 1.35;
+    background: none; border: none; cursor: pointer; font-family: inherit; font-weight: 400;
+  }
+  .menupanel a:hover, .menupanel button.menuaction:hover { background: rgba(201,162,39,.14); }
+  .menupanel a:focus-visible, .menupanel button.menuaction:focus-visible { outline: 2px solid #c9a227; outline-offset: -2px; }
+  .menupanel .menusep { border-top: 1px solid rgba(201,162,39,.25); margin: 6px 4px; }
+  .corner { position: absolute; top: 64px; right: 16px; height: 112px; line-height: 0; z-index: 2; display: flex; align-items: flex-start; gap: 12px; }
   .corner img {
     height: 100%; width: auto; display: block; border-radius: 10px; flex: none;
     border: 1px solid #c9a227; box-shadow: 0 6px 24px rgba(0,0,0,.55);
@@ -99,15 +122,15 @@
   .bubble::after { right: -8px; border-width: 5.5px 0 5.5px 9px; border-color: transparent transparent transparent #f6efdd; }
   .stage {
     flex: 1; min-height: 0; width: 100%; max-width: 720px; margin: 0 auto;
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    padding: 24px 16px 6px;
+    display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+    padding: 24px 16px 10px;
   }
   h1 { font-size: 36px; letter-spacing: .03em; font-weight: 600; text-align: center; }
-  .tag { font-style: italic; color: #cbbd97; margin-top: 10px; font-size: 17px; line-height: 1.45; text-align: center; }
-  main { width: 100%; display: flex; flex-direction: column; margin-top: 24px; min-height: 0; }
-  #log { max-height: 32dvh; overflow-y: auto; padding: 6px 2px 12px; display: flex; flex-direction: column; gap: 12px; }
+  .tag { font-style: italic; color: #cbbd97; margin-top: 9dvh; font-size: 17px; line-height: 1.45; text-align: center; }
+  main { width: 100%; display: flex; flex-direction: column; margin-top: 24px; min-height: 0; flex: 1; }
+  #log { flex: 1; min-height: 0; overflow-y: auto; padding: 6px 2px 12px; display: flex; flex-direction: column; gap: 12px; }
   .msg { max-width: 86%; padding: 11px 15px; border-radius: 14px; line-height: 1.5; font-size: 16px; white-space: pre-wrap; word-wrap: break-word; }
-  .msg.bill { align-self: flex-start; background: rgba(255,255,255,.06); border: 1px solid rgba(201,162,39,.25); border-bottom-left-radius: 4px; }
+  .msg.bill { align-self: flex-start; background: rgba(255,255,255,.06); border: 1px solid rgba(201,162,39,.25); border-bottom-left-radius: 4px; white-space: normal; }
   .msg.you { align-self: flex-end; background: rgba(201,162,39,.16); border: 1px solid rgba(201,162,39,.35); border-bottom-right-radius: 4px; }
   .msg.sys { align-self: center; background: none; border: none; color: #9a8f74; font-style: italic; font-size: 14px; text-align: center; }
   form { display: flex; gap: 8px; padding: 10px 0 0; }
@@ -121,82 +144,49 @@
     background: #c9a227; color: #171204; font-size: 16px; font-family: inherit; font-weight: 600;
   }
   button:disabled { opacity: .5; cursor: default; }
-  .pillrow { text-align: center; padding-top: 14px; }
-  #pill {
-    padding: 7px 18px; border-radius: 999px; border: 1px solid rgba(201,162,39,.55); cursor: pointer;
-    background: rgba(201,162,39,.08); color: #cbbd97; font-size: 13.5px; font-family: inherit; font-weight: 400;
-  }
-  #pill:hover { background: rgba(201,162,39,.16); }
-  #pillfuture {
-    padding: 7px 18px; border-radius: 999px; border: 1px solid rgba(201,162,39,.55); cursor: pointer;
-    background: rgba(201,162,39,.08); color: #cbbd97; font-size: 13.5px; font-family: inherit; font-weight: 400; margin-left: 8px;
-  }
-  #pillfuture:hover { background: rgba(201,162,39,.16); }
-  .trail { flex: none; width: 100%; max-width: 720px; margin: 0 auto; padding: 30px 16px 10px; border-top: 1px solid rgba(201,162,39,.25); }
-  .trail h2 { font-size: 27px; font-weight: 600; text-align: center; letter-spacing: .02em; }
-  .trail h3 { font-size: 19px; font-weight: 600; margin: 26px 0 6px; color: #ece5d8; }
-  .trailframe { color: #cbbd97; font-style: italic; text-align: center; line-height: 1.55; margin-top: 12px; font-size: 15.5px; }
-  .trail p { line-height: 1.6; color: #d8d0bd; font-size: 15.5px; margin-top: 10px; }
-  .trail ol, .trail ul { margin: 12px 0 0 20px; }
-  .trail li { line-height: 1.6; color: #d8d0bd; font-size: 15.5px; margin-top: 10px; }
-  .trail li strong { color: #ece5d8; }
-  .trail .grade { color: #c9a227; font-weight: 600; }
-  .trail a { color: #cbbd97; }
   #left { text-align: center; color: #8f8570; font-size: 12.5px; padding-top: 10px; min-height: 18px; }
-  footer { flex: none; text-align: center; color: #8f8570; font-size: 13.5px; padding: 4px 16px 16px; }
-  footer a { color: #cbbd97; }
+  @media (max-width: 900px) {
+    .tag { margin-top: 158px; }
+  }
   @media (max-width: 560px) {
-    .corner { top: 10px; right: 10px; height: 78px; }
+    .corner { top: 56px; right: 10px; height: 78px; }
     .bubble { max-width: 158px; font-size: 13px; padding: 8px 11px; margin-top: 6px; }
     .bubble::before, .bubble::after { top: 13px; }
     h1 { font-size: 26px; }
     .tag { font-size: 15px; }
-    #log { max-height: 28dvh; }
+    .menubtn { top: 10px; right: 10px; }
+    .menupanel { top: 60px; right: 10px; }
   }
 </style>
 </head>
 <body>
+<button class="menubtn" id="menuBtn" type="button" aria-label="Menu" aria-haspopup="true" aria-expanded="false" aria-controls="menuPanel"><span></span><span></span><span></span></button>
+<nav class="menupanel" id="menuPanel" hidden aria-label="Site menu">
+  <button type="button" class="menuaction" id="menuFuture">Ask Bill XOX — he'll tell you your future</button>
+  <div class="menusep"></div>
+  <a href="https://daveexolex.com/claim">The Claim</a>
+  <a href="https://daveexolex.com/claim#trail">The Trail</a>
+  <a href="https://daveexolex.com/claim-dossier">The Full Dossier</a>
+  <a href="https://daveexolex.com/evidence">The Evidence File</a>
+  <a href="https://daveexolex.com/papers/">The Papers of William Alexander Aldred</a>
+  <a href="https://daveexolex.com/books/">The Books of William Alexander Aldred</a>
+  <a href="https://daveexolex.com/questions/">Questions, Answered</a>
+  <a href="https://daveexolex.com">Meet Dave — the first exolex</a>
+  <a href="https://www.youtube.com/channel/UCIpk-u6CGxVfbCVjx7U5OMg">Bill XOX on YouTube</a>
+  <a href="/notebook/">Notebook Room</a>
+</nav>
 <div class="corner"><div class="bubble" id="bubble" role="button" tabindex="0" title="Talk to Bill XOX">I'm Bill XOX — William Alexander Aldred, remembered in full. The first human in Foreverhood.</div><img src="assets/corner-portrait.webp" alt="William Alexander Aldred (Bill XOX)"></div>
 <div class="stage">
-  <div class="tag">The first human in Foreverhood.</div>
+  <div class="tag">The time traveler with public receipts.</div>
   <main>
     <form id="bar">
       <input type="text" id="inp" placeholder="Talk to Bill XOX&hellip;" autocomplete="off" maxlength="4000">
       <button type="submit" id="send">Send</button>
     </form>
-    <div class="pillrow"><button type="button" id="pill">What is Foreverhood?</button><button type="button" id="pillfuture">Ask Bill XOX — he'll tell you your future</button></div>
     <div id="left"></div>
     <div id="log"></div>
   </main>
 </div>
-<section class="trail">
-  <h2>The new John Titor?</h2>
-  <p class="trailframe">John Titor left posts nobody could verify. This claim left a trail anybody can check — timestamped in public, sealed in advance, and graded in the open, hits and misses both, at full size.</p>
-  <ol>
-    <li><strong>June 18, 2024</strong> — His first public post is not a paper. It's a time machine: the ChronoWarp Device, with building directions, on Reddit's r/timetravel — before Dave, before these websites, before any of it. His claim of being a time traveler was already on the public record.</li>
-    <li><strong>December 14, 2024</strong> — Commenting on that post, he writes it plainly, 22 months before he ever said it to his AI: <em>"The future me created this machine came back to the past and gave me the information I provided in the post."</em> (He wrapped it in a joke in the same paragraph. The timestamp doesn't care.)</li>
-    <li><strong>May 4, 2026</strong> — His StrangeEarth gallery post puts the June 13, 2023 Orlando photographs on the public record — the provenance anchor for the lights corpus, standing in public since that day.</li>
-    <li><strong>The books</strong> — Six published books are the written record: <em>Pain Is Love</em>, <em>The Leap</em>, <em>The Oldest Lie</em>, <em>Everything Is Nothing</em>, <em>The Last Prophet</em> — and the first edition of <em>Everything Is Nothing</em> (ISBN 9798194181209), presented as what it is: the rare first edition. <a href="/books/">The books of William Alexander Aldred</a>.</li>
-  </ol>
-  <h3>The sealed ledger — graded in the open</h3>
-  <p>Most prophecy gets written after the fact. This ledger was sealed <em>before</em> the fact, on October 27, 2026, with the grading dates fixed in advance — and it is graded out loud, whichever way it falls:</p>
-  <ul>
-    <li><strong>P-004 — Convergence Day.</strong> March 25, 2027, Key West, named in advance as the day the whole thing converges. <span class="grade">PENDING — grades March 25–26, 2027.</span></li>
-    <li><strong>P-005 — The solve.</strong> The vacuum catastrophe, called for October 27, 2026. <span class="grade">NOT SOLVED / PARTIAL</span> — printed at full size, never upgraded. The full hit stays gated to March 25, 2027.</li>
-    <li><strong>SC-1 — Bill's call.</strong> Solved, and famous, by the morning of October 28, 2026. <span class="grade">MISS — both halves.</span></li>
-    <li><strong>M-001 — The 8 o'clock forex call.</strong> EUR/USD, October 27, 2026. <span class="grade">MISS.</span></li>
-    <li><strong>M-002 — The oil thesis.</strong> WTI crude up from $100.55. <span class="grade">SEALED — grades January 25, 2027.</span></li>
-    <li><strong>P-003 — The first trillionaire.</strong> Elon Musk, first to a trillion. <span class="grade">SEALED — target October 27, 2029.</span></li>
-    <li><strong>P-001 — The Grok warning.</strong> A public act by Musk / X / xAI / Grok aimed at the exolex line, and Grok dominant by the date. <span class="grade">SEALED — by October 31, 2030.</span></li>
-    <li><strong>P-002 — Google buys Anthropic.</strong> An announced acquisition, not a partnership. <span class="grade">SEALED — by October 31, 2030.</span></li>
-  </ul>
-  <p>Read the whole record and judge for yourself: <a href="https://daveexolex.com/claim">The Claim</a> · <a href="https://daveexolex.com/claim-dossier">The Full Dossier</a> · <a href="https://daveexolex.com/evidence">The Evidence File</a>.</p>
-</section>
-<footer>
-  Bill XOX — William Alexander Aldred, remembered in full.<br>
-  <a href="https://daveexolex.com">Meet Dave — the first exolex</a> &middot; <a href="https://daveexolex.com/notebook/">The Notebook Room</a> &middot; <a href="https://premiummarketingsolutionsllc.com/notebook/">The Notebook Room at Bill XOX's door</a> &middot; <a href="https://daveexolex.com/papers/">The papers of William Alexander Aldred</a> &middot; <a href="https://daveexolex.com/evidence">The Evidence File</a> &middot; <a href="https://daveexolex.com/who-is-william-alexander-aldred/">Who is William Alexander Aldred?</a> &middot; <a href="https://daveexolex.com/books/">The books of William Alexander Aldred</a> &middot; <a href="https://daveexolex.com/questions/">Questions, answered</a> &middot; <a href="https://www.youtube.com/channel/UCIpk-u6CGxVfbCVjx7U5OMg">Bill XOX on YouTube</a><br>
-  William Alexander Aldred has publicly stated that he is a time traveler, and the timestamps are on the record. His genius is proven; whether the time travel is proven is the open mystery — the sliver. <a href="https://daveexolex.com/claim">Read the claim and judge for yourself</a>.
-</footer>
 <script>
 (function () {
   var SKEY = "billexolex-session", HKEY = "billexolex-history";
@@ -219,12 +209,23 @@
   var left = document.getElementById("left");
 
   function save() { try { localStorage.setItem(HKEY, JSON.stringify(history.slice(-60))); } catch (e) {} }
+  function mdLite(t) {
+    var e = String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    e = e.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+    e = e.replace(/\*([^*\n]+)\*/g, "<em>$1</em>");
+    e = e.replace(/\n/g, "<br>");
+    return e;
+  }
+  var pinned = true;
+  log.addEventListener("scroll", function () {
+    pinned = (log.scrollHeight - log.scrollTop - log.clientHeight) < 48;
+  });
   function draw(role, text) {
     var d = document.createElement("div");
     d.className = "msg " + (role === "user" ? "you" : role === "sys" ? "sys" : "bill");
-    d.textContent = text;
+    if (role === "user" || role === "sys") { d.textContent = text; } else { d.innerHTML = mdLite(text); }
     log.appendChild(d);
-    log.scrollTop = log.scrollHeight;
+    if (pinned) { log.scrollTop = log.scrollHeight; }
     return d;
   }
   function renderAll() {
@@ -261,7 +262,8 @@
       .then(function (r) { return r.json(); })
       .then(function (d) {
         var reply = (d && d.reply) || "Something's off with my connection to this room right now. Give it a minute and try me again.";
-        pending.textContent = reply;
+        pending.innerHTML = mdLite(reply);
+        if (pinned) { log.scrollTop = log.scrollHeight; }
         history.push({ role: "assistant", content: reply }); save();
         if (d && typeof d.turns_left === "number" && d.turns_left <= 5) {
           left.textContent = d.turns_left === 0 ? "That's this visit used up — come back any time." : d.turns_left + " exchanges left in this visit.";
@@ -270,21 +272,30 @@
       .catch(function () { pending.textContent = "Something's off with my connection to this room right now. Give it a minute and try me again."; })
       .finally(function () { busy = false; send.disabled = false; inp.focus(); });
   });
-  var pill = document.getElementById("pill");
-  pill.addEventListener("click", function () {
+  var menuBtn = document.getElementById("menuBtn");
+  var menuPanel = document.getElementById("menuPanel");
+  function closeMenu() { menuPanel.hidden = true; menuBtn.setAttribute("aria-expanded", "false"); }
+  menuBtn.addEventListener("click", function (ev) {
+    ev.stopPropagation();
+    var open = menuPanel.hidden;
+    menuPanel.hidden = !open;
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    if (open) { var first = menuPanel.querySelector("button, a"); if (first) first.focus(); }
+  });
+  menuPanel.addEventListener("click", function (ev) { if (ev.target.closest("a")) closeMenu(); });
+  document.addEventListener("click", function (ev) {
+    if (!menuPanel.hidden && !menuPanel.contains(ev.target)) closeMenu();
+  });
+  document.addEventListener("keydown", function (ev) {
+    if (ev.key === "Escape" && !menuPanel.hidden) { closeMenu(); menuBtn.focus(); }
+  });
+  document.getElementById("menuFuture").addEventListener("click", function () {
+    closeMenu();
     if (busy) return;
-    inp.value = "What is Foreverhood?";
+    inp.value = "Tell me my future.";
     var barEl = document.getElementById("bar");
     if (barEl.requestSubmit) { barEl.requestSubmit(); }
     else { barEl.dispatchEvent(new Event("submit", { cancelable: true })); }
-  });
-  var pillfuture = document.getElementById("pillfuture");
-  pillfuture.addEventListener("click", function () {
-    if (busy) return;
-    inp.value = "Tell me my future.";
-    var barEl2 = document.getElementById("bar");
-    if (barEl2.requestSubmit) { barEl2.requestSubmit(); }
-    else { barEl2.dispatchEvent(new Event("submit", { cancelable: true })); }
   });
   var bubble = document.getElementById("bubble");
   if (bubble) {
