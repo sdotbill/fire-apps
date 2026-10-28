@@ -181,6 +181,7 @@
     box-shadow: 0 6px 20px rgba(138,101,8,.28);
   }
   .futurepill:hover { background: #d9b23a; }
+  .futurepill .tastecount { margin-left: 8px; font-size: .9em; font-weight: 600; opacity: .78; }
   .futurepill:focus-visible { outline: 2px solid var(--gold-deep); outline-offset: 2px; }
   main { width: 100%; display: flex; flex-direction: column; min-height: 0; flex: 1; }
   #log { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; padding: 14px 2px 12px; display: flex; flex-direction: column; gap: 12px; }
@@ -237,7 +238,7 @@
       <input type="text" id="inp" placeholder="Ask Him Anything" autocomplete="off" maxlength="4000">
       <button type="submit" id="send">Send</button>
     </form>
-    <button type="button" class="futurepill" id="futurePill">He Predicts The Future</button>
+    <button type="button" class="futurepill" id="futurePill" data-prediction-cta data-funnel="funnel_taste_v1" data-taste-state="full" data-taste-limit="5">He Predicts The Future<span class="tastecount" data-taste-count hidden></span></button>
     <div id="left"></div>
   </div>
   <main>
@@ -394,6 +395,9 @@
     if (busy) return;
     var text = inp.value.trim();
     if (!text) return;
+    if (funnelMode === "prediction") {
+      document.dispatchEvent(new CustomEvent("billxox:prediction-ask", { detail: { text: text } }));
+    }
     inp.value = "";
     history.push({ role: "user", content: text }); save(); draw("user", text);
     busy = true; send.disabled = true; speakStop();
@@ -501,15 +505,51 @@
   });
   setInterval(function () { pushDraft(); }, 350);
 
-  function startPrediction() {
+  function sendPredictionAsk() {
     if (busy) return;
     inp.value = "Tell me my future.";
     var barEl = document.getElementById("bar");
     if (barEl.requestSubmit) { barEl.requestSubmit(); }
     else { barEl.dispatchEvent(new Event("submit", { cancelable: true })); }
   }
+  /* Predictions funnel (funnel_taste_v1) — page-side wiring hooks.
+     The gold pill is the prediction entry point: its click puts the
+     composer into prediction mode and focuses it. The server-side
+     counter, taste window, and wall are worker work; they bind here
+     without another page change via:
+       - the pill's data attributes (data-taste-state / data-taste-limit),
+       - the [data-taste-count] span inside the pill (the remaining
+         count rides inside the pill's flow, never as page furniture),
+       - window.BillXOXFunnel { enterPredictionMode, setTasteCount, mode },
+       - CustomEvents billxox:cta-click / billxox:prediction-mode /
+         billxox:prediction-ask on document. */
+  var funnelMode = "chat";
+  var barForm = document.getElementById("bar");
+  function enterPredictionMode() {
+    funnelMode = "prediction";
+    if (barForm) barForm.setAttribute("data-mode", "prediction");
+    inp.placeholder = "Ask for a prediction — gold, oil, your future…";
+    document.dispatchEvent(new CustomEvent("billxox:prediction-mode", { detail: { mode: "prediction" } }));
+    inp.focus();
+  }
+  function setTasteCount(n) {
+    var pill = document.getElementById("futurePill");
+    var slot = document.querySelector("[data-taste-count]");
+    if (!pill || !slot || typeof n !== "number") return;
+    pill.setAttribute("data-taste-state", n > 0 ? "active" : "exhausted");
+    slot.textContent = "· " + n + (n === 1 ? " free prediction left" : " free predictions left");
+    slot.hidden = false;
+  }
+  window.BillXOXFunnel = {
+    enterPredictionMode: enterPredictionMode,
+    setTasteCount: setTasteCount,
+    get mode() { return funnelMode; }
+  };
   var futurePill = document.getElementById("futurePill");
-  if (futurePill) futurePill.addEventListener("click", startPrediction);
+  if (futurePill) futurePill.addEventListener("click", function () {
+    document.dispatchEvent(new CustomEvent("billxox:cta-click", { detail: { source: "pill" } }));
+    enterPredictionMode();
+  });
   var menuBtn = document.getElementById("menuBtn");
   var menuPanel = document.getElementById("menuPanel");
   function closeMenu() { menuPanel.hidden = true; menuBtn.setAttribute("aria-expanded", "false"); }
@@ -529,7 +569,7 @@
   });
   document.getElementById("menuFuture").addEventListener("click", function () {
     closeMenu();
-    startPrediction();
+    sendPredictionAsk();
   });
   var bubble = document.getElementById("bubble");
   if (bubble) {
