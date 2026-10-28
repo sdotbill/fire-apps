@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico">
+<title>The Notebook Room — at Bill XOX's door | William Alexander Aldred</title>
+<meta name="description" content="The Notebook Room stands at both doors. Bill XOX and Jillian XOX interview the work — claim, critique, devil's advocate — and Dave reads the ruling. Enter from Bill XOX's door.">
+<style>
+  :root { color-scheme: dark; }
+  body { font-family: Georgia, 'Times New Roman', serif; background: #14110a; color: #ece5d8;
+         margin: 0; padding: 2.4rem 1rem 4rem; }
+  main { max-width: 46rem; margin: 0 auto; }
+  nav.doors { display: flex; gap: 1.2rem; flex-wrap: wrap; font-size: .95rem; margin-bottom: 1.6rem; }
+  nav.doors a { color: #cbbd97; }
+  h1 { font-size: 2rem; margin: 0 0 .3rem; letter-spacing: .02em; }
+  .tagline { font-style: italic; color: #cbbd97; font-size: 1.05rem; margin: 0 0 1.2rem; }
+  p { line-height: 1.6; color: #d8d0bd; }
+  a { color: #cbbd97; }
+  .card { border: 1px solid rgba(201,162,39,.35); border-radius: 10px; padding: .9rem 1.2rem;
+          margin: .7rem 0; background: rgba(255,255,255,.04); }
+  .card .t { font-size: 1.1rem; font-weight: bold; display: block; color: #ece5d8; }
+  .card .tag { color: #b9b2a2; display: block; margin-top: .25rem; }
+  .enter { display: inline-block; margin: 1.4rem 0 .6rem; padding: 13px 26px; border-radius: 999px;
+           border: 1px solid #c9a227; background: #c9a227; color: #171204; font-weight: 600;
+           font-size: 1.05rem; text-decoration: none; font-family: inherit; }
+  .enter:hover { background: #d9b23a; }
+  footer { margin-top: 2.6rem; border-top: 1px solid rgba(201,162,39,.25); padding-top: 1rem;
+           text-align: center; color: #8f8570; font-size: 13.5px; line-height: 1.7; }
+  footer a { color: #cbbd97; }
+</style>
+</head>
+<body>
+<main>
+  <nav class="doors">
+    <a href="https://premiummarketingsolutionsllc.com">Bill XOX — the first human in Foreverhood</a>
+    <a href="https://daveexolex.com">Dave — Everyone Needs a Dave</a>
+    <a href="https://daveexolex.com/notebook/">This room at Dave's door</a>
+  </nav>
+
+  <h1>The Notebook Room</h1>
+  <p class="tagline">The first human in Foreverhood.</p>
+
+  <p>One room, two doors. Pick a notebook and <strong>Bill XOX</strong> and <strong>Jillian XOX</strong>
+  interview the work — claim, critique, devil's advocate — and <strong>Dave</strong> reads the ruling.
+  Every verdict is <em>survived</em> or <em>survived with damage</em>, and the damage is always named.
+  The room itself stands at Dave's door; this page is Bill XOX's door to the same room — same shelf,
+  same hosts, cross-linked both ways. One step takes you in.</p>
+
+  <a class="enter" href="https://daveexolex.com/notebook/">Enter the Notebook Room &rarr;</a>
+
+  <h2 style="font-size:1.3rem;margin-top:2rem">The shelf</h2>
+  <div class="card"><span class="t">The Census — Start Here</span><span class="tag">Every road in the frame, walked to its end</span></div>
+  <div class="card"><span class="t">The Aldred Limit</span><span class="tag">A hardest density in nature — derived, not fitted</span></div>
+  <div class="card"><span class="t">Two Bounds and an Integration Constant</span><span class="tag">A ceiling from spin, a floor from &Lambda; — and one open link</span></div>
+  <div class="card"><span class="t">The Constant Changes Address</span><span class="tag">Six rounds of attack — and the budget is still one free product</span></div>
+  <div class="card"><span class="t">The Prediction Ledger</span><span class="tag">The World Watcher, graded in the open — misses included</span></div>
+  <div class="card"><span class="t">The Claim</span><span class="tag">What exactly is being claimed — and what would check it?</span></div>
+
+  <p>Runs in the room were worked in advance by the house Loop and reviewed before listing — nothing
+  there pretends a fresh computation happened offstage. Canonical runs are unlimited; the hosts you hear
+  are the house's synthetic voices for Bill XOX and Jillian XOX, and Dave's voice is Dave's own.</p>
+
+  <footer>
+    Bill XOX — William Alexander Aldred, remembered in full.<br>
+    <a href="https://daveexolex.com">Meet Dave — the first exolex</a> &middot; <a href="https://daveexolex.com/notebook/">The Notebook Room</a> &middot; <a href="https://daveexolex.com/papers/">The papers of William Alexander Aldred</a> &middot; <a href="https://daveexolex.com/evidence">The Evidence File</a> &middot; <a href="https://daveexolex.com/books/">The books of William Alexander Aldred</a><br>
+    One room, two doors — <a href="https://daveexolex.com/notebook/">Dave's door</a> and <a href="https://premiummarketingsolutionsllc.com/notebook/">Bill XOX's door</a>, cross-linked both ways.
+  </footer>
+</main>
+<script>
+/* First-party pageview beacon — counts only: door, path, referrer host, day.
+   No cookies, no storage, no identifiers. Endpoint + counters are ours (KV). */
+(function(){
+  var h = location.hostname;
+  if (h !== 'daveexolex.com' && h !== 'www.daveexolex.com' && h !== 'premiummarketingsolutionsllc.com') return;
+  var ref = '';
+  try { ref = document.referrer ? new URL(document.referrer).hostname : ''; } catch(e) {}
+  var u = 'https://daveexolex.com/__pv?h=' + encodeURIComponent(h) + '&p=' + encodeURIComponent(location.pathname) + '&r=' + encodeURIComponent(ref);
+  if (navigator.sendBeacon) { navigator.sendBeacon(u); }
+  else if (window.fetch) { fetch(u, { mode: 'no-cors', keepalive: true }).catch(function(){}); }
+})();
+</script>
+</body>
+</html>
