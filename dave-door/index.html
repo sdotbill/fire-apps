@@ -885,7 +885,12 @@
           ensureLive();
           acc += ev.x;
           liveSpan.innerHTML = mdRender(acc);
-          pinScroll(true);
+          /* Instant, not smooth, while streaming: a smooth animation
+             already in flight overrides a reader's deliberate scroll-up
+             before its scroll event can unpin (measured live, Oct 28).
+             Instant pinning keeps the pane glued with nothing in flight
+             to fight the reader. */
+          pinScroll(false);
         }else if(ev.t === "v"){
           vfEnqueue(ev);
         }else if(ev.t === "end"){
