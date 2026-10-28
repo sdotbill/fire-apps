@@ -376,6 +376,7 @@
   var speakAudio = null, speakBtn = null, speakSeq = 0;
   function speakStop(){
     speakSeq++;
+    vfStop();
     if(speakAudio){ try{ speakAudio.pause(); }catch(e){} speakAudio = null; }
     if(speakBtn){ speakBtn.classList.remove("speaking"); speakBtn.setAttribute("aria-pressed", "false"); speakBtn = null; }
   }
@@ -418,6 +419,71 @@
       if(p && p.catch) p.catch(function(){ if(speakAudio === a) speakStop(); });
     }).catch(function(){
       if(token === speakSeq) speakStop();
+    });
+  }
+  /* v4.30: voice-first playback. When the send opts in, the worker
+     leads the reply with voice events ({t:"v", i, a}) — base64 MP3
+     segments of the reply, in order — and the text follows. Segments
+     play in arrival order (the stream delivers them in index order)
+     on one element primed inside the send gesture, so the browser's
+     autoplay rule is met by the visitor's own tap. Playback stops
+     through the same discipline as the speaker button: speakStop()
+     stops it (and the Forget handler rides speakStop), a new send
+     stops it, and a speaker-button tap stops it and takes over. */
+  var VF_SILENCE = "data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=";
+  var vfAudio = null, vfQueue = [], vfPlaying = false, vfSeq = 0, vfCurrentUrl = null;
+  function vfPrime(){
+    try{
+      if(!vfAudio) vfAudio = new Audio();
+      vfAudio.playbackRate = 1.12;
+      vfAudio.src = VF_SILENCE;
+      var p = vfAudio.play();
+      if(p && p.catch) p.catch(function(){});
+    }catch(e){}
+  }
+  function vfStop(){
+    vfSeq++;
+    vfQueue.length = 0;
+    vfPlaying = false;
+    if(vfCurrentUrl){ try{ URL.revokeObjectURL(vfCurrentUrl); }catch(e){} vfCurrentUrl = null; }
+    if(vfAudio){ try{ vfAudio.pause(); }catch(e){} }
+  }
+  function vfEnqueue(ev){
+    var bin;
+    try{ bin = atob(String(ev.a || "")); }catch(e){ return; }
+    var bytes = new Uint8Array(bin.length);
+    for(var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    var url;
+    try{ url = URL.createObjectURL(new Blob([bytes], {type: "audio/mpeg"})); }catch(e){ return; }
+    vfQueue.push(url);
+    vfPump();
+  }
+  function vfPump(){
+    if(vfPlaying) return;
+    var url = vfQueue.shift();
+    if(!url) return;
+    vfPlaying = true;
+    vfCurrentUrl = url;
+    var token = vfSeq;
+    if(!vfAudio) vfAudio = new Audio();
+    var a = vfAudio;
+    a.playbackRate = 1.12;
+    a.src = url;
+    a.onended = function(){
+      try{ URL.revokeObjectURL(url); }catch(e){}
+      if(vfCurrentUrl === url) vfCurrentUrl = null;
+      if(token !== vfSeq) return;
+      vfPlaying = false;
+      vfPump();
+    };
+    a.onerror = function(){
+      if(token !== vfSeq) return;
+      vfPlaying = false;
+      vfPump();
+    };
+    var p = a.play();
+    if(p && p.catch) p.catch(function(){
+      if(token === vfSeq){ vfPlaying = false; vfPump(); }
     });
   }
   function addSpeakButton(row, span){
@@ -505,6 +571,8 @@
     bubble("user", text);
     input.value = "";
     setSending(true);
+    vfStop();
+    vfPrime();
     var typing = bubble("assistant", "");
     typing.classList.add("msg-typing");
     typing.innerHTML = '<span class="dots"><i></i><i></i><i></i></span>';
@@ -517,7 +585,10 @@
        present; any other combination gets the plain JSON response and
        lands in the same finish() below. */
     var canStream = !!(window.ReadableStream && window.TextDecoder);
-    if(canStream){ payload.stream = true; headers["Accept"] = "text/event-stream"; }
+    if(canStream){ payload.stream = true; payload.voice_first = true; headers["Accept"] = "text/event-stream"; }
+    /* v4.30 voice-first: voice_first rides the stream opt-in — the
+       worker leads the stream with Dave's voice ({t:"v"} events,
+       played by the vf block above) and the text follows. */
     fetch(DAVE_CHAT_ENDPOINT, {
       method: "POST",
       credentials: "include",
@@ -571,6 +642,8 @@
           acc += ev.x;
           liveSpan.textContent = acc;
           thread.scrollTop = thread.scrollHeight;
+        }else if(ev.t === "v"){
+          vfEnqueue(ev);
         }else if(ev.t === "end"){
           done = true;
           setSending(false);
