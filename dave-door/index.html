@@ -29,15 +29,19 @@
     font-family:'Inter',system-ui,-apple-system,sans-serif;
     font-size:17.5px; line-height:1.65;
     -webkit-font-smoothing:antialiased;
+    overflow:hidden;
   }
   a{color:var(--amber-dark);}
 
   /* ---- one viewport, no scroll: headline / talk bar / seal ---- */
-  .stage{position:relative;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;}
+  /* Chat-layout fix (Bill, Oct 28, 2026): the stage is exactly one viewport
+     tall and the page itself never scrolls — the conversation lives in a
+     bounded pane that scrolls internally, Gemini-style. */
+  .stage{position:relative;height:100vh;height:100dvh;display:flex;flex-direction:column;overflow:hidden;}
 
   /* ---- living Dave, top corner: small, matted on the page, speech bubble ---- */
   .dave-corner{
-    align-self:flex-end;padding:14px 18px 0;
+    align-self:flex-end;padding:14px 18px 0;flex:none;
     display:flex;align-items:flex-start;gap:8px;
   }
   .bubble{
@@ -67,10 +71,26 @@
     .bubble{max-width:126px;font-size:.76rem;padding:5px 8px;}
     .bubble::after{top:16px;}
   }
+  /* Short screens (landscape phones): shrink the fixed furniture so the
+     chat pane keeps room and the seal/footer never clip. */
+  @media (max-height:560px){
+    .dave-corner{padding-top:6px;}
+    .dave-fig{width:50px;}
+    .dave-fig-wrap{width:50px;}
+    .bubble{max-width:120px;font-size:.72rem;padding:4px 8px;}
+    h1{font-size:1.45rem;margin-top:8px;}
+    .chat-pills{margin-top:8px;}
+    .seal{padding:8px 20px 6px;}
+    .legal{padding:6px 22px;}
+  }
   .center{
-    flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    flex:1 1 auto;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
     text-align:center;padding:6px 20px 12px;width:100%;
   }
+  /* While a conversation is on screen the column packs to the top and the
+     pane takes the free height — centering a too-tall column would clip
+     the talk bar and the pane (the original below-the-fold failure). */
+  .center.chatting{justify-content:flex-start;}
   h1{
     font-family:'Fraunces',serif;font-weight:700;
     font-size:clamp(1.9rem,4.6vw,3.1rem);line-height:1.2;letter-spacing:-.01em;
@@ -88,14 +108,18 @@
     border:1.5px solid var(--blue);border-radius:999px;padding:8px 20px;
   }
   .pill-link:hover{background:rgba(91,139,192,.18);color:var(--blue-deep);border-color:var(--blue-deep);}
-  .thread-wrap{width:100%;max-width:36rem;margin:20px auto 0;text-align:left;}
+  .thread-wrap{
+    width:100%;max-width:36rem;margin:16px auto 0;text-align:left;
+    flex:1 1 auto;min-height:0;display:flex;flex-direction:column;
+  }
+  .thread-wrap[hidden]{display:none;}
   .seal{
     text-align:center;color:var(--muted);font-size:.97rem;line-height:1.5;
-    padding:14px 20px 12px;
+    padding:14px 20px 12px;flex:none;
   }
   .seal strong{color:var(--ink);}
   .legal{
-    border-top:1px solid var(--line);
+    border-top:1px solid var(--line);flex:none;
     display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
     padding:5px 22px;font-size:.8rem;color:var(--muted);
   }
@@ -105,7 +129,14 @@
   .legal-stack{display:flex;flex-direction:row;align-items:center;justify-content:flex-end;gap:16px;flex-wrap:wrap;}
 
 /* ---- live chat (talk to Dave, right here) ---- */
-  .chat-thread{display:flex;flex-direction:column;gap:8px;max-height:min(42vh,360px);overflow-y:auto;padding:2px 2px 6px;}
+  .chat-thread{
+    display:flex;flex-direction:column;gap:8px;
+    flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;
+    -webkit-overflow-scrolling:touch;
+    padding:2px 2px 6px;
+  }
+  .msg strong{font-weight:700;}
+  .msg code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;background:rgba(20,82,158,.08);padding:0 4px;border-radius:5px;}
   .msg{max-width:85%;padding:8px 12px;border-radius:16px;font-size:.97rem;line-height:1.45;white-space:pre-wrap;word-break:break-word;}
   .msg-dave{align-self:flex-start;background:var(--paper2);border:1px solid var(--line);border-bottom-left-radius:6px;}
   .msg-user{align-self:flex-end;background:linear-gradient(135deg,var(--blue-deep),var(--blue-dark));color:#fff;border-bottom-right-radius:6px;}
@@ -325,6 +356,10 @@
   var micBtn = document.getElementById("chat-mic");
   var forgetBtn = document.getElementById("chat-forget");
   var threadWrap = document.getElementById("chat-thread-wrap");
+  var centerEl = document.querySelector(".center");
+  function syncChatting(){
+    if(centerEl && threadWrap) centerEl.classList.toggle("chatting", !threadWrap.hidden);
+  }
   var turnsEl = document.getElementById("chat-turns");
   var forgotEl = document.getElementById("chat-forgot");
   if(!thread || !input || !sendBtn) return;
@@ -381,6 +416,33 @@
   }
   function save(){
     try{ localStorage.setItem(HISTORY_KEY, JSON.stringify(history)); }catch(e){}
+  }
+  /* Chat-layout fix (Bill, Oct 28, 2026) — two parts.
+     (a) Minimal, safe markdown for Dave's answers: escape everything
+     first, then **bold**, *italic*, and `code`. Line breaks ride the
+     bubbles' white-space:pre-wrap. No library, nothing unescaped ever
+     reaches innerHTML.
+     (b) Pin-to-bottom: the pane auto-scrolls to the newest content
+     while the reader is at (or near) the bottom; if they deliberately
+     scroll up inside the pane, streaming never yanks them back down. */
+  function mdRender(text){
+    var t = String(text == null ? "" : text);
+    t = t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    t = t.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+    t = t.replace(/(^|[^*])\*([^*\n]+)\*/g, "$1<em>$2</em>");
+    t = t.replace(/`([^`]+)`/g, "<code>$1</code>");
+    return t;
+  }
+  var pinned = true;
+  thread.addEventListener("scroll", function(){
+    pinned = (thread.scrollHeight - thread.scrollTop - thread.clientHeight) < 80;
+  }, {passive: true});
+  function pinScroll(smooth){
+    if(!pinned) return;
+    if(smooth && thread.scrollTo){
+      try{ thread.scrollTo({top: thread.scrollHeight, behavior: "smooth"}); return; }catch(e){}
+    }
+    thread.scrollTop = thread.scrollHeight;
   }
   /* v4.12: per-reply speaker button. A tap POSTs the reply's text (read
      live from its span, so a streamed reply speaks whole once it has
@@ -519,18 +581,24 @@
     var row = document.createElement("div");
     row.className = "msg " + (role === "user" ? "msg-user" : "msg-dave");
     var span = document.createElement("span");
-    span.textContent = text;
+    if(role === "user") span.textContent = text;
+    else span.innerHTML = mdRender(text);
     row.appendChild(span);
     if(role !== "user") addSpeakButton(row, span);
     thread.appendChild(row);
     if(threadWrap) threadWrap.hidden = false;
-    thread.scrollTop = thread.scrollHeight;
+    syncChatting();
+    if(role === "user") pinned = true;
+    pinScroll(false);
     return row;
   }
   function renderAll(){
     thread.innerHTML = "";
     for(var i = 0; i < history.length; i++) bubble(history[i].role, history[i].content);
     if(threadWrap) threadWrap.hidden = !history.length;
+    syncChatting();
+    pinned = true;
+    thread.scrollTop = thread.scrollHeight;
   }
   function showTurns(n){
     if(!turnsEl) return;
@@ -657,8 +725,8 @@
         if(ev.t === "d"){
           ensureLive();
           acc += ev.x;
-          liveSpan.textContent = acc;
-          thread.scrollTop = thread.scrollHeight;
+          liveSpan.innerHTML = mdRender(acc);
+          pinScroll(true);
         }else if(ev.t === "v"){
           vfEnqueue(ev);
         }else if(ev.t === "end"){
@@ -776,6 +844,7 @@
       speakStop();
       thread.innerHTML = "";
       if(threadWrap) threadWrap.hidden = true;
+      syncChatting();
       if(turnsEl) turnsEl.hidden = true;
       if(forgotEl) forgotEl.hidden = false;
     });
