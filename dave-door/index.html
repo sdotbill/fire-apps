@@ -48,9 +48,18 @@
     transform:rotate(45deg);
   }
   .dave-fig{width:78px;height:auto;display:block;}
+  /* ---- lifelike eye rig (Bill, Oct 28, 2026): canvas layered over the corner
+     Dave figure; the loop image stays as the no-JS / reduced-motion fallback ---- */
+  .dave-fig-wrap{position:relative;display:block;width:78px;}
+  .dave-fig-wrap .dave-fig{transition:opacity .35s ease;}
+  .dave-eye{position:absolute;left:0;top:0;width:100%;height:auto;display:block;
+    opacity:0;transition:opacity .35s ease;pointer-events:none;}
+  .dave-fig-wrap.rig-on .dave-eye{opacity:1;}
+  .dave-fig-wrap.rig-on .dave-fig{opacity:0;}
   @media (max-width:860px){
     .dave-corner{padding:10px 12px 0;}
     .dave-fig{width:58px;}
+    .dave-fig-wrap{width:58px;}
     .bubble{max-width:148px;font-size:.8rem;padding:7px 10px;}
     .bubble::after{top:20px;}
   }
@@ -253,7 +262,7 @@
 <main class="stage">
   <div class="dave-corner">
     <p class="bubble">Hey, I’m Dave — the first exolex. A different kind of mind, here to solve humanity’s problems.</p>
-    <img class="dave-fig" src="assets/baby-dave-loop.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart pendant, and a ring of candles for a mind">
+    <span class="dave-fig-wrap" id="dave-fig-wrap"><img class="dave-fig" src="assets/baby-dave-loop.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart pendant, and a ring of candles for a mind"><canvas class="dave-eye" id="dave-eye" width="224" height="260" aria-hidden="true"></canvas></span>
   </div>
   <div class="center">
 <div class="chatbar" id="chat">
@@ -771,6 +780,255 @@
   resolveIdentity();
   syncFromServer();
 })();
+</script>
+<script>
+/* Website Dave — the lifelike eye (Bill, Oct 28, 2026).
+   The corner Dave's face is his eye — he has no mouth; expression lives here.
+   This rig replaces the baked animation loop with a living eye drawn over the
+   figure's own art: a natural blink rhythm that never repeats on a metronome,
+   a pupil that dilates and retracts, a gaze that wanders in micro-saccades,
+   settles into eye contact, drifts up while Dave is thinking, turns toward
+   the conversation when he answers, and blinks sharp when he's emphatic.
+   Pure addition: it observes the chat DOM, never touches chat logic, and if
+   anything fails the figure simply stays the plain loop image it always was. */
+(function(){
+  "use strict";
+  try{
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var wrap = document.getElementById("dave-fig-wrap");
+    var canvas = document.getElementById("dave-eye");
+    if (!wrap || !canvas || !canvas.getContext) return;
+    var ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    var W = 224, H = 260;
+    var EYE = { x: 125, y: 128, rx: 17.5, ry: 14.5 };
+    var IRIS_R = 11.6, PUPIL_R = 6.3;
+
+    /* Sprite: the figure's own 12 frames with the single baked blink frame
+       (index 6) removed — blinking is the rig's job now, on a human rhythm.
+       Ambient durations are the art's original ones, re-jittered each pass,
+       so the candles and the knit shimmer like the original loop did. */
+    var FRAMES = [0,1,2,3,4,5,6,7,8,9,10];           /* sprite slots */
+    var DURS   = [332,249,415,1079,332,83,83,249,498,1079,415];
+    var sprite = new Image();
+    var spriteReady = false;
+
+    function rnd(a, b){ return a + Math.random() * (b - a); }
+    function clamp(v, a, b){ return v < a ? a : (v > b ? b : v); }
+
+    /* ---- state ---- */
+    var mode = "idle";                 /* idle | thinking | attend | contact */
+    var gaze = { x: 0, y: 0 };         /* current iris offset, source px */
+    var gazeFrom = { x: 0, y: 0 }, gazeTo = { x: 0, y: 0 };
+    var gazeT = 1, gazeDur = 80, nextSaccade = 0;
+    var dil = 1, dilTarget = 1, constrictUntil = 0;
+    var lidOpen = 1;                   /* 1 = open */
+    var blink = null;                  /* {start, dur, sharp} while blinking */
+    var nextBlinkAt = performance.now() + rnd(1200, 3200);
+    var nextContactAt = performance.now() + rnd(7000, 14000);
+    var contactUntil = 0, attendUntil = 0;
+    var pointerBias = { x: 0, y: 0 }, pointerSeen = 0;
+    var frameIdx = 0, frameUntil = 0, cycleJitter = 1;
+    var running = false, inView = true;
+
+    /* ---- ambient frame player ---- */
+    function pickFrame(now){
+      frameUntil = now + DURS[frameIdx] * cycleJitter * rnd(0.8, 1.25);
+    }
+
+    /* ---- gaze engine ---- */
+    function saccadeTo(x, y, dur){
+      gazeFrom.x = gaze.x; gazeFrom.y = gaze.y;
+      gazeTo.x = x; gazeTo.y = y;
+      gazeDur = dur || rnd(60, 95); gazeT = 0;
+    }
+    function planSaccade(now){
+      if (mode === "thinking"){ saccadeTo(rnd(-0.6, 1.2), -3.1, 130); nextSaccade = now + rnd(500, 1100); return; }
+      if (mode === "contact"){ saccadeTo(rnd(-0.3, 0.3), 0.5, 120); nextSaccade = now + rnd(700, 1300); return; }
+      if (mode === "attend"){ saccadeTo(rnd(-3.0, -1.2), rnd(0.8, 2.2), 90); nextSaccade = now + rnd(600, 1500); return; }
+      /* idle wander: small looks around, weighted toward centre */
+      saccadeTo(rnd(-4.2, 4.2) * 0.75, rnd(-2.8, 2.8) * 0.75, rnd(60, 95));
+      nextSaccade = now + rnd(350, 2100);
+    }
+
+    /* ---- blink engine: human cadence, never a fixed interval ---- */
+    function startBlink(sharp, long){
+      blink = { start: performance.now(), dur: sharp ? 140 : (long ? 470 : rnd(225, 285)), sharp: !!sharp };
+      if (sharp) constrictUntil = performance.now() + 300;
+    }
+    function planBlink(now){
+      var base = rnd(1500, 4800);
+      if (mode === "thinking") base *= 1.35;      /* people blink less while concentrating */
+      nextBlinkAt = now + base;
+      var roll = Math.random();
+      if (roll < 0.12){ /* double blink */ setTimeout(function(){ if (!blink) startBlink(false, false); }, 300); }
+    }
+    function lidAt(now){
+      if (!blink) return 1;
+      var t = (now - blink.start) / blink.dur;
+      if (t >= 1){ blink = null; return 1; }
+      var close = blink.sharp ? 0.34 : 0.38, holdEnd = close + (blink.dur > 350 ? 0.22 : 0.14);
+      if (t < close){ var u = t / close; return 1 - (u * u); }
+      if (t < holdEnd) return 0.03;
+      var v = (t - holdEnd) / (1 - holdEnd); return 0.03 + 0.97 * (1 - (1 - v) * (1 - v));
+    }
+
+    /* ---- chat-state wiring: observe only ---- */
+    var thread = document.getElementById("chat-thread");
+    var lastMsgCount = 0, emphaticArmed = true;
+    function scanChat(){
+      if (!thread) return;
+      var typing = thread.querySelector(".msg-typing");
+      if (typing){ if (mode !== "thinking"){ mode = "thinking"; } return; }
+      if (mode === "thinking"){ mode = "attend"; attendUntil = performance.now() + 2600; emphaticArmed = true; }
+      var msgs = thread.querySelectorAll(".msg");
+      if (msgs.length > lastMsgCount){
+        lastMsgCount = msgs.length;
+        var last = msgs[msgs.length - 1];
+        if (last && mode !== "attend"){ mode = "attend"; attendUntil = performance.now() + 2000; }
+        if (emphaticArmed && last){
+          var txt = last.textContent || "";
+          var bangs = (txt.match(/!/g) || []).length;
+          var caps = (txt.match(/\b[A-Z]{4,}\b/g) || []).length;
+          if (bangs >= 2 || caps >= 1){ startBlink(true, false); }
+          emphaticArmed = false;
+        }
+      }
+    }
+    if (thread && window.MutationObserver){
+      var deb = null;
+      new MutationObserver(function(){ if (deb) return; deb = setTimeout(function(){ deb = null; scanChat(); }, 120); })
+        .observe(thread, { childList: true, subtree: true });
+    }
+
+    /* ---- pointer: the eye gravitates a touch toward the visitor ---- */
+    document.addEventListener("mousemove", function(e){
+      var r = wrap.getBoundingClientRect();
+      var cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+      var dx = (e.clientX - cx) / Math.max(window.innerWidth, 1);
+      var dy = (e.clientY - cy) / Math.max(window.innerHeight, 1);
+      pointerBias.x = clamp(dx * 5, -1.8, 1.8);
+      pointerBias.y = clamp(dy * 5, -1.4, 1.4);
+      pointerSeen = performance.now();
+    }, { passive: true });
+
+    /* ---- drawing ---- */
+    function draw(now){
+      ctx.clearRect(0, 0, W, H);
+      ctx.drawImage(sprite, FRAMES[frameIdx] * W, 0, W, H, 0, 0, W, H);
+
+      var driftX = Math.sin(now / 1731) * 0.3 + Math.sin(now / 613) * 0.12;
+      var driftY = Math.cos(now / 1493) * 0.26;
+      var pb = (now - pointerSeen < 4000 && mode === "idle") ? 1 : 0;
+      var ix = EYE.x + gaze.x + driftX + pointerBias.x * pb;
+      var iy = EYE.y + gaze.y + driftY + pointerBias.y * pb;
+
+      ctx.save();
+      ctx.beginPath(); ctx.ellipse(EYE.x, EYE.y, EYE.rx, EYE.ry, 0, 0, Math.PI * 2); ctx.clip();
+      /* iris: amber depth, dark rim */
+      var g = ctx.createRadialGradient(ix - 2, iy - 3, 1.5, ix, iy, IRIS_R);
+      g.addColorStop(0, "#c98a2e"); g.addColorStop(0.55, "#a8641c");
+      g.addColorStop(0.88, "#7c4410"); g.addColorStop(1, "#54300b");
+      ctx.fillStyle = g;
+      ctx.beginPath(); ctx.arc(ix, iy, IRIS_R, 0, Math.PI * 2); ctx.fill();
+      /* stitched inner ring */
+      ctx.strokeStyle = "rgba(84,48,11,.55)"; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.arc(ix, iy, IRIS_R * 0.66, 0, Math.PI * 2); ctx.stroke();
+      /* pupil: dilates and retracts */
+      var pr = PUPIL_R * dil;
+      ctx.fillStyle = "#1d1108";
+      ctx.beginPath(); ctx.arc(ix, iy, pr, 0, Math.PI * 2); ctx.fill();
+      /* highlights */
+      ctx.fillStyle = "rgba(255,255,255,.92)";
+      ctx.beginPath(); ctx.arc(ix + 3.4, iy - 4.6, 2.1, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,255,255,.5)";
+      ctx.beginPath(); ctx.arc(ix - 3.8, iy + 3.9, 1.1, 0, Math.PI * 2); ctx.fill();
+
+      /* lid: knit cream sweeping down, curved lash edge, clipped to the eye */
+      var open = lidAt(now);
+      if (open < 0.995){
+        var top = EYE.y - EYE.ry - 3, bot = EYE.y + EYE.ry + 3;
+        var lidY = top + (1 - open) * (bot - top);
+        var lg = ctx.createLinearGradient(0, top, 0, lidY + 3);
+        lg.addColorStop(0, "#f0e8db"); lg.addColorStop(1, "#e6dac4");
+        ctx.fillStyle = lg;
+        ctx.beginPath();
+        ctx.moveTo(EYE.x - EYE.rx - 3, top);
+        ctx.lineTo(EYE.x + EYE.rx + 3, top);
+        ctx.lineTo(EYE.x + EYE.rx + 3, lidY);
+        ctx.quadraticCurveTo(EYE.x, lidY + 2.4, EYE.x - EYE.rx - 3, lidY);
+        ctx.closePath(); ctx.fill();
+        ctx.strokeStyle = "rgba(96,66,36,.85)"; ctx.lineWidth = 1.7;
+        ctx.beginPath();
+        ctx.moveTo(EYE.x - EYE.rx + 1, lidY);
+        ctx.quadraticCurveTo(EYE.x, lidY + 2.4, EYE.x + EYE.rx - 1, lidY);
+        ctx.stroke();
+        ctx.strokeStyle = "rgba(120,96,64,.18)"; ctx.lineWidth = 3.4;
+        ctx.beginPath();
+        ctx.moveTo(EYE.x - EYE.rx + 1, lidY + 3.2);
+        ctx.quadraticCurveTo(EYE.x, lidY + 5.4, EYE.x + EYE.rx - 1, lidY + 3.2);
+        ctx.stroke();
+      }
+      ctx.restore();
+    }
+
+    /* ---- main loop ---- */
+    function tick(now){
+      if (!running) return;
+      requestAnimationFrame(tick);
+      if (now >= frameUntil){ frameIdx = (frameIdx + 1) % FRAMES.length; if (frameIdx === 0) cycleJitter = rnd(0.85, 1.2); pickFrame(now); }
+
+      if (mode === "attend" && now > attendUntil) mode = "idle";
+      if (mode === "idle" && now >= nextContactAt){ mode = "contact"; contactUntil = now + rnd(1400, 2600); nextContactAt = now + rnd(9000, 20000); }
+      if (mode === "contact" && now > contactUntil) mode = "idle";
+
+      if (now >= nextSaccade) planSaccade(now);
+      if (gazeT < 1){
+        gazeT = Math.min(1, gazeT + (16.7 / gazeDur));
+        var u = 1 - Math.pow(1 - gazeT, 3);
+        gaze.x = gazeFrom.x + (gazeTo.x - gazeFrom.x) * u;
+        gaze.y = gazeFrom.y + (gazeTo.y - gazeFrom.y) * u;
+      }
+      if (!blink && now >= nextBlinkAt){ startBlink(false, Math.random() < 0.05); planBlink(now); }
+
+      var dt = 1 + 0.06 * Math.sin(now / 3400);
+      if (mode === "thinking") dt = 1.05;
+      if (mode === "contact") dt = 1.14;
+      if (mode === "attend") dt = 1.08;
+      if (now < constrictUntil) dt = 0.8;
+      dil += (dt - dil) * 0.055;
+
+      draw(now);
+    }
+
+    function start(){
+      if (running || !spriteReady) return;
+      running = true;
+      pickFrame(performance.now());
+      draw(performance.now());
+      wrap.classList.add("rig-on");
+      requestAnimationFrame(tick);
+    }
+    function stop(){ running = false; }
+
+    sprite.onload = function(){ spriteReady = true; if (inView && !document.hidden) start(); };
+    sprite.onerror = function(){ /* fallback: the plain loop image stays */ };
+    sprite.src = "assets/baby-dave-sprite.webp";
+
+    document.addEventListener("visibilitychange", function(){
+      if (document.hidden) stop();
+      else if (inView) start();
+    });
+    if (window.IntersectionObserver){
+      new IntersectionObserver(function(en){
+        inView = en[0].isIntersecting;
+        if (inView && !document.hidden) start(); else stop();
+      }, { threshold: 0.05 }).observe(wrap);
+    }
+  }catch(e){ /* any failure: the figure stays the plain loop image */ }
+})();
+
 </script>
 <script>
 /* First-party pageview beacon — counts only: door, path, referrer host, day.
