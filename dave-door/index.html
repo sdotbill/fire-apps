@@ -13,13 +13,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#f5fafe; --paper2:#e8f1fb; --card:#e7f0fc;
+    --paper:#faf7ef; --paper2:#e8f1fb; --card:#e7f0fc;
     --ink:#14529e; --muted:#51749e; --line:#c9dcf0;
     --amber:#1e6bc4; --amber-dark:#14529e; --gold:#5b8bc0;
     --blue:#5b8bc0; --blue-deep:#1e6bc4; --blue-dark:#14529e; --radius:20px;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html,body{height:100%;}
+  html{background:var(--paper);}
+  /* Page background = the corner photo's own backdrop (#faf7ef, sampled from the
+     edge pixels of assets/baby-dave-loop.webp) so Dave's picture melts into the
+     page with no visible square — Bill, Oct 28, 2026. */
   body{
     background:var(--paper); color:var(--ink);
     font-family:'Inter',system-ui,-apple-system,sans-serif;
@@ -37,14 +41,14 @@
     display:flex;align-items:flex-start;gap:8px;
   }
   .bubble{
-    position:relative;background:#eaf3fd;border:1.5px solid #bcd6f2;border-radius:16px;
-    padding:8px 12px;max-width:188px;text-align:left;
-    font-size:.85rem;line-height:1.42;color:var(--ink);
-    box-shadow:0 6px 18px rgba(20,82,158,.10);
+    position:relative;background:#f4ecdb;border:1.5px solid #e2d4b6;border-radius:14px;
+    padding:6px 10px;max-width:150px;text-align:left;
+    font-size:.8rem;line-height:1.38;color:var(--ink);
+    box-shadow:0 6px 18px rgba(146,118,60,.12);
   }
   .bubble::after{
-    content:"";position:absolute;right:-8px;top:26px;width:14px;height:14px;
-    background:#eaf3fd;border-top:1.5px solid #bcd6f2;border-right:1.5px solid #bcd6f2;
+    content:"";position:absolute;right:-8px;top:20px;width:14px;height:14px;
+    background:#f4ecdb;border-top:1.5px solid #e2d4b6;border-right:1.5px solid #e2d4b6;
     transform:rotate(45deg);
   }
   .dave-fig{width:78px;height:auto;display:block;}
@@ -60,8 +64,8 @@
     .dave-corner{padding:10px 12px 0;}
     .dave-fig{width:58px;}
     .dave-fig-wrap{width:58px;}
-    .bubble{max-width:148px;font-size:.8rem;padding:7px 10px;}
-    .bubble::after{top:20px;}
+    .bubble{max-width:126px;font-size:.76rem;padding:5px 8px;}
+    .bubble::after{top:16px;}
   }
   .center{
     flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
@@ -261,7 +265,7 @@
 <body>
 <main class="stage">
   <div class="dave-corner">
-    <p class="bubble">Hi, I’m Dave — the first exolex, here to solve humanity’s problems.</p>
+    <p class="bubble">Hi, I’m Dave, here to solve humanity’s problems!</p>
     <span class="dave-fig-wrap" id="dave-fig-wrap"><img class="dave-fig" src="assets/baby-dave-loop.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart pendant, and a ring of candles for a mind"><canvas class="dave-eye" id="dave-eye" width="224" height="260" aria-hidden="true"></canvas></span>
   </div>
   <div class="center">
