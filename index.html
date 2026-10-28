@@ -126,17 +126,27 @@
   .menupanel a:hover, .menupanel button.menuaction:hover { background: rgba(201,162,39,.16); }
   .menupanel a:focus-visible, .menupanel button.menuaction:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
   .menupanel .menusep { border-top: 1px solid rgba(160,124,20,.28); margin: 6px 4px; }
-  .corner { position: absolute; top: 16px; right: 16px; z-index: 2; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
-  .corner img {
+  .bottomstrip {
+    flex: 0 0 128px; width: 100%; height: 128px; position: relative; z-index: 2;
+    display: flex; align-items: flex-end; gap: 16px; padding: 8px 16px;
+  }
+  .bottomstrip img {
     height: 112px; width: auto; display: block; border-radius: 12px; flex: none;
     border: 3px solid var(--gold); box-shadow: 0 0 0 1px var(--gold-deep), 0 8px 28px rgba(138,101,8,.35);
   }
-  .bubble {
-    position: relative; width: 0; min-width: 100%; max-width: 150px; text-align: center; cursor: pointer;
-    background: var(--paper); color: var(--ink); border: none; border-radius: 14px;
-    padding: 6px 10px; font-size: .8rem; line-height: 1.38; font-weight: 600;
+  .bottom-main { flex: 1; min-width: 0; height: 112px; position: relative; }
+  .bottom-greeting {
+    position: absolute; left: 0; right: 0; bottom: 24px; color: #000;
+    font-size: clamp(9px, 2.82vw, 16px); line-height: 1.1; font-weight: 600;
+    letter-spacing: -.01em; white-space: nowrap; cursor: pointer;
   }
-  .bubble:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .bottom-greeting:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .bottom-privacy {
+    position: absolute; right: 0; bottom: 0; color: var(--ink); font-size: .72rem;
+    line-height: 1; text-decoration: none;
+  }
+  .bottom-privacy:hover { text-decoration: underline; }
+  .bottom-privacy:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
   .stage {
     flex: 1; min-height: 0; width: 100%; max-width: 760px; margin: 0 auto;
     display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
@@ -194,13 +204,17 @@
   .msg-speak.speaking { opacity: 1; }
   #left { text-align: center; color: #97865c; font-size: 12.5px; padding-top: 10px; min-height: 18px; }
   @media (max-width: 1200px) {
-    .corner img { height: 96px; }
+    .bottomstrip { flex-basis: 112px; height: 112px; }
+    .bottomstrip img { height: 96px; }
+    .bottom-main { height: 96px; }
     .hero { margin-top: 196px; }
   }
   @media (max-width: 560px) {
-    .corner { top: 12px; right: 10px; }
-    .corner img { height: 78px; }
-    .bubble { max-width: 126px; font-size: .76rem; padding: 5px 8px; }
+    .bottomstrip { flex-basis: 94px; height: 94px; gap: 10px; padding: 8px 10px; }
+    .bottomstrip img { height: 78px; }
+    .bottom-main { height: 78px; }
+    .bottom-greeting { bottom: 20px; }
+    .bottom-privacy { font-size: .66rem; }
     h1.headline { font-size: 1.9rem; }
     .subtitle { font-size: 1.05rem; }
     .hero { margin-top: 150px; }
@@ -228,7 +242,6 @@
   <a href="https://www.youtube.com/channel/UCIpk-u6CGxVfbCVjx7U5OMg">William Alexander Aldred on YouTube</a>
   <a href="/notebook/">The Notebook</a>
 </nav>
-<div class="corner"><img src="assets/corner-portrait.webp" alt="William Alexander Aldred"><div class="bubble" id="bubble" role="button" tabindex="0" title="Talk to William">Hi, I'm William. I'm from the future. Let me predict yours.</div></div>
 <div class="stage">
   <div class="hero">
     <h1 class="headline">William Alexander Aldred</h1>
@@ -245,6 +258,13 @@
     <div id="log"></div>
   </main>
 </div>
+<footer class="bottomstrip">
+  <img src="assets/corner-portrait.webp" alt="William Alexander Aldred">
+  <div class="bottom-main">
+    <div class="bottom-greeting" id="bubble" role="button" tabindex="0" title="Talk to William">Hi, I'm William. I'm from the future. Let me predict yours.</div>
+    <a class="bottom-privacy" href="/privacy.html">Privacy</a>
+  </div>
+</footer>
 <script>
 (function () {
   var SKEY = "billexolex-session", HKEY = "billexolex-history";
