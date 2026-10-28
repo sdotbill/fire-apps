@@ -389,6 +389,10 @@
      recognized maker, your own identity's thread for you. Nobody's
      thread is ever served to anyone else. */
   var TRANSCRIPT_ENDPOINT = "https://dave-chat.william-ced.workers.dev/transcript";
+  /* v4.33: owner cross-device sync — the live channel + the shared
+     draft, on the same worker. Owner sessions only (see below). */
+  var SYNC_ENDPOINT = "https://dave-chat.william-ced.workers.dev/sync";
+  var DRAFT_ENDPOINT = "https://dave-chat.william-ced.workers.dev/draft";
   var IDENTITY_ENDPOINT = "https://dave-chat.william-ced.workers.dev/identity";
   var FORGET_ENDPOINT = "https://dave-chat.william-ced.workers.dev/forget";
   var IDENTITY_KEY = "dave_chat_identity";
@@ -678,13 +682,124 @@
       return r.ok ? r.json() : null;
     }).then(function(data){
       syncing = false;
-      if(data && data.ok && Array.isArray(data.messages) && data.messages.length > history.length){
-        history = data.messages;
-        save();
-        renderAll();
+      if(data && data.ok && Array.isArray(data.messages)){
+        if(data.owner){
+          /* v4.33: this device is the maker's — the server thread is
+             live. Adopt on length growth OR on a seq advance (the
+             equal-length case: the 200-message cap trimmed the head
+             while a turn landed at the tail), remember the head, take
+             the shared draft, and start the live loop. */
+          isOwner = true;
+          var advanced = typeof data.lastSeq === "number" && data.lastSeq > lastSeq;
+          if(data.messages.length > history.length || advanced){
+            history = data.messages;
+            save();
+            renderAll();
+          }
+          if(typeof data.lastSeq === "number" && data.lastSeq > lastSeq) lastSeq = data.lastSeq;
+          if(data.draft) applyRemoteDraft(data.draft);
+          startSyncLoop();
+        } else if(data.messages.length > history.length){
+          history = data.messages;
+          save();
+          renderAll();
+        }
       }
     }).catch(function(){ syncing = false; });
   }
+  /* v4.33 OWNER SYNC — one conversation, every bound device, live.
+     The loop is a long-poll: POST /sync with the head seq this device
+     has rendered; the worker answers the moment another device's turn
+     lands or the shared draft changes, and otherwise holds ~9s and
+     answers empty — the loop simply asks again. A delta never renders
+     directly: it re-reads the canonical thread through syncFromServer,
+     whose wholesale adopt (length or seq) is the dedupe — a message
+     can arrive twice at the wire and still render once. lastSeq only
+     ever moves forward, so a stale read can delay a message by one
+     cycle but can never roll the thread back or skip one: the next
+     poll re-asks from the same head and the server re-sends the delta.
+     THE DRAFT: while the maker types (or dictates — the mic writes
+     this same box, and a watcher interval catches what key events
+     miss), the box's text rides POST /draft, throttled; the other
+     devices apply it under the mirror rule in applyRemoteDraft. A
+     landed turn clears the server draft (the words were sent). */
+  var isOwner = false;
+  var lastSeq = 0;
+  var lastDraftTs = 0;
+  var lastRemoteDraft = "";
+  var syncLoopStarted = false;
+  function startSyncLoop(){
+    if(syncLoopStarted) return;
+    syncLoopStarted = true;
+    syncTick();
+  }
+  function syncTick(){
+    if(!isOwner){ syncLoopStarted = false; return; }
+    fetch(SYNC_ENDPOINT, {
+      method: "POST",
+      credentials: "include",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({session: sessionId, identity: identity || undefined, since: lastSeq, draftTs: lastDraftTs})
+    }).then(function(r){
+      return r.ok ? r.json() : null;
+    }).then(function(data){
+      if(data && data.ok){
+        if(typeof data.lastSeq === "number" && data.lastSeq > lastSeq){
+          /* Another device's turn landed (or this device's own turn,
+             seen from the server side): re-read the canonical thread. */
+          syncFromServer();
+        }
+        if(data.draft) applyRemoteDraft(data.draft);
+        else if(lastDraftTs > 0){ lastDraftTs = 0; lastRemoteDraft = ""; }
+      }
+      setTimeout(syncTick, 250);
+    }).catch(function(){ setTimeout(syncTick, 3000); });
+  }
+  /* THE MIRROR RULE: a remote draft enters this box only when the box
+     is empty, unfocused, or holding exactly the last remote draft
+     applied here. A man typing his own words in this box is never
+     overwritten — his keystrokes win the box he is touching; the
+     remote text applies the moment his box clears. While a send is in
+     flight the draft is held, never applied. */
+  function applyRemoteDraft(d){
+    if(!d || typeof d.text !== "string") return;
+    if(typeof d.ts === "number" && d.ts <= lastDraftTs) return;
+    if(typeof d.ts === "number") lastDraftTs = d.ts;
+    var remote = d.text;
+    if(sending){ lastRemoteDraft = remote; return; }
+    var cur = input.value;
+    if(cur === remote){ lastRemoteDraft = remote; lastDraftSent = remote; return; }
+    var focused = document.activeElement === input;
+    if(focused && cur && cur !== lastRemoteDraft){ lastRemoteDraft = remote; return; }
+    input.value = remote;
+    lastRemoteDraft = remote;
+    lastDraftSent = remote; /* never echo a received draft back */
+  }
+  var lastDraftSent = "";
+  var draftTimer = null;
+  function pushDraft(){
+    if(!isOwner || sending) return;
+    var v = input.value;
+    if(v === lastDraftSent) return;
+    lastDraftSent = v;
+    try{
+      fetch(DRAFT_ENDPOINT, {
+        method: "POST",
+        credentials: "include",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({session: sessionId, identity: identity || undefined, text: v, ts: Date.now()})
+      }).catch(function(){});
+    }catch(e){}
+  }
+  input.addEventListener("input", function(){
+    if(draftTimer) clearTimeout(draftTimer);
+    draftTimer = setTimeout(pushDraft, 200);
+  });
+  /* The watcher catches what "input" events miss — dictation writes
+     the box directly, and his way of working is typing on one device
+     while talking into the other. */
+  setInterval(function(){ pushDraft(); }, 350);
+
   function setSending(on){
     sending = on;
     sendBtn.disabled = on;
