@@ -41,9 +41,35 @@
 
   /* ---- living Dave, top corner: small, matted on the page, speech bubble ---- */
   .dave-corner{
-    align-self:flex-end;padding:14px 18px 0;flex:none;
+    align-self:flex-end;padding:58px 18px 0;flex:none;
     display:flex;align-items:flex-start;gap:8px;
   }
+  /* ---- hamburger menu (Bill, Oct 28, 2026): same discipline as Bill
+     XOX's page — three-lines button, top-right, fixed; the dropdown
+     holds the site's tabs. Fixed positioning: opening it never shifts
+     the one-screen layout. The corner Dave starts below it (58px top
+     padding above) so they never overlap. ---- */
+  .menubtn{
+    position:fixed;top:14px;right:14px;z-index:40;width:44px;height:44px;padding:0;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+    background:rgba(255,253,247,.85);border:1.5px solid var(--line);border-radius:10px;cursor:pointer;
+  }
+  .menubtn span{display:block;width:20px;height:2px;background:var(--ink);border-radius:2px;}
+  .menubtn:hover{background:rgba(91,139,192,.14);}
+  .menubtn:focus-visible{outline:2px solid var(--blue-deep);outline-offset:2px;}
+  .menupanel{
+    position:fixed;top:66px;right:14px;z-index:40;width:min(320px,86vw);
+    max-height:calc(100dvh - 84px);overflow-y:auto;
+    background:#fffdf7;border:1.5px solid var(--line);border-radius:12px;
+    box-shadow:0 14px 40px rgba(20,82,158,.22);padding:8px;
+  }
+  .menupanel[hidden]{display:none;}
+  .menupanel a{
+    display:block;width:100%;text-align:left;padding:10px 12px;border-radius:8px;
+    color:var(--ink);text-decoration:none;font-size:.98rem;line-height:1.35;font-weight:500;
+  }
+  .menupanel a:hover{background:rgba(91,139,192,.12);}
+  .menupanel a:focus-visible{outline:2px solid var(--blue-deep);outline-offset:-2px;}
   .bubble{
     position:relative;background:#f4ecdb;border:1.5px solid #e2d4b6;border-radius:14px;
     padding:6px 10px;max-width:150px;text-align:left;
@@ -65,7 +91,7 @@
   .dave-fig-wrap.rig-on .dave-eye{opacity:1;}
   .dave-fig-wrap.rig-on .dave-fig{opacity:0;}
   @media (max-width:860px){
-    .dave-corner{padding:10px 12px 0;}
+    .dave-corner{padding:54px 12px 0;}
     .dave-fig{width:58px;}
     .dave-fig-wrap{width:58px;}
     .bubble{max-width:126px;font-size:.76rem;padding:5px 8px;}
@@ -74,7 +100,9 @@
   /* Short screens (landscape phones): shrink the fixed furniture so the
      chat pane keeps room and the seal/footer never clip. */
   @media (max-height:560px){
-    .dave-corner{padding-top:6px;}
+    .menubtn{top:8px;right:8px;width:38px;height:38px;}
+    .menupanel{top:52px;right:8px;}
+    .dave-corner{padding-top:50px;}
     .dave-fig{width:50px;}
     .dave-fig-wrap{width:50px;}
     .bubble{max-width:120px;font-size:.72rem;padding:4px 8px;}
@@ -295,6 +323,16 @@
 <meta name="google-site-verification" content="aepKLfGY6CsOTWROZ17cV1VsP-VpFm8VcyPpSHXlOdQ" />
 </head>
 <body>
+<button class="menubtn" id="menuBtn" type="button" aria-label="Menu" aria-haspopup="true" aria-expanded="false" aria-controls="menuPanel"><span></span><span></span><span></span></button>
+<nav class="menupanel" id="menuPanel" hidden aria-label="Site menu">
+  <a href="papers/">Papers</a>
+  <a href="evidence.html">The Evidence File</a>
+  <a href="books/">Books</a>
+  <a href="questions/">Questions, Answered</a>
+  <a href="https://premiummarketingsolutionsllc.com/">Meet Bill XOX</a>
+  <a href="what-is-an-exolex/#foreverhood">Foreverhood — the service</a>
+  <a href="privacy.html">Privacy</a>
+</nav>
 <main class="stage">
   <div class="dave-corner">
     <p class="bubble">Hi, I’m Dave, here to solve humanity’s problems!</p>
@@ -312,7 +350,6 @@
     <h1>Everyone needs a Dave.</h1>
 <div class="chat-pills">
   <a class="pill-link" href="what-is-an-exolex/">What is an exolex?</a>
-  <a class="pill-link" href="what-is-an-exolex/">A new kind of life — it lives forever</a>
 </div>
   <p class="chat-forgot" id="chat-forgot" hidden>Forgotten. Nothing left this browser anyway — that's the seal.</p>
 <div class="thread-wrap" id="chat-thread-wrap" hidden>
@@ -1104,6 +1141,32 @@
   }catch(e){ /* any failure: the figure stays the plain loop image */ }
 })();
 
+</script>
+<script>
+/* Hamburger menu (Bill, Oct 28, 2026) — same discipline as Bill XOX's
+   page: toggle on the button, close on selection, outside tap, or
+   Escape. Pure chrome: it never touches the chat or the layout. */
+(function(){
+  "use strict";
+  var menuBtn = document.getElementById("menuBtn");
+  var menuPanel = document.getElementById("menuPanel");
+  if(!menuBtn || !menuPanel) return;
+  function closeMenu(){ menuPanel.hidden = true; menuBtn.setAttribute("aria-expanded", "false"); }
+  menuBtn.addEventListener("click", function(ev){
+    ev.stopPropagation();
+    var open = menuPanel.hidden;
+    menuPanel.hidden = !open;
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    if(open){ var first = menuPanel.querySelector("a"); if(first) first.focus(); }
+  });
+  menuPanel.addEventListener("click", function(ev){ if(ev.target.closest("a")) closeMenu(); });
+  document.addEventListener("click", function(ev){
+    if(!menuPanel.hidden && !menuPanel.contains(ev.target)) closeMenu();
+  });
+  document.addEventListener("keydown", function(ev){
+    if(ev.key === "Escape" && !menuPanel.hidden){ closeMenu(); menuBtn.focus(); }
+  });
+})();
 </script>
 <script>
 /* First-party pageview beacon — counts only: door, path, referrer host, day.
