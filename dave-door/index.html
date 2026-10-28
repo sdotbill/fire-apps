@@ -41,14 +41,14 @@
 
   /* ---- living Dave, top corner: small, matted on the page, speech bubble ---- */
   .dave-corner{
-    align-self:flex-end;padding:58px 18px 0;flex:none;
+    align-self:flex-end;padding:14px 18px 0;flex:none;
     display:flex;align-items:flex-start;gap:8px;
   }
-  /* ---- hamburger menu (Bill, Oct 28, 2026): same discipline as Bill
-     XOX's page — three-lines button, top-right, fixed; the dropdown
-     holds the site's tabs. Fixed positioning: opening it never shifts
-     the one-screen layout. The corner Dave starts below it (58px top
-     padding above) so they never overlap. ---- */
+  /* ---- hamburger menu (Bill, Oct 28, 2026; placement corrected 13:42
+     EDT): three-lines button, top-LEFT, fixed — the right side of the
+     screen is Dave's, and his corner figure keeps its original offset.
+     Same discipline as Bill XOX's page, mirrored. Fixed positioning:
+     opening the dropdown never shifts the one-screen layout. ---- */
   .menubtn{
     position:fixed;top:14px;left:14px;z-index:40;width:44px;height:44px;padding:0;
     display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
@@ -91,7 +91,7 @@
   .dave-fig-wrap.rig-on .dave-eye{opacity:1;}
   .dave-fig-wrap.rig-on .dave-fig{opacity:0;}
   @media (max-width:860px){
-    .dave-corner{padding:54px 12px 0;}
+    .dave-corner{padding:10px 12px 0;}
     .dave-fig{width:58px;}
     .dave-fig-wrap{width:58px;}
     .bubble{max-width:126px;font-size:.76rem;padding:5px 8px;}
@@ -102,7 +102,7 @@
   @media (max-height:560px){
     .menubtn{top:8px;left:8px;width:38px;height:38px;}
     .menupanel{top:52px;left:8px;}
-    .dave-corner{padding-top:50px;}
+    .dave-corner{padding-top:6px;}
     .dave-fig{width:50px;}
     .dave-fig-wrap{width:50px;}
     .bubble{max-width:120px;font-size:.72rem;padding:4px 8px;}
