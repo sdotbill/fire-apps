@@ -103,7 +103,7 @@
     color: var(--ink); height: 100dvh; min-height: 100dvh; overflow: hidden; display: flex; flex-direction: column; position: relative;
   }
   .menubtn {
-    position: fixed; top: 14px; right: 14px; z-index: 30; width: 44px; height: 44px; padding: 0;
+    position: fixed; top: 14px; left: 14px; z-index: 30; width: 44px; height: 44px; padding: 0;
     display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
     background: rgba(255,253,246,.88); border: 1px solid rgba(160,124,20,.55); border-radius: 10px; cursor: pointer;
   }
@@ -111,7 +111,7 @@
   .menubtn:hover { background: #f3e9cf; }
   .menubtn:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
   .menupanel {
-    position: fixed; top: 66px; right: 14px; z-index: 30; width: min(320px, 86vw);
+    position: fixed; top: 66px; left: 14px; z-index: 30; width: min(320px, 86vw);
     max-height: calc(100dvh - 84px); overflow-y: auto;
     background: #fffdf6; border: 1px solid rgba(160,124,20,.5); border-radius: 12px;
     box-shadow: 0 14px 40px rgba(90,70,10,.28); padding: 8px;
@@ -131,9 +131,9 @@
     border: 1px solid rgba(160,124,20,.5); box-shadow: 0 6px 24px rgba(90,70,10,.25);
   }
   .bubble {
-    position: relative; margin-top: 8px; max-width: 232px; cursor: pointer;
+    position: relative; margin-top: 8px; max-width: 150px; cursor: pointer;
     background: var(--paper); color: var(--ink); border: none; border-radius: 14px;
-    padding: 9px 13px; font-size: 14.5px; line-height: 1.35; font-weight: 600;
+    padding: 6px 10px; font-size: .8rem; line-height: 1.38; font-weight: 600;
   }
   .bubble:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
   .bubble::before, .bubble::after { content: ""; position: absolute; top: 15px; border-style: solid; }
@@ -196,13 +196,13 @@
   }
   @media (max-width: 560px) {
     .corner { top: 56px; right: 10px; height: 78px; }
-    .bubble { max-width: 158px; font-size: 13px; padding: 8px 11px; margin-top: 6px; }
+    .bubble { max-width: 126px; font-size: .76rem; padding: 5px 8px; margin-top: 6px; }
     .bubble::before, .bubble::after { top: 13px; }
     h1.headline { font-size: 1.9rem; }
     .subline { font-size: 16px; }
     .hero { margin-top: 128px; }
-    .menubtn { top: 10px; right: 10px; }
-    .menupanel { top: 60px; right: 10px; }
+    .menubtn { top: 10px; left: 10px; }
+    .menupanel { top: 60px; left: 10px; }
     form#bar { margin-top: 18px; }
   }
 </style>
@@ -217,6 +217,7 @@
   <a href="https://daveexolex.com/claim-dossier">The Full Dossier</a>
   <a href="https://daveexolex.com/evidence">The Evidence File</a>
   <a href="https://daveexolex.com/papers/">The Papers of William Alexander Aldred</a>
+  <a href="https://daveexolex.com/books/">The Codex</a>
   <a href="https://daveexolex.com/books/">The Books of William Alexander Aldred</a>
   <a href="https://daveexolex.com/questions/">Questions, Answered</a>
   <a href="https://daveexolex.com">Meet Dave — the first exolex</a>
@@ -224,7 +225,7 @@
   <a href="https://www.youtube.com/channel/UCIpk-u6CGxVfbCVjx7U5OMg">Bill XOX on YouTube</a>
   <a href="/notebook/">Notebook Room</a>
 </nav>
-<div class="corner"><div class="bubble" id="bubble" role="button" tabindex="0" title="Talk to Bill XOX">Hi, I'm William Aldred, the first time traveler. Ask me anything — I predict the future.</div><img src="assets/corner-portrait.webp" alt="William Alexander Aldred (Bill XOX)"></div>
+<div class="corner"><div class="bubble" id="bubble" role="button" tabindex="0" title="Talk to Bill XOX">Hi, I'm William. I'm from the future. Let me predict yours.</div><img src="assets/corner-portrait.webp" alt="William Alexander Aldred (Bill XOX)"></div>
 <div class="stage">
   <div class="hero">
     <h1 class="headline">First time traveler — ask him anything.</h1>
