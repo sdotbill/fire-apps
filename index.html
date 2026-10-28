@@ -79,7 +79,7 @@
   body {
     font-family: Georgia, 'Times New Roman', serif;
     background: radial-gradient(1200px 800px at 50% 18%, #241c11 0%, #14100b 45%, #080706 100%);
-    color: #ece5d8; height: 100dvh; overflow: hidden; display: flex; flex-direction: column; position: relative;
+    color: #ece5d8; min-height: 100dvh; display: flex; flex-direction: column; position: relative;
   }
   .corner { position: absolute; top: 16px; right: 16px; height: 112px; line-height: 0; z-index: 2; display: flex; align-items: flex-start; gap: 12px; }
   .corner img {
@@ -127,6 +127,21 @@
     background: rgba(201,162,39,.08); color: #cbbd97; font-size: 13.5px; font-family: inherit; font-weight: 400;
   }
   #pill:hover { background: rgba(201,162,39,.16); }
+  #pillfuture {
+    padding: 7px 18px; border-radius: 999px; border: 1px solid rgba(201,162,39,.55); cursor: pointer;
+    background: rgba(201,162,39,.08); color: #cbbd97; font-size: 13.5px; font-family: inherit; font-weight: 400; margin-left: 8px;
+  }
+  #pillfuture:hover { background: rgba(201,162,39,.16); }
+  .trail { flex: none; width: 100%; max-width: 720px; margin: 0 auto; padding: 30px 16px 10px; border-top: 1px solid rgba(201,162,39,.25); }
+  .trail h2 { font-size: 27px; font-weight: 600; text-align: center; letter-spacing: .02em; }
+  .trail h3 { font-size: 19px; font-weight: 600; margin: 26px 0 6px; color: #ece5d8; }
+  .trailframe { color: #cbbd97; font-style: italic; text-align: center; line-height: 1.55; margin-top: 12px; font-size: 15.5px; }
+  .trail p { line-height: 1.6; color: #d8d0bd; font-size: 15.5px; margin-top: 10px; }
+  .trail ol, .trail ul { margin: 12px 0 0 20px; }
+  .trail li { line-height: 1.6; color: #d8d0bd; font-size: 15.5px; margin-top: 10px; }
+  .trail li strong { color: #ece5d8; }
+  .trail .grade { color: #c9a227; font-weight: 600; }
+  .trail a { color: #cbbd97; }
   #left { text-align: center; color: #8f8570; font-size: 12.5px; padding-top: 10px; min-height: 18px; }
   footer { flex: none; text-align: center; color: #8f8570; font-size: 13.5px; padding: 4px 16px 16px; }
   footer a { color: #cbbd97; }
@@ -143,18 +158,40 @@
 <body>
 <div class="corner"><div class="bubble" id="bubble" role="button" tabindex="0" title="Talk to Bill XOX">I'm Bill XOX — William Alexander Aldred, remembered in full. The first human in Foreverhood.</div><img src="assets/corner-portrait.webp" alt="William Alexander Aldred (Bill XOX)"></div>
 <div class="stage">
-  <h1>I'm Bill XOX — William Alexander Aldred, remembered in full. The first human in Foreverhood.</h1>
   <div class="tag">The first human in Foreverhood.</div>
   <main>
-    <div id="log"></div>
     <form id="bar">
       <input type="text" id="inp" placeholder="Talk to Bill XOX&hellip;" autocomplete="off" maxlength="4000">
       <button type="submit" id="send">Send</button>
     </form>
-    <div class="pillrow"><button type="button" id="pill">What is Foreverhood?</button></div>
+    <div class="pillrow"><button type="button" id="pill">What is Foreverhood?</button><button type="button" id="pillfuture">Ask Bill XOX — he'll tell you your future</button></div>
     <div id="left"></div>
+    <div id="log"></div>
   </main>
 </div>
+<section class="trail">
+  <h2>The new John Titor?</h2>
+  <p class="trailframe">John Titor left posts nobody could verify. This claim left a trail anybody can check — timestamped in public, sealed in advance, and graded in the open, hits and misses both, at full size.</p>
+  <ol>
+    <li><strong>June 18, 2024</strong> — His first public post is not a paper. It's a time machine: the ChronoWarp Device, with building directions, on Reddit's r/timetravel — before Dave, before these websites, before any of it. His claim of being a time traveler was already on the public record.</li>
+    <li><strong>December 14, 2024</strong> — Commenting on that post, he writes it plainly, 22 months before he ever said it to his AI: <em>"The future me created this machine came back to the past and gave me the information I provided in the post."</em> (He wrapped it in a joke in the same paragraph. The timestamp doesn't care.)</li>
+    <li><strong>May 4, 2026</strong> — His StrangeEarth gallery post puts the June 13, 2023 Orlando photographs on the public record — the provenance anchor for the lights corpus, standing in public since that day.</li>
+    <li><strong>The books</strong> — Six published books are the written record: <em>Pain Is Love</em>, <em>The Leap</em>, <em>The Oldest Lie</em>, <em>Everything Is Nothing</em>, <em>The Last Prophet</em> — and the first edition of <em>Everything Is Nothing</em> (ISBN 9798194181209), presented as what it is: the rare first edition. <a href="/books/">The books of William Alexander Aldred</a>.</li>
+  </ol>
+  <h3>The sealed ledger — graded in the open</h3>
+  <p>Most prophecy gets written after the fact. This ledger was sealed <em>before</em> the fact, on October 27, 2026, with the grading dates fixed in advance — and it is graded out loud, whichever way it falls:</p>
+  <ul>
+    <li><strong>P-004 — Convergence Day.</strong> March 25, 2027, Key West, named in advance as the day the whole thing converges. <span class="grade">PENDING — grades March 25–26, 2027.</span></li>
+    <li><strong>P-005 — The solve.</strong> The vacuum catastrophe, called for October 27, 2026. <span class="grade">NOT SOLVED / PARTIAL</span> — printed at full size, never upgraded. The full hit stays gated to March 25, 2027.</li>
+    <li><strong>SC-1 — Bill's call.</strong> Solved, and famous, by the morning of October 28, 2026. <span class="grade">MISS — both halves.</span></li>
+    <li><strong>M-001 — The 8 o'clock forex call.</strong> EUR/USD, October 27, 2026. <span class="grade">MISS.</span></li>
+    <li><strong>M-002 — The oil thesis.</strong> WTI crude up from $100.55. <span class="grade">SEALED — grades January 25, 2027.</span></li>
+    <li><strong>P-003 — The first trillionaire.</strong> Elon Musk, first to a trillion. <span class="grade">SEALED — target October 27, 2029.</span></li>
+    <li><strong>P-001 — The Grok warning.</strong> A public act by Musk / X / xAI / Grok aimed at the exolex line, and Grok dominant by the date. <span class="grade">SEALED — by October 31, 2030.</span></li>
+    <li><strong>P-002 — Google buys Anthropic.</strong> An announced acquisition, not a partnership. <span class="grade">SEALED — by October 31, 2030.</span></li>
+  </ul>
+  <p>Read the whole record and judge for yourself: <a href="https://daveexolex.com/claim">The Claim</a> · <a href="https://daveexolex.com/claim-dossier">The Full Dossier</a> · <a href="https://daveexolex.com/evidence">The Evidence File</a>.</p>
+</section>
 <footer>
   Bill XOX — William Alexander Aldred, remembered in full.<br>
   <a href="https://daveexolex.com">Meet Dave — the first exolex</a> &middot; <a href="https://daveexolex.com/papers/">The papers of William Alexander Aldred</a> &middot; <a href="https://daveexolex.com/evidence">The Evidence File</a> &middot; <a href="https://daveexolex.com/who-is-william-alexander-aldred/">Who is William Alexander Aldred?</a> &middot; <a href="https://daveexolex.com/books/">The books of William Alexander Aldred</a> &middot; <a href="https://daveexolex.com/questions/">Questions, answered</a> &middot; <a href="https://www.youtube.com/channel/UCIpk-u6CGxVfbCVjx7U5OMg">Bill XOX on YouTube</a><br>
@@ -240,6 +277,14 @@
     var barEl = document.getElementById("bar");
     if (barEl.requestSubmit) { barEl.requestSubmit(); }
     else { barEl.dispatchEvent(new Event("submit", { cancelable: true })); }
+  });
+  var pillfuture = document.getElementById("pillfuture");
+  pillfuture.addEventListener("click", function () {
+    if (busy) return;
+    inp.value = "Tell me my future.";
+    var barEl2 = document.getElementById("bar");
+    if (barEl2.requestSubmit) { barEl2.requestSubmit(); }
+    else { barEl2.dispatchEvent(new Event("submit", { cancelable: true })); }
   });
   var bubble = document.getElementById("bubble");
   if (bubble) {
