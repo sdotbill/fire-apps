@@ -50,7 +50,7 @@
      the one-screen layout. The corner Dave starts below it (58px top
      padding above) so they never overlap. ---- */
   .menubtn{
-    position:fixed;top:14px;right:14px;z-index:40;width:44px;height:44px;padding:0;
+    position:fixed;top:14px;left:14px;z-index:40;width:44px;height:44px;padding:0;
     display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
     background:rgba(255,253,247,.85);border:1.5px solid var(--line);border-radius:10px;cursor:pointer;
   }
@@ -58,7 +58,7 @@
   .menubtn:hover{background:rgba(91,139,192,.14);}
   .menubtn:focus-visible{outline:2px solid var(--blue-deep);outline-offset:2px;}
   .menupanel{
-    position:fixed;top:66px;right:14px;z-index:40;width:min(320px,86vw);
+    position:fixed;top:66px;left:14px;z-index:40;width:min(320px,86vw);
     max-height:calc(100dvh - 84px);overflow-y:auto;
     background:#fffdf7;border:1.5px solid var(--line);border-radius:12px;
     box-shadow:0 14px 40px rgba(20,82,158,.22);padding:8px;
@@ -100,8 +100,8 @@
   /* Short screens (landscape phones): shrink the fixed furniture so the
      chat pane keeps room and the seal/footer never clip. */
   @media (max-height:560px){
-    .menubtn{top:8px;right:8px;width:38px;height:38px;}
-    .menupanel{top:52px;right:8px;}
+    .menubtn{top:8px;left:8px;width:38px;height:38px;}
+    .menupanel{top:52px;left:8px;}
     .dave-corner{padding-top:50px;}
     .dave-fig{width:50px;}
     .dave-fig-wrap{width:50px;}
