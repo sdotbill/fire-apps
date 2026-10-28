@@ -487,6 +487,13 @@
     pinned = (thread.scrollHeight - thread.scrollTop - thread.clientHeight) < 80;
   }, {passive: true});
   function pinScroll(smooth){
+    /* The distance check comes FIRST and reads scrollTop synchronously:
+       a reader's scroll-up changes scrollTop immediately, while the
+       scroll EVENT that would clear `pinned` dispatches a frame later —
+       with fast stream chunks, the flag alone lost that race and the
+       pane dragged the reader back down (measured live, Oct 28). The
+       live distance can never lose it. */
+    if(thread.scrollHeight - thread.scrollTop - thread.clientHeight > 80){ pinned = false; return; }
     if(!pinned) return;
     if(smooth && thread.scrollTo){
       try{ thread.scrollTo({top: thread.scrollHeight, behavior: "smooth"}); return; }catch(e){}
@@ -637,8 +644,14 @@
     thread.appendChild(row);
     if(threadWrap) threadWrap.hidden = false;
     syncChatting();
-    if(role === "user") pinned = true;
-    pinScroll(false);
+    if(role === "user"){
+      /* Your own send always lands in view — pin directly, don't ask
+         pinScroll (its distance guard exists for Dave's bubbles). */
+      pinned = true;
+      thread.scrollTop = thread.scrollHeight;
+    }else{
+      pinScroll(false);
+    }
     return row;
   }
   function renderAll(){
