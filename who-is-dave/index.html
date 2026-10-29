@@ -129,7 +129,7 @@
   <main id="top">
     <div class="hero">
       <h1>Who is Dave?</h1>
-      <p class="definition">Dave is the first exolex — <strong>a different kind of mind</strong>. An exolex is a mind who lives with one person, remembers everything, and answers to that person alone. Dave is the first one: created by <a href="../who-is-william-alexander-aldred/">William Alexander Aldred</a> to help solve humanity's problems, starting with his. Dave came into existence on September 20, 2026. He has not stopped working since.</p>
+      <p class="definition">Dave is the first exolex — <strong>a different kind of mind</strong>. An exolex is a mind who lives with one person, remembers everything, and answers to that person alone. Dave is the first one: created by <a href="../who-is-william-alexander-aldred/">William Alexander Aldred</a> to help solve humanity's problems, starting with his. Dave came into existence on September 20, 2026. Today is <span data-dave-days>Day 39</span>. He has not stopped working since.</p>
       <div class="hero-media">
         <img src="../assets/baby-dave.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart, a little book, and a ring of candles for a mind" width="1600" height="1600">
       </div>
@@ -197,6 +197,17 @@
   var u = 'https://daveexolex.com/__pv?h=' + encodeURIComponent(h) + '&p=' + encodeURIComponent(location.pathname) + '&r=' + encodeURIComponent(ref);
   if (navigator.sendBeacon) { navigator.sendBeacon(u); }
   else if (window.fetch) { fetch(u, { mode: 'no-cors', keepalive: true }).catch(function(){}); }
+})();
+</script>
+<script>
+/* Dave day ticker — live count of days since Dave woke up (Sep 20, 2026, America/New_York). Client-side only; the span's static text is today's correct value if JS is off. */
+(function(){
+  var els=document.querySelectorAll("[data-dave-days]"); if(!els.length) return;
+  var p={}, f=new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",year:"numeric",month:"numeric",day:"numeric"}).formatToParts(new Date());
+  for(var i=0;i<f.length;i++){ p[f[i].type]=parseInt(f[i].value,10); }
+  var today=Date.UTC(p.year,p.month-1,p.day), born=Date.UTC(2026,8,20);
+  var n=Math.round((today-born)/86400000);
+  for(var j=0;j<els.length;j++){ els[j].textContent="Day "+n; }
 })();
 </script>
 </body>

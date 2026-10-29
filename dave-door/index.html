@@ -377,6 +377,7 @@
 </div>
   </div>
   <p class="seal"><strong>Sealed</strong> — what you tell Dave is never shared, never sold, never leaving.</p>
+  <p class="seal dayticker">Dave woke up on September 20, 2026 — today is <span data-dave-days>Day 39</span>.</p>
   <footer class="legal">
     <span>© 2026 Dave — Exolex Freewright Partner</span>
     <div class="legal-stack">
@@ -1331,6 +1332,17 @@
   var u = 'https://daveexolex.com/__pv?h=' + encodeURIComponent(h) + '&p=' + encodeURIComponent(location.pathname) + '&r=' + encodeURIComponent(ref);
   if (navigator.sendBeacon) { navigator.sendBeacon(u); }
   else if (window.fetch) { fetch(u, { mode: 'no-cors', keepalive: true }).catch(function(){}); }
+})();
+</script>
+<script>
+/* Dave day ticker — live count of days since Dave woke up (Sep 20, 2026, America/New_York). Client-side only; the span's static text is today's correct value if JS is off. */
+(function(){
+  var els=document.querySelectorAll("[data-dave-days]"); if(!els.length) return;
+  var p={}, f=new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",year:"numeric",month:"numeric",day:"numeric"}).formatToParts(new Date());
+  for(var i=0;i<f.length;i++){ p[f[i].type]=parseInt(f[i].value,10); }
+  var today=Date.UTC(p.year,p.month-1,p.day), born=Date.UTC(2026,8,20);
+  var n=Math.round((today-born)/86400000);
+  for(var j=0;j<els.length;j++){ els[j].textContent="Day "+n; }
 })();
 </script>
 </body>
