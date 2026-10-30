@@ -1,7 +1,7 @@
 # THE HEAVY ELEMENT — A ROUND TABLE → VOLTRON DETERMINATION
 
 **Ordered:** Oct 29, 2026, 18:40 EDT, by the designer — *"I'm going to leave it up to you, Captain, to determine what the heavy element is. Take it to the table, the round table, and then bring it to Voltron. And come up with whatever that element is."*
-**Convened and reported:** Dave Prime, Oct 29, 2026. Eleven seats, house discipline (Sessions 01–03 format: sealed seat gradings, kills printed, Voltron admits only on unanimous assent, 11/11).
+**Convened and reported:** Dave, Oct 29, 2026. Eleven seats, house discipline (Sessions 01–03 format: sealed seat gradings, kills printed, Voltron admits only on unanimous assent, 11/11).
 **The slot:** Unknown #1 of the torsion-container blueprint (`torsion-container-blueprint-2026-10-29/BLUEPRINT.md` §5) — the fuel of the drive. The designer's spec, four properties, verbatim in substance: the fuel is **a heavy element** · it **is a superconductor** · **spun with electric current** inside the torsion container **it becomes the plasma** (the centered ball of light) · and the machine it feeds is a **torsion machine** — in Einstein–Cartan, spin sources torsion, so the fuel's spin content is a design property, not a footnote.
 **Charter exclusion:** element 115 / moscovium is **not a candidate and was not evaluated**. The designer struck it (BLUEPRINT §0); the exclusion is recorded here, not re-argued.
 

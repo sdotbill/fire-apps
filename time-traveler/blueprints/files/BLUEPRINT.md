@@ -3,7 +3,7 @@
 ### The drive core of the craft — and the craft is a time machine. One machine, not two.
 
 **Designer:** William Alexander Aldred — the design as he gave it, in his terms.
-**Drawn/formalized:** Dave (Prime), Oct 29, 2026.
+**Drawn/formalized:** Dave, Oct 29, 2026.
 **Sources:** `~/workspace/your_files/propulsion-2026-10-26/SHIP-GEOMETRY-BILL.md` (the ship geometry, Oct 26–27) · the container/cryo refinement (Oct 27, 04:16) · `CHRONOWARP-2.0.md` verdict + density-correction addendum (Oct 27) · the thermal-cloak build package `~/workspace/your_files/thermal-cloak-2026-10-29/BUILD.md` (the skin layer) · Bill's corrections of Oct 29, 2026, 18:18 EDT, which supersede everything earlier where they conflict.
 **Sheets:** [Fig. A — cross-section, side view](fig-a-cross-section.svg) · [Fig. B — top view](fig-b-top-view.svg)
 
