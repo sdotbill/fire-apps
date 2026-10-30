@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 840" font-family="monospace">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1d4e89" stroke-width="1"/>
+    </pattern>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#ffffff"/>
+    </marker>
+    <marker id="arrY" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#ffd75e"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1240" height="840" fill="#0a2f5c"/>
+  <rect x="0" y="0" width="1240" height="840" fill="url(#grid)"/>
+  <rect x="14" y="14" width="1212" height="812" fill="none" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Title -->
+  <text x="40" y="58" fill="#ffffff" font-size="25" font-weight="bold">FIG. B — TOP VIEW (DOWN THE SPIN AXIS)</text>
+  <text x="40" y="86" fill="#bcd6f5" font-size="15">THE RING WHOLE, THE PLASMA AS THE LOOPY BALL — RUBBER-BAND LOOPS IN A CIRCLE</text>
+  <text x="40" y="110" fill="#bcd6f5" font-size="13">ALL SIZES ARE PARAMETERS — NO VALUES ASSIGNED (SEE UNKNOWNS TABLE).</text>
+
+  <!-- ======= LAYERS, TOP VIEW (center 430,430) ======= -->
+  <circle cx="430" cy="430" r="298" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="430" cy="430" r="272" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <circle cx="430" cy="430" r="242" fill="none" stroke="#7fc4ff" stroke-width="2"/>
+  <circle cx="430" cy="430" r="224" fill="none" stroke="#ffffff" stroke-width="26" opacity="0.28"/>
+  <circle cx="430" cy="430" r="205" fill="none" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- feed / sensor ports on ceramic (cardinal) -->
+  <g stroke="#ffffff" stroke-width="2" fill="#0a2f5c">
+    <rect x="418" y="196" width="24" height="24"/>
+    <rect x="418" y="640" width="24" height="24"/>
+    <rect x="196" y="418" width="24" height="24"/>
+    <rect x="640" y="418" width="24" height="24"/>
+  </g>
+  <text x="452" y="188" fill="#ffffff" font-size="12.5">PORTS ×N (PARAM.)</text>
+
+  <!-- torsion ring annulus: outer 162, inner 78, centerline 120 -->
+  <circle cx="430" cy="430" r="162" fill="none" stroke="#ffd75e" stroke-width="3"/>
+  <circle cx="430" cy="430" r="78" fill="none" stroke="#ffd75e" stroke-width="3"/>
+  <circle cx="430" cy="430" r="120" fill="none" stroke="#ffd75e" stroke-width="1.2" stroke-dasharray="3 6"/>
+
+  <!-- spin arrows around the ring (tangential) -->
+  <path d="M 430 298 A 132 132 0 0 1 512 340" fill="none" stroke="#ffd75e" stroke-width="3.5" marker-end="url(#arrY)"/>
+  <path d="M 562 430 A 132 132 0 0 1 520 520" fill="none" stroke="#ffd75e" stroke-width="3.5" marker-end="url(#arrY)"/>
+  <path d="M 430 562 A 132 132 0 0 1 348 520" fill="none" stroke="#ffd75e" stroke-width="3.5" marker-end="url(#arrY)"/>
+  <path d="M 298 430 A 132 132 0 0 1 340 340" fill="none" stroke="#ffd75e" stroke-width="3.5" marker-end="url(#arrY)"/>
+  <text x="560" y="300" fill="#ffd75e" font-size="15">ω — RING SPIN / TWIST</text>
+
+  <!-- plasma core: loopy rubber-band ball -->
+  <circle cx="430" cy="430" r="62" fill="#fff3b0" opacity="0.14"/>
+  <ellipse cx="430" cy="430" rx="58" ry="24" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <ellipse cx="430" cy="430" rx="58" ry="24" fill="none" stroke="#ffffff" stroke-width="2" transform="rotate(45 430 430)"/>
+  <ellipse cx="430" cy="430" rx="58" ry="24" fill="none" stroke="#ffffff" stroke-width="2" transform="rotate(90 430 430)"/>
+  <ellipse cx="430" cy="430" rx="58" ry="24" fill="none" stroke="#ffffff" stroke-width="2" transform="rotate(135 430 430)"/>
+  <circle cx="430" cy="430" r="8" fill="#ffffff"/>
+  <text x="352" y="452" fill="#0a2f5c" font-size="1">.</text>
+
+  <!-- radial clearance dimension along 45 degrees (from center) -->
+  <line x1="474" y1="386" x2="485" y2="375" stroke="#ff9d5c" stroke-width="2" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  <text x="520" y="352" fill="#ff9d5c" font-size="13.5">δp</text>
+  <line x1="545" y1="315" x2="575" y2="285" stroke="#ff9d5c" stroke-width="2" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  <text x="586" y="272" fill="#ff9d5c" font-size="13.5">δw</text>
+
+  <!-- ======= READING NOTES (right) ======= -->
+  <text x="800" y="150" fill="#ffffff" font-size="17" font-weight="bold">HOW TO READ THIS SHEET</text>
+  <text x="800" y="182" fill="#bcd6f5" font-size="13">Concentric = the stack of Fig. A, seen from above:</text>
+  <text x="800" y="206" fill="#ffffff" font-size="13.5">skin (r = R_out) · cryo band · ceramic wall · cavity</text>
+
+  <text x="800" y="248" fill="#ffd75e" font-size="14">THE RING (YELLOW ANNULUS)</text>
+  <text x="800" y="272" fill="#bcd6f5" font-size="13">One torus: inner radius R_ring − a, outer R_ring + a,</text>
+  <text x="800" y="292" fill="#bcd6f5" font-size="13">centerline R_ring dashed. The four arrows are one</text>
+  <text x="800" y="312" fill="#bcd6f5" font-size="13">motion — spin with twist, ω. Its spin is what holds</text>
+  <text x="800" y="332" fill="#bcd6f5" font-size="13">the plasma centered. No wall contact, either side:</text>
+  <text x="800" y="352" fill="#ff9d5c" font-size="13">δp &gt; 0 (to plasma) · δw &gt; 0 (to wall), always.</text>
+
+  <text x="800" y="394" fill="#ffffff" font-size="14">THE PLASMA (WHITE LOOPS, CENTER)</text>
+  <text x="800" y="418" fill="#bcd6f5" font-size="13">The ball of light drawn as Bill describes it: loopy,</text>
+  <text x="800" y="438" fill="#bcd6f5" font-size="13">stretchy, rubber-band strands wound in a circle —</text>
+  <text x="800" y="458" fill="#bcd6f5" font-size="13">a living torus/ball, radius R_core, floating dead</text>
+  <text x="800" y="478" fill="#bcd6f5" font-size="13">center inside the ring. It is the power source.</text>
+
+  <text x="800" y="520" fill="#ffffff" font-size="14">CONTROL</text>
+  <text x="800" y="544" fill="#bcd6f5" font-size="13">No steering wheel. Control is electrical — electrons</text>
+  <text x="800" y="564" fill="#bcd6f5" font-size="13">through the ports and the feed: spin rate, current,</text>
+  <text x="800" y="584" fill="#bcd6f5" font-size="13">and the bubble are worked through the one tongue</text>
+  <text x="800" y="604" fill="#bcd6f5" font-size="13">everything speaks (designer's model).</text>
+
+  <text x="800" y="646" fill="#ffffff" font-size="14">DRIVE CYCLE (SEE BLUEPRINT §4)</text>
+  <text x="800" y="670" fill="#bcd6f5" font-size="13">spin-up with current → plasma → centered ball →</text>
+  <text x="800" y="690" fill="#bcd6f5" font-size="13">power take-off → density rise → bubble → drop.</text>
+
+  <!-- Notes box -->
+  <rect x="40" y="742" width="600" height="62" fill="none" stroke="#ffffff" stroke-width="1.2"/>
+  <text x="54" y="766" fill="#ffffff" font-size="12.5">NOTE: PAPER DESIGN STUDY ONLY. NO FABRICATION DATA.</text>
+  <text x="54" y="786" fill="#bcd6f5" font-size="12.5">TOP VIEW: RING AND PLASMA SHARE ONE CENTER — THAT SHARING IS THE DESIGN.</text>
+
+  <!-- Title block -->
+  <rect x="800" y="742" width="400" height="62" fill="none" stroke="#ffffff" stroke-width="1.2"/>
+  <text x="812" y="764" fill="#ffffff" font-size="12.5">DESIGN: W. A. ALDRED (TESTIMONY) · DRAWN: DAVE</text>
+  <text x="812" y="786" fill="#bcd6f5" font-size="12.5">DATE 2026-10-29 · REV C (RING-CENTERED) · SHEET B / 2</text>
+</svg>
