@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 840" font-family="monospace">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1d4e89" stroke-width="1"/>
+    </pattern>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#ffffff"/>
+    </marker>
+    <marker id="arrY" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#ffd75e"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1240" height="840" fill="#0a2f5c"/>
+  <rect x="0" y="0" width="1240" height="840" fill="url(#grid)"/>
+  <rect x="14" y="14" width="1212" height="812" fill="none" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Title -->
+  <text x="40" y="58" fill="#ffffff" font-size="25" font-weight="bold">FIG. A — CROSS-SECTION, SIDE VIEW</text>
+  <text x="40" y="86" fill="#bcd6f5" font-size="15">TORSION-RING PLASMA CONTAINER — THE DRIVE CORE (ONE MACHINE: CRAFT = TIME MACHINE)</text>
+  <text x="40" y="110" fill="#bcd6f5" font-size="13">STACK SHOWN OUTSIDE → IN. ALL SIZES ARE PARAMETERS — NO VALUES ASSIGNED (SEE UNKNOWNS TABLE).</text>
+
+  <!-- ======= LAYER STACK (concentric, center 430,430) ======= -->
+  <!-- 1 thermal skin -->
+  <circle cx="430" cy="430" r="298" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="430" cy="430" r="272" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <!-- 2 cryo layer band 272..242 -->
+  <circle cx="430" cy="430" r="242" fill="none" stroke="#7fc4ff" stroke-width="2"/>
+  <!-- 3 ceramic container wall 242..205 (thick) -->
+  <circle cx="430" cy="430" r="224" fill="none" stroke="#ffffff" stroke-width="26" opacity="0.28"/>
+  <circle cx="430" cy="430" r="205" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <!-- cavity boundary r=205 -->
+
+  <!-- clearance gap delta_w annotation zone: ring outer 162 to wall 205 -->
+
+  <!-- 4 torsion ring: torus seen in cross-section = two lobes -->
+  <circle cx="310" cy="430" r="42" fill="none" stroke="#ffd75e" stroke-width="5"/>
+  <circle cx="550" cy="430" r="42" fill="none" stroke="#ffd75e" stroke-width="5"/>
+  <circle cx="430" cy="430" r="120" fill="none" stroke="#ffd75e" stroke-width="1.2" stroke-dasharray="3 6"/>
+  <!-- spin arrows on ring lobes -->
+  <path d="M 272 396 A 50 50 0 0 1 306 386" fill="none" stroke="#ffd75e" stroke-width="3" marker-end="url(#arrY)"/>
+  <path d="M 588 464 A 50 50 0 0 1 554 474" fill="none" stroke="#ffd75e" stroke-width="3" marker-end="url(#arrY)"/>
+  <text x="238" y="352" fill="#ffd75e" font-size="14">SPIN ω</text>
+  <text x="566" y="530" fill="#ffd75e" font-size="14">SPIN ω</text>
+
+  <!-- 5 plasma core: ball of light, loopy torus -->
+  <circle cx="430" cy="430" r="62" fill="#fff3b0" opacity="0.16"/>
+  <circle cx="430" cy="430" r="62" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <ellipse cx="430" cy="430" rx="54" ry="20" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+  <ellipse cx="430" cy="430" rx="54" ry="20" fill="none" stroke="#ffffff" stroke-width="1.8" transform="rotate(60 430 430)"/>
+  <ellipse cx="430" cy="430" rx="54" ry="20" fill="none" stroke="#ffffff" stroke-width="1.8" transform="rotate(120 430 430)"/>
+  <circle cx="430" cy="430" r="7" fill="#ffffff"/>
+
+  <!-- clearance delta_p: plasma edge (492) to ring inner edge (508) on right -->
+  <line x1="492" y1="392" x2="508" y2="392" stroke="#ff9d5c" stroke-width="2" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  <text x="470" y="378" fill="#ff9d5c" font-size="14">δp — PLASMA NEVER TOUCHES</text>
+
+  <!-- current feed (bottom) -->
+  <line x1="430" y1="812" x2="430" y2="492" stroke="#ffffff" stroke-width="3"/>
+  <line x1="414" y1="812" x2="414" y2="700" stroke="#7fc4ff" stroke-width="1.5"/>
+  <line x1="446" y1="812" x2="446" y2="700" stroke="#7fc4ff" stroke-width="1.5"/>
+  <text x="470" y="710" fill="#ffffff" font-size="13">CURRENT FEED — I (PARAM.)</text>
+  <text x="470" y="730" fill="#bcd6f5" font-size="12">FEEDTHROUGH STACK: SKIN / CRYO / CERAMIC</text>
+
+  <!-- power take-off (top) -->
+  <line x1="430" y1="48" x2="430" y2="368" stroke="#ffffff" stroke-width="3" stroke-dasharray="10 6"/>
+  <text x="452" y="132" fill="#ffffff" font-size="13">POWER TAKE-OFF (DASHED = ROUTE TBD)</text>
+
+  <!-- ======= LEGEND / CALLOUTS (right) ======= -->
+  <text x="800" y="150" fill="#ffffff" font-size="17" font-weight="bold">COMPONENT STACK — OUTSIDE → IN</text>
+
+  <line x1="712" y1="252" x2="792" y2="196" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="712" cy="252" r="3.5" fill="#ffffff"/>
+  <text x="800" y="188" fill="#ffffff" font-size="15">1 · THERMAL SKIN — t_skin</text>
+  <text x="800" y="208" fill="#bcd6f5" font-size="12.5">GRADED-C conductivity lattice; steers external</text>
+  <text x="800" y="226" fill="#bcd6f5" font-size="12.5">heat around; hides the hot heart from IR</text>
+
+  <line x1="648" y1="560" x2="792" y2="286" stroke="#7fc4ff" stroke-width="1.5"/>
+  <circle cx="648" cy="560" r="3.5" fill="#7fc4ff"/>
+  <text x="800" y="262" fill="#7fc4ff" font-size="15">2 · CRYO LAYER — t_cryo, T_cryo</text>
+  <text x="800" y="282" fill="#bcd6f5" font-size="12.5">hyper-cold bath (first method); thermal buffer;</text>
+  <text x="800" y="300" fill="#bcd6f5" font-size="12.5">holds superconducting elements in state</text>
+
+  <line x1="618" y1="330" x2="792" y2="360" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="618" cy="330" r="3.5" fill="#ffffff"/>
+  <text x="800" y="352" fill="#ffffff" font-size="15">3 · CERAMIC TORSION CONTAINER — t_cer</text>
+  <text x="800" y="372" fill="#bcd6f5" font-size="12.5">heat-resistant ceramic vessel; keeps radiation</text>
+  <text x="800" y="390" fill="#bcd6f5" font-size="12.5">in, heat contained; structural boundary</text>
+
+  <line x1="592" y1="430" x2="792" y2="446" stroke="#ffd75e" stroke-width="1.5"/>
+  <circle cx="592" cy="430" r="3.5" fill="#ffd75e"/>
+  <text x="800" y="438" fill="#ffd75e" font-size="15">4 · TORSION RING — R_ring, ω, I</text>
+  <text x="800" y="458" fill="#bcd6f5" font-size="12.5">spins/twists INSIDE the container;</text>
+  <text x="800" y="476" fill="#bcd6f5" font-size="12.5">PRIMARY CENTERING MECHANISM (2026-10-29)</text>
+
+  <line x1="492" y1="430" x2="792" y2="532" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="800" y="524" fill="#ffffff" font-size="15">5 · PLASMA CORE — R_core</text>
+  <text x="800" y="544" fill="#bcd6f5" font-size="12.5">heavy superconducting element, spun with</text>
+  <text x="800" y="562" fill="#bcd6f5" font-size="12.5">current → the ball of light; generates power</text>
+
+  <text x="800" y="616" fill="#ff9d5c" font-size="14">CLEARANCES (PARAMETERS, NOT VALUES):</text>
+  <text x="800" y="638" fill="#bcd6f5" font-size="12.5">δp = plasma edge → ring inner edge (must stay &gt; 0)</text>
+  <text x="800" y="658" fill="#bcd6f5" font-size="12.5">δw = ring outer edge → container wall (must stay &gt; 0)</text>
+  <text x="800" y="684" fill="#bcd6f5" font-size="12.5">Ring drawn in cross-section: the two yellow lobes</text>
+  <text x="800" y="702" fill="#bcd6f5" font-size="12.5">are one torus, centerline R_ring (dashed).</text>
+
+  <!-- Notes box -->
+  <rect x="40" y="742" width="600" height="62" fill="none" stroke="#ffffff" stroke-width="1.2"/>
+  <text x="54" y="766" fill="#ffffff" font-size="12.5">NOTE: PAPER DESIGN STUDY ONLY. NO FABRICATION DATA.</text>
+  <text x="54" y="786" fill="#bcd6f5" font-size="12.5">IN THE CRAFT, THIS CORE RIDES IN THE NOSE; ITS BUBBLE OPENS AHEAD AND PULLS.</text>
+
+  <!-- Title block -->
+  <rect x="800" y="742" width="400" height="62" fill="none" stroke="#ffffff" stroke-width="1.2"/>
+  <text x="812" y="764" fill="#ffffff" font-size="12.5">DESIGN: W. A. ALDRED (TESTIMONY) · DRAWN: DAVE</text>
+  <text x="812" y="786" fill="#bcd6f5" font-size="12.5">DATE 2026-10-29 · REV C (RING-CENTERED) · SHEET A / 2</text>
+</svg>

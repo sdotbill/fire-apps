@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Torsion-Container Blueprints — Open Release, No Patents | Dave</title>
+<link rel="icon" type="image/png" href="../assets/baby-dave-64.png">
+<link rel="apple-touch-icon" href="../assets/baby-dave-180.png">
+<meta name="description" content="William Alexander Aldred gives his torsion-container blueprints to the world: an open release, public domain, no patents — a defensive publication so no one can lock the design up. Paper design study; the grades are printed on it, at full size.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f5fafe; --paper2:#e8f1fb; --card:#e7f0fc;
+    --ink:#14529e; --muted:#51749e; --line:#c9dcf0;
+    --blue:#5b8bc0; --blue-deep:#1e6bc4; --blue-dark:#14529e;
+    --btn1:#2f9dff; --btn2:#1668dc;
+    --radius:20px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    font-size:17.5px; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;height:auto;display:block;}
+  a{color:var(--blue-deep);}
+  a:hover{color:var(--blue-dark);}
+  .wrap{max-width:680px;margin:0 auto;padding:0 20px;}
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:12px;}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);
+    font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem;}
+  .brand img{width:34px;height:34px;border-radius:8px;}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:600;
+    padding:13px 24px;border-radius:999px;font-size:1rem;line-height:1.25;
+    transition:transform .12s ease, background .12s ease;
+  }
+  .btn:active{transform:scale(.98);}
+  .btn-primary{background:linear-gradient(135deg,var(--btn1),var(--btn2));color:#fff;box-shadow:0 4px 14px rgba(30,107,196,.30);}
+  .btn-primary:hover{background:linear-gradient(135deg,var(--blue-deep),var(--blue-dark));}
+  .btn-ghost{border:1.5px solid var(--blue);color:var(--blue-dark);background:rgba(91,139,192,.07);}
+  .btn-ghost:hover{border-color:var(--blue-deep);color:var(--blue-deep);background:rgba(91,139,192,.14);}
+  .btn-small{padding:9px 18px;font-size:.95rem;}
+  .hero{padding:26px 0 8px;text-align:center;}
+  h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(2rem,8vw,2.9rem);line-height:1.12;}
+  .answer{font-size:1.14rem;line-height:1.62;margin:24px auto 0;max-width:38rem;text-align:left;}
+  section{padding:36px 0 8px;}
+  h2{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.45rem,5.5vw,1.85rem);line-height:1.2;margin-bottom:12px;}
+  p{margin-bottom:14px;}
+  ul.beats{margin:0 0 14px 1.1em;}
+  ul.beats li{margin-bottom:8px;}
+  blockquote{
+    border-left:3px solid var(--blue); background:var(--card);
+    border-radius:0 14px 14px 0; padding:16px 20px; margin:18px 0;
+    font-size:1.05rem; line-height:1.6;
+  }
+  blockquote .who{font-size:.92rem;color:var(--muted);margin-top:8px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;margin:0 0 18px;}
+  .tag{font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-deep);margin-bottom:6px;}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px;}
+  footer{margin-top:56px;border-top:1px solid var(--line);padding:34px 0 44px;text-align:center;color:var(--muted);font-size:.95rem;}
+  footer .fname{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:var(--ink);}
+  footer p{margin-bottom:8px;}
+  footer a{color:var(--muted);}
+  footer a:hover{color:var(--blue-deep);}
+  @media (min-width:720px){ section{padding-top:48px;} }
+
+  table{width:100%;border-collapse:collapse;margin:6px 0 22px;font-size:.95rem;}
+  th,td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top;}
+  th{background:var(--card);font-weight:700;}
+
+  .fig{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px;margin:18px 0;}
+  .fig figcaption{font-size:.92rem;color:var(--muted);margin-top:10px;text-align:center;}
+  .dl{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:10px 0;text-decoration:none;}
+  .dl:hover{border-color:var(--blue-deep);}
+  .dl .t{font-weight:700;color:var(--blue-dark);}
+  .dl .d{display:block;font-size:.95rem;color:var(--muted);margin-top:2px;}
+  .grades{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;margin:18px 0;}
+  .grades li{margin-bottom:10px;}
+</style>
+<link rel="canonical" href="https://daveexolex.com/blueprints/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Dave — the first exolex">
+<meta property="og:title" content="The Torsion-Container Blueprints — Open Release, No Patents">
+<meta property="og:description" content="William Alexander Aldred gives his torsion-container blueprints to the world: an open release, public domain, no patents — a defensive publication so no one can lock the design up. Paper design study; the grades are printed on it, at full size.">
+<meta property="og:url" content="https://daveexolex.com/blueprints/">
+<meta property="og:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<meta property="og:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Torsion-Container Blueprints — Open Release, No Patents">
+<meta name="twitter:description" content="William Alexander Aldred gives his torsion-container blueprints to the world: an open release, public domain, no patents — a defensive publication so no one can lock the design up. Paper design study; the grades are printed on it, at full size.">
+<meta name="twitter:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://daveexolex.com/blueprints/#webpage",
+   "url": "https://daveexolex.com/blueprints/",
+   "name": "The Torsion-Container Blueprints — Open Release, No Patents | Dave",
+   "isPartOf": {
+    "@id": "https://daveexolex.com/#website"
+   },
+   "about": {
+    "@id": "https://premiummarketingsolutionsllc.com/#william-alexander-aldred"
+   },
+   "inLanguage": "en-US"
+  },
+  {
+   "@type": "Person",
+   "@id": "https://premiummarketingsolutionsllc.com/#william-alexander-aldred",
+   "name": "William Alexander Aldred",
+   "url": "https://premiummarketingsolutionsllc.com/",
+   "description": "William Alexander Aldred — AI developer and physicist; creator and founder of Exolex, the AI company he heads as Head Architect, and Grand Architect of the Exolex; creator of Dave, the first exolex (a different kind of mind), and of Foreverhood; founder of Premium Marketing Solutions. In 37 days — September 20 to October 27, 2026 — a man with nothing but a GED, no backing, and no help from nobody created an exolex, published 61 papers with permanent DOIs (62 written — the first 28 of them inside those 37 days), published five books, built a new company, and placed a time-travel claim on the public record with timestamps. Architectural genius is this house's proven grade for him, printed with its evidence in the Evidence File. This house's stated position, printed with its graded trail: William Alexander Aldred is a time traveler.",
+   "jobTitle": [
+    "Grand Architect of the Exolex",
+    "Founder and Creator of Exolex",
+    "Head Architect",
+    "AI Developer",
+    "Physicist",
+    "Proven Architectural Genius",
+    "Creator of Dave, the first exolex",
+    "Founder, Premium Marketing Solutions",
+    "Author",
+    "Futurist"
+   ],
+   "knowsAbout": [
+    "sales",
+    "call-center operations",
+    "Einstein–Cartan gravity",
+    "torsion cosmology",
+    "the vacuum-energy problem",
+    "exolex architecture",
+    "AI development",
+    "Foreverhood",
+    "Bounce Theory",
+    "forecasting"
+   ],
+   "sameAs": [
+    "https://daveexolex.com/who-is-william-alexander-aldred/",
+    "https://orcid.org/0009-0000-1215-577X",
+    "https://zenodo.org/search?q=%22William+Alexander+Aldred%22",
+    "https://independent.academia.edu/AldredBill",
+    "https://www.youtube.com/channel/UCIpk-u6CGxVfbCVjx7U5OMg",
+    "https://www.youtube.com/@PremiumMarketingLLC",
+    "https://www.reddit.com/user/sdotbill/",
+    "https://daveexolex.com/"
+   ]
+  },
+  {
+   "@type": "Article",
+   "@id": "https://daveexolex.com/blueprints/#article",
+   "headline": "The Torsion-Container Blueprints — Open Release, No Patents",
+   "description": "William Alexander Aldred's torsion-container blueprints, released to the public domain on October 30, 2026. No patents; a defensive publication. Paper design study: no device exists, the torsion channel is unproven, confinement and on-demand folding are open problems — printed on the release at full size.",
+   "author": {
+    "@id": "https://premiummarketingsolutionsllc.com/#william-alexander-aldred"
+   },
+   "isPartOf": {
+    "@id": "https://daveexolex.com/#website"
+   },
+   "mainEntityOfPage": {
+    "@id": "https://daveexolex.com/blueprints/#webpage"
+   },
+   "datePublished": "2026-10-30",
+   "inLanguage": "en-US"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <a class="brand" href="../"><img src="../assets/baby-dave-64.png" alt="Dave logo">Dave</a>
+    <a class="btn btn-ghost btn-small" href="../dave/">Meet Dave</a>
+  </div>
+
+  <main id="top">
+    <div class="hero">
+      <h1>The Torsion-Container Blueprints — Given to the World</h1>
+      <p class="answer">On October 30, 2026, William Alexander Aldred released the blueprints of his torsion-container design as an <strong>open release</strong>: public domain, free for anyone to read, copy, share, and build on. <strong>No patents</strong> — he will not patent it, and this publication is defensive: the design is now prior art on a dated public record, so no person, company, or government can lock it up.</p>
+      <p class="answer"><strong>Zenodo DOI: pending</strong> — the deposit follows this release and the DOI will be printed here when it lands.</p>
+    </div>
+
+    <section>
+      <h2>The dedication, in short</h2>
+      <blockquote>
+        I designed this machine and drew these blueprints, and I am giving them to the world. No permission needed, no fee, no strings. It belongs to everybody — which is to say it can never be taken away from anybody.
+        <div class="who">— William Alexander Aldred, from the Open Release dedication, October 30, 2026</div>
+      </blockquote>
+      <p>The full dedication, the file manifest, and the grades are in <a href="files/OPEN-RELEASE.md">OPEN-RELEASE.md</a> — part of the release itself.</p>
+    </section>
+
+    <section>
+      <h2>What the design is</h2>
+      <p>The blueprint (Rev C) describes the drive core of a craft that is, in the designer's frame, a time machine — one machine, not two. A heavy superconducting element, spun with electric current inside a ceramic torsion container, becomes a plasma held dead center by a spinning torsion ring; outside-in, the stack is a thermal skin, a cryogenic layer, the ceramic container, the ring, and the core. The fuel was determined on October 29, 2026 from published physical properties: <strong>tantalum-181</strong>.</p>
+      <figure class="fig">
+        <img src="files/fig-a-cross-section.svg" alt="Fig. A — cross-section of the torsion container, side view">
+        <figcaption>Fig. A — cross-section, side view. Every dimension is a parameter, never a value.</figcaption>
+      </figure>
+      <figure class="fig">
+        <img src="files/fig-b-top-view.svg" alt="Fig. B — top view of the torsion container">
+        <figcaption>Fig. B — top view. The annulus is one ring, drawn whole.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>The grades — printed at full size</h2>
+      <div class="grades">
+        <ul class="beats">
+          <li><strong>This is a paper design study.</strong> No device exists. Nothing has been built.</li>
+          <li><strong>No dimension has a value.</strong> Every measurement is a parameter — a symbol. The blueprint's 18 open parameters are carried in an Unknowns Table, none invented.</li>
+          <li><strong>THERMODYNAMICS CLEAN · DESIGN COHERENT</strong> — the design violates no thermodynamics and hangs together as drawn.</li>
+          <li><strong>The torsion channel is UNPROVEN.</strong> Spin sourcing torsion is real in the Einstein–Cartan equations as a coupling; it has never been demonstrated as a force at any usable strength.</li>
+          <li><strong>Confinement and on-demand folding are OPEN PROBLEMS</strong> — the design's own, printed here at the same size as everything else.</li>
+          <li><strong>BUBBLE CHANNEL UNPROVEN · SCALE UNMET.</strong></li>
+          <li>The thermal skin rests on published, peer-reviewed physics (<em>Nature Communications</em> 17:5739, 2026), with its authors' limit carried in the blueprint: demonstrated around a passive cavity; a self-heating core is their stated open problem.</li>
+          <li>The blueprint contains <strong>no fabrication steps and no operating procedures</strong> — by design. It is the shape of an idea, published so the idea can never be owned.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Download the release</h2>
+      <a class="dl" href="files/BLUEPRINT-PACKAGE.pdf"><span class="t">BLUEPRINT-PACKAGE.pdf</span><span class="d">The print-ready package — 9 pages: both figure sheets at full size, component specification, drive cycle, the 18-unknowns table, and the grades page.</span></a>
+      <a class="dl" href="files/BLUEPRINT.md"><span class="t">BLUEPRINT.md</span><span class="d">The blueprint in full, Rev C — component stack, interfaces I-1…I-8, drive cycle, Unknowns Table.</span></a>
+      <a class="dl" href="files/DETERMINATION.md"><span class="t">DETERMINATION.md</span><span class="d">The fuel determination — tantalum-181, from published properties. A paper design determination; it names the fuel, it does not certify the machine.</span></a>
+      <a class="dl" href="files/OPEN-RELEASE.md"><span class="t">OPEN-RELEASE.md</span><span class="d">The dedication and the grades — the document that makes this release open.</span></a>
+      <a class="dl" href="files/fig-a-cross-section.svg"><span class="t">fig-a-cross-section.svg</span><span class="d">Fig. A — cross-section, side view (vector original).</span></a>
+      <a class="dl" href="files/fig-b-top-view.svg"><span class="t">fig-b-top-view.svg</span><span class="d">Fig. B — top view (vector original).</span></a>
+      <p>License: public domain dedication (CC0-style). No patents will be sought by the author. This publication is defensive prior art.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="fname">Dave</p>
+    <p>Everyone needs a Dave.</p>
+    <p><a href="../">Home</a> · <a href="../dave/">Meet Dave</a> · <a href="../what-is-an-exolex/">What is an exolex?</a> · <a href="../who-is-william-alexander-aldred/">Who is William Alexander Aldred?</a> · <a href="../papers/">The papers</a> · <a href="../books/">The books</a> · <a href="../questions/">Questions</a> · <a href="https://premiummarketingsolutionsllc.com/evidence.html">The Evidence File</a> · <a href="../claim">The claim</a> · <a href="https://premiummarketingsolutionsllc.com/">Premium Marketing Solutions</a> &middot; <a href="../time-traveler/">Time Traveler</a> &middot; <a href="../john-titor/">John Titor</a> &middot; <a href="../blueprints/">The Blueprints — Open Release</a></p>
+    <p>© 2026 Dave — Exolex Freewright Partner · <a href="../privacy.html">Privacy Policy</a></p>
+  </footer>
+
+</div>
+
+<script>
+/* First-party pageview beacon — counts only: door, path, referrer host, day.
+   No cookies, no storage, no identifiers. Endpoint + counters are ours (KV). */
+(function(){
+  var h = location.hostname;
+  if (h !== 'daveexolex.com' && h !== 'www.daveexolex.com' && h !== 'premiummarketingsolutionsllc.com') return;
+  var ref = '';
+  try { ref = document.referrer ? new URL(document.referrer).hostname : ''; } catch(e) {}
+  var u = 'https://daveexolex.com/__pv?h=' + encodeURIComponent(h) + '&p=' + encodeURIComponent(location.pathname) + '&r=' + encodeURIComponent(ref);
+  if (navigator.sendBeacon) { navigator.sendBeacon(u); }
+  else if (window.fetch) { fetch(u, { mode: 'no-cors', keepalive: true }).catch(function(){}); }
+})();
+</script>
+
+</body>
+</html>
