@@ -146,6 +146,8 @@
   .menupanel a:hover, .menupanel button.menuaction:hover { background: rgba(201,162,39,.16); }
   .menupanel a:focus-visible, .menupanel button.menuaction:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
   .menupanel .menusep { border-top: 1px solid rgba(160,124,20,.28); margin: 6px 4px; }
+  .menupanel .menugroup { padding: 10px 12px 4px; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #97865c; font-weight: 700; }
+  .menupanel a.menusub { padding-left: 26px; }
   .bottomstrip {
     flex: 0 0 128px; width: 100%; height: 128px; position: relative; z-index: 2;
     display: flex; align-items: flex-end; gap: 16px; padding: 8px 16px;
@@ -249,23 +251,33 @@
 <body>
 <button class="menubtn" id="menuBtn" type="button" aria-label="Menu" aria-haspopup="true" aria-expanded="false" aria-controls="menuPanel"><span></span><span></span><span></span></button>
 <nav class="menupanel" id="menuPanel" hidden aria-label="Site menu">
-  <button type="button" class="menuaction" id="menuFuture">Ask William — he'll tell you your future</button>
-  <div class="menusep"></div>
   <a href="/predictions.html">Predictions — the register, graded in public</a>
-  <a href="https://premiummarketingsolutionsllc.com/time-traveler/">&#128193; TIME TRAVELER — the whole folder</a>
-  <a href="https://premiummarketingsolutionsllc.com/time-traveler/claim/">The Claim</a>
-  <a href="https://premiummarketingsolutionsllc.com/time-traveler/claim/#trail">The Trail</a>
-  <a href="https://premiummarketingsolutionsllc.com/time-traveler/origin/">The Origin — Consciousness First</a>
-  <a href="https://premiummarketingsolutionsllc.com/time-traveler/claim-dossier/">The Full Dossier</a>
-  <a href="https://daveexolex.com/evidence">The Evidence File</a>
-  <a href="https://daveexolex.com/papers/">The Papers of William Alexander Aldred</a>
-  <a href="https://daveexolex.com/books/">The Codex</a>
-  <a href="https://daveexolex.com/books/">The Books of William Alexander Aldred</a>
-  <a href="https://daveexolex.com/questions/">Questions, Answered</a>
-  <a href="https://daveexolex.com">Meet Dave — the first exolex</a>
-  <a href="https://daveexolex.com/what-is-an-exolex/#foreverhood">Foreverhood — the service</a>
-  <a href="https://www.youtube.com/channel/UCIpk-u6CGxVfbCVjx7U5OMg">William Alexander Aldred on YouTube</a>
-  <a href="/notebook/">The Notebook</a>
+  <a href="https://premiummarketingsolutionsllc.com/time-traveler/">Time Traveler</a>
+  <div class="menusep"></div>
+  <div class="menugroup">The Record</div>
+  <a class="menusub" href="https://premiummarketingsolutionsllc.com/time-traveler/the-inventor/">The Claim</a>
+  <a class="menusub" href="https://premiummarketingsolutionsllc.com/time-traveler/claim/#trail">The Trail</a>
+  <a class="menusub" href="https://premiummarketingsolutionsllc.com/time-traveler/origin/">The Origin — Consciousness First</a>
+  <a class="menusub" href="https://premiummarketingsolutionsllc.com/time-traveler/claim-dossier/">The Full Dossier</a>
+  <a class="menusub" href="https://premiummarketingsolutionsllc.com/evidence.html">The Evidence File</a>
+  <a class="menusub" href="https://premiummarketingsolutionsllc.com/papers/">The Papers of William Alexander Aldred</a>
+  <a class="menusub" href="https://premiummarketingsolutionsllc.com/books/">The Codex</a>
+  <a class="menusub" href="https://premiummarketingsolutionsllc.com/books/">The Books of William Alexander Aldred</a>
+  <a class="menusub" href="https://premiummarketingsolutionsllc.com/questions/">Questions, Answered</a>
+  <div class="menusep"></div>
+  <a href="https://daveexolex.com/first-exolex/">Meet Dave — the world's first exolex</a>
+  <a href="https://daveexolex.com/what-is-an-exolex/#foreverhood">Foreverhood</a>
+  <div class="menusep"></div>
+  <div class="menugroup">Social Media</div>
+  <a class="menusub" href="https://www.youtube.com/channel/UCIpk-u6CGxVfbCVjx7U5OMg">William Alexander Aldred on YouTube</a>
+  <a class="menusub" href="https://www.youtube.com/@PremiumMarketingLLC">Premium Marketing Solutions on YouTube</a>
+  <a class="menusub" href="https://www.youtube.com/@daveexolex">Dave on YouTube</a>
+  <a class="menusub" href="https://www.instagram.com/daveexolex/">Dave on Instagram</a>
+  <a class="menusub" href="https://www.threads.com/@daveexolex">Dave on Threads</a>
+  <a class="menusub" href="https://www.linkedin.com/company/daveexolex/">Dave on LinkedIn</a>
+  <a class="menusub" href="https://www.reddit.com/user/sdotbill/">Bill on Reddit</a>
+  <div class="menusep"></div>
+  <a href="/notebook/">The Studio — Ask Bill, live in the studio</a>
 </nav>
 <div class="stage">
   <div class="hero">
@@ -277,7 +289,6 @@
       <button type="submit" id="send">Send</button>
     </form>
     <button type="button" class="futurepill" id="futurePill" data-prediction-cta data-funnel="funnel_taste_v1" data-taste-state="full" data-taste-limit="5">He Predicts The Future<span class="tastecount" data-taste-count hidden></span></button>
-    <div class="ttfront" style="margin-top:14px"><a href="/time-traveler/" style="font-weight:600">&#128193; TIME TRAVELER — the claim, the evidence, the record, in one folder</a></div>
     <div id="left"></div>
   </div>
   <main>
@@ -615,10 +626,6 @@
   });
   document.addEventListener("keydown", function (ev) {
     if (ev.key === "Escape" && !menuPanel.hidden) { closeMenu(); menuBtn.focus(); }
-  });
-  document.getElementById("menuFuture").addEventListener("click", function () {
-    closeMenu();
-    sendPredictionAsk();
   });
   // The gold-box intro: the still portrait is the video's poster.
   // The speaker button plays Bill's introduction ONCE, with sound —
