@@ -150,17 +150,19 @@
     flex: 0 0 128px; width: 100%; height: 128px; position: relative; z-index: 2;
     display: flex; align-items: flex-end; gap: 16px; padding: 8px 16px;
   }
-  .bottomstrip img {
+  .bottomstrip img, .bottomstrip video {
     height: 112px; width: auto; display: block; border-radius: 12px; flex: none;
     border: 3px solid var(--gold); box-shadow: 0 0 0 1px var(--gold-deep), 0 8px 28px rgba(138,101,8,.35);
   }
   .bottom-main { flex: 1; min-width: 0; height: 112px; position: relative; }
-  .bottom-greeting {
-    position: absolute; left: 0; right: 0; bottom: 24px; color: #000;
-    font-size: clamp(9px, 2.82vw, 16px); line-height: 1.1; font-weight: 600;
-    letter-spacing: -.01em; white-space: nowrap; cursor: pointer;
+  .intro-speak {
+    position: absolute; left: 0; bottom: 18px; width: 46px; height: 46px;
+    border-radius: 999px; border: 1.5px solid rgba(160,124,20,.55);
+    background: #fffdf6; font-size: 1.25rem; line-height: 1; padding: 0; cursor: pointer;
   }
-  .bottom-greeting:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .intro-speak:hover { border-color: var(--gold-deep); }
+  .intro-speak.playing { background: #f3e3ae; border-color: var(--gold-deep); }
+  .intro-speak:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
   .bottom-privacy {
     position: absolute; right: 0; bottom: 0; color: var(--ink); font-size: .72rem;
     line-height: 1; text-decoration: none;
@@ -225,15 +227,15 @@
   #left { text-align: center; color: #97865c; font-size: 12.5px; padding-top: 10px; min-height: 18px; }
   @media (max-width: 1200px) {
     .bottomstrip { flex-basis: 112px; height: 112px; }
-    .bottomstrip img { height: 96px; }
+    .bottomstrip img, .bottomstrip video { height: 96px; }
     .bottom-main { height: 96px; }
     .hero { margin-top: 196px; }
   }
   @media (max-width: 560px) {
     .bottomstrip { flex-basis: 94px; height: 94px; gap: 10px; padding: 8px 10px; }
-    .bottomstrip img { height: 78px; }
+    .bottomstrip img, .bottomstrip video { height: 78px; }
     .bottom-main { height: 78px; }
-    .bottom-greeting { bottom: 20px; }
+    .intro-speak { bottom: 14px; width: 40px; height: 40px; }
     .bottom-privacy { font-size: .66rem; }
     h1.headline { font-size: 1.9rem; }
     .subtitle { font-size: 1.05rem; }
@@ -283,9 +285,12 @@
   </main>
 </div>
 <footer class="bottomstrip">
-  <img src="assets/corner-portrait.webp" alt="William Alexander Aldred">
+  <video id="billIntro" poster="assets/corner-portrait.webp" preload="none" playsinline aria-label="William Alexander Aldred">
+    <source src="assets/bill-intro.webm" type="video/webm">
+    <source src="assets/bill-intro.mp4" type="video/mp4">
+  </video>
   <div class="bottom-main">
-    <div class="bottom-greeting" id="bubble" role="button" tabindex="0" title="Talk to William">Hi, I'm William. Let me predict your future.</div>
+    <button type="button" class="intro-speak" id="introSpeak" aria-label="Hear William &#8212; play his introduction">&#128266;</button>
     <a class="bottom-privacy" href="/privacy.html">Privacy</a>
   </div>
 </footer>
@@ -615,11 +620,32 @@
     closeMenu();
     sendPredictionAsk();
   });
-  var bubble = document.getElementById("bubble");
-  if (bubble) {
-    bubble.addEventListener("click", function () { inp.focus(); });
-    bubble.addEventListener("keydown", function (ev) {
-      if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); inp.focus(); }
+  // The gold-box intro: the still portrait is the video's poster.
+  // The speaker button plays Bill's introduction ONCE, with sound —
+  // no autoplay, no loop; when it ends, the frame returns to the still.
+  var introVideo = document.getElementById("billIntro");
+  var introSpeak = document.getElementById("introSpeak");
+  if (introVideo && introSpeak) {
+    var introReset = function () {
+      introSpeak.classList.remove("playing");
+      introSpeak.setAttribute("aria-label", "Hear William \u2014 play his introduction");
+    };
+    introSpeak.addEventListener("click", function () {
+      if (!introVideo.paused && !introVideo.ended) return;
+      try { introVideo.currentTime = 0; } catch (e) {}
+      introVideo.muted = false;
+      var p = introVideo.play();
+      if (p && typeof p.catch === "function") p.catch(function () { introReset(); });
+    });
+    introVideo.addEventListener("play", function () {
+      introSpeak.classList.add("playing");
+      introSpeak.setAttribute("aria-label", "William is speaking");
+    });
+    introVideo.addEventListener("pause", introReset);
+    introVideo.addEventListener("ended", function () {
+      try { introVideo.currentTime = 0; } catch (e) {}
+      introVideo.load();
+      introReset();
     });
   }
 })();
