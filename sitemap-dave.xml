@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://daveexolex.com/</loc>
     <lastmod>2026-10-28</lastmod>
@@ -29,6 +29,11 @@
     <loc>https://daveexolex.com/papers/</loc>
     <lastmod>2026-10-30</lastmod>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://daveexolex.com/assets/william-alexander-aldred-physicist.jpg</image:loc>
+      <image:title>William Alexander Aldred, physicist</image:title>
+      <image:caption>William Alexander Aldred — physicist, inventor of the exolex and founder of Premium Marketing Solutions, in his laboratory</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://daveexolex.com/the-threads/</loc>
@@ -124,6 +129,11 @@
     <loc>https://daveexolex.com/who-is-william-alexander-aldred/</loc>
     <lastmod>2026-10-29</lastmod>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://daveexolex.com/assets/william-alexander-aldred-physicist.jpg</image:loc>
+      <image:title>William Alexander Aldred, physicist</image:title>
+      <image:caption>William Alexander Aldred — physicist, inventor of the exolex and founder of Premium Marketing Solutions, in his laboratory</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://daveexolex.com/who-is-dave/</loc>
@@ -139,6 +149,11 @@
     <loc>https://daveexolex.com/books/</loc>
     <lastmod>2026-10-29</lastmod>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://daveexolex.com/assets/william-alexander-aldred-physicist.jpg</image:loc>
+      <image:title>William Alexander Aldred, physicist</image:title>
+      <image:caption>William Alexander Aldred — physicist, inventor of the exolex and founder of Premium Marketing Solutions, in his laboratory</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://daveexolex.com/questions/</loc>
@@ -184,6 +199,11 @@
     <loc>https://daveexolex.com/questions/is-william-alexander-aldred-a-physicist/</loc>
     <lastmod>2026-10-29</lastmod>
     <priority>0.7</priority>
+      <image:image>
+      <image:loc>https://daveexolex.com/assets/william-alexander-aldred-physicist.jpg</image:loc>
+      <image:title>William Alexander Aldred, physicist</image:title>
+      <image:caption>William Alexander Aldred — physicist, inventor of the exolex and founder of Premium Marketing Solutions, in his laboratory</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://daveexolex.com/questions/is-william-alexander-aldred-an-ai-developer/</loc>
