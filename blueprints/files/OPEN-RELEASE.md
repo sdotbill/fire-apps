@@ -3,7 +3,7 @@
 **Author / designer:** William Alexander Aldred
 **Released:** October 30, 2026
 **The release:** https://daveexolex.com/blueprints/
-**Zenodo DOI:** pending (deposit follows this release; the DOI will be printed here and on the release page when it lands)
+**Zenodo DOI:** 10.5281/zenodo.23802958 (record: https://zenodo.org/records/23802958)
 
 ---
 
