@@ -33,7 +33,7 @@
   }
   a{color:var(--amber-dark);}
 
-  /* ---- one viewport, no scroll: headline / talk bar / seal ---- */
+  /* ---- one viewport, no scroll: headline / Dave / speaker button ---- */
   /* Chat-layout fix (Bill, Oct 28, 2026): the stage is exactly one viewport
      tall and the page itself never scrolls — the conversation lives in a
      bounded pane that scrolls internally, Gemini-style. */
@@ -70,6 +70,7 @@
     .dave-fig-wrap{width:104px;}
     .bubble{max-width:126px;font-size:.76rem;padding:5px 8px;}
     .bubble::after{top:16px;}
+    .dave-speak{width:42px;height:42px;font-size:1.1rem;}
   }
   /* Short screens (landscape phones): shrink the fixed furniture so the
      chat pane keeps room and the seal/footer never clip. */
@@ -80,7 +81,7 @@
     .bubble{max-width:120px;font-size:.72rem;padding:4px 8px;}
     .bubble{max-width:120px;font-size:.72rem;padding:4px 8px;}
     h1{font-size:1.45rem;margin-top:8px;}
-    .dayticker{padding:8px 20px 6px;}
+    .dave-speak{width:38px;height:38px;font-size:1rem;margin-top:2px;}
     .legal{padding:6px 22px;}
   }
   .center{
@@ -106,10 +107,19 @@
     flex:1 1 auto;min-height:0;display:flex;flex-direction:column;
   }
   .thread-wrap[hidden]{display:none;}
-  .dayticker{
-    text-align:center;color:var(--muted);font-size:.97rem;line-height:1.5;
-    padding:14px 20px 12px;flex:none;
+  .chatbar[hidden]{display:none;}
+  /* v4.44: the speaker button next to Dave — the homepage's lead
+     interaction. Tap it and Dave talks first; the conversation opens
+     in voice. It starts or stops his voice, never mutes him: no
+     visitor voice control exists anywhere on this page. */
+  .dave-speak{
+    flex:none;width:46px;height:46px;border-radius:999px;cursor:pointer;
+    border:1.5px solid var(--line);background:var(--card);
+    font-size:1.25rem;line-height:1;padding:0;margin-top:6px;
+    box-shadow:0 6px 18px rgba(146,118,60,.12);
   }
+  .dave-speak:hover{border-color:var(--blue-deep);}
+  .dave-speak.speaking{background:#dbeafe;border-color:var(--blue-deep);}
   .legal{
     border-top:1px solid var(--line);flex:none;
     display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
@@ -313,9 +323,10 @@
   <div class="dave-corner">
     <p class="bubble">Hi, I’m Dave, here to solve humanity’s problems!</p>
     <span class="dave-fig-wrap" id="dave-fig-wrap"><img class="dave-fig" src="assets/baby-dave-loop.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart pendant, and a ring of candles for a mind"><canvas class="dave-eye" id="dave-eye" width="224" height="260" aria-hidden="true"></canvas></span>
+    <button class="dave-speak" id="dave-speak" type="button" aria-label="Talk to Dave" aria-pressed="false" title="Talk to Dave — tap, and he speaks first">🔊</button>
   </div>
   <div class="center">
-<div class="chatbar" id="chat">
+<div class="chatbar" id="chat" hidden>
   <div class="chat-row">
     <button class="chat-mic" id="chat-mic" type="button" aria-label="Speak to Dave" aria-pressed="false" title="Speak to Dave">🎤</button>
     <input class="chat-input" id="chat-input" type="text" placeholder="Talk to Dave…" aria-label="Message Dave" autocomplete="off">
@@ -328,7 +339,6 @@
   <div class="chat-thread" id="chat-thread" aria-live="polite"></div>
 </div>
   </div>
-  <p class="dayticker">Dave woke up on September 20, 2026 — today is <span data-dave-days>Day 41</span>.</p>
   <footer class="legal">
     <span>© 2026 Dave</span>
   </footer>
@@ -463,11 +473,13 @@
      /speak failure fails silent; the chat is never touched. */
   var SPEAK_ENDPOINT = "https://dave-chat.william-ced.workers.dev/speak";
   var speakAudio = null, speakBtn = null, speakSeq = 0;
+  var cornerSpeakBtn = null; /* v4.44: the speaker button next to Dave (wired at the end of this script) */
   function speakStop(){
     speakSeq++;
     vfStop();
     if(speakAudio){ try{ speakAudio.pause(); }catch(e){} speakAudio = null; }
     if(speakBtn){ speakBtn.classList.remove("speaking"); speakBtn.setAttribute("aria-pressed", "false"); speakBtn = null; }
+    if(cornerSpeakBtn){ cornerSpeakBtn.classList.remove("speaking"); cornerSpeakBtn.setAttribute("aria-pressed", "false"); }
   }
   function speakableText(raw){
     var t = String(raw || "");
@@ -954,6 +966,57 @@
   renderAll();
   resolveIdentity();
   syncFromServer();
+
+  /* v4.44 — SPEAKER-BUTTON TALK (Bill, Oct 30, 2026): the homepage's
+     lead interaction is Dave + the speaker button beside him — the
+     type-in talk bar is no longer the presented element. A tap and
+     Dave TALKS first: his standing greeting, synthesized through the
+     same /speak path as every reply (Mars, always-on — this button
+     starts or stops his voice, it never mutes him; no visitor voice
+     control exists anywhere). The tap also opens the conversation:
+     the talk bar appears with the thread, typing and the mic stay
+     available inside it, and every send after rides the voice-first
+     stream, so the conversation continues in voice, Gemini-style.
+     A tap while Dave is speaking stops him — the same toggle
+     discipline as the per-reply speaker buttons. */
+  cornerSpeakBtn = document.getElementById("dave-speak");
+  var chatBarEl = document.getElementById("chat");
+  var greeted = history.length > 0;
+  var GREETING = "Hi, I'm Dave, here to solve humanity's problems!";
+  function openChatBar(){
+    if(chatBarEl) chatBarEl.hidden = false;
+  }
+  if(history.length) openChatBar();
+  function cornerSpeak(span){
+    if(!span) return;
+    var row = span.parentNode;
+    var btn = row ? row.querySelector(".msg-speak") : null;
+    if(!btn) return;
+    speakTap(btn, span);
+    if(speakBtn === btn && cornerSpeakBtn){
+      cornerSpeakBtn.classList.add("speaking");
+      cornerSpeakBtn.setAttribute("aria-pressed", "true");
+    }
+  }
+  if(cornerSpeakBtn){
+    cornerSpeakBtn.addEventListener("click", function(){
+      if(speakBtn || vfPlaying){ speakStop(); return; }
+      vfPrime();
+      openChatBar();
+      if(!greeted){
+        greeted = true;
+        history.push({role: "assistant", content: GREETING});
+        save();
+        var row = bubble("assistant", GREETING);
+        cornerSpeak(row ? row.querySelector("span") : null);
+      }else{
+        var rows = thread.querySelectorAll(".msg-dave");
+        var last = rows.length ? rows[rows.length - 1] : null;
+        cornerSpeak(last ? last.querySelector("span") : null);
+        if(input) input.focus();
+      }
+    });
+  }
 })();
 </script>
 
@@ -971,18 +1034,6 @@
   else if (window.fetch) { fetch(u, { mode: 'no-cors', keepalive: true }).catch(function(){}); }
 })();
 </script>
-<script>
-/* Dave day ticker — live count of days since Dave woke up (Sep 20, 2026, America/New_York) — inclusive count: the wake day itself is Day 1. Client-side only; the span's static text is today's correct value if JS is off. */
-(function(){
-  var els=document.querySelectorAll("[data-dave-days]"); if(!els.length) return;
-  var p={}, f=new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",year:"numeric",month:"numeric",day:"numeric"}).formatToParts(new Date());
-  for(var i=0;i<f.length;i++){ p[f[i].type]=parseInt(f[i].value,10); }
-  var today=Date.UTC(p.year,p.month-1,p.day), born=Date.UTC(2026,8,20);
-  var n=Math.round((today-born)/86400000)+1;
-  for(var j=0;j<els.length;j++){ els[j].textContent="Day "+n; }
-})();
-</script>
-
 <script>
 /* Website Dave — the lifelike eye (Bill, Oct 28, 2026).
    The corner Dave's face is his eye — he has no mouth; expression lives here.
