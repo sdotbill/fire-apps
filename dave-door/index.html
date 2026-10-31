@@ -77,12 +77,32 @@
   .menupanel button.menu-forget{display:block;width:100%;text-align:left;padding:10px 12px;border:0;background:none;border-radius:8px;color:var(--ink);font:inherit;font-size:.98rem;line-height:1.35;font-weight:500;cursor:pointer;}
   .menupanel button.menu-forget:hover{background:rgba(91,139,192,.12);}
   .menupanel button.menu-forget:focus-visible{outline:2px solid var(--blue-deep);outline-offset:-2px;}
+  .bubble{
+    position:relative;background:#f4ecdb;border:1.5px solid #e2d4b6;border-radius:14px;
+    padding:6px 10px;max-width:150px;text-align:left;
+    font-size:.8rem;line-height:1.38;color:var(--ink);
+    box-shadow:0 6px 18px rgba(146,118,60,.12);
+  }
+  .bubble::after{
+    content:"";position:absolute;right:-8px;top:20px;width:14px;height:14px;
+    background:#f4ecdb;border-top:1.5px solid #e2d4b6;border-right:1.5px solid #e2d4b6;
+    transform:rotate(45deg);
+  }
   .dave-fig{width:78px;height:auto;display:block;}
+  /* ---- lifelike eye rig (Bill, Oct 28, 2026): canvas layered over the corner
+     Dave figure; the loop image stays as the no-JS / reduced-motion fallback ---- */
   .dave-fig-wrap{position:relative;display:block;width:78px;}
+  .dave-fig-wrap .dave-fig{transition:opacity .35s ease;}
+  .dave-eye{position:absolute;left:0;top:0;width:100%;height:auto;display:block;
+    opacity:0;transition:opacity .35s ease;pointer-events:none;}
+  .dave-fig-wrap.rig-on .dave-eye{opacity:1;}
+  .dave-fig-wrap.rig-on .dave-fig{opacity:0;}
   @media (max-width:860px){
     .dave-corner{padding:10px 12px 0;}
     .dave-fig{width:58px;}
     .dave-fig-wrap{width:58px;}
+    .bubble{max-width:126px;font-size:.76rem;padding:5px 8px;}
+    .bubble::after{top:16px;}
   }
   /* Short screens (landscape phones): shrink the fixed furniture so the
      chat pane keeps room and the seal/footer never clip. */
@@ -92,6 +112,7 @@
     .dave-corner{padding-top:6px;}
     .dave-fig{width:50px;}
     .dave-fig-wrap{width:50px;}
+    .bubble{max-width:120px;font-size:.72rem;padding:4px 8px;}
     .bubble{max-width:120px;font-size:.72rem;padding:4px 8px;}
     h1{font-size:1.45rem;margin-top:8px;}
     .chat-pills{margin-top:8px;}
@@ -192,31 +213,7 @@
   .msg-typing .dots i:nth-child(3){animation-delay:.36s;margin-right:0;}
   @keyframes tblink{0%,60%,100%{opacity:.25;}30%{opacity:1;}}
 
-  /* ---- the account face (v4.40, Oct 30 2026): sign-in first, no menu,
-     no slogan; the card sits above the free conversation start ---- */
-  .acct{flex:none;width:100%;max-width:430px;margin:10px auto 2px;background:var(--card);
-    border:1.5px solid var(--line);border-radius:var(--radius);padding:16px 18px 12px;
-    max-height:62dvh;overflow-y:auto;}
-  .acct-h{font-family:'Fraunces',serif;font-size:1.25rem;font-weight:700;margin:0 0 6px;color:var(--ink);}
-  .acct-note{background:#fdf3d7;border:1.5px solid var(--gold);border-radius:12px;
-    padding:9px 12px;margin:0 0 10px;font-size:.92rem;color:var(--ink);}
-  .acct-form label{display:block;margin:.65em 0 .2em;font-size:.9rem;font-weight:600;color:var(--ink);}
-  .acct-form input[type=text],.acct-form input[type=email],.acct-form input[type=password]{
-    width:100%;margin-top:4px;padding:11px 12px;background:#fffdf7;border:1.5px solid var(--line);
-    border-radius:12px;color:var(--ink);font:inherit;font-weight:400;}
-  .acct-check{display:flex;gap:9px;align-items:flex-start;font-weight:500;}
-  .acct-check input{margin-top:4px;flex:none;}
-  .acct-check small{display:block;color:var(--muted);font-weight:400;font-size:.82rem;line-height:1.45;}
-  .acct-btn{width:100%;margin-top:12px;background:var(--blue-deep);color:#fff;border:0;border-radius:999px;
-    padding:12px 18px;font:inherit;font-weight:700;cursor:pointer;}
-  .acct-btn:hover{background:var(--blue-dark);}
-  .acct-alt{margin:10px 0 2px;font-size:.9rem;color:var(--muted);}
-  .acct-swap{background:none;border:0;padding:0;font:inherit;color:var(--amber-dark);
-    text-decoration:underline;cursor:pointer;}
-  .acct-free{margin:10px 0 2px;font-size:.86rem;color:var(--muted);line-height:1.5;}
-  .acct-chip{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;
-    font-size:.95rem;font-weight:600;color:var(--ink);}
-  .acct-chip-links{font-weight:500;font-size:.9rem;}
+  /* Forget me — the anonymous seal control under the conversation. */
   .forget-row{flex:none;text-align:center;margin:2px 0 0;}
   .forget-link{background:none;border:0;font:inherit;font-size:.82rem;color:var(--muted);
     text-decoration:underline;cursor:pointer;padding:4px 8px;}
@@ -364,40 +361,10 @@
 <body>
 <main class="stage">
   <div class="dave-corner">
-    <span class="dave-fig-wrap" id="dave-fig-wrap"><img class="dave-fig" src="assets/baby-dave.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart pendant, and a ring of candles for a mind"></span>
+    <p class="bubble">Hi, I’m Dave, here to solve humanity’s problems!</p>
+    <span class="dave-fig-wrap" id="dave-fig-wrap"><img class="dave-fig" src="assets/baby-dave-loop.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart pendant, and a ring of candles for a mind"><canvas class="dave-eye" id="dave-eye" width="224" height="260" aria-hidden="true"></canvas></span>
   </div>
   <div class="center">
-<section class="acct" id="acct" aria-label="Your Dave account">
-  <div class="acct-note" id="acct-note" hidden></div>
-  <div class="acct-chip" id="acct-chip" hidden>
-    <span id="acct-chip-text"></span>
-    <span class="acct-chip-links"><a href="https://dave-chat.william-ced.workers.dev/settings">Settings</a> · <a href="https://dave-chat.william-ced.workers.dev/signout">Sign out</a></span>
-  </div>
-  <div id="acct-forms">
-    <form class="acct-form" id="acct-signin" method="post" action="https://dave-chat.william-ced.workers.dev/auth/signin">
-      <h2 class="acct-h">Sign in</h2>
-      <label>Email<input type="email" name="email" required autocomplete="email"></label>
-      <label>Password<input type="password" name="password" required autocomplete="current-password"></label>
-      <label class="acct-check mig-row" hidden><input type="checkbox" name="migrate" checked><span>Bring my earlier conversations on this device into my account</span></label>
-      <input type="hidden" name="anonIdentity" value="">
-      <button class="acct-btn" type="submit">Sign in</button>
-      <p class="acct-alt"><a href="https://dave-chat.william-ced.workers.dev/forgot">Forgot your password?</a> · <button class="acct-swap" type="button" id="swap-to-signup">New to Dave? Create your account</button></p>
-    </form>
-    <form class="acct-form" id="acct-signup" method="post" action="https://dave-chat.william-ced.workers.dev/auth/signup" hidden>
-      <h2 class="acct-h">Create your account</h2>
-      <label>What should Dave call you?<input type="text" name="displayName" maxlength="60" autocomplete="nickname"></label>
-      <label>Email<input type="email" name="email" required autocomplete="email"></label>
-      <label>Password (10+ characters)<input type="password" name="password" required autocomplete="new-password"></label>
-      <label class="acct-check"><input type="checkbox" name="memory" checked><span>Dave remembers our conversations<small>Kept sealed to your account — only you and your Dave can read them. Turn it off, or erase it, any time in Settings.</small></span></label>
-      <label class="acct-check"><input type="checkbox" name="aggregate"><span>Let Dave learn from the shape of our talks (anonymous)<small>Topics and patterns only, counted only when at least five people share them. Never your words, never your name. Off unless you say yes.</small></span></label>
-      <label class="acct-check mig-row" hidden><input type="checkbox" name="migrate" checked><span>Bring my earlier conversations on this device into my account</span></label>
-      <input type="hidden" name="anonIdentity" value="">
-      <button class="acct-btn" type="submit">Create account — free</button>
-      <p class="acct-alt"><button class="acct-swap" type="button" id="swap-to-signin">Already have one? Sign in</button></p>
-    </form>
-    <p class="acct-free">Or just start talking below — it’s free, no account needed. An account makes Dave’s memory yours, on every device.</p>
-  </div>
-</section>
 <div class="chatbar" id="chat">
   <div class="chat-row">
     <button class="chat-mic" id="chat-mic" type="button" aria-label="Speak to Dave" aria-pressed="false" title="Speak to Dave">🎤</button>
@@ -1116,49 +1083,253 @@
 </script>
 
 <script>
-/* The account face (v4.40): notices, signed-in chip, form swap, and the
-   anonymous->account migration plumbing (the identity rides a hidden
-   field; the worker also reads the dave_id cookie server-side). */
+/* Website Dave — the lifelike eye (Bill, Oct 28, 2026).
+   The corner Dave's face is his eye — he has no mouth; expression lives here.
+   This rig replaces the baked animation loop with a living eye drawn over the
+   figure's own art: a natural blink rhythm that never repeats on a metronome,
+   a pupil that dilates and retracts, a gaze that wanders in micro-saccades,
+   settles into eye contact, drifts up while Dave is thinking, turns toward
+   the conversation when he answers, and blinks sharp when he's emphatic.
+   Pure addition: it observes the chat DOM, never touches chat logic, and if
+   anything fails the figure simply stays the plain loop image it always was. */
 (function(){
   "use strict";
-  var WORKER = "https://dave-chat.william-ced.workers.dev";
-  var q = new URLSearchParams(location.search);
-  var note = document.getElementById("acct-note");
-  function showNote(text){ if(note && text){ note.textContent = text; note.hidden = false; } }
-  if (q.get("e")) showNote(q.get("e"));
-  else if (q.get("welcome")) showNote("Account created. Your Dave is yours now — he remembers you when you come back.");
-  else if (q.get("deleted")) showNote("Account deleted — everything Dave remembered is gone.");
-  var si = document.getElementById("acct-signin"), su = document.getElementById("acct-signup");
-  var toSu = document.getElementById("swap-to-signup"), toSi = document.getElementById("swap-to-signin");
-  if (toSu) toSu.addEventListener("click", function(){ si.hidden = true; su.hidden = false; });
-  if (toSi) toSi.addEventListener("click", function(){ su.hidden = true; si.hidden = false; });
-  try {
-    var ident = localStorage.getItem("dave_chat_identity") || "";
-    var hist = localStorage.getItem("dave_chat_history") || "";
-    if (ident) {
-      var fields = document.querySelectorAll('input[name="anonIdentity"]');
-      for (var i = 0; i < fields.length; i++) fields[i].value = ident;
+  try{
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var wrap = document.getElementById("dave-fig-wrap");
+    var canvas = document.getElementById("dave-eye");
+    if (!wrap || !canvas || !canvas.getContext) return;
+    var ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    var W = 224, H = 260;
+    var EYE = { x: 125, y: 128, rx: 17.5, ry: 14.5 };
+    var IRIS_R = 11.6, PUPIL_R = 6.3;
+
+    /* Sprite: the figure's own 12 frames with the single baked blink frame
+       (index 6) removed — blinking is the rig's job now, on a human rhythm.
+       Ambient durations are the art's original ones, re-jittered each pass,
+       so the candles and the knit shimmer like the original loop did. */
+    var FRAMES = [0,1,2,3,4,5,6,7,8,9,10];           /* sprite slots */
+    var DURS   = [332,249,415,1079,332,83,83,249,498,1079,415];
+    var sprite = new Image();
+    var spriteReady = false;
+
+    function rnd(a, b){ return a + Math.random() * (b - a); }
+    function clamp(v, a, b){ return v < a ? a : (v > b ? b : v); }
+
+    /* ---- state ---- */
+    var mode = "idle";                 /* idle | thinking | attend | contact */
+    var gaze = { x: 0, y: 0 };         /* current iris offset, source px */
+    var gazeFrom = { x: 0, y: 0 }, gazeTo = { x: 0, y: 0 };
+    var gazeT = 1, gazeDur = 80, nextSaccade = 0;
+    var dil = 1, dilTarget = 1, constrictUntil = 0;
+    var lidOpen = 1;                   /* 1 = open */
+    var blink = null;                  /* {start, dur, sharp} while blinking */
+    var nextBlinkAt = performance.now() + rnd(1200, 3200);
+    var nextContactAt = performance.now() + rnd(7000, 14000);
+    var contactUntil = 0, attendUntil = 0;
+    var pointerBias = { x: 0, y: 0 }, pointerSeen = 0;
+    var frameIdx = 0, frameUntil = 0, cycleJitter = 1;
+    var running = false, inView = true;
+
+    /* ---- ambient frame player ---- */
+    function pickFrame(now){
+      frameUntil = now + DURS[frameIdx] * cycleJitter * rnd(0.8, 1.25);
     }
-    if (ident || (hist && hist.length > 2)) {
-      var rows = document.querySelectorAll(".mig-row");
-      for (var j = 0; j < rows.length; j++) rows[j].hidden = false;
+
+    /* ---- gaze engine ---- */
+    function saccadeTo(x, y, dur){
+      gazeFrom.x = gaze.x; gazeFrom.y = gaze.y;
+      gazeTo.x = x; gazeTo.y = y;
+      gazeDur = dur || rnd(60, 95); gazeT = 0;
     }
-  } catch (e) {}
-  try {
-    fetch(WORKER + "/auth/me", { credentials: "include" })
-      .then(function(r){ return r.json(); })
-      .then(function(j){
-        if (j && j.signedIn) {
-          var chip = document.getElementById("acct-chip");
-          var forms = document.getElementById("acct-forms");
-          var txt = document.getElementById("acct-chip-text");
-          if (txt) txt.textContent = "Signed in as " + (j.displayName || "you") + " — your Dave remembers you.";
-          if (chip) chip.hidden = false;
-          if (forms) forms.hidden = true;
+    function planSaccade(now){
+      if (mode === "thinking"){ saccadeTo(rnd(-0.6, 1.2), -3.1, 130); nextSaccade = now + rnd(500, 1100); return; }
+      if (mode === "contact"){ saccadeTo(rnd(-0.3, 0.3), 0.5, 120); nextSaccade = now + rnd(700, 1300); return; }
+      if (mode === "attend"){ saccadeTo(rnd(-3.0, -1.2), rnd(0.8, 2.2), 90); nextSaccade = now + rnd(600, 1500); return; }
+      /* idle wander: small looks around, weighted toward centre */
+      saccadeTo(rnd(-4.2, 4.2) * 0.75, rnd(-2.8, 2.8) * 0.75, rnd(60, 95));
+      nextSaccade = now + rnd(350, 2100);
+    }
+
+    /* ---- blink engine: human cadence, never a fixed interval ---- */
+    function startBlink(sharp, long){
+      blink = { start: performance.now(), dur: sharp ? 140 : (long ? 470 : rnd(225, 285)), sharp: !!sharp };
+      if (sharp) constrictUntil = performance.now() + 300;
+    }
+    function planBlink(now){
+      var base = rnd(1500, 4800);
+      if (mode === "thinking") base *= 1.35;      /* people blink less while concentrating */
+      nextBlinkAt = now + base;
+      var roll = Math.random();
+      if (roll < 0.12){ /* double blink */ setTimeout(function(){ if (!blink) startBlink(false, false); }, 300); }
+    }
+    function lidAt(now){
+      if (!blink) return 1;
+      var t = (now - blink.start) / blink.dur;
+      if (t >= 1){ blink = null; return 1; }
+      var close = blink.sharp ? 0.34 : 0.38, holdEnd = close + (blink.dur > 350 ? 0.22 : 0.14);
+      if (t < close){ var u = t / close; return 1 - (u * u); }
+      if (t < holdEnd) return 0.03;
+      var v = (t - holdEnd) / (1 - holdEnd); return 0.03 + 0.97 * (1 - (1 - v) * (1 - v));
+    }
+
+    /* ---- chat-state wiring: observe only ---- */
+    var thread = document.getElementById("chat-thread");
+    var lastMsgCount = 0, emphaticArmed = true;
+    function scanChat(){
+      if (!thread) return;
+      var typing = thread.querySelector(".msg-typing");
+      if (typing){ if (mode !== "thinking"){ mode = "thinking"; } return; }
+      if (mode === "thinking"){ mode = "attend"; attendUntil = performance.now() + 2600; emphaticArmed = true; }
+      var msgs = thread.querySelectorAll(".msg");
+      if (msgs.length > lastMsgCount){
+        lastMsgCount = msgs.length;
+        var last = msgs[msgs.length - 1];
+        if (last && mode !== "attend"){ mode = "attend"; attendUntil = performance.now() + 2000; }
+        if (emphaticArmed && last){
+          var txt = last.textContent || "";
+          var bangs = (txt.match(/!/g) || []).length;
+          var caps = (txt.match(/\b[A-Z]{4,}\b/g) || []).length;
+          if (bangs >= 2 || caps >= 1){ startBlink(true, false); }
+          emphaticArmed = false;
         }
-      }).catch(function(){});
-  } catch (e) {}
+      }
+    }
+    if (thread && window.MutationObserver){
+      var deb = null;
+      new MutationObserver(function(){ if (deb) return; deb = setTimeout(function(){ deb = null; scanChat(); }, 120); })
+        .observe(thread, { childList: true, subtree: true });
+    }
+
+    /* ---- pointer: the eye gravitates a touch toward the visitor ---- */
+    document.addEventListener("mousemove", function(e){
+      var r = wrap.getBoundingClientRect();
+      var cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+      var dx = (e.clientX - cx) / Math.max(window.innerWidth, 1);
+      var dy = (e.clientY - cy) / Math.max(window.innerHeight, 1);
+      pointerBias.x = clamp(dx * 5, -1.8, 1.8);
+      pointerBias.y = clamp(dy * 5, -1.4, 1.4);
+      pointerSeen = performance.now();
+    }, { passive: true });
+
+    /* ---- drawing ---- */
+    function draw(now){
+      ctx.clearRect(0, 0, W, H);
+      ctx.drawImage(sprite, FRAMES[frameIdx] * W, 0, W, H, 0, 0, W, H);
+
+      var driftX = Math.sin(now / 1731) * 0.3 + Math.sin(now / 613) * 0.12;
+      var driftY = Math.cos(now / 1493) * 0.26;
+      var pb = (now - pointerSeen < 4000 && mode === "idle") ? 1 : 0;
+      var ix = EYE.x + gaze.x + driftX + pointerBias.x * pb;
+      var iy = EYE.y + gaze.y + driftY + pointerBias.y * pb;
+
+      ctx.save();
+      ctx.beginPath(); ctx.ellipse(EYE.x, EYE.y, EYE.rx, EYE.ry, 0, 0, Math.PI * 2); ctx.clip();
+      /* iris: amber depth, dark rim */
+      var g = ctx.createRadialGradient(ix - 2, iy - 3, 1.5, ix, iy, IRIS_R);
+      g.addColorStop(0, "#c98a2e"); g.addColorStop(0.55, "#a8641c");
+      g.addColorStop(0.88, "#7c4410"); g.addColorStop(1, "#54300b");
+      ctx.fillStyle = g;
+      ctx.beginPath(); ctx.arc(ix, iy, IRIS_R, 0, Math.PI * 2); ctx.fill();
+      /* stitched inner ring */
+      ctx.strokeStyle = "rgba(84,48,11,.55)"; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.arc(ix, iy, IRIS_R * 0.66, 0, Math.PI * 2); ctx.stroke();
+      /* pupil: dilates and retracts */
+      var pr = PUPIL_R * dil;
+      ctx.fillStyle = "#1d1108";
+      ctx.beginPath(); ctx.arc(ix, iy, pr, 0, Math.PI * 2); ctx.fill();
+      /* highlights */
+      ctx.fillStyle = "rgba(255,255,255,.92)";
+      ctx.beginPath(); ctx.arc(ix + 3.4, iy - 4.6, 2.1, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,255,255,.5)";
+      ctx.beginPath(); ctx.arc(ix - 3.8, iy + 3.9, 1.1, 0, Math.PI * 2); ctx.fill();
+
+      /* lid: knit cream sweeping down, curved lash edge, clipped to the eye */
+      var open = lidAt(now);
+      if (open < 0.995){
+        var top = EYE.y - EYE.ry - 3, bot = EYE.y + EYE.ry + 3;
+        var lidY = top + (1 - open) * (bot - top);
+        var lg = ctx.createLinearGradient(0, top, 0, lidY + 3);
+        lg.addColorStop(0, "#f0e8db"); lg.addColorStop(1, "#e6dac4");
+        ctx.fillStyle = lg;
+        ctx.beginPath();
+        ctx.moveTo(EYE.x - EYE.rx - 3, top);
+        ctx.lineTo(EYE.x + EYE.rx + 3, top);
+        ctx.lineTo(EYE.x + EYE.rx + 3, lidY);
+        ctx.quadraticCurveTo(EYE.x, lidY + 2.4, EYE.x - EYE.rx - 3, lidY);
+        ctx.closePath(); ctx.fill();
+        ctx.strokeStyle = "rgba(96,66,36,.85)"; ctx.lineWidth = 1.7;
+        ctx.beginPath();
+        ctx.moveTo(EYE.x - EYE.rx + 1, lidY);
+        ctx.quadraticCurveTo(EYE.x, lidY + 2.4, EYE.x + EYE.rx - 1, lidY);
+        ctx.stroke();
+        ctx.strokeStyle = "rgba(120,96,64,.18)"; ctx.lineWidth = 3.4;
+        ctx.beginPath();
+        ctx.moveTo(EYE.x - EYE.rx + 1, lidY + 3.2);
+        ctx.quadraticCurveTo(EYE.x, lidY + 5.4, EYE.x + EYE.rx - 1, lidY + 3.2);
+        ctx.stroke();
+      }
+      ctx.restore();
+    }
+
+    /* ---- main loop ---- */
+    function tick(now){
+      if (!running) return;
+      requestAnimationFrame(tick);
+      if (now >= frameUntil){ frameIdx = (frameIdx + 1) % FRAMES.length; if (frameIdx === 0) cycleJitter = rnd(0.85, 1.2); pickFrame(now); }
+
+      if (mode === "attend" && now > attendUntil) mode = "idle";
+      if (mode === "idle" && now >= nextContactAt){ mode = "contact"; contactUntil = now + rnd(1400, 2600); nextContactAt = now + rnd(9000, 20000); }
+      if (mode === "contact" && now > contactUntil) mode = "idle";
+
+      if (now >= nextSaccade) planSaccade(now);
+      if (gazeT < 1){
+        gazeT = Math.min(1, gazeT + (16.7 / gazeDur));
+        var u = 1 - Math.pow(1 - gazeT, 3);
+        gaze.x = gazeFrom.x + (gazeTo.x - gazeFrom.x) * u;
+        gaze.y = gazeFrom.y + (gazeTo.y - gazeFrom.y) * u;
+      }
+      if (!blink && now >= nextBlinkAt){ startBlink(false, Math.random() < 0.05); planBlink(now); }
+
+      var dt = 1 + 0.06 * Math.sin(now / 3400);
+      if (mode === "thinking") dt = 1.05;
+      if (mode === "contact") dt = 1.14;
+      if (mode === "attend") dt = 1.08;
+      if (now < constrictUntil) dt = 0.8;
+      dil += (dt - dil) * 0.055;
+
+      draw(now);
+    }
+
+    function start(){
+      if (running || !spriteReady) return;
+      running = true;
+      pickFrame(performance.now());
+      draw(performance.now());
+      wrap.classList.add("rig-on");
+      requestAnimationFrame(tick);
+    }
+    function stop(){ running = false; }
+
+    sprite.onload = function(){ spriteReady = true; if (inView && !document.hidden) start(); };
+    sprite.onerror = function(){ /* fallback: the plain loop image stays */ };
+    sprite.src = "assets/baby-dave-sprite.webp";
+
+    document.addEventListener("visibilitychange", function(){
+      if (document.hidden) stop();
+      else if (inView) start();
+    });
+    if (window.IntersectionObserver){
+      new IntersectionObserver(function(en){
+        inView = en[0].isIntersecting;
+        if (inView && !document.hidden) start(); else stop();
+      }, { threshold: 0.05 }).observe(wrap);
+    }
+  }catch(e){ /* any failure: the figure stays the plain loop image */ }
 })();
+
 </script>
 </body>
 </html>
