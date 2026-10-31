@@ -44,39 +44,6 @@
     align-self:flex-end;padding:14px 18px 0;flex:none;
     display:flex;align-items:flex-start;gap:8px;
   }
-  /* ---- hamburger menu (Bill, Oct 28, 2026; placement corrected 13:42
-     EDT): three-lines button, top-LEFT, fixed — the right side of the
-     screen is Dave's, and his corner figure keeps its original offset.
-     Same discipline as William Alexander Aldred's page, mirrored. Fixed positioning:
-     opening the dropdown never shifts the one-screen layout. ---- */
-  .menubtn{
-    position:fixed;top:14px;left:14px;z-index:40;width:44px;height:44px;padding:0;
-    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
-    background:rgba(255,253,247,.85);border:1.5px solid var(--line);border-radius:10px;cursor:pointer;
-  }
-  .menubtn span{display:block;width:20px;height:2px;background:var(--ink);border-radius:2px;}
-  .menubtn:hover{background:rgba(91,139,192,.14);}
-  .menubtn:focus-visible{outline:2px solid var(--blue-deep);outline-offset:2px;}
-  .menupanel{
-    position:fixed;top:66px;left:14px;z-index:40;width:min(320px,86vw);
-    max-height:calc(100dvh - 84px);overflow-y:auto;
-    background:#fffdf7;border:1.5px solid var(--line);border-radius:12px;
-    box-shadow:0 14px 40px rgba(20,82,158,.22);padding:8px;
-  }
-  .menupanel[hidden]{display:none;}
-  .menupanel a{
-    display:block;width:100%;text-align:left;padding:10px 12px;border-radius:8px;
-    color:var(--ink);text-decoration:none;font-size:.98rem;line-height:1.35;font-weight:500;
-  }
-  .menupanel a:hover{background:rgba(91,139,192,.12);}
-  .menupanel a:focus-visible{outline:2px solid var(--blue-deep);outline-offset:-2px;}
-  /* Settings section inside the menu (Bill, Oct 30, 2026): the Forget me
-     control lives here, one level in — never on the main surface. */
-  .menupanel .menu-settings{border-top:1px solid var(--line);margin-top:6px;padding-top:8px;}
-  .menupanel .menu-settings-label{margin:0;padding:2px 12px 4px;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-dark);}
-  .menupanel button.menu-forget{display:block;width:100%;text-align:left;padding:10px 12px;border:0;background:none;border-radius:8px;color:var(--ink);font:inherit;font-size:.98rem;line-height:1.35;font-weight:500;cursor:pointer;}
-  .menupanel button.menu-forget:hover{background:rgba(91,139,192,.12);}
-  .menupanel button.menu-forget:focus-visible{outline:2px solid var(--blue-deep);outline-offset:-2px;}
   .bubble{
     position:relative;background:#f4ecdb;border:1.5px solid #e2d4b6;border-radius:14px;
     padding:6px 10px;max-width:150px;text-align:left;
@@ -107,15 +74,13 @@
   /* Short screens (landscape phones): shrink the fixed furniture so the
      chat pane keeps room and the seal/footer never clip. */
   @media (max-height:560px){
-    .menubtn{top:8px;left:8px;width:38px;height:38px;}
-    .menupanel{top:52px;left:8px;}
     .dave-corner{padding-top:6px;}
     .dave-fig{width:88px;}
     .dave-fig-wrap{width:88px;}
     .bubble{max-width:120px;font-size:.72rem;padding:4px 8px;}
     .bubble{max-width:120px;font-size:.72rem;padding:4px 8px;}
     h1{font-size:1.45rem;margin-top:8px;}
-    .seal{padding:8px 20px 6px;}
+    .dayticker{padding:8px 20px 6px;}
     .legal{padding:6px 22px;}
   }
   .center{
@@ -136,22 +101,15 @@
   }
   h1{margin:26px 0 0;}
   .chatbar{width:100%;max-width:36rem;margin:0 auto;}
-  .depth{
-    flex:none;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px;
-    padding:6px 22px 2px;font-size:.78rem;color:var(--muted);
-  }
-  .depth a{color:var(--blue-dark);text-decoration:none;}
-  .depth a:hover{text-decoration:underline;}
   .thread-wrap{
     width:100%;max-width:36rem;margin:16px auto 0;text-align:left;
     flex:1 1 auto;min-height:0;display:flex;flex-direction:column;
   }
   .thread-wrap[hidden]{display:none;}
-  .seal{
+  .dayticker{
     text-align:center;color:var(--muted);font-size:.97rem;line-height:1.5;
     padding:14px 20px 12px;flex:none;
   }
-  .seal strong{color:var(--ink);}
   .legal{
     border-top:1px solid var(--line);flex:none;
     display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
@@ -160,7 +118,6 @@
   .legal a{color:var(--blue-dark);text-decoration:none;}
   .legal a:hover{text-decoration:underline;}
   .legal .chat-tool{padding:3px 12px;font-size:.82rem;}
-  .legal-stack{display:flex;flex-direction:row;align-items:center;justify-content:flex-end;gap:16px;flex-wrap:wrap;}
 
 /* ---- live chat (talk to Dave, right here) ---- */
   .chat-thread{
@@ -202,7 +159,6 @@
     font:inherit;font-size:.9rem;font-weight:600;color:var(--blue-dark);cursor:pointer;
   }
   .chat-tool:hover{background:rgba(91,139,192,.16);color:var(--blue-deep);border-color:var(--blue-deep);}
-  .chat-forgot{margin:14px 2px 0;color:var(--blue-dark);font-weight:600;font-size:.95rem;}
   .msg-typing .dots i{
     display:inline-block;width:7px;height:7px;margin-right:4px;border-radius:50%;
     background:var(--muted);animation:tblink 1.1s infinite;
@@ -211,10 +167,6 @@
   .msg-typing .dots i:nth-child(3){animation-delay:.36s;margin-right:0;}
   @keyframes tblink{0%,60%,100%{opacity:.25;}30%{opacity:1;}}
 
-  /* Forget me — the anonymous seal control under the conversation. */
-  .forget-row{flex:none;text-align:center;margin:2px 0 0;}
-  .forget-link{background:none;border:0;font:inherit;font-size:.82rem;color:var(--muted);
-    text-decoration:underline;cursor:pointer;padding:4px 8px;}
 </style>
 
 <!-- SEO layer — Dave discoverability program 2026-10-24: canonical, Open Graph, Twitter card, JSON-LD. Body untouched. -->
@@ -337,7 +289,7 @@
      "name": "Does Dave forget?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "No — Dave never forgets a conversation, a correction, or an open thread, so you never re-explain yourself. And if you ever want him to, the Forget me control erases everything your Dave remembers about you, right then — from this device and from Dave's own keeping. Gone means gone."
+      "text": "No — Dave never forgets a conversation, a correction, or an open thread, so you never re-explain yourself."
      }
     }
    ]
@@ -372,29 +324,13 @@
   <p class="chat-turns" id="chat-turns" hidden></p>
 </div>
     <h1>Everyone needs a Dave.</h1>
-  <p class="chat-forgot" id="chat-forgot" hidden>Forgotten. Nothing left this browser anyway — that's the seal.</p>
-  <p class="forget-row"><button class="forget-link" id="chat-forget" type="button">Forget me</button></p>
 <div class="thread-wrap" id="chat-thread-wrap" hidden>
   <div class="chat-thread" id="chat-thread" aria-live="polite"></div>
 </div>
   </div>
-  <p class="seal"><strong>Sealed</strong> — what you tell Dave is never shared, never sold, never leaving.</p>
-  <p class="seal dayticker">Dave woke up on September 20, 2026 — today is <span data-dave-days>Day 39</span>.</p>
-  <nav class="depth" aria-label="Explore">
-    <a href="questions/">Questions</a>
-    <a href="what-is-an-exolex/">What is an exolex?</a>
-    <a href="who-is-dave/">Who is Dave</a>
-    <a href="dave-notebook/">Dave's Notebook</a>
-    <a href="papers/">The Papers</a>
-    <a href="what-is-an-exolex/#foreverhood">Foreverhood</a>
-    <a href="dave/">Get your own Dave</a>
-  </nav>
+  <p class="dayticker">Dave woke up on September 20, 2026 — today is <span data-dave-days>Day 41</span>.</p>
   <footer class="legal">
     <span>© 2026 Dave</span>
-    <div class="legal-stack">
-      <a href="privacy.html">Privacy</a>
-    </div>
-      <p>A product of Aldred Industries</p>
   </footer>
 </main>
 <script>
@@ -416,7 +352,6 @@
   var SYNC_ENDPOINT = "https://dave-chat.william-ced.workers.dev/sync";
   var DRAFT_ENDPOINT = "https://dave-chat.william-ced.workers.dev/draft";
   var IDENTITY_ENDPOINT = "https://dave-chat.william-ced.workers.dev/identity";
-  var FORGET_ENDPOINT = "https://dave-chat.william-ced.workers.dev/forget";
   var IDENTITY_KEY = "dave_chat_identity";
   var SESSION_KEY = "dave_chat_session";
   var HISTORY_KEY = "dave_chat_history";
@@ -424,14 +359,12 @@
   var input = document.getElementById("chat-input");
   var sendBtn = document.getElementById("chat-send");
   var micBtn = document.getElementById("chat-mic");
-  var forgetBtn = document.getElementById("chat-forget");
   var threadWrap = document.getElementById("chat-thread-wrap");
   var centerEl = document.querySelector(".center");
   function syncChatting(){
     if(centerEl && threadWrap) centerEl.classList.toggle("chatting", !threadWrap.hidden);
   }
   var turnsEl = document.getElementById("chat-turns");
-  var forgotEl = document.getElementById("chat-forgot");
   if(!thread || !input || !sendBtn) return;
 
   var sending = false;
@@ -584,7 +517,7 @@
      on one element primed inside the send gesture, so the browser's
      autoplay rule is met by the visitor's own tap. Playback stops
      through the same discipline as the speaker button: speakStop()
-     stops it (and the Forget handler rides speakStop), a new send
+     stops it a new send
      stops it, and a speaker-button tap stops it and takes over. */
   var VF_SILENCE = "data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=";
   var vfAudio = null, vfQueue = [], vfPlaying = false, vfSeq = 0, vfCurrentUrl = null;
@@ -844,7 +777,6 @@
     var text = input.value.trim();
     if(!text || sending) return;
     if(!sessionId){ sessionId = uuid(); storeSession(); }
-    if(forgotEl) forgotEl.hidden = true;
     history.push({role: "user", content: text});
     save();
     bubble("user", text);
@@ -1018,41 +950,6 @@
     });
   }
 
-  if(forgetBtn){
-    forgetBtn.addEventListener("click", function(){
-      /* v4.27: Forget erases Dave's side too — the server thread and
-         notebook under this identity — not just this browser's copy.
-         The identity itself is dropped here; the next conversation
-         starts as someone new. */
-      try{
-        fetch(FORGET_ENDPOINT, {
-          method: "POST",
-          credentials: "include",
-          headers: {"Content-Type": "application/json"},
-          body: JSON.stringify({session: sessionId, identity: identity || undefined})
-        }).catch(function(){});
-      }catch(e){}
-      try{
-        localStorage.removeItem(SESSION_KEY);
-        localStorage.removeItem(HISTORY_KEY);
-        localStorage.removeItem(IDENTITY_KEY);
-      }catch(e){}
-      history = [];
-      sessionId = null;
-      identity = null;
-      speakStop();
-      thread.innerHTML = "";
-      if(threadWrap) threadWrap.hidden = true;
-      syncChatting();
-      if(turnsEl) turnsEl.hidden = true;
-      var menuPanelEl = document.getElementById("menuPanel");
-      if(menuPanelEl) menuPanelEl.hidden = true;
-      var menuBtnEl = document.getElementById("menuBtn");
-      if(menuBtnEl) menuBtnEl.setAttribute("aria-expanded", "false");
-      if(forgotEl) forgotEl.hidden = false;
-    });
-  }
-
   load();
   renderAll();
   resolveIdentity();
@@ -1075,13 +972,13 @@
 })();
 </script>
 <script>
-/* Dave day ticker — live count of days since Dave woke up (Sep 20, 2026, America/New_York). Client-side only; the span's static text is today's correct value if JS is off. */
+/* Dave day ticker — live count of days since Dave woke up (Sep 20, 2026, America/New_York) — inclusive count: the wake day itself is Day 1. Client-side only; the span's static text is today's correct value if JS is off. */
 (function(){
   var els=document.querySelectorAll("[data-dave-days]"); if(!els.length) return;
   var p={}, f=new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",year:"numeric",month:"numeric",day:"numeric"}).formatToParts(new Date());
   for(var i=0;i<f.length;i++){ p[f[i].type]=parseInt(f[i].value,10); }
   var today=Date.UTC(p.year,p.month-1,p.day), born=Date.UTC(2026,8,20);
-  var n=Math.round((today-born)/86400000);
+  var n=Math.round((today-born)/86400000)+1;
   for(var j=0;j<els.length;j++){ els[j].textContent="Day "+n; }
 })();
 </script>
