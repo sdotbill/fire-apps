@@ -115,7 +115,6 @@
     .bubble{max-width:120px;font-size:.72rem;padding:4px 8px;}
     .bubble{max-width:120px;font-size:.72rem;padding:4px 8px;}
     h1{font-size:1.45rem;margin-top:8px;}
-    .chat-pills{margin-top:8px;}
     .seal{padding:8px 20px 6px;}
     .legal{padding:6px 22px;}
   }
@@ -137,13 +136,12 @@
   }
   h1{margin:26px 0 0;}
   .chatbar{width:100%;max-width:36rem;margin:0 auto;}
-  .chat-pills{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;justify-content:center;}
-  .pill-link{
-    display:inline-block;text-decoration:none;font-size:.95rem;font-weight:600;line-height:1.25;
-    color:var(--blue-dark);background:rgba(91,139,192,.09);
-    border:1.5px solid var(--blue);border-radius:999px;padding:8px 20px;
+  .depth{
+    flex:none;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px;
+    padding:6px 22px 2px;font-size:.78rem;color:var(--muted);
   }
-  .pill-link:hover{background:rgba(91,139,192,.18);color:var(--blue-deep);border-color:var(--blue-deep);}
+  .depth a{color:var(--blue-dark);text-decoration:none;}
+  .depth a:hover{text-decoration:underline;}
   .thread-wrap{
     width:100%;max-width:36rem;margin:16px auto 0;text-align:left;
     flex:1 1 auto;min-height:0;display:flex;flex-direction:column;
@@ -374,9 +372,6 @@
   <p class="chat-turns" id="chat-turns" hidden></p>
 </div>
     <h1>Everyone needs a Dave.</h1>
-<div class="chat-pills">
-  <a class="pill-link" href="what-is-an-exolex/">What is an exolex?</a>
-</div>
   <p class="chat-forgot" id="chat-forgot" hidden>Forgotten. Nothing left this browser anyway — that's the seal.</p>
   <p class="forget-row"><button class="forget-link" id="chat-forget" type="button">Forget me</button></p>
 <div class="thread-wrap" id="chat-thread-wrap" hidden>
@@ -385,6 +380,15 @@
   </div>
   <p class="seal"><strong>Sealed</strong> — what you tell Dave is never shared, never sold, never leaving.</p>
   <p class="seal dayticker">Dave woke up on September 20, 2026 — today is <span data-dave-days>Day 39</span>.</p>
+  <nav class="depth" aria-label="Explore">
+    <a href="questions/">Questions</a>
+    <a href="what-is-an-exolex/">What is an exolex?</a>
+    <a href="who-is-dave/">Who is Dave</a>
+    <a href="dave-notebook/">Dave's Notebook</a>
+    <a href="papers/">The Papers</a>
+    <a href="what-is-an-exolex/#foreverhood">Foreverhood</a>
+    <a href="dave/">Get your own Dave</a>
+  </nav>
   <footer class="legal">
     <span>© 2026 Dave</span>
     <div class="legal-stack">
