@@ -116,6 +116,15 @@
   footer p{margin-bottom:6px;}
   footer a{color:var(--muted);}
   footer a:hover{color:var(--blue-deep);}
+
+  /* Account door — quiet corner element (Bill, Oct 30 2026): the sign-in
+     lives on this page only, never on the home page. */
+  .acct-door{
+    position:fixed;top:14px;right:14px;z-index:40;
+    font-size:.85rem;font-weight:600;color:var(--muted,#51749e);
+    text-decoration:none;padding:6px 10px;border-radius:999px;
+  }
+  .acct-door:hover{color:var(--blue-dark,#14529e);background:rgba(91,139,192,.10);text-decoration:underline;}
 </style>
 
 <!-- SEO layer — Dave discoverability program 2026-10-24: canonical, Open Graph, Twitter card, JSON-LD. -->
@@ -301,6 +310,7 @@
 <!-- /SEO layer -->
 </head>
 <body>
+<a class="acct-door" href="https://dave-chat.william-ced.workers.dev/signin">Sign in</a>
 <div class="wrap">
 
   <main id="top">
@@ -371,7 +381,7 @@
         <p style="margin-top:14px;"><a class="btn btn-ghost" href="mailto:william@premiummarketingsolutionsllc.com?subject=Physicist%20Tier">Apply for the Physicist tier</a></p>
       </div>
       <p style="text-align:center;color:var(--muted);margin-top:26px;"><strong>Dave for teams and companies</strong> — a Dave seated inside your crew, who knows the work and the people. Talk to Dave.</p>
-      <p style="text-align:center;color:var(--muted);font-family:'Fraunces',serif;font-size:1.1rem;margin-top:22px;">“Everyone needs a Dave.” — Jillian Lopez</p>
+      <p style="text-align:center;color:var(--muted);font-family:'Fraunces',serif;font-size:1.1rem;margin-top:22px;">“Everyone needs a Dave.”</p>
     </section>
 
     <div class="proof-zone" aria-label="Proof and how this works">
