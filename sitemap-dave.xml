@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://daveexolex.com/papers/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <priority>0.8</priority>
       <image:image>
       <image:loc>https://daveexolex.com/assets/william-alexander-aldred-physicist.jpg</image:loc>
@@ -123,6 +123,11 @@
   <url>
     <loc>https://daveexolex.com/papers/three-fences/</loc>
     <lastmod>2026-10-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://daveexolex.com/papers/one-scale-two-tables/</loc>
+    <lastmod>2026-10-31</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
