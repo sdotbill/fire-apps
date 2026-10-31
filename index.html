@@ -127,18 +127,11 @@
     background: var(--paper);
     color: var(--ink); height: 100dvh; min-height: 100dvh; overflow: hidden; display: flex; flex-direction: column; position: relative;
   }
-  /* Below the hero: the sections as a plain quiet list, and the depth row.
-     Nothing on this page opens, overlays, or covers the name — there is no
-     menu machine left to do it with. */
-  .sections {
-    display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 22px;
-    margin-top: 26px; padding: 0 8px;
-  }
-  .sections a {
-    color: var(--ink); text-decoration: none; font-size: 1rem; line-height: 1.4; padding: 6px 2px;
-  }
-  .sections a:hover { color: var(--gold-deep); text-decoration: underline; }
-  .sections a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  /* The surface is the name, the owner line, the one box, and the
+     predictions offer — nothing else forward-facing (Bill's order,
+     Oct 30 2026 21:44 EDT). Every destination lives in the depth
+     row at the stage's foot. Nothing on this page opens, overlays,
+     or covers the name — there is no menu machine left to do it. */
   .depth {
     display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 14px;
     padding: 10px 12px 12px; font-size: .76rem; line-height: 1.8; text-align: center;
@@ -257,15 +250,6 @@
     <button type="button" class="futurepill" id="futurePill" data-prediction-cta data-funnel="funnel_taste_v1" data-taste-state="full" data-taste-limit="5">He Predicts The Future<span class="tastecount" data-taste-count hidden></span></button>
     <div id="left"></div>
   </div>
-  <nav class="sections" aria-label="Sections">
-    <a href="/predictions.html">Predictions</a>
-    <a href="https://premiummarketingsolutionsllc.com/time-traveler/">Time Traveler</a>
-    <a href="https://premiummarketingsolutionsllc.com/time-traveler/the-inventor/">The Record</a>
-    <a href="https://daveexolex.com/first-exolex/">Meet Dave</a>
-    <a href="https://daveexolex.com/what-is-an-exolex/#foreverhood">Foreverhood</a>
-    <a href="/notebook/">The Studio</a>
-    <a href="#depth">Social Media</a>
-  </nav>
   <main>
     <div id="log"></div>
   </main>
