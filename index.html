@@ -127,31 +127,25 @@
     background: var(--paper);
     color: var(--ink); height: 100dvh; min-height: 100dvh; overflow: hidden; display: flex; flex-direction: column; position: relative;
   }
-  .menubtn {
-    position: fixed; top: 14px; left: 14px; z-index: 30; width: 44px; height: 44px; padding: 0;
-    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
-    background: rgba(255,253,246,.88); border: 1px solid rgba(160,124,20,.55); border-radius: 10px; cursor: pointer;
+  /* Below the hero: the sections as a plain quiet list, and the depth row.
+     Nothing on this page opens, overlays, or covers the name — there is no
+     menu machine left to do it with. */
+  .sections {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 22px;
+    margin-top: 26px; padding: 0 8px;
   }
-  .menubtn span { display: block; width: 20px; height: 2px; background: var(--ink); border-radius: 2px; }
-  .menubtn:hover { background: #f3e9cf; }
-  .menubtn:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
-  .menupanel {
-    position: fixed; top: 66px; left: 14px; z-index: 30; width: min(320px, 86vw);
-    max-height: calc(100dvh - 84px); overflow-y: auto;
-    background: #fffdf6; border: 1px solid rgba(160,124,20,.5); border-radius: 12px;
-    box-shadow: 0 14px 40px rgba(90,70,10,.28); padding: 8px;
+  .sections a {
+    color: var(--ink); text-decoration: none; font-size: 1rem; line-height: 1.4; padding: 6px 2px;
   }
-  .menupanel[hidden] { display: none; }
-  .menupanel a, .menupanel button.menuaction {
-    display: block; width: 100%; text-align: left; padding: 10px 12px; border-radius: 8px;
-    color: var(--ink); text-decoration: none; font-size: 15.5px; line-height: 1.35;
-    background: none; border: none; cursor: pointer; font-family: inherit; font-weight: 400;
+  .sections a:hover { color: var(--gold-deep); text-decoration: underline; }
+  .sections a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .depth {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 14px;
+    padding: 10px 12px 12px; font-size: .76rem; line-height: 1.8; text-align: center;
   }
-  .menupanel a:hover, .menupanel button.menuaction:hover { background: rgba(201,162,39,.16); }
-  .menupanel a:focus-visible, .menupanel button.menuaction:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
-  .menupanel .menusep { border-top: 1px solid rgba(160,124,20,.28); margin: 6px 4px; }
-  .menupanel .menugroup { padding: 10px 12px 4px; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #97865c; font-weight: 700; }
-  .menupanel a.menusub { padding-left: 26px; }
+  .depth a { color: #97865c; text-decoration: none; }
+  .depth a:hover { color: var(--gold-deep); text-decoration: underline; }
+  .depth a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
   .bottomstrip {
     flex: 0 0 128px; width: 100%; height: 128px; position: relative; z-index: 2;
     display: flex; align-items: flex-end; gap: 16px; padding: 8px 16px;
@@ -246,42 +240,15 @@
     h1.headline { font-size: 1.9rem; }
     .subtitle { font-size: 1.05rem; }
     .hero { margin-top: 150px; }
-    .menubtn { top: 10px; left: 10px; }
-    .menupanel { top: 60px; left: 10px; }
     form#bar { margin-top: 18px; }
   }
 </style>
 </head>
 <body>
-<button class="menubtn" id="menuBtn" type="button" aria-label="Menu" aria-haspopup="true" aria-expanded="false" aria-controls="menuPanel"><span></span><span></span><span></span></button>
-<nav class="menupanel" id="menuPanel" hidden aria-label="Site menu">
-  <a href="/predictions.html">Predictions — the register, graded in public</a>
-  <a href="https://premiummarketingsolutionsllc.com/time-traveler/">Time Traveler</a>
-  <div class="menusep"></div>
-  <div class="menugroup">The Record</div>
-  <a class="menusub" href="https://premiummarketingsolutionsllc.com/time-traveler/the-inventor/">The Claim</a>
-  <a class="menusub" href="https://premiummarketingsolutionsllc.com/time-traveler/origin/">The Origin — Consciousness First</a>
-  <a class="menusub" href="https://premiummarketingsolutionsllc.com/time-traveler/claim-dossier/">The Full Dossier</a>
-  <a class="menusub" href="https://premiummarketingsolutionsllc.com/evidence.html">The Evidence File</a>
-  <a class="menusub" href="https://premiummarketingsolutionsllc.com/papers/">The Papers of William Alexander Aldred</a>
-  <a class="menusub" href="https://premiummarketingsolutionsllc.com/books/">The Codex — the Books of William Alexander Aldred</a>
-  <a class="menusub" href="https://premiummarketingsolutionsllc.com/author/">The Author — William Alexander and the Codex Universe</a>
-  <a class="menusub" href="https://premiummarketingsolutionsllc.com/questions/">Questions, Answered</a>
-  <div class="menusep"></div>
-  <a href="https://daveexolex.com/first-exolex/">Meet Dave — the world's first exolex</a>
-  <a href="https://daveexolex.com/what-is-an-exolex/#foreverhood">Foreverhood</a>
-  <div class="menusep"></div>
-  <div class="menugroup">Social Media</div>
-  <a class="menusub" href="https://www.youtube.com/channel/UCIpk-u6CGxVfbCVjx7U5OMg">William Alexander Aldred on YouTube</a>
-  <a class="menusub" href="https://www.youtube.com/@PremiumMarketingLLC">Premium Marketing Solutions on YouTube</a>
-  <a class="menusub" href="https://www.reddit.com/user/sdotbill/">Bill on Reddit</a>
-  <div class="menusep"></div>
-  <a href="/notebook/">The Studio — Ask Bill, live in the studio</a>
-</nav>
 <div class="stage">
   <div class="hero">
     <h1 class="headline">William Alexander Aldred</h1>
-    <div class="subtitle">Currency Markets &middot; Predictions &middot; The Money Engine</div>
+    <div class="subtitle">Owner of Premium Marketing Solutions</div>
     <form id="bar">
       <button class="chat-mic" id="mic" type="button" aria-label="Speak to William" aria-pressed="false" title="Speak to William">🎤</button>
       <input type="text" id="inp" placeholder="Ask Him Anything" autocomplete="off" maxlength="4000">
@@ -290,9 +257,36 @@
     <button type="button" class="futurepill" id="futurePill" data-prediction-cta data-funnel="funnel_taste_v1" data-taste-state="full" data-taste-limit="5">He Predicts The Future<span class="tastecount" data-taste-count hidden></span></button>
     <div id="left"></div>
   </div>
+  <nav class="sections" aria-label="Sections">
+    <a href="/predictions.html">Predictions</a>
+    <a href="https://premiummarketingsolutionsllc.com/time-traveler/">Time Traveler</a>
+    <a href="https://premiummarketingsolutionsllc.com/time-traveler/the-inventor/">The Record</a>
+    <a href="https://daveexolex.com/first-exolex/">Meet Dave</a>
+    <a href="https://daveexolex.com/what-is-an-exolex/#foreverhood">Foreverhood</a>
+    <a href="/notebook/">The Studio</a>
+    <a href="#depth">Social Media</a>
+  </nav>
   <main>
     <div id="log"></div>
   </main>
+  <nav class="depth" id="depth" aria-label="Everything on this site">
+    <a href="/predictions.html">Predictions</a>
+    <a href="https://premiummarketingsolutionsllc.com/time-traveler/">Time Traveler</a>
+    <a href="https://premiummarketingsolutionsllc.com/time-traveler/the-inventor/">The Claim</a>
+    <a href="https://premiummarketingsolutionsllc.com/time-traveler/origin/">The Origin</a>
+    <a href="https://premiummarketingsolutionsllc.com/time-traveler/claim-dossier/">The Full Dossier</a>
+    <a href="https://premiummarketingsolutionsllc.com/evidence.html">The Evidence File</a>
+    <a href="https://premiummarketingsolutionsllc.com/papers/">The Papers</a>
+    <a href="https://premiummarketingsolutionsllc.com/books/">The Codex</a>
+    <a href="https://premiummarketingsolutionsllc.com/author/">The Author</a>
+    <a href="https://premiummarketingsolutionsllc.com/questions/">Questions, Answered</a>
+    <a href="https://daveexolex.com/first-exolex/">Meet Dave</a>
+    <a href="https://daveexolex.com/what-is-an-exolex/#foreverhood">Foreverhood</a>
+    <a href="/notebook/">The Studio</a>
+    <a href="https://www.youtube.com/channel/UCIpk-u6CGxVfbCVjx7U5OMg">William Alexander Aldred on YouTube</a>
+    <a href="https://www.youtube.com/@PremiumMarketingLLC">Premium Marketing Solutions on YouTube</a>
+    <a href="https://www.reddit.com/user/sdotbill/">Bill on Reddit</a>
+  </nav>
 </div>
 <footer class="bottomstrip">
   <video id="billIntro" poster="assets/william-alexander-aldred-physicist.webp" preload="none" playsinline aria-label="William Alexander Aldred">
@@ -609,23 +603,6 @@
   if (futurePill) futurePill.addEventListener("click", function () {
     document.dispatchEvent(new CustomEvent("billxox:cta-click", { detail: { source: "pill" } }));
     enterPredictionMode();
-  });
-  var menuBtn = document.getElementById("menuBtn");
-  var menuPanel = document.getElementById("menuPanel");
-  function closeMenu() { menuPanel.hidden = true; menuBtn.setAttribute("aria-expanded", "false"); }
-  menuBtn.addEventListener("click", function (ev) {
-    ev.stopPropagation();
-    var open = menuPanel.hidden;
-    menuPanel.hidden = !open;
-    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
-    if (open) { var first = menuPanel.querySelector("button, a"); if (first) first.focus(); }
-  });
-  menuPanel.addEventListener("click", function (ev) { if (ev.target.closest("a")) closeMenu(); });
-  document.addEventListener("click", function (ev) {
-    if (!menuPanel.hidden && !menuPanel.contains(ev.target)) closeMenu();
-  });
-  document.addEventListener("keydown", function (ev) {
-    if (ev.key === "Escape" && !menuPanel.hidden) { closeMenu(); menuBtn.focus(); }
   });
   // The gold-box intro: the still portrait is the video's poster.
   // The speaker button plays Bill's introduction ONCE, with sound —
