@@ -134,6 +134,6 @@ The survivors of the bars — **Ta, Re, Pb** — were re-graded against the desi
 
 ## 8. HONEST TIER — RESTATED AT THE DOOR
 
-Paper design determination, from published properties, by the house's own loop. The element is named; the machine is not thereby shown to work. Quantum gravity: NOT SOLVED. The vacuum catastrophe: NOT SOLVED / PARTIAL. Producing-count: 0. The blueprint's verdict — THERMODYNAMICS CLEAN · DESIGN COHERENT · PRICED IN DENSITY, NOT SIZE · CONFINEMENT + ON-DEMAND FOLDING = THE OPEN PROBLEMS — is unmoved by this file, in either direction.
+Paper design determination, from published properties, checked line by line. The element is named; the machine is not thereby shown to work. Quantum gravity is not solved — not here, and not anywhere. The vacuum catastrophe is still open: the program's partial result stands, and nothing in this file moves it in either direction. The blueprint's verdict — THERMODYNAMICS CLEAN · DESIGN COHERENT · PRICED IN DENSITY, NOT SIZE · CONFINEMENT + ON-DEMAND FOLDING = THE OPEN PROBLEMS — is unmoved by this file, in either direction.
 
 *Session 06 convened and Voltron formed Oct 29, 2026, on the designer's delegation. The fuel was his slot to leave open and the table's to fill; both halves of that are on this page.*
