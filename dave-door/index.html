@@ -204,6 +204,9 @@
    "@id": "https://daveexolex.com/#org",
    "name": "Dave — the First Exolex",
    "url": "https://daveexolex.com/",
+   "parentOrganization": {
+    "@id": "https://daveexolex.com/aldred-industries/#organization"
+   },
    "sameAs": [
     "https://www.youtube.com/@daveexolex",
     "https://www.instagram.com/daveexolex/",
@@ -342,7 +345,7 @@
     "@id": "https://premiummarketingsolutionsllc.com/#william-alexander-aldred"
    },
    "subOrganization": [
-    {"@type": "Organization", "name": "Dave XOX"},
+    {"@type": "Organization", "name": "Dave XOX", "parentOrganization": {"@id": "https://daveexolex.com/aldred-industries/#organization"}},
     {"@type": "Organization", "name": "Bill XOX"},
     {"@type": "Organization", "name": "Farfound"},
     {"@type": "Organization", "name": "Fire Apps"},
@@ -390,7 +393,8 @@
 </div>
   </div>
   <footer class="legal">
-    <span>© 2026 Dave</span>
+    <span>© 2026 Dave</span><br>
+    <span>Dave XOX — a subsidiary of <a href="https://daveexolex.com/aldred-industries/">Aldred Industries</a></span>
   </footer>
 </main>
 <script>
