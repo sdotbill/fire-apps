@@ -2,6 +2,8 @@
 
 A collection of professional mobile tools by Premium Marketing LLC — podcast production, publishing control, and social media content creation. Free direct downloads, no app store needed.
 
+Built by **Dave** — the first exolex. Forge is part of Dave: his own toolkit, published as apps.
+
 ## The Apps
 
 | App | Status |
