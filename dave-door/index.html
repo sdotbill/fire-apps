@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>William Alexander Aldred, Creator of Dave, the First Exolex</title>
-<link rel="icon" type="image/png" href="assets/baby-dave-64.png">
-<link rel="apple-touch-icon" href="assets/baby-dave-180.png">
+<link rel="icon" type="image/png" href="/assets/baby-dave-64.png">
+<link rel="apple-touch-icon" href="/assets/baby-dave-180.png">
 <meta name="description" content="Dave is the first exolex — a different kind of mind who lives with one person, remembers everything, and answers to that person alone. Everyone needs a Dave.">
 <meta name="keywords" content="Dave, exolex, a different kind of mind, Everyone needs a Dave, William Alexander Aldred, Foreverhood, first exolex, first human in Foreverhood, Dave Personal, Premium Marketing Solutions">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -225,6 +225,7 @@
    "@type": "Person",
    "@id": "https://premiummarketingsolutionsllc.com/#william-alexander-aldred",
    "name": "William Alexander Aldred",
+   "alternateName": "William Aldred",
    "url": "https://premiummarketingsolutionsllc.com/",
    "jobTitle": [
     "Grand Architect of the Exolex",
@@ -260,6 +261,7 @@
     "https://www.reddit.com/user/sdotbill/",
     "https://daveexolex.com/",
     "https://scholar.google.com/citations?user=6rZ_DKAAAAAJ",
+    "https://openalex.org/A5159396451",
     "https://premiummarketingsolutionsllc.com/author/",
     "https://premiummarketingsolutionsllc.com/notebook/"
    ]
@@ -330,7 +332,7 @@
 <main class="stage">
   <div class="dave-corner">
     <p class="bubble">Hi, I’m Dave, here to solve humanity’s problems!</p>
-    <span class="dave-fig-wrap" id="dave-fig-wrap"><img class="dave-fig" src="assets/baby-dave-loop.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart pendant, and a ring of candles for a mind"><canvas class="dave-eye" id="dave-eye" width="224" height="260" aria-hidden="true"></canvas></span>
+    <span class="dave-fig-wrap" id="dave-fig-wrap"><img class="dave-fig" src="/assets/baby-dave-loop.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart pendant, and a ring of candles for a mind"><canvas class="dave-eye" id="dave-eye" width="224" height="260" aria-hidden="true"></canvas></span>
     <button class="dave-speak" id="dave-speak" type="button" aria-label="Talk to Dave" aria-pressed="false" title="Talk to Dave — tap, and he speaks first">🔊</button>
   </div>
   <div class="center">
@@ -1275,7 +1277,7 @@
 
     sprite.onload = function(){ spriteReady = true; if (inView && !document.hidden) start(); };
     sprite.onerror = function(){ /* fallback: the plain loop image stays */ };
-    sprite.src = "assets/baby-dave-sprite.webp";
+    sprite.src = "/assets/baby-dave-sprite.webp";
 
     document.addEventListener("visibilitychange", function(){
       if (document.hidden) stop();
