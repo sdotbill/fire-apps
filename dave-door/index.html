@@ -724,6 +724,9 @@
              while a turn landed at the tail), remember the head, take
              the shared draft, and start the live loop. */
           isOwner = true;
+          if(typeof data.draftVer === "number") lastDraftVer = data.draftVer;
+          if(data.presence) lastPresence = data.presence;
+          outboxConfirm(data.messages);
           var advanced = typeof data.lastSeq === "number" && data.lastSeq > lastSeq;
           if(data.messages.length > history.length || advanced){
             history = data.messages;
@@ -733,6 +736,7 @@
           if(typeof data.lastSeq === "number" && data.lastSeq > lastSeq) lastSeq = data.lastSeq;
           if(data.draft) applyRemoteDraft(data.draft);
           startSyncLoop();
+          outboxPump();
         } else if(data.messages.length > history.length){
           history = data.messages;
           save();
@@ -760,6 +764,9 @@
   var isOwner = false;
   var lastSeq = 0;
   var lastDraftTs = 0;
+  var lastDraftVer = 0;
+  var lastPresence = {};
+  var syncFailStreak = 0;
   var lastRemoteDraft = "";
   var syncLoopStarted = false;
   function startSyncLoop(){
@@ -773,21 +780,37 @@
       method: "POST",
       credentials: "include",
       headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({session: sessionId, identity: identity || undefined, since: lastSeq, draftTs: lastDraftTs})
+      body: JSON.stringify({session: sessionId, identity: identity || undefined, since: lastSeq, draftTs: lastDraftTs, draftVer: lastDraftVer})
     }).then(function(r){
       return r.ok ? r.json() : null;
     }).then(function(data){
       if(data && data.ok){
+        syncFailStreak = 0;
         if(typeof data.lastSeq === "number" && data.lastSeq > lastSeq){
           /* Another device's turn landed (or this device's own turn,
              seen from the server side): re-read the canonical thread. */
           syncFromServer();
         }
+        if(typeof data.draftVer === "number") lastDraftVer = data.draftVer;
+        if(data.presence) lastPresence = data.presence;
         if(data.draft) applyRemoteDraft(data.draft);
-        else if(lastDraftTs > 0){ lastDraftTs = 0; lastRemoteDraft = ""; }
+        else{
+          /* The shared draft is gone — a turn landed somewhere. If
+             this box is only holding the mirrored draft (not the
+             typist's own words), it clears with the draft. */
+          if(lastDraftTs > 0) lastDraftTs = 0;
+          if(lastRemoteDraft && !sending && input.value === lastRemoteDraft) input.value = "";
+          lastRemoteDraft = "";
+        }
       }
       setTimeout(syncTick, 250);
-    }).catch(function(){ setTimeout(syncTick, 3000); });
+    }).catch(function(){
+      /* Reconnect backoff: 1s doubling to a 15s cap, reset on the
+         first answered poll. A dead network never spins the loop. */
+      var wait = Math.min(15000, 1000 * Math.pow(2, Math.min(syncFailStreak, 4)));
+      syncFailStreak++;
+      setTimeout(syncTick, wait);
+    });
   }
   /* THE MIRROR RULE: a remote draft enters this box only when the box
      is empty, unfocused, or holding exactly the last remote draft
@@ -797,6 +820,7 @@
      flight the draft is held, never applied. */
   function applyRemoteDraft(d){
     if(!d || typeof d.text !== "string") return;
+    if(typeof d.dver === "number" && d.dver > lastDraftVer) lastDraftVer = d.dver;
     if(typeof d.ts === "number" && d.ts <= lastDraftTs) return;
     if(typeof d.ts === "number") lastDraftTs = d.ts;
     var remote = d.text;
@@ -834,6 +858,83 @@
      while talking into the other. */
   setInterval(function(){ pushDraft(); }, 350);
 
+  /* v4.46 OWNER OUTBOX — an owner send is not done until the
+     shared thread confirms it. Every owner send carries a
+     client-generated id (clientMsgId) and sits in this localStorage
+     queue until the canonical thread shows the id (the worker
+     stamps it on the user record). A send whose response is lost —
+     connection drop, tab sleep, a cut stream — is retried with the
+     SAME id: the worker recorded the id with the turn and replays
+     the stored reply instead of appending twice, so a retry can
+     never double the conversation. Confirmation also drops the
+     entry when the turn is simply seen in the thread. Non-owner
+     sends never touch any of this: no id, no queue, no retry —
+     the exact pre-v4.46 behavior. */
+  var OUTBOX_KEY = "dave_outbox_v1";
+  var outbox = [];
+  try{ outbox = JSON.parse(localStorage.getItem(OUTBOX_KEY) || "[]"); }catch(e){ outbox = []; }
+  if(!Array.isArray(outbox)) outbox = [];
+  var deviceTag = "";
+  try{ deviceTag = localStorage.getItem("dave_device_tag") || ""; }catch(e){}
+  if(!deviceTag){
+    deviceTag = uuid().replace(/-/g, "").slice(0, 10);
+    try{ localStorage.setItem("dave_device_tag", deviceTag); }catch(e){}
+  }
+  var outboxSeq = 0;
+  function storeOutbox(){
+    try{ localStorage.setItem(OUTBOX_KEY, JSON.stringify(outbox.slice(-10))); }catch(e){}
+  }
+  function outboxAdd(cid, text){
+    outbox.push({cid: cid, text: text, ts: Date.now()});
+    storeOutbox();
+  }
+  function outboxDrop(cid){
+    var n = outbox.filter(function(e){ return e.cid !== cid; });
+    if(n.length !== outbox.length){ outbox = n; storeOutbox(); }
+  }
+  function outboxConfirm(messages){
+    if(!outbox.length || !Array.isArray(messages)) return;
+    var seen = {};
+    messages.forEach(function(m){ if(m && typeof m.cmid === "string") seen[m.cmid] = true; });
+    var before = outbox.length;
+    outbox = outbox.filter(function(e){ return !seen[e.cid]; });
+    if(outbox.length !== before) storeOutbox();
+  }
+  var outboxBusy = false;
+  function outboxPump(){
+    if(!isOwner || outboxBusy || sending) return;
+    var entry = outbox[0];
+    if(!entry) return;
+    if(!sessionId){ sessionId = uuid(); storeSession(); }
+    outboxBusy = true;
+    var msgs = history.slice();
+    var last = msgs[msgs.length - 1];
+    if(!(last && last.role === "user" && last.content === entry.text)){
+      msgs.push({role: "user", content: entry.text});
+    }
+    var payload = {session: sessionId, messages: msgs, clientMsgId: entry.cid};
+    if(identity) payload.identity = identity;
+    fetch(DAVE_CHAT_ENDPOINT, {
+      method: "POST",
+      credentials: "include",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(payload)
+    }).then(function(r){
+      return r.ok ? r.json() : null;
+    }).then(function(data){
+      outboxBusy = false;
+      if(data && data.reply){
+        /* The turn is in the thread (fresh, or replayed by id).
+           The wholesale adopt renders it — nothing is pushed to
+           the local history here; the server thread is the record,
+           and outboxConfirm drops the entry on the adopt. */
+        syncFromServer();
+      }
+    }).catch(function(){ outboxBusy = false; });
+  }
+  setInterval(outboxPump, 5000);
+  window.addEventListener("online", function(){ syncFromServer(); outboxPump(); });
+
   function setSending(on){
     sending = on;
     sendBtn.disabled = on;
@@ -843,7 +944,17 @@
     var text = input.value.trim();
     if(!text || sending) return;
     if(!sessionId){ sessionId = uuid(); storeSession(); }
-    history.push({role: "user", content: text});
+    /* v4.46: owner sends mint an idempotency id and join the
+       outbox until the thread confirms them (see the outbox block
+       above). Visitor sends mint nothing. */
+    var cid = null;
+    if(isOwner){
+      cid = "c" + deviceTag + "-" + Date.now().toString(36) + "-" + (++outboxSeq).toString(36) + Math.floor(Math.random() * 1e6).toString(36);
+      outboxAdd(cid, text);
+    }
+    var uMsg = {role: "user", content: text};
+    if(cid) uMsg.cmid = cid;
+    history.push(uMsg);
     save();
     bubble("user", text);
     input.value = "";
@@ -855,6 +966,7 @@
     typing.innerHTML = '<span class="dots"><i></i><i></i><i></i></span>';
     var payload = {session: sessionId, messages: history};
     if(identity) payload.identity = identity;
+    if(cid) payload.clientMsgId = cid;
     var headers = {"Content-Type": "application/json"};
     /* v4.9 streaming (DRAFT — pairs with worker-v4.9-draft.js): ask for
        the NDJSON event stream when the browser can read one. The worker
@@ -881,12 +993,19 @@
     }).catch(function(){
       typing.remove();
       setSending(false);
-      bubble("assistant", "I can't be reached from here right now. Try again in a moment — or leave Dave a note and a real Dave answers you personally.").classList.add("msg-error");
+      if(cid){
+        /* Owner lane: the send sits in the outbox under its id and
+           retries itself until the thread confirms it. */
+        bubble("assistant", "That send didn't reach me — it's queued on this device and will go out on its own the moment the connection is back. You don't need to send it again.").classList.add("msg-error");
+      }else{
+        bubble("assistant", "I can't be reached from here right now. Try again in a moment — or leave Dave a note and a real Dave answers you personally.").classList.add("msg-error");
+      }
       input.focus();
     });
     function finish(data){
       typing.remove();
       setSending(false);
+      if(cid) outboxDrop(cid);
       if(data && data.dave_id) storeIdentity(data.dave_id);
       if(data && data.reply){
         history.push({role: "assistant", content: data.reply});
@@ -936,6 +1055,7 @@
             liveRow.remove();
             bubble("assistant", "That didn't get through to me — try me again in a moment.").classList.add("msg-error");
           }
+          if(cid && acc) outboxDrop(cid);
           if(ev.dave_id) storeIdentity(ev.dave_id);
           showTurns(ev.turns_left);
           syncFromServer();
