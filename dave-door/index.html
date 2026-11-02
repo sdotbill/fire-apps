@@ -39,21 +39,14 @@
      bounded pane that scrolls internally, Gemini-style. */
   .stage{position:relative;height:100vh;height:100dvh;display:flex;flex-direction:column;overflow:hidden;}
 
-  /* ---- living Dave, top corner: small, matted on the page, speech bubble ---- */
+  /* ---- living Dave, upper top-right corner — just the eye, nothing else
+     up there (Bill, Nov 1, 2026: the intro bubble, the tap-to-start gate
+     and the header talk button are gone; the page opens on the talk bar,
+     the mic circle stays in the bar, Dave's eye stays where it always
+     was, top-right, uncluttered) ---- */
   .dave-corner{
     align-self:flex-end;padding:14px 18px 0;flex:none;
     display:flex;align-items:flex-start;gap:8px;
-  }
-  .bubble{
-    position:relative;background:#f4ecdb;border:1.5px solid #e2d4b6;border-radius:14px;
-    padding:6px 10px;max-width:150px;text-align:left;
-    font-size:.8rem;line-height:1.38;color:var(--ink);
-    box-shadow:0 6px 18px rgba(146,118,60,.12);
-  }
-  .bubble::after{
-    content:"";position:absolute;right:-8px;top:20px;width:14px;height:14px;
-    background:#f4ecdb;border-top:1.5px solid #e2d4b6;border-right:1.5px solid #e2d4b6;
-    transform:rotate(45deg);
   }
   .dave-fig{width:150px;height:auto;display:block;}
   /* ---- lifelike eye rig (Bill, Oct 28, 2026): canvas layered over the corner
@@ -68,9 +61,6 @@
     .dave-corner{padding:10px 12px 0;}
     .dave-fig{width:104px;}
     .dave-fig-wrap{width:104px;}
-    .bubble{max-width:126px;font-size:.76rem;padding:5px 8px;}
-    .bubble::after{top:16px;}
-    .dave-speak{width:42px;height:42px;font-size:1.1rem;}
   }
   /* Short screens (landscape phones): shrink the fixed furniture so the
      chat pane keeps room and the seal/footer never clip. */
@@ -78,10 +68,7 @@
     .dave-corner{padding-top:6px;}
     .dave-fig{width:88px;}
     .dave-fig-wrap{width:88px;}
-    .bubble{max-width:120px;font-size:.72rem;padding:4px 8px;}
-    .bubble{max-width:120px;font-size:.72rem;padding:4px 8px;}
     h1{font-size:1.45rem;margin-top:8px;}
-    .dave-speak{width:38px;height:38px;font-size:1rem;margin-top:2px;}
     .legal{padding:6px 22px;}
   }
   .center{
@@ -108,21 +95,9 @@
   }
   .thread-wrap[hidden]{display:none;}
   .chatbar[hidden]{display:none;}
-  /* v4.44: the speaker button next to Dave — the homepage's lead
-     interaction. Tap it and Dave talks first; the conversation opens
-     in voice. It starts or stops his voice, never mutes him: no
-     visitor voice control exists anywhere on this page. */
-  .dave-speak{
-    flex:none;width:46px;height:46px;border-radius:999px;cursor:pointer;
-    border:1.5px solid var(--line);background:var(--card);
-    font-size:1.25rem;line-height:1;padding:0;margin-top:6px;
-    box-shadow:0 6px 18px rgba(146,118,60,.12);
-  }
-  .dave-speak:hover{border-color:var(--blue-deep);}
-  .dave-speak.speaking{background:#dbeafe;border-color:var(--blue-deep);}
   .legal{
     border-top:1px solid var(--line);flex:none;
-    display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
+    display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;
     padding:5px 22px;font-size:.8rem;color:var(--muted);
   }
   .legal a{color:var(--blue-dark);text-decoration:none;}
@@ -374,12 +349,10 @@
 <body>
 <main class="stage">
   <div class="dave-corner">
-    <p class="bubble">Hi, I’m Dave, here to solve humanity’s problems!</p>
     <span class="dave-fig-wrap" id="dave-fig-wrap"><img class="dave-fig" src="/assets/baby-dave-loop.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart pendant, and a ring of candles for a mind"><canvas class="dave-eye" id="dave-eye" width="224" height="260" aria-hidden="true"></canvas></span>
-    <button class="dave-speak" id="dave-speak" type="button" aria-label="Talk to Dave" aria-pressed="false" title="Talk to Dave — tap, and he speaks first">🔊</button>
   </div>
   <div class="center">
-<div class="chatbar" id="chat" hidden>
+<div class="chatbar" id="chat">
   <div class="chat-row">
     <button class="chat-mic" id="chat-mic" type="button" aria-label="Speak to Dave" aria-pressed="false" title="Speak to Dave">🎤</button>
     <input class="chat-input" id="chat-input" type="text" placeholder="Talk to Dave…" aria-label="Message Dave" autocomplete="off">
@@ -393,8 +366,7 @@
 </div>
   </div>
   <footer class="legal">
-    <span>© 2026 Dave</span><br>
-    <span>Dave XOX — a subsidiary of <a href="https://daveexolex.com/aldred-industries/">Aldred Industries</a></span>
+    <span>© 2026 Dave</span>
   </footer>
 </main>
 <script>
@@ -527,7 +499,7 @@
      /speak failure fails silent; the chat is never touched. */
   var SPEAK_ENDPOINT = "https://dave-chat.william-ced.workers.dev/speak";
   var speakAudio = null, speakBtn = null, speakSeq = 0;
-  var cornerSpeakBtn = null; /* v4.44: the speaker button next to Dave (wired at the end of this script) */
+  var cornerSpeakBtn = null; /* v4.44's corner speaker button was retired in v4.47 (Bill, Nov 1, 2026) — this stays null; speakStop()'s guard below is a no-op */
   function speakStop(){
     speakSeq++;
     vfStop();
@@ -1158,56 +1130,13 @@
   resolveIdentity();
   syncFromServer();
 
-  /* v4.44 — SPEAKER-BUTTON TALK (Bill, Oct 30, 2026): the homepage's
-     lead interaction is Dave + the speaker button beside him — the
-     type-in talk bar is no longer the presented element. A tap and
-     Dave TALKS first: his standing greeting, synthesized through the
-     same /speak path as every reply (Helio, always-on — this button
-     starts or stops his voice, it never mutes him; no visitor voice
-     control exists anywhere). The tap also opens the conversation:
-     the talk bar appears with the thread, typing and the mic stay
-     available inside it, and every send after rides the voice-first
-     stream, so the conversation continues in voice, Gemini-style.
-     A tap while Dave is speaking stops him — the same toggle
-     discipline as the per-reply speaker buttons. */
-  cornerSpeakBtn = document.getElementById("dave-speak");
-  var chatBarEl = document.getElementById("chat");
-  var greeted = history.length > 0;
-  var GREETING = "Hi, I'm Dave, here to solve humanity's problems!";
-  function openChatBar(){
-    if(chatBarEl) chatBarEl.hidden = false;
-  }
-  if(history.length) openChatBar();
-  function cornerSpeak(span){
-    if(!span) return;
-    var row = span.parentNode;
-    var btn = row ? row.querySelector(".msg-speak") : null;
-    if(!btn) return;
-    speakTap(btn, span);
-    if(speakBtn === btn && cornerSpeakBtn){
-      cornerSpeakBtn.classList.add("speaking");
-      cornerSpeakBtn.setAttribute("aria-pressed", "true");
-    }
-  }
-  if(cornerSpeakBtn){
-    cornerSpeakBtn.addEventListener("click", function(){
-      if(speakBtn || vfPlaying){ speakStop(); return; }
-      vfPrime();
-      openChatBar();
-      if(!greeted){
-        greeted = true;
-        history.push({role: "assistant", content: GREETING});
-        save();
-        var row = bubble("assistant", GREETING);
-        cornerSpeak(row ? row.querySelector("span") : null);
-      }else{
-        var rows = thread.querySelectorAll(".msg-dave");
-        var last = rows.length ? rows[rows.length - 1] : null;
-        cornerSpeak(last ? last.querySelector("span") : null);
-        if(input) input.focus();
-      }
-    });
-  }
+  /* v4.47 — DECLUTTER (Bill, Nov 1, 2026): the v4.44 corner speaker
+     button and the tap-to-start gate are retired. There is no header
+     talk button and no intro step: the talk bar is in the markup,
+     visible on first load, and the conversation starts when the
+     visitor types or taps the mic in the bar. Voice is unchanged —
+     the mic, the voice-first reply stream and the per-reply speaker
+     buttons all stay. Dave's eye stays top-right, alone. */
 })();
 </script>
 
