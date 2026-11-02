@@ -727,13 +727,29 @@
           if(typeof data.draftVer === "number") lastDraftVer = data.draftVer;
           if(data.presence) lastPresence = data.presence;
           outboxConfirm(data.messages);
-          var advanced = typeof data.lastSeq === "number" && data.lastSeq > lastSeq;
-          if(data.messages.length > history.length || advanced){
+          /* v4.46.1: the server thread is canonical — adopt it
+             wholesale whenever it differs, in EITHER direction.
+             On the object lane a shorter or lower-seq server
+             thread can only be a restored/replaced record (that
+             lane never serves a stale read), and a local cache
+             that outlives it would otherwise keep ghost turns
+             the other device no longer has. One guard: never
+             adopt an empty thread over a non-empty screen — a
+             bad read must not blank the room. On the KV fallback
+             lane a stale read can make this flicker once; the
+             next poll re-adopts forward, and nothing is ever
+             lost — the server holds the record, this is a cache. */
+          var tailId = data.messages.length ? (data.messages[data.messages.length - 1].id || "") : "";
+          var myTailId = history.length ? (history[history.length - 1].id || "") : "";
+          var differs = data.messages.length !== history.length ||
+            (typeof data.lastSeq === "number" && data.lastSeq !== lastSeq) ||
+            tailId !== myTailId;
+          if(differs && data.messages.length > 0){
             history = data.messages;
             save();
             renderAll();
           }
-          if(typeof data.lastSeq === "number" && data.lastSeq > lastSeq) lastSeq = data.lastSeq;
+          if(typeof data.lastSeq === "number") lastSeq = data.lastSeq;
           if(data.draft) applyRemoteDraft(data.draft);
           startSyncLoop();
           outboxPump();
@@ -786,9 +802,10 @@
     }).then(function(data){
       if(data && data.ok){
         syncFailStreak = 0;
-        if(typeof data.lastSeq === "number" && data.lastSeq > lastSeq){
+        if(typeof data.lastSeq === "number" && data.lastSeq !== lastSeq){
           /* Another device's turn landed (or this device's own turn,
-             seen from the server side): re-read the canonical thread. */
+             seen from the server side) — or the canonical thread
+             was replaced and now ends earlier: re-read it. */
           syncFromServer();
         }
         if(typeof data.draftVer === "number") lastDraftVer = data.draftVer;
