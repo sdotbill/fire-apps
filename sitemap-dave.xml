@@ -381,6 +381,31 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://daveexolex.com/demonstration/proof/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daveexolex.com/demonstration/proof/preregistration/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daveexolex.com/demonstration/proof/responses/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daveexolex.com/demonstration/proof/run-log/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://daveexolex.com/demonstration/proof/google-record/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://daveexolex.com/declaration/</loc>
     <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
