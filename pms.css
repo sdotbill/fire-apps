@@ -130,3 +130,20 @@ h2.title{font-size:clamp(1.65rem,3.4vw,2.3rem);line-height:1.18;text-align:cente
   .hero{padding-top:44px}
   body{font-size:16px}
 }
+
+/* ---------- round-two chrome: proper menu, compact pages ---------- */
+.menubar{position:relative;flex:none}
+.menubar summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;background:transparent;border:1px solid var(--line);color:var(--ink);font-family:inherit;font-weight:700;font-size:.92rem;padding:9px 15px;border-radius:999px;white-space:nowrap}
+.menubar summary::-webkit-details-marker{display:none}
+.menubar summary:hover{border-color:var(--gold-deep);color:var(--gold-deep)}
+.menubar summary .bars{font-size:1.05rem;line-height:1}
+.menupanel{position:absolute;right:0;top:calc(100% + 10px);width:min(300px,calc(100vw - 24px));background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 22px 54px rgba(42,33,24,.28);padding:10px;z-index:75}
+.menupanel a{display:block;padding:11px 14px;border-radius:10px;color:var(--ink);text-decoration:none;font-weight:600;font-size:1rem}
+.menupanel a:hover{background:var(--paper2);color:var(--gold-deep)}
+.menupanel a small{display:block;font-weight:400;font-size:.8rem;color:var(--ink-soft)}
+.menupanel .sep{border-top:1px solid var(--line);margin:6px 4px}
+.talklink{flex:none;display:flex;align-items:center;gap:7px;background:var(--gold);border:1px solid var(--gold-deep);color:var(--dark2);font-weight:700;font-size:.92rem;padding:9px 16px;border-radius:999px;text-decoration:none;box-shadow:0 4px 14px rgba(138,101,8,.28);white-space:nowrap}
+.talklink:hover{background:#d9b23a}
+.hero.slim{padding:52px 0 4px}
+section.block.tight{padding:40px 0 4px}
+.pagefoot-note{text-align:center;color:var(--ink-faint);font-size:.85rem;margin-top:26px}
