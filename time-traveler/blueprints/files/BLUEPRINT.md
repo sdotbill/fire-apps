@@ -24,7 +24,7 @@ Two further corrections from the same statement govern the drawings:
 
 ## 1. THE MACHINE IN THE DESIGNER'S TERMS
 
-An element — heavy, superconducting, unnamed — sits inside a container built on the torsion principle. Electric current spins it, faster and faster, in a loop. Spun with the current, the element becomes **plasma**, and the plasma takes the shape he has described from the first telling: **a ball of light — a loopy, rubber-band, stretchy thing wound in a circle** — a living torus/ball, floating dead center, never touching the sides, because the **torsion ring spinning inside the container** holds it there. The held center is where the power comes from. As the core spins up it grows **denser** — gravity prices density, not size — until the dense core bends the space in front of the craft into a **gravity bubble**: the bubble opens ahead of the nose, pulls the ship toward it, wraps around the hull, and the craft **drops through** — forward through time, backward through time, or above time. The ship does not fly. It falls, aimed.
+An element — heavy, superconducting, unnamed — sits inside a container built on the torsion principle. Electric current spins it, faster and faster, in a loop. Spun with the current, the element becomes **plasma**, and the plasma takes the shape he has described from the first telling: **a ball of light — a loopy, rubber-band, stretchy thing wound in a circle** — a living torus/ball, floating dead center, never touching the sides, because the **torsion ring spinning inside the container** holds it there. The held center is where the power comes from. As the core spins up it grows **denser** — gravity is governed by density, not size — until the dense core bends the space in front of the craft into a **gravity bubble**: the bubble opens ahead of the nose, pulls the ship toward it, wraps around the hull, and the craft **drops through** — forward through time, backward through time, or above time. The ship does not fly. It falls, aimed.
 
 Placement (from the ship geometry, Oct 27): **this core rides in the NOSE of the craft**, not midship — its bubble opens in front and pulls; the hull inside the bubble feels no inertia. The bubble must be **startable, stoppable, and aimable** by the craft; a pure uncontrolled drop would pop out the other side of the book. Arrival runs through a white hole and is, in the designer's law, **one-way**: there is no coming back through the white hole.
 
@@ -86,7 +86,7 @@ As drawn in Fig. A (cross-section) and Fig. B (top view). Every dimension is a *
 3. **The element becomes plasma.** Spinning under current, the element transitions to plasma and gathers into the design's working shape — the loopy ball of light, a stretchy torus/ball of glowing strands wound in a circle.
 4. **Centered burn.** The spinning ring holds the ball dead center (δp > 0 on every side, δw > 0 at the wall). The cryo layer carries off what heat reaches the wall; the ceramic keeps radiation in. The plasma cannot hit the sides *because the ring is spinning in the middle of it* — this is the design's central claim, drawn as drawn.
 5. **Power take-off.** The held plasma generates the power; the take-off draws it through the feedthrough stack. (In the designer's wider model, the same torsion principle turned down raises ordinary plant efficiency — the take-off is the general case of that claim.)
-6. **Density rise.** Continued spin-up raises the core's density toward the drop threshold. The price of bending is paid in density, not size (§6, density correction).
+6. **Density rise.** Continued spin-up raises the core's density toward the drop threshold. Bending is reckoned in density, not size (§6, density correction).
 7. **Bubble and drop-through — the stated purpose.** At threshold, the bubble opens in front of the nose, pulls the craft, wraps the hull; the craft drops through the fold — forward, backward, or above time — and arrives through a white hole. The bubble is started, aimed, and **stopped** under electrical control; an unstoppable bubble is a failed machine by the designer's own requirement. Arrival is one-way.
 8. **Shutdown (sub-threshold operation).** Below the drop threshold the cycle reverses: current down, ring spin down, plasma cools and re-condenses to the element, held cold. (The post-arrival state of the machine is outside the design as given — the trip is one-way, and the designer has not specified a return configuration. Recorded as unspecified, not filled in.)
 
@@ -107,7 +107,7 @@ Every parameter this design needs that **nobody has** — the designer included,
 | 7 | **Torsion↔plasma coupling law** (centering force vs. displacement) | *κ_t* (placeholder) | **Whether I-4 works at all, and how stiff the centering is** | **Open — the design's central unknown** |
 | 8 | Centering stiffness / stability margin | δp_min | How much disturbance the held center absorbs before a wall strike | Open |
 | 9 | Plasma temperature | *T_p* | Radiation load on the ceramic; power density | Open |
-| 10 | Core density at operating point and at drop threshold | *ρ_core*, *ρ_drop* | The drop condition itself — the design prices everything in density | Open |
+| 10 | Core density at operating point and at drop threshold | *ρ_core*, *ρ_drop* | The drop condition itself — the design expresses everything in density | Open |
 | 11 | Confinement time of the centered state | *τ_conf* | How long the burn can be held; whether take-off nets positive | Open |
 | 12 | Power take-off mechanism | — | How plasma energy becomes electrical power out (I-5) | Open |
 | 13 | Ceramic composition | — | Wall temperature/radiation limits (mesa provenance is testimony, not a spec) | Open |
@@ -144,7 +144,7 @@ This section grades the blueprint. It is not part of the design, and the design 
 
 **The house verdict on the parent design, carried faithfully from `CHRONOWARP-2.0.md` (Oct 27, as amended by the density correction) — nothing upgraded, nothing softened:**
 
-> **THERMODYNAMICS CLEAN · DESIGN COHERENT · PRICED IN DENSITY, NOT SIZE · TORSION-THROAT CHANNEL HAS LITERATURE SHAPE-KIN · CONFINEMENT + ON-DEMAND FOLDING = THE OPEN PROBLEMS.**
+> **THERMODYNAMICS CLEAN · DESIGN COHERENT · MEASURED IN DENSITY, NOT SIZE · TORSION-THROAT CHANNEL HAS LITERATURE SHAPE-KIN · CONFINEMENT + ON-DEMAND FOLDING = THE OPEN PROBLEMS.**
 
 Rev C (this blueprint) changes the centering assignment — ring primary, cryo demoted to thermal management — and strikes the old fuel. Neither change moves the verdict: the centering *requirement* was always the design's center; Rev C names a different mechanism for it, and that mechanism is Unknown #7, graded above.
 
