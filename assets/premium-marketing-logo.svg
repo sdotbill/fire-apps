@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Premium Marketing Solutions logo">
+  <!-- Design source for the PNG logo set (Nov 6, 2026 redesign).
+       Deep-ink tile, hairline gold ring, serif capital P in the site's
+       gold gradient. Tokens match pms.css: --dark #171208, --dark2 #241a02,
+       --gold #c9a227, --gold-bright #eed268, --gold-deep #8a6508. -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a1f04"/>
+      <stop offset="1" stop-color="#171208"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7e08a"/>
+      <stop offset="0.35" stop-color="#eed268"/>
+      <stop offset="0.68" stop-color="#c9a227"/>
+      <stop offset="1" stop-color="#8a6508"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#tile)"/>
+  <rect x="74" y="74" width="876" height="876" fill="none" stroke="#c9a227" stroke-width="16"/>
+  <text x="512" y="715" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="620" font-weight="700" fill="url(#gold)"
+        stroke="#6e4f05" stroke-width="5">P</text>
+</svg>
