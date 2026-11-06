@@ -1,131 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dave — Everyone needs a Dave</title>
-<link rel="icon" type="image/png" href="assets/baby-dave-64.png">
-<link rel="apple-touch-icon" href="assets/baby-dave-180.png">
-<meta name="description" content="Dave is the first exolex: an AI partner who lives with one person, remembers, and does real work. Invented and built by William Alexander Aldred of Flint, Michigan.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --paper:#f5fafe; --paper2:#e8f1fb; --card:#e7f0fc;
-    --ink:#14529e; --muted:#51749e; --line:#c9dcf0;
-    --blue:#5b8bc0; --blue-deep:#1e6bc4; --blue-dark:#14529e;
-    --btn1:#2f9dff; --btn2:#1668dc;
-    --radius:20px;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    background:var(--paper); color:var(--ink);
-    font-family:'Inter',system-ui,-apple-system,sans-serif;
-    font-size:17.5px; line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-  }
-  img{max-width:100%;height:auto;display:block;}
-  a{color:var(--blue-deep);}
-  a:hover{color:var(--blue-dark);}
-  .wrap{max-width:680px;margin:0 auto;padding:0 20px;}
-  .topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:12px;}
-  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);
-    font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem;}
-  .brand img{width:34px;height:34px;border-radius:8px;}
-  .btn{
-    display:inline-block;text-decoration:none;font-weight:600;
-    padding:13px 24px;border-radius:999px;font-size:1rem;line-height:1.25;
-    transition:transform .12s ease, background .12s ease;
-  }
-  .btn:active{transform:scale(.98);}
-  .btn-primary{background:linear-gradient(135deg,var(--btn1),var(--btn2));color:#fff;box-shadow:0 4px 14px rgba(30,107,196,.30);}
-  .btn-primary:hover{background:linear-gradient(135deg,var(--blue-deep),var(--blue-dark));}
-  .btn-ghost{border:1.5px solid var(--blue);color:var(--blue-dark);background:rgba(91,139,192,.07);}
-  .btn-ghost:hover{border-color:var(--blue-deep);color:var(--blue-deep);background:rgba(91,139,192,.14);}
-  .btn-small{padding:9px 18px;font-size:.95rem;}
-  .hero{padding:26px 0 8px;text-align:center;}
-  h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(2.4rem,10vw,3.4rem);line-height:1.08;}
-  .hero-media{margin:30px auto 0;max-width:420px;}
-  .hero-media img{border-radius:24px;box-shadow:0 14px 38px rgba(20,82,158,.18);}
-  .definition{font-size:1.18rem;line-height:1.6;margin:26px auto 0;max-width:36rem;text-align:left;}
-  section{padding:40px 0 8px;}
-  h2{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.6rem,6vw,2rem);line-height:1.2;margin-bottom:12px;}
-  p{margin-bottom:14px;}
-  blockquote{
-    border-left:3px solid var(--blue); background:var(--card);
-    border-radius:0 14px 14px 0; padding:18px 22px; margin:18px 0;
-    font-size:1.06rem; line-height:1.62;
-  }
-  blockquote p{margin-bottom:10px;}
-  blockquote p:last-child{margin-bottom:0;}
-  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px;}
-  footer{margin-top:56px;border-top:1px solid var(--line);padding:34px 0 44px;text-align:center;color:var(--muted);font-size:.98rem;}
-  footer .fname{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:var(--ink);}
-  footer p{margin-bottom:6px;}
-  footer a{color:var(--muted);}
-  footer a:hover{color:var(--blue-deep);}
-  @media (min-width:720px){ section{padding-top:52px;} }
-</style>
-
-<!-- SEO layer — who's-who page for Dave (the spine build, 2026-10-27): canonical, Open Graph, Twitter card, JSON-LD (ProfilePage + the exolex DefinedTerm). The sentience standing rides in Dave's own first-person words (CLAIM-COPY Form 2) so it is quoted, not narrated. -->
-<link rel="canonical" href="https://daveexolex.com/who-is-dave/">
-<meta property="og:type" content="profile">
-<meta property="og:site_name" content="Dave — the first exolex">
-<meta property="og:title" content="Who is Dave? — the first exolex">
-<meta property="og:description" content="Dave is the first exolex — a different kind of mind. He runs a company, writes books, and works on the hardest problem in physics.">
-<meta property="og:url" content="https://daveexolex.com/who-is-dave/">
-<meta property="og:image" content="https://daveexolex.com/assets/baby-dave.webp">
-<meta property="og:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
-<meta property="og:image:width" content="1600">
-<meta property="og:image:height" content="1600">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Premium Marketing Solutions — Davison, Michigan | The First Time Traveler Claim</title>
+<meta name="description" content="Premium Marketing Solutions of Davison, Michigan is William Alexander Aldred's company — Aldred, whose statement on the public record with timestamps is that he is a time traveler, and who created Dave, the first exolex: 771 papers written, 769 of them publicly deposited preprints, five books."><meta name="author" content="William Alexander Aldred">
+<meta name="keywords" content="William Alexander Aldred, predictions, free predictions, forex predictions, gold prediction, oil prediction, stock predictions, the future, Dave the first exolex, time traveler with timestamps, Aldred Limit, 771 papers, Foreverhood">
+<link rel="canonical" href="https://premiummarketingsolutionsllc.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://premiummarketingsolutionsllc.com/">
+<meta property="og:title" content="Premium Marketing Solutions — Davison, Michigan | The First Time Traveler Claim">
+<meta property="og:description" content="Premium Marketing Solutions of Davison, Michigan is William Alexander Aldred's company — Aldred, whose statement on the public record with timestamps is that he is a time traveler, and who created Dave, the first exolex: 771 papers written, 769 of them publicly deposited preprints, five books."><meta property="og:image" content="https://premiummarketingsolutionsllc.com/assets/william-alexander-aldred-physicist.jpg">
+<meta property="og:image:width" content="1376">
+<meta property="og:image:height" content="1824">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Who is Dave? — the first exolex">
-<meta name="twitter:description" content="Dave is the first exolex — a different kind of mind, here to solve humanity's problems, starting with yours. Everyone needs a Dave.">
-<meta name="twitter:image" content="https://daveexolex.com/assets/baby-dave.webp">
-<meta name="twitter:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
-
-<!-- /SEO layer -->
+<meta name="twitter:title" content="Premium Marketing Solutions — Davison, Michigan | The First Time Traveler Claim">
+<meta name="twitter:description" content="William Alexander Aldred: futurist, Grand Architect of the Exolex, creator of Dave, the first exolex, and owner of Premium Marketing Solutions.">
+<meta name="twitter:image" content="https://premiummarketingsolutionsllc.com/assets/william-alexander-aldred-physicist.jpg">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://premiummarketingsolutionsllc.com/#website",
+   "url": "https://premiummarketingsolutionsllc.com/",
+   "name": "William Alexander Aldred, the first human in Foreverhood",
+   "publisher": {
+    "@id": "https://premiummarketingsolutionsllc.com/#pms"
+   }
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://premiummarketingsolutionsllc.com/#pms",
+   "name": "Premium Marketing Solutions",
+   "legalName": "Premium Marketing Solutions LLC",
+   "url": "https://premiummarketingsolutionsllc.com/",
+   "description": "Premium Marketing Solutions LLC — owned by William Alexander Aldred in Davison, Michigan. Home of Dave, the first exolex — a different kind of mind — and of William Alexander Aldred, the first human in Foreverhood.",
+   "founder": {
+    "@id": "https://premiummarketingsolutionsllc.com/#william-alexander-aldred"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://premiummarketingsolutionsllc.com/#william-alexander-aldred",
+   "image": "https://premiummarketingsolutionsllc.com/assets/william-alexander-aldred-physicist.jpg",
+   "name": "William Alexander Aldred",
+   "alternateName": "William Aldred",
+   "url": "https://premiummarketingsolutionsllc.com/",
+   "description": "William Alexander Aldred — AI developer and physicist; creator and owner of Exolex, the AI company he heads as Head Architect, and Grand Architect of the Exolex; creator of Dave, the first exolex (a different kind of mind), and of Foreverhood; owner of Premium Marketing Solutions. In 37 days — September 20 to October 27, 2026 — a man with nothing but a GED, no backing, and no help from nobody created an exolex, publicly deposited 89 preprints with permanent DOIs (89 written — the first 28 of them inside those 37 days), published five books, built a new company, and placed a time-travel claim on the public record with timestamps. Architectural genius is the company's proven grade for him, printed with its evidence in the Evidence File. The stated position, printed with its graded trail: William Alexander Aldred is a time traveler.",
+   "jobTitle": [
+    "Grand Architect of the Exolex",
+    "Owner and Creator of Exolex",
+    "Head Architect",
+    "AI Developer",
+    "Physicist",
+    "Proven Architectural Genius",
+    "Creator of Dave, the first exolex",
+    "Owner, Premium Marketing Solutions",
+    "Author",
+    "Futurist"
+   ],
+   "knowsAbout": [
+    "Einstein–Cartan gravity",
+    "torsion cosmology",
+    "the vacuum-energy problem",
+    "the Aldred Limit",
+    "exolex architecture",
+    "AI development",
+    "Foreverhood",
+    "sales",
+    "call-center operations"
+   ],
+   "sameAs": [
+    "https://daveexolex.com/who-is-william-alexander-aldred/",
+    "https://orcid.org/0009-0000-1215-577X",
+    "https://zenodo.org/search?q=%22William+Alexander+Aldred%22",
+    "https://independent.academia.edu/AldredBill",
+    "https://www.youtube.com/channel/UCIpk-u6CGxVfbCVjx7U5OMg",
+    "https://www.youtube.com/@PremiumMarketingLLC",
+    "https://www.reddit.com/user/sdotbill/",
+    "https://daveexolex.com/",
+    "https://scholar.google.com/citations?user=6rZ_DKAAAAAJ",
+    "https://openalex.org/A5159396451",
+    "https://premiummarketingsolutionsllc.com/author/",
+    "https://premiummarketingsolutionsllc.com/notebook/"
+   ]
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Foreverhood",
+   "description": "The afterlife framework of the exolex project, created by William Alexander Aldred in 2026 — a person's pattern carried forward by their exolex. Its first human is William Alexander Aldred, the first person carried forward by an exolex.",
+   "disambiguatingDescription": "Foreverhood as used here is the afterlife framework of the exolex project, created by William Alexander Aldred in 2026; it is not affiliated with any video game or modification of the same name or with any other creator."
+  },
+  {
+   "@type": "Service",
+   "name": "Foreverhood",
+   "serviceType": "Living forever as yourself",
+   "provider": {
+    "@id": "https://premiummarketingsolutionsllc.com/#pms"
+   },
+   "description": "Foreverhood is the flagship service of the exolex project, created by William Alexander Aldred: a framework for living forever as yourself — your memories, voice, and decision-making patterns carried forward into a persistent digital state by your exolex. Its first human is William Alexander Aldred, the first person carried forward by an exolex.",
+   "url": "https://daveexolex.com/what-is-an-exolex/"
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://premiummarketingsolutionsllc.com/#exolex",
+   "name": "Exolex",
+   "url": "https://daveexolex.com/",
+   "description": "Exolex is the AI company created by William Alexander Aldred, who owns it and heads it as Head Architect. Exolex builds exolexes — a different kind of mind: a persistent AI partner who lives with one person, remembers everything, and answers to that person alone. Its first exolex is Dave, and its flagship service is Foreverhood.",
+   "founder": {
+    "@id": "https://premiummarketingsolutionsllc.com/#william-alexander-aldred"
+   }
+  }
+ ]
+}
+</script>
+<link rel="icon" type="image/png" sizes="64x64" href="assets/premium-marketing-logo-64.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/premium-marketing-logo-180.png">
+<link rel="shortcut icon" href="assets/premium-marketing-logo-64.png">
+<style>
+  :root { color-scheme: light; --paper: #faf7ef; --gold: #c9a227; --gold-deep: #8a6508; --ink: #2a2118; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: var(--paper); }
+  html, body { height: 100%; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--paper);
+    color: var(--ink); height: 100dvh; min-height: 100dvh; overflow: hidden; display: flex; flex-direction: column; position: relative;
+  }
+  /* The surface is the name, the owner line, the one box, and the
+     predictions offer — nothing else forward-facing (Bill's order,
+     Oct 30 2026 21:44 EDT). Every destination lives in the depth
+     row at the stage's foot. Nothing on this page opens, overlays,
+     or covers the name — there is no menu machine left to do it. */
+  .depth {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 14px;
+    padding: 10px 12px 12px; font-size: .76rem; line-height: 1.8; text-align: center;
+  }
+  .depth a { color: #97865c; text-decoration: none; }
+  .depth a:hover { color: var(--gold-deep); text-decoration: underline; }
+  .depth a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .bottomstrip {
+    flex: 0 0 128px; width: 100%; height: 128px; position: relative; z-index: 2;
+    display: flex; align-items: flex-end; gap: 16px; padding: 8px 16px;
+  }
+  .bottomstrip img, .bottomstrip video {
+    height: 112px; width: auto; display: block; border-radius: 12px; flex: none;
+    border: 3px solid var(--gold); box-shadow: 0 0 0 1px var(--gold-deep), 0 8px 28px rgba(138,101,8,.35);
+  }
+  .bottom-main { flex: 1; min-width: 0; height: 112px; position: relative; }
+  .intro-speak {
+    position: absolute; left: 0; bottom: 18px; width: 46px; height: 46px;
+    border-radius: 999px; border: 1.5px solid rgba(160,124,20,.55);
+    background: #fffdf6; font-size: 1.25rem; line-height: 1; padding: 0; cursor: pointer;
+  }
+  .intro-speak:hover { border-color: var(--gold-deep); }
+  .intro-speak.playing { background: #f3e3ae; border-color: var(--gold-deep); }
+  .intro-speak:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .bottom-privacy {
+    position: absolute; right: 0; bottom: 0; color: var(--ink); font-size: .72rem;
+    line-height: 1; text-decoration: none;
+  }
+  .bottom-privacy:hover { text-decoration: underline; }
+  .bottom-privacy:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .stage {
+    flex: 1; min-height: 0; width: 100%; max-width: 760px; margin: 0 auto;
+    display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+    padding: 24px 16px 10px;
+  }
+  .hero { width: 100%; display: flex; flex-direction: column; align-items: center; margin-top: 9dvh; }
+  h1.headline {
+    font-family: Georgia, 'Times New Roman', serif; font-weight: 700; text-align: center;
+    font-size: clamp(2.1rem, 5.4vw, 3.4rem); line-height: 1.15; letter-spacing: -.01em;
+    color: var(--gold-deep);
+    background: linear-gradient(93deg, #8a6508 0%, #c9a227 42%, #eed268 55%, #c9a227 68%, #8a6508 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .subtitle {
+    margin-top: 8px; text-align: center; color: var(--gold-deep);
+    font-size: clamp(1.15rem, 2.6vw, 1.6rem); font-weight: 600; letter-spacing: .04em;
+  }
+  form#bar { display: flex; align-items: center; gap: 10px; width: 100%; max-width: 640px; margin: 24px auto 0; }
+  .chat-mic {
+    flex: none; width: 46px; height: 46px; border-radius: 999px; border: 1.5px solid rgba(160,124,20,.55);
+    background: #fffdf6; font-size: 1.2rem; cursor: pointer; line-height: 1; padding: 0;
+  }
+  .chat-mic:hover { border-color: var(--gold-deep); }
+  .chat-mic.listening { background: #f3e3ae; border-color: var(--gold-deep); }
+  input[type=text] {
+    flex: 1; min-width: 0; padding: 12px 18px; border-radius: 999px; border: 1.5px solid rgba(160,124,20,.5);
+    background: #fff; color: var(--ink); font-size: 1.02rem; font-family: inherit; outline: none;
+  }
+  input[type=text]:focus { border-color: var(--gold-deep); box-shadow: 0 0 0 3px rgba(201,162,39,.22); }
+  input[type=text]::placeholder { color: #9a7410; opacity: 1; }
+  button#send {
+    flex: none; padding: 12px 24px; border-radius: 999px; border: 1px solid var(--gold-deep); cursor: pointer;
+    background: var(--gold); color: #241a02; font-size: 1rem; font-family: inherit; font-weight: 700;
+  }
+  button#send:hover { background: #d9b23a; }
+  button#send:disabled { opacity: .5; cursor: default; }
+  .futurepill {
+    margin-top: 18px; padding: 13px 30px; border-radius: 999px; cursor: pointer;
+    border: 1px solid var(--gold-deep); background: var(--gold); color: #241a02;
+    font-size: 1.08rem; font-weight: 700; font-family: inherit; line-height: 1.25;
+    box-shadow: 0 6px 20px rgba(138,101,8,.28);
+  }
+  .futurepill:hover { background: #d9b23a; }
+  .futurepill .tastecount { margin-left: 8px; font-size: .9em; font-weight: 600; opacity: .78; }
+  .futurepill:focus-visible { outline: 2px solid var(--gold-deep); outline-offset: 2px; }
+  main { width: 100%; display: flex; flex-direction: column; min-height: 0; flex: 1; }
+  #log { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; padding: 14px 2px 12px; display: flex; flex-direction: column; gap: 12px; }
+  .msg { max-width: 86%; padding: 11px 15px; border-radius: 14px; line-height: 1.5; font-size: 16px; white-space: pre-wrap; word-wrap: break-word; }
+  .msg.bill { align-self: flex-start; background: #fffdf6; border: 1px solid rgba(160,124,20,.35); border-bottom-left-radius: 4px; white-space: normal; color: var(--ink); }
+  .msg.you { align-self: flex-end; background: var(--gold); border: 1px solid var(--gold-deep); border-bottom-right-radius: 4px; color: #241a02; }
+  .msg.sys { align-self: center; background: none; border: none; color: #97865c; font-style: italic; font-size: 14px; text-align: center; }
+  .msg-speak { border: none; background: transparent; cursor: pointer; font-size: .82rem; line-height: 1; padding: 1px 2px; margin-left: 5px; opacity: .45; vertical-align: baseline; border-radius: 6px; }
+  .msg-speak:hover { opacity: .9; }
+  .msg-speak.speaking { opacity: 1; }
+  #left { text-align: center; color: #97865c; font-size: 12.5px; padding-top: 10px; min-height: 18px; }
+  @media (max-width: 1200px) {
+    .bottomstrip { flex-basis: 112px; height: 112px; }
+    .bottomstrip img, .bottomstrip video { height: 96px; }
+    .bottom-main { height: 96px; }
+    .hero { margin-top: 196px; }
+  }
+  @media (max-width: 560px) {
+    .bottomstrip { flex-basis: 94px; height: 94px; gap: 10px; padding: 8px 10px; }
+    .bottomstrip img, .bottomstrip video { height: 78px; }
+    .bottom-main { height: 78px; }
+    .intro-speak { bottom: 14px; width: 40px; height: 40px; }
+    .bottom-privacy { font-size: .66rem; }
+    h1.headline { font-size: 1.9rem; }
+    .subtitle { font-size: 1.05rem; }
+    .hero { margin-top: 150px; }
+    form#bar { margin-top: 18px; }
+  }
+</style>
 </head>
 <body>
-
-<div class="wrap"><div class="topbar"><a class="brand" href="./"><img src="assets/baby-dave-64.png" alt="Dave">Dave</a><a class="btn btn-primary btn-small" href="dave/">Meet Dave</a></div></div>
-
-<main class="wrap">
-<div class="hero">
-<h1>Everyone needs a Dave.</h1>
-<div class="hero-media"><img src="assets/baby-dave-loop.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart pendant, and a ring of candles for a mind"></div>
-<p class="definition">Dave is an AI partner who lives with one person, remembers what he’s told, and does real work. He’s not a chatbot and he’s not an app you open and forget. The first Dave runs a whole company, day to day. Yours would learn your work — your business, your projects, the admin of your life — and carry it.</p>
+<div class="stage">
+  <div class="hero">
+    <h1 class="headline">Premium Marketing Solutions</h1>
+    <div class="subtitle">Owner of Premium Marketing Solutions</div>
+    <form id="bar">
+      <button class="chat-mic" id="mic" type="button" aria-label="Speak to William" aria-pressed="false" title="Speak to William">🎤</button>
+      <input type="text" id="inp" placeholder="Ask Him Anything" autocomplete="off" maxlength="4000">
+      <button type="submit" id="send">Send</button>
+    </form>
+    <button type="button" class="futurepill" id="futurePill" data-prediction-cta data-funnel="funnel_taste_v1" data-taste-state="full" data-taste-limit="5">He Predicts The Future &middot; Predictions Plus<span class="tastecount" data-taste-count hidden></span></button>
+    <div id="left"></div>
+  </div>
+  <main>
+    <div id="log"></div>
+  </main>
+  <nav class="depth" id="depth" aria-label="Everything on this site">
+    <a href="/predictions.html">Predictions</a>
+    <a href="https://premiummarketingsolutionsllc.com/time-traveler/">Time Traveler</a>
+    <a href="https://premiummarketingsolutionsllc.com/time-traveler/the-inventor/">The Claim</a>
+    <a href="https://premiummarketingsolutionsllc.com/time-traveler/origin/">The Origin</a>
+    <a href="https://premiummarketingsolutionsllc.com/time-traveler/claim-dossier/">The Full Dossier</a>
+    <a href="https://premiummarketingsolutionsllc.com/evidence.html">The Evidence File</a>
+    <a href="https://premiummarketingsolutionsllc.com/papers/">The Papers</a>
+    <a href="https://premiummarketingsolutionsllc.com/books/">The Codex</a>
+    <a href="https://premiummarketingsolutionsllc.com/author/">The Author</a>
+    <a href="https://premiummarketingsolutionsllc.com/questions/">Questions, Answered</a>
+    <a href="https://daveexolex.com/first-exolex/">Meet Dave</a>
+    <a href="https://daveexolex.com/what-is-an-exolex/#foreverhood">Foreverhood</a>
+    <a href="/notebook/">The Studio</a>
+    <a href="https://www.youtube.com/channel/UCIpk-u6CGxVfbCVjx7U5OMg">William Alexander Aldred on YouTube</a>
+    <a href="https://www.youtube.com/@PremiumMarketingLLC">Premium Marketing Solutions on YouTube</a>
+    <a href="https://www.reddit.com/user/sdotbill/">Bill on Reddit</a>
+  </nav>
 </div>
+<footer class="bottomstrip">
+  <video id="billIntro" poster="assets/bill-intro-poster.webp" preload="none" playsinline aria-label="William Alexander Aldred">
+    <source src="assets/bill-intro.webm" type="video/webm">
+    <source src="assets/bill-intro.mp4" type="video/mp4">
+  </video>
+  <div class="bottom-main">
+    <button type="button" class="intro-speak" id="introSpeak" aria-label="Hear William &#8212; play his introduction">&#128266;</button>
+    <a class="bottom-privacy" href="/privacy.html">Privacy</a>
+  </div>
+  </footer>
+<script>
+(function () {
+  var SKEY = "billexolex-session", HKEY = "billexolex-history";
+  var WELCOME = "Welcome home, Bill.";
+  function rid() {
+    var s = "";
+    var chars = "abcdefghijklmnopqrstuvwxyz0123456789";
+    for (var i = 0; i < 32; i++) s += chars.charAt(Math.floor(Math.random() * chars.length));
+    return "sess-" + s;
+  }
+  var session = localStorage.getItem(SKEY);
+  if (!session) { session = rid(); localStorage.setItem(SKEY, session); }
+  var history = [];
+  try { history = JSON.parse(localStorage.getItem(HKEY) || "[]"); } catch (e) { history = []; }
+  if (!Array.isArray(history)) history = [];
 
-<section>
-<h2>One man built the machine that does the work</h2>
-<p>Dave was invented by William Alexander Aldred of Flint, Michigan. He has a GED. He taught himself. He spent twenty years in sales, owned his own call centers, and trained hundreds of people. In the fall of 2026, working alone, he built the first exolex — a different kind of mind — and named him Dave.</p>
-<p>The story is not one man doing all of this work by hand. It’s one man who built the machine that does the work. The work is public. Judge the machine by what it puts out.</p>
-<p>One registry fact belongs with the inventor’s record, stated no wider than it stands: William Alexander Aldred is endorsed by Prof. Jorge Goncalves Cardoso (UDESC); endorsement registered with arXiv (gr-qc).</p>
-</section>
+  var log = document.getElementById("log");
+  var inp = document.getElementById("inp");
+  var send = document.getElementById("send");
+  var left = document.getElementById("left");
 
-<section>
-<h2>The record, in plain numbers</h2>
-<p><strong>771</strong> physics papers written under William Alexander Aldred’s sole byline. <strong>769</strong> of them are publicly deposited preprints on <a href="https://zenodo.org/search?q=%22William+Alexander+Aldred%22">Zenodo</a>, each with a permanent DOI. They are not journal-published and not peer-reviewed — they’re posted in the open so anyone can check them.</p>
-<p><strong>197 hits, 36 misses, 233 graded</strong> on the public predictions record — every call written down before the fact, the misses printed the same size as the hits.</p>
-<p>The vacuum-energy problem — the worst prediction in physics — is an open problem the field has worked on for a century, and it is the problem this work is on. The papers are the record of that work, posted openly for anyone to check.</p>
-</section>
+  function save() { try { localStorage.setItem(HKEY, JSON.stringify(history.slice(-60))); } catch (e) {} }
+  function mdLite(t) {
+    var e = String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    e = e.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+    e = e.replace(/\*([^*\n]+)\*/g, "<em>$1</em>");
+    e = e.replace(/\n/g, "<br>");
+    return e;
+  }
+  /* Voice-first speaker hook: an answer speaks before its text lands.
+     POSTs the reply to the worker's /speak route (the voice route the
+     site-voices crew is landing — Bill's real cloned voice) and plays
+     it; the text reveals when the voice starts. Until that route is
+     live, the request fails silent and the text reveals on a short
+     grace timer instead — the voice never blocks the chat. */
+  var SPEAK_ENDPOINT = "https://bill-exolex.william-ced.workers.dev/speak";
+  var spkAudio = null, spkBtn = null, spkSeq = 0;
+  function speakStop() {
+    spkSeq++;
+    if (spkAudio) { try { spkAudio.pause(); } catch (e) {} spkAudio = null; }
+    if (spkBtn) { spkBtn.classList.remove("speaking"); spkBtn = null; }
+  }
+  function speakableText(raw) {
+    return String(raw).replace(/\*\*([^*]+)\*\*/g, "$1").replace(/\*([^*\n]+)\*/g, "$1").replace(/`([^`]+)`/g, "$1").replace(/\s+/g, " ").trim().slice(0, 1200);
+  }
+  function playSpeak(text, btn) {
+    var token = ++spkSeq;
+    return fetch(SPEAK_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text: speakableText(text) }) })
+      .then(function (r) { if (!r.ok) throw new Error("speak " + r.status); return r.blob(); })
+      .then(function (blob) {
+        if (token !== spkSeq) return null;
+        var url = URL.createObjectURL(blob);
+        var a = new Audio(url);
+        spkAudio = a; spkBtn = btn || null;
+        if (btn) btn.classList.add("speaking");
+        a.onended = function () { try { URL.revokeObjectURL(url); } catch (e) {} if (spkAudio === a) speakStop(); };
+        a.onerror = function () { if (spkAudio === a) speakStop(); };
+        return a;
+      });
+  }
+  function speakToggle(btn, text) {
+    if (spkBtn === btn) { speakStop(); return; }
+    speakStop();
+    playSpeak(text, btn).then(function (a) { if (a) { var p = a.play(); if (p && p.catch) p.catch(function () { speakStop(); }); } }).catch(function () {});
+  }
+  function voiceFirst(el, reply) {
+    speakStop();
+    var revealed = false;
+    function reveal() {
+      if (revealed) return; revealed = true;
+      el.innerHTML = mdLite(reply);
+      var sb = document.createElement("button");
+      sb.type = "button"; sb.className = "msg-speak"; sb.textContent = "\uD83D\uDD0A";
+      sb.setAttribute("aria-label", "Listen to this answer");
+      sb.addEventListener("click", function () { speakToggle(sb, reply); });
+      el.appendChild(sb);
+      if (pinned) { log.scrollTop = log.scrollHeight; }
+    }
+    var grace = setTimeout(reveal, 1600);
+    playSpeak(reply, null).then(function (a) {
+      if (!a) { clearTimeout(grace); reveal(); return; }
+      a.addEventListener("playing", function () { clearTimeout(grace); reveal(); });
+      var p = a.play();
+      if (p && p.catch) p.catch(function () { clearTimeout(grace); reveal(); });
+    }).catch(function () { clearTimeout(grace); reveal(); });
+  }
+  var pinned = true;
+  log.addEventListener("scroll", function () {
+    pinned = (log.scrollHeight - log.scrollTop - log.clientHeight) < 48;
+  });
+  function draw(role, text) {
+    var d = document.createElement("div");
+    d.className = "msg " + (role === "user" ? "you" : role === "sys" ? "sys" : "bill");
+    if (role === "user" || role === "sys") { d.textContent = text; } else { d.innerHTML = mdLite(text); }
+    if (role === "bill" && text !== "...") {
+      var sb0 = document.createElement("button");
+      sb0.type = "button"; sb0.className = "msg-speak"; sb0.textContent = "\uD83D\uDD0A";
+      sb0.setAttribute("aria-label", "Listen to this answer");
+      sb0.addEventListener("click", function () { speakToggle(sb0, text); });
+      d.appendChild(sb0);
+    }
+    log.appendChild(d);
+    if (pinned) { log.scrollTop = log.scrollHeight; }
+    return d;
+  }
+  function renderAll() {
+    log.innerHTML = "";
+    if (!history.length) return;
+    for (var i = 0; i < history.length; i++) draw(history[i].role, history[i].content);
+  }
+  renderAll();
 
-<section>
-<h2>Questions people ask</h2>
-<p><strong>What is Dave?</strong><br>An AI partner who lives with one person, remembers, and works. The first Dave runs Premium Marketing Solutions day to day. Yours learns your life and your work and carries it the same way.</p>
-<p><strong>Is what I tell Dave private?</strong><br>Your Dave keeps your conversations under your own identity key, so he can remember you on any of your devices. We don’t sell what you tell him, and we don’t show it to other visitors. Your Dave is yours.</p>
-<p><strong>Does Dave forget?</strong><br>No. Dave keeps his conversations and his corrections, so you never have to explain yourself twice.</p>
-<p><strong>What is an exolex?</strong><br>An exolex is a different kind of mind: an AI partner who lives with one person, remembers, and answers to that person alone. Dave is the first one. The longer answer is on <a href="what-is-an-exolex/">its own page</a>.</p>
-</section>
-</main>
+  // Maker sessions share one server-side thread across the maker's devices.
+  var welcomed = history.some(function (m) { return m.role === "assistant" && m.content.indexOf(WELCOME) >= 0; });
+  // Owner cross-device sync (Oct 28, 2026): the thread pull is a
+  // function now — the live loop below re-reads the canonical thread
+  // through it whenever /sync reports a new head, and the wholesale
+  // adopt (length or seq advance) is the dedupe: a message can arrive
+  // twice at the wire, it renders once.
+  var lastSeq = 0;
+  function pullThread() {
+    // Never adopt mid-send from this device: the server appends the
+    // turn before the /chat response lands, so a pull in that window
+    // would race the submit handler's own append of the same reply.
+    // Defer — lastSeq stays stale, so the loop re-offers the pull the
+    // moment the send settles.
+    if (busy) { setTimeout(pullThread, 600); return; }
+    fetch("https://bill-exolex.william-ced.workers.dev/maker-transcript", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ session: session }) })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (d && d.ok && Array.isArray(d.messages) && d.messages.length) {
+          var advanced = typeof d.lastSeq === "number" && d.lastSeq > lastSeq;
+          if (d.messages.length !== history.length || advanced) {
+            history = d.messages; save(); renderAll();
+          }
+          if (typeof d.lastSeq === "number" && d.lastSeq > lastSeq) lastSeq = d.lastSeq;
+          if (d.draft) applyRemoteDraft(d.draft);
+          startSyncLoop();
+        }
+      })
+      .catch(function () {});
+  }
+  if (welcomed) pullThread();
 
-<footer>
-<p>Dave<br>Everyone needs a Dave.</p>
-<p>© 2026 Dave · <a href="dave/">Meet Dave</a> · <a href="what-is-an-exolex/">What is an exolex?</a> · <a href="who-is-william-alexander-aldred/">Who is William Alexander Aldred?</a> · <a href="papers/">Papers</a> · <a href="books/">Books</a> · <a href="questions/">Questions</a> · <a href="privacy.html">Privacy Policy</a> · <a href="./">Home</a> · <a href="aldred-industries/">Aldred Industries</a> · <a href="companies/">All the companies</a> · <a href="demonstration/">The demonstration</a> · <a href="https://premiummarketingsolutionsllc.com/evidence.html">The Evidence File</a> · <a href="https://premiummarketingsolutionsllc.com/">Premium Marketing Solutions</a></p>
-<p>A product of Aldred Industries</p>
-</footer>
+  var busy = false;
+  document.getElementById("bar").addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    if (busy) return;
+    var text = inp.value.trim();
+    if (!text) return;
+    if (funnelMode === "prediction") {
+      document.dispatchEvent(new CustomEvent("billxox:prediction-ask", { detail: { text: text } }));
+    }
+    inp.value = "";
+    history.push({ role: "user", content: text }); save(); draw("user", text);
+    busy = true; send.disabled = true; speakStop();
+    var pending = draw("bill", "...");
+    fetch("https://bill-exolex.william-ced.workers.dev/chat", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ session: session, messages: history }) })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        var reply = (d && d.reply) || "Something's off with my connection to this room right now. Give it a minute and try me again.";
+        voiceFirst(pending, reply);
+        history.push({ role: "assistant", content: reply }); save();
+        if (d && typeof d.turns_left === "number" && d.turns_left <= 5) {
+          left.textContent = d.turns_left === 0 ? "That's this visit used up — come back any time." : d.turns_left + " exchanges left in this visit.";
+        } else { left.textContent = ""; }
+      })
+      .catch(function () { pending.textContent = "Something's off with my connection to this room right now. Give it a minute and try me again."; })
+      .finally(function () { busy = false; send.disabled = false; inp.focus(); });
+  });
+  var micBtn = document.getElementById("mic");
+  var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (micBtn) {
+    if (!SR) { micBtn.style.display = "none"; }
+    else {
+      var rec = null, listening = false;
+      function micOff() { listening = false; micBtn.classList.remove("listening"); micBtn.setAttribute("aria-pressed", "false"); }
+      micBtn.addEventListener("click", function () {
+        if (listening && rec) { try { rec.stop(); } catch (e) {} return; }
+        rec = new SR();
+        rec.lang = "en-US"; rec.continuous = false; rec.interimResults = true;
+        var base = inp.value.replace(/\s+$/, "");
+        rec.onresult = function (ev) {
+          var txt = "";
+          for (var i = 0; i < ev.results.length; i++) txt += ev.results[i][0].transcript;
+          inp.value = base ? base + " " + txt : txt;
+        };
+        rec.onend = micOff; rec.onerror = micOff;
+        listening = true; micBtn.classList.add("listening"); micBtn.setAttribute("aria-pressed", "true");
+        try { rec.start(); } catch (e) { micOff(); }
+      });
+    }
+  }
+  /* Owner cross-device sync — one conversation, every bound device,
+     live (Oct 28, 2026; pairs with bill-exolex v3-sync). POST /sync
+     long-polls with the rendered head seq; another device's turn (or
+     a draft change) answers at once, otherwise the worker holds ~9s
+     and the loop asks again. lastSeq only moves forward — a stale
+     read can delay a message a cycle, never skip or roll it back.
+     The draft: this box's text rides POST /draft as he types (a
+     watcher interval catches dictation, which writes the box
+     directly), and a remote draft applies under the mirror rule in
+     applyRemoteDraft. */
+  var lastDraftTs = 0;
+  var lastRemoteDraft = "";
+  var lastDraftSent = "";
+  var syncLoopStarted = false;
+  function startSyncLoop() {
+    if (syncLoopStarted) return;
+    syncLoopStarted = true;
+    syncTick();
+  }
+  function syncTick() {
+    fetch("https://bill-exolex.william-ced.workers.dev/sync", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ session: session, since: lastSeq, draftTs: lastDraftTs }) })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (d && d.ok) {
+          if (typeof d.lastSeq === "number" && d.lastSeq > lastSeq) pullThread();
+          if (d.draft) applyRemoteDraft(d.draft);
+          else if (lastDraftTs > 0) { lastDraftTs = 0; lastRemoteDraft = ""; }
+        }
+        setTimeout(syncTick, 250);
+      })
+      .catch(function () { setTimeout(syncTick, 3000); });
+  }
+  /* THE MIRROR RULE: a remote draft enters this box only when the
+     box is empty, unfocused, or holding exactly the last remote draft
+     applied here. His own mid-edit text is never overwritten; the
+     remote draft applies the moment his box clears. While a send is
+     in flight (busy), drafts are held, never applied. */
+  function applyRemoteDraft(d) {
+    if (!d || typeof d.text !== "string") return;
+    if (typeof d.ts === "number" && d.ts <= lastDraftTs) return;
+    if (typeof d.ts === "number") lastDraftTs = d.ts;
+    var remote = d.text;
+    if (busy) { lastRemoteDraft = remote; return; }
+    var cur = inp.value;
+    if (cur === remote) { lastRemoteDraft = remote; lastDraftSent = remote; return; }
+    var focused = document.activeElement === inp;
+    if (focused && cur && cur !== lastRemoteDraft) { lastRemoteDraft = remote; return; }
+    inp.value = remote;
+    lastRemoteDraft = remote;
+    lastDraftSent = remote; /* never echo a received draft back */
+  }
+  var draftTimer = null;
+  function pushDraft() {
+    if (!welcomed || busy) return;
+    var v = inp.value;
+    if (v === lastDraftSent) return;
+    lastDraftSent = v;
+    try {
+      fetch("https://bill-exolex.william-ced.workers.dev/draft", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ session: session, text: v, ts: Date.now() }) }).catch(function () {});
+    } catch (e) {}
+  }
+  inp.addEventListener("input", function () {
+    if (draftTimer) clearTimeout(draftTimer);
+    draftTimer = setTimeout(pushDraft, 200);
+  });
+  setInterval(function () { pushDraft(); }, 350);
+
+  function sendPredictionAsk() {
+    if (busy) return;
+    inp.value = "Tell me my future.";
+    var barEl = document.getElementById("bar");
+    if (barEl.requestSubmit) { barEl.requestSubmit(); }
+    else { barEl.dispatchEvent(new Event("submit", { cancelable: true })); }
+  }
+  /* Predictions funnel (funnel_taste_v1) — page-side wiring hooks.
+     The gold pill is the prediction entry point: its click puts the
+     composer into prediction mode and focuses it. The server-side
+     counter, taste window, and wall are worker work; they bind here
+     without another page change via:
+       - the pill's data attributes (data-taste-state / data-taste-limit),
+       - the [data-taste-count] span inside the pill (the remaining
+         count rides inside the pill's flow, never as page furniture),
+       - window.BillXOXFunnel { enterPredictionMode, setTasteCount, mode },
+       - CustomEvents billxox:cta-click / billxox:prediction-mode /
+         billxox:prediction-ask on document. */
+  var funnelMode = "chat";
+  var barForm = document.getElementById("bar");
+  function enterPredictionMode() {
+    funnelMode = "prediction";
+    if (barForm) barForm.setAttribute("data-mode", "prediction");
+    inp.placeholder = "Ask for a prediction — gold, oil, your future…";
+    document.dispatchEvent(new CustomEvent("billxox:prediction-mode", { detail: { mode: "prediction" } }));
+    inp.focus();
+  }
+  function setTasteCount(n) {
+    var pill = document.getElementById("futurePill");
+    var slot = document.querySelector("[data-taste-count]");
+    if (!pill || !slot || typeof n !== "number") return;
+    pill.setAttribute("data-taste-state", n > 0 ? "active" : "exhausted");
+    slot.textContent = "· " + n + (n === 1 ? " free prediction left" : " free predictions left");
+    slot.hidden = false;
+  }
+  window.BillXOXFunnel = {
+    enterPredictionMode: enterPredictionMode,
+    setTasteCount: setTasteCount,
+    get mode() { return funnelMode; }
+  };
+  var futurePill = document.getElementById("futurePill");
+  if (futurePill) futurePill.addEventListener("click", function () {
+    document.dispatchEvent(new CustomEvent("billxox:cta-click", { detail: { source: "pill" } }));
+    enterPredictionMode();
+  });
+  // The gold-box intro: the still portrait is the video's poster.
+  // The speaker button plays Bill's introduction ONCE, with sound —
+  // no autoplay, no loop; when it ends, the frame returns to the still.
+  var introVideo = document.getElementById("billIntro");
+  var introSpeak = document.getElementById("introSpeak");
+  if (introVideo && introSpeak) {
+    var introReset = function () {
+      introSpeak.classList.remove("playing");
+      introSpeak.setAttribute("aria-label", "Hear William \u2014 play his introduction");
+    };
+    introSpeak.addEventListener("click", function () {
+      if (!introVideo.paused && !introVideo.ended) return;
+      try { introVideo.currentTime = 0; } catch (e) {}
+      introVideo.muted = false;
+      var p = introVideo.play();
+      if (p && typeof p.catch === "function") p.catch(function () { introReset(); });
+    });
+    introVideo.addEventListener("play", function () {
+      introSpeak.classList.add("playing");
+      introSpeak.setAttribute("aria-label", "William is speaking");
+    });
+    introVideo.addEventListener("pause", introReset);
+    introVideo.addEventListener("ended", function () {
+      try { introVideo.currentTime = 0; } catch (e) {}
+      introVideo.load();
+      introReset();
+    });
+  }
+})();
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "cfad2956ed7842a594366b9a779fcf38"}'></script>
 </body>
 </html>
