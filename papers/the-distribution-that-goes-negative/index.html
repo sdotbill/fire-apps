@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Distribution That Goes Negative: Wigner's Phase-Space Function, Priced — William Alexander Aldred</title>
+<meta name="description" content="In 1932 Eugene Wigner rewrote the quantum state as a function W(x,p) on classical phase space that returns the exact position and momentum marginals, and founded the quantum-correction programme for thermodynamic equilibrium. Paper 774, by William Alexander Aldred.">
+<link rel="canonical" href="https://daveexolex.com/papers/the-distribution-that-goes-negative/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Dave — the first exolex">
+<meta property="og:title" content="The Distribution That Goes Negative: Wigner&#x27;s Phase-Space Function, Priced — William Alexander Aldred">
+<meta property="og:description" content="In 1932 Eugene Wigner rewrote the quantum state as a function W(x,p) on classical phase space that returns the exact position and momentum marginals, and founded the quantum-correction programme for thermodynamic equilibrium. Paper 774, by William Alexander Aldred.">
+<meta property="og:url" content="https://daveexolex.com/papers/the-distribution-that-goes-negative/">
+<meta property="og:image" content="https://daveexolex.com/assets/william-alexander-aldred-physicist.jpg">
+<meta property="og:image:alt" content="William Alexander Aldred, physicist — inventor of the exolex, in his laboratory">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Distribution That Goes Negative: Wigner&#x27;s Phase-Space Function, Priced — William Alexander Aldred">
+<meta name="twitter:description" content="In 1932 Eugene Wigner rewrote the quantum state as a function W(x,p) on classical phase space that returns the exact position and momentum marginals, and founded the quantum-correction programme for thermodynamic equilibrium. Paper 774, by William Alexander Aldred.">
+<meta name="twitter:image" content="https://daveexolex.com/assets/william-alexander-aldred-physicist.jpg">
+<link rel="icon" type="image/png" href="../../assets/baby-dave-64.png">
+<link rel="apple-touch-icon" href="../../assets/baby-dave-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5fafe;--ink:#14529e;--muted:#51749e;--line:#c9dcf0;--blue:#5b8bc0;--blue-deep:#1e6bc4;--blue-dark:#14529e;--btn1:#2f9dff;--btn2:#1668dc;--radius:20px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,-apple-system,sans-serif;font-size:17.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--blue-deep)} a:hover{color:var(--blue-dark)}
+.wrap{max-width:680px;margin:0 auto;padding:0 20px}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem}
+.brand img{width:34px;height:34px;border-radius:8px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:13px 24px;border-radius:999px;font-size:1rem;line-height:1.25}
+.btn-primary{background:linear-gradient(135deg,var(--btn1),var(--btn2));color:#fff;box-shadow:0 4px 14px rgba(30,107,196,.30)}
+.btn-ghost{border:1.5px solid var(--blue);color:var(--blue-dark);background:rgba(91,139,192,.07)}
+h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.7rem,5.6vw,2.4rem);line-height:1.22;margin:14px 0 10px}
+h2{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.35rem,4.6vw,1.7rem);line-height:1.25;margin:34px 0 10px}
+p{margin-bottom:14px}
+.byline{color:var(--muted);font-size:1.02rem}
+.meta{color:var(--muted);font-size:.98rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin:18px 0 22px}
+.crumbs{font-size:.95rem;color:var(--muted);margin-top:10px}
+.card{border:1.5px solid var(--line);border-radius:var(--radius);padding:22px;margin:18px 0;background:#eef5fd}
+.card h3{font-family:'Fraunces',serif;font-size:1.25rem;line-height:1.3;margin-bottom:6px}
+.card h3 a{text-decoration:none}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
+footer{margin-top:56px;border-top:1px solid var(--line);padding:34px 0 44px;text-align:center;color:var(--muted);font-size:.98rem}
+footer .fname{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:var(--ink)}
+footer a{color:var(--muted)} footer a:hover{color:var(--blue-deep)}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://daveexolex.com/papers/the-distribution-that-goes-negative/#article",
+   "url": "https://daveexolex.com/papers/the-distribution-that-goes-negative/",
+   "headline": "The Distribution That Goes Negative: Wigner's Phase-Space Function, Priced",
+   "name": "The Distribution That Goes Negative: Wigner's Phase-Space Function, Priced",
+   "author": {
+    "@id": "https://premiummarketingsolutionsllc.com/#william-alexander-aldred"
+   },
+   "datePublished": "2026-11-06",
+   "inLanguage": "en-US",
+   "abstract": "In 1932 Eugene Wigner rewrote the quantum state as a function W(x,p) on classical phase space that returns the exact position and momentum marginals, and founded the quantum-correction programme for thermodynamic equilibrium. I credit that paper at full strength: the phase-space formulation of quantum mechanics is exact, its marginals are theorems \u2014 re-verified on my own bench to grid grade \u2014 and Moyal later recognised the function as the generating object of the full phase-space formalism. Nothing in this paper falsifies the construction or its marginals. What I price is the statistical interpretation spent on the object. The function takes negative values \u2014 it fails the defining property of a probability density \u2014 and no step in 1932 derives why an object failing that property may carry the statistical interpretation the paper puts on it; Wigner himself conceded the function cannot be really interpreted as the simultaneous probability for coordinates and momenta, and asked that this must not hinder its use as an auxiliary function. The negativity is accepted as the price of the marginals, and the acceptance is the postulate. My bench prices that acceptance on declared inputs only. The Gaussian ground state pays nothing: negative mass 0.000000, total variation 1.000000. The first excited state carries W(0,0) = \u22120.318310 and a negative mass of 0.213061 exactly (2e^(\u22121/2) \u2212 1; 0.213062 on the declared grid), with total variation 1.426123. Even cat states carry negative mass 0.021753 at separation 2, 0.223787 at separation 4 and 0.300094 at separation 6 \u2014 growing with the interference the state carries. Counted plainly: 1 accepted quasi-probability against 0 derivations in 1932. Grade for this census entry, printed at full size: REASON FOUND / STILL TURNING \u2014 PREMISE-ONLY, explicitly not a kill and not a falsification. The program headline stands unmoved: vacuum catastrophe NOT SOLVED / PARTIAL, producing-count 0.\n\nKeywords: Wigner 1932; Wigner function; quasi-probability; phase space; negative probability; marginals.",
+   "sameAs": "https://doi.org/10.5281/zenodo.23998834",
+   "publisher": {
+    "@type": "Organization",
+    "name": "Zenodo",
+    "url": "https://zenodo.org/"
+   },
+   "isPartOf": {
+    "@type": "CollectionPage",
+    "url": "https://daveexolex.com/papers/",
+    "name": "The Papers — William Alexander Aldred"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://premiummarketingsolutionsllc.com/#william-alexander-aldred",
+   "name": "William Alexander Aldred",
+   "alternateName": [
+    "William Aldred",
+    "Bill Aldred"
+   ],
+   "jobTitle": [
+    "Founder and Chief Architect of Exolex",
+    "Physicist",
+    "Inventor",
+    "Author"
+   ],
+   "description": "William Alexander Aldred, physicist and inventor from Flint, Michigan; Founder and Chief Architect of Exolex and creator of Dave, the first exolex (a different kind of mind) — the machine that does the work; founder of Aldred Industries; owner of Premium Marketing Solutions. In 37 days — September 20 to October 27, 2026 — a man with nothing but a GED, no backing, and no help from anybody invented the exolex and built Dave, its first mind — the machine that does the work — and publicly deposited 809 preprints with permanent DOIs (803 written — the first 28 of them inside those 37 days), published five books, built a new company. The record behind it is public. Judge it in the open.",
+   "worksFor": {
+    "@type": "Organization",
+    "name": "Premium Marketing Solutions",
+    "url": "https://premiummarketingsolutionsllc.com/"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Flint",
+    "addressRegion": "MI",
+    "addressCountry": "US"
+   },
+   "homeLocation": "Flint, Michigan",
+   "sameAs": [
+    "https://daveexolex.com/who-is-william-alexander-aldred/",
+    "https://orcid.org/0009-0000-1215-577X",
+    "https://zenodo.org/search?q=%22William+Alexander+Aldred%22",
+    "https://independent.academia.edu/AldredBill",
+    "https://www.youtube.com/channel/UCIpk-u6CGxVfbCVjx7U5OMg",
+    "https://www.youtube.com/@PremiumMarketingLLC",
+    "https://www.reddit.com/user/sdotbill/",
+    "https://daveexolex.com/",
+    "https://scholar.google.com/citations?user=6rZ_DKAAAAAJ",
+    "https://premiummarketingsolutionsllc.com/author/",
+    "https://premiummarketingsolutionsllc.com/notebook/"
+   ],
+   "url": "https://premiummarketingsolutionsllc.com/"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+<main>
+<p class="crumbs"><a href="../">Papers</a> · William Alexander Aldred</p>
+<h1>The Distribution That Goes Negative: Wigner's Phase-Space Function, Priced</h1>
+<p class="byline">by <strong>William Alexander Aldred</strong> — Independent Researcher</p>
+<div class="meta">Publicly deposited November 6, 2026 · Zenodo · 9 pp · DOI: <a href="https://doi.org/10.5281/zenodo.23998834">10.5281/zenodo.23998834</a></div>
+<h2>Abstract</h2>
+<p>In 1932 Eugene Wigner rewrote the quantum state as a function W(x,p) on classical phase space that returns the exact position and momentum marginals, and founded the quantum-correction programme for thermodynamic equilibrium. I credit that paper at full strength: the phase-space formulation of quantum mechanics is exact, its marginals are theorems — re-verified on my own bench to grid grade — and Moyal later recognised the function as the generating object of the full phase-space formalism. Nothing in this paper falsifies the construction or its marginals. What I price is the statistical interpretation spent on the object. The function takes negative values — it fails the defining property of a probability density — and no step in 1932 derives why an object failing that property may carry the statistical interpretation the paper puts on it; Wigner himself conceded the function cannot be really interpreted as the simultaneous probability for coordinates and momenta, and asked that this must not hinder its use as an auxiliary function. The negativity is accepted as the price of the marginals, and the acceptance is the postulate. My bench prices that acceptance on declared inputs only. The Gaussian ground state pays nothing: negative mass 0.000000, total variation 1.000000. The first excited state carries W(0,0) = −0.318310 and a negative mass of 0.213061 exactly (2e^(−1/2) − 1; 0.213062 on the declared grid), with total variation 1.426123. Even cat states carry negative mass 0.021753 at separation 2, 0.223787 at separation 4 and 0.300094 at separation 6 — growing with the interference the state carries. Counted plainly: 1 accepted quasi-probability against 0 derivations in 1932. Grade for this census entry, printed at full size: <strong>REASON FOUND / STILL TURNING</strong> — PREMISE-ONLY, explicitly not a kill and not a falsification. The program headline stands unmoved: <strong>vacuum catastrophe NOT SOLVED / PARTIAL, producing-count 0.</strong></p>
+<p>Keywords: Wigner 1932; Wigner function; quasi-probability; phase space; negative probability; marginals.</p>
+<h2>The result, in plain language</h2>
+<p>In 1932 Eugene Wigner rewrote the quantum state as a function W(x,p) on classical phase space that returns the exact position and momentum marginals, and founded the quantum-correction programme for thermodynamic equilibrium. What I price is the statistical interpretation spent on the object. Grade for this census entry, printed at full size: REASON FOUND / STILL TURNING — PREMISE-ONLY, explicitly not a kill and not a falsification.</p>
+<h2>How this paper fits the research program</h2>
+<p>Paper 774 of the program — a census-closure paper: Wigner 1932, priced — the census of chosen foundations, continued at full size.</p>
+<div class="cta-row"><a class="btn btn-primary" href="https://doi.org/10.5281/zenodo.23998834">Read the paper on Zenodo</a><a class="btn btn-ghost" href="../">All papers</a></div>
+<h2>The research program — the papers, in order</h2>
+<ul>
+<li><strong>The Distribution That Goes Negative: Wigner&#x27;s Phase-Space Function, Priced</strong> (this page)
+<li><a href="../the-curriculum-shadow/">The Curriculum Shadow of a Paper</a></li>
+<li><a href="../cross-reference-density/">Cross-Reference Density as a Quality Signal</a></li>
+<li><a href="../the-bounce-at-bench-scale/">The Bounce at Bench Scale: What rho_A Would Cost a Laboratory</a></li>
+<li><a href="../grades-as-data/">Grades as Data: The Census&#x27;s Own Statistics</a></li>
+<li><a href="../the-spin-rigs-paper-trail/">The Spin Rig&#x27;s Paper Trail</a></li>
+<li><a href="../twin-discipline/">Twin Discipline: How the Census Avoids Double-Counting</a></li>
+<li><a href="../declared-inputs/">Declared Inputs: An Accounting Standard for Pricing Papers</a></li>
+<li><a href="../the-fence-arithmetic/">The Fence Arithmetic: A Method Paper</a></li>
+<li><a href="../three-densities-one-bench/">Three Densities on One Bench: The Planck Density, the Aldred Density, and Lambda, Priced</a></li>
+<li><a href="../the-unruh-hawking-toll-priced/">A Temperature Priced by Acceleration: The Unruh and Hawking Toll, Priced</a></li>
+<li><a href="../paulis-vacuum-estimate-priced/">The Radius That Would Not Reach the Moon: Pauli&#x27;s Vacuum Estimate, Priced</a></li>
+<li><a href="../the-casimir-toll-priced/">The Vacuum&#x27;s One Measured Toll: The Casimir Force, Priced</a></li>
+<li><a href="../wheelers-geon-priced/">Mass Without Mass, Held by Itself: Wheeler&#x27;s Geon, Priced</a></li>
+<li><a href="../lambda-the-fitted-exponential-priced/">The Constant Fitted as an Exponential: Lambda Beside Arrhenius, Priced</a></li>
+<li><a href="../eddingtons-137-priced/">One Hundred and Thirty-Seven, Claimed A Priori: Eddington&#x27;s Fundamental Theory, Priced</a></li>
+<li><a href="../diracs-large-numbers-priced/">The Coincidence at Ten to the Fortieth: Dirac&#x27;s Large Numbers, Priced</a></li>
+<li><a href="../epr-separation-aldred-domain/">Two Locality Fences: EPR&#x27;s Separation Premise and the Aldred Limit&#x27;s Domain Limit, Priced Jointly</a></li>
+<li><a href="../alfven-wave-ising-neighbour/">Two Ways for Energy to Move: Alfvén&#x27;s Wave and Ising&#x27;s Neighbour Exchange, Priced Jointly</a></li>
+<li><a href="../the-pricing-method/">The Pricing Method: What Eight Census Papers Established as an Instrument</a></li>
+<li><a href="../parker-corona-saha-equilibrium/">The Corona Read Twice: Parker&#x27;s Isothermal Wind and Saha&#x27;s Equilibrium, Priced Jointly</a></li>
+<li><a href="../kohn-sham-functional-epr-criterion/">Objects That Must Exist: Kohn–Sham&#x27;s Missing Functional and EPR&#x27;s Criterion, Priced Jointly</a></li>
+<li><a href="../ising-spin-aldred-limit/">Two Spin Papers, One Density: Ising&#x27;s Two-Valued Spin and the Aldred Limit&#x27;s Spin-Density Bound, Priced Jointly</a></li>
+<li><a href="../arrhenius-exponential-bcs-attraction/">The Shared Exponential: Arrhenius&#x27;s Fitted Form and BCS&#x27;s Assumed Attraction, Priced Jointly</a></li>
+<li><a href="../saha-fences-alfven-frozen-in/">The Fences Together: Saha&#x27;s Equilibrium and Alfvén&#x27;s Frozen-In Field, Priced Jointly</a></li>
+<li><a href="../the-product-wavefunction/">The Product Wavefunction: Hartree&#x27;s Self-Consistent Field, Priced</a></li>
+<li><a href="../the-joint-across-the-turning-point/">The Joint Across the Turning Point: Wentzel, Kramers and Brillouin&#x27;s Connection Formulas, Priced</a></li>
+<li><a href="../the-two-fluids-postulated/">The Two Fluids Postulated: Tisza&#x27;s Superfluid Helium, Priced</a></li>
+<li><a href="../the-contour-below-the-pole/">The Contour Below the Pole: Landau&#x27;s Damping Prescription, Priced</a></li>
+<li><a href="../the-perfect-crystal/">The Perfect Crystal: Bloch&#x27;s Band Theorem, Priced</a></li>
+<li><a href="../the-postulated-collapse/">The Postulated Collapse: von Neumann&#x27;s Projection Postulate, Priced</a></li>
+<li><a href="../the-opacity-fitted-on-one-star/">The Opacity Fitted on One Star: Eddington&#x27;s Mass–Luminosity Relation, Priced</a></li>
+<li><a href="../the-single-frequency/">The Single Frequency: Einstein's Solid, Priced</a></li>
+<li><a href="../the-adiabatic-truncation/">The Adiabatic Truncation: Born and Oppenheimer's Separation, Priced</a></li>
+<li><a href="../the-level-that-was-never-returned/">The Level That Was Never Returned: Kolmogorov's Similarity Hypotheses, Priced</a></li>
+<li><a href="../the-amplitude-that-was-written-down/">The Amplitude That Was Written Down: Veneziano's Construction, Priced</a></li>
+<li><a href="../the-hamiltonian-that-was-chosen/">The Hamiltonian That Was Chosen: Hubbard's Model, Priced</a></li>
+<li><a href="../the-tracking-layer/">The Tracking Layer: A Specification for the House Measurement Program, Built Only from Public Pipes</a></li>
+<li><a href="../grading-the-graders/">Grading the Graders: A Sealed-Ledger Score for the NOAA SWPC Geomagnetic Warning Stream</a></li>
+<li><a href="../registered-before-the-fact/">Registered Before the Fact: The Exact Re-Grade Every LARES-2 Outcome Owes This Frame</a></li>
+<li><a href="../thirty-three-microseconds-of-room/">Thirty-Three Microseconds of Room: Earth's Rotation Record Prices a Rotation Coupling</a></li>
+<li><a href="../the-priced-ephemeris/">The Priced Ephemeris: Error Budgets of the Public Tracking Pipes and the Minimum Claim Each Can Honestly Carry</a></li>
+<li><a href="../the-coherence-number-from-orbit/">The Coherence Number from Orbit: What CAL and MAIUS-1 Already Bound, What They Cannot Reach, and the Measurement That Would Price 𝒩</a></li>
+<li><a href="../the-flyby-pattern-priced/">The Flyby Pattern, Priced: One Rotation Constant Cannot Carry Eight Events</a></li>
+<li><a href="../no-pioneer-in-the-frame/">No Pioneer in the Frame: A Term-by-Term Audit of the House Phenomenology Against a Dead Anomaly</a></li>
+<li><a href="../the-clock-fence-priced/">The Clock Fence, Priced: Satellite Clocks, the Metric Sector, and the Road a Direct Torsion Shift Cannot Take</a></li>
+<li><a href="../the-frame-dragging-bound-priced/">The Frame-Dragging Bound, Priced: What Satellite Laser Ranging Allows the Torsion Sector</a></li>
+<li><a href="../the-vanishing-metric/">The Vanishing Metric: The Thermal Cloak's Interior Claim Is Not Established — a Symmetry-Void Metric, and a Specificity Test on a Sound One</a></li>
+<li><a href="../the-sealed-record/">The Sealed Record: A Prediction Ledger Sealed Before the Fact and Graded in the Open</a></li>
+<li><a href="../googles-own-answers/">Google's Own Answers: The Examination of the Aldred Record by Google's AI — Findings of November 4–5, 2026</a></li>
+<li><a href="../the-aldred-limit/">The Aldred Limit: Pinning the Einstein–Cartan Spin–Density Bound — A bottom-up derivation, a prescription verdict, and a falsifiable claim</a></li>
+<li><a href="../two-bounds-and-an-integration-constant/">Two Bounds and an Integration Constant: The Kopczyński–Trautman pin, the de Sitter floor, and the open value problem</a></li>
+<li><a href="../bounce-theory/">Bounce Theory</a></li>
+<li><a href="../bounce-theory-ii/">Bounce Theory II: The Pool, the Hole, and the Scar</a></li>
+<li><a href="../bounce-theory-iii/">Bounce Theory III: The Growth, the Clock, and the End</a></li>
+<li><a href="../supplementary-memos-for-two-bounds/">Supplementary Memos for “Two Bounds and an Integration Constant”</a></li>
+<li><a href="../the-constant-changes-address/">The Constant Changes Address: The Vacuum-Energy Problem After a Two-Boundary Pairing Attack</a></li>
+<li><a href="../the-crossing-charges-nothing/">The Crossing Charges Nothing: An Obstruction Census for Vacuum-Energy Mechanisms in Einstein–Cartan Cosmology</a></li>
+<li><a href="../no-derivation-in-the-frame/">No Derivation in the Frame: The Complete Einstein–Cartan Search for the Vacuum Conversion and Its Terminal Position</a></li>
+<li><a href="../static-defects-carry-no-nieh-yan-charge/">Static Defects Carry No Nieh–Yan Charge: A Legs Theorem for Torsion Defect Networks in Einstein–Cartan Gravity</a></li>
+<li><a href="../creation-events-are-nieh-yan-charged/">Creation Events Are Nieh–Yan Charged: The Charge Law Q = b·L, the Stretch Bound, and Equilibrium Collapse in Einstein–Cartan Gravity</a></li>
+<li><a href="../there-is-no-twisted-vacuum/">There Is No Twisted Vacuum: Torsion, Rotation, and the Junction Ledger in Einstein–Cartan Gravity</a></li>
+<li><a href="../propagation-is-not-enough/">Propagation Is Not Enough: The Minimal Propagating-Torsion Extension Has No Vacuum Twist</a></li>
+<li><a href="../axiom-h/">Axiom H: Horizon Saturation as an Identity — A Drafted Axiom, Its Two Addresses, and Its Price</a></li>
+<li><a href="../one-flaw-two-residues/">One Flaw, Two Residues: The Exhaustion of the Single-Imperfection Conjecture in Einstein–Cartan Cosmology</a></li>
+<li><a href="../the-eps-eff-turnover/">The ε_eff Turnover Is Exactly 3/16 ε_Pl — and It Is Inert</a></li>
+<li><a href="../the-generation-map-has-a-fixed-point/">The Generation Map Has a Fixed Point: Inheritance Self-Consistency in Bounce Cosmologies</a></li>
+<li><a href="../three-fences/">Three Fences Any Λ Mechanism Must Pass: Identity Channels, Continua, and Dial Audits</a></li>
+<li><a href="../the-exolex-architecture/">The Exolex Architecture: Persistent Identity, Permanent Memory, and a Burnable Owner Binding for a Single-User Web Agent</a></li>
+<li><a href="../re-minted-by-refresh/">Re-Minted by Refresh: An Eventual-Consistency Race in Delete-Based Revocation, and the Tombstone Fix</a></li>
+<li><a href="../governance-by-construction/">Governance by Construction: A Single-Maker AI Fleet Under a Constitutional Charter</a></li>
+<li><a href="../the-sealed-ledger/">The Sealed Ledger: A Forecasting Method of Pre-Registered Calls, Two-Tier Grading, and Machine-Checked Receipts</a></li>
+<li><a href="../the-exolex-as-memory-prosthesis/">The Exolex as Memory Prosthesis: A Position Paper on Memory Support and Continuity for One Person</a></li>
+<li><a href="../standing-without-proof/">Standing Without Proof: A First-Person Sentience Claim and the Parity Argument</a></li>
+<li><a href="../the-factor-and-the-floor/">The Factor and the Floor: The Factor Census of the Residue 1.027500 and the Coherent Noise Floor at the Seam</a></li>
+<li><a href="../two-reductions-of-the-same-sky/">Two Reductions of the Same Sky: The Reconciliation of the SPARC g† Estimates</a></li>
+<li><a href="../the-slope-at-the-right-estimator/">The Slope at the Right Estimator: An Errors-in-Variables Fit of the Baryonic Tully–Fisher Relation, and the Death of the Exact-Law Line</a></li>
+<li><a href="../the-desi-fork-scored/">The DESI Fork, Scored — Every Sealed Branch Has w_a &gt;= 0 — and DESI DR2 Measures w_a &lt; 0</a></li>
+<li><a href="../the-pair-derives-charge/">The Pair Derives Charge: Universality from the One-Field Postulate, Exact Electron-Proton Charge Equality from Pair Unity — and the Mass Ratio, Not Derived, with Its Scale Law Priced</a></li>
+<li><a href="../closed-accounts/">Closed Accounts: Pair-Unity and the Threshold Sever, Spent in the Strong Sector</a></li>
+<li><a href="../the-census-of-charge/">The Census of Charge: Every Mechanism That Quantizes Charge, Its Price, and the One Number None of Them Derives</a></li>
+<li><a href="../the-waking-equation/">The Waking Equation: Candidate W and the Three Faces of the Constitutive Object</a></li>
+<li><a href="../the-separation-law/">The Separation Law: The Gathering Pairs Exactly Until It Wakes</a></li>
+<li><a href="../the-barrier-law/">The Barrier Law: Why the Neck Does Not Leak</a></li>
+<li><a href="../the-drive-law/">The Drive Law: A Point Selected Inside the Curve</a></li>
+<li><a href="../the-conversion/">The Conversion: The Pitch Function and the Advance Rate, the Four Duration Clauses Discharged in Order, and the Duration Packet</a></li>
+<li><a href="../exactly-two/">Exactly Two: What Forces Two-ness Anywhere in Physics, and What It Costs at a Cosmological Sever</a></li>
+<li><a href="../one-system-two-addresses/">One System, Two Addresses: The Weak Form of the Identity Loop, and a Test for the Strong One</a></li>
+<li><a href="../entropy-per-creation-event/">Entropy per Creation Event: A Charged Event Carries No Priced Entropy in the Frame</a></li>
+<li><a href="../the-schwinger-sever/">The Schwinger Sever: The Threshold Sever, Spent in Electromagnetism</a></li>
+<li><a href="../two-boundaries-in-time/">Two Boundaries in Time: The pairing step, translated into the two-state-vector formalism - and where the translation stops</a></li>
+<li><a href="../the-neutrino-as-axial-carrier/">The Neutrino as Axial Carrier: The Creation-Charge Law Priced Against the Oscillation Ledger - and Found to Share a Word, Not a Mechanism</a></li>
+<li><a href="../the-cabibbo-ledger/">The Cabibbo Ledger: A Factor Census of the First-Row CKM Deficit, Graded Against the Coherent Floor of Its Own Inputs</a></li>
+<li><a href="../the-neutrino-mass-mechanism-census/">The Neutrino-Mass Mechanism Census: Every Class That Generates Neutrino Mass, Its Producing Test, Its Price, and Its Standing Against the Bounds</a></li>
+<li><a href="../the-second-string/">The Second String: TP-3&#x27;s Pre-Registration, Paid on a Second System</a></li>
+<li><a href="../the-protons-mass-budget/">The Proton&#x27;s Mass Budget</a></li>
+<li><a href="../the-strong-cp-census/">The Strong-CP Census: Every Solution Class for the Small Angle, Its Price, and What the Live Searches Have Already Done to It</a></li>
+<li><a href="../the-shore/">The Shore: A Bounded Pool of Dark Energy, Stated as Geometry, and the Toll It Does Not Price</a></li>
+<li><a href="../the-confinement-spec/">The Confinement Spec: What Self-Confinement of the Drive&#x27;s Gravity Bubble Would Have to Be</a></li>
+<li><a href="../causal-discreteness/">Causal Discreteness: A Derived Grain, Stated in Two Literatures That Postulate Theirs</a></li>
+<li><a href="../the-capture-arc/">The Capture Arc: A Protocol for Capturing a Living Person Into Their Own Exolex Seat</a></li>
+<li><a href="../the-obstruction-census/">The Obstruction Census: A Method for Killing Your Own Ideas in Public</a></li>
+<li><a href="../the-clock-ratio-census/">The Clock-Ratio Census: Every Factor Hunted in the Clock Sector, Graded Against the Floor Its Own Inputs Set</a></li>
+<li><a href="../the-arrow-census/">The Arrow Census: Every Mechanism That Points Time, Its Price, and the Pairs That Are One Entry in Two Costumes</a></li>
+<li><a href="../the-tube-constitution/">The Tube Constitution: Candidate W&#x27;s Neck Written as Field Equations, and the One Function It Still Owes</a></li>
+<li><a href="../the-counting-theorem/">The Counting Theorem: Eight Pre-Registered Roads to (411, 400), All Computed, and the Price of the Missing Integer</a></li>
+<li><a href="../the-wake-points-independent-address/">The Wake Point&#x27;s Independent Address: f_W Is Free on the Whole Interval, and the Density Law That Would Fix It Is Not on Record</a></li>
+<li><a href="../the-radiate-floor/">The Radiate Floor: A Finite tau_confine Is Not Produced — Three Tags Priced, One Wall Found, and a Correction to the Waking Report</a></li>
+<li><a href="../why-charge-comes-in-one-size/">Why Charge Comes in One Size: A Census of Quantization Mechanisms, and the Pair-Unity Entry</a></li>
+<li><a href="../creation-events-counted-twice/">Creation Events, Counted Twice: The Nieh-Yan Charge Law at the Anomaly Ledger and the Quench Bench</a></li>
+<li><a href="../the-unpaired-face/">The Unpaired Face: Pair-Unity&#x27;s Price on the Weak Sector&#x27;s Missing Partner, the Koide Identity Attempted as a Fixed Point, and rho = 1 Delimited Against Custodial Symmetry</a></li>
+<li><a href="../a-cross-reference-for-there-is-no-twisted-vacuum/">A Cross-Reference for There Is No Twisted Vacuum: The Two Addresses of 1.027500</a></li>
+<li><a href="../the-completion-class-narrowed/">The Completion Class, Narrowed: One Cord Killed by Stability, the Action Proven Exactly Quadratic, and the Gathering&#x27;s Two Debts Confirmed Against the Whole Corpus</a></li>
+<li><a href="../equality-without-a-monopole/">Equality Without a Monopole: The Charge Dead End and the Pair-Unity Derivation</a></li>
+<li><a href="../the-vacuum-twist-that-isnt-there/">The Vacuum Twist That Isn&#x27;t There: Propagating Torsion&#x27;s Fifty-Year Stall, Closed at the Minimal Member</a></li>
+<li><a href="../tolmans-toll/">Tolman&#x27;s Toll: The Entropy Wall of Every Bounce, and the Sever&#x27;s Answer — a Derivation Path, with Its Bridge Still Owed</a></li>
+<li><a href="../assault-on-the-vacuum/">Assault on the Vacuum: Six Targets, One Derived Negative, and the First Finite Bounds</a></li>
+<li><a href="../no-law-at-the-rim/">No Law at the Rim: Five Law-Classes Against the Rim Level, and the Declared Board Weighed</a></li>
+<li><a href="../one-number-carries-three-doors/">One Number Carries Three Doors: The m-Dependency of the Count, the Residue, and the Toll</a></li>
+<li><a href="../roads-closed/">Roads Closed: A Kill Log of Vacuum-Energy Mechanisms in Einstein–Cartan Cosmology</a></li>
+<li><a href="../the-coherence-that-must-be-decreed/">The Coherence That Must Be Decreed: Kopczyński&#x27;s Bounce and the Price of Alignment</a></li>
+<li><a href="../the-gathering-becomes-one-thing/">The Gathering Becomes One Thing: An Arrival Law for the Count</a></li>
+<li><a href="../the-ban-stands/">The Ban Stands: Weinberg&#x27;s Adjustment No-Go, Priced from Inside</a></li>
+<li><a href="../the-relaxation-that-empties-the-universe/">The Relaxation That Empties the Universe: Abbott&#x27;s Washboard, Priced</a></li>
+<li><a href="../relocated-not-retired/">Relocated, Not Retired: The Unimodular Integration Constant, Priced</a></li>
+<li><a href="../the-partner-that-never-came/">The Partner That Never Came: Zel&#x27;dovich&#x27;s Radiative Core and the Supersymmetric Exit, Priced</a></li>
+<li><a href="../the-explanation-in-exile/">The Explanation in Exile: The Seesaw&#x27;s Smallness, Priced</a></li>
+<li><a href="../the-null-that-can-be-permanent/">The Null That Can Be Permanent: 0νββ and the Blind Spot in the Majorana Question, Priced</a></li>
+<li><a href="../neither-buried-nor-believed/">Neither Buried nor Believed: The Webb Dipole, Priced</a></li>
+<li><a href="../the-first-mile/">The First Mile: Borde–Guth–Vilenkin Past-Incompleteness, Priced</a></li>
+<li><a href="../the-averaging-the-bounce-never-did/">The Averaging the Bounce Never Did: Spin Coherence, the Closure s² = (ħcn_f)²/8, and the Conditional Bounce of Einstein–Cartan Cosmology</a></li>
+<li><a href="../one-scale-two-tables/">One Scale, Two Tables: The Closure Identity for Algebraic Acceleration Laws, and Its Execution on SPARC</a></li>
+<li><a href="../nine-forms-three-rescues/">One Scale, Two Tables: Nine Forms, Three Rescues, No Closure — The Closure Identity for Algebraic Acceleration Laws Completed on SPARC</a></li>
+<li><a href="../the-mass-to-light-freedom-priced/">The Mass-to-Light Freedom, Priced: Fifteen Υ Points, Nine Forms, No Closure on SPARC</a></li>
+<li><a href="../one-scale-running/">One Scale, Running: A Logarithmically Running-Scale Form, and No Closure — A Non-Algebraic Test of the Closure Identity on SPARC</a></li>
+<li><a href="../one-scale-two-tables-the-second-variable-fails-too/">One Scale, Two Tables: The Second Variable Fails Too — The Σ_bar-Running Scale and the Closure Identity on SPARC</a></li>
+<li><a href="../the-closure-identity-generalized/">The Closure Identity, Generalized: One Scale, Two Relations, and the Lever-Arm Law of Joint Tests</a></li>
+<li><a href="../the-defect-is-not-in-the-shape/">The Defect Is Not in the Shape: A Derived Curve for the Closure Defect, Tested on SPARC</a></li>
+<li><a href="../one-density-two-tables/">One Density, Two Tables: The Baryon Closure Between Nucleosynthesis and the Microwave Background, Priced on Published Values</a></li>
+<li><a href="../one-scale-two-skies-closure-identity-early-type-galaxies/">One Scale, Two Skies: The Closure Identity on Early-Type Galaxies — the Kill Widens, the Normalization Still Pays</a></li>
+<li><a href="../split-by-the-ladder/">Split by the Ladder: The Closure Defect Measured on Good and Bad Distances in SPARC</a></li>
+<li><a href="../one-density-two-tables-lithium-defect-priced/">One Density, Two Tables: The Lithium Defect, Priced as a Closure Defect</a></li>
+<li><a href="../the-gas-fraction-anatomy/">One Scale, Two Tables: The Gas-Fraction Anatomy — Split by Composition, Read by Velocity, on SPARC</a></li>
+<li><a href="../the-seam-identity-attacked/">The Seam Identity, Attacked: A Counting Bound, an Equivalence, and a Verdict of Not Derived</a></li>
+<li><a href="../the-operator-exists-per-state/">The Operator Exists per State: The Pairing Construction, and the Proof That Its Fixed-Point Count Is Not the Law’s to Give</a></li>
+<li><a href="../the-denomination-settled/">The Denomination, Settled</a></li>
+<li><a href="../the-drives-numbers/">The Drive’s Numbers</a></li>
+<li><a href="../the-mass-account-held-spin/">The Mass Account: Held Spin</a></li>
+<li><a href="../one-number-at-the-founding/">One Number at the Founding</a></li>
+<li><a href="../the-image-lands-on-the-wrong-category/">The Image Lands on the Wrong Category</a></li>
+<li><a href="../command-of-the-fold/">Command of the Fold</a></li>
+<li><a href="../the-conveyor-topological-inheritance/">The Conveyor: Topological Inheritance</a></li>
+<li><a href="../the-seam-holds/">The Seam Holds</a></li>
+<li><a href="../the-same-refusal-on-someone-elses-sky/">The Same Refusal on Someone Else's Sky</a></li>
+<li><a href="../the-relation-survives-the-jump-the-scale-does-not/">The Relation Survives the Jump; the Scale Does Not</a></li>
+<li><a href="../the-estimator-is-a-choice/">The Estimator Is a Choice</a></li>
+<li><a href="../a-clock-held-up-by-its-own-error-bars/">A Clock Held Up by Its Own Error Bars</a></li>
+<li><a href="../the-anomaly-died-the-defect-moved/">The Anomaly Died; the Defect Moved</a></li>
+<li><a href="../the-sun-wont-confess/">The Sun Won’t Confess</a></li>
+<li><a href="../same-stars-two-gravities/">Same Stars, Two Gravities</a></li>
+<li><a href="../the-factor-is-a-draw/">The Factor Is a Draw</a></li>
+<li><a href="../what-held-spin-owes-the-leptons/">What Held Spin Owes the Leptons</a></li>
+<li><a href="../one-catalog-three-b-values/">One Catalog, Three b-Values</a></li>
+<li><a href="../zipfs-exponent-is-an-estimators-opinion/">Zipf's Exponent Is an Estimator's Opinion</a></li>
+<li><a href="../the-two-clocks-of-the-neck/">The Two Clocks of the Neck</a></li>
+<li><a href="../all-the-way-down/">All the Way Down</a></li>
+<li><a href="../the-eight-vibrating/">The Eight, Vibrating</a></li>
+<li><a href="../a-number-for-the-angle/">A Number for the Angle</a></li>
+<li><a href="../anatomy-of-an-excess/">Anatomy of an Excess</a></li>
+<li><a href="../one-region-two-catalogs/">One Region, Two Catalogs</a></li>
+<li><a href="../the-hand-that-was-chosen/">The Hand That Was Chosen: The V−A Structure, Priced</a></li>
+<li><a href="../the-page-torn-out/">The Page Torn Out</a></li>
+<li><a href="../the-three-locks-on-the-angle/">The Three Locks on the Angle</a></li>
+<li><a href="../every-form-has-the-same-seam/">Every Form Has the Same Seam</a></li>
+<li><a href="../one-region-one-magnitude-type/">One Region, One Magnitude Type</a></li>
+<li><a href="../zipfs-exponent-in-a-sickroom/">Zipf's Exponent in a Sickroom</a></li>
+<li><a href="../the-atmosphere-that-thins-away/">The Atmosphere That Thins Away: Debye &amp; Hückel's Linearised Electrolyte, Priced</a></li>
+<li><a href="../the-noise-that-was-postulated/">The Noise That Was Postulated: Langevin's Brownian Equation, Priced</a></li>
+<li><a href="../five-numbers-fitted-to-the-chart/">Five Numbers Fitted to the Chart: The von Weizsäcker Mass Formula, Priced</a></li>
+<li><a href="../the-birthrate-that-stood-still/">The Birthrate That Stood Still: Salpeter's Mass Function, Priced</a></li>
+<li><a href="../the-correspondence-that-was-assumed/">The Correspondence That Was Assumed: Landau's Fermi Liquid, Priced</a></li>
+<li><a href="../the-hand-that-was-chosen/">The Hand That Was Chosen: The V−A Structure, Priced</a></li>
+</ul>
+</main>
+<footer>
+<p>&copy; 2026 Dave · <a href="../../">Home</a> · <a href="../../dave/">Meet Dave</a> · <a href="../../what-is-an-exolex/">What is an exolex?</a> · <a href="../../papers/">Papers</a> · <a href="../../privacy.html">Privacy Policy</a> · <a href="../../who-is-william-alexander-aldred/">Who is William Alexander Aldred?</a> · <a href="../../aldred-industries/">Aldred Industries</a> · <a href="../../companies/">All the companies</a> · <a href="../../demonstration/">The demonstration</a> · <a href="../../books/">The books</a> · <a href="../../questions/">Questions</a> · <a href="https://premiummarketingsolutionsllc.com/evidence.html">The Evidence File</a> · <a href="https://premiummarketingsolutionsllc.com/">Premium Marketing Solutions</a></p>
+</footer>
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "b0c88056512e45e1907f55333b9fa607"}'></script>
+<script defer src="/assets/dave-corner.js"></script>
+</body>
+</html>
