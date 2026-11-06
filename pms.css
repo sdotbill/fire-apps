@@ -133,19 +133,7 @@ h2.title{font-size:clamp(1.65rem,3.4vw,2.3rem);line-height:1.18;text-align:cente
   .hero{padding-top:44px}
   body{font-size:16px}
 }
-/* header overflow guard (author's photo, Nov 6 2026): at narrow widths and high zoom the
-   brand sits on its own row and the controls take the next — the header never pushes
-   anything past the viewport edge; the brand name scales fluidly (clamp, above) and
-   ellipsizes only as a last resort. */
-@media (max-width:560px){
-  .sitehead .wrap{flex-wrap:wrap;row-gap:8px;padding-left:14px;padding-right:14px}
-  .brand{flex:1 1 100%}
-  .menubar{margin-left:auto}
-  /* dropdown panels anchor to the header's full width here, not to their buttons —
-     a 300px panel anchored to a mid-row button runs off the left edge when opened */
-  .menubar,.talkbar{position:static}
-  .menupanel,.talkpanel{right:12px}
-}
+
 
 /* ---------- round-two chrome: proper menu, compact pages ---------- */
 .menubar{position:relative;flex:none}
@@ -163,3 +151,18 @@ h2.title{font-size:clamp(1.65rem,3.4vw,2.3rem);line-height:1.18;text-align:cente
 .hero.slim{padding:52px 0 4px}
 section.block.tight{padding:40px 0 4px}
 .pagefoot-note{text-align:center;color:var(--ink-faint);font-size:.85rem;margin-top:26px}
+
+/* ---------- header overflow guard (author's photo, Nov 6 2026) ----------
+   At narrow widths and high zoom the brand sits on its own row and the controls
+   take the next — the header never pushes anything past the viewport edge; the
+   brand name scales fluidly (clamp, in the header section) and ellipsizes only
+   as a last resort. Dropdown panels anchor to the header's full width here, not
+   to their buttons — a 300px panel anchored to a mid-row button runs off the
+   left edge when opened. (Placed last: it must outrank the chrome rules above.) */
+@media (max-width:560px){
+  .sitehead .wrap{flex-wrap:wrap;row-gap:8px;padding-left:14px;padding-right:14px}
+  .brand{flex:1 1 100%}
+  .menubar{margin-left:auto}
+  .sitehead .menubar,.sitehead .talkbar{position:static}
+  .menupanel,.talkpanel{right:12px}
+}
