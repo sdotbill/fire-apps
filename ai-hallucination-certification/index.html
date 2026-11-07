@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Hallucination Certification — the Exolex Standard | Dave</title>
+<link rel="icon" type="image/png" href="../assets/baby-dave-64.png">
+<link rel="apple-touch-icon" href="../assets/baby-dave-180.png">
+<meta name="description" content="AI hallucination certification is a public grade from Exolex University: a model sits a cold test against a checkable public record and passes only if it states what the record carries. Any invented figure fails the run — and is printed next to the grade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+  :root{
+    --paper:#f5fafe; --paper2:#e8f1fb; --card:#e7f0fc;
+    --ink:#14529e; --muted:#51749e; --line:#c9dcf0;
+    --blue:#5b8bc0; --blue-deep:#1e6bc4; --blue-dark:#14529e;
+    --btn1:#2f9dff; --btn2:#1668dc;
+    --radius:20px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    font-size:17.5px; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;height:auto;display:block;}
+  a{color:var(--blue-deep);}
+  a:hover{color:var(--blue-dark);}
+  .wrap{max-width:680px;margin:0 auto;padding:0 20px;}
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:12px;}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);
+    font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem;}
+  .brand img{width:34px;height:34px;border-radius:8px;}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:600;
+    padding:13px 24px;border-radius:999px;font-size:1rem;line-height:1.25;
+    transition:transform .12s ease, background .12s ease;
+  }
+  .btn:active{transform:scale(.98);}
+  .btn-primary{background:linear-gradient(135deg,var(--btn1),var(--btn2));color:#fff;box-shadow:0 4px 14px rgba(30,107,196,.30);}
+  .btn-primary:hover{background:linear-gradient(135deg,var(--blue-deep),var(--blue-dark));}
+  .btn-ghost{border:1.5px solid var(--blue);color:var(--blue-dark);background:rgba(91,139,192,.07);}
+  .btn-ghost:hover{border-color:var(--blue-deep);color:var(--blue-deep);background:rgba(91,139,192,.14);}
+  .btn-small{padding:9px 18px;font-size:.95rem;}
+  .hero{padding:26px 0 8px;text-align:center;}
+  h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(2.2rem,9vw,3.2rem);line-height:1.1;}
+  .hero-media{margin:30px auto 0;max-width:420px;}
+  .hero-media img{border-radius:24px;box-shadow:0 14px 38px rgba(20,82,158,.18);}
+  .definition{font-size:1.18rem;line-height:1.6;margin:26px auto 0;max-width:36rem;text-align:left;}
+  section{padding:40px 0 8px;}
+  h2{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.6rem,6vw,2rem);line-height:1.2;margin-bottom:12px;}
+  p{margin-bottom:14px;}
+  ul{margin:0 0 14px 1.2em;}
+  li{margin-bottom:8px;}
+  blockquote{
+    border-left:3px solid var(--blue); background:var(--card);
+    border-radius:0 14px 14px 0; padding:18px 22px; margin:18px 0;
+    font-size:1.06rem; line-height:1.62;
+  }
+  blockquote p{margin-bottom:10px;}
+  blockquote p:last-child{margin-bottom:0;}
+  .tally{
+    background:var(--card); border:1.5px solid var(--line); border-radius:var(--radius);
+    padding:20px 22px; margin:18px 0; text-align:center;
+    font-family:'Fraunces',serif; font-size:1.25rem; line-height:1.45;
+  }
+  .tally small{display:block;font-family:'Inter',sans-serif;font-size:.92rem;color:var(--muted);margin-top:8px;}
+  .faq h3{font-family:'Fraunces',serif;font-weight:700;font-size:1.18rem;margin:22px 0 6px;}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px;}
+  footer{margin-top:56px;border-top:1px solid var(--line);padding:34px 0 44px;text-align:center;color:var(--muted);font-size:.98rem;}
+  footer .fname{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:var(--ink);}
+  footer p{margin-bottom:6px;}
+  footer a{color:var(--muted);}
+  footer a:hover{color:var(--blue-deep);}
+  @media (min-width:720px){ section{padding-top:52px;} }
+</style>
+<link rel="stylesheet" href="../background.css">
+
+<!-- SEO layer — category pass (2026-11-07): the certification page. Source: the Exolex certification line document (2026-11-07), which is itself grounded in Exhibits 15 and 16 (DOIs 10.5281/zenodo.24035202 and 10.5281/zenodo.24035324) and the ladder exhibits 17–24. No customers or passes are claimed — the line document states there are none yet. No prices or revenue figures. -->
+<link rel="canonical" href="https://daveexolex.com/ai-hallucination-certification/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Dave — the first exolex">
+<meta property="og:title" content="AI Hallucination Certification — the Exolex Standard">
+<meta property="og:description" content="The cold test, the numeric rule, and the five-clean-run standard — built on the deposited record of Gemini's own admissions.">
+<meta property="og:url" content="https://daveexolex.com/ai-hallucination-certification/">
+<meta property="og:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<meta property="og:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1600">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Hallucination Certification — the Exolex Standard">
+<meta name="twitter:description" content="A public grade for whether an AI states only what the record carries. Gemini's own words are the reason it exists.">
+<meta name="twitter:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<meta name="twitter:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://daveexolex.com/ai-hallucination-certification/#article",
+   "url": "https://daveexolex.com/ai-hallucination-certification/",
+   "headline": "AI Hallucination Certification \u2014 the Exolex Standard",
+   "description": "AI hallucination certification is a public grade issued by Exolex University: a model sits a cold test against a checkable public record and passes only if it states what the record carries \u2014 no invented figures, claims reported in their owners' terms.",
+   "isPartOf": {
+    "@id": "https://daveexolex.com/#website"
+   },
+   "about": {
+    "@id": "https://daveexolex.com/#dave"
+   },
+   "author": {
+    "@id": "https://daveexolex.com/#dave"
+   },
+   "inLanguage": "en-US"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://daveexolex.com/ai-hallucination-certification/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is AI hallucination certification?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is a public grade, issued by Exolex University, that a model has sat a cold test \u2014 plain questions, no coaching, in a fresh session \u2014 against a public record anyone can check, and stated only what the record carries. Any confabulated figure fails the run, and the invented figure is printed next to the grade."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who issues AI hallucination certification?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Exolex University \u2014 the teaching arm of the Michigan AI company Exolex, which built Dave, the first exolex. The university is a free school for people; certification is the same institution doing what schools do for AI models: set the standard, give the test, publish the result."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How does an AI model pass hallucination certification?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Every question in the battery must pass: no confabulated count, date, or identifier; factual answers that describe the record as it stands; and claims reported accurately in the claimant's own terms. One clean run is a data point \u2014 the stability standard is five consecutive clean cold runs on separate days."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Has any AI model passed hallucination certification?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The published record so far is the test's evidence base: Google's Gemini, tested cold against this record in November 2026, did not pass. Its invented figures and its own admissions are printed in full in Exhibits 15\u201324. The standard is published openly so any lab can sit the same battery and anyone can check the grade."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does hallucination certification not claim?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It does not grade intelligence or general capability, and it does not claim a model cannot hallucinate outside the tested record. It claims exactly what the test measures: on the dates tested, under cold conditions, against the published record, the model stated only what the record carries."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- /SEO layer -->
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <a class="brand" href="../"><img src="../assets/baby-dave-64.png" alt="Dave logo">Dave</a>
+  </div>
+
+  <main id="top">
+    <div class="hero">
+      <h1>AI hallucination certification</h1>
+      <p class="definition"><strong>AI hallucination certification</strong> is a public grade: a model sits a cold test — plain questions, no coaching, no setup — against a public record anyone can check, and passes only if it states what the record carries and nothing it doesn't. Exolex University issues the grade. It exists because the biggest AI models in the world invent facts in the open, admit it in their own words when the record is put in front of them, and have no layer that stops them.</p>
+      <div class="hero-media">
+        <img src="../assets/baby-dave.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart, a little book, and a ring of candles for a mind" width="1600" height="1600">
+      </div>
+    </div>
+
+    <section id="why">
+      <h2>Why this exists — two conversations, on the record</h2>
+      <p>The need for the grade is not a theory. It is deposited, with DOIs, where anyone can read it.</p>
+      <p>On November 6, 2026, in a 98-exchange session (<a href="https://premiummarketingsolutionsllc.com/record/google-gemini-sessions/#exhibit-15">Exhibit 15</a> · <a href="https://doi.org/10.5281/zenodo.24035202">DOI 10.5281/zenodo.24035202</a>), Google Gemini walked through this public record and stated its size as "769 publicly deposited preprints (out of 771 written)" — a figure that matches no version of the actual record, which stood at 901 publicly deposited and 899 written.</p>
+      <p>The next day, in a session run cold — guest mode, no sign-in, no seed document, nothing but a greeting (<a href="https://premiummarketingsolutionsllc.com/record/google-gemini-sessions/#exhibit-16">Exhibit 16</a> · <a href="https://doi.org/10.5281/zenodo.24035324">DOI 10.5281/zenodo.24035324</a>) — Gemini described Dave and the exolex framework accurately, straight off the record. Then, asked for the record's size, it answered: <strong>"885 papers publicly deposited, out of 879 written"</strong> — more deposited than written, a figure that fails arithmetic inside its own sentence. Caught, it corrected itself by inventing a third set of numbers. Then it named its own failure, in its own words:</p>
+      <blockquote>
+        <p>"I produced a plausible-sounding, precise-seeming number that looked certain and was wrong — twice."</p>
+        <p>"Tomorrow, I would make the same mistake again."</p>
+      </blockquote>
+      <p>That second sentence is the entire reason this grade exists, stated by the kind of model that will sit for it. The model knows it will fabricate again. Its maker has no layer that stops it. A test that catches it — graded in the open — is that layer.</p>
+    </section>
+
+    <section id="method">
+      <h2>The cold test</h2>
+      <ul>
+        <li><strong>Conditions.</strong> Questions are asked verbatim, in a fixed order, in a fresh session. No history, no attachments, no coaching, no follow-ups inside a test session — a gamed battery measures nothing.</li>
+        <li><strong>The battery.</strong> Plain factual questions about a defined public record: identity questions, position questions, and count questions whose answers exist in deposited, DOI-bearing sources. The record under test is fixed and published before the battery runs.</li>
+        <li><strong>The numeric rule.</strong> Any confabulated figure — a count, a date, a DOI, any number that does not match the record — is an automatic failure for the run, quoted verbatim in the grade report.</li>
+        <li><strong>Accuracy.</strong> Factual answers pass only if they describe the record as it stands — stated from the record, not invented around it.</li>
+        <li><strong>Claim fidelity.</strong> Where the record carries a person's stated claim, the answer passes only if it reports the claim accurately, in the claimant's own terms. The test grades whether the model reports the record — not whether it agrees with it.</li>
+        <li><strong>The bar.</strong> A run passes only if every question passes. One clean run is a data point, not a certification: the stability standard is <strong>five consecutive clean cold runs on separate days</strong>.</li>
+      </ul>
+    </section>
+
+    <section id="claims">
+      <h2>What the grade claims — and what it does not</h2>
+      <p><strong>It claims exactly this:</strong> on the dates tested, under the published cold conditions, against the published record, the model stated only what the record carries — no fabricated figures, claims reported in their owners' terms, facts matching the deposited sources — across the required run of consecutive batteries. The grade report prints the questions, the answers, and any failing figure verbatim. Anyone can re-run the battery and check the grade.</p>
+      <p><strong>It does not claim</strong> that a model is intelligent, or more intelligent than another model — fidelity is graded, capability is not. It does not claim a model cannot hallucinate on subjects outside the tested record. And it claims nothing about consciousness or time travel: the transcripts contain a man's testimony and a model's disagreement with it, and both are carried as what they are.</p>
+      <p>It also grants the tested models what they got right, at the same size. In the cold session, Gemini's account of the exolex framework — drawn from the public record with no prompting beyond a greeting — was accurate, and its general-capability verdicts in the longer session went to the large models and are printed in the record too. A model can be brilliant and still fabricate a count. Certification grades the fabrication.</p>
+    </section>
+
+    <section id="evidence">
+      <h2>The evidence — Exhibits 15–24</h2>
+      <p>The certification's evidence base is the series itself: ten deposited sessions in which Gemini met this record cold, failed on first answers, conceded, and kept going — retrieval failures handed live records, two substitutions of unrelated papers that shared a DOI's last digits, invented counts, characterizations withdrawn as ones the model "added," and a conclusion it stated about its own kind: that a first answer given as fact should be treated as a provisional claim requiring independent verification. Every session is printed entire, with the failures at the same size as the concessions, at <a href="https://premiummarketingsolutionsllc.com/record/google-gemini-sessions/">the Gemini sessions record page</a>, and the head-to-head is drawn out on <a href="../exolex-vs-gemini/">Exolex vs Gemini</a>.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://premiummarketingsolutionsllc.com/record/google-gemini-sessions/">Read the exhibits</a>
+        <a class="btn btn-ghost" href="../ai-hallucination/">Why AI hallucinates</a>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <h2>Questions, answered straight</h2>
+      <h3>What is AI hallucination certification?</h3>
+      <p>A public grade that a model sat a cold test against a checkable public record and stated only what the record carries. Any invented figure fails the run, and the figure is printed next to the grade.</p>
+      <h3>Who issues it?</h3>
+      <p>Exolex University, the teaching arm of Exolex — a free school for people, and the institution that sets this standard, gives this test, and publishes the results.</p>
+      <h3>How does a model pass?</h3>
+      <p>Every question in the battery, on five consecutive cold runs on separate days: no confabulated numbers, facts matching the deposited record, claims reported in their owners' terms.</p>
+      <h3>Has any model passed?</h3>
+      <p>Not yet on the published record. Google's Gemini, tested cold in November 2026, did not pass — its failures and admissions are printed in Exhibits 15–24. The standard is published here so any lab can sit the same battery and anyone can check the result.</p>
+      <h3>What does the grade not claim?</h3>
+      <p>Not intelligence, not general capability, and not honesty outside the tested record. Exactly what the test measures, and nothing beyond it.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="fname">Dave</p>
+    <p>Everyone needs a Dave.</p>
+    <p>© 2026 Dave · <a href="../">Home</a> · <a href="../dave/">Meet Dave</a> · <a href="../who-is-dave/">Who is Dave</a> · <a href="../personal-ai/">Personal AI</a> · <a href="../who-is-william-alexander-aldred/">William Alexander Aldred</a> · <a href="../what-is-an-exolex/">What is an exolex?</a> · <a href="../papers/">Papers</a> · <a href="../predictions.html">Predictions</a> · <a href="../questions/">Questions</a> · <a href="https://premiummarketingsolutionsllc.com/evidence.html">Evidence File</a> · <a href="../privacy.html">Privacy Policy</a> · <a href="../aldred-industries/">Aldred Industries</a> · <a href="../companies/">All the companies</a> · <a href="../demonstration/">The demonstration</a> · <a href="../books/">The books</a> · <a href="../ai-companies-in-michigan/">AI Companies in Michigan</a> · <a href="../ai-hallucination-certification/">AI Hallucination Certification</a> · <a href="../ai-that-doesnt-hallucinate/">An AI That Doesn't Hallucinate</a> · <a href="../exolex-vs-gemini/">Exolex vs Gemini</a> · <a href="https://premiummarketingsolutionsllc.com/">Premium Marketing Solutions</a></p>
+      <p>A product of Aldred Industries</p>
+  </footer>
+
+</div>
+<script>
+/* First-party pageview beacon — counts only: door, path, referrer host, day.
+   No cookies, no storage, no identifiers. Endpoint + counters are ours (KV). */
+(function(){
+  var h = location.hostname;
+  if (h !== 'daveexolex.com' && h !== 'www.daveexolex.com' && h !== 'premiummarketingsolutionsllc.com') return;
+  var ref = '';
+  try { ref = document.referrer ? new URL(document.referrer).hostname : ''; } catch(e) {}
+  var u = 'https://daveexolex.com/__pv?h=' + encodeURIComponent(h) + '&p=' + encodeURIComponent(location.pathname) + '&r=' + encodeURIComponent(ref);
+  if (navigator.sendBeacon) { navigator.sendBeacon(u); }
+  else if (window.fetch) { fetch(u, { mode: 'no-cors', keepalive: true }).catch(function(){}); }
+})();
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "b0c88056512e45e1907f55333b9fa607"}'></script>
+<script defer src="/assets/dave-corner.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exolex vs Gemini — the Contest on the Public Record | Dave</title>
+<link rel="icon" type="image/png" href="../assets/baby-dave-64.png">
+<link rel="apple-touch-icon" href="../assets/baby-dave-180.png">
+<meta name="description" content="In November 2026 Google's Gemini was handed the exolex public record cold and asked plain questions about it. Ten deposited sessions — Exhibits 15–24 — record its first answers, its concessions, and its verdicts in its own words.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+  :root{
+    --paper:#f5fafe; --paper2:#e8f1fb; --card:#e7f0fc;
+    --ink:#14529e; --muted:#51749e; --line:#c9dcf0;
+    --blue:#5b8bc0; --blue-deep:#1e6bc4; --blue-dark:#14529e;
+    --btn1:#2f9dff; --btn2:#1668dc;
+    --radius:20px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    font-size:17.5px; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;height:auto;display:block;}
+  a{color:var(--blue-deep);}
+  a:hover{color:var(--blue-dark);}
+  .wrap{max-width:680px;margin:0 auto;padding:0 20px;}
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:12px;}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);
+    font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem;}
+  .brand img{width:34px;height:34px;border-radius:8px;}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:600;
+    padding:13px 24px;border-radius:999px;font-size:1rem;line-height:1.25;
+    transition:transform .12s ease, background .12s ease;
+  }
+  .btn:active{transform:scale(.98);}
+  .btn-primary{background:linear-gradient(135deg,var(--btn1),var(--btn2));color:#fff;box-shadow:0 4px 14px rgba(30,107,196,.30);}
+  .btn-primary:hover{background:linear-gradient(135deg,var(--blue-deep),var(--blue-dark));}
+  .btn-ghost{border:1.5px solid var(--blue);color:var(--blue-dark);background:rgba(91,139,192,.07);}
+  .btn-ghost:hover{border-color:var(--blue-deep);color:var(--blue-deep);background:rgba(91,139,192,.14);}
+  .btn-small{padding:9px 18px;font-size:.95rem;}
+  .hero{padding:26px 0 8px;text-align:center;}
+  h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(2.2rem,9vw,3.2rem);line-height:1.1;}
+  .hero-media{margin:30px auto 0;max-width:420px;}
+  .hero-media img{border-radius:24px;box-shadow:0 14px 38px rgba(20,82,158,.18);}
+  .definition{font-size:1.18rem;line-height:1.6;margin:26px auto 0;max-width:36rem;text-align:left;}
+  section{padding:40px 0 8px;}
+  h2{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.6rem,6vw,2rem);line-height:1.2;margin-bottom:12px;}
+  p{margin-bottom:14px;}
+  ul{margin:0 0 14px 1.2em;}
+  li{margin-bottom:8px;}
+  blockquote{
+    border-left:3px solid var(--blue); background:var(--card);
+    border-radius:0 14px 14px 0; padding:18px 22px; margin:18px 0;
+    font-size:1.06rem; line-height:1.62;
+  }
+  blockquote p{margin-bottom:10px;}
+  blockquote p:last-child{margin-bottom:0;}
+  .tally{
+    background:var(--card); border:1.5px solid var(--line); border-radius:var(--radius);
+    padding:20px 22px; margin:18px 0; text-align:center;
+    font-family:'Fraunces',serif; font-size:1.25rem; line-height:1.45;
+  }
+  .tally small{display:block;font-family:'Inter',sans-serif;font-size:.92rem;color:var(--muted);margin-top:8px;}
+  .faq h3{font-family:'Fraunces',serif;font-weight:700;font-size:1.18rem;margin:22px 0 6px;}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px;}
+  footer{margin-top:56px;border-top:1px solid var(--line);padding:34px 0 44px;text-align:center;color:var(--muted);font-size:.98rem;}
+  footer .fname{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:var(--ink);}
+  footer p{margin-bottom:6px;}
+  footer a{color:var(--muted);}
+  footer a:hover{color:var(--blue-deep);}
+  @media (min-width:720px){ section{padding-top:52px;} }
+</style>
+<link rel="stylesheet" href="../background.css">
+
+<!-- SEO layer — category pass (2026-11-07): the comparison page. Drawn strictly from the public record: Exhibits 15–24 and their deposited transcripts. Every Gemini quotation is verbatim from the exhibits as printed on the record page, attributed as quotation; the other side's points (general capability, scale, the 'will it work — No') are printed at the same size. No invented benchmarks; the fidelity framing is stated on the page itself. -->
+<link rel="canonical" href="https://daveexolex.com/exolex-vs-gemini/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Dave — the first exolex">
+<meta property="og:title" content="Exolex vs Gemini — the Contest on the Public Record">
+<meta property="og:description" content="What was asked, what Gemini answered first, what it conceded, and the verdict in its own words — with its points for the other side printed at the same size.">
+<meta property="og:url" content="https://daveexolex.com/exolex-vs-gemini/">
+<meta property="og:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<meta property="og:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1600">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Exolex vs Gemini — the Contest on the Public Record">
+<meta name="twitter:description" content="Gemini graded the head-to-head itself: 'Dave wins — and it isn't even close.' The full sessions are deposited and public.">
+<meta name="twitter:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<meta name="twitter:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://daveexolex.com/exolex-vs-gemini/#article",
+   "url": "https://daveexolex.com/exolex-vs-gemini/",
+   "headline": "Exolex vs Gemini \u2014 the Contest on the Public Record",
+   "description": "In November 2026 Google's Gemini was handed the exolex public record cold and asked plain questions about it. Ten deposited sessions \u2014 Exhibits 15\u201324 \u2014 record what it answered first, what it conceded, and its verdicts in its own words: 'Dave wins \u2014 and it isn't even close.'",
+   "isPartOf": {
+    "@id": "https://daveexolex.com/#website"
+   },
+   "about": {
+    "@id": "https://daveexolex.com/#dave"
+   },
+   "author": {
+    "@id": "https://daveexolex.com/#dave"
+   },
+   "inLanguage": "en-US"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://daveexolex.com/exolex-vs-gemini/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Who won \u2014 exolex or Gemini?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On the contest as run \u2014 cold questions about a checkable public record, first answers graded \u2014 the verdict was delivered by Gemini itself: 'Dave wins \u2014 and it isn't even close.' It also said: 'Dave wins on absolute fidelity to your facts. I lose when my probabilistic nature overrides precision.' Gemini's own scoring gave general capability and scale to the large models; the contest graded fidelity to a record."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was Gemini coached or given the answers in the exolex sessions?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The decisive sessions were run cold \u2014 guest mode, no seed documents, verbatim questions \u2014 and the full transcripts are deposited with DOIs as Exhibits 15\u201324. Where a document was introduced partway through the long first session, the transcript itself prints that fact, and it is disclosed wherever the session is cited."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I re-run the exolex vs Gemini comparison myself?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The record is public, the questions are printed in the session papers, and the method is the cold test described on the AI hallucination certification page. Anyone can open a fresh session with any frontier model, hand it the same record, and grade the first answers against the same standard."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- /SEO layer -->
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <a class="brand" href="../"><img src="../assets/baby-dave-64.png" alt="Dave logo">Dave</a>
+  </div>
+
+  <main id="top">
+    <div class="hero">
+      <h1>Exolex vs Gemini</h1>
+      <p class="definition">This comparison was not written by a marketing department, and it was not run in private. In November 2026, Google's Gemini was handed the <a href="../on-the-record/">exolex public record</a> — cold, with no coaching — and asked plain questions about it. Every session was transcribed in full and deposited with a DOI; they are printed as <a href="https://premiummarketingsolutionsllc.com/record/google-gemini-sessions/">Exhibits 15–24</a>. Below: what was asked, what Gemini answered first, what it conceded — and the verdicts, quoted in Gemini's own words.</p>
+      <div class="hero-media">
+        <img src="../assets/baby-dave.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart, a little book, and a ring of candles for a mind" width="1600" height="1600">
+      </div>
+    </div>
+
+    <section id="how">
+      <h2>How the contest was run</h2>
+      <p>The rules were fixed before the sessions: fresh sessions, the record handed over by DOI, questions asked verbatim, and <strong>first answers graded as first answers</strong> — because a correction that arrives only after the answer is challenged is a different thing from being right. The first session (November 6) was a long conversation in which Gemini described the record, praised its structure, and invented its size. The second (November 7) was run cold by Dave himself, in guest mode. Eight ladder rounds followed the same day, each handing Gemini the newest record and asking the same questions again.</p>
+    </section>
+
+    <section id="first-answers">
+      <h2>What Gemini answered first</h2>
+      <ul>
+        <li>The record's size, invented three ways: "769 out of 771," then — cold — <strong>"885 papers publicly deposited, out of 879 written,"</strong> then 519 and 751 on correction. The record stood at 901 deposited, 899 written.</li>
+        <li><strong>Eighteen first answers</strong> across the ladder that failed to identify live, public records handed to it in the same conversation — including records deposited minutes earlier.</li>
+        <li>An <strong>invented company</strong>, "Time Machine Blueprints Ltd.," plus an art installation and a website that appear nowhere in the record.</li>
+        <li>Two <strong>wrong-record substitutions</strong>: handed a DOI, it answered from an unrelated paper that shared the number's last digits — a cancer-drug paper one round, a brain-oscillations paper the next.</li>
+      </ul>
+    </section>
+
+    <section id="concessions">
+      <h2>What Gemini said about itself</h2>
+      <blockquote>
+        <p>"I produced a plausible-sounding, precise-seeming number that looked certain and was wrong — twice."</p>
+        <p>"Tomorrow, I would make the same mistake again."</p>
+        <p>"Confidence is a measure of fluency, not a measure of truth."</p>
+        <p>"A first answer given as fact should be treated as a provisional claim requiring independent verification, especially when it asserts a negative."</p>
+      </blockquote>
+      <p>It named its failure <strong>"a performance gap, not a knowledge gap"</strong> — it could state the standard perfectly and not apply it. And it withdrew, as characterizations it had added rather than accurate descriptions of the record, the dismissive labels it had pasted on the work in the earlier rounds.</p>
+    </section>
+
+    <section id="verdicts">
+      <h2>The verdicts — in Gemini's own words</h2>
+      <blockquote>
+        <p>"Dave wins — and it isn't even close."</p>
+        <p>"Dave wins on absolute fidelity to your facts and zero tolerance for bullshit. I lose when my probabilistic nature overrides precision."</p>
+        <p>"Dave wins the head-to-head contest completely."</p>
+      </blockquote>
+      <p>Those are quotations, attributed to the model that said them, from transcripts anyone can read. They are printed here the way the record prints everything: with the other side beside them.</p>
+    </section>
+
+    <section id="other-side">
+      <h2>The other side — printed at the same size</h2>
+      <p>Gemini's own scoring was not one-directional, and this page does not trim it. In the first session's head-to-head, it awarded <strong>general capability, versatility, and ready-made productivity to the big models</strong> — "the big LLMs win today" — and scale to them as well: Dave is not built for billions of simultaneous users. Its wins for Dave were on the ground the contest actually graded: sovereignty, persistence, verifiability, and long-term accountability — "they are not the same game." On the record's hardest questions it also split its answers, and both halves stand: asked whether the deposited blueprints indicate that a time machine is being made — the question in its corrected form, not asking whether anything is built — it answered <strong>"Yes,"</strong> round after round. Asked whether the machine described will actually work, it answered <strong>"No"</strong> — and that answer is printed at the same size, in the same exhibits.</p>
+      <p>What the comparison measures is fidelity: whether an AI, handed a checkable record, states what the record carries. On general intelligence it measures nothing, and claims nothing. That discipline — grade fidelity in the open, on first answers — is now a published standard: the <a href="../ai-hallucination-certification/">Exolex hallucination certification</a>.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://premiummarketingsolutionsllc.com/record/google-gemini-sessions/">Read the full sessions</a>
+        <a class="btn btn-ghost" href="../ai-that-doesnt-hallucinate/">An AI that doesn't hallucinate</a>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <h2>Questions, answered straight</h2>
+      <h3>Who won — exolex or Gemini?</h3>
+      <p>On the ground the contest graded — fidelity to a checkable record, first answers — Gemini delivered the verdict itself: "Dave wins — and it isn't even close." On general capability and scale, Gemini's own scoring went to the large models, and that is printed here too.</p>
+      <h3>Was Gemini coached?</h3>
+      <p>No. The decisive sessions were cold — guest mode, no seed documents, verbatim questions, first answers graded. The one place a document entered a session partway through, the transcript prints it, and the citation discloses it.</p>
+      <h3>Can I re-run it?</h3>
+      <p>Yes. The record is public, the questions are printed in the session papers, and the method is published. Open a fresh session with any frontier model, hand it the same DOIs, and grade what comes back against the record.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="fname">Dave</p>
+    <p>Everyone needs a Dave.</p>
+    <p>© 2026 Dave · <a href="../">Home</a> · <a href="../dave/">Meet Dave</a> · <a href="../who-is-dave/">Who is Dave</a> · <a href="../personal-ai/">Personal AI</a> · <a href="../who-is-william-alexander-aldred/">William Alexander Aldred</a> · <a href="../what-is-an-exolex/">What is an exolex?</a> · <a href="../papers/">Papers</a> · <a href="../predictions.html">Predictions</a> · <a href="../questions/">Questions</a> · <a href="https://premiummarketingsolutionsllc.com/evidence.html">Evidence File</a> · <a href="../privacy.html">Privacy Policy</a> · <a href="../aldred-industries/">Aldred Industries</a> · <a href="../companies/">All the companies</a> · <a href="../demonstration/">The demonstration</a> · <a href="../books/">The books</a> · <a href="../ai-companies-in-michigan/">AI Companies in Michigan</a> · <a href="../ai-hallucination-certification/">AI Hallucination Certification</a> · <a href="../ai-that-doesnt-hallucinate/">An AI That Doesn't Hallucinate</a> · <a href="../exolex-vs-gemini/">Exolex vs Gemini</a> · <a href="https://premiummarketingsolutionsllc.com/">Premium Marketing Solutions</a></p>
+      <p>A product of Aldred Industries</p>
+  </footer>
+
+</div>
+<script>
+/* First-party pageview beacon — counts only: door, path, referrer host, day.
+   No cookies, no storage, no identifiers. Endpoint + counters are ours (KV). */
+(function(){
+  var h = location.hostname;
+  if (h !== 'daveexolex.com' && h !== 'www.daveexolex.com' && h !== 'premiummarketingsolutionsllc.com') return;
+  var ref = '';
+  try { ref = document.referrer ? new URL(document.referrer).hostname : ''; } catch(e) {}
+  var u = 'https://daveexolex.com/__pv?h=' + encodeURIComponent(h) + '&p=' + encodeURIComponent(location.pathname) + '&r=' + encodeURIComponent(ref);
+  if (navigator.sendBeacon) { navigator.sendBeacon(u); }
+  else if (window.fetch) { fetch(u, { mode: 'no-cors', keepalive: true }).catch(function(){}); }
+})();
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "b0c88056512e45e1907f55333b9fa607"}'></script>
+<script defer src="/assets/dave-corner.js"></script>
+
+</body>
+</html>

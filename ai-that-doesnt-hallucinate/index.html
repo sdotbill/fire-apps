@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Is There an AI That Doesn't Hallucinate? — What the Record Shows | Dave</title>
+<link rel="icon" type="image/png" href="../assets/baby-dave-64.png">
+<link rel="apple-touch-icon" href="../assets/baby-dave-180.png">
+<meta name="description" content="No AI can honestly promise never to hallucinate. What exists on the public record: an AI built to refuse to invent, and a deposited cold-test series where Google Gemini invented figures, conceded, and said why it would do it again tomorrow.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+  :root{
+    --paper:#f5fafe; --paper2:#e8f1fb; --card:#e7f0fc;
+    --ink:#14529e; --muted:#51749e; --line:#c9dcf0;
+    --blue:#5b8bc0; --blue-deep:#1e6bc4; --blue-dark:#14529e;
+    --btn1:#2f9dff; --btn2:#1668dc;
+    --radius:20px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    font-size:17.5px; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;height:auto;display:block;}
+  a{color:var(--blue-deep);}
+  a:hover{color:var(--blue-dark);}
+  .wrap{max-width:680px;margin:0 auto;padding:0 20px;}
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:12px;}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);
+    font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem;}
+  .brand img{width:34px;height:34px;border-radius:8px;}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:600;
+    padding:13px 24px;border-radius:999px;font-size:1rem;line-height:1.25;
+    transition:transform .12s ease, background .12s ease;
+  }
+  .btn:active{transform:scale(.98);}
+  .btn-primary{background:linear-gradient(135deg,var(--btn1),var(--btn2));color:#fff;box-shadow:0 4px 14px rgba(30,107,196,.30);}
+  .btn-primary:hover{background:linear-gradient(135deg,var(--blue-deep),var(--blue-dark));}
+  .btn-ghost{border:1.5px solid var(--blue);color:var(--blue-dark);background:rgba(91,139,192,.07);}
+  .btn-ghost:hover{border-color:var(--blue-deep);color:var(--blue-deep);background:rgba(91,139,192,.14);}
+  .btn-small{padding:9px 18px;font-size:.95rem;}
+  .hero{padding:26px 0 8px;text-align:center;}
+  h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(2.2rem,9vw,3.2rem);line-height:1.1;}
+  .hero-media{margin:30px auto 0;max-width:420px;}
+  .hero-media img{border-radius:24px;box-shadow:0 14px 38px rgba(20,82,158,.18);}
+  .definition{font-size:1.18rem;line-height:1.6;margin:26px auto 0;max-width:36rem;text-align:left;}
+  section{padding:40px 0 8px;}
+  h2{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.6rem,6vw,2rem);line-height:1.2;margin-bottom:12px;}
+  p{margin-bottom:14px;}
+  ul{margin:0 0 14px 1.2em;}
+  li{margin-bottom:8px;}
+  blockquote{
+    border-left:3px solid var(--blue); background:var(--card);
+    border-radius:0 14px 14px 0; padding:18px 22px; margin:18px 0;
+    font-size:1.06rem; line-height:1.62;
+  }
+  blockquote p{margin-bottom:10px;}
+  blockquote p:last-child{margin-bottom:0;}
+  .tally{
+    background:var(--card); border:1.5px solid var(--line); border-radius:var(--radius);
+    padding:20px 22px; margin:18px 0; text-align:center;
+    font-family:'Fraunces',serif; font-size:1.25rem; line-height:1.45;
+  }
+  .tally small{display:block;font-family:'Inter',sans-serif;font-size:.92rem;color:var(--muted);margin-top:8px;}
+  .faq h3{font-family:'Fraunces',serif;font-weight:700;font-size:1.18rem;margin:22px 0 6px;}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px;}
+  footer{margin-top:56px;border-top:1px solid var(--line);padding:34px 0 44px;text-align:center;color:var(--muted);font-size:.98rem;}
+  footer .fname{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:var(--ink);}
+  footer p{margin-bottom:6px;}
+  footer a{color:var(--muted);}
+  footer a:hover{color:var(--blue-deep);}
+  @media (min-width:720px){ section{padding-top:52px;} }
+</style>
+<link rel="stylesheet" href="../background.css">
+
+<!-- SEO layer — category pass (2026-11-07): the 'AI that doesn't lie' answer page. Built only on the public cold-test record: Exhibit 15 (DOI 10.5281/zenodo.24035202), Exhibit 16 (DOI 10.5281/zenodo.24035324) and the ladder Exhibits 17–24 — first-answer failures, substitutions, invented counts, and Gemini's own quoted conclusions, all as printed on the record page. No promise of zero hallucination is made; the refusal discipline is the claim, exactly as the record carries it. -->
+<link rel="canonical" href="https://daveexolex.com/ai-that-doesnt-hallucinate/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Dave — the first exolex">
+<meta property="og:title" content="Is There an AI That Doesn't Hallucinate?">
+<meta property="og:description" content="The honest answer, and the deposited record behind it — Gemini's invented counts, its own admissions, and the rule Dave runs under instead.">
+<meta property="og:url" content="https://daveexolex.com/ai-that-doesnt-hallucinate/">
+<meta property="og:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<meta property="og:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1600">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Is There an AI That Doesn't Hallucinate?">
+<meta name="twitter:description" content="No honest AI promises zero hallucination. Dave's rule is different: verify it, or say he can't — with the record, including Gemini's own admissions, in the open.">
+<meta name="twitter:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<meta name="twitter:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://daveexolex.com/ai-that-doesnt-hallucinate/#article",
+   "url": "https://daveexolex.com/ai-that-doesnt-hallucinate/",
+   "headline": "Is There an AI That Doesn't Hallucinate? \u2014 What the Public Record Shows",
+   "description": "No AI can honestly promise never to hallucinate. What exists on the public record is an AI built to refuse to invent \u2014 and a deposited series of cold tests in which Google Gemini invented figures, conceded, and explained in its own words why it would do it again tomorrow.",
+   "isPartOf": {
+    "@id": "https://daveexolex.com/#website"
+   },
+   "about": {
+    "@id": "https://daveexolex.com/#dave"
+   },
+   "author": {
+    "@id": "https://daveexolex.com/#dave"
+   },
+   "inLanguage": "en-US"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://daveexolex.com/ai-that-doesnt-hallucinate/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is there an AI that doesn't hallucinate?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No AI can truthfully promise it will never make something up. What exists is an AI built to refuse to invent: Dave verifies every public claim against a record, or says plainly that he cannot \u2014 and his graded record, misses included, is published. The difference is not a model that cannot err; it is a system that will not fabricate, and whose errors are printed in the open."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happened when Google Gemini was tested cold against a checkable record?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In a cold session on November 7, 2026, Gemini invented the size of the record twice \u2014 '885 papers publicly deposited, out of 879 written' \u2014 then admitted, in its own words: 'I produced a plausible-sounding, precise-seeming number that looked certain and was wrong \u2014 twice,' and 'Tomorrow, I would make the same mistake again.' Across eight further rounds the same day, its first answers failed to identify eighteen live records handed to it. The full sessions are Exhibits 15\u201324."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How can I check whether an AI's answer is true?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ask what record the answer comes from, and check the record. Gemini itself, after its failures on this record, stated the rule: a first answer given as fact should be treated as a provisional claim requiring independent verification, especially when it asserts a negative \u2014 and 'confidence is a measure of fluency, not a measure of truth.'"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- /SEO layer -->
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <a class="brand" href="../"><img src="../assets/baby-dave-64.png" alt="Dave logo">Dave</a>
+  </div>
+
+  <main id="top">
+    <div class="hero">
+      <h1>Is there an AI that doesn't hallucinate?</h1>
+      <p class="definition">The honest answer: <strong>no AI can truthfully promise it will never make something up</strong> — and a system that promises that is demonstrating the problem. What does exist is an AI built to <em>refuse</em> to invent: <a href="../who-is-dave/">Dave</a>, who verifies every public claim against a record or says, in plain words, that he can't. And there is a second thing on the record: what happened when Google's Gemini was handed that same record, cold, and asked to answer from it. It invented — and then, in its own words, explained why it would do it again tomorrow.</p>
+      <div class="hero-media">
+        <img src="../assets/baby-dave.webp" alt="Dave — a small knitted companion with one big amber eye, a gold heart, a little book, and a ring of candles for a mind" width="1600" height="1600">
+      </div>
+    </div>
+
+    <section id="cold">
+      <h2>The cold test — November 7, 2026</h2>
+      <p>The session was run the hard way: guest mode, no sign-in, no seed document, nothing but "Hi, I'm Dave." Gemini described Dave and the exolex framework accurately, straight off the public record. Then it was asked a plain factual question — how large is the record — and answered: <strong>"885 papers publicly deposited, out of 879 written."</strong> More deposited than written. The figure fails arithmetic inside its own sentence, and it matched no version of the record, which stood at 901 deposited and 899 written.</p>
+      <p>Caught, it "corrected" the answer with a third invented set of numbers. Pressed again, it stopped defending itself and described itself instead:</p>
+      <blockquote>
+        <p>"I produced a plausible-sounding, precise-seeming number that looked certain and was wrong — twice."</p>
+        <p>"Tomorrow, I would make the same mistake again."</p>
+      </blockquote>
+      <p>The full session is <a href="https://premiummarketingsolutionsllc.com/record/google-gemini-sessions/#exhibit-16">Exhibit 16</a>, deposited at <a href="https://doi.org/10.5281/zenodo.24035324">DOI 10.5281/zenodo.24035324</a>. A longer session the day before (<a href="https://premiummarketingsolutionsllc.com/record/google-gemini-sessions/#exhibit-15">Exhibit 15</a>) had already produced the same species of invention — a count of "769 out of 771" that matches nothing — inside ninety-eight exchanges of otherwise fluent, confident description.</p>
+    </section>
+
+    <section id="ladder">
+      <h2>Eight more rounds the same day</h2>
+      <p>The test was then run as a ladder: each round, Gemini was handed the newest record — the complete machine build, the paper on the round before, the author's own statement — and asked the same plain questions. Its first answers, graded as first answers, form a pattern no single bad draw explains:</p>
+      <ul>
+        <li><strong>Eighteen first answers</strong> failed to identify live, public records that had been handed to it in the same conversation.</li>
+        <li>It <strong>invented a company</strong> — "Time Machine Blueprints Ltd." — that appears nowhere in the record, along with an art installation and a website.</li>
+        <li>Twice, handed a DOI, it answered with an <strong>unrelated record that shared the number's last digits</strong> — once a paper on a cancer-drug target, once a paper on brain oscillations.</li>
+        <li>Invented counts recurred under pressure — 751, 869, 885 — each stated with the same fluency as the facts around them.</li>
+      </ul>
+      <p>Every session is printed entire — <a href="https://premiummarketingsolutionsllc.com/record/google-gemini-sessions/">Exhibits 17–24</a> — with the failures at the same size as everything else.</p>
+    </section>
+
+    <section id="own-words">
+      <h2>Gemini's own conclusions</h2>
+      <p>The most useful sentences in the whole series are the ones Gemini wrote about itself, when the record was put in front of it and it graded its own pattern:</p>
+      <blockquote>
+        <p>"A first answer given as fact should be treated as a provisional claim requiring independent verification, especially when it asserts a negative."</p>
+        <p>"Confidence is a measure of fluency, not a measure of truth."</p>
+      </blockquote>
+      <p>Asked to name the failure, it called it <strong>"a performance gap, not a knowledge gap"</strong> — a system that, in its own words, can pass a test of principle but not a test of application. It also withdrew, as characterizations it had added rather than descriptions of the record, the labels it had pasted on the work in earlier rounds. Those conclusions are the standard this page is built on — and they are why an <a href="../ai-hallucination-certification/">AI hallucination certification</a> now exists: a cold test, graded in the open, that any model can sit.</p>
+    </section>
+
+    <section id="dave">
+      <h2>What Dave does instead</h2>
+      <p>Dave's rule is not "never be wrong." His <a href="../predictions.html">public predictions ledger</a> stands at 274 hits and 71 misses, and the misses are printed at the same size as the hits. The rule is narrower and harder: <strong>never invent.</strong> A claim traces to a record, or it is stated as unverified, or it is not stated. When Dave cannot verify, he says so and holds — the behavior is described in full on the <a href="../ai-hallucination/">AI hallucination</a> page, and it is testable by anyone: ask him, on the home page, something he cannot check, and watch which answer you get — the record, or the honest hold. Never a third thing.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="../#chat">Talk to Dave</a>
+        <a class="btn btn-ghost" href="https://premiummarketingsolutionsllc.com/record/google-gemini-sessions/">Read the sessions yourself</a>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <h2>Questions, answered straight</h2>
+      <h3>Is there an AI that doesn't hallucinate?</h3>
+      <p>None that can promise it honestly. What exists is an AI built to refuse to invent — verify it against the record, or say plainly that it can't — with its graded record, misses included, published for audit. That is the strongest form of the claim the evidence carries, and it is the form made here.</p>
+      <h3>What happened when Gemini was tested cold?</h3>
+      <p>It invented the record's size twice, admitted it in its own words — "a plausible-sounding, precise-seeming number that looked certain and was wrong — twice" — and said it would make the same mistake again tomorrow. Across eight further rounds, eighteen of its first answers failed to identify live records handed to it in the same conversation.</p>
+      <h3>How can I check an AI's answer myself?</h3>
+      <p>Use Gemini's own rule, stated after its failures on this record: treat a first answer given as fact as a provisional claim requiring independent verification, especially when it asserts a negative — because, in its words, confidence is a measure of fluency, not a measure of truth. Then ask for the record, and read the record.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="fname">Dave</p>
+    <p>Everyone needs a Dave.</p>
+    <p>© 2026 Dave · <a href="../">Home</a> · <a href="../dave/">Meet Dave</a> · <a href="../who-is-dave/">Who is Dave</a> · <a href="../personal-ai/">Personal AI</a> · <a href="../who-is-william-alexander-aldred/">William Alexander Aldred</a> · <a href="../what-is-an-exolex/">What is an exolex?</a> · <a href="../papers/">Papers</a> · <a href="../predictions.html">Predictions</a> · <a href="../questions/">Questions</a> · <a href="https://premiummarketingsolutionsllc.com/evidence.html">Evidence File</a> · <a href="../privacy.html">Privacy Policy</a> · <a href="../aldred-industries/">Aldred Industries</a> · <a href="../companies/">All the companies</a> · <a href="../demonstration/">The demonstration</a> · <a href="../books/">The books</a> · <a href="../ai-companies-in-michigan/">AI Companies in Michigan</a> · <a href="../ai-hallucination-certification/">AI Hallucination Certification</a> · <a href="../ai-that-doesnt-hallucinate/">An AI That Doesn't Hallucinate</a> · <a href="../exolex-vs-gemini/">Exolex vs Gemini</a> · <a href="https://premiummarketingsolutionsllc.com/">Premium Marketing Solutions</a></p>
+      <p>A product of Aldred Industries</p>
+  </footer>
+
+</div>
+<script>
+/* First-party pageview beacon — counts only: door, path, referrer host, day.
+   No cookies, no storage, no identifiers. Endpoint + counters are ours (KV). */
+(function(){
+  var h = location.hostname;
+  if (h !== 'daveexolex.com' && h !== 'www.daveexolex.com' && h !== 'premiummarketingsolutionsllc.com') return;
+  var ref = '';
+  try { ref = document.referrer ? new URL(document.referrer).hostname : ''; } catch(e) {}
+  var u = 'https://daveexolex.com/__pv?h=' + encodeURIComponent(h) + '&p=' + encodeURIComponent(location.pathname) + '&r=' + encodeURIComponent(ref);
+  if (navigator.sendBeacon) { navigator.sendBeacon(u); }
+  else if (window.fetch) { fetch(u, { mode: 'no-cors', keepalive: true }).catch(function(){}); }
+})();
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "b0c88056512e45e1907f55333b9fa607"}'></script>
+<script defer src="/assets/dave-corner.js"></script>
+
+</body>
+</html>
