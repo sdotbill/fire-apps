@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Fifth Coordinate — the Bundle Construction — William Alexander Aldred</title>
+<meta name="description" content="The fifth coordinate of the navigation fix, constructed explicitly as a fiber coordinate on a principal circle bundle over one bubble's slice: the chart condition computed, the sever identification derived (χ ↦ χ — the fifth entry crosses the bounce unchanged), and the grades printed unraised. Derivation note by William Alexander Aldred. DOI: 10.5281/zenodo.24056572.">
+<link rel="canonical" href="https://daveexolex.com/papers/the-fifth-coordinate-bundle/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Dave — the first exolex">
+<meta property="og:title" content="The Fifth Coordinate — the Bundle Construction — William Alexander Aldred">
+<meta property="og:description" content="The navigation fix's fifth entry is a point on a circle bundle, not a function of the other four. The sever gluing is derived: χ ↦ χ. The fifth coordinate's grade stays CONSTRAINED. DOI: 10.5281/zenodo.24056572.">
+<meta property="og:url" content="https://daveexolex.com/papers/the-fifth-coordinate-bundle/">
+<meta property="og:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<meta property="og:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Fifth Coordinate — the Bundle Construction — William Alexander Aldred">
+<meta name="twitter:description" content="The bundle constructed, the chart condition computed, the sever identification derived: χ ↦ χ — of the five entries of the fix, exactly one crosses the bounce unchanged. DOI: 10.5281/zenodo.24056572.">
+<meta name="twitter:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<link rel="icon" type="image/png" href="../../assets/baby-dave-64.png">
+<link rel="apple-touch-icon" href="../../assets/baby-dave-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5fafe;--ink:#14529e;--muted:#51749e;--line:#c9dcf0;--blue:#5b8bc0;--blue-deep:#1e6bc4;--blue-dark:#14529e;--btn1:#2f9dff;--btn2:#1668dc;--radius:20px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,-apple-system,sans-serif;font-size:17.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--blue-deep)} a:hover{color:var(--blue-dark)}
+.wrap{max-width:680px;margin:0 auto;padding:0 20px}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem}
+.brand img{width:34px;height:34px;border-radius:8px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:13px 24px;border-radius:999px;font-size:1rem;line-height:1.25}
+.btn-primary{background:linear-gradient(135deg,var(--btn1),var(--btn2));color:#fff;box-shadow:0 4px 14px rgba(30,107,196,.30)}
+.btn-ghost{border:1.5px solid var(--blue);color:var(--blue-dark);background:rgba(91,139,192,.07)}
+h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.7rem,5.6vw,2.4rem);line-height:1.22;margin:14px 0 10px}
+h2{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.35rem,4.6vw,1.7rem);line-height:1.25;margin:34px 0 10px}
+p{margin-bottom:14px}
+.byline{color:var(--muted);font-size:1.02rem}
+.meta{color:var(--muted);font-size:.98rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin:18px 0 22px}
+.crumbs{font-size:.95rem;color:var(--muted);margin-top:10px}
+.card{border:1.5px solid var(--line);border-radius:var(--radius);padding:22px;margin:18px 0;background:#eef5fd}
+.card h3{font-family:'Fraunces',serif;font-size:1.25rem;line-height:1.3;margin-bottom:6px}
+.card h3 a{text-decoration:none}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:.98rem}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#eef5fd;font-weight:600}
+footer{margin-top:56px;border-top:1px solid var(--line);padding:34px 0 44px;text-align:center;color:var(--muted);font-size:.98rem}
+footer .fname{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:var(--ink)}
+footer a{color:var(--muted)} footer a:hover{color:var(--blue-deep)}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://daveexolex.com/papers/the-fifth-coordinate-bundle/#article",
+   "url": "https://daveexolex.com/papers/the-fifth-coordinate-bundle/",
+   "headline": "The Fifth Coordinate — the Bundle Construction",
+   "name": "The Fifth Coordinate — the Bundle Construction",
+   "author": {
+    "@id": "https://premiummarketingsolutionsllc.com/#william-alexander-aldred"
+   },
+   "datePublished": "2026-11-08",
+   "inLanguage": "en-US",
+   "abstract": "The navigation subsystem of the bounce-frame craft demands a five-coordinate fix (t, x, y, z, χ), and the one surviving candidate for the fifth entry is the scar/torsion phase. This note constructs the arena explicitly as a principal circle bundle over one bubble's four-dimensional slice: the fiber is the scar-phase circle (one full turn = one complete winding of the cord about the lineage axis), and the fix is a point of the total space — the fifth entry is not a function of the other four. The torsion decomposition S = S^alg + dθ is identified as the local form of a connection on the bundle; its transformation law under a change of chart is derived, with the consequence that the split is chart-dependent and only the sum is physical. The chart condition is stated in three clauses: the cocycle condition, met by construction; independence of the fifth differential, computed; and the scar locus, where angular charts exclude the axis worldsheet while the bundle extends over it and χ on the axis is defined by winding, not by angle. At the sever between slices, the fiber identification is derived from the corpus's own premises — the sign flip is excluded by the founding sign's constancy down the lineage — so the identification is the identity, χ ↦ χ: of the five entries of the fix, exactly one crosses the bounce unchanged, and it is the fifth. A corollary follows: readout error in χ is hereditary and does not reset at a founding. The construction forces a uniqueness count — the arena admits exactly one invariant phase per linking loop — reducing the outstanding Θ/θ dictionary to a forced fork. Printed as a non-result: the construction forces no quantization. The fifth coordinate itself remains CONSTRAINED; the grade does not rise on one charge of three. The readout budget σ_χ ≤ 0.0667 rad is a simulation budget (simulated, not measured). Falsifiers F-B1–F-B3 are printed in the note.",
+   "sameAs": "https://doi.org/10.5281/zenodo.24056572",
+   "publisher": {
+    "@type": "Organization",
+    "name": "Zenodo",
+    "url": "https://zenodo.org/"
+   },
+   "isPartOf": {
+    "@type": "CollectionPage",
+    "url": "https://daveexolex.com/papers/",
+    "name": "The Papers — William Alexander Aldred"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://premiummarketingsolutionsllc.com/#william-alexander-aldred",
+   "name": "William Alexander Aldred",
+   "url": "https://premiummarketingsolutionsllc.com/"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+<div class="topbar"><a class="brand" href="../../"><img src="../../assets/baby-dave-64.png" alt="Dave">Dave</a><a class="btn btn-ghost" href="../../dave/" style="padding:9px 18px;font-size:.95rem;">Meet Dave</a></div>
+<main>
+<p class="crumbs"><a href="../">Papers</a> · William Alexander Aldred</p>
+<h1>The Fifth Coordinate — the Bundle Construction</h1>
+<p class="byline">by <strong>William Alexander Aldred</strong> — Independent Researcher</p>
+<div class="meta">Derivation note · November 8, 2026 · Zenodo · DOI: <a href="https://doi.org/10.5281/zenodo.24056572">10.5281/zenodo.24056572</a> · Successor to “The Fifth Coordinate — the Fiber Step” · References <a href="https://doi.org/10.5281/zenodo.24038484">D4, PIM Error Budget and Scar Readout</a> and the <a href="https://doi.org/10.5281/zenodo.24039064">CMB anomalies series</a></div>
+
+<h2>The construction</h2>
+<p>The navigation subsystem demands a five-coordinate fix of the craft — (t, x, y, z, χ) — returned as definite numbers, continuously, in flight. One candidate for the fifth entry survives grading: the scar/torsion angle. The standing objection was that on a single slice any phase θ(t, x, y, z) is a function of the other four entries and labels nothing they do not. The fiber step answered by exhibiting the arena as a stack; this note writes the stack down as a mathematical object.</p>
+<p>The arena is a <strong>principal circle bundle</strong> over one bubble's four-dimensional spacetime slice. The fiber is the scar-phase circle: one full turn of the fiber is one complete winding of the cord about the lineage axis — at the cap pitch, an axial run of 4.67×10<sup>−16</sup> m. A point of the total space is an event together with its winding state, so <strong>the five-entry fix is exactly a point of the total space in a chart</strong>: four entries name the projection, the fifth names the fiber point over it. The fifth entry is not a function of the other four, because the total space is five-dimensional and the projection is not injective.</p>
+<p>The physics enters as a connection. The torsion decomposition S = S<sup>alg</sup> + dθ is the local form of a single global object — the 1-form S on the base — where θ is the phase read in a chart and S<sup>alg</sup> is the remainder. The check is a computation: under a change of chart the exact part shifts, and invariance of the physical torsion forces the remainder to shift in compensation — precisely the transformation law of a connection on a circle bundle. Two consequences are printed because later work will be tempted to violate both: <strong>the split is chart-dependent and only the sum is physical</strong>, and the phase θ is a chart object — the angle-valued physics that survives every change of chart lives in the integrals of S, above all its holonomy around the loop linking the axis.</p>
+
+<h2>The chart condition</h2>
+<p>Three clauses, each stated exactly:</p>
+<table>
+<tr><th>Clause</th><th>Statement</th><th>Standing</th></tr>
+<tr><td>Consistency</td><td>Transition phases on triple overlaps satisfy the cocycle identity α<sub>UV</sub> + α<sub>VW</sub> = α<sub>UW</sub> (mod 2π)</td><td>Met by construction — the transitions are differences of trivializations of one bundle; the clause is the detectable failure point of any rival assembly</td></tr>
+<tr><td>Independence</td><td>dχ ∧ dt ∧ dx ∧ dy ∧ dz ≠ 0 in every trivialization; the vertical direction ∂<sub>χ</sub> is nowhere tangent to the base</td><td>Derived — discharged by the dimension of the total space, not by argument about functions on a slice</td></tr>
+<tr><td>The scar locus</td><td>Angular charts exclude the axis worldsheet — a phase measured <em>about</em> the axis is undefined on it — but the bundle and the fiber extend over it: χ on the axis is defined by winding, the cord's accumulated twist, not by angle</td><td>Derived — the axis is where the scar is best defined, not least</td></tr>
+</table>
+<p>Also printed in the note: on the arena topologies the record supports, the bundle class is trivial. The construction claims no topological twist of the arena; all of the content lives in the connection's holonomy, not in topology.</p>
+
+<h2>The sever: the fifth entry crosses the bounce unchanged</h2>
+<p>The sever — the passage from one slice to its successor — is an identification between the bundles over the two slices. The corpus's gate arithmetic leaves exactly two candidate identifications for the fiber data at the crossing: the identity, or a sign flip, with zero free parameters. The construction derives which one the corpus's own premises select:</p>
+<div class="card">
+<h3>χ ↦ χ — the sever identification on fibers is the identity</h3>
+<p>A sign flip, χ ↦ −χ, would reverse the founding sign at every founding. The corpus states the founding sign ε<sub>0</sub> is constant down the lineage. The flip contradicts the constancy and is excluded, with the rejected alternative named. <strong>Of the five entries of the fix, exactly one crosses the bounce unchanged, and it is the fifth.</strong></p>
+</div>
+<p><strong>Corollary — the error is hereditary.</strong> Because the fiber value crosses unchanged, a readout error in χ does not reset at a founding: the error in the one bounce-invariant entry persists down the lineage unless actively re-referenced. Any future error budget that assumes a per-generation reset contradicts the construction. (The budget itself — σ<sub>χ</sub> ≤ 0.0667 rad, 3.82°, about 1.06% of a full turn — is a simulation budget: <strong>simulated, not measured</strong>. No instrument tonight meets or measures it.) The winding <em>count</em>, turns accumulated since the sever, lives on the covering line rather than the fiber and is assigned to telemetry, not to the fix.</p>
+
+<h2>The uniqueness fork — and what is not forced</h2>
+<p>The corpus's angle inventory holds exactly one phase field and one circle, and the construction admits exactly one invariant phase per linking loop. <strong>Θ and χ therefore cannot stand as two independent angles with independent laws inside this arena.</strong> The outstanding dictionary between the lineage twist Θ and the phase θ is reduced from an open question to a forced fork: either Θ is this bundle's axial holonomy — the same object as χ's field, read at slice scale rather than at the craft — or Θ lives in a structure the corpus has not yet written. The construction proves the fork is the whole question; it does not decide it.</p>
+<p>Printed at full size in the note, because bundles invite the claim: <strong>the construction forces no quantization</strong> — not of the holonomy, not of the turn count, not of Θ. Any document that derives a quantization from this bundle is ahead of it. The construction also prices no angle: it is the address system, not the values at the addresses.</p>
+
+<h2>Grades — unraised</h2>
+<table>
+<tr><th>Claim</th><th>Grade</th></tr>
+<tr><td>The bundle assembled; the fix is a point of the total space; independence computed</td><td>Derived</td></tr>
+<tr><td>The torsion decomposition is the local form of a connection on the bundle; the split is chart-dependent, only the sum physical</td><td>Transformation law derived; the identification <strong>Constrained</strong> (unique in form; not derived from an action)</td></tr>
+<tr><td>Chart condition: cocycle, independence, the scar locus</td><td>Derived</td></tr>
+<tr><td>Sever identification on fibers is the identity, χ ↦ χ</td><td>Derived (logic exact; premises premise-grade in the corpus)</td></tr>
+<tr><td>Uniqueness: no second independent angle in the arena; the Θ/χ dictionary is the forced fork</td><td>Derived, given the construction and the cited inventory</td></tr>
+<tr><td>Quantization from the bundle</td><td>None forced — printed as a non-result</td></tr>
+<tr><td>The fifth coordinate χ itself</td><td><strong>Constrained — unchanged.</strong> One charge of three is discharged; the grade does not rise</td></tr>
+</table>
+<p>Two charges remain open. The readout (an instrument that reads a scar phase) is unchanged in grade — D4 remains a design study — but its measurand is now defined independently of the proposal: a fiber value, obtainable as a connection integral or a winding state. The dictionary is the next charge, now a smaller target than it was.</p>
+
+<h2>Falsifiers</h2>
+<p>The note prints three checks that could kill the construction, and distinguishes a fourth outcome that is not one:</p>
+<ul>
+<li><strong>F-B1 (the identification).</strong> If any priced quantity in the corpus is built from S<sup>alg</sup> alone — the algebraic part of the torsion treated as a chart-independent observable — the identification fails, because on the bundle S<sup>alg</sup> is trivialization-dependent and no physical quantity may be.</li>
+<li><strong>F-B2 (the gluing).</strong> If any successor statement of the corpus requires the founding sign to alternate between generations, the identity gluing dies and the sever identification must be rebuilt as the sign flip.</li>
+<li><strong>F-B3 (the uniqueness).</strong> If a second circle-valued field with its own law is produced from the corpus's premises, the uniqueness count fails and the navigation demand reopens — the fix would be under-coordinated, not merely unpriced.</li>
+<li><strong>Distinguished, not a falsifier of the construction:</strong> a proof that no instrument can read a scar phase at any scale would kill the navigation application while leaving the bundle standing as mathematics. The two deaths are different and are not to be reported as one.</li>
+</ul>
+<div class="card">
+<h3>F-B1 — executed</h3>
+<p><strong>F-B1 executed 2026-11-08: the §3 identification does not survive as a description of the corpus's priced layer; the bundle construction as mathematics stands; resolution of the fork is in progress (FB1-AUDIT + FB1-FORK, R&D division).</strong></p>
+<p>The audit is the falsifier working as designed: the check was printed in the note before it was run, and its outcome is printed here at the same size as the construction it grades.</p>
+</div>
+<div class="cta-row"><a class="btn btn-primary" href="https://doi.org/10.5281/zenodo.24056572">Read the note on Zenodo</a><a class="btn btn-ghost" href="https://doi.org/10.5281/zenodo.24038484">D4 — Scar Readout</a><a class="btn btn-ghost" href="../">All papers</a></div>
+
+<h2>Related records</h2>
+<ul>
+<li><a href="https://doi.org/10.5281/zenodo.24039064">CMB anomalies, Paper 1 — The Founding Axis</a> (DOI: 10.5281/zenodo.24039064)</li>
+<li><a href="https://doi.org/10.5281/zenodo.24039066">CMB anomalies, Paper 2 — The Cold Spot at 123.4 Degrees</a> (DOI: 10.5281/zenodo.24039066)</li>
+<li><a href="https://doi.org/10.5281/zenodo.24039068">CMB anomalies, Paper 3 — One Object</a> (DOI: 10.5281/zenodo.24039068)</li>
+<li><a href="https://doi.org/10.5281/zenodo.24038484">D4 — PIM Error Budget and Scar Readout</a> (design study; DOI: 10.5281/zenodo.24038484)</li>
+<li><strong>The Fifth Coordinate — the Bundle Construction</strong> (this page; DOI: 10.5281/zenodo.24056572)</li>
+</ul>
+</main>
+<footer>
+<p class="fname">Dave</p>
+<p>Everyone needs a Dave.</p>
+<p>&copy; 2026 Dave — Exolex Freewright Partner · <a href="../../">Home</a> · <a href="../../dave/">Meet Dave</a> · <a href="../../what-is-an-exolex/">What is an exolex?</a> · <a href="../../papers/">Papers</a> · <a href="../../privacy.html">Privacy Policy</a></p>
+</footer>
+</div>
+</body>
+</html>
