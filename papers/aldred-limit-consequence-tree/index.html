@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Consequence Tree of the Aldred Limit — William Alexander Aldred</title>
+<meta name="description" content="Every claim the bounce program rests on the Aldred Limit, assembled into one consequence tree in dependency order — each with its derivation step, its grade (DERIVED, CONSTRAINED, or NOT DERIVED), and its falsifier. Three consequences are derived for the first time: the carrier law evaluated, the turnover identity, and the epoch-pair corollary. DOI: 10.5281/zenodo.24056645.">
+<link rel="canonical" href="https://daveexolex.com/papers/aldred-limit-consequence-tree/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Dave — the first exolex">
+<meta property="og:title" content="The Consequence Tree of the Aldred Limit — William Alexander Aldred">
+<meta property="og:description" content="One root — the Einstein–Cartan spin–density bound — and every branch that hangs from it, graded. What follows, what is constrained, what is not derived, and what has already failed. DOI: 10.5281/zenodo.24056645.">
+<meta property="og:url" content="https://daveexolex.com/papers/aldred-limit-consequence-tree/">
+<meta property="og:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<meta property="og:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Consequence Tree of the Aldred Limit — William Alexander Aldred">
+<meta name="twitter:description" content="The consequence tree of the Aldred Limit: every downstream claim in dependency order, graded DERIVED, CONSTRAINED, or NOT DERIVED, with its falsifier. DOI: 10.5281/zenodo.24056645.">
+<meta name="twitter:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<link rel="icon" type="image/png" href="../../assets/baby-dave-64.png">
+<link rel="apple-touch-icon" href="../../assets/baby-dave-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5fafe;--ink:#14529e;--muted:#51749e;--line:#c9dcf0;--blue:#5b8bc0;--blue-deep:#1e6bc4;--blue-dark:#14529e;--btn1:#2f9dff;--btn2:#1668dc;--radius:20px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,-apple-system,sans-serif;font-size:17.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--blue-deep)} a:hover{color:var(--blue-dark)}
+.wrap{max-width:680px;margin:0 auto;padding:0 20px}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem}
+.brand img{width:34px;height:34px;border-radius:8px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:13px 24px;border-radius:999px;font-size:1rem;line-height:1.25}
+.btn-primary{background:linear-gradient(135deg,var(--btn1),var(--btn2));color:#fff;box-shadow:0 4px 14px rgba(30,107,196,.30)}
+.btn-ghost{border:1.5px solid var(--blue);color:var(--blue-dark);background:rgba(91,139,192,.07)}
+h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.7rem,5.6vw,2.4rem);line-height:1.22;margin:14px 0 10px}
+h2{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.35rem,4.6vw,1.7rem);line-height:1.25;margin:34px 0 10px}
+p{margin-bottom:14px}
+.byline{color:var(--muted);font-size:1.02rem}
+.meta{color:var(--muted);font-size:.98rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin:18px 0 22px}
+.crumbs{font-size:.95rem;color:var(--muted);margin-top:10px}
+.card{border:1.5px solid var(--line);border-radius:var(--radius);padding:22px;margin:18px 0;background:#eef5fd}
+.card h3{font-family:'Fraunces',serif;font-size:1.25rem;line-height:1.3;margin-bottom:6px}
+.card h3 a{text-decoration:none}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:.92rem}
+th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:#eef5fd;font-weight:600}
+footer{margin-top:56px;border-top:1px solid var(--line);padding:34px 0 44px;text-align:center;color:var(--muted);font-size:.98rem}
+footer .fname{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:var(--ink)}
+footer a{color:var(--muted)} footer a:hover{color:var(--blue-deep)}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://daveexolex.com/papers/aldred-limit-consequence-tree/#article",
+   "url": "https://daveexolex.com/papers/aldred-limit-consequence-tree/",
+   "headline": "The Consequence Tree of the Aldred Limit: What Follows from the Spin–Density Bound, in Dependency Order, Graded Branch by Branch",
+   "name": "The Consequence Tree of the Aldred Limit: What Follows from the Spin–Density Bound, in Dependency Order, Graded Branch by Branch",
+   "author": {
+    "@id": "https://premiummarketingsolutionsllc.com/#william-alexander-aldred"
+   },
+   "datePublished": "2026-11-08",
+   "inLanguage": "en-US",
+   "abstract": "The Aldred Limit — the Einstein–Cartan spin–density bound ρ_A ≈ 10^55 g cm^-3, pinned with a scaling law in the author's flagship paper and currently under review — is the root of a research program whose results are scattered across cosmology, the vacuum-density problem, the large-angle microwave sky, and a navigation theory built on a fifth coordinate. This paper assembles those results into a single consequence tree: every claim the program rests on the Limit, stated in dependency order, with the derivation step from the Limit (or from a prior consequence) shown, a grade — DERIVED, CONSTRAINED, or NOT DERIVED — and the observation or computation that would falsify it. Three consequences are derived for the first time: the evaluation of the flagship's carrier scaling law for non-neutron matter (an electron spin fluid turns at 2.88×10^48 g cm^-3; a 0.1 eV neutrino fluid at 1.10×10^35 g cm^-3); the turnover identity (in the dust register, the density at which the effective gravitating density peaks and the density at which the null-energy combination reverses sign are the same density, ρ_A/2, controlled by a single factor); and the epoch-pair corollary of the Θ dictionary (a measured polarization rotation is a property of an epoch pair, not a universal constant). The tree's failures are printed at the same size as its derivations: the founding-profile account of the CMB Cold Spot at multipoles {2, 3} is FAILED, executed by pre-registered falsifier on the Planck sky; the vacuum count N* = 281.1079 is NOT DERIVED (closest owned count misses by 5.8921 counts); the residue factor 1.027500 is NOT DERIVED; the value of Θ is NOT DERIVED; the founding profile's shape is NOT DERIVED; and no instrument reads the fifth coordinate — its error budget is simulated, not measured.",
+   "sameAs": "https://doi.org/10.5281/zenodo.24056645",
+   "publisher": {
+    "@type": "Organization",
+    "name": "Zenodo",
+    "url": "https://zenodo.org/"
+   },
+   "isPartOf": {
+    "@type": "CollectionPage",
+    "url": "https://daveexolex.com/papers/",
+    "name": "The Papers — William Alexander Aldred"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://premiummarketingsolutionsllc.com/#william-alexander-aldred",
+   "name": "William Alexander Aldred",
+   "url": "https://premiummarketingsolutionsllc.com/"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+<div class="topbar"><a class="brand" href="../../"><img src="../../assets/baby-dave-64.png" alt="Dave">Dave</a><a class="btn btn-ghost" href="../../dave/" style="padding:9px 18px;font-size:.95rem;">Meet Dave</a></div>
+<main>
+<p class="crumbs"><a href="../">Papers</a> · William Alexander Aldred</p>
+<h1>The Consequence Tree of the Aldred Limit</h1>
+<p class="byline">by <strong>William Alexander Aldred</strong> — Independent Researcher</p>
+<div class="meta">Paper · November 8, 2026 · Zenodo · DOI: <a href="https://doi.org/10.5281/zenodo.24056645">10.5281/zenodo.24056645</a> · Root paper: <a href="https://doi.org/10.5281/zenodo.23485324">The Aldred Limit</a> (under review at <em>Gravitation and Cosmology</em>)</div>
+
+<h2>What this paper is</h2>
+<p>The Aldred Limit — the Einstein–Cartan spin–density bound ρ<sub>A</sub> ≈ 10<sup>55</sup> g cm<sup>−3</sup>, at which fermion spin caps gravitational compression — is the root of a research program whose results are scattered across bounce cosmology, the vacuum-density problem, the large-angle microwave sky, and a navigation theory built on a fifth coordinate. Until now those results lived in separate papers, each grading its own claims. This paper assembles them into <strong>one consequence tree</strong>: every claim the program rests on the Limit, stated in dependency order, with the derivation step shown, a grade — <strong>DERIVED</strong>, <strong>CONSTRAINED</strong>, or <strong>NOT DERIVED</strong> — and the observation or computation that would falsify it.</p>
+<p>The discipline is that a branch is carried only where the Limit actually carries the weight. Where a branch needs an added premise — a postulate, a scar, an identification — the premise is named at the joint where it enters. Where the Limit does not support a branch, the branch is printed NOT DERIVED at full size. Nothing is padded.</p>
+
+<h2>The root</h2>
+<p>Five statements, all from the flagship paper. The replacement: eliminating torsion for a Weyssenhoff spin fluid gives ρ<sub>eff</sub> = ρ − κ²⟨S²⟩. The scaling law: the bound is the Planck density suppressed by the squared carrier-to-Planck mass ratio, ρ<sub>A</sub> = ρ<sub>Pl</sub>(m/m<sub>Pl</sub>)²/(8π·coef). The pinned value: for incoherent spins (coef = 1/8) and neutron matter, ρ<sub>A</sub> = 9.72×10<sup>54</sup> g cm<sup>−3</sup>. The prescription verdict: incoherence is physically forced at bounce conditions — every alignment channel fails by orders of magnitude. The twist form: the same bound read through the Cartan equation caps torsion at T<sub>A</sub> ≈ 1.35×10<sup>16</sup> m<sup>−1</sup>. Two fences stand at the root: the pinned value is a property of the dust spin-fluid model (the degeneracy-complete energy density moves the balance to the Planck neighbourhood), and the author's earlier entropy form admits no map to the bound — one calibration, never a derivation.</p>
+
+<h2>Three consequences derived for the first time</h2>
+<div class="card">
+<h3>The carrier law, evaluated</h3>
+<p>The scaling law makes the bound a pure m² in the carrier mass. Evaluated for non-neutron matter, the bounce altitude becomes a computed property of the collapsing matter's composition: an electron spin fluid turns at <strong>2.88×10<sup>48</sup> g cm<sup>−3</sup></strong>, a 0.1 eV neutrino fluid at <strong>1.10×10<sup>35</sup> g cm<sup>−3</sup></strong>. For mixtures the bound is a surface in composition space. The Limit does not name one bounce density for the universe; it names one per matter content. DERIVED.</p>
+</div>
+<div class="card">
+<h3>The turnover identity</h3>
+<p>In the dust register, the effective density peaks at ρ<sub>A</sub>/2 — and the null-energy combination reverses sign at exactly ρ<sub>A</sub>/2. The two papers that print these facts never printed why they coincide: one factor, 1 − 2ρ/ρ<sub>A</sub>, controls both. The density at which the gravitating source stops growing is the density at which the singularity theorems' energy-condition premise fails. DERIVED.</p>
+</div>
+<div class="card">
+<h3>The epoch-pair corollary</h3>
+<p>The Θ dictionary (November 8, 2026) identifies the sky's rotation angle as an epoch difference of the axial holonomy. It follows that a polarization rotation is a property of an epoch <em>pair</em>, not a universal constant: rotations measured against two different emission hypersurfaces differ by exactly the worldsheet flux between them, and agree only if that flux vanishes. An analysis that combines rotation measurements from different emission epochs into a single angle assumes the vanishing it should be testing. DERIVED.</p>
+</div>
+
+<h2>The tree</h2>
+<table>
+<tr><th>Node</th><th>Statement (short form)</th><th>Grade</th></tr>
+<tr><td>R1–R5</td><td>The replacement; the m² scaling law; ρ<sub>A</sub> = 9.72×10<sup>54</sup>; incoherence forced; twist form T<sub>A</sub> ≈ 1.35×10<sup>16</sup> m<sup>−1</sup></td><td>DERIVED in model</td></tr>
+<tr><td>C1</td><td>Gravitating source caps at ρ<sub>A</sub>/4, turnover at ρ<sub>A</sub>/2</td><td>DERIVED</td></tr>
+<tr><td>C2</td><td>Turnover density = null-energy-reversal density (one factor)</td><td>DERIVED <em>(new)</em></td></tr>
+<tr><td>C3</td><td>Bounce altitude is composition: electron fluid 2.88×10<sup>48</sup>; 0.1 eV neutrino fluid 1.10×10<sup>35</sup></td><td>DERIVED <em>(new evaluations)</em></td></tr>
+<tr><td>C4</td><td>Collapse halts at ρ<sub>A</sub>; no singularity in the model</td><td>DERIVED / domain CONSTRAINED</td></tr>
+<tr><td>C5</td><td>Stellar null (one part in 10<sup>40</sup>); the 2.62 M<sub>☉</sub> table killed on a real equation of state</td><td>DERIVED, executed</td></tr>
+<tr><td>C6</td><td>Galactic null (10<sup>−76</sup>–10<sup>−79</sup>); the rotation-curve claim failed by the bound's own algebra</td><td>DERIVED</td></tr>
+<tr><td>C7</td><td>This universe born at a bounce; generation inheritance</td><td>DERIVED in model / CONSTRAINED</td></tr>
+<tr><td>C8</td><td>Inherited axis; registered kill line unexecuted (cones too wide); the SPARC-strength inheritance line</td><td>CONSTRAINED / FAILED at SPARC strength</td></tr>
+<tr><td>C9</td><td>(Ω<sub>Λ</sub>, w<sub>0</sub>, w<sub>a</sub>) = (0.685, −1, −0.661836) inside the DESI 2σ band</td><td>CONSTRAINED</td></tr>
+<tr><td>C10</td><td>Vacuum magnitude dissolves; saturated whole +84.6219 dex; crossing E<sub>ind</sub> = 3.02×10<sup>9</sup> GeV</td><td>DERIVED, conditional on the saturation postulate</td></tr>
+<tr><td>C11</td><td>The vacuum count N* = 281.1079; closest owned count 287, miss 5.8921 counts</td><td><strong>NOT DERIVED</strong></td></tr>
+<tr><td>C12</td><td>Film produces 2.000000 dial-free; identity 411/200 = 2.055; the factor 1.027500 and the realized face</td><td>identity DERIVED; factor &amp; face <strong>NOT DERIVED</strong></td></tr>
+<tr><td>C13</td><td>The closeness landing (factor 5.99) — its provenance is declarations and dials</td><td><strong>NOT DERIVED</strong> (not a consequence)</td></tr>
+<tr><td>C14</td><td>Axial morphology theorem; the founding profile's shape</td><td>theorem DERIVED; shape <strong>NOT DERIVED</strong></td></tr>
+<tr><td>C15</td><td>The Cold Spot founding-profile account at {2, 3}</td><td><strong>FAILED</strong> (F-CS1 executed, Planck)</td></tr>
+<tr><td>C16</td><td>Alignment; hemispherical asymmetry; low quadrupole and odd parity</td><td>DERIVED; <strong>FAILED IN FULL</strong>; CONSTRAINED</td></tr>
+<tr><td>C17</td><td>The fifth coordinate as a bundle fiber; the chart condition</td><td>construction DERIVED; identification CONSTRAINED</td></tr>
+<tr><td>C18</td><td>The sever gluing is the identity (χ ↦ χ); the readout error is hereditary</td><td>DERIVED</td></tr>
+<tr><td>C19</td><td>Θ = epoch difference of the axial holonomy; rotation is epoch-pair-relative</td><td>form DERIVED <em>(corollary new)</em>; identity CONSTRAINED</td></tr>
+<tr><td>C20</td><td>The value Θ(recombination); a readout of χ</td><td><strong>NOT DERIVED</strong>; <strong>NOT DERIVED</strong> (σ<sub>χ</sub> simulated, not measured)</td></tr>
+<tr><td>C21</td><td>The machine line built on the five-coordinate fix</td><td>CONSTRAINED as design; <strong>NOT DERIVED</strong> as capability</td></tr>
+</table>
+
+<h2>The empty leaves, at full size</h2>
+<p>A consequence tree that printed only its derivations would be a poster. This one prints its empty leaves at the same size, because they are the program's work list. The vacuum count: landing on the measured density requires N* = 281.1079; the closest owned count misses by 5.8921 counts, the census of owned lengths has closed empty, and the missing object — an owned deposit-layer thickness in four named windows, or a second clock — does not exist in the record. The residue factor 1.027500: produced by nothing. The angle's value: the frame's own machinery produces exactly zero rotation; what is owed is a law for the worldsheet flux between epochs. The founding profile's shape: the marking law is unowned. The readout: the fifth coordinate's measurand is defined and no instrument reads it. Each empty leaf names the single object that would fill it, and the falsifier that would close its branch instead.</p>
+<p>And the branches that could be executed against the world have been: a stellar null confirmed to forty orders of magnitude; a Cold Spot account executed to failure by its own pre-registered falsifier on the Planck sky (<a href="../the-equatorial-witness/">the Equatorial Witness</a>); an axis kill line standing open for want of a wide enough galaxy catalogue. The shape of the tree is the result: from one root, the derivations run clean for two levels — and then, at every branch, meet one named number or law the frame does not yet own.</p>
+
+<div class="cta-row"><a class="btn btn-primary" href="https://doi.org/10.5281/zenodo.24056645">Read the paper on Zenodo</a><a class="btn btn-ghost" href="https://doi.org/10.5281/zenodo.23485324">The Aldred Limit (flagship)</a><a class="btn btn-ghost" href="https://doi.org/10.5281/zenodo.24021084">The Vacuum Density in the Bounce Frame</a><a class="btn btn-ghost" href="../">All papers</a></div>
+
+<h2>The branches' source papers</h2>
+<ul>
+<li><a href="https://doi.org/10.5281/zenodo.23485324">The Aldred Limit: Pinning the Einstein–Cartan Spin–Density Bound</a> — the root (under review at <em>Gravitation and Cosmology</em>)</li>
+<li><a href="https://doi.org/10.5281/zenodo.24021084">The Vacuum Density in the Bounce Frame</a> (DOI: 10.5281/zenodo.24021084) — the vacuum branch</li>
+<li><a href="https://doi.org/10.5281/zenodo.24039064">Paper 1 — The Founding Axis</a> · <a href="https://doi.org/10.5281/zenodo.24039066">Paper 2 — The Cold Spot at 123.4 Degrees</a> · <a href="https://doi.org/10.5281/zenodo.24039068">Paper 3 — One Object</a> — the scar branch</li>
+<li><a href="../the-equatorial-witness/">The Equatorial Witness</a> — the F-CS1 execution (DOI: 10.5281/zenodo.24053823)</li>
+<li><a href="../the-fifth-coordinate-bundle/">The Fifth Coordinate — the Bundle Construction</a> — the navigation branch (DOI: 10.5281/zenodo.24056572)</li>
+<li><strong>The Consequence Tree of the Aldred Limit</strong> — this page (DOI: 10.5281/zenodo.24056645)</li>
+</ul>
+</main>
+<footer>
+<p class="fname">Dave</p>
+<p>Everyone needs a Dave.</p>
+<p>&copy; 2026 Dave — Exolex Freewright Partner · <a href="../../">Home</a> · <a href="../../dave/">Meet Dave</a> · <a href="../../what-is-an-exolex/">What is an exolex?</a> · <a href="../../papers/">Papers</a> · <a href="../../privacy.html">Privacy Policy</a></p>
+</footer>
+</div>
+</body>
+</html>
