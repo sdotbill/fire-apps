@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Fifth Coordinate — the Worldsheet-Flux Law for Θ — William Alexander Aldred</title>
+<meta name="description" content="The law the Θ/θ Dictionary owed, derived in closed form: the worldsheet flux between two epochs is the endpoint difference of the axial spin current's circulation, times one constant — no bulk term. The frame's zero is derived on the owned matter; the angle's value is proved to be one datum short, with the datum's address named. Derivation note by William Alexander Aldred. DOI: 10.5281/zenodo.24074485.">
+<link rel="canonical" href="https://daveexolex.com/papers/the-theta-flux-law/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Dave — the first exolex">
+<meta property="og:title" content="The Fifth Coordinate — the Worldsheet-Flux Law for Θ — William Alexander Aldred">
+<meta property="og:description" content="The flux law, derived: Φ = (T_A/s_A)·[Circ(H) − Circ(H′)] — no bulk term; the value of Θ proved one datum short. DOI: 10.5281/zenodo.24074485.">
+<meta property="og:url" content="https://daveexolex.com/papers/the-theta-flux-law/">
+<meta property="og:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<meta property="og:image:alt" content="Dave — a small knitted companion with one big amber eye, a gold heart, and a ring of candles for a mind">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Fifth Coordinate — the Worldsheet-Flux Law for Θ — William Alexander Aldred">
+<meta name="twitter:description" content="The law the dictionary owed, in closed form: the worldsheet flux is the endpoint difference of the source's circulation. The angle's value: NOT DERIVED, one datum short, address named. DOI: 10.5281/zenodo.24074485.">
+<meta name="twitter:image" content="https://daveexolex.com/assets/baby-dave.webp">
+<link rel="icon" type="image/png" href="../../assets/baby-dave-64.png">
+<link rel="apple-touch-icon" href="../../assets/baby-dave-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5fafe;--ink:#14529e;--muted:#51749e;--line:#c9dcf0;--blue:#5b8bc0;--blue-deep:#1e6bc4;--blue-dark:#14529e;--btn1:#2f9dff;--btn2:#1668dc;--radius:20px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,-apple-system,sans-serif;font-size:17.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--blue-deep)} a:hover{color:var(--blue-dark)}
+.wrap{max-width:680px;margin:0 auto;padding:0 20px}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem}
+.brand img{width:34px;height:34px;border-radius:8px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:13px 24px;border-radius:999px;font-size:1rem;line-height:1.25}
+.btn-primary{background:linear-gradient(135deg,var(--btn1),var(--btn2));color:#fff;box-shadow:0 4px 14px rgba(30,107,196,.30)}
+.btn-ghost{border:1.5px solid var(--blue);color:var(--blue-dark);background:rgba(91,139,192,.07)}
+h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.7rem,5.6vw,2.4rem);line-height:1.22;margin:14px 0 10px}
+h2{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.35rem,4.6vw,1.7rem);line-height:1.25;margin:34px 0 10px}
+p{margin-bottom:14px}
+.byline{color:var(--muted);font-size:1.02rem}
+.meta{color:var(--muted);font-size:.98rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin:18px 0 22px}
+.crumbs{font-size:.95rem;color:var(--muted);margin-top:10px}
+.card{border:1.5px solid var(--line);border-radius:var(--radius);padding:22px;margin:18px 0;background:#eef5fd}
+.card h3{font-family:'Fraunces',serif;font-size:1.25rem;line-height:1.3;margin-bottom:6px}
+.card h3 a{text-decoration:none}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:.98rem}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#eef5fd;font-weight:600}
+footer{margin-top:56px;border-top:1px solid var(--line);padding:34px 0 44px;text-align:center;color:var(--muted);font-size:.98rem}
+footer .fname{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:700;color:var(--ink)}
+footer a{color:var(--muted)} footer a:hover{color:var(--blue-deep)}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://daveexolex.com/papers/the-theta-flux-law/#article",
+   "url": "https://daveexolex.com/papers/the-theta-flux-law/",
+   "headline": "The Fifth Coordinate — the Worldsheet-Flux Law for Θ: The Flux Between Epochs Is the Endpoint Difference of the Axial Spin Circulation",
+   "name": "The Fifth Coordinate — the Worldsheet-Flux Law for Θ: The Flux Between Epochs Is the Endpoint Difference of the Axial Spin Circulation",
+   "author": {
+    "@id": "https://premiummarketingsolutionsllc.com/#william-alexander-aldred"
+   },
+   "datePublished": "2026-11-08",
+   "inLanguage": "en-US",
+   "abstract": "The Θ/θ Dictionary identified the lineage twist Θ as the epoch difference of the axial holonomy of the torsion connection and left the angle's debt sharpened to one named object: a law for the worldsheet flux of dS between epochs. This note derives that law in closed form. By Stokes' theorem the flux is the holonomy difference; the Nieh–Yan phase sector contributes only the winding integer, identical at both epochs, which cancels identically — the phase sector is structurally incapable of moving the fractional holonomy; and the exact Cartan tie converts the algebraic component's circulation into the circulation of the axial spin current itself. The transport law: Φ_S[H′,H] = (T_A/s_A)·[Circ_σ(H) − Circ_σ(H′)] (mod 2π) — no bulk term; nothing between the epochs contributes. Evaluated on the matter contents the corpus owns — the static cord of the winding ansatz and the flagship's incoherent Weyssenhoff fluid, whose mean axial current is zero — the law returns β_frame ≡ 0, upgraded from corpus report to DERIVED in the owned matter model. The value Θ(recombination) remains NOT DERIVED, with the underdetermination proved by exhibition: two in-frame matter configurations return different values, so the freedom sits in exactly one datum — the post-founding mean axial spin circulation at the target epoch — and the debt shrinks from a functional law to one real number per epoch pair, its address named. What closes it is a single constitutive law pricing the mean axial spin current. The identification of Θ remains CONSTRAINED; the fifth coordinate χ remains CONSTRAINED, charge (ii) untouched. Four falsifiers are printed (F-F1–F-F4).",
+   "sameAs": "https://doi.org/10.5281/zenodo.24074485",
+   "publisher": {
+    "@type": "Organization",
+    "name": "Zenodo",
+    "url": "https://zenodo.org/"
+   },
+   "isPartOf": {
+    "@type": "CollectionPage",
+    "url": "https://daveexolex.com/papers/",
+    "name": "The Papers — William Alexander Aldred"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://premiummarketingsolutionsllc.com/#william-alexander-aldred",
+   "name": "William Alexander Aldred",
+   "url": "https://premiummarketingsolutionsllc.com/"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+<div class="topbar"><a class="brand" href="../../"><img src="../../assets/baby-dave-64.png" alt="Dave">Dave</a><a class="btn btn-ghost" href="../../dave/" style="padding:9px 18px;font-size:.95rem;">Meet Dave</a></div>
+<main>
+<p class="crumbs"><a href="../">Papers</a> · William Alexander Aldred</p>
+<h1>The Fifth Coordinate — the Worldsheet-Flux Law for Θ</h1>
+<p class="byline">by <strong>William Alexander Aldred</strong> — Independent Researcher</p>
+<div class="meta">Derivation note · November 8, 2026 · Zenodo · DOI: <a href="https://doi.org/10.5281/zenodo.24074485">10.5281/zenodo.24074485</a> · Successor to “The Fifth Coordinate — the Θ/θ Dictionary” (November 8, 2026)</div>
+
+<h2>The question</h2>
+<p>The Θ/θ Dictionary, deposited the same day, decided what Θ <em>is</em>: the signed difference of the axial holonomy of the torsion connection between an epoch and the home epoch — by Stokes' theorem, the flux of the connection's curvature dS through the axis worldsheet between the two epochs. Naming the flux did not price it. The dictionary closed with the debt in its sharpest form: the frame owed <strong>a law for the worldsheet flux</strong> — how that flux is determined by the things the frame actually owns — and, through it or another door, the value of the angle itself.</p>
+<p>This note derives the law. It finds that the law exists, is closed, and is a transport identity — and that it does not yield the value, for a reason the note proves and locates exactly.</p>
+
+<h2>The law</h2>
+<div class="card">
+<h3>Φ<sub>S</sub>[H′, H] = (<i>T</i><sub>A</sub>/<i>s</i><sub>A</sub>) · [ Circ<sub>σ</sub>(H) − Circ<sub>σ</sub>(H′) ] (mod 2π)</h3>
+<p>Circ<sub>σ</sub>(H) := ∮<sub>C<sub>H</sub></sub> σ<sup>ax</sup>, the circulation of the axial spin current about the lineage axis at epoch H; <i>T</i><sub>A</sub> = 1.346746×10<sup>16</sup> m<sup>−1</sup> is the torsion cap, and <i>T</i><sub>A</sub>/<i>s</i><sub>A</sub> the constant of the exact Cartan tie. The worldsheet flux has <strong>no bulk term</strong>: nothing that happens between the epochs contributes. The flux is the endpoint difference of the source's circulation — the boundary character of Θ, twice over.</p>
+</div>
+<p>The derivation runs in three steps, each graded in the note. <strong>Stokes:</strong> the flux is the holonomy difference, so the question becomes how the axial holonomy changes between epochs. <strong>The integer does not move:</strong> the phase field θ enters the holonomy only through its winding, ∮ dθ = 2π<i>N</i><sub>w</sub>, the same integer at both epochs — so the dθ component cancels identically in the difference, and the Nieh–Yan sector is structurally incapable of moving the fractional holonomy by one microradian. No completion of the θ sector — no source profile, no boundary condition, no solution of its wave equation — changes the answer. <strong>The tie:</strong> the exact Cartan relation <i>S</i><sup>alg</sup>/<i>T</i><sub>A</sub> = σ<sup>ax</sup>/<i>s</i><sub>A</sub>, pointwise at all radii, converts the remaining component's circulation into the source's circulation outright. What survives is the law above: the connection is transported along the axis worldsheet by the source alone.</p>
+
+<h2>The zero, derived</h2>
+<p>Run the law on the matter contents the corpus actually owns. The seated source of the winding ansatz is <em>static</em> — one circulation, the same at every epoch — and the law returns zero. At cosmological epochs the owned spin content is the flagship's incoherent Weyssenhoff fluid: randomly oriented spins, an incoherence the flagship's prescription grades as physically forced at bounce conditions. The tie is linear, so the circulation is a linear functional of the current — and the mean axial current of a randomly oriented spin fluid is zero; its torsion content lives in the variance, which is what the flagship prices. In the mean field in which Θ is denominated — one number per epoch, uniform over the sky — the owned fluid carries no circulation at any cosmological epoch, and the law returns Θ ≡ 0. The fluctuation door is closed by the denomination, not by smallness: a single realization's random circulation is a position-dependent random variable, the wrong species of object for a datum defined as one signed number per epoch pair.</p>
+<p>β<sub>frame</sub> ≡ 0 was, until this note, the frame's report about itself. It is now a derived consequence inside the owned matter model — and the derivation names what any nonzero production would have to supply: a source.</p>
+
+<h2>The value: one datum short, the address named</h2>
+<p>The law converts the owed object — a flux integrated over everything between the epochs — into endpoint data. It does not manufacture the endpoint data, and the note proves nothing in the frame can: the Cartan equation slaves torsion to spin rather than evolving it; the Einstein equation does not price the axial circulation; the phase sector is excluded by the cancellation. The corpus pins the circulation at exactly one address — the founding hypersurface, where forced incoherence sets it to zero. Between the founding and any later epoch, no owned law creates, forbids, transports, or dilutes a mean axial circulation.</p>
+<p>The proof is by exhibition. Configuration (α): the owned incoherent fluid — the law returns Θ ≡ 0. Configuration (β): the same fluid, with the same priced variance, plus a subdominant spin-polarized remnant aligned with the inherited axis — nothing in the corpus forbids it at recombination, which is not at bounce conditions — and the law returns Θ = (<i>T</i><sub>A</sub>/<i>s</i><sub>A</sub>)·<i>c</i> ≠ 0. Both configurations satisfy every equation and every priced statement in the record; they return different values; therefore no law derivable from the corpus's structures determines the value. The remaining debt is denominated exactly: <strong>one real number per epoch pair</strong>, ΔCirc<sub>σ</sub>, the endpoint difference of the source circulation. Against the standing targets — the band [4.40×10<sup>−3</sup>, 7.54×10<sup>−3</sup>] rad, which remain targets and never inputs — the datum would have to be ΔCirc<sub>σ</sub> = (<i>s</i><sub>A</sub>/<i>T</i><sub>A</sub>)·Θ<sub>target</sub>; the note prints it symbolically, because the record prices no numerical value of <i>s</i><sub>A</sub> as a circulation scale, and no number is printed that the derivation cannot carry.</p>
+<p>Both horns stand, at full size: <strong>if the reported angle is this object, the corpus's owned matter does not produce it; if the corpus's owned matter is complete at this address, the reported angle is not this object.</strong> What closes the value is named: one constitutive law pricing the mean axial spin current of the cosmological register. A measurement cannot substitute — the only measurable at this address is Θ itself, and targets are never inputs.</p>
+
+<h2>Grades</h2>
+<table>
+<tr><th>Claim</th><th>Grade</th></tr>
+<tr><td>The transport law — Φ<sub>S</sub>[H′,H] = (<i>T</i><sub>A</sub>/<i>s</i><sub>A</sub>)·[Circ<sub>σ</sub>(H) − Circ<sub>σ</sub>(H′)], no bulk term</td><td><strong>DERIVED</strong> (Stokes + compactness + the exact tie; within the tie's exactness scope, F-B1′ inherited)</td></tr>
+<tr><td>The Nieh–Yan sector cannot move the fractional holonomy</td><td><strong>DERIVED</strong></td></tr>
+<tr><td>β<sub>frame</sub> ≡ 0 on the owned contents — static cord; incoherent fluid mean field</td><td><strong>DERIVED</strong> in the owned matter model</td></tr>
+<tr><td>Location of the free datum — post-founding mean axial circulation; one real number per epoch pair</td><td><strong>DERIVED</strong></td></tr>
+<tr><td>Underdetermination of Θ's value by the corpus's structures (exhibition (α)/(β))</td><td><strong>DERIVED</strong>, as an underdetermination result</td></tr>
+<tr><td>Θ(recombination) — the value</td><td><strong>NOT DERIVED</strong> — owed as one datum, ΔCirc<sub>σ</sub>, address named</td></tr>
+<tr><td>The epoch-pair difference in source terms — rotations from different emission epochs differ by exactly the source-circulation difference</td><td><strong>DERIVED</strong></td></tr>
+<tr><td>The identification of Θ with the holonomy (the dictionary's claim)</td><td><strong>CONSTRAINED</strong> — unchanged</td></tr>
+<tr><td>The fifth coordinate χ</td><td><strong>CONSTRAINED</strong> — unchanged; charge (ii), the readout, untouched by this note</td></tr>
+</table>
+
+<h2>Falsifiers</h2>
+<ul>
+<li><strong>F-F1 (the inputs; F-B1′ at this address).</strong> If the exact tie is demoted — shown to hold only at small radius, or to acquire corrections in a completed action — the law's coefficient and its no-bulk-term form must be re-derived before any use; if any corpus result derives a physical consequence from a nonconstant re-trivialization of θ, the fork decision falls and the derivation's second step falls with it.</li>
+<li><strong>F-F2 (a bulk term).</strong> Any derivation, from a completion of the corpus's action, of a contribution to the fractional holonomy difference not expressible as an endpoint difference of the source circulation — a term coupling the flux to the Nieh–Yan source, to a curvature invariant over the strip, or to any integral over the intervening history — kills the transport law's closed form.</li>
+<li><strong>F-F3 (an owned source).</strong> The production, from the corpus's premises, of any owned matter content with nonzero mean axial circulation at a cosmological epoch — compatible with forced incoherence at bounce conditions and with the scar premise — reopens the value: the derived zero is exactly as strong as the owned inventory.</li>
+<li><strong>F-F4 (empirical, inherited).</strong> A measured rotation that accumulates along the trip — frequency-dependent, or growing with path length or source distance — kills the boundary-difference form, the dictionary, and this note with it, since the law depends on the endpoint hypersurfaces and their source data alone.</li>
+</ul>
+
+<h2>Reproduce it</h2>
+<p>The note is deposited in full — Markdown and PDF — with the derivation in three steps, the exhibition that proves the underdetermination, the consistency checks against the dictionary, the amended bundle construction, the fork decision, and the consequence tree, and its references to Bounce Theory I–III and FRONT-A. Read it and check the cancellation and the tie against the sources; every input is cited to its section. Here is the note — break it.</p>
+<div class="cta-row"><a class="btn btn-primary" href="https://doi.org/10.5281/zenodo.24074485">Read the note on Zenodo</a><a class="btn btn-ghost" href="../">All papers</a></div>
+
+<h2>The related record</h2>
+<ul>
+<li><strong>The Worldsheet-Flux Law for Θ</strong> — this note (DOI: 10.5281/zenodo.24074485)</li>
+<li>Successor to <a href="../the-theta-dictionary/">The Fifth Coordinate — the Θ/θ Dictionary</a>, which identified Θ as the epoch difference of the axial holonomy and named this law as the owed object (DOI: <a href="https://doi.org/10.5281/zenodo.24056589">10.5281/zenodo.24056589</a>)</li>
+<li><a href="https://doi.org/10.5281/zenodo.24056700">The Fifth Coordinate — the Bundle Construction, v2 (§3 as amended)</a> — the arena, the seated cord source, the connection in the distinguished trivialization (DOI: 10.5281/zenodo.24056700)</li>
+<li><a href="https://doi.org/10.5281/zenodo.24056670">F-B1 — The Fork Decided</a> — the amended identification and falsifier F-B1′, inherited by this note as F-F1 (DOI: 10.5281/zenodo.24056670)</li>
+<li><a href="../aldred-limit-consequence-tree/">The Consequence Tree of the Aldred Limit</a> — C19 (the epoch-pair corollary) and C20 (the value NOT DERIVED; the law owed — discharged here as written, the debt re-denominated) (DOI: <a href="https://doi.org/10.5281/zenodo.24056645">10.5281/zenodo.24056645</a>)</li>
+</ul>
+</main>
+<footer>
+<p class="fname">Dave</p>
+<p>Everyone needs a Dave.</p>
+<p>&copy; 2026 Dave — Exolex Freewright Partner · <a href="../../">Home</a> · <a href="../../dave/">Meet Dave</a> · <a href="../../what-is-an-exolex/">What is an exolex?</a> · <a href="../../papers/">Papers</a> · <a href="../../privacy.html">Privacy Policy</a></p>
+</footer>
+</div>
+</body>
+</html>
