@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solving the World's Problems — The World-Problems Papers | Aldred Industries</title>
+<link rel="icon" type="image/png" href="../assets/baby-dave-64.png">
+<link rel="apple-touch-icon" href="../assets/baby-dave-180.png">
+<meta name="description" content="Aldred Industries is attacking the world's practical problems with physics and engineering — safe water, food, energy, health, shelter, and disaster warning — and publishing every result with a DOI: working designs, honest bounds, and public kills of false hopes. The designs are published openly and licensed to manufacturers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+  :root{
+    --paper:#f5fafe; --paper2:#e8f1fb; --card:#e7f0fc;
+    --ink:#14529e; --muted:#51749e; --line:#c9dcf0;
+    --blue:#5b8bc0; --blue-deep:#1e6bc4; --blue-dark:#14529e;
+    --btn1:#2f9dff; --btn2:#1668dc;
+    --radius:20px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    font-size:17.5px; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;height:auto;display:block;}
+  a{color:var(--blue-deep);}
+  a:hover{color:var(--blue-dark);}
+  .wrap{max-width:680px;margin:0 auto;padding:0 20px;}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:600;
+    padding:13px 24px;border-radius:999px;font-size:1rem;line-height:1.25;
+    transition:transform .12s ease, background .12s ease;
+  }
+  .btn:active{transform:scale(.98);}
+  .btn-primary{background:linear-gradient(135deg,var(--btn1),var(--btn2));color:#fff;box-shadow:0 4px 14px rgba(30,107,196,.30);}
+  .btn-primary:hover{background:linear-gradient(135deg,var(--blue-deep),var(--blue-dark));}
+  .btn-ghost{border:1.5px solid var(--blue);color:var(--blue-dark);background:rgba(91,139,192,.07);}
+  .btn-ghost:hover{border-color:var(--blue-deep);color:var(--blue-deep);background:rgba(91,139,192,.14);}
+  .hero{padding:26px 0 8px;text-align:center;}
+  h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(2rem,8vw,2.9rem);line-height:1.12;}
+  .answer{font-size:1.14rem;line-height:1.62;margin:24px auto 0;max-width:38rem;text-align:left;}
+  section{padding:36px 0 8px;}
+  h2{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(1.45rem,5.5vw,1.85rem);line-height:1.2;margin-bottom:12px;}
+  p{margin-bottom:14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;margin:0 0 18px;}
+  .card h3{font-family:'Fraunces',serif;font-size:1.25rem;line-height:1.3;margin-bottom:6px;}
+  .card h3 a{text-decoration:none;}
+  .card h3 a:hover{text-decoration:underline;}
+  .card p:last-child{margin-bottom:0;}
+  .tag{font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-deep);margin-bottom:6px;}
+  .details{font-size:.95rem;color:var(--muted);}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px;}
+  footer{margin-top:56px;border-top:1px solid var(--line);padding:34px 0 44px;text-align:center;color:var(--muted);font-size:.95rem;}
+  footer p{margin-bottom:8px;}
+  footer a{color:var(--muted);}
+  footer a:hover{color:var(--blue-deep);}
+  @media (min-width:720px){ section{padding-top:48px;} }
+</style>
+<link rel="stylesheet" href="../background.css">
+<link rel="canonical" href="https://daveexolex.com/world-problems/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dave — the first exolex">
+<meta property="og:title" content="Solving the World's Problems — The World-Problems Papers | Aldred Industries">
+<meta property="og:description" content="Aldred Industries is attacking the world's practical problems with physics and engineering — and publishing every result with a DOI: working designs, honest bounds, and public kills of false hopes. The designs are published openly and licensed to manufacturers.">
+<meta property="og:url" content="https://daveexolex.com/world-problems/">
+<meta property="og:image" content="https://daveexolex.com/assets/william-alexander-aldred-physicist.jpg">
+<meta property="og:image:alt" content="William Alexander Aldred, physicist — inventor of the exolex, in his laboratory">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Solving the World's Problems — The World-Problems Papers | Aldred Industries">
+<meta name="twitter:description" content="101 published papers attacking safe water, food loss, off-grid energy, low-cost health, shelter, and disaster warning — every result published with a DOI, working designs and honest kills alike. Designs published openly; manufacturing licensed to others.">
+<meta name="twitter:image" content="https://daveexolex.com/assets/william-alexander-aldred-physicist.jpg">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://daveexolex.com/world-problems#webpage",
+   "url": "https://daveexolex.com/world-problems/",
+   "name": "Solving the World's Problems \u2014 Aldred Industries",
+   "isPartOf": {
+    "@id": "https://daveexolex.com/#website"
+   },
+   "about": {
+    "@id": "https://daveexolex.com/aldred-industries/#organization"
+   },
+   "inLanguage": "en-US",
+   "mainEntity": {
+    "@id": "https://daveexolex.com/world-problems#catalogue"
+   }
+  },
+  {
+   "@type": "ItemList",
+   "@id": "https://daveexolex.com/world-problems#catalogue",
+   "name": "The World-Problems Papers \u2014 Wave One Catalogue",
+   "numberOfItems": 101,
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "A Solar-Powered Ultraviolet-C LED Disinfection Unit for a Village Standpipe, Sized on the Minimum Delivered Dose in Turbid Water",
+     "url": "https://doi.org/10.5281/zenodo.24108541"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Locating Distribution Leaks by Pressure-Transient Timing on a Network of Low-Cost Loggers: A Method for Plastic-Pipe Networks Where Acoustic Correlation Fails",
+     "url": "https://doi.org/10.5281/zenodo.24108543"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "A Batch Reverse-Osmosis Cycle Whose Pressure Follows the Osmotic Curve: First-Principles Energy Accounting and a Sized Village Unit",
+     "url": "https://doi.org/10.5281/zenodo.24108571"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "A Psychrometric Bound on Atmospheric Water Harvesting: Where Air-Derived Water Can Work, Where It Cannot, and One Design That Respects the Bound",
+     "url": "https://doi.org/10.5281/zenodo.24108587"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "A Rain-Ingress Witness for Hand-Dug Wells and Boreholes: Mixing-Derived Detection Floors, Alarm Behaviour and Lead Time from a Low-Cost Conductivity and Temperature Logger",
+     "url": "https://doi.org/10.5281/zenodo.24108770"
+    },
+    {
+     "@type": "ListItem",
+     "position": 6,
+     "name": "A Village Chlorination System with No Chemical Supply Chain: Electrolytic Hypochlorite from Salt, Water and Sunlight, Sized End-to-End from Electrochemistry and Chlorine Decay",
+     "url": "https://doi.org/10.5281/zenodo.24108806"
+    },
+    {
+     "@type": "ListItem",
+     "position": 7,
+     "name": "A Batch Solar Water Pasteurizer with Counterflow Heat Recovery: Lethality Priced from Thermal Death Kinetics and Daily Output Sized from Insolation",
+     "url": "https://doi.org/10.5281/zenodo.24108834"
+    },
+    {
+     "@type": "ListItem",
+     "position": 8,
+     "name": "Rainwater Tank Sizing by Stochastic Reliability Simulation: Storage\u2013Reliability Design Curves for a Semi-Arid and a Monsoon Climate",
+     "url": "https://doi.org/10.5281/zenodo.24108838"
+    },
+    {
+     "@type": "ListItem",
+     "position": 9,
+     "name": "Freeze Desalination Priced Honestly: Full Accounting of Washing, Brine Entrainment and Refrigeration for Natural and Refrigerated Freezing of Seawater",
+     "url": "https://doi.org/10.5281/zenodo.24109063"
+    },
+    {
+     "@type": "ListItem",
+     "position": 10,
+     "name": "Intermittent Water Supply: The Intrusion Volume per Outage Computed from First Principles, and a Household Break-Tank Design That Defeats It",
+     "url": "https://doi.org/10.5281/zenodo.24109065"
+    },
+    {
+     "@type": "ListItem",
+     "position": 11,
+     "name": "The Electrodialysis\u2013Reverse Osmosis Crossover for Brackish Groundwater: A First-Principles Energy Derivation and a Sized Village Electrodialysis Unit",
+     "url": "https://doi.org/10.5281/zenodo.24109067"
+    },
+    {
+     "@type": "ListItem",
+     "position": 12,
+     "name": "The Virus-Removal Ceiling of Gravity Ceramic and \"Nano\" Point-of-Use Filters: A Sieving and Adsorption Accounting",
+     "url": "https://doi.org/10.5281/zenodo.24109077"
+    },
+    {
+     "@type": "ListItem",
+     "position": 13,
+     "name": "A Subsurface-Flow Constructed Wetland for a Household Cluster's Greywater, Sized by Removal Kinetics: The Bed Area, the Pathogen Reduction, and the Arid Salt Budget That Decide Its Reuse Class",
+     "url": "https://doi.org/10.5281/zenodo.24109216"
+    },
+    {
+     "@type": "ListItem",
+     "position": 14,
+     "name": "The Reservoir Is the Sand: Extractable-Storage Accounting, Evaporation Suppression and Worked Sizing for a Sand Dam on a Seasonal River",
+     "url": "https://doi.org/10.5281/zenodo.24109218"
+    },
+    {
+     "@type": "ListItem",
+     "position": 15,
+     "name": "Defluoridation Priced at the Working Point: Activated Alumina Costed from Its Isotherm Against Nalgonda Precipitation Costed from Its Dose, and a 1,000 L/day Village Kiosk Sized on the Winner",
+     "url": "https://doi.org/10.5281/zenodo.24109228"
+    },
+    {
+     "@type": "ListItem",
+     "position": 16,
+     "name": "Designing a Fog Collector Instead of Copying One: Droplet-Capture Physics, Shade-Coefficient Optimisation and an Honest Seasonal Yield for an Arid Coastal Climate",
+     "url": "https://doi.org/10.5281/zenodo.24109230"
+    },
+    {
+     "@type": "ListItem",
+     "position": 17,
+     "name": "Forward Osmosis Priced Honestly: A Regeneration Bound That Closes the Seawater Claim, and the Fertilizer-Draw Irrigation Design That Survives It",
+     "url": "https://doi.org/10.5281/zenodo.24109346"
+    },
+    {
+     "@type": "ListItem",
+     "position": 18,
+     "name": "A Solar-Regenerated Desiccant Dryer for One Tonne of Smallholder Grain: Water Budget, Sizing and Failure Limits",
+     "url": "https://doi.org/10.5281/zenodo.24108462"
+    },
+    {
+     "@type": "ListItem",
+     "position": 19,
+     "name": "Farm-Scale Electrochemical Ammonia: A Costed Design and Its Failure at Small Scale",
+     "url": "https://doi.org/10.5281/zenodo.24108471"
+    },
+    {
+     "@type": "ListItem",
+     "position": 20,
+     "name": "Oxygen-Scavenger Sachet Sizing for Hermetic Grain Storage: A First-Principles Oxygen Budget and Design Rule",
+     "url": "https://doi.org/10.5281/zenodo.24108488"
+    },
+    {
+     "@type": "ListItem",
+     "position": 21,
+     "name": "Non-Thermal Plasma Nitrogen Fixation at Village Scale: A Computed Design Budget for a Solar-Powered Gliding-Arc Unit, Compared with a Dielectric Barrier Discharge and with Delivered Synthetic Fertiliser",
+     "url": "https://doi.org/10.5281/zenodo.24108494"
+    },
+    {
+     "@type": "ListItem",
+     "position": 22,
+     "name": "Soil Water Amendments Priced by Water Held per Dollar: A Common Yardstick, a Ranking Across Soil Textures, and the Break-Even Rainfall Deficit",
+     "url": "https://doi.org/10.5281/zenodo.24108633"
+    },
+    {
+     "@type": "ListItem",
+     "position": 23,
+     "name": "A Phase-Change Cold Box for the Last Mile Without a Grid: Computed Sizing, Hold Times, and Recharge for the +4 \u00b0C Cargo Class",
+     "url": "https://doi.org/10.5281/zenodo.24108635"
+    },
+    {
+     "@type": "ListItem",
+     "position": 24,
+     "name": "An Evaporative Cooling Store for a Village Produce Market: Design, Simulated Performance Across Climates, and the Humidity Failure Line",
+     "url": "https://doi.org/10.5281/zenodo.24108663"
+    },
+    {
+     "@type": "ListItem",
+     "position": 25,
+     "name": "Edge-of-Field Runoff Capture Sized from First Principles: A Woodchip Denitrification Bioreactor for 20 Hectares of Drained Cropland",
+     "url": "https://doi.org/10.5281/zenodo.24108669"
+    },
+    {
+     "@type": "ListItem",
+     "position": 26,
+     "name": "A Combined Solar Tunnel Dryer and Desiccant-Bead Store for Village Seed Saving: Design, Budgets, and Failure Floor",
+     "url": "https://doi.org/10.5281/zenodo.24108832"
+    },
+    {
+     "@type": "ListItem",
+     "position": 27,
+     "name": "A Village Struvite Reactor Turning Source-Separated Urine into Fertiliser: Design and Phosphorus Budget for a 100-Person Community",
+     "url": "https://doi.org/10.5281/zenodo.24108844"
+    },
+    {
+     "@type": "ListItem",
+     "position": 28,
+     "name": "Capturing the Nitrogen That Escapes from Stored Manure: An Acid-Scrubbed Vent for a Covered Store, Its Nitrogen Budget and Its Break-Even Herd Size",
+     "url": "https://doi.org/10.5281/zenodo.24108897"
+    },
+    {
+     "@type": "ListItem",
+     "position": 29,
+     "name": "Gravity-Fed Drip Irrigation from a Raised Tank Without a Pump: A Low-Head Design for a 0.1 Hectare Plot, Its Water Budget and Its Uniformity Limits",
+     "url": "https://doi.org/10.5281/zenodo.24109017"
+    },
+    {
+     "@type": "ListItem",
+     "position": 30,
+     "name": "A Village Solar Dehydrator for a 50 kg Mango Batch: Water Budget, Collector and Airflow Sizing, Drying Time and the Humid-Season Failure Line",
+     "url": "https://doi.org/10.5281/zenodo.24109023"
+    },
+    {
+     "@type": "ListItem",
+     "position": 31,
+     "name": "Rainwater Tank Sizing for Dry-Season Irrigation as a Computed Bound: Storage Is Set by Dry-Season Demand, Reliability Is Bought with Catchment Area",
+     "url": "https://doi.org/10.5281/zenodo.24109081"
+    },
+    {
+     "@type": "ListItem",
+     "position": 32,
+     "name": "Recovering Heat from Compost to Warm a Small Greenhouse: System Design, Heat Production Curve, and the Pile Mass Below Which the Plumbing Is Not Worth Installing",
+     "url": "https://doi.org/10.5281/zenodo.24109097"
+    },
+    {
+     "@type": "ListItem",
+     "position": 33,
+     "name": "A No-Electronics Witness Label for Sealed Grain Stores: Integrating Moisture Exposure and Seal Failure on One Passive Card",
+     "url": "https://doi.org/10.5281/zenodo.24109114"
+    },
+    {
+     "@type": "ListItem",
+     "position": 34,
+     "name": "A Pond-and-Field Nutrient Loop, Closed by Arithmetic or Not at All: A Full Nitrogen and Phosphorus Budget for a 0.2 ha Fish Pond Serving 0.5 ha of Crops",
+     "url": "https://doi.org/10.5281/zenodo.24109136"
+    },
+    {
+     "@type": "ListItem",
+     "position": 35,
+     "name": "A Village-Fabricable Chimney Rocket Stove for Clean Cooking: Design, Thermal Performance, Draft, and Indoor Exposure Estimates",
+     "url": "https://doi.org/10.5281/zenodo.24108419"
+    },
+    {
+     "@type": "ListItem",
+     "position": 36,
+     "name": "Sand-Battery Thermal Storage for Home Heating: A First-Principles Residential Design for Three Sunless Days in a Cold Climate",
+     "url": "https://doi.org/10.5281/zenodo.24108436"
+    },
+    {
+     "@type": "ListItem",
+     "position": 37,
+     "name": "Building-Scale Gravity Energy Storage for Off-Grid Homes: A First-Principles Design and Cost Test",
+     "url": "https://doi.org/10.5281/zenodo.24108475"
+    },
+    {
+     "@type": "ListItem",
+     "position": 38,
+     "name": "Battery-Free Solar Refrigeration for Off-Grid Clinics and Homes: A Direct-Drive Design with Ice-Bank Thermal Storage",
+     "url": "https://doi.org/10.5281/zenodo.24108531"
+    },
+    {
+     "@type": "ListItem",
+     "position": 39,
+     "name": "An Iron-Air Battery from Abundant Materials for Household and Village Electricity Storage: A First-Principles Design and Cost Test",
+     "url": "https://doi.org/10.5281/zenodo.24108666"
+    },
+    {
+     "@type": "ListItem",
+     "position": 40,
+     "name": "Small-Scale Compressed-Air Energy Storage for a Village or Workshop: A First-Principles Design, Efficiency and Cost Test",
+     "url": "https://doi.org/10.5281/zenodo.24108667"
+    },
+    {
+     "@type": "ListItem",
+     "position": 41,
+     "name": "A Village Microgrid Architecture Designed to Survive Its Own Failure Modes",
+     "url": "https://doi.org/10.5281/zenodo.24108691"
+    },
+    {
+     "@type": "ListItem",
+     "position": 42,
+     "name": "Waste-Heat Recovery for a Small Intermittent Brick Kiln: Air Preheat and Brick Drying, with Costs, Failure Modes and the Cases Where It Is Not Worth Building",
+     "url": "https://doi.org/10.5281/zenodo.24108732"
+    },
+    {
+     "@type": "ListItem",
+     "position": 43,
+     "name": "Solar Water Pumping That Stores Water, Not Electricity: A Battery-Free Design for Drinking Water and Small-Plot Irrigation",
+     "url": "https://doi.org/10.5281/zenodo.24108893"
+    },
+    {
+     "@type": "ListItem",
+     "position": 44,
+     "name": "Water as a Seasonal Heat Store: A First-Principles Design for Half of a Cold-Climate Winter, Its Six-Month Loss, and the Scale at Which the Loss Becomes Acceptable",
+     "url": "https://doi.org/10.5281/zenodo.24108986"
+    },
+    {
+     "@type": "ListItem",
+     "position": 45,
+     "name": "Flywheel Energy Storage at Household and Village Scale: A Reference Design, Its Self-Discharge, and the Duties It Can and Cannot Serve",
+     "url": "https://doi.org/10.5281/zenodo.24108995"
+    },
+    {
+     "@type": "ListItem",
+     "position": 46,
+     "name": "Thermochemical Heat Storage for Homes: A Strontium Bromide Seasonal Store Designed From First Principles",
+     "url": "https://doi.org/10.5281/zenodo.24109015"
+    },
+    {
+     "@type": "ListItem",
+     "position": 47,
+     "name": "Household Biogas from the Waste a Family Actually Has: An Honest Energy Budget and a Digester Design for a Six-Person Household with Three Cattle",
+     "url": "https://doi.org/10.5281/zenodo.24109093"
+    },
+    {
+     "@type": "ListItem",
+     "position": 48,
+     "name": "Pico-Hydro Power Without a Dam: A Run-of-Stream Design for a 45-Household Hill Village, Sized to Its Dry Season",
+     "url": "https://doi.org/10.5281/zenodo.24109105"
+    },
+    {
+     "@type": "ListItem",
+     "position": 49,
+     "name": "A Solar Cooker That Can Cook the Evening Meal: A Panel Cooker with an Oil Thermal Store and a Retained-Heat Basket, Sized for a Family of Five",
+     "url": "https://doi.org/10.5281/zenodo.24109110"
+    },
+    {
+     "@type": "ListItem",
+     "position": 50,
+     "name": "Counter-Rotating Vertical-Axis Wind Turbine Arrays: Designing Against the Spacing Tax from the Other Side",
+     "url": "https://doi.org/10.5281/zenodo.24109304"
+    },
+    {
+     "@type": "ListItem",
+     "position": 51,
+     "name": "Wake-Steering Fleet Control for a Wind Farm: Designing Against the Spacing and Wake Tax",
+     "url": "https://doi.org/10.5281/zenodo.24109326"
+    },
+    {
+     "@type": "ListItem",
+     "position": 52,
+     "name": "Airborne-Infection Control in a Low-Resource Clinic Waiting Room, Priced per Dollar: A Model-Derived Ranked Protocol",
+     "url": "https://doi.org/10.5281/zenodo.24108454"
+    },
+    {
+     "@type": "ListItem",
+     "position": 53,
+     "name": "A Low-Dose Chest Radiography Protocol for Tuberculosis Screening Derived from the Dose-Resolution Trade",
+     "url": "https://doi.org/10.5281/zenodo.24108473"
+    },
+    {
+     "@type": "ListItem",
+     "position": 54,
+     "name": "An Ultrasound-First Diagnostic Pathway for Suspected Appendicitis Where No CT Scanner Exists: A Proposed Decision Protocol with a Cohort Model",
+     "url": "https://doi.org/10.5281/zenodo.24108477"
+    },
+    {
+     "@type": "ListItem",
+     "position": 55,
+     "name": "A Passive Phase-Change Vaccine Carrier Sized for 72 Hours at 43 \u00b0C: Design and Thermal Model",
+     "url": "https://doi.org/10.5281/zenodo.24108490"
+    },
+    {
+     "@type": "ListItem",
+     "position": 56,
+     "name": "Ultraviolet Disinfection for Low-Resource Clinics with Honest Dose Budgets: A Priced Specification for Upper-Room Air Treatment and Surface Terminal Disinfection",
+     "url": "https://doi.org/10.5281/zenodo.24108585"
+    },
+    {
+     "@type": "ListItem",
+     "position": 57,
+     "name": "Solar Water Disinfection Made Quantitative: A UV-A Dose Model for a PET Bottle and a Fixed-Geometry Reflector Backing",
+     "url": "https://doi.org/10.5281/zenodo.24108597"
+    },
+    {
+     "@type": "ListItem",
+     "position": 58,
+     "name": "Hearing Screening with a Smartphone: An Error Budget and the Protocol It Permits",
+     "url": "https://doi.org/10.5281/zenodo.24108625"
+    },
+    {
+     "@type": "ListItem",
+     "position": 59,
+     "name": "Vision Screening with a Smartphone, Bounded by Optics: A Protocol Derived from Display, Camera and Pinhole Limits",
+     "url": "https://doi.org/10.5281/zenodo.24108713"
+    },
+    {
+     "@type": "ListItem",
+     "position": 60,
+     "name": "Gravity-Fed Intravenous Infusion Without Pumps, Made Accurate: An Error Budget for the Standard Drip Set and a Constant-Head Mariotte Insert Design",
+     "url": "https://doi.org/10.5281/zenodo.24108822"
+    },
+    {
+     "@type": "ListItem",
+     "position": 61,
+     "name": "A Phase-Change Neonatal Warmer for Births Where No Incubator Exists: Design and Lumped Thermal Model",
+     "url": "https://doi.org/10.5281/zenodo.24108848"
+    },
+    {
+     "@type": "ListItem",
+     "position": 62,
+     "name": "A Low-Cost Pulse Oximeter with an Honest Accuracy Budget: Design, Error Propagation, and the Accuracy Floor for Triage",
+     "url": "https://doi.org/10.5281/zenodo.24108850"
+    },
+    {
+     "@type": "ListItem",
+     "position": 63,
+     "name": "Oxygen for Childhood Pneumonia Where Cylinders Run Out: A Solar Oxygen Concentrator Sized and Priced from Physics",
+     "url": "https://doi.org/10.5281/zenodo.24108990"
+    },
+    {
+     "@type": "ListItem",
+     "position": 64,
+     "name": "Steam Sterilization of Instruments with a Household Pressure Cooker, Priced from Physics \u2014 and an Honest Verdict on Solar Sterilization Claims",
+     "url": "https://doi.org/10.5281/zenodo.24109034"
+    },
+    {
+     "@type": "ListItem",
+     "position": 65,
+     "name": "Household Smoke from Solid-Fuel Cooking: A Low-Cost Chimney Hood Priced by Draft Physics",
+     "url": "https://doi.org/10.5281/zenodo.24109044"
+    },
+    {
+     "@type": "ListItem",
+     "position": 66,
+     "name": "Passive Cooling for Medicine Storage in a Hot Clinic Without Reliable Power: A Radiative, Evaporative and Thermal-Mass Cabinet Design and Its Computed Climate Envelope",
+     "url": "https://doi.org/10.5281/zenodo.24109046"
+    },
+    {
+     "@type": "ListItem",
+     "position": 67,
+     "name": "A Water Witness for Clinics: Design and Accuracy Budget of a Low-Cost Photometer for Free Chlorine and Turbidity at the Point of Care",
+     "url": "https://doi.org/10.5281/zenodo.24109103"
+    },
+    {
+     "@type": "ListItem",
+     "position": 68,
+     "name": "A Hand-Powered Centrifuge for Blood Separation Where There Is No Power: A Design Envelope Specified from Rotor Physics",
+     "url": "https://doi.org/10.5281/zenodo.24109222"
+    },
+    {
+     "@type": "ListItem",
+     "position": 69,
+     "name": "A Low-Cost Bridge-Scour Witness Instrument: A Tilt-Node Chain Design and Its Computed Detection Budget",
+     "url": "https://doi.org/10.5281/zenodo.24108427"
+    },
+    {
+     "@type": "ListItem",
+     "position": 70,
+     "name": "A Universal 6% Equal-Split Lime-Cement Formulation for Stabilised-Earth Wall Blocks: A Mix-Selection Computation Balancing Strength, Wet Durability, Embodied Energy and Cost",
+     "url": "https://doi.org/10.5281/zenodo.24108442"
+    },
+    {
+     "@type": "ListItem",
+     "position": 71,
+     "name": "A Sewerless Thermal Sanitation Unit for a Household: Computed Pathogen Lethality, Energy per Use, and Safe-Handling Intervals for a 2-Litre Batch Design",
+     "url": "https://doi.org/10.5281/zenodo.24108452"
+    },
+    {
+     "@type": "ListItem",
+     "position": 72,
+     "name": "A Passive Radiative-Cooling Roof Assembly for Heat-Wave Housing: Computed Cooling Budget and Price per Degree of Indoor Temperature Reduction",
+     "url": "https://doi.org/10.5281/zenodo.24108520"
+    },
+    {
+     "@type": "ListItem",
+     "position": 73,
+     "name": "A Straw and Rice-Husk Fibre Insulation Panel: Specification and Computed Thermal, Moisture, Cost and Fire-Behaviour Envelope",
+     "url": "https://doi.org/10.5281/zenodo.24108637"
+    },
+    {
+     "@type": "ListItem",
+     "position": 74,
+     "name": "A Lashed-Plus-Bolted Bamboo\u2013Timber Joint for Low-Rise Housing: Connector Design and a Computed Shear, Pull-Out and Slip Budget Across Culm Diameter and Moisture",
+     "url": "https://doi.org/10.5281/zenodo.24108639"
+    },
+    {
+     "@type": "ListItem",
+     "position": 75,
+     "name": "A Solar Desiccation Sanitation Chamber for Households Without Sewers: Computed Moisture-Removal, Pathogen Die-Off, and Safe-Storage Budgets Across Humidity and Season",
+     "url": "https://doi.org/10.5281/zenodo.24108696"
+    },
+    {
+     "@type": "ListItem",
+     "position": 76,
+     "name": "A Rainwater-First Roof and Storage System for a Water-Short Household: Integrated Sizing of Roof, First-Flush Diverter and Tank Against a 450 mm Rainfall Regime",
+     "url": "https://doi.org/10.5281/zenodo.24108714"
+    },
+    {
+     "@type": "ListItem",
+     "position": 77,
+     "name": "A 20% Rice-Husk Ash, 6% Alkali Formulation for Fly-Ash Geopolymer Wall Blocks: A Formulation Search Priced in Strength, Cost and Carbon per Square Metre of Wall",
+     "url": "https://doi.org/10.5281/zenodo.24108870"
+    },
+    {
+     "@type": "ListItem",
+     "position": 78,
+     "name": "A Porous Ceramic Evaporator Wall for a Single Room in Arid Housing: Computed Indoor Temperature Reduction, Water Use per Degree, and the Humidity Ceiling",
+     "url": "https://doi.org/10.5281/zenodo.24108880"
+    },
+    {
+     "@type": "ListItem",
+     "position": 79,
+     "name": "A Slope-Failure Witness Network for Informal Hillside Settlements: Node Design and a Computed Warning Budget",
+     "url": "https://doi.org/10.5281/zenodo.24108914"
+    },
+    {
+     "@type": "ListItem",
+     "position": 80,
+     "name": "A Sacrificial Crack-and-Strain Witness Strip for Small Bridges and Culverts: Design and Computed Threshold Budget",
+     "url": "https://doi.org/10.5281/zenodo.24109001"
+    },
+    {
+     "@type": "ListItem",
+     "position": 81,
+     "name": "A Flood-Resilient Amphibious Foundation for a Small House: Buoyancy, Guide-Post Loads and Failure Limits",
+     "url": "https://doi.org/10.5281/zenodo.24109079"
+    },
+    {
+     "@type": "ListItem",
+     "position": 82,
+     "name": "A Continuous Load-Path Strap-and-Anchor Roof Tie-Down Assembly for Low-Cost Housing: A Computed Uplift Budget and Its Limit Wind Speed",
+     "url": "https://doi.org/10.5281/zenodo.24109101"
+    },
+    {
+     "@type": "ListItem",
+     "position": 83,
+     "name": "A Confined-Masonry Wall System for One-Storey Stabilised-Earth Housing: Tie-Column and Ring-Beam Layout with a Computed Seismic Shear and Stability Budget",
+     "url": "https://doi.org/10.5281/zenodo.24109150"
+    },
+    {
+     "@type": "ListItem",
+     "position": 84,
+     "name": "A Passive Solar Heating Wall for Cold-Climate Low-Income Housing: A Computed Sizing Rule, Temperature-Lift Budget, and Cost per Degree",
+     "url": "https://doi.org/10.5281/zenodo.24109179"
+    },
+    {
+     "@type": "ListItem",
+     "position": 85,
+     "name": "A Household Greywater Treatment and Reuse Bed for Water-Short Settlements: A Sizing Rule and Computed Treatment Budget for a Gravel-and-Reed Subsurface-Flow Design",
+     "url": "https://doi.org/10.5281/zenodo.24109197"
+    },
+    {
+     "@type": "ListItem",
+     "position": 86,
+     "name": "What Actually Saves the House: A Priced Cost-Effectiveness Ranking of Ember-Attack Home Hardening, and the Cheapest Bundle That Buys a Stated Survival Probability",
+     "url": "https://doi.org/10.5281/zenodo.24108438"
+    },
+    {
+     "@type": "ListItem",
+     "position": 87,
+     "name": "A Passive Indoor Radon Witness Cheap Enough to Matter: Design and Fully Computed Sensitivity Budget for a 90-Day CR-39 Diffusion-Chamber Detector at Under US$5 in Parts",
+     "url": "https://doi.org/10.5281/zenodo.24108450"
+    },
+    {
+     "@type": "ListItem",
+     "position": 88,
+     "name": "A Heat-Wave Survival Room: The Integrated Design, Computed Cooling Budget and Cost per Protected Person for One Cooled Room per Dwelling",
+     "url": "https://doi.org/10.5281/zenodo.24108469"
+    },
+    {
+     "@type": "ListItem",
+     "position": 89,
+     "name": "Methane Leak Detection at Walking Pace with Phone-Grade Thermal Optics: An Honest Bound",
+     "url": "https://doi.org/10.5281/zenodo.24108506"
+    },
+    {
+     "@type": "ListItem",
+     "position": 90,
+     "name": "Earthquake Early Warning from Cheap Accelerometers: An Honest Latency-and-Geometry Budget, a Blind Zone, and a Priced Verdict",
+     "url": "https://doi.org/10.5281/zenodo.24108595"
+    },
+    {
+     "@type": "ListItem",
+     "position": 91,
+     "name": "A Flood Witness Network for the Settlements That Flood First: Design and a Computed Lead-Time Law for Low-Cost River and Rain Gauge Nodes at US$94 per River Node",
+     "url": "https://doi.org/10.5281/zenodo.24108616"
+    },
+    {
+     "@type": "ListItem",
+     "position": 92,
+     "name": "A Post-Disaster Drinking-Water Triage Kit for the First 72 Hours: Staged Treatment, Computed Log Removal, Gravity Throughput and a Priced Verdict",
+     "url": "https://doi.org/10.5281/zenodo.24108689"
+    },
+    {
+     "@type": "ListItem",
+     "position": 93,
+     "name": "A Lightning Witness for Schools and Clinics: A $91 Sferics and Electric-Field Warning Node, Its Computed Warning-Time Budget, and the Limits of the 30-30 Rule",
+     "url": "https://doi.org/10.5281/zenodo.24108716"
+    },
+    {
+     "@type": "ListItem",
+     "position": 94,
+     "name": "A Post-Disaster Power Triage Kit for a Small Clinic: Load Definition, Photovoltaic and Battery Sizing, and Load-Shedding Rules",
+     "url": "https://doi.org/10.5281/zenodo.24108738"
+    },
+    {
+     "@type": "ListItem",
+     "position": 95,
+     "name": "A Wildfire-Smoke Refuge Room for a Classroom or Clinic Ward: An Integrated Sizing Law and a Priced Comparison of Box-Fan Filter Arrays and HEPA Purifiers",
+     "url": "https://doi.org/10.5281/zenodo.24108746"
+    },
+    {
+     "@type": "ListItem",
+     "position": 96,
+     "name": "A Heat Witness for Outdoor Workers: An Honest Error Bound for Cheap Heat-Stress Estimation",
+     "url": "https://doi.org/10.5281/zenodo.24108886"
+    },
+    {
+     "@type": "ListItem",
+     "position": 97,
+     "name": "A Household Cookstove Smoke Witness and Chimney-Draft Design Bound: What a Sub-US$20 Carbon Monoxide Witness Can Resolve, and the Flue Dimensions That Keep a Cooking Fire's Smoke Out of the Room",
+     "url": "https://doi.org/10.5281/zenodo.24108910"
+    },
+    {
+     "@type": "ListItem",
+     "position": 98,
+     "name": "A Disaster Mesh Communications Budget for a Town Without Grid or Towers: Coverage, Traffic, Power and Price for the First Week",
+     "url": "https://doi.org/10.5281/zenodo.24108997"
+    },
+    {
+     "@type": "ListItem",
+     "position": 99,
+     "name": "A Flood Witness for Low-Water Road Crossings: Computed Warning Time, Sensor Placement and the False-Closure Trade-Off",
+     "url": "https://doi.org/10.5281/zenodo.24109005"
+    },
+    {
+     "@type": "ListItem",
+     "position": 100,
+     "name": "A Corrected Low-Cost Indoor Particle Witness: Humidity, Coincidence and Scattering Corrections for Classification Against the WHO 24-Hour PM2.5 Guideline, Below US$60",
+     "url": "https://doi.org/10.5281/zenodo.24109061"
+    },
+    {
+     "@type": "ListItem",
+     "position": 101,
+     "name": "A Household Flood-Safe Store for Settlements That Flood Every Year: Raised-Fixed versus Sealed-Buoyant Design with Computed Elevation, Anchoring, Moisture and Cost Budgets",
+     "url": "https://doi.org/10.5281/zenodo.24109071"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+  <main id="top">
+    <div class="hero">
+      <h1>Solving the World's Problems</h1>
+      <div class="answer"><p><strong>Aldred Industries is solving the world's problems on paper, in public, one problem at a time.</strong> The research programme behind more than 1,400 published papers has turned from pure physics to the practical problems that kill and impoverish people: water that is not safe to drink, harvests that rot before they are eaten, homes that burn, flood, or shake apart, clinics with no power and no oxygen. Each problem is attacked with physics and engineering, computed from first principles, and published with a permanent DOI — whether the answer is a working design, an honest bound, or a public proof that a popular fix does not work. The first wave of the programme, catalogued in full below, is 101 papers published on November 10, 2026 — every one by William Alexander Aldred, every one free to read.</p></div>
+    </div>
+
+    <section>
+      <h2>How the work is done</h2>
+      <p>Every paper starts from the problem, not from a product. The computation is done from first principles and published with the paper, so anyone can check the arithmetic. Three kinds of result are published at the same size: a design that works on the numbers; a bound that states honestly what cannot be done, and why; and a kill — a published disproof of a fix that is sold or believed but does not survive the arithmetic. A published kill is a result, not a failure: it stops people spending scarce money on something that cannot work.</p>
+      <p>Every design is a computation, labelled <strong>SIMULATED, NOT MEASURED</strong>, until somebody builds it and measures it. Nothing on this page is described as built, tested in a home, or proven in the field. What is claimed is exactly what the papers claim: the physics, worked out in the open, with the limits printed on the face.</p>
+    </section>
+
+    <section>
+      <h2>The catalogue — wave one</h2>
+      <p>101 papers in six fields. Each entry states the problem in plain words, the headline result exactly as the paper reports it, and the paper's DOI. Every paper is published open-access (CC BY 4.0) on Zenodo under the sole authorship of William Alexander Aldred (ORCID 0009-0000-1215-577X).</p>
+      <p class="details">Jump to: <a href="#w1">Water</a> · <a href="#w2">Food and farming</a> · <a href="#w3">Energy where people live</a> · <a href="#w4">Health without money</a> · <a href="#w5">Shelter and infrastructure</a> · <a href="#w6">Air, fire and disaster</a></p>
+    </section>
+
+    <section id="w1">
+      <h2>Water — 17 papers</h2>
+      <p>Safe water where the grid and the supply chain do not reach: desalination priced honestly, leaks located, wells witnessed, and disinfection that needs no chemical deliveries.</p>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108541</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108541">A Solar-Powered Ultraviolet-C LED Disinfection Unit for a Village Standpipe, Sized on the Minimum Delivered Dose in Turbid Water</a></h3>
+        <p><strong>The problem.</strong> Safe drinking water where chlorine supply chains fail — disinfection with no consumable chemical, generated on site from sunlight, with its limits (no residual protection after treatment) stated plainly.</p>
+        <p><strong>The result.</strong> Sizing a baffled serpentine UV-C reactor on its 5th-percentile (minimum-class) dose rather than its mean dose — the mean must be set at 2.01 times the required fluence, and a mean-sized reactor would pass 54.7% of its flow under-treated — a solar standpipe unit guaranteeing a 4-log bacteria-class dose at 5 NTU and 20 L/min needs 151.5 W of LED power, a 345 Wp array and a 404 Wh battery, while the virus-class dose costs ten times as much on every figure.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108543</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108543">Locating Distribution Leaks by Pressure-Transient Timing on a Network of Low-Cost Loggers: A Method for Plastic-Pipe Networks Where Acoustic Correlation Fails</a></h3>
+        <p><strong>The problem.</strong> Cities and towns lose a large share of treated drinking water through leaks before it reaches a tap, worst where utilities are poorest, and the standard acoustic locating method fails on the plastic pipe those networks are made of.</p>
+        <p><strong>The result.</strong> Timing low-frequency pressure transients between $30-class loggers at 250 m spacing and 10 Hz sampling locates leaks in polyethylene pipe to a standard error of 6.7 m — 4.07 times tighter than in ductile iron, because the plastic wave is slower — with a detection floor of a 3.08 mm equivalent hole at 250 m, covering a 5,000-person town&#x27;s 50 km of mains with 201 loggers for $6,030 in hardware.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108571</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108571">A Batch Reverse-Osmosis Cycle Whose Pressure Follows the Osmotic Curve: First-Principles Energy Accounting and a Sized Village Unit</a></h3>
+        <p><strong>The problem.</strong> Coastal and island communities with weak grids cannot afford the electricity that conventional seawater desalination demands, so abundant seawater stays undrinkable where power is scarcest.</p>
+        <p><strong>The result.</strong> A batch seawater reverse-osmosis cycle whose feed pressure ramps to follow the osmotic curve of the concentrating charge uses 1.814 kWh per cubic metre of permeate at 35 g/L and 50% recovery — 21.7% less than a conventional continuous plant with isobaric energy recovery computed the same way (2.318 kWh/m3) — and needs no energy-recovery device.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108587</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108587">A Psychrometric Bound on Atmospheric Water Harvesting: Where Air-Derived Water Can Work, Where It Cannot, and One Design That Respects the Bound</a></h3>
+        <p><strong>The problem.</strong> Households in drought regions are sold machines claiming litres of water from air at household power, with yields quoted without the temperature and humidity at which they were obtained; in the dry air where the need is greatest, those yields collapse to a fraction of a litre per kilowatt-hour.</p>
+        <p><strong>The result.</strong> Below roughly 42% relative humidity, extracting water from air costs more energy — even for a thermodynamically perfect machine — than desalinating seawater and trucking it 100 km, and a realistic condensation machine beats a 500-km delivered supply only above 73.6–87.3% relative humidity, so harvesting is a humid-air, long-haul niche and not a water supply for arid air.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108770</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108770">A Rain-Ingress Witness for Hand-Dug Wells and Boreholes: Mixing-Derived Detection Floors, Alarm Behaviour and Lead Time from a Low-Cost Conductivity and Temperature Logger</a></h3>
+        <p><strong>The problem.</strong> After storms, surface water enters wells and people drink the contamination before anyone knows; the witness flags the ingress before the next draw.</p>
+        <p><strong>The result.</strong> A mixing-derived alarm (EC drop of 4 µS/cm sustained 2 h) on a low-cost conductivity/temperature logger fires at 0.81% ingress — 19.0 L in a 2,356 L hand-dug well, 2.85 L in a 353 L borehole — with no false alarms in the modelled 89-day baseline and 2.61 h of warning before the end of a 5%-in-6-h design storm.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108806</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108806">A Village Chlorination System with No Chemical Supply Chain: Electrolytic Hypochlorite from Salt, Water and Sunlight, Sized End-to-End from Electrochemistry and Chlorine Decay</a></h3>
+        <p><strong>The problem.</strong> Disinfection that stops when a chlorine delivery does not come — a village water supply left unprotected because its disinfectant depends on a supply chain.</p>
+        <p><strong>The result.</strong> A complete first-principles sizing shows a 10.0 m³/day village supply can be disinfected with no chlorine deliveries — a tank dose of 1.185 mg/L, decay-corrected production of 13.65 g of chlorine per day at 4.652 kWh/kg, requiring 63.5 Wh/day and 45.0 g of salt per day, with storage decay at 30 °C forcing a production oversize factor of 1.152.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108834</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108834">A Batch Solar Water Pasteurizer with Counterflow Heat Recovery: Lethality Priced from Thermal Death Kinetics and Daily Output Sized from Insolation</a></h3>
+        <p><strong>The problem.</strong> Boiling drinking water where fuel is scarce costs scarce fuel or gathering time and fills homes with smoke, while the pathogens that matter are killed well below boiling if the water is held at temperature and its heat is recovered.</p>
+        <p><strong>The result.</strong> With counterflow heat recovery at effectiveness 0.70, the batch cycle pasteurizes at 65 °C with a 10 min hold — a hold set by the enteric-virus class, which needs 9.0 min at 65 °C for a 6-log reduction while a 1 min hold gives it only 0.67 log — for a net 50.23 kJ per litre, 0.160 of the sensible heat of boiling, so one square metre of collector treats 179.2 litres per day and a 200 L/day school unit needs 1.12 m² of collector with a 50.0 L batch tank in 4 cycles per day.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108838</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108838">Rainwater Tank Sizing by Stochastic Reliability Simulation: Storage–Reliability Design Curves for a Semi-Arid and a Monsoon Climate</a></h3>
+        <p><strong>The problem.</strong> a rainwater tank is often a poor household&#x27;s largest single purchase, and folklore sizing leaves it too small to bridge the dry season or too large to ever fill.</p>
+        <p><strong>The result.</strong> Storage–reliability curves from a Markov-generator daily balance (249 simulated years per configuration) give explicit tank sizes for 90% and 98% reliability in semi-arid (520.7 mm/yr) and monsoon (1511.5 mm/yr) climates; the semi-arid 40 m² / 50 L/day case is supply-limited (ratio 0.91) so no tank reaches 98%, the one-month rule delivers only 50.1–84.8%, and the largest dry-spell rule delivers 87.7–100.0% at up to four times the necessary size.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109063</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109063">Freeze Desalination Priced Honestly: Full Accounting of Washing, Brine Entrainment and Refrigeration for Natural and Refrigerated Freezing of Seawater</a></h3>
+        <p><strong>The problem.</strong> energy-poor cold coastal communities live beside undrinkable seawater and free winter cold, and are sold freezing as a cheap desalination route on the strength of its latent heat alone, without the washing, entrainment and refrigeration costs that decide whether it actually works for them.</p>
+        <p><strong>The result.</strong> With brine entrainment and washing charged, refrigerated freeze desalination of seawater costs 53.2 kWh/m3 at COP 2.5 (17.7 times reverse osmosis at 3.0 kWh/m3), while natural tray freezing at −10 °C in light wind yields a net 13.25 L/m2/day — 75.5 m2 per m3/day — so the latent-heat advantage survives only where the cold is free.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109065</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109065">Intermittent Water Supply: The Intrusion Volume per Outage Computed from First Principles, and a Household Break-Tank Design That Defeats It</a></h3>
+        <p><strong>The problem.</strong> Hundreds of millions of people receive piped water only a few hours a day, and when pressure dies the network draws contaminated soil water in through the same leaks that lose treated water when pressure is up, so the network doses itself between the treatment works and the tap.</p>
+        <p><strong>The result.</strong> For the stated 10 km reference network, each supply outage draws 1.49 m³ of soil water in through the network&#x27;s own leaks (2.98 m³/day, 0.30% of daily supply), and a nominal 75 L household break tank with a 40 mm air-gap inlet bridges the two-window supply pattern at 50 L/day essential demand with a chlorine re-dose interval of 6.0 days at 20 °C falling to 2.0 days at 35 °C.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109067</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109067">The Electrodialysis–Reverse Osmosis Crossover for Brackish Groundwater: A First-Principles Energy Derivation and a Sized Village Electrodialysis Unit</a></h3>
+        <p><strong>The problem.</strong> Millions drink from brackish boreholes that are too salty for comfort yet too dilute for seawater-style reverse-osmosis habits, and the choice between electrodialysis and reverse osmosis for such water is usually made by habit rather than by calculation.</p>
+        <p><strong>The result.</strong> Derived from stated first principles under one accounting rule, electrodialysis and reverse osmosis specific energies for brackish desalination to 0.5 g/L cross at a feed salinity of 6.90 g/L — ED lower below, RO lower above, and no crossover up to 20 g/L if RO brine energy recovery is removed — and a village ED unit for a 2.5 g/L borehole producing 5 m³/day needs 26 cell pairs at 10.50 A and 7.49 V, uses 1.82 kWh/day (0.41 kWp of photovoltaics at the stated yield), and is limited by gypsum solubility to a maximum recovery of 0.813.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109077</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109077">The Virus-Removal Ceiling of Gravity Ceramic and &quot;Nano&quot; Point-of-Use Filters: A Sieving and Adsorption Accounting</a></h3>
+        <p><strong>The problem.</strong> Households in virus-risk settings spend money and trust on viral safety these filters cannot provide, and a filter believed to remove viruses displaces boiling and chlorination that actually inactivate them.</p>
+        <p><strong>The result.</strong> At their stated pore ratings of 0.2–0.9 µm, gravity ceramic and &quot;nano&quot; point-of-use filters have a sieving ceiling of at most 0.66 log10 virus removal (0.000 log10 for 20–30 nm viruses), so marketed 4–6 log virus claims understate viral passage by factors of 2,163 to 216,290, while the same model confirms cyst removal at the 12-log cap and strong bacterial removal at finer ratings.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109216</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109216">A Subsurface-Flow Constructed Wetland for a Household Cluster&#x27;s Greywater, Sized by Removal Kinetics: The Bed Area, the Pathogen Reduction, and the Arid Salt Budget That Decide Its Reuse Class</a></h3>
+        <p><strong>The problem.</strong> Most of a household&#x27;s water is greywater used once and discarded in places that cannot afford to use water twice, and most reuse guidance is a drawing rather than a computation, so it cannot say what its effluent may safely be used for or whether its salt slowly poisons the soil.</p>
+        <p><strong>The result.</strong> A 12.92 m² subsurface-flow wetland sized by first-order kinetics for a 10-person cluster&#x27;s 600 L/day of greywater reaches its BOD target and delivers a 1.68 log <em>E. coli</em> reduction sufficient for restricted irrigation, but it is 20.72 times the unrestricted-irrigation limit and barred from unrestricted reuse by a virus ceiling, while its arid salt loop closes for tolerant and moderately sensitive crops (leaching 2.96% and 10.12%) but not for sensitive crops (29.82%).</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109218</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109218">The Reservoir Is the Sand: Extractable-Storage Accounting, Evaporation Suppression and Worked Sizing for a Sand Dam on a Seasonal River</a></h3>
+        <p><strong>The problem.</strong> villages beside seasonal rivers watch a year&#x27;s water pass in a few weeks of flow, then face months with a dry bed; a sand dam keeps some of that flow in the sand, but rule-of-thumb sizing never states whether it holds enough extractable water to bridge the dry season.</p>
+        <p><strong>The result.</strong> Priced as a porous reservoir, a sand dam for 400 people at 20 L/day through a 180-day dry season needs 1,440 m³ of extractable water in a corrected sand body 147.4 m × 20 m × 2.0 m (5,895.8 m³ at specific yield 0.25), and storing in sand saves 2,873.6 m³ of evaporation against an open reservoir of the same plan area (34.0 m³ lost through a 0.30 m dry crust against 2,907.5 m³ open), equivalent to 359.2 days of village supply.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109228</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109228">Defluoridation Priced at the Working Point: Activated Alumina Costed from Its Isotherm Against Nalgonda Precipitation Costed from Its Dose, and a 1,000 L/day Village Kiosk Sized on the Winner</a></h3>
+        <p><strong>The problem.</strong> Across the fluoride belts the only water is the well, its groundwater carries 2–10 mg/L of fluoride that cripples teeth and bones, and the standard treatment advice names a medium or a dosing method without pricing either at the chemistry of the water actually in the ground.</p>
+        <p><strong>The result.</strong> Priced under one accounting rule with isotherm capacity at the working point and regeneration charged in full, adsorption on activated alumina costs USD 0.295, 0.864 and 1.735 per m³ at feeds of 2, 5 and 10 mg/L while Nalgonda precipitation costs USD 0.057, 0.229 and 0.516 per m³ but breaches the stated 0.2 mg/L residual-aluminium limit at the two higher feeds (0.389 and 0.875 mg/L), so precipitation wins only at 2 mg/L, adsorption wins at 5 and 10 mg/L, running unadjusted at pH 7.5 destroys 49.3–65.4% of alumina capacity, and a 1,000 L/day kiosk at the 5 mg/L design feed runs on two alternating 11 kg beds at USD 0.864 per m³ with 4.23 operator hours per week.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109230</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109230">Designing a Fog Collector Instead of Copying One: Droplet-Capture Physics, Shade-Coefficient Optimisation and an Honest Seasonal Yield for an Arid Coastal Climate</a></h3>
+        <p><strong>The problem.</strong> settlements on arid coasts where rain is rare live under fog that carries renewable water over them daily, but collectors are copied rather than designed, so mesh, geometry and expected yield are guesses instead of computed choices matched to the local fog.</p>
+        <p><strong>The result.</strong> Computing droplet capture from the Stokes number across a stated fog spectrum selects a 0.3 mm fibre at shade coefficient 0.50 (total collection efficiency 0.3213), and a 40 m² panel of that design yields 111,041 L per season in the central arid-coastal fog class — 21.77 times the 5,100 L per year of a 40 m² rain roof at the same site.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109346</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109346">Forward Osmosis Priced Honestly: A Regeneration Bound That Closes the Seawater Claim, and the Fertilizer-Draw Irrigation Design That Survives It</a></h3>
+        <p><strong>The problem.</strong> Irrigation water and desalination cost are both scarce in dry agricultural regions, and forward osmosis is marketed there as low-energy desalination although the draw regeneration that performs the actual separation is left out of the price.</p>
+        <p><strong>The result.</strong> Regenerating any forward-osmosis draw costs more minimum work than desalinating the feed directly (bound 1.53 vs 1.06 kWh/m³ for seawater at 0.50 recovery; a stated NaCl draw totals 6.09 vs 3.04 kWh/m³ for RO at equal efficiency, and a thermolytic draw flips only if 56.49 kWh/m³ of heat at 60 °C is free), while a fertilizer-draw unit that skips regeneration entirely — 1,484 m² of membrane delivering 50 m³/day from 2.0 g/L brackish groundwater — over-delivers nitrogen 18.7–65.6× at full irrigation rate but, spread nitrogen-matched, is the complete fertilizer source for 32.8 ha of medium-demand crops while supplying 3.1% of their water.</p>
+      </div>
+    </section>
+    <section id="w2">
+      <h2>Food and farming — 17 papers</h2>
+      <p>Harvests lost after they are grown: drying, storage, cold chains without a grid, fertiliser recovered instead of bought, and water held in soil per dollar spent.</p>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108462</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108462">A Solar-Regenerated Desiccant Dryer for One Tonne of Smallholder Grain: Water Budget, Sizing and Failure Limits</a></h3>
+        <p><strong>The problem.</strong> Grain harvested wet in humid climates moulds within days, and farmers without fuel or grid power lose the harvest at the drying step.</p>
+        <p><strong>The result.</strong> A solar-regenerated silica-gel dryer can dry one tonne of maize from 25% to 13% moisture in 3.0 days with 191.6 kg of gel and 24.0 m² of collector at 5.0 kWh/m²/day insolation, and it fails below 3.15 kWh/m²/day.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108471</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108471">Farm-Scale Electrochemical Ammonia: A Costed Design and Its Failure at Small Scale</a></h3>
+        <p><strong>The problem.</strong> Fertiliser nitrogen comes from distant Haber–Bosch plants running on natural gas, so small farmers far from that supply pay ruinous prices or go without.</p>
+        <p><strong>The result.</strong> Even with free electricity the designed farm-scale unit makes nitrogen at $16.30 per kg N, 8.8 times the delivered remote fertiliser price, so electrochemical ammonia does not pencil out at farm scale.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108488</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108488">Oxygen-Scavenger Sachet Sizing for Hermetic Grain Storage: A First-Principles Oxygen Budget and Design Rule</a></h3>
+        <p><strong>The problem.</strong> A large share of harvested grain is eaten by insects or spoiled in storage before any person eats it, and smallholders under- or over-size the oxygen scavenging that makes hermetic bags work.</p>
+        <p><strong>The result.</strong> At 25 °C a hermetic grain store needs 1,087 grams of iron-based oxygen scavenger per tonne upfront plus 14.2 grams per tonne for each month of storage to keep oxygen below the level that kills stored-grain insects for the whole storage period.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108494</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108494">Non-Thermal Plasma Nitrogen Fixation at Village Scale: A Computed Design Budget for a Solar-Powered Gliding-Arc Unit, Compared with a Dielectric Barrier Discharge and with Delivered Synthetic Fertiliser</a></h3>
+        <p><strong>The problem.</strong> Fertiliser nitrogen comes from distant Haber-Bosch plants, and regions whose supply chains fail at planting time lose harvests their land could have grown.</p>
+        <p><strong>The result.</strong> A solar gliding-arc unit captures 0.433 kg of nitrogen per day at USD 13.00 per kg — beating a dielectric barrier discharge by a factor of 17.8 in energy, but still costing 6.3 times more per kg of nitrogen than urea delivered to a remote region.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108633</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108633">Soil Water Amendments Priced by Water Held per Dollar: A Common Yardstick, a Ranking Across Soil Textures, and the Break-Even Rainfall Deficit</a></h3>
+        <p><strong>The problem.</strong> Dryland farmers lose crops to short dry spells and are sold biochar, hydrogels, bentonite and compost as water-holding fixes with no common price tag to compare them by.</p>
+        <p><strong>The result.</strong> On sand, bentonite and low-temperature wood biochar deliver the most plant-available water per dollar and are the only options that ever pay for a maize crop on water alone, while synthetic hydrogel at field rates holds only 0.10 mm of water and returns 222 times less water per dollar than the best option.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108635</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108635">A Phase-Change Cold Box for the Last Mile Without a Grid: Computed Sizing, Hold Times, and Recharge for the +4 °C Cargo Class</a></h3>
+        <p><strong>The problem.</strong> Produce and vaccines spoil between the farm or clinic and the village because there is no refrigeration on the last leg; ice melts too fast and powered coolers need power that is not there.</p>
+        <p><strong>The result.</strong> A 100 mm EPS box with 14 kg of sealed paraffin panels melting at 5.0 °C holds a 15.0 kg payload for 50.9 hours at 35 °C ambient in the model and recharges overnight in a freezer, while plain ice in the same box holds longer per kilogram but at 0 °C, below the safe cargo band.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108663</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108663">An Evaporative Cooling Store for a Village Produce Market: Design, Simulated Performance Across Climates, and the Humidity Failure Line</a></h3>
+        <p><strong>The problem.</strong> Tomatoes, leafy greens and fruit rot within days in hot climates, so a market town without grid power throws away food it grew.</p>
+        <p><strong>The result.</strong> A 3.0 cubic metre brick-and-charcoal evaporative store holds 24.6 degrees Celsius in 40 degree arid heat and extends modelled tomato life from 2.5 to 9.6 days for 6.7 litres of water per day, but it stops being useful above 61.5 percent ambient relative humidity at 35 degrees Celsius.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108669</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108669">Edge-of-Field Runoff Capture Sized from First Principles: A Woodchip Denitrification Bioreactor for 20 Hectares of Drained Cropland</a></h3>
+        <p><strong>The problem.</strong> Fertiliser nitrogen washes off fields into rivers and wells — farmers lose nitrogen they paid for and downstream people drink it.</p>
+        <p><strong>The result.</strong> A 612.0 m³ woodchip bioreactor on 0.255% of a 20 ha field removes a simulated 26.3% of the seasonal nitrate load and bypasses in rainfall events above about 26.5 mm in 24 h.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108832</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108832">A Combined Solar Tunnel Dryer and Desiccant-Bead Store for Village Seed Saving: Design, Budgets, and Failure Floor</a></h3>
+        <p><strong>The problem.</strong> Farmers who save their own seed lose next year&#x27;s crop in the bag — seed dried too slowly moulds, seed stored damp loses germination, and a failed planting cannot be undone.</p>
+        <p><strong>The result.</strong> A 24 m² solar tunnel dryer held at or below 40 °C plus 198.6 kg of regenerable desiccant beads per tonne dries seed from 20 % to 9 % moisture in 1.56 days of dry-season sun, but the station fails below an insolation floor of 3.74 kWh m⁻² day⁻¹.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108844</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108844">A Village Struvite Reactor Turning Source-Separated Urine into Fertiliser: Design and Phosphorus Budget for a 100-Person Community</a></h3>
+        <p><strong>The problem.</strong> Phosphorus is mined, shipped and priced as a strategic material while every village excretes it daily in urine and nearly all of it is wasted.</p>
+        <p><strong>The result.</strong> A 200 L batch reactor for 100 people is calculated to recover 87.8% of urine phosphorus as 2.31 kg of struvite per person per year, and it stops paying on fertiliser value alone when magnesium oxide exceeds $1.23 per kg.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108897</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108897">Capturing the Nitrogen That Escapes from Stored Manure: An Acid-Scrubbed Vent for a Covered Store, Its Nitrogen Budget and Its Break-Even Herd Size</a></h3>
+        <p><strong>The problem.</strong> A large share of manure nitrogen leaves the store as ammonia gas before it ever reaches a field — the farmer loses fertiliser he already owns, and the ammonia falls back as pollution.</p>
+        <p><strong>The result.</strong> An acid-scrubbed vent on a covered store for an 800-cow dairy herd captures 6,919 of 7,358 kg of emitted nitrogen per year at $1.55 per kg N, and capture stops paying below 720 cows, below a mean slurry temperature of 11.3 °C, and above a vent rate of 0.76 air changes per hour.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109017</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109017">Gravity-Fed Drip Irrigation from a Raised Tank Without a Pump: A Low-Head Design for a 0.1 Hectare Plot, Its Water Budget and Its Uniformity Limits</a></h3>
+        <p><strong>The problem.</strong> Small farmers on sloping or off-grid land water by hand or by flood because drip kits assume a pressurised supply that a village tank on a stand does not provide.</p>
+        <p><strong>The result.</strong> A raised tank with no pump can drip-irrigate a 0.1 hectare tomato plot evenly (98.84% emission uniformity) on flat ground, delivering 6,644 L/day in four zones, provided uphill laterals stay at or below a 2.4% slope and 100 m in length.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109023</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109023">A Village Solar Dehydrator for a 50 kg Mango Batch: Water Budget, Collector and Airflow Sizing, Drying Time and the Humid-Season Failure Line</a></h3>
+        <p><strong>The problem.</strong> When a crop ripens it all ripens at once — prices crash, the surplus rots, and the same village is hungry months later.</p>
+        <p><strong>The result.</strong> A solar dehydrator with an 8.0 m² collector and a 110 m³/h fan dries a 50 kg mango batch in 1.96 days for a net advantage of $66.89 per batch, but in the humid season above 81.7% relative humidity it stretches past the three-day mould window and fails.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109081</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109081">Rainwater Tank Sizing for Dry-Season Irrigation as a Computed Bound: Storage Is Set by Dry-Season Demand, Reliability Is Bought with Catchment Area</a></h3>
+        <p><strong>The problem.</strong> Dryland farmers get their year&#x27;s rain in a few months and watch most of it run off, and a wrongly sized irrigation tank — empty by mid-dry-season if too small, never filling if too big — is an expensive failure.</p>
+        <p><strong>The result.</strong> For a 100 m² dry-season vegetable field needing 78.2 m³ in an 800 mm rainfall climate, a four-in-five reliable tank holds about 76 m³ but only works if the catchment is at least about 1.5 times the field area, and the system stops closing at any tank size once rainfall variability exceeds CV ≈ 0.33 at that ratio.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109097</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109097">Recovering Heat from Compost to Warm a Small Greenhouse: System Design, Heat Production Curve, and the Pile Mass Below Which the Plumbing Is Not Worth Installing</a></h3>
+        <p><strong>The problem.</strong> Market gardeners near cold seasons burn fuel they can barely afford to keep seedlings alive at night, while the compost heap a few metres away throws the same heat into the sky for free.</p>
+        <p><strong>The result.</strong> An 8,000 kg compost pile with a water loop covers 46.0% of a 48 m² propagation greenhouse&#x27;s 90-night heating demand (2,727 kWh delivered), and below a pile mass of 6,500 kg the plumbing is not worth installing.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109114</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109114">A No-Electronics Witness Label for Sealed Grain Stores: Integrating Moisture Exposure and Seal Failure on One Passive Card</a></h3>
+        <p><strong>The problem.</strong> A farmer seals grain in a bag or drum and cannot tell, without opening it and breaking the seal, whether the store stayed dry and airtight or whether moisture crept in and the grain is quietly spoiling.</p>
+        <p><strong>The result.</strong> A passive two-channel label costing US $0.057 per store at a volume of 100,000 reaches red in 0.76 days on a failed seal and in 0.66 days on grain sealed wet — the two cases each single channel alone misses in one direction or the other — while staying green through 90 days in an intact store, and it is honest only between 15 °C and 35 °C.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109136</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109136">A Pond-and-Field Nutrient Loop, Closed by Arithmetic or Not at All: A Full Nitrogen and Phosphorus Budget for a 0.2 ha Fish Pond Serving 0.5 ha of Crops</a></h3>
+        <p><strong>The problem.</strong> Small farms buy fertiliser with cash they do not have while nutrients wash off their fields and out of their fish ponds unused.</p>
+        <p><strong>The result.</strong> The pond loop supplies 57.7% of the crops&#x27; phosphorus demand but only 19.2% of their nitrogen, so the farm still buys $69.56 of fertiliser a year, and the loop turns polluting at 1,700 kg of feed a year.</p>
+      </div>
+    </section>
+    <section id="w3">
+      <h2>Energy where people live — 17 papers</h2>
+      <p>Power and heat for homes and villages the grid fails: storage that pencils out, refrigeration without batteries, cooking without smoke, and the storage ideas that do not survive arithmetic, killed in print.</p>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108419</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108419">A Village-Fabricable Chimney Rocket Stove for Clean Cooking: Design, Thermal Performance, Draft, and Indoor Exposure Estimates</a></h3>
+        <p><strong>The problem.</strong> Indoor smoke from open biomass cooking fires, which harms the health of cooks and children and consumes large amounts of gathered wood every day.</p>
+        <p><strong>The result.</strong> The modelled stove cooks a stated day&#x27;s food on 1.202 kg of wood instead of 3.505 kg and brings carbon monoxide below the guideline level used, but its fine-particle average remains 6.68 times the WHO 24-hour guideline.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108436</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108436">Sand-Battery Thermal Storage for Home Heating: A First-Principles Residential Design for Three Sunless Days in a Cold Climate</a></h3>
+        <p><strong>The problem.</strong> Heating a home through cold, sunless days without high-cost batteries or high fuel bills.</p>
+        <p><strong>The result.</strong> A 4.51-tonne sand store in 2.82 cubic metres holds enough heat for three sunless days in the stated cold-climate house, beats direct electric heating when charged with surplus solar and used often, but usually loses to a heat pump and cannot be filled from winter rooftop solar in the stated case.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108475</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108475">Building-Scale Gravity Energy Storage for Off-Grid Homes: A First-Principles Design and Cost Test</a></h3>
+        <p><strong>The problem.</strong> Off-grid homes need overnight electricity storage that does not depend on short-lived, hard-to-replace chemical batteries in places with thin supply chains.</p>
+        <p><strong>The result.</strong> Gravity storage fails at household scale — 235.8 tonnes at 10 metres delivers only 5 kWh overnight at about $1.96 per kWh versus $0.11 for lithium — and beats lead-acid only as a shared village hillside system of about 25 kWh per night or more.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108531</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108531">Battery-Free Solar Refrigeration for Off-Grid Clinics and Homes: A Direct-Drive Design with Ice-Bank Thermal Storage</a></h3>
+        <p><strong>The problem.</strong> Clinics and homes without reliable electricity lose vaccines, medicines, and food when refrigeration fails, and the batteries that normally carry a solar refrigerator through the night are costly, short-lived, and hard to replace in remote places.</p>
+        <p><strong>The result.</strong> A 600 Wp direct-drive solar refrigerator with a 55.2 kg ice bank holds a 200-litre cabinet at 5 °C in a 32 °C ambient through three sunless days and costs USD 4,830 less over ten years than the battery-based equivalent.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108666</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108666">An Iron-Air Battery from Abundant Materials for Household and Village Electricity Storage: A First-Principles Design and Cost Test</a></h3>
+        <p><strong>The problem.</strong> Homes and villages where lithium batteries are unaffordable or unavailable need electricity storage built only from abundant, locally obtainable materials.</p>
+        <p><strong>The result.</strong> An iron-air battery loses to lithium iron phosphate for daily cycling at 10-hour duration because its round-trip efficiency is only 58.6 percent, but at 48-hour duration it delivers energy at $0.104 per kWh — about a quarter of the lithium cost — and it beats lead-acid at every duty tested.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108667</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108667">Small-Scale Compressed-Air Energy Storage for a Village or Workshop: A First-Principles Design, Efficiency and Cost Test</a></h3>
+        <p><strong>The problem.</strong> Unreliable, short-lived battery storage for evening lighting and phone charging in off-grid villages and workshops, where a long-lived store built from air, steel and maintainable machinery would be valuable if it worked out cheaper.</p>
+        <p><strong>The result.</strong> For evening light and phone charging for 50 households, village compressed-air storage returns only 15.9% of its charging electricity without heat storage (28.3% with it) and costs $1.545 per delivered kWh against $0.324 for lithium iron phosphate — and even with a free vessel the machinery alone costs more than a complete battery system — so it wins only where a tested vessel already exists, the charging power is truly surplus, and the air also does direct workshop work.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108691</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108691">A Village Microgrid Architecture Designed to Survive Its Own Failure Modes</a></h3>
+        <p><strong>The problem.</strong> A single failed component — one inverter, one battery string, one departed technician — taking an entire village&#x27;s electricity down at once.</p>
+        <p><strong>The result.</strong> In an hourly simulation of a low-sun week, a 60-household village microgrid built as four independent clusters with a direct-current path for critical loads served 72.3% of demand through a dead inverter where a conventional single-inverter design of the same capacity served 0.0%, at a premium of $321.66 per household (14.19%).</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108732</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108732">Waste-Heat Recovery for a Small Intermittent Brick Kiln: Air Preheat and Brick Drying, with Costs, Failure Modes and the Cases Where It Is Not Worth Building</a></h3>
+        <p><strong>The problem.</strong> Small kilns and workshops in the developing world vent most of their fuel energy as hot exhaust while paying real money, or spending real labour, for every kilogram of that fuel.</p>
+        <p><strong>The result.</strong> A bypassed steel-tube recuperator plus a brick-drying shed recovers 11.21 GJ per batch from a 10,000-brick intermittent kiln, saving 747 kg of firewood per batch (19.7%) and paying back in 2.12 years at 70 batches per year and 75 dollars per tonne of wood, while neither an electric tail nor a low-duty or cheap-fuel case survives the arithmetic.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108893</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108893">Solar Water Pumping That Stores Water, Not Electricity: A Battery-Free Design for Drinking Water and Small-Plot Irrigation</a></h3>
+        <p><strong>The problem.</strong> People away from a reliable electricity supply need water at all hours, and the battery that conventional solar pumping uses to provide it is expensive, short-lived in heat, and hard to replace or dispose of — this design stores the water itself instead, in an elevated tank.</p>
+        <p><strong>The result.</strong> A 340 Wp direct-drive array with a 6.67 m³ elevated tank delivers 3.265 m³ per day in the worst month for the stated 3,000 litre daily demand and costs $5,756.54 over 20 years in present value ($0.263 per m³), saving $1,050.39 against a lithium battery-buffered equivalent.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108986</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108986">Water as a Seasonal Heat Store: A First-Principles Design for Half of a Cold-Climate Winter, Its Six-Month Loss, and the Scale at Which the Loss Becomes Acceptable</a></h3>
+        <p><strong>The problem.</strong> Heating homes through cold winters with summer sunshine instead of winter fuel, and knowing honestly at what scale storing summer heat in water works and at what scale it does not.</p>
+        <p><strong>The result.</strong> A buried 202.3 cubic metre water tank can deliver half of the stated cold-climate house&#x27;s yearly heat, but it loses 35.7 percent of the stored heat over six months and delivers heat at $1.167 per kilowatt-hour against $0.148 for a heat pump, and the loss fraction only falls to 15 percent or below when about twenty houses share one store.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108995</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108995">Flywheel Energy Storage at Household and Village Scale: A Reference Design, Its Self-Discharge, and the Duties It Can and Cannot Serve</a></h3>
+        <p><strong>The problem.</strong> Households and villages whose solar batteries die young in the heat and must be replaced every few years, where a store with no chemistry that could cycle for decades would be valuable if its costs and losses allowed it.</p>
+        <p><strong>The result.</strong> A 71.7 kg carbon-fibre flywheel can deliver a household&#x27;s 2.00 kWh overnight load, but its 42 W standing loss drains 1.41% of its stored energy per hour — empty in about 71 hours — so at one cycle per day it costs $1.084 per delivered kWh against $0.376 for lithium iron phosphate, and it wins only at 10 or more cycles per day, in short power smoothing, and in minutes-long bridging.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109015</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109015">Thermochemical Heat Storage for Homes: A Strontium Bromide Seasonal Store Designed From First Principles</a></h3>
+        <p><strong>The problem.</strong> Houses need heat most in winter when solar heat is scarcest, and ordinary hot stores leak their charge away while they wait for winter.</p>
+        <p><strong>The result.</strong> A strontium bromide store holding 3,500 kg of salt stores 795.0 kWh usable in 8.16 m³, retains 0.996 of its charge over four months, and delivers 779.8 kWh, but at $4.93 per delivered kWh in seasonal use it loses decisively to a heat pump at $0.166 per kWh and to a seasonal water tank at $0.92 per kWh.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109093</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109093">Household Biogas from the Waste a Family Actually Has: An Honest Energy Budget and a Digester Design for a Six-Person Household with Three Cattle</a></h3>
+        <p><strong>The problem.</strong> Families are sold or given biogas plants sized from assumed waste and promised full cooking coverage; when the gas runs short the plant is blamed and abandoned. This paper gives the honest fraction before anything is built, and states how many animals, or how much extra waste, full coverage would actually take.</p>
+        <p><strong>The result.</strong> A digester sized from a family&#x27;s real waste — 18 kg of collectable dung and 1.5 kg of kitchen waste a day — covers 53% of that family&#x27;s cooking energy over a year, falling to 38% in a cold spell.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109105</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109105">Pico-Hydro Power Without a Dam: A Run-of-Stream Design for a 45-Household Hill Village, Sized to Its Dry Season</a></h3>
+        <p><strong>The problem.</strong> Hill and mountain villages that sit beside perennial streams but lack electricity able to carry productive loads such as milling, cold storage, and pumped water.</p>
+        <p><strong>The result.</strong> Sized to its dry season, a dam-free pico-hydro plant on the reference stream delivers 12.35 kW continuous in its driest month — 1.73 times the village&#x27;s daily energy demand — at $0.060 per kWh served, against $0.42 for solar plus battery delivering the same continuous service.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109110</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109110">A Solar Cooker That Can Cook the Evening Meal: A Panel Cooker with an Oil Thermal Store and a Retained-Heat Basket, Sized for a Family of Five</a></h3>
+        <p><strong>The problem.</strong> Solar cookers cook at midday but the main family meal is cooked in the evening after the sun has gone, so households keep burning charcoal or fuelwood for the meal that matters most.</p>
+        <p><strong>The result.</strong> A 1.6 m² panel cooker charging 22 kg of palm oil to 180 °C can deliver 1.93 MJ in the evening against a 1.62 MJ meal need for a family of five, serving food at about 92 °C, but it delivers nothing on a heavily overcast day and it cannot fry.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109304</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109304">Counter-Rotating Vertical-Axis Wind Turbine Arrays: Designing Against the Spacing Tax from the Other Side</a></h3>
+        <p><strong>The problem.</strong> Wind power near where people live is taxed by spacing — large horizontal-axis machines must stand far apart, so generation sits far from homes, farms and workshops; packing small vertical-axis rotors tightly is the obvious counter-move, and this paper prices honestly what that move gains on a small patch of land, what it cannot gain at scale, and what it costs in money and upkeep.</p>
+        <p><strong>The result.</strong> A specified array of small counter-rotating vertical-axis rotors (771.6 per hectare) produces a mean of 6.351–8.861 W per square metre of its own hectare across the full range of assumed neighbour-interaction factors — above the 0.5–1.0 W/m² horizontal-axis landscape baseline even when neighbours are assumed to hurt rather than help — but that advantage is borrowed from surrounding air and falls back to the same 0.5–1.0 W/m² bound at landscape scale, while costing 3.067 USD per rated watt and requiring 385.8 maintenance visits per hectare per year.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109326</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109326">Wake-Steering Fleet Control for a Wind Farm: Designing Against the Spacing and Wake Tax</a></h3>
+        <p><strong>The problem.</strong> Wind farms lose a large share of their power to the wakes of their own upwind turbines and pay for the loss in extra land; this paper designs and prices the fleet-control countermeasure and states plainly where it stops paying.</p>
+        <p><strong>The result.</strong> For a 20-turbine, 60 MW reference farm spaced 6 by 4 rotor diameters, an optimised wake-steering yaw schedule recovers +0.68% of fleet power in the dominant sector and +389 MWh a year (+0.25%, +64.3 W per hectare) in neutral air — rising to +4.37% in stable air, vanishing in turbulent air, and turning negative under fixed scheduling or direction spread, for a net of +$7,109 a year after added yaw maintenance.</p>
+      </div>
+    </section>
+    <section id="w4">
+      <h2>Health without money — 17 papers</h2>
+      <p>Clinics that must work with almost nothing: diagnosis without a CT scanner, oxygen without cylinders, screening with a phone, and instruments whose accuracy limits are printed on their face.</p>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108454</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108454">Airborne-Infection Control in a Low-Resource Clinic Waiting Room, Priced per Dollar: A Model-Derived Ranked Protocol</a></h3>
+        <p><strong>The problem.</strong> Low-resource clinic waiting rooms concentrate infectious and susceptible people in poorly ventilated air with almost no budget to fix it.</p>
+        <p><strong>The result.</strong> Wind cross-ventilation buys the most tuberculosis risk reduction per dollar (24.22 percentage points per $100), and pairing its openings with a $180 exhaust fan holds infection probability at 0.0173 even with no wind.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108473</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108473">A Low-Dose Chest Radiography Protocol for Tuberculosis Screening Derived from the Dose-Resolution Trade</a></h3>
+        <p><strong>The problem.</strong> Tuberculosis screening images large populations, so the dose per chest film should be set by the TB findings that must be detected rather than inherited from general chest practice.</p>
+        <p><strong>The result.</strong> A quantum-noise model gives a proposed TB screening protocol of 0.0069 mGy per film, 43.48 times below standard practice, preserving cavities, infiltrates and nodules of 5 mm or larger but not miliary nodules.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108477</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108477">An Ultrasound-First Diagnostic Pathway for Suspected Appendicitis Where No CT Scanner Exists: A Proposed Decision Protocol with a Cohort Model</a></h3>
+        <p><strong>The problem.</strong> Hospitals without a CT scanner must decide on suspected appendicitis with limited imaging, facing distant transfers, delays, and radiation exposure when CT is eventually used.</p>
+        <p><strong>The result.</strong> In a 1,000-case cohort model, the ultrasound-first protocol settles 52.3% of suspected appendicitis cases by ultrasound alone, avoids 79.57% of transfers and 716.09 mSv of collective dose per 100 patients versus transfer-all-for-CT, at $158.63 per patient, with 5.90 missed cases per 1,000 under the discharge rules and a 17.64% negative-appendectomy implication among settled-positive patients.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108490</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108490">A Passive Phase-Change Vaccine Carrier Sized for 72 Hours at 43 °C: Design and Thermal Model</a></h3>
+        <p><strong>The problem.</strong> Vaccines spoil or freeze when power fails for days in hot regions, because passive carriers either run warm too soon or freeze their contents with conventional ice-packs.</p>
+        <p><strong>The result.</strong> With 8.0 kg of 5 °C phase-change material behind a 20 mm vacuum-panel plus 30 mm foam wall, the model holds a 6 kg vaccine payload within 2–8 °C for 88.4 hours at a constant 43 °C ambient, never below 4.23 °C, at an estimated parts cost of US $254.53 (simulated, not measured).</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108585</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108585">Ultraviolet Disinfection for Low-Resource Clinics with Honest Dose Budgets: A Priced Specification for Upper-Room Air Treatment and Surface Terminal Disinfection</a></h3>
+        <p><strong>The problem.</strong> Low-resource clinics are sold ultraviolet disinfection on headline doses that omit distance, shadowing, lamp ageing, and human exposure limits.</p>
+        <p><strong>The result.</strong> Upper-room 254 nm air treatment delivers 12.1 equivalent air changes per hour for tuberculosis at $0.88 per room per day, while occupied far-UVC is capped by exposure limits and surface disinfection cannot reach shadowed sites at any exposure time.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108597</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108597">Solar Water Disinfection Made Quantitative: A UV-A Dose Model for a PET Bottle and a Fixed-Geometry Reflector Backing</a></h3>
+        <p><strong>The problem.</strong> Households relying on sunlight to disinfect drinking water have only a rule of thumb, with no dose accounting for place, season, cloud, or water turbidity.</p>
+        <p><strong>The result.</strong> A foil V-trough reflector backing (gain 1.72 clear-sky, $0.96 in materials) cuts time to 3-log E. coli from 1.97 h to 1.23 h on a clear mid-latitude summer day, but a single overcast day remains insufficient for viruses and Giardia cysts with or without it.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108625</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108625">Hearing Screening with a Smartphone: An Error Budget and the Protocol It Permits</a></h3>
+        <p><strong>The problem.</strong> Hearing loss often goes unscreened because clinical audiometry requires equipment and a quiet testing room that many people cannot reach.</p>
+        <p><strong>The result.</strong> With model-specific calibration the phone screen supports a binary referral decision at 35 dB HL in a quiet room (PTA error 4.126 dB) but not exact WHO grade assignment, and in a typical room the masking floor removes the normal-to-mild distinction entirely.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108713</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108713">Vision Screening with a Smartphone, Bounded by Optics: A Protocol Derived from Display, Camera and Pinhole Limits</a></h3>
+        <p><strong>The problem.</strong> People with treatable vision impairment go unscreened because examination requires equipment and specialists that are not present where they live.</p>
+        <p><strong>The result.</strong> Bounded by its own optics, a smartphone supports a 2 m distance-acuity screen at the 6/12 boundary plus a pinhole step that identifies a refractive cause from 1.19 dioptres, while its built-in photorefraction geometry is blind below 3.33 dioptres and fine acuity grades, dioptre values and astigmatism axis are not supported.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108822</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108822">Gravity-Fed Intravenous Infusion Without Pumps, Made Accurate: An Error Budget for the Standard Drip Set and a Constant-Head Mariotte Insert Design</a></h3>
+        <p><strong>The problem.</strong> Gravity IV infusions drift far from their prescribed rate wherever pumps are unavailable, so patients receive fluids late or at the wrong rate.</p>
+        <p><strong>The result.</strong> A standard gravity drip set modelled over 1,000 mL at 125 mL/h finishes 20.8% slow and 12.1% late (22.7% combined error budget), while a US$2.30 Mariotte constant-head insert removes the head-decay term (residual 0.84%) and reaches 9.5% total error only when the clamp is set at the patient after fitting.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108848</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108848">A Phase-Change Neonatal Warmer for Births Where No Incubator Exists: Design and Lumped Thermal Model</a></h3>
+        <p><strong>The problem.</strong> Newborns born where no incubator or reliable electricity exists die or are harmed by hypothermia in the first hours of life because they lose heat far faster than they can produce it.</p>
+        <p><strong>The result.</strong> A 2.5 kg phase-change mattress in an insulated wrap holds modelled skin temperature at or above 36.5 °C for at least 6.2 hours for every birth-weight class from 1.0 to 3.5 kg at ambient temperatures of 15 °C and above after one hot-water recharge, and its boiling-water recharge is bounded at a 40 °C pack maximum by a guard phase-change tray.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108850</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108850">A Low-Cost Pulse Oximeter with an Honest Accuracy Budget: Design, Error Propagation, and the Accuracy Floor for Triage</a></h3>
+        <p><strong>The problem.</strong> Cheap pulse oximeters are used for triage decisions although their accuracy collapses at low perfusion, in motion, and in dark skin, causing hypoxaemia to be missed.</p>
+        <p><strong>The result.</strong> A US $17.50 discrete-part oximeter design computes to A_rms 1.52 points at perfusion index 3% at rest, 3.37 points in dark pigmentation with a broad emitter, and 2.41 points at the dark low-perfusion corner with narrowband emitters and melanin-stratified calibration — and must blank, not display, readings below perfusion index 1% or above A_rms 3.0 points.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108990</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108990">Oxygen for Childhood Pneumonia Where Cylinders Run Out: A Solar Oxygen Concentrator Sized and Priced from Physics</a></h3>
+        <p><strong>The problem.</strong> Children with severe pneumonia die of hypoxaemia in facilities where delivered oxygen cylinders run out.</p>
+        <p><strong>The result.</strong> For a 10-child ward at a mean 1.25 L/min per child, a 4.5 kWp solar array with a 33 kWh battery and three 10 L/min concentrator modules supplies 18.0 m³ of oxygen per day at $0.91 per patient-day, against $18.61 per patient-day for delivered cylinders.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109034</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109034">Steam Sterilization of Instruments with a Household Pressure Cooker, Priced from Physics — and an Honest Verdict on Solar Sterilization Claims</a></h3>
+        <p><strong>The problem.</strong> Clinics without an autoclave need to know what proper instrument sterilization costs and whether sunlight can safely replace a controllable heat source.</p>
+        <p><strong>The result.</strong> A validated 121 °C pressure-cooker cycle for 2.0 kg of instruments needs 1.547 MJ and costs $0.061–$0.091 in fuel with 5 cycles per day, while a flat-plate solar collector cannot hold 121 °C at 500 W/m² and is not reliable as a sole-source sterilizer, though evacuated or concentrating collectors of 1–2 m² can complete a cycle in about 1–1.5 sun-hours on a clear day.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109044</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109044">Household Smoke from Solid-Fuel Cooking: A Low-Cost Chimney Hood Priced by Draft Physics</a></h3>
+        <p><strong>The problem.</strong> Cooks, mostly women, breathe heavy PM2.5 smoke for hours daily from solid-fuel open fires.</p>
+        <p><strong>The result.</strong> Sized by draft physics (3.5 m, 200 mm flue; 12.02 Pa, 0.0689 m3/s), the chimney hood gives the largest modelled exposure reduction (66.3%) but ranks last per dollar (1.053 %/USD) behind a solar fan (1.411) and an improved stove (1.182), and it fails against adverse wind above about 5.39 m/s.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109046</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109046">Passive Cooling for Medicine Storage in a Hot Clinic Without Reliable Power: A Radiative, Evaporative and Thermal-Mass Cabinet Design and Its Computed Climate Envelope</a></h3>
+        <p><strong>The problem.</strong> Clinics in hot regions without reliable power cannot keep medicines labelled for storage at or below 25 °C within their storage class.</p>
+        <p><strong>The result.</strong> In the model the cabinet holds at or below 25 °C through a 40 °C peak day in dry air (maximum 24.95 °C on radiative cooling alone, 23.84 °C with the evaporative stage), holds in 26 of 48 swept climate combinations, and fails in humid heat and at every 45 °C combination.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109103</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109103">A Water Witness for Clinics: Design and Accuracy Budget of a Low-Cost Photometer for Free Chlorine and Turbidity at the Point of Care</a></h3>
+        <p><strong>The problem.</strong> Clinics disinfecting or receiving small-supply water often have no affordable way to verify that a chlorine residual persists and that the water is clear enough for disinfection to be trusted.</p>
+        <p><strong>The result.</strong> A $37.90 dual-channel photometer design is computed to detect free chlorine to 0.063 mg/L with about 0.020 mg/L standard uncertainty across the WHO 0.2–0.5 mg/L band and turbidity to 0.159 NTU, sufficient to flag a lost chlorine residual and adjudicate the 5 NTU limit but not to certify samples within about 0.04 mg/L of either chlorine band edge.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109222</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109222">A Hand-Powered Centrifuge for Blood Separation Where There Is No Power: A Design Envelope Specified from Rotor Physics</a></h3>
+        <p><strong>The problem.</strong> Clinics without electric power cannot run the centrifuge that hematocrit measurement and concentration-based malaria diagnosis require.</p>
+        <p><strong>The result.</strong> A 100:1 hand-crank design sustaining 6,797 g separates hematocrit samples in a specified 9 minutes and malaria concentration samples in 11 minutes at 48 patients per hour for USD 38.00 in parts, while platelet-poor plasma and quantitative buffy-coat work remain outside the hand-drive envelope.</p>
+      </div>
+    </section>
+    <section id="w5">
+      <h2>Shelter and infrastructure — 17 papers</h2>
+      <p>Houses that stand up and warn before they fail: earth blocks any soil can make, sanitation without sewers, roofs tied down, foundations that float, and cheap witnesses on bridges, slopes and cracks.</p>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108427</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108427">A Low-Cost Bridge-Scour Witness Instrument: A Tilt-Node Chain Design and Its Computed Detection Budget</a></h3>
+        <p><strong>The problem.</strong> riverbed scour around bridge piers can deepen unseen between inspections, and a cheap continuous witness can report promptly when the bed falls past a chosen depth.</p>
+        <p><strong>The result.</strong> A chain of 16 tilt nodes spaced 0.20 m apart is computed to witness pier scour to within 0.20 m over a 3.2 m range, detect a new exposure with probability 0.892 within one hour at a model false-alarm rate of 0.0110 per chain per year, run a computed 9.32 years on one battery pack (service capped at 5.0 years), and cost $191.40 in parts.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108442</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108442">A Universal 6% Equal-Split Lime-Cement Formulation for Stabilised-Earth Wall Blocks: A Mix-Selection Computation Balancing Strength, Wet Durability, Embodied Energy and Cost</a></h3>
+        <p><strong>The problem.</strong> Durable house walls are too expensive and energy-intensive for low-income builders who have suitable soil on site but no laboratory to choose a block mix.</p>
+        <p><strong>The result.</strong> One recipe — 94% local soil with 3% cement and 3% lime — works in simulation across soils from 15% to 40% clay and cuts the wall&#x27;s embodied energy by 23.8% compared with an 8% cement-only block.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108452</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108452">A Sewerless Thermal Sanitation Unit for a Household: Computed Pathogen Lethality, Energy per Use, and Safe-Handling Intervals for a 2-Litre Batch Design</a></h3>
+        <p><strong>The problem.</strong> Households without a sewer connection must store and empty faecal material that can carry bacteria, viruses, and helminth eggs.</p>
+        <p><strong>The result.</strong> A 2.0 kg household batch held at 65 °C for 25 min gives a computed 7.41-log reduction of Ascaris suum eggs (the limiting organism; 6-log needs 20.24 min) using 0.1188 kWh per use, with safe handling after 11.06 h sealed or 1.11 h vented to 40 °C, in a unit costing US$118.00 in parts (SIMULATED, NOT MEASURED).</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108520</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108520">A Passive Radiative-Cooling Roof Assembly for Heat-Wave Housing: Computed Cooling Budget and Price per Degree of Indoor Temperature Reduction</a></h3>
+        <p><strong>The problem.</strong> Dangerous indoor overheating during heat waves in lightweight, poorly insulated housing whose occupants have no air conditioning.</p>
+        <p><strong>The result.</strong> The computed assembly lowers the daily-mean indoor temperature of a vulnerable 16 m² room by 3.61–3.75 K versus a dark roof at USD 76.75–79.80 per degree, but in humid heat its sub-ambient cooling at peak sun falls to effectively zero (4.8 W/m², 0.4 K), leaving solar rejection as the only supported benefit.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108637</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108637">A Straw and Rice-Husk Fibre Insulation Panel: Specification and Computed Thermal, Moisture, Cost and Fire-Behaviour Envelope</a></h3>
+        <p><strong>The problem.</strong> Homes waste heating fuel for lack of affordable insulation while surplus straw and rice husk are burned or discarded, and a fibre panel is only useful if its moisture and fire limits are stated as plainly as its thermal benefit.</p>
+        <p><strong>The result.</strong> A 100 mm straw/rice-husk panel gives 2.041 m²K/W dry and 1.624 at 80% relative humidity at US$8.42/m², with a 16% moisture design limit, and is combustible with computed ignition in about one second above the critical flux so it may be used only as protected infill behind a non-combustible lining.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108639</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108639">A Lashed-Plus-Bolted Bamboo–Timber Joint for Low-Rise Housing: Connector Design and a Computed Shear, Pull-Out and Slip Budget Across Culm Diameter and Moisture</a></h3>
+        <p><strong>The problem.</strong> Low-rise bamboo houses fail at their joints, where lashing alone slips loose and fabricated steel brackets are too expensive or unavailable for the builders who need them.</p>
+        <p><strong>The result.</strong> A single M12 bolt with washer plates plus six turns of rope lashing gives a 120 mm bamboo culm a design shear capacity of 8.29 kN and a pull-out capacity of 7.93 kN at US$4.63 per joint, with every diameter and moisture combination tested in simulation passing.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108696</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108696">A Solar Desiccation Sanitation Chamber for Households Without Sewers: Computed Moisture-Removal, Pathogen Die-Off, and Safe-Storage Budgets Across Humidity and Season</a></h3>
+        <p><strong>The problem.</strong> Households without sewers must store and handle wet faecal material that carries disease; drying it with sunlight and storing it dry for a stated interval makes it lighter and safer to handle at no running cost.</p>
+        <p><strong>The result.</strong> A solar drying chamber can dry a household&#x27;s weekly faecal batch in about a week of ordinary sun, but the dried material still needs about five months of sealed storage before it reaches the stated safe-handling threshold.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108714</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108714">A Rainwater-First Roof and Storage System for a Water-Short Household: Integrated Sizing of Roof, First-Flush Diverter and Tank Against a 450 mm Rainfall Regime</a></h3>
+        <p><strong>The problem.</strong> Households in water-short climates size roof, diverter and tank separately, so they run dry in the dry season, spill wet-season rain, or store roof contamination.</p>
+        <p><strong>The result.</strong> A 120.0 m² roof, a 120.0 litre first-flush diverter and a 20,000 litre tank supply a five-person household&#x27;s 100.0 litres per day on 352.23 days per year (96.50% reliability) in a 450 mm rainfall regime, but reliability falls to 57.12% in drought at 60% rainfall.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108870</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108870">A 20% Rice-Husk Ash, 6% Alkali Formulation for Fly-Ash Geopolymer Wall Blocks: A Formulation Search Priced in Strength, Cost and Carbon per Square Metre of Wall</a></h3>
+        <p><strong>The problem.</strong> Durable house walls are unaffordable where cement is costly to buy and transport, while fly ash and rice-husk ash sit unused as waste.</p>
+        <p><strong>The result.</strong> A fly-ash block with 20% rice-husk ash and a 6% alkali dose, cured at 60 °C for 24 hours, reaches a simulated 8.02 MPa at US$17.30 and 24.28 kg CO2e per square metre of wall, but the activator carries 76.7% of the carbon and any dose above 8% is ruled out by the alkali handling limit.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108880</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108880">A Porous Ceramic Evaporator Wall for a Single Room in Arid Housing: Computed Indoor Temperature Reduction, Water Use per Degree, and the Humidity Ceiling</a></h3>
+        <p><strong>The problem.</strong> Rooms in arid-climate houses stay dangerously hot where mechanical air conditioning is unaffordable or unsupported, and households cannot judge an evaporative alternative without knowing its cooling, its daily water cost, and the humidity at which it fails.</p>
+        <p><strong>The result.</strong> At 40 degrees Celsius and 20 percent relative humidity outside, the wall holds the room at 29.00 degrees Celsius, a reduction of 11.00 degrees, for 47.21 litres of evaporated water per 12-hour day (4.29 litres per day per degree), and it stops working above 62.7 percent outdoor relative humidity at 40 degrees Celsius.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108914</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108914">A Slope-Failure Witness Network for Informal Hillside Settlements: Node Design and a Computed Warning Budget</a></h3>
+        <p><strong>The problem.</strong> Informal hillside settlements stand on steep, marginally stable slopes that fail during heavy rain, often at night, with no instrument on the hillside and no warning at all.</p>
+        <p><strong>The result.</strong> A tilt and soil-moisture witness network is computed to give a hillside settlement 8.14 hours (watch) and 3.90 hours (warning) of lead before a rainfall-driven slope failure in the reference storm (20 mm/h, 1.2 m slip plane), at a nuisance warning rate of 0.192 per slope per year and a parts cost of $22.38 per household.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109001</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109001">A Sacrificial Crack-and-Strain Witness Strip for Small Bridges and Culverts: Design and Computed Threshold Budget</a></h3>
+        <p><strong>The problem.</strong> cracks in small bridges and culverts can open during an overload, flood, or freeze between inspections and close again leaving no record; an unpowered strip that keeps the peak opening lets an inspector see that the event happened and how large it was.</p>
+        <p><strong>The result.</strong> Eight graded sacrificial ligaments on a passive 100 mm strip are computed to record peak crack opening from 0.20 mm to 1.25 mm in 0.15 mm steps with a worst-case temperature effect of 0.0235 mm against the 0.20 mm first threshold, a governing computed service life of 8.63 years (replacement capped at 5.0 years), and a parts cost of $9.45 per crossing point.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109079</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109079">A Flood-Resilient Amphibious Foundation for a Small House: Buoyancy, Guide-Post Loads and Failure Limits</a></h3>
+        <p><strong>The problem.</strong> Houses on flood-prone land are damaged or destroyed when flood water enters the living space and pushes a fixed structure sideways; occupants lose their home in a single flood.</p>
+        <p><strong>The result.</strong> A 38,000 kg house on a 10.0 m by 8.0 m buoyant base lifts off at 0.50 m of flood water, floats with 0.925 m of freeboard, and carries the design 3.0 m flood at 2.0 m/s with a guide-post bending margin of 1.85, while a guide jammed after 1.00 m of rise fails at a margin of 0.13.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109101</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109101">A Continuous Load-Path Strap-and-Anchor Roof Tie-Down Assembly for Low-Cost Housing: A Computed Uplift Budget and Its Limit Wind Speed</a></h3>
+        <p><strong>The problem.</strong> Hurricane roof loss in low-cost housing caused by a broken uplift load path, where roofs lift off because rafters and walls were never tied down to the foundation.</p>
+        <p><strong>The result.</strong> The computed zoned strap-and-grouted-anchor assembly reaches its design limit at a wind speed of 41.3 m/s (149 km/h), governed by grout-to-masonry anchor bond at 3.67 kN design per unit, against 30.1 m/s for uniform 0.9 m spacing, at USD 264.00 per house.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109150</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109150">A Confined-Masonry Wall System for One-Storey Stabilised-Earth Housing: Tie-Column and Ring-Beam Layout with a Computed Seismic Shear and Stability Budget</a></h3>
+        <p><strong>The problem.</strong> Earthquake deaths in low-rise unreinforced masonry housing, where walls separate at corners, fall out of plane, or shear through in plane for want of a dimensioned confinement layout suited to weak, low-cost earth blocks.</p>
+        <p><strong>The result.</strong> For a 7.2 m by 4.8 m one-storey house in 140 mm stabilised-earth block with tie-columns at no more than 2.4 m spacing and a continuous ring beam, the computed design envelope ends at 0.291 g, set by in-plane shear of the short walls, with drift at that point of 0.0419% against a stated 0.40% limit.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109179</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109179">A Passive Solar Heating Wall for Cold-Climate Low-Income Housing: A Computed Sizing Rule, Temperature-Lift Budget, and Cost per Degree</a></h3>
+        <p><strong>The problem.</strong> it attacks cold homes for households that cannot afford heating fuel, by stating before construction what a zero-running-cost solar wall will actually deliver and where it stops being worth building.</p>
+        <p><strong>The result.</strong> An 8.0 m² glazed thermal-mass wall 0.25 m thick lifts a poorly insulated room by 3.45 K at 45° N under a partly cloudy January sky (7.95 K at 35° N clear, 0.64 K at 55° N overcast), delivers 3.368 kWh per night at the central case, is sized by area at 0.37 K per m² with mass thickness held to 0.15–0.25 m, costs $734.49 per degree of lift at the central case, and needs 0.10 m² of vent area to hold an autumn peak of 31.24 °C to 26.20 °C.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109197</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109197">A Household Greywater Treatment and Reuse Bed for Water-Short Settlements: A Sizing Rule and Computed Treatment Budget for a Gravel-and-Reed Subsurface-Flow Design</a></h3>
+        <p><strong>The problem.</strong> Water-short households either waste their washing water while gardens go dry or reuse it untreated and spread disease, because they have no correctly sized, low-cost way to treat it.</p>
+        <p><strong>The result.</strong> For five people producing 250 litres of greywater per day, organic loading governs the size at a design area of 6.5 m² (1.30 m² per person), the computed effluent BOD falls from 150 mg/L to 17.0 mg/L at 20 °C, clogging arrives after 3.52 years without a pre-filter and 7.05 years with one, and the treated water may be used only for below-ground irrigation — never for drinking or household contact.</p>
+      </div>
+    </section>
+    <section id="w6">
+      <h2>Air, fire and disaster — 16 papers</h2>
+      <p>Warning and refuge for the hours when things go wrong: radon and smoke witnessed cheaply, homes hardened against embers priced per measure, flood and earthquake warning bought for dollars, and kits for the first days after a disaster.</p>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108438</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108438">What Actually Saves the House: A Priced Cost-Effectiveness Ranking of Ember-Attack Home Hardening, and the Cheapest Bundle That Buys a Stated Survival Probability</a></h3>
+        <p><strong>The problem.</strong> Homes are lost to ember attack in wildfire country, and scarce hardening money is spent on the wrong measures.</p>
+        <p><strong>The result.</strong> Vent mesh and a 0–1.5 m non-combustible wall zone are the highest-value ember-hardening measures, and the cheapest bundle reaching a modelled survival probability of 0.80 in a severe ember event costs US$6,100, while full-house window replacement is the poorest value and no spending on the six-measure menu reaches 0.90.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108450</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108450">A Passive Indoor Radon Witness Cheap Enough to Matter: Design and Fully Computed Sensitivity Budget for a 90-Day CR-39 Diffusion-Chamber Detector at Under US$5 in Parts</a></h3>
+        <p><strong>The problem.</strong> Indoor radon exposure in homes that cannot afford electronic monitors.</p>
+        <p><strong>The result.</strong> A passive CR-39 radon witness with US$4.75 in parts, deployed for 90 days, computes to a practical detection limit of 8.56 Bq/m³ and 18.9% uncertainty at 100 Bq/m³ — enough to screen homes against both the WHO 100 Bq/m³ reference level and the EPA 148 Bq/m³ action level with error rates of a few percent, but not enough to certify a borderline concentration (SIMULATED, NOT MEASURED).</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108469</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108469">A Heat-Wave Survival Room: The Integrated Design, Computed Cooling Budget and Cost per Protected Person for One Cooled Room per Dwelling</a></h3>
+        <p><strong>The problem.</strong> Heat waves killing people indoors in dwellings with no cooling.</p>
+        <p><strong>The result.</strong> Envelope treatment cuts the reference room&#x27;s peak cooling load from 1,819.3 W to 801.5 W, and a $2,300 core package holds the room at 28 °C (wet-bulb 22.20 °C) through a 46 °C heat-wave day for $4.37 per protected person per heat-wave day, with a 5.0 kWh battery and 2.0 kWp of photovoltaics riding an 8-hour daytime outage.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108506</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108506">Methane Leak Detection at Walking Pace with Phone-Grade Thermal Optics: An Honest Bound</a></h3>
+        <p><strong>The problem.</strong> Methane leaks that go unseen because survey cameras cost as much as a house.</p>
+        <p><strong>The result.</strong> Even under optimistic assumptions, a walking survey with phone-grade thermal optics costing about US$300 cannot detect methane leaks smaller than 82 g/h at 1 m or 334 g/h at 10 m, so it can see only gross leaks.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108595</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108595">Earthquake Early Warning from Cheap Accelerometers: An Honest Latency-and-Geometry Budget, a Blind Zone, and a Priced Verdict</a></h3>
+        <p><strong>The problem.</strong> Earthquake deaths in regions with no early-warning system because the instruments are priced for rich countries.</p>
+        <p><strong>The result.</strong> A cheap dedicated-node network delivers 9.4 seconds of warning at 50 km and 23.5 seconds at 100 km for a magnitude 6.5 event, but inside a blind zone of about 15 km (25 km for phones) no warning is possible at any node density, and density beyond roughly one node per 100 km² buys almost no additional time.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108616</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108616">A Flood Witness Network for the Settlements That Flood First: Design and a Computed Lead-Time Law for Low-Cost River and Rain Gauge Nodes at US$94 per River Node</a></h3>
+        <p><strong>The problem.</strong> Flash floods killing people in poor settlements that get no official warning.</p>
+        <p><strong>The result.</strong> A network of US$94.00 river nodes spaced 5 km apart is computed to buy 75 minutes of warning on a 200 km² catchment at slope 0.003 at US$1.35 per warned household per year over five years, but buys no usable river-gauge warning on a 10 km² catchment, where only evacuation of people under a rain-based watch is served (SIMULATED, NOT MEASURED).</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108689</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108689">A Post-Disaster Drinking-Water Triage Kit for the First 72 Hours: Staged Treatment, Computed Log Removal, Gravity Throughput and a Priced Verdict</a></h3>
+        <p><strong>The problem.</strong> Disease from unsafe water in the first days after floods and earthquakes.</p>
+        <p><strong>The result.</strong> A 1.70 kg, $58.00 three-stage gravity kit produces 56.36 L/day of safe water (0.972 L per dollar per day) on moderate 50 NTU water, but its safe output is zero on extreme 500 NTU water where chlorine demand exhausts the dose and virus removal falls to 2.0 log against a 4.0-log target.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108716</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108716">A Lightning Witness for Schools and Clinics: A $91 Sferics and Electric-Field Warning Node, Its Computed Warning-Time Budget, and the Limits of the 30-30 Rule</a></h3>
+        <p><strong>The problem.</strong> Lightning deaths at schools, clinics, and sports fields in regions with no warning infrastructure, where the only guidance is the 30-30 rule, which cannot react until a nearby strike has already occurred.</p>
+        <p><strong>The result.</strong> A $91 sferics-plus-electric-field warning node gives a school or clinic a median 29.2 minutes of warning before the first dangerous lightning strike — tens of minutes in most storms, but zero warning in 12.7% of them, a failure share a $318 three-node district arrangement cuts to 5.2% (all figures SIMULATED, NOT MEASURED).</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108738</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108738">A Post-Disaster Power Triage Kit for a Small Clinic: Load Definition, Photovoltaic and Battery Sizing, and Load-Shedding Rules</a></h3>
+        <p><strong>The problem.</strong> Clinics going dark after disasters — vaccines spoiled, births and surgery by flashlight.</p>
+        <p><strong>The result.</strong> A 2.8 kW photovoltaic and 14.4 kWh battery kit costing USD 10,070 keeps a small clinic&#x27;s refrigeration and medical devices powered through a seven-day storm week under explicit load-shedding rules, but empties on the ninth consecutive storm day unless a generator or cold-chain evacuation intervenes.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108746</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108746">A Wildfire-Smoke Refuge Room for a Classroom or Clinic Ward: An Integrated Sizing Law and a Priced Comparison of Box-Fan Filter Arrays and HEPA Purifiers</a></h3>
+        <p><strong>The problem.</strong> Children and patients breathing wildfire smoke indoors for days with no refuge.</p>
+        <p><strong>The result.</strong> For a typical 180 m³ room in mean wildfire smoke of 350 µg/m³, four box-fan MERV-13 units (sized for day-five filter loading, not day one) hold indoor PM2.5 at or below 35 µg/m³ for $0.514 per protected occupant per smoke day — while at peak smoke with no filter change only the HEPA class holds the target, and in leaky rooms neither class can, so sealing comes first.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108886</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108886">A Heat Witness for Outdoor Workers: An Honest Error Bound for Cheap Heat-Stress Estimation</a></h3>
+        <p><strong>The problem.</strong> Heat stroke killing farm, construction, and delivery workers who have no heat-stress instrument.</p>
+        <p><strong>The result.</strong> A US$38 on-site temperature/humidity sensor with a computed globe correction is the best cheap WBGT witness (RMSE 1.05 °C, required safety margin 2.0 °C for a 1% under-reading bound), free station data needs a 4.6 °C margin, and a wearable physiological estimator needs 8.6 °C and is not useful as a sole WBGT trigger — all SIMULATED, NOT MEASURED.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108910</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108910">A Household Cookstove Smoke Witness and Chimney-Draft Design Bound: What a Sub-US$20 Carbon Monoxide Witness Can Resolve, and the Flue Dimensions That Keep a Cooking Fire&#x27;s Smoke Out of the Room</a></h3>
+        <p><strong>The problem.</strong> Household air pollution from solid-fuel cooking — among the largest environmental killers of women and children.</p>
+        <p><strong>The result.</strong> A sub-US$20 carbon monoxide witness can sound a reliable alarm at cooking-peak concentrations but cannot certify compliance with the WHO 24-hour guideline (its smallest resolvable exceedance is 2.3 times the guideline), while a 0.15 m diameter, 3.5 m flue costed at US$49.10 keeps a 3.0 kW cooking fire&#x27;s smoke out of the room in calm air and a 5 m/s adverse wind.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24108997</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24108997">A Disaster Mesh Communications Budget for a Town Without Grid or Towers: Coverage, Traffic, Power and Price for the First Week</a></h3>
+        <p><strong>The problem.</strong> Families and clinics cut off from all communication after disasters.</p>
+        <p><strong>The result.</strong> A solar LoRa-class mesh of 8 relays and one handset per household can carry a 7500-household town&#x27;s coded first-week traffic (11,796 messages per day) at 0.989 delivery and $42.91 per covered household, but shadowed districts need 24 m relays at the slowest rate and the single-channel backhaul collapses below 90% delivery above 29,057 messages per day.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109005</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109005">A Flood Witness for Low-Water Road Crossings: Computed Warning Time, Sensor Placement and the False-Closure Trade-Off</a></h3>
+        <p><strong>The problem.</strong> Drivers drowned at flooded low-water crossings, the deadliest single setting in flash floods.</p>
+        <p><strong>The result.</strong> A solar-powered crossing witness delivers 15.28 minutes of warning on a small steep catchment at a ten-year cost of US$2,472.08 per crossing, but only 1.67 minutes on the smallest steep catchments, where a physical barrier — not a beacon — is the answer.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109061</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109061">A Corrected Low-Cost Indoor Particle Witness: Humidity, Coincidence and Scattering Corrections for Classification Against the WHO 24-Hour PM2.5 Guideline, Below US$60</a></h3>
+        <p><strong>The problem.</strong> Families breathing polluted indoor air with no trustworthy affordable way to know.</p>
+        <p><strong>The result.</strong> Correcting a low-cost indoor particle counter for humidity, coincidence and scattering raises its simulated correct classification against the WHO 24-hour PM2.5 guideline from 81.8% to 89.7% across six non-fog home scenarios at a component total of US$55.50, but at fog-level humidity it classifies at only 49.8% and must not be trusted.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Paper · DOI 10.5281/zenodo.24109071</p>
+        <h3><a href="https://doi.org/10.5281/zenodo.24109071">A Household Flood-Safe Store for Settlements That Flood Every Year: Raised-Fixed versus Sealed-Buoyant Design with Computed Elevation, Anchoring, Moisture and Cost Budgets</a></h3>
+        <p><strong>The problem.</strong> families losing their stored food and seed to floods they know are coming.</p>
+        <p><strong>The result.</strong> Against an expected annual loss of $301.28 for ground-level storage, a raised-fixed store at 1.68 m costs $22.34 per household per year and a sealed buoyant store anchored to 20.0 kN costs $44.10, and in Class IV floods both designs fail and only relocation serves.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>The model: designs for licence</h2>
+      <p>Aldred Industries does not manufacture. It solves the problem and publishes the design; the publication, with its DOI and its date, is the public record of the work. Manufacturers license the designs and build them. Any design catalogued on this page is available for licence to manufacturers from Aldred Industries.</p>
+      <p><a href="../aldred-industries/">About Aldred Industries</a></p>
+    </section>
+
+    <section>
+      <h2>Given, not sold</h2>
+      <p>The knowledge itself is published, not held back. Exolex University, the company's school, is free and open to everyone. A personal Dave is free. And every design on this page is published openly, each with a DOI, for anyone in the world to read, check, and learn from. What is sold is the licence to manufacture — the record itself is given away.</p>
+    </section>
+
+    <section>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="../papers/">All the papers</a>
+        <a class="btn btn-ghost" href="../aldred-industries/">Aldred Industries</a>
+        <a class="btn btn-ghost" href="../dave/">Meet Dave</a>
+        <a class="btn btn-ghost" href="../record/">The record</a>
+      </div>
+    </section>
+
+  </main>
+<footer>
+    <p><a href="../">Home</a> · <a href="../dave/">Meet Dave</a> · <a href="../what-is-an-exolex/">What is an exolex?</a> · <a href="../who-is-william-alexander-aldred/">Who is William Alexander Aldred?</a> · <a href="../papers/">The papers</a> · <a href="../world-problems/">Solving the world's problems</a> · <a href="../books/">The books</a> · <a href="../questions/">Questions</a> · <a href="https://premiummarketingsolutionsllc.com/evidence.html">The Evidence File</a> · <a href="https://premiummarketingsolutionsllc.com/">Premium Marketing Solutions</a> · <a href="../aldred-industries/">Aldred Industries</a> · <a href="../companies/">All the companies</a> · <a href="../demonstration/">The demonstration</a> · <a href="https://premiummarketingsolutionsllc.com/time-traveler/blueprints/">The blueprints</a></p>
+    <p>© 2026 Dave · <a href="../privacy.html">Privacy Policy</a></p>
+      <p>A product of Aldred Industries</p>
+  </footer>
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "b0c88056512e45e1907f55333b9fa607"}'></script>
+<script defer src="/assets/dave-corner.js"></script>
+</body>
+</html>
