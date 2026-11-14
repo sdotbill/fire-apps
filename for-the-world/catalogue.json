@@ -2424,7 +2424,7 @@
   "name": "A Vacuum-Gradient Energy Harvester: Casimir Stroke Work and Power at Micrometre Gaps",
   "doi": "10.5281/zenodo.24125916",
   "blueprint_doi": "10.5281/zenodo.24126882",
-  "field": "Food & Agriculture",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Second-generation propulsion and energy designs",
   "explanation": "The device is a vacuum-gradient energy harvester that extracts stroke work from the Casimir attraction between conducting plates, derived from stated assumptions and computed throughout by the accompanying script. At a closed gap of 0.50 micrometres the net work is 1.38 nanojoules per cycle and the net power at the stated cycling rate is 1.38 microwatts for a plate array of one square metre."
@@ -2649,7 +2649,7 @@
   "name": "A Shear-Regulated Piezoelectric Vibration Energy Harvester",
   "doi": "10.5281/zenodo.24133959",
   "blueprint_doi": "10.5281/zenodo.24134657",
-  "field": "Food & Agriculture",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Energy conversion and field devices",
   "explanation": "The unit described in this study is a shear-regulated piezoelectric vibration harvester intended for powering wireless condition-monitoring sensors on rotating machinery. Its operating principle is that a cantilevered piezoelectric beam with a proof mass converts machine vibration to charge, and a shear-regulated mechanical stop caps beam strain at the value set by the shear limit adopted for the design."
