@@ -75,7 +75,7 @@
   "name": "Locating Distribution Leaks by Pressure-Transient Timing on a Network of Low-Cost Loggers: A Method for Plastic-Pipe Networks Where Acoustic Correlation Fails",
   "doi": "10.5281/zenodo.24108543",
   "blueprint_doi": "10.5281/zenodo.24111016",
-  "field": "Water",
+  "field": "Observation & Instruments",
   "stage": "blueprint",
   "territory": "",
   "explanation": "A method and logger network that locates leaks in plastic-pipe water networks by timing pressure transients — the approach that works where the standard acoustic method does not. It serves water-utility instrument makers and, through them, municipalities."
@@ -129,7 +129,7 @@
   "name": "Recovering Heat from Compost to Warm a Small Greenhouse: System Design, Heat Production Curve, and the Pile Mass Below Which the Plumbing Is Not Worth Installing",
   "doi": "10.5281/zenodo.24109097",
   "blueprint_doi": "10.5281/zenodo.24111484",
-  "field": "Food & Agriculture",
+  "field": "Water",
   "stage": "blueprint",
   "territory": "",
   "explanation": "A closed water loop that recovers metabolic heat from a compost pile and delivers it, through a buffer tank, to a small propagation greenhouse at night. A high-density polyethylene coil buried in the pile absorbs heat continuously; a small circulator moves the water to a 1,000 litre insulated buffer tank; the buffer discharges to the greenhouse heating circuit during the 10-hour night, when the seedlings need the heat."
@@ -303,7 +303,7 @@
   "field": "Energy",
   "stage": "blueprint",
   "territory": "",
-  "explanation": "| Item | Value | Origin | |---|---|---| | House floor area | 140 m² | source | | Heat-loss coefficient | 167 W/K | source | | Indoor temperature | 20 °C | source | | Mean outdoor temperature, design spell | −10 °C | source | | Temperature difference | 30 K | source values | | Average heating load | 5.01 kW | source | | Daily heat demand | 120.2 kWh per day | source | | Autonomy target | 3 sunless days | source | | Delivered energy target | 360.7 kWh | source | | Gross stored energy (including standing loss during discharge) | 390.3 kWh | source | | Standing loss during the 3-day discharge | 29.5 kWh | source | | Net delivered after that loss | 360.7 kWh | source | A colder spell, a larger house, or a less well-insulated house raises the required mass, volume, and cost in direct proportion to the load (source paper, Section 2)."
+  "explanation": "A colder spell, a larger house, or a less well-insulated house raises the required mass, volume, and cost in direct proportion to the load (source paper, Section 2). Do not build this size for a different house without re-running the sizing calculation."
  },
  {
   "name": "A Solar Cooker That Can Cook the Evening Meal: A Panel Cooker with an Oil Thermal Store and a Retained-Heat Basket, Sized for a Family of Five",
@@ -1299,7 +1299,7 @@
   "name": "A wick selection rule for tallow and beeswax candles",
   "doi": "10.5281/zenodo.24115259",
   "blueprint_doi": "10.5281/zenodo.24119546",
-  "field": "Food & Agriculture",
+  "field": "Water",
   "stage": "blueprint",
   "territory": "Household Manufactures",
   "explanation": "A candle fails in two opposite ways. If the wick is too small for the candle, its flame melts only a narrow well in the centre, the walls never melt, and the flame sinks into a tunnel of its own making."
@@ -1380,7 +1380,7 @@
   "name": "Depth Is a Load Before It Is a Sponge: Substrate Depth, Retention, and the Structural Cap on Green Roofs",
   "doi": "10.5281/zenodo.24119381",
   "blueprint_doi": "10.5281/zenodo.24120214",
-  "field": "Housing & Shelter",
+  "field": "Water",
   "stage": "blueprint",
   "territory": "Rain, Roofs and Stormwater",
   "explanation": "Extensive green roofs are specified by substrate depth, and deeper is routinely sold as better for stormwater."
@@ -1389,7 +1389,7 @@
   "name": "The Level Gutter Is a Sediment Trap: Minimum Fall for Self-Cleansing in a 125 mm Half-Round Gutter",
   "doi": "10.5281/zenodo.24119083",
   "blueprint_doi": "10.5281/zenodo.24120221",
-  "field": "Housing & Shelter",
+  "field": "Water",
   "stage": "blueprint",
   "territory": "Rain, Roofs and Stormwater",
   "explanation": "Builders frequently lay eaves gutters dead level because a level gutter is easier to set out and looks neater, and a persistent trade belief holds that the fall makes no practical difference because rain will find the outlet anyway."
@@ -1398,7 +1398,7 @@
   "name": "Three Hundred Millimetres of What? Ponding Depth Set by Soil Drawdown, Not by the Standard Detail",
   "doi": "10.5281/zenodo.24119678",
   "blueprint_doi": "10.5281/zenodo.24120230",
-  "field": "Food & Agriculture",
+  "field": "Water",
   "stage": "blueprint",
   "territory": "Rain, Roofs and Stormwater",
   "explanation": "Rain gardens are commonly detailed with a standard ponding depth — 300 mm appears in guide after guide — as if the depth were a property of the garden rather than of the soil beneath it."
@@ -1461,7 +1461,7 @@
   "name": "Rice Husk in Fired Bricks: Why More Husk Is Not Always Better, and the Blend That Best Balances Strength, Weight and Cost",
   "doi": "10.5281/zenodo.24119069",
   "blueprint_doi": "10.5281/zenodo.24120312",
-  "field": "Energy",
+  "field": "Housing & Shelter",
   "stage": "blueprint",
   "territory": "Clay, Pottery and Kilns",
   "explanation": "This paper addresses the common belief that adding ever more rice husk to a brick always improves it because the brick becomes lighter and cheaper."
@@ -1479,7 +1479,7 @@
   "name": "How Much Insulation Pays in a Small Brick Kiln: A Thickness Rule Balancing Fuel Saved Against Blanket Cost",
   "doi": "10.5281/zenodo.24118984",
   "blueprint_doi": "10.5281/zenodo.24120337",
-  "field": "Housing & Shelter",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Clay, Pottery and Kilns",
   "explanation": "This paper addresses small updraft and downdraft brick kilns that lose a large share of their fuel heat through uninsulated walls."
@@ -1488,7 +1488,7 @@
   "name": "Sizing a Settling Tank for Washed Clay: The Residence Time That Drops Sand While Keeping Fine Clay in Suspension",
   "doi": "10.5281/zenodo.24119089",
   "blueprint_doi": "10.5281/zenodo.24120347",
-  "field": "Energy",
+  "field": "Other",
   "stage": "blueprint",
   "territory": "Clay, Pottery and Kilns",
   "explanation": "This paper addresses washed clay that still contains gritty sand, or that loses its finest and most plastic fraction to the overflow."
@@ -1515,7 +1515,7 @@
   "name": "Sand Temper and Drying Cracks: The Temper Fraction That Minimises Combined Crack and Strength Losses in Hand-Formed Ware",
   "doi": "10.5281/zenodo.24119120",
   "blueprint_doi": "10.5281/zenodo.24120378",
-  "field": "Energy",
+  "field": "Other",
   "stage": "blueprint",
   "territory": "Clay, Pottery and Kilns",
   "explanation": "This paper addresses hand-formed pots that crack while drying when the clay is used untempered, and weaken when too much temper is added."
@@ -1533,7 +1533,7 @@
   "name": "Sun Pre-Drying Bricks Before Firing: The Moisture Content at Which Further Drying Stops Paying in Saved Kiln Fuel",
   "doi": "10.5281/zenodo.24119158",
   "blueprint_doi": "10.5281/zenodo.24120390",
-  "field": "Housing & Shelter",
+  "field": "Water",
   "stage": "blueprint",
   "territory": "Clay, Pottery and Kilns",
   "explanation": "This paper addresses bricks and pots sent into the kiln still holding water that the sun could have removed for free, paid for instead in fuel and in steam damage."
@@ -1542,7 +1542,7 @@
   "name": "Setter Spacing for Flat Roof Tiles: The Support Interval That Keeps Firing Warpage Within a Stated Tolerance",
   "doi": "10.5281/zenodo.24119166",
   "blueprint_doi": "10.5281/zenodo.24120397",
-  "field": "Energy",
+  "field": "Housing & Shelter",
   "stage": "blueprint",
   "territory": "Clay, Pottery and Kilns",
   "explanation": "This paper addresses flat clay roof tiles that warp during firing because they are supported too far apart while soft at peak temperature."
@@ -1614,7 +1614,7 @@
   "name": "A Cover Rule for Handwoven Shade Cloth: The Widest Tape Spacing That Still Delivers Seventy Percent Shade",
   "doi": "10.5281/zenodo.24119379",
   "blueprint_doi": "10.5281/zenodo.24120483",
-  "field": "Food & Agriculture",
+  "field": "Other",
   "stage": "blueprint",
   "territory": "Fibre, Spinning and Weaving",
   "explanation": "Shade cloth for seedlings is specified by the shade it gives, woven by hand at whatever spacing the weaver's eye approves, and the two descriptions meet only by luck."
@@ -1650,7 +1650,7 @@
   "name": "Blackout Is a Gap Problem: Light at the Eye from Blind Edge Leakage as a Function of Gap Width, and the Overlap That Replaces Expensive Fabric",
   "doi": "10.5281/zenodo.24119435",
   "blueprint_doi": "10.5281/zenodo.24120539",
-  "field": "Water",
+  "field": "Housing & Shelter",
   "stage": "blueprint",
   "territory": "Sleep, Bedding and the Night Room",
   "explanation": "Expensive blackout fabric is specified by its transmittance, but the light that reaches a sleeper's eye in a real installation is dominated by the gaps at the edges, not by the fabric."
@@ -1875,7 +1875,7 @@
   "name": "A Box That Buys Decades: Alkaline Reserve, Acid Migration and the Service Life of a Low-Cost Storage Box for Books and Papers",
   "doi": "10.5281/zenodo.24121566",
   "blueprint_doi": "10.5281/zenodo.24122083",
-  "field": "Food & Agriculture",
+  "field": "Other",
   "stage": "blueprint",
   "territory": "Paper, Ink, Books and Printing",
   "explanation": "This paper addresses a practical question in storage boxes: paper made from groundwood and many papers made before the late twentieth century carry the seeds of their own decay: acids within the sheet, and absorbed from polluted air, break the cellulose chains that give paper its strength, until pages turn yellow, then brittle, then to fragments at a touch."
@@ -2019,7 +2019,7 @@
   "name": "Letterbox Reach: The Minimum Distance Between a Mail Slot and the Inside Latch That Defeats a Hooked Tool",
   "doi": "10.5281/zenodo.24121643",
   "blueprint_doi": "10.5281/zenodo.24122187",
-  "field": "Health",
+  "field": "Other",
   "stage": "blueprint",
   "territory": "Locks, Fences, Gates and Security",
   "explanation": "A mail slot through a front door is also a hole through which a hooked wire can be worked toward the inside latch, and on many doors the latch sits within easy reach of the slot. This study models the geometry from stated assumptions: a 700 mm hooked tool, after losses at the flap, the door thickness and its own bends, commands an effective radius of 520 mm from the slot centre, while an internal cover box behind the slot reduces that radius to 180 mm."
@@ -2100,7 +2100,7 @@
   "name": "Relay Posts for Foot Couriers: How Long a Stage Can Be When the Courier Must Also Walk Home",
   "doi": "10.5281/zenodo.24121660",
   "blueprint_doi": "10.5281/zenodo.24122255",
-  "field": "Health",
+  "field": "Transport",
   "stage": "blueprint",
   "territory": "Postal Services, Addresses and Deliveries",
   "explanation": "Where no vehicle goes, mail still moves by relay: couriers walk stages between posts, handing the bag onward like a baton."
@@ -2262,7 +2262,7 @@
   "name": "Closed-Loop Life Support for a Fifth-Coordinate Transit Capsule: Consumables Budget Across Crossing Durations",
   "doi": "10.5281/zenodo.24123485",
   "blueprint_doi": "10.5281/zenodo.24124450",
-  "field": "Water",
+  "field": "Transport",
   "stage": "blueprint",
   "territory": "Machine designs",
   "explanation": "The device is the closed-loop life-support system of a four-person transit capsule designed for fifth-coordinate crossings, sized not for the crossing itself, which occupies seconds, but for the gate dwell, delay, and contingency durations that surround it, derived from stated assumptions and computed throughout by the accompanying script. The four-person capsule fitted for a three-day contingency carries 11.23 kg of net consumables, against 112.32 kg for a thirty-day fit, a saving of 90.0 percent that follows from crossing speed and gate reliability rather than from any improvement in recycling."
@@ -2649,7 +2649,7 @@
   "name": "A Shear-Regulated Piezoelectric Vibration Energy Harvester",
   "doi": "10.5281/zenodo.24133959",
   "blueprint_doi": "10.5281/zenodo.24134657",
-  "field": "Housing & Shelter",
+  "field": "Food & Agriculture",
   "stage": "blueprint",
   "territory": "Energy conversion and field devices",
   "explanation": "The unit described in this study is a shear-regulated piezoelectric vibration harvester intended for powering wireless condition-monitoring sensors on rotating machinery. Its operating principle is that a cantilevered piezoelectric beam with a proof mass converts machine vibration to charge, and a shear-regulated mechanical stop caps beam strain at the value set by the shear limit adopted for the design."
@@ -2838,7 +2838,7 @@
   "name": "A Single-Photon Transit Lidar for Altitude and Terrain Navigation",
   "doi": "10.5281/zenodo.24138633",
   "blueprint_doi": "10.5281/zenodo.24138981",
-  "field": "Transport",
+  "field": "Observation & Instruments",
   "stage": "blueprint",
   "territory": "Quantum, communication and navigation devices",
   "explanation": "Terrain-referenced navigation needs an altimeter that works at low light, long range and high precision, returning ranges that can be matched against a stored elevation model."
@@ -2892,7 +2892,7 @@
   "name": "A Cryogenic Resonant Sphere in Deep Space Listening for the High-Frequency Tail of a Bounce Spectrum",
   "doi": "10.5281/zenodo.24142281",
   "blueprint_doi": "10.5281/zenodo.24142914",
-  "field": "Observation & Instruments",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Space-Based Instruments and Mission Designs from the Physics",
   "explanation": "This paper presents a space mission design, computed from stated assumptions and not measured, built to measure one quantity: the characteristic strain of the bounce spectrum tail at 3 kilohertz, for which the design case adopts 1.10e-21 in characteristic strain. The instrument is a 60-centimetre solid niobium sphere cooled to 50 millikelvin, suspended in a drag-free spacecraft at a Lagrange point, with six resonant transducers on its surface that together reconstruct the amplitude and direction of any excitation of its quadrupole modes."
@@ -2901,7 +2901,7 @@
   "name": "An Earth-Mars Laser Ranging Transponder Constellation for a Direct Interplanetary Test of Signal Transit Times",
   "doi": "10.5281/zenodo.24142298",
   "blueprint_doi": "10.5281/zenodo.24142923",
-  "field": "Food & Agriculture",
+  "field": "Observation & Instruments",
   "stage": "blueprint",
   "territory": "Space-Based Instruments and Mission Designs from the Physics",
   "explanation": "This paper presents a space mission design, computed from stated assumptions and not measured, built to measure one quantity: the round-trip range anomaly predicted over the longest Earth-Mars geometry, for which the design case adopts 38 millimetres of range. The instrument is two laser transponder terminals, one on an Earth-orbiting platform and one on a Mars-orbiting platform, exchanging phase-coherent pulse trains at 1064 nanometres so that the interplanetary range is measured by an active transponder rather than by reflection from a passive target."
@@ -3117,7 +3117,7 @@
   "name": "A Superconducting Toroidal Magnetic Shield for a Crewed Habitat: Cutoff Rigidity, Coil Mass and Cryogenic Power",
   "doi": "10.5281/zenodo.24145337",
   "blueprint_doi": "10.5281/zenodo.24146249",
-  "field": "Housing & Shelter",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Habitat, Shielding and Closed-Loop Life-Support Designs from the Physics",
   "explanation": "This paper presents a computed design for an active magnetic shield, in which a superconducting toroid deflects charged cosmic-ray particles before they reach the habitat, trading launched mass for field strength, coil structure and continuous cryogenic power. The study is simulated, not measured."
@@ -3198,7 +3198,7 @@
   "name": "A Combined Mu-Metal and Superconducting Shield for a Cryogenic Sensor Enclosure: Layer Budget, Saturation Margin and Residual Field",
   "doi": "10.5281/zenodo.24147753",
   "blueprint_doi": "10.5281/zenodo.24148046",
-  "field": "Observation & Instruments",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Cryogenic, Superconducting and Quantum-Materials Devices from the Physics",
   "explanation": "This paper presents a computed design for a combined shield intended for magnetic shielding for cryogenic sensors, with its performance, resource budgets and margins derived from stated assumptions rather than asserted."
@@ -3207,7 +3207,7 @@
   "name": "A Vibration-Isolated Detector Mount for a Pulse-Tube Cryocooler: Transmissibility, Temperature Penalty and Support Design",
   "doi": "10.5281/zenodo.24147742",
   "blueprint_doi": "10.5281/zenodo.24148053",
-  "field": "Observation & Instruments",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Cryogenic, Superconducting and Quantum-Materials Devices from the Physics",
   "explanation": "This paper presents a computed design for a vibration-isolated detector mount intended for cryocooler engineering, with its performance, resource budgets and margins derived from stated assumptions rather than asserted. The headline results are: designed isolation resonance of 5 Hz; transmissibility at the 30 Hz structural harmonic of 0.0333 dimensionless; transmissibility at 60 Hz of 0.0109 dimensionless; total flexure stiffness required of 1.78e+03 N per m; static sag under the platform weight of 9.94 mm."
@@ -3216,7 +3216,7 @@
   "name": "Hold Time of a Cryogenic Dewar for Quantum Sensors: Multilayer Insulation Load, Neck Conduction and Boil-Off Budget",
   "doi": "10.5281/zenodo.24147840",
   "blueprint_doi": "10.5281/zenodo.24148059",
-  "field": "Observation & Instruments",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Cryogenic, Superconducting and Quantum-Materials Devices from the Physics",
   "explanation": "This paper presents a computed design for a sensor Dewar intended for cryogenic storage and transport, with its performance, resource budgets and margins derived from stated assumptions rather than asserted. The headline results are: heat load through the multilayer insulation of 0.044 W; heat conducted down the neck of 0.0801 W; hold time with the sensor powered of 2.92 days; hold time with the sensor unpowered of 11.2 days; boil-off rate with the sensor powered of 15.8 litres per day."
@@ -3225,7 +3225,7 @@
   "name": "A Superconducting Cryogenic Heat Switch: On-State Conductance, Off-State Isolation and Switching Energy",
   "doi": "10.5281/zenodo.24147857",
   "blueprint_doi": "10.5281/zenodo.24148064",
-  "field": "Other",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Cryogenic, Superconducting and Quantum-Materials Devices from the Physics",
   "explanation": "This paper presents a computed design for a cryogenic heat switch intended for cryogenic thermal control, with its performance, resource budgets and margins derived from stated assumptions rather than asserted. The headline results are: on-state thermal conductance at 0.3 K of 1.63 mW per K; off-state thermal conductance at 0.3 K of 0.036 microwatt per K; ratio of on-state to off-state conductance of 4.52e+04 dimensionless; time to cool the stated stage from 1 K to 0.3 K through the switch of 0.574 minutes; energy cost of one switching actuation of 147 mJ."
@@ -3243,7 +3243,7 @@
   "name": "A Helium Recovery Condenser for a Low-Temperature Laboratory: Liquefaction Rate, Cold-Head Load and Recovery Fraction",
   "doi": "10.5281/zenodo.24147812",
   "blueprint_doi": "10.5281/zenodo.24148083",
-  "field": "Other",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Cryogenic, Superconducting and Quantum-Materials Devices from the Physics",
   "explanation": "This paper presents a computed design for a helium recovery condenser intended for cryogen recovery systems, with its performance, resource budgets and margins derived from stated assumptions rather than asserted."
@@ -3252,7 +3252,7 @@
   "name": "Heat Leak Optimisation of a High-Temperature-Superconductor Current Lead Between Sixty-Four Kelvin and Four Kelvin",
   "doi": "10.5281/zenodo.24147720",
   "blueprint_doi": "10.5281/zenodo.24148104",
-  "field": "Water",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Cryogenic, Superconducting and Quantum-Materials Devices from the Physics",
   "explanation": "This paper presents a computed design for a HTS current lead intended for cryogenic current delivery, with its performance, resource budgets and margins derived from stated assumptions rather than asserted. The headline results are: heat arriving at 4.2 K per kiloampere for the hybrid lead of 0.048 W per kA; heat arriving at 4.2 K per kiloampere for an optimised all-copper lead of 46.9 W per kA; reduction factor in cold-end leak from the hybrid design of 976 dimensionless; total 4.2 K load from the lead pair at rated current of 0.096 W; heat to be removed at the 64 K intercept per lead of 91.6 W."
@@ -3261,7 +3261,7 @@
   "name": "A Low-Temperature Scanning Probe Stage: Piezo Range Contraction, Thermal Load and Positioning Resolution at Four Kelvin",
   "doi": "10.5281/zenodo.24147822",
   "blueprint_doi": "10.5281/zenodo.24148107",
-  "field": "Observation & Instruments",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Cryogenic, Superconducting and Quantum-Materials Devices from the Physics",
   "explanation": "This paper presents a computed design for a scanning probe stage intended for cryogenic scanning probe microscopy, with its performance, resource budgets and margins derived from stated assumptions rather than asserted. The headline results are: fine scan range available at 4 K of 2.16 micrometres; nominal positioning resolution from the drive electronics of 0.033 nm; heat conducted to the stage along its wiring of 0.0386 mW; total heat arriving at the stage of 0.111 mW; stage temperature rise above the 4 K plate of 13.9 mK."
@@ -3270,7 +3270,7 @@
   "name": "Sizing a Niobium-Titanium High-Field Solenoid: Conductor Length, Stored Energy and Cold Mass for a Ten-Tesla-Class Laboratory Magnet",
   "doi": "10.5281/zenodo.24147712",
   "blueprint_doi": "10.5281/zenodo.24148114",
-  "field": "Transport",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Cryogenic, Superconducting and Quantum-Materials Devices from the Physics",
   "explanation": "This paper presents a computed design for a NbTi solenoid intended for superconducting magnet engineering, with its performance, resource budgets and margins derived from stated assumptions rather than asserted. The headline results are: central bore field at the design point of 9.45 T; operating current of 189 A; total conductor length of 4.5 km; stored magnetic energy of 131 kJ; magnet inductance of 7.29 H."
@@ -3279,7 +3279,7 @@
   "name": "Housing and Shielding Design for a Superconducting Quantum Interference Sensor Array: Shielding Requirement, Thermal Load and Johnson Noise Budget",
   "doi": "10.5281/zenodo.24147864",
   "blueprint_doi": "10.5281/zenodo.24148121",
-  "field": "Housing & Shelter",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Cryogenic, Superconducting and Quantum-Materials Devices from the Physics",
   "explanation": "This paper presents a computed design for a SQUID array housing intended for SQUID sensor systems, with its performance, resource budgets and margins derived from stated assumptions rather than asserted."
@@ -3288,7 +3288,7 @@
   "name": "A Superconducting Radio-Frequency Cavity Thermal and Quality-Factor Budget: Surface Resistance, Cryogenic Load and Cryoplant Power",
   "doi": "10.5281/zenodo.24147831",
   "blueprint_doi": "10.5281/zenodo.24148124",
-  "field": "Other",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Cryogenic, Superconducting and Quantum-Materials Devices from the Physics",
   "explanation": "This paper presents a computed design for a superconducting cavity intended for superconducting radio-frequency systems, with its performance, resource budgets and margins derived from stated assumptions rather than asserted. The headline results are: bCS surface resistance at 2 K and 1.3 GHz of 24.6 nano-ohm; total surface resistance including the residual term of 29.6 nano-ohm; unloaded quality factor of 9.12e+09 dimensionless; dynamic cryogenic load per cavity at the stated gradient of 71.3 W; total 2 K load per cavity including static allowance of 72.5 W."
@@ -3297,7 +3297,7 @@
   "name": "A Resistive Superconducting Fault-Current Limiter for a Distribution Feeder: Tape Length, Limited Current and Recovery Time",
   "doi": "10.5281/zenodo.24147778",
   "blueprint_doi": "10.5281/zenodo.24148130",
-  "field": "Other",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Cryogenic, Superconducting and Quantum-Materials Devices from the Physics",
   "explanation": "This paper presents a computed design for a fault-current limiter intended for superconducting power devices, with its performance, resource budgets and margins derived from stated assumptions rather than asserted. The headline results are: tape length per phase required at the allowable quench field of 225 m; limited fault current, peak of 2.18 kA; prospective fault current, peak, for comparison of 28.3 kA; ratio of prospective to limited peak current of 13 dimensionless; energy absorbed in the tape during a 100 ms fault after shunt sharing of 196 kJ."
@@ -3306,7 +3306,7 @@
   "name": "A Superconducting Gravimeter Sensor: Levitated-Sphere Stiffness, Acceleration Noise Floor and Drift Budget",
   "doi": "10.5281/zenodo.24147730",
   "blueprint_doi": "10.5281/zenodo.24148137",
-  "field": "Housing & Shelter",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Cryogenic, Superconducting and Quantum-Materials Devices from the Physics",
   "explanation": "This paper presents a computed design for a superconducting gravimeter intended for precision gravity measurement, with its performance, resource budgets and margins derived from stated assumptions rather than asserted. The headline results are: vertical resonance frequency of the levitated sphere of 4.2 Hz; acceleration noise floor below resonance of 1.39 nGal per root hertz; mass of the levitated niobium sphere of 35.9 g; static displacement under gravity at the working point of 14.1 mm; time constant of persistent-current decay at the stated joint-resistance bound of 6.34e+04 years."
@@ -3315,7 +3315,7 @@
   "name": "A Superconducting Levitation Bearing for a Cryogenic Rotor: Lift Capacity, Stiffness and Rotational Loss Budget",
   "doi": "10.5281/zenodo.24147803",
   "blueprint_doi": "10.5281/zenodo.24148144",
-  "field": "Housing & Shelter",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Cryogenic, Superconducting and Quantum-Materials Devices from the Physics",
   "explanation": "This paper presents a computed design for a levitation bearing intended for superconducting bearings, with its performance, resource budgets and margins derived from stated assumptions rather than asserted. The headline results are: total lift capacity of the two bearing rings of 344 N; ratio of lift capacity to the rotor weight of 5.85 dimensionless; linearised axial stiffness about the field-cooled position of 229 kN per m; total rotational loss at 6000 rpm of 1.25 W; approximate wall-plug power to remove the rotational loss at 77 K of 36.2 W."
@@ -3324,7 +3324,7 @@
   "name": "A Niobium Superconducting Magnetic Shield for a Low-Field Measurement Laboratory: Sizing, Residual Field and Mass Budget",
   "doi": "10.5281/zenodo.24147694",
   "blueprint_doi": "10.5281/zenodo.24148163",
-  "field": "Other",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Cryogenic, Superconducting and Quantum-Materials Devices from the Physics",
   "explanation": "This paper presents a computed design for a niobium shield intended for low-field magnetic measurement, with its performance, resource budgets and margins derived from stated assumptions rather than asserted. The headline results are: residual interior field change for a 50 microtesla external change of 0.25 nT; budgeted trapped-flux offset after a low-field cooldown of 10 nT; combined residual field budget of 10 nT; effective shielding factor against slow external changes of 2e+05 dimensionless; mass of the niobium shell and end caps of 18.2 kg."
@@ -3657,7 +3657,7 @@
   "name": "An Adaptive Optics Focus Corrector for a High-Intensity Beamline Sized by Actuator Count and Strehl Gain",
   "doi": "10.5281/zenodo.24155105",
   "blueprint_doi": "10.5281/zenodo.24155575",
-  "field": "Housing & Shelter",
+  "field": "Other",
   "stage": "blueprint",
   "territory": "High-Intensity Laser, Photonics and Optical Systems from the Physics",
   "explanation": "This paper presents a computed design for a closed-loop adaptive optics corrector using a 97-actuator deformable mirror ahead of the focusing optic of a high-intensity beamline. The sizing follows from applying the relevant intensity, thermal, nonlinear and geometric bounds at a single stated operating point, with every number produced by a deposited computation."
@@ -3666,7 +3666,7 @@
   "name": "A Coherent Doppler Wind Lidar Sized by Pulse Energy, Range Resolution and Velocity Precision",
   "doi": "10.5281/zenodo.24155126",
   "blueprint_doi": "10.5281/zenodo.24155585",
-  "field": "Other",
+  "field": "Observation & Instruments",
   "stage": "blueprint",
   "territory": "High-Intensity Laser, Photonics and Optical Systems from the Physics",
   "explanation": "This paper presents a computed design for a pulsed coherent Doppler lidar at 1.5 micrometres measuring wind velocity profiles to several kilometres. The sizing follows from applying the relevant intensity, thermal, nonlinear and geometric bounds at a single stated operating point, with every number produced by a deposited computation."
@@ -3684,7 +3684,7 @@
   "name": "A Cryogenic Yb:YLF Amplifier Sized by Saturation Fluence and Stored Energy at 77 K",
   "doi": "10.5281/zenodo.24155166",
   "blueprint_doi": "10.5281/zenodo.24155613",
-  "field": "Other",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "High-Intensity Laser, Photonics and Optical Systems from the Physics",
   "explanation": "This paper presents a computed design for a cryogenically cooled Yb:YLF amplifier operating near 77 K as a high-energy, high-repetition-rate stage at 1020 nm. The sizing follows from applying the relevant intensity, thermal, nonlinear and geometric bounds at a single stated operating point, with every number produced by a deposited computation."
@@ -3756,7 +3756,7 @@
   "name": "A Gas-Filled Multipass Cell Compressor Sized by Per-Pass B-Integral and Total Spectral Broadening",
   "doi": "10.5281/zenodo.24155310",
   "blueprint_doi": "10.5281/zenodo.24155718",
-  "field": "Health",
+  "field": "Other",
   "stage": "blueprint",
   "territory": "High-Intensity Laser, Photonics and Optical Systems from the Physics",
   "explanation": "This paper presents a computed design for a Herriott-type multipass cell that compresses 1 mJ, 250 fs pulses from an Yb amplifier toward the few-tens-of-femtoseconds range. The sizing follows from applying the relevant intensity, thermal, nonlinear and geometric bounds at a single stated operating point, with every number produced by a deposited computation."
@@ -3819,7 +3819,7 @@
   "name": "Phase-Noise Cancellation Design for a 2000 Kilometre Optical Fibre Frequency Link",
   "doi": "10.5281/zenodo.24155017",
   "blueprint_doi": "10.5281/zenodo.24155600",
-  "field": "Food & Agriculture",
+  "field": "Observation & Instruments",
   "stage": "blueprint",
   "territory": "Relativistic Geodesy, Clock Networks and Time Transfer from the Physics",
   "explanation": "Phase-noise cancellation on a fibre link is limited by light travel time: a correction cannot respond faster than the round trip allows. Segmenting a long link into repeater spans raises the cancellation bandwidth of each span and is the standard architectural answer."
@@ -3837,7 +3837,7 @@
   "name": "Geodetic Return From a Space-Station Clock Ensemble: Potential Resolution Along a Low Earth Orbit",
   "doi": "10.5281/zenodo.24155213",
   "blueprint_doi": "10.5281/zenodo.24155615",
-  "field": "Housing & Shelter",
+  "field": "Observation & Instruments",
   "stage": "blueprint",
   "territory": "Relativistic Geodesy, Clock Networks and Time Transfer from the Physics",
   "explanation": "A clock ensemble in low Earth orbit samples the potential along its ground track many times a day, linking ground stations that have no direct line of sight. The geodetic value of such a mission depends on the resolution per pass and on how the sampling accumulates."
@@ -3900,7 +3900,7 @@
   "name": "A Levitated Dipole Fusion Reactor: Inward Pinch Fuelling, Pressure Profile and Steady Power Balance",
   "doi": "10.5281/zenodo.24159642",
   "blueprint_doi": "10.5281/zenodo.24160391",
-  "field": "Health",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Fusion Plasma Energy Balance and Reactor-Scale Energy Systems Derived from the Physics",
   "explanation": "This paper presents a complete, computed design study of a fusion power plant based on a levitated dipole: a vessel surrounding a levitated superconducting ring, whose dipole field confines plasma in the region around the ring. The fuel is deuterium tritium, releasing 17.6 MeV per reaction, of which 14.1 MeV leaves with the neutron and 3.5 MeV stays with the alpha particle."
@@ -3918,7 +3918,7 @@
   "name": "A Magnetized Target Fusion Plant Using a Rotating Liquid-Metal Liner for Compression and Blanket in One Component",
   "doi": "10.5281/zenodo.24159678",
   "blueprint_doi": "10.5281/zenodo.24160413",
-  "field": "Health",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Fusion Plasma Energy Balance and Reactor-Scale Energy Systems Derived from the Physics",
   "explanation": "This paper presents a complete, computed design study of a fusion power plant based on a magnetized target fusion device: a spherical vessel in which a rotating liquid-metal liner is driven inward by pistons onto a magnetised plasma target. The fuel is deuterium tritium, releasing 17.6 MeV per reaction, of which 14.1 MeV leaves with the neutron and 3.5 MeV stays with the alpha particle."
@@ -3945,7 +3945,7 @@
   "name": "A Polywell Cusp-Confinement Deuterium Reactor: Wiffle-Ball Beta, Electron Recirculation Losses and Net Balance",
   "doi": "10.5281/zenodo.24159744",
   "blueprint_doi": "10.5281/zenodo.24160449",
-  "field": "Water",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Fusion Plasma Energy Balance and Reactor-Scale Energy Systems Derived from the Physics",
   "explanation": "This paper presents a complete, computed design study of a fusion power plant based on a polywell cusp device: a cubic arrangement of six ring coils whose fields form point and line cusps around a field-free centre. The fuel is catalysed deuterium, releasing an effective 12 MeV per initial deuterium pair once the tritium and helium-3 products are burned in place."
@@ -4035,7 +4035,7 @@
   "name": "Purcell Enhancement and Collection Efficiency for a Quantum Dot in a Micropillar Cavity",
   "doi": "10.5281/zenodo.24159668",
   "blueprint_doi": "10.5281/zenodo.24160477",
-  "field": "Food & Agriculture",
+  "field": "Environment",
   "stage": "blueprint",
   "territory": "Quantum Optics, Cavity Systems and Single-Photon Devices from the Physics",
   "explanation": "A semiconductor quantum dot placed at the antinode of a micropillar resonator emits preferentially into the cavity mode when the Purcell factor is large. The same geometry that raises the emission rate also directs the light into a narrow cone, which is why micropillars are used as bright single-photon sources."
@@ -4143,7 +4143,7 @@
   "name": "A Three-Satellite Mars Relay Constellation: Orbital Coverage, Contact Time and Daily Data Volume for Surface Assets Served by Store-and-Forward Links",
   "doi": "10.5281/zenodo.24169066",
   "blueprint_doi": "10.5281/zenodo.24169648",
-  "field": "Health",
+  "field": "Other",
   "stage": "blueprint",
   "territory": "Deep-Space Power and Communication Systems Derived from the Physics",
   "explanation": "This paper presents a design study of a system whose operating principle is Store-and-forward orbital relay constellation around Mars. The sizing is computed from stated assumptions, with every headline quantity produced by the deposited calculation script."
@@ -4215,7 +4215,7 @@
   "name": "A W-Band Crosslink for a Formation of Deep-Space Spacecraft: Beamwidth, Free-Space Loss and Gigabit Rates over Ten Thousand Kilometres",
   "doi": "10.5281/zenodo.24169122",
   "blueprint_doi": "10.5281/zenodo.24169826",
-  "field": "Housing & Shelter",
+  "field": "Transport",
   "stage": "blueprint",
   "territory": "Deep-Space Power and Communication Systems Derived from the Physics",
   "explanation": "This paper presents a design study of a system whose operating principle is 94 GHz millimetre-wave inter-spacecraft crosslink. The sizing is computed from stated assumptions, with every headline quantity produced by the deposited calculation script."
@@ -4350,7 +4350,7 @@
   "name": "A Superconducting Magnetic Store for Grid Frequency Support: Coil Inductance, Conductor Mass, Cryogenic Load and Millisecond Response for One Usable Kilowatt-Hour",
   "doi": "10.5281/zenodo.24174153",
   "blueprint_doi": "10.5281/zenodo.24175496",
-  "field": "Other",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Electrochemical, Thermal and Mechanical Energy-Storage Systems Derived from the Physics",
   "explanation": "This paper sizes a superconducting magnetic storage system for a transmission substation requiring instantaneous power injection to arrest frequency excursions. The duty calls for 1 usable electrical kilowatt-hours delivered at a rated power of 1e+03 kilowatts."
@@ -4449,7 +4449,7 @@
   "name": "An Ion-Beam Shepherd for a 140-Metre Asteroid: Beam Momentum Transfer Without Contact",
   "doi": "10.5281/zenodo.24180112",
   "blueprint_doi": "10.5281/zenodo.24181492",
-  "field": "Food & Agriculture",
+  "field": "Housing & Shelter",
   "stage": "blueprint",
   "territory": "Planetary-Defence and Asteroid-Deflection Systems Derived from the Physics",
   "explanation": "This paper computes an ion-beam shepherd that directs a 1.1 N ion plume at a 140 m asteroid of mass 3,735,563,105 kg from a hovering spacecraft. Beam divergence and imperfect interception reduce the transferred force to 0.792 N, an acceleration of 2.12e-10 m per second squared."
@@ -4467,7 +4467,7 @@
   "name": "A Laser Ablation Shepherd: Surface Vaporisation Thrust on a 110-Metre Asteroid",
   "doi": "10.5281/zenodo.24180128",
   "blueprint_doi": "10.5281/zenodo.24181525",
-  "field": "Food & Agriculture",
+  "field": "Other",
   "stage": "blueprint",
   "territory": "Planetary-Defence and Asteroid-Deflection Systems Derived from the Physics",
   "explanation": "This paper computes a laser ablation shepherd that delivers 12,000 W of optical power onto a 110 m asteroid of mass 1,672,583,929 kg. With an ablation energy of 8,000,000 J per kilogram and an ejecta speed of 1,100 m per second, the vaporised mass flow of 0.000825 kg per second produces 0.908 N of recoil thrust and an acceleration of 5.43e-10 m per second squared."
@@ -4485,7 +4485,7 @@
   "name": "A Microwave Thermal Shepherd: Volumetric Heating and Outgassing Thrust on an 85-Metre Asteroid",
   "doi": "10.5281/zenodo.24180167",
   "blueprint_doi": "10.5281/zenodo.24181551",
-  "field": "Health",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Planetary-Defence and Asteroid-Deflection Systems Derived from the Physics",
   "explanation": "This paper computes a microwave shepherd that radiates 6,000 W toward an 85 m asteroid of mass 610,954,686 kg, of which a fraction 0.48 is absorbed within a penetration depth of 0.35 m. Heating drives off 0.000384 kg per second of volatile material, producing 0.315 N of recoil and an acceleration of 5.15e-10 m per second squared."
@@ -4494,7 +4494,7 @@
   "name": "A Plasma-Beam Shepherd: Neutralised Particle-Beam Momentum Transfer to a 170-Metre Asteroid",
   "doi": "10.5281/zenodo.24180184",
   "blueprint_doi": "10.5281/zenodo.24181563",
-  "field": "Health",
+  "field": "Housing & Shelter",
   "stage": "blueprint",
   "territory": "Planetary-Defence and Asteroid-Deflection Systems Derived from the Physics",
   "explanation": "This paper computes a plasma-beam shepherd that directs 260,000 W of beam power at 48,000 m per second toward a 170 m asteroid of mass 6,173,857,883 kg. Beam momentum flux reduced by a coupling fraction of 0.66 gives an effective force of 3.58 N and an acceleration of 5.79e-10 m per second squared."
@@ -4602,7 +4602,7 @@
   "name": "An Ion-Beam Shepherd for Contactless Removal of a Two-Tonne Derelict: Plume Momentum Budgets",
   "doi": "10.5281/zenodo.24182960",
   "blueprint_doi": "10.5281/zenodo.24183251",
-  "field": "Food & Agriculture",
+  "field": "Housing & Shelter",
   "stage": "blueprint",
   "territory": "Orbital Safety, Debris Remediation and Cislunar Navigation Systems Derived from the Physics",
   "explanation": "This paper presents a computed design study of a civilian orbital-safety system based on contactless momentum transfer from an ion thruster plume impinging on the target. It is a computed study of a civilian orbital-safety system, with no targeting application and no weapon application."
@@ -4656,7 +4656,7 @@
   "name": "Photon-Counting Lidar Ranging Stations for Centimetre-Class Orbit Refinement of Tracked Debris",
   "doi": "10.5281/zenodo.24182883",
   "blueprint_doi": "10.5281/zenodo.24183249",
-  "field": "Other",
+  "field": "Observation & Instruments",
   "stage": "blueprint",
   "territory": "Orbital Safety, Debris Remediation and Cislunar Navigation Systems Derived from the Physics",
   "explanation": "This paper presents a computed design study of a civilian orbital-safety system based on active optical time-of-flight ranging with single-photon counting. It is a computed study of a civilian orbital-safety system, with no targeting application and no weapon application."
@@ -5025,7 +5025,7 @@
   "name": "A Microwave Kiln for Martian Regolith Bricks: Dielectric-Heating Sizing for Construction Blocks",
   "doi": "10.5281/zenodo.24193598",
   "blueprint_doi": "10.5281/zenodo.24194342",
-  "field": "Housing & Shelter",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Mars Surface Power, Thermal, Radiation and Construction Systems Derived from the Physics",
   "explanation": "This paper presents a sized design for a Mars surface system based on volumetric dielectric (microwave) heating that sinters pressed regolith bricks from the inside outward. A microwave cavity kiln producing standardised sintered bricks for walls, berms and radiation-shield blocks."
@@ -5304,7 +5304,7 @@
   "name": "A Cryogenic Heat-Pipe Radiator for Heat Rejection from Titan Surface Electronics",
   "doi": "10.5281/zenodo.24202973",
   "blueprint_doi": "10.5281/zenodo.24203407",
-  "field": "Environment",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Titan Surface and Lake Power, Thermal and Mobility Systems Derived from the Physics",
   "explanation": "This study sizes the Titan surface system named in its title for operation in the Titan surface environment, and reports the result as SIMULATED, NOT MEASURED. The design is developed from stated physical relations and a shared environmental basis, and every performance figure is computed by the deposited script rather than asserted."
@@ -5430,7 +5430,7 @@
   "name": "An Electrostatic Particle-Removal Airlock for Cryogenic Surface Operations on Titan",
   "doi": "10.5281/zenodo.24203137",
   "blueprint_doi": "10.5281/zenodo.24203391",
-  "field": "Environment",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Titan Surface and Lake Power, Thermal and Mobility Systems Derived from the Physics",
   "explanation": "This study sizes the Titan surface system named in its title for operation in the Titan surface environment, and reports the result as SIMULATED, NOT MEASURED. The design is developed from stated physical relations and a shared environmental basis, and every performance figure is computed by the deposited script rather than asserted."
@@ -5439,7 +5439,7 @@
   "name": "Cryogenic-Insulated Habitat Thermal Control for Titan: Heat Leak, Heating Power and Airlock Loss Budget",
   "doi": "10.5281/zenodo.24203167",
   "blueprint_doi": "10.5281/zenodo.24203399",
-  "field": "Water",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Titan Surface and Lake Power, Thermal and Mobility Systems Derived from the Physics",
   "explanation": "This study sizes the Titan surface system named in its title for operation in the Titan surface environment, and reports the result as SIMULATED, NOT MEASURED. The design is developed from stated physical relations and a shared environmental basis, and every performance figure is computed by the deposited script rather than asserted."
@@ -5646,7 +5646,7 @@
   "name": "A Phobos-Anchored Tether for Mars Access: Downward Span, Release Velocity and Capture Budgets",
   "doi": "10.5281/zenodo.24209449",
   "blueprint_doi": "10.5281/zenodo.24210032",
-  "field": "Health",
+  "field": "Energy",
   "stage": "blueprint",
   "territory": "Orbital Tether, Rotovator and Solar-Sail Systems Derived from the Physics",
   "explanation": "This study sizes the system named in its title from stated physical relations and a stated operating basis, and reports the result as SIMULATED, NOT MEASURED. The operating principle is tether anchored on Phobos extending toward Mars, exploiting the moon's orbital motion."
@@ -5943,7 +5943,7 @@
   "name": "A Dust-Shield-Forward Cruise Vehicle: Whipple Layers, Impact Flux and Shield Lifetime Budgets",
   "doi": "10.5281/zenodo.24213439",
   "blueprint_doi": "10.5281/zenodo.24213620",
-  "field": "Health",
+  "field": "Food & Agriculture",
   "stage": "blueprint",
   "territory": "Interstellar Probe and Lightsail Cruise Systems Derived from the Physics",
   "explanation": "This study sizes an interstellar cruise system from stated physical relations and a stated operating basis, and reports the result as SIMULATED, NOT MEASURED. The operating principle is a dust-shield-forward architecture: the vehicle is organised around a multi-layer Whipple shield on its forward face, with sacrificial bumpers spaced ahead of a catcher wall, so that interstellar dust grains are vaporised and their energy dispersed in the gaps before any structure is reached."
@@ -5988,7 +5988,7 @@
   "name": "A Pellet-Stream Pushed Sail Probe: Momentum Coupling, Launcher Power and Cruise Budgets",
   "doi": "10.5281/zenodo.24213399",
   "blueprint_doi": "10.5281/zenodo.24213587",
-  "field": "Housing & Shelter",
+  "field": "Observation & Instruments",
   "stage": "blueprint",
   "territory": "Interstellar Probe and Lightsail Cruise Systems Derived from the Physics",
   "explanation": "This study sizes an interstellar cruise system from stated physical relations and a stated operating basis, and reports the result as SIMULATED, NOT MEASURED. The operating principle is a pellet-stream drive: a home-system accelerator launches a precisely timed stream of small solid pellets that strike a pusher structure on the probe and transfer their momentum, delivering rocket-class forces without beamed-energy diffraction limits and without onboard propellant."
