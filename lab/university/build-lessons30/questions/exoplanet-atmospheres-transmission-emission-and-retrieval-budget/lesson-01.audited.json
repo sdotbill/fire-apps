@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper '55 Cancri e: Dayside Brightness Temperatures Across Infrared Bands, Eclipse Depths and the Emission Budget of a Lava World'. The result it reported gives a value for temperature 4p5um k cancri55e, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: '55 Cancri e: Dayside Brightness Temperatures Across Infrared Bands, Eclipse Depths and the Emission Budget of a Lava World'. Its stated result: Headline result: cancri55 brightness temperature 4p5um k cancri55e = 2683; cancri55 eclipse depth 4p5um ppm cancri55e = 131; cancri55 dayside effective k cancri55e = 2573; cancri55 substellar point k cancri55e = 3060; cancri55 dayside flux w per m2 cancri55e = 2.485e+06; cancri55 depth at 2700k 4p5um ppm cancri55e = 132.4 Operating principle: Each photometric band inverts separately to a brightness temperature, and d And here is that same result with the words stripped away — just the quantities standing in a row: temperature 4p5um k cancri55e = 2683; depth 4p5um ppm cancri55e = 131; dayside effective k cancri55e = 2573. Find temperature 4p5um k cancri55e in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper '55 Cancri e: Dayside Brightness Temperatures Across Infrared Bands, Eclipse Depths and the Emission Budget of a Lava World' stated its result. (2) That result pairs names with values: temperature 4p5um k cancri55e = 2683; depth 4p5um ppm cancri55e = 131; dayside effective k cancri55e = 2573. (3) This question asks for the value paired with temperature 4p5um k cancri55e. (4) In that row, temperature 4p5um k cancri55e stands beside 2683 — so the answer the lesson gives is 2683. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper '55 Cancri e: Dayside Brightness Temperatures Across Infrared Bands, Eclipse Depths and the Emission Budget of a Lava World' reported a number for temperature 4p5um k cancri55e. What number did it report?",
+  "kind": "number",
+  "answer": 2683.0,
+  "disp": "2683",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "21.74",
+   "8.75",
+   "16.26",
+   "2683"
+  ],
+  "mcAnswer": "2683",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'GJ 1214 b: Feature Suppression in a Flat Transmission Spectrum, Mean Molecular Weight Bounds and the Cloud-Deck Pressure Budget'. The result it reported gives a value for m per s2 gj1214b, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'GJ 1214 b: Feature Suppression in a Flat Transmission Spectrum, Mean Molecular Weight Bounds and the Cloud-Deck Pressure Budget'. Its stated result: Headline result: gj1214 surface gravity m per s2 gj1214b = 8.75; gj1214 scale height mu2p3 km gj1214b = 224.4; gj1214 clear water amplitude ppm gj1214b = 1696; gj1214 one height amplitude ppm gj1214b = 339.3; gj1214 scale height mu18 km gj1214b = 28.67; gj1214 water amplitude mu18 ppm gj1214b = 216.8 Operating principle: Feature amplitude scales inversely with mean molecular weight through the scale height, so a meas And here is that same result with the words stripped away — just the quantities standing in a row: m per s2 gj1214b = 8.75; height mu2p3 km gj1214b = 224.4; water amplitude ppm gj1214b = 1696. Find m per s2 gj1214b in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'GJ 1214 b: Feature Suppression in a Flat Transmission Spectrum, Mean Molecular Weight Bounds and the Cloud-Deck Pressure Budget' stated its result. (2) That result pairs names with values: m per s2 gj1214b = 8.75; height mu2p3 km gj1214b = 224.4; water amplitude ppm gj1214b = 1696. (3) This question asks for the value paired with m per s2 gj1214b. (4) In that row, m per s2 gj1214b stands beside 8.75 — so the answer the lesson gives is 8.75. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'GJ 1214 b: Feature Suppression in a Flat Transmission Spectrum, Mean Molecular Weight Bounds and the Cloud-Deck Pressure Budget' reported a number for m per s2 gj1214b. What number did it report?",
+  "kind": "number",
+  "answer": 8.75,
+  "disp": "8.75",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "21.74",
+   "2683",
+   "16.26",
+   "8.75"
+  ],
+  "mcAnswer": "8.75",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Gliese 486 b: Transmission Feature Ceilings for a Rocky World, Steam Versus Hydrogen Envelopes and the Detectability Budget'. The result it reported gives a value for m per s2 gj486b, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Gliese 486 b: Transmission Feature Ceilings for a Rocky World, Steam Versus Hydrogen Envelopes and the Detectability Budget'. Its stated result: Headline result: gj486 surface gravity m per s2 gj486b = 16.26; gj486 scale height hydrogen km gj486b = 154.5; gj486 scale height steam km gj486b = 19.74; gj486 hydrogen band ppm gj486b = 197.4; gj486 steam band ppm gj486b = 25.22; gj486 band mu10 ppm gj486b = 45.39 Operating principle: For rocky planets the entire transmission game reduces to mean molecular weight: a hydrogen envelope would advertise itself with fea And here is that same result with the words stripped away — just the quantities standing in a row: m per s2 gj486b = 16.26; height hydrogen km gj486b = 154.5; height steam km gj486b = 19.74. Find m per s2 gj486b in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Gliese 486 b: Transmission Feature Ceilings for a Rocky World, Steam Versus Hydrogen Envelopes and the Detectability Budget' stated its result. (2) That result pairs names with values: m per s2 gj486b = 16.26; height hydrogen km gj486b = 154.5; height steam km gj486b = 19.74. (3) This question asks for the value paired with m per s2 gj486b. (4) In that row, m per s2 gj486b stands beside 16.26 — so the answer the lesson gives is 16.26. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Gliese 486 b: Transmission Feature Ceilings for a Rocky World, Steam Versus Hydrogen Envelopes and the Detectability Budget' reported a number for m per s2 gj486b. What number did it report?",
+  "kind": "number",
+  "answer": 16.26,
+  "disp": "16.26",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "21.74",
+   "8.75",
+   "16.26",
+   "2683"
+  ],
+  "mcAnswer": "16.26",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'HD 189733 b: The Rayleigh Scattering Slope, Haze Enhancement Factor and Terminator Opacity Budget in Transmission'. The result it reported gives a value for m per s2 hd189733b, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'HD 189733 b: The Rayleigh Scattering Slope, Haze Enhancement Factor and Terminator Opacity Budget in Transmission'. Its stated result: Headline result: hd189733 surface gravity m per s2 hd189733b = 21.74; hd189733 scale height km hd189733b = 198.1; hd189733 rayleigh slope 035 085 um ppm hd189733b = 410; hd189733 one height amplitude ppm hd189733b = 115.5; hd189733 observed to rayleigh slope ratio hd189733b = 5.854; hd189733 slope per ln lambda ppm hd189733b = 462 Operating principle: A scattering slope translates into an effective temperature throug And here is that same result with the words stripped away — just the quantities standing in a row: m per s2 hd189733b = 21.74; scale height km hd189733b = 198.1; um ppm hd189733b = 410. Find m per s2 hd189733b in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'HD 189733 b: The Rayleigh Scattering Slope, Haze Enhancement Factor and Terminator Opacity Budget in Transmission' stated its result. (2) That result pairs names with values: m per s2 hd189733b = 21.74; scale height km hd189733b = 198.1; um ppm hd189733b = 410. (3) This question asks for the value paired with m per s2 hd189733b. (4) In that row, m per s2 hd189733b stands beside 21.74 — so the answer the lesson gives is 21.74. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'HD 189733 b: The Rayleigh Scattering Slope, Haze Enhancement Factor and Terminator Opacity Budget in Transmission' reported a number for m per s2 hd189733b. What number did it report?",
+  "kind": "number",
+  "answer": 21.74,
+  "disp": "21.74",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "8.75",
+   "2683",
+   "21.74",
+   "16.26"
+  ],
+  "mcAnswer": "21.74",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'HD 209458 b: Transmission Feature Amplitudes, Surface Gravity and the Scale Height Behind the First Detected Exoplanet Atmosphere'. The result it reported gives a value for m per s2 hd209458b, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'HD 209458 b: Transmission Feature Amplitudes, Surface Gravity and the Scale Height Behind the First Detected Exoplanet Atmosphere'. Its stated result: Headline result: hd209458 surface gravity m per s2 hd209458b = 8.98; hd209458 scale height km hd209458b = 579.5; hd209458 one height amplitude ppm hd209458b = 175.6; hd209458 five height water band ppm hd209458b = 877.9; hd209458 white light depth percent hd209458b = 1.495; hd209458 sodium two height ppm hd209458b = 351.2 Operating principle: Transmission features grow with the atmospheric scale height, which rises w And here is that same result with the words stripped away — just the quantities standing in a row: m per s2 hd209458b = 8.98; scale height km hd209458b = 579.5; height amplitude ppm hd209458b = 175.6. Find m per s2 hd209458b in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'HD 209458 b: Transmission Feature Amplitudes, Surface Gravity and the Scale Height Behind the First Detected Exoplanet Atmosphere' stated its result. (2) That result pairs names with values: m per s2 hd209458b = 8.98; scale height km hd209458b = 579.5; height amplitude ppm hd209458b = 175.6. (3) This question asks for the value paired with m per s2 hd209458b. (4) In that row, m per s2 hd209458b stands beside 8.98 — so the answer the lesson gives is 8.98. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'HD 209458 b: Transmission Feature Amplitudes, Surface Gravity and the Scale Height Behind the First Detected Exoplanet Atmosphere' reported a number for m per s2 hd209458b. What number did it report?",
+  "kind": "number",
+  "answer": 8.98,
+  "disp": "8.98",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "16.26",
+   "8.98",
+   "2683",
+   "21.74"
+  ],
+  "mcAnswer": "8.98",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “55 Cancri e: Dayside Brightness Temperatures Across Infrared Bands, Eclipse Depths and the Emission Budget of a Lava World”. Its stated result is: Headline result: cancri55 brightness temperature 4p5um k cancri55e = 2683; cancri55 eclipse depth 4p5um ppm cancri55e = 131; cancri55 dayside effective k cancri55e = 2573; cancri55 substellar point k cancri55e = 3060; cancri55 dayside flux w per m2 cancri55e = 2.485e+06; cancri55 depth at 2700k 4p5u (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “55 Cancri e: Dayside Brightness Temperatures Across Infrared Bands, Eclipse Depths and the Emission Budget of a Lava World”. Its stated result is: Headline result: cancri55 brightness temperature 4p5um k cancri55e = 2683; cancri55 eclipse depth 4p5um ppm cancri55e = 131; cancri55 dayside effective k cancri55e = 2573; cancri55 substellar point k cancri55e = 3060; cancri55 dayside flux w per m2 cancri55e = 2.485e+06; cancri55 depth at 2700k 4p5u (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]

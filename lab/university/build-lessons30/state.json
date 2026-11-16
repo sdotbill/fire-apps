@@ -535,5 +535,12 @@
    "audio": "audio/lessons30/thermonuclear-x-ray-bursts-on-accreting-neutron-stars-ignition-r/lesson-01.mp3",
    "minutes": 10.79
   }
+ },
+ "exoplanet-atmospheres-transmission-emission-and-retrieval-budget": {
+  "lesson-01": {
+   "hash": "af8ccdc763012f82e6bec2bfd6525dc02a4c2994",
+   "audio": "audio/lessons30/exoplanet-atmospheres-transmission-emission-and-retrieval-budget/lesson-01.mp3",
+   "minutes": 15.69
+  }
  }
 }
