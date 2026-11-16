@@ -1,0 +1,177 @@
+{
+ "id": "the-first-stars-and-early-metal-enrichment-in-a-bounced-cosmolog",
+ "title": "The First Stars and Early Metal Enrichment in a Bounced Cosmology",
+ "professor": "Professor Terrence Freeman",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Terrence Freeman, and this is The First Stars and Early Metal Enrichment in a Bounced Cosmology. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Terrence Freeman, and this is The First Stars and Early Metal Enrichment in a Bounced Cosmology. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'Carbon Enhancement in Second-Generation Stars from Faint First Supernovae with Fallback'. Its stated result: This study computed, from stated assumptions, the following headline results: Fe yield Msun = 0.004; C yield Msun = 0.20; dilution Msun = 30000; [Fe/H] = -4.01; [C/Fe] = 1.46; CEMP threshold [C/Fe] = 0.7. The work is simulated and computed, not measured, and the full calculation, code and machine-readable results are deposited with the record so that every value can be reproduced or varied.",
+    "Now we go one step further into the material.",
+    "'Dilution Masses and the Iron Abundances of Second-Generation Stars Enriched by a Single Event'. Its stated result: This study computed, from stated assumptions, the following headline results: Fe yield Msun = 0.07; [Fe/H] at 1e4 Msun = -2.29; [Fe/H] at 1e5 Msun = -3.29; dilution for [Fe/H] minus5 Msun = 5.11e+06; observed floor [Fe/H] = -7.3. The work is simulated and computed, not measured, and the full calculation, code and machine-readable results are deposited with the record so that every value can be reproduced or varied.",
+    "The next piece is where this starts to come together.",
+    "'Dust Cooling as a Second Route across the Critical Metallicity and Its Lower Threshold'. Its stated result: This study computed, from stated assumptions, the following headline results: Zcrit fine structure Zsun = 3.16e-04; Zcrit dust Zsun = 3.16e-06; ratio thresholds = 100; metal mass dust route Msun = 0.0044; metal mass fine structure Msun = 0.443; dust mass assumed Msun = 0.00004.",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'How Many Generations Were Needed to Reach the Critical Metallicity in a Minihalo'. Its stated result: This study computed, from stated assumptions, the following headline results: generations needed = 4.5; growth factor per generation = 6; time per generation Myr = 33; total time Myr = 148; starting Z Zsun = 1.0e-07; Zcrit Zsun = 3.2e-04.",
+    "We take the pieces in order, because each one stands on the last.",
+    "'Iron Yields of the First Core-Collapse Supernovae Averaged over a Heavy Initial Mass Function'. Its stated result: This study computed, from stated assumptions, the following headline results: mean Fe per event Msun = 0.059; exploding fraction 10 to 100 = 0.70; Fe 20 Msun Msun = 0.07; Fe 30 Msun Msun = 0.12. The work is simulated and computed, not measured, and the full calculation, code and machine-readable results are deposited with the record so that every value can be reproduced or varied.",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Limits on Surviving Low-Mass First Stars from Their Absence in Halo Surveys'. Its stated result: This study computed, from stated assumptions, the following headline results: survey sample [Fe/H] below minus3 = 500; zero metal stars found = 0; upper fraction percent 95 = 0.6; low mass fraction if IMF extended percent = 18; exclusion factor = 30.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Carbon Enhancement in Second-Generation Stars from Faint First Supernovae with Fallback”. Its stated result is: This study computed, from stated assumptions, the following headline results: Fe yield Msun = 0.004; C yield Msun = 0.20; dilution Msun = 30000; [Fe/H] = -4.01; [C/Fe] = 1.46; CEMP threshold [C/Fe] = 0.7. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'Carbon Enhancement in Second-Generation Stars from Faint First Supernovae with Fallback'; 'Dilution Masses and the Iron Abundances of Second-Generation Stars Enriched by a Single Event'; 'Dust Cooling as a Second Route across the Critical Metallicity and Its Lower Threshold'; 'How Many Generations Were Needed to Reach the Critical Metallicity in a Minihalo'; 'Iron Yields of the First Core-Collapse Supernovae Averaged over a Heavy Initial Mass Function'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 924,
+   "audio": "audio/lessons30/the-first-stars-and-early-metal-enrichment-in-a-bounced-cosmolog/lesson-01.mp3",
+   "minutes": 6.86,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'Carbon Enhancement in Second-Generation Stars from Faint First Supernovae with Fallback'. The result it reported gives a value for Fe yield Msun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Carbon Enhancement in Second-Generation Stars from Faint First Supernovae with Fallback'. Its stated result: This study computed, from stated assumptions, the following headline results: Fe yield Msun = 0.004; C yield Msun = 0.20; dilution Msun = 30000; [Fe/H] = -4.01; [C/Fe] = 1.46; CEMP threshold [C/Fe] = 0.7. The work is simulated and computed, not measured, and the full calculation, code and machine-readable results are deposited with the record so that every value can be reproduced or varied. And here is that same result with the words stripped away — just the quantities standing in a row: Fe yield Msun = 0.004; C yield Msun = 0.20; dilution Msun = 30000. Find Fe yield Msun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Carbon Enhancement in Second-Generation Stars from Faint First Supernovae with Fallback' stated its result. (2) That result pairs names with values: Fe yield Msun = 0.004; C yield Msun = 0.20; dilution Msun = 30000. (3) This question asks for the value paired with Fe yield Msun. (4) In that row, Fe yield Msun stands beside 0.004 — so the answer the lesson gives is 0.004. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Carbon Enhancement in Second-Generation Stars from Faint First Supernovae with Fallback' reported a number for Fe yield Msun. What number did it report?",
+     "kind": "number",
+     "answer": 0.004,
+     "disp": "0.004",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.004",
+      "0.07",
+      "3.16e-04",
+      "4.5"
+     ],
+     "mcAnswer": "0.004",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Dilution Masses and the Iron Abundances of Second-Generation Stars Enriched by a Single Event'. The result it reported gives a value for Fe yield Msun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Dilution Masses and the Iron Abundances of Second-Generation Stars Enriched by a Single Event'. Its stated result: This study computed, from stated assumptions, the following headline results: Fe yield Msun = 0.07; [Fe/H] at 1e4 Msun = -2.29; [Fe/H] at 1e5 Msun = -3.29; dilution for [Fe/H] minus5 Msun = 5.11e+06; observed floor [Fe/H] = -7.3. The work is simulated and computed, not measured, and the full calculation, code and machine-readable results are deposited with the record so that every value can be reproduced or varied. And here is that same result with the words stripped away — just the quantities standing in a row: Fe yield Msun = 0.07; minus5 Msun = 5.11e+06. Find Fe yield Msun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Dilution Masses and the Iron Abundances of Second-Generation Stars Enriched by a Single Event' stated its result. (2) That result pairs names with values: Fe yield Msun = 0.07; minus5 Msun = 5.11e+06. (3) This question asks for the value paired with Fe yield Msun. (4) In that row, Fe yield Msun stands beside 0.07 — so the answer the lesson gives is 0.07. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Dilution Masses and the Iron Abundances of Second-Generation Stars Enriched by a Single Event' reported a number for Fe yield Msun. What number did it report?",
+     "kind": "number",
+     "answer": 0.07,
+     "disp": "0.07",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "4.5",
+      "0.07",
+      "0.004",
+      "0.059"
+     ],
+     "mcAnswer": "0.07",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Dust Cooling as a Second Route across the Critical Metallicity and Its Lower Threshold'. The result it reported gives a value for Zcrit fine structure Zsun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Dust Cooling as a Second Route across the Critical Metallicity and Its Lower Threshold'. Its stated result: This study computed, from stated assumptions, the following headline results: Zcrit fine structure Zsun = 3.16e-04; Zcrit dust Zsun = 3.16e-06; ratio thresholds = 100; metal mass dust route Msun = 0.0044; metal mass fine structure Msun = 0.443; dust mass assumed Msun = 0.00004. And here is that same result with the words stripped away — just the quantities standing in a row: Zcrit fine structure Zsun = 3.16e-04; Zcrit dust Zsun = 3.16e-06; ratio thresholds = 100. Find Zcrit fine structure Zsun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Dust Cooling as a Second Route across the Critical Metallicity and Its Lower Threshold' stated its result. (2) That result pairs names with values: Zcrit fine structure Zsun = 3.16e-04; Zcrit dust Zsun = 3.16e-06; ratio thresholds = 100. (3) This question asks for the value paired with Zcrit fine structure Zsun. (4) In that row, Zcrit fine structure Zsun stands beside 3.16e-04 — so the answer the lesson gives is 3.16e-04. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Dust Cooling as a Second Route across the Critical Metallicity and Its Lower Threshold' reported a number for Zcrit fine structure Zsun. What number did it report?",
+     "kind": "number",
+     "answer": 0.000316,
+     "disp": "3.16e-04",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.07",
+      "3.16e-04",
+      "4.5",
+      "0.004"
+     ],
+     "mcAnswer": "3.16e-04",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'How Many Generations Were Needed to Reach the Critical Metallicity in a Minihalo'. The result it reported gives a value for generations needed, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'How Many Generations Were Needed to Reach the Critical Metallicity in a Minihalo'. Its stated result: This study computed, from stated assumptions, the following headline results: generations needed = 4.5; growth factor per generation = 6; time per generation Myr = 33; total time Myr = 148; starting Z Zsun = 1.0e-07; Zcrit Zsun = 3.2e-04. And here is that same result with the words stripped away — just the quantities standing in a row: generations needed = 4.5; growth factor per generation = 6; time per generation Myr = 33. Find generations needed in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'How Many Generations Were Needed to Reach the Critical Metallicity in a Minihalo' stated its result. (2) That result pairs names with values: generations needed = 4.5; growth factor per generation = 6; time per generation Myr = 33. (3) This question asks for the value paired with generations needed. (4) In that row, generations needed stands beside 4.5 — so the answer the lesson gives is 4.5. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'How Many Generations Were Needed to Reach the Critical Metallicity in a Minihalo' reported a number for generations needed. What number did it report?",
+     "kind": "number",
+     "answer": 4.5,
+     "disp": "4.5",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.07",
+      "0.004",
+      "0.20",
+      "4.5"
+     ],
+     "mcAnswer": "4.5",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Iron Yields of the First Core-Collapse Supernovae Averaged over a Heavy Initial Mass Function'. The result it reported gives a value for Fe per event Msun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Iron Yields of the First Core-Collapse Supernovae Averaged over a Heavy Initial Mass Function'. Its stated result: This study computed, from stated assumptions, the following headline results: mean Fe per event Msun = 0.059; exploding fraction 10 to 100 = 0.70; Fe 20 Msun Msun = 0.07; Fe 30 Msun Msun = 0.12. The work is simulated and computed, not measured, and the full calculation, code and machine-readable results are deposited with the record so that every value can be reproduced or varied. And here is that same result with the words stripped away — just the quantities standing in a row: Fe per event Msun = 0.059; fraction 10 to 100 = 0.70; Fe 20 Msun Msun = 0.07. Find Fe per event Msun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Iron Yields of the First Core-Collapse Supernovae Averaged over a Heavy Initial Mass Function' stated its result. (2) That result pairs names with values: Fe per event Msun = 0.059; fraction 10 to 100 = 0.70; Fe 20 Msun Msun = 0.07. (3) This question asks for the value paired with Fe per event Msun. (4) In that row, Fe per event Msun stands beside 0.059 — so the answer the lesson gives is 0.059. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Iron Yields of the First Core-Collapse Supernovae Averaged over a Heavy Initial Mass Function' reported a number for Fe per event Msun. What number did it report?",
+     "kind": "number",
+     "answer": 0.059,
+     "disp": "0.059",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "4.5",
+      "0.059",
+      "0.004",
+      "0.07"
+     ],
+     "mcAnswer": "0.059",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Carbon Enhancement in Second-Generation Stars from Faint First Supernovae with Fallback”. Its stated result is: This study computed, from stated assumptions, the following headline results: Fe yield Msun = 0.004; C yield Msun = 0.20; dilution Msun = 30000; [Fe/H] = -4.01; [C/Fe] = 1.46; CEMP threshold [C/Fe] = 0.7. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “Carbon Enhancement in Second-Generation Stars from Faint First Supernovae with Fallback”. Its stated result is: This study computed, from stated assumptions, the following headline results: Fe yield Msun = 0.004; C yield Msun = 0.20; dilution Msun = 30000; [Fe/H] = -4.01; [C/Fe] = 1.46; CEMP threshold [C/Fe] = 0.7. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}

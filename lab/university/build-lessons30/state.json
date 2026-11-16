@@ -353,5 +353,12 @@
    "audio": "audio/lessons30/stellar-asteroseismology-and-white-dwarf-cooling-as-tests-of-the/lesson-01.mp3",
    "minutes": 7.87
   }
+ },
+ "the-first-stars-and-early-metal-enrichment-in-a-bounced-cosmolog": {
+  "lesson-01": {
+   "hash": "cf561d3039d5439fbff809640ab01bb6fbc5cfea",
+   "audio": "audio/lessons30/the-first-stars-and-early-metal-enrichment-in-a-bounced-cosmolog/lesson-01.mp3",
+   "minutes": 6.86
+  }
  }
 }
