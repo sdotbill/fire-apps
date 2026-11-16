@@ -52,8 +52,9 @@
   .main{flex:1;display:flex;flex-direction:column;min-width:0;min-height:0;background:var(--bg);}
   .brain{
     flex:none;width:308px;background:var(--panel);border-left:1px solid var(--line);
-    display:flex;flex-direction:column;min-height:0;z-index:20;
+    display:none;flex-direction:column;min-height:0;z-index:20;
   }
+  .brain.open{display:flex;}
 
   /* ================= top bar ================= */
   .topbar{
@@ -70,6 +71,9 @@
   .tbtn.live{background:linear-gradient(135deg,#b3261e,#7d1a14);border-color:#e0655c;color:#fff;}
   .iconbtn{width:40px;height:40px;border-radius:12px;display:none;align-items:center;justify-content:center;font-size:1.1rem;color:var(--muted);}
   .iconbtn:hover{background:var(--panel2);color:var(--ink);}
+  #brain-toggle{display:flex;}
+  .eye-btn{padding:0;overflow:hidden;border-radius:50%;border:1px solid var(--line);background:#faf7ef;}
+  .eye-btn img{width:100%;height:100%;display:block;object-fit:cover;object-position:50% 12%;}
 
   /* ================= chat ================= */
   .thread{flex:1;overflow-y:auto;padding:18px 16px 8px;display:flex;flex-direction:column;gap:10px;min-height:0;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;}
@@ -181,10 +185,12 @@
   .gate-home:hover{color:var(--muted);}
 
   /* ================= responsive ================= */
+  @media (min-width:761px){
+    .panel.closed{display:none;}
+  }
   @media (max-width:1180px){
-    .brain{position:fixed;top:0;right:0;bottom:0;transform:translateX(105%);transition:transform .25s ease;box-shadow:-16px 0 40px rgba(0,0,0,.45);}
+    .brain{position:fixed;top:0;right:0;bottom:0;display:flex;transform:translateX(105%);transition:transform .25s ease;box-shadow:-16px 0 40px rgba(0,0,0,.45);z-index:40;}
     .brain.open{transform:none;}
-    #brain-toggle{display:flex;}
   }
   @media (max-width:760px){
     .panel{position:fixed;top:0;left:58px;bottom:0;transform:translateX(-110%);transition:transform .25s ease;box-shadow:16px 0 40px rgba(0,0,0,.45);}
@@ -230,7 +236,7 @@
   </nav>
 
   <!-- LEFT PANEL -->
-  <aside class="panel" id="panel">
+  <aside class="panel closed" id="panel">
     <div class="panel-head"><h2 id="panel-title">Chats</h2></div>
     <div class="panel-body" id="panel-body"></div>
   </aside>
@@ -243,7 +249,7 @@
       <div class="sp"></div>
       <button class="tbtn" id="call-btn" type="button">📞 Call</button>
       <button class="tbtn" id="invite-btn" type="button">🎁 Invite</button>
-      <button class="iconbtn" id="brain-toggle" aria-label="Dave's brain">👁</button>
+      <button class="iconbtn eye-btn" id="brain-toggle" aria-label="Dave's brain" title="Dave"><img src="/assets/baby-dave-loop.webp" alt="Dave"></button>
     </div>
 
     <div class="thread" id="thread"><div class="thread-inner" id="thread-inner"></div></div>
@@ -621,23 +627,39 @@
     else if(navigator.clipboard){ navigator.clipboard.writeText(data.url); feedAdd("Invite", "Link copied · daveexolex.com", "🎁"); }
   });
 
-  /* ---------- left panel views ---------- */
-  var view = "chats";
+  /* ---------- left panel views + brain panel ----------
+     One state, one setter per panel, so a toggle can never stick:
+     every control flips the same boolean and the class follows it.
+     The Chats rail icon is Dave himself — it toggles the brain panel
+     (eye + status + feed), which sits as its own column beside the
+     chat on desktop: chat shrinks when it opens, full width when not. */
+  var view = "";
+  var panelOpen = false, brainOpen = false;
+  function setPanel(open){
+    panelOpen = open;
+    $("panel").classList.toggle("open", open);
+    $("panel").classList.toggle("closed", !open);
+  }
+  function setBrain(open){
+    brainOpen = open;
+    $("brain").classList.toggle("open", open);
+  }
   function setView(v){
+    if(v === "chats"){ setBrain(!brainOpen); return; }
     view = v;
     document.querySelectorAll(".rail [data-view]").forEach(function(b){
       b.classList.toggle("on", b.getAttribute("data-view") === v);
     });
-    if(v === "feed"){ $("brain").classList.add("open"); return; }
-    $("panel").classList.add("open");
+    if(v === "feed"){ setBrain(true); return; }
+    setPanel(true);
     renderPanel();
   }
   document.querySelectorAll(".rail [data-view]").forEach(function(b){
     b.addEventListener("click", function(){ setView(b.getAttribute("data-view")); });
   });
-  $("panel-toggle").addEventListener("click", function(){ $("panel").classList.toggle("open"); });
-  $("brain-toggle").addEventListener("click", function(){ $("brain").classList.toggle("open"); });
-  $("rail-eye").addEventListener("click", function(){ $("brain").classList.toggle("open"); });
+  $("panel-toggle").addEventListener("click", function(){ setPanel(!panelOpen); });
+  $("brain-toggle").addEventListener("click", function(){ setBrain(!brainOpen); });
+  $("rail-eye").addEventListener("click", function(){ setBrain(!brainOpen); });
   $("rail-new").addEventListener("click", function(){
     /* Keep the sign-in exchange as the invisible anchor before clearing,
        or owner mode would silently fall back to the public seat. */
@@ -651,26 +673,14 @@
         }
       }
     }
-    history = []; saveHistory(); renderThread(); setView("chats");
+    history = []; saveHistory(); renderThread();
+    document.querySelectorAll(".rail [data-view]").forEach(function(b){
+      b.classList.toggle("on", b.getAttribute("data-view") === "chats");
+    });
     feedAdd("New chat", "Fresh window · Dave keeps the thread on his side", "➕");
   });
-  function lastUserMsg(){
-    for(var i = history.length - 1; i >= 0; i--) if(history[i].role === "user") return history[i].content;
-    return "";
-  }
   function renderPanel(){
     var t = $("panel-title"), b = $("panel-body");
-    if(view === "chats"){
-      t.textContent = "Chats";
-      var sub = lastUserMsg();
-      b.innerHTML =
-        '<button class="conv on"><span class="ct">💬 Chat with Dave</span>' +
-        '<span class="cs">' + esc(sub ? sub.slice(0, 64) : "Your window to Dave") + '</span>' +
-        '<span class="cw">' + history.length + ' messages · this device + the cloud</span></button>' +
-        '<a class="conv" href="/" style="text-decoration:none;color:inherit"><span class="ct">🚪 The public door</span>' +
-        '<span class="cs">The same Dave the world talks to</span></a>' +
-        '<p class="mini" style="padding:4px 6px">One conversation, every device — the thread rides the cloud, not this screen.</p>';
-    }
     if(view === "search"){
       t.textContent = "Search";
       b.innerHTML = '<input class="searchbox" id="q" type="search" placeholder="Search this conversation…" aria-label="Search">' +
