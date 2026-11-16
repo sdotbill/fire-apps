@@ -374,5 +374,12 @@
    "audio": "audio/lessons30/solar-wind-turbulence-the-parker-spiral-and-the-interplanetary-m/lesson-01.mp3",
    "minutes": 14.63
   }
+ },
+ "brown-dwarfs-free-floating-planets-and-the-bottom-of-the-initial": {
+  "lesson-01": {
+   "hash": "c30d19a6a71360a936286f9c3851ea0d3be934a5",
+   "audio": "audio/lessons30/brown-dwarfs-free-floating-planets-and-the-bottom-of-the-initial/lesson-01.mp3",
+   "minutes": 7.6
+  }
  }
 }

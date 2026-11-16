@@ -1,0 +1,177 @@
+{
+ "id": "brown-dwarfs-free-floating-planets-and-the-bottom-of-the-initial",
+ "title": "Brown Dwarfs, Free-Floating Planets and the Bottom of the Initial Mass Function Against the Frame's Bounds",
+ "professor": "Professor Nikos Nikolaidis",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Nikos Nikolaidis, and this is Brown Dwarfs, Free-Floating Planets and the Bottom of the Initial Mass Function Against the Frame's Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Nikos Nikolaidis, and this is Brown Dwarfs, Free-Floating Planets and the Bottom of the Initial Mass Function Against the Frame's Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'Accretion and Disk Lifetimes at Substellar Masses'. Its stated result: Headline computed result: tau_002 = 5.2; tau_008 = 3.0; tau_03 = 1.8; Mdot_002 = 6.3e-11. This study is simulated and computed, not measured; every value is reproduced by the deposited compute.py and recorded in results.json.",
+    "Now we go one step further into the material.",
+    "'Brown Dwarf Cooling Tracks: Luminosity and Effective Temperature from 0.1 to 10 Gigayears'. Its stated result: Headline computed result: L_30Mjup_5Gyr = 1.92e-06; Teff_30Mjup_5Gyr = 717; L_75Mjup_5Gyr = 1.32e-05; Teff_75Mjup_5Gyr = 1160; fading_factor_30 = 133.0. This study is simulated and computed, not measured; every value is reproduced by the deposited compute.py and recorded in results.json.",
+    "The next piece is where this starts to come together.",
+    "'Detection Completeness for Cold Brown Dwarfs in Deep Infrared Surveys'. Its stated result: Headline computed result: comp_500K_10pc = 1.00; comp_350K_10pc = 1.00; comp_350K_5pc = 1.00; comp_700K_20pc = 1.00. This study is simulated and computed, not measured; every value is reproduced by the deposited compute.py and recorded in results.json.",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'Direct-Imaging Contrast Limits Converted to Companion Mass Limits'. Its stated result: Headline computed result: Mlim_100Myr_1e5 = 12.0; Mlim_100Myr_1e6 = 5.4; Mlim_1Gyr_1e6 = 15.1. This study is simulated and computed, not measured; every value is reproduced by the deposited compute.py and recorded in results.json.",
+    "We take the pieces in order, because each one stands on the last.",
+    "'Effective Temperature and Surface Gravity Degeneracy in Brown Dwarf Spectral Fitting'. Its stated result: Headline computed result: bias_half_dex = 90; bias_1200_logg45 = -90; valley_slope_K_per_dex = 180. This study is simulated and computed, not measured; every value is reproduced by the deposited compute.py and recorded in results.json.",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Ejection Versus Direct Formation: Velocity and Multiplicity Signatures of Free-Floating Planets'. Its stated result: Headline computed result: retained_sigma2 = 0.20; retained_sigma5 = 0.02; escaped_sigma5 = 0.98. This study is simulated and computed, not measured; every value is reproduced by the deposited compute.py and recorded in results.json.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Accretion and Disk Lifetimes at Substellar Masses”. Its stated result is: Headline computed result: tau_002 = 5.2; tau_008 = 3.0; tau_03 = 1.8; Mdot_002 = 6.3e-11. This study is simulated and computed, not measured; every value is reproduced by the deposited compute.py and recorded in results.json. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'Accretion and Disk Lifetimes at Substellar Masses'; 'Brown Dwarf Cooling Tracks: Luminosity and Effective Temperature from 0.1 to 10 Gigayears'; 'Detection Completeness for Cold Brown Dwarfs in Deep Infrared Surveys'; 'Direct-Imaging Contrast Limits Converted to Companion Mass Limits'; 'Effective Temperature and Surface Gravity Degeneracy in Brown Dwarf Spectral Fitting'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 772,
+   "audio": "audio/lessons30/brown-dwarfs-free-floating-planets-and-the-bottom-of-the-initial/lesson-01.mp3",
+   "minutes": 7.6,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'Accretion and Disk Lifetimes at Substellar Masses'. The result it reported gives a value for tau_002, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Accretion and Disk Lifetimes at Substellar Masses'. Its stated result: Headline computed result: tau_002 = 5.2; tau_008 = 3.0; tau_03 = 1.8; Mdot_002 = 6.3e-11. This study is simulated and computed, not measured; every value is reproduced by the deposited compute.py and recorded in results.json. And here is that same result with the words stripped away — just the quantities standing in a row: tau_002 = 5.2; tau_008 = 3.0; tau_03 = 1.8. Find tau_002 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Accretion and Disk Lifetimes at Substellar Masses' stated its result. (2) That result pairs names with values: tau_002 = 5.2; tau_008 = 3.0; tau_03 = 1.8. (3) This question asks for the value paired with tau_002. (4) In that row, tau_002 stands beside 5.2 — so the answer the lesson gives is 5.2. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Accretion and Disk Lifetimes at Substellar Masses' reported a number for tau_002. What number did it report?",
+     "kind": "number",
+     "answer": 5.2,
+     "disp": "5.2",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1.00",
+      "5.2",
+      "12.0",
+      "1.92e-06"
+     ],
+     "mcAnswer": "5.2",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Brown Dwarf Cooling Tracks: Luminosity and Effective Temperature from 0.1 to 10 Gigayears'. The result it reported gives a value for L_30Mjup_5Gyr, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Brown Dwarf Cooling Tracks: Luminosity and Effective Temperature from 0.1 to 10 Gigayears'. Its stated result: Headline computed result: L_30Mjup_5Gyr = 1.92e-06; Teff_30Mjup_5Gyr = 717; L_75Mjup_5Gyr = 1.32e-05; Teff_75Mjup_5Gyr = 1160; fading_factor_30 = 133.0. This study is simulated and computed, not measured; every value is reproduced by the deposited compute.py and recorded in results.json. And here is that same result with the words stripped away — just the quantities standing in a row: L_30Mjup_5Gyr = 1.92e-06; Teff_30Mjup_5Gyr = 717; L_75Mjup_5Gyr = 1.32e-05. Find L_30Mjup_5Gyr in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Brown Dwarf Cooling Tracks: Luminosity and Effective Temperature from 0.1 to 10 Gigayears' stated its result. (2) That result pairs names with values: L_30Mjup_5Gyr = 1.92e-06; Teff_30Mjup_5Gyr = 717; L_75Mjup_5Gyr = 1.32e-05. (3) This question asks for the value paired with L_30Mjup_5Gyr. (4) In that row, L_30Mjup_5Gyr stands beside 1.92e-06 — so the answer the lesson gives is 1.92e-06. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Brown Dwarf Cooling Tracks: Luminosity and Effective Temperature from 0.1 to 10 Gigayears' reported a number for L_30Mjup_5Gyr. What number did it report?",
+     "kind": "number",
+     "answer": 1.92e-06,
+     "disp": "1.92e-06",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "5.2",
+      "1.00",
+      "1.92e-06",
+      "12.0"
+     ],
+     "mcAnswer": "1.92e-06",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Detection Completeness for Cold Brown Dwarfs in Deep Infrared Surveys'. The result it reported gives a value for comp_500K_10pc, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Detection Completeness for Cold Brown Dwarfs in Deep Infrared Surveys'. Its stated result: Headline computed result: comp_500K_10pc = 1.00; comp_350K_10pc = 1.00; comp_350K_5pc = 1.00; comp_700K_20pc = 1.00. This study is simulated and computed, not measured; every value is reproduced by the deposited compute.py and recorded in results.json. And here is that same result with the words stripped away — just the quantities standing in a row: comp_500K_10pc = 1.00; comp_350K_10pc = 1.00; comp_350K_5pc = 1.00. Find comp_500K_10pc in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Detection Completeness for Cold Brown Dwarfs in Deep Infrared Surveys' stated its result. (2) That result pairs names with values: comp_500K_10pc = 1.00; comp_350K_10pc = 1.00; comp_350K_5pc = 1.00. (3) This question asks for the value paired with comp_500K_10pc. (4) In that row, comp_500K_10pc stands beside 1.00 — so the answer the lesson gives is 1.00. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Detection Completeness for Cold Brown Dwarfs in Deep Infrared Surveys' reported a number for comp_500K_10pc. What number did it report?",
+     "kind": "number",
+     "answer": 1.0,
+     "disp": "1.00",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "12.0",
+      "1.92e-06",
+      "1.00",
+      "5.2"
+     ],
+     "mcAnswer": "1.00",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Direct-Imaging Contrast Limits Converted to Companion Mass Limits'. The result it reported gives a value for Mlim_100Myr_1e5, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Direct-Imaging Contrast Limits Converted to Companion Mass Limits'. Its stated result: Headline computed result: Mlim_100Myr_1e5 = 12.0; Mlim_100Myr_1e6 = 5.4; Mlim_1Gyr_1e6 = 15.1. This study is simulated and computed, not measured; every value is reproduced by the deposited compute.py and recorded in results.json. And here is that same result with the words stripped away — just the quantities standing in a row: Mlim_100Myr_1e5 = 12.0; Mlim_100Myr_1e6 = 5.4; Mlim_1Gyr_1e6 = 15.1. Find Mlim_100Myr_1e5 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Direct-Imaging Contrast Limits Converted to Companion Mass Limits' stated its result. (2) That result pairs names with values: Mlim_100Myr_1e5 = 12.0; Mlim_100Myr_1e6 = 5.4; Mlim_1Gyr_1e6 = 15.1. (3) This question asks for the value paired with Mlim_100Myr_1e5. (4) In that row, Mlim_100Myr_1e5 stands beside 12.0 — so the answer the lesson gives is 12.0. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Direct-Imaging Contrast Limits Converted to Companion Mass Limits' reported a number for Mlim_100Myr_1e5. What number did it report?",
+     "kind": "number",
+     "answer": 12.0,
+     "disp": "12.0",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "5.2",
+      "1.00",
+      "1.92e-06",
+      "12.0"
+     ],
+     "mcAnswer": "12.0",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Effective Temperature and Surface Gravity Degeneracy in Brown Dwarf Spectral Fitting'. The result it reported gives a value for bias_half_dex, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Effective Temperature and Surface Gravity Degeneracy in Brown Dwarf Spectral Fitting'. Its stated result: Headline computed result: bias_half_dex = 90; bias_1200_logg45 = -90; valley_slope_K_per_dex = 180. This study is simulated and computed, not measured; every value is reproduced by the deposited compute.py and recorded in results.json. And here is that same result with the words stripped away — just the quantities standing in a row: bias_half_dex = 90; bias_1200_logg45 = -90; valley_slope_K_per_dex = 180. Find bias_half_dex in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Effective Temperature and Surface Gravity Degeneracy in Brown Dwarf Spectral Fitting' stated its result. (2) That result pairs names with values: bias_half_dex = 90; bias_1200_logg45 = -90; valley_slope_K_per_dex = 180. (3) This question asks for the value paired with bias_half_dex. (4) In that row, bias_half_dex stands beside 90 — so the answer the lesson gives is 90. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Effective Temperature and Surface Gravity Degeneracy in Brown Dwarf Spectral Fitting' reported a number for bias_half_dex. What number did it report?",
+     "kind": "number",
+     "answer": 90.0,
+     "disp": "90",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1.92e-06",
+      "5.2",
+      "1.00",
+      "90"
+     ],
+     "mcAnswer": "90",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Accretion and Disk Lifetimes at Substellar Masses”. Its stated result is: Headline computed result: tau_002 = 5.2; tau_008 = 3.0; tau_03 = 1.8; Mdot_002 = 6.3e-11. This study is simulated and computed, not measured; every value is reproduced by the deposited compute.py and recorded in results.json. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “Accretion and Disk Lifetimes at Substellar Masses”. Its stated result is: Headline computed result: tau_002 = 5.2; tau_008 = 3.0; tau_03 = 1.8; Mdot_002 = 6.3e-11. This study is simulated and computed, not measured; every value is reproduced by the deposited compute.py and recorded in results.json. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}
