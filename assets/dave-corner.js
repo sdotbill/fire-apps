@@ -335,8 +335,8 @@
     var tries = 0;
     var tick = function(){
       tries++;
-      fetch(CHAT.replace(/\/chat$/, "/owner/replies") + "?surface=door&sitting=" + encodeURIComponent(sittingId), {
-        headers: { "Authorization": "Bearer " + identity }
+      fetch(CHAT.replace(/\/chat$/, "/owner/replies") + "?identity=" + encodeURIComponent(identity) + "&surface=door&sitting=" + encodeURIComponent(sittingId), {
+        credentials: "include"
       }).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
         var list = (d && Array.isArray(d.replies)) ? d.replies : [];
         var fresh = [];
