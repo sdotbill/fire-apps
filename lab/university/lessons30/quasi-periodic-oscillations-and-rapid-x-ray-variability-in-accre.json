@@ -1,0 +1,177 @@
+{
+ "id": "quasi-periodic-oscillations-and-rapid-x-ray-variability-in-accre",
+ "title": "Quasi-Periodic Oscillations and Rapid X-Ray Variability in Accreting Compact Objects Against Timing, Density and Energy Bounds",
+ "professor": "Professor Yumi Takahashi",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Yumi Takahashi, and this is Quasi-Periodic Oscillations and Rapid X-Ray Variability in Accreting Compact Objects Against Timing, Density and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Yumi Takahashi, and this is Quasi-Periodic Oscillations and Rapid X-Ray Variability in Accreting Compact Objects Against Timing, Density and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'Broadband Noise Breaks and Weak Oscillations in the Hard State of Cygnus X-1'. Its stated result: Headline result (values verbatim from results.json): object = Cygnus X-1; black_hole_mass_Msun = 21.2; dimensionless_spin_assumed = 0.9; qpo_centroid_Hz = 0.4; quality_factor_Q = 3.0; fwhm_Hz = 0.13333333333333333; fractional_rms_percent = 25.0; broadband_break_Hz = 0.3; gravitational_radius_km = 31.30539744990891; isco_radius_rg = 2.320883041761887; isco_orbital_frequency_Hz = 343.6021561018644; inferred_radius_rg =",
+    "Now we go one step further into the material.",
+    "'Early Outburst Oscillations in Swift J1727.8-1613: Timing Bounds for a New Transient'. Its stated result: Headline result (values verbatim from results.json): object = Swift J1727.8-1613; black_hole_mass_Msun = 9.0; dimensionless_spin_assumed = 0.5; qpo_centroid_Hz = 1.2; quality_factor_Q = 6.0; fwhm_Hz = 0.19999999999999998; fractional_rms_percent = 16.0; broadband_break_Hz = 0.4; gravitational_radius_km = 13.290027219300953; isco_radius_rg = 4.233002529530826; isco_orbital_frequency_Hz = 389.8506243972006; inferred_rad",
+    "The next piece is where this starts to come together.",
+    "'High-Frequency Oscillations Near 160 and 240 Hertz in H1743-322'. Its stated result: Headline result (values verbatim from results.json): object = H1743-322; black_hole_mass_Msun = 10.0; dimensionless_spin_assumed = 0.5; qpo_centroid_Hz = 240.0; quality_factor_Q = 5.0; fwhm_Hz = 48.0; fractional_rms_percent = 3.5; broadband_break_Hz = 4.0; gravitational_radius_km = 14.766696910334392; isco_radius_rg = 4.233002529530826; isco_orbital_frequency_Hz = 350.86556195748057; inferred_radius_rg = 5.5183179224",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'High-Frequency Variability and Reverberation Scales in 1H0707-495'. Its stated result: Headline result (values verbatim from results.json): object = 1H0707-495; black_hole_mass_Msun = 5200000.0; dimensionless_spin_assumed = 0.9; qpo_centroid_Hz = 0.00026; quality_factor_Q = 3.0; fwhm_Hz = 8.666666666666665e-05; fractional_rms_percent = 20.0; broadband_break_Hz = 8e-05; gravitational_radius_km = 7678682.393373884; isco_radius_rg = 2.320883041761887; isco_orbital_frequency_Hz = 0.0014008395594922163; inf",
+    "We take the pieces in order, because each one stands on the last.",
+    "'Kilohertz Twin Peaks in Scorpius X-1: Peak Separation and Orbital Interpretation'. Its stated result: Headline result (values verbatim from results.json): object = Scorpius X-1; black_hole_mass_Msun = 1.4; dimensionless_spin_assumed = 0.1; qpo_centroid_Hz = 700.0; quality_factor_Q = 5.0; fwhm_Hz = 140.0; fractional_rms_percent = 6.0; broadband_break_Hz = 2.0; gravitational_radius_km = 2.0673375674468146; isco_radius_rg = 5.669302571208653; isco_orbital_frequency_Hz = 1697.1864470124856; inferred_radius_rg = 10.261435",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Low-Frequency Oscillations in EXO 1846-031 and the Hot Inner Flow Scale'. Its stated result: Headline result (values verbatim from results.json): object = EXO 1846-031; black_hole_mass_Msun = 9.0; dimensionless_spin_assumed = 0.5; qpo_centroid_Hz = 3.0; quality_factor_Q = 7.0; fwhm_Hz = 0.42857142857142855; fractional_rms_percent = 14.0; broadband_break_Hz = 1.0; gravitational_radius_km = 13.290027219300953; isco_radius_rg = 4.233002529530826; isco_orbital_frequency_Hz = 389.8506243972006; inferred_radius_rg",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Broadband Noise Breaks and Weak Oscillations in the Hard State of Cygnus X-1”. Its stated result is: Headline result (values verbatim from results.json): object = Cygnus X-1; black_hole_mass_Msun = 21.2; dimensionless_spin_assumed = 0.9; qpo_centroid_Hz = 0.4; quality_factor_Q = 3.0; fwhm_Hz = 0.13333333333333333; fractional_rms_percent = 25.0; broadband_break_Hz = 0.3; gravitational_radius_km = 31 (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'Broadband Noise Breaks and Weak Oscillations in the Hard State of Cygnus X-1'; 'Early Outburst Oscillations in Swift J1727.8-1613: Timing Bounds for a New Transient'; 'High-Frequency Oscillations Near 160 and 240 Hertz in H1743-322'; 'High-Frequency Variability and Reverberation Scales in 1H0707-495'; 'Kilohertz Twin Peaks in Scorpius X-1: Peak Separation and Orbital Interpretation'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 828,
+   "audio": "audio/lessons30/quasi-periodic-oscillations-and-rapid-x-ray-variability-in-accre/lesson-01.mp3",
+   "minutes": 20.96,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'Broadband Noise Breaks and Weak Oscillations in the Hard State of Cygnus X-1'. The result it reported gives a value for black_hole_mass_Msun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Broadband Noise Breaks and Weak Oscillations in the Hard State of Cygnus X-1'. Its stated result: Headline result (values verbatim from results.json): object = Cygnus X-1; black_hole_mass_Msun = 21.2; dimensionless_spin_assumed = 0.9; qpo_centroid_Hz = 0.4; quality_factor_Q = 3.0; fwhm_Hz = 0.13333333333333333; fractional_rms_percent = 25.0; broadband_break_Hz = 0.3; gravitational_radius_km = 31.30539744990891; isco_radius_rg = 2.320883041761887; isco_orbital_frequency_Hz = 343.6021561018644; inferred_radius_rg = And here is that same result with the words stripped away — just the quantities standing in a row: black_hole_mass_Msun = 21.2; dimensionless_spin_assumed = 0.9; qpo_centroid_Hz = 0.4. Find black_hole_mass_Msun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Broadband Noise Breaks and Weak Oscillations in the Hard State of Cygnus X-1' stated its result. (2) That result pairs names with values: black_hole_mass_Msun = 21.2; dimensionless_spin_assumed = 0.9; qpo_centroid_Hz = 0.4. (3) This question asks for the value paired with black_hole_mass_Msun. (4) In that row, black_hole_mass_Msun stands beside 21.2 — so the answer the lesson gives is 21.2. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Broadband Noise Breaks and Weak Oscillations in the Hard State of Cygnus X-1' reported a number for black_hole_mass_Msun. What number did it report?",
+     "kind": "number",
+     "answer": 21.2,
+     "disp": "21.2",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "10.0",
+      "21.2",
+      "9.0",
+      "5200000.0"
+     ],
+     "mcAnswer": "21.2",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Early Outburst Oscillations in Swift J1727.8-1613: Timing Bounds for a New Transient'. The result it reported gives a value for black_hole_mass_Msun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Early Outburst Oscillations in Swift J1727.8-1613: Timing Bounds for a New Transient'. Its stated result: Headline result (values verbatim from results.json): object = Swift J1727.8-1613; black_hole_mass_Msun = 9.0; dimensionless_spin_assumed = 0.5; qpo_centroid_Hz = 1.2; quality_factor_Q = 6.0; fwhm_Hz = 0.19999999999999998; fractional_rms_percent = 16.0; broadband_break_Hz = 0.4; gravitational_radius_km = 13.290027219300953; isco_radius_rg = 4.233002529530826; isco_orbital_frequency_Hz = 389.8506243972006; inferred_rad And here is that same result with the words stripped away — just the quantities standing in a row: black_hole_mass_Msun = 9.0; dimensionless_spin_assumed = 0.5; qpo_centroid_Hz = 1.2. Find black_hole_mass_Msun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Early Outburst Oscillations in Swift J1727.8-1613: Timing Bounds for a New Transient' stated its result. (2) That result pairs names with values: black_hole_mass_Msun = 9.0; dimensionless_spin_assumed = 0.5; qpo_centroid_Hz = 1.2. (3) This question asks for the value paired with black_hole_mass_Msun. (4) In that row, black_hole_mass_Msun stands beside 9.0 — so the answer the lesson gives is 9.0. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Early Outburst Oscillations in Swift J1727.8-1613: Timing Bounds for a New Transient' reported a number for black_hole_mass_Msun. What number did it report?",
+     "kind": "number",
+     "answer": 9.0,
+     "disp": "9.0",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "5200000.0",
+      "9.0",
+      "10.0",
+      "21.2"
+     ],
+     "mcAnswer": "9.0",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'High-Frequency Oscillations Near 160 and 240 Hertz in H1743-322'. The result it reported gives a value for black_hole_mass_Msun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'High-Frequency Oscillations Near 160 and 240 Hertz in H1743-322'. Its stated result: Headline result (values verbatim from results.json): object = H1743-322; black_hole_mass_Msun = 10.0; dimensionless_spin_assumed = 0.5; qpo_centroid_Hz = 240.0; quality_factor_Q = 5.0; fwhm_Hz = 48.0; fractional_rms_percent = 3.5; broadband_break_Hz = 4.0; gravitational_radius_km = 14.766696910334392; isco_radius_rg = 4.233002529530826; isco_orbital_frequency_Hz = 350.86556195748057; inferred_radius_rg = 5.5183179224 And here is that same result with the words stripped away — just the quantities standing in a row: black_hole_mass_Msun = 10.0; dimensionless_spin_assumed = 0.5; qpo_centroid_Hz = 240.0. Find black_hole_mass_Msun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'High-Frequency Oscillations Near 160 and 240 Hertz in H1743-322' stated its result. (2) That result pairs names with values: black_hole_mass_Msun = 10.0; dimensionless_spin_assumed = 0.5; qpo_centroid_Hz = 240.0. (3) This question asks for the value paired with black_hole_mass_Msun. (4) In that row, black_hole_mass_Msun stands beside 10.0 — so the answer the lesson gives is 10.0. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'High-Frequency Oscillations Near 160 and 240 Hertz in H1743-322' reported a number for black_hole_mass_Msun. What number did it report?",
+     "kind": "number",
+     "answer": 10.0,
+     "disp": "10.0",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "9.0",
+      "10.0",
+      "5200000.0",
+      "21.2"
+     ],
+     "mcAnswer": "10.0",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'High-Frequency Variability and Reverberation Scales in 1H0707-495'. The result it reported gives a value for black_hole_mass_Msun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'High-Frequency Variability and Reverberation Scales in 1H0707-495'. Its stated result: Headline result (values verbatim from results.json): object = 1H0707-495; black_hole_mass_Msun = 5200000.0; dimensionless_spin_assumed = 0.9; qpo_centroid_Hz = 0.00026; quality_factor_Q = 3.0; fwhm_Hz = 8.666666666666665e-05; fractional_rms_percent = 20.0; broadband_break_Hz = 8e-05; gravitational_radius_km = 7678682.393373884; isco_radius_rg = 2.320883041761887; isco_orbital_frequency_Hz = 0.0014008395594922163; inf And here is that same result with the words stripped away — just the quantities standing in a row: black_hole_mass_Msun = 5200000.0; dimensionless_spin_assumed = 0.9; qpo_centroid_Hz = 0.00026. Find black_hole_mass_Msun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'High-Frequency Variability and Reverberation Scales in 1H0707-495' stated its result. (2) That result pairs names with values: black_hole_mass_Msun = 5200000.0; dimensionless_spin_assumed = 0.9; qpo_centroid_Hz = 0.00026. (3) This question asks for the value paired with black_hole_mass_Msun. (4) In that row, black_hole_mass_Msun stands beside 5200000.0 — so the answer the lesson gives is 5200000.0. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'High-Frequency Variability and Reverberation Scales in 1H0707-495' reported a number for black_hole_mass_Msun. What number did it report?",
+     "kind": "number",
+     "answer": 5200000.0,
+     "disp": "5200000.0",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "9.0",
+      "10.0",
+      "5200000.0",
+      "21.2"
+     ],
+     "mcAnswer": "5200000.0",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Kilohertz Twin Peaks in Scorpius X-1: Peak Separation and Orbital Interpretation'. The result it reported gives a value for black_hole_mass_Msun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Kilohertz Twin Peaks in Scorpius X-1: Peak Separation and Orbital Interpretation'. Its stated result: Headline result (values verbatim from results.json): object = Scorpius X-1; black_hole_mass_Msun = 1.4; dimensionless_spin_assumed = 0.1; qpo_centroid_Hz = 700.0; quality_factor_Q = 5.0; fwhm_Hz = 140.0; fractional_rms_percent = 6.0; broadband_break_Hz = 2.0; gravitational_radius_km = 2.0673375674468146; isco_radius_rg = 5.669302571208653; isco_orbital_frequency_Hz = 1697.1864470124856; inferred_radius_rg = 10.261435 And here is that same result with the words stripped away — just the quantities standing in a row: black_hole_mass_Msun = 1.4; dimensionless_spin_assumed = 0.1; qpo_centroid_Hz = 700.0. Find black_hole_mass_Msun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Kilohertz Twin Peaks in Scorpius X-1: Peak Separation and Orbital Interpretation' stated its result. (2) That result pairs names with values: black_hole_mass_Msun = 1.4; dimensionless_spin_assumed = 0.1; qpo_centroid_Hz = 700.0. (3) This question asks for the value paired with black_hole_mass_Msun. (4) In that row, black_hole_mass_Msun stands beside 1.4 — so the answer the lesson gives is 1.4. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Kilohertz Twin Peaks in Scorpius X-1: Peak Separation and Orbital Interpretation' reported a number for black_hole_mass_Msun. What number did it report?",
+     "kind": "number",
+     "answer": 1.4,
+     "disp": "1.4",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "9.0",
+      "21.2",
+      "10.0",
+      "1.4"
+     ],
+     "mcAnswer": "1.4",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Broadband Noise Breaks and Weak Oscillations in the Hard State of Cygnus X-1”. Its stated result is: Headline result (values verbatim from results.json): object = Cygnus X-1; black_hole_mass_Msun = 21.2; dimensionless_spin_assumed = 0.9; qpo_centroid_Hz = 0.4; quality_factor_Q = 3.0; fwhm_Hz = 0.13333333333333333; fractional_rms_percent = 25.0; broadband_break_Hz = 0.3; gravitational_radius_km = 31 (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “Broadband Noise Breaks and Weak Oscillations in the Hard State of Cygnus X-1”. Its stated result is: Headline result (values verbatim from results.json): object = Cygnus X-1; black_hole_mass_Msun = 21.2; dimensionless_spin_assumed = 0.9; qpo_centroid_Hz = 0.4; quality_factor_Q = 3.0; fwhm_Hz = 0.13333333333333333; fractional_rms_percent = 25.0; broadband_break_Hz = 0.3; gravitational_radius_km = 31 (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}

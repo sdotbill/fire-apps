@@ -290,5 +290,12 @@
    "audio": "audio/lessons30/the-fermi-and-erosita-bubbles-and-milky-way-outflows-against-ene/lesson-01.mp3",
    "minutes": 14.98
   }
+ },
+ "quasi-periodic-oscillations-and-rapid-x-ray-variability-in-accre": {
+  "lesson-01": {
+   "hash": "8a2b205e95b8b01399c8e84c91b4132c6bff8214",
+   "audio": "audio/lessons30/quasi-periodic-oscillations-and-rapid-x-ray-variability-in-accre/lesson-01.mp3",
+   "minutes": 20.96
+  }
  }
 }
