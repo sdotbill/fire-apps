@@ -248,5 +248,12 @@
    "audio": "audio/lessons30/cosmic-birefringence-parity-violation-and-polarisation-rotation-/lesson-01.mp3",
    "minutes": 13.05
   }
+ },
+ "exomoons-orbital-stability-tidal-evolution-and-detection-budgets": {
+  "lesson-01": {
+   "hash": "8da6307fcae5ebd1b23451c26ace4feda3ad007c",
+   "audio": "audio/lessons30/exomoons-orbital-stability-tidal-evolution-and-detection-budgets/lesson-01.mp3",
+   "minutes": 9.44
+  }
  }
 }

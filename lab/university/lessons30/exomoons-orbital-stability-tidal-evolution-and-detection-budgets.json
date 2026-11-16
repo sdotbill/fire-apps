@@ -1,0 +1,177 @@
+{
+ "id": "exomoons-orbital-stability-tidal-evolution-and-detection-budgets",
+ "title": "Exomoons: Orbital Stability, Tidal Evolution and Detection Budgets Against Density and Energy Bounds",
+ "professor": "Professor Wulan Ho",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Wulan Ho, and this is Exomoons: Orbital Stability, Tidal Evolution and Detection Budgets Against Density and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Wulan Ho, and this is Exomoons: Orbital Stability, Tidal Evolution and Detection Budgets Against Density and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'Atmospheric Retention and Escape Budgets for Exomoons: Jeans and Energy-Limited Loss'. Its stated result: Headline result (values verbatim from results.json): titan_jeans = 125; earthmoon_jeans = 752; moonmass_jeans = 38; titan_vesc_km_s = 2.64; earthmoon_vesc_km_s = 11.2. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "Now we go one step further into the material.",
+    "'Capture Budgets for Exomoons: Binary Exchange and Gas Drag Energy Accounting'. Its stated result: Headline result (values verbatim from results.json): moon_binary_binding_J = 2.83e+27; earth_binary_binding_J = 9.34e+30; triton_analogue_binding_J = 2.24e+25; earth_specific_J_per_kg = 1.56e+06. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "The next piece is where this starts to come together.",
+    "'Circumplanetary Disc Formation Budgets and the One-Part-in-Ten-Thousand Satellite Mass Ratio'. Its stated result: Headline result (values verbatim from results.json): jupiter_ratio = 2.05e-04; saturn_ratio = 2.41e-04; uranus_ratio = 1.01e-04; canonical_ratio = 1.0e-04; disc_mass_needed_earthmoon_jupiter_kg = 1.90e+25. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'Energy Budgets for Habitable Exomoons: Stellar, Reflected, Thermal and Tidal Fluxes Combined'. Its stated result: Headline result (values verbatim from results.json): earth_equiv_Teff_K = 262; earth_equiv_total_W_m2 = 266; outer_case_Teff_K = 187; outer_case_total_W_m2 = 69; io_tide_case_total_W_m2 = 268. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "We take the pieces in order, because each one stands on the last.",
+    "'Exomoon Survival Around Hot Jupiters: Tidal Stripping and Orbital Decay Budgets'. Its stated result: Headline result (values verbatim from results.json): hot_hill_Rjup = 7.3; hot_prograde_limit_Rjup = 3.6; warm_prograde_limit_Rjup = 14; temperate_prograde_limit_Rjup = 72. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Hill Stability Limits for Prograde and Retrograde Exomoons as a Function of Planetary Separation'. Its stated result: Headline result (values verbatim from results.json): hill_jupiter_1AU_km = 1.021e+07; prograde_limit_km = 4.999e+06; retrograde_limit_km = 9.507e+06; retro_pro_ratio = 1.90; jupiter_1AU_Hill_radii = 0.0. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Atmospheric Retention and Escape Budgets for Exomoons: Jeans and Energy-Limited Loss”. Its stated result is: Headline result (values verbatim from results.json): titan_jeans = 125; earthmoon_jeans = 752; moonmass_jeans = 38; titan_vesc_km_s = 2.64; earthmoon_vesc_km_s = 11.2. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'Atmospheric Retention and Escape Budgets for Exomoons: Jeans and Energy-Limited Loss'; 'Capture Budgets for Exomoons: Binary Exchange and Gas Drag Energy Accounting'; 'Circumplanetary Disc Formation Budgets and the One-Part-in-Ten-Thousand Satellite Mass Ratio'; 'Energy Budgets for Habitable Exomoons: Stellar, Reflected, Thermal and Tidal Fluxes Combined'; 'Exomoon Survival Around Hot Jupiters: Tidal Stripping and Orbital Decay Budgets'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 813,
+   "audio": "audio/lessons30/exomoons-orbital-stability-tidal-evolution-and-detection-budgets/lesson-01.mp3",
+   "minutes": 9.44,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'Atmospheric Retention and Escape Budgets for Exomoons: Jeans and Energy-Limited Loss'. The result it reported gives a value for titan_jeans, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Atmospheric Retention and Escape Budgets for Exomoons: Jeans and Energy-Limited Loss'. Its stated result: Headline result (values verbatim from results.json): titan_jeans = 125; earthmoon_jeans = 752; moonmass_jeans = 38; titan_vesc_km_s = 2.64; earthmoon_vesc_km_s = 11.2. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: titan_jeans = 125; earthmoon_jeans = 752; moonmass_jeans = 38. Find titan_jeans in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Atmospheric Retention and Escape Budgets for Exomoons: Jeans and Energy-Limited Loss' stated its result. (2) That result pairs names with values: titan_jeans = 125; earthmoon_jeans = 752; moonmass_jeans = 38. (3) This question asks for the value paired with titan_jeans. (4) In that row, titan_jeans stands beside 125 — so the answer the lesson gives is 125. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Atmospheric Retention and Escape Budgets for Exomoons: Jeans and Energy-Limited Loss' reported a number for titan_jeans. What number did it report?",
+     "kind": "number",
+     "answer": 125.0,
+     "disp": "125",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "2.83e+27",
+      "125",
+      "262",
+      "2.05e-04"
+     ],
+     "mcAnswer": "125",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Capture Budgets for Exomoons: Binary Exchange and Gas Drag Energy Accounting'. The result it reported gives a value for moon_binary_binding_J, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Capture Budgets for Exomoons: Binary Exchange and Gas Drag Energy Accounting'. Its stated result: Headline result (values verbatim from results.json): moon_binary_binding_J = 2.83e+27; earth_binary_binding_J = 9.34e+30; triton_analogue_binding_J = 2.24e+25; earth_specific_J_per_kg = 1.56e+06. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: moon_binary_binding_J = 2.83e+27; earth_binary_binding_J = 9.34e+30; triton_analogue_binding_J = 2.24e+25. Find moon_binary_binding_J in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Capture Budgets for Exomoons: Binary Exchange and Gas Drag Energy Accounting' stated its result. (2) That result pairs names with values: moon_binary_binding_J = 2.83e+27; earth_binary_binding_J = 9.34e+30; triton_analogue_binding_J = 2.24e+25. (3) This question asks for the value paired with moon_binary_binding_J. (4) In that row, moon_binary_binding_J stands beside 2.83e+27 — so the answer the lesson gives is 2.83e+27. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Capture Budgets for Exomoons: Binary Exchange and Gas Drag Energy Accounting' reported a number for moon_binary_binding_J. What number did it report?",
+     "kind": "number",
+     "answer": 2.83e+27,
+     "disp": "2.83e+27",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "2.83e+27",
+      "125",
+      "262",
+      "2.05e-04"
+     ],
+     "mcAnswer": "2.83e+27",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Circumplanetary Disc Formation Budgets and the One-Part-in-Ten-Thousand Satellite Mass Ratio'. The result it reported gives a value for jupiter_ratio, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Circumplanetary Disc Formation Budgets and the One-Part-in-Ten-Thousand Satellite Mass Ratio'. Its stated result: Headline result (values verbatim from results.json): jupiter_ratio = 2.05e-04; saturn_ratio = 2.41e-04; uranus_ratio = 1.01e-04; canonical_ratio = 1.0e-04; disc_mass_needed_earthmoon_jupiter_kg = 1.90e+25. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: jupiter_ratio = 2.05e-04; saturn_ratio = 2.41e-04; uranus_ratio = 1.01e-04. Find jupiter_ratio in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Circumplanetary Disc Formation Budgets and the One-Part-in-Ten-Thousand Satellite Mass Ratio' stated its result. (2) That result pairs names with values: jupiter_ratio = 2.05e-04; saturn_ratio = 2.41e-04; uranus_ratio = 1.01e-04. (3) This question asks for the value paired with jupiter_ratio. (4) In that row, jupiter_ratio stands beside 2.05e-04 — so the answer the lesson gives is 2.05e-04. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Circumplanetary Disc Formation Budgets and the One-Part-in-Ten-Thousand Satellite Mass Ratio' reported a number for jupiter_ratio. What number did it report?",
+     "kind": "number",
+     "answer": 0.000205,
+     "disp": "2.05e-04",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "125",
+      "2.83e+27",
+      "2.05e-04",
+      "262"
+     ],
+     "mcAnswer": "2.05e-04",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Energy Budgets for Habitable Exomoons: Stellar, Reflected, Thermal and Tidal Fluxes Combined'. The result it reported gives a value for earth_equiv_Teff_K, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Energy Budgets for Habitable Exomoons: Stellar, Reflected, Thermal and Tidal Fluxes Combined'. Its stated result: Headline result (values verbatim from results.json): earth_equiv_Teff_K = 262; earth_equiv_total_W_m2 = 266; outer_case_Teff_K = 187; outer_case_total_W_m2 = 69; io_tide_case_total_W_m2 = 268. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: earth_equiv_Teff_K = 262; earth_equiv_total_W_m2 = 266; outer_case_Teff_K = 187. Find earth_equiv_Teff_K in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Energy Budgets for Habitable Exomoons: Stellar, Reflected, Thermal and Tidal Fluxes Combined' stated its result. (2) That result pairs names with values: earth_equiv_Teff_K = 262; earth_equiv_total_W_m2 = 266; outer_case_Teff_K = 187. (3) This question asks for the value paired with earth_equiv_Teff_K. (4) In that row, earth_equiv_Teff_K stands beside 262 — so the answer the lesson gives is 262. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Energy Budgets for Habitable Exomoons: Stellar, Reflected, Thermal and Tidal Fluxes Combined' reported a number for earth_equiv_Teff_K. What number did it report?",
+     "kind": "number",
+     "answer": 262.0,
+     "disp": "262",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "125",
+      "2.05e-04",
+      "2.83e+27",
+      "262"
+     ],
+     "mcAnswer": "262",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Exomoon Survival Around Hot Jupiters: Tidal Stripping and Orbital Decay Budgets'. The result it reported gives a value for hot_hill_Rjup, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Exomoon Survival Around Hot Jupiters: Tidal Stripping and Orbital Decay Budgets'. Its stated result: Headline result (values verbatim from results.json): hot_hill_Rjup = 7.3; hot_prograde_limit_Rjup = 3.6; warm_prograde_limit_Rjup = 14; temperate_prograde_limit_Rjup = 72. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: hot_hill_Rjup = 7.3; hot_prograde_limit_Rjup = 3.6; warm_prograde_limit_Rjup = 14. Find hot_hill_Rjup in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Exomoon Survival Around Hot Jupiters: Tidal Stripping and Orbital Decay Budgets' stated its result. (2) That result pairs names with values: hot_hill_Rjup = 7.3; hot_prograde_limit_Rjup = 3.6; warm_prograde_limit_Rjup = 14. (3) This question asks for the value paired with hot_hill_Rjup. (4) In that row, hot_hill_Rjup stands beside 7.3 — so the answer the lesson gives is 7.3. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Exomoon Survival Around Hot Jupiters: Tidal Stripping and Orbital Decay Budgets' reported a number for hot_hill_Rjup. What number did it report?",
+     "kind": "number",
+     "answer": 7.3,
+     "disp": "7.3",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "2.83e+27",
+      "2.05e-04",
+      "125",
+      "7.3"
+     ],
+     "mcAnswer": "7.3",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Atmospheric Retention and Escape Budgets for Exomoons: Jeans and Energy-Limited Loss”. Its stated result is: Headline result (values verbatim from results.json): titan_jeans = 125; earthmoon_jeans = 752; moonmass_jeans = 38; titan_vesc_km_s = 2.64; earthmoon_vesc_km_s = 11.2. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “Atmospheric Retention and Escape Budgets for Exomoons: Jeans and Energy-Limited Loss”. Its stated result is: Headline result (values verbatim from results.json): titan_jeans = 125; earthmoon_jeans = 752; moonmass_jeans = 38; titan_vesc_km_s = 2.64; earthmoon_vesc_km_s = 11.2. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}
