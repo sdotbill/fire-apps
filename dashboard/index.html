@@ -15,7 +15,7 @@
      held in an installed app's memory across a deploy converges to the
      live build instead of drifting (Bill, Nov 16 02:01 EST: the app
      showed an old rail while the site was already correct). -->
-<meta name="x-dash-build" content="da5ddf82-20261116T0943">
+<meta name="x-dash-build" content="a56e5204-20261116T1333">
 <script>
 (function(){
   var mine = document.querySelector('meta[name="x-dash-build"]');
@@ -360,6 +360,14 @@
          signed-in app, so the item is shown to every signed-in
          session (see syncRail) and hidden again on sign-out. -->
     <button id="rail-brain" title="Brain" aria-label="Brain" aria-pressed="false" hidden>🧠</button>
+    <!-- Google Colab (Bill, Nov 16 07:43 EST): moved out of the
+         owner Projects panel into the LEFT rail as its own item
+         — the Colab symbol alone, no words. It opens the same
+         target the Projects button opened
+         (colab.research.google.com) in a new tab. OWNER-ONLY: it
+         is Bill's physics compute bench, so syncRail shows it
+         for the owner alone, and sign-out hides it. -->
+    <button id="rail-colab" title="Google Colab" aria-label="Google Colab" hidden><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="9.2" cy="12" r="6.2" fill="none" stroke="#E8710A" stroke-width="2.7"/><circle cx="14.8" cy="12" r="6.2" fill="none" stroke="#F9AB00" stroke-width="2.7"/></svg></button>
     <div class="sp"></div>
     <button id="rail-new" title="New chat" aria-label="New chat">➕</button>
   </nav>
@@ -987,6 +995,12 @@
   });
   var beBtn = $("brain-eye"); if(beBtn) beBtn.addEventListener("click", function(){ setBrain(!brainOpen); });
   var rbBtn = $("rail-brain"); if(rbBtn) rbBtn.addEventListener("click", function(){ setBrain(!brainOpen); });
+  /* Colab rail item (Bill, Nov 16 07:43 EST): the old Projects-panel
+     button, moved — same target, same feed line. */
+  var rcBtn = $("rail-colab"); if(rcBtn) rcBtn.addEventListener("click", function(){
+    window.open("https://colab.research.google.com", "_blank");
+    feedAdd("Colab opened", "Google Colab in a new tab", "🧪");
+  });
   $("rail-new").addEventListener("click", function(){
     /* Keep the sign-in exchange as the invisible anchor before clearing,
        or owner mode would silently fall back to the public seat. */
@@ -1169,14 +1183,10 @@
         PROJECTS.filter(function(p){ return p.sec === "rd"; }).forEach(function(p){
           ph += '<button class="conv" data-proj="' + esc(p.slug) + '"><span class="ct">' + esc(p.name) + '</span><span class="cs">' + esc(p.status) + '</span></button>';
         });
-        ph += '<button class="conv" id="proj-colab"><span class="ct">\ud83e\uddea Google Colab</span><span class="cs">Open Colab in a new tab \u2014 the heavy compute bench</span></button>';
+        /* Google Colab lives in the left rail now (Bill, Nov 16 07:43 EST — #rail-colab). */
         b.innerHTML = ph;
         b.querySelectorAll("[data-proj]").forEach(function(btn){
           btn.addEventListener("click", function(){ openProject(btn.getAttribute("data-proj")); });
-        });
-        $("proj-colab").addEventListener("click", function(){
-          window.open("https://colab.research.google.com", "_blank");
-          feedAdd("Colab opened", "Google Colab in a new tab", "\ud83e\uddea");
         });
         return;
       }
@@ -1412,20 +1422,24 @@
      the session's own list); the University item rides every
      signed-in session (Nov 16 01:22 EST); the Brain item rides
      every signed-in session too (Nov 16 04:41 EST — the brain
-     panel's own rule: it lives inside the signed-in app).
+     panel's own rule: it lives inside the signed-in app). The
+     Colab item is the exception (Nov 16 07:43 EST): owner-only,
+     Bill's physics compute bench, shown only while the owner
+     session stands.
      openDashboard calls this on entry, checkOwner calls
      it whenever an identity check resolves while the dashboard is
      open, and the foreground re-check below calls it when the
      installed app comes back to the front — so the rail always
      matches the session that is actually standing, even on a page
      the app held in memory across a deploy. Sign-out hides all
-     three (see doSignOut). There is no top-bar Sign out control (Bill,
+     four (see doSignOut). There is no top-bar Sign out control (Bill,
      Nov 16 02:01 EST): signing out lives in Settings alone. */
   function syncRail(){
     if(app.hidden) return;
     $("rail-projects").hidden = !(owner || admin || accountName);
     $("rail-lab").hidden = false;
     $("rail-brain").hidden = false;
+    $("rail-colab").hidden = !owner;
   }
   function openDashboard(){
     /* The owner's thread is his own (Bill, Nov 15 21:50 EST): the
@@ -1735,6 +1749,7 @@
     $("rail-projects").hidden = true;
     $("rail-lab").hidden = true;
     $("rail-brain").hidden = true;
+    $("rail-colab").hidden = true;
     lsSet(HISTORY_KEY, "[]"); lsSet(ANCHOR_KEY, "[]"); lsDel(PROJ_KEY);
     identity = null; lsDel(IDENTITY_KEY);
     if(!wasOwner){ try{ sessionStorage.setItem(SIGNED_OUT_KEY, "1"); }catch(e){} }
