@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'Albedos of Cold and Hot Classicals: A Reflectivity Difference and Its Composition Reading'. The result it reported gives a value for this study gives median_albedo_cold, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Albedos of Cold and Hot Classicals: A Reflectivity Difference and Its Composition Reading'. Its stated result: Headline result: the deposited computation for this study gives median_albedo_cold = 0.15; median_albedo_hot = 0.08; difference = 0.07; significance_sigma = 10.4; diameter_correction_factor = 0.73. These values are reproduced verbatim from the paper's results.json, produced by its compute.py from published outer Solar System survey values adopted as stated inputs; the full calculation, assumptions, and intermediate q And here is that same result with the words stripped away — just the quantities standing in a row: this study gives median_albedo_cold = 0.15; median_albedo_hot = 0.08; significance_sigma = 10.4. Find this study gives median_albedo_cold in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Albedos of Cold and Hot Classicals: A Reflectivity Difference and Its Composition Reading' stated its result. (2) That result pairs names with values: this study gives median_albedo_cold = 0.15; median_albedo_hot = 0.08; significance_sigma = 10.4. (3) This question asks for the value paired with this study gives median_albedo_cold. (4) In that row, this study gives median_albedo_cold stands beside 0.15 — so the answer the lesson gives is 0.15. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Albedos of Cold and Hot Classicals: A Reflectivity Difference and Its Composition Reading' reported a number for this study gives median_albedo_cold. What number did it report?",
+  "kind": "number",
+  "answer": 0.15,
+  "disp": "0.15",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "0.5",
+   "10.0",
+   "1.9",
+   "0.15"
+  ],
+  "mcAnswer": "0.15",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Binary Separations in Units of the Hill Radius: Where Trans-Neptunian Binaries Sit Relative to Stability'. The result it reported gives a value for prograde_stability_limit_over_Hill, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Binary Separations in Units of the Hill Radius: Where Trans-Neptunian Binaries Sit Relative to Stability'. Its stated result: Headline result: the deposited computation for this study gives separations_over_Hill = [0.005, 0.02, 0.05, 0.1, 0.2]; prograde_stability_limit_over_Hill = 0.5; margins = [100.0, 25.0, 10.0, 5.0, 2.5]; widest_margin = 2.5; verdict = even the widest known systems sit a factor of about 2.5 inside the nominal stability limit, so present-day Hill stripping by the Sun does not explain the absence of wider systems; formati And here is that same result with the words stripped away — just the quantities standing in a row: prograde_stability_limit_over_Hill = 0.5; widest_margin = 2.5. Find prograde_stability_limit_over_Hill in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Binary Separations in Units of the Hill Radius: Where Trans-Neptunian Binaries Sit Relative to Stability' stated its result. (2) That result pairs names with values: prograde_stability_limit_over_Hill = 0.5; widest_margin = 2.5. (3) This question asks for the value paired with prograde_stability_limit_over_Hill. (4) In that row, prograde_stability_limit_over_Hill stands beside 0.5 — so the answer the lesson gives is 0.5. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Binary Separations in Units of the Hill Radius: Where Trans-Neptunian Binaries Sit Relative to Stability' reported a number for prograde_stability_limit_over_Hill. What number did it report?",
+  "kind": "number",
+  "answer": 0.5,
+  "disp": "0.5",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "10.0",
+   "1.9",
+   "0.15",
+   "0.5"
+  ],
+  "mcAnswer": "0.5",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Capture Probabilities in the 2:1 and 3:2 Resonances: A Speed Limit for Neptune Migration'. The result it reported gives a value for minimum_capture_timescale_Myr, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Capture Probabilities in the 2:1 and 3:2 Resonances: A Speed Limit for Neptune Migration'. Its stated result: Headline result: the deposited computation for this study gives minimum_capture_timescale_Myr = 10.0; migration_distance_au = 20.0; max_mean_speed_au_per_Myr = 2.0; max_mean_speed_km_per_s = 0.0095; verdict = migration faster than the stated mean speed fails to capture the observed resonant fractions in published models. And here is that same result with the words stripped away — just the quantities standing in a row: minimum_capture_timescale_Myr = 10.0; migration_distance_au = 20.0; max_mean_speed_au_per_Myr = 2.0. Find minimum_capture_timescale_Myr in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Capture Probabilities in the 2:1 and 3:2 Resonances: A Speed Limit for Neptune Migration' stated its result. (2) That result pairs names with values: minimum_capture_timescale_Myr = 10.0; migration_distance_au = 20.0; max_mean_speed_au_per_Myr = 2.0. (3) This question asks for the value paired with minimum_capture_timescale_Myr. (4) In that row, minimum_capture_timescale_Myr stands beside 10.0 — so the answer the lesson gives is 10.0. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Capture Probabilities in the 2:1 and 3:2 Resonances: A Speed Limit for Neptune Migration' reported a number for minimum_capture_timescale_Myr. What number did it report?",
+  "kind": "number",
+  "answer": 10.0,
+  "disp": "10.0",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "0.5",
+   "1.9",
+   "10.0",
+   "0.15"
+  ],
+  "mcAnswer": "10.0",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Cold Classical Inclinations: A Width Budget for Neptune Migration Smoothing'. The result it reported gives a value for this study gives sigma_cold_deg, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Cold Classical Inclinations: A Width Budget for Neptune Migration Smoothing'. Its stated result: Headline result: the deposited computation for this study gives sigma_cold_deg = 1.9; sigma_hot_deg = 16.0; mean_inc_cold_deg = 2.38; frac_cold_above_5deg_pct = 3.13; frac_hot_above_5deg_pct = 95.2. These values are reproduced verbatim from the paper's results.json, produced by its compute.py from published outer Solar System survey values adopted as stated inputs; the full calculation, assumptions, and intermediate And here is that same result with the words stripped away — just the quantities standing in a row: this study gives sigma_cold_deg = 1.9; sigma_hot_deg = 16.0; mean_inc_cold_deg = 2.38. Find this study gives sigma_cold_deg in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Cold Classical Inclinations: A Width Budget for Neptune Migration Smoothing' stated its result. (2) That result pairs names with values: this study gives sigma_cold_deg = 1.9; sigma_hot_deg = 16.0; mean_inc_cold_deg = 2.38. (3) This question asks for the value paired with this study gives sigma_cold_deg. (4) In that row, this study gives sigma_cold_deg stands beside 1.9 — so the answer the lesson gives is 1.9. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Cold Classical Inclinations: A Width Budget for Neptune Migration Smoothing' reported a number for this study gives sigma_cold_deg. What number did it report?",
+  "kind": "number",
+  "answer": 1.9,
+  "disp": "1.9",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "0.15",
+   "0.5",
+   "10.0",
+   "1.9"
+  ],
+  "mcAnswer": "1.9",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Colour and Inclination in the Classical Belt: A Two-Population Separation in Numbers'. The result it reported gives a value for this study gives red_fraction_cold_pct, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Colour and Inclination in the Classical Belt: A Two-Population Separation in Numbers'. Its stated result: Headline result: the deposited computation for this study gives red_fraction_cold_pct = 85.0; red_fraction_hot_pct = 45.0; difference_pct = 40.0; difference_significance_sigma = 9.2; verdict = the colour separation is highly significant and supports two distinct source regions rather than one stirred population. And here is that same result with the words stripped away — just the quantities standing in a row: this study gives red_fraction_cold_pct = 85.0; red_fraction_hot_pct = 45.0; difference_pct = 40.0. Find this study gives red_fraction_cold_pct in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Colour and Inclination in the Classical Belt: A Two-Population Separation in Numbers' stated its result. (2) That result pairs names with values: this study gives red_fraction_cold_pct = 85.0; red_fraction_hot_pct = 45.0; difference_pct = 40.0. (3) This question asks for the value paired with this study gives red_fraction_cold_pct. (4) In that row, this study gives red_fraction_cold_pct stands beside 85.0 — so the answer the lesson gives is 85.0. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Colour and Inclination in the Classical Belt: A Two-Population Separation in Numbers' reported a number for this study gives red_fraction_cold_pct. What number did it report?",
+  "kind": "number",
+  "answer": 85.0,
+  "disp": "85.0",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "85.0",
+   "10.0",
+   "0.5",
+   "0.15"
+  ],
+  "mcAnswer": "85.0",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Albedos of Cold and Hot Classicals: A Reflectivity Difference and Its Composition Reading”. Its stated result is: Headline result: the deposited computation for this study gives median_albedo_cold = 0.15; median_albedo_hot = 0.08; difference = 0.07; significance_sigma = 10.4; diameter_correction_factor = 0.73. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “Albedos of Cold and Hot Classicals: A Reflectivity Difference and Its Composition Reading”. Its stated result is: Headline result: the deposited computation for this study gives median_albedo_cold = 0.15; median_albedo_hot = 0.08; difference = 0.07; significance_sigma = 10.4; diameter_correction_factor = 0.73. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]

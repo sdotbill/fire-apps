@@ -381,5 +381,12 @@
    "audio": "audio/lessons30/brown-dwarfs-free-floating-planets-and-the-bottom-of-the-initial/lesson-01.mp3",
    "minutes": 7.6
   }
+ },
+ "the-kuiper-belt-trans-neptunian-objects-and-the-outer-solar-syst": {
+  "lesson-01": {
+   "hash": "3996be674c910000db86c4ffb0d875f9050918b9",
+   "audio": "audio/lessons30/the-kuiper-belt-trans-neptunian-objects-and-the-outer-solar-syst/lesson-01.mp3",
+   "minutes": 9.82
+  }
  }
 }

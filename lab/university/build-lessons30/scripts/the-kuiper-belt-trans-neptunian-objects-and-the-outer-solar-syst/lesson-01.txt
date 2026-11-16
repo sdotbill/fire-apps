@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Isaiah Freeman, and this is The Kuiper Belt, Trans-Neptunian Objects and the Outer Solar System as Tests of the Frame. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Isaiah Freeman, and this is The Kuiper Belt, Trans-Neptunian Objects and the Outer Solar System as Tests of the Frame. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Albedos of Cold and Hot Classicals: A Reflectivity Difference and Its Composition Reading'. Its stated result: Headline result: the deposited computation for this study gives median_albedo_cold = 0.15; median_albedo_hot = 0.08; difference = 0.07; significance_sigma = 10.4; diameter_correction_factor = 0.73. These values are reproduced verbatim from the paper's results.json, produced by its compute.py from published outer Solar System survey values adopted as stated inputs; the full calculation, assumptions, and intermediate q
+
+Now we go one step further into the material.
+
+'Binary Separations in Units of the Hill Radius: Where Trans-Neptunian Binaries Sit Relative to Stability'. Its stated result: Headline result: the deposited computation for this study gives separations_over_Hill = [0.005, 0.02, 0.05, 0.1, 0.2]; prograde_stability_limit_over_Hill = 0.5; margins = [100.0, 25.0, 10.0, 5.0, 2.5]; widest_margin = 2.5; verdict = even the widest known systems sit a factor of about 2.5 inside the nominal stability limit, so present-day Hill stripping by the Sun does not explain the absence of wider systems; formati
+
+The next piece is where this starts to come together.
+
+'Capture Probabilities in the 2:1 and 3:2 Resonances: A Speed Limit for Neptune Migration'. Its stated result: Headline result: the deposited computation for this study gives minimum_capture_timescale_Myr = 10.0; migration_distance_au = 20.0; max_mean_speed_au_per_Myr = 2.0; max_mean_speed_km_per_s = 0.0095; verdict = migration faster than the stated mean speed fails to capture the observed resonant fractions in published models.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Cold Classical Inclinations: A Width Budget for Neptune Migration Smoothing'. Its stated result: Headline result: the deposited computation for this study gives sigma_cold_deg = 1.9; sigma_hot_deg = 16.0; mean_inc_cold_deg = 2.38; frac_cold_above_5deg_pct = 3.13; frac_hot_above_5deg_pct = 95.2. These values are reproduced verbatim from the paper's results.json, produced by its compute.py from published outer Solar System survey values adopted as stated inputs; the full calculation, assumptions, and intermediate
+
+We take the pieces in order, because each one stands on the last.
+
+'Colour and Inclination in the Classical Belt: A Two-Population Separation in Numbers'. Its stated result: Headline result: the deposited computation for this study gives red_fraction_cold_pct = 85.0; red_fraction_hot_pct = 45.0; difference_pct = 40.0; difference_significance_sigma = 9.2; verdict = the colour separation is highly significant and supports two distinct source regions rather than one stirred population.
+
+Stay with me, because the next piece builds directly on that one.
+
+'Detached Objects and the Perihelion Gap: Quantifying What Neptune Alone Cannot Do'. Its stated result: Headline result: the deposited computation for this study gives detached_q_au = [41, 44, 47, 51, 57, 65, 76, 80]; median_q_au = 54.0; neptune_scattering_ceiling_au = 38; gap_width_au = 16.0; sedna_q_au = 76.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Albedos of Cold and Hot Classicals: A Reflectivity Difference and Its Composition Reading”. Its stated result is: Headline result: the deposited computation for this study gives median_albedo_cold = 0.15; median_albedo_hot = 0.08; difference = 0.07; significance_sigma = 10.4; diameter_correction_factor = 0.73. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Albedos of Cold and Hot Classicals: A Reflectivity Difference and Its Composition Reading'; 'Binary Separations in Units of the Hill Radius: Where Trans-Neptunian Binaries Sit Relative to Stability'; 'Capture Probabilities in the 2:1 and 3:2 Resonances: A Speed Limit for Neptune Migration'; 'Cold Classical Inclinations: A Width Budget for Neptune Migration Smoothing'; 'Colour and Inclination in the Classical Belt: A Two-Population Separation in Numbers'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.
