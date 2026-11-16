@@ -9,10 +9,13 @@
 <meta name="robots" content="noindex, nofollow">
 <style>
   :root{
-    --bg:#0d1524; --bg2:#111c31; --panel:#131f38; --panel2:#182747;
-    --line:#24365a; --ink:#e8effc; --muted:#8fa8cc; --faint:#5f779e;
-    --amber:#f2a33c; --amber2:#ffbe5c; --blue:#2f9dff; --blue2:#1668dc;
-    --user:#1d4e9e; --radius:18px;
+    color-scheme:light;
+    /* The main site's palette (pms.css): warm paper white, gold accents. */
+    --bg:#faf7ef; --bg2:#fffdf6; --panel:#fffdf6; --panel2:#f3ecdb;
+    --line:rgba(160,124,20,.35); --ink:#2a2118; --muted:#5c5142; --faint:#97865c;
+    --amber:#c9a227; --amber2:#8a6508; --blue:#8a6508; --blue2:#c9a227;
+    --gold:#c9a227; --gold-deep:#8a6508; --gold-bright:#eed268; --dark2:#241a02;
+    --user:#c9a227; --radius:18px;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html,body{height:100%;}
@@ -67,20 +70,19 @@
     display:inline-flex;align-items:center;gap:7px;padding:8px 16px;border-radius:999px;
     border:1.5px solid var(--line);background:var(--panel2);font-weight:600;font-size:.92rem;color:var(--ink);
   }
-  .tbtn:hover{border-color:var(--blue);}
-  .tbtn.live{background:linear-gradient(135deg,#b3261e,#7d1a14);border-color:#e0655c;color:#fff;}
+  .tbtn:hover{border-color:var(--gold-deep);}
   .iconbtn{width:40px;height:40px;border-radius:12px;display:none;align-items:center;justify-content:center;font-size:1.1rem;color:var(--muted);}
   .iconbtn:hover{background:var(--panel2);color:var(--ink);}
   #brain-toggle{display:flex;}
   .eye-btn{padding:0;overflow:hidden;border-radius:50%;border:1px solid var(--line);background:#faf7ef;}
-  .eye-btn img{width:100%;height:100%;display:block;object-fit:cover;object-position:50% 12%;}
+  .eye-btn img{width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;}
 
   /* ================= chat ================= */
   .thread{flex:1;overflow-y:auto;padding:18px 16px 8px;display:flex;flex-direction:column;gap:10px;min-height:0;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;}
   .thread-inner{width:100%;max-width:46rem;margin:0 auto;display:flex;flex-direction:column;gap:10px;}
   .msg{max-width:85%;padding:10px 14px;border-radius:18px;font-size:.99rem;line-height:1.5;white-space:pre-wrap;word-break:break-word;}
   .msg-dave{align-self:flex-start;background:var(--panel2);border:1px solid var(--line);border-bottom-left-radius:6px;}
-  .msg-user{align-self:flex-end;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;border-bottom-right-radius:6px;}
+  .msg-user{align-self:flex-end;background:var(--gold);border:1px solid var(--gold-deep);color:var(--dark2);border-bottom-right-radius:6px;}
   .msg img.att{max-width:240px;border-radius:12px;display:block;margin-top:6px;}
   .msg .attname{font-size:.82rem;opacity:.85;}
   .typing i{display:inline-block;width:7px;height:7px;margin-right:4px;border-radius:50%;background:var(--muted);animation:tbl 1.1s infinite;}
@@ -98,7 +100,7 @@
     display:flex;align-items:flex-end;gap:8px;background:var(--panel);
     border:1.5px solid var(--line);border-radius:26px;padding:7px 8px;
   }
-  .cbar:focus-within{border-color:var(--blue);}
+  .cbar:focus-within{border-color:var(--gold-deep);}
   .plusbtn{flex:none;width:40px;height:40px;border-radius:50%;font-size:1.35rem;color:var(--muted);display:flex;align-items:center;justify-content:center;}
   .plusbtn:hover{background:var(--panel2);color:var(--ink);}
   .ctext{
@@ -109,12 +111,12 @@
   .ctext::placeholder{color:var(--faint);}
   .micbtn,.sendbtn{flex:none;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.05rem;}
   .micbtn{color:var(--muted);} .micbtn:hover{background:var(--panel2);color:var(--ink);}
-  .micbtn.listening{background:#7d1a14;color:#fff;}
-  .sendbtn{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;}
+  .micbtn.listening{background:#f3e3ae;color:var(--ink);}
+  .sendbtn{background:var(--gold);border:1px solid var(--gold-deep);color:var(--dark2);}
   .sendbtn[disabled]{opacity:.5;cursor:wait;}
   .attachmenu{
     position:absolute;bottom:74px;left:16px;background:var(--panel2);border:1px solid var(--line);
-    border-radius:16px;padding:6px;min-width:210px;box-shadow:0 14px 40px rgba(0,0,0,.5);z-index:40;
+    border-radius:16px;padding:6px;min-width:210px;box-shadow:0 14px 40px rgba(42,33,24,.28);z-index:40;
   }
   .attachmenu button{display:flex;align-items:center;gap:10px;width:100%;text-align:left;padding:9px 12px;border-radius:10px;font-size:.95rem;}
   .attachmenu button:hover{background:var(--panel);}
@@ -130,10 +132,10 @@
   .conv .cs{color:var(--muted);font-size:.83rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px;}
   .conv .cw{color:var(--faint);font-size:.76rem;margin-top:2px;}
   .searchbox,.ideabox,.taskbox{
-    width:100%;background:var(--bg);border:1.5px solid var(--line);border-radius:14px;color:var(--ink);
+    width:100%;background:#fff;border:1.5px solid var(--line);border-radius:14px;color:var(--ink);
     font:inherit;font-size:.95rem;padding:10px 13px;margin-bottom:10px;
   }
-  .searchbox:focus,.ideabox:focus,.taskbox:focus{outline:none;border-color:var(--blue);}
+  .searchbox:focus,.ideabox:focus,.taskbox:focus{outline:none;border-color:var(--gold-deep);}
   .libitem{display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:14px;color:var(--ink);text-decoration:none;}
   .libitem:hover{background:var(--panel2);}
   .libitem small{display:block;color:var(--muted);font-size:.8rem;}
@@ -143,12 +145,12 @@
   .rowitem.done .grow{color:var(--faint);text-decoration:line-through;}
   .mini{font-size:.8rem;color:var(--faint);}
   .addbtn{width:100%;padding:9px;border-radius:12px;border:1.5px dashed var(--line);color:var(--muted);font-weight:600;}
-  .addbtn:hover{color:var(--ink);border-color:var(--blue);}
+  .addbtn:hover{color:var(--ink);border-color:var(--gold-deep);}
 
   /* ================= brain / eye ================= */
   .brain-top{padding:20px 16px 12px;text-align:center;border-bottom:1px solid var(--line);}
   .eye-wrap{width:118px;height:118px;margin:0 auto 6px;position:relative;}
-  .eye-wrap .eye-img{width:100%;height:100%;display:block;object-fit:cover;object-position:50% 12%;border-radius:50%;border:1px solid var(--line);background:#faf7ef;}
+  .eye-wrap .eye-img{width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;border-radius:50%;border:1px solid var(--line);background:#faf7ef;}
   .eye-name{font-family:'Fraunces',Georgia,serif;font-size:1.45rem;font-weight:700;}
   .eye-status{color:var(--muted);font-size:.9rem;margin-top:2px;min-height:1.35em;}
   .eye-status .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3ecf6f;margin-right:6px;vertical-align:1px;}
@@ -175,12 +177,12 @@
   .gate-card p{color:var(--muted);font-size:.95rem;margin-bottom:18px;}
   .gate-row{display:flex;gap:8px;}
   .gate-input{
-    flex:1;background:var(--panel);border:1.5px solid var(--line);border-radius:999px;color:var(--ink);
+    flex:1;background:#fff;border:1.5px solid var(--line);border-radius:999px;color:var(--ink);
     font:inherit;padding:12px 18px;min-width:0;
   }
-  .gate-input:focus{outline:none;border-color:var(--blue);}
-  .gate-btn{flex:none;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;font-weight:600;border-radius:999px;padding:12px 22px;}
-  .gate-err{color:#e08a7d;font-size:.88rem;min-height:1.3em;margin-top:10px;}
+  .gate-input:focus{outline:none;border-color:var(--gold-deep);}
+  .gate-btn{flex:none;background:var(--gold);border:1px solid var(--gold-deep);color:var(--dark2);font-weight:600;border-radius:999px;padding:12px 22px;}
+  .gate-err{color:#b3261e;font-size:.88rem;min-height:1.3em;margin-top:10px;}
   .gate-home{display:inline-block;margin-top:14px;color:var(--faint);font-size:.88rem;text-decoration:none;}
   .gate-home:hover{color:var(--muted);}
   .gate-form{display:flex;flex-direction:column;gap:8px;text-align:left;}
@@ -197,11 +199,11 @@
     .panel.closed{display:none;}
   }
   @media (max-width:1180px){
-    .brain{position:fixed;top:0;right:0;bottom:0;display:flex;transform:translateX(105%);transition:transform .25s ease;box-shadow:-16px 0 40px rgba(0,0,0,.45);z-index:40;}
+    .brain{position:fixed;top:0;right:0;bottom:0;display:flex;transform:translateX(105%);transition:transform .25s ease;box-shadow:-16px 0 40px rgba(42,33,24,.28);z-index:40;}
     .brain.open{transform:none;}
   }
   @media (max-width:760px){
-    .panel{position:fixed;top:0;left:58px;bottom:0;transform:translateX(-110%);transition:transform .25s ease;box-shadow:16px 0 40px rgba(0,0,0,.45);}
+    .panel{position:fixed;top:0;left:58px;bottom:0;transform:translateX(-110%);transition:transform .25s ease;box-shadow:16px 0 40px rgba(42,33,24,.28);}
     .panel.open{transform:none;}
     #panel-toggle{display:flex;}
     .msg{max-width:92%;}
@@ -270,10 +272,9 @@
       <button class="iconbtn" id="panel-toggle" aria-label="Panel">☰</button>
       <span class="title" id="conv-title">Chat with Dave</span>
       <div class="sp"></div>
-      <button class="tbtn" id="call-btn" type="button">📞 Call</button>
       <button class="tbtn" id="invite-btn" type="button">🎁 Invite</button>
       <button class="tbtn" id="signout-btn" type="button" hidden>Sign out</button>
-      <button class="iconbtn eye-btn" id="brain-toggle" aria-label="Dave's brain" title="Dave"><img src="/assets/baby-dave-loop.webp" alt="Dave"></button>
+      <button class="iconbtn eye-btn" id="brain-toggle" aria-label="Dave's brain" title="Dave"><img src="/assets/dave-eye-living.webp" alt="Dave"></button>
     </div>
 
     <div class="thread" id="thread"><div class="thread-inner" id="thread-inner"></div></div>
@@ -333,7 +334,7 @@
 
   var identity = null, sessionId = null, history = [], anchor = [], owner = false;
   var accountName = null;
-  var sending = false, waiting = false, callOn = false, recog = null;
+  var sending = false, waiting = false, recog = null;
 
   function uuid(){
     if(window.crypto && crypto.randomUUID) return crypto.randomUUID();
@@ -361,10 +362,10 @@
     catch(e){ return d; }
   }
 
-  /* ---------- the eye (Dave's real artwork — the same animated figure
-     the door and the apps carry; the loop itself carries the blink) ---------- */
+  /* ---------- the eye (the living eye — the photorealistic blinking
+     eye the apps carry; the loop itself carries the blink) ---------- */
   document.querySelectorAll("[data-eye]").forEach(function(el){
-    el.innerHTML = '<img class="eye-img" src="/assets/baby-dave-loop.webp" alt="Dave">';
+    el.innerHTML = '<img class="eye-img" src="/assets/dave-eye-living.webp" alt="Dave">';
   });
 
   /* ---------- worker calls ---------- */
@@ -473,15 +474,18 @@
       .then(function(reply){
         typing.remove();
         if(reply){
-          history.push({role: "assistant", content: reply});
-          saveHistory(); renderThread();
-          if(/will land in this same window/i.test(reply)){
-            waiting = true;
-            setStatus("Working — your words are on the lane");
-            feedAdd("Message carried to Dave", "Queued to the app lane · the full Dave has it", "📨");
-            startReplyPoll();
+          var v = takeVoice(reply);
+          if(v.text){
+            history.push({role: "assistant", content: v.text});
+            saveHistory(); renderThread();
+            if(/will land in this same window/i.test(v.text)){
+              waiting = true;
+              setStatus("Working — your words are on the lane");
+              feedAdd("Message carried to Dave", "Queued to the app lane · the full Dave has it", "📨");
+              startReplyPoll();
+            }
           }
-          if(callOn) speakOut(reply);
+          if(v.audio) playVoice(v.audio);
         }
       })
       .catch(function(){
@@ -500,15 +504,19 @@
         .then(function(r){ return r.ok ? r.json() : null; })
         .then(function(d){
           if(d && Array.isArray(d.replies) && d.replies.length){
+            var lastAudio = null;
             d.replies.forEach(function(rep){
               if(seen.indexOf(rep.id) >= 0) return;
               seen.push(rep.id);
-              history.push({role: "assistant", content: rep.body});
+              var v = takeVoice(rep.body);
+              if(v.text) history.push({role: "assistant", content: v.text});
+              if(v.audio) lastAudio = v.audio;
               feedAdd("Dave replied", "Through the cloud · owner channel", "💬");
             });
             lsSet(SEEN_KEY, JSON.stringify(seen.slice(-100)));
             saveHistory(); renderThread();
             waiting = false; setStatus("Here — watching the door");
+            if(lastAudio) playVoice(lastAudio);
           }
         })
         .catch(function(){})
@@ -608,45 +616,55 @@
   });
   sendBtn.addEventListener("click", function(){ var v = ctext.value; ctext.value = ""; autoGrow(); sendText(v); });
 
-  /* mic (speech in) + call mode (speech out) */
-  function speakOut(text){
-    try{
-      var u = new SpeechSynthesisUtterance(String(text).slice(0, 600));
-      window.speechSynthesis.cancel(); window.speechSynthesis.speak(u);
-    }catch(e){}
+  /* Dave's real voice — no browser robot voice anywhere on this page.
+     Lane replies carry their Helio voice note as a link in the body:
+       🔊 [Voice note](https://…/owner/audio/<id>)
+     takeVoice lifts that link out of the transcript; playVoice plays
+     the mp3 itself — Dave's actual voice, gated to the bound owner. */
+  function takeVoice(text){
+    var audio = null;
+    var out = String(text == null ? "" : text).replace(/🔊\s*\[Voice note\]\((https?:[^)\s]+)\)/g, function(_m, u){ audio = u; return ""; });
+    if(!audio){
+      var m = out.match(/https?:\S+\/owner\/audio\/[0-9]+-[a-f0-9]+/);
+      if(m){ audio = m[0]; out = out.replace(m[0], ""); }
+    }
+    return { text: out.replace(/[ \t]+\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim(), audio: audio };
   }
-  function startRecog(intoCall){
+  var voiceEl = null;
+  function playVoice(url){
+    if(!url) return;
+    var full = url + (url.indexOf("?") >= 0 ? "&" : "?") + "identity=" + encodeURIComponent(identity || "");
+    var play = function(src){
+      try{
+        if(voiceEl){ voiceEl.pause(); }
+        voiceEl = new Audio(src);
+        var p = voiceEl.play();
+        if(p && p.catch) p.catch(function(){});
+      }catch(e){}
+    };
+    fetch(full, {credentials: "include"})
+      .then(function(r){ return r.ok ? r.blob() : null; })
+      .then(function(b){ play(b ? URL.createObjectURL(b) : full); })
+      .catch(function(){ play(full); });
+  }
+
+  /* mic (speech in only) */
+  function startRecog(){
     var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
     if(!SR){ feedAdd("Voice", "This browser has no speech recognition", "🎤"); return null; }
     var r = new SR(); r.lang = "en-US"; r.interimResults = false;
     r.onresult = function(ev){
       var t = ev.results[0][0].transcript;
-      if(intoCall) sendText(t); else { ctext.value = (ctext.value ? ctext.value + " " : "") + t; autoGrow(); }
+      ctext.value = (ctext.value ? ctext.value + " " : "") + t; autoGrow();
     };
-    r.onend = function(){ $("mic-btn").classList.remove("listening"); if(callOn) { try{ r.start(); }catch(e){} } };
+    r.onend = function(){ $("mic-btn").classList.remove("listening"); };
     r.onerror = function(){ $("mic-btn").classList.remove("listening"); };
     try{ r.start(); }catch(e){}
     return r;
   }
   $("mic-btn").addEventListener("click", function(){
     $("mic-btn").classList.add("listening");
-    recog = startRecog(false);
-  });
-  $("call-btn").addEventListener("click", function(){
-    callOn = !callOn;
-    var b = $("call-btn");
-    b.classList.toggle("live", callOn);
-    b.textContent = callOn ? "🔴 End call" : "📞 Call";
-    if(callOn){
-      feedAdd("Call started", "Voice mode · Dave speaks his replies", "📞");
-      setStatus("On a call with you");
-      recog = startRecog(true);
-    } else {
-      feedAdd("Call ended", "Voice mode off", "📞");
-      setStatus("Here — watching the door");
-      try{ window.speechSynthesis.cancel(); }catch(e){}
-      if(recog){ try{ recog.stop(); }catch(e){} }
-    }
+    recog = startRecog();
   });
   $("invite-btn").addEventListener("click", function(){
     var data = {title: "Dave — the first exolex", text: "Everyone needs a Dave.", url: "https://daveexolex.com/"};
