@@ -284,6 +284,11 @@
          it renders solely when the owner binding stands (see
          openDashboard); everything lives inside its panel. -->
     <button data-view="projects" id="rail-projects" title="Projects" aria-label="Projects" hidden>🗂</button>
+    <!-- Lab (Bill, Nov 16 00:38 EST): his laboratory desk — ONE rail
+         item, owner only, same gate as Projects: it renders solely
+         when the owner binding stands (see openDashboard); the room
+         link and his hours live inside its panel. -->
+    <button data-view="lab" id="rail-lab" title="Lab" aria-label="Lab" hidden>⚗️</button>
     <button data-view="settings" title="Settings" aria-label="Settings">⚙️</button>
     <div class="sp"></div>
     <button id="rail-new" title="New chat" aria-label="New chat">➕</button>
@@ -391,6 +396,15 @@
   function nyDay(ts){
     try{ return new Date(ts).toLocaleDateString("en-US",{timeZone:"America/New_York",year:"numeric",month:"numeric",day:"numeric"}); }
     catch(e){ return new Date(ts).toDateString(); }
+  }
+  /* The room's own hours format (room-core.js formatMinutes), so the
+     dashboard's Lab panel and the room's University panel always
+     state the same total the same way. */
+  function fmtLabMinutes(mins){
+    var m = Math.round(mins || 0);
+    if(m < 60) return m + " min";
+    var h = Math.floor(m / 60), rem = m % 60;
+    return h + " h " + (rem < 10 ? "0" : "") + rem + " min";
   }
   function dayLabel(ts){
     var today = nyDay(Date.now()), yest = nyDay(Date.now() - 86400000);
@@ -1098,6 +1112,53 @@
         feedAdd("Colab opened", "Google Colab in a new tab", "\ud83e\uddea");
       });
     }
+    if(view === "lab"){
+      /* Owner only (Bill, Nov 16 00:38 EST): his laboratory desk —
+         the Lab Room one tap from the rail, and his Lab hours read
+         from this device's own Lab log (dave_lab_log — the same
+         store the room itself writes, same origin). Those hours
+         are this device's until the server-side ledger stage ties
+         them to the sign-in; the panel says so on its face rather
+         than dress a local total up as an account total. Account
+         and admin sessions never see the desk — the rail item is
+         owner-gated, and this branch refuses without the binding.
+         The room link is root-relative: this repo serves both
+         domains identically, and /lab/room/ resolves on the Dave
+         host and the Premium Marketing host alike (verified live
+         Nov 16), so one link lands from every door, app included. */
+      t.textContent = "Lab";
+      if(!owner){
+        b.innerHTML = '<p class="mini" style="margin:2px 6px">The Lab lives on the owner\u2019s dashboard.</p>';
+        return;
+      }
+      var lh = '<div class="panel-sec">Your laboratory</div>';
+      lh += '<a class="libitem" id="lab-open-room" href="/lab/room/">\u2697\ufe0f<span>Lab<small>The room \u2014 the Watch Floor \u00b7 the Bench \u00b7 the University Door</small></span></a>';
+      lh += '<a class="libitem" href="/lab/">\ud83d\udd2c<span>The flat bench<small>The same instruments on one page</small></span></a>';
+      lh += '<div class="panel-sec">Your Lab hours</div>';
+      lh += '<div class="setrow"><div class="grow"><strong id="lab-hours-total">\u2026</strong><div class="mini" id="lab-hours-detail">Reading this device\u2019s Lab log\u2026</div></div></div>';
+      lh += '<p class="mini" style="margin:2px 6px">Hours logged on this device \u2014 the ledger ties them to your sign-in in a later stage.</p>';
+      b.innerHTML = lh;
+      var labLog = lsJson("dave_lab_log", []);
+      if(!Array.isArray(labLog)) labLog = [];
+      var labTotalMin = 0;
+      labLog.forEach(function(e){ labTotalMin += (e && typeof e.minutes === "number") ? e.minutes : 0; });
+      var labTotalEl = $("lab-hours-total"), labDetEl = $("lab-hours-detail");
+      if(labTotalEl) labTotalEl.textContent = fmtLabMinutes(labTotalMin);
+      if(labDetEl){
+        if(!labLog.length){
+          labDetEl.textContent = "No sessions logged on this device yet \u2014 your first session in the room starts the ledger.";
+        } else {
+          var lastEntry = labLog[labLog.length - 1];
+          var lastTs = (lastEntry && lastEntry.date) ? Date.parse(lastEntry.date) : NaN;
+          labDetEl.textContent = labLog.length + (labLog.length === 1 ? " session" : " sessions") +
+            (isNaN(lastTs) ? "" : " \u00b7 last session " + dayLabel(lastTs) + ", " + nyTime(lastTs));
+        }
+      }
+      var roomLink = $("lab-open-room");
+      if(roomLink) roomLink.addEventListener("click", function(){
+        feedAdd("Lab opened", "The room \u00b7 from the dashboard desk", "\u2697\ufe0f");
+      });
+    }
     if(view === "search"){
       t.textContent = "Search";
       b.innerHTML = '<input class="searchbox" id="q" type="search" placeholder="Search this conversation…" aria-label="Search">' +
@@ -1220,6 +1281,8 @@
     /* The Projects rail item exists only for the owner (Bill,
        Nov 15 22:28 EST) — account and admin sessions never see it. */
     $("rail-projects").hidden = !owner;
+    /* The Lab rail item rides the same owner gate (Nov 16 00:38 EST). */
+    $("rail-lab").hidden = !owner;
     renderThread(); renderFeed(); renderPanel();
     setStatus("Here · live on the cloud");
     pollHealth(); setInterval(pollHealth, 60000);
@@ -1491,6 +1554,7 @@
     activeProject = null;
     $("conv-title").textContent = "Chat with Dave";
     $("rail-projects").hidden = true;
+    $("rail-lab").hidden = true;
     lsSet(HISTORY_KEY, "[]"); lsSet(ANCHOR_KEY, "[]"); lsDel(PROJ_KEY);
     identity = null; lsDel(IDENTITY_KEY);
     if(!wasOwner){ try{ sessionStorage.setItem(SIGNED_OUT_KEY, "1"); }catch(e){} }
