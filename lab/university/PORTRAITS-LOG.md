@@ -41,3 +41,11 @@ Voice data stays in the data files (lessons still speak); the printed
   (Cosmology — Aurelia Voss) renders the plain "AV" monogram, no SVG,
   0 "Voice:" lines. Screenshots taken and eyeballed.
 - Batches in flight: heads (49), college-a/b/c/d (232), rest-a…f (478).
+- **Carmen Vega — flagship glamour spec** (Bill, Nov 16 02:30 EST):
+  her portrait was regenerated to a spec that overrides the generic
+  faculty spec for her alone — beautiful Spanish woman, warm and
+  flirty energy, fitted deep-V neckline top in a rich warm tone,
+  elegant and confident, same series lighting/background. The new
+  file (426 KB) replaced the original at
+  `portraits/espanol-i-speak-from-zero.jpg`; the glamour prompt is
+  recorded on her manifest entry so any future regeneration keeps it.
