@@ -289,12 +289,12 @@
     <button data-view="tasks" title="Tasks" aria-label="Tasks">✅</button>
     <!-- Projects (Bill, Nov 15 22:28 EST): ONE rail item, owner only —
          it renders solely when the owner binding stands (see
-         openDashboard); everything lives inside its panel. -->
+         syncRail); everything lives inside its panel. -->
     <button data-view="projects" id="rail-projects" title="Projects" aria-label="Projects" hidden>⚗️</button>
     <!-- Exolex University (Bill, Nov 16 00:38 EST as the Lab desk;
          placement corrected 01:04 EST; renamed and opened 01:22 EST):
-         ONE item in the LEFT-HAND SIDEBAR, word and all, shown to
-         every signed-in account (see openDashboard; hidden again on
+         ONE item in the LEFT-HAND SIDEBAR, shown to
+         every signed-in account (see syncRail; hidden again on
          sign-out). It lives NOWHERE else — not in the sign-in gate,
          not in any site hamburger, not in any pre-sign-in surface on
          either domain. The University's places and the student's own
@@ -318,7 +318,9 @@
       <button class="iconbtn" id="panel-toggle" aria-label="Panel">☰</button>
       <span class="title" id="conv-title">Chat with Dave</span>
       <div class="sp"></div>
-      <button class="tbtn" id="signout-btn" type="button" hidden>Sign out</button>
+      <!-- No Sign out control in the top bar (Bill, Nov 16 02:01 EST:
+           the pill beside the eye is gone) — signing out lives in
+           Settings alone (see the settings view's #set-signout). -->
       <span class="eye-brand" aria-hidden="true"><img src="/assets/dave-eye-living.webp" alt=""></span>
     </div>
 
@@ -477,9 +479,14 @@
         owner = !!(d && d.owner);
         admin = !!(d && d.admin);
         accountName = (d && d.account) || null;
+        /* Every identity resolution re-syncs the rail (Bill, Nov 16
+           02:01 EST): whichever path established or refreshed this
+           session — boot restore, sign-in, the foreground re-check —
+           the rail items follow the session that is standing. */
+        syncRail();
         return owner;
       })
-      .catch(function(){ owner = false; return false; });
+      .catch(function(){ owner = false; syncRail(); return false; });
   }
 
   /* ---------- brain feed (real events only — gated responses & this device) ---------- */
@@ -1308,6 +1315,23 @@
     anchor = lsJson(ANCHOR_KEY, []);
     if(!Array.isArray(anchor)) anchor = [];
   }
+  /* The rail's session items, set from the session state in ONE
+     place (Bill, Nov 16 02:01 EST): Projects is the owner's alone
+     (Nov 15 22:28 EST) — account and admin sessions never see it;
+     the University item rides every signed-in session (Nov 16
+     01:22 EST). openDashboard calls this on entry, checkOwner calls
+     it whenever an identity check resolves while the dashboard is
+     open, and the foreground re-check below calls it when the
+     installed app comes back to the front — so the rail always
+     matches the session that is actually standing, even on a page
+     the app held in memory across a deploy. Sign-out hides both
+     (see doSignOut). There is no top-bar Sign out control (Bill,
+     Nov 16 02:01 EST): signing out lives in Settings alone. */
+  function syncRail(){
+    if(app.hidden) return;
+    $("rail-projects").hidden = !owner;
+    $("rail-lab").hidden = false;
+  }
   function openDashboard(){
     /* The owner's thread is his own (Bill, Nov 15 21:50 EST): the
        blank-Dave account greeting must never sit in it. If it ever
@@ -1322,13 +1346,7 @@
       if(kept.length !== history.length){ history = kept; saveHistory(); }
     }
     gate.hidden = true; app.hidden = false;
-    $("signout-btn").hidden = !accountName;
-    /* The Projects rail item exists only for the owner (Bill,
-       Nov 15 22:28 EST) — account and admin sessions never see it. */
-    $("rail-projects").hidden = !owner;
-    /* The University rail item is open to every signed-in account
-       (Bill, Nov 16 01:22 EST); sign-out hides it again. */
-    $("rail-lab").hidden = false;
+    syncRail();
     renderThread(); renderFeed(); renderPanel();
     setStatus("Here · live on the cloud");
     pollHealth(); setInterval(pollHealth, 60000);
@@ -1410,6 +1428,23 @@
     if(signedOut){ gate.hidden = false; return; }
     if(accountName){ enterAccount(accountName, false); return; }
     gate.hidden = false;
+  });
+
+  /* Foreground re-check (Bill, Nov 16 02:01 EST): the installed app
+     holds its page in memory across deploys and sleeps — his app
+     showed neither rail item because the page it resumed had been
+     loaded under the old owner-gated rail and his session had come
+     back through the account path. Whenever this page returns to
+     the front, re-check the identity and re-sync the rail from the
+     session that is actually standing, so the items heal
+     themselves instead of waiting for a full reload. */
+  function refreshChrome(){
+    if(app.hidden) return;
+    checkOwner().then(function(){ syncRail(); });
+  }
+  window.addEventListener("pageshow", refreshChrome);
+  document.addEventListener("visibilitychange", function(){
+    if(!document.hidden) refreshChrome();
   });
 
   /* The gate's forms, wired once at boot — they must work whenever
@@ -1590,8 +1625,9 @@
      sign-out: the gate returns and stays, while the server-side
      binding record itself is never touched from here, so the
      countersign or his account sign-in can re-bind the device.
-     One function, both sign-out controls (top bar and Settings)
-     ride it. */
+     One function, and the one sign-out control — the Settings
+     button — rides it (the top-bar pill was removed, Bill,
+     Nov 16 02:01 EST). */
   function doSignOut(){
     var wasOwner = owner;
     postJSON("/account/logout", {identity: identity || undefined}).catch(function(){});
@@ -1609,7 +1645,6 @@
     feedAdd("Signed out", "Your Dave keeps your thread for your next sign in", "👋");
     gate.hidden = false;
   }
-  $("signout-btn").addEventListener("click", doSignOut);
 })();
 </script>
 </body>
