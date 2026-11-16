@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'A Temperature Ceiling for Evaporating Primordial Black Holes from the Density Bound'. The result it reported gives a value for M min g, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'A Temperature Ceiling for Evaporating Primordial Black Holes from the Density Bound'. Its stated result: This paper reports a computation from stated assumptions (status: simulated, not measured) on a Temperature Ceiling for Evaporating Primordial Black Holes from the Density Bound. Headline computed values: M min g = 1.000e+13; T max K = 1.227e+13; T max MeV = 1.057e+03; T Pl K = 1.417e+32. The full calculation, data tables, and text are deposited in the record's four files. And here is that same result with the words stripped away — just the quantities standing in a row: M min g = 1.000e+13; T max K = 1.227e+13; T max MeV = 1.057e+03. Find M min g in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'A Temperature Ceiling for Evaporating Primordial Black Holes from the Density Bound' stated its result. (2) That result pairs names with values: M min g = 1.000e+13; T max K = 1.227e+13; T max MeV = 1.057e+03. (3) This question asks for the value paired with M min g. (4) In that row, M min g stands beside 1.000e+13 — so the answer the lesson gives is 1.000e+13. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'A Temperature Ceiling for Evaporating Primordial Black Holes from the Density Bound' reported a number for M min g. What number did it report?",
+  "kind": "number",
+  "answer": 10000000000000.0,
+  "disp": "1.000e+13",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "0",
+   "5.62",
+   "2.50",
+   "1.000e+13"
+  ],
+  "mcAnswer": "1.000e+13",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Clustering Corrections to Primordial Black Hole Abundance Bounds'. The result it reported gives a value for lens relax N1000, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Clustering Corrections to Primordial Black Hole Abundance Bounds'. Its stated result: This paper reports a computation from stated assumptions (status: simulated, not measured) on clustering Corrections to Primordial Black Hole Abundance Bounds. Headline computed values: lens relax N1000 = 5.62; merge tight N1000 = 31.6. The full calculation, data tables, and text are deposited in the record's four files. And here is that same result with the words stripped away — just the quantities standing in a row: lens relax N1000 = 5.62; merge tight N1000 = 31.6. Find lens relax N1000 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Clustering Corrections to Primordial Black Hole Abundance Bounds' stated its result. (2) That result pairs names with values: lens relax N1000 = 5.62; merge tight N1000 = 31.6. (3) This question asks for the value paired with lens relax N1000. (4) In that row, lens relax N1000 stands beside 5.62 — so the answer the lesson gives is 5.62. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Clustering Corrections to Primordial Black Hole Abundance Bounds' reported a number for lens relax N1000. What number did it report?",
+  "kind": "number",
+  "answer": 5.62,
+  "disp": "5.62",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "2.50",
+   "0",
+   "5.62",
+   "1.000e+13"
+  ],
+  "mcAnswer": "5.62",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Condensate Density Ceiling as a Laboratory Analogue of a Cosmological Density Bound'. The result it reported gives a value for tau_mid, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Condensate Density Ceiling as a Laboratory Analogue of a Cosmological Density Bound'. Its stated result: Computed headline values for this analogue system are: tau_mid = 2.50, tau_high = 0.025, ratio_mid = 1.48e-63, rho_mid = 1.44e-05. The study is simulated and computed from stated assumptions and published experimental scales, not measured, and every value is reproducible from the deposited calculation script and results file. And here is that same result with the words stripped away — just the quantities standing in a row: tau_mid = 2.50; tau_high = 0.025; ratio_mid = 1.48e-63. Find tau_mid in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Condensate Density Ceiling as a Laboratory Analogue of a Cosmological Density Bound' stated its result. (2) That result pairs names with values: tau_mid = 2.50; tau_high = 0.025; ratio_mid = 1.48e-63. (3) This question asks for the value paired with tau_mid. (4) In that row, tau_mid stands beside 2.50 — so the answer the lesson gives is 2.50. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Condensate Density Ceiling as a Laboratory Analogue of a Cosmological Density Bound' reported a number for tau_mid. What number did it report?",
+  "kind": "number",
+  "answer": 2.5,
+  "disp": "2.50",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "5.62",
+   "0",
+   "2.50",
+   "1.000e+13"
+  ],
+  "mcAnswer": "2.50",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Density Profiles and Survival of Primordial Black Hole Halos and Clusters'. The result it reported gives a value for surviving configs, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Density Profiles and Survival of Primordial Black Hole Halos and Clusters'. Its stated result: This paper reports a computation from stated assumptions (status: simulated, not measured) on density Profiles and Survival of Primordial Black Hole Halos and Clusters. Headline computed values: surviving configs = 0/9; core over ceiling = 4.99e-70. The full calculation, data tables, and text are deposited in the record's four files. And here is that same result with the words stripped away — just the quantities standing in a row: surviving configs = 0; core over ceiling = 4.99e-70. Find surviving configs in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Density Profiles and Survival of Primordial Black Hole Halos and Clusters' stated its result. (2) That result pairs names with values: surviving configs = 0; core over ceiling = 4.99e-70. (3) This question asks for the value paired with surviving configs. (4) In that row, surviving configs stands beside 0 — so the answer the lesson gives is 0. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Density Profiles and Survival of Primordial Black Hole Halos and Clusters' reported a number for surviving configs. What number did it report?",
+  "kind": "number",
+  "answer": 0.0,
+  "disp": "0",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "1.000e+13",
+   "0",
+   "2.50",
+   "5.62"
+  ],
+  "mcAnswer": "0",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Formation Thresholds for Primordial Black Holes Under a Maximum Density'. The result it reported gives a value for t min s, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Formation Thresholds for Primordial Black Holes Under a Maximum Density'. Its stated result: This paper reports a computation from stated assumptions (status: simulated, not measured) on formation Thresholds for Primordial Black Holes Under a Maximum Density. Headline computed values: t min s = 6.431e-17; M min g = 2.596e+22; M min Msun = 1.306e-11; rho A g cm3 = 9.718e+54. The full calculation, data tables, and text are deposited in the record's four files. And here is that same result with the words stripped away — just the quantities standing in a row: t min s = 6.431e-17; M min g = 2.596e+22; M min Msun = 1.306e-11. Find t min s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Formation Thresholds for Primordial Black Holes Under a Maximum Density' stated its result. (2) That result pairs names with values: t min s = 6.431e-17; M min g = 2.596e+22; M min Msun = 1.306e-11. (3) This question asks for the value paired with t min s. (4) In that row, t min s stands beside 6.431e-17 — so the answer the lesson gives is 6.431e-17. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Formation Thresholds for Primordial Black Holes Under a Maximum Density' reported a number for t min s. What number did it report?",
+  "kind": "number",
+  "answer": 6.431e-17,
+  "disp": "6.431e-17",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "5.62",
+   "6.431e-17",
+   "1.000e+13",
+   "2.50"
+  ],
+  "mcAnswer": "6.431e-17",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “A Temperature Ceiling for Evaporating Primordial Black Holes from the Density Bound”. Its stated result is: This paper reports a computation from stated assumptions (status: simulated, not measured) on a Temperature Ceiling for Evaporating Primordial Black Holes from the Density Bound. Headline computed values: M min g = 1.000e+13; T max K = 1.227e+13; T max MeV = 1.057e+03; T Pl K = 1.417e+32. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “A Temperature Ceiling for Evaporating Primordial Black Holes from the Density Bound”. Its stated result is: This paper reports a computation from stated assumptions (status: simulated, not measured) on a Temperature Ceiling for Evaporating Primordial Black Holes from the Density Bound. Headline computed values: M min g = 1.000e+13; T max K = 1.227e+13; T max MeV = 1.057e+03; T Pl K = 1.417e+32. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]

@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Anastasia Petrov, and this is Cosmology — the open programme. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Anastasia Petrov, and this is Cosmology — the open programme. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'A Temperature Ceiling for Evaporating Primordial Black Holes from the Density Bound'. Its stated result: This paper reports a computation from stated assumptions (status: simulated, not measured) on a Temperature Ceiling for Evaporating Primordial Black Holes from the Density Bound. Headline computed values: M min g = 1.000e+13; T max K = 1.227e+13; T max MeV = 1.057e+03; T Pl K = 1.417e+32. The full calculation, data tables, and text are deposited in the record's four files.
+
+Now we go one step further into the material.
+
+'Clustering Corrections to Primordial Black Hole Abundance Bounds'. Its stated result: This paper reports a computation from stated assumptions (status: simulated, not measured) on clustering Corrections to Primordial Black Hole Abundance Bounds. Headline computed values: lens relax N1000 = 5.62; merge tight N1000 = 31.6. The full calculation, data tables, and text are deposited in the record's four files.
+
+The next piece is where this starts to come together.
+
+'Condensate Density Ceiling as a Laboratory Analogue of a Cosmological Density Bound'. Its stated result: Computed headline values for this analogue system are: tau_mid = 2.50, tau_high = 0.025, ratio_mid = 1.48e-63, rho_mid = 1.44e-05. The study is simulated and computed from stated assumptions and published experimental scales, not measured, and every value is reproducible from the deposited calculation script and results file.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Density Profiles and Survival of Primordial Black Hole Halos and Clusters'. Its stated result: This paper reports a computation from stated assumptions (status: simulated, not measured) on density Profiles and Survival of Primordial Black Hole Halos and Clusters. Headline computed values: surviving configs = 0/9; core over ceiling = 4.99e-70. The full calculation, data tables, and text are deposited in the record's four files.
+
+We take the pieces in order, because each one stands on the last.
+
+'Formation Thresholds for Primordial Black Holes Under a Maximum Density'. Its stated result: This paper reports a computation from stated assumptions (status: simulated, not measured) on formation Thresholds for Primordial Black Holes Under a Maximum Density. Headline computed values: t min s = 6.431e-17; M min g = 2.596e+22; M min Msun = 1.306e-11; rho A g cm3 = 9.718e+54. The full calculation, data tables, and text are deposited in the record's four files.
+
+Stay with me, because the next piece builds directly on that one.
+
+'Gravitational-Wave Merger Rates as a Bound on the Primordial Black Hole Fraction'. Its stated result: This paper reports a computation from stated assumptions (status: simulated, not measured) on gravitational-Wave Merger Rates as a Bound on the Primordial Black Hole Fraction. Headline computed values: f max 30Msun = 0.300; R at f1 30 = 500.0. The full calculation, data tables, and text are deposited in the record's four files.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “A Temperature Ceiling for Evaporating Primordial Black Holes from the Density Bound”. Its stated result is: This paper reports a computation from stated assumptions (status: simulated, not measured) on a Temperature Ceiling for Evaporating Primordial Black Holes from the Density Bound. Headline computed values: M min g = 1.000e+13; T max K = 1.227e+13; T max MeV = 1.057e+03; T Pl K = 1.417e+32. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'A Temperature Ceiling for Evaporating Primordial Black Holes from the Density Bound'; 'Clustering Corrections to Primordial Black Hole Abundance Bounds'; 'Condensate Density Ceiling as a Laboratory Analogue of a Cosmological Density Bound'; 'Density Profiles and Survival of Primordial Black Hole Halos and Clusters'; 'Formation Thresholds for Primordial Black Holes Under a Maximum Density'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.

@@ -220,5 +220,12 @@
    "audio": "audio/lessons30/data-where-it-lives-and-what-it-proves/lesson-06.mp3",
    "minutes": 25.61
   }
+ },
+ "cosmology-the-open-programme": {
+  "lesson-01": {
+   "hash": "323598085edf2c848be502fcdc8de0352ebaa8da",
+   "audio": "audio/lessons30/cosmology-the-open-programme/lesson-01.mp3",
+   "minutes": 9.39
+  }
  }
 }
