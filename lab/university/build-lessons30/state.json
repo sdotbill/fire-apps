@@ -262,5 +262,12 @@
    "audio": "audio/lessons30/volcanic-eruption-columns-ash-plumes-and-pyroclastic-density-cur/lesson-01.mp3",
    "minutes": 8.78
   }
+ },
+ "dwarf-galaxies-ultra-faint-satellites-and-low-mass-halo-structur": {
+  "lesson-01": {
+   "hash": "370959b07113dfa90ed8771f630ec4563fff986d",
+   "audio": "audio/lessons30/dwarf-galaxies-ultra-faint-satellites-and-low-mass-halo-structur/lesson-01.mp3",
+   "minutes": 5.71
+  }
  }
 }

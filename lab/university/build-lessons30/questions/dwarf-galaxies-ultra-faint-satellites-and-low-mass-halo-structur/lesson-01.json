@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'Concentration Proxies for Twenty Satellite Halos Against the Mass-Concentration Relation at Its Low-Mass End'. The result it reported gives a value for median c proxy, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Concentration Proxies for Twenty Satellite Halos Against the Mass-Concentration Relation at Its Low-Mass End'. Its stated result: Concentration proxies for the twenty satellites sit systematically above the extrapolated mass-concentration relation, by the median residual reported in the abstract, an offset traced to the stated scale-radius mapping rather than to the galaxies themselves. Headline computed values: median c proxy = 74.2; median residual dex = 0.681; rms residual dex = 0.725. And here is that same result with the words stripped away — just the quantities standing in a row: median c proxy = 74.2; median residual dex = 0.681; rms residual dex = 0.725. Find median c proxy in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Concentration Proxies for Twenty Satellite Halos Against the Mass-Concentration Relation at Its Low-Mass End' stated its result. (2) That result pairs names with values: median c proxy = 74.2; median residual dex = 0.681; rms residual dex = 0.725. (3) This question asks for the value paired with median c proxy. (4) In that row, median c proxy stands beside 74.2 — so the answer the lesson gives is 74.2. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Concentration Proxies for Twenty Satellite Halos Against the Mass-Concentration Relation at Its Low-Mass End' reported a number for median c proxy. What number did it report?",
+  "kind": "number",
+  "answer": 74.2,
+  "disp": "74.2",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "7.641322802627295e+20",
+   "7.28",
+   "13.8",
+   "74.2"
+  ],
+  "mcAnswer": "74.2",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Core Against Cusp in Classical Dwarf Spheroidals: Mass Concentration Inside 100 Parsecs and the Density Ceiling'. The result it reported gives a value for median cusp core ratio, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Core Against Cusp in Classical Dwarf Spheroidals: Mass Concentration Inside 100 Parsecs and the Density Ceiling'. Its stated result: For the nine classical dwarfs, cusped and cored extrapolations that agree at the half-light radius differ inside 100 parsecs by factors computed galaxy by galaxy in the deposited results, with the median ratio stated in the abstract. Headline computed values: median cusp core ratio = 7.28; max rho Msun pc3 = 0.376; min log10 margin = 77.6. And here is that same result with the words stripped away — just the quantities standing in a row: median cusp core ratio = 7.28; max rho Msun pc3 = 0.376; min log10 margin = 77.6. Find median cusp core ratio in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Core Against Cusp in Classical Dwarf Spheroidals: Mass Concentration Inside 100 Parsecs and the Density Ceiling' stated its result. (2) That result pairs names with values: median cusp core ratio = 7.28; max rho Msun pc3 = 0.376; min log10 margin = 77.6. (3) This question asks for the value paired with median cusp core ratio. (4) In that row, median cusp core ratio stands beside 7.28 — so the answer the lesson gives is 7.28. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Core Against Cusp in Classical Dwarf Spheroidals: Mass Concentration Inside 100 Parsecs and the Density Ceiling' reported a number for median cusp core ratio. What number did it report?",
+  "kind": "number",
+  "answer": 7.28,
+  "disp": "7.28",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "74.2",
+   "7.28",
+   "7.641322802627295e+20",
+   "13.8"
+  ],
+  "mcAnswer": "7.28",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Could the Stars Alone Do It? Self-Gravity Dispersions and Dark Fractions for Eleven Ultra-Faint Dwarfs'. The result it reported gives a value for median excess ratio, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Could the Stars Alone Do It? Self-Gravity Dispersions and Dark Fractions for Eleven Ultra-Faint Dwarfs'. Its stated result: Stars alone underpredict the observed dispersions of the ultra-faint sample by a median factor given in the abstract, implying median dark fractions above ninety percent within the half-light radii. Headline computed values: median excess ratio = 13.8; median dark fraction = 0.995; min excess ratio = 4.6; min excess galaxy = Hercules. And here is that same result with the words stripped away — just the quantities standing in a row: median excess ratio = 13.8; median dark fraction = 0.995; min excess ratio = 4.6. Find median excess ratio in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Could the Stars Alone Do It? Self-Gravity Dispersions and Dark Fractions for Eleven Ultra-Faint Dwarfs' stated its result. (2) That result pairs names with values: median excess ratio = 13.8; median dark fraction = 0.995; min excess ratio = 4.6. (3) This question asks for the value paired with median excess ratio. (4) In that row, median excess ratio stands beside 13.8 — so the answer the lesson gives is 13.8. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Could the Stars Alone Do It? Self-Gravity Dispersions and Dark Fractions for Eleven Ultra-Faint Dwarfs' reported a number for median excess ratio. What number did it report?",
+  "kind": "number",
+  "answer": 13.8,
+  "disp": "13.8",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "7.28",
+   "74.2",
+   "13.8",
+   "7.641322802627295e+20"
+  ],
+  "mcAnswer": "13.8",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Does a Bounce Buy Time for the First Dwarf Galaxies? A Time Budget Against Star-Formation Thresholds'. The result it reported gives a value for ceiling electron branch K, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Does a Bounce Buy Time for the First Dwarf Galaxies? A Time Budget Against Star-Formation Thresholds'. Its stated result: The maximum time a bounce within this framework can insert before recombination is a tiny fraction of the oldest dwarfs' ages, reported numerically in the abstract. Headline computed values: T ceiling electron branch K = 7.641322802627295e+20; t at ceiling seconds = 4.1103059394058805e-22; n below 1e8 = 5; extra time upper bound seconds = 4.1103059394058805e-22; fraction of 12Gyr percent = 1.0853977962534858e-37. And here is that same result with the words stripped away — just the quantities standing in a row: ceiling electron branch K = 7.641322802627295e+20; t at ceiling seconds = 4.1103059394058805e-22; n below 1e8 = 5. Find ceiling electron branch K in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Does a Bounce Buy Time for the First Dwarf Galaxies? A Time Budget Against Star-Formation Thresholds' stated its result. (2) That result pairs names with values: ceiling electron branch K = 7.641322802627295e+20; t at ceiling seconds = 4.1103059394058805e-22; n below 1e8 = 5. (3) This question asks for the value paired with ceiling electron branch K. (4) In that row, ceiling electron branch K stands beside 7.641322802627295e+20 — so the answer the lesson gives is 7.641322802627295e+20. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Does a Bounce Buy Time for the First Dwarf Galaxies? A Time Budget Against Star-Formation Thresholds' reported a number for ceiling electron branch K. What number did it report?",
+  "kind": "number",
+  "answer": 7.641322802627295e+20,
+  "disp": "7.641322802627295e+20",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "7.28",
+   "7.641322802627295e+20",
+   "74.2",
+   "13.8"
+  ],
+  "mcAnswer": "7.641322802627295e+20",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'From Survey Yields to a Galactic Population: Scaling the Dark Energy Survey Ultra-Faint Counts to the Whole Sky'. The result it reported gives a value for combined yield, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'From Survey Yields to a Galactic Population: Scaling the Dark Energy Survey Ultra-Faint Counts to the Whole Sky'. Its stated result: Scaling the combined Dark Energy Survey yield to the full sky and applying a stated volume correction gives an ultra-faint population of the size reported in the abstract, with Poisson uncertainty carried through. Headline computed values: combined yield = 34; full sky scaled = 280.5; population estimate = 617.1; poisson uncertainty = 105.8; volume correction factor = 2.2. And here is that same result with the words stripped away — just the quantities standing in a row: combined yield = 34; full sky scaled = 280.5; population estimate = 617.1. Find combined yield in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'From Survey Yields to a Galactic Population: Scaling the Dark Energy Survey Ultra-Faint Counts to the Whole Sky' stated its result. (2) That result pairs names with values: combined yield = 34; full sky scaled = 280.5; population estimate = 617.1. (3) This question asks for the value paired with combined yield. (4) In that row, combined yield stands beside 34 — so the answer the lesson gives is 34. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'From Survey Yields to a Galactic Population: Scaling the Dark Energy Survey Ultra-Faint Counts to the Whole Sky' reported a number for combined yield. What number did it report?",
+  "kind": "number",
+  "answer": 34.0,
+  "disp": "34",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "7.28",
+   "74.2",
+   "13.8",
+   "34"
+  ],
+  "mcAnswer": "34",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Concentration Proxies for Twenty Satellite Halos Against the Mass-Concentration Relation at Its Low-Mass End”. Its stated result is: Concentration proxies for the twenty satellites sit systematically above the extrapolated mass-concentration relation, by the median residual reported in the abstract, an offset traced to the stated scale-radius mapping rather than to the galaxies themselves. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “Concentration Proxies for Twenty Satellite Halos Against the Mass-Concentration Relation at Its Low-Mass End”. Its stated result is: Concentration proxies for the twenty satellites sit systematically above the extrapolated mass-concentration relation, by the median residual reported in the abstract, an offset traced to the stated scale-radius mapping rather than to the galaxies themselves. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]
