@@ -1,5 +1,5 @@
 {
- "note": "Exolex University — section registry and department heads (stage B, 2026-11-16). The faculty is mixed, like a real university: every one of the 760 classes has its OWN professor (see roster.json) — the professors listed here are the department heads, who teach their sections' flagship classes. Voices are drawn from the Helio/TTS catalogue (1,218 voices: 770 male, 447 female), matched to each professor's gender and, where the catalogue allows, accent. Dave's own voice (avocado_v2:MAI_03) is never used for a professor. Portraits are stylised figures drawn in the page from the portrait parameters — no photographs, no real people.",
+ "note": "Exolex University — section registry and department heads (stage B, 2026-11-16). The faculty is mixed, like a real university: every one of the 760 classes has its OWN professor (see roster.json) — the professors listed here are the department heads, who teach their sections' flagship classes. Voices are drawn from the Helio/TTS catalogue (1,218 voices: 770 male, 447 female), matched to each professor's gender and, where the catalogue allows, accent. Dave's own voice (avocado_v2:MAI_03) is never used for a professor. Portraits are photorealistic AI-generated headshots, one per professor, filed under portraits/<classId>.jpg and wired in through the \"photo\" field — no real people are depicted.",
  "sections": [
   {
    "group": "The College — the ten faces",
@@ -380,7 +380,8 @@
      "outfit": "#8c1f2e",
      "glasses": false
     },
-    "voiceNote": "Spanish-accented English voice — the catalogue holds no Spanish-language voice; hers is its Spanish voice, and she teaches bilingually, which is how a first lesson should sound anyway."
+    "voiceNote": "Spanish-accented English voice — the catalogue holds no Spanish-language voice; hers is its Spanish voice, and she teaches bilingually, which is how a first lesson should sound anyway.",
+    "photo": "portraits/espanol-i-speak-from-zero.jpg"
    }
   },
   {
