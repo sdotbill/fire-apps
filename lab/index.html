@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Laboratory — a working bench</title>
+<style>
+  :root{
+    --paper:#faf7ef; --panel:#fffdf6; --gold:#c9a227; --gold-hi:#d9b23a;
+    --gold-deep:#8a6508; --line:#e9e2cd; --ink:#262019; --ink-soft:#5c5340;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+  header{border-bottom:2px solid var(--gold);background:var(--panel);
+    padding:28px 22px 20px;text-align:center}
+  header h1{margin:0;font-size:2.1rem;letter-spacing:.14em;color:var(--gold-deep)}
+  header p{margin:8px auto 0;max-width:760px;color:var(--ink-soft);font-style:italic}
+  .tag{display:inline-block;margin-top:10px;padding:2px 12px;border:1px solid var(--gold);
+    border-radius:20px;font-size:.78rem;letter-spacing:.08em;color:var(--gold-deep)}
+  main{max-width:1180px;margin:0 auto;padding:26px 18px 60px}
+  section.station{background:var(--panel);border:1px solid var(--line);
+    border-top:3px solid var(--gold);border-radius:6px;padding:22px;margin-bottom:30px}
+  .station h2{margin:0 0 4px;font-size:1.45rem;color:var(--gold-deep);letter-spacing:.05em}
+  .station .sub{color:var(--ink-soft);margin:0 0 16px;font-style:italic}
+  .cols{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:22px}
+  @media (max-width:900px){.cols{grid-template-columns:1fr}}
+  canvas{width:100%;height:auto;background:#fff;border:1px solid var(--line);border-radius:4px}
+  .controls{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center;margin:14px 0 6px}
+  button{background:var(--gold);color:#fff;border:0;border-radius:4px;
+    padding:8px 18px;font-family:inherit;font-size:.95rem;cursor:pointer}
+  button:hover{background:var(--gold-hi)}
+  .ctl{display:flex;flex-direction:column;font-size:.82rem;color:var(--ink-soft);min-width:170px;flex:1}
+  .ctl label{display:flex;justify-content:space-between}
+  .ctl output{color:var(--gold-deep);font-weight:bold}
+  input[type=range]{width:100%;accent-color:var(--gold)}
+  .readouts{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-top:12px}
+  .ro{border:1px solid var(--line);border-radius:4px;padding:8px 10px;background:var(--paper)}
+  .ro .k{font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-soft)}
+  .ro .v{font-size:1.12rem;color:var(--gold-deep);font-weight:bold}
+  aside.rail{border-left:3px solid var(--gold);padding:2px 0 2px 16px}
+  aside.rail h3{margin:14px 0 4px;font-size:.95rem;color:var(--gold-deep);letter-spacing:.04em}
+  aside.rail h3:first-child{margin-top:0}
+  aside.rail p{margin:0 0 10px;font-size:.93rem}
+  footer{max-width:1180px;margin:0 auto;padding:0 18px 40px;color:var(--ink-soft);font-size:.85rem}
+</style>
+</head>
+<body>
+<header>
+  <h1>THE LABORATORY</h1>
+  <p>A working bench, not a picture of one. Every curve on this page is computed
+     live, in your browser, from the equations themselves — nothing is a canned
+     animation. Set the parameters, run the experiment, watch what the physics does.</p>
+  <span class="tag">PRACTICE BUILD — NOT YET WIRED INTO THE DASHBOARD</span>
+</header>
+
+<main>
+
+<!-- ================= STATION 1 : THE WATCH FLOOR ================= -->
+<section class="station" id="watchfloor">
+  <h2>Station 1 — The Watch Floor: the bounce, live</h2>
+  <p class="sub">The bounce-frame cosmology integrator. A universe in collapse,
+     carrying the Aldred Limit inside its equations. Watch the density climb —
+     and stop.</p>
+  <div class="cols">
+    <div>
+      <canvas id="bounceCanvas" width="920" height="430"></canvas>
+      <div class="controls">
+        <button id="bouncePlay">❚❚ Pause</button>
+        <button id="bounceRestart">↺ Run it again</button>
+        <div class="ctl">
+          <label>Torsion (spin repulsion, β) <output id="betaOut">0.00</output></label>
+          <input type="range" id="betaSlider" min="0" max="1" step="0.05" value="0">
+        </div>
+        <div class="ctl">
+          <label>Scrub the run <output id="scrubOut"></output></label>
+          <input type="range" id="bounceScrub" min="0" max="1000" step="1" value="0">
+        </div>
+      </div>
+      <div class="readouts">
+        <div class="ro"><div class="k">Phase</div><div class="v" id="roPhase">—</div></div>
+        <div class="ro"><div class="k">Density ρ</div><div class="v" id="roRho">—</div></div>
+        <div class="ro"><div class="k">Of the Limit</div><div class="v" id="roFrac">—</div></div>
+        <div class="ro"><div class="k">Scale factor A</div><div class="v" id="roA">—</div></div>
+        <div class="ro"><div class="k">Time from bounce</div><div class="v" id="roTau">—</div></div>
+        <div class="ro"><div class="k">Peak this run</div><div class="v" id="roPeak">—</div></div>
+      </div>
+    </div>
+    <aside class="rail">
+      <h3>What you're seeing</h3>
+      <p>A universe collapsing under its own gravity, watched by its density.
+         Time runs left to right and the bounce sits at the centre. The strong
+         gold curve is the density, drawn as a fraction of the Aldred Limit
+         (ρ<sub>A</sub> = 2.92×10⁵⁵ g/cm³). The pale curve is the size of space
+         itself — the scale factor — shrinking, bottoming out, and growing again.</p>
+      <h3>Why it behaves that way</h3>
+      <p>Gravity alone drives density to infinity: the singularity. Here the
+         density carries its own brake. The equations gain a term that grows
+         with the <em>square</em> of the density, and at ρ<sub>A</sub> it cancels
+         the pull exactly — collapse halts at the cap and runs back out. Past
+         half the cap (the dotted line) the effective pressure has already
+         flipped sign: that is the null energy condition reversing, and it is
+         what slows the fall before the stop.</p>
+      <p>Now drag the <strong>torsion</strong> slider. Torsion is what geometry
+         does with the spin of matter (the Riemann–Cartan extension of
+         Einstein's theory). Spin pushes back, harder the denser things get —
+         so the bounce fires earlier and softer, and the peak density drops
+         well below the cap. Same universe, two different rescues.</p>
+      <h3>The engineering principle</h3>
+      <p>Every real material has a limit load: steel yields, a pressure vessel
+         has a rated maximum, and a competent engineer designs <em>with</em> the
+         limit inside the equations, not pasted on afterwards. The Aldred Limit
+         says spacetime has a rated maximum too — a greatest possible density,
+         written into the geometry itself.</p>
+      <p><em>Units:</em> time is measured in bounce units τ (1 τ ≈ 2.5×10⁻²⁵ s);
+         the content is radiation, so ρ ∝ A⁻⁴.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= STATION 2 : THE BENCH ================= -->
+<section class="station" id="bench">
+  <h2>Station 2 — The Bench: the phase-matched charging pad</h2>
+  <p class="sub">Design bench for the fifth-coordinate phase-matched inductive
+     charging pad. Set the pad up badly, then rescue it — the way an engineer
+     would, one parameter at a time.</p>
+  <div class="cols">
+    <div>
+      <canvas id="padCanvas" width="920" height="300"></canvas>
+      <div class="controls">
+        <div class="ctl">
+          <label>Coil separation <output id="dOut"></output></label>
+          <input type="range" id="dSlider" min="10" max="150" step="1" value="60">
+        </div>
+        <div class="ctl">
+          <label>Lateral misalignment <output id="xOut"></output></label>
+          <input type="range" id="xSlider" min="0" max="75" step="1" value="10">
+        </div>
+        <div class="ctl">
+          <label>Coil quality Q <output id="qOut"></output></label>
+          <input type="range" id="qSlider" min="50" max="800" step="10" value="300">
+        </div>
+        <div class="ctl">
+          <label>Drive detuning <output id="dfOut"></output></label>
+          <input type="range" id="dfSlider" min="-30" max="30" step="1" value="3">
+        </div>
+        <div class="ctl">
+          <label>Phase-match compensation <output id="gOut"></output></label>
+          <input type="range" id="gSlider" min="0" max="100" step="1" value="70">
+        </div>
+      </div>
+      <div class="readouts">
+        <div class="ro"><div class="k">Coupling k</div><div class="v" id="roK">—</div></div>
+        <div class="ro"><div class="k">Figure of merit U</div><div class="v" id="roU">—</div></div>
+        <div class="ro"><div class="k">Best possible η</div><div class="v" id="roEtaMax">—</div></div>
+        <div class="ro"><div class="k">Delivered η</div><div class="v" id="roEta">—</div></div>
+        <div class="ro"><div class="k">Power out / 100 W in</div><div class="v" id="roP">—</div></div>
+      </div>
+    </div>
+    <aside class="rail">
+      <h3>What you're seeing</h3>
+      <p>Two coils — one in the pad, one in the vehicle — each tuned to ring at
+         the same frequency, like two identical tuning forks. Energy crosses
+         the gap only while the two stay in step. The curve is the delivered
+         efficiency at every separation; the gold dot is where your pad sits
+         right now.</p>
+      <h3>Why it behaves that way</h3>
+      <p>The strength of the handshake is the coupling, k. Separate the coils
+         and k collapses — a loop's magnetic field falls off roughly as the
+         cube of the distance — and the efficiency falls off the cliff you see
+         in the curve. Q is how many swings a coil rings before its energy
+         leaks away as heat: high Q gives the energy many chances to hop
+         across instead of leaking. Detuning is the two forks at slightly
+         different pitches — energy sloshes across and sloshes back before
+         the receiver can keep it. Set the detuning to +3% and the
+         phase-match to zero, and watch the pad bleed.</p>
+      <p>Then raise the <strong>phase-match</strong>. That control is the
+         fifth-coordinate element of this design: a tracker that continuously
+         re-times the drive so the two resonators stay in step. It cannot fix
+         distance — nothing can — but it rescues a mistuned pad almost whole.</p>
+      <h3>The engineering principle</h3>
+      <p>Wireless power is a conversation, not a broadcast. The whole game is
+         the figure of merit U = k·√(Q₁Q₂): coupling times quality. Everything
+         else in a real product — alignment guides, ferrite shaping, phase
+         tracking — exists to protect U.</p>
+      <p><em>The model:</em> standard coupled-mode theory, identical coils,
+         no fitted material data — the honest first pass an engineer runs
+         before reaching for a field solver.</p>
+    </aside>
+  </div>
+</section>
+
+</main>
+<footer>
+  The Laboratory, practice build v1. Both stations compute live from the
+  equations stated beside them; the integrator and the bench model are the
+  same code that passed the headless verification run. Stage 2 brings more
+  benches from the blueprint shelf, heavy simulations driven by the owner
+  lane, and the dashboard hookup.
+</footer>
+
+<script src="lab-core.js"></script>
+<script>
+(function () {
+  'use strict';
+  var Lab = window.LabCore;
+  var $ = function (id) { return document.getElementById(id); };
+  function sci(x, d) { return x.toExponential(d || 2).replace('e+', '×10^').replace('e', '×10^'); }
+
+  /* ---------------- Station 1: the bounce ---------------- */
+  var bCanvas = $('bounceCanvas'), bx = bCanvas.getContext('2d');
+  var traj = null, playing = true, cursor = 0, lastT = null;
+  var DUR = 16000; // ms for a full run
+
+  function computeTraj() {
+    var beta = parseFloat($('betaSlider').value);
+    $('betaOut').textContent = beta.toFixed(2);
+    traj = Lab.integrateBounce({ beta: beta });
+    cursor = 0; lastT = null;
+    $('roPeak').textContent = sci(traj.peakRho) + ' g/cm³';
+  }
+
+  function drawBounce() {
+    var W = bCanvas.width, H = bCanvas.height, padL = 58, padR = 14, padT = 16, padB = 34;
+    var pts = traj.points, n = pts.length;
+    var tMin = pts[0].tau, tMax = pts[n - 1].tau;
+    var X = function (t) { return padL + (t - tMin) / (tMax - tMin) * (W - padL - padR); };
+    var Y = function (f) { return padT + (1.08 - f) / 1.08 * (H - padT - padB); };
+    bx.clearRect(0, 0, W, H);
+    bx.font = '12px Georgia'; bx.fillStyle = '#5c5340';
+
+    // the cap
+    bx.strokeStyle = '#8a6508'; bx.setLineDash([7, 5]); bx.beginPath();
+    bx.moveTo(padL, Y(1)); bx.lineTo(W - padR, Y(1)); bx.stroke(); bx.setLineDash([]);
+    bx.fillStyle = '#8a6508';
+    bx.fillText('ρ_A — the Aldred Limit: density cannot pass', padL + 8, Y(1) - 7);
+    // NEC line at half the cap
+    bx.strokeStyle = '#cbbd8d'; bx.setLineDash([2, 4]); bx.beginPath();
+    bx.moveTo(padL, Y(0.5)); bx.lineTo(W - padR, Y(0.5)); bx.stroke(); bx.setLineDash([]);
+    bx.fillStyle = '#5c5340';
+    bx.fillText('½ ρ_A — the null energy condition reverses', padL + 8, Y(0.5) - 6);
+    // bounce centre line
+    bx.strokeStyle = '#e9e2cd'; bx.beginPath();
+    bx.moveTo(X(0), padT); bx.lineTo(X(0), H - padB); bx.stroke();
+    bx.fillText('the bounce', X(0) + 6, H - padB + 20);
+    bx.fillText('collapse →', X(0) - 74, H - padB + 20);
+    bx.fillText('← expansion', X(0) + 62, H - padB + 20);
+    bx.fillText('density, as a fraction of ρ_A', padL, padT + 4);
+
+    // scale factor (pale), normalized to its start value
+    var aMax = pts[0].A;
+    bx.strokeStyle = '#cbbd8d'; bx.lineWidth = 1.4; bx.beginPath();
+    pts.forEach(function (p, i) {
+      var x = X(p.tau), y = Y(1.02 * p.A / aMax);
+      i ? bx.lineTo(x, y) : bx.moveTo(x, y);
+    });
+    bx.stroke();
+    bx.fillStyle = '#8a7a4a';
+    bx.fillText('scale factor A (size of space)', X(tMin) + 8, Y(1.02) + 14);
+
+    // density: full path faint, travelled path strong
+    var upto = Math.min(n - 1, Math.floor(cursor));
+    bx.lineWidth = 2.4;
+    bx.strokeStyle = 'rgba(201,162,39,0.30)'; bx.beginPath();
+    pts.forEach(function (p, i) {
+      var x = X(p.tau), y = Y(p.rho / Lab.RHO_A);
+      i ? bx.lineTo(x, y) : bx.moveTo(x, y);
+    });
+    bx.stroke();
+    bx.strokeStyle = '#c9a227'; bx.beginPath();
+    for (var i = 0; i <= upto; i++) {
+      var x2 = X(pts[i].tau), y2 = Y(pts[i].rho / Lab.RHO_A);
+      i ? bx.lineTo(x2, y2) : bx.moveTo(x2, y2);
+    }
+    bx.stroke();
+    // cursor dot
+    var cp = pts[upto];
+    bx.fillStyle = '#8a6508'; bx.beginPath();
+    bx.arc(X(cp.tau), Y(cp.rho / Lab.RHO_A), 5, 0, 7); bx.fill();
+
+    // readouts
+    var frac = cp.rho / Lab.RHO_A;
+    $('roPhase').textContent =
+      Math.abs(cp.tau) < 0.06 && frac > 0.9 ? 'THE BOUNCE' :
+      (cp.tau < 0 ? 'Contracting' : 'Expanding');
+    $('roRho').textContent = sci(cp.rho) + ' g/cm³';
+    $('roFrac').textContent = (100 * frac).toFixed(1) + '%';
+    $('roA').textContent = cp.A.toFixed(3);
+    $('roTau').textContent = (cp.tau >= 0 ? '+' : '') + cp.tau.toFixed(2) + ' τ  (' +
+      sci(Math.abs(cp.tau) * Lab.TAU_SECONDS, 1) + ' s)';
+    $('scrubOut').textContent = 'τ ' + cp.tau.toFixed(2);
+  }
+
+  function tick(t) {
+    if (!traj) return;
+    if (playing) {
+      if (lastT === null) lastT = t;
+      var dtms = t - lastT; lastT = t;
+      cursor += dtms / DUR * (traj.points.length - 1);
+      if (cursor >= traj.points.length - 1) { cursor = 0; } // loop the run
+      $('bounceScrub').value = Math.round(1000 * cursor / (traj.points.length - 1));
+    } else { lastT = null; }
+    drawBounce();
+    requestAnimationFrame(tick);
+  }
+
+  $('bouncePlay').addEventListener('click', function () {
+    playing = !playing;
+    this.textContent = playing ? '❚❚ Pause' : '▶ Run';
+  });
+  $('bounceRestart').addEventListener('click', function () { cursor = 0; playing = true; $('bouncePlay').textContent = '❚❚ Pause'; });
+  $('betaSlider').addEventListener('input', computeTraj);
+  $('bounceScrub').addEventListener('input', function () {
+    if (!traj) return;
+    playing = false; $('bouncePlay').textContent = '▶ Run';
+    cursor = parseFloat(this.value) / 1000 * (traj.points.length - 1);
+    drawBounce();
+  });
+
+  computeTraj();
+  requestAnimationFrame(tick);
+
+  /* ---------------- Station 2: the bench ---------------- */
+  var pCanvas = $('padCanvas'), px = pCanvas.getContext('2d');
+
+  function padParams() {
+    return {
+      dMm: parseFloat($('dSlider').value),
+      xMm: parseFloat($('xSlider').value),
+      Q: parseFloat($('qSlider').value),
+      detune: parseFloat($('dfSlider').value) / 1000,   // slider is in 0.1% steps
+      gamma: parseFloat($('gSlider').value) / 100
+    };
+  }
+
+  function drawPad() {
+    var p = padParams();
+    $('dOut').textContent = p.dMm.toFixed(0) + ' mm';
+    $('xOut').textContent = p.xMm.toFixed(0) + ' mm';
+    $('qOut').textContent = p.Q.toFixed(0);
+    $('dfOut').textContent = (p.detune * 100).toFixed(1) + '%';
+    $('gOut').textContent = Math.round(p.gamma * 100) + '%';
+
+    var r = Lab.padEfficiency(p);
+    $('roK').textContent = r.k.toFixed(4);
+    $('roU').textContent = r.U.toFixed(1);
+    $('roEtaMax').textContent = (100 * r.etaMax).toFixed(1) + '%';
+    $('roEta').textContent = (100 * r.eta).toFixed(1) + '%';
+    $('roP').textContent = r.pOut.toFixed(1) + ' W';
+
+    var W = pCanvas.width, H = pCanvas.height, padL = 52, padR = 14, padT = 14, padB = 30;
+    var X = function (d) { return padL + (d - 10) / 140 * (W - padL - padR); };
+    var Y = function (e) { return padT + (1 - e) * (H - padT - padB); };
+    px.clearRect(0, 0, W, H);
+    px.font = '12px Georgia'; px.fillStyle = '#5c5340';
+    [0, 0.25, 0.5, 0.75, 1].forEach(function (e) {
+      px.strokeStyle = '#e9e2cd'; px.beginPath();
+      px.moveTo(padL, Y(e)); px.lineTo(W - padR, Y(e)); px.stroke();
+      px.fillText(Math.round(100 * e) + '%', 14, Y(e) + 4);
+    });
+    px.fillText('coil separation →', W - 130, H - 8);
+    px.fillText('delivered efficiency', padL, padT + 2);
+
+    px.strokeStyle = '#c9a227'; px.lineWidth = 2.4; px.beginPath();
+    for (var d = 10; d <= 150; d += 1.5) {
+      var rr = Lab.padEfficiency({ dMm: d, xMm: p.xMm, Q: p.Q, detune: p.detune, gamma: p.gamma });
+      var x = X(d), y = Y(rr.eta);
+      d === 10 ? px.moveTo(x, y) : px.lineTo(x, y);
+    }
+    px.stroke(); px.lineWidth = 1;
+    px.fillStyle = '#8a6508'; px.beginPath();
+    px.arc(X(p.dMm), Y(r.eta), 6, 0, 7); px.fill();
+    px.fillText('your pad: ' + (100 * r.eta).toFixed(1) + '% at ' + p.dMm.toFixed(0) + ' mm',
+      Math.min(X(p.dMm) + 10, W - 190), Math.max(Y(r.eta) - 10, 16));
+  }
+
+  ['dSlider', 'xSlider', 'qSlider', 'dfSlider', 'gSlider'].forEach(function (id) {
+    $(id).addEventListener('input', drawPad);
+  });
+  drawPad();
+})();
+</script>
+</body>
+</html>
