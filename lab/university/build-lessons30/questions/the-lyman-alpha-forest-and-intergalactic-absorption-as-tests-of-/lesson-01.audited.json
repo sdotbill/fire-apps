@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'The Redshift Equivalent of the Bounce Density and the Resulting Bound on All Forest Observables'. The result it reported gives a value for z_bounce, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'The Redshift Equivalent of the Bounce Density and the Resulting Bound on All Forest Observables'. Its stated result: Headline computed outcome for this study: z_bounce = 1.5350960704735478e+28; log10_z_bounce = 28.19; frac_at_z5 = 5.9709999999999995e-83; result = negative: bounce density corresponds to redshift ~1e28; all forest observables insensitive. And here is that same result with the words stripped away — just the quantities standing in a row: z_bounce = 1.5350960704735478e+28; log10_z_bounce = 28.19; frac_at_z5 = 5.9709999999999995e-83. Find z_bounce in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'The Redshift Equivalent of the Bounce Density and the Resulting Bound on All Forest Observables' stated its result. (2) That result pairs names with values: z_bounce = 1.5350960704735478e+28; log10_z_bounce = 28.19; frac_at_z5 = 5.9709999999999995e-83. (3) This question asks for the value paired with z_bounce. (4) In that row, z_bounce stands beside 1.5350960704735478e+28 — so the answer the lesson gives is 1.5350960704735478e+28. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'The Redshift Equivalent of the Bounce Density and the Resulting Bound on All Forest Observables' reported a number for z_bounce. What number did it report?",
+  "kind": "number",
+  "answer": 1.5350960704735478e+28,
+  "disp": "1.5350960704735478e+28",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "1.5",
+   "5.759545688385696e-83",
+   "1.5350960704735478e+28",
+   "12.85"
+  ],
+  "mcAnswer": "1.5350960704735478e+28",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'The Column-Density Distribution of Forest Absorbers: Slope Recovery and a Bounce Null'. The result it reported gives a value for beta_recovered, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'The Column-Density Distribution of Forest Absorbers: Slope Recovery and a Bounce Null'. Its stated result: Headline computed outcome for this study: beta_recovered = 1.5; expected_beta_input = 1.5; bounce_beta_shift = 1.769185185185185e-83; result = slope recovered; bounce contributes no measurable tilt (negative). And here is that same result with the words stripped away — just the quantities standing in a row: beta_recovered = 1.5; expected_beta_input = 1.5; bounce_beta_shift = 1.769185185185185e-83. Find beta_recovered in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'The Column-Density Distribution of Forest Absorbers: Slope Recovery and a Bounce Null' stated its result. (2) That result pairs names with values: beta_recovered = 1.5; expected_beta_input = 1.5; bounce_beta_shift = 1.769185185185185e-83. (3) This question asks for the value paired with beta_recovered. (4) In that row, beta_recovered stands beside 1.5 — so the answer the lesson gives is 1.5. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'The Column-Density Distribution of Forest Absorbers: Slope Recovery and a Bounce Null' reported a number for beta_recovered. What number did it report?",
+  "kind": "number",
+  "answer": 1.5,
+  "disp": "1.5",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "12.85",
+   "5.759545688385696e-83",
+   "1.5",
+   "1.5350960704735478e+28"
+  ],
+  "mcAnswer": "1.5",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'The Doppler Parameter Distribution of Forest Lines: Thermal Widths, Turbulent Excess, and a Bounce Null'. The result it reported gives a value for b_thermal_at_10000K, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'The Doppler Parameter Distribution of Forest Lines: Thermal Widths, Turbulent Excess, and a Bounce Null'. Its stated result: Headline computed outcome for this study: b_thermal_at_10000K = 12.85; result = observed widths require non-thermal broadening; bounce supplies none (negative). All values were computed from stated assumptions and published input values, not measured, and the deposit was verified by read-back against the public record (exact title, sole creator William Alexander Aldred with ORCID 0009-0000-1215-577X, CC BY 4.0 licenc And here is that same result with the words stripped away — just the quantities standing in a row: b_thermal_at_10000K = 12.85. Find b_thermal_at_10000K in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'The Doppler Parameter Distribution of Forest Lines: Thermal Widths, Turbulent Excess, and a Bounce Null' stated its result. (2) That result pairs names with values: b_thermal_at_10000K = 12.85. (3) This question asks for the value paired with b_thermal_at_10000K. (4) In that row, b_thermal_at_10000K stands beside 12.85 — so the answer the lesson gives is 12.85. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'The Doppler Parameter Distribution of Forest Lines: Thermal Widths, Turbulent Excess, and a Bounce Null' reported a number for b_thermal_at_10000K. What number did it report?",
+  "kind": "number",
+  "answer": 12.85,
+  "disp": "12.85",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "1.5",
+   "12.85",
+   "5.759545688385696e-83",
+   "1.5350960704735478e+28"
+  ],
+  "mcAnswer": "12.85",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'The Effective Optical Depth Power Law of Intergalactic Absorption and Its Insensitivity to a High-Density Bounce'. The result it reported gives a value for bounce_gamma_shift, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'The Effective Optical Depth Power Law of Intergalactic Absorption and Its Insensitivity to a High-Density Bounce'. Its stated result: Headline computed outcome for this study: gamma = 3.255; bounce_gamma_shift = 5.759545688385696e-83; result = negative: fitted slope shift from bounce is negligible. All values were computed from stated assumptions and published input values, not measured, and the deposit was verified by read-back against the public record (exact title, sole creator William Alexander Aldred with ORCID 0009-0000-1215-577X, CC BY 4.0 l And here is that same result with the words stripped away — just the quantities standing in a row: bounce_gamma_shift = 5.759545688385696e-83; gamma = 3.255. Find bounce_gamma_shift in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'The Effective Optical Depth Power Law of Intergalactic Absorption and Its Insensitivity to a High-Density Bounce' stated its result. (2) That result pairs names with values: bounce_gamma_shift = 5.759545688385696e-83; gamma = 3.255. (3) This question asks for the value paired with bounce_gamma_shift. (4) In that row, bounce_gamma_shift stands beside 5.759545688385696e-83 — so the answer the lesson gives is 5.759545688385696e-83. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'The Effective Optical Depth Power Law of Intergalactic Absorption and Its Insensitivity to a High-Density Bounce' reported a number for bounce_gamma_shift. What number did it report?",
+  "kind": "number",
+  "answer": 5.759545688385696e-83,
+  "disp": "5.759545688385696e-83",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "1.5",
+   "1.5350960704735478e+28",
+   "12.85",
+   "5.759545688385696e-83"
+  ],
+  "mcAnswer": "5.759545688385696e-83",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Variance and Shape of the Transmitted-Flux Probability Distribution as a Forest Diagnostic'. The result it reported gives a value for mean_flux_from_pdf, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Variance and Shape of the Transmitted-Flux Probability Distribution as a Forest Diagnostic'. Its stated result: Headline computed outcome for this study: mean_flux_from_pdf = 0.436; variance = 0.0866; skewness = 0.272; bounce_variance_shift = 1.532185137777778e-84; result = PDF moments recovered; bounce shift negligible (negative). And here is that same result with the words stripped away — just the quantities standing in a row: mean_flux_from_pdf = 0.436; bounce_variance_shift = 1.532185137777778e-84; variance = 0.0866. Find mean_flux_from_pdf in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Variance and Shape of the Transmitted-Flux Probability Distribution as a Forest Diagnostic' stated its result. (2) That result pairs names with values: mean_flux_from_pdf = 0.436; bounce_variance_shift = 1.532185137777778e-84; variance = 0.0866. (3) This question asks for the value paired with mean_flux_from_pdf. (4) In that row, mean_flux_from_pdf stands beside 0.436 — so the answer the lesson gives is 0.436. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Variance and Shape of the Transmitted-Flux Probability Distribution as a Forest Diagnostic' reported a number for mean_flux_from_pdf. What number did it report?",
+  "kind": "number",
+  "answer": 0.436,
+  "disp": "0.436",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "12.85",
+   "0.436",
+   "1.5",
+   "1.5350960704735478e+28"
+  ],
+  "mcAnswer": "0.436",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “The Redshift Equivalent of the Bounce Density and the Resulting Bound on All Forest Observables”. Its stated result is: Headline computed outcome for this study: z_bounce = 1.5350960704735478e+28; log10_z_bounce = 28.19; frac_at_z5 = 5.9709999999999995e-83; result = negative: bounce density corresponds to redshift ~1e28; all forest observables insensitive. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “The Redshift Equivalent of the Bounce Density and the Resulting Bound on All Forest Observables”. Its stated result is: Headline computed outcome for this study: z_bounce = 1.5350960704735478e+28; log10_z_bounce = 28.19; frac_at_z5 = 5.9709999999999995e-83; result = negative: bounce density corresponds to redshift ~1e28; all forest observables insensitive. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]

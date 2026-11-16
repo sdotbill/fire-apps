@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Athena Romano, and this is The Lyman-Alpha Forest and Intergalactic Absorption as Tests of the Bounce Frame. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Athena Romano, and this is The Lyman-Alpha Forest and Intergalactic Absorption as Tests of the Bounce Frame. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'The Redshift Equivalent of the Bounce Density and the Resulting Bound on All Forest Observables'. Its stated result: Headline computed outcome for this study: z_bounce = 1.5350960704735478e+28; log10_z_bounce = 28.19; frac_at_z5 = 5.9709999999999995e-83; result = negative: bounce density corresponds to redshift ~1e28; all forest observables insensitive.
+
+Now we go one step further into the material.
+
+'The Column-Density Distribution of Forest Absorbers: Slope Recovery and a Bounce Null'. Its stated result: Headline computed outcome for this study: beta_recovered = 1.5; expected_beta_input = 1.5; bounce_beta_shift = 1.769185185185185e-83; result = slope recovered; bounce contributes no measurable tilt (negative).
+
+The next piece is where this starts to come together.
+
+'The Doppler Parameter Distribution of Forest Lines: Thermal Widths, Turbulent Excess, and a Bounce Null'. Its stated result: Headline computed outcome for this study: b_thermal_at_10000K = 12.85; result = observed widths require non-thermal broadening; bounce supplies none (negative). All values were computed from stated assumptions and published input values, not measured, and the deposit was verified by read-back against the public record (exact title, sole creator William Alexander Aldred with ORCID 0009-0000-1215-577X, CC BY 4.0 licenc
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'The Effective Optical Depth Power Law of Intergalactic Absorption and Its Insensitivity to a High-Density Bounce'. Its stated result: Headline computed outcome for this study: gamma = 3.255; bounce_gamma_shift = 5.759545688385696e-83; result = negative: fitted slope shift from bounce is negligible. All values were computed from stated assumptions and published input values, not measured, and the deposit was verified by read-back against the public record (exact title, sole creator William Alexander Aldred with ORCID 0009-0000-1215-577X, CC BY 4.0 l
+
+We take the pieces in order, because each one stands on the last.
+
+'Variance and Shape of the Transmitted-Flux Probability Distribution as a Forest Diagnostic'. Its stated result: Headline computed outcome for this study: mean_flux_from_pdf = 0.436; variance = 0.0866; skewness = 0.272; bounce_variance_shift = 1.532185137777778e-84; result = PDF moments recovered; bounce shift negligible (negative).
+
+Stay with me, because the next piece builds directly on that one.
+
+'The Small-Scale Cutoff of the One-Dimensional Flux Power Spectrum as a Thermal and Bounce Test'. Its stated result: Headline computed outcome for this study: k_cut_T10000 = 0.0778; bounce_kc_shift_fraction = 1.769185185185185e-83; result = thermal cutoff dominates; bounce shift negligible (negative for bounce). All values were computed from stated assumptions and published input values, not measured, and the deposit was verified by read-back against the public record (exact title, sole creator William Alexander Aldred with ORCID 0
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “The Redshift Equivalent of the Bounce Density and the Resulting Bound on All Forest Observables”. Its stated result is: Headline computed outcome for this study: z_bounce = 1.5350960704735478e+28; log10_z_bounce = 28.19; frac_at_z5 = 5.9709999999999995e-83; result = negative: bounce density corresponds to redshift ~1e28; all forest observables insensitive. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'The Redshift Equivalent of the Bounce Density and the Resulting Bound on All Forest Observables'; 'The Column-Density Distribution of Forest Absorbers: Slope Recovery and a Bounce Null'; 'The Doppler Parameter Distribution of Forest Lines: Thermal Widths, Turbulent Excess, and a Bounce Null'; 'The Effective Optical Depth Power Law of Intergalactic Absorption and Its Insensitivity to a High-Density Bounce'; 'Variance and Shape of the Transmitted-Flux Probability Distribution as a Forest Diagnostic'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.
