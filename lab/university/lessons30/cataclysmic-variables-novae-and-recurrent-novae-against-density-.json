@@ -1,0 +1,177 @@
+{
+ "id": "cataclysmic-variables-novae-and-recurrent-novae-against-density-",
+ "title": "Cataclysmic Variables, Novae and Recurrent Novae Against Density and Energy Bounds",
+ "professor": "Professor Nikolai Dvorak",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Nikolai Dvorak, and this is Cataclysmic Variables, Novae and Recurrent Novae Against Density and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Nikolai Dvorak, and this is Cataclysmic Variables, Novae and Recurrent Novae Against Density and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'Accretion Luminosity Bounds in Cataclysmic Variables Across the Orbital Period Range'. Its stated result: Headline result (values verbatim from results.json): Lacc_Mdot1e-11_erg_s = 1.52e+32; Lacc_Mdot1e-11_Lsun = 0.03972; Lacc_Mdot1e-10_erg_s = 1.52e+33. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper.",
+    "Now we go one step further into the material.",
+    "'Duration of the Supersoft X-ray Phase as a Measure of Residual Envelope Mass in Novae'. Its stated result: Headline result (values verbatim from results.json): duration_Mres_1e-07_days = 34.52; duration_Mres_3e-07_days = 103.6; duration_Mres_1e-06_days = 345.2. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper.",
+    "The next piece is where this starts to come together.",
+    "'Dwarf Nova Outburst Energy and Disc Mass Budgets from Survey Amplitudes and Durations'. Its stated result: Headline result (values verbatim from results.json): normal_3Lsun_5d_energy_erg = 4.961e+39; normal_3Lsun_5d_disc_mass_g = 6.542e+22; normal_3Lsun_5d_disc_mass_Msun = 3.29e-11. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper.",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'Ejecta Mass Estimates from Radio Synchrotron Emission in Classical Novae'. Its stated result: Headline result (values verbatim from results.json): n_Mej1e-05_per_cm3 = 3.158e+06; volEM_Mej1e-05_cm-3 = 3.761e+58; n_Mej3e-05_per_cm3 = 9.475e+06. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper.",
+    "We take the pieces in order, because each one stands on the last.",
+    "'Galactic Classical Nova Rate Density Bounded by Survey Counts and Completeness'. Its stated result: Headline result (values verbatim from results.json): true_rate_completeness_0.5_per_yr = 20; true_rate_completeness_0.3_per_yr = 33.33; true_rate_completeness_0.2_per_yr = 50. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper.",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Gamma-Ray Emission Energy Budget of Nearby Novae from Fermi-LAT Fluxes'. Its stated result: Headline result (values verbatim from results.json): faint_1e35_14d_Egamma_erg = 1.21e+41; typical_3e35_20d_Egamma_erg = 5.184e+41; bright_1e36_25d_Egamma_erg = 2.16e+42. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Accretion Luminosity Bounds in Cataclysmic Variables Across the Orbital Period Range”. Its stated result is: Headline result (values verbatim from results.json): Lacc_Mdot1e-11_erg_s = 1.52e+32; Lacc_Mdot1e-11_Lsun = 0.03972; Lacc_Mdot1e-10_erg_s = 1.52e+33. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'Accretion Luminosity Bounds in Cataclysmic Variables Across the Orbital Period Range'; 'Duration of the Supersoft X-ray Phase as a Measure of Residual Envelope Mass in Novae'; 'Dwarf Nova Outburst Energy and Disc Mass Budgets from Survey Amplitudes and Durations'; 'Ejecta Mass Estimates from Radio Synchrotron Emission in Classical Novae'; 'Galactic Classical Nova Rate Density Bounded by Survey Counts and Completeness'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 786,
+   "audio": "audio/lessons30/cataclysmic-variables-novae-and-recurrent-novae-against-density-/lesson-01.mp3",
+   "minutes": 13.13,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'Accretion Luminosity Bounds in Cataclysmic Variables Across the Orbital Period Range'. The result it reported gives a value for erg_s, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Accretion Luminosity Bounds in Cataclysmic Variables Across the Orbital Period Range'. Its stated result: Headline result (values verbatim from results.json): Lacc_Mdot1e-11_erg_s = 1.52e+32; Lacc_Mdot1e-11_Lsun = 0.03972; Lacc_Mdot1e-10_erg_s = 1.52e+33. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: erg_s = 1.52e+32; Lsun = 0.03972. Find erg_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Accretion Luminosity Bounds in Cataclysmic Variables Across the Orbital Period Range' stated its result. (2) That result pairs names with values: erg_s = 1.52e+32; Lsun = 0.03972. (3) This question asks for the value paired with erg_s. (4) In that row, erg_s stands beside 1.52e+32 — so the answer the lesson gives is 1.52e+32. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Accretion Luminosity Bounds in Cataclysmic Variables Across the Orbital Period Range' reported a number for erg_s. What number did it report?",
+     "kind": "number",
+     "answer": 1.52e+32,
+     "disp": "1.52e+32",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "34.52",
+      "1.52e+32",
+      "3.158e+06",
+      "4.961e+39"
+     ],
+     "mcAnswer": "1.52e+32",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Duration of the Supersoft X-ray Phase as a Measure of Residual Envelope Mass in Novae'. The result it reported gives a value for days, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Duration of the Supersoft X-ray Phase as a Measure of Residual Envelope Mass in Novae'. Its stated result: Headline result (values verbatim from results.json): duration_Mres_1e-07_days = 34.52; duration_Mres_3e-07_days = 103.6; duration_Mres_1e-06_days = 345.2. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: days = 34.52. Find days in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Duration of the Supersoft X-ray Phase as a Measure of Residual Envelope Mass in Novae' stated its result. (2) That result pairs names with values: days = 34.52. (3) This question asks for the value paired with days. (4) In that row, days stands beside 34.52 — so the answer the lesson gives is 34.52. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Duration of the Supersoft X-ray Phase as a Measure of Residual Envelope Mass in Novae' reported a number for days. What number did it report?",
+     "kind": "number",
+     "answer": 34.52,
+     "disp": "34.52",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "34.52",
+      "3.158e+06",
+      "1.52e+32",
+      "4.961e+39"
+     ],
+     "mcAnswer": "34.52",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Dwarf Nova Outburst Energy and Disc Mass Budgets from Survey Amplitudes and Durations'. The result it reported gives a value for normal_3Lsun_5d_energy_erg, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Dwarf Nova Outburst Energy and Disc Mass Budgets from Survey Amplitudes and Durations'. Its stated result: Headline result (values verbatim from results.json): normal_3Lsun_5d_energy_erg = 4.961e+39; normal_3Lsun_5d_disc_mass_g = 6.542e+22; normal_3Lsun_5d_disc_mass_Msun = 3.29e-11. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: normal_3Lsun_5d_energy_erg = 4.961e+39; normal_3Lsun_5d_disc_mass_g = 6.542e+22; normal_3Lsun_5d_disc_mass_Msun = 3.29e-11. Find normal_3Lsun_5d_energy_erg in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Dwarf Nova Outburst Energy and Disc Mass Budgets from Survey Amplitudes and Durations' stated its result. (2) That result pairs names with values: normal_3Lsun_5d_energy_erg = 4.961e+39; normal_3Lsun_5d_disc_mass_g = 6.542e+22; normal_3Lsun_5d_disc_mass_Msun = 3.29e-11. (3) This question asks for the value paired with normal_3Lsun_5d_energy_erg. (4) In that row, normal_3Lsun_5d_energy_erg stands beside 4.961e+39 — so the answer the lesson gives is 4.961e+39. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Dwarf Nova Outburst Energy and Disc Mass Budgets from Survey Amplitudes and Durations' reported a number for normal_3Lsun_5d_energy_erg. What number did it report?",
+     "kind": "number",
+     "answer": 4.961e+39,
+     "disp": "4.961e+39",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "34.52",
+      "3.158e+06",
+      "4.961e+39",
+      "1.52e+32"
+     ],
+     "mcAnswer": "4.961e+39",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Ejecta Mass Estimates from Radio Synchrotron Emission in Classical Novae'. The result it reported gives a value for per_cm3, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Ejecta Mass Estimates from Radio Synchrotron Emission in Classical Novae'. Its stated result: Headline result (values verbatim from results.json): n_Mej1e-05_per_cm3 = 3.158e+06; volEM_Mej1e-05_cm-3 = 3.761e+58; n_Mej3e-05_per_cm3 = 9.475e+06. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: per_cm3 = 3.158e+06. Find per_cm3 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Ejecta Mass Estimates from Radio Synchrotron Emission in Classical Novae' stated its result. (2) That result pairs names with values: per_cm3 = 3.158e+06. (3) This question asks for the value paired with per_cm3. (4) In that row, per_cm3 stands beside 3.158e+06 — so the answer the lesson gives is 3.158e+06. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Ejecta Mass Estimates from Radio Synchrotron Emission in Classical Novae' reported a number for per_cm3. What number did it report?",
+     "kind": "number",
+     "answer": 3158000.0,
+     "disp": "3.158e+06",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1.52e+32",
+      "4.961e+39",
+      "34.52",
+      "3.158e+06"
+     ],
+     "mcAnswer": "3.158e+06",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Galactic Classical Nova Rate Density Bounded by Survey Counts and Completeness'. The result it reported gives a value for per_yr, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Galactic Classical Nova Rate Density Bounded by Survey Counts and Completeness'. Its stated result: Headline result (values verbatim from results.json): true_rate_completeness_0.5_per_yr = 20; true_rate_completeness_0.3_per_yr = 33.33; true_rate_completeness_0.2_per_yr = 50. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: per_yr = 20. Find per_yr in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Galactic Classical Nova Rate Density Bounded by Survey Counts and Completeness' stated its result. (2) That result pairs names with values: per_yr = 20. (3) This question asks for the value paired with per_yr. (4) In that row, per_yr stands beside 20 — so the answer the lesson gives is 20. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Galactic Classical Nova Rate Density Bounded by Survey Counts and Completeness' reported a number for per_yr. What number did it report?",
+     "kind": "number",
+     "answer": 20.0,
+     "disp": "20",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "4.961e+39",
+      "34.52",
+      "1.52e+32",
+      "20"
+     ],
+     "mcAnswer": "20",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Accretion Luminosity Bounds in Cataclysmic Variables Across the Orbital Period Range”. Its stated result is: Headline result (values verbatim from results.json): Lacc_Mdot1e-11_erg_s = 1.52e+32; Lacc_Mdot1e-11_Lsun = 0.03972; Lacc_Mdot1e-10_erg_s = 1.52e+33. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “Accretion Luminosity Bounds in Cataclysmic Variables Across the Orbital Period Range”. Its stated result is: Headline result (values verbatim from results.json): Lacc_Mdot1e-11_erg_s = 1.52e+32; Lacc_Mdot1e-11_Lsun = 0.03972; Lacc_Mdot1e-10_erg_s = 1.52e+33. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}

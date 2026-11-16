@@ -395,5 +395,12 @@
    "audio": "audio/lessons30/interstellar-objects-and-interstellar-traversal-against-density-/lesson-01.mp3",
    "minutes": 11.23
   }
+ },
+ "cataclysmic-variables-novae-and-recurrent-novae-against-density-": {
+  "lesson-01": {
+   "hash": "c489b4ac52218cc599becc936324597f1e2e22cf",
+   "audio": "audio/lessons30/cataclysmic-variables-novae-and-recurrent-novae-against-density-/lesson-01.mp3",
+   "minutes": 13.13
+  }
  }
 }
