@@ -297,8 +297,6 @@
       <button class="iconbtn" id="panel-toggle" aria-label="Panel">☰</button>
       <span class="title" id="conv-title">Chat with Dave</span>
       <div class="sp"></div>
-      <button class="tbtn" id="invite-btn" type="button">🎁 Invite</button>
-      <button class="tbtn" id="install-btn" type="button" hidden>📲 Install Dave on this phone</button>
       <button class="tbtn" id="signout-btn" type="button" hidden>Sign out</button>
       <span class="eye-brand" aria-hidden="true"><img src="/assets/dave-eye-living.webp" alt=""></span>
     </div>
@@ -724,7 +722,9 @@
       } else { copyFallback(link, done); }
     });
   }
-  $("invite-btn").addEventListener("click", function(){
+  /* The Invite control lives in Settings (declutter, Nov 15):
+     renderPanel wires this in when the settings view renders. */
+  function mintInvite(){
     postJSON("/invite/create", {identity: identity || undefined})
       .then(function(r){ return r.json().then(function(d){ return {status: r.status, d: d}; }); })
       .then(function(res){
@@ -736,7 +736,7 @@
         }
       })
       .catch(function(){ feedAdd("Invite", "The invite didn't mint — try again in a moment", "🎁"); });
-  });
+  }
 
   /* ---------- left panel views + brain panel ----------
      One state, one setter per panel, so a toggle can never stick:
@@ -835,7 +835,16 @@
       s += '<div class="setrow"><div class="grow"><strong>' + esc(who) + '</strong>' +
         (whoSub ? '<div class="mini">' + esc(whoSub) + '</div>' : '') + '</div></div>';
       s += '<div class="setrow"><div class="grow">People you\u2019ve invited</div><span class="val" id="inv-count">…</span></div>';
+      s += '<button class="addbtn" id="set-invite" style="margin-top:6px">🎁 Invite</button>';
       s += '<button class="addbtn" id="set-signout" style="margin-top:6px">Sign out</button>';
+      /* The install affordance lives here too (declutter, Nov 15) —
+         the owner's private phone app only: it renders solely for
+         the owner, and never when the dashboard already runs as the
+         installed app. */
+      if(owner && !isStandalone()){
+        s += '<div class="panel-sec">App</div>';
+        s += '<button class="addbtn" id="install-btn">📲 Install Dave</button>';
+      }
       s += '<div class="panel-sec">Preferences</div>';
       s += '<div class="setrow"><div class="grow">Appearance</div><span class="val">White &amp; gold</span><span class="chev">›</span></div>';
       s += '<div class="setrow"><div class="grow">Notifications</div><span class="chev">›</span></div>';
@@ -843,7 +852,10 @@
       s += '<div class="panel-sec">Data</div>';
       s += '<a class="libitem" href="/privacy.html">🔒<span>Privacy &amp; your data<small>How your information is handled</small></span></a>';
       b.innerHTML = s;
+      $("set-invite").addEventListener("click", mintInvite);
       $("set-signout").addEventListener("click", doSignOut);
+      var setInstall = $("install-btn");
+      if(setInstall) setInstall.addEventListener("click", onInstallClick);
       fetch(WORKER + "/invite/count?identity=" + encodeURIComponent(identity || ""), {credentials: "include"})
         .then(function(r){ return r.ok ? r.json() : null; })
         .then(function(d){
@@ -959,8 +971,6 @@
   function openDashboard(){
     gate.hidden = true; app.hidden = false;
     $("signout-btn").hidden = !accountName;
-    var standalone = window.matchMedia("(display-mode: standalone)").matches || !!window.navigator.standalone;
-    $("install-btn").hidden = !owner || standalone;
     renderThread(); renderFeed(); renderPanel();
     setStatus("Here · live on the cloud");
     pollHealth(); setInterval(pollHealth, 60000);
@@ -1126,8 +1136,12 @@
 
   /* ---------- install (the owner's private phone app) ----------
      The service worker serves only the dashboard's own static shell —
-     never an API response. The install button itself is shown only
-     inside the owner's dashboard (see openDashboard). */
+     never an API response. The install button itself lives in
+     Settings and renders only for the owner when the dashboard is
+     not already running as the installed app (see renderPanel). */
+  function isStandalone(){
+    return window.matchMedia("(display-mode: standalone)").matches || !!window.navigator.standalone;
+  }
   if("serviceWorker" in navigator){
     navigator.serviceWorker.register("/dashboard/sw.js").catch(function(){});
   }
@@ -1136,9 +1150,10 @@
     e.preventDefault(); deferredInstall = e;
   });
   window.addEventListener("appinstalled", function(){
-    deferredInstall = null; $("install-btn").hidden = true;
+    deferredInstall = null;
+    var ib = $("install-btn"); if(ib) ib.hidden = true;
   });
-  $("install-btn").addEventListener("click", function(){
+  function onInstallClick(){
     if(deferredInstall){
       deferredInstall.prompt();
       deferredInstall.userChoice.then(function(){ deferredInstall = null; });
@@ -1147,7 +1162,7 @@
     var n = $("install-note");
     n.hidden = false;
     setTimeout(function(){ n.hidden = true; }, 9000);
-  });
+  }
 
   /* Sign out: for an account session the binding drops server-side
      (the account and its memory stand for the next sign-in); for the
