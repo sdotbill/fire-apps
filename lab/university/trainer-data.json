@@ -1,0 +1,1342 @@
+{
+ "generated": "build-trainer-data.py — phrase sets for the listen-and-repeat trainer",
+ "classes": {
+  "espanol-i-speak-from-zero": {
+   "lang": "es-ES",
+   "welcome": "Hola, Bill. We do this together now — I say it first, then you say it back to me. Nothing moves on until it sounds right. That is how you will actually learn. ¿Listo?",
+   "steps": [
+    {
+     "target": "Hola",
+     "display": "Hola",
+     "meaning": "hello — for any hour, any person",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-0.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-0-slow.mp3"
+    },
+    {
+     "target": "Buenos días",
+     "display": "Buenos días",
+     "meaning": "good morning",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-1.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-1-slow.mp3"
+    },
+    {
+     "target": "Buenas tardes",
+     "display": "Buenas tardes",
+     "meaning": "good afternoon",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-2.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-2-slow.mp3"
+    },
+    {
+     "target": "Buenas noches",
+     "display": "Buenas noches",
+     "meaning": "good night / good evening",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-3.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-3-slow.mp3"
+    },
+    {
+     "target": "Me llamo",
+     "display": "Me llamo",
+     "meaning": "my name is… (I call myself…)",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-4.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-4-slow.mp3"
+    },
+    {
+     "target": "Me llamo Bill",
+     "display": "Me llamo Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-5.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-5-slow.mp3"
+    },
+    {
+     "target": "Mucho gusto",
+     "display": "Mucho gusto",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-6.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-6-slow.mp3"
+    },
+    {
+     "target": "Por favor",
+     "display": "Por favor",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-7.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-7-slow.mp3"
+    },
+    {
+     "target": "Gracias",
+     "display": "Gracias",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-8.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-8-slow.mp3"
+    },
+    {
+     "target": "Soy de Michigan",
+     "display": "Soy de Michigan",
+     "meaning": "I am from Michigan",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-9.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-9-slow.mp3"
+    },
+    {
+     "target": "Soy empresario",
+     "display": "Soy empresario",
+     "meaning": "I am a businessman",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-10.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-10-slow.mp3"
+    },
+    {
+     "target": "Mi prometida se llama Jillian",
+     "display": "Mi prometida se llama Jillian",
+     "meaning": "my fiancée's name is Jillian",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-11.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-11-slow.mp3"
+    },
+    {
+     "target": "Mi amor",
+     "display": "Mi amor",
+     "meaning": "my love — the sweet words begin",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-12.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-12-slow.mp3"
+    },
+    {
+     "target": "Mi corazón",
+     "display": "Mi corazón",
+     "meaning": "my heart — Spanish means it literally",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-13.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-13-slow.mp3"
+    },
+    {
+     "target": "Te quiero",
+     "display": "Te quiero",
+     "meaning": "I love you — the everyday way, at the door",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-14.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-14-slow.mp3"
+    },
+    {
+     "target": "Te quiero, Jillian",
+     "display": "Te quiero, Jillian",
+     "meaning": "I love you, Jillian",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-15.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-15-slow.mp3"
+    },
+    {
+     "target": "Buenas noches, mi amor",
+     "display": "Buenas noches, mi amor",
+     "meaning": "good night, my love — tonight's line, for her",
+     "audio": "audio/trainer/espanol-i-speak-from-zero/step-16.mp3",
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-16-slow.mp3"
+    }
+   ],
+   "praise": [
+    "¡Perfecto, Bill! You see? A natural.",
+    "¡Muy bien! Just like that — say it to her exactly like that.",
+    "¡Eso es! That is precisely how it should sound."
+   ],
+   "retry": [
+    "Casi, casi — almost. Listen to me once more, slowly… and then it is yours.",
+    "Ay, so close. Despacio — slowly this time. You have got this, Bill."
+   ],
+   "slow_all": true,
+   "audioBase": "audio/trainer/espanol-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/espanol-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/espanol-i-speak-from-zero/praise-0.mp3",
+    "audio/trainer/espanol-i-speak-from-zero/praise-1.mp3",
+    "audio/trainer/espanol-i-speak-from-zero/praise-2.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/espanol-i-speak-from-zero/retry-0.mp3",
+    "audio/trainer/espanol-i-speak-from-zero/retry-1.mp3"
+   ]
+  },
+  "portugues-i-speak-from-zero": {
+   "lang": "pt-PT",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "Olá",
+     "display": "Olá",
+     "meaning": "hello — at any hour",
+     "audio": "audio/trainer/portugues-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "Bom dia",
+     "display": "Bom dia",
+     "meaning": "good morning",
+     "audio": "audio/trainer/portugues-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "Boa noite",
+     "display": "Boa noite",
+     "meaning": "good night / good evening",
+     "audio": "audio/trainer/portugues-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "O meu nome é Bill",
+     "display": "O meu nome é Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/portugues-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "Sou de Michigan",
+     "display": "Sou de Michigan",
+     "meaning": "I am from Michigan",
+     "audio": "audio/trainer/portugues-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "Por favor",
+     "display": "Por favor",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/portugues-i-speak-from-zero/step-5.mp3"
+    },
+    {
+     "target": "Obrigado",
+     "display": "Obrigado",
+     "meaning": "thank you — a man says obrigado",
+     "audio": "audio/trainer/portugues-i-speak-from-zero/step-6.mp3"
+    },
+    {
+     "target": "Muito prazer",
+     "display": "Muito prazer",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/portugues-i-speak-from-zero/step-7.mp3"
+    }
+   ],
+   "praise": [
+    "Muito bem! Very good — exactly right."
+   ],
+   "retry": [
+    "Outra vez, devagar — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/portugues-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/portugues-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/portugues-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/portugues-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "deutsch-i-speak-from-zero": {
+   "lang": "de-DE",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "Guten Tag",
+     "display": "Guten Tag",
+     "meaning": "good day — the greeting that works everywhere",
+     "audio": "audio/trainer/deutsch-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "Guten Morgen",
+     "display": "Guten Morgen",
+     "meaning": "good morning",
+     "audio": "audio/trainer/deutsch-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "Guten Abend",
+     "display": "Guten Abend",
+     "meaning": "good evening",
+     "audio": "audio/trainer/deutsch-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "Ich heiße Bill",
+     "display": "Ich heiße Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/deutsch-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "Ich komme aus Michigan",
+     "display": "Ich komme aus Michigan",
+     "meaning": "I come from Michigan",
+     "audio": "audio/trainer/deutsch-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "Bitte",
+     "display": "Bitte",
+     "meaning": "please — and also you're welcome",
+     "audio": "audio/trainer/deutsch-i-speak-from-zero/step-5.mp3"
+    },
+    {
+     "target": "Danke",
+     "display": "Danke",
+     "meaning": "thank you",
+     "audio": "audio/trainer/deutsch-i-speak-from-zero/step-6.mp3"
+    },
+    {
+     "target": "Freut mich",
+     "display": "Freut mich",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/deutsch-i-speak-from-zero/step-7.mp3"
+    }
+   ],
+   "praise": [
+    "Sehr gut! Very good — exactly right."
+   ],
+   "retry": [
+    "Noch einmal, langsam — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/deutsch-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/deutsch-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/deutsch-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/deutsch-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "francais-speak-from-zero": {
+   "lang": "fr-FR",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "Bonjour",
+     "display": "Bonjour",
+     "meaning": "hello / good day",
+     "audio": "audio/trainer/francais-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "Bonsoir",
+     "display": "Bonsoir",
+     "meaning": "good evening",
+     "audio": "audio/trainer/francais-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "Je m'appelle Bill",
+     "display": "Je m'appelle Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/francais-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "Je suis de Michigan",
+     "display": "Je suis de Michigan",
+     "meaning": "I am from Michigan",
+     "audio": "audio/trainer/francais-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "S'il vous plaît",
+     "display": "S'il vous plaît",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/francais-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "Merci",
+     "display": "Merci",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/francais-speak-from-zero/step-5.mp3"
+    },
+    {
+     "target": "Enchanté",
+     "display": "Enchanté",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/francais-speak-from-zero/step-6.mp3"
+    }
+   ],
+   "praise": [
+    "Très bien ! Very good — exactly right."
+   ],
+   "retry": [
+    "Encore une fois, lentement — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/francais-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/francais-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/francais-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/francais-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "italiano-i-speak-from-zero": {
+   "lang": "it-IT",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "Buongiorno",
+     "display": "Buongiorno",
+     "meaning": "good day",
+     "audio": "audio/trainer/italiano-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "Buonasera",
+     "display": "Buonasera",
+     "meaning": "good evening",
+     "audio": "audio/trainer/italiano-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "Mi chiamo Bill",
+     "display": "Mi chiamo Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/italiano-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "Sono del Michigan",
+     "display": "Sono del Michigan",
+     "meaning": "I am from Michigan",
+     "audio": "audio/trainer/italiano-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "Per favore",
+     "display": "Per favore",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/italiano-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "Grazie",
+     "display": "Grazie",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/italiano-i-speak-from-zero/step-5.mp3"
+    },
+    {
+     "target": "Piacere",
+     "display": "Piacere",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/italiano-i-speak-from-zero/step-6.mp3"
+    }
+   ],
+   "praise": [
+    "Molto bene! Very good — exactly right."
+   ],
+   "retry": [
+    "Ancora una volta, piano — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/italiano-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/italiano-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/italiano-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/italiano-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "nederlands-i-speak-from-zero": {
+   "lang": "nl-NL",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "Hallo",
+     "display": "Hallo",
+     "meaning": "hello",
+     "audio": "audio/trainer/nederlands-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "Goedemorgen",
+     "display": "Goedemorgen",
+     "meaning": "good morning",
+     "audio": "audio/trainer/nederlands-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "Ik heet Bill",
+     "display": "Ik heet Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/nederlands-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "Ik kom uit Michigan",
+     "display": "Ik kom uit Michigan",
+     "meaning": "I come from Michigan",
+     "audio": "audio/trainer/nederlands-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "Alsjeblieft",
+     "display": "Alsjeblieft",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/nederlands-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "Dank je wel",
+     "display": "Dank je wel",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/nederlands-i-speak-from-zero/step-5.mp3"
+    },
+    {
+     "target": "Leuk je te ontmoeten",
+     "display": "Leuk je te ontmoeten",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/nederlands-i-speak-from-zero/step-6.mp3"
+    }
+   ],
+   "praise": [
+    "Heel goed! Very good — exactly right."
+   ],
+   "retry": [
+    "Nog een keer, langzaam — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/nederlands-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/nederlands-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/nederlands-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/nederlands-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "svenska-i-speak-from-zero": {
+   "lang": "sv-SE",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "Hej",
+     "display": "Hej",
+     "meaning": "hello",
+     "audio": "audio/trainer/svenska-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "God morgon",
+     "display": "God morgon",
+     "meaning": "good morning",
+     "audio": "audio/trainer/svenska-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "Jag heter Bill",
+     "display": "Jag heter Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/svenska-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "Jag kommer från Michigan",
+     "display": "Jag kommer från Michigan",
+     "meaning": "I come from Michigan",
+     "audio": "audio/trainer/svenska-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "Snälla",
+     "display": "Snälla",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/svenska-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "Tack",
+     "display": "Tack",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/svenska-i-speak-from-zero/step-5.mp3"
+    },
+    {
+     "target": "Trevligt att träffas",
+     "display": "Trevligt att träffas",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/svenska-i-speak-from-zero/step-6.mp3"
+    }
+   ],
+   "praise": [
+    "Mycket bra! Very good — exactly right."
+   ],
+   "retry": [
+    "En gång till, långsamt — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/svenska-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/svenska-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/svenska-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/svenska-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "norsk-i-speak-from-zero": {
+   "lang": "nb-NO",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "Hei",
+     "display": "Hei",
+     "meaning": "hello",
+     "audio": "audio/trainer/norsk-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "God morgen",
+     "display": "God morgen",
+     "meaning": "good morning",
+     "audio": "audio/trainer/norsk-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "Jeg heter Bill",
+     "display": "Jeg heter Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/norsk-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "Jeg kommer fra Michigan",
+     "display": "Jeg kommer fra Michigan",
+     "meaning": "I come from Michigan",
+     "audio": "audio/trainer/norsk-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "Vær så snill",
+     "display": "Vær så snill",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/norsk-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "Takk",
+     "display": "Takk",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/norsk-i-speak-from-zero/step-5.mp3"
+    },
+    {
+     "target": "Hyggelig å møte deg",
+     "display": "Hyggelig å møte deg",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/norsk-i-speak-from-zero/step-6.mp3"
+    }
+   ],
+   "praise": [
+    "Veldig bra! Very good — exactly right."
+   ],
+   "retry": [
+    "En gang til, sakte — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/norsk-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/norsk-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/norsk-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/norsk-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "dansk-i-speak-from-zero": {
+   "lang": "da-DK",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "Hej",
+     "display": "Hej",
+     "meaning": "hello",
+     "audio": "audio/trainer/dansk-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "Godmorgen",
+     "display": "Godmorgen",
+     "meaning": "good morning",
+     "audio": "audio/trainer/dansk-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "Jeg hedder Bill",
+     "display": "Jeg hedder Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/dansk-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "Jeg kommer fra Michigan",
+     "display": "Jeg kommer fra Michigan",
+     "meaning": "I come from Michigan",
+     "audio": "audio/trainer/dansk-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "Tak",
+     "display": "Tak",
+     "meaning": "thank you",
+     "audio": "audio/trainer/dansk-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "Mange tak",
+     "display": "Mange tak",
+     "meaning": "thank you very much",
+     "audio": "audio/trainer/dansk-i-speak-from-zero/step-5.mp3"
+    },
+    {
+     "target": "Hyggeligt at møde dig",
+     "display": "Hyggeligt at møde dig",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/dansk-i-speak-from-zero/step-6.mp3"
+    }
+   ],
+   "praise": [
+    "Meget godt! Very good — exactly right."
+   ],
+   "retry": [
+    "En gang til, langsomt — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/dansk-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/dansk-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/dansk-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/dansk-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "polski-i-speak-from-zero": {
+   "lang": "pl-PL",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "Cześć",
+     "display": "Cześć",
+     "meaning": "hello",
+     "audio": "audio/trainer/polski-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "Dzień dobry",
+     "display": "Dzień dobry",
+     "meaning": "good day",
+     "audio": "audio/trainer/polski-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "Nazywam się Bill",
+     "display": "Nazywam się Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/polski-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "Jestem z Michigan",
+     "display": "Jestem z Michigan",
+     "meaning": "I am from Michigan",
+     "audio": "audio/trainer/polski-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "Proszę",
+     "display": "Proszę",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/polski-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "Dziękuję",
+     "display": "Dziękuję",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/polski-i-speak-from-zero/step-5.mp3"
+    },
+    {
+     "target": "Miło mi",
+     "display": "Miło mi",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/polski-i-speak-from-zero/step-6.mp3"
+    }
+   ],
+   "praise": [
+    "Bardzo dobrze! Very good — exactly right."
+   ],
+   "retry": [
+    "Jeszcze raz, powoli — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/polski-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/polski-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/polski-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/polski-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "hindi-i-speak-from-zero": {
+   "lang": "hi-IN",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "नमस्ते",
+     "display": "नमस्ते · Namaste",
+     "meaning": "hello — the greeting with respect built in",
+     "audio": "audio/trainer/hindi-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "मेरा नाम बिल है",
+     "display": "मेरा नाम बिल है · Mera naam Bill hai",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/hindi-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "मैं मिशिगन से हूँ",
+     "display": "मैं मिशिगन से हूँ · Main Michigan se hoon",
+     "meaning": "I am from Michigan",
+     "audio": "audio/trainer/hindi-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "कृपया",
+     "display": "कृपया · Kripya",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/hindi-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "धन्यवाद",
+     "display": "धन्यवाद · Dhanyavaad",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/hindi-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "आपसे मिलकर खुशी हुई",
+     "display": "आपसे मिलकर खुशी हुई · Aapse milkar khushi hui",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/hindi-i-speak-from-zero/step-5.mp3"
+    }
+   ],
+   "praise": [
+    "बहुत अच्छा! Very good — exactly right."
+   ],
+   "retry": [
+    "एक बार और, धीरे — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/hindi-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/hindi-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/hindi-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/hindi-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "japanese-i-speak-from-zero": {
+   "lang": "ja-JP",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "こんにちは",
+     "display": "こんにちは · Konnichiwa",
+     "meaning": "good afternoon — the all-day greeting",
+     "audio": "audio/trainer/japanese-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "おはようございます",
+     "display": "おはようございます · Ohayō gozaimasu",
+     "meaning": "good morning, with respect",
+     "audio": "audio/trainer/japanese-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "わたしはビルです",
+     "display": "わたしはビルです · Watashi wa Bill desu",
+     "meaning": "I am Bill",
+     "audio": "audio/trainer/japanese-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "ミシガンからきました",
+     "display": "ミシガンからきました · Mishigan kara kimashita",
+     "meaning": "I come from Michigan",
+     "audio": "audio/trainer/japanese-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "おねがいします",
+     "display": "おねがいします · Onegaishimasu",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/japanese-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "ありがとうございます",
+     "display": "ありがとうございます · Arigatō gozaimasu",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/japanese-i-speak-from-zero/step-5.mp3"
+    },
+    {
+     "target": "はじめまして",
+     "display": "はじめまして · Hajimemashite",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/japanese-i-speak-from-zero/step-6.mp3"
+    }
+   ],
+   "praise": [
+    "とてもよくできました! Very good — exactly right."
+   ],
+   "retry": [
+    "もう一度、ゆっくり — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/japanese-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/japanese-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/japanese-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/japanese-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "mandarin-i-speak-from-zero": {
+   "lang": "zh-CN",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "你好",
+     "display": "你好 · Nǐ hǎo",
+     "meaning": "hello",
+     "audio": "audio/trainer/mandarin-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "早上好",
+     "display": "早上好 · Zǎoshang hǎo",
+     "meaning": "good morning",
+     "audio": "audio/trainer/mandarin-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "我叫比尔",
+     "display": "我叫比尔 · Wǒ jiào Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/mandarin-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "我从密歇根来",
+     "display": "我从密歇根来 · Wǒ cóng Mìxiègēn lái",
+     "meaning": "I come from Michigan",
+     "audio": "audio/trainer/mandarin-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "请",
+     "display": "请 · Qǐng",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/mandarin-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "谢谢",
+     "display": "谢谢 · Xièxie",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/mandarin-i-speak-from-zero/step-5.mp3"
+    },
+    {
+     "target": "很高兴认识你",
+     "display": "很高兴认识你 · Hěn gāoxìng rènshi nǐ",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/mandarin-i-speak-from-zero/step-6.mp3"
+    }
+   ],
+   "praise": [
+    "非常好! Very good — exactly right."
+   ],
+   "retry": [
+    "再来一次，慢慢说 — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/mandarin-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/mandarin-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/mandarin-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/mandarin-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "arabic-i-speak-from-zero": {
+   "lang": "ar-SA",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "السلام عليكم",
+     "display": "السلام عليكم · As-salāmu ʿalaykum",
+     "meaning": "peace be upon you — the greeting",
+     "audio": "audio/trainer/arabic-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "صباح الخير",
+     "display": "صباح الخير · Ṣabāḥ al-khayr",
+     "meaning": "good morning",
+     "audio": "audio/trainer/arabic-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "اسمي بيل",
+     "display": "اسمي بيل · Ismī Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/arabic-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "أنا من ميشيغان",
+     "display": "أنا من ميشيغان · Anā min Michigan",
+     "meaning": "I am from Michigan",
+     "audio": "audio/trainer/arabic-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "من فضلك",
+     "display": "من فضلك · Min faḍlik",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/arabic-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "شكراً",
+     "display": "شكراً · Shukran",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/arabic-i-speak-from-zero/step-5.mp3"
+    },
+    {
+     "target": "تشرفنا",
+     "display": "تشرفنا · Tasharrafnā",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/arabic-i-speak-from-zero/step-6.mp3"
+    }
+   ],
+   "praise": [
+    "أحسنت! Very good — exactly right."
+   ],
+   "retry": [
+    "مرة أخرى، ببطء — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/arabic-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/arabic-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/arabic-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/arabic-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "russian-i-speak-from-zero": {
+   "lang": "ru-RU",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "Здравствуйте",
+     "display": "Здравствуйте · Zdravstvuyte",
+     "meaning": "hello — the formal, all-day greeting",
+     "audio": "audio/trainer/russian-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "Доброе утро",
+     "display": "Доброе утро · Dobroe utro",
+     "meaning": "good morning",
+     "audio": "audio/trainer/russian-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "Меня зовут Билл",
+     "display": "Меня зовут Билл · Menya zovut Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/russian-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "Я из Мичигана",
+     "display": "Я из Мичигана · Ya iz Michigana",
+     "meaning": "I am from Michigan",
+     "audio": "audio/trainer/russian-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "Пожалуйста",
+     "display": "Пожалуйста · Pozhaluysta",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/russian-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "Спасибо",
+     "display": "Спасибо · Spasibo",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/russian-i-speak-from-zero/step-5.mp3"
+    },
+    {
+     "target": "Очень приятно",
+     "display": "Очень приятно · Ochyen priyatno",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/russian-i-speak-from-zero/step-6.mp3"
+    }
+   ],
+   "praise": [
+    "Очень хорошо! Very good — exactly right."
+   ],
+   "retry": [
+    "Ещё раз, медленно — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/russian-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/russian-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/russian-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/russian-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "korean-i-speak-from-zero": {
+   "lang": "ko-KR",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "안녕하세요",
+     "display": "안녕하세요 · Annyeonghaseyo",
+     "meaning": "hello — polite, all-day",
+     "audio": "audio/trainer/korean-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "저는 빌입니다",
+     "display": "저는 빌입니다 · Jeoneun Bill imnida",
+     "meaning": "I am Bill",
+     "audio": "audio/trainer/korean-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "미시간에서 왔습니다",
+     "display": "미시간에서 왔습니다 · Michigan-eseo wasseumnida",
+     "meaning": "I come from Michigan",
+     "audio": "audio/trainer/korean-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "주세요",
+     "display": "주세요 · Juseyo",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/korean-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "감사합니다",
+     "display": "감사합니다 · Gamsahamnida",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/korean-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "만나서 반갑습니다",
+     "display": "만나서 반갑습니다 · Mannaseo bangapseumnida",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/korean-i-speak-from-zero/step-5.mp3"
+    }
+   ],
+   "praise": [
+    "아주 잘했어요! Very good — exactly right."
+   ],
+   "retry": [
+    "한 번 더, 천천히 — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/korean-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/korean-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/korean-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/korean-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "turkish-i-speak-from-zero": {
+   "lang": "tr-TR",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "Merhaba",
+     "display": "Merhaba",
+     "meaning": "hello",
+     "audio": "audio/trainer/turkish-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "Günaydın",
+     "display": "Günaydın",
+     "meaning": "good morning",
+     "audio": "audio/trainer/turkish-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "Benim adım Bill",
+     "display": "Benim adım Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/turkish-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "Michigan'dan geliyorum",
+     "display": "Michigan'dan geliyorum",
+     "meaning": "I come from Michigan",
+     "audio": "audio/trainer/turkish-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "Lütfen",
+     "display": "Lütfen",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/turkish-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "Teşekkür ederim",
+     "display": "Teşekkür ederim",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/turkish-i-speak-from-zero/step-5.mp3"
+    },
+    {
+     "target": "Tanıştığımıza memnun oldum",
+     "display": "Tanıştığımıza memnun oldum",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/turkish-i-speak-from-zero/step-6.mp3"
+    }
+   ],
+   "praise": [
+    "Çok güzel! Very good — exactly right."
+   ],
+   "retry": [
+    "Bir daha, yavaş — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/turkish-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/turkish-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/turkish-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/turkish-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "kiswahili-i-speak-from-zero": {
+   "lang": "sw-KE",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "Jambo",
+     "display": "Jambo",
+     "meaning": "hello",
+     "audio": "audio/trainer/kiswahili-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "Habari za asubuhi",
+     "display": "Habari za asubuhi",
+     "meaning": "good morning",
+     "audio": "audio/trainer/kiswahili-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "Jina langu ni Bill",
+     "display": "Jina langu ni Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/kiswahili-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "Natoka Michigan",
+     "display": "Natoka Michigan",
+     "meaning": "I come from Michigan",
+     "audio": "audio/trainer/kiswahili-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "Tafadhali",
+     "display": "Tafadhali",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/kiswahili-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "Asante",
+     "display": "Asante",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/kiswahili-i-speak-from-zero/step-5.mp3"
+    },
+    {
+     "target": "Nimefurahi kukutana nawe",
+     "display": "Nimefurahi kukutana nawe",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/kiswahili-i-speak-from-zero/step-6.mp3"
+    }
+   ],
+   "praise": [
+    "Vizuri sana! Very good — exactly right."
+   ],
+   "retry": [
+    "Tena, pole pole — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/kiswahili-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/kiswahili-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/kiswahili-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/kiswahili-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "ukrainian-i-speak-from-zero": {
+   "lang": "uk-UA",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "Добрий день",
+     "display": "Добрий день · Dobryi den",
+     "meaning": "good day — the greeting",
+     "audio": "audio/trainer/ukrainian-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "Мене звуть Білл",
+     "display": "Мене звуть Білл · Mene zvut Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/ukrainian-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "Я з Мічигану",
+     "display": "Я з Мічигану · Ya z Michigana",
+     "meaning": "I am from Michigan",
+     "audio": "audio/trainer/ukrainian-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "Будь ласка",
+     "display": "Будь ласка · Bud laska",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/ukrainian-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "Дякую",
+     "display": "Дякую · Diakuiu",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/ukrainian-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "Дуже приємно",
+     "display": "Дуже приємно · Duzhe pryiemno",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/ukrainian-i-speak-from-zero/step-5.mp3"
+    }
+   ],
+   "praise": [
+    "Дуже добре! Very good — exactly right."
+   ],
+   "retry": [
+    "Ще раз, повільно — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/ukrainian-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/ukrainian-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/ukrainian-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/ukrainian-i-speak-from-zero/retry-0.mp3"
+   ]
+  },
+  "vietnamese-i-speak-from-zero": {
+   "lang": "vi-VN",
+   "welcome": "Welcome. In this room we speak first: I say it, then you say it back. Nothing moves on until it sounds right. Let us begin.",
+   "steps": [
+    {
+     "target": "Xin chào",
+     "display": "Xin chào",
+     "meaning": "hello",
+     "audio": "audio/trainer/vietnamese-i-speak-from-zero/step-0.mp3"
+    },
+    {
+     "target": "Chào buổi sáng",
+     "display": "Chào buổi sáng",
+     "meaning": "good morning",
+     "audio": "audio/trainer/vietnamese-i-speak-from-zero/step-1.mp3"
+    },
+    {
+     "target": "Tôi tên là Bill",
+     "display": "Tôi tên là Bill",
+     "meaning": "my name is Bill",
+     "audio": "audio/trainer/vietnamese-i-speak-from-zero/step-2.mp3"
+    },
+    {
+     "target": "Tôi đến từ Michigan",
+     "display": "Tôi đến từ Michigan",
+     "meaning": "I come from Michigan",
+     "audio": "audio/trainer/vietnamese-i-speak-from-zero/step-3.mp3"
+    },
+    {
+     "target": "Làm ơn",
+     "display": "Làm ơn",
+     "meaning": "please — the first key",
+     "audio": "audio/trainer/vietnamese-i-speak-from-zero/step-4.mp3"
+    },
+    {
+     "target": "Cảm ơn",
+     "display": "Cảm ơn",
+     "meaning": "thank you — the second key",
+     "audio": "audio/trainer/vietnamese-i-speak-from-zero/step-5.mp3"
+    },
+    {
+     "target": "Rất vui được gặp bạn",
+     "display": "Rất vui được gặp bạn",
+     "meaning": "pleased to meet you",
+     "audio": "audio/trainer/vietnamese-i-speak-from-zero/step-6.mp3"
+    }
+   ],
+   "praise": [
+    "Rất tốt! Very good — exactly right."
+   ],
+   "retry": [
+    "Một lần nữa, chậm thôi — once more, slowly."
+   ],
+   "slow_all": false,
+   "audioBase": "audio/trainer/vietnamese-i-speak-from-zero/",
+   "welcomeAudio": "audio/trainer/vietnamese-i-speak-from-zero/welcome.mp3",
+   "praiseAudio": [
+    "audio/trainer/vietnamese-i-speak-from-zero/praise-0.mp3"
+   ],
+   "retryAudio": [
+    "audio/trainer/vietnamese-i-speak-from-zero/retry-0.mp3"
+   ]
+  }
+ }
+}

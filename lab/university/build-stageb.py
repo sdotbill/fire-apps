@@ -38,7 +38,7 @@ curric = load_mod('stageb_curriculum', os.path.join(HERE, 'stageb-curriculum.py'
 VOICES = json.load(open('/opt/hatch/skills/voice-selector/voice_source.json'))
 BY_ID = {v['id']: v for v in VOICES}
 DAVE_VOICE = 'avocado_v2:MAI_03'
-CARMEN_VOICE = 'avocado_v2:vd2_r82_rep5k_2694_v068_28k_g5k'  # Stately Sailboat, F, Spanish accent
+CARMEN_VOICE = 'avocado_v2:vd3_vd2_r82_rep5k_2694_v068_28k_g5k'  # Determined Mast, F, Spanish accent — low-pitched (Bill, Nov 16 2026: Stately Sailboat was high-pitched/piping, too fast and not sultry enough; Determined Mast is the catalogue's low-pitched Spanish female voice). Synthesize Carmen at --speed 88 (slow clips 76).
 assert BY_ID[CARMEN_VOICE]['gender'] == 'F' and BY_ID[CARMEN_VOICE]['accent'] == 'Spanish'
 
 RNG = random.Random(20261116)
