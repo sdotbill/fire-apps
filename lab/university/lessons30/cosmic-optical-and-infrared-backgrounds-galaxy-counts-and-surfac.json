@@ -1,0 +1,177 @@
+{
+ "id": "cosmic-optical-and-infrared-backgrounds-galaxy-counts-and-surfac",
+ "title": "Cosmic Optical and Infrared Backgrounds, Galaxy Counts and Surface-Brightness Bounds",
+ "professor": "Professor Marek Nagy",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Marek Nagy, and this is Cosmic Optical and Infrared Backgrounds, Galaxy Counts and Surface-Brightness Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Marek Nagy, and this is Cosmic Optical and Infrared Backgrounds, Galaxy Counts and Surface-Brightness Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'A Baryon Budget for the Near-Infrared Excess: What a First-Stars Explanation Would Cost'. Its stated result: Computed budget study (2601 words). Headline computed values: I for fstar 0.001 nW = 0.2866; I for fstar 0.01 nW = 2.866; f star needed for 12nW = 0.04188; f star needed frac of baryons pct = 4.188; observed stellar baryon frac today pct = 6.",
+    "Now we go one step further into the material.",
+    "'Counts in an Expanding Volume: The Departure of the Count Slope from the Euclidean Value'. Its stated result: Computed budget study (2619 words). Headline computed values: cosmo count ratio 25 to 24 = 1.959; euclidean ratio per mag = 3.981; cosmo slope 24 25 dex per mag = 0.2919; cosmo slope 25 26 dex per mag = 0.2498. Verified against the public records API: exact title, state done, sole creator William Alexander Aldred with ORCID 0009-0000-1215-577X, CC BY 4.0 licence, and all four deposited files present.",
+    "The next piece is where this starts to come together.",
+    "'Diffuse Light Inside Halos: How Much Background Could Intrahalo Stars Supply?'. Its stated result: Computed budget study (2597 words). Headline computed values: I diffuse f0.10 nW = 0.8778; I diffuse f0.20 nW = 1.975; I diffuse f0.30 nW = 3.386; f needed for residual 5.56nW = 0.4131. Verified against the public records API: exact title, state done, sole creator William Alexander Aldred with ORCID 0009-0000-1215-577X, CC BY 4.0 licence, and all four deposited files present.",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'Faint Near-Infrared Counts Beyond the Hubble Reach: How Much Extra Light Would a JWST Excess Supply?'. Its stated result: Computed budget study (2733 words). Headline computed values: extra counts per deg2 28 31 = 1.232e+06; extra light nW = 0.06036; base light 28 31 nW = 0.0427; extra frac of band light = 1.414; extra frac of total ebl 15nW = 0.004024; counts per arcmin2 at 30 hst = 87.47; counts per arcmin2 at 30 jwst = 227.4.",
+    "We take the pieces in order, because each one stands on the last.",
+    "'Our Own Galaxy's Scattered Light: A Cirrus-Traced Budget for Diffuse Galactic Contamination of the Background'. Its stated result: Computed budget study (2630 words). Headline computed values: DGL at 1MJy nW = 4; DGL at 2MJy nW = 8; residual at 1MJy nW = 0.8; residual frac of ebl at 1MJy = 0.08; I100 max for residual below 1nW = 1.25. Verified against the public records API: exact title, state done, sole creator William Alexander Aldred with ORCID 0009-0000-1215-577X, CC BY 4.0 licence, and all four deposited files present.",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Resolved and Unresolved Far-Infrared Light: The Fraction of the 250-Micron Background in Counted Sources'. Its stated result: Computed budget study (2627 words). Headline computed values: total CIB 250um nW model = 10; resolved frac above 0.005Jy = 0.7538; resolved frac above 0.01Jy = 0.6427; resolved frac above 0.02Jy = 0.4994; resolved frac above 0.05Jy = 0.2745; resolved frac above 0.1Jy = 0.1186; confusion cut Jy = 0.02.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “A Baryon Budget for the Near-Infrared Excess: What a First-Stars Explanation Would Cost”. Its stated result is: Computed budget study (2601 words). Headline computed values: I for fstar 0.001 nW = 0.2866; I for fstar 0.01 nW = 2.866; f star needed for 12nW = 0.04188; f star needed frac of baryons pct = 4.188; observed stellar baryon frac today pct = 6. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'A Baryon Budget for the Near-Infrared Excess: What a First-Stars Explanation Would Cost'; 'Counts in an Expanding Volume: The Departure of the Count Slope from the Euclidean Value'; 'Diffuse Light Inside Halos: How Much Background Could Intrahalo Stars Supply?'; 'Faint Near-Infrared Counts Beyond the Hubble Reach: How Much Extra Light Would a JWST Excess Supply?'; 'Our Own Galaxy's Scattered Light: A Cirrus-Traced Budget for Diffuse Galactic Contamination of the Background'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 972,
+   "audio": "audio/lessons30/cosmic-optical-and-infrared-backgrounds-galaxy-counts-and-surfac/lesson-01.mp3",
+   "minutes": 20.13,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'A Baryon Budget for the Near-Infrared Excess: What a First-Stars Explanation Would Cost'. The result it reported gives a value for nW, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'A Baryon Budget for the Near-Infrared Excess: What a First-Stars Explanation Would Cost'. Its stated result: Computed budget study (2601 words). Headline computed values: I for fstar 0.001 nW = 0.2866; I for fstar 0.01 nW = 2.866; f star needed for 12nW = 0.04188; f star needed frac of baryons pct = 4.188; observed stellar baryon frac today pct = 6. And here is that same result with the words stripped away — just the quantities standing in a row: nW = 0.2866; star needed for 12nW = 0.04188; frac of baryons pct = 4.188. Find nW in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'A Baryon Budget for the Near-Infrared Excess: What a First-Stars Explanation Would Cost' stated its result. (2) That result pairs names with values: nW = 0.2866; star needed for 12nW = 0.04188; frac of baryons pct = 4.188. (3) This question asks for the value paired with nW. (4) In that row, nW stands beside 0.2866 — so the answer the lesson gives is 0.2866. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'A Baryon Budget for the Near-Infrared Excess: What a First-Stars Explanation Would Cost' reported a number for nW. What number did it report?",
+     "kind": "number",
+     "answer": 0.2866,
+     "disp": "0.2866",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.8778",
+      "1.959",
+      "0.2866",
+      "1.232e+06"
+     ],
+     "mcAnswer": "0.2866",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Counts in an Expanding Volume: The Departure of the Count Slope from the Euclidean Value'. The result it reported gives a value for ratio 25 to 24, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Counts in an Expanding Volume: The Departure of the Count Slope from the Euclidean Value'. Its stated result: Computed budget study (2619 words). Headline computed values: cosmo count ratio 25 to 24 = 1.959; euclidean ratio per mag = 3.981; cosmo slope 24 25 dex per mag = 0.2919; cosmo slope 25 26 dex per mag = 0.2498. Verified against the public records API: exact title, state done, sole creator William Alexander Aldred with ORCID 0009-0000-1215-577X, CC BY 4.0 licence, and all four deposited files present. And here is that same result with the words stripped away — just the quantities standing in a row: ratio 25 to 24 = 1.959; euclidean ratio per mag = 3.981; dex per mag = 0.2919. Find ratio 25 to 24 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Counts in an Expanding Volume: The Departure of the Count Slope from the Euclidean Value' stated its result. (2) That result pairs names with values: ratio 25 to 24 = 1.959; euclidean ratio per mag = 3.981; dex per mag = 0.2919. (3) This question asks for the value paired with ratio 25 to 24. (4) In that row, ratio 25 to 24 stands beside 1.959 — so the answer the lesson gives is 1.959. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Counts in an Expanding Volume: The Departure of the Count Slope from the Euclidean Value' reported a number for ratio 25 to 24. What number did it report?",
+     "kind": "number",
+     "answer": 1.959,
+     "disp": "1.959",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.2866",
+      "1.232e+06",
+      "0.8778",
+      "1.959"
+     ],
+     "mcAnswer": "1.959",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Diffuse Light Inside Halos: How Much Background Could Intrahalo Stars Supply?'. The result it reported gives a value for nW, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Diffuse Light Inside Halos: How Much Background Could Intrahalo Stars Supply?'. Its stated result: Computed budget study (2597 words). Headline computed values: I diffuse f0.10 nW = 0.8778; I diffuse f0.20 nW = 1.975; I diffuse f0.30 nW = 3.386; f needed for residual 5.56nW = 0.4131. Verified against the public records API: exact title, state done, sole creator William Alexander Aldred with ORCID 0009-0000-1215-577X, CC BY 4.0 licence, and all four deposited files present. And here is that same result with the words stripped away — just the quantities standing in a row: nW = 0.8778. Find nW in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Diffuse Light Inside Halos: How Much Background Could Intrahalo Stars Supply?' stated its result. (2) That result pairs names with values: nW = 0.8778. (3) This question asks for the value paired with nW. (4) In that row, nW stands beside 0.8778 — so the answer the lesson gives is 0.8778. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Diffuse Light Inside Halos: How Much Background Could Intrahalo Stars Supply?' reported a number for nW. What number did it report?",
+     "kind": "number",
+     "answer": 0.8778,
+     "disp": "0.8778",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1.959",
+      "0.2866",
+      "1.232e+06",
+      "0.8778"
+     ],
+     "mcAnswer": "0.8778",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Faint Near-Infrared Counts Beyond the Hubble Reach: How Much Extra Light Would a JWST Excess Supply?'. The result it reported gives a value for per deg2 28 31, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Faint Near-Infrared Counts Beyond the Hubble Reach: How Much Extra Light Would a JWST Excess Supply?'. Its stated result: Computed budget study (2733 words). Headline computed values: extra counts per deg2 28 31 = 1.232e+06; extra light nW = 0.06036; base light 28 31 nW = 0.0427; extra frac of band light = 1.414; extra frac of total ebl 15nW = 0.004024; counts per arcmin2 at 30 hst = 87.47; counts per arcmin2 at 30 jwst = 227.4. And here is that same result with the words stripped away — just the quantities standing in a row: per deg2 28 31 = 1.232e+06; extra light nW = 0.06036; light 28 31 nW = 0.0427. Find per deg2 28 31 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Faint Near-Infrared Counts Beyond the Hubble Reach: How Much Extra Light Would a JWST Excess Supply?' stated its result. (2) That result pairs names with values: per deg2 28 31 = 1.232e+06; extra light nW = 0.06036; light 28 31 nW = 0.0427. (3) This question asks for the value paired with per deg2 28 31. (4) In that row, per deg2 28 31 stands beside 1.232e+06 — so the answer the lesson gives is 1.232e+06. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Faint Near-Infrared Counts Beyond the Hubble Reach: How Much Extra Light Would a JWST Excess Supply?' reported a number for per deg2 28 31. What number did it report?",
+     "kind": "number",
+     "answer": 1232000.0,
+     "disp": "1.232e+06",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.8778",
+      "1.959",
+      "1.232e+06",
+      "0.2866"
+     ],
+     "mcAnswer": "1.232e+06",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Our Own Galaxy's Scattered Light: A Cirrus-Traced Budget for Diffuse Galactic Contamination of the Background'. The result it reported gives a value for DGL at 1MJy nW, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Our Own Galaxy's Scattered Light: A Cirrus-Traced Budget for Diffuse Galactic Contamination of the Background'. Its stated result: Computed budget study (2630 words). Headline computed values: DGL at 1MJy nW = 4; DGL at 2MJy nW = 8; residual at 1MJy nW = 0.8; residual frac of ebl at 1MJy = 0.08; I100 max for residual below 1nW = 1.25. Verified against the public records API: exact title, state done, sole creator William Alexander Aldred with ORCID 0009-0000-1215-577X, CC BY 4.0 licence, and all four deposited files present. And here is that same result with the words stripped away — just the quantities standing in a row: DGL at 1MJy nW = 4; DGL at 2MJy nW = 8; residual at 1MJy nW = 0.8. Find DGL at 1MJy nW in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Our Own Galaxy's Scattered Light: A Cirrus-Traced Budget for Diffuse Galactic Contamination of the Background' stated its result. (2) That result pairs names with values: DGL at 1MJy nW = 4; DGL at 2MJy nW = 8; residual at 1MJy nW = 0.8. (3) This question asks for the value paired with DGL at 1MJy nW. (4) In that row, DGL at 1MJy nW stands beside 4 — so the answer the lesson gives is 4. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Our Own Galaxy's Scattered Light: A Cirrus-Traced Budget for Diffuse Galactic Contamination of the Background' reported a number for DGL at 1MJy nW. What number did it report?",
+     "kind": "number",
+     "answer": 4.0,
+     "disp": "4",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.8778",
+      "1.959",
+      "4",
+      "0.2866"
+     ],
+     "mcAnswer": "4",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “A Baryon Budget for the Near-Infrared Excess: What a First-Stars Explanation Would Cost”. Its stated result is: Computed budget study (2601 words). Headline computed values: I for fstar 0.001 nW = 0.2866; I for fstar 0.01 nW = 2.866; f star needed for 12nW = 0.04188; f star needed frac of baryons pct = 4.188; observed stellar baryon frac today pct = 6. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “A Baryon Budget for the Near-Infrared Excess: What a First-Stars Explanation Would Cost”. Its stated result is: Computed budget study (2601 words). Headline computed values: I for fstar 0.001 nW = 0.2866; I for fstar 0.01 nW = 2.866; f star needed for 12nW = 0.04188; f star needed frac of baryons pct = 4.188; observed stellar baryon frac today pct = 6. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}

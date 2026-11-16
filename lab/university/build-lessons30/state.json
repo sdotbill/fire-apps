@@ -269,5 +269,12 @@
    "audio": "audio/lessons30/dwarf-galaxies-ultra-faint-satellites-and-low-mass-halo-structur/lesson-01.mp3",
    "minutes": 5.71
   }
+ },
+ "cosmic-optical-and-infrared-backgrounds-galaxy-counts-and-surfac": {
+  "lesson-01": {
+   "hash": "78b26c499698c44f2eefc907b3d0fc3d8685d387",
+   "audio": "audio/lessons30/cosmic-optical-and-infrared-backgrounds-galaxy-counts-and-surfac/lesson-01.mp3",
+   "minutes": 20.13
+  }
  }
 }

@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Marek Nagy, and this is Cosmic Optical and Infrared Backgrounds, Galaxy Counts and Surface-Brightness Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Marek Nagy, and this is Cosmic Optical and Infrared Backgrounds, Galaxy Counts and Surface-Brightness Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'A Baryon Budget for the Near-Infrared Excess: What a First-Stars Explanation Would Cost'. Its stated result: Computed budget study (2601 words). Headline computed values: I for fstar 0.001 nW = 0.2866; I for fstar 0.01 nW = 2.866; f star needed for 12nW = 0.04188; f star needed frac of baryons pct = 4.188; observed stellar baryon frac today pct = 6.
+
+Now we go one step further into the material.
+
+'Counts in an Expanding Volume: The Departure of the Count Slope from the Euclidean Value'. Its stated result: Computed budget study (2619 words). Headline computed values: cosmo count ratio 25 to 24 = 1.959; euclidean ratio per mag = 3.981; cosmo slope 24 25 dex per mag = 0.2919; cosmo slope 25 26 dex per mag = 0.2498. Verified against the public records API: exact title, state done, sole creator William Alexander Aldred with ORCID 0009-0000-1215-577X, CC BY 4.0 licence, and all four deposited files present.
+
+The next piece is where this starts to come together.
+
+'Diffuse Light Inside Halos: How Much Background Could Intrahalo Stars Supply?'. Its stated result: Computed budget study (2597 words). Headline computed values: I diffuse f0.10 nW = 0.8778; I diffuse f0.20 nW = 1.975; I diffuse f0.30 nW = 3.386; f needed for residual 5.56nW = 0.4131. Verified against the public records API: exact title, state done, sole creator William Alexander Aldred with ORCID 0009-0000-1215-577X, CC BY 4.0 licence, and all four deposited files present.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Faint Near-Infrared Counts Beyond the Hubble Reach: How Much Extra Light Would a JWST Excess Supply?'. Its stated result: Computed budget study (2733 words). Headline computed values: extra counts per deg2 28 31 = 1.232e+06; extra light nW = 0.06036; base light 28 31 nW = 0.0427; extra frac of band light = 1.414; extra frac of total ebl 15nW = 0.004024; counts per arcmin2 at 30 hst = 87.47; counts per arcmin2 at 30 jwst = 227.4.
+
+We take the pieces in order, because each one stands on the last.
+
+'Our Own Galaxy's Scattered Light: A Cirrus-Traced Budget for Diffuse Galactic Contamination of the Background'. Its stated result: Computed budget study (2630 words). Headline computed values: DGL at 1MJy nW = 4; DGL at 2MJy nW = 8; residual at 1MJy nW = 0.8; residual frac of ebl at 1MJy = 0.08; I100 max for residual below 1nW = 1.25. Verified against the public records API: exact title, state done, sole creator William Alexander Aldred with ORCID 0009-0000-1215-577X, CC BY 4.0 licence, and all four deposited files present.
+
+Stay with me, because the next piece builds directly on that one.
+
+'Resolved and Unresolved Far-Infrared Light: The Fraction of the 250-Micron Background in Counted Sources'. Its stated result: Computed budget study (2627 words). Headline computed values: total CIB 250um nW model = 10; resolved frac above 0.005Jy = 0.7538; resolved frac above 0.01Jy = 0.6427; resolved frac above 0.02Jy = 0.4994; resolved frac above 0.05Jy = 0.2745; resolved frac above 0.1Jy = 0.1186; confusion cut Jy = 0.02.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “A Baryon Budget for the Near-Infrared Excess: What a First-Stars Explanation Would Cost”. Its stated result is: Computed budget study (2601 words). Headline computed values: I for fstar 0.001 nW = 0.2866; I for fstar 0.01 nW = 2.866; f star needed for 12nW = 0.04188; f star needed frac of baryons pct = 4.188; observed stellar baryon frac today pct = 6. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'A Baryon Budget for the Near-Infrared Excess: What a First-Stars Explanation Would Cost'; 'Counts in an Expanding Volume: The Departure of the Count Slope from the Euclidean Value'; 'Diffuse Light Inside Halos: How Much Background Could Intrahalo Stars Supply?'; 'Faint Near-Infrared Counts Beyond the Hubble Reach: How Much Extra Light Would a JWST Excess Supply?'; 'Our Own Galaxy's Scattered Light: A Cirrus-Traced Budget for Diffuse Galactic Contamination of the Background'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.
