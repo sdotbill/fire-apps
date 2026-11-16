@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper '47 Tucanae: Pulsar Timing, Velocity Dispersion and the Central Mass Budget'. The result it reported gives a value for central_mass_solar, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: '47 Tucanae: Pulsar Timing, Velocity Dispersion and the Central Mass Budget'. Its stated result: Headline result (values verbatim from results.json): central_mass_solar = 2300; sphere_of_influence_pc = 0.06869728374305084; eddington_luminosity_erg_s = 2.898e+41; eddington_ratio = 1.725327812284334e-10; bondi_rate_solar_per_yr = 1.155706730726586e-05; fundamental_plane_radio_erg_s = 2.352500447408869e+28. And here is that same result with the words stripped away — just the quantities standing in a row: central_mass_solar = 2300; sphere_of_influence_pc = 0.06869728374305084; eddington_luminosity_erg_s = 2.898e+41. Find central_mass_solar in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper '47 Tucanae: Pulsar Timing, Velocity Dispersion and the Central Mass Budget' stated its result. (2) That result pairs names with values: central_mass_solar = 2300; sphere_of_influence_pc = 0.06869728374305084; eddington_luminosity_erg_s = 2.898e+41. (3) This question asks for the value paired with central_mass_solar. (4) In that row, central_mass_solar stands beside 2300 — so the answer the lesson gives is 2300. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper '47 Tucanae: Pulsar Timing, Velocity Dispersion and the Central Mass Budget' reported a number for central_mass_solar. What number did it report?",
+  "kind": "number",
+  "answer": 2300.0,
+  "disp": "2300",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "2300",
+   "2000",
+   "20000",
+   "1000000"
+  ],
+  "mcAnswer": "2300",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'HLX-1 in ESO 243-49: Outburst Luminosity, State Transitions and the Mass Scale'. The result it reported gives a value for central_mass_solar, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'HLX-1 in ESO 243-49: Outburst Luminosity, State Transitions and the Mass Scale'. Its stated result: Headline result (values verbatim from results.json): central_mass_solar = 20000; sphere_of_influence_pc = 0.03440837863999764; eddington_luminosity_erg_s = 2.52e+42; eddington_ratio = 3.9682539682539684; bondi_rate_solar_per_yr = 0.0008738803256911802; fundamental_plane_radio_erg_s = 7.67014186489349e+35. And here is that same result with the words stripped away — just the quantities standing in a row: central_mass_solar = 20000; sphere_of_influence_pc = 0.03440837863999764; eddington_luminosity_erg_s = 2.52e+42. Find central_mass_solar in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'HLX-1 in ESO 243-49: Outburst Luminosity, State Transitions and the Mass Scale' stated its result. (2) That result pairs names with values: central_mass_solar = 20000; sphere_of_influence_pc = 0.03440837863999764; eddington_luminosity_erg_s = 2.52e+42. (3) This question asks for the value paired with central_mass_solar. (4) In that row, central_mass_solar stands beside 20000 — so the answer the lesson gives is 20000. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'HLX-1 in ESO 243-49: Outburst Luminosity, State Transitions and the Mass Scale' reported a number for central_mass_solar. What number did it report?",
+  "kind": "number",
+  "answer": 20000.0,
+  "disp": "20000",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "20000",
+   "2000",
+   "1000000",
+   "2300"
+  ],
+  "mcAnswer": "20000",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Henize 2-10: A Compact Radio Nucleus in a Dwarf Starburst and Its Mass Caveat'. The result it reported gives a value for central_mass_solar, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Henize 2-10: A Compact Radio Nucleus in a Dwarf Starburst and Its Mass Caveat'. Its stated result: Headline result (values verbatim from results.json): central_mass_solar = 1000000; sphere_of_influence_pc = 2.6881545812498153; eddington_luminosity_erg_s = 1.26e+44; eddington_ratio = 7.936507936507937e-05; bondi_rate_solar_per_yr = 2.18470081422795; fundamental_plane_radio_erg_s = 2.5703957827688435e+35. And here is that same result with the words stripped away — just the quantities standing in a row: central_mass_solar = 1000000; sphere_of_influence_pc = 2.6881545812498153; eddington_luminosity_erg_s = 1.26e+44. Find central_mass_solar in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Henize 2-10: A Compact Radio Nucleus in a Dwarf Starburst and Its Mass Caveat' stated its result. (2) That result pairs names with values: central_mass_solar = 1000000; sphere_of_influence_pc = 2.6881545812498153; eddington_luminosity_erg_s = 1.26e+44. (3) This question asks for the value paired with central_mass_solar. (4) In that row, central_mass_solar stands beside 1000000 — so the answer the lesson gives is 1000000. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Henize 2-10: A Compact Radio Nucleus in a Dwarf Starburst and Its Mass Caveat' reported a number for central_mass_solar. What number did it report?",
+  "kind": "number",
+  "answer": 1000000.0,
+  "disp": "1000000",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "2300",
+   "20000",
+   "2000",
+   "1000000"
+  ],
+  "mcAnswer": "1000000",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Intermediate-Mass Black Hole Mergers: Chirp Mass, Strain and the LISA Detection Budget'. The result it reported gives a value for central_mass_solar, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Intermediate-Mass Black Hole Mergers: Chirp Mass, Strain and the LISA Detection Budget'. Its stated result: Headline result (values verbatim from results.json): central_mass_solar = 2000; sphere_of_influence_pc = 0.021505236649998524; eddington_luminosity_erg_s = 2.52e+41; eddington_ratio = 3.968253968253968e-08; bondi_rate_solar_per_yr = 8.738803256911803e-06; fundamental_plane_radio_erg_s = 5.067612475423897e+29; chirp_mass_solar = 870.5505632961239. And here is that same result with the words stripped away — just the quantities standing in a row: central_mass_solar = 2000; sphere_of_influence_pc = 0.021505236649998524; eddington_luminosity_erg_s = 2.52e+41. Find central_mass_solar in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Intermediate-Mass Black Hole Mergers: Chirp Mass, Strain and the LISA Detection Budget' stated its result. (2) That result pairs names with values: central_mass_solar = 2000; sphere_of_influence_pc = 0.021505236649998524; eddington_luminosity_erg_s = 2.52e+41. (3) This question asks for the value paired with central_mass_solar. (4) In that row, central_mass_solar stands beside 2000 — so the answer the lesson gives is 2000. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Intermediate-Mass Black Hole Mergers: Chirp Mass, Strain and the LISA Detection Budget' reported a number for central_mass_solar. What number did it report?",
+  "kind": "number",
+  "answer": 2000.0,
+  "disp": "2000",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "2300",
+   "2000",
+   "1000000",
+   "20000"
+  ],
+  "mcAnswer": "2000",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'M15: Central Mass Concentration, Pulsar Accelerations and the Compact-Object Budget'. The result it reported gives a value for central_mass_solar, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'M15: Central Mass Concentration, Pulsar Accelerations and the Compact-Object Budget'. Its stated result: Headline result (values verbatim from results.json): central_mass_solar = 1700; sphere_of_influence_pc = 0.037305002352038256; eddington_luminosity_erg_s = 2.142e+41; eddington_ratio = 4.6685340802987856e-08; bondi_rate_solar_per_yr = 6.313785353118777e-06; fundamental_plane_radio_erg_s = 4.4642669750777184e+29. And here is that same result with the words stripped away — just the quantities standing in a row: central_mass_solar = 1700; sphere_of_influence_pc = 0.037305002352038256; eddington_luminosity_erg_s = 2.142e+41. Find central_mass_solar in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'M15: Central Mass Concentration, Pulsar Accelerations and the Compact-Object Budget' stated its result. (2) That result pairs names with values: central_mass_solar = 1700; sphere_of_influence_pc = 0.037305002352038256; eddington_luminosity_erg_s = 2.142e+41. (3) This question asks for the value paired with central_mass_solar. (4) In that row, central_mass_solar stands beside 1700 — so the answer the lesson gives is 1700. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'M15: Central Mass Concentration, Pulsar Accelerations and the Compact-Object Budget' reported a number for central_mass_solar. What number did it report?",
+  "kind": "number",
+  "answer": 1700.0,
+  "disp": "1700",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "1000000",
+   "20000",
+   "2300",
+   "1700"
+  ],
+  "mcAnswer": "1700",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “47 Tucanae: Pulsar Timing, Velocity Dispersion and the Central Mass Budget”. Its stated result is: Headline result (values verbatim from results.json): central_mass_solar = 2300; sphere_of_influence_pc = 0.06869728374305084; eddington_luminosity_erg_s = 2.898e+41; eddington_ratio = 1.725327812284334e-10; bondi_rate_solar_per_yr = 1.155706730726586e-05; fundamental_plane_radio_erg_s = 2.3525004474 (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “47 Tucanae: Pulsar Timing, Velocity Dispersion and the Central Mass Budget”. Its stated result is: Headline result (values verbatim from results.json): central_mass_solar = 2300; sphere_of_influence_pc = 0.06869728374305084; eddington_luminosity_erg_s = 2.898e+41; eddington_ratio = 1.725327812284334e-10; bondi_rate_solar_per_yr = 1.155706730726586e-05; fundamental_plane_radio_erg_s = 2.3525004474 (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]

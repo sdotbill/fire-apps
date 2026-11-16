@@ -493,5 +493,12 @@
    "audio": "audio/lessons30/solar-and-reactor-neutrinos-production-oscillation-and-detection/lesson-01.mp3",
    "minutes": 10.37
   }
+ },
+ "intermediate-mass-black-holes-in-dense-clusters-and-dwarf-nuclei": {
+  "lesson-01": {
+   "hash": "5b148d44e20c1d0695a34d2918086e64b22d6054",
+   "audio": "audio/lessons30/intermediate-mass-black-holes-in-dense-clusters-and-dwarf-nuclei/lesson-01.mp3",
+   "minutes": 16.94
+  }
  }
 }
