@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exolex University — The Catalogue &amp; The Classrooms</title>
+<style>
+  :root{
+    --paper:#faf7ef; --panel:#fffdf6; --gold:#c9a227; --gold-hi:#d9b23a;
+    --gold-deep:#8a6508; --line:#e9e2cd; --ink:#262019; --ink-soft:#5c5340;
+    --board:#26332a; --board-edge:#6d4c2a; --chalk:#f4f1e2; --desk:#7a5a34;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:Georgia,'Times New Roman',serif;line-height:1.5}
+  a{color:var(--gold-deep)}
+
+  /* ---------- top bar ---------- */
+  #topbar{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;
+    align-items:center;gap:8px 14px;padding:10px 14px;
+    background:rgba(255,253,246,.96);border-bottom:2px solid var(--gold)}
+  #topbar .brand{font-weight:bold;letter-spacing:.12em;color:var(--gold-deep)}
+  #topbar .stat{font-size:.85rem;color:var(--ink-soft)}
+  #topbar .stat b{color:var(--gold-deep)}
+  #topbar .spacer{flex:1}
+  .hbtn{background:var(--panel);border:1px solid var(--gold);color:var(--gold-deep);
+    border-radius:20px;padding:5px 13px;font-family:inherit;font-size:.82rem;
+    cursor:pointer;text-decoration:none;display:inline-block}
+  .hbtn:hover{background:var(--gold);color:#fff}
+  button.act{background:var(--gold);color:#fff;border:0;border-radius:4px;
+    padding:8px 16px;font-family:inherit;font-size:.92rem;cursor:pointer}
+  button.act:hover{background:var(--gold-hi)}
+  button.act:disabled{background:#cbbd8d;cursor:default}
+  button.ghost{background:var(--panel);color:var(--gold-deep);border:1px solid var(--gold);
+    border-radius:4px;padding:8px 16px;font-family:inherit;font-size:.92rem;cursor:pointer}
+  button.ghost:hover{background:var(--gold);color:#fff}
+
+  .wrap{max-width:1060px;margin:0 auto;padding:18px 14px 60px}
+  h1{color:var(--gold-deep);letter-spacing:.06em;margin:6px 0 4px;font-size:1.6rem}
+  .lede{color:var(--ink-soft);max-width:760px}
+  .totals{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+  .totals .t{border:1px solid var(--line);border-top:3px solid var(--gold);
+    background:var(--panel);border-radius:6px;padding:10px 16px;min-width:130px}
+  .totals .t .n{font-size:1.5rem;color:var(--gold-deep);font-weight:bold;line-height:1.1}
+  .totals .t .k{font-size:.75rem;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-soft)}
+
+  /* ---------- catalogue ---------- */
+  #search{width:100%;padding:11px 14px;font-family:inherit;font-size:1rem;
+    border:1px solid var(--gold);border-radius:6px;background:var(--panel);margin:6px 0 18px}
+  .groupLabel{margin:26px 0 4px;font-size:.8rem;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--ink-soft)}
+  details.section{background:var(--panel);border:1px solid var(--line);
+    border-top:3px solid var(--gold);border-radius:6px;margin:10px 0;padding:0 18px}
+  details.section summary{cursor:pointer;padding:14px 0;list-style:none}
+  details.section summary::-webkit-details-marker{display:none}
+  details.section summary .sname{font-size:1.15rem;color:var(--gold-deep);font-weight:bold}
+  details.section summary .smeta{display:block;font-size:.86rem;color:var(--ink-soft);margin-top:2px}
+  .classRow{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline;
+    border-top:1px solid var(--line);padding:10px 0}
+  .classRow .ct{flex:1;min-width:220px;font-size:.98rem}
+  .classRow .cc{font-size:.82rem;color:var(--ink-soft);white-space:nowrap}
+  .classRow .src{font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;
+    color:var(--gold-deep);border:1px solid var(--line);border-radius:10px;padding:1px 8px}
+  .classRow button{white-space:nowrap}
+  #noMatch{display:none;color:var(--ink-soft);font-style:italic;padding:12px 0}
+
+  /* ---------- classroom ---------- */
+  #viewClassroom{display:none}
+  #crumb{font-size:.88rem;color:var(--ink-soft);margin-bottom:10px}
+  .scene{display:flex;gap:16px;align-items:stretch}
+  @media (max-width:720px){.scene{flex-direction:column}}
+  #profCard{flex:0 0 208px;background:var(--panel);border:1px solid var(--line);
+    border-top:3px solid var(--gold);border-radius:6px;padding:12px;text-align:center}
+  @media (max-width:720px){#profCard{flex:none;display:flex;gap:14px;text-align:left;align-items:center}}
+  #profCard svg{width:150px;height:180px}
+  @media (max-width:720px){#profCard svg{width:84px;height:100px}}
+  #profCard .pname{font-weight:bold;color:var(--gold-deep);margin-top:6px}
+  #profCard .psec{font-size:.8rem;color:var(--ink-soft)}
+  #profCard .pvoice{font-size:.74rem;color:var(--ink-soft);font-style:italic;margin-top:4px}
+  #boardWrap{flex:1;background:var(--board-edge);border-radius:8px;padding:10px;
+    box-shadow:0 10px 30px rgba(38,32,25,.25);min-height:340px;display:flex}
+  #board{flex:1;background:var(--board);border-radius:4px;padding:20px 24px;
+    overflow:auto;max-height:520px}
+  #board .btitle{font-family:'Segoe Print','Bradley Hand',cursive;color:var(--gold-hi);
+    font-size:1.25rem;margin:0 0 4px}
+  #board .bsub{font-family:'Segoe Print','Bradley Hand',cursive;color:rgba(244,241,226,.65);
+    font-size:.9rem;margin:0 0 14px}
+  #board p.chalk{font-family:'Segoe Print','Bradley Hand',cursive;color:var(--chalk);
+    font-size:1.02rem;line-height:1.65;margin:0 0 10px;opacity:0;transform:translateY(4px);
+    transition:opacity .7s ease,transform .7s ease}
+  #board p.chalk.on{opacity:1;transform:none}
+  #board p.chalk.worked{color:#ffe9a8}
+  .deskbar{margin-top:16px;background:linear-gradient(180deg,#8a6a3e,var(--desk));
+    border-radius:6px;padding:10px 12px;display:flex;flex-wrap:wrap;gap:8px;
+    box-shadow:0 6px 16px rgba(38,32,25,.25)}
+  .deskbar button{background:rgba(255,253,246,.12);color:#fdf6dd;border:1px solid rgba(255,253,246,.45);
+    border-radius:4px;padding:8px 15px;font-family:inherit;font-size:.9rem;cursor:pointer}
+  .deskbar button:hover,.deskbar button.sel{background:var(--gold);color:#fff;border-color:var(--gold)}
+  .deskbar .clock{margin-left:auto;color:#fdf6dd;font-size:.85rem;align-self:center}
+  .panel{display:none;background:var(--panel);border:1px solid var(--line);
+    border-top:3px solid var(--gold);border-radius:6px;padding:16px 20px;margin-top:12px}
+  .panel.open{display:block}
+  .panel h3{margin:0 0 8px;color:var(--gold-deep);font-size:1rem}
+  .panel p{margin:0 0 9px;font-size:.94rem}
+  .note{font-size:.82rem;color:var(--ink-soft);font-style:italic}
+  .syl{margin:0;padding:0;list-style:none;font-size:.9rem}
+  .syl li{border-top:1px solid var(--line);padding:7px 0}
+  .syl .doi{font-size:.78rem;color:var(--ink-soft)}
+  .syl .res{display:block;font-size:.84rem;color:var(--ink-soft);margin-top:2px}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0 12px}
+  .chip{background:var(--paper);border:1px solid var(--gold);color:var(--gold-deep);
+    border-radius:16px;padding:5px 12px;font-family:inherit;font-size:.83rem;cursor:pointer}
+  .chip:hover{background:var(--gold);color:#fff}
+  .bubble{border:1px solid var(--line);border-radius:6px;padding:10px 14px;margin:8px 0;background:var(--paper)}
+  .bubble .who{font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-deep)}
+  .bubble.you{background:#f3ecd9}
+  #askRow{display:flex;gap:8px;margin-top:10px}
+  #askInput{flex:1;padding:9px 12px;font-family:inherit;font-size:.95rem;
+    border:1px solid var(--gold);border-radius:4px;background:#fff}
+  textarea#hwInput{width:100%;min-height:90px;padding:10px 12px;font-family:inherit;
+    font-size:.95rem;border:1px solid var(--gold);border-radius:4px;background:#fff}
+  #toast{position:fixed;z-index:60;bottom:52px;left:50%;transform:translateX(-50%);
+    background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:22px;
+    font-size:.9rem;display:none;max-width:calc(100vw - 40px);text-align:center}
+  #loadErr{display:none;background:#fdf3e3;border:1px solid var(--gold);border-radius:6px;padding:14px 18px}
+</style>
+</head>
+<body>
+
+<div id="topbar">
+  <span class="brand">EXOLEX UNIVERSITY</span>
+  <span class="stat">My hours <b id="myHours">0 min</b></span>
+  <span class="spacer"></span>
+  <a class="hbtn" href="../room/">← The Laboratory</a>
+  <a class="hbtn" href="../">The flat bench</a>
+</div>
+
+<!-- ================= CATALOGUE ================= -->
+<div id="viewCatalogue">
+  <div class="wrap">
+    <h1>The Catalogue — every class in the University</h1>
+    <p class="lede">You knocked, the door opened. These are the classes of
+      Exolex University, in sections. The College sections are built from
+      the corpus's own index: each class is a topic, and its syllabus is
+      the real papers — titles and DOIs, exactly as indexed. Pick a class,
+      shut the door, and turn around: you are in its classroom.</p>
+    <div class="totals" id="totals"></div>
+    <input id="search" type="search" placeholder="Search classes and papers — try &lsquo;bounce&rsquo;, &lsquo;neutrino&rsquo;, &lsquo;French&rsquo;&hellip;" aria-label="Search the catalogue">
+    <p id="noMatch">No class matches that — yet. Try a shorter word.</p>
+    <div id="sections"></div>
+    <p class="note" id="buildNote"></p>
+  </div>
+</div>
+
+<!-- ================= CLASSROOM ================= -->
+<div id="viewClassroom">
+  <div class="wrap">
+    <div id="crumb"><a href="#" id="backDoor">← Shut the door — back to the catalogue</a>
+      · <span id="crumbClass"></span></div>
+    <div class="scene">
+      <div id="profCard"></div>
+      <div id="boardWrap"><div id="board">
+        <p class="btitle" id="boardTitle"></p>
+        <p class="bsub" id="boardSub"></p>
+        <div id="boardLines"></div>
+      </div></div>
+    </div>
+
+    <div class="deskbar">
+      <button data-panel="lesson" class="sel">The lesson</button>
+      <button data-panel="syllabus">Syllabus</button>
+      <button data-panel="ask">Ask the professor</button>
+      <button data-panel="homework">Homework</button>
+      <span class="clock">In class <b id="classClock">0:00</b> · this time is logged when you leave</span>
+    </div>
+
+    <div class="panel open" id="panel-lesson">
+      <h3>The opening lesson</h3>
+      <p id="lessonIntro"></p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button class="act" id="btnPlay">▶ Hear the lesson</button>
+        <button class="ghost" id="btnBoardStep">Write it on the board, line by line</button>
+      </div>
+      <p class="note" id="lessonNote"></p>
+      <audio id="lessonAudio" preload="metadata" style="width:100%;margin-top:8px;display:none" controls></audio>
+    </div>
+
+    <div class="panel" id="panel-syllabus">
+      <h3>The syllabus</h3>
+      <p id="sylIntro"></p>
+      <ul class="syl" id="sylList"></ul>
+      <button class="ghost" id="btnSylMore" style="display:none;margin-top:10px">Show the whole syllabus</button>
+    </div>
+
+    <div class="panel" id="panel-ask">
+      <h3>Ask the professor</h3>
+      <p class="note">Prepared answers, written from this class's real
+        material — the professor answers these herself, in her own words.
+        Live questions arrive with the University's next stage.</p>
+      <div class="chips" id="askChips"></div>
+      <div id="askLog"></div>
+      <div id="askRow">
+        <input id="askInput" type="text" placeholder="Ask about the class, the syllabus, the homework…">
+        <button class="act" id="btnAsk">Ask</button>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-homework">
+      <h3>Homework — set by your professor</h3>
+      <p id="hwQ"></p>
+      <textarea id="hwInput" placeholder="Write your answer here. It stays on this device — the learning is in the writing, and in the comparison that follows."></textarea>
+      <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+        <button class="act" id="btnHw">Hand it in &amp; see the worked answer</button>
+      </div>
+      <div id="hwDone" style="display:none;margin-top:12px">
+        <p><b>The worked answer</b> — compare yours with it, honestly.
+          That comparison is where the learning is.</p>
+        <p id="hwWorked"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script src="uni-core.js"></script>
+<script>
+(function () {
+  'use strict';
+  var U = window.UniCore;
+  var $ = function (id) { return document.getElementById(id); };
+  var storage = window.localStorage;
+
+  var toastTimer = null;
+  function showToast(msg) {
+    var t = $('toast');
+    t.textContent = msg; t.style.display = 'block';
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { t.style.display = 'none'; }, 5200);
+  }
+  function refreshHours() {
+    var s = U.summarizeLog(U.loadLog(storage));
+    $('myHours').textContent = U.formatMinutes(s.totalMinutes);
+  }
+  refreshHours();
+
+  /* ================= professor portrait (stylised, drawn) ================= */
+  function portraitSVG(p) {
+    var skin = p.skin, hair = p.hair, outfit = p.outfit, style = p.hairStyle;
+    var back = '', front = '';
+    if (style === 'bob') back = '<rect x="58" y="52" width="84" height="92" rx="30" fill="' + hair + '"/>';
+    if (style === 'waves') back = '<path d="M56 70 Q50 150 66 168 L80 168 Q66 120 70 84 Z M144 70 Q150 150 134 168 L120 168 Q134 120 130 84 Z" fill="' + hair + '"/><path d="M60 78 Q100 30 140 78 Q142 52 100 44 Q58 52 60 78Z" fill="' + hair + '"/>';
+    if (style === 'straight') back = '<rect x="60" y="54" width="16" height="96" rx="8" fill="' + hair + '"/><rect x="124" y="54" width="16" height="96" rx="8" fill="' + hair + '"/><path d="M62 74 Q100 34 138 74 Q138 52 100 48 Q62 52 62 74Z" fill="' + hair + '"/>';
+    if (style === 'curls') { back = ''; [62, 80, 100, 120, 138].forEach(function (x, i) { back += '<circle cx="' + x + '" cy="' + (52 + (i % 2) * 8) + '" r="15" fill="' + hair + '"/>'; }); back += '<circle cx="58" cy="86" r="13" fill="' + hair + '"/><circle cx="142" cy="86" r="13" fill="' + hair + '"/><circle cx="60" cy="112" r="11" fill="' + hair + '"/><circle cx="140" cy="112" r="11" fill="' + hair + '"/>'; }
+    if (style === 'bun') front = '<circle cx="100" cy="42" r="15" fill="' + hair + '"/><path d="M64 76 Q100 40 136 76 Q134 56 100 52 Q66 56 64 76Z" fill="' + hair + '"/>';
+    if (style === 'ponytail') front = '<path d="M64 76 Q100 40 136 76 Q134 56 100 52 Q66 56 64 76Z" fill="' + hair + '"/><path d="M134 66 Q156 96 146 140 Q136 148 130 138 Q138 100 128 74Z" fill="' + hair + '"/>';
+    if (style === 'bob' || style === 'waves') front = '<path d="M64 78 Q100 42 136 78 Q134 58 100 54 Q66 58 64 78Z" fill="' + hair + '"/>';
+    var glasses = p.glasses ?
+      '<g stroke="#3a3226" stroke-width="2.4" fill="none"><circle cx="85" cy="96" r="11"/><circle cx="115" cy="96" r="11"/><path d="M96 96 L104 96"/></g>' : '';
+    return '<svg viewBox="0 0 200 240" role="img" aria-label="Portrait of ' + p.name + '">' +
+      '<rect x="4" y="4" width="192" height="232" rx="10" fill="#fffdf6" stroke="#c9a227" stroke-width="2"/>' +
+      back +
+      '<path d="M100 138 L58 240 L142 240 Z" fill="' + outfit + '"/>' +
+      '<path d="M100 138 L84 240 L116 240 Z" fill="rgba(255,255,255,.18)"/>' +
+      '<rect x="90" y="118" width="20" height="26" rx="6" fill="' + skin + '"/>' +
+      '<ellipse cx="100" cy="94" rx="33" ry="39" fill="' + skin + '"/>' +
+      front +
+      '<circle cx="88" cy="96" r="2.6" fill="#262019"/><circle cx="112" cy="96" r="2.6" fill="#262019"/>' +
+      '<path d="M84 86 Q88 83 93 86 M107 86 Q112 83 116 86" stroke="#262019" stroke-width="1.6" fill="none"/>' +
+      '<path d="M91 112 Q100 119 109 112" stroke="#8a4a3a" stroke-width="2" fill="none" stroke-linecap="round"/>' +
+      glasses +
+      '</svg>';
+  }
+
+  /* ================= catalogue ================= */
+  var CAT = null, classIndex = {};   // classId -> {section, cls}
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function classRow(section, cls) {
+    var row = document.createElement('div');
+    row.className = 'classRow';
+    row.setAttribute('data-search', (cls.title + ' ' + section.name).toLowerCase());
+    var audioTag = cls.audio ? ' · <span class="cc">professor&rsquo;s voice recorded</span>' : '';
+    row.innerHTML = '<span class="ct">' + esc(cls.title) + '</span>' +
+      '<span class="cc">' + (cls.units ? cls.units.length + ' units' : cls.count + ' papers') + '</span>' +
+      '<span class="src">' + esc(cls.source) + '</span>' + audioTag;
+    var btn = document.createElement('button');
+    btn.className = 'act';
+    btn.textContent = 'Enter the classroom →';
+    btn.addEventListener('click', function () {
+      location.hash = '#class/' + section.id + '/' + cls.id;
+    });
+    row.appendChild(btn);
+    return row;
+  }
+
+  function renderCatalogue() {
+    var totals = CAT.totals;
+    $('totals').innerHTML =
+      '<div class="t"><div class="n">' + totals.classes + '</div><div class="k">Classes</div></div>' +
+      '<div class="t"><div class="n">' + totals.papers.toLocaleString() + '</div><div class="k">Papers on syllabuses</div></div>' +
+      '<div class="t"><div class="n">' + totals.sections + '</div><div class="k">Sections</div></div>' +
+      '<div class="t"><div class="n">17</div><div class="k">Professors</div></div>';
+    var host = $('sections');
+    host.innerHTML = '';
+    var lastGroup = null;
+    CAT.sections.forEach(function (section) {
+      classIndex[section.id] = section;
+      section.classes.forEach(function (cls) { cls._section = section; });
+      if (section.group !== lastGroup) {
+        lastGroup = section.group;
+        var gl = document.createElement('div');
+        gl.className = 'groupLabel';
+        gl.textContent = lastGroup;
+        host.appendChild(gl);
+      }
+      var det = document.createElement('details');
+      det.className = 'section';
+      det.setAttribute('data-section', section.id);
+      var sum = document.createElement('summary');
+      sum.innerHTML = '<span class="sname">' + esc(section.name) + '</span>' +
+        '<span class="smeta">' + esc(section.professor.name) + ' · ' +
+        section.classCount + ' classes · ' +
+        (section.paperCount ? section.paperCount.toLocaleString() + ' papers' : 'founding curriculum') +
+        ' — tap to open the section</span>';
+      det.appendChild(sum);
+      var body = document.createElement('div');
+      section.classes.forEach(function (cls) { body.appendChild(classRow(section, cls)); });
+      det.appendChild(body);
+      host.appendChild(det);
+    });
+    $('buildNote').textContent = 'Built ' + CAT.generated + ' from the College\u2019s own index of the corpus (' +
+      CAT.sources.join(' · ') + '). College class groupings are the index\u2019s own topic headings and ' +
+      'title-theme clusters; no title and no count here was invented.';
+  }
+
+  $('search').addEventListener('input', function () {
+    var q = this.value.trim().toLowerCase();
+    var anyVisible = false;
+    document.querySelectorAll('details.section').forEach(function (det) {
+      var secVisible = false;
+      det.querySelectorAll('.classRow').forEach(function (row) {
+        var hit = !q || row.getAttribute('data-search').indexOf(q) !== -1;
+        row.style.display = hit ? '' : 'none';
+        if (hit) secVisible = true;
+      });
+      det.style.display = secVisible ? '' : 'none';
+      if (q && secVisible) det.open = true;
+      if (secVisible) anyVisible = true;
+    });
+    $('noMatch').style.display = (q && !anyVisible) ? 'block' : 'none';
+  });
+
+  /* ================= classroom ================= */
+  var cur = null;         // {section, cls}
+  var segs = [], segShown = 0, boardTimer = null, boardPlaying = false;
+  var classStart = null, classAccum = 0, classLogged = false;
+
+  function classElapsedMin() {
+    var ms = classAccum + (classStart ? Date.now() - classStart : 0);
+    return ms / 60000;
+  }
+  function logClassSession() {
+    if (!cur || classLogged) return;
+    var mins = classElapsedMin();
+    if (mins < 0.5) { classLogged = true; return; }
+    var entry = U.makeClassEntry({
+      date: new Date().toISOString(), minutes: mins,
+      classId: cur.cls.id, classTitle: cur.cls.title
+    });
+    U.appendEntry(storage, entry);
+    classLogged = true;
+    refreshHours();
+    showToast('Class logged — ' + U.formatMinutes(entry.minutes) + ' in ' +
+      cur.cls.title + '. It is in your University record.');
+  }
+  document.addEventListener('visibilitychange', function () {
+    if (!cur) return;
+    if (document.hidden && classStart) {
+      classAccum += Date.now() - classStart; classStart = null;
+    } else if (!document.hidden && !classStart && !classLogged) {
+      classStart = Date.now();
+    }
+  });
+  window.addEventListener('pagehide', function () { if (cur) logClassSession(); });
+  setInterval(function () {
+    if (!cur) return;
+    var s = Math.floor(classElapsedMin() * 60);
+    $('classClock').textContent = Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2);
+  }, 500);
+
+  function showSeg(n) {
+    var lines = $('boardLines').children;
+    for (var i = 0; i < lines.length && i < n; i++) lines[i].classList.add('on');
+    segShown = Math.max(segShown, n);
+  }
+  function stopBoard() {
+    boardPlaying = false;
+    if (boardTimer) { clearInterval(boardTimer); boardTimer = null; }
+    $('btnBoardStep').textContent = 'Write it on the board, line by line';
+  }
+  function playBoard() {
+    if (boardPlaying) { stopBoard(); return; }
+    if (segShown >= segs.length) {   // restart
+      segShown = 0;
+      Array.prototype.forEach.call($('boardLines').children, function (el) { el.classList.remove('on'); });
+    }
+    boardPlaying = true;
+    $('btnBoardStep').textContent = '❚❚ Pause the writing';
+    showSeg(segShown + 1);
+    boardTimer = setInterval(function () {
+      if (segShown >= segs.length) { stopBoard(); return; }
+      showSeg(segShown + 1);
+    }, 3400);
+  }
+
+  function openPanel(name) {
+    document.querySelectorAll('.deskbar button[data-panel]').forEach(function (b) {
+      b.classList.toggle('sel', b.getAttribute('data-panel') === name);
+    });
+    document.querySelectorAll('.panel').forEach(function (p) {
+      p.classList.toggle('open', p.id === 'panel-' + name);
+    });
+  }
+  document.querySelectorAll('.deskbar button[data-panel]').forEach(function (b) {
+    b.addEventListener('click', function () { openPanel(b.getAttribute('data-panel')); });
+  });
+
+  function enterClass(section, cls) {
+    if (cur) logClassSession();
+    stopBoard();
+    var audio = $('lessonAudio');
+    audio.pause(); audio.removeAttribute('src'); audio.style.display = 'none';
+    cur = { section: section, cls: cls };
+    classAccum = 0; classStart = Date.now(); classLogged = false;
+    segShown = 0;
+
+    $('viewCatalogue').style.display = 'none';
+    $('viewClassroom').style.display = 'block';
+    $('crumbClass').textContent = section.name + ' · ' + cls.title;
+    var prof = section.professor;
+    $('profCard').innerHTML = portraitSVG(prof.portrait) +
+      '<div><div class="pname">' + esc(prof.name) + '</div>' +
+      '<div class="psec">' + esc(section.name) + '</div>' +
+      '<div class="pvoice">Voice: ' + esc(prof.voiceName) + '</div></div>';
+
+    $('boardTitle').textContent = cls.title;
+    $('boardSub').textContent = prof.name + ' · Exolex University';
+    var lessonText = cls.lesson || U.buildBoardLesson(cls, section, prof);
+    segs = U.boardSegments(lessonText);
+    var bl = $('boardLines');
+    bl.innerHTML = '';
+    segs.forEach(function (s) {
+      var p = document.createElement('p');
+      p.className = 'chalk';
+      p.textContent = s;
+      bl.appendChild(p);
+    });
+
+    if (cls.audio) {
+      $('lessonIntro').textContent = 'Your professor teaches the opening ' +
+        'lesson aloud, and the board fills as she speaks.';
+      $('btnPlay').style.display = '';
+      $('lessonNote').textContent = 'Recorded for this class in ' +
+        prof.name + '\u2019s own voice.';
+      audio.src = cls.audio;
+      audio.style.display = 'block';
+      $('btnPlay').textContent = '▶ Hear the lesson';
+    } else {
+      $('lessonIntro').textContent = 'Your professor\u2019s lesson is on the ' +
+        'board for this class — her recorded voice joins the flagship ' +
+        'class of each section in this stage of the University.';
+      $('btnPlay').style.display = 'none';
+      $('lessonNote').textContent = 'The lesson text is built from this ' +
+        'class\u2019s real syllabus — the papers and result lines below.';
+    }
+
+    /* syllabus */
+    var syl = $('sylList');
+    syl.innerHTML = '';
+    if (cls.units) {
+      $('sylIntro').textContent = 'A founding-curriculum class: ' +
+        cls.units.length + ' units, taken in order.';
+      cls.units.forEach(function (u, i) {
+        var li = document.createElement('li');
+        li.textContent = (i + 1) + '. ' + u;
+        syl.appendChild(li);
+      });
+      $('btnSylMore').style.display = 'none';
+    } else {
+      $('sylIntro').textContent = cls.count + ' papers, from the Aldred ' +
+        'corpus. Every DOI resolves to the deposit itself.';
+      var renderPapers = function (n) {
+        syl.innerHTML = '';
+        cls.papers.slice(0, n).forEach(function (p) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = 'https://doi.org/' + p.doi;
+          a.target = '_blank'; a.rel = 'noopener';
+          a.textContent = p.t;
+          li.appendChild(a);
+          var d = document.createElement('span');
+          d.className = 'doi';
+          d.textContent = ' — ' + p.doi;
+          li.appendChild(d);
+          if (p.r) {
+            var r = document.createElement('span');
+            r.className = 'res';
+            r.textContent = p.r;
+            li.appendChild(r);
+          }
+          syl.appendChild(li);
+        });
+        $('btnSylMore').style.display = cls.count > n ? '' : 'none';
+      };
+      renderPapers(100);
+      $('btnSylMore').onclick = function () { renderPapers(cls.count); };
+    }
+
+    /* ask */
+    var chips = $('askChips');
+    chips.innerHTML = '';
+    $('askLog').innerHTML = '';
+    U.preparedAnswers(cls, section, prof).forEach(function (qa) {
+      var c = document.createElement('button');
+      c.className = 'chip';
+      c.textContent = qa.q;
+      c.addEventListener('click', function () { ask(qa.q, qa.a); });
+      chips.appendChild(c);
+    });
+    $('askInput').value = '';
+
+    /* homework */
+    $('hwQ').textContent = cls.homework.q;
+    $('hwInput').value = '';
+    $('hwDone').style.display = 'none';
+    $('hwWorked').textContent = cls.homework.worked;
+    $('btnHw').disabled = false;
+
+    openPanel('lesson');
+    window.scrollTo(0, 0);
+  }
+
+  function ask(qText, prepared) {
+    var log = $('askLog');
+    var you = document.createElement('div');
+    you.className = 'bubble you';
+    you.innerHTML = '<div class="who">You</div>';
+    you.appendChild(document.createTextNode(qText));
+    log.appendChild(you);
+    var ans = prepared || U.matchAnswer(qText, cur.cls, cur.section, cur.section.professor) || U.LIVE_NOTE;
+    var bub = document.createElement('div');
+    bub.className = 'bubble';
+    bub.innerHTML = '<div class="who">' + esc(cur.section.professor.name) + '</div>';
+    bub.appendChild(document.createTextNode(ans));
+    log.appendChild(bub);
+    bub.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  }
+  $('btnAsk').addEventListener('click', function () {
+    var v = $('askInput').value.trim();
+    if (!v) return;
+    $('askInput').value = '';
+    ask(v, null);
+  });
+  $('askInput').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') $('btnAsk').click();
+  });
+
+  $('btnHw').addEventListener('click', function () {
+    if (!$('hwInput').value.trim()) {
+      showToast('Write your answer first — even a rough one. The comparison only works on a real attempt.');
+      return;
+    }
+    $('hwDone').style.display = 'block';
+    this.disabled = true;
+    var bl = $('boardLines');
+    var p = document.createElement('p');
+    p.className = 'chalk worked on';
+    p.textContent = 'Homework set — the worked answer is on your desk. Compare honestly.';
+    bl.appendChild(p);
+    showToast('Homework handed in. The worked answer is on your desk — compare, honestly.');
+  });
+
+  $('btnPlay').addEventListener('click', function () {
+    var audio = $('lessonAudio');
+    if (!cur || !cur.cls.audio) return;
+    if (audio.paused) { audio.play(); this.textContent = '❚❚ Pause the lesson'; }
+    else { audio.pause(); this.textContent = '▶ Hear the lesson'; }
+  });
+  $('lessonAudio').addEventListener('timeupdate', function () {
+    if (!this.duration || !segs.length) return;
+    var frac = this.currentTime / this.duration;
+    showSeg(Math.ceil(frac * segs.length));
+  });
+  $('lessonAudio').addEventListener('ended', function () {
+    $('btnPlay').textContent = '▶ Hear the lesson again';
+    showSeg(segs.length);
+  });
+  $('btnBoardStep').addEventListener('click', playBoard);
+  $('board').addEventListener('click', function () {
+    if (!boardPlaying && segShown < segs.length) showSeg(segShown + 1);
+  });
+
+  function leaveClassroom() {
+    if (cur) { logClassSession(); cur = null; }
+    stopBoard();
+    var audio = $('lessonAudio');
+    audio.pause();
+    $('viewClassroom').style.display = 'none';
+    $('viewCatalogue').style.display = 'block';
+    window.scrollTo(0, 0);
+  }
+  $('backDoor').addEventListener('click', function (e) {
+    e.preventDefault();
+    if (location.hash) history.pushState(null, '', location.pathname);
+    leaveClassroom();
+  });
+
+  function route() {
+    var m = location.hash.match(/^#class\/([^/]+)\/(.+)$/);
+    if (m && CAT) {
+      var section = classIndex[decodeURIComponent(m[1])];
+      if (section) {
+        var cls = null;
+        section.classes.forEach(function (c) {
+          if (c.id === decodeURIComponent(m[2])) cls = c;
+        });
+        if (cls) { enterClass(section, cls); return; }
+      }
+    }
+    if (cur) leaveClassroom();
+  }
+  window.addEventListener('hashchange', route);
+
+  /* ================= load ================= */
+  fetch('catalogue.json').then(function (r) {
+    if (!r.ok) throw new Error('catalogue ' + r.status);
+    return r.json();
+  }).then(function (data) {
+    CAT = data;
+    renderCatalogue();
+    route();
+  }).catch(function (e) {
+    var host = $('sections');
+    var d = document.createElement('div');
+    d.id = 'loadErr'; d.style.display = 'block';
+    d.textContent = 'The catalogue could not be loaded (' + e.message + '). ' +
+      'The classes are safe in the index; this page simply could not fetch them.';
+    host.appendChild(d);
+  });
+})();
+</script>
+</body>
+</html>

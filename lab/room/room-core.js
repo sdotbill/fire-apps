@@ -114,10 +114,17 @@
         'classrooms: the lessons here are real classes, taught by ' +
         'doing the work at the instruments, not by watching someone ' +
         'else do it.',
-      does: 'Your time in this room is logged honestly — the session ' +
-        'clock runs only while you are here with the room in front of ' +
-        'you — and written to your Lab log: the date, the minutes, the ' +
-        'stations you worked, the guided steps you completed. Those ' +
+      does: 'Knock, and the door opens on the University\u2019s catalogue: ' +
+        'every class in sections — the College\u2019s ten faces, the ' +
+        'designs line, and the founding Foundations & Arts — each class ' +
+        'with a real syllabus drawn from the corpus\u2019s own index, its ' +
+        'own classroom, and its own professor. Pick a class, shut the ' +
+        'door, and you are sitting at a desk in front of her board. ' +
+        'Your time — in this room and in the classrooms — is logged ' +
+        'honestly: the session clock runs only while you are here with ' +
+        'the room in front of you, and each session is written to your ' +
+        'Lab log: the date, the minutes, the stations you worked, the ' +
+        'guided steps you completed, the classes you sat in. Those ' +
         'receipts are the seed of your University record.',
       principle: 'Credit follows work that can be shown. Every session ' +
         'in this room writes its own receipt, and the ledger only ever ' +
