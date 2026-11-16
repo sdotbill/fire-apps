@@ -43309,7 +43309,8 @@
        "hairStyle": "straight",
        "outfit": "#9a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/carpentry-i-measure-cut-join.jpg"
      }
     },
     {
@@ -57063,7 +57064,8 @@
        "hairStyle": "straight",
        "outfit": "#2e3d6e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/storytelling-structure-scene-and-voice.jpg"
      }
     }
    ],
@@ -58552,7 +58554,8 @@
        "hairStyle": "waves",
        "outfit": "#1f4d7a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/theatre-film-drama-and-theatre-history-ii-the-modern-stage.jpg"
      }
     },
     {
@@ -58585,7 +58588,8 @@
        "hairStyle": "straight",
        "outfit": "#26332a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/theatre-film-playwriting-and-dramaturgy.jpg"
      }
     },
     {
@@ -58754,7 +58758,8 @@
        "hairStyle": "short",
        "outfit": "#26332a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/theatre-film-film-production-from-script-to-screen.jpg"
      }
     },
     {

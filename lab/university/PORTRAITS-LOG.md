@@ -41,6 +41,19 @@ Voice data stays in the data files (lessons still speak); the printed
   (Cosmology — Aurelia Voss) renders the plain "AV" monogram, no SVG,
   0 "Voice:" lines. Screenshots taken and eyeballed.
 - Batches in flight: heads (49), college-a/b/c/d (232), rest-a…f (478).
+- **COMPLETE — 760/760.** Every professor carries a photorealistic
+  headshot, wired in catalogue.json, roster.json and professors.json
+  (all 50 department heads included). Integrity sweep: 760 files on
+  disk, none missing, none under 50 KB, every file verified as a
+  readable JPEG (300–550 KB typical). Two crews (college-d, rest-f)
+  stopped on provider 429s mid-run; their remainders (121) were
+  finished by three resume crews at a gentler pace with zero further
+  failures. Final render verification (headless Chromium): Spanish
+  classroom shows Carmen's photograph, Cosmology classroom shows
+  Professor Aurelia Voss's photograph, catalogue and classroom pages
+  contain zero "Voice:" lines, no SVG cartoon is rendered anywhere —
+  `portraitSVG` no longer exists in the page. Per-batch logs are in
+  `portraits/batch-*.log`; the render harness is `shot-check.js`.
 - **Carmen Vega — flagship glamour spec** (Bill, Nov 16 02:30 EST):
   her portrait was regenerated to a spec that overrides the generic
   faculty spec for her alone — beautiful Spanish woman, warm and
