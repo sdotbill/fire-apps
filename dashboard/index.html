@@ -144,6 +144,7 @@
   /* ================= brain / eye ================= */
   .brain-top{padding:20px 16px 12px;text-align:center;border-bottom:1px solid var(--line);}
   .eye-wrap{width:118px;height:118px;margin:0 auto 6px;position:relative;}
+  .eye-wrap .eye-img{width:100%;height:100%;display:block;object-fit:cover;object-position:50% 12%;border-radius:50%;border:1px solid var(--line);background:#faf7ef;}
   .eye-name{font-family:'Fraunces',Georgia,serif;font-size:1.45rem;font-weight:700;}
   .eye-status{color:var(--muted);font-size:.9rem;margin-top:2px;min-height:1.35em;}
   .eye-status .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3ecf6f;margin-right:6px;vertical-align:1px;}
@@ -250,12 +251,11 @@
     <div class="composer">
       <div class="composer-wrap">
         <div class="attachmenu" id="attachmenu" hidden>
-          <button type="button" data-att="file">📎 File</button>
           <button type="button" data-att="camera">📷 Camera</button>
           <button type="button" data-att="photos">🖼 Photos</button>
           <button type="button" data-att="videos">🎬 Videos</button>
           <button type="button" data-att="files">🗂 Files</button>
-          <button type="button" data-att="drive">🟦 Drive</button>
+          <button type="button" data-att="drive">▲ Drive</button>
         </div>
         <div class="chips" id="chips"></div>
         <div class="cbar">
@@ -266,7 +266,6 @@
         </div>
       </div>
     </div>
-    <input type="file" id="in-file" hidden>
     <input type="file" id="in-camera" accept="image/*" capture="environment" hidden>
     <input type="file" id="in-photos" accept="image/*" multiple hidden>
     <input type="file" id="in-videos" accept="video/*" multiple hidden>
@@ -330,26 +329,10 @@
     catch(e){ return d; }
   }
 
-  /* ---------- the eye (SVG, animated blink — no person's photo) ---------- */
-  var EYE_SVG =
-   '<svg viewBox="0 0 120 120" width="100%" height="100%" role="img" aria-label="Dave\u2019s eye">' +
-    '<defs><clipPath id="eyeclip-__N__"><path d="M6 60 Q60 8 114 60 Q60 112 6 60 Z"/></clipPath></defs>' +
-    '<circle cx="60" cy="60" r="57" fill="#16263f"/>' +
-    '<circle cx="60" cy="60" r="57" fill="none" stroke="#2c4a78" stroke-width="2"/>' +
-    '<g clip-path="url(#eyeclip-__N__)">' +
-      '<path d="M6 60 Q60 8 114 60 Q60 112 6 60 Z" fill="#f4f7ff"/>' +
-      '<g class="iris"><circle cx="60" cy="60" r="25" fill="#f2a33c"/>' +
-      '<circle cx="60" cy="60" r="25" fill="none" stroke="#b96f14" stroke-width="2"/>' +
-      '<circle cx="60" cy="60" r="11.5" fill="#14100a"/>' +
-      '<circle cx="52" cy="51" r="4.4" fill="#fff" opacity=".92"/>' +
-      '<circle cx="69" cy="70" r="2.2" fill="#fff" opacity=".55"/></g>' +
-      '<rect class="lid" x="0" y="-30" width="120" height="34" fill="#16263f"/>' +
-    '</g>' +
-    '<path d="M6 60 Q60 8 114 60 Q60 112 6 60 Z" fill="none" stroke="#0d1524" stroke-width="3.4"/>' +
-   '</svg>' +
-   '<style>.lid{animation:blink __D__s infinite}@keyframes blink{0%,91%,100%{transform:translateY(0)}94.5%{transform:translateY(64px)}98%{transform:translateY(0)}}.iris{animation:drift 9s ease-in-out infinite}@keyframes drift{0%,100%{transform:translate(0,0)}25%{transform:translate(2.6px,-1.4px)}55%{transform:translate(-2.4px,1.2px)}80%{transform:translate(1.2px,2px)}}</style>';
-  document.querySelectorAll("[data-eye]").forEach(function(el, i){
-    el.innerHTML = EYE_SVG.replace(/__N__/g, String(i)).replace("__D__", (4.6 + i * 1.7).toFixed(1));
+  /* ---------- the eye (Dave's real artwork — the same animated figure
+     the door and the apps carry; the loop itself carries the blink) ---------- */
+  document.querySelectorAll("[data-eye]").forEach(function(el){
+    el.innerHTML = '<img class="eye-img" src="/assets/baby-dave-loop.webp" alt="Dave">';
   });
 
   /* ---------- worker calls ---------- */
@@ -525,10 +508,28 @@
     pending = []; renderChips();
     return note;
   }
+  /* Chosen files also transfer to Dave's worker store (POST /upload,
+     the same route the door uses): a bound owner's uploads mirror into
+     his app Dave's lane store; a visitor's stay in their own store. */
+  function uploadFile(f){
+    if(f.size > 18 * 1024 * 1024){
+      feedAdd("File too big to upload", f.name + " is over the 18 MB limit", "⚠");
+      return;
+    }
+    var rd = new FileReader();
+    rd.onload = function(){
+      var data = String(rd.result || "").split(",")[1] || "";
+      postJSON("/upload", {name: f.name, mime: f.type || "", data: data, identity: identity || ""})
+        .then(function(r){ if(!r.ok) feedAdd("Upload did not go through", f.name, "⚠"); })
+        .catch(function(){ feedAdd("Upload did not go through", f.name, "⚠"); });
+    };
+    rd.readAsDataURL(f);
+  }
   function takeFiles(list){
     Array.prototype.forEach.call(list || [], function(f){
       var item = {name: f.name, kind: f.type || "file", size: f.size};
       pending.push(item);
+      uploadFile(f);
       if((f.type.indexOf("text/") === 0 || /\.(md|txt|json|csv)$/i.test(f.name)) && f.size <= 204800){
         var rd = new FileReader();
         rd.onload = function(){ item.text = String(rd.result || ""); };
@@ -544,7 +545,7 @@
     });
     renderChips();
   }
-  var inputs = {file: $("in-file"), camera: $("in-camera"), photos: $("in-photos"), videos: $("in-videos"), files: $("in-files")};
+  var inputs = {camera: $("in-camera"), photos: $("in-photos"), videos: $("in-videos"), files: $("in-files")};
   Object.keys(inputs).forEach(function(k){
     inputs[k].addEventListener("change", function(){ takeFiles(inputs[k].files); inputs[k].value = ""; });
   });
@@ -560,7 +561,7 @@
     var k = b.getAttribute("data-att");
     if(k === "drive"){
       window.open("https://drive.google.com/drive/my-drive", "_blank");
-      feedAdd("Drive opened", "Pick the file there, then attach it here", "🟦");
+      feedAdd("Drive opened", "Pick the file there, then attach it here", "▲");
       return;
     }
     if(inputs[k]) inputs[k].click();
