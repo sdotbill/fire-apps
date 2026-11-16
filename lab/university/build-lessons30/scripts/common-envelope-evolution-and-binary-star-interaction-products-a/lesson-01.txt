@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Nicole Davis, and this is Common-Envelope Evolution and Binary-Star Interaction Products Against Energy and Density Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Nicole Davis, and this is Common-Envelope Evolution and Binary-Star Interaction Products Against Energy and Density Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'A Map of Required Envelope Ejection Efficiency Across Donor Mass from One to Twenty Solar Masses'. Its stated result: Headline result (values verbatim from results.json): alpha_required_max_lambda0.5 = 1.23; alpha_required_min_lambda0.5 = 0.773; fraction_above_unity_lambda0.5 = 0.375. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Now we go one step further into the material.
+
+'Birth Periods of Cataclysmic Variable Progenitors from Envelope Ejection by a Low-Mass Companion'. Its stated result: Headline result (values verbatim from results.json): period_min_days = 0.075; period_max_days = 13.15; period_median_days = 2.025. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+The next piece is where this starts to come together.
+
+'Envelope Ejection Budget for Forming a Low-Mass X-Ray Binary from a Neutron Star and a 1.8-Solar-Mass Giant'. Its stated result: Headline result (values verbatim from results.json): binding_energy_erg = 1.268e+47; alpha_required = 0.540; af_alpha_0.5_Rsun = 4.67. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Envelope Ejection Budget for the Supergiant Precursor of a High-Mass X-Ray Binary'. Its stated result: Headline result (values verbatim from results.json): binding_energy_erg = 2.751e+48; alpha_required = 8.491; af_alpha_0.5_Rsun = 1.91. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+We take the pieces in order, because each one stands on the last.
+
+'Envelope Ejection at the Tip of the Red Giant Branch and the Birth Periods of Subdwarf B Binaries'. Its stated result: Headline result (values verbatim from results.json): binding_energy_erg = 1.596e+46; alpha_required = 0.094; af_alpha_0.5_Rsun = 13.16. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Stay with me, because the next piece builds directly on that one.
+
+'Envelope Structure Parameter from Integrated Density Profiles of Giant Envelopes'. Its stated result: Headline result (values verbatim from results.json): lambda_min = 0.227; lambda_max = 0.638; lambda_span_factor = 2.8. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “A Map of Required Envelope Ejection Efficiency Across Donor Mass from One to Twenty Solar Masses”. Its stated result is: Headline result (values verbatim from results.json): alpha_required_max_lambda0.5 = 1.23; alpha_required_min_lambda0.5 = 0.773; fraction_above_unity_lambda0.5 = 0.375. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'A Map of Required Envelope Ejection Efficiency Across Donor Mass from One to Twenty Solar Masses'; 'Birth Periods of Cataclysmic Variable Progenitors from Envelope Ejection by a Low-Mass Companion'; 'Envelope Ejection Budget for Forming a Low-Mass X-Ray Binary from a Neutron Star and a 1.8-Solar-Mass Giant'; 'Envelope Ejection Budget for the Supergiant Precursor of a High-Mass X-Ray Binary'; 'Envelope Ejection at the Tip of the Red Giant Branch and the Birth Periods of Subdwarf B Binaries'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.

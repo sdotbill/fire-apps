@@ -437,5 +437,12 @@
    "audio": "audio/lessons30/the-cosmic-web-filaments-walls-and-the-warm-hot-intergalactic-me/lesson-01.mp3",
    "minutes": 16.7
   }
+ },
+ "common-envelope-evolution-and-binary-star-interaction-products-a": {
+  "lesson-01": {
+   "hash": "1f6380cd9bc4ad549f6abcd4d23c5e6704779d89",
+   "audio": "audio/lessons30/common-envelope-evolution-and-binary-star-interaction-products-a/lesson-01.mp3",
+   "minutes": 7.63
+  }
  }
 }
