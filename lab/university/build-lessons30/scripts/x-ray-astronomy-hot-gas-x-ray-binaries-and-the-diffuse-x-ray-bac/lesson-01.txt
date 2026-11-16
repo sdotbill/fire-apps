@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor James Reed, and this is X-Ray Astronomy: Hot Gas, X-Ray Binaries and the Diffuse X-Ray Background Against Density and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor James Reed, and this is X-Ray Astronomy: Hot Gas, X-Ray Binaries and the Diffuse X-Ray Background Against Density and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Beta-Model Density Profiles of Cluster Gas: Gas Mass, Central Density and the Distance to Any Density Bound'. Its stated result: The paper's headline computed results are: coolcore electron density at 100 kpc = 0.0132 per cm^3; typical gas mass within 1 Mpc = 6.43e+13 solar masses; typical bolometric luminosity within 1 Mpc = 1.56e+45 erg/s; merger electron density at 500 kpc = 0.0012 per cm^3; typical central mass density as a fraction of the density bound = 2.01e-81.
+
+Now we go one step further into the material.
+
+'Cluster Counts in the eROSITA All-Sky Survey: Integrating the Luminosity Function Over the Sky'. Its stated result: The paper's headline computed results are: comoving volume to redshift 0.5 over the extragalactic sky = 1.85e+10 Mpc^3; expected clusters above that luminosity within redshift 0.5 = 1.77e+05 clusters; expected clusters above that luminosity within redshift 0.5 = 1.57e+04 clusters; luminosity corresponding to flux 1e-13 at redshift 0.3 = 2.88e+43 erg/s; luminosity corresponding to flux 1e-13 at redshift 0.5 = 9.60e+43
+
+The next piece is where this starts to come together.
+
+'Cooling Times in Cluster Cores: Where Radiative Losses Outrun the Age of the Universe'. Its stated result: The paper's headline computed results are: cooling time at n=0.05 per cm^3 and 4 keV = 9.37e+08 years; cooling time at n=0.01 per cm^3 and 6 keV = 6.16e+09 years; cooling radius where the cooling time equals 7.7 Gyr = 150 kpc; classical mass deposition rate inside the cooling radius = 577 solar masses per year; cooling time of the typical core as a fraction of the Hubble time = 0.447.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Deep-Field Source Counts: The Log N-Log S Relation and the Resolved Fraction of the Background'. Its stated result: The paper's headline computed results are: cumulative source count above flux 1e-15 erg/cm^2/s = 1.7e+03 per deg^2; cumulative source count above flux 1e-16 erg/cm^2/s = 1.20e+04 per deg^2; fraction of the background resolved by the counts integral = 0.814; whole-sky source count above 1e-15 erg/cm^2/s = 7.01e+07 sources; flux above which half of the resolved intensity originates = 1.18e-14 erg/cm^2/s.
+
+We take the pieces in order, because each one stands on the last.
+
+'Eddington Luminosities and Ultraluminous X-Ray Sources: The Mass, Beaming and Super-Eddington Budgets'. Its stated result: The paper's headline computed results are: Eddington luminosity of a 1.4 solar mass accretor = 1.76e+38 erg/s; Eddington luminosity of a 10 solar mass accretor = 1.26e+39 erg/s; minimum mass radiating 1e40 erg/s at the Eddington limit = 79.5 solar masses; beaming factor required for a 10 solar mass black hole to appear at 1e40 erg/s = 0.126; Eddington ratio of a 30 solar mass black hole radiating 1e40 erg/s = 2.65; E
+
+Stay with me, because the next piece builds directly on that one.
+
+'Galaxy Groups and the Steepened Luminosity-Temperature Relation: The Energy Cost of Raising Gas Entropy'. Its stated result: The paper's headline computed results are: luminosity deficit factor of groups at 1.0 keV = 5.52; luminosity deficit factor of groups at 0.5 keV = 8.97; energy to inject 1 keV per particle into the group gas = 1.59e+60 erg; injection energy as a fraction of binding energy = 0.00371; black hole mass whose accretion at ten per cent efficiency supplies the injection = 8.88e+06 solar masses; radiative cooling time of the
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Beta-Model Density Profiles of Cluster Gas: Gas Mass, Central Density and the Distance to Any Density Bound”. Its stated result is: The paper's headline computed results are: coolcore electron density at 100 kpc = 0.0132 per cm^3; typical gas mass within 1 Mpc = 6.43e+13 solar masses; typical bolometric luminosity within 1 Mpc = 1.56e+45 erg/s; merger electron density at 500 kpc = 0.0012 per cm^3; typical central mass density as (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Beta-Model Density Profiles of Cluster Gas: Gas Mass, Central Density and the Distance to Any Density Bound'; 'Cluster Counts in the eROSITA All-Sky Survey: Integrating the Luminosity Function Over the Sky'; 'Cooling Times in Cluster Cores: Where Radiative Losses Outrun the Age of the Universe'; 'Deep-Field Source Counts: The Log N-Log S Relation and the Resolved Fraction of the Background'; 'Eddington Luminosities and Ultraluminous X-Ray Sources: The Mass, Beaming and Super-Eddington Budgets'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.

@@ -360,5 +360,12 @@
    "audio": "audio/lessons30/the-first-stars-and-early-metal-enrichment-in-a-bounced-cosmolog/lesson-01.mp3",
    "minutes": 6.86
   }
+ },
+ "x-ray-astronomy-hot-gas-x-ray-binaries-and-the-diffuse-x-ray-bac": {
+  "lesson-01": {
+   "hash": "0c766e166e10b34672a02c03be46ca405c42b5cc",
+   "audio": "audio/lessons30/x-ray-astronomy-hot-gas-x-ray-binaries-and-the-diffuse-x-ray-bac/lesson-01.mp3",
+   "minutes": 12.94
+  }
  }
 }

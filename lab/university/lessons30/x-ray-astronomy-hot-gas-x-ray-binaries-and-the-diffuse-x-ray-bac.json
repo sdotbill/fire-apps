@@ -1,0 +1,177 @@
+{
+ "id": "x-ray-astronomy-hot-gas-x-ray-binaries-and-the-diffuse-x-ray-bac",
+ "title": "X-Ray Astronomy: Hot Gas, X-Ray Binaries and the Diffuse X-Ray Background Against Density and Energy Bounds",
+ "professor": "Professor James Reed",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor James Reed, and this is X-Ray Astronomy: Hot Gas, X-Ray Binaries and the Diffuse X-Ray Background Against Density and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor James Reed, and this is X-Ray Astronomy: Hot Gas, X-Ray Binaries and the Diffuse X-Ray Background Against Density and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'Beta-Model Density Profiles of Cluster Gas: Gas Mass, Central Density and the Distance to Any Density Bound'. Its stated result: The paper's headline computed results are: coolcore electron density at 100 kpc = 0.0132 per cm^3; typical gas mass within 1 Mpc = 6.43e+13 solar masses; typical bolometric luminosity within 1 Mpc = 1.56e+45 erg/s; merger electron density at 500 kpc = 0.0012 per cm^3; typical central mass density as a fraction of the density bound = 2.01e-81.",
+    "Now we go one step further into the material.",
+    "'Cluster Counts in the eROSITA All-Sky Survey: Integrating the Luminosity Function Over the Sky'. Its stated result: The paper's headline computed results are: comoving volume to redshift 0.5 over the extragalactic sky = 1.85e+10 Mpc^3; expected clusters above that luminosity within redshift 0.5 = 1.77e+05 clusters; expected clusters above that luminosity within redshift 0.5 = 1.57e+04 clusters; luminosity corresponding to flux 1e-13 at redshift 0.3 = 2.88e+43 erg/s; luminosity corresponding to flux 1e-13 at redshift 0.5 = 9.60e+43",
+    "The next piece is where this starts to come together.",
+    "'Cooling Times in Cluster Cores: Where Radiative Losses Outrun the Age of the Universe'. Its stated result: The paper's headline computed results are: cooling time at n=0.05 per cm^3 and 4 keV = 9.37e+08 years; cooling time at n=0.01 per cm^3 and 6 keV = 6.16e+09 years; cooling radius where the cooling time equals 7.7 Gyr = 150 kpc; classical mass deposition rate inside the cooling radius = 577 solar masses per year; cooling time of the typical core as a fraction of the Hubble time = 0.447.",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'Deep-Field Source Counts: The Log N-Log S Relation and the Resolved Fraction of the Background'. Its stated result: The paper's headline computed results are: cumulative source count above flux 1e-15 erg/cm^2/s = 1.7e+03 per deg^2; cumulative source count above flux 1e-16 erg/cm^2/s = 1.20e+04 per deg^2; fraction of the background resolved by the counts integral = 0.814; whole-sky source count above 1e-15 erg/cm^2/s = 7.01e+07 sources; flux above which half of the resolved intensity originates = 1.18e-14 erg/cm^2/s.",
+    "We take the pieces in order, because each one stands on the last.",
+    "'Eddington Luminosities and Ultraluminous X-Ray Sources: The Mass, Beaming and Super-Eddington Budgets'. Its stated result: The paper's headline computed results are: Eddington luminosity of a 1.4 solar mass accretor = 1.76e+38 erg/s; Eddington luminosity of a 10 solar mass accretor = 1.26e+39 erg/s; minimum mass radiating 1e40 erg/s at the Eddington limit = 79.5 solar masses; beaming factor required for a 10 solar mass black hole to appear at 1e40 erg/s = 0.126; Eddington ratio of a 30 solar mass black hole radiating 1e40 erg/s = 2.65; E",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Galaxy Groups and the Steepened Luminosity-Temperature Relation: The Energy Cost of Raising Gas Entropy'. Its stated result: The paper's headline computed results are: luminosity deficit factor of groups at 1.0 keV = 5.52; luminosity deficit factor of groups at 0.5 keV = 8.97; energy to inject 1 keV per particle into the group gas = 1.59e+60 erg; injection energy as a fraction of binding energy = 0.00371; black hole mass whose accretion at ten per cent efficiency supplies the injection = 8.88e+06 solar masses; radiative cooling time of the",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Beta-Model Density Profiles of Cluster Gas: Gas Mass, Central Density and the Distance to Any Density Bound”. Its stated result is: The paper's headline computed results are: coolcore electron density at 100 kpc = 0.0132 per cm^3; typical gas mass within 1 Mpc = 6.43e+13 solar masses; typical bolometric luminosity within 1 Mpc = 1.56e+45 erg/s; merger electron density at 500 kpc = 0.0012 per cm^3; typical central mass density as (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'Beta-Model Density Profiles of Cluster Gas: Gas Mass, Central Density and the Distance to Any Density Bound'; 'Cluster Counts in the eROSITA All-Sky Survey: Integrating the Luminosity Function Over the Sky'; 'Cooling Times in Cluster Cores: Where Radiative Losses Outrun the Age of the Universe'; 'Deep-Field Source Counts: The Log N-Log S Relation and the Resolved Fraction of the Background'; 'Eddington Luminosities and Ultraluminous X-Ray Sources: The Mass, Beaming and Super-Eddington Budgets'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 1037,
+   "audio": "audio/lessons30/x-ray-astronomy-hot-gas-x-ray-binaries-and-the-diffuse-x-ray-bac/lesson-01.mp3",
+   "minutes": 12.94,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'Beta-Model Density Profiles of Cluster Gas: Gas Mass, Central Density and the Distance to Any Density Bound'. The result it reported gives a value for density at 100 kpc, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Beta-Model Density Profiles of Cluster Gas: Gas Mass, Central Density and the Distance to Any Density Bound'. Its stated result: The paper's headline computed results are: coolcore electron density at 100 kpc = 0.0132 per cm^3; typical gas mass within 1 Mpc = 6.43e+13 solar masses; typical bolometric luminosity within 1 Mpc = 1.56e+45 erg/s; merger electron density at 500 kpc = 0.0012 per cm^3; typical central mass density as a fraction of the density bound = 2.01e-81. And here is that same result with the words stripped away — just the quantities standing in a row: density at 100 kpc = 0.0132; mass within 1 Mpc = 6.43e+13; luminosity within 1 Mpc = 1.56e+45. Find density at 100 kpc in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Beta-Model Density Profiles of Cluster Gas: Gas Mass, Central Density and the Distance to Any Density Bound' stated its result. (2) That result pairs names with values: density at 100 kpc = 0.0132; mass within 1 Mpc = 6.43e+13; luminosity within 1 Mpc = 1.56e+45. (3) This question asks for the value paired with density at 100 kpc. (4) In that row, density at 100 kpc stands beside 0.0132 — so the answer the lesson gives is 0.0132. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Beta-Model Density Profiles of Cluster Gas: Gas Mass, Central Density and the Distance to Any Density Bound' reported a number for density at 100 kpc. What number did it report?",
+     "kind": "number",
+     "answer": 0.0132,
+     "disp": "0.0132",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1.85e+10",
+      "0.0132",
+      "1.18e-14",
+      "0.05"
+     ],
+     "mcAnswer": "0.0132",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Cluster Counts in the eROSITA All-Sky Survey: Integrating the Luminosity Function Over the Sky'. The result it reported gives a value for over the extragalactic sky, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Cluster Counts in the eROSITA All-Sky Survey: Integrating the Luminosity Function Over the Sky'. Its stated result: The paper's headline computed results are: comoving volume to redshift 0.5 over the extragalactic sky = 1.85e+10 Mpc^3; expected clusters above that luminosity within redshift 0.5 = 1.77e+05 clusters; expected clusters above that luminosity within redshift 0.5 = 1.57e+04 clusters; luminosity corresponding to flux 1e-13 at redshift 0.3 = 2.88e+43 erg/s; luminosity corresponding to flux 1e-13 at redshift 0.5 = 9.60e+43 And here is that same result with the words stripped away — just the quantities standing in a row: over the extragalactic sky = 1.85e+10. Find over the extragalactic sky in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Cluster Counts in the eROSITA All-Sky Survey: Integrating the Luminosity Function Over the Sky' stated its result. (2) That result pairs names with values: over the extragalactic sky = 1.85e+10. (3) This question asks for the value paired with over the extragalactic sky. (4) In that row, over the extragalactic sky stands beside 1.85e+10 — so the answer the lesson gives is 1.85e+10. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Cluster Counts in the eROSITA All-Sky Survey: Integrating the Luminosity Function Over the Sky' reported a number for over the extragalactic sky. What number did it report?",
+     "kind": "number",
+     "answer": 18500000000.0,
+     "disp": "1.85e+10",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.0132",
+      "1.76e+38",
+      "1.85e+10",
+      "0.05"
+     ],
+     "mcAnswer": "1.85e+10",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Cooling Times in Cluster Cores: Where Radiative Losses Outrun the Age of the Universe'. The result it reported gives a value for cooling time at n, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Cooling Times in Cluster Cores: Where Radiative Losses Outrun the Age of the Universe'. Its stated result: The paper's headline computed results are: cooling time at n=0.05 per cm^3 and 4 keV = 9.37e+08 years; cooling time at n=0.01 per cm^3 and 6 keV = 6.16e+09 years; cooling radius where the cooling time equals 7.7 Gyr = 150 kpc; classical mass deposition rate inside the cooling radius = 577 solar masses per year; cooling time of the typical core as a fraction of the Hubble time = 0.447. And here is that same result with the words stripped away — just the quantities standing in a row: cooling time at n = 0.05; and 4 keV = 9.37e+08; and 6 keV = 6.16e+09. Find cooling time at n in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Cooling Times in Cluster Cores: Where Radiative Losses Outrun the Age of the Universe' stated its result. (2) That result pairs names with values: cooling time at n = 0.05; and 4 keV = 9.37e+08; and 6 keV = 6.16e+09. (3) This question asks for the value paired with cooling time at n. (4) In that row, cooling time at n stands beside 0.05 — so the answer the lesson gives is 0.05. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Cooling Times in Cluster Cores: Where Radiative Losses Outrun the Age of the Universe' reported a number for cooling time at n. What number did it report?",
+     "kind": "number",
+     "answer": 0.05,
+     "disp": "0.05",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1.76e+38",
+      "0.0132",
+      "1.85e+10",
+      "0.05"
+     ],
+     "mcAnswer": "0.05",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Deep-Field Source Counts: The Log N-Log S Relation and the Resolved Fraction of the Background'. The result it reported gives a value for the resolved intensity originates, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Deep-Field Source Counts: The Log N-Log S Relation and the Resolved Fraction of the Background'. Its stated result: The paper's headline computed results are: cumulative source count above flux 1e-15 erg/cm^2/s = 1.7e+03 per deg^2; cumulative source count above flux 1e-16 erg/cm^2/s = 1.20e+04 per deg^2; fraction of the background resolved by the counts integral = 0.814; whole-sky source count above 1e-15 erg/cm^2/s = 7.01e+07 sources; flux above which half of the resolved intensity originates = 1.18e-14 erg/cm^2/s. And here is that same result with the words stripped away — just the quantities standing in a row: the resolved intensity originates = 1.18e-14. Find the resolved intensity originates in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Deep-Field Source Counts: The Log N-Log S Relation and the Resolved Fraction of the Background' stated its result. (2) That result pairs names with values: the resolved intensity originates = 1.18e-14. (3) This question asks for the value paired with the resolved intensity originates. (4) In that row, the resolved intensity originates stands beside 1.18e-14 — so the answer the lesson gives is 1.18e-14. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Deep-Field Source Counts: The Log N-Log S Relation and the Resolved Fraction of the Background' reported a number for the resolved intensity originates. What number did it report?",
+     "kind": "number",
+     "answer": 1.18e-14,
+     "disp": "1.18e-14",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1.18e-14",
+      "0.05",
+      "1.85e+10",
+      "0.0132"
+     ],
+     "mcAnswer": "1.18e-14",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Eddington Luminosities and Ultraluminous X-Ray Sources: The Mass, Beaming and Super-Eddington Budgets'. The result it reported gives a value for solar mass accretor, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Eddington Luminosities and Ultraluminous X-Ray Sources: The Mass, Beaming and Super-Eddington Budgets'. Its stated result: The paper's headline computed results are: Eddington luminosity of a 1.4 solar mass accretor = 1.76e+38 erg/s; Eddington luminosity of a 10 solar mass accretor = 1.26e+39 erg/s; minimum mass radiating 1e40 erg/s at the Eddington limit = 79.5 solar masses; beaming factor required for a 10 solar mass black hole to appear at 1e40 erg/s = 0.126; Eddington ratio of a 30 solar mass black hole radiating 1e40 erg/s = 2.65; E And here is that same result with the words stripped away — just the quantities standing in a row: solar mass accretor = 1.76e+38. Find solar mass accretor in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Eddington Luminosities and Ultraluminous X-Ray Sources: The Mass, Beaming and Super-Eddington Budgets' stated its result. (2) That result pairs names with values: solar mass accretor = 1.76e+38. (3) This question asks for the value paired with solar mass accretor. (4) In that row, solar mass accretor stands beside 1.76e+38 — so the answer the lesson gives is 1.76e+38. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Eddington Luminosities and Ultraluminous X-Ray Sources: The Mass, Beaming and Super-Eddington Budgets' reported a number for solar mass accretor. What number did it report?",
+     "kind": "number",
+     "answer": 1.76e+38,
+     "disp": "1.76e+38",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.05",
+      "1.76e+38",
+      "0.0132",
+      "1.85e+10"
+     ],
+     "mcAnswer": "1.76e+38",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Beta-Model Density Profiles of Cluster Gas: Gas Mass, Central Density and the Distance to Any Density Bound”. Its stated result is: The paper's headline computed results are: coolcore electron density at 100 kpc = 0.0132 per cm^3; typical gas mass within 1 Mpc = 6.43e+13 solar masses; typical bolometric luminosity within 1 Mpc = 1.56e+45 erg/s; merger electron density at 500 kpc = 0.0012 per cm^3; typical central mass density as (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “Beta-Model Density Profiles of Cluster Gas: Gas Mass, Central Density and the Distance to Any Density Bound”. Its stated result is: The paper's headline computed results are: coolcore electron density at 100 kpc = 0.0132 per cm^3; typical gas mass within 1 Mpc = 6.43e+13 solar masses; typical bolometric luminosity within 1 Mpc = 1.56e+45 erg/s; merger electron density at 500 kpc = 0.0012 per cm^3; typical central mass density as (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}
