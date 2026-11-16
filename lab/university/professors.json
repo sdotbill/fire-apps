@@ -39,7 +39,8 @@
      "hairStyle": "short",
      "outfit": "#23365c",
      "glasses": false
-    }
+    },
+    "photo": "portraits/galaxies-clusters-and-lensing-as-tests-of-the-frame.jpg"
    }
   },
   {
@@ -183,7 +184,8 @@
     },
     "voiceId": "avocado_v2:GrowthMindset",
     "voiceName": "Encouraging Blossom (Southern American)",
-    "gender": "F"
+    "gender": "F",
+    "photo": "portraits/earth-sky-life.jpg"
    }
   },
   {
@@ -327,7 +329,8 @@
      "hairStyle": "short",
      "outfit": "#1f4d7a",
      "glasses": true
-    }
+    },
+    "photo": "portraits/health-i-your-body-owners-manual.jpg"
    }
   },
   {
@@ -410,7 +413,8 @@
     },
     "voiceId": "avocado_v2:MAI_01_fr_ca",
     "voiceName": "Welcoming Cabin (French Canadian)",
-    "gender": "F"
+    "gender": "F",
+    "photo": "portraits/francais-i-first-words-real-sentences.jpg"
    }
   },
   {
@@ -492,7 +496,8 @@
      "hairStyle": "waves",
      "outfit": "#8c1f2e",
      "glasses": false
-    }
+    },
+    "photo": "portraits/engineering-engineering-foundations-how-engineers-think.jpg"
    }
   },
   {
@@ -594,7 +599,8 @@
      "hairStyle": "straight",
      "outfit": "#8c1f2e",
      "glasses": true
-    }
+    },
+    "photo": "portraits/geography-human-geography-i-people-on-the-land.jpg"
    }
   },
   {
@@ -882,7 +888,8 @@
      "hairStyle": "short",
      "outfit": "#1f5138",
      "glasses": false
-    }
+    },
+    "photo": "portraits/english-grammar-the-sentence.jpg"
    }
   },
   {
@@ -922,7 +929,8 @@
      "hairStyle": "short",
      "outfit": "#5d4630",
      "glasses": false
-    }
+    },
+    "photo": "portraits/world-history-from-river-valleys-to-railways.jpg"
    }
   },
   {

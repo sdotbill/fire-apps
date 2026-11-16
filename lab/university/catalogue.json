@@ -6071,7 +6071,8 @@
      "hairStyle": "short",
      "outfit": "#23365c",
      "glasses": false
-    }
+    },
+    "photo": "portraits/galaxies-clusters-and-lensing-as-tests-of-the-frame.jpg"
    },
    "classes": [
     {
@@ -6276,7 +6277,8 @@
        "hairStyle": "curls",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/galactic-dynamics-the-open-programme.jpg"
      }
     },
     {
@@ -6390,7 +6392,8 @@
        "hairStyle": "short",
        "outfit": "#23365c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/galaxies-clusters-and-lensing-as-tests-of-the-frame.jpg"
      }
     },
     {
@@ -7180,7 +7183,8 @@
        "outfit": "#8c1f2e",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/galactic-stellar-streams-tidal-tails-and-the-magellanic-system-d.jpg"
      }
     },
     {
@@ -7629,7 +7633,8 @@
        "hairStyle": "curls",
        "outfit": "#7a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/fast-radio-bursts-dispersion-energetics-and-host-galaxy-budgets-.jpg"
      }
     },
     {
@@ -7718,7 +7723,8 @@
        "hairStyle": "bun",
        "outfit": "#2e5d33",
        "glasses": false
-      }
+      },
+      "photo": "portraits/dwarfs-satellites.jpg"
      }
     }
    ],
@@ -9676,7 +9682,8 @@
        "hairStyle": "waves",
        "outfit": "#5c2a54",
        "glasses": false
-      }
+      },
+      "photo": "portraits/gravitational-microlensing-of-stars-exoplanets-and-compact-objec.jpg"
      }
     },
     {
@@ -10125,7 +10132,8 @@
        "hairStyle": "short",
        "outfit": "#46536a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/globular-clusters-stellar-populations-and-the-age-problem-as-tes.jpg"
      }
     },
     {
@@ -11029,7 +11037,8 @@
        "hairStyle": "curls",
        "outfit": "#8c1f2e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/interstellar-objects-and-interstellar-traversal-against-density-.jpg"
      }
     },
     {
@@ -13164,7 +13173,8 @@
        "hairStyle": "short",
        "outfit": "#9a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/intermediate-mass-black-holes-in-dense-clusters-and-dwarf-nuclei.jpg"
      }
     },
     {
@@ -13390,7 +13400,8 @@
        "outfit": "#26332a",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/high-velocity-and-hypervelocity-stars-ejection-travel-and-halo-c.jpg"
      }
     },
     {
@@ -13502,7 +13513,8 @@
        "hairStyle": "straight",
        "outfit": "#5d4630",
        "glasses": true
-      }
+      },
+      "photo": "portraits/gravitational-wave-lensing-magnification-time-delay-and-wave-opt.jpg"
      }
     },
     {
@@ -13727,7 +13739,8 @@
        "hairStyle": "straight",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/interacting-supernovae-and-circumstellar-interaction-shock-eject.jpg"
      }
     },
     {
@@ -14063,7 +14076,8 @@
        "hairStyle": "ponytail",
        "outfit": "#26332a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/hail-graupel-and-severe-storm-cloud-microphysics-growth-updraft-.jpg"
      }
     },
     {
@@ -17668,7 +17682,8 @@
        "outfit": "#2e3d6e",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/time-variation-of-fundamental-constants-equivalence-principle-an.jpg"
      }
     },
     {
@@ -18234,7 +18249,8 @@
        "outfit": "#b4502e",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/relativistic-geodesy-clock-networks-and-time-transfer-from-the-p.jpg"
      }
     },
     {
@@ -18573,7 +18589,8 @@
        "hairStyle": "waves",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/star-formation-and-molecular-clouds-collapse-fragmentation-and-f.jpg"
      }
     },
     {
@@ -18912,7 +18929,8 @@
        "hairStyle": "straight",
        "outfit": "#5d4630",
        "glasses": true
-      }
+      },
+      "photo": "portraits/the-heliosphere-the-termination-shock-and-the-interstellar-bound.jpg"
      }
     },
     {
@@ -19024,7 +19042,8 @@
        "hairStyle": "straight",
        "outfit": "#1f5138",
        "glasses": false
-      }
+      },
+      "photo": "portraits/the-local-bubble-local-interstellar-cloud-and-nearby-interstella.jpg"
      }
     },
     {
@@ -19475,7 +19494,8 @@
        "hairStyle": "bob",
        "outfit": "#5d4630",
        "glasses": true
-      }
+      },
+      "photo": "portraits/synchrotron-radiation-undulators-and-free-electron-lasers-bright.jpg"
      }
     },
     {
@@ -19763,7 +19783,8 @@
        "hairStyle": "waves",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/spectra-light.jpg"
      }
     },
     {
@@ -20090,7 +20111,8 @@
        "hairStyle": "bob",
        "outfit": "#4b2a63",
        "glasses": false
-      }
+      },
+      "photo": "portraits/condensed-matter-the-open-programme.jpg"
      }
     },
     {
@@ -21377,7 +21399,8 @@
     },
     "voiceId": "avocado_v2:GrowthMindset",
     "voiceName": "Encouraging Blossom (Southern American)",
-    "gender": "F"
+    "gender": "F",
+    "photo": "portraits/earth-sky-life.jpg"
    },
    "classes": [
     {
@@ -22281,7 +22304,8 @@
       },
       "voiceId": "avocado_v2:GrowthMindset",
       "voiceName": "Encouraging Blossom (Southern American)",
-      "gender": "F"
+      "gender": "F",
+      "photo": "portraits/earth-sky-life.jpg"
      }
     },
     {
@@ -30464,7 +30488,8 @@
        "outfit": "#2e3d6e",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/ice-giant-interiors-atmospheres-and-magnetospheres-uranus-and-ne.jpg"
      }
     },
     {
@@ -31140,7 +31165,8 @@
        "hairStyle": "straight",
        "outfit": "#26332a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/granular-matter-powders-and-regolith-mechanics-shear-flow-and-co.jpg"
      }
     },
     {
@@ -31589,7 +31615,8 @@
        "hairStyle": "bun",
        "outfit": "#23365c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/lakes-and-reservoirs-stratification-seiches-mixing-and-ice-cover.jpg"
      }
     },
     {
@@ -31701,7 +31728,8 @@
        "hairStyle": "curls",
        "outfit": "#46536a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/lightning-and-upper-atmospheric-discharges-channel-charge-and-op.jpg"
      }
     },
     {
@@ -35145,7 +35173,8 @@
        "outfit": "#2e3d6e",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/signals-computing-data.jpg"
      }
     },
     {
@@ -35696,7 +35725,8 @@
        "hairStyle": "curls",
        "outfit": "#2e3d6e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/shelter-building-materials.jpg"
      }
     },
     {
@@ -36627,7 +36657,8 @@
        "hairStyle": "curls",
        "outfit": "#2e3d6e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/shelter-infrastructure.jpg"
      }
     },
     {
@@ -37412,7 +37443,8 @@
        "hairStyle": "waves",
        "outfit": "#1f4d7a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/rain-roofs-and-stormwater-wave-7.jpg"
      }
     },
     {
@@ -42807,7 +42839,8 @@
      "hairStyle": "short",
      "outfit": "#1f4d7a",
      "glasses": true
-    }
+    },
+    "photo": "portraits/health-i-your-body-owners-manual.jpg"
    },
    "classes": [
     {
@@ -42843,7 +42876,8 @@
        "hairStyle": "short",
        "outfit": "#1f4d7a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/health-i-your-body-owners-manual.jpg"
      }
     },
     {
@@ -43283,7 +43317,8 @@
        "hairStyle": "curls",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/computer-science-algorithms-the-recipes-that-matter.jpg"
      }
     },
     {
@@ -43747,7 +43782,8 @@
        "hairStyle": "ponytail",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/computer-science-cloud-and-distributed-systems.jpg"
      }
     },
     {
@@ -44625,7 +44661,8 @@
     },
     "voiceId": "avocado_v2:MAI_01_fr_ca",
     "voiceName": "Welcoming Cabin (French Canadian)",
-    "gender": "F"
+    "gender": "F",
+    "photo": "portraits/francais-i-first-words-real-sentences.jpg"
    },
    "classes": [
     {
@@ -44661,7 +44698,8 @@
       },
       "voiceId": "avocado_v2:MAI_01_fr_ca",
       "voiceName": "Welcoming Cabin (French Canadian)",
-      "gender": "F"
+      "gender": "F",
+      "photo": "portraits/francais-i-first-words-real-sentences.jpg"
      }
     },
     {
@@ -46471,7 +46509,8 @@
        "hairStyle": "waves",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/engineering-engineering-foundations-how-engineers-think.jpg"
      }
     },
     {
@@ -46705,7 +46744,8 @@
        "hairStyle": "waves",
        "outfit": "#5d4630",
        "glasses": false
-      }
+      },
+      "photo": "portraits/engineering-electrical-engineering-ii-machines-and-control.jpg"
      }
     },
     {
@@ -46738,7 +46778,8 @@
        "hairStyle": "ponytail",
        "outfit": "#1f5138",
        "glasses": true
-      }
+      },
+      "photo": "portraits/engineering-electronics-devices-that-switch-and-amplify.jpg"
      }
     },
     {
@@ -47073,7 +47114,8 @@
        "hairStyle": "bun",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/engineering-engineering-mathematics-the-working-toolkit.jpg"
      }
     },
     {
@@ -47106,7 +47148,8 @@
        "hairStyle": "curls",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/engineering-engineering-design-project-brief-to-prototype.jpg"
      }
     }
    ],
@@ -47123,7 +47166,8 @@
      "hairStyle": "waves",
      "outfit": "#8c1f2e",
      "glasses": false
-    }
+    },
+    "photo": "portraits/engineering-engineering-foundations-how-engineers-think.jpg"
    },
    "classCount": 20,
    "paperCount": 0
@@ -48407,7 +48451,8 @@
        "hairStyle": "waves",
        "outfit": "#8c1f2e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/anthropology-biological-anthropology-the-animal-that-we-are.jpg"
      }
     },
     {
@@ -48441,7 +48486,8 @@
        "outfit": "#2e3d6e",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/anthropology-archaeology-reading-the-buried-record.jpg"
      }
     },
     {
@@ -48573,7 +48619,8 @@
        "hairStyle": "bun",
        "outfit": "#5d4630",
        "glasses": true
-      }
+      },
+      "photo": "portraits/anthropology-anthropology-of-religion.jpg"
      }
     },
     {
@@ -48639,7 +48686,8 @@
        "hairStyle": "ponytail",
        "outfit": "#7a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/anthropology-applied-anthropology-knowledge-at-work.jpg"
      }
     },
     {
@@ -49386,7 +49434,8 @@
        "hairStyle": "straight",
        "outfit": "#8c1f2e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/geography-human-geography-i-people-on-the-land.jpg"
      }
     },
     {
@@ -49768,7 +49817,8 @@
      "hairStyle": "straight",
      "outfit": "#8c1f2e",
      "glasses": true
-    }
+    },
+    "photo": "portraits/geography-human-geography-i-people-on-the-land.jpg"
    },
    "classCount": 12,
    "paperCount": 0
@@ -50953,7 +51003,8 @@
        "hairStyle": "ponytail",
        "outfit": "#6d1f2c",
        "glasses": true
-      }
+      },
+      "photo": "portraits/linguistics-linguistics-ii-meaning-and-use.jpg"
      }
     },
     {
@@ -50986,7 +51037,8 @@
        "hairStyle": "bob",
        "outfit": "#9a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/linguistics-phonetics-and-phonology-in-depth.jpg"
      }
     },
     {
@@ -51019,7 +51071,8 @@
        "hairStyle": "ponytail",
        "outfit": "#3c3f45",
        "glasses": false
-      }
+      },
+      "photo": "portraits/linguistics-syntax-the-architecture-of-sentences.jpg"
      }
     },
     {
@@ -51052,7 +51105,8 @@
        "hairStyle": "short",
        "outfit": "#1f5138",
        "glasses": true
-      }
+      },
+      "photo": "portraits/linguistics-semantics-and-pragmatics-meaning-meant-and-implied.jpg"
      }
     },
     {
@@ -51085,7 +51139,8 @@
        "hairStyle": "bob",
        "outfit": "#26332a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/linguistics-sociolinguistics-language-in-society.jpg"
      }
     },
     {
@@ -51118,7 +51173,8 @@
        "hairStyle": "ponytail",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/linguistics-historical-linguistics-languages-over-time.jpg"
      }
     },
     {
@@ -51151,7 +51207,8 @@
        "hairStyle": "waves",
        "outfit": "#1f5138",
        "glasses": true
-      }
+      },
+      "photo": "portraits/linguistics-psycholinguistics-language-in-the-mind.jpg"
      }
     },
     {
@@ -51219,7 +51276,8 @@
        "outfit": "#46536a",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/linguistics-language-acquisition-first-and-second.jpg"
      }
     },
     {
@@ -51252,7 +51310,8 @@
        "hairStyle": "ponytail",
        "outfit": "#1f4d7a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/linguistics-writing-systems-marks-that-speak.jpg"
      }
     },
     {
@@ -51286,7 +51345,8 @@
        "outfit": "#26332a",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/linguistics-field-linguistics-documenting-the-world-s-languages.jpg"
      }
     }
    ],
@@ -56053,7 +56113,8 @@
      "hairStyle": "short",
      "outfit": "#1f5138",
      "glasses": false
-    }
+    },
+    "photo": "portraits/english-grammar-the-sentence.jpg"
    },
    "classes": [
     {
@@ -56089,7 +56150,8 @@
        "hairStyle": "short",
        "outfit": "#1f5138",
        "glasses": false
-      }
+      },
+      "photo": "portraits/english-grammar-the-sentence.jpg"
      }
     },
     {
@@ -56317,7 +56379,8 @@
      "hairStyle": "short",
      "outfit": "#5d4630",
      "glasses": false
-    }
+    },
+    "photo": "portraits/world-history-from-river-valleys-to-railways.jpg"
    },
    "classes": [
     {
@@ -56353,7 +56416,8 @@
        "hairStyle": "short",
        "outfit": "#5d4630",
        "glasses": false
-      }
+      },
+      "photo": "portraits/world-history-from-river-valleys-to-railways.jpg"
      }
     },
     {
@@ -56861,7 +56925,8 @@
        "hairStyle": "straight",
        "outfit": "#6d1f2c",
        "glasses": true
-      }
+      },
+      "photo": "portraits/communications-public-relations-and-strategic-communication.jpg"
      }
     },
     {
@@ -56997,7 +57062,8 @@
        "hairStyle": "bob",
        "outfit": "#9a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/communications-speech-and-rhetoric-the-spoken-word.jpg"
      }
     },
     {
