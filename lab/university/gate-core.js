@@ -168,12 +168,17 @@
   }
 
   function recordStep(storage, opts) {
-    return append(storage, {
+    var entry = {
       date: opts.date, minutes: 0, stations: ['university'], stepsCompleted: 0,
       classId: opts.classId, classTitle: opts.classTitle,
       kind: 'gate-step', step: opts.step, status: opts.status,
       attempts: opts.attempts || 0
-    });
+    };
+    /* a pass landed through the multiple-choice help is a pass, and
+       the record says how it was landed: assisted — distinguishable
+       from an unassisted pass forever (Bill's honest-grading rule) */
+    if (opts.assisted) entry.assisted = true;
+    return append(storage, entry);
   }
 
   /* step states for one class: {index: 'pass'|'skip'} — a pass always
@@ -205,14 +210,16 @@
 
   function recordGrade(storage, opts) {
     var g = gradeFor(opts.states, opts.total);
-    return append(storage, {
+    var entry = {
       date: opts.date, minutes: 0, stations: ['university'], stepsCompleted: g.passed,
       classId: opts.classId, classTitle: opts.classTitle,
       kind: 'class-grade',
       passed: g.passed, skipped: g.skipped, total: g.total,
       attempts: opts.attempts || 0,
       percent: g.percent, complete: !!opts.complete
-    });
+    };
+    if (opts.assisted) entry.assisted = opts.assisted;
+    return append(storage, entry);
   }
 
   var api = {

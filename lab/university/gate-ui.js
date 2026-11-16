@@ -40,6 +40,11 @@
     '#gtProgress{font-size:.85rem;color:var(--ink-soft)}',
     '#gtSkip{font-size:.8rem;color:var(--ink-soft);white-space:nowrap}',
     '#gtGrade{border:1px solid #46a35a;background:#f2f9f2;border-radius:6px;padding:12px 16px;margin-top:12px}',
+    '#gtHint{display:none;border:1px solid var(--gold);background:#fdf6dd;border-radius:6px;padding:10px 14px;margin:10px 0 0;font-size:.96rem}',
+    '#gtChoices{display:none;margin:10px 0 0}',
+    '#gtChoices .gtChoice{display:block;width:100%;text-align:left;margin:6px 0;background:var(--panel);border:1px solid var(--gold);color:var(--ink);border-radius:6px;padding:9px 14px;font-family:inherit;font-size:.98rem;cursor:pointer}',
+    '#gtChoices .gtChoice:hover:not(:disabled){background:var(--gold);color:#fff}',
+    '#gtChoices .gtChoice:disabled{opacity:.45;cursor:default}',
     '.gtSep{border:0;border-top:1px solid var(--line);margin:18px 0 10px}'
   ].join('\n');
 
@@ -51,7 +56,11 @@
     'against the class\u2019s own material, and the lesson <b>does not ' +
     'move on</b> until it lands: miss, and your professor teaches the ' +
     'piece again, a different way. Your grade for the set is recorded ' +
-    'in your University record — passes, and skips counted as skips.</p>' +
+    'in your University record — passes, and skips counted as skips. ' +
+    'Stuck is allowed: <b>I\u2019m stuck — help me</b> first gives a ' +
+    'hint drawn from the material itself, then choices to pick from. ' +
+    'A step landed through the choices counts — and your record says ' +
+    'so, as an assisted pass.</p>' +
     '<div id="gtDots"></div>' +
     '<div id="gtTeach"></div>' +
     '<div id="gtWhy"></div>' +
@@ -64,8 +73,11 @@
       '<button class="act" id="gtCheck" style="display:none">Check my answer</button>' +
       '<button class="ghost" id="gtMic" style="display:none">\uD83C\uDFA4 Answer out loud</button>' +
       '<button class="ghost" id="gtHear" style="display:none">\uD83D\uDD0A Hear that again</button>' +
+      '<button class="ghost" id="gtHelp" style="display:none">I\u2019m stuck — help me</button>' +
     '</div>' +
     '<div id="gtStatus"></div>' +
+    '<div id="gtHint"></div>' +
+    '<div id="gtChoices"></div>' +
     '<div id="gtFoot"><span id="gtProgress"></span>' +
     '<a href="#" id="gtSkip" style="display:none">skip for now \u2192</a></div>' +
     '<div id="gtGrade" style="display:none"></div>' +
@@ -108,6 +120,7 @@
   /* ---------------- state ---------------- */
   var data = null, gCls = null, gProf = null;
   var idx = 0, attempts = 0, sessionAttempts = 0, praiseCount = 0;
+  var helpLevel = 0;   /* per step: 0 none · 1 hint shown · 2 choices shown */
   var states = {}, started = false, busy = false, dirty = false, gradeWritten = false;
   var stream = null, actx = null, analyser = null, waveRAF = null;
   var rec = null, listening = false, heardFinal = null;
@@ -223,6 +236,13 @@
     if (!keepHeard) $('gtHeard').textContent = '';
     $('gtInput').value = '';
     $('gtHear').style.display = (started && st.audio) ? '' : 'none';
+    /* help starts fresh on every step */
+    helpLevel = 0;
+    var hint = $('gtHint'), ch = $('gtChoices'), hb = $('gtHelp');
+    hint.style.display = 'none'; hint.innerHTML = '';
+    ch.style.display = 'none'; ch.innerHTML = '';
+    hb.textContent = 'I\u2019m stuck — help me';
+    hb.style.display = (started && states[i] !== 'pass') ? '' : 'none';
     renderDots(); renderProgress();
     if (states[i] === 'pass') {
       setStatus('This one is landed \u2713 — say it again to keep it warm, or tap another dot.', 'good');
@@ -247,23 +267,28 @@
     var res = G.checkAnswer(step(), said);
     $('gtHeard').textContent = 'Your answer: \u201C' + said + '\u201D';
     renderProgress();
-    if (res.pass) onPass();
+    /* a pass after the choices were shown was landed with the answer
+       set in front of the student — recorded as assisted, honestly */
+    if (res.pass) onPass(helpLevel >= 2);
     else onMiss(res);
   }
 
-  function onPass() {
+  function onPass(assisted) {
     var isNew = states[idx] !== 'pass';
     if (isNew) {
       states[idx] = 'pass';
       dirty = true;
       G.recordStep(storage, {
         date: new Date().toISOString(), classId: gCls.id, classTitle: gCls.title,
-        step: idx, status: 'pass', attempts: attempts
+        step: idx, status: 'pass', attempts: attempts,
+        assisted: !!assisted
       });
     }
     showBoardCheck();   /* the big green check lands WITH the praise */
     var pi = praiseCount++ % data.praise.length;
-    setStatus(data.praise[pi], 'good');
+    setStatus(data.praise[pi] + (assisted
+      ? ' That one landed with help — it counts, and your record says so: an assisted pass.'
+      : ''), 'good');
     renderDots(); renderProgress();
     playClip(data.praiseAudio && data.praiseAudio[pi]).then(function () {
       busy = false;
@@ -284,6 +309,133 @@
     });
   }
 
+  /* ---------------- help: hint, then choices (Bill, Nov 16 03:07) ----
+     A stuck student can ask for help. Level 1 is a HINT drawn from
+     the step's own material — its re-teach chunk, nothing invented.
+     Level 2 is MULTIPLE CHOICE: the correct answer plus distractors
+     drawn from the SAME class's other steps' own answers — real
+     material, never fabricated facts. Landing a step through the
+     choices is an ASSISTED pass, recorded as one. */
+  function answerText(st) {
+    if (!st) return null;
+    if (st.kind === 'number') return st.disp || String(st.answer);
+    if (st.kind === 'keywords') return null;   /* no single answer string */
+    return st.answer != null ? String(st.answer) : null;
+  }
+  function correctText(st) {
+    if (st.kind === 'keywords') {
+      /* the capstone's correct choice is its own key ideas — the
+         terms its worked answer stands on, from its own key */
+      return 'An answer built on: ' + st.keywords.map(function (g) {
+        return g[0];
+      }).join(' · ');
+    }
+    return answerText(st);
+  }
+  function normForChoice(s) {
+    return String(s || '').toLowerCase().replace(/\s+/g, ' ').trim();
+  }
+  function buildChoices() {
+    var st = step();
+    var correct = correctText(st);
+    var pool = [], seen = {};
+    seen[normForChoice(correct)] = true;
+    /* same-kind siblings first (a value among values, a title among
+       titles), then the class's other answers — all its own material */
+    var sibs = data.steps.filter(function (o, i) { return i !== idx; });
+    sibs.sort(function (a, b) {
+      return (b.kind === st.kind ? 1 : 0) - (a.kind === st.kind ? 1 : 0);
+    });
+    sibs.forEach(function (o) {
+      var t = answerText(o);
+      if (!t) return;
+      var n = normForChoice(t);
+      if (seen[n]) return;
+      seen[n] = true;
+      pool.push(t);
+    });
+    var opts = [{ t: correct, ok: true }].concat(
+      pool.slice(0, 3).map(function (t) { return { t: t, ok: false }; }));
+    /* a plain shuffle — position teaches nothing */
+    for (var i = opts.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = opts[i]; opts[i] = opts[j]; opts[j] = tmp;
+    }
+    return opts;
+  }
+  function showHint() {
+    helpLevel = 1;
+    var st = step();
+    var hint = $('gtHint');
+    hint.innerHTML = '';
+    var b = document.createElement('b');
+    b.textContent = 'Hint — from the material itself: ';
+    hint.appendChild(b);
+    hint.appendChild(document.createTextNode(st.teach2 || st.teach || ''));
+    hint.style.display = '';
+    $('gtHelp').textContent = 'Still stuck — show me the choices';
+    setStatus('There is the piece again, the other way in. Try once ' +
+      'more — or take the choices below the hint.', '');
+  }
+  function showChoices() {
+    helpLevel = 2;
+    var host = $('gtChoices');
+    host.innerHTML = '';
+    var head = document.createElement('p');
+    head.style.margin = '0 0 4px';
+    head.innerHTML = '<b>Pick the one the material supports.</b> ' +
+      'Every choice here is real material from this class — only one ' +
+      'answers this step. Landing it this way is recorded as an ' +
+      'assisted pass.';
+    host.appendChild(head);
+    buildChoices().forEach(function (o) {
+      var btn = document.createElement('button');
+      btn.className = 'gtChoice';
+      btn.textContent = o.t;
+      btn.addEventListener('click', function () { pickChoice(btn, o.ok); });
+      host.appendChild(btn);
+    });
+    host.style.display = '';
+    $('gtHelp').style.display = 'none';
+    setStatus('Choices are up. Pick the one the material supports.', '');
+  }
+  function pickChoice(btn, ok) {
+    if (busy || !started) return;
+    attempts++; sessionAttempts++;
+    renderProgress();
+    if (!ok) {
+      btn.disabled = true;
+      setStatus('Not that one — it belongs to another step of this ' +
+        'class. Look at the hint once more and pick the one this ' +
+        'step\u2019s material supports.', 'bad');
+      return;
+    }
+    busy = true;
+    $('gtChoices').style.display = 'none';
+    onPass(true);
+  }
+  function onHelp() {
+    if (!started || busy || states[idx] === 'pass') return;
+    if (helpLevel === 0) showHint();
+    else if (helpLevel === 1) showChoices();
+  }
+  /* assisted passes recorded for this class, among its passed steps */
+  function assistedCount() {
+    var n = 0;
+    try {
+      var log = JSON.parse(storage.getItem('dave_lab_log') || '[]');
+      var seen = {};
+      log.forEach(function (e) {
+        if (e && e.kind === 'gate-step' && e.classId === gCls.id &&
+            e.status === 'pass' && e.assisted) seen[e.step] = true;
+      });
+      Object.keys(seen).forEach(function (k) {
+        if (states[k] === 'pass') n++;
+      });
+    } catch (e) { /* the count is a courtesy; the entries stand */ }
+    return n;
+  }
+
   function advance() {
     var total = data.steps.length;
     for (var k = 1; k <= total; k++) {
@@ -299,7 +451,8 @@
     G.recordGrade(storage, {
       date: new Date().toISOString(), classId: gCls.id, classTitle: gCls.title,
       states: states, total: data.steps.length,
-      attempts: sessionAttempts, complete: complete
+      attempts: sessionAttempts, complete: complete,
+      assisted: assistedCount()
     });
   }
 
@@ -315,8 +468,10 @@
     panel.appendChild(h);
     var p = document.createElement('p');
     p.style.margin = '6px 0 0';
+    var assistedN = assistedCount();
     p.textContent = g.passed + ' of ' + g.total + ' steps landed' +
       (g.skipped ? ', ' + g.skipped + ' skipped (counted as skips, never as passes)' : '') +
+      (assistedN ? ', ' + assistedN + ' landed with help (recorded as assisted passes)' : '') +
       ' \u2014 ' + g.percent + '%. ' +
       (g.percent === 100
         ? 'Every step earned. That is the whole lesson, proven in session.'
@@ -417,7 +572,7 @@
     $('gtTitle').textContent = 'Work it with ' + profFirst() + ' \u2014 answer, and earn each step';
     $('gtBegin').style.display = '';
     $('gtBegin').textContent = 'Begin \u2014 ' + profFirst() + ' presents the first piece';
-    ['gtCheck', 'gtMic', 'gtHear', 'gtSkip'].forEach(function (id) { $(id).style.display = 'none'; });
+    ['gtCheck', 'gtMic', 'gtHear', 'gtSkip', 'gtHelp'].forEach(function (id) { $(id).style.display = 'none'; });
     $('gtInput').style.display = 'none';
     $('gtGrade').style.display = 'none';
     $('gtWave').style.display = 'none';
@@ -458,6 +613,7 @@
     $('gtBegin').addEventListener('click', begin);
     $('gtCheck').addEventListener('click', function () { check(); });
     $('gtMic').addEventListener('click', startListening);
+    $('gtHelp').addEventListener('click', onHelp);
     $('gtHear').addEventListener('click', function () { if (!busy) playClip(step().audio); });
     $('gtSkip').addEventListener('click', function (e) {
       e.preventDefault();

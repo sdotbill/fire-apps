@@ -15,7 +15,12 @@
      4. the Ask-the-professor box: "lets start lesson 1" STARTS the
         gated lesson (no live-office-hours deflection);
      5. back at the catalogue door, the path now shows AI
-        Fundamentals "In progress — 1 step landed / Continue".
+        Fundamentals "In progress — 1 step landed / Continue";
+     6. a fresh student, stuck on AI Fundamentals step 1: the help
+        button shows a hint from the step's own material, then
+        multiple choices built from the class's own answers; a wrong
+        pick holds the step; the right pick advances — and the log
+        records the pass as ASSISTED, not plain.
    Run: NODE_PATH=<owner-lane browser node_modules> node verify-ai-path.cjs <baseUrl>
 */
 'use strict';
@@ -202,6 +207,86 @@ const logOf = page => page.evaluate(
   check('Machine Learning I still Completed',
     /✓ Completed/.test(rows[1].prog), rows[1].prog);
   await page.screenshot({ path: 'ai-shot-3-path-progress.png' });
+
+  /* ============ 6. stuck → hint → choices → assisted pass ============ */
+  const ctx = browser.createBrowserContext
+    ? await browser.createBrowserContext()
+    : await browser.createIncognitoBrowserContext();
+  const hp = await ctx.newPage();
+  await hp.setViewport({ width: 1280, height: 1000 });
+  hp.on('pageerror', e => console.log('PAGE ERROR (help):', e.message));
+  await hp.goto(BASE + '#class/' + AI_SEC + '/' + AI_FUND,
+    { waitUntil: 'networkidle2', timeout: 60000 });
+  await hp.waitForSelector('#gateBox', { visible: true, timeout: 20000 });
+  await hp.click('#gtBegin');
+  /* the gate presents the step when the professor's opening clip
+     ends — wait for the stuck button to actually be on the step */
+  await hp.waitForFunction(
+    () => document.getElementById('gtHelp').style.display !== 'none',
+    { timeout: 30000 });
+  check('the stuck button is on the step', true);
+  await hp.click('#gtHelp');
+  await hp.waitForFunction(
+    () => document.getElementById('gtHint').style.display !== 'none',
+    { timeout: 10000 });
+  const hintText = await hp.$eval('#gtHint', el => el.textContent);
+  check('level 1: a hint from the step\u2019s own material',
+    /Hint — from the material itself/.test(hintText) && hintText.length > 60,
+    hintText.slice(0, 80));
+  const helpLabel2 = await hp.$eval('#gtHelp', el => el.textContent);
+  check('the button now offers the choices', /choices/.test(helpLabel2), helpLabel2);
+  await hp.click('#gtHelp');
+  await hp.waitForFunction(
+    () => document.getElementById('gtChoices').style.display !== 'none',
+    { timeout: 10000 });
+  const CORRECT = 'Data, parameters, and training: the three ingredients';
+  const CLASS_ANSWERS = [CORRECT,
+    'What a model is — a function with a memory of examples',
+    'Prediction as the core act',
+    'The honest vocabulary: no magic, no menace'];
+  const opts = await hp.$$eval('#gtChoices .gtChoice',
+    els => els.map(e => e.textContent));
+  check('level 2: choices shown (correct + same-class distractors)',
+    opts.length >= 3 && opts.indexOf(CORRECT) !== -1, opts.join(' | '));
+  check('every choice is the class\u2019s own material — nothing fabricated',
+    opts.every(t => CLASS_ANSWERS.indexOf(t) !== -1), opts.join(' | '));
+  await hp.screenshot({ path: 'ai-shot-4-help-choices.png' });
+  /* a wrong pick: held, that choice disabled, no advance */
+  await hp.evaluate((correct) => {
+    const btns = Array.from(document.querySelectorAll('#gtChoices .gtChoice'));
+    btns.find(b => b.textContent !== correct).click();
+  }, CORRECT);
+  await hp.waitForFunction(
+    () => /Not that one/.test(document.getElementById('gtStatus').textContent),
+    { timeout: 10000 });
+  check('a wrong pick holds the step', /actually names/.test(await q(hp)));
+  /* the right pick: advance, recorded as an ASSISTED pass */
+  let assistedNoteSeen = false;
+  const noteWatch = (async () => {
+    for (let i = 0; i < 80 && !assistedNoteSeen; i++) {
+      const t = await hp.evaluate(
+        () => document.getElementById('gtStatus').textContent).catch(() => '');
+      if (/assisted pass/.test(t)) assistedNoteSeen = true;
+      await sleep(150);
+    }
+  })();
+  await hp.evaluate((correct) => {
+    const btns = Array.from(document.querySelectorAll('#gtChoices .gtChoice'));
+    btns.find(b => b.textContent === correct).click();
+  }, CORRECT);
+  await hp.waitForFunction(
+    () => /Step 2 of/.test(document.getElementById('gtProgress').textContent),
+    { timeout: 30000 });
+  check('the right pick advances the lesson', true);
+  await noteWatch;
+  check('the student is told it landed as an assisted pass', assistedNoteSeen);
+  const hlog = await logOf(hp);
+  const hstep = hlog.find(e => e.kind === 'gate-step' &&
+    e.classId === AI_FUND && e.step === 0);
+  check('the log records the pass as ASSISTED (honest grading)',
+    !!hstep && hstep.status === 'pass' && hstep.assisted === true,
+    hstep ? JSON.stringify(hstep) : 'missing');
+  await ctx.close();
 
   await browser.close();
   console.log(failures ? `\n${failures} FAILURES` : '\nALL AI-PATH BROWSER CHECKS PASSED');
