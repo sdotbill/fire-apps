@@ -127,16 +127,16 @@
     </a>
     <div style="margin-left:auto"></div>
     <details class="talkbar" id="talkbar">
-      <summary aria-haspopup="dialog">&#128172; Ask Him Anything</summary>
-      <div class="talkpanel" role="dialog" aria-label="Ask Him Anything — talk to William Aldred">
+      <summary aria-haspopup="dialog">&#128172; Ask the Prediction Desk anything</summary>
+      <div class="talkpanel" role="dialog" aria-label="Ask the Prediction Desk anything">
         <form id="bar">
-          <button class="chat-mic" id="mic" type="button" aria-label="Speak to William" aria-pressed="false" title="Speak to William">&#127908;</button>
-          <input type="text" id="inp" placeholder="Ask Him Anything" autocomplete="off" maxlength="4000">
+          <button class="chat-mic" id="mic" type="button" aria-label="Speak your question" aria-pressed="false" title="Speak your question">&#127908;</button>
+          <input type="text" id="inp" placeholder="Ask the Prediction Desk anything…" autocomplete="off" maxlength="4000">
           <button type="submit" id="send">Send</button>
         </form>
         <main><div id="log"></div></main>
         <div id="left"></div>
-        <button type="button" class="futurepill" id="futurePill" data-prediction-cta data-funnel="funnel_taste_v1" data-taste-state="full" data-taste-limit="5">He Predicts The Future &middot; The Prediction Desk<span class="tastecount" data-taste-count hidden></span></button>
+        <button type="button" class="futurepill" id="futurePill" data-prediction-cta data-funnel="funnel_taste_v1" data-taste-state="full" data-taste-limit="5">Predictions Sealed Before the Fact &middot; The Prediction Desk<span class="tastecount" data-taste-count hidden></span></button>
       </div>
     </details>
   </div>
@@ -331,7 +331,7 @@
     var text = inp.value.trim();
     if (!text) return;
     if (funnelMode === "prediction") {
-      document.dispatchEvent(new CustomEvent("billxox:prediction-ask", { detail: { text: text } }));
+      document.dispatchEvent(new CustomEvent("desk:prediction-ask", { detail: { text: text } }));
     }
     inp.value = "";
     history.push({ role: "user", content: text }); save(); draw("user", text);
@@ -456,15 +456,15 @@
        - the [data-taste-count] span inside the pill (the remaining
          count rides inside the pill's flow, never as page furniture),
        - window.PMSFunnel { enterPredictionMode, setTasteCount, mode },
-       - CustomEvents billxox:cta-click / billxox:prediction-mode /
-         billxox:prediction-ask on document. */
+       - CustomEvents desk:cta-click / desk:prediction-mode /
+         desk:prediction-ask on document. */
   var funnelMode = "chat";
   var barForm = document.getElementById("bar");
   function enterPredictionMode() {
     funnelMode = "prediction";
     if (barForm) barForm.setAttribute("data-mode", "prediction");
     inp.placeholder = "Ask for a prediction — gold, oil, your future…";
-    document.dispatchEvent(new CustomEvent("billxox:prediction-mode", { detail: { mode: "prediction" } }));
+    document.dispatchEvent(new CustomEvent("desk:prediction-mode", { detail: { mode: "prediction" } }));
     inp.focus();
   }
   function setTasteCount(n) {
@@ -482,7 +482,7 @@
   };
   var futurePill = document.getElementById("futurePill");
   if (futurePill) futurePill.addEventListener("click", function () {
-    document.dispatchEvent(new CustomEvent("billxox:cta-click", { detail: { source: "pill" } }));
+    document.dispatchEvent(new CustomEvent("desk:cta-click", { detail: { source: "pill" } }));
     enterPredictionMode();
   });
   // The gold-box intro: the still portrait is the video's poster.
@@ -493,7 +493,7 @@
   if (introVideo && introSpeak) {
     var introReset = function () {
       introSpeak.classList.remove("playing");
-      introSpeak.setAttribute("aria-label", "Hear William \u2014 play his introduction");
+      introSpeak.setAttribute("aria-label", "Hear the introduction");
     };
     introSpeak.addEventListener("click", function () {
       if (!introVideo.paused && !introVideo.ended) return;
@@ -504,7 +504,7 @@
     });
     introVideo.addEventListener("play", function () {
       introSpeak.classList.add("playing");
-      introSpeak.setAttribute("aria-label", "William is speaking");
+      introSpeak.setAttribute("aria-label", "Playing the introduction");
     });
     introVideo.addEventListener("pause", introReset);
     introVideo.addEventListener("ended", function () {
