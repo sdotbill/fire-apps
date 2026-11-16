@@ -1,0 +1,177 @@
+{
+ "id": "gamma-ray-bursts-prompt-emission-afterglow-and-host-galaxy-budge",
+ "title": "Gamma-Ray Bursts: Prompt Emission, Afterglow and Host-Galaxy Budgets Against Published Event Values",
+ "professor": "Professor Milos Horvat",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Milos Horvat, and this is Gamma-Ray Bursts: Prompt Emission, Afterglow and Host-Galaxy Budgets Against Published Event Values. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Milos Horvat, and this is Gamma-Ray Bursts: Prompt Emission, Afterglow and Host-Galaxy Budgets Against Published Event Values. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'GRB 030329: Low-Redshift Energetics, Jet Break and the Luminosity of Its Supernova SN 2003dh'. Its stated result: Headline result: b030329 isotropic energy erg b030329 = 8.066e+51; b030329 distance modulus mag b030329 = 39.54; b030329 supernova absolute mag b030329 = -20.04; b030329 beaming corrected energy erg b030329 = 3.264e+49; b030329 opening angle degrees b030329 = 5.157; b030329 energy ratio to 990123 b030329 = 0.002372 Operating principle: At low redshift the same fluence converts to a far smaller isotropic energy than f",
+    "Now we go one step further into the material.",
+    "'GRB 050509B: The First Short-Burst Host, Its 35 Kiloparsec Offset and the Implied Kick Budget'. Its stated result: Headline result: b050509b projected offset kpc b050509b = 35.07; b050509b offset in effective radii b050509b = 7.014; b050509b kick for 1gyr delay km per s b050509b = 34.29; b050509b kick for 10gyr delay km per s b050509b = 3.429; b050509b angular diameter distance mpc b050509b = 723.4; b050509b scale kpc per arcsec b050509b = 3.507 Operating principle: An angular offset at a known distance becomes a projected physic",
+    "The next piece is where this starts to come together.",
+    "'GRB 060418: Microphysical Energy Fractions, Circumburst Density and the Kinetic Energy Budget'. Its stated result: Headline result: b060418 electron channel energy erg b060418 = 1e+52; b060418 magnetic channel energy erg b060418 = 1e+51; b060418 proton channel energy erg b060418 = 8.9e+52; b060418 compton y scale b060418 = 3.162; b060418 electron to magnetic ratio b060418 = 10; b060418 density kg per m3 b060418 = 1.67e-21 Operating principle: The microphysical fractions state how the shock divides its energy among electrons, magn",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'GRB 060614: A Hundred-Second Burst with Short-Burst Manners and the Supernova That Was Not There'. Its stated result: Headline result: b060614 isotropic energy erg b060614 = 8.23e+50; b060614 duration ratio to divide b060614 = 51; b060614 supernova limit ratio b060614 = 0.004786; b060614 supernova limit percent of 1998bw b060614 = 0.4786; b060614 distance modulus mag b060614 = 38.87; b060614 rest duration s b060614 = 90.67 Operating principle: Classification evidence can be weighed numerically: the duration ratio against the two-sec",
+    "We take the pieces in order, because each one stands on the last.",
+    "'GRB 080319B: Peak Luminosity, Rest-Frame Spectral Peak and the Naked-Eye Optical Flash Budget'. Its stated result: Headline result: b080319b peak luminosity erg per s b080319b = 1.099e+53; b080319b rest peak energy kev b080319b = 1307; b080319b observed peak energy kev b080319b = 675; b080319b optical flux ratio vs zero mag b080319b = 0.007586; b080319b luminosity in solar units b080319b = 2.87e+19; b080319b energy in 50s at peak erg b080319b = 5.495e+54 Operating principle: Peak flux, multiplied by four pi and by the luminosity",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'GRB 080916C: Isotropic Energy Near 9e54 Erg, Delayed GeV Onset and the Bulk Motion Budget'. Its stated result: Headline result: b080916c isotropic energy erg b080916c = 1.111e+55; b080916c rest photon energy gev b080916c = 71.16; b080916c rest gev delay s b080916c = 0.8411; b080916c lorentz floor adopted b080916c = 900; b080916c mean luminosity 70s erg per s b080916c = 1.588e+53; b080916c energy in solar rest b080916c = 6.209 Operating principle: The fluence-to-energy conversion at this distance gives the headline figure; the",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “GRB 030329: Low-Redshift Energetics, Jet Break and the Luminosity of Its Supernova SN 2003dh”. Its stated result is: Headline result: b030329 isotropic energy erg b030329 = 8.066e+51; b030329 distance modulus mag b030329 = 39.54; b030329 supernova absolute mag b030329 = -20.04; b030329 beaming corrected energy erg b030329 = 3.264e+49; b030329 opening angle degrees b030329 = 5.157; b030329 energy ratio to 990123 b0 (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'GRB 030329: Low-Redshift Energetics, Jet Break and the Luminosity of Its Supernova SN 2003dh'; 'GRB 050509B: The First Short-Burst Host, Its 35 Kiloparsec Offset and the Implied Kick Budget'; 'GRB 060418: Microphysical Energy Fractions, Circumburst Density and the Kinetic Energy Budget'; 'GRB 060614: A Hundred-Second Burst with Short-Burst Manners and the Supernova That Was Not There'; 'GRB 080319B: Peak Luminosity, Rest-Frame Spectral Peak and the Naked-Eye Optical Flash Budget'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 1006,
+   "audio": "audio/lessons30/gamma-ray-bursts-prompt-emission-afterglow-and-host-galaxy-budge/lesson-01.mp3",
+   "minutes": 14.69,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'GRB 030329: Low-Redshift Energetics, Jet Break and the Luminosity of Its Supernova SN 2003dh'. The result it reported gives a value for isotropic energy erg b030329, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'GRB 030329: Low-Redshift Energetics, Jet Break and the Luminosity of Its Supernova SN 2003dh'. Its stated result: Headline result: b030329 isotropic energy erg b030329 = 8.066e+51; b030329 distance modulus mag b030329 = 39.54; b030329 supernova absolute mag b030329 = -20.04; b030329 beaming corrected energy erg b030329 = 3.264e+49; b030329 opening angle degrees b030329 = 5.157; b030329 energy ratio to 990123 b030329 = 0.002372 Operating principle: At low redshift the same fluence converts to a far smaller isotropic energy than f And here is that same result with the words stripped away — just the quantities standing in a row: isotropic energy erg b030329 = 8.066e+51; distance modulus mag b030329 = 39.54; supernova absolute mag b030329 = -20.04. Find isotropic energy erg b030329 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'GRB 030329: Low-Redshift Energetics, Jet Break and the Luminosity of Its Supernova SN 2003dh' stated its result. (2) That result pairs names with values: isotropic energy erg b030329 = 8.066e+51; distance modulus mag b030329 = 39.54; supernova absolute mag b030329 = -20.04. (3) This question asks for the value paired with isotropic energy erg b030329. (4) In that row, isotropic energy erg b030329 stands beside 8.066e+51 — so the answer the lesson gives is 8.066e+51. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'GRB 030329: Low-Redshift Energetics, Jet Break and the Luminosity of Its Supernova SN 2003dh' reported a number for isotropic energy erg b030329. What number did it report?",
+     "kind": "number",
+     "answer": 8.066e+51,
+     "disp": "8.066e+51",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "8.066e+51",
+      "1e+52",
+      "35.07",
+      "8.23e+50"
+     ],
+     "mcAnswer": "8.066e+51",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'GRB 050509B: The First Short-Burst Host, Its 35 Kiloparsec Offset and the Implied Kick Budget'. The result it reported gives a value for projected offset kpc b050509b, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'GRB 050509B: The First Short-Burst Host, Its 35 Kiloparsec Offset and the Implied Kick Budget'. Its stated result: Headline result: b050509b projected offset kpc b050509b = 35.07; b050509b offset in effective radii b050509b = 7.014; b050509b kick for 1gyr delay km per s b050509b = 34.29; b050509b kick for 10gyr delay km per s b050509b = 3.429; b050509b angular diameter distance mpc b050509b = 723.4; b050509b scale kpc per arcsec b050509b = 3.507 Operating principle: An angular offset at a known distance becomes a projected physic And here is that same result with the words stripped away — just the quantities standing in a row: projected offset kpc b050509b = 35.07; km per s b050509b = 34.29; diameter distance mpc b050509b = 723.4. Find projected offset kpc b050509b in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'GRB 050509B: The First Short-Burst Host, Its 35 Kiloparsec Offset and the Implied Kick Budget' stated its result. (2) That result pairs names with values: projected offset kpc b050509b = 35.07; km per s b050509b = 34.29; diameter distance mpc b050509b = 723.4. (3) This question asks for the value paired with projected offset kpc b050509b. (4) In that row, projected offset kpc b050509b stands beside 35.07 — so the answer the lesson gives is 35.07. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'GRB 050509B: The First Short-Burst Host, Its 35 Kiloparsec Offset and the Implied Kick Budget' reported a number for projected offset kpc b050509b. What number did it report?",
+     "kind": "number",
+     "answer": 35.07,
+     "disp": "35.07",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1e+52",
+      "8.066e+51",
+      "8.23e+50",
+      "35.07"
+     ],
+     "mcAnswer": "35.07",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'GRB 060418: Microphysical Energy Fractions, Circumburst Density and the Kinetic Energy Budget'. The result it reported gives a value for channel energy erg b060418, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'GRB 060418: Microphysical Energy Fractions, Circumburst Density and the Kinetic Energy Budget'. Its stated result: Headline result: b060418 electron channel energy erg b060418 = 1e+52; b060418 magnetic channel energy erg b060418 = 1e+51; b060418 proton channel energy erg b060418 = 8.9e+52; b060418 compton y scale b060418 = 3.162; b060418 electron to magnetic ratio b060418 = 10; b060418 density kg per m3 b060418 = 1.67e-21 Operating principle: The microphysical fractions state how the shock divides its energy among electrons, magn And here is that same result with the words stripped away — just the quantities standing in a row: channel energy erg b060418 = 1e+52; compton y scale b060418 = 3.162; kg per m3 b060418 = 1.67e-21. Find channel energy erg b060418 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'GRB 060418: Microphysical Energy Fractions, Circumburst Density and the Kinetic Energy Budget' stated its result. (2) That result pairs names with values: channel energy erg b060418 = 1e+52; compton y scale b060418 = 3.162; kg per m3 b060418 = 1.67e-21. (3) This question asks for the value paired with channel energy erg b060418. (4) In that row, channel energy erg b060418 stands beside 1e+52 — so the answer the lesson gives is 1e+52. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'GRB 060418: Microphysical Energy Fractions, Circumburst Density and the Kinetic Energy Budget' reported a number for channel energy erg b060418. What number did it report?",
+     "kind": "number",
+     "answer": 1e+52,
+     "disp": "1e+52",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "8.23e+50",
+      "35.07",
+      "1e+52",
+      "8.066e+51"
+     ],
+     "mcAnswer": "1e+52",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'GRB 060614: A Hundred-Second Burst with Short-Burst Manners and the Supernova That Was Not There'. The result it reported gives a value for isotropic energy erg b060614, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'GRB 060614: A Hundred-Second Burst with Short-Burst Manners and the Supernova That Was Not There'. Its stated result: Headline result: b060614 isotropic energy erg b060614 = 8.23e+50; b060614 duration ratio to divide b060614 = 51; b060614 supernova limit ratio b060614 = 0.004786; b060614 supernova limit percent of 1998bw b060614 = 0.4786; b060614 distance modulus mag b060614 = 38.87; b060614 rest duration s b060614 = 90.67 Operating principle: Classification evidence can be weighed numerically: the duration ratio against the two-sec And here is that same result with the words stripped away — just the quantities standing in a row: isotropic energy erg b060614 = 8.23e+50; ratio to divide b060614 = 51; supernova limit ratio b060614 = 0.004786. Find isotropic energy erg b060614 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'GRB 060614: A Hundred-Second Burst with Short-Burst Manners and the Supernova That Was Not There' stated its result. (2) That result pairs names with values: isotropic energy erg b060614 = 8.23e+50; ratio to divide b060614 = 51; supernova limit ratio b060614 = 0.004786. (3) This question asks for the value paired with isotropic energy erg b060614. (4) In that row, isotropic energy erg b060614 stands beside 8.23e+50 — so the answer the lesson gives is 8.23e+50. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'GRB 060614: A Hundred-Second Burst with Short-Burst Manners and the Supernova That Was Not There' reported a number for isotropic energy erg b060614. What number did it report?",
+     "kind": "number",
+     "answer": 8.23e+50,
+     "disp": "8.23e+50",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "8.066e+51",
+      "35.07",
+      "8.23e+50",
+      "1e+52"
+     ],
+     "mcAnswer": "8.23e+50",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'GRB 080319B: Peak Luminosity, Rest-Frame Spectral Peak and the Naked-Eye Optical Flash Budget'. The result it reported gives a value for erg per s b080319b, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'GRB 080319B: Peak Luminosity, Rest-Frame Spectral Peak and the Naked-Eye Optical Flash Budget'. Its stated result: Headline result: b080319b peak luminosity erg per s b080319b = 1.099e+53; b080319b rest peak energy kev b080319b = 1307; b080319b observed peak energy kev b080319b = 675; b080319b optical flux ratio vs zero mag b080319b = 0.007586; b080319b luminosity in solar units b080319b = 2.87e+19; b080319b energy in 50s at peak erg b080319b = 5.495e+54 Operating principle: Peak flux, multiplied by four pi and by the luminosity And here is that same result with the words stripped away — just the quantities standing in a row: erg per s b080319b = 1.099e+53; peak energy kev b080319b = 1307; vs zero mag b080319b = 0.007586. Find erg per s b080319b in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'GRB 080319B: Peak Luminosity, Rest-Frame Spectral Peak and the Naked-Eye Optical Flash Budget' stated its result. (2) That result pairs names with values: erg per s b080319b = 1.099e+53; peak energy kev b080319b = 1307; vs zero mag b080319b = 0.007586. (3) This question asks for the value paired with erg per s b080319b. (4) In that row, erg per s b080319b stands beside 1.099e+53 — so the answer the lesson gives is 1.099e+53. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'GRB 080319B: Peak Luminosity, Rest-Frame Spectral Peak and the Naked-Eye Optical Flash Budget' reported a number for erg per s b080319b. What number did it report?",
+     "kind": "number",
+     "answer": 1.099e+53,
+     "disp": "1.099e+53",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "35.07",
+      "1.099e+53",
+      "8.066e+51",
+      "1e+52"
+     ],
+     "mcAnswer": "1.099e+53",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “GRB 030329: Low-Redshift Energetics, Jet Break and the Luminosity of Its Supernova SN 2003dh”. Its stated result is: Headline result: b030329 isotropic energy erg b030329 = 8.066e+51; b030329 distance modulus mag b030329 = 39.54; b030329 supernova absolute mag b030329 = -20.04; b030329 beaming corrected energy erg b030329 = 3.264e+49; b030329 opening angle degrees b030329 = 5.157; b030329 energy ratio to 990123 b0 (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “GRB 030329: Low-Redshift Energetics, Jet Break and the Luminosity of Its Supernova SN 2003dh”. Its stated result is: Headline result: b030329 isotropic energy erg b030329 = 8.066e+51; b030329 distance modulus mag b030329 = 39.54; b030329 supernova absolute mag b030329 = -20.04; b030329 beaming corrected energy erg b030329 = 3.264e+49; b030329 opening angle degrees b030329 = 5.157; b030329 energy ratio to 990123 b0 (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}

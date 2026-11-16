@@ -311,5 +311,12 @@
    "audio": "audio/lessons30/the-circumgalactic-medium-absorption-cooling-and-baryon-budgets-/lesson-01.mp3",
    "minutes": 10.24
   }
+ },
+ "gamma-ray-bursts-prompt-emission-afterglow-and-host-galaxy-budge": {
+  "lesson-01": {
+   "hash": "0f032c0fe76ffeebe4be9d81b8638103e61b8876",
+   "audio": "audio/lessons30/gamma-ray-bursts-prompt-emission-afterglow-and-host-galaxy-budge/lesson-01.mp3",
+   "minutes": 14.69
+  }
  }
 }
