@@ -176,7 +176,11 @@
     <p class="sb-note">563 hits and 189 misses in 752 calls scored — a hit rate of 74.9% — with 1,321 calls recorded and 569 still open, as of November 16, 2026. Every call sealed before the fact; every miss stands in the ledger at the same size as every hit. Check it yourself: <a href="/record-in-numbers/" style="color:#eed268">The Record in Numbers</a> &middot; <a href="/record/" style="color:#eed268">The Big Hits Board</a></p>
   </div>
   <p class="on-record" style="text-align:center;margin:16px auto 0;font-size:1.08rem;font-weight:700;letter-spacing:.03em;color:#eed268">It&rsquo;s on the record.</p>
+  <div id="lock-of-the-day"></div>
 </div>
+<script>
+(function(){var s=document.getElementById('lock-of-the-day');if(!s)return;fetch('/picks/lock-of-the-day.html').then(function(r){return r.text()}).then(function(h){s.innerHTML=h}).catch(function(){});})();
+</script>
 
 <section class="block">
   <div class="wrap">
@@ -282,7 +286,6 @@
 <footer class="sitefoot">
   <div class="wrap">
     <div class="fname goldletters">Premium Marketing Solutions</div>
-    <p style="margin-top:8px;max-width:46em">Premium Marketing Solutions LLC — Davison, Michigan — home of The Prediction Desk.</p>
     <p class="fine" style="display:flex;justify-content:space-between;align-items:center;gap:16px"><span>&copy; Dave</span><span><a href="/faq/">FAQ</a> · <a href="/privacy.html">Privacy</a></span></p>
   </div>
 </footer>
