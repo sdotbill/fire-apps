@@ -100,3 +100,25 @@ privacy) · 6794300f (final chrome).
   supporting exhibits (blueprints, origin, john-titor, run-it-back, the-inventor,
   ufo-evidence, time-traveler/questions/*) — exhibits under the claim, not rival
   claim pages.
+
+## Doctrine change — brand separation (Bill, Nov 16, 00:06 EST)
+
+Supersedes the blended-company treatment. Forward-facing, the two sites SEPARATE
+as brands: **PMS = a predictions company only** (predictions, picks, Predictions
+Plus $99/mo; it does not sell Dave forward-facing — Dave content on PMS is
+background: live/indexed, out of the forward flow). **The Dave site = Dave only.**
+They stay cross-referenced and indexed in the background. On PMS, Bill's name is
+out of hero/gold-letter billing — he appears as founder and owner in the normal
+corporate way (About/founder line), never the headline; the product is the
+predictions.
+
+Standing state after this consolidation (for the separation pass that follows):
+- PMS storefront heroes are already product-led (home H1 "Marketing that brings
+  customers."; predictions H1 "Written down first. Scored in public."); no Bill
+  headline billing on either. Bill's name appears in body/record contexts only.
+- Still forward-facing on the PMS homepage, for the separation pass to move to
+  background: the "What We Do" marketing-services section (incl. the "your own
+  exolex" line), the Dave body links beyond the spec'd menu item, and the home
+  page title "Premium Marketing Solutions | Websites, Marketing & Dave".
+- This consolidation's PMS commits stayed scoped to the merges + chrome, as
+  ordered, so the separation pass and the PMS SEO blast build cleanly on top.
