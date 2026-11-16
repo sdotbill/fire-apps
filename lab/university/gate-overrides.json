@@ -1,0 +1,209 @@
+{
+ "_note": "Hand-checked corrections from the gate build review (Nov 16 2026). The two French classes sit in the 'french' section, not the languages section, so the general gate teaches them — but their set problems are 'write real sentences', and keyword groups auto-extracted from the worked answers came out as accent-fold fragments no student's own sentences would contain. These capstones replace the extracted groups with the forms the homework itself demands (être / avoir, the passé composé), which is what a correct answer is made of.",
+ "francais-i-first-words-real-sentences": {
+  "capstone": {
+   "keywords": [
+    [
+     "je suis"
+    ],
+    [
+     "j ai",
+     "je ai"
+    ],
+    [
+     "etre"
+    ],
+    [
+     "avoir"
+    ],
+    [
+     "je m appelle",
+     "je mappelle"
+    ],
+    [
+     "bonjour"
+    ],
+    [
+     "je suis de",
+     "je viens"
+    ]
+   ],
+   "kind": "keywords",
+   "need": 3,
+   "q": "Write five true sentences about yourself in French using être and avoir — for example \"Je suis…\" and \"J'ai…\". Say them or type them.",
+   "substantive": true,
+   "teach": "Now the class's own problem — the one your professor set for this room. Take your time. Say it out loud or type it; either door is open.",
+   "teach2": "Think about the two pillars: être for what you are, avoir for what you have. 'Je suis…' — I am. 'J'ai…' — I have. Build each sentence on one of them.",
+   "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework."
+  }
+ },
+ "francais-ii-conversation-the-passe-compose": {
+  "capstone": {
+   "keywords": [
+    [
+     "hier"
+    ],
+    [
+     "j ai",
+     "je ai"
+    ],
+    [
+     "avoir"
+    ],
+    [
+     "etre"
+    ],
+    [
+     "je suis"
+    ],
+    [
+     "alle",
+     "venu",
+     "parti",
+     "arrive"
+    ],
+    [
+     "mange",
+     "regarde",
+     "travaille",
+     "joue"
+    ]
+   ],
+   "kind": "keywords",
+   "need": 3,
+   "q": "Write four sentences about what you did yesterday, in the passé composé: two with avoir, two with être. Say them or type them.",
+   "substantive": true,
+   "teach": "Now the class's own problem — the one your professor set for this room. Take your time. Say it out loud or type it; either door is open.",
+   "teach2": "Think about the shape: hier — yesterday — then the helper verb does the time-travelling: 'j'ai…' with avoir, 'je suis…' with être, and the participle carries what happened.",
+   "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework."
+  }
+ },
+ "music-theory-notes-scales-and-why-songs-work": {
+  "capstone": {
+   "keywords": [
+    [
+     "c d e"
+    ],
+    [
+     "scale"
+    ],
+    [
+     "chord"
+    ],
+    [
+     "whole"
+    ],
+    [
+     "half"
+    ],
+    [
+     "thirds",
+     "triad"
+    ],
+    [
+     "f a c"
+    ],
+    [
+     "g b d"
+    ]
+   ],
+   "kind": "keywords",
+   "need": 3,
+   "q": "Build the C major scale and name its notes. Then build the three primary chords — I, IV, and V — and name the notes in each.",
+   "substantive": true,
+   "teach": "Now the class's own problem — the one your professor set for this room. Take your time. Say it out loud or type it; either door is open.",
+   "teach2": "Think about the pattern: whole, whole, half — whole, whole, whole, half. Lay it over C and the scale builds itself; the primary chords stand on the first, fourth and fifth notes.",
+   "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework."
+  }
+ },
+ "galaxies-clusters-and-lensing-as-tests-of-the-frame": {
+  "add": [
+   {
+    "teach": "A Null Test at Galaxy Scales. Its stated result: For the solar neighbourhood and the local Galactic disc, the computed local density of 6.77 times ten to the -21 kg/m3 gives a fractional torsion correction of 6.96 times ten to the -79 on the neutron branch and 2.35 times ten to the -72 on the electron branch.",
+    "teach2": "The same result, its key figure in plain figures: the computed local density is 6.77 × 10^-21 kg per cubic metre. Say that density back to me, in figures, any honest form.",
+    "q": "For the solar neighbourhood, what computed local density does that paper report (in kg per cubic metre)?",
+    "kind": "number",
+    "answer": 6.77e-21,
+    "disp": "6.77e-21",
+    "tol": 0.03,
+    "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+    "substantive": true
+   }
+  ]
+ },
+ "laboratory-and-astrophysical-tests-of-einstein-cartan-torsion": {
+  "add": [
+   {
+    "teach": "Atom Interferometry Beside a Spin-Polarised Source. Its stated result: Atoms crossing a magnetised iron foil (polarised electron density 1.9 times ten to the 29 per cubic metre, torsion 6.24 times ten to the -40 per metre, spin shift 1.23 times ten to the -46 eV) accumulate an Einstein-Cartan phase of 1.87 times ten to the -39 radians.",
+    "teach2": "The same result, its key figure in plain figures: the polarised electron density is 1.9 × 10^29 per cubic metre. Say that density back to me, in figures, any honest form.",
+    "q": "In that experiment, what polarised electron density does the paper report (per cubic metre)?",
+    "kind": "number",
+    "answer": 1.9e+29,
+    "disp": "1.9e29",
+    "tol": 0.03,
+    "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+    "substantive": true
+   }
+  ]
+ },
+ "globular-cluster-multiple-populations-and-light-element-enrichme": {
+  "add": [
+   {
+    "teach": "AGB, Fast-Rotating Massive Star and Supermassive Star Yields Compared Against Cluster Dilution Fractions. Its stated result: For a twelve-cluster comparison sample, dilution fractions from sodium, oxygen, aluminium and helium are 0.358, 0.767, 0.359 and 0.526 (mean 0.502).",
+    "teach2": "The same result, its key figure stated plainly: the mean dilution fraction across the four elements is 0.502. Say that mean back to me.",
+    "q": "For the twelve-cluster sample, what is the mean dilution fraction across sodium, oxygen, aluminium and helium?",
+    "kind": "number",
+    "answer": 0.502,
+    "disp": "0.502",
+    "tol": 0.02,
+    "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+    "substantive": true
+   }
+  ]
+ },
+ "matter-energy": {
+  "add": [
+   {
+    "teach": "Efficiency at Maximum Power, Recounted. Its stated result: Between 873.15 K and 303.15 K the real-fluid efficiency at maximum power is 0.435 for helium and air (Curzon-Ahlborn: 0.4108), 0.238 for near-critical carbon dioxide, and 0.389/0.302 for steam Rankine cycles at modern/older boiler conditions.",
+    "teach2": "The same result, its key figure stated plainly: for helium and air the efficiency at maximum power is 0.435. Say that efficiency back to me.",
+    "q": "Between those temperatures, what real-fluid efficiency at maximum power does the paper report for helium and air?",
+    "kind": "number",
+    "answer": 0.435,
+    "disp": "0.435",
+    "tol": 0.02,
+    "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+    "substantive": true
+   }
+  ]
+ },
+ "ultracold-matter-bose-einstein-condensates-and-superfluid-dynami": {
+  "add": [
+   {
+    "teach": "The Analogue Bounce Density of a Bose-Einstein Condensate in Acoustic Geometry. Its stated result: For rubidium-87 the closure density is 4.21 times ten to the 20 atoms per cubic metre, where the healing length is 0.13 micrometres.",
+    "teach2": "The same result, its key figure in plain figures: the closure density is 4.21 × 10^20 atoms per cubic metre. Say that density back to me, in figures, any honest form.",
+    "q": "For rubidium-87, what closure density does that paper report (in atoms per cubic metre)?",
+    "kind": "number",
+    "answer": 4.21e+20,
+    "disp": "4.21e20",
+    "tol": 0.03,
+    "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+    "substantive": true
+   }
+  ]
+ },
+ "earth-sky-life": {
+  "add": [
+   {
+    "teach": "Counting Photons at the Edge of Sight: The Hecht-Shlaer-Pirenne Result Recounted with Poisson Statistics. Its stated result: Recount confirms Hecht-Shlaer-Pirenne: 5.18-14.21 photons absorbed at threshold by direct bookkeeping, and a Poisson frequency-of-seeing fit gives 9 required absorptions.",
+    "teach2": "The same result, its key figure stated plainly: the Poisson frequency-of-seeing fit gives 9 required absorptions. Say that number back to me.",
+    "q": "How many required absorptions does the Poisson frequency-of-seeing fit give?",
+    "kind": "number",
+    "answer": 9,
+    "disp": "9",
+    "tol": 0.02,
+    "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+    "substantive": true
+   }
+  ]
+ }
+}
