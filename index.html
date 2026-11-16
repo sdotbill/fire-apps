@@ -33,11 +33,17 @@
    }
   },
   {
-   "@type": "Organization",
+   "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
    "@id": "https://premiummarketingsolutionsllc.com/#pms",
    "name": "Premium Marketing Solutions",
    "legalName": "Premium Marketing Solutions LLC",
    "url": "https://premiummarketingsolutionsllc.com/",
+   "brand": { "@type": "Brand", "name": "Predictions Plus" },
+   "logo": "https://premiummarketingsolutionsllc.com/assets/premium-marketing-logo.png",
+   "slogan": "Every call sealed before the fact, graded in public.",
+   "telephone": "+1-989-990-1048",
+   "geo": { "@type": "GeoCoordinates", "latitude": 43.00992, "longitude": -83.54747 },
+   "sameAs": ["https://www.google.com/maps/search/?api=1&query=Premium+Marketing+Solutions+LLC+Davison+MI"],
    "address": {
     "@type": "PostalAddress",
     "streetAddress": "8257 Meadowwood Drive",
@@ -86,7 +92,10 @@
   },
   {
    "@type": "Service",
+   "@id": "https://premiummarketingsolutionsllc.com/predictions.html#predictions-plus",
    "name": "Predictions Plus",
+   "serviceType": "Sports picks and market prediction subscription",
+   "areaServed": "Worldwide",
    "provider": {
     "@id": "https://premiummarketingsolutionsllc.com/#pms"
    },

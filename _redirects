@@ -19,3 +19,4 @@
 /questions/ /faq/ 301
 /questions/:slug/ /faq/:slug/ 301
 /what-we-do/ / 301
+/picks/record/ /record/ 301
