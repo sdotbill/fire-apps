@@ -72,11 +72,16 @@
   #profCard{flex:0 0 208px;background:var(--panel);border:1px solid var(--line);
     border-top:3px solid var(--gold);border-radius:6px;padding:12px;text-align:center}
   @media (max-width:720px){#profCard{flex:none;display:flex;gap:14px;text-align:left;align-items:center}}
-  #profCard svg{width:150px;height:180px}
-  @media (max-width:720px){#profCard svg{width:84px;height:100px}}
+  #profCard img.pphoto{width:150px;height:180px;object-fit:cover;border-radius:10px;
+    border:2px solid var(--gold);background:#fffdf6}
+  @media (max-width:720px){#profCard img.pphoto{width:84px;height:100px}}
+  #profCard .pmono{width:150px;height:180px;border-radius:10px;border:2px solid var(--gold);
+    background:linear-gradient(160deg,#fffdf6,#f3e9d2);color:var(--gold-deep);
+    display:flex;align-items:center;justify-content:center;margin:0 auto;
+    font-family:Georgia,'Times New Roman',serif;font-size:3rem;font-weight:bold;letter-spacing:.04em}
+  @media (max-width:720px){#profCard .pmono{width:84px;height:100px;font-size:1.7rem;margin:0}}
   #profCard .pname{font-weight:bold;color:var(--gold-deep);margin-top:6px}
   #profCard .psec{font-size:.8rem;color:var(--ink-soft)}
-  #profCard .pvoice{font-size:.74rem;color:var(--ink-soft);font-style:italic;margin-top:4px}
   #boardWrap{flex:1;background:var(--board-edge);border-radius:8px;padding:10px;
     box-shadow:0 10px 30px rgba(38,32,25,.25);min-height:340px;display:flex}
   #board{flex:1;background:var(--board);border-radius:4px;padding:20px 24px;
@@ -322,35 +327,23 @@
   refreshHours();
   checkOwnerForBalance();
 
-  /* ================= professor portrait (stylised, drawn) ================= */
-  function portraitSVG(p) {
-    var skin = p.skin, hair = p.hair, outfit = p.outfit, style = p.hairStyle;
-    var back = '', front = '';
-    if (style === 'bob') back = '<rect x="58" y="52" width="84" height="92" rx="30" fill="' + hair + '"/>';
-    if (style === 'waves') back = '<path d="M56 70 Q50 150 66 168 L80 168 Q66 120 70 84 Z M144 70 Q150 150 134 168 L120 168 Q134 120 130 84 Z" fill="' + hair + '"/><path d="M60 78 Q100 30 140 78 Q142 52 100 44 Q58 52 60 78Z" fill="' + hair + '"/>';
-    if (style === 'straight') back = '<rect x="60" y="54" width="16" height="96" rx="8" fill="' + hair + '"/><rect x="124" y="54" width="16" height="96" rx="8" fill="' + hair + '"/><path d="M62 74 Q100 34 138 74 Q138 52 100 48 Q62 52 62 74Z" fill="' + hair + '"/>';
-    if (style === 'curls') { back = ''; [62, 80, 100, 120, 138].forEach(function (x, i) { back += '<circle cx="' + x + '" cy="' + (52 + (i % 2) * 8) + '" r="15" fill="' + hair + '"/>'; }); back += '<circle cx="58" cy="86" r="13" fill="' + hair + '"/><circle cx="142" cy="86" r="13" fill="' + hair + '"/><circle cx="60" cy="112" r="11" fill="' + hair + '"/><circle cx="140" cy="112" r="11" fill="' + hair + '"/>'; }
-    if (style === 'bun') front = '<circle cx="100" cy="42" r="15" fill="' + hair + '"/><path d="M64 76 Q100 40 136 76 Q134 56 100 52 Q66 56 64 76Z" fill="' + hair + '"/>';
-    if (style === 'short') front = '<path d="M64 74 Q100 40 136 74 Q134 55 100 51 Q66 55 64 74Z" fill="' + hair + '"/>';
-    var beard = p.beard ? '<path d="M71 102 Q100 146 129 102 Q124 130 100 134 Q76 130 71 102Z" fill="' + hair + '"/>' : '';
-    if (style === 'ponytail') front = '<path d="M64 76 Q100 40 136 76 Q134 56 100 52 Q66 56 64 76Z" fill="' + hair + '"/><path d="M134 66 Q156 96 146 140 Q136 148 130 138 Q138 100 128 74Z" fill="' + hair + '"/>';
-    if (style === 'bob' || style === 'waves') front = '<path d="M64 78 Q100 42 136 78 Q134 58 100 54 Q66 58 64 78Z" fill="' + hair + '"/>';
-    var glasses = p.glasses ?
-      '<g stroke="#3a3226" stroke-width="2.4" fill="none"><circle cx="85" cy="96" r="11"/><circle cx="115" cy="96" r="11"/><path d="M96 96 L104 96"/></g>' : '';
-    return '<svg viewBox="0 0 200 240" role="img" aria-label="Portrait of ' + p.name + '">' +
-      '<rect x="4" y="4" width="192" height="232" rx="10" fill="#fffdf6" stroke="#c9a227" stroke-width="2"/>' +
-      back +
-      '<path d="M100 138 L58 240 L142 240 Z" fill="' + outfit + '"/>' +
-      '<path d="M100 138 L84 240 L116 240 Z" fill="rgba(255,255,255,.18)"/>' +
-      '<rect x="90" y="118" width="20" height="26" rx="6" fill="' + skin + '"/>' +
-      '<ellipse cx="100" cy="94" rx="33" ry="39" fill="' + skin + '"/>' +
-      beard +
-      front +
-      '<circle cx="88" cy="96" r="2.6" fill="#262019"/><circle cx="112" cy="96" r="2.6" fill="#262019"/>' +
-      '<path d="M84 86 Q88 83 93 86 M107 86 Q112 83 116 86" stroke="#262019" stroke-width="1.6" fill="none"/>' +
-      '<path d="M91 112 Q100 119 109 112" stroke="#8a4a3a" stroke-width="2" fill="none" stroke-linecap="round"/>' +
-      glasses +
-      '</svg>';
+  /* ================= professor portrait (photorealistic) =================
+     Every professor carries a photorealistic AI-generated portrait at
+     portraits/<classId>.jpg, wired in through the "photo" field on the
+     catalogue professor object. Until a professor's portrait lands, the
+     card shows a plain initials monogram — the old drawn cartoon figure
+     is retired and never served again (Bill, Nov 16 2026). */
+  function profVisual(prof) {
+    if (prof.photo) {
+      return '<img class="pphoto" src="' + esc(prof.photo) + '" alt="Portrait of ' +
+        esc(prof.name) + '">';
+    }
+    var nm = String(prof.name || '').replace(/^(Professor|Profesora|Madame|Herr|Dr\.)\s+/, '');
+    var parts = nm.split(/\s+/).filter(Boolean);
+    var ini = parts.length ? (parts[0].charAt(0) +
+      (parts.length > 1 ? parts[parts.length - 1].charAt(0) : '')).toUpperCase() : '?';
+    return '<div class="pmono" role="img" aria-label="Portrait of ' +
+      esc(prof.name) + ' (photograph to come)">' + ini + '</div>';
   }
 
   /* ================= catalogue ================= */
@@ -533,10 +526,9 @@
     $('crumbClass').textContent = section.name + ' · ' + cls.title;
     var prof = cls.professor || section.professor;
     cur.prof = prof;
-    $('profCard').innerHTML = portraitSVG(Object.assign({}, prof.portrait, { name: prof.name })) +
+    $('profCard').innerHTML = profVisual(prof) +
       '<div><div class="pname">' + esc(prof.name) + '</div>' +
-      '<div class="psec">' + esc(section.name) + '</div>' +
-      '<div class="pvoice">Voice: ' + esc(prof.voiceName) + '</div></div>';
+      '<div class="psec">' + esc(section.name) + '</div></div>';
 
     $('boardTitle').textContent = cls.title;
     $('boardSub').textContent = prof.name + ' · Exolex University';
