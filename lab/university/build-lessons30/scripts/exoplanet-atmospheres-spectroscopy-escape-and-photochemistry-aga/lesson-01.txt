@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Dragana Kaminski, and this is Exoplanet Atmospheres: Spectroscopy, Escape and Photochemistry Against Density and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Dragana Kaminski, and this is Exoplanet Atmospheres: Spectroscopy, Escape and Photochemistry Against Density and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Exoplanet Atmospheric Densities Compared with the Torsion Density Bound'. Its stated result: Computed from stated assumptions and published system parameters, the headline results are: gap_hotjupiter_dex = 60.99, gap_terrestrial_dex = 57.91, rhoA_g_cm3 = 9.72e+54. All values were produced by the deposited computation script and are reported in the paper's results file; the study is simulated and computed, not measured.
+
+Now we go one step further into the material.
+
+'Carbon Dioxide Photolysis Timescales and Oxygen Build-Up Limits on Terrestrial Exoplanets'. Its stated result: Computed from stated assumptions and published system parameters, the headline results are: tau_sun_years = 0.3963, tau_quietM_years = 1.585, tau_activeM_years = 0.1057. All values were produced by the deposited computation script and are reported in the paper's results file; the study is simulated and computed, not measured.
+
+The next piece is where this starts to come together.
+
+'Day-Night Heat Redistribution Efficiencies from Phase-Curve Temperatures'. Its stated result: Computed from stated assumptions and published system parameters, the headline results are: epsilon_HD189733 = 0.5869, epsilon_WASP43 = 0.05463, epsilon_55Cnc = 0.2233. All values were produced by the deposited computation script and are reported in the paper's results file; the study is simulated and computed, not measured.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Energy-Limited Escape Rates for Irradiated Sub-Neptunes'. Its stated result: Computed from stated assumptions and published system parameters, the headline results are: Mdot_GJ436_kg_s = 1.296e+07, lifetime_GJ436_Gyr = 365.1, Mdot_HD189733_kg_s = 9.077e+07. All values were produced by the deposited computation script and are reported in the paper's results file; the study is simulated and computed, not measured.
+
+We take the pieces in order, because each one stands on the last.
+
+'Equilibrium Temperatures, Bond Albedos and the Greenhouse Increment They Leave'. Its stated result: Computed from stated assumptions and published system parameters, the headline results are: Teq_WASP43_K = 1333, Teq_Kepler186f_K = 192.4, greenhouse_55Cnc_K = 799.4. All values were produced by the deposited computation script and are reported in the paper's results file; the study is simulated and computed, not measured.
+
+Stay with me, because the next piece builds directly on that one.
+
+'Haze Opacity Required to Flatten Transmission Spectra of Sub-Neptunes'. Its stated result: Computed from stated assumptions and published system parameters, the headline results are: alpha_GJ1214 = 0.1364, suppression_GJ1214 = 29.33, alpha_K218 = 0.7333. All values were produced by the deposited computation script and are reported in the paper's results file; the study is simulated and computed, not measured.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Exoplanet Atmospheric Densities Compared with the Torsion Density Bound”. Its stated result is: Computed from stated assumptions and published system parameters, the headline results are: gap_hotjupiter_dex = 60.99, gap_terrestrial_dex = 57.91, rhoA_g_cm3 = 9.72e+54. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Exoplanet Atmospheric Densities Compared with the Torsion Density Bound'; 'Carbon Dioxide Photolysis Timescales and Oxygen Build-Up Limits on Terrestrial Exoplanets'; 'Day-Night Heat Redistribution Efficiencies from Phase-Curve Temperatures'; 'Energy-Limited Escape Rates for Irradiated Sub-Neptunes'; 'Equilibrium Temperatures, Bond Albedos and the Greenhouse Increment They Leave'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.

@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'Exoplanet Atmospheric Densities Compared with the Torsion Density Bound'. The result it reported gives a value for gap_hotjupiter_dex, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Exoplanet Atmospheric Densities Compared with the Torsion Density Bound'. Its stated result: Computed from stated assumptions and published system parameters, the headline results are: gap_hotjupiter_dex = 60.99, gap_terrestrial_dex = 57.91, rhoA_g_cm3 = 9.72e+54. All values were produced by the deposited computation script and are reported in the paper's results file; the study is simulated and computed, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: gap_hotjupiter_dex = 60.99; gap_terrestrial_dex = 57.91; rhoA_g_cm3 = 9.72e+54. Find gap_hotjupiter_dex in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Exoplanet Atmospheric Densities Compared with the Torsion Density Bound' stated its result. (2) That result pairs names with values: gap_hotjupiter_dex = 60.99; gap_terrestrial_dex = 57.91; rhoA_g_cm3 = 9.72e+54. (3) This question asks for the value paired with gap_hotjupiter_dex. (4) In that row, gap_hotjupiter_dex stands beside 60.99 — so the answer the lesson gives is 60.99. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Exoplanet Atmospheric Densities Compared with the Torsion Density Bound' reported a number for gap_hotjupiter_dex. What number did it report?",
+  "kind": "number",
+  "answer": 60.99,
+  "disp": "60.99",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "0.5869",
+   "0.3963",
+   "60.99",
+   "1.296e+07"
+  ],
+  "mcAnswer": "60.99",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Carbon Dioxide Photolysis Timescales and Oxygen Build-Up Limits on Terrestrial Exoplanets'. The result it reported gives a value for tau_sun_years, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Carbon Dioxide Photolysis Timescales and Oxygen Build-Up Limits on Terrestrial Exoplanets'. Its stated result: Computed from stated assumptions and published system parameters, the headline results are: tau_sun_years = 0.3963, tau_quietM_years = 1.585, tau_activeM_years = 0.1057. All values were produced by the deposited computation script and are reported in the paper's results file; the study is simulated and computed, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: tau_sun_years = 0.3963; tau_quietM_years = 1.585; tau_activeM_years = 0.1057. Find tau_sun_years in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Carbon Dioxide Photolysis Timescales and Oxygen Build-Up Limits on Terrestrial Exoplanets' stated its result. (2) That result pairs names with values: tau_sun_years = 0.3963; tau_quietM_years = 1.585; tau_activeM_years = 0.1057. (3) This question asks for the value paired with tau_sun_years. (4) In that row, tau_sun_years stands beside 0.3963 — so the answer the lesson gives is 0.3963. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Carbon Dioxide Photolysis Timescales and Oxygen Build-Up Limits on Terrestrial Exoplanets' reported a number for tau_sun_years. What number did it report?",
+  "kind": "number",
+  "answer": 0.3963,
+  "disp": "0.3963",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "1.296e+07",
+   "0.3963",
+   "0.5869",
+   "60.99"
+  ],
+  "mcAnswer": "0.3963",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Day-Night Heat Redistribution Efficiencies from Phase-Curve Temperatures'. The result it reported gives a value for epsilon_HD189733, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Day-Night Heat Redistribution Efficiencies from Phase-Curve Temperatures'. Its stated result: Computed from stated assumptions and published system parameters, the headline results are: epsilon_HD189733 = 0.5869, epsilon_WASP43 = 0.05463, epsilon_55Cnc = 0.2233. All values were produced by the deposited computation script and are reported in the paper's results file; the study is simulated and computed, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: epsilon_HD189733 = 0.5869; epsilon_WASP43 = 0.05463; epsilon_55Cnc = 0.2233. Find epsilon_HD189733 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Day-Night Heat Redistribution Efficiencies from Phase-Curve Temperatures' stated its result. (2) That result pairs names with values: epsilon_HD189733 = 0.5869; epsilon_WASP43 = 0.05463; epsilon_55Cnc = 0.2233. (3) This question asks for the value paired with epsilon_HD189733. (4) In that row, epsilon_HD189733 stands beside 0.5869 — so the answer the lesson gives is 0.5869. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Day-Night Heat Redistribution Efficiencies from Phase-Curve Temperatures' reported a number for epsilon_HD189733. What number did it report?",
+  "kind": "number",
+  "answer": 0.5869,
+  "disp": "0.5869",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "0.3963",
+   "1.296e+07",
+   "60.99",
+   "0.5869"
+  ],
+  "mcAnswer": "0.5869",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Energy-Limited Escape Rates for Irradiated Sub-Neptunes'. The result it reported gives a value for Mdot_GJ436_kg_s, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Energy-Limited Escape Rates for Irradiated Sub-Neptunes'. Its stated result: Computed from stated assumptions and published system parameters, the headline results are: Mdot_GJ436_kg_s = 1.296e+07, lifetime_GJ436_Gyr = 365.1, Mdot_HD189733_kg_s = 9.077e+07. All values were produced by the deposited computation script and are reported in the paper's results file; the study is simulated and computed, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: Mdot_GJ436_kg_s = 1.296e+07; lifetime_GJ436_Gyr = 365.1; Mdot_HD189733_kg_s = 9.077e+07. Find Mdot_GJ436_kg_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Energy-Limited Escape Rates for Irradiated Sub-Neptunes' stated its result. (2) That result pairs names with values: Mdot_GJ436_kg_s = 1.296e+07; lifetime_GJ436_Gyr = 365.1; Mdot_HD189733_kg_s = 9.077e+07. (3) This question asks for the value paired with Mdot_GJ436_kg_s. (4) In that row, Mdot_GJ436_kg_s stands beside 1.296e+07 — so the answer the lesson gives is 1.296e+07. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Energy-Limited Escape Rates for Irradiated Sub-Neptunes' reported a number for Mdot_GJ436_kg_s. What number did it report?",
+  "kind": "number",
+  "answer": 12960000.0,
+  "disp": "1.296e+07",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "60.99",
+   "1.296e+07",
+   "0.5869",
+   "0.3963"
+  ],
+  "mcAnswer": "1.296e+07",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Equilibrium Temperatures, Bond Albedos and the Greenhouse Increment They Leave'. The result it reported gives a value for Teq_WASP43_K, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Equilibrium Temperatures, Bond Albedos and the Greenhouse Increment They Leave'. Its stated result: Computed from stated assumptions and published system parameters, the headline results are: Teq_WASP43_K = 1333, Teq_Kepler186f_K = 192.4, greenhouse_55Cnc_K = 799.4. All values were produced by the deposited computation script and are reported in the paper's results file; the study is simulated and computed, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: Teq_WASP43_K = 1333; Teq_Kepler186f_K = 192.4; greenhouse_55Cnc_K = 799.4. Find Teq_WASP43_K in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Equilibrium Temperatures, Bond Albedos and the Greenhouse Increment They Leave' stated its result. (2) That result pairs names with values: Teq_WASP43_K = 1333; Teq_Kepler186f_K = 192.4; greenhouse_55Cnc_K = 799.4. (3) This question asks for the value paired with Teq_WASP43_K. (4) In that row, Teq_WASP43_K stands beside 1333 — so the answer the lesson gives is 1333. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Equilibrium Temperatures, Bond Albedos and the Greenhouse Increment They Leave' reported a number for Teq_WASP43_K. What number did it report?",
+  "kind": "number",
+  "answer": 1333.0,
+  "disp": "1333",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "0.3963",
+   "0.5869",
+   "60.99",
+   "1333"
+  ],
+  "mcAnswer": "1333",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Exoplanet Atmospheric Densities Compared with the Torsion Density Bound”. Its stated result is: Computed from stated assumptions and published system parameters, the headline results are: gap_hotjupiter_dex = 60.99, gap_terrestrial_dex = 57.91, rhoA_g_cm3 = 9.72e+54. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “Exoplanet Atmospheric Densities Compared with the Torsion Density Bound”. Its stated result is: Computed from stated assumptions and published system parameters, the headline results are: gap_hotjupiter_dex = 60.99, gap_terrestrial_dex = 57.91, rhoA_g_cm3 = 9.72e+54. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]

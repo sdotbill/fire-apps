@@ -332,5 +332,12 @@
    "audio": "audio/lessons30/asteroids-comets-planetary-rings-and-small-body-dynamics-as-test/lesson-01.mp3",
    "minutes": 8.52
   }
+ },
+ "exoplanet-atmospheres-spectroscopy-escape-and-photochemistry-aga": {
+  "lesson-01": {
+   "hash": "bf91b8bbd782d0e06b8a65d0a168be4a7311aabf",
+   "audio": "audio/lessons30/exoplanet-atmospheres-spectroscopy-escape-and-photochemistry-aga/lesson-01.mp3",
+   "minutes": 19.69
+  }
  }
 }
