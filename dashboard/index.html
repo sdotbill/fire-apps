@@ -46,6 +46,12 @@
   .rail button.on{background:var(--panel2);color:var(--amber2);}
   .rail .sp{flex:1;}
   .rail .eye-mini{font-size:1.3rem;color:var(--amber);}
+  /* Lab rail item (Bill, Nov 16 01:04 EST): the Lab sits in the
+     left-hand sidebar itself, word and all — never in the sign-in
+     gate, never in a hamburger. The word rides under the flask so
+     the sidebar SAYS Lab at every width, phone included. */
+  #rail-lab{flex-direction:column;gap:1px;height:auto;min-height:42px;padding:5px 0 4px;}
+  #rail-lab .rail-word{font-size:.6rem;font-weight:700;letter-spacing:.05em;line-height:1.1;color:inherit;}
   .panel{
     flex:none;width:284px;background:var(--panel);border-right:1px solid var(--line);
     display:flex;flex-direction:column;min-height:0;z-index:20;
@@ -284,11 +290,15 @@
          it renders solely when the owner binding stands (see
          openDashboard); everything lives inside its panel. -->
     <button data-view="projects" id="rail-projects" title="Projects" aria-label="Projects" hidden>🗂</button>
-    <!-- Lab (Bill, Nov 16 00:38 EST): his laboratory desk — ONE rail
-         item, owner only, same gate as Projects: it renders solely
-         when the owner binding stands (see openDashboard); the room
-         link and his hours live inside its panel. -->
-    <button data-view="lab" id="rail-lab" title="Lab" aria-label="Lab" hidden>⚗️</button>
+    <!-- Lab (Bill, Nov 16 00:38 EST; placement corrected 01:04 EST):
+         his laboratory desk — ONE item in the LEFT-HAND SIDEBAR,
+         word and all, shown once he is signed in and only then:
+         owner-gated like Projects (it renders solely when the owner
+         binding stands, see openDashboard; hidden again on sign-out).
+         It lives NOWHERE else — not in the sign-in gate, not in any
+         site hamburger, not in any pre-sign-in surface on either
+         domain. The room link and his hours live inside its panel. -->
+    <button data-view="lab" id="rail-lab" title="Lab" aria-label="Lab" hidden>⚗️<span class="rail-word">Lab</span></button>
     <button data-view="settings" title="Settings" aria-label="Settings">⚙️</button>
     <div class="sp"></div>
     <button id="rail-new" title="New chat" aria-label="New chat">➕</button>
