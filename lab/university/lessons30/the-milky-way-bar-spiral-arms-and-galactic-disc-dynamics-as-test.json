@@ -1,0 +1,177 @@
+{
+ "id": "the-milky-way-bar-spiral-arms-and-galactic-disc-dynamics-as-test",
+ "title": "The Milky Way Bar, Spiral Arms and Galactic Disc Dynamics as Tests of the Frame",
+ "professor": "Professor Milos Wisniewski",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Milos Wisniewski, and this is The Milky Way Bar, Spiral Arms and Galactic Disc Dynamics as Tests of the Frame. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Milos Wisniewski, and this is The Milky Way Bar, Spiral Arms and Galactic Disc Dynamics as Tests of the Frame. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'A Bar Pattern Speed for the Milky Way Inferred from Resonance Locations in a Flat Rotation Curve'. Its stated result: Headline result (values verbatim from results.json): pattern_speed_kms_per_kpc = 36.67; inner_lindblad_radius_kpc = 1.757; outer_lindblad_radius_kpc = 10.24. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper.",
+    "Now we go one step further into the material.",
+    "'A Consistency Check of the Oort Constants Against the Galactic Rotation Curve'. Its stated result: Headline result (values verbatim from results.json): circular_speed_implied_kms = 220.9; epicyclic_frequency_kms_per_kpc = 35.98; kappa_to_Omega_ratio = 1.323. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper.",
+    "The next piece is where this starts to come together.",
+    "'A Mass Decomposition Bound for the Milky Way Rotation Curve at the Solar Circle'. Its stated result: Headline result (values verbatim from results.json): halo_contribution_kms = 126.1; enclosed_mass_1e10_msun = 9.14; mass_fraction_halo_within_R0 = 0.3285. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper.",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'A Test of Disc Self-Gravity from the Local Scale Height and Surface Density'. Its stated result: Headline result (values verbatim from results.json): predicted_scale_height_pc = 211.5; predicted_to_observed_ratio = 0.705; implied_surface_density_msun_per_pc2 = 49.34. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper.",
+    "We take the pieces in order, because each one stands on the last.",
+    "'Bounding the Corotation Radius of the Milky Way Bar from the Bar Length and the Fast-Bar Condition'. Its stated result: Headline result (values verbatim from results.json): corotation_central_kpc = 6; corotation_min_kpc = 4.5; corotation_max_kpc = 7.7. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper.",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Bounding the Local Dark Matter Density from Vertical Kinematics of Disc Stars'. Its stated result: Headline result (values verbatim from results.json): surface_density_excess_msun_per_pc2 = 23; local_dark_matter_density_msun_per_pc3 = 0.0115; local_dark_matter_density_GeV_per_cm3 = 0.437. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “A Bar Pattern Speed for the Milky Way Inferred from Resonance Locations in a Flat Rotation Curve”. Its stated result is: Headline result (values verbatim from results.json): pattern_speed_kms_per_kpc = 36.67; inner_lindblad_radius_kpc = 1.757; outer_lindblad_radius_kpc = 10.24. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'A Bar Pattern Speed for the Milky Way Inferred from Resonance Locations in a Flat Rotation Curve'; 'A Consistency Check of the Oort Constants Against the Galactic Rotation Curve'; 'A Mass Decomposition Bound for the Milky Way Rotation Curve at the Solar Circle'; 'A Test of Disc Self-Gravity from the Local Scale Height and Surface Density'; 'Bounding the Corotation Radius of the Milky Way Bar from the Bar Length and the Fast-Bar Condition'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 828,
+   "audio": "audio/lessons30/the-milky-way-bar-spiral-arms-and-galactic-disc-dynamics-as-test/lesson-01.mp3",
+   "minutes": 14.08,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'A Bar Pattern Speed for the Milky Way Inferred from Resonance Locations in a Flat Rotation Curve'. The result it reported gives a value for pattern_speed_kms_per_kpc, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'A Bar Pattern Speed for the Milky Way Inferred from Resonance Locations in a Flat Rotation Curve'. Its stated result: Headline result (values verbatim from results.json): pattern_speed_kms_per_kpc = 36.67; inner_lindblad_radius_kpc = 1.757; outer_lindblad_radius_kpc = 10.24. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: pattern_speed_kms_per_kpc = 36.67; inner_lindblad_radius_kpc = 1.757; outer_lindblad_radius_kpc = 10.24. Find pattern_speed_kms_per_kpc in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'A Bar Pattern Speed for the Milky Way Inferred from Resonance Locations in a Flat Rotation Curve' stated its result. (2) That result pairs names with values: pattern_speed_kms_per_kpc = 36.67; inner_lindblad_radius_kpc = 1.757; outer_lindblad_radius_kpc = 10.24. (3) This question asks for the value paired with pattern_speed_kms_per_kpc. (4) In that row, pattern_speed_kms_per_kpc stands beside 36.67 — so the answer the lesson gives is 36.67. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'A Bar Pattern Speed for the Milky Way Inferred from Resonance Locations in a Flat Rotation Curve' reported a number for pattern_speed_kms_per_kpc. What number did it report?",
+     "kind": "number",
+     "answer": 36.67,
+     "disp": "36.67",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "126.1",
+      "36.67",
+      "211.5",
+      "220.9"
+     ],
+     "mcAnswer": "36.67",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'A Consistency Check of the Oort Constants Against the Galactic Rotation Curve'. The result it reported gives a value for circular_speed_implied_kms, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'A Consistency Check of the Oort Constants Against the Galactic Rotation Curve'. Its stated result: Headline result (values verbatim from results.json): circular_speed_implied_kms = 220.9; epicyclic_frequency_kms_per_kpc = 35.98; kappa_to_Omega_ratio = 1.323. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: circular_speed_implied_kms = 220.9; epicyclic_frequency_kms_per_kpc = 35.98; kappa_to_Omega_ratio = 1.323. Find circular_speed_implied_kms in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'A Consistency Check of the Oort Constants Against the Galactic Rotation Curve' stated its result. (2) That result pairs names with values: circular_speed_implied_kms = 220.9; epicyclic_frequency_kms_per_kpc = 35.98; kappa_to_Omega_ratio = 1.323. (3) This question asks for the value paired with circular_speed_implied_kms. (4) In that row, circular_speed_implied_kms stands beside 220.9 — so the answer the lesson gives is 220.9. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'A Consistency Check of the Oort Constants Against the Galactic Rotation Curve' reported a number for circular_speed_implied_kms. What number did it report?",
+     "kind": "number",
+     "answer": 220.9,
+     "disp": "220.9",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "220.9",
+      "6",
+      "126.1",
+      "36.67"
+     ],
+     "mcAnswer": "220.9",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'A Mass Decomposition Bound for the Milky Way Rotation Curve at the Solar Circle'. The result it reported gives a value for halo_contribution_kms, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'A Mass Decomposition Bound for the Milky Way Rotation Curve at the Solar Circle'. Its stated result: Headline result (values verbatim from results.json): halo_contribution_kms = 126.1; enclosed_mass_1e10_msun = 9.14; mass_fraction_halo_within_R0 = 0.3285. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: halo_contribution_kms = 126.1; enclosed_mass_1e10_msun = 9.14; mass_fraction_halo_within_R0 = 0.3285. Find halo_contribution_kms in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'A Mass Decomposition Bound for the Milky Way Rotation Curve at the Solar Circle' stated its result. (2) That result pairs names with values: halo_contribution_kms = 126.1; enclosed_mass_1e10_msun = 9.14; mass_fraction_halo_within_R0 = 0.3285. (3) This question asks for the value paired with halo_contribution_kms. (4) In that row, halo_contribution_kms stands beside 126.1 — so the answer the lesson gives is 126.1. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'A Mass Decomposition Bound for the Milky Way Rotation Curve at the Solar Circle' reported a number for halo_contribution_kms. What number did it report?",
+     "kind": "number",
+     "answer": 126.1,
+     "disp": "126.1",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "36.67",
+      "220.9",
+      "211.5",
+      "126.1"
+     ],
+     "mcAnswer": "126.1",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'A Test of Disc Self-Gravity from the Local Scale Height and Surface Density'. The result it reported gives a value for predicted_scale_height_pc, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'A Test of Disc Self-Gravity from the Local Scale Height and Surface Density'. Its stated result: Headline result (values verbatim from results.json): predicted_scale_height_pc = 211.5; predicted_to_observed_ratio = 0.705; implied_surface_density_msun_per_pc2 = 49.34. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: predicted_scale_height_pc = 211.5; predicted_to_observed_ratio = 0.705; implied_surface_density_msun_per_pc2 = 49.34. Find predicted_scale_height_pc in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'A Test of Disc Self-Gravity from the Local Scale Height and Surface Density' stated its result. (2) That result pairs names with values: predicted_scale_height_pc = 211.5; predicted_to_observed_ratio = 0.705; implied_surface_density_msun_per_pc2 = 49.34. (3) This question asks for the value paired with predicted_scale_height_pc. (4) In that row, predicted_scale_height_pc stands beside 211.5 — so the answer the lesson gives is 211.5. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'A Test of Disc Self-Gravity from the Local Scale Height and Surface Density' reported a number for predicted_scale_height_pc. What number did it report?",
+     "kind": "number",
+     "answer": 211.5,
+     "disp": "211.5",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "6",
+      "36.67",
+      "126.1",
+      "211.5"
+     ],
+     "mcAnswer": "211.5",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Bounding the Corotation Radius of the Milky Way Bar from the Bar Length and the Fast-Bar Condition'. The result it reported gives a value for corotation_central_kpc, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Bounding the Corotation Radius of the Milky Way Bar from the Bar Length and the Fast-Bar Condition'. Its stated result: Headline result (values verbatim from results.json): corotation_central_kpc = 6; corotation_min_kpc = 4.5; corotation_max_kpc = 7.7. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: corotation_central_kpc = 6; corotation_min_kpc = 4.5; corotation_max_kpc = 7.7. Find corotation_central_kpc in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Bounding the Corotation Radius of the Milky Way Bar from the Bar Length and the Fast-Bar Condition' stated its result. (2) That result pairs names with values: corotation_central_kpc = 6; corotation_min_kpc = 4.5; corotation_max_kpc = 7.7. (3) This question asks for the value paired with corotation_central_kpc. (4) In that row, corotation_central_kpc stands beside 6 — so the answer the lesson gives is 6. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Bounding the Corotation Radius of the Milky Way Bar from the Bar Length and the Fast-Bar Condition' reported a number for corotation_central_kpc. What number did it report?",
+     "kind": "number",
+     "answer": 6.0,
+     "disp": "6",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "6",
+      "220.9",
+      "126.1",
+      "36.67"
+     ],
+     "mcAnswer": "6",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “A Bar Pattern Speed for the Milky Way Inferred from Resonance Locations in a Flat Rotation Curve”. Its stated result is: Headline result (values verbatim from results.json): pattern_speed_kms_per_kpc = 36.67; inner_lindblad_radius_kpc = 1.757; outer_lindblad_radius_kpc = 10.24. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “A Bar Pattern Speed for the Milky Way Inferred from Resonance Locations in a Flat Rotation Curve”. Its stated result is: Headline result (values verbatim from results.json): pattern_speed_kms_per_kpc = 36.67; inner_lindblad_radius_kpc = 1.757; outer_lindblad_radius_kpc = 10.24. These values were computed by the deposited compute.py from published survey values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}

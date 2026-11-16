@@ -276,5 +276,12 @@
    "audio": "audio/lessons30/cosmic-optical-and-infrared-backgrounds-galaxy-counts-and-surfac/lesson-01.mp3",
    "minutes": 20.13
   }
+ },
+ "the-milky-way-bar-spiral-arms-and-galactic-disc-dynamics-as-test": {
+  "lesson-01": {
+   "hash": "f42a5d6f500f4fc5f45c867a748107c555d8a5b3",
+   "audio": "audio/lessons30/the-milky-way-bar-spiral-arms-and-galactic-disc-dynamics-as-test/lesson-01.mp3",
+   "minutes": 14.08
+  }
  }
 }
