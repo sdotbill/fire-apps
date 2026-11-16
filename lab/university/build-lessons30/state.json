@@ -339,5 +339,12 @@
    "audio": "audio/lessons30/exoplanet-atmospheres-spectroscopy-escape-and-photochemistry-aga/lesson-01.mp3",
    "minutes": 19.69
   }
+ },
+ "atmospheric-electricity-lightning-transient-luminous-events-and-": {
+  "lesson-01": {
+   "hash": "3f5deeb11889d046a0b0c3393616cab223d10c4f",
+   "audio": "audio/lessons30/atmospheric-electricity-lightning-transient-luminous-events-and-/lesson-01.mp3",
+   "minutes": 17.97
+  }
  }
 }

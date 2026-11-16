@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Rami Farouk, and this is Atmospheric Electricity: Lightning, Transient Luminous Events and Terrestrial Gamma-Ray Flashes Against Energy and Density Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Rami Farouk, and this is Atmospheric Electricity: Lightning, Transient Luminous Events and Terrestrial Gamma-Ray Flashes Against Energy and Density Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Charge Moment Change Required for Sprite Inception at Seventy Kilometres: A Density-Scaled Breakdown Test'. Its stated result: Computed budget with headline values Mq70 = 15178, Ek70 = 795.4, Etyp = 41.9, margin = 0.05. The deposited record was verified by public read-back: exact title, sole creator William Alexander Aldred (ORCID 0009-0000-1215-577X), CC BY 4.0 licence, and all four files present.
+
+Now we go one step further into the material.
+
+'Charge Lowered by Continuing Currents Compared with Return Strokes: Why the Quiet Part of a Flash Moves Most of the Charge'. Its stated result: Computed budget with headline values Qcc = 20, Qtot = 35, frac = 0.57, Mq = 210. The deposited record was verified by public read-back: exact title, sole creator William Alexander Aldred (ORCID 0009-0000-1215-577X), CC BY 4.0 licence, and all four files present.
+
+The next piece is where this starts to come together.
+
+'The Expanding Ring of an ELVES: Light-Travel Geometry, Pulse Amplitude and Duration at the Base of the Ionosphere'. Its stated result: Computed budget with headline values r03 = 41, r10 = 289, delay_us = 267. The deposited record was verified by public read-back: exact title, sole creator William Alexander Aldred (ORCID 0009-0000-1215-577X), CC BY 4.0 licence, and all four files present.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Fair-Weather Current Density and Columnar Resistance: Why the Surface Field Is Set by the Lowest Kilometre'. Its stated result: Computed budget with headline values Rcol = 3.02e+17, E0 = 100, frac1km = 0.17, Vcheck = 6.05e+05. The deposited record was verified by public read-back: exact title, sole creator William Alexander Aldred (ORCID 0009-0000-1215-577X), CC BY 4.0 licence, and all four files present.
+
+We take the pieces in order, because each one stands on the last.
+
+'Charge Transferred by a Gigantic Jet: Current, Duration and the Potential Difference Between Cloud Top and Ionosphere'. Its stated result: Computed budget with headline values Q = 90, E_MJ = 900.0, ratio = 4.5. The deposited record was verified by public read-back: exact title, sole creator William Alexander Aldred (ORCID 0009-0000-1215-577X), CC BY 4.0 licence, and all four files present.
+
+Stay with me, because the next piece builds directly on that one.
+
+'Energy per Metre in a Lightning Return-Stroke Channel: Heating, Ionisation and Radiation Partitioned for a Five-Kilometre Channel'. Its stated result: Computed budget with headline values heat = 5.49e+04, ion = 3.84e+04, thermal = 9.33e+04, elec = 1.50e+05, totalMJ = 466.5, ratio = 1.3e-58. The deposited record was verified by public read-back: exact title, sole creator William Alexander Aldred (ORCID 0009-0000-1215-577X), CC BY 4.0 licence, and all four files present.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Charge Moment Change Required for Sprite Inception at Seventy Kilometres: A Density-Scaled Breakdown Test”. Its stated result is: Computed budget with headline values Mq70 = 15178, Ek70 = 795.4, Etyp = 41.9, margin = 0.05. The deposited record was verified by public read-back: exact title, sole creator William Alexander Aldred (ORCID 0009-0000-1215-577X), CC BY 4.0 licence, and all four files present. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Charge Moment Change Required for Sprite Inception at Seventy Kilometres: A Density-Scaled Breakdown Test'; 'Charge Lowered by Continuing Currents Compared with Return Strokes: Why the Quiet Part of a Flash Moves Most of the Charge'; 'The Expanding Ring of an ELVES: Light-Travel Geometry, Pulse Amplitude and Duration at the Base of the Ionosphere'; 'Fair-Weather Current Density and Columnar Resistance: Why the Surface Field Is Set by the Lowest Kilometre'; 'Charge Transferred by a Gigantic Jet: Current, Duration and the Potential Difference Between Cloud Top and Ionosphere'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.

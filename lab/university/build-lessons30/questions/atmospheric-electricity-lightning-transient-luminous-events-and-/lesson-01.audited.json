@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'Charge Moment Change Required for Sprite Inception at Seventy Kilometres: A Density-Scaled Breakdown Test'. The result it reported gives a value for headline values Mq70, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Charge Moment Change Required for Sprite Inception at Seventy Kilometres: A Density-Scaled Breakdown Test'. Its stated result: Computed budget with headline values Mq70 = 15178, Ek70 = 795.4, Etyp = 41.9, margin = 0.05. The deposited record was verified by public read-back: exact title, sole creator William Alexander Aldred (ORCID 0009-0000-1215-577X), CC BY 4.0 licence, and all four files present. And here is that same result with the words stripped away — just the quantities standing in a row: headline values Mq70 = 15178; Ek70 = 795.4; Etyp = 41.9. Find headline values Mq70 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Charge Moment Change Required for Sprite Inception at Seventy Kilometres: A Density-Scaled Breakdown Test' stated its result. (2) That result pairs names with values: headline values Mq70 = 15178; Ek70 = 795.4; Etyp = 41.9. (3) This question asks for the value paired with headline values Mq70. (4) In that row, headline values Mq70 stands beside 15178 — so the answer the lesson gives is 15178. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Charge Moment Change Required for Sprite Inception at Seventy Kilometres: A Density-Scaled Breakdown Test' reported a number for headline values Mq70. What number did it report?",
+  "kind": "number",
+  "answer": 15178.0,
+  "disp": "15178",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "15178",
+   "267",
+   "3.02e+17",
+   "20"
+  ],
+  "mcAnswer": "15178",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Charge Lowered by Continuing Currents Compared with Return Strokes: Why the Quiet Part of a Flash Moves Most of the Charge'. The result it reported gives a value for headline values Qcc, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Charge Lowered by Continuing Currents Compared with Return Strokes: Why the Quiet Part of a Flash Moves Most of the Charge'. Its stated result: Computed budget with headline values Qcc = 20, Qtot = 35, frac = 0.57, Mq = 210. The deposited record was verified by public read-back: exact title, sole creator William Alexander Aldred (ORCID 0009-0000-1215-577X), CC BY 4.0 licence, and all four files present. And here is that same result with the words stripped away — just the quantities standing in a row: headline values Qcc = 20; Qtot = 35; frac = 0.57. Find headline values Qcc in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Charge Lowered by Continuing Currents Compared with Return Strokes: Why the Quiet Part of a Flash Moves Most of the Charge' stated its result. (2) That result pairs names with values: headline values Qcc = 20; Qtot = 35; frac = 0.57. (3) This question asks for the value paired with headline values Qcc. (4) In that row, headline values Qcc stands beside 20 — so the answer the lesson gives is 20. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Charge Lowered by Continuing Currents Compared with Return Strokes: Why the Quiet Part of a Flash Moves Most of the Charge' reported a number for headline values Qcc. What number did it report?",
+  "kind": "number",
+  "answer": 20.0,
+  "disp": "20",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "15178",
+   "3.02e+17",
+   "20",
+   "267"
+  ],
+  "mcAnswer": "20",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'The Expanding Ring of an ELVES: Light-Travel Geometry, Pulse Amplitude and Duration at the Base of the Ionosphere'. The result it reported gives a value for delay_us, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'The Expanding Ring of an ELVES: Light-Travel Geometry, Pulse Amplitude and Duration at the Base of the Ionosphere'. Its stated result: Computed budget with headline values r03 = 41, r10 = 289, delay_us = 267. The deposited record was verified by public read-back: exact title, sole creator William Alexander Aldred (ORCID 0009-0000-1215-577X), CC BY 4.0 licence, and all four files present. And here is that same result with the words stripped away — just the quantities standing in a row: delay_us = 267; headline values r03 = 41; r10 = 289. Find delay_us in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'The Expanding Ring of an ELVES: Light-Travel Geometry, Pulse Amplitude and Duration at the Base of the Ionosphere' stated its result. (2) That result pairs names with values: delay_us = 267; headline values r03 = 41; r10 = 289. (3) This question asks for the value paired with delay_us. (4) In that row, delay_us stands beside 267 — so the answer the lesson gives is 267. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'The Expanding Ring of an ELVES: Light-Travel Geometry, Pulse Amplitude and Duration at the Base of the Ionosphere' reported a number for delay_us. What number did it report?",
+  "kind": "number",
+  "answer": 267.0,
+  "disp": "267",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "15178",
+   "267",
+   "3.02e+17",
+   "20"
+  ],
+  "mcAnswer": "267",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Fair-Weather Current Density and Columnar Resistance: Why the Surface Field Is Set by the Lowest Kilometre'. The result it reported gives a value for headline values Rcol, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Fair-Weather Current Density and Columnar Resistance: Why the Surface Field Is Set by the Lowest Kilometre'. Its stated result: Computed budget with headline values Rcol = 3.02e+17, E0 = 100, frac1km = 0.17, Vcheck = 6.05e+05. The deposited record was verified by public read-back: exact title, sole creator William Alexander Aldred (ORCID 0009-0000-1215-577X), CC BY 4.0 licence, and all four files present. And here is that same result with the words stripped away — just the quantities standing in a row: headline values Rcol = 3.02e+17; E0 = 100; frac1km = 0.17. Find headline values Rcol in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Fair-Weather Current Density and Columnar Resistance: Why the Surface Field Is Set by the Lowest Kilometre' stated its result. (2) That result pairs names with values: headline values Rcol = 3.02e+17; E0 = 100; frac1km = 0.17. (3) This question asks for the value paired with headline values Rcol. (4) In that row, headline values Rcol stands beside 3.02e+17 — so the answer the lesson gives is 3.02e+17. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Fair-Weather Current Density and Columnar Resistance: Why the Surface Field Is Set by the Lowest Kilometre' reported a number for headline values Rcol. What number did it report?",
+  "kind": "number",
+  "answer": 3.02e+17,
+  "disp": "3.02e+17",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "20",
+   "267",
+   "15178",
+   "3.02e+17"
+  ],
+  "mcAnswer": "3.02e+17",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Charge Transferred by a Gigantic Jet: Current, Duration and the Potential Difference Between Cloud Top and Ionosphere'. The result it reported gives a value for E_MJ, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Charge Transferred by a Gigantic Jet: Current, Duration and the Potential Difference Between Cloud Top and Ionosphere'. Its stated result: Computed budget with headline values Q = 90, E_MJ = 900.0, ratio = 4.5. The deposited record was verified by public read-back: exact title, sole creator William Alexander Aldred (ORCID 0009-0000-1215-577X), CC BY 4.0 licence, and all four files present. And here is that same result with the words stripped away — just the quantities standing in a row: E_MJ = 900.0; headline values Q = 90; ratio = 4.5. Find E_MJ in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Charge Transferred by a Gigantic Jet: Current, Duration and the Potential Difference Between Cloud Top and Ionosphere' stated its result. (2) That result pairs names with values: E_MJ = 900.0; headline values Q = 90; ratio = 4.5. (3) This question asks for the value paired with E_MJ. (4) In that row, E_MJ stands beside 900.0 — so the answer the lesson gives is 900.0. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Charge Transferred by a Gigantic Jet: Current, Duration and the Potential Difference Between Cloud Top and Ionosphere' reported a number for E_MJ. What number did it report?",
+  "kind": "number",
+  "answer": 900.0,
+  "disp": "900.0",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "900.0",
+   "20",
+   "267",
+   "15178"
+  ],
+  "mcAnswer": "900.0",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Charge Moment Change Required for Sprite Inception at Seventy Kilometres: A Density-Scaled Breakdown Test”. Its stated result is: Computed budget with headline values Mq70 = 15178, Ek70 = 795.4, Etyp = 41.9, margin = 0.05. The deposited record was verified by public read-back: exact title, sole creator William Alexander Aldred (ORCID 0009-0000-1215-577X), CC BY 4.0 licence, and all four files present. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “Charge Moment Change Required for Sprite Inception at Seventy Kilometres: A Density-Scaled Breakdown Test”. Its stated result is: Computed budget with headline values Mq70 = 15178, Ek70 = 795.4, Etyp = 41.9, margin = 0.05. The deposited record was verified by public read-back: exact title, sole creator William Alexander Aldred (ORCID 0009-0000-1215-577X), CC BY 4.0 licence, and all four files present. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]
