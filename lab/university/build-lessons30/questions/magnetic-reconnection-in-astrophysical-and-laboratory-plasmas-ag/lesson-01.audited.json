@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'A Bound on Current-Sheet Dissipation in Pulsar Winds from Spin-Down Power'. The result it reported gives a value for spin_down_power_W, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'A Bound on Current-Sheet Dissipation in Pulsar Winds from Spin-Down Power'. Its stated result: Headline result (values verbatim from results.json): spin_down_power_W = 5.000000e+31; light_cylinder_magnetisation = 10000; required_dissipation_fraction_for_sigma_unity = 0.99. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: spin_down_power_W = 5.000000e+31; light_cylinder_magnetisation = 10000; ired_dissipation_fraction_for_sigma_unity = 0.99. Find spin_down_power_W in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'A Bound on Current-Sheet Dissipation in Pulsar Winds from Spin-Down Power' stated its result. (2) That result pairs names with values: spin_down_power_W = 5.000000e+31; light_cylinder_magnetisation = 10000; ired_dissipation_fraction_for_sigma_unity = 0.99. (3) This question asks for the value paired with spin_down_power_W. (4) In that row, spin_down_power_W stands beside 5.000000e+31 — so the answer the lesson gives is 5.000000e+31. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'A Bound on Current-Sheet Dissipation in Pulsar Winds from Spin-Down Power' reported a number for spin_down_power_W. What number did it report?",
+  "kind": "number",
+  "answer": 5e+31,
+  "disp": "5.000000e+31",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "5.000000e+31",
+   "20",
+   "10000",
+   "6902.98"
+  ],
+  "mcAnswer": "5.000000e+31",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'A Bound on the Contribution of Small-Scale Reconnection to Coronal Heating'. The result it reported gives a value for active_region_requirement_W_per_m2, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'A Bound on the Contribution of Small-Scale Reconnection to Coronal Heating'. Its stated result: Headline result (values verbatim from results.json): active_region_requirement_W_per_m2 = 10000; quiet_sun_requirement_W_per_m2 = 300; nanoflare_energy_J = 1.000000e+17. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: active_region_requirement_W_per_m2 = 10000; quiet_sun_requirement_W_per_m2 = 300; nanoflare_energy_J = 1.000000e+17. Find active_region_requirement_W_per_m2 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'A Bound on the Contribution of Small-Scale Reconnection to Coronal Heating' stated its result. (2) That result pairs names with values: active_region_requirement_W_per_m2 = 10000; quiet_sun_requirement_W_per_m2 = 300; nanoflare_energy_J = 1.000000e+17. (3) This question asks for the value paired with active_region_requirement_W_per_m2. (4) In that row, active_region_requirement_W_per_m2 stands beside 10000 — so the answer the lesson gives is 10000. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'A Bound on the Contribution of Small-Scale Reconnection to Coronal Heating' reported a number for active_region_requirement_W_per_m2. What number did it report?",
+  "kind": "number",
+  "answer": 10000.0,
+  "disp": "10000",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "6902.98",
+   "5.000000e+31",
+   "20",
+   "10000"
+  ],
+  "mcAnswer": "10000",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'A Lundquist Number Regime Map for Reconnection in Solar, Magnetospheric and Laboratory Plasmas'. The result it reported gives a value for solar_corona_alfven_km_s, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'A Lundquist Number Regime Map for Reconnection in Solar, Magnetospheric and Laboratory Plasmas'. Its stated result: Headline result (values verbatim from results.json): solar_corona_alfven_km_s = 6902.98; solar_corona_S = 1.000000e+12; solar_corona_sp_rate = 1.000000e-06. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: solar_corona_alfven_km_s = 6902.98; solar_corona_S = 1.000000e+12; solar_corona_sp_rate = 1.000000e-06. Find solar_corona_alfven_km_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'A Lundquist Number Regime Map for Reconnection in Solar, Magnetospheric and Laboratory Plasmas' stated its result. (2) That result pairs names with values: solar_corona_alfven_km_s = 6902.98; solar_corona_S = 1.000000e+12; solar_corona_sp_rate = 1.000000e-06. (3) This question asks for the value paired with solar_corona_alfven_km_s. (4) In that row, solar_corona_alfven_km_s stands beside 6902.98 — so the answer the lesson gives is 6902.98. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'A Lundquist Number Regime Map for Reconnection in Solar, Magnetospheric and Laboratory Plasmas' reported a number for solar_corona_alfven_km_s. What number did it report?",
+  "kind": "number",
+  "answer": 6902.98,
+  "disp": "6902.98",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "20",
+   "5.000000e+31",
+   "10000",
+   "6902.98"
+  ],
+  "mcAnswer": "6902.98",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'A Ribbon-Separation Test of the Reconnection Inflow Rate in Solar Flares'. The result it reported gives a value for ribbon_separation_speed_km_s, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'A Ribbon-Separation Test of the Reconnection Inflow Rate in Solar Flares'. Its stated result: Headline result (values verbatim from results.json): ribbon_separation_speed_km_s = 20; chromospheric_field_G = 500; coronal_field_G = 100. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: ribbon_separation_speed_km_s = 20; chromospheric_field_G = 500; coronal_field_G = 100. Find ribbon_separation_speed_km_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'A Ribbon-Separation Test of the Reconnection Inflow Rate in Solar Flares' stated its result. (2) That result pairs names with values: ribbon_separation_speed_km_s = 20; chromospheric_field_G = 500; coronal_field_G = 100. (3) This question asks for the value paired with ribbon_separation_speed_km_s. (4) In that row, ribbon_separation_speed_km_s stands beside 20 — so the answer the lesson gives is 20. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'A Ribbon-Separation Test of the Reconnection Inflow Rate in Solar Flares' reported a number for ribbon_separation_speed_km_s. What number did it report?",
+  "kind": "number",
+  "answer": 20.0,
+  "disp": "20",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "5.000000e+31",
+   "6902.98",
+   "10000",
+   "20"
+  ],
+  "mcAnswer": "20",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Current-Sheet Thickness Compared with the Ion Inertial Length in the Magnetotail and at the Magnetopause'. The result it reported gives a value for tail_density_cm3, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Current-Sheet Thickness Compared with the Ion Inertial Length in the Magnetotail and at the Magnetopause'. Its stated result: Headline result (values verbatim from results.json): tail_density_cm3 = 0.3; tail_ion_inertial_length_km = 416; tail_observed_sheet_thickness_km = 1000. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: tail_density_cm3 = 0.3; tail_ion_inertial_length_km = 416; tail_observed_sheet_thickness_km = 1000. Find tail_density_cm3 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Current-Sheet Thickness Compared with the Ion Inertial Length in the Magnetotail and at the Magnetopause' stated its result. (2) That result pairs names with values: tail_density_cm3 = 0.3; tail_ion_inertial_length_km = 416; tail_observed_sheet_thickness_km = 1000. (3) This question asks for the value paired with tail_density_cm3. (4) In that row, tail_density_cm3 stands beside 0.3 — so the answer the lesson gives is 0.3. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Current-Sheet Thickness Compared with the Ion Inertial Length in the Magnetotail and at the Magnetopause' reported a number for tail_density_cm3. What number did it report?",
+  "kind": "number",
+  "answer": 0.3,
+  "disp": "0.3",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "5.000000e+31",
+   "6902.98",
+   "10000",
+   "0.3"
+  ],
+  "mcAnswer": "0.3",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “A Bound on Current-Sheet Dissipation in Pulsar Winds from Spin-Down Power”. Its stated result is: Headline result (values verbatim from results.json): spin_down_power_W = 5.000000e+31; light_cylinder_magnetisation = 10000; required_dissipation_fraction_for_sigma_unity = 0.99. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “A Bound on Current-Sheet Dissipation in Pulsar Winds from Spin-Down Power”. Its stated result is: Headline result (values verbatim from results.json): spin_down_power_W = 5.000000e+31; light_cylinder_magnetisation = 10000; required_dissipation_fraction_for_sigma_unity = 0.99. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]

@@ -402,5 +402,12 @@
    "audio": "audio/lessons30/cataclysmic-variables-novae-and-recurrent-novae-against-density-/lesson-01.mp3",
    "minutes": 13.13
   }
+ },
+ "magnetic-reconnection-in-astrophysical-and-laboratory-plasmas-ag": {
+  "lesson-01": {
+   "hash": "a232aeefdf1c17e4e42f178b8ad79ddaa0555a9a",
+   "audio": "audio/lessons30/magnetic-reconnection-in-astrophysical-and-laboratory-plasmas-ag/lesson-01.mp3",
+   "minutes": 12.0
+  }
  }
 }
