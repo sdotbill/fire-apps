@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'AG Carinae: LBV Nebula Expansion Energy and Prior Eruption Budget'. The result it reported gives a value for escape_velocity_km_s, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'AG Carinae: LBV Nebula Expansion Energy and Prior Eruption Budget'. Its stated result: Headline result (values verbatim from results.json): escape_velocity_km_s = 396.4; vinf_to_vesc_ratio = 0.5045; momentum_efficiency_eta = 0.1974; wind_kinetic_power_Lsun = 98.79; kinetic_to_radiative_ratio = 6.586e-05; eddington_ratio = 1.302; nebula_mass_Msun = 4.2; nebula_velocity_km_s = 70.0; nebula_radius_pc = 0.4. And here is that same result with the words stripped away — just the quantities standing in a row: escape_velocity_km_s = 396.4; vinf_to_vesc_ratio = 0.5045; momentum_efficiency_eta = 0.1974. Find escape_velocity_km_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'AG Carinae: LBV Nebula Expansion Energy and Prior Eruption Budget' stated its result. (2) That result pairs names with values: escape_velocity_km_s = 396.4; vinf_to_vesc_ratio = 0.5045; momentum_efficiency_eta = 0.1974. (3) This question asks for the value paired with escape_velocity_km_s. (4) In that row, escape_velocity_km_s stands beside 396.4 — so the answer the lesson gives is 396.4. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'AG Carinae: LBV Nebula Expansion Energy and Prior Eruption Budget' reported a number for escape_velocity_km_s. What number did it report?",
+  "kind": "number",
+  "answer": 396.4,
+  "disp": "396.4",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "396.4",
+   "586.1",
+   "1454.0",
+   "957.0"
+  ],
+  "mcAnswer": "396.4",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Eta Carinae: Great Eruption Energy and Ejected-Mass Budget'. The result it reported gives a value for escape_velocity_km_s, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Eta Carinae: Great Eruption Energy and Ejected-Mass Budget'. Its stated result: Headline result (values verbatim from results.json): escape_velocity_km_s = 586.1; vinf_to_vesc_ratio = 0.7167; momentum_efficiency_eta = 2.073; wind_kinetic_power_Lsun = 7261.0; kinetic_to_radiative_ratio = 0.001452; eddington_ratio = 1.688; eruption_mass_Msun = 12.0; eruption_velocity_km_s = 600.0; eruption_duration_yr = 20.0. And here is that same result with the words stripped away — just the quantities standing in a row: escape_velocity_km_s = 586.1; vinf_to_vesc_ratio = 0.7167; momentum_efficiency_eta = 2.073. Find escape_velocity_km_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Eta Carinae: Great Eruption Energy and Ejected-Mass Budget' stated its result. (2) That result pairs names with values: escape_velocity_km_s = 586.1; vinf_to_vesc_ratio = 0.7167; momentum_efficiency_eta = 2.073. (3) This question asks for the value paired with escape_velocity_km_s. (4) In that row, escape_velocity_km_s stands beside 586.1 — so the answer the lesson gives is 586.1. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Eta Carinae: Great Eruption Energy and Ejected-Mass Budget' reported a number for escape_velocity_km_s. What number did it report?",
+  "kind": "number",
+  "answer": 586.1,
+  "disp": "586.1",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "957.0",
+   "396.4",
+   "1454.0",
+   "586.1"
+  ],
+  "mcAnswer": "586.1",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'HD 5980: Eruptive SMC System Ejecta and Wind-Collision Budget'. The result it reported gives a value for escape_velocity_km_s, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'HD 5980: Eruptive SMC System Ejecta and Wind-Collision Budget'. Its stated result: Headline result (values verbatim from results.json): escape_velocity_km_s = 957.0; vinf_to_vesc_ratio = 0.6269; momentum_efficiency_eta = 1.481; wind_kinetic_power_Lsun = 2964.0; kinetic_to_radiative_ratio = 0.001482; eddington_ratio = 1.013; eruption_mass_Msun = 5.0; eruption_velocity_km_s = 500.0; eruption_kinetic_energy_erg = 1.243e+49. And here is that same result with the words stripped away — just the quantities standing in a row: escape_velocity_km_s = 957.0; vinf_to_vesc_ratio = 0.6269; momentum_efficiency_eta = 1.481. Find escape_velocity_km_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'HD 5980: Eruptive SMC System Ejecta and Wind-Collision Budget' stated its result. (2) That result pairs names with values: escape_velocity_km_s = 957.0; vinf_to_vesc_ratio = 0.6269; momentum_efficiency_eta = 1.481. (3) This question asks for the value paired with escape_velocity_km_s. (4) In that row, escape_velocity_km_s stands beside 957.0 — so the answer the lesson gives is 957.0. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'HD 5980: Eruptive SMC System Ejecta and Wind-Collision Budget' reported a number for escape_velocity_km_s. What number did it report?",
+  "kind": "number",
+  "answer": 957.0,
+  "disp": "957.0",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "586.1",
+   "1454.0",
+   "396.4",
+   "957.0"
+  ],
+  "mcAnswer": "957.0",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'P Cygni: Historical Eruption Shell Mass and Present Wind Budget'. The result it reported gives a value for escape_velocity_km_s, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'P Cygni: Historical Eruption Shell Mass and Present Wind Budget'. Its stated result: Headline result (values verbatim from results.json): escape_velocity_km_s = 388.1; vinf_to_vesc_ratio = 0.4767; momentum_efficiency_eta = 0.2994; wind_kinetic_power_Lsun = 56.35; kinetic_to_radiative_ratio = 9.238e-05; eddington_ratio = 0.6177; shell_mass_Msun = 0.1; shell_velocity_km_s = 150.0; shell_age_yr = 400.0. And here is that same result with the words stripped away — just the quantities standing in a row: escape_velocity_km_s = 388.1; vinf_to_vesc_ratio = 0.4767; momentum_efficiency_eta = 0.2994. Find escape_velocity_km_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'P Cygni: Historical Eruption Shell Mass and Present Wind Budget' stated its result. (2) That result pairs names with values: escape_velocity_km_s = 388.1; vinf_to_vesc_ratio = 0.4767; momentum_efficiency_eta = 0.2994. (3) This question asks for the value paired with escape_velocity_km_s. (4) In that row, escape_velocity_km_s stands beside 388.1 — so the answer the lesson gives is 388.1. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'P Cygni: Historical Eruption Shell Mass and Present Wind Budget' reported a number for escape_velocity_km_s. What number did it report?",
+  "kind": "number",
+  "answer": 388.1,
+  "disp": "388.1",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "957.0",
+   "586.1",
+   "388.1",
+   "1454.0"
+  ],
+  "mcAnswer": "388.1",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'R136a1: Wind Momentum and Ionising Budget of the Most Massive Known Star'. The result it reported gives a value for escape_velocity_km_s, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'R136a1: Wind Momentum and Ionising Budget of the Most Massive Known Star'. Its stated result: Headline result (values verbatim from results.json): escape_velocity_km_s = 1454.0; vinf_to_vesc_ratio = 1.789; momentum_efficiency_eta = 0.6827; wind_kinetic_power_Lsun = 13910.0; kinetic_to_radiative_ratio = 0.00296; eddington_ratio = 0.7285; adopted_teff_K = 46000.0; log_Q_s = 50.0; ionising_photon_rate_s = 1e+50. And here is that same result with the words stripped away — just the quantities standing in a row: escape_velocity_km_s = 1454.0; vinf_to_vesc_ratio = 1.789; momentum_efficiency_eta = 0.6827. Find escape_velocity_km_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'R136a1: Wind Momentum and Ionising Budget of the Most Massive Known Star' stated its result. (2) That result pairs names with values: escape_velocity_km_s = 1454.0; vinf_to_vesc_ratio = 1.789; momentum_efficiency_eta = 0.6827. (3) This question asks for the value paired with escape_velocity_km_s. (4) In that row, escape_velocity_km_s stands beside 1454.0 — so the answer the lesson gives is 1454.0. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'R136a1: Wind Momentum and Ionising Budget of the Most Massive Known Star' reported a number for escape_velocity_km_s. What number did it report?",
+  "kind": "number",
+  "answer": 1454.0,
+  "disp": "1454.0",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "1454.0",
+   "586.1",
+   "957.0",
+   "396.4"
+  ],
+  "mcAnswer": "1454.0",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “AG Carinae: LBV Nebula Expansion Energy and Prior Eruption Budget”. Its stated result is: Headline result (values verbatim from results.json): escape_velocity_km_s = 396.4; vinf_to_vesc_ratio = 0.5045; momentum_efficiency_eta = 0.1974; wind_kinetic_power_Lsun = 98.79; kinetic_to_radiative_ratio = 6.586e-05; eddington_ratio = 1.302; nebula_mass_Msun = 4.2; nebula_velocity_km_s = 70.0; neb (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “AG Carinae: LBV Nebula Expansion Energy and Prior Eruption Budget”. Its stated result is: Headline result (values verbatim from results.json): escape_velocity_km_s = 396.4; vinf_to_vesc_ratio = 0.5045; momentum_efficiency_eta = 0.1974; wind_kinetic_power_Lsun = 98.79; kinetic_to_radiative_ratio = 6.586e-05; eddington_ratio = 1.302; nebula_mass_Msun = 4.2; nebula_velocity_km_s = 70.0; neb (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]

@@ -479,5 +479,12 @@
    "audio": "audio/lessons30/symbiotic-stars-and-interacting-wind-binaries-accretion-nebular-/lesson-01.mp3",
    "minutes": 13.65
   }
+ },
+ "wolf-rayet-stars-luminous-blue-variables-and-massive-star-winds-": {
+  "lesson-01": {
+   "hash": "0a03f1852212c9ee28313a35a8bb05df2c8b87ae",
+   "audio": "audio/lessons30/wolf-rayet-stars-luminous-blue-variables-and-massive-star-winds-/lesson-01.mp3",
+   "minutes": 16.26
+  }
  }
 }
