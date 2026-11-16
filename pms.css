@@ -166,15 +166,23 @@ section.block.tight{padding:40px 0 4px}
 .pagefoot-note{text-align:center;color:var(--ink-faint);font-size:.85rem;margin-top:26px}
 
 /* ---------- header overflow guard (author's photo, Nov 6 2026) ----------
-   At narrow widths and high zoom the brand sits on its own row and the controls
-   take the next — the header never pushes anything past the viewport edge; the
-   brand name scales fluidly (clamp, in the header section) and ellipsizes only
-   as a last resort. Dropdown panels anchor to the header's full width here, not
-   to their buttons — a 300px panel anchored to a mid-row button runs off the
-   left edge when opened. (Placed last: it must outrank the chrome rules above.) */
+   At narrow widths the header never pushes anything past the viewport edge;
+   the brand name scales fluidly (clamp, in the header section) and ellipsizes
+   only as a last resort. Dropdown panels anchor to the header's full width
+   here, not to their buttons — a 300px panel anchored to a mid-row button
+   runs off the left edge when opened. (Placed last: it must outrank the
+   chrome rules above.)
+   ---------- phone header balance (owner order, Nov 16 2026) ----------
+   One row: hamburger LEVEL with the brand block (logo + company name, with
+   THE PREDICTION DESK directly under the name); the talk control takes the
+   full row beneath it, centered — nothing stacked lopsided, nothing alone
+   on a row above the name. */
 @media (max-width:560px){
   .sitehead .wrap{flex-wrap:wrap;row-gap:8px;padding-left:14px;padding-right:14px}
-  .brand{flex:1 1 100%}
+  .brand{flex:1 1 auto}
+  .sitehead .talkbar,.sitehead .talklink{flex:1 1 100%}
+  .sitehead .talklink{justify-content:center}
+  .sitehead .talkbar summary{width:100%;justify-content:center}
   .menubar{margin-left:auto}
   .sitehead .menubar,.sitehead .talkbar{position:static}
   .menupanel,.talkpanel{right:12px}
