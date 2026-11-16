@@ -1,0 +1,177 @@
+{
+ "id": "stellar-asteroseismology-and-white-dwarf-cooling-as-tests-of-the",
+ "title": "Stellar Asteroseismology and White-Dwarf Cooling as Tests of the Frame",
+ "professor": "Professor Manuel Flores",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Manuel Flores, and this is Stellar Asteroseismology and White-Dwarf Cooling as Tests of the Frame. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Manuel Flores, and this is Stellar Asteroseismology and White-Dwarf Cooling as Tests of the Frame. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'The Helium-Ionisation Acoustic Glitch as an Abundance Meter: A Signal-Period and Sensitivity Calculation'. Its stated result: This paper computes a quantitative budget for its stated stellar question from deposited, reproducible arithmetic, with headline results period 700 = 714; period 1000 = 500; dY for 10pct = 0.025. All values are simulated and computed from the assumptions stated in the paper, not measured, and the full grid is deposited with the record.",
+    "Now we go one step further into the material.",
+    "'Hydrogen and Helium Atmospheres Cool Differently: A Divergence Budget for DA and DB White-Dwarf Ages'. Its stated result: This paper computes a quantitative budget for its stated stellar question from deposited, reproducible arithmetic, with headline results div 125 Gyr = 2.00; div 14 Gyr = 3.20; base age = 8.0. All values are simulated and computed from the assumptions stated in the paper, not measured, and the full grid is deposited with the record.",
+    "The next piece is where this starts to come together.",
+    "'The Phase Offset Epsilon as an Evolutionary Classifier: A Separation Budget for Red-Giant-Branch and Clump Stars'. Its stated result: This paper computes a quantitative budget for its stated stellar question from deposited, reproducible arithmetic, with headline results sep at 005 = 5.0; sep at 010 = 2.5; offset = 0.25. All values are simulated and computed from the assumptions stated in the paper, not measured, and the full grid is deposited with the record.",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'Gravity-Mode Period Spacing as a Buoyancy Integral: Inverting Kepler Red-Giant Spacings for the Core Stratification'. Its stated result: This paper computes a quantitative budget for its stated stellar question from deposited, reproducible arithmetic, with headline results I at 50 = 0.3948; I at 310 = 0.0637; ratio = 6.20; dp clump = 310. All values are simulated and computed from the assumptions stated in the paper, not measured, and the full grid is deposited with the record.",
+    "We take the pieces in order, because each one stands on the last.",
+    "'A Mean-Density Inversion from the Large Frequency Separation: Error Budget and a Density Test for Kepler Red Giants'. Its stated result: This paper computes a quantitative budget for its stated stellar question from deposited, reproducible arithmetic, with headline results rho at 20 = 30.9; rho at 103 = 831.2; err 1pct = 2.0; err 05pct = 1.0. All values are simulated and computed from the assumptions stated in the paper, not measured, and the full grid is deposited with the record.",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Mixed-Mode Coupling Through the Evanescent Zone: A Transmission Bound for Red-Giant Mode Visibility'. Its stated result: This paper computes a quantitative budget for its stated stellar question from deposited, reproducible arithmetic, with headline results q 01 = 0.188; q 04 = 0.021; q 10 = 0.000. All values are simulated and computed from the assumptions stated in the paper, not measured, and the full grid is deposited with the record.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “The Helium-Ionisation Acoustic Glitch as an Abundance Meter: A Signal-Period and Sensitivity Calculation”. Its stated result is: This paper computes a quantitative budget for its stated stellar question from deposited, reproducible arithmetic, with headline results period 700 = 714; period 1000 = 500; dY for 10pct = 0.025. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'The Helium-Ionisation Acoustic Glitch as an Abundance Meter: A Signal-Period and Sensitivity Calculation'; 'Hydrogen and Helium Atmospheres Cool Differently: A Divergence Budget for DA and DB White-Dwarf Ages'; 'The Phase Offset Epsilon as an Evolutionary Classifier: A Separation Budget for Red-Giant-Branch and Clump Stars'; 'Gravity-Mode Period Spacing as a Buoyancy Integral: Inverting Kepler Red-Giant Spacings for the Core Stratification'; 'A Mean-Density Inversion from the Large Frequency Separation: Error Budget and a Density Test for Kepler Red Giants'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 955,
+   "audio": "audio/lessons30/stellar-asteroseismology-and-white-dwarf-cooling-as-tests-of-the/lesson-01.mp3",
+   "minutes": 7.87,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'The Helium-Ionisation Acoustic Glitch as an Abundance Meter: A Signal-Period and Sensitivity Calculation'. The result it reported gives a value for headline results period 700, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'The Helium-Ionisation Acoustic Glitch as an Abundance Meter: A Signal-Period and Sensitivity Calculation'. Its stated result: This paper computes a quantitative budget for its stated stellar question from deposited, reproducible arithmetic, with headline results period 700 = 714; period 1000 = 500; dY for 10pct = 0.025. All values are simulated and computed from the assumptions stated in the paper, not measured, and the full grid is deposited with the record. And here is that same result with the words stripped away — just the quantities standing in a row: headline results period 700 = 714; period 1000 = 500; dY for 10pct = 0.025. Find headline results period 700 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'The Helium-Ionisation Acoustic Glitch as an Abundance Meter: A Signal-Period and Sensitivity Calculation' stated its result. (2) That result pairs names with values: headline results period 700 = 714; period 1000 = 500; dY for 10pct = 0.025. (3) This question asks for the value paired with headline results period 700. (4) In that row, headline results period 700 stands beside 714 — so the answer the lesson gives is 714. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'The Helium-Ionisation Acoustic Glitch as an Abundance Meter: A Signal-Period and Sensitivity Calculation' reported a number for headline results period 700. What number did it report?",
+     "kind": "number",
+     "answer": 714.0,
+     "disp": "714",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "2.00",
+      "5.0",
+      "0.3948",
+      "714"
+     ],
+     "mcAnswer": "714",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Hydrogen and Helium Atmospheres Cool Differently: A Divergence Budget for DA and DB White-Dwarf Ages'. The result it reported gives a value for results div 125 Gyr, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Hydrogen and Helium Atmospheres Cool Differently: A Divergence Budget for DA and DB White-Dwarf Ages'. Its stated result: This paper computes a quantitative budget for its stated stellar question from deposited, reproducible arithmetic, with headline results div 125 Gyr = 2.00; div 14 Gyr = 3.20; base age = 8.0. All values are simulated and computed from the assumptions stated in the paper, not measured, and the full grid is deposited with the record. And here is that same result with the words stripped away — just the quantities standing in a row: results div 125 Gyr = 2.00; div 14 Gyr = 3.20; base age = 8.0. Find results div 125 Gyr in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Hydrogen and Helium Atmospheres Cool Differently: A Divergence Budget for DA and DB White-Dwarf Ages' stated its result. (2) That result pairs names with values: results div 125 Gyr = 2.00; div 14 Gyr = 3.20; base age = 8.0. (3) This question asks for the value paired with results div 125 Gyr. (4) In that row, results div 125 Gyr stands beside 2.00 — so the answer the lesson gives is 2.00. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Hydrogen and Helium Atmospheres Cool Differently: A Divergence Budget for DA and DB White-Dwarf Ages' reported a number for results div 125 Gyr. What number did it report?",
+     "kind": "number",
+     "answer": 2.0,
+     "disp": "2.00",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "714",
+      "0.3948",
+      "5.0",
+      "2.00"
+     ],
+     "mcAnswer": "2.00",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'The Phase Offset Epsilon as an Evolutionary Classifier: A Separation Budget for Red-Giant-Branch and Clump Stars'. The result it reported gives a value for results sep at 005, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'The Phase Offset Epsilon as an Evolutionary Classifier: A Separation Budget for Red-Giant-Branch and Clump Stars'. Its stated result: This paper computes a quantitative budget for its stated stellar question from deposited, reproducible arithmetic, with headline results sep at 005 = 5.0; sep at 010 = 2.5; offset = 0.25. All values are simulated and computed from the assumptions stated in the paper, not measured, and the full grid is deposited with the record. And here is that same result with the words stripped away — just the quantities standing in a row: results sep at 005 = 5.0; sep at 010 = 2.5; offset = 0.25. Find results sep at 005 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'The Phase Offset Epsilon as an Evolutionary Classifier: A Separation Budget for Red-Giant-Branch and Clump Stars' stated its result. (2) That result pairs names with values: results sep at 005 = 5.0; sep at 010 = 2.5; offset = 0.25. (3) This question asks for the value paired with results sep at 005. (4) In that row, results sep at 005 stands beside 5.0 — so the answer the lesson gives is 5.0. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'The Phase Offset Epsilon as an Evolutionary Classifier: A Separation Budget for Red-Giant-Branch and Clump Stars' reported a number for results sep at 005. What number did it report?",
+     "kind": "number",
+     "answer": 5.0,
+     "disp": "5.0",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "2.00",
+      "5.0",
+      "0.3948",
+      "714"
+     ],
+     "mcAnswer": "5.0",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Gravity-Mode Period Spacing as a Buoyancy Integral: Inverting Kepler Red-Giant Spacings for the Core Stratification'. The result it reported gives a value for results I at 50, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Gravity-Mode Period Spacing as a Buoyancy Integral: Inverting Kepler Red-Giant Spacings for the Core Stratification'. Its stated result: This paper computes a quantitative budget for its stated stellar question from deposited, reproducible arithmetic, with headline results I at 50 = 0.3948; I at 310 = 0.0637; ratio = 6.20; dp clump = 310. All values are simulated and computed from the assumptions stated in the paper, not measured, and the full grid is deposited with the record. And here is that same result with the words stripped away — just the quantities standing in a row: results I at 50 = 0.3948; I at 310 = 0.0637; ratio = 6.20. Find results I at 50 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Gravity-Mode Period Spacing as a Buoyancy Integral: Inverting Kepler Red-Giant Spacings for the Core Stratification' stated its result. (2) That result pairs names with values: results I at 50 = 0.3948; I at 310 = 0.0637; ratio = 6.20. (3) This question asks for the value paired with results I at 50. (4) In that row, results I at 50 stands beside 0.3948 — so the answer the lesson gives is 0.3948. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Gravity-Mode Period Spacing as a Buoyancy Integral: Inverting Kepler Red-Giant Spacings for the Core Stratification' reported a number for results I at 50. What number did it report?",
+     "kind": "number",
+     "answer": 0.3948,
+     "disp": "0.3948",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "5.0",
+      "0.3948",
+      "714",
+      "2.00"
+     ],
+     "mcAnswer": "0.3948",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'A Mean-Density Inversion from the Large Frequency Separation: Error Budget and a Density Test for Kepler Red Giants'. The result it reported gives a value for results rho at 20, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'A Mean-Density Inversion from the Large Frequency Separation: Error Budget and a Density Test for Kepler Red Giants'. Its stated result: This paper computes a quantitative budget for its stated stellar question from deposited, reproducible arithmetic, with headline results rho at 20 = 30.9; rho at 103 = 831.2; err 1pct = 2.0; err 05pct = 1.0. All values are simulated and computed from the assumptions stated in the paper, not measured, and the full grid is deposited with the record. And here is that same result with the words stripped away — just the quantities standing in a row: results rho at 20 = 30.9; rho at 103 = 831.2; err 1pct = 2.0. Find results rho at 20 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'A Mean-Density Inversion from the Large Frequency Separation: Error Budget and a Density Test for Kepler Red Giants' stated its result. (2) That result pairs names with values: results rho at 20 = 30.9; rho at 103 = 831.2; err 1pct = 2.0. (3) This question asks for the value paired with results rho at 20. (4) In that row, results rho at 20 stands beside 30.9 — so the answer the lesson gives is 30.9. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'A Mean-Density Inversion from the Large Frequency Separation: Error Budget and a Density Test for Kepler Red Giants' reported a number for results rho at 20. What number did it report?",
+     "kind": "number",
+     "answer": 30.9,
+     "disp": "30.9",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "5.0",
+      "2.00",
+      "714",
+      "30.9"
+     ],
+     "mcAnswer": "30.9",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “The Helium-Ionisation Acoustic Glitch as an Abundance Meter: A Signal-Period and Sensitivity Calculation”. Its stated result is: This paper computes a quantitative budget for its stated stellar question from deposited, reproducible arithmetic, with headline results period 700 = 714; period 1000 = 500; dY for 10pct = 0.025. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “The Helium-Ionisation Acoustic Glitch as an Abundance Meter: A Signal-Period and Sensitivity Calculation”. Its stated result is: This paper computes a quantitative budget for its stated stellar question from deposited, reproducible arithmetic, with headline results period 700 = 714; period 1000 = 500; dY for 10pct = 0.025. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}

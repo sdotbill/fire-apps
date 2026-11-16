@@ -346,5 +346,12 @@
    "audio": "audio/lessons30/atmospheric-electricity-lightning-transient-luminous-events-and-/lesson-01.mp3",
    "minutes": 17.97
   }
+ },
+ "stellar-asteroseismology-and-white-dwarf-cooling-as-tests-of-the": {
+  "lesson-01": {
+   "hash": "8026ede9ceafed88d7e37e2a78367b838c3d1a29",
+   "audio": "audio/lessons30/stellar-asteroseismology-and-white-dwarf-cooling-as-tests-of-the/lesson-01.mp3",
+   "minutes": 7.87
+  }
  }
 }
