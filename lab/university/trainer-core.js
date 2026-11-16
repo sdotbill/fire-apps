@@ -12,7 +12,17 @@
    combining marks after NFD, which turns ñ into n + tilde... so ñ IS
    folded to n. That is deliberate: a recognizer that hears "ano" for
    "año" has still heard the phrase; the gate judges the phrase, not
-   the orthography.) */
+   the orthography.)
+   Hearing-tolerant (fix, Nov 16 2026): the gate also judges what a
+   recognizer can actually return for a correctly spoken phrase. In
+   Spanish the letter h is SILENT, so "hola" spoken perfectly comes
+   back from recognizers as "ola" (or "holla") all the time — the old
+   short-word rule failed those forever, which is exactly what a live
+   student hit. Candidate forms of the target now include each word's
+   h-dropped form plus any per-phrase variants listed in the data, and
+   a short word also passes on a one-letter insertion/deletion (a
+   doubled or dropped letter). A genuinely different word — a
+   substitution like "hora" for "hola" — still misses. */
 (function (global) {
   'use strict';
 
@@ -53,29 +63,48 @@
   }
 
   /* ---------- the gate ----------
-     gradeAttempt(target, heard) -> {pass, score, why}
-     Pass rules, in order:
+     gradeAttempt(target, heard, variants) -> {pass, score, why}
+     The heard text is graded against every CANDIDATE form of the
+     target: the target itself, its silent-h-dropped form (per word),
+     and any variants the phrase data lists. Best result wins.
+     Pass rules, in order, per candidate:
        1. exact normalized match;
-       2. the heard text contains the whole target (recognizers add
-          filler around a correct phrase);
-       3. whole-string similarity >= 0.85;
-       4. multi-word targets: every target word heard (each at >= 0.8
+       2. the heard text contains the whole candidate (recognizers
+          add filler around a correct phrase);
+       3. short single words (<= 4 normalized chars): a one-letter
+          insertion or deletion vs the candidate ("holla", "holaa",
+          "hol") — recognizer spelling noise on a word that was said;
+       4. whole-string similarity >= 0.85;
+       5. multi-word targets: every target word heard (each at >= 0.8
           similarity to some heard word), allowing ONE missing word on
           targets of 4+ words.
-     Short single words (<= 4 normalized chars) pass only on rule 1/2 —
-     "hola" vs "ola" is a real miss the student should retry. */
-  function gradeAttempt(target, heard) {
+     A substitution ("hora" for "hola") or a different word entirely
+     still misses — the widening covers how recognizers SPELL the
+     right sounds, never a different phrase. */
+  function candidateForms(target, variants) {
     var t = normalizeSpeech(target);
-    var h = normalizeSpeech(heard);
-    if (!t) return { pass: false, score: 0, why: 'no-target' };
-    if (!h) return { pass: false, score: 0, why: 'nothing-heard' };
+    var forms = [];
+    function add(f) { if (f && forms.indexOf(f) === -1) forms.push(f); }
+    add(t);
+    add(t.split(' ').map(function (w) {
+      return w.charAt(0) === 'h' ? w.slice(1) : w;
+    }).join(' '));
+    (variants || []).forEach(function (v) { add(normalizeSpeech(v)); });
+    return forms;
+  }
+
+  function gradeAgainst(t, h) {
     if (h === t) return { pass: true, score: 1, why: 'exact' };
     if ((' ' + h + ' ').indexOf(' ' + t + ' ') !== -1)
       return { pass: true, score: 0.97, why: 'contained' };
     var sim = similarity(t, h);
     var tWords = t.split(' '), hWords = h.split(' ');
-    if (tWords.length === 1 && t.length <= 4)
+    if (tWords.length === 1 && t.length <= 4) {
+      var d = levenshtein(t, h);
+      if (d === 1 && t.length !== h.length)
+        return { pass: true, score: 0.9, why: 'short-word-variant' };
       return { pass: false, score: sim, why: 'short-word' };
+    }
     if (sim >= 0.85) return { pass: true, score: sim, why: 'similar' };
     if (tWords.length >= 2) {
       var missing = 0;
@@ -90,6 +119,21 @@
         return { pass: true, score: Math.max(sim, 0.86), why: 'word-match' };
     }
     return { pass: false, score: sim, why: 'miss' };
+  }
+
+  function gradeAttempt(target, heard, variants) {
+    var t = normalizeSpeech(target);
+    var h = normalizeSpeech(heard);
+    if (!t) return { pass: false, score: 0, why: 'no-target' };
+    if (!h) return { pass: false, score: 0, why: 'nothing-heard' };
+    var forms = candidateForms(target, variants);
+    var best = null;
+    for (var i = 0; i < forms.length; i++) {
+      var g = gradeAgainst(forms[i], h);
+      if (!best || g.score > best.score) best = g;
+      if (best.pass && best.score >= 1) break;
+    }
+    return best;
   }
 
   /* ---------- mastery, in the existing lab log ----------
@@ -108,7 +152,8 @@
       classTitle: opts.classTitle,
       kind: 'phrase-mastery',
       phrase: opts.phrase,
-      selfChecked: !!opts.selfChecked
+      selfChecked: !!opts.selfChecked,
+      typed: !!opts.typed
     };
   }
 

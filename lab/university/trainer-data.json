@@ -10,7 +10,11 @@
      "display": "Hola",
      "meaning": "hello — for any hour, any person",
      "audio": "audio/trainer/espanol-i-speak-from-zero/step-0.mp3",
-     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-0-slow.mp3"
+     "slowAudio": "audio/trainer/espanol-i-speak-from-zero/step-0-slow.mp3",
+     "variants": [
+      "ola",
+      "holla"
+     ]
     },
     {
      "target": "Buenos días",

@@ -24,7 +24,13 @@ as the display line. Audio paths are by convention, filled in here:
 import json, os
 
 def steps(*rows):
-    return [{"target": t, "display": d, "meaning": m} for (t, d, m) in rows]
+    out = []
+    for r in rows:
+        s = {"target": r[0], "display": r[1], "meaning": r[2]}
+        if len(r) > 3 and r[3]:
+            s["variants"] = list(r[3])
+        out.append(s)
+    return out
 
 CLASSES = {}
 
@@ -35,7 +41,8 @@ CLASSES["espanol-i-speak-from-zero"] = {
                 "then you say it back to me. Nothing moves on until it "
                 "sounds right. That is how you will actually learn. ¿Listo?"),
     "steps": steps(
-        ("Hola", "Hola", "hello — for any hour, any person"),
+        ("Hola", "Hola", "hello — for any hour, any person",
+         ["ola", "holla"]),  # the h is silent: recognizers return these for a perfect "hola"
         ("Buenos días", "Buenos días", "good morning"),
         ("Buenas tardes", "Buenas tardes", "good afternoon"),
         ("Buenas noches", "Buenas noches", "good night / good evening"),

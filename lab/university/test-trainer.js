@@ -33,7 +33,14 @@ check('hanzi exact passes', grade('谢谢', '谢谢').pass);
 
 /* --- the gate: misses must HOLD (no advance) --- */
 check('wrong word holds', !grade('Hola', 'adios').pass);
-check('short word missing letter holds', !grade('Hola', 'ola').pass);
+/* Nov 16 hearing fix: the h in "hola" is silent — recognizers return
+   "ola"/"holla" for a perfectly spoken "hola", and the old test below
+   asserted those held forever, which is the loop a live student hit.
+   Insertion/deletion noise passes now; a different word still holds. */
+check('silent-h drop passes (ola)', grade('Hola', 'ola').pass);
+check('doubled letter passes (holla)', grade('Hola', 'holla').pass);
+check('short word substitution holds (hora)', !grade('Hola', 'hora').pass);
+check('data variant passes', grade('Hola', 'ola', ['ola', 'holla']).pass);
 check('empty heard holds', !grade('Hola', '').pass);
 check('silence/null holds', !grade('Hola', null).pass);
 check('different sentence holds', !grade('Soy de Michigan', 'soy empresario').pass);

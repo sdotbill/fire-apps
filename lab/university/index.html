@@ -155,6 +155,9 @@
   #trMeaning{color:var(--ink-soft);font-size:1rem;margin:2px 0 10px}
   #trWave{width:100%;height:72px;background:#26332a;border-radius:6px;display:block}
   #trHeard{min-height:1.4em;font-style:italic;color:var(--ink-soft);margin-top:8px}
+  #trTypeRow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:12px}
+  #trTypeRow label{font-size:.92rem;color:var(--ink-soft);white-space:nowrap}
+  #trType{flex:1;min-width:170px;padding:9px 12px;border:1.5px solid var(--line);border-radius:10px;font-size:1rem;background:#fffdf6;color:var(--ink)}
   #trStatus{min-height:1.5em;font-size:1.02rem;margin:4px 0 10px}
   #trStatus.good{color:#2e7d3b;font-weight:bold}
   #trStatus.bad{color:#a33b2e}
@@ -247,6 +250,12 @@
           <button class="act" id="trRecord" style="display:none">🎙 Record yourself</button>
           <button class="act" id="trYes" style="display:none">✓ That sounded like her</button>
           <button class="ghost" id="trNo" style="display:none">↺ Not yet</button>
+        </div>
+        <div id="trTypeRow">
+          <label for="trType">Rather type it?</label>
+          <input id="trType" type="text" autocomplete="off" autocapitalize="none"
+            spellcheck="false" placeholder="Type the phrase here — checked the same way">
+          <button class="act" id="trTypeGo" type="button">Check my typing</button>
         </div>
         <div id="trFoot">
           <span id="trProgress"></span>
@@ -979,6 +988,8 @@
     var stream = null, actx = null, analyser = null, waveRAF = null;
     var rec = null, listening = false, heardFinal = null, recErrorShown = false;
     var mediaRec = null, recChunks = [], ownUrl = null;
+    var emptyStreak = 0;   /* consecutive SR outcomes with nothing usable heard */
+    var passTyped = false; /* the current pass came from the typing box */
 
     function $(id) { return document.getElementById(id); }
     function step() { return data.steps[idx]; }
@@ -1087,7 +1098,12 @@
       var st = step();
       $('trPhrase').textContent = st.display;
       $('trMeaning').textContent = st.meaning;
-      $('trHeard').textContent = '';
+      /* trHeard is NOT cleared here: the last transcript stays on
+         screen under the next phrase until the next attempt replaces
+         it — the student can always see what was heard. It is cleared
+         when a new listen starts, and on entering the classroom. */
+      passTyped = false;
+      var ti0 = $('trType'); if (ti0) ti0.value = '';
       $('trYes').style.display = 'none';
       $('trNo').style.display = 'none';
       $('trRecord').textContent = '🎙 Record yourself';
@@ -1118,7 +1134,7 @@
     function startListening() {
       if (mode !== 'sr' || listening || busy || !started) return;
       var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-      if (!SR) { setSelfMode('This browser can\u2019t listen and check pronunciation — Chrome and Edge can. Until then, the honest fallback: record yourself, play it back next to hers, and judge truly.'); showSelfStep(); return; }
+      if (!SR) { setSelfMode('This browser can\u2019t listen and check pronunciation — Chrome and Edge can. Until then, the honest fallback: record yourself, play it back next to hers, and judge truly — or type the phrase in the box below; it is checked exactly the same way.'); showSelfStep(); return; }
       rec = new SR();
       rec.lang = data.lang;
       rec.interimResults = true;
@@ -1131,7 +1147,7 @@
           if (r.isFinal) { for (var k = 0; k < r.length; k++) alts.push(r[k].transcript); }
           else interim += r[0].transcript;
         }
-        if (interim) $('trHeard').textContent = '\u2026 ' + interim;
+        if (interim) $('trHeard').textContent = 'It heard: \u201c' + interim + '\u2026\u201d';
         if (alts.length) heardFinal = { text: alts[0], alts: alts };
       };
       rec.onerror = function (ev) {
@@ -1139,18 +1155,19 @@
         if (ev.error === 'not-allowed' || ev.error === 'service-not-allowed') {
           setSelfMode('The microphone is off for this page, so ' + profFirst() +
             ' can\u2019t check your pronunciation automatically. The honest fallback: ' +
-            'record yourself, play it back next to hers, and judge truly.');
+            'record yourself, play it back next to hers, and judge truly — or type ' +
+            'the phrase in the box below and it is checked exactly the same way.');
           showSelfStep();
         } else if (ev.error === 'network') {
           setSelfMode('The browser\u2019s listening service could not be reached, so for ' +
-            'now you check yourself against her voice — honestly. The saying is still the learning.');
+            'now you check yourself against her voice — honestly. The saying is still ' +
+            'the learning — and typing the phrase in the box below is checked exactly ' +
+            'the same way.');
           showSelfStep();
         } else if (ev.error === 'no-speech') {
-          setStatus('I didn\u2019t hear anything — tap \u201cYour turn\u201d and say it out loud, like you mean it.', '');
-          $('trSay').style.display = '';
+          noteEmptyHeard();
         } else {
-          setStatus('The listening hiccupped (' + ev.error + ') — tap \u201cYour turn\u201d to try again.', '');
-          $('trSay').style.display = '';
+          noteEmptyHeard();
         }
       };
       rec.onend = function () {
@@ -1158,11 +1175,11 @@
         listening = false; idleWave();
         if (heardFinal) { var hf = heardFinal; heardFinal = null; grade(hf); }
         else if (was && !recErrorShown && mode === 'sr' && !busy) {
-          setStatus('I didn\u2019t catch that — tap \u201cYour turn\u201d and say it once more, out loud.', '');
-          $('trSay').style.display = '';
+          noteEmptyHeard();
         }
       };
       try {
+        $('trHeard').textContent = '';
         rec.start();
         listening = true;
         startWave();
@@ -1170,18 +1187,70 @@
         $('trSay').style.display = 'none';
       } catch (e) { listening = false; }
     }
+    /* ----- what it heard: always on the record -----
+       Every attempt — pass, miss, or nothing usable — ends with the
+       exact transcript on screen. No silent failures, no bare loops. */
+    function showHeard(txt, typed) {
+      $('trHeard').textContent = (txt == null || txt === '')
+        ? 'It heard: (nothing at all)'
+        : (typed ? 'You typed: \u201c' : 'It heard: \u201c') + txt + '\u201d';
+    }
+    /* Two unusable listening outcomes in a row and the student is
+       switched to typing with one plain line — never an endless
+       "say it again" loop (the live failure of Nov 16, 03:57). */
+    function noteEmptyHeard() {
+      showHeard(null);
+      emptyStreak++;
+      if (emptyStreak >= 2 && mode === 'sr' && started) {
+        fallToTyping('The listening keeps missing you, so we switch to typing: ' +
+          'type the phrase in the box and tap \u201cCheck my typing\u201d — it is ' +
+          'graded exactly the same way, green check and all.');
+        return;
+      }
+      setStatus('It heard nothing that time — tap \u201cYour turn\u201d and say it once more, out loud.', '');
+      $('trSay').style.display = '';
+    }
+    function fallToTyping(why) {
+      setSelfMode(why);
+      showSelfStep();
+      setStatus('Type the phrase in the box below and tap \u201cCheck my typing\u201d.', '');
+      var ti = $('trType');
+      if (ti) { try { ti.focus(); } catch (e) {} }
+    }
     function grade(hf) {
       busy = true;
+      var usable = hf.alts.filter(function (a) { return T.normalizeSpeech(a); });
+      if (!usable.length) { busy = false; noteEmptyHeard(); return; }
+      emptyStreak = 0;
       attempts++;
       var best = null;
-      hf.alts.forEach(function (alt) {
-        var g = T.gradeAttempt(step().target, alt);
+      usable.forEach(function (alt) {
+        var g = T.gradeAttempt(step().target, alt, step().variants);
         if (!best || g.score > best.score) best = { g: g, heard: alt };
       });
-      $('trHeard').textContent = 'You said: \u201c' + best.heard + '\u201d';
+      showHeard(best.heard, false);
       renderProgress();
       if (best.g.pass) onPass();
       else onMiss();
+    }
+    /* The guaranteed route: typing. Same matcher, same green check;
+       the log records that the pass was typed. */
+    function gradeTyped() {
+      if (busy) return;
+      if (!started) { setStatus('Tap \u201cBegin\u201d first — ' + profFirst() + ' says it, then you answer.', ''); return; }
+      var v = $('trType').value.replace(/\s+/g, ' ').trim();
+      if (!v) { setStatus('Type the phrase first — then tap \u201cCheck my typing\u201d.', ''); return; }
+      busy = true;
+      attempts++;
+      var g = T.gradeAttempt(step().target, v, step().variants);
+      showHeard(v, true);
+      renderProgress();
+      if (g.pass) { passTyped = true; onPass(); }
+      else {
+        busy = false;
+        setStatus('Not yet — compare what you typed with her phrase above, letter by letter, and try again.', 'bad');
+        try { $('trType').select(); } catch (e) {}
+      }
     }
     function showBoardCheck() { $('trBoardCheck').classList.add('on'); }
     function hideBoardCheck() { $('trBoardCheck').classList.remove('on'); }
@@ -1193,7 +1262,8 @@
       if (isNew) {
         T.recordMastery(storage, {
           date: new Date().toISOString(), classId: tCls.id,
-          classTitle: tCls.title, phrase: st.target, selfChecked: mode === 'self'
+          classTitle: tCls.title, phrase: st.target, selfChecked: mode === 'self',
+          typed: passTyped
         });
       }
       var pi = praiseCount++ % data.praise.length;
@@ -1290,12 +1360,15 @@
       getMic().catch(function () { /* mic unavailable: fallback decides below */ })
         .then(function () {
           if (!SR) {
-            setSelfMode('This browser can\u2019t listen and check pronunciation — Chrome and Edge can. Until then, the honest fallback: record yourself, play it back next to hers, and judge truly.');
-          } else if (!stream) {
-            setSelfMode('The microphone is off for this page, so ' + profFirst() +
-              ' can\u2019t check your pronunciation automatically. The honest fallback: ' +
-              'record yourself if you can, play it back next to hers, and judge truly.');
+            setSelfMode('This browser can\u2019t listen and check pronunciation — Chrome and Edge can. Until then, the honest fallback: record yourself, play it back next to hers, and judge truly — or type each phrase in the box below; it is checked exactly the same way, green check and all.');
           }
+          /* If the waveform stream failed (mic denied for the green
+             bar), we STAY in SR mode: the recognizer has its own
+             microphone path and may work perfectly — the old code
+             abandoned listening here, which on Android could strand a
+             student whose only problem was the waveform's permission.
+             If listening truly is blocked, the recognizer's own error
+             switches us to self-check with the reason stated. */
           playClip(data.welcomeAudio).then(function () { showStep(idx); });
         });
     }
@@ -1310,7 +1383,9 @@
       mastered = T.loadMastered(storage, clsIn.id);
       idx = 0; attempts = 0; praiseCount = 0;
       mode = 'sr'; started = false; busy = false;
+      emptyStreak = 0; passTyped = false;
       $('trainerBox').style.display = '';
+      $('trHeard').textContent = '';
       $('trTitle').textContent = 'Speak with ' + profFirst() + ' — listen, then say it back';
       $('trBegin').style.display = '';
       $('trBegin').textContent = 'Begin — ' + profFirst() + ' speaks first';
@@ -1361,6 +1436,10 @@
       e.preventDefault();
       if (!started || busy) return;
       advance();
+    });
+    $('trTypeGo').addEventListener('click', gradeTyped);
+    $('trType').addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') { e.preventDefault(); gradeTyped(); }
     });
 
     return { enter: enter, leave: leave, masteredList: masteredList };
