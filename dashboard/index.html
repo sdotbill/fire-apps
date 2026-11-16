@@ -508,7 +508,7 @@
           if(v.text){
             history.push({role: "assistant", content: v.text});
             saveHistory(); renderThread();
-            if(/will land in this same window/i.test(v.text)){
+            if(/will land in this same window|right here, composing/i.test(v.text)){
               waiting = true;
               setStatus("Working — your words are on the lane");
               feedAdd("Message carried to Dave", "Queued to the app lane · the full Dave has it", "📨");
@@ -550,9 +550,9 @@
           }
         })
         .catch(function(){})
-        .then(function(){ if(waiting) pollTimer = setTimeout(tick, 15000); else pollTimer = null; });
+        .then(function(){ if(waiting) pollTimer = setTimeout(tick, 1000); else pollTimer = null; });
     };
-    pollTimer = setTimeout(tick, 12000);
+    pollTimer = setTimeout(tick, 1000);
   }
 
   /* ---------- attachments ---------- */
@@ -810,6 +810,11 @@
       var h = '<div class="panel-sec">Main chat</div>';
       h += '<button class="conv on" id="ch-main"><span class="ct">💬 Main chat</span><span class="cs">Your conversation with Dave, in this window</span></button>';
       h += '<div class="panel-sec">Channels</div>';
+      /* Connector isolation (Bill, Nov 15 21:39 EST): the WhatsApp
+         state shown is THIS identity's own — "Connected" renders
+         only for the owner identity (his connection); every account
+         sees its own not-connected state and its own connect path,
+         never the owner's connection. */
       h += '<div class="conv"><span class="ct">🟢 WhatsApp</span><span class="cs">' +
         (owner ? "Connected" : "Connect WhatsApp to reach Dave there too") + '</span></div>';
       h += '<div class="panel-sec">Side chats</div>';
@@ -1007,10 +1012,16 @@
   loadLocal();
   wireGate();
   checkOwner().then(function(isOwner){
+    /* Part C (Bill, Nov 15 21:16 EST): his app never asks for the
+       handshake again — a stored owner token enters directly. The
+       owner branch runs FIRST: the session signed-out flag governs
+       the account path only. After a deliberate owner sign-out the
+       stored token itself is gone, so this branch simply doesn't
+       fire and the gate stands. */
+    if(isOwner){ openDashboard(); return; }
     var signedOut = false;
     try{ signedOut = sessionStorage.getItem(SIGNED_OUT_KEY) === "1"; }catch(e){}
     if(signedOut){ gate.hidden = false; return; }
-    if(isOwner){ openDashboard(); return; }
     if(accountName){ enterAccount(accountName, false); return; }
     gate.hidden = false;
   });
@@ -1065,6 +1076,21 @@
           if(res.status === 200 && res.d && res.d.dave_id){
             identity = res.d.dave_id; lsSet(IDENTITY_KEY, identity);
             anchor = []; lsSet(ANCHOR_KEY, "[]");
+            if(res.d.owner){
+              /* The owner account (Bill's ruling, Nov 15 21:27 EST):
+                 his sign-in IS Prime — the owner door, not the blank
+                 account shell. The session token the login minted
+                 carries his owner binding; enter as the owner. */
+              return checkOwner().then(function(nowOwner){
+                if(nowOwner){
+                  feedAdd("Signed in", "Owner recognized · dashboard open", "👁");
+                  try{ sessionStorage.removeItem(SIGNED_OUT_KEY); }catch(e){}
+                  openDashboard();
+                } else {
+                  gateFail("gate-err", "gate-btn", "That didn't open the door.");
+                }
+              });
+            }
             enterAccount(res.d.account || login, false);
           } else if(res.status === 429){
             gateFail("gate-err", "gate-btn", "Too many tries — give it a few minutes.");
@@ -1165,18 +1191,22 @@
   }
 
   /* Sign out: for an account session the binding drops server-side
-     (the account and its memory stand for the next sign-in); for the
-     owner, this device simply lets go — his binding is never touched
-     from here — and a session flag keeps the gate up until he signs
-     in again on purpose. One function, both sign-out controls
-     (top bar and Settings) ride it. */
+     (the account and its memory stand for the next sign-in) and a
+     session flag keeps the gate up. For the owner (Part C), this
+     device clears its stored owner token — that clearing IS the
+     sign-out: the gate returns and stays, while the server-side
+     binding record itself is never touched from here, so the
+     countersign or his account sign-in can re-bind the device.
+     One function, both sign-out controls (top bar and Settings)
+     ride it. */
   function doSignOut(){
+    var wasOwner = owner;
     postJSON("/account/logout", {identity: identity || undefined}).catch(function(){});
     accountName = null; owner = false;
     history = []; anchor = [];
     lsSet(HISTORY_KEY, "[]"); lsSet(ANCHOR_KEY, "[]");
     identity = null; lsDel(IDENTITY_KEY);
-    try{ sessionStorage.setItem(SIGNED_OUT_KEY, "1"); }catch(e){}
+    if(!wasOwner){ try{ sessionStorage.setItem(SIGNED_OUT_KEY, "1"); }catch(e){} }
     app.hidden = true;
     setPanel(false); setBrain(false);
     feedAdd("Signed out", "Your Dave keeps your thread for your next sign in", "👋");
