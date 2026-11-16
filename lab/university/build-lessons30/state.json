@@ -514,5 +514,12 @@
    "audio": "audio/lessons30/stellar-flares-and-superflares-flare-energy-loop-and-ejection-as/lesson-01.mp3",
    "minutes": 11.12
   }
+ },
+ "solar-prominences-filaments-and-coronal-mass-ejection-initiation": {
+  "lesson-01": {
+   "hash": "659a911da42b55979803ff243f9aeb7093433d5d",
+   "audio": "audio/lessons30/solar-prominences-filaments-and-coronal-mass-ejection-initiation/lesson-01.mp3",
+   "minutes": 11.09
+  }
  }
 }

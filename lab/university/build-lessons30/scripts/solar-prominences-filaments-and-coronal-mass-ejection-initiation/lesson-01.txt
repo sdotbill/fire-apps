@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Valentina Conti, and this is Solar Prominences, Filaments and Coronal Mass Ejection Initiation: Mass, Magnetic Support and Eruption Budgets Against Published Event Values. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Valentina Conti, and this is Solar Prominences, Filaments and Coronal Mass Ejection Initiation: Mass, Magnetic Support and Eruption Budgets Against Published Event Values. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Angular Momentum of a Tornado Prominence: Rotation Period, Centripetal Budget and Stored Rotational Energy'. Its stated result: Headline result: tornado angular velocity rad per s tornado = 0.001333; tornado rotation period hr tornado = 1.309; tornado moment of inertia kg m2 tornado = 2.812e+25; tornado angular momentum kg m2 per s tornado = 3.75e+22; tornado rotational energy J tornado = 2.5e+19; tornado centripetal accel m per s2 tornado = 13.33 Operating principle: Treating the column as a rotating cylinder of the adopted mass and radius t
+
+Now we go one step further into the material.
+
+'Axial Flux, Shear and Helicity Content of a Filament Channel'. Its stated result: Headline result: channel cross section m2 channel = 300000000000000; channel axial flux Wb channel = 600000000000; channel axial flux Mx channel = 6e+19; channel volume m3 channel = 9e+22; channel shear field G channel = 18.33; channel shear angle deg channel = 68.2 Operating principle: Multiplying the axial field by the channel cross-section gives the axial magnetic flux, the shear component contributes a free-energ
+
+The next piece is where this starts to come together.
+
+'Decay Index Above a Filament: The Height Where Torus Instability Takes Over'. Its stated result: Headline result: decayindex scale length Mm decayindex = 40; decayindex field at surface G decayindex = 40; decayindex field at rope height G decayindex = 6.068; decayindex index at rope height decayindex = 1.4; decayindex critical height Mm decayindex = 40; decayindex height margin Mm decayindex = 5 Operating principle: The decay index is minus the logarithmic derivative of the external field with respect to height;
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Density, Pressure and Sound Speed of Prominence Plasma from an Emission-Measure Inversion'. Its stated result: Headline result: emdiag electron density per cm3 emdiag = 10000000000; emdiag electron density SI units emdiag = 1e+16; emdiag total particle density per cm3 emdiag = 23000000000; emdiag gas pressure Pa emdiag = 0.00254; emdiag gas pressure dyn per cm2 emdiag = 0.0254; emdiag sound speed m per s emdiag = 1.343e+04 Operating principle: Because emission measure is the path integral of the squared electron density, divi
+
+We take the pieces in order, because each one stands on the last.
+
+'Feeding a Filament by Condensation: Cooling Time, Mass Supply Rate and Reservoir Budget'. Its stated result: Headline result: condense cooling time s condense = 6213; condense cooling time hr condense = 1.726; condense loop volume m3 condense = 1.571e+22; condense loop mass kg condense = 3.337e+10; condense loop fillings required condense = 149.8; condense mean supply rate kg per s condense = 1.929e+07 Operating principle: The radiative cooling time, three times the thermal energy density divided by the volumetric loss rate
+
+Stay with me, because the next piece builds directly on that one.
+
+'Force and Rope Current Implied by the Impulsive Acceleration of an Erupting Prominence'. Its stated result: Headline result: impulse mean acceleration m per s2 impulse = 483.3; impulse acceleration in surface g impulse = 1.764; impulse net force N impulse = 2.417e+15; impulse force including gravity N impulse = 3.317e+15; impulse gravity force N impulse = 900000000000000; impulse required current A impulse = 1.658e+10 Operating principle: Multiplying the accelerated mass by the mean acceleration gives the net force the Lor
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Angular Momentum of a Tornado Prominence: Rotation Period, Centripetal Budget and Stored Rotational Energy”. Its stated result is: Headline result: tornado angular velocity rad per s tornado = 0.001333; tornado rotation period hr tornado = 1.309; tornado moment of inertia kg m2 tornado = 2.812e+25; tornado angular momentum kg m2 per s tornado = 3.75e+22; tornado rotational energy J tornado = 2.5e+19; tornado centripetal accel m (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Angular Momentum of a Tornado Prominence: Rotation Period, Centripetal Budget and Stored Rotational Energy'; 'Axial Flux, Shear and Helicity Content of a Filament Channel'; 'Decay Index Above a Filament: The Height Where Torus Instability Takes Over'; 'Density, Pressure and Sound Speed of Prominence Plasma from an Emission-Measure Inversion'; 'Feeding a Filament by Condensation: Cooling Time, Mass Supply Rate and Reservoir Budget'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.

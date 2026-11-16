@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'Angular Momentum of a Tornado Prominence: Rotation Period, Centripetal Budget and Stored Rotational Energy'. The result it reported gives a value for rad per s tornado, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Angular Momentum of a Tornado Prominence: Rotation Period, Centripetal Budget and Stored Rotational Energy'. Its stated result: Headline result: tornado angular velocity rad per s tornado = 0.001333; tornado rotation period hr tornado = 1.309; tornado moment of inertia kg m2 tornado = 2.812e+25; tornado angular momentum kg m2 per s tornado = 3.75e+22; tornado rotational energy J tornado = 2.5e+19; tornado centripetal accel m per s2 tornado = 13.33 Operating principle: Treating the column as a rotating cylinder of the adopted mass and radius t And here is that same result with the words stripped away — just the quantities standing in a row: rad per s tornado = 0.001333; rotation period hr tornado = 1.309; inertia kg m2 tornado = 2.812e+25. Find rad per s tornado in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Angular Momentum of a Tornado Prominence: Rotation Period, Centripetal Budget and Stored Rotational Energy' stated its result. (2) That result pairs names with values: rad per s tornado = 0.001333; rotation period hr tornado = 1.309; inertia kg m2 tornado = 2.812e+25. (3) This question asks for the value paired with rad per s tornado. (4) In that row, rad per s tornado stands beside 0.001333 — so the answer the lesson gives is 0.001333. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Angular Momentum of a Tornado Prominence: Rotation Period, Centripetal Budget and Stored Rotational Energy' reported a number for rad per s tornado. What number did it report?",
+  "kind": "number",
+  "answer": 0.001333,
+  "disp": "0.001333",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "40",
+   "10000000000",
+   "0.001333",
+   "300000000000000"
+  ],
+  "mcAnswer": "0.001333",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Axial Flux, Shear and Helicity Content of a Filament Channel'. The result it reported gives a value for cross section m2 channel, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Axial Flux, Shear and Helicity Content of a Filament Channel'. Its stated result: Headline result: channel cross section m2 channel = 300000000000000; channel axial flux Wb channel = 600000000000; channel axial flux Mx channel = 6e+19; channel volume m3 channel = 9e+22; channel shear field G channel = 18.33; channel shear angle deg channel = 68.2 Operating principle: Multiplying the axial field by the channel cross-section gives the axial magnetic flux, the shear component contributes a free-energ And here is that same result with the words stripped away — just the quantities standing in a row: cross section m2 channel = 300000000000000; axial flux Wb channel = 600000000000; axial flux Mx channel = 6e+19. Find cross section m2 channel in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Axial Flux, Shear and Helicity Content of a Filament Channel' stated its result. (2) That result pairs names with values: cross section m2 channel = 300000000000000; axial flux Wb channel = 600000000000; axial flux Mx channel = 6e+19. (3) This question asks for the value paired with cross section m2 channel. (4) In that row, cross section m2 channel stands beside 300000000000000 — so the answer the lesson gives is 300000000000000. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Axial Flux, Shear and Helicity Content of a Filament Channel' reported a number for cross section m2 channel. What number did it report?",
+  "kind": "number",
+  "answer": 300000000000000.0,
+  "disp": "300000000000000",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "0.001333",
+   "40",
+   "300000000000000",
+   "10000000000"
+  ],
+  "mcAnswer": "300000000000000",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Decay Index Above a Filament: The Height Where Torus Instability Takes Over'. The result it reported gives a value for scale length Mm decayindex, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Decay Index Above a Filament: The Height Where Torus Instability Takes Over'. Its stated result: Headline result: decayindex scale length Mm decayindex = 40; decayindex field at surface G decayindex = 40; decayindex field at rope height G decayindex = 6.068; decayindex index at rope height decayindex = 1.4; decayindex critical height Mm decayindex = 40; decayindex height margin Mm decayindex = 5 Operating principle: The decay index is minus the logarithmic derivative of the external field with respect to height; And here is that same result with the words stripped away — just the quantities standing in a row: scale length Mm decayindex = 40; rope height G decayindex = 6.068; critical height Mm decayindex = 40. Find scale length Mm decayindex in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Decay Index Above a Filament: The Height Where Torus Instability Takes Over' stated its result. (2) That result pairs names with values: scale length Mm decayindex = 40; rope height G decayindex = 6.068; critical height Mm decayindex = 40. (3) This question asks for the value paired with scale length Mm decayindex. (4) In that row, scale length Mm decayindex stands beside 40 — so the answer the lesson gives is 40. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Decay Index Above a Filament: The Height Where Torus Instability Takes Over' reported a number for scale length Mm decayindex. What number did it report?",
+  "kind": "number",
+  "answer": 40.0,
+  "disp": "40",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "300000000000000",
+   "0.001333",
+   "40",
+   "10000000000"
+  ],
+  "mcAnswer": "40",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Density, Pressure and Sound Speed of Prominence Plasma from an Emission-Measure Inversion'. The result it reported gives a value for density per cm3 emdiag, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Density, Pressure and Sound Speed of Prominence Plasma from an Emission-Measure Inversion'. Its stated result: Headline result: emdiag electron density per cm3 emdiag = 10000000000; emdiag electron density SI units emdiag = 1e+16; emdiag total particle density per cm3 emdiag = 23000000000; emdiag gas pressure Pa emdiag = 0.00254; emdiag gas pressure dyn per cm2 emdiag = 0.0254; emdiag sound speed m per s emdiag = 1.343e+04 Operating principle: Because emission measure is the path integral of the squared electron density, divi And here is that same result with the words stripped away — just the quantities standing in a row: density per cm3 emdiag = 10000000000; density SI units emdiag = 1e+16; gas pressure Pa emdiag = 0.00254. Find density per cm3 emdiag in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Density, Pressure and Sound Speed of Prominence Plasma from an Emission-Measure Inversion' stated its result. (2) That result pairs names with values: density per cm3 emdiag = 10000000000; density SI units emdiag = 1e+16; gas pressure Pa emdiag = 0.00254. (3) This question asks for the value paired with density per cm3 emdiag. (4) In that row, density per cm3 emdiag stands beside 10000000000 — so the answer the lesson gives is 10000000000. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Density, Pressure and Sound Speed of Prominence Plasma from an Emission-Measure Inversion' reported a number for density per cm3 emdiag. What number did it report?",
+  "kind": "number",
+  "answer": 10000000000.0,
+  "disp": "10000000000",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "40",
+   "0.001333",
+   "300000000000000",
+   "10000000000"
+  ],
+  "mcAnswer": "10000000000",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Feeding a Filament by Condensation: Cooling Time, Mass Supply Rate and Reservoir Budget'. The result it reported gives a value for cooling time s condense, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Feeding a Filament by Condensation: Cooling Time, Mass Supply Rate and Reservoir Budget'. Its stated result: Headline result: condense cooling time s condense = 6213; condense cooling time hr condense = 1.726; condense loop volume m3 condense = 1.571e+22; condense loop mass kg condense = 3.337e+10; condense loop fillings required condense = 149.8; condense mean supply rate kg per s condense = 1.929e+07 Operating principle: The radiative cooling time, three times the thermal energy density divided by the volumetric loss rate And here is that same result with the words stripped away — just the quantities standing in a row: cooling time s condense = 6213; cooling time hr condense = 1.726; loop volume m3 condense = 1.571e+22. Find cooling time s condense in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Feeding a Filament by Condensation: Cooling Time, Mass Supply Rate and Reservoir Budget' stated its result. (2) That result pairs names with values: cooling time s condense = 6213; cooling time hr condense = 1.726; loop volume m3 condense = 1.571e+22. (3) This question asks for the value paired with cooling time s condense. (4) In that row, cooling time s condense stands beside 6213 — so the answer the lesson gives is 6213. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Feeding a Filament by Condensation: Cooling Time, Mass Supply Rate and Reservoir Budget' reported a number for cooling time s condense. What number did it report?",
+  "kind": "number",
+  "answer": 6213.0,
+  "disp": "6213",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "300000000000000",
+   "6213",
+   "0.001333",
+   "40"
+  ],
+  "mcAnswer": "6213",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Angular Momentum of a Tornado Prominence: Rotation Period, Centripetal Budget and Stored Rotational Energy”. Its stated result is: Headline result: tornado angular velocity rad per s tornado = 0.001333; tornado rotation period hr tornado = 1.309; tornado moment of inertia kg m2 tornado = 2.812e+25; tornado angular momentum kg m2 per s tornado = 3.75e+22; tornado rotational energy J tornado = 2.5e+19; tornado centripetal accel m (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “Angular Momentum of a Tornado Prominence: Rotation Period, Centripetal Budget and Stored Rotational Energy”. Its stated result is: Headline result: tornado angular velocity rad per s tornado = 0.001333; tornado rotation period hr tornado = 1.309; tornado moment of inertia kg m2 tornado = 2.812e+25; tornado angular momentum kg m2 per s tornado = 3.75e+22; tornado rotational energy J tornado = 2.5e+19; tornado centripetal accel m (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]
