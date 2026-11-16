@@ -458,5 +458,12 @@
    "audio": "audio/lessons30/asymptotic-giant-branch-stars-mira-variables-and-stellar-mass-lo/lesson-01.mp3",
    "minutes": 14.04
   }
+ },
+ "polluted-white-dwarfs-and-planetary-debris-accretion-against-com": {
+  "lesson-01": {
+   "hash": "7607f9497eee442bd222808e1375450775e983c5",
+   "audio": "audio/lessons30/polluted-white-dwarfs-and-planetary-debris-accretion-against-com/lesson-01.mp3",
+   "minutes": 24.91
+  }
  }
 }

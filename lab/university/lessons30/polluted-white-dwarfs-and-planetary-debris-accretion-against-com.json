@@ -1,0 +1,177 @@
+{
+ "id": "polluted-white-dwarfs-and-planetary-debris-accretion-against-com",
+ "title": "Polluted White Dwarfs and Planetary Debris Accretion Against Composition, Density and Diffusion Bounds",
+ "professor": "Professor Astrid Olsson",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Astrid Olsson, and this is Polluted White Dwarfs and Planetary Debris Accretion Against Composition, Density and Diffusion Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Astrid Olsson, and this is Polluted White Dwarfs and Planetary Debris Accretion Against Composition, Density and Diffusion Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'A Declining-Phase Test for G241-6: Element Ratios After the Supply Stops'. Its stated result: Headline result (values verbatim from results.json): total_accretion_rate_g_s = 777330145.367312; total_metal_mass_in_cvz_kg = 4.131685561392143e+18; disc_lifetime_at_present_rate_yr = 81530.57745896469; parent_Fe_to_Si_molar = 0.8867158748790206; inferred_water_mass_fraction = 0.0; total_event_mass_Mearth = 1.0267390424300304e-06.",
+    "Now we go one step further into the material.",
+    "'Accretion Rate of WD 1729+371 and the Persistence of Pollution into Its Cooling Sequence'. Its stated result: Headline result (values verbatim from results.json): total_accretion_rate_g_s = 305327736.9259396; total_metal_mass_in_cvz_kg = 533913350067.46295; disc_lifetime_at_present_rate_yr = 518919.24613641016; parent_Fe_to_Si_molar = 2.4653894104950664; inferred_water_mass_fraction = 0.0; total_event_mass_Mearth = 8.372405448615791e-07.",
+    "The next piece is where this starts to come together.",
+    "'Build-Up Phase Accretion at HE 1349-2305: Inventory Growth and Event Budget'. Its stated result: Headline result (values verbatim from results.json): total_accretion_rate_g_s = 538153399.7786673; total_metal_mass_in_cvz_kg = 1.2848191518017472e+18; disc_lifetime_at_present_rate_yr = 88324.50327470295; parent_Fe_to_Si_molar = 1.1041753528403375; inferred_water_mass_fraction = 0.0; total_event_mass_Mearth = 4.663126510049811e-07.",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'Carbon Enrichment in the Sinking-Corrected Debris Composition of WD 1536+520'. Its stated result: Headline result (values verbatim from results.json): total_accretion_rate_g_s = 1023814097.5568224; total_metal_mass_in_cvz_kg = 316256442955.90326; disc_lifetime_at_present_rate_yr = 123804.06907718025; parent_Fe_to_Si_molar = 1.323880391207137; inferred_water_mass_fraction = 0.0; total_event_mass_Mearth = 6.697924173235838e-07.",
+    "We take the pieces in order, because each one stands on the last.",
+    "'Diffusion Timescales and Accretion History of PG 1015+161'. Its stated result: Headline result (values verbatim from results.json): total_accretion_rate_g_s = 1042488135.1196036; total_metal_mass_in_cvz_kg = 2.8143762926736364e+18; disc_lifetime_at_present_rate_yr = 91189.77975819382; parent_Fe_to_Si_molar = 1.3617055452416267; inferred_water_mass_fraction = 0.0; total_event_mass_Mearth = 9.736062110973938e-07.",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Disc Mass and Accretion Lifetime of SDSS J1043+0855 from Dust, Gas and Photospheric Metals'. Its stated result: Headline result (values verbatim from results.json): total_accretion_rate_g_s = 882334782.3521428; total_metal_mass_in_cvz_kg = 293440511461.4167; disc_lifetime_at_present_rate_yr = 287311.24237949064; parent_Fe_to_Si_molar = 3.22763021539084; inferred_water_mass_fraction = 0.0; total_event_mass_Mearth = 1.3395847778701457e-06.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “A Declining-Phase Test for G241-6: Element Ratios After the Supply Stops”. Its stated result is: Headline result (values verbatim from results.json): total_accretion_rate_g_s = 777330145.367312; total_metal_mass_in_cvz_kg = 4.131685561392143e+18; disc_lifetime_at_present_rate_yr = 81530.57745896469; parent_Fe_to_Si_molar = 0.8867158748790206; inferred_water_mass_fraction = 0.0; total_event_mass (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'A Declining-Phase Test for G241-6: Element Ratios After the Supply Stops'; 'Accretion Rate of WD 1729+371 and the Persistence of Pollution into Its Cooling Sequence'; 'Build-Up Phase Accretion at HE 1349-2305: Inventory Growth and Event Budget'; 'Carbon Enrichment in the Sinking-Corrected Debris Composition of WD 1536+520'; 'Diffusion Timescales and Accretion History of PG 1015+161'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 710,
+   "audio": "audio/lessons30/polluted-white-dwarfs-and-planetary-debris-accretion-against-com/lesson-01.mp3",
+   "minutes": 24.91,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'A Declining-Phase Test for G241-6: Element Ratios After the Supply Stops'. The result it reported gives a value for total_accretion_rate_g_s, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'A Declining-Phase Test for G241-6: Element Ratios After the Supply Stops'. Its stated result: Headline result (values verbatim from results.json): total_accretion_rate_g_s = 777330145.367312; total_metal_mass_in_cvz_kg = 4.131685561392143e+18; disc_lifetime_at_present_rate_yr = 81530.57745896469; parent_Fe_to_Si_molar = 0.8867158748790206; inferred_water_mass_fraction = 0.0; total_event_mass_Mearth = 1.0267390424300304e-06. And here is that same result with the words stripped away — just the quantities standing in a row: total_accretion_rate_g_s = 777330145.367312; total_metal_mass_in_cvz_kg = 4.131685561392143e+18; disc_lifetime_at_present_rate_yr = 81530.57745896469. Find total_accretion_rate_g_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'A Declining-Phase Test for G241-6: Element Ratios After the Supply Stops' stated its result. (2) That result pairs names with values: total_accretion_rate_g_s = 777330145.367312; total_metal_mass_in_cvz_kg = 4.131685561392143e+18; disc_lifetime_at_present_rate_yr = 81530.57745896469. (3) This question asks for the value paired with total_accretion_rate_g_s. (4) In that row, total_accretion_rate_g_s stands beside 777330145.367312 — so the answer the lesson gives is 777330145.367312. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'A Declining-Phase Test for G241-6: Element Ratios After the Supply Stops' reported a number for total_accretion_rate_g_s. What number did it report?",
+     "kind": "number",
+     "answer": 777330145.367312,
+     "disp": "777330145.367312",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1023814097.5568224",
+      "305327736.9259396",
+      "777330145.367312",
+      "538153399.7786673"
+     ],
+     "mcAnswer": "777330145.367312",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Accretion Rate of WD 1729+371 and the Persistence of Pollution into Its Cooling Sequence'. The result it reported gives a value for total_accretion_rate_g_s, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Accretion Rate of WD 1729+371 and the Persistence of Pollution into Its Cooling Sequence'. Its stated result: Headline result (values verbatim from results.json): total_accretion_rate_g_s = 305327736.9259396; total_metal_mass_in_cvz_kg = 533913350067.46295; disc_lifetime_at_present_rate_yr = 518919.24613641016; parent_Fe_to_Si_molar = 2.4653894104950664; inferred_water_mass_fraction = 0.0; total_event_mass_Mearth = 8.372405448615791e-07. And here is that same result with the words stripped away — just the quantities standing in a row: total_accretion_rate_g_s = 305327736.9259396; total_metal_mass_in_cvz_kg = 533913350067.46295; disc_lifetime_at_present_rate_yr = 518919.24613641016. Find total_accretion_rate_g_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Accretion Rate of WD 1729+371 and the Persistence of Pollution into Its Cooling Sequence' stated its result. (2) That result pairs names with values: total_accretion_rate_g_s = 305327736.9259396; total_metal_mass_in_cvz_kg = 533913350067.46295; disc_lifetime_at_present_rate_yr = 518919.24613641016. (3) This question asks for the value paired with total_accretion_rate_g_s. (4) In that row, total_accretion_rate_g_s stands beside 305327736.9259396 — so the answer the lesson gives is 305327736.9259396. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Accretion Rate of WD 1729+371 and the Persistence of Pollution into Its Cooling Sequence' reported a number for total_accretion_rate_g_s. What number did it report?",
+     "kind": "number",
+     "answer": 305327736.9259396,
+     "disp": "305327736.9259396",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "305327736.9259396",
+      "538153399.7786673",
+      "777330145.367312",
+      "1023814097.5568224"
+     ],
+     "mcAnswer": "305327736.9259396",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Build-Up Phase Accretion at HE 1349-2305: Inventory Growth and Event Budget'. The result it reported gives a value for total_accretion_rate_g_s, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Build-Up Phase Accretion at HE 1349-2305: Inventory Growth and Event Budget'. Its stated result: Headline result (values verbatim from results.json): total_accretion_rate_g_s = 538153399.7786673; total_metal_mass_in_cvz_kg = 1.2848191518017472e+18; disc_lifetime_at_present_rate_yr = 88324.50327470295; parent_Fe_to_Si_molar = 1.1041753528403375; inferred_water_mass_fraction = 0.0; total_event_mass_Mearth = 4.663126510049811e-07. And here is that same result with the words stripped away — just the quantities standing in a row: total_accretion_rate_g_s = 538153399.7786673; total_metal_mass_in_cvz_kg = 1.2848191518017472e+18; disc_lifetime_at_present_rate_yr = 88324.50327470295. Find total_accretion_rate_g_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Build-Up Phase Accretion at HE 1349-2305: Inventory Growth and Event Budget' stated its result. (2) That result pairs names with values: total_accretion_rate_g_s = 538153399.7786673; total_metal_mass_in_cvz_kg = 1.2848191518017472e+18; disc_lifetime_at_present_rate_yr = 88324.50327470295. (3) This question asks for the value paired with total_accretion_rate_g_s. (4) In that row, total_accretion_rate_g_s stands beside 538153399.7786673 — so the answer the lesson gives is 538153399.7786673. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Build-Up Phase Accretion at HE 1349-2305: Inventory Growth and Event Budget' reported a number for total_accretion_rate_g_s. What number did it report?",
+     "kind": "number",
+     "answer": 538153399.7786673,
+     "disp": "538153399.7786673",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1023814097.5568224",
+      "305327736.9259396",
+      "777330145.367312",
+      "538153399.7786673"
+     ],
+     "mcAnswer": "538153399.7786673",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Carbon Enrichment in the Sinking-Corrected Debris Composition of WD 1536+520'. The result it reported gives a value for total_accretion_rate_g_s, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Carbon Enrichment in the Sinking-Corrected Debris Composition of WD 1536+520'. Its stated result: Headline result (values verbatim from results.json): total_accretion_rate_g_s = 1023814097.5568224; total_metal_mass_in_cvz_kg = 316256442955.90326; disc_lifetime_at_present_rate_yr = 123804.06907718025; parent_Fe_to_Si_molar = 1.323880391207137; inferred_water_mass_fraction = 0.0; total_event_mass_Mearth = 6.697924173235838e-07. And here is that same result with the words stripped away — just the quantities standing in a row: total_accretion_rate_g_s = 1023814097.5568224; total_metal_mass_in_cvz_kg = 316256442955.90326; disc_lifetime_at_present_rate_yr = 123804.06907718025. Find total_accretion_rate_g_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Carbon Enrichment in the Sinking-Corrected Debris Composition of WD 1536+520' stated its result. (2) That result pairs names with values: total_accretion_rate_g_s = 1023814097.5568224; total_metal_mass_in_cvz_kg = 316256442955.90326; disc_lifetime_at_present_rate_yr = 123804.06907718025. (3) This question asks for the value paired with total_accretion_rate_g_s. (4) In that row, total_accretion_rate_g_s stands beside 1023814097.5568224 — so the answer the lesson gives is 1023814097.5568224. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Carbon Enrichment in the Sinking-Corrected Debris Composition of WD 1536+520' reported a number for total_accretion_rate_g_s. What number did it report?",
+     "kind": "number",
+     "answer": 1023814097.5568224,
+     "disp": "1023814097.5568224",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1023814097.5568224",
+      "305327736.9259396",
+      "538153399.7786673",
+      "777330145.367312"
+     ],
+     "mcAnswer": "1023814097.5568224",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Diffusion Timescales and Accretion History of PG 1015+161'. The result it reported gives a value for total_accretion_rate_g_s, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Diffusion Timescales and Accretion History of PG 1015+161'. Its stated result: Headline result (values verbatim from results.json): total_accretion_rate_g_s = 1042488135.1196036; total_metal_mass_in_cvz_kg = 2.8143762926736364e+18; disc_lifetime_at_present_rate_yr = 91189.77975819382; parent_Fe_to_Si_molar = 1.3617055452416267; inferred_water_mass_fraction = 0.0; total_event_mass_Mearth = 9.736062110973938e-07. And here is that same result with the words stripped away — just the quantities standing in a row: total_accretion_rate_g_s = 1042488135.1196036; total_metal_mass_in_cvz_kg = 2.8143762926736364e+18; disc_lifetime_at_present_rate_yr = 91189.77975819382. Find total_accretion_rate_g_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Diffusion Timescales and Accretion History of PG 1015+161' stated its result. (2) That result pairs names with values: total_accretion_rate_g_s = 1042488135.1196036; total_metal_mass_in_cvz_kg = 2.8143762926736364e+18; disc_lifetime_at_present_rate_yr = 91189.77975819382. (3) This question asks for the value paired with total_accretion_rate_g_s. (4) In that row, total_accretion_rate_g_s stands beside 1042488135.1196036 — so the answer the lesson gives is 1042488135.1196036. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Diffusion Timescales and Accretion History of PG 1015+161' reported a number for total_accretion_rate_g_s. What number did it report?",
+     "kind": "number",
+     "answer": 1042488135.1196036,
+     "disp": "1042488135.1196036",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1042488135.1196036",
+      "777330145.367312",
+      "538153399.7786673",
+      "305327736.9259396"
+     ],
+     "mcAnswer": "1042488135.1196036",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “A Declining-Phase Test for G241-6: Element Ratios After the Supply Stops”. Its stated result is: Headline result (values verbatim from results.json): total_accretion_rate_g_s = 777330145.367312; total_metal_mass_in_cvz_kg = 4.131685561392143e+18; disc_lifetime_at_present_rate_yr = 81530.57745896469; parent_Fe_to_Si_molar = 0.8867158748790206; inferred_water_mass_fraction = 0.0; total_event_mass (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “A Declining-Phase Test for G241-6: Element Ratios After the Supply Stops”. Its stated result is: Headline result (values verbatim from results.json): total_accretion_rate_g_s = 777330145.367312; total_metal_mass_in_cvz_kg = 4.131685561392143e+18; disc_lifetime_at_present_rate_yr = 81530.57745896469; parent_Fe_to_Si_molar = 0.8867158748790206; inferred_water_mass_fraction = 0.0; total_event_mass (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}
