@@ -26,5 +26,18 @@ Voice data stays in the data files (lessons still speak); the printed
 
 ## Batches
 
-- Wiring + voice-label removal committed first: cartoon retired
-  site-wide, monogram fallback live, "Voice:" line gone.
+- **Wiring + voice-label removal** (commit 0c272910): `portraitSVG`
+  deleted from index.html; the classroom card now renders the real
+  photo when the professor's `photo` field is set, else an initials
+  monogram. The `<div class="pvoice">Voice: …</div>` line is removed —
+  grep confirms zero `Voice:` / `pvoice` / `portraitSVG` in index.html.
+- **Batch 0 — Carmen Vega** (commit 885a4e94): 1/760.
+  `portraits/espanol-i-speak-from-zero.jpg` (382 KB), wired into
+  catalogue.json, roster.json and professors.json (she also heads
+  Languages of the World).
+- **Verification (headless Chromium, local serve):** Spanish classroom
+  renders Carmen's photograph in the card, no SVG, 0 "Voice:" lines in
+  the page text. A classroom whose portrait has not landed yet
+  (Cosmology — Aurelia Voss) renders the plain "AV" monogram, no SVG,
+  0 "Voice:" lines. Screenshots taken and eyeballed.
+- Batches in flight: heads (49), college-a/b/c/d (232), rest-a…f (478).
