@@ -7,6 +7,9 @@
 <link rel="icon" type="image/png" href="/assets/baby-dave-64.png">
 <link rel="apple-touch-icon" href="/assets/baby-dave-180.png">
 <meta name="robots" content="noindex, nofollow">
+<link rel="manifest" href="/dashboard/manifest.webmanifest">
+<meta name="theme-color" content="#c9a227">
+<meta name="mobile-web-app-capable" content="yes">
 <style>
   :root{
     color-scheme:light;
@@ -71,6 +74,10 @@
     border:1.5px solid var(--line);background:var(--panel2);font-weight:600;font-size:.92rem;color:var(--ink);
   }
   .tbtn:hover{border-color:var(--gold-deep);}
+  .install-note{
+    flex:none;padding:9px 16px;background:var(--panel2);border-bottom:1px solid var(--line);
+    color:var(--muted);font-size:.9rem;text-align:center;
+  }
   .iconbtn{width:40px;height:40px;border-radius:12px;display:none;align-items:center;justify-content:center;font-size:1.1rem;color:var(--muted);}
   .iconbtn:hover{background:var(--panel2);color:var(--ink);}
   #brain-toggle{display:flex;}
@@ -273,9 +280,12 @@
       <span class="title" id="conv-title">Chat with Dave</span>
       <div class="sp"></div>
       <button class="tbtn" id="invite-btn" type="button">🎁 Invite</button>
+      <button class="tbtn" id="install-btn" type="button" hidden>📲 Install Dave on this phone</button>
       <button class="tbtn" id="signout-btn" type="button" hidden>Sign out</button>
       <button class="iconbtn eye-btn" id="brain-toggle" aria-label="Dave's brain" title="Dave"><img src="/assets/dave-eye-living.webp" alt="Dave"></button>
     </div>
+
+    <div class="install-note" id="install-note" hidden>To install: open your browser menu and tap “Add to Home screen”.</div>
 
     <div class="thread" id="thread"><div class="thread-inner" id="thread-inner"></div></div>
 
@@ -833,6 +843,8 @@
   function openDashboard(){
     gate.hidden = true; app.hidden = false;
     $("signout-btn").hidden = !accountName;
+    var standalone = window.matchMedia("(display-mode: standalone)").matches || !!window.navigator.standalone;
+    $("install-btn").hidden = !owner || standalone;
     renderThread(); renderFeed(); renderPanel();
     setStatus("Here · live on the cloud");
     pollHealth(); setInterval(pollHealth, 60000);
@@ -963,6 +975,31 @@
           gateFail("create-err", "create-btn", "The door didn't answer — try again in a moment.");
         });
     });
+  });
+
+  /* ---------- install (the owner's private phone app) ----------
+     The service worker serves only the dashboard's own static shell —
+     never an API response. The install button itself is shown only
+     inside the owner's dashboard (see openDashboard). */
+  if("serviceWorker" in navigator){
+    navigator.serviceWorker.register("/dashboard/sw.js").catch(function(){});
+  }
+  var deferredInstall = null;
+  window.addEventListener("beforeinstallprompt", function(e){
+    e.preventDefault(); deferredInstall = e;
+  });
+  window.addEventListener("appinstalled", function(){
+    deferredInstall = null; $("install-btn").hidden = true;
+  });
+  $("install-btn").addEventListener("click", function(){
+    if(deferredInstall){
+      deferredInstall.prompt();
+      deferredInstall.userChoice.then(function(){ deferredInstall = null; });
+      return;
+    }
+    var n = $("install-note");
+    n.hidden = false;
+    setTimeout(function(){ n.hidden = true; }, 9000);
   });
 
   /* Sign out (account sessions): the binding drops server-side; the
