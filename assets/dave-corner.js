@@ -35,6 +35,26 @@
   var SESSION_KEY = "dave_chat_session";
   var IDENTITY_KEY = "dave_chat_identity";
   var HISTORY_KEY = "dave_chat_history";
+  /* Door sitting discipline (Bill, Nov 15 22:00 EST): owner mode on
+     a door surface is PER-SITTING — it exists only in a tab sitting
+     where the countersign was freshly given. A stored owner binding
+     alone never puts this surface in owner mode: without the
+     sitting flag, this surface runs the pure public seat — public
+     thread, no owner drains, no owner history — even on the owner's
+     own browser. The dashboard is a different surface, untouched. */
+  var SITTING_KEY = "dave_door_sitting";
+  var OWNER_SITTING_KEY = "dave_door_owner_sitting";
+  var PUBLIC_HISTORY_KEY = "dave_door_public_history";
+  var sittingId = "";
+  try{
+    sittingId = sessionStorage.getItem(SITTING_KEY) || "";
+    if(!sittingId){
+      sittingId = "sit-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 10);
+      sessionStorage.setItem(SITTING_KEY, sittingId);
+    }
+  }catch(e){}
+  function ownerSitting(){ try{ return sessionStorage.getItem(OWNER_SITTING_KEY) === sittingId; }catch(e){ return false; } }
+  function activeHistoryKey(){ return ownerSitting() ? HISTORY_KEY : PUBLIC_HISTORY_KEY; }
 
   function uuid(){
     if(window.crypto && crypto.randomUUID) return crypto.randomUUID();
@@ -44,9 +64,9 @@
   try{ sessionId = localStorage.getItem(SESSION_KEY); }catch(e){}
   if(!sessionId){ sessionId = uuid(); try{ localStorage.setItem(SESSION_KEY, sessionId); }catch(e){} }
   try{ identity = localStorage.getItem(IDENTITY_KEY); }catch(e){}
-  try{ history = JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]"); }catch(e){ history = []; }
+  try{ history = JSON.parse(localStorage.getItem(activeHistoryKey()) || "[]"); }catch(e){ history = []; }
   if(!Array.isArray(history)) history = [];
-  function save(){ try{ localStorage.setItem(HISTORY_KEY, JSON.stringify(history)); }catch(e){} }
+  function save(){ try{ localStorage.setItem(activeHistoryKey(), JSON.stringify(history)); }catch(e){} }
   function storeIdentity(v){
     if(typeof v !== "string" || !/^[a-f0-9]{32,64}$/.test(v)) return;
     identity = v;
@@ -301,6 +321,54 @@
   });
   input.addEventListener("focus", hideOpener);
 
+  /* The worker's carried/composing reply is never rendered as
+     words on any Dave surface (Bill, Nov 15 21:50 EST) — while
+     Dave composes, the only sign is three blinking dots. */
+  function isCarriedText(t){
+    return typeof t === "string" && /right here, composing|will land in this same window/i.test(t);
+  }
+  var cornerPollTimer = null;
+  function startCornerReplyPoll(typingEl){
+    if(cornerPollTimer || !identity){ if(typingEl) typingEl.remove(); return; }
+    var seen = {};
+    history.forEach(function(m){ if(m && m.role === "assistant" && typeof m.content === "string") seen[m.content] = 1; });
+    var tries = 0;
+    var tick = function(){
+      tries++;
+      fetch(CHAT.replace(/\/chat$/, "/owner/replies") + "?surface=door&sitting=" + encodeURIComponent(sittingId), {
+        headers: { "Authorization": "Bearer " + identity }
+      }).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
+        var list = (d && Array.isArray(d.replies)) ? d.replies : [];
+        var fresh = [];
+        list.forEach(function(rp){
+          var body = (rp && typeof rp.body === "string") ? rp.body : "";
+          var textOnly = body.replace(/🔊 \[Voice note\]\(https:\/\/[^)]+\)/g, "").trim();
+          if(textOnly && !seen[textOnly]){ seen[textOnly] = 1; fresh.push(textOnly); }
+        });
+        if(fresh.length){
+          cornerPollTimer = null;
+          if(typingEl) typingEl.remove();
+          fresh.forEach(function(t){
+            var sv2 = splitVision(t);
+            var item2 = {role: "assistant", content: sv2.text};
+            if(sv2.offer) item2.v = 1;
+            history.push(item2);
+            bubble("assistant", t);
+          });
+          if(history.length > 40) history = history.slice(-40);
+          save();
+          return;
+        }
+        if(tries < 120) cornerPollTimer = setTimeout(tick, 1000);
+        else { cornerPollTimer = null; if(typingEl) typingEl.remove(); }
+      }).catch(function(){
+        if(tries < 120) cornerPollTimer = setTimeout(tick, 1000);
+        else { cornerPollTimer = null; if(typingEl) typingEl.remove(); }
+      });
+    };
+    cornerPollTimer = setTimeout(tick, 1000);
+  }
+
   form.addEventListener("submit", function(ev){
     ev.preventDefault();
     var text = input.value.trim();
@@ -318,7 +386,7 @@
     typing.innerHTML = '<span class="dc-dots"><i></i><i></i><i></i></span>';
     msgs.appendChild(typing);
     msgs.scrollTop = msgs.scrollHeight;
-    var payload = {session: sessionId, messages: history.map(function(m){
+    var payload = {session: sessionId, surface: "door", sitting: sittingId, messages: history.map(function(m){
       return {role: m.role, content: m.content};
     })};
     if(identity) payload.identity = identity;
@@ -330,11 +398,38 @@
     }).then(function(r){
       return r.ok ? r.json() : null;
     }).then(function(data){
+      if(data && data.dave_id) storeIdentity(data.dave_id);
+      if(data && isCarriedText(data.reply)){
+        /* Composing (Bill, Nov 15 21:50 EST): the words never
+           render — the three dots stay up and the real reply
+           lands through the owner reply poll. */
+        sending = false;
+        sendBtn.disabled = false;
+        startCornerReplyPoll(typing);
+        input.focus();
+        return;
+      }
       typing.remove();
       sending = false;
       sendBtn.disabled = false;
-      if(data && data.dave_id) storeIdentity(data.dave_id);
       if(data && data.reply){
+        if(data.reply.indexOf("You are through to ") === 0 && !ownerSitting()){
+          /* The countersign landed THIS sitting: owner mode
+             begins now — the visible thread becomes his own,
+             and the public thread stays saved under its own
+             key. */
+          try{ sessionStorage.setItem(OWNER_SITTING_KEY, sittingId); }catch(e){}
+          try{ history = JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]"); }catch(e){ history = []; }
+          if(!Array.isArray(history)) history = [];
+          var svF = splitVision(data.reply);
+          var itemF = {role: "assistant", content: svF.text};
+          if(svF.offer) itemF.v = 1;
+          history.push(itemF);
+          save();
+          renderHistory();
+          input.focus();
+          return;
+        }
         var sv = splitVision(data.reply);
         var item = {role: "assistant", content: sv.text};
         if(sv.offer) item.v = 1;

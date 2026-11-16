@@ -456,6 +456,82 @@
   var IDENTITY_KEY = "dave_chat_identity";
   var SESSION_KEY = "dave_chat_session";
   var HISTORY_KEY = "dave_chat_history";
+  /* Door sitting discipline (Bill, Nov 15 22:00 EST): owner mode on
+     this door surface is PER-SITTING — it exists only in a tab
+     sitting where the countersign was freshly given. A stored
+     owner binding alone never puts this surface in owner mode:
+     without the sitting flag this surface runs the pure public
+     seat — the public thread, no owner drains, no owner history
+     rendered — even on the owner's own browser, even with his
+     token in hand. The dashboard is a different surface and is
+     untouched by this. */
+  var SITTING_KEY = "dave_door_sitting";
+  var OWNER_SITTING_KEY = "dave_door_owner_sitting";
+  var PUBLIC_HISTORY_KEY = "dave_door_public_history";
+  var sittingId = "";
+  try{
+    sittingId = sessionStorage.getItem(SITTING_KEY) || "";
+    if(!sittingId){
+      sittingId = "sit-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 10);
+      sessionStorage.setItem(SITTING_KEY, sittingId);
+    }
+  }catch(e){}
+  function ownerSitting(){ try{ return sessionStorage.getItem(OWNER_SITTING_KEY) === sittingId; }catch(e){ return false; } }
+  function activeHistoryKey(){ return ownerSitting() ? HISTORY_KEY : PUBLIC_HISTORY_KEY; }
+  function markOwnerSittingAndLoad(){
+    try{ sessionStorage.setItem(OWNER_SITTING_KEY, sittingId); }catch(e){}
+    try{ history = JSON.parse(localStorage.getItem(activeHistoryKey()) || "[]"); }catch(e){ history = []; }
+    if(!Array.isArray(history)) history = [];
+  }
+  /* The worker's carried/composing reply is never rendered as
+     words on any Dave surface (Bill, Nov 15 21:50 EST) — while
+     Dave composes, the only sign is three blinking dots. */
+  function isCarriedText(t){
+    return typeof t === "string" && /right here, composing|will land in this same window/i.test(t);
+  }
+  function showTypingDots(){
+    var t = bubble("assistant", "");
+    t.classList.add("msg-typing");
+    t.innerHTML = '<span class="dots"><i></i><i></i><i></i></span>';
+    return t;
+  }
+  var doorPollTimer = null;
+  function startDoorReplyPoll(){
+    if(doorPollTimer || !identity) return;
+    var seen = {};
+    history.forEach(function(m){ if(m && m.role === "assistant" && typeof m.content === "string") seen[m.content] = 1; });
+    var tries = 0;
+    var tick = function(){
+      tries++;
+      fetch("https://dave-chat.william-ced.workers.dev/owner/replies?surface=door&sitting=" + encodeURIComponent(sittingId), {
+        headers: {"Authorization": "Bearer " + identity}
+      }).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
+        var list = (d && Array.isArray(d.replies)) ? d.replies : [];
+        var fresh = [];
+        list.forEach(function(rp){
+          var body = (rp && typeof rp.body === "string") ? rp.body : "";
+          var vm = body.match(/🔊 \[Voice note\]\((https:\/\/[^)]+)\)/);
+          var textOnly = body.replace(/🔊 \[Voice note\]\(https:\/\/[^)]+\)/g, "").trim();
+          if(textOnly && !seen[textOnly]){ seen[textOnly] = 1; fresh.push({text: textOnly, audio: vm ? vm[1] : null}); }
+        });
+        if(fresh.length){
+          doorPollTimer = null;
+          fresh.forEach(function(f){
+            history.push({role: "assistant", content: f.text});
+            if(f.audio){ try{ var au = new Audio(f.audio); var pr = au.play(); if(pr && pr.catch) pr.catch(function(){}); }catch(e){} }
+          });
+          save(); renderAll();
+          return;
+        }
+        if(tries < 120) doorPollTimer = setTimeout(tick, 1000);
+        else doorPollTimer = null;
+      }).catch(function(){
+        if(tries < 120) doorPollTimer = setTimeout(tick, 1000);
+        else doorPollTimer = null;
+      });
+    };
+    doorPollTimer = setTimeout(tick, 1000);
+  }
   var thread = document.getElementById("chat-thread");
   var input = document.getElementById("chat-input");
   var sendBtn = document.getElementById("chat-send");
@@ -485,7 +561,7 @@
     if(!sessionId){ sessionId = uuid(); storeSession(); }
     try{ identity = localStorage.getItem(IDENTITY_KEY); }catch(e){}
     adoptIdentityFromHash();
-    try{ history = JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]"); }catch(e){ history = []; }
+    try{ history = JSON.parse(localStorage.getItem(activeHistoryKey()) || "[]"); }catch(e){ history = []; }
     if(!Array.isArray(history)) history = [];
   }
   /* v4.27 identity: the token Dave knows you by. It lives in two legs —
@@ -513,13 +589,13 @@
       method: "POST",
       credentials: "include",
       headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({session: sessionId, identity: identity || undefined})
+      body: JSON.stringify({session: sessionId, identity: identity || undefined, surface: "door", sitting: sittingId})
     }).then(function(r){ return r.ok ? r.json() : null; })
       .then(function(data){ if(data && data.dave_id) storeIdentity(data.dave_id); })
       .catch(function(){});
   }
   function save(){
-    try{ localStorage.setItem(HISTORY_KEY, JSON.stringify(history)); }catch(e){}
+    try{ localStorage.setItem(activeHistoryKey(), JSON.stringify(history)); }catch(e){}
   }
   /* Chat-layout fix (Bill, Oct 28, 2026) — two parts.
      (a) Minimal, safe markdown for Dave's answers: escape everything
@@ -1018,7 +1094,7 @@
     var typing = bubble("assistant", "");
     typing.classList.add("msg-typing");
     typing.innerHTML = '<span class="dots"><i></i><i></i><i></i></span>';
-    var payload = {session: sessionId, messages: history};
+    var payload = {session: sessionId, messages: history, surface: "door", sitting: sittingId};
     if(identity) payload.identity = identity;
     if(cid) payload.clientMsgId = cid;
     var headers = {"Content-Type": "application/json"};
@@ -1057,14 +1133,37 @@
       input.focus();
     });
     function finish(data){
+      if(data && data.dave_id) storeIdentity(data.dave_id);
+      if(data && isCarriedText(data.reply)){
+        /* Composing (Bill, Nov 15 21:50 EST): the carried words
+           never render as a bubble — the three dots already up
+           are the whole indicator while Dave composes, and the
+           real reply lands through the owner reply poll. The
+           lane already holds the message, so the outbox copy
+           drops here and is never re-sent as context. */
+        if(cid) outboxDrop(cid);
+        startDoorReplyPoll();
+        setSending(false);
+        showTurns(data.turns_left);
+        input.focus();
+        return;
+      }
+      var flipped = false;
+      if(data && typeof data.reply === "string" && data.reply.indexOf("You are through to ") === 0 && !ownerSitting()){
+        /* The countersign landed THIS sitting (Bill, Nov 15
+           22:00 EST): owner mode begins now — the visible thread
+           becomes his own; the public thread stays saved under
+           its own key. */
+        markOwnerSittingAndLoad();
+        flipped = true;
+      }
       typing.remove();
       setSending(false);
       if(cid) outboxDrop(cid);
-      if(data && data.dave_id) storeIdentity(data.dave_id);
       if(data && data.reply){
         history.push({role: "assistant", content: data.reply});
         save();
-        bubble("assistant", data.reply);
+        if(flipped) renderAll(); else bubble("assistant", data.reply);
         showTurns(data.turns_left);
         syncFromServer();
       }else{
@@ -1102,6 +1201,24 @@
         }else if(ev.t === "end"){
           done = true;
           setSending(false);
+          if(isCarriedText(acc)){
+            /* Composing text never renders (Bill, Nov 15 21:50
+               EST): clear any streamed trace of it, keep the
+               three dots up, and let the reply poll land the
+               real answer. */
+            if(liveRow) liveRow.remove();
+            if(!thread.querySelector(".msg-typing")) showTypingDots();
+            if(cid) outboxDrop(cid);
+            if(ev.dave_id) storeIdentity(ev.dave_id);
+            startDoorReplyPoll();
+            input.focus();
+            return;
+          }
+          var flippedEnd = false;
+          if(acc && acc.indexOf("You are through to ") === 0 && !ownerSitting()){
+            markOwnerSittingAndLoad();
+            flippedEnd = true;
+          }
           if(acc){
             history.push({role: "assistant", content: acc});
             save();
@@ -1109,6 +1226,7 @@
             liveRow.remove();
             bubble("assistant", "That didn't get through to me — try me again in a moment.").classList.add("msg-error");
           }
+          if(flippedEnd) renderAll();
           if(cid && acc) outboxDrop(cid);
           if(ev.dave_id) storeIdentity(ev.dave_id);
           showTurns(ev.turns_left);

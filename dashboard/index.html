@@ -364,6 +364,7 @@
 
   var identity = null, sessionId = null, history = [], anchor = [], owner = false;
   var accountName = null;
+  var typingEl = null;
   var sending = false, waiting = false, recog = null;
 
   function uuid(){
@@ -464,6 +465,7 @@
   /* ---------- chat ---------- */
   function saveHistory(){ lsSet(HISTORY_KEY, JSON.stringify(history.slice(-200))); }
   function renderThread(){
+    typingEl = null; /* a rebuild wipes any live typing dots with the DOM */
     inner.innerHTML = "";
     if(!history.length){
       inner.innerHTML = '<p class="empty-note">This is your window to Dave — the app Dave, on the lane.<br>Same Dave. Ask him anything.</p>';
@@ -495,36 +497,52 @@
     history.push({role: "user", content: text});
     saveHistory(); renderThread();
     sending = true; sendBtn.disabled = true;
-    var typing = document.createElement("div");
-    typing.className = "msg msg-dave typing";
-    typing.innerHTML = "<i></i><i></i><i></i>";
-    inner.appendChild(typing); thread.scrollTop = thread.scrollHeight;
+    showTyping();
     postJSON("/chat", {messages: payloadHistory(), session: sessionId, identity: identity || undefined})
       .then(parseChatResponse)
       .then(function(reply){
-        typing.remove();
         if(reply){
           var v = takeVoice(reply);
+          if(v.text && /will land in this same window|right here, composing/i.test(v.text)){
+            /* Carried to the lane (Bill, Nov 15 21:50 EST): the
+               composing text never renders as words — the three
+               dots are the whole indicator while Dave composes,
+               and the real reply lands through the reply poll. */
+            waiting = true;
+            setStatus("Working — your words are on the lane");
+            feedAdd("Message carried to Dave", "Queued to the app lane · the full Dave has it", "📨");
+            showTyping();
+            startReplyPoll();
+            return;
+          }
+          hideTyping();
           if(v.text){
             history.push({role: "assistant", content: v.text});
             saveHistory(); renderThread();
-            if(/will land in this same window|right here, composing/i.test(v.text)){
-              waiting = true;
-              setStatus("Working — your words are on the lane");
-              feedAdd("Message carried to Dave", "Queued to the app lane · the full Dave has it", "📨");
-              startReplyPoll();
-            }
           }
           if(v.audio) playVoice(v.audio);
+        } else {
+          hideTyping();
         }
       })
       .catch(function(){
-        typing.remove();
+        hideTyping();
         history.push({role: "assistant", content: "That send didn't land — the connection dropped before Dave answered. Your words are saved here; send again when you're ready."});
         saveHistory(); renderThread();
       })
       .then(function(){ sending = false; sendBtn.disabled = false; });
   }
+  /* The composing indicator: three blinking dots, nothing else —
+     no "with Dave" box, no words while he thinks (Bill's order,
+     Nov 15 21:50 EST, every Dave surface). */
+  function showTyping(){
+    hideTyping();
+    typingEl = document.createElement("div");
+    typingEl.className = "msg msg-dave typing";
+    typingEl.innerHTML = "<i></i><i></i><i></i>";
+    inner.appendChild(typingEl); thread.scrollTop = thread.scrollHeight;
+  }
+  function hideTyping(){ if(typingEl){ typingEl.remove(); typingEl = null; } }
   var pollTimer = null;
   function startReplyPoll(){
     if(pollTimer) return;
@@ -544,6 +562,7 @@
               feedAdd("Dave replied", "Through the cloud · owner channel", "💬");
             });
             lsSet(SEEN_KEY, JSON.stringify(seen.slice(-100)));
+            hideTyping();
             saveHistory(); renderThread();
             waiting = false; setStatus("Here — watching the door");
             if(lastAudio) playVoice(lastAudio);
@@ -797,6 +816,51 @@
     markRail("chats");
     feedAdd("New chat", "Fresh window · Dave keeps the thread on his side", "➕");
   });
+  /* ---------- WhatsApp call handoff (owner only, FIX 6) ----------
+     The deepest handoff the web can make into WhatsApp's own call
+     flow: on Android, an intent into the WhatsApp app's call action
+     for the number, with WhatsApp's universal call link as the
+     browser fallback; everywhere else, the universal call link
+     itself (wa.me/call/<number>). If the app is absent the chain
+     ends on WhatsApp's own page for that number — never a dead end,
+     never an in-page dialer. */
+  var WA_RECENT_KEY = "dave_wa_recent";
+  function waDigits(raw){
+    var d = String(raw || "").replace(/\D/g, "");
+    if(d.length === 10) d = "1" + d;
+    return d;
+  }
+  function waCallGo(){
+    var inp = $("wa-call-num");
+    var d = waDigits(inp ? inp.value : "");
+    if(d.length < 7){ if(inp) inp.focus(); return; }
+    var rec = lsJson(WA_RECENT_KEY, []);
+    rec = [d].concat(rec.filter(function(x){ return x !== d; })).slice(0, 5);
+    lsSet(WA_RECENT_KEY, JSON.stringify(rec));
+    var callUrl = "https://wa.me/call/" + d;
+    if(/Android/i.test(navigator.userAgent || "")){
+      window.location.href = "intent://call?phone=" + d +
+        "#Intent;scheme=whatsapp;package=com.whatsapp;S.browser_fallback_url=" +
+        encodeURIComponent(callUrl) + ";end";
+    } else {
+      window.location.href = callUrl;
+    }
+  }
+  function renderWaRecent(){
+    var box = $("wa-call-recent"); if(!box) return;
+    var rec = lsJson(WA_RECENT_KEY, []);
+    if(!rec.length){ box.innerHTML = ""; return; }
+    box.innerHTML = rec.map(function(d, i){
+      return '<button class="addbtn" data-wa-recent="' + i + '" style="margin:6px 6px 0 0;width:auto;padding:6px 10px">📞 ' + esc(d) + '</button>';
+    }).join("");
+    box.querySelectorAll("[data-wa-recent]").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        var inp = $("wa-call-num");
+        if(inp) inp.value = rec[Number(btn.getAttribute("data-wa-recent"))] || "";
+        waCallGo();
+      });
+    });
+  }
   function renderPanel(){
     var t = $("panel-title"), b = $("panel-body");
     if(view === "chats"){
@@ -816,7 +880,21 @@
          sees its own not-connected state and its own connect path,
          never the owner's connection. */
       h += '<div class="conv"><span class="ct">🟢 WhatsApp</span><span class="cs">' +
-        (owner ? "Connected" : "Connect WhatsApp to reach Dave there too") + '</span></div>';
+        (owner ? "Connected" : "Connect WhatsApp to reach Dave there too") + '</span>' +
+        (owner ? '<button class="addbtn" id="wa-call-btn" style="margin-top:8px">📞 Call</button>' : '') + '</div>';
+      if(owner){
+        /* The Call button (Bill's order, Nov 15 21:58 EST): owner
+           only, and a real handoff — it opens WhatsApp's own call
+           flow for the number on this phone. No in-page dialer, no
+           microphone, nothing fake. Numbers live only in this
+           device's local storage (recents) — never in this file,
+           never sent anywhere. */
+        h += '<div id="wa-call-sheet" hidden style="margin:2px 6px 8px">' +
+          '<input class="searchbox" id="wa-call-num" type="tel" placeholder="Number to call" aria-label="Number to call">' +
+          '<div id="wa-call-recent"></div>' +
+          '<button class="addbtn" id="wa-call-go" style="margin-top:8px">📞 Call on WhatsApp</button>' +
+          '<p class="mini" style="margin-top:6px">Opens WhatsApp on this phone at the call screen for that number — WhatsApp places the call, not the dashboard.</p></div>';
+      }
       h += '<div class="panel-sec">Side chats</div>';
       if(history.length){
         h += '<button class="conv" id="ch-side"><span class="ct">Chat with Dave</span><span class="cs">' + esc(snip) + '</span></button>';
@@ -824,6 +902,14 @@
         h += '<p class="mini" style="margin:2px 6px">No side chats yet — your conversations will list here.</p>';
       }
       b.innerHTML = h;
+      var waBtn = $("wa-call-btn");
+      if(waBtn) waBtn.addEventListener("click", function(){
+        var sheet = $("wa-call-sheet"); if(!sheet) return;
+        sheet.hidden = !sheet.hidden;
+        if(!sheet.hidden){ renderWaRecent(); var inp = $("wa-call-num"); if(inp) inp.focus(); }
+      });
+      var waGo = $("wa-call-go");
+      if(waGo) waGo.addEventListener("click", waCallGo);
       $("ch-main").addEventListener("click", function(){ setPanel(false); });
       var sideBtn = $("ch-side");
       if(sideBtn) sideBtn.addEventListener("click", function(){ setPanel(false); });
@@ -974,6 +1060,18 @@
     if(!Array.isArray(anchor)) anchor = [];
   }
   function openDashboard(){
+    /* The owner's thread is his own (Bill, Nov 15 21:50 EST): the
+       blank-Dave account greeting must never sit in it. If it ever
+       landed in this device's stored history — an account-path
+       entry from before the owner gate existed — it is scrubbed
+       on owner entry, so his Dave never greets him as a stranger. */
+    if(owner){
+      var kept = history.filter(function(m){
+        return !(m && m.role === "assistant" && typeof m.content === "string" &&
+          m.content.indexOf("This dashboard is yours: ask me anything") >= 0);
+      });
+      if(kept.length !== history.length){ history = kept; saveHistory(); }
+    }
     gate.hidden = true; app.hidden = false;
     $("signout-btn").hidden = !accountName;
     renderThread(); renderFeed(); renderPanel();
@@ -991,17 +1089,27 @@
       .catch(function(){ return null; });
   }
   function enterAccount(name, isNew){
-    accountName = name;
-    try{ sessionStorage.removeItem(SIGNED_OUT_KEY); }catch(e){}
-    return fetchAccountHistory().then(function(d){
-      var msgs = (d && Array.isArray(d.messages)) ? d.messages : null;
-      if(msgs) history = msgs;
-      if(isNew || !history.length){
-        history.push({role: "assistant", content: "Hey " + name + " — I'm Dave. Your Dave. This dashboard is yours: ask me anything, tell me what you're working on, and what you tell me here I'll remember for next time. What do we start with?"});
-      }
-      saveHistory();
-      feedAdd(isNew ? "Account created" : "Signed in", (isNew ? "Welcome · " : "Your Dave remembers you · ") + "dashboard open", "👁");
-      openDashboard();
+    /* Owner gate (Bill, Nov 15 21:50 EST): this account path must
+       NEVER run for the owner. Whatever route led here — a boot
+       race, a stale flag, a login response that lost its owner
+       mark — a fresh owner check decides: an owner-bound session
+       takes the owner door, his own thread, and the blank-Dave
+       greeting below can never render for him. He is Bill to his
+       Dave, never a login name meeting a stranger. */
+    return checkOwner().then(function(isOwnerNow){
+      if(isOwnerNow){ openDashboard(); return; }
+      accountName = name;
+      try{ sessionStorage.removeItem(SIGNED_OUT_KEY); }catch(e){}
+      return fetchAccountHistory().then(function(d){
+        var msgs = (d && Array.isArray(d.messages)) ? d.messages : null;
+        if(msgs) history = msgs;
+        if(isNew || !history.length){
+          history.push({role: "assistant", content: "Hey " + name + " — I'm Dave. Your Dave. This dashboard is yours: ask me anything, tell me what you're working on, and what you tell me here I'll remember for next time. What do we start with?"});
+        }
+        saveHistory();
+        feedAdd(isNew ? "Account created" : "Signed in", (isNew ? "Welcome · " : "Your Dave remembers you · ") + "dashboard open", "👁");
+        openDashboard();
+      });
     });
   }
   function gateFail(errId, btnId, msg){
