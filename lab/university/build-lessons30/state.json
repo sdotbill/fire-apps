@@ -304,5 +304,12 @@
    "audio": "audio/lessons30/galactic-stellar-streams-tidal-tails-and-the-magellanic-system-d/lesson-01.mp3",
    "minutes": 16.4
   }
+ },
+ "the-circumgalactic-medium-absorption-cooling-and-baryon-budgets-": {
+  "lesson-01": {
+   "hash": "b039fb4b107397b9ee596c65d776605e75fc1075",
+   "audio": "audio/lessons30/the-circumgalactic-medium-absorption-cooling-and-baryon-budgets-/lesson-01.mp3",
+   "minutes": 10.24
+  }
  }
 }

@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'COS-Dwarfs: Carbon Absorption, Covering Fractions and a Reservoir Outweighing Its Galaxy'. The result it reported gives a value for mass 1e9 msun dwarfs, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'COS-Dwarfs: Carbon Absorption, Covering Fractions and a Reservoir Outweighing Its Galaxy'. Its stated result: Headline result: dwarfs cool mass 1e9 msun dwarfs = 2.228; dwarfs reservoir to stellar ratio dwarfs = 2.228; dwarfs covering strong cii dwarfs = 0.4; dwarfs halo allowance 1e9 msun dwarfs = 15.7; dwarfs cool share allowance percent dwarfs = 14.19; dwarfs metal mass 1e6 msun dwarfs = 4.457 Operating principle: Small galaxies have shallow potential wells, so the meaningful ratio is reservoir mass over stellar mass: app And here is that same result with the words stripped away — just the quantities standing in a row: mass 1e9 msun dwarfs = 2.228; covering strong cii dwarfs = 0.4; allowance 1e9 msun dwarfs = 15.7. Find mass 1e9 msun dwarfs in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'COS-Dwarfs: Carbon Absorption, Covering Fractions and a Reservoir Outweighing Its Galaxy' stated its result. (2) That result pairs names with values: mass 1e9 msun dwarfs = 2.228; covering strong cii dwarfs = 0.4; allowance 1e9 msun dwarfs = 15.7. (3) This question asks for the value paired with mass 1e9 msun dwarfs. (4) In that row, mass 1e9 msun dwarfs stands beside 2.228 — so the answer the lesson gives is 2.228. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'COS-Dwarfs: Carbon Absorption, Covering Fractions and a Reservoir Outweighing Its Galaxy' reported a number for mass 1e9 msun dwarfs. What number did it report?",
+  "kind": "number",
+  "answer": 2.228,
+  "disp": "2.228",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "2.228",
+   "18.81",
+   "9.172",
+   "3.358"
+  ],
+  "mcAnswer": "2.228",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'COS-Halos Cool Gas: Neutral Column, Covering Fraction and the Cool Mass Inside 160 Kiloparsecs'. The result it reported gives a value for mass 1e9 msun coshalos, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'COS-Halos Cool Gas: Neutral Column, Covering Fraction and the Cool Mass Inside 160 Kiloparsecs'. Its stated result: Headline result: coshalos cool mass 1e9 msun coshalos = 9.172; coshalos halo area kpc2 coshalos = 8.042e+04; coshalos mean total column log coshalos = 19.1; coshalos covering fraction strong hi coshalos = 0.85; coshalos mass inner 75kpc 1e9 msun coshalos = 2.015; coshalos mass annulus 75 160 1e9 msun coshalos = 7.157 Operating principle: A mean hydrogen column spread over a circular halo area, reduced by the measured And here is that same result with the words stripped away — just the quantities standing in a row: mass 1e9 msun coshalos = 9.172; halo area kpc2 coshalos = 8.042e+04; total column log coshalos = 19.1. Find mass 1e9 msun coshalos in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'COS-Halos Cool Gas: Neutral Column, Covering Fraction and the Cool Mass Inside 160 Kiloparsecs' stated its result. (2) That result pairs names with values: mass 1e9 msun coshalos = 9.172; halo area kpc2 coshalos = 8.042e+04; total column log coshalos = 19.1. (3) This question asks for the value paired with mass 1e9 msun coshalos. (4) In that row, mass 1e9 msun coshalos stands beside 9.172 — so the answer the lesson gives is 9.172. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'COS-Halos Cool Gas: Neutral Column, Covering Fraction and the Cool Mass Inside 160 Kiloparsecs' reported a number for mass 1e9 msun coshalos. What number did it report?",
+  "kind": "number",
+  "answer": 9.172,
+  "disp": "9.172",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "9.172",
+   "2.228",
+   "18.81",
+   "3.358"
+  ],
+  "mcAnswer": "9.172",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'COS-Halos O VI: Column Density, Ionisation Correction and the Warm-Hot Gas Mass'. The result it reported gives a value for hydrogen column log cosovi, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'COS-Halos O VI: Column Density, Ionisation Correction and the Warm-Hot Gas Mass'. Its stated result: Headline result: cosovi total hydrogen column log cosovi = 18.81; cosovi warmhot mass 1e9 msun cosovi = 4.862; cosovi mass at solar metallicity 1e9 msun cosovi = 2.431; cosovi mass at fovi 0p1 1e9 msun cosovi = 9.724; cosovi oxygen mass 1e6 msun cosovi = 14.33; cosovi mean ovi column log cosovi = 14.5 Operating principle: An oxygen ion column becomes a total gas mass once the oxygen abundance, the fraction of oxygen And here is that same result with the words stripped away — just the quantities standing in a row: hydrogen column log cosovi = 18.81; mass 1e9 msun cosovi = 4.862; metallicity 1e9 msun cosovi = 2.431. Find hydrogen column log cosovi in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'COS-Halos O VI: Column Density, Ionisation Correction and the Warm-Hot Gas Mass' stated its result. (2) That result pairs names with values: hydrogen column log cosovi = 18.81; mass 1e9 msun cosovi = 4.862; metallicity 1e9 msun cosovi = 2.431. (3) This question asks for the value paired with hydrogen column log cosovi. (4) In that row, hydrogen column log cosovi stands beside 18.81 — so the answer the lesson gives is 18.81. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'COS-Halos O VI: Column Density, Ionisation Correction and the Warm-Hot Gas Mass' reported a number for hydrogen column log cosovi. What number did it report?",
+  "kind": "number",
+  "answer": 18.81,
+  "disp": "18.81",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "18.81",
+   "2.228",
+   "3.358",
+   "9.172"
+  ],
+  "mcAnswer": "18.81",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Circumgalactic Pressure and Density: A Power-Law Profile Weighed and Checked for Hydrostatic Support'. The result it reported gives a value for kpc 1e10 msun pressure, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Circumgalactic Pressure and Density: A Power-Law Profile Weighed and Checked for Hydrostatic Support'. Its stated result: Headline result: pressure gas mass 10 250kpc 1e10 msun pressure = 3.358; pressure at 50kpc ev cm3 pressure = 0.01655; pressure density at 250kpc cm3 pressure = 8.944e-06; pressure density at 25kpc cm3 pressure = 0.0002828; pressure at 250kpc ev cm3 pressure = 0.00148; pressure mass slope 1p0 1e10 msun pressure = 6.381 Operating principle: A stated power law can be integrated exactly, so the enclosed gas mass, the pre And here is that same result with the words stripped away — just the quantities standing in a row: kpc 1e10 msun pressure = 3.358; kpc ev cm3 pressure = 0.01655; p0 1e10 msun pressure = 6.381. Find kpc 1e10 msun pressure in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Circumgalactic Pressure and Density: A Power-Law Profile Weighed and Checked for Hydrostatic Support' stated its result. (2) That result pairs names with values: kpc 1e10 msun pressure = 3.358; kpc ev cm3 pressure = 0.01655; p0 1e10 msun pressure = 6.381. (3) This question asks for the value paired with kpc 1e10 msun pressure. (4) In that row, kpc 1e10 msun pressure stands beside 3.358 — so the answer the lesson gives is 3.358. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Circumgalactic Pressure and Density: A Power-Law Profile Weighed and Checked for Hydrostatic Support' reported a number for kpc 1e10 msun pressure. What number did it report?",
+  "kind": "number",
+  "answer": 3.358,
+  "disp": "3.358",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "18.81",
+   "3.358",
+   "2.228",
+   "9.172"
+  ],
+  "mcAnswer": "3.358",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Closing the L-Star Baryon Census: Stars, Disc Gas and Three Halo Phases Against the Cosmic Allowance'. The result it reported gives a value for allowance 1e10 msun census, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Closing the L-Star Baryon Census: Stars, Disc Gas and Three Halo Phases Against the Cosmic Allowance'. Its stated result: Headline result: census allowance 1e10 msun census = 31.33; census total accounted 1e10 msun census = 12.5; census closure percent census = 39.9; census residual 1e10 msun census = 18.83; census cgm total 1e10 msun census = 6.5; census cgm share of accounted percent census = 52 Operating principle: Summing independently measured components and dividing by the allowance converts a collection of survey results into one And here is that same result with the words stripped away — just the quantities standing in a row: allowance 1e10 msun census = 31.33; accounted 1e10 msun census = 12.5; census closure percent census = 39.9. Find allowance 1e10 msun census in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Closing the L-Star Baryon Census: Stars, Disc Gas and Three Halo Phases Against the Cosmic Allowance' stated its result. (2) That result pairs names with values: allowance 1e10 msun census = 31.33; accounted 1e10 msun census = 12.5; census closure percent census = 39.9. (3) This question asks for the value paired with allowance 1e10 msun census. (4) In that row, allowance 1e10 msun census stands beside 31.33 — so the answer the lesson gives is 31.33. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Closing the L-Star Baryon Census: Stars, Disc Gas and Three Halo Phases Against the Cosmic Allowance' reported a number for allowance 1e10 msun census. What number did it report?",
+  "kind": "number",
+  "answer": 31.33,
+  "disp": "31.33",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "18.81",
+   "31.33",
+   "2.228",
+   "9.172"
+  ],
+  "mcAnswer": "31.33",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “COS-Dwarfs: Carbon Absorption, Covering Fractions and a Reservoir Outweighing Its Galaxy”. Its stated result is: Headline result: dwarfs cool mass 1e9 msun dwarfs = 2.228; dwarfs reservoir to stellar ratio dwarfs = 2.228; dwarfs covering strong cii dwarfs = 0.4; dwarfs halo allowance 1e9 msun dwarfs = 15.7; dwarfs cool share allowance percent dwarfs = 14.19; dwarfs metal mass 1e6 msun dwarfs = 4.457 Operating (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “COS-Dwarfs: Carbon Absorption, Covering Fractions and a Reservoir Outweighing Its Galaxy”. Its stated result is: Headline result: dwarfs cool mass 1e9 msun dwarfs = 2.228; dwarfs reservoir to stellar ratio dwarfs = 2.228; dwarfs covering strong cii dwarfs = 0.4; dwarfs halo allowance 1e9 msun dwarfs = 15.7; dwarfs cool share allowance percent dwarfs = 14.19; dwarfs metal mass 1e6 msun dwarfs = 4.457 Operating (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]

@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Chiara Papadopoulos, and this is The Circumgalactic Medium: Absorption, Cooling and Baryon Budgets Against Published Survey Values. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Chiara Papadopoulos, and this is The Circumgalactic Medium: Absorption, Cooling and Baryon Budgets Against Published Survey Values. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'COS-Dwarfs: Carbon Absorption, Covering Fractions and a Reservoir Outweighing Its Galaxy'. Its stated result: Headline result: dwarfs cool mass 1e9 msun dwarfs = 2.228; dwarfs reservoir to stellar ratio dwarfs = 2.228; dwarfs covering strong cii dwarfs = 0.4; dwarfs halo allowance 1e9 msun dwarfs = 15.7; dwarfs cool share allowance percent dwarfs = 14.19; dwarfs metal mass 1e6 msun dwarfs = 4.457 Operating principle: Small galaxies have shallow potential wells, so the meaningful ratio is reservoir mass over stellar mass: app
+
+Now we go one step further into the material.
+
+'COS-Halos Cool Gas: Neutral Column, Covering Fraction and the Cool Mass Inside 160 Kiloparsecs'. Its stated result: Headline result: coshalos cool mass 1e9 msun coshalos = 9.172; coshalos halo area kpc2 coshalos = 8.042e+04; coshalos mean total column log coshalos = 19.1; coshalos covering fraction strong hi coshalos = 0.85; coshalos mass inner 75kpc 1e9 msun coshalos = 2.015; coshalos mass annulus 75 160 1e9 msun coshalos = 7.157 Operating principle: A mean hydrogen column spread over a circular halo area, reduced by the measured
+
+The next piece is where this starts to come together.
+
+'COS-Halos O VI: Column Density, Ionisation Correction and the Warm-Hot Gas Mass'. Its stated result: Headline result: cosovi total hydrogen column log cosovi = 18.81; cosovi warmhot mass 1e9 msun cosovi = 4.862; cosovi mass at solar metallicity 1e9 msun cosovi = 2.431; cosovi mass at fovi 0p1 1e9 msun cosovi = 9.724; cosovi oxygen mass 1e6 msun cosovi = 14.33; cosovi mean ovi column log cosovi = 14.5 Operating principle: An oxygen ion column becomes a total gas mass once the oxygen abundance, the fraction of oxygen
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Circumgalactic Pressure and Density: A Power-Law Profile Weighed and Checked for Hydrostatic Support'. Its stated result: Headline result: pressure gas mass 10 250kpc 1e10 msun pressure = 3.358; pressure at 50kpc ev cm3 pressure = 0.01655; pressure density at 250kpc cm3 pressure = 8.944e-06; pressure density at 25kpc cm3 pressure = 0.0002828; pressure at 250kpc ev cm3 pressure = 0.00148; pressure mass slope 1p0 1e10 msun pressure = 6.381 Operating principle: A stated power law can be integrated exactly, so the enclosed gas mass, the pre
+
+We take the pieces in order, because each one stands on the last.
+
+'Closing the L-Star Baryon Census: Stars, Disc Gas and Three Halo Phases Against the Cosmic Allowance'. Its stated result: Headline result: census allowance 1e10 msun census = 31.33; census total accounted 1e10 msun census = 12.5; census closure percent census = 39.9; census residual 1e10 msun census = 18.83; census cgm total 1e10 msun census = 6.5; census cgm share of accounted percent census = 52 Operating principle: Summing independently measured components and dividing by the allowance converts a collection of survey results into one
+
+Stay with me, because the next piece builds directly on that one.
+
+'Cooling Time in an L-Star Halo: Radial Profile, Free-Fall Comparison and the Cooling Radius'. Its stated result: Headline result: cooltimes tcool at ne 1e3 gyr cooltimes = 1.008; cooltimes tcool at ne 3e4 gyr cooltimes = 3.36; cooltimes tcool at ne 1e4 gyr cooltimes = 10.08; cooltimes tcool at ne 3e5 gyr cooltimes = 33.6; cooltimes hubble time gyr cooltimes = 13.8; cooltimes ratio centre to hubble cooltimes = 0.07304 Operating principle: Cooling time divides thermal energy density by the volumetric cooling rate, so with tempera
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “COS-Dwarfs: Carbon Absorption, Covering Fractions and a Reservoir Outweighing Its Galaxy”. Its stated result is: Headline result: dwarfs cool mass 1e9 msun dwarfs = 2.228; dwarfs reservoir to stellar ratio dwarfs = 2.228; dwarfs covering strong cii dwarfs = 0.4; dwarfs halo allowance 1e9 msun dwarfs = 15.7; dwarfs cool share allowance percent dwarfs = 14.19; dwarfs metal mass 1e6 msun dwarfs = 4.457 Operating (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'COS-Dwarfs: Carbon Absorption, Covering Fractions and a Reservoir Outweighing Its Galaxy'; 'COS-Halos Cool Gas: Neutral Column, Covering Fraction and the Cool Mass Inside 160 Kiloparsecs'; 'COS-Halos O VI: Column Density, Ionisation Correction and the Warm-Hot Gas Mass'; 'Circumgalactic Pressure and Density: A Power-Law Profile Weighed and Checked for Hydrostatic Support'; 'Closing the L-Star Baryon Census: Stars, Disc Gas and Three Halo Phases Against the Cosmic Allowance'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.
