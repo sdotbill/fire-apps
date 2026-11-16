@@ -1,0 +1,177 @@
+{
+ "id": "volcanic-eruption-columns-ash-plumes-and-pyroclastic-density-cur",
+ "title": "Volcanic Eruption Columns, Ash Plumes and Pyroclastic Density Currents: Rise, Dispersal and Runout Budgets Against Energy and Density Bounds",
+ "professor": "Professor Chidi Adeleke",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Chidi Adeleke, and this is Volcanic Eruption Columns, Ash Plumes and Pyroclastic Density Currents: Rise, Dispersal and Runout Budgets Against Energy and Density Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Chidi Adeleke, and this is Volcanic Eruption Columns, Ash Plumes and Pyroclastic Density Currents: Rise, Dispersal and Runout Budgets Against Energy and Density Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'Calbuco 2015: Stratospheric Injection Fraction, Sulphur Loading and Transcontinental Ash Transport Times'. Its stated result: Headline result: plume height km = 23; tropopause height km = 12; stratospheric overshoot km = 11; settling 20um m s = 0.0327; fall time 20um days = 6.371; fall time 10um days = 25.49",
+    "Now we go one step further into the material.",
+    "'El Chichon 1982: Inverting Column Height into a Mass Eruption Rate and Erupted Volume'. Its stated result: Headline result: column height km = 21; volume flux m3 s = 1.759e+04; mass eruption rate kg s = 4.397e+07; phase duration h = 9; erupted volume DRE km3 = 0.5698; erupted volume bulk km3 = 1.254",
+    "The next piece is where this starts to come together.",
+    "'Etna 2021: Lava-Fountain Ballistics, Gas Expansion Velocity and Column Loading During the Paroxysms'. Its stated result: Headline result: gas mass fraction = 0.02; magma temperature K = 1400; vent pressure MPa = 8; gas expansion velocity m s = 350.1; fountain height m = 3437; fountain height if drag free m = 6249",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'Eyjafjallajokull 2010: Settling Velocities, Fall Times and Wind Transport Distances for Fine Ash'. Its stated result: Headline result: release height m = 9000; wind speed m s = 12; particle density kg m3 = 2300; settling 10um m s = 0.006961; settling 30um m s = 0.06265; settling 100um m s = 0.6961",
+    "We take the pieces in order, because each one stands on the last.",
+    "'Grimsvotn 2011: Umbrella-Cloud Spreading as a Buoyancy-Driven Gravity Current'. Its stated result: Headline result: reduced gravity m s2 = 0.35; volume flux into umbrella m3 s = 2e+05; radius at 1h km = 8.316; radius at 6h km = 31.88; radius at 12h km = 53.61; radius at 24h km = 90.17",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Hunga Tonga 2022: Plume Overshoot to the Mesosphere and Umbrella Growth at Record Height'. Its stated result: Headline result: neutral buoyancy height km = 31; maximum height km = 57; overshoot thickness km = 26; ballistic overshoot speed m s = 714.2; reduced gravity m s2 = 0.22; volume flux m3 s = 8e+05",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Calbuco 2015: Stratospheric Injection Fraction, Sulphur Loading and Transcontinental Ash Transport Times”. Its stated result is: Headline result: plume height km = 23; tropopause height km = 12; stratospheric overshoot km = 11; settling 20um m s = 0.0327; fall time 20um days = 6.371; fall time 10um days = 25.49 (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'Calbuco 2015: Stratospheric Injection Fraction, Sulphur Loading and Transcontinental Ash Transport Times'; 'El Chichon 1982: Inverting Column Height into a Mass Eruption Rate and Erupted Volume'; 'Etna 2021: Lava-Fountain Ballistics, Gas Expansion Velocity and Column Loading During the Paroxysms'; 'Eyjafjallajokull 2010: Settling Velocities, Fall Times and Wind Transport Distances for Fine Ash'; 'Grimsvotn 2011: Umbrella-Cloud Spreading as a Buoyancy-Driven Gravity Current'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 829,
+   "audio": "audio/lessons30/volcanic-eruption-columns-ash-plumes-and-pyroclastic-density-cur/lesson-01.mp3",
+   "minutes": 8.78,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'Calbuco 2015: Stratospheric Injection Fraction, Sulphur Loading and Transcontinental Ash Transport Times'. The result it reported gives a value for plume height km, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Calbuco 2015: Stratospheric Injection Fraction, Sulphur Loading and Transcontinental Ash Transport Times'. Its stated result: Headline result: plume height km = 23; tropopause height km = 12; stratospheric overshoot km = 11; settling 20um m s = 0.0327; fall time 20um days = 6.371; fall time 10um days = 25.49 And here is that same result with the words stripped away — just the quantities standing in a row: plume height km = 23; tropopause height km = 12; stratospheric overshoot km = 11. Find plume height km in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Calbuco 2015: Stratospheric Injection Fraction, Sulphur Loading and Transcontinental Ash Transport Times' stated its result. (2) That result pairs names with values: plume height km = 23; tropopause height km = 12; stratospheric overshoot km = 11. (3) This question asks for the value paired with plume height km. (4) In that row, plume height km stands beside 23 — so the answer the lesson gives is 23. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Calbuco 2015: Stratospheric Injection Fraction, Sulphur Loading and Transcontinental Ash Transport Times' reported a number for plume height km. What number did it report?",
+     "kind": "number",
+     "answer": 23.0,
+     "disp": "23",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.02",
+      "23",
+      "21",
+      "9000"
+     ],
+     "mcAnswer": "23",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'El Chichon 1982: Inverting Column Height into a Mass Eruption Rate and Erupted Volume'. The result it reported gives a value for column height km, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'El Chichon 1982: Inverting Column Height into a Mass Eruption Rate and Erupted Volume'. Its stated result: Headline result: column height km = 21; volume flux m3 s = 1.759e+04; mass eruption rate kg s = 4.397e+07; phase duration h = 9; erupted volume DRE km3 = 0.5698; erupted volume bulk km3 = 1.254 And here is that same result with the words stripped away — just the quantities standing in a row: column height km = 21; volume flux m3 s = 1.759e+04; eruption rate kg s = 4.397e+07. Find column height km in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'El Chichon 1982: Inverting Column Height into a Mass Eruption Rate and Erupted Volume' stated its result. (2) That result pairs names with values: column height km = 21; volume flux m3 s = 1.759e+04; eruption rate kg s = 4.397e+07. (3) This question asks for the value paired with column height km. (4) In that row, column height km stands beside 21 — so the answer the lesson gives is 21. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'El Chichon 1982: Inverting Column Height into a Mass Eruption Rate and Erupted Volume' reported a number for column height km. What number did it report?",
+     "kind": "number",
+     "answer": 21.0,
+     "disp": "21",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "21",
+      "9000",
+      "23",
+      "0.02"
+     ],
+     "mcAnswer": "21",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Etna 2021: Lava-Fountain Ballistics, Gas Expansion Velocity and Column Loading During the Paroxysms'. The result it reported gives a value for gas mass fraction, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Etna 2021: Lava-Fountain Ballistics, Gas Expansion Velocity and Column Loading During the Paroxysms'. Its stated result: Headline result: gas mass fraction = 0.02; magma temperature K = 1400; vent pressure MPa = 8; gas expansion velocity m s = 350.1; fountain height m = 3437; fountain height if drag free m = 6249 And here is that same result with the words stripped away — just the quantities standing in a row: gas mass fraction = 0.02; magma temperature K = 1400; vent pressure MPa = 8. Find gas mass fraction in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Etna 2021: Lava-Fountain Ballistics, Gas Expansion Velocity and Column Loading During the Paroxysms' stated its result. (2) That result pairs names with values: gas mass fraction = 0.02; magma temperature K = 1400; vent pressure MPa = 8. (3) This question asks for the value paired with gas mass fraction. (4) In that row, gas mass fraction stands beside 0.02 — so the answer the lesson gives is 0.02. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Etna 2021: Lava-Fountain Ballistics, Gas Expansion Velocity and Column Loading During the Paroxysms' reported a number for gas mass fraction. What number did it report?",
+     "kind": "number",
+     "answer": 0.02,
+     "disp": "0.02",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "21",
+      "0.02",
+      "9000",
+      "23"
+     ],
+     "mcAnswer": "0.02",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Eyjafjallajokull 2010: Settling Velocities, Fall Times and Wind Transport Distances for Fine Ash'. The result it reported gives a value for release height m, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Eyjafjallajokull 2010: Settling Velocities, Fall Times and Wind Transport Distances for Fine Ash'. Its stated result: Headline result: release height m = 9000; wind speed m s = 12; particle density kg m3 = 2300; settling 10um m s = 0.006961; settling 30um m s = 0.06265; settling 100um m s = 0.6961 And here is that same result with the words stripped away — just the quantities standing in a row: release height m = 9000; wind speed m s = 12; particle density kg m3 = 2300. Find release height m in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Eyjafjallajokull 2010: Settling Velocities, Fall Times and Wind Transport Distances for Fine Ash' stated its result. (2) That result pairs names with values: release height m = 9000; wind speed m s = 12; particle density kg m3 = 2300. (3) This question asks for the value paired with release height m. (4) In that row, release height m stands beside 9000 — so the answer the lesson gives is 9000. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Eyjafjallajokull 2010: Settling Velocities, Fall Times and Wind Transport Distances for Fine Ash' reported a number for release height m. What number did it report?",
+     "kind": "number",
+     "answer": 9000.0,
+     "disp": "9000",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.02",
+      "9000",
+      "23",
+      "21"
+     ],
+     "mcAnswer": "9000",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Grimsvotn 2011: Umbrella-Cloud Spreading as a Buoyancy-Driven Gravity Current'. The result it reported gives a value for reduced gravity m s2, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Grimsvotn 2011: Umbrella-Cloud Spreading as a Buoyancy-Driven Gravity Current'. Its stated result: Headline result: reduced gravity m s2 = 0.35; volume flux into umbrella m3 s = 2e+05; radius at 1h km = 8.316; radius at 6h km = 31.88; radius at 12h km = 53.61; radius at 24h km = 90.17 And here is that same result with the words stripped away — just the quantities standing in a row: reduced gravity m s2 = 0.35; into umbrella m3 s = 2e+05; radius at 1h km = 8.316. Find reduced gravity m s2 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Grimsvotn 2011: Umbrella-Cloud Spreading as a Buoyancy-Driven Gravity Current' stated its result. (2) That result pairs names with values: reduced gravity m s2 = 0.35; into umbrella m3 s = 2e+05; radius at 1h km = 8.316. (3) This question asks for the value paired with reduced gravity m s2. (4) In that row, reduced gravity m s2 stands beside 0.35 — so the answer the lesson gives is 0.35. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Grimsvotn 2011: Umbrella-Cloud Spreading as a Buoyancy-Driven Gravity Current' reported a number for reduced gravity m s2. What number did it report?",
+     "kind": "number",
+     "answer": 0.35,
+     "disp": "0.35",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "21",
+      "0.02",
+      "0.35",
+      "23"
+     ],
+     "mcAnswer": "0.35",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Calbuco 2015: Stratospheric Injection Fraction, Sulphur Loading and Transcontinental Ash Transport Times”. Its stated result is: Headline result: plume height km = 23; tropopause height km = 12; stratospheric overshoot km = 11; settling 20um m s = 0.0327; fall time 20um days = 6.371; fall time 10um days = 25.49 (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “Calbuco 2015: Stratospheric Injection Fraction, Sulphur Loading and Transcontinental Ash Transport Times”. Its stated result is: Headline result: plume height km = 23; tropopause height km = 12; stratospheric overshoot km = 11; settling 20um m s = 0.0327; fall time 20um days = 6.371; fall time 10um days = 25.49 (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}

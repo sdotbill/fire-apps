@@ -255,5 +255,12 @@
    "audio": "audio/lessons30/exomoons-orbital-stability-tidal-evolution-and-detection-budgets/lesson-01.mp3",
    "minutes": 9.44
   }
+ },
+ "volcanic-eruption-columns-ash-plumes-and-pyroclastic-density-cur": {
+  "lesson-01": {
+   "hash": "764ad023186cca6689522c78af66d2d710a73a33",
+   "audio": "audio/lessons30/volcanic-eruption-columns-ash-plumes-and-pyroclastic-density-cur/lesson-01.mp3",
+   "minutes": 8.78
+  }
  }
 }
