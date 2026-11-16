@@ -87,3 +87,49 @@ simulation into a lesson and a blueprint into engineering judgment.
 - Verifiers lived in /tmp for the run: `lab-verify.js` (physics),
   `lab-page-smoke.js` (page drive test). Rebuild them from the checks
   listed above if a future stage needs them.
+
+## Stage 2 — the Room (2026-11-15, Bill's design spoken the same night)
+
+Bill: "the phone thing… I can like show my computer the interactive
+tools… like that game inside a 3D world where I turned around my phone
+and it turned around… what if that's kind of like the laboratory — I
+can see stuff and look and pick it up and when I touch it it explains
+it… and you can help me, like steps… kind of like an interactive video
+game." And: Lab lessons become Exolex University classes, with the
+hours tracked toward certification.
+
+Built at `lab/room/`, linked from the flat page ("Enter the room"):
+
+- **The room.** One three.js room (CDN r128), white and gold: the Watch
+  Floor as a wall screen running the bounce integration live on its
+  face, the Bench as a table with the two gold coils across their gap,
+  and the University Door on the west wall. Drag to look on a computer;
+  on a phone, "Motion look" turns the phone into a window (device
+  orientation, permission asked properly, drag remains as fallback).
+- **Touch a thing, it explains itself.** Every station is a pickable
+  object: tap → its card (what it is / what it does / the principle) →
+  "Open the instrument" runs the *real* stage-1 instrument, same
+  `lab-core.js`, physics untouched. The door opens the University
+  panel instead.
+- **Guided walks.** "Walk me through it" per station: Dave's steps,
+  one at a time, the control in question lit gold, advancing when the
+  visitor actually does the step (pause the run; torsion to 0.60 and
+  read the peak fall to 55.4% of the cap; set the pad up badly, then
+  rescue it with the phase-matcher; find "My hours").
+- **Hours, honestly.** A session clock runs only while the room is in
+  front of the visitor (it pauses when the tab hides — a room left
+  open in a background tab earns nothing). Ending a session appends
+  {date, minutes, stations, stepsCompleted} to the visitor's Lab log
+  (localStorage `dave_lab_log`, exportable as JSON); "My hours" totals
+  it. This is the seed of the University hours ledger.
+- **Fallback.** If WebGL or the CDN fails, the room page says so in
+  plain words and links back to the flat bench, which is unchanged.
+
+Verification (headless, all passing): the stage-1 physics suite,
+15/15, against the untouched `lab-core.js`; a Node suite over
+`room-core.js` (stations, step checks, timer pause math, log format),
+35/35; and a DevTools-protocol drive of the room in a real browser
+engine — taps open the right cards, the walk advances on real actions,
+the peak readout lands on 1.62×10⁵⁵ g/cm³ at β = 0.60, the session
+writes its log entry — 14/14. Not yet done: a human hand on a real
+phone (motion look, touch feel) — that check is Bill's first visit.

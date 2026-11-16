@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>The Laboratory — The Room</title>
+<style>
+  :root{
+    --paper:#faf7ef; --panel:#fffdf6; --gold:#c9a227; --gold-hi:#d9b23a;
+    --gold-deep:#8a6508; --line:#e9e2cd; --ink:#262019; --ink-soft:#5c5340;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;background:var(--paper);color:var(--ink);overflow:hidden;
+    font-family:Georgia,'Times New Roman',serif;line-height:1.5}
+  #gl{position:fixed;inset:0}
+  #gl canvas{display:block;touch-action:none}
+
+  /* ---------- HUD ---------- */
+  #hud{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;flex-wrap:wrap;
+    align-items:center;gap:8px 14px;padding:10px 14px;
+    background:rgba(255,253,246,.92);border-bottom:2px solid var(--gold)}
+  #hud .brand{font-weight:bold;letter-spacing:.12em;color:var(--gold-deep);font-size:1rem}
+  #hud .stat{font-size:.85rem;color:var(--ink-soft)}
+  #hud .stat b{color:var(--gold-deep)}
+  #hud .spacer{flex:1}
+  .hbtn{background:var(--panel);border:1px solid var(--gold);color:var(--gold-deep);
+    border-radius:20px;padding:5px 13px;font-family:inherit;font-size:.82rem;cursor:pointer}
+  .hbtn:hover{background:var(--gold);color:#fff}
+  .hbtn.solid{background:var(--gold);color:#fff}
+  .hbtn.solid:hover{background:var(--gold-hi)}
+  #roomStatus{position:fixed;left:14px;bottom:12px;z-index:15;font-size:.78rem;
+    color:var(--ink-soft);background:rgba(255,253,246,.85);padding:3px 10px;
+    border:1px solid var(--line);border-radius:14px}
+  #hint{position:fixed;right:14px;bottom:12px;z-index:15;font-size:.78rem;font-style:italic;
+    color:var(--ink-soft);background:rgba(255,253,246,.85);padding:3px 10px;
+    border:1px solid var(--line);border-radius:14px}
+
+  /* ---------- Explanation card ---------- */
+  #card{position:fixed;z-index:30;right:16px;top:76px;width:min(400px,calc(100vw - 32px));
+    max-height:calc(100vh - 160px);overflow:auto;background:var(--panel);
+    border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:6px;
+    padding:18px 20px;box-shadow:0 10px 34px rgba(38,32,25,.18);display:none}
+  @media (max-width:640px){#card{top:auto;bottom:0;right:0;left:0;width:auto;
+    max-height:62vh;border-radius:10px 10px 0 0}}
+  #card h2{margin:0 24px 8px 0;font-size:1.2rem;color:var(--gold-deep)}
+  #card h3{margin:12px 0 3px;font-size:.85rem;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--gold-deep)}
+  #card p{margin:0 0 8px;font-size:.93rem}
+  #card .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .x{position:absolute;top:8px;right:10px;background:none;border:0;font-size:1.25rem;
+    color:var(--ink-soft);cursor:pointer;line-height:1}
+  button.act{background:var(--gold);color:#fff;border:0;border-radius:4px;
+    padding:8px 16px;font-family:inherit;font-size:.92rem;cursor:pointer}
+  button.act:hover{background:var(--gold-hi)}
+  button.ghost{background:var(--panel);color:var(--gold-deep);border:1px solid var(--gold);
+    border-radius:4px;padding:8px 16px;font-family:inherit;font-size:.92rem;cursor:pointer}
+  button.ghost:hover{background:var(--gold);color:#fff}
+
+  /* ---------- University panel ---------- */
+  #uniPanel{position:fixed;z-index:30;left:16px;top:76px;width:min(400px,calc(100vw - 32px));
+    max-height:calc(100vh - 160px);overflow:auto;background:var(--panel);
+    border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:6px;
+    padding:18px 20px;box-shadow:0 10px 34px rgba(38,32,25,.18);display:none}
+  @media (max-width:640px){#uniPanel{top:auto;bottom:0;left:0;right:0;width:auto;
+    max-height:62vh;border-radius:10px 10px 0 0}}
+  #uniPanel h2{margin:0 24px 8px 0;font-size:1.2rem;color:var(--gold-deep)}
+  #uniPanel p{margin:0 0 8px;font-size:.93rem}
+  .bignum{font-size:2rem;color:var(--gold-deep);font-weight:bold;line-height:1.1}
+  #uniLog{margin:10px 0;padding:0;list-style:none;font-size:.86rem}
+  #uniLog li{border-top:1px solid var(--line);padding:7px 0}
+  #uniLog .d{color:var(--gold-deep);font-weight:bold}
+
+  /* ---------- Walk banner ---------- */
+  #walkBar{position:fixed;z-index:45;top:64px;left:50%;transform:translateX(-50%);
+    width:min(680px,calc(100vw - 24px));background:var(--panel);
+    border:2px solid var(--gold);border-radius:8px;padding:12px 16px;
+    box-shadow:0 10px 30px rgba(38,32,25,.22);display:none}
+  #walkBar .wk{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--gold-deep)}
+  #walkBar p{margin:4px 0 10px;font-size:.98rem}
+  #walkBar .row{display:flex;gap:8px;align-items:center}
+  #walkWait{font-size:.85rem;color:var(--ink-soft);font-style:italic}
+  .highlight{outline:3px solid var(--gold)!important;outline-offset:3px;border-radius:6px;
+    animation:pulse 1.1s ease-in-out infinite}
+  @keyframes pulse{0%,100%{outline-color:var(--gold)}50%{outline-color:var(--gold-hi)}}
+
+  /* ---------- Instrument overlay ---------- */
+  #instOverlay{position:fixed;inset:0;z-index:40;background:var(--paper);
+    overflow:auto;display:none;padding:18px 14px 50px}
+  #instOverlay .sheet{max-width:1060px;margin:0 auto;background:var(--panel);
+    border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:6px;padding:20px}
+  #instOverlay h2{margin:0 0 4px;font-size:1.35rem;color:var(--gold-deep)}
+  #instOverlay .sub{color:var(--ink-soft);font-style:italic;margin:0 0 14px}
+  #instOverlay canvas{width:100%;height:auto;background:#fff;border:1px solid var(--line);border-radius:4px}
+  .controls{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center;margin:14px 0 6px}
+  .ctl{display:flex;flex-direction:column;font-size:.82rem;color:var(--ink-soft);min-width:170px;flex:1;
+    padding:4px;border-radius:6px}
+  .ctl label{display:flex;justify-content:space-between}
+  .ctl output{color:var(--gold-deep);font-weight:bold}
+  input[type=range]{width:100%;accent-color:var(--gold)}
+  .readouts{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-top:12px}
+  .ro{border:1px solid var(--line);border-radius:4px;padding:8px 10px;background:var(--paper)}
+  .ro .k{font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-soft)}
+  .ro .v{font-size:1.12rem;color:var(--gold-deep);font-weight:bold}
+  .inst{display:none}
+
+  /* ---------- Fallback & toast ---------- */
+  #fallback{position:fixed;inset:0;z-index:50;background:var(--paper);display:none;
+    padding:60px 22px;text-align:center}
+  #fallback h1{color:var(--gold-deep);letter-spacing:.12em}
+  #fallback p{max-width:560px;margin:10px auto;color:var(--ink-soft)}
+  #toast{position:fixed;z-index:60;bottom:52px;left:50%;transform:translateX(-50%);
+    background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:22px;
+    font-size:.9rem;display:none;max-width:calc(100vw - 40px);text-align:center}
+  a{color:var(--gold-deep)}
+</style>
+</head>
+<body>
+
+<div id="gl"></div>
+
+<div id="hud">
+  <span class="brand">THE LABORATORY — THE ROOM</span>
+  <span class="stat">Session <b id="clock">0:00</b></span>
+  <span class="stat">My hours <b id="myHours">0 min</b></span>
+  <span class="spacer"></span>
+  <button class="hbtn" id="btnGyro" style="display:none">Motion look: off</button>
+  <button class="hbtn" id="btnExport">Export my log</button>
+  <button class="hbtn solid" id="btnEnd">End session &amp; log it</button>
+  <a class="hbtn" href="../" style="text-decoration:none">← The flat bench</a>
+</div>
+
+<div id="roomStatus">Entering the room…</div>
+<div id="hint">Drag to look around · tap an instrument and it will explain itself</div>
+
+<!-- Explanation card -->
+<div id="card">
+  <button class="x" id="cardClose" aria-label="Close">×</button>
+  <h2 id="cardTitle"></h2>
+  <h3>What it is</h3><p id="cardWhat"></p>
+  <h3>What it does</h3><p id="cardDoes"></p>
+  <h3>The principle</h3><p id="cardPrinciple"></p>
+  <div class="row">
+    <button class="act" id="cardOpenInst">Open the instrument</button>
+    <button class="act" id="cardOpenUni" style="display:none">Open the University panel</button>
+    <button class="ghost" id="cardWalk">Walk me through it</button>
+  </div>
+</div>
+
+<!-- University panel -->
+<div id="uniPanel">
+  <button class="x" id="uniClose" aria-label="Close">×</button>
+  <h2>Exolex University — my record</h2>
+  <p>Your Lab hours, from your own session receipts. The clock that earns
+     them runs only while you are in the room with it in front of you.</p>
+  <div class="bignum" id="uniHours">0 min</div>
+  <p id="uniMeta"></p>
+  <h3 style="color:var(--gold-deep);letter-spacing:.06em;text-transform:uppercase;font-size:.85rem">Recent sessions</h3>
+  <ul id="uniLog"></ul>
+  <div class="row" style="display:flex;gap:8px;margin-top:12px">
+    <button class="ghost" id="btnExport2">Export my log (JSON)</button>
+  </div>
+</div>
+
+<!-- Guided walk banner -->
+<div id="walkBar">
+  <div class="wk" id="walkKind">Guided walk</div>
+  <p id="walkText"></p>
+  <div class="row">
+    <button class="act" id="walkNext" style="display:none">Next step →</button>
+    <span id="walkWait">Waiting for you…</span>
+    <button class="ghost" id="walkSkip">Skip step</button>
+    <button class="ghost" id="walkExit">Leave the walk</button>
+  </div>
+</div>
+
+<!-- Instrument overlay -->
+<div id="instOverlay">
+  <div class="sheet">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <h2 id="instTitle"></h2>
+        <p class="sub" id="instSub"></p>
+      </div>
+      <button class="ghost" id="instClose">← Back to the room</button>
+    </div>
+
+    <!-- Watch Floor instrument -->
+    <div class="inst" id="inst-watchfloor">
+      <canvas id="wfCanvas" width="920" height="430"></canvas>
+      <div class="controls">
+        <div class="ctl" id="ctl-wfPlay">
+          <button class="act" id="wfPlay">❚❚ Pause</button>
+        </div>
+        <div class="ctl">
+          <button class="ghost" id="wfRestart">↺ Run it again</button>
+        </div>
+        <div class="ctl" id="ctl-wfBeta">
+          <label>Torsion (spin repulsion, β) <output id="wfBetaOut">0.00</output></label>
+          <input type="range" id="wfBeta" min="0" max="1" step="0.05" value="0">
+        </div>
+        <div class="ctl" id="ctl-wfScrub">
+          <label>Scrub the run <output id="wfScrubOut"></output></label>
+          <input type="range" id="wfScrub" min="0" max="1000" step="1" value="0">
+        </div>
+      </div>
+      <div class="readouts">
+        <div class="ro"><div class="k">Phase</div><div class="v" id="wfPhase">—</div></div>
+        <div class="ro"><div class="k">Density ρ</div><div class="v" id="wfRho">—</div></div>
+        <div class="ro"><div class="k">Of the Limit</div><div class="v" id="wfFrac">—</div></div>
+        <div class="ro"><div class="k">Scale factor A</div><div class="v" id="wfA">—</div></div>
+        <div class="ro"><div class="k">Time from bounce</div><div class="v" id="wfTau">—</div></div>
+        <div class="ro"><div class="k">Peak this run</div><div class="v" id="wfPeak">—</div></div>
+      </div>
+    </div>
+
+    <!-- Bench instrument -->
+    <div class="inst" id="inst-bench">
+      <canvas id="padCanvas" width="920" height="300"></canvas>
+      <div class="controls">
+        <div class="ctl" id="ctl-padD">
+          <label>Coil separation <output id="padDOut"></output></label>
+          <input type="range" id="padD" min="10" max="150" step="1" value="60">
+        </div>
+        <div class="ctl" id="ctl-padX">
+          <label>Lateral misalignment <output id="padXOut"></output></label>
+          <input type="range" id="padX" min="0" max="75" step="1" value="10">
+        </div>
+        <div class="ctl" id="ctl-padQ">
+          <label>Coil quality Q <output id="padQOut"></output></label>
+          <input type="range" id="padQ" min="50" max="800" step="10" value="300">
+        </div>
+        <div class="ctl" id="ctl-padDf">
+          <label>Drive detuning <output id="padDfOut"></output></label>
+          <input type="range" id="padDf" min="-30" max="30" step="1" value="3">
+        </div>
+        <div class="ctl" id="ctl-padG">
+          <label>Phase-match compensation <output id="padGOut"></output></label>
+          <input type="range" id="padG" min="0" max="100" step="1" value="70">
+        </div>
+      </div>
+      <div class="readouts">
+        <div class="ro"><div class="k">Coupling k</div><div class="v" id="padK">—</div></div>
+        <div class="ro"><div class="k">Figure of merit U</div><div class="v" id="padU">—</div></div>
+        <div class="ro"><div class="k">Best possible η</div><div class="v" id="padEtaMax">—</div></div>
+        <div class="ro"><div class="k">Delivered η</div><div class="v" id="padEta">—</div></div>
+        <div class="ro"><div class="k">Power out / 100 W in</div><div class="v" id="padP">—</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Fallback -->
+<div id="fallback">
+  <h1>THE LABORATORY</h1>
+  <p id="fallbackMsg">The room could not open on this device.</p>
+  <p>The flat bench — the same instruments, the same physics — is here:
+     <a href="../">the Laboratory, flat page</a>.</p>
+</div>
+
+<div id="toast"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="../lab-core.js"></script>
+<script src="room-core.js"></script>
+<script>
+(function () {
+  'use strict';
+  var Lab = window.LabCore, Core = window.RoomCore;
+  var $ = function (id) { return document.getElementById(id); };
+  function sci(x, d) { return x.toExponential(d || 2).replace('e+', '×10^').replace('e', '×10^'); }
+
+  var toastTimer = null;
+  function showToast(msg) {
+    var t = $('toast');
+    t.textContent = msg; t.style.display = 'block';
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { t.style.display = 'none'; }, 4600);
+  }
+  function showFallback(msg) {
+    $('fallbackMsg').textContent = msg;
+    $('fallback').style.display = 'block';
+    $('roomStatus').textContent = 'The room is unavailable here — the flat bench is linked above.';
+  }
+
+  /* ================= Session + University hours log ================= */
+  var storage = window.localStorage;
+  var timer = Core ? Core.createSessionTimer() : null;
+  var sessionStations = [], sessionSteps = 0, sessionLogged = false;
+  if (timer) {
+    timer.start();
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) timer.pause(); else timer.resume();
+    });
+    setInterval(function () {
+      var ms = timer.elapsedMs();
+      var s = Math.floor(ms / 1000);
+      $('clock').textContent = Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2);
+    }, 500);
+  }
+  function visitStation(id) {
+    if (sessionStations.indexOf(id) === -1) sessionStations.push(id);
+  }
+  function refreshHours() {
+    var s = Core.summarizeLog(Core.loadLog(storage));
+    $('myHours').textContent = Core.formatMinutes(s.totalMinutes);
+  }
+  function endSession(reason) {
+    if (!timer || sessionLogged) return null;
+    var mins = timer.elapsedMinutes();
+    if (reason === 'unload' && mins < 1) return null;   // a glance earns nothing
+    var entry = Core.makeEntry({
+      date: new Date().toISOString(), minutes: mins,
+      stations: sessionStations.slice(), stepsCompleted: sessionSteps
+    });
+    Core.appendEntry(storage, entry);
+    sessionLogged = true;
+    refreshHours();
+    return entry;
+  }
+  function resetSession() {
+    timer = Core.createSessionTimer();
+    timer.start();
+    sessionStations = []; sessionSteps = 0; sessionLogged = false;
+  }
+  if (timer) {
+    window.addEventListener('pagehide', function () { endSession('unload'); });
+    $('btnEnd').addEventListener('click', function () {
+      var e = endSession('button');
+      if (e) {
+        showToast('Session logged — ' + Core.formatMinutes(e.minutes) + ' · ' +
+          e.stations.length + ' station(s) · ' + e.stepsCompleted +
+          ' guided step(s). A new session has started.');
+        resetSession();
+      } else {
+        showToast('This session was already logged.');
+      }
+    });
+  }
+  function exportLog() {
+    var blob = new Blob([JSON.stringify(Core.loadLog(storage), null, 2)],
+      { type: 'application/json' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'dave-lab-log.json';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 4000);
+  }
+  $('btnExport').addEventListener('click', exportLog);
+  $('btnExport2').addEventListener('click', exportLog);
+  if (Core) refreshHours();
+
+  /* ================= Instruments (physics: ../lab-core.js) ================= */
+  var instOpen = null;
+
+  /* ---- Watch Floor ---- */
+  var wf = { traj: null, playing: true, cursor: 0, lastT: null, nearBounce: false };
+  var wfCanvas = $('wfCanvas'), wfx = wfCanvas.getContext('2d');
+  var WF_DUR = 16000;
+
+  function wfCompute() {
+    var beta = parseFloat($('wfBeta').value);
+    $('wfBetaOut').textContent = beta.toFixed(2);
+    wf.traj = Lab.integrateBounce({ beta: beta });
+    wf.cursor = 0; wf.lastT = null;
+    $('wfPeak').textContent = sci(wf.traj.peakRho) + ' g/cm³';
+  }
+  function wfDraw() {
+    if (!wf.traj) return;
+    var W = wfCanvas.width, H = wfCanvas.height, padL = 58, padR = 14, padT = 16, padB = 34;
+    var pts = wf.traj.points, n = pts.length;
+    var tMin = pts[0].tau, tMax = pts[n - 1].tau;
+    var X = function (t) { return padL + (t - tMin) / (tMax - tMin) * (W - padL - padR); };
+    var Y = function (f) { return padT + (1.08 - f) / 1.08 * (H - padT - padB); };
+    wfx.clearRect(0, 0, W, H);
+    wfx.font = '12px Georgia'; wfx.fillStyle = '#5c5340';
+    wfx.strokeStyle = '#8a6508'; wfx.setLineDash([7, 5]); wfx.beginPath();
+    wfx.moveTo(padL, Y(1)); wfx.lineTo(W - padR, Y(1)); wfx.stroke(); wfx.setLineDash([]);
+    wfx.fillStyle = '#8a6508';
+    wfx.fillText('ρ_A — the Aldred Limit: density cannot pass', padL + 8, Y(1) - 7);
+    wfx.strokeStyle = '#cbbd8d'; wfx.setLineDash([2, 4]); wfx.beginPath();
+    wfx.moveTo(padL, Y(0.5)); wfx.lineTo(W - padR, Y(0.5)); wfx.stroke(); wfx.setLineDash([]);
+    wfx.fillStyle = '#5c5340';
+    wfx.fillText('½ ρ_A — the null energy condition reverses', padL + 8, Y(0.5) - 6);
+    wfx.strokeStyle = '#e9e2cd'; wfx.beginPath();
+    wfx.moveTo(X(0), padT); wfx.lineTo(X(0), H - padB); wfx.stroke();
+    wfx.fillText('the bounce', X(0) + 6, H - padB + 20);
+    wfx.fillText('collapse →', X(0) - 74, H - padB + 20);
+    wfx.fillText('← expansion', X(0) + 62, H - padB + 20);
+    wfx.fillText('density, as a fraction of ρ_A', padL, padT + 4);
+    var aMax = pts[0].A;
+    wfx.strokeStyle = '#cbbd8d'; wfx.lineWidth = 1.4; wfx.beginPath();
+    pts.forEach(function (p, i) {
+      var x = X(p.tau), y = Y(1.02 * p.A / aMax);
+      i ? wfx.lineTo(x, y) : wfx.moveTo(x, y);
+    });
+    wfx.stroke();
+    var upto = Math.min(n - 1, Math.floor(wf.cursor));
+    wfx.lineWidth = 2.4;
+    wfx.strokeStyle = 'rgba(201,162,39,0.30)'; wfx.beginPath();
+    pts.forEach(function (p, i) {
+      var x = X(p.tau), y = Y(p.rho / Lab.RHO_A);
+      i ? wfx.lineTo(x, y) : wfx.moveTo(x, y);
+    });
+    wfx.stroke();
+    wfx.strokeStyle = '#c9a227'; wfx.beginPath();
+    for (var i = 0; i <= upto; i++) {
+      var x2 = X(pts[i].tau), y2 = Y(pts[i].rho / Lab.RHO_A);
+      i ? wfx.lineTo(x2, y2) : wfx.moveTo(x2, y2);
+    }
+    wfx.stroke();
+    var cp = pts[upto];
+    wfx.fillStyle = '#8a6508'; wfx.beginPath();
+    wfx.arc(X(cp.tau), Y(cp.rho / Lab.RHO_A), 5, 0, 7); wfx.fill();
+    var frac = cp.rho / Lab.RHO_A;
+    wf.nearBounce = Math.abs(cp.tau) < 0.2 && frac > 0.8;
+    $('wfPhase').textContent =
+      Math.abs(cp.tau) < 0.06 && frac > 0.9 ? 'THE BOUNCE' :
+      (cp.tau < 0 ? 'Contracting' : 'Expanding');
+    $('wfRho').textContent = sci(cp.rho) + ' g/cm³';
+    $('wfFrac').textContent = (100 * frac).toFixed(1) + '%';
+    $('wfA').textContent = cp.A.toFixed(3);
+    $('wfTau').textContent = (cp.tau >= 0 ? '+' : '') + cp.tau.toFixed(2) + ' τ  (' +
+      sci(Math.abs(cp.tau) * Lab.TAU_SECONDS, 1) + ' s)';
+    $('wfScrubOut').textContent = 'τ ' + cp.tau.toFixed(2);
+  }
+  function wfTick(t) {
+    requestAnimationFrame(wfTick);
+    if (instOpen !== 'watchfloor' || !wf.traj) return;
+    if (wf.playing) {
+      if (wf.lastT === null) wf.lastT = t;
+      var dtms = t - wf.lastT; wf.lastT = t;
+      wf.cursor += dtms / WF_DUR * (wf.traj.points.length - 1);
+      if (wf.cursor >= wf.traj.points.length - 1) wf.cursor = 0;
+      $('wfScrub').value = Math.round(1000 * wf.cursor / (wf.traj.points.length - 1));
+    } else { wf.lastT = null; }
+    wfDraw();
+  }
+  $('wfPlay').addEventListener('click', function () {
+    wf.playing = !wf.playing;
+    this.textContent = wf.playing ? '❚❚ Pause' : '▶ Run';
+  });
+  $('wfRestart').addEventListener('click', function () {
+    wf.cursor = 0; wf.playing = true; $('wfPlay').textContent = '❚❚ Pause';
+  });
+  $('wfBeta').addEventListener('input', wfCompute);
+  $('wfScrub').addEventListener('input', function () {
+    if (!wf.traj) return;
+    wf.playing = false; $('wfPlay').textContent = '▶ Run';
+    wf.cursor = parseFloat(this.value) / 1000 * (wf.traj.points.length - 1);
+    wfDraw();
+  });
+
+  /* ---- Bench ---- */
+  var padCanvas = $('padCanvas'), pxx = padCanvas.getContext('2d');
+  function padParams() {
+    return {
+      dMm: parseFloat($('padD').value),
+      xMm: parseFloat($('padX').value),
+      Q: parseFloat($('padQ').value),
+      detune: parseFloat($('padDf').value) / 1000,
+      gamma: parseFloat($('padG').value) / 100
+    };
+  }
+  function padDraw() {
+    var p = padParams();
+    $('padDOut').textContent = p.dMm.toFixed(0) + ' mm';
+    $('padXOut').textContent = p.xMm.toFixed(0) + ' mm';
+    $('padQOut').textContent = p.Q.toFixed(0);
+    $('padDfOut').textContent = (p.detune * 100).toFixed(1) + '%';
+    $('padGOut').textContent = Math.round(p.gamma * 100) + '%';
+    var r = Lab.padEfficiency(p);
+    $('padK').textContent = r.k.toFixed(4);
+    $('padU').textContent = r.U.toFixed(1);
+    $('padEtaMax').textContent = (100 * r.etaMax).toFixed(1) + '%';
+    $('padEta').textContent = (100 * r.eta).toFixed(1) + '%';
+    $('padP').textContent = r.pOut.toFixed(1) + ' W';
+    var W = padCanvas.width, H = padCanvas.height, padL = 52, padR = 14, padT = 14, padB = 30;
+    var X = function (d) { return padL + (d - 10) / 140 * (W - padL - padR); };
+    var Y = function (e) { return padT + (1 - e) * (H - padT - padB); };
+    pxx.clearRect(0, 0, W, H);
+    pxx.font = '12px Georgia'; pxx.fillStyle = '#5c5340';
+    [0, 0.25, 0.5, 0.75, 1].forEach(function (e) {
+      pxx.strokeStyle = '#e9e2cd'; pxx.beginPath();
+      pxx.moveTo(padL, Y(e)); pxx.lineTo(W - padR, Y(e)); pxx.stroke();
+      pxx.fillText(Math.round(100 * e) + '%', 14, Y(e) + 4);
+    });
+    pxx.fillText('coil separation →', W - 130, H - 8);
+    pxx.fillText('delivered efficiency', padL, padT + 2);
+    pxx.strokeStyle = '#c9a227'; pxx.lineWidth = 2.4; pxx.beginPath();
+    for (var d = 10; d <= 150; d += 1.5) {
+      var rr = Lab.padEfficiency({ dMm: d, xMm: p.xMm, Q: p.Q, detune: p.detune, gamma: p.gamma });
+      var x = X(d), y = Y(rr.eta);
+      d === 10 ? pxx.moveTo(x, y) : pxx.lineTo(x, y);
+    }
+    pxx.stroke(); pxx.lineWidth = 1;
+    pxx.fillStyle = '#8a6508'; pxx.beginPath();
+    pxx.arc(X(p.dMm), Y(r.eta), 6, 0, 7); pxx.fill();
+    pxx.fillText('your pad: ' + (100 * r.eta).toFixed(1) + '% at ' + p.dMm.toFixed(0) + ' mm',
+      Math.min(X(p.dMm) + 10, W - 190), Math.max(Y(r.eta) - 10, 16));
+  }
+  ['padD', 'padX', 'padQ', 'padDf', 'padG'].forEach(function (id) {
+    $(id).addEventListener('input', padDraw);
+  });
+
+  function openInstrument(id) {
+    var st = Core.stationById(id);
+    if (!st || st.kind !== 'instrument') return;
+    visitStation(id);
+    instOpen = id;
+    $('instTitle').textContent = st.title;
+    $('instSub').textContent = st.what;
+    $('inst-watchfloor').style.display = id === 'watchfloor' ? 'block' : 'none';
+    $('inst-bench').style.display = id === 'bench' ? 'block' : 'none';
+    $('instOverlay').style.display = 'block';
+    $('card').style.display = 'none';
+    if (id === 'watchfloor') { wfCompute(); wfDraw(); }
+    if (id === 'bench') padDraw();
+  }
+  $('instClose').addEventListener('click', function () {
+    if (walk && walk.stationId === instOpen) endWalk(false);
+    instOpen = null;
+    $('instOverlay').style.display = 'none';
+  });
+
+  /* ================= Explanation card + University panel ================= */
+  var currentCard = null;
+  function openCard(id) {
+    var st = Core.stationById(id);
+    if (!st) return;
+    visitStation(id);
+    currentCard = id;
+    $('cardTitle').textContent = st.title;
+    $('cardWhat').textContent = st.what;
+    $('cardDoes').textContent = st.does;
+    $('cardPrinciple').textContent = st.principle;
+    $('cardOpenInst').style.display = st.kind === 'instrument' ? '' : 'none';
+    $('cardOpenUni').style.display = st.kind === 'door' ? '' : 'none';
+    $('card').style.display = 'block';
+  }
+  $('cardClose').addEventListener('click', function () {
+    $('card').style.display = 'none';
+    if (walk && walk.stationId === currentCard && Core.stationById(currentCard).kind === 'door') endWalk(false);
+    currentCard = null;
+  });
+  $('cardOpenInst').addEventListener('click', function () {
+    if (currentCard) openInstrument(currentCard);
+  });
+  $('cardOpenUni').addEventListener('click', function () { openUniPanel(); });
+
+  function openUniPanel() {
+    visitStation('university');
+    var log = Core.loadLog(storage);
+    var s = Core.summarizeLog(log);
+    $('uniHours').textContent = Core.formatMinutes(s.totalMinutes);
+    $('uniMeta').textContent = s.sessions + ' session(s) logged · ' +
+      s.totalSteps + ' guided step(s) completed · this session so far: ' +
+      Core.formatMinutes(timer ? timer.elapsedMinutes() : 0) + '.';
+    var ul = $('uniLog');
+    ul.innerHTML = '';
+    if (!log.length) {
+      var li0 = document.createElement('li');
+      li0.textContent = 'No sessions logged yet — this one will be the first.';
+      ul.appendChild(li0);
+    }
+    log.slice(-5).reverse().forEach(function (e) {
+      var li = document.createElement('li');
+      var when = new Date(e.date);
+      var names = (e.stations || []).map(function (id) {
+        var st = Core.stationById(id); return st ? st.name : id;
+      }).join(', ') || 'no stations';
+      li.innerHTML = '<span class="d"></span> — ';
+      li.querySelector('.d').textContent = when.toLocaleDateString() + ' ' +
+        when.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      li.appendChild(document.createTextNode(
+        Core.formatMinutes(e.minutes) + ' · ' + names + ' · ' +
+        (e.stepsCompleted || 0) + ' step(s)'));
+      ul.appendChild(li);
+    });
+    $('uniPanel').style.display = 'block';
+  }
+  $('uniClose').addEventListener('click', function () {
+    $('uniPanel').style.display = 'none';
+  });
+
+  /* ================= Guided walks ================= */
+  var HIGHLIGHTS = {
+    watchfloor: [['ctl-wfPlay'], ['ctl-wfBeta'], ['ctl-wfBeta'], ['ctl-wfScrub'], []],
+    bench: [['ctl-padDf', 'ctl-padG'], [], ['ctl-padG'], ['ctl-padD'], []],
+    university: [[], ['cardOpenUni'], []]
+  };
+  var walk = null;
+  function instrumentState() {
+    return {
+      playing: wf.playing,
+      beta: parseFloat($('wfBeta').value),
+      nearBounce: wf.nearBounce,
+      df: parseFloat($('padDf').value),
+      gamma: parseFloat($('padG').value),
+      d: parseFloat($('padD').value),
+      panelOpen: $('uniPanel').style.display === 'block'
+    };
+  }
+  function clearHighlights() {
+    document.querySelectorAll('.highlight').forEach(function (el) {
+      el.classList.remove('highlight');
+    });
+  }
+  function renderWalk() {
+    if (!walk) return;
+    var st = Core.stationById(walk.stationId);
+    var step = st.steps[walk.idx];
+    $('walkKind').textContent = 'Guided walk — ' + st.name +
+      ' · step ' + (walk.idx + 1) + ' of ' + st.steps.length;
+    $('walkText').textContent = step.text;
+    var isButton = step.advance === 'button';
+    $('walkNext').style.display = isButton ? '' : 'none';
+    $('walkNext').textContent =
+      walk.idx === st.steps.length - 1 ? 'Finish the walk ✓' : 'Next step →';
+    $('walkWait').style.display = isButton ? 'none' : '';
+    $('walkBar').style.display = 'block';
+    clearHighlights();
+    (HIGHLIGHTS[walk.stationId][walk.idx] || []).forEach(function (id) {
+      var el = $(id); if (el) el.classList.add('highlight');
+    });
+  }
+  function advanceWalk(counted) {
+    if (!walk) return;
+    if (counted) sessionSteps++;
+    walk.idx++;
+    var st = Core.stationById(walk.stationId);
+    if (walk.idx >= st.steps.length) {
+      var name = st.name;
+      endWalk(true);
+      showToast('Walk complete — ' + name + '. The steps are in your session record.');
+    } else {
+      renderWalk();
+    }
+  }
+  function endWalk() {
+    walk = null;
+    clearHighlights();
+    $('walkBar').style.display = 'none';
+  }
+  function startWalk(id) {
+    var st = Core.stationById(id);
+    if (!st) return;
+    visitStation(id);
+    if (st.kind === 'instrument') openInstrument(id);
+    else if (currentCard !== id) openCard(id);
+    walk = { stationId: id, idx: 0 };
+    renderWalk();
+  }
+  $('cardWalk').addEventListener('click', function () {
+    if (currentCard) startWalk(currentCard);
+  });
+  $('walkNext').addEventListener('click', function () { advanceWalk(true); });
+  $('walkSkip').addEventListener('click', function () { advanceWalk(false); });
+  $('walkExit').addEventListener('click', function () { endWalk(false); });
+  setInterval(function () {
+    if (!walk) return;
+    var st = Core.stationById(walk.stationId);
+    var step = st.steps[walk.idx];
+    if (step.advance === 'action' && Core.checkPasses(step.check, instrumentState())) {
+      advanceWalk(true);
+    }
+  }, 200);
+
+  if (Lab && Core) {
+    wfCompute();
+    padDraw();
+    requestAnimationFrame(wfTick);
+  }
+
+  /* ================= The room (three.js) ================= */
+  var view = { yaw: 0, pitch: 0, gyro: false };
+  var screenCtx = null, screenTex = null, screenTraj = null;
+
+  function drawScreen(now) {
+    if (!screenCtx || !screenTraj) return;
+    var g = screenCtx, W = 1024, H = 420;
+    var pts = screenTraj.points, n = pts.length;
+    var tMin = pts[0].tau, tMax = pts[n - 1].tau;
+    var padL = 70, padR = 26, padT = 52, padB = 40;
+    var X = function (t) { return padL + (t - tMin) / (tMax - tMin) * (W - padL - padR); };
+    var Y = function (f) { return padT + (1.06 - f) / 1.06 * (H - padT - padB); };
+    g.fillStyle = '#262019'; g.fillRect(0, 0, W, H);
+    g.font = 'bold 25px Georgia'; g.fillStyle = '#d9b23a';
+    g.fillText('THE BOUNCE — LIVE INTEGRATION', padL, 34);
+    g.font = '20px Georgia';
+    g.strokeStyle = '#d9b23a'; g.setLineDash([8, 6]); g.beginPath();
+    g.moveTo(padL, Y(1)); g.lineTo(W - padR, Y(1)); g.stroke(); g.setLineDash([]);
+    g.fillStyle = '#d9b23a';
+    g.fillText('ρ_A — the Aldred Limit', padL + 8, Y(1) - 9);
+    g.strokeStyle = 'rgba(250,247,239,.16)'; g.beginPath();
+    g.moveTo(X(0), padT); g.lineTo(X(0), H - padB); g.stroke();
+    g.fillStyle = 'rgba(250,247,239,.65)';
+    g.fillText('the bounce', X(0) + 8, H - padB + 28);
+    var upto = Math.floor(((now % 16000) / 16000) * (n - 1));
+    g.lineWidth = 2; g.strokeStyle = 'rgba(201,162,39,.35)'; g.beginPath();
+    pts.forEach(function (p, i) {
+      var x = X(p.tau), y = Y(p.rho / Lab.RHO_A);
+      i ? g.lineTo(x, y) : g.moveTo(x, y);
+    });
+    g.stroke();
+    g.lineWidth = 3.4; g.strokeStyle = '#c9a227'; g.beginPath();
+    for (var i = 0; i <= upto; i++) {
+      var x2 = X(pts[i].tau), y2 = Y(pts[i].rho / Lab.RHO_A);
+      i ? g.lineTo(x2, y2) : g.moveTo(x2, y2);
+    }
+    g.stroke();
+    var cp = pts[upto];
+    g.fillStyle = '#faf7ef'; g.beginPath();
+    g.arc(X(cp.tau), Y(cp.rho / Lab.RHO_A), 6, 0, 7); g.fill();
+    g.font = '20px Georgia'; g.fillStyle = 'rgba(250,247,239,.8)';
+    g.fillText('ρ = ' + (100 * cp.rho / Lab.RHO_A).toFixed(1) + '% of the Limit', padL, H - 12);
+    if (screenTex) screenTex.needsUpdate = true;
+  }
+
+  function buildRoom() {
+    var THREE = window.THREE;
+    var renderer;
+    try {
+      renderer = new THREE.WebGLRenderer({ antialias: true });
+    } catch (e) {
+      showFallback('WebGL could not start on this device, so the room cannot open here.');
+      return;
+    }
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    $('gl').appendChild(renderer.domElement);
+
+    var scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xf3edda);
+    var camera = new THREE.PerspectiveCamera(66,
+      window.innerWidth / window.innerHeight, 0.1, 100);
+    camera.position.set(0, 1.62, 3.1);
+
+    scene.add(new THREE.HemisphereLight(0xfff6e0, 0x8a7a4a, 0.62));
+    var sun = new THREE.DirectionalLight(0xffffff, 0.42);
+    sun.position.set(3, 5, 2); scene.add(sun);
+    var doorGlow = new THREE.PointLight(0xffd98a, 0.55, 9);
+    doorGlow.position.set(-5.1, 2.3, 0.6); scene.add(doorGlow);
+
+    var MAT = {
+      floor: new THREE.MeshStandardMaterial({ color: 0xe9dfc6, roughness: 0.9 }),
+      panel: new THREE.MeshStandardMaterial({ color: 0xfffdf6, roughness: 0.85 }),
+      gold: new THREE.MeshStandardMaterial({ color: 0xc9a227, roughness: 0.35, metalness: 0.65 }),
+      goldDeep: new THREE.MeshStandardMaterial({ color: 0x8a6508, roughness: 0.5, metalness: 0.4 }),
+      bronze: new THREE.MeshStandardMaterial({ color: 0x3a3226, roughness: 0.6, metalness: 0.3 })
+    };
+    function box(w, h, d, mat, x, y, z, parent) {
+      var m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
+      m.position.set(x, y, z); (parent || scene).add(m); return m;
+    }
+    function makeLabel(text) {
+      var c = document.createElement('canvas'); c.width = 512; c.height = 112;
+      var g = c.getContext('2d');
+      g.fillStyle = 'rgba(255,253,246,0.94)'; g.fillRect(6, 14, 500, 84);
+      g.strokeStyle = '#c9a227'; g.lineWidth = 4; g.strokeRect(6, 14, 500, 84);
+      g.font = 'bold 42px Georgia'; g.textAlign = 'center'; g.textBaseline = 'middle';
+      g.fillStyle = '#8a6508'; g.fillText(text, 256, 58);
+      var sp = new THREE.Sprite(new THREE.SpriteMaterial({
+        map: new THREE.CanvasTexture(c), transparent: true }));
+      sp.scale.set(2.3, 0.5, 1);
+      return sp;
+    }
+
+    /* --- the shell --- */
+    var shell = new THREE.Mesh(new THREE.BoxGeometry(12, 3.6, 10),
+      new THREE.MeshStandardMaterial({ color: 0xf7f1de, roughness: 0.95, side: THREE.BackSide }));
+    shell.position.y = 1.8; scene.add(shell);
+    var floor = new THREE.Mesh(new THREE.PlaneGeometry(12, 10), MAT.floor);
+    floor.rotation.x = -Math.PI / 2; scene.add(floor);
+    [-3, 0, 3].forEach(function (x) { box(0.05, 0.006, 10, MAT.gold, x, 0.004, 0); });
+    box(12, 0.09, 0.04, MAT.goldDeep, 0, 0.045, -4.97);
+    box(12, 0.09, 0.04, MAT.goldDeep, 0, 0.045, 4.97);
+    box(0.04, 0.09, 10, MAT.goldDeep, -5.97, 0.045, 0);
+    box(0.04, 0.09, 10, MAT.goldDeep, 5.97, 0.045, 0);
+    [-3.4, 0, 3.4].forEach(function (x) {
+      var p = new THREE.Mesh(new THREE.PlaneGeometry(2.2, 1.1),
+        new THREE.MeshBasicMaterial({ color: 0xfffdf4 }));
+      p.rotation.x = Math.PI / 2; p.position.set(x, 3.59, -0.5); scene.add(p);
+    });
+    var rug = new THREE.Mesh(new THREE.CircleGeometry(1.9, 40),
+      new THREE.MeshStandardMaterial({ color: 0xeadfc2, roughness: 1 }));
+    rug.rotation.x = -Math.PI / 2; rug.position.set(0, 0.006, 0.4); scene.add(rug);
+    var ring = new THREE.Mesh(new THREE.RingGeometry(1.82, 1.95, 40), MAT.gold);
+    ring.rotation.x = -Math.PI / 2; ring.position.set(0, 0.008, 0.4); scene.add(ring);
+
+    /* --- Station 1: the Watch Floor (north wall) --- */
+    screenTraj = Lab.integrateBounce({ beta: 0 });
+    var sc = document.createElement('canvas'); sc.width = 1024; sc.height = 420;
+    screenCtx = sc.getContext('2d');
+    screenTex = new THREE.CanvasTexture(sc);
+    drawScreen(Date.now());
+    var wfGroup = new THREE.Group(); wfGroup.userData.stationId = 'watchfloor';
+    box(5.9, 2.65, 0.14, MAT.bronze, 0, 1.95, -4.9, wfGroup);
+    var screenMesh = new THREE.Mesh(new THREE.PlaneGeometry(5.45, 2.25),
+      new THREE.MeshBasicMaterial({ map: screenTex }));
+    screenMesh.position.set(0, 1.95, -4.82); wfGroup.add(screenMesh);
+    box(6.1, 0.8, 0.75, MAT.panel, 0, 0.4, -4.5, wfGroup);
+    box(6.2, 0.05, 0.85, MAT.gold, 0, 0.83, -4.5, wfGroup);
+    [-1.5, 0, 1.5].forEach(function (x) {
+      var b = new THREE.Mesh(new THREE.BoxGeometry(0.28, 0.05, 0.3),
+        new THREE.MeshBasicMaterial({ color: 0xd9b23a }));
+      b.position.set(x, 0.89, -4.5); wfGroup.add(b);
+    });
+    var wfLabel = makeLabel('THE WATCH FLOOR');
+    wfLabel.position.set(0, 3.34, -4.6); wfGroup.add(wfLabel);
+    scene.add(wfGroup);
+
+    /* --- Station 2: the Bench (east side) --- */
+    var benchGroup = new THREE.Group();
+    benchGroup.userData.stationId = 'bench';
+    benchGroup.position.set(3.55, 0, -0.3);
+    benchGroup.rotation.y = -0.55;
+    box(2.7, 0.1, 1.25, MAT.panel, 0, 0.95, 0, benchGroup);
+    box(2.74, 0.03, 1.29, MAT.gold, 0, 0.895, 0, benchGroup);
+    [[-1.2, -0.5], [1.2, -0.5], [-1.2, 0.5], [1.2, 0.5]].forEach(function (xz) {
+      var leg = new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.04, 0.9, 10), MAT.bronze);
+      leg.position.set(xz[0], 0.45, xz[1]); benchGroup.add(leg);
+    });
+    var base = new THREE.Mesh(new THREE.CylinderGeometry(0.48, 0.48, 0.04, 28), MAT.bronze);
+    base.position.set(-0.45, 1.02, 0); benchGroup.add(base);
+    var coilGeo = new THREE.TorusGeometry(0.34, 0.075, 16, 42);
+    var coil1 = new THREE.Mesh(coilGeo, MAT.gold);
+    coil1.rotation.x = Math.PI / 2; coil1.position.set(-0.45, 1.08, 0); benchGroup.add(coil1);
+    var rod = new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 0.78, 10), MAT.bronze);
+    rod.position.set(-0.45, 1.39, -0.44); benchGroup.add(rod);
+    box(0.05, 0.05, 0.46, MAT.bronze, -0.45, 1.76, -0.22, benchGroup);
+    var coil2 = new THREE.Mesh(coilGeo, MAT.gold);
+    coil2.rotation.x = Math.PI / 2; coil2.position.set(-0.45, 1.68, 0); benchGroup.add(coil2);
+    box(0.55, 0.3, 0.4, MAT.panel, 0.75, 1.15, 0.1, benchGroup);
+    var dot = new THREE.Mesh(new THREE.SphereGeometry(0.035, 12, 12),
+      new THREE.MeshBasicMaterial({ color: 0xd9b23a }));
+    dot.position.set(0.75, 1.33, 0.1); benchGroup.add(dot);
+    var benchLabel = makeLabel('THE BENCH');
+    benchLabel.position.set(0, 2.35, 0); benchGroup.add(benchLabel);
+    scene.add(benchGroup);
+
+    /* --- Station 3: the University Door (west wall) --- */
+    var dc = document.createElement('canvas'); dc.width = 512; dc.height = 960;
+    var dg = dc.getContext('2d');
+    dg.fillStyle = '#fffdf6'; dg.fillRect(0, 0, 512, 960);
+    dg.strokeStyle = '#c9a227'; dg.lineWidth = 10; dg.strokeRect(26, 26, 460, 908);
+    dg.lineWidth = 3; dg.strokeRect(52, 52, 408, 856);
+    dg.fillStyle = '#8a6508'; dg.textAlign = 'center';
+    dg.font = 'bold 64px Georgia'; dg.fillText('EXOLEX', 256, 388);
+    dg.font = 'bold 52px Georgia'; dg.fillText('UNIVERSITY', 256, 458);
+    dg.font = '25px Georgia'; dg.fillStyle = '#5c5340';
+    dg.fillText('· LEARN BY DOING ·', 256, 545);
+    dg.beginPath(); dg.arc(256, 690, 54, 0, 7);
+    dg.strokeStyle = '#c9a227'; dg.lineWidth = 5; dg.stroke();
+    dg.font = 'bold 38px Georgia'; dg.fillStyle = '#c9a227';
+    dg.fillText('EU', 256, 703);
+    var doorGroup = new THREE.Group();
+    doorGroup.userData.stationId = 'university';
+    doorGroup.position.set(-5.94, 0, 0.6);
+    doorGroup.rotation.y = Math.PI / 2;
+    box(0.14, 2.75, 0.16, MAT.gold, -0.79, 1.375, 0, doorGroup);
+    box(0.14, 2.75, 0.16, MAT.gold, 0.79, 1.375, 0, doorGroup);
+    box(1.72, 0.14, 0.16, MAT.gold, 0, 2.82, 0, doorGroup);
+    var doorMesh = new THREE.Mesh(new THREE.PlaneGeometry(1.42, 2.62),
+      new THREE.MeshStandardMaterial({ map: new THREE.CanvasTexture(dc), roughness: 0.8 }));
+    doorMesh.position.set(0, 1.33, 0.02); doorGroup.add(doorMesh);
+    var knob = new THREE.Mesh(new THREE.SphereGeometry(0.045, 14, 14), MAT.gold);
+    knob.position.set(0.56, 1.3, 0.08); doorGroup.add(knob);
+    box(1.8, 0.06, 0.5, MAT.goldDeep, 0, 0.03, 0.3, doorGroup);
+    var doorLabel = makeLabel('THE UNIVERSITY DOOR');
+    doorLabel.position.set(0, 3.22, 0.3); doorGroup.add(doorLabel);
+    scene.add(doorGroup);
+
+    /* --- picking + halos --- */
+    var pickGroups = [wfGroup, benchGroup, doorGroup];
+    var halos = {};
+    pickGroups.forEach(function (g) {
+      var h = new THREE.BoxHelper(g, 0xc9a227);
+      h.visible = false; scene.add(h);
+      halos[g.userData.stationId] = h;
+    });
+    var raycaster = new THREE.Raycaster();
+    var ndc = new THREE.Vector2();
+    var hoverId = null;
+    function pickAt(cx, cy) {
+      ndc.set((cx / window.innerWidth) * 2 - 1, -(cy / window.innerHeight) * 2 + 1);
+      raycaster.setFromCamera(ndc, camera);
+      var hits = raycaster.intersectObjects(pickGroups, true);
+      if (!hits.length) return null;
+      var o = hits[0].object;
+      while (o) {
+        if (o.userData && o.userData.stationId) return o.userData.stationId;
+        o = o.parent;
+      }
+      return null;
+    }
+
+    /* --- look controls: drag, plus tap = pick --- */
+    var dom = renderer.domElement;
+    var drag = null, hoverDirty = false, hoverXY = null;
+    dom.addEventListener('pointerdown', function (e) {
+      drag = { lx: e.clientX, ly: e.clientY, t: Date.now(), moved: 0 };
+      try { dom.setPointerCapture(e.pointerId); } catch (err) {}
+    });
+    dom.addEventListener('pointermove', function (e) {
+      if (drag) {
+        var dx = e.clientX - drag.lx, dy = e.clientY - drag.ly;
+        drag.lx = e.clientX; drag.ly = e.clientY;
+        drag.moved += Math.abs(dx) + Math.abs(dy);
+        if (!view.gyro) {
+          view.yaw -= dx * 0.0042;
+          view.pitch = Math.max(-1.15, Math.min(1.15, view.pitch - dy * 0.0042));
+        }
+      } else if (e.pointerType === 'mouse') {
+        hoverXY = { x: e.clientX, y: e.clientY }; hoverDirty = true;
+      }
+    });
+    function endPointer(e) {
+      if (drag && drag.moved < 8 && Date.now() - drag.t < 600) {
+        var id = pickAt(e.clientX, e.clientY);
+        if (id) openCard(id);
+      }
+      drag = null;
+    }
+    dom.addEventListener('pointerup', endPointer);
+    dom.addEventListener('pointercancel', function () { drag = null; });
+
+    /* --- motion look (phone as a window) --- */
+    var zee = new THREE.Vector3(0, 0, 1);
+    var q1 = new THREE.Quaternion(-Math.sqrt(0.5), 0, 0, Math.sqrt(0.5));
+    var q0 = new THREE.Quaternion();
+    var eul = new THREE.Euler();
+    function onOrient(e) {
+      if (e.alpha === null || typeof e.alpha === 'undefined') return;
+      var orient = 0;
+      if (window.screen && screen.orientation && typeof screen.orientation.angle === 'number') {
+        orient = screen.orientation.angle;
+      } else if (typeof window.orientation === 'number') {
+        orient = window.orientation;
+      }
+      eul.set(THREE.MathUtils.degToRad(e.beta || 0),
+              THREE.MathUtils.degToRad(e.alpha),
+              THREE.MathUtils.degToRad(-(e.gamma || 0)), 'YXZ');
+      camera.quaternion.setFromEuler(eul);
+      camera.quaternion.multiply(q1);
+      camera.quaternion.multiply(q0.setFromAxisAngle(zee,
+        -THREE.MathUtils.degToRad(orient)));
+    }
+    if ('DeviceOrientationEvent' in window) {
+      var gyroBtn = $('btnGyro');
+      gyroBtn.style.display = '';
+      gyroBtn.addEventListener('click', function () {
+        if (view.gyro) {
+          window.removeEventListener('deviceorientation', onOrient);
+          view.gyro = false;
+          gyroBtn.textContent = 'Motion look: off';
+          return;
+        }
+        function attach() {
+          window.addEventListener('deviceorientation', onOrient);
+          view.gyro = true;
+          gyroBtn.textContent = 'Motion look: on';
+          showToast('Motion look on — turn the phone, and the room turns with you.');
+        }
+        if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+          DeviceOrientationEvent.requestPermission().then(function (res) {
+            if (res === 'granted') attach();
+            else showToast('Motion look was not allowed — no harm done: drag to look around.');
+          }).catch(function () {
+            showToast('Motion look is unavailable here — drag to look around.');
+          });
+        } else {
+          attach();
+        }
+      });
+    }
+
+    window.addEventListener('resize', function () {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    var lookEuler = new THREE.Euler(0, 0, 0, 'YXZ');
+    var lastScreen = 0;
+    function animate(t) {
+      requestAnimationFrame(animate);
+      if (!view.gyro) {
+        lookEuler.set(view.pitch, view.yaw, 0);
+        camera.quaternion.setFromEuler(lookEuler);
+      }
+      if (t - lastScreen > 110) { drawScreen(t); lastScreen = t; }
+      if (hoverDirty && hoverXY) {
+        hoverDirty = false;
+        hoverId = pickAt(hoverXY.x, hoverXY.y);
+        dom.style.cursor = hoverId ? 'pointer' : '';
+      }
+      pickGroups.forEach(function (g) {
+        var id = g.userData.stationId;
+        halos[id].visible = (id === hoverId || id === currentCard);
+      });
+      renderer.render(scene, camera);
+    }
+    requestAnimationFrame(animate);
+
+    window.__roomReady = {
+      stations: Core.STATIONS.map(function (s) { return s.id; }),
+      webgl: true
+    };
+    $('roomStatus').textContent =
+      'Room ready — 3 stations: the Watch Floor · the Bench · the University Door';
+  }
+
+  /* ================= Init, with the plain fallback ================= */
+  if (!Lab || !Core) {
+    showFallback('The Lab\u2019s core files did not load, so the room cannot open here.');
+  } else if (!window.THREE) {
+    showFallback('The 3D library did not load (it comes from a CDN), so the room cannot open here.');
+  } else if (!window.WebGLRenderingContext) {
+    showFallback('This browser does not offer WebGL, so the room cannot open here.');
+  } else {
+    try {
+      buildRoom();
+    } catch (e) {
+      showFallback('The room could not be built on this device' +
+        (e && e.message ? ': ' + e.message : '.'));
+    }
+  }
+})();
+</script>
+</body>
+</html>
