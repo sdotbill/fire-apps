@@ -241,5 +241,12 @@
    "audio": "audio/lessons30/the-lyman-alpha-forest-and-intergalactic-absorption-as-tests-of-/lesson-01.mp3",
    "minutes": 9.99
   }
+ },
+ "cosmic-birefringence-parity-violation-and-polarisation-rotation-": {
+  "lesson-01": {
+   "hash": "bd056ad1cbe30431a4780c4c5e6cb5c53f2b8e83",
+   "audio": "audio/lessons30/cosmic-birefringence-parity-violation-and-polarisation-rotation-/lesson-01.mp3",
+   "minutes": 13.05
+  }
  }
 }

@@ -1,0 +1,177 @@
+{
+ "id": "cosmic-birefringence-parity-violation-and-polarisation-rotation-",
+ "title": "Cosmic Birefringence, Parity Violation and Polarisation Rotation in the Bounce Frame",
+ "professor": "Professor Nicole Turner",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Nicole Turner, and this is Cosmic Birefringence, Parity Violation and Polarisation Rotation in the Bounce Frame. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Nicole Turner, and this is Cosmic Birefringence, Parity Violation and Polarisation Rotation in the Bounce Frame. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'Anisotropic Birefringence: Patch-to-Patch Variance Around a Uniform Angle and What It Adds to the Mean'. Its stated result: The headline result of this computed study is: rms at 0p05 = 0.224; rms at 0p10 = 0.316; mean deg = 0.30; patch scatter over mean pct = 75. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured.",
+    "Now we go one step further into the material.",
+    "'An Axion-Photon Coupling Bound Conditional on a Field Excursion: What Birefringence Does and Does Not Supply'. Its stated result: The headline result of this computed study is: beta deg = 0.30; g at 1e18 = 1.05e-20; g at Mpl = 8.58e-22; unconditional bound = none - excursion not supplied. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured.",
+    "The next piece is where this starts to come together.",
+    "'A Chern-Simons Coefficient Bound from Polarisation Rotation over the Distance to Last Scattering'. Its stated result: The headline result of this computed study is: beta deg = 0.30; k AF eV = 2.41e-36; k AF err eV = 8.83e-37; k AF GeV = 2.41e-45; upper95 eV = 4.14e-36. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured.",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'Circular Polarisation as a Discriminant: Why a Pure Rotation Generates No Stokes V'. Its stated result: The headline result of this computed study is: rotated U uK = 0.0314; V generated uK = 0.000; V limit pct of Q = 1.0; admixture bound pct = 1.0. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured.",
+    "We take the pieces in order, because each one stands on the last.",
+    "'A Density Bound Cannot Set a Rotation Angle: The Missing Dimensionless Input, Quantified'. Its stated result: The headline result of this computed study is: t A s = 1.24e-24; required k over one tA eV = 2.78e+06; required k over cmb path eV = 2.41e-36; ratio = 1.2e+42; angle from rho alone = not determined - dimensionless input missing. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured.",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'A Hemispherical Test of the Rotation Field: Difference Statistics for a Dipole Modulation of the Angle'. Its stated result: The headline result of this computed study is: sigma diff deg = 0.283; significance at 0p4 = 1.4; per hemisphere err deg = 0.20. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Anisotropic Birefringence: Patch-to-Patch Variance Around a Uniform Angle and What It Adds to the Mean”. Its stated result is: The headline result of this computed study is: rms at 0p05 = 0.224; rms at 0p10 = 0.316; mean deg = 0.30; patch scatter over mean pct = 75. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'Anisotropic Birefringence: Patch-to-Patch Variance Around a Uniform Angle and What It Adds to the Mean'; 'An Axion-Photon Coupling Bound Conditional on a Field Excursion: What Birefringence Does and Does Not Supply'; 'A Chern-Simons Coefficient Bound from Polarisation Rotation over the Distance to Last Scattering'; 'Circular Polarisation as a Discriminant: Why a Pure Rotation Generates No Stokes V'; 'A Density Bound Cannot Set a Rotation Angle: The Missing Dimensionless Input, Quantified'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 945,
+   "audio": "audio/lessons30/cosmic-birefringence-parity-violation-and-polarisation-rotation-/lesson-01.mp3",
+   "minutes": 13.05,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'Anisotropic Birefringence: Patch-to-Patch Variance Around a Uniform Angle and What It Adds to the Mean'. The result it reported gives a value for rms at 0p05, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Anisotropic Birefringence: Patch-to-Patch Variance Around a Uniform Angle and What It Adds to the Mean'. Its stated result: The headline result of this computed study is: rms at 0p05 = 0.224; rms at 0p10 = 0.316; mean deg = 0.30; patch scatter over mean pct = 75. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: rms at 0p05 = 0.224; rms at 0p10 = 0.316; mean deg = 0.30. Find rms at 0p05 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Anisotropic Birefringence: Patch-to-Patch Variance Around a Uniform Angle and What It Adds to the Mean' stated its result. (2) That result pairs names with values: rms at 0p05 = 0.224; rms at 0p10 = 0.316; mean deg = 0.30. (3) This question asks for the value paired with rms at 0p05. (4) In that row, rms at 0p05 stands beside 0.224 — so the answer the lesson gives is 0.224. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Anisotropic Birefringence: Patch-to-Patch Variance Around a Uniform Angle and What It Adds to the Mean' reported a number for rms at 0p05. What number did it report?",
+     "kind": "number",
+     "answer": 0.224,
+     "disp": "0.224",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.224",
+      "2.41e-36",
+      "0.0314",
+      "0.30"
+     ],
+     "mcAnswer": "0.224",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'An Axion-Photon Coupling Bound Conditional on a Field Excursion: What Birefringence Does and Does Not Supply'. The result it reported gives a value for beta deg, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'An Axion-Photon Coupling Bound Conditional on a Field Excursion: What Birefringence Does and Does Not Supply'. Its stated result: The headline result of this computed study is: beta deg = 0.30; g at 1e18 = 1.05e-20; g at Mpl = 8.58e-22; unconditional bound = none - excursion not supplied. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: beta deg = 0.30; g at 1e18 = 1.05e-20; g at Mpl = 8.58e-22. Find beta deg in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'An Axion-Photon Coupling Bound Conditional on a Field Excursion: What Birefringence Does and Does Not Supply' stated its result. (2) That result pairs names with values: beta deg = 0.30; g at 1e18 = 1.05e-20; g at Mpl = 8.58e-22. (3) This question asks for the value paired with beta deg. (4) In that row, beta deg stands beside 0.30 — so the answer the lesson gives is 0.30. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'An Axion-Photon Coupling Bound Conditional on a Field Excursion: What Birefringence Does and Does Not Supply' reported a number for beta deg. What number did it report?",
+     "kind": "number",
+     "answer": 0.3,
+     "disp": "0.30",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.30",
+      "0.0314",
+      "0.224",
+      "2.41e-36"
+     ],
+     "mcAnswer": "0.30",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'A Chern-Simons Coefficient Bound from Polarisation Rotation over the Distance to Last Scattering'. The result it reported gives a value for k AF eV, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'A Chern-Simons Coefficient Bound from Polarisation Rotation over the Distance to Last Scattering'. Its stated result: The headline result of this computed study is: beta deg = 0.30; k AF eV = 2.41e-36; k AF err eV = 8.83e-37; k AF GeV = 2.41e-45; upper95 eV = 4.14e-36. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: beta deg = 0.30; k AF eV = 2.41e-36; k AF err eV = 8.83e-37. Find k AF eV in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'A Chern-Simons Coefficient Bound from Polarisation Rotation over the Distance to Last Scattering' stated its result. (2) That result pairs names with values: beta deg = 0.30; k AF eV = 2.41e-36; k AF err eV = 8.83e-37. (3) This question asks for the value paired with k AF eV. (4) In that row, k AF eV stands beside 2.41e-36 — so the answer the lesson gives is 2.41e-36. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'A Chern-Simons Coefficient Bound from Polarisation Rotation over the Distance to Last Scattering' reported a number for k AF eV. What number did it report?",
+     "kind": "number",
+     "answer": 2.41e-36,
+     "disp": "2.41e-36",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.0314",
+      "0.224",
+      "0.30",
+      "2.41e-36"
+     ],
+     "mcAnswer": "2.41e-36",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Circular Polarisation as a Discriminant: Why a Pure Rotation Generates No Stokes V'. The result it reported gives a value for rotated U uK, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Circular Polarisation as a Discriminant: Why a Pure Rotation Generates No Stokes V'. Its stated result: The headline result of this computed study is: rotated U uK = 0.0314; V generated uK = 0.000; V limit pct of Q = 1.0; admixture bound pct = 1.0. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: rotated U uK = 0.0314; V generated uK = 0.000; limit pct of Q = 1.0. Find rotated U uK in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Circular Polarisation as a Discriminant: Why a Pure Rotation Generates No Stokes V' stated its result. (2) That result pairs names with values: rotated U uK = 0.0314; V generated uK = 0.000; limit pct of Q = 1.0. (3) This question asks for the value paired with rotated U uK. (4) In that row, rotated U uK stands beside 0.0314 — so the answer the lesson gives is 0.0314. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Circular Polarisation as a Discriminant: Why a Pure Rotation Generates No Stokes V' reported a number for rotated U uK. What number did it report?",
+     "kind": "number",
+     "answer": 0.0314,
+     "disp": "0.0314",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.30",
+      "0.0314",
+      "0.224",
+      "2.41e-36"
+     ],
+     "mcAnswer": "0.0314",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'A Density Bound Cannot Set a Rotation Angle: The Missing Dimensionless Input, Quantified'. The result it reported gives a value for t A s, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'A Density Bound Cannot Set a Rotation Angle: The Missing Dimensionless Input, Quantified'. Its stated result: The headline result of this computed study is: t A s = 1.24e-24; required k over one tA eV = 2.78e+06; required k over cmb path eV = 2.41e-36; ratio = 1.2e+42; angle from rho alone = not determined - dimensionless input missing. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: t A s = 1.24e-24; over one tA eV = 2.78e+06; over cmb path eV = 2.41e-36. Find t A s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'A Density Bound Cannot Set a Rotation Angle: The Missing Dimensionless Input, Quantified' stated its result. (2) That result pairs names with values: t A s = 1.24e-24; over one tA eV = 2.78e+06; over cmb path eV = 2.41e-36. (3) This question asks for the value paired with t A s. (4) In that row, t A s stands beside 1.24e-24 — so the answer the lesson gives is 1.24e-24. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'A Density Bound Cannot Set a Rotation Angle: The Missing Dimensionless Input, Quantified' reported a number for t A s. What number did it report?",
+     "kind": "number",
+     "answer": 1.24e-24,
+     "disp": "1.24e-24",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "2.41e-36",
+      "0.224",
+      "0.30",
+      "1.24e-24"
+     ],
+     "mcAnswer": "1.24e-24",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Anisotropic Birefringence: Patch-to-Patch Variance Around a Uniform Angle and What It Adds to the Mean”. Its stated result is: The headline result of this computed study is: rms at 0p05 = 0.224; rms at 0p10 = 0.316; mean deg = 0.30; patch scatter over mean pct = 75. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “Anisotropic Birefringence: Patch-to-Patch Variance Around a Uniform Angle and What It Adds to the Mean”. Its stated result is: The headline result of this computed study is: rms at 0p05 = 0.224; rms at 0p10 = 0.316; mean deg = 0.30; patch scatter over mean pct = 75. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}

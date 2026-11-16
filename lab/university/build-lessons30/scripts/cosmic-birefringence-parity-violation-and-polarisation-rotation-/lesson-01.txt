@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Nicole Turner, and this is Cosmic Birefringence, Parity Violation and Polarisation Rotation in the Bounce Frame. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Nicole Turner, and this is Cosmic Birefringence, Parity Violation and Polarisation Rotation in the Bounce Frame. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Anisotropic Birefringence: Patch-to-Patch Variance Around a Uniform Angle and What It Adds to the Mean'. Its stated result: The headline result of this computed study is: rms at 0p05 = 0.224; rms at 0p10 = 0.316; mean deg = 0.30; patch scatter over mean pct = 75. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured.
+
+Now we go one step further into the material.
+
+'An Axion-Photon Coupling Bound Conditional on a Field Excursion: What Birefringence Does and Does Not Supply'. Its stated result: The headline result of this computed study is: beta deg = 0.30; g at 1e18 = 1.05e-20; g at Mpl = 8.58e-22; unconditional bound = none - excursion not supplied. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured.
+
+The next piece is where this starts to come together.
+
+'A Chern-Simons Coefficient Bound from Polarisation Rotation over the Distance to Last Scattering'. Its stated result: The headline result of this computed study is: beta deg = 0.30; k AF eV = 2.41e-36; k AF err eV = 8.83e-37; k AF GeV = 2.41e-45; upper95 eV = 4.14e-36. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Circular Polarisation as a Discriminant: Why a Pure Rotation Generates No Stokes V'. Its stated result: The headline result of this computed study is: rotated U uK = 0.0314; V generated uK = 0.000; V limit pct of Q = 1.0; admixture bound pct = 1.0. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured.
+
+We take the pieces in order, because each one stands on the last.
+
+'A Density Bound Cannot Set a Rotation Angle: The Missing Dimensionless Input, Quantified'. Its stated result: The headline result of this computed study is: t A s = 1.24e-24; required k over one tA eV = 2.78e+06; required k over cmb path eV = 2.41e-36; ratio = 1.2e+42; angle from rho alone = not determined - dimensionless input missing. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured.
+
+Stay with me, because the next piece builds directly on that one.
+
+'A Hemispherical Test of the Rotation Field: Difference Statistics for a Dipole Modulation of the Angle'. Its stated result: The headline result of this computed study is: sigma diff deg = 0.283; significance at 0p4 = 1.4; per hemisphere err deg = 0.20. All quantities were derived from the stated assumptions and published polarisation measurements by the deposited script, and the study is simulated and computed, not measured.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Anisotropic Birefringence: Patch-to-Patch Variance Around a Uniform Angle and What It Adds to the Mean”. Its stated result is: The headline result of this computed study is: rms at 0p05 = 0.224; rms at 0p10 = 0.316; mean deg = 0.30; patch scatter over mean pct = 75. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Anisotropic Birefringence: Patch-to-Patch Variance Around a Uniform Angle and What It Adds to the Mean'; 'An Axion-Photon Coupling Bound Conditional on a Field Excursion: What Birefringence Does and Does Not Supply'; 'A Chern-Simons Coefficient Bound from Polarisation Rotation over the Distance to Last Scattering'; 'Circular Polarisation as a Discriminant: Why a Pure Rotation Generates No Stokes V'; 'A Density Bound Cannot Set a Rotation Angle: The Missing Dimensionless Input, Quantified'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.
