@@ -1,0 +1,212 @@
+[
+ {
+  "q": "What do we call one measurable clue about a case that the machine is allowed to look at when it makes its guess?",
+  "kind": "exact",
+  "answer": "feature",
+  "accept": [
+   "a feature"
+  ],
+  "choices": [
+   "feature",
+   "label",
+   "leakage",
+   "model"
+  ],
+  "mcAnswer": "feature",
+  "teach": "From the lesson: Each feature is one column of clues on the left side of the row.",
+  "teach2": "\"A feature is one measurable clue about the case, one fact the machine is allowed to look at when it makes its guess.\" Each feature is one column of clues on the left side of the row.",
+  "walk": "Walk it through step by step: (1) The lesson opened one example into parts. (2) The clue columns were given a name. (3) That name is feature, so the answer is feature.",
+  "rank": 1
+ },
+ {
+  "q": "In the tree service table, the hours a job actually took play the role of the correct answer for each row. What is that role called?",
+  "kind": "exact",
+  "answer": "label",
+  "accept": [
+   "the label"
+  ],
+  "choices": [
+   "label",
+   "feature",
+   "category",
+   "scale"
+  ],
+  "mcAnswer": "label",
+  "teach": "From the lesson: Hours taken play that role for the tree jobs because they are known only afterwards.",
+  "teach2": "\"The label is the correct answer for that row, the thing we want the machine to learn to predict for new rows where we will not know it yet.\" Hours taken play that role for the tree jobs because they are known only afterwards.",
+  "walk": "Walk it through step by step: (1) Each row has clue columns and one special column. (2) The special column holds the correct answer. (3) Its name is label, so the answer is label.",
+  "rank": 1
+ },
+ {
+  "q": "In real use, on a brand new case, what does the machine see?",
+  "kind": "exact",
+  "answer": "only the features",
+  "accept": [
+   "the features only"
+  ],
+  "choices": [
+   "only the features",
+   "the features and the label",
+   "the label",
+   "the final invoice total"
+  ],
+  "mcAnswer": "only the features",
+  "teach": "From the lesson: During training it saw the label too, but on a new case the answer is not there to see.",
+  "teach2": "\"In real use, the machine sees only the features and must guess the label.\" During training it saw the label too, but on a new case the answer is not there to see.",
+  "walk": "Walk it through step by step: (1) Training shows features and label together. (2) A new case has no known answer yet. (3) So the machine sees only the features, and the answer is only the features.",
+  "rank": 1
+ },
+ {
+  "q": "What must be true of every feature for it to be usable in real predictions?",
+  "kind": "exact",
+  "answer": "available at prediction time",
+  "accept": [
+   "known before the prediction is needed"
+  ],
+  "choices": [
+   "available at prediction time",
+   "after the job is done",
+   "practically the label wearing a coat",
+   "a happy rating"
+  ],
+  "mcAnswer": "available at prediction time",
+  "teach": "From the lesson: If you can only know it after the moment of decision, it cannot help the model guess at that moment.",
+  "teach2": "\"A feature must be available at prediction time. That sentence deserves its place on the board.\" If you can only know it after the moment of decision, it cannot help the model guess at that moment.",
+  "walk": "Walk it through step by step: (1) In real use only features are visible. (2) A feature known only afterwards is never visible in time. (3) So every feature must be available at prediction time.",
+  "rank": 2
+ },
+ {
+  "q": "What is it called when information from the label, or from after the prediction moment, hides inside the features?",
+  "kind": "exact",
+  "answer": "leakage",
+  "accept": [],
+  "choices": [
+   "leakage",
+   "classification",
+   "regression",
+   "rescaling"
+  ],
+  "mcAnswer": "leakage",
+  "teach": "From the lesson: The model then reads the answer instead of learning the pattern, and collapses on new cases.",
+  "teach2": "\"Leakage means information from the label, or from after the moment of prediction, has leaked into the features.\" The model then reads the answer instead of learning the pattern, and collapses on new cases.",
+  "walk": "Walk it through step by step: (1) A feature secretly contains the answer. (2) The lesson gave that failure a name. (3) The name is leakage, so the answer is leakage.",
+  "rank": 2
+ },
+ {
+  "q": "According to the lesson, what are perfect scores on a fuzzy problem?",
+  "kind": "exact",
+  "answer": "an alarm bell",
+  "accept": [
+   "alarm bell"
+  ],
+  "choices": [
+   "an alarm bell",
+   "a triumph",
+   "the real work",
+   "a skilled, human, billable act"
+  ],
+  "mcAnswer": "an alarm bell",
+  "teach": "From the lesson: A near-perfect score on a fuzzy human question should make you suspect a cheating feature, not celebrate.",
+  "teach2": "\"Perfect scores on fuzzy problems are not a triumph. They are an alarm bell.\" A near-perfect score on a fuzzy human question should make you suspect a cheating feature, not celebrate.",
+  "walk": "Walk it through step by step: (1) Fuzzy human questions are never perfectly predictable honestly. (2) A near-perfect score suggests the answer leaked in. (3) So the lesson calls it an alarm bell.",
+  "rank": 2
+ },
+ {
+  "q": "In the marketing example, fifty people came by referral and thirty became clients. What rate, in words, became clients?",
+  "kind": "exact",
+  "answer": "sixty percent",
+  "accept": [],
+  "choices": [
+   "sixty percent",
+   "ten percent",
+   "seventy percent",
+   "twenty percent"
+  ],
+  "mcAnswer": "sixty percent",
+  "teach": "From the lesson: Dividing thirty clients by fifty referrals gives the referral rate in the lesson.",
+  "teach2": "\"fifty came by referral, and thirty of those fifty became clients. Thirty out of fifty is sixty percent, a strong rate.\" Dividing thirty clients by fifty referrals gives the referral rate in the lesson.",
+  "walk": "Walk it through step by step: (1) Divide thirty by fifty to get zero point six. (2) Turn that into a percentage in words. (3) That is sixty percent, so the answer is sixty percent.",
+  "rank": 2
+ },
+ {
+  "q": "In the marketing example, one hundred people came by advert and ten became clients. What rate, in words, became clients?",
+  "kind": "exact",
+  "answer": "ten percent",
+  "accept": [],
+  "choices": [
+   "ten percent",
+   "sixty percent",
+   "seventy percent",
+   "twenty percent"
+  ],
+  "mcAnswer": "ten percent",
+  "teach": "From the lesson: That low rate, set beside the referral rate, shows how one honest feature can separate strong cases from weak ones.",
+  "teach2": "\"One hundred came by advert, and only ten of those became clients. Ten out of one hundred is ten percent.\" That low rate, set beside the referral rate, shows how one honest feature can separate strong cases from weak ones.",
+  "walk": "Walk it through step by step: (1) Divide ten by one hundred to get zero point one. (2) Turn that into a percentage in words. (3) That is ten percent, so the answer is ten percent.",
+  "rank": 2
+ },
+ {
+  "q": "Which proposed column did the lesson judge to be a good feature for the tree service table?",
+  "kind": "exact",
+  "answer": "whether power lines run through the tree's branches, noted at quote time",
+  "accept": [
+   "power lines, noted at quote time"
+  ],
+  "choices": [
+   "whether power lines run through the tree's branches, noted at quote time",
+   "the customer's star rating of your company after the job",
+   "the final invoice total",
+   "days until the deposit was paid"
+  ],
+  "mcAnswer": "whether power lines run through the tree's branches, noted at quote time",
+  "teach": "From the lesson: The other columns were only known afterwards or secretly contained the answer.",
+  "teach2": "\"Power lines are visible at quote time, they genuinely make work slower, and they contain no hint of the label.\" The other columns were only known afterwards or secretly contained the answer.",
+  "walk": "Walk it through step by step: (1) Test each column for availability in time. (2) Test each for secretly containing the answer. (3) Only power lines pass both, so the answer is whether power lines run through the tree's branches, noted at quote time.",
+  "rank": 3
+ },
+ {
+  "q": "A label that sorts cases into classes, like became a client or did not, leads to which family of task?",
+  "kind": "exact",
+  "answer": "classification",
+  "accept": [
+   "a classification label"
+  ],
+  "choices": [
+   "classification",
+   "regression",
+   "leakage",
+   "rescaling"
+  ],
+  "mcAnswer": "classification",
+  "teach": "From the lesson: Predicting an amount is the other family; sorting into classes is this one.",
+  "teach2": "\"is called a classification label, because the model is sorting cases into classes.\" Predicting an amount is the other family; sorting into classes is this one.",
+  "walk": "Walk it through step by step: (1) The label here sorts people into became a client or did not. (2) Sorting into classes has a family name in the lesson. (3) That name is classification, so the answer is classification.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words, explain the difference between features and the label, including what the machine sees during training and in real use.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "feature",
+    "features"
+   ],
+   [
+    "label"
+   ],
+   [
+    "training"
+   ],
+   [
+    "real use",
+    "new case",
+    "new"
+   ]
+  ],
+  "need": 3,
+  "teach": "From the lesson: Features are the clues shown; the label is the answer to predict.",
+  "teach2": "\"Features are the clues the machine is shown, and the label is the correct answer it must learn to predict.\" In training both are visible, while in real use only the features are visible and the label must be guessed.",
+  "walk": "Walk it through step by step: (1) Name the features as the clues in the row. (2) Name the label as the correct answer. (3) Add that training shows both while real use shows only features, so a good answer covers features, label, and that difference.",
+  "rank": 3
+ }
+]

@@ -95,6 +95,17 @@ def audit_one(q, lesson_norm, lesson_numbers):
         for g in groups:
             if not any(norm(w) in words or norm(w) in lesson_norm for w in g):
                 return f'keyword group {g} not in the lesson text'
+        # if the question carries an MC set, its correct choice must
+        # itself satisfy the keyword groups — otherwise picking it can
+        # never pass (caught live: Computing Foundations capstones,
+        # Nov 16 — mcAnswer was a callback phrase hitting 0 groups)
+        if q.get('choices') and q.get('mcAnswer'):
+            mtext = norm(q['mcAnswer'])
+            hits = sum(1 for g in groups
+                       if any(norm(s) in mtext for s in g))
+            if hits < q['need']:
+                return (f'mcAnswer satisfies only {hits}/{q["need"]} '
+                        f'of its own keyword groups — unanswerable by picking')
     # teach2 must quote the lesson
     t2 = norm(q.get('teach2', ''))
     quoted = False

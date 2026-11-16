@@ -1,0 +1,226 @@
+[
+ {
+  "accept": [
+   "whether the agent may do a particular kind of thing at all"
+  ],
+  "answer": "whether the agent may do a particular kind of thing at all",
+  "choices": [
+   "whether the agent may do a particular kind of thing at all",
+   "a distance, not a gate",
+   "open or shut, kind by kind",
+   "kinds of acts that are simply not theirs to perform"
+  ],
+  "kind": "exact",
+  "mcAnswer": "whether the agent may do a particular kind of thing at all",
+  "q": "What does permission mean, in this lesson's plain definition?",
+  "rank": 1,
+  "teach": "From the lesson: permission is a gate, open or shut, kind by kind.",
+  "teach2": "\"Permission means whether the agent may do a particular kind of thing at all.\" May it send messages, or only draft them? May it spend money, or never touch money? Those are permission questions.",
+  "walk": "Walk it through step by step: (1) the lesson separates two cousin words. (2) One of them is a gate about kinds of acts. (3) That gate is permission, so the definition is the answer."
+ },
+ {
+  "accept": [
+   "how far the agent may go within what is permitted, on its own judgment, before it must come back to you"
+  ],
+  "answer": "how far the agent may go within what is permitted, on its own judgment, before it must come back to you",
+  "choices": [
+   "how far the agent may go within what is permitted, on its own judgment, before it must come back to you",
+   "whether the agent may do a particular kind of thing at all",
+   "a gate, open or shut",
+   "where your lines truly sit"
+  ],
+  "kind": "exact",
+  "mcAnswer": "how far the agent may go within what is permitted, on its own judgment, before it must come back to you",
+  "q": "What does latitude mean, in contrast to permission?",
+  "rank": 1,
+  "teach": "From the lesson: latitude is a distance, not a gate.",
+  "teach2": "\"Latitude means how far the agent may go within what is permitted, on its own judgment, before it must come back to you.\" Permission puts acts on the table; latitude decides how far the agent walks with them alone.",
+  "walk": "Walk it through step by step: (1) permission opens or shuts the gate. (2) Inside what is open, a second question remains about distance. (3) That distance is latitude, so its definition is the answer."
+ },
+ {
+  "accept": [
+   "Permission decides what kinds of acts are on the table at all. Latitude decides how far the agent may walk with them alone."
+  ],
+  "answer": "Permission decides what kinds of acts are on the table at all. Latitude decides how far the agent may walk with them alone.",
+  "choices": [
+   "Permission decides what kinds of acts are on the table at all. Latitude decides how far the agent may walk with them alone.",
+   "Prepare freely. Commit narrowly.",
+   "Read, draft, send. Inform, prepare, commit.",
+   "generous on the reversible, firm on the irreversible"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Permission decides what kinds of acts are on the table at all. Latitude decides how far the agent may walk with them alone.",
+  "q": "Which sentence pair does the lesson give as the one to hold onto about permission and latitude?",
+  "rank": 1,
+  "teach": "From the lesson: most arguments about agents are secretly one of these two questions wearing the other's coat.",
+  "teach2": "\"Permission decides what kinds of acts are on the table at all. Latitude decides how far the agent may walk with them alone.\" Learn to tell the two apart and you will think more clearly about agents than almost everyone arguing about them.",
+  "walk": "Walk it through step by step: (1) the lesson insists the cousins must not be blurred. (2) It sums both in one paired sentence. (3) That pair is the answer."
+ },
+ {
+  "accept": [
+   "the person whose name, money, customers, and obligations are on the line"
+  ],
+  "answer": "The person whose name, money, customers, and obligations are on the line",
+  "choices": [
+   "The person whose name, money, customers, and obligations are on the line",
+   "the responsible party",
+   "a valued assistant in your company",
+   "the one who carries that responsibility"
+  ],
+  "kind": "exact",
+  "mcAnswer": "The person whose name, money, customers, and obligations are on the line",
+  "q": "Who decides what the agent may do, according to the lesson?",
+  "rank": 2,
+  "teach": "From the lesson: when Dave sends a message, the customer experiences you and your company as the responsible party.",
+  "teach2": "\"The person whose name, money, customers, and obligations are on the line decides what the agent may do, because the consequences of the agent's acts land on that person\" That is the same frame every trusted human employee works inside.",
+  "walk": "Walk it through step by step: (1) the lesson asks who decides, and answers shortly. (2) Consequences land on the owner of the name and money. (3) So that person decides, and that is the answer."
+ },
+ {
+  "accept": [
+   "whether an act can be undone, cleanly, if it turns out to be wrong"
+  ],
+  "answer": "whether an act can be undone, cleanly, if it turns out to be wrong",
+  "choices": [
+   "whether an act can be undone, cleanly, if it turns out to be wrong",
+   "the last reversible moment",
+   "a draft can be deleted in a second",
+   "the narrowest in the whole system"
+  ],
+  "kind": "exact",
+  "mcAnswer": "whether an act can be undone, cleanly, if it turns out to be wrong",
+  "q": "What does reversibility mean, as the lesson defines it?",
+  "rank": 2,
+  "teach": "From the lesson: reading changes nothing, a draft can be deleted in a second, but a sent message cannot be unsent.",
+  "teach2": "\"Reversibility means whether an act can be undone, cleanly, if it turns out to be wrong.\" It is the one property that matters most for safety when you govern each rung of the ladder separately.",
+  "walk": "Walk it through step by step: (1) the lesson governs the ladder rung by rung. (2) The property separating the rungs is undoability. (3) That property is reversibility, so its definition is the answer."
+ },
+ {
+  "accept": [
+   "Latitude should shrink as reversibility shrinks."
+  ],
+  "answer": "Latitude should shrink as reversibility shrinks.",
+  "choices": [
+   "Latitude should shrink as reversibility shrinks.",
+   "your eyes should be nearest",
+   "generous for reading and drafting",
+   "at full width"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Latitude should shrink as reversibility shrinks.",
+  "q": "What rule connects latitude to reversibility everywhere in an operation?",
+  "rank": 2,
+  "teach": "From the lesson: where an act cannot be undone, the agent's solo distance should be shortest and your eyes nearest.",
+  "teach2": "\"Latitude should shrink as reversibility shrinks. Where an act cannot be undone, the agent's solo distance should be shortest, and your eyes should be nearest.\" The teacher knows no exception to that rule in any honest operation.",
+  "walk": "Walk it through step by step: (1) reading and drafting are easily undone. (2) Sending and spending are not. (3) So freedom narrows as undoability narrows, and that rule is the answer."
+ },
+ {
+  "accept": [
+   "the moment the responsible person reviews a prepared act before it becomes irreversible, and takes ownership of it"
+  ],
+  "answer": "the moment the responsible person reviews a prepared act before it becomes irreversible, and takes ownership of it",
+  "choices": [
+   "the moment the responsible person reviews a prepared act before it becomes irreversible, and takes ownership of it",
+   "a bureaucratic pause before real work resumes",
+   "every filed receipt and every grouped message",
+   "what good looks like"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the moment the responsible person reviews a prepared act before it becomes irreversible, and takes ownership of it",
+  "q": "What is an approval, defined properly in this lesson?",
+  "rank": 2,
+  "teach": "From the lesson: before your approval the draft is the agent's proposal; after it, the sent message is your act.",
+  "teach2": "\"An approval, defined properly for this class, is the moment the responsible person reviews a prepared act before it becomes irreversible, and takes ownership of it.\" Approvals convert the agent's judgment into your decision at the last reversible moment.",
+  "walk": "Walk it through step by step: (1) the lesson rejects the idea that approvals are mere caution. (2) They sit at the last reversible point of an act. (3) Review plus ownership at that point is the answer."
+ },
+ {
+  "accept": [
+   "Prepare freely. Commit narrowly."
+  ],
+  "answer": "Prepare freely. Commit narrowly.",
+  "choices": [
+   "Prepare freely. Commit narrowly.",
+   "gathering its details",
+   "the final act of paying",
+   "money in another currency"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Prepare freely. Commit narrowly.",
+  "q": "What is the safe shape for agent work around money and promises?",
+  "rank": 3,
+  "teach": "From the lesson: the agent can gather the invoice, check it against the record, and draft the authorisation, while the final act of paying stays with you.",
+  "teach2": "\"Prepare freely. Commit narrowly. Let the agent do the gathering, the checking, and the drafting at full width\" Keeping preparation and commitment separate gives nearly all the benefit with almost none of the exposure.",
+  "walk": "Walk it through step by step: (1) preparation is valuable and reversible. (2) Commitment is short and carries the legal and personal weight. (3) So the shape is prepare freely, commit narrowly."
+ },
+ {
+  "accept": [
+   "Evidence, over time, for a specific kind of case."
+  ],
+  "answer": "Evidence, over time, for a specific kind of case.",
+  "choices": [
+   "Evidence, over time, for a specific kind of case.",
+   "two hundred drafts of that class were approved unchanged",
+   "a one time exception, granted in a hurry",
+   "the standing practice"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Evidence, over time, for a specific kind of case.",
+  "q": "By what road should latitude ever grow, according to the lesson?",
+  "rank": 3,
+  "teach": "From the lesson: each widening is a decision you make, on evidence, written into the record so the new boundary is remembered.",
+  "teach2": "\"Evidence, over time, for a specific kind of case. That phrase is the only safe road by which latitude should ever grow.\" Draft after right draft, jobs landing, and contradictions brought to you are the evidence that earns it.",
+  "walk": "Walk it through step by step: (1) new agents begin narrow because evidence is missing. (2) Proven classes of work earn wider freedom. (3) The road is evidence, over time, for a specific kind of case."
+ },
+ {
+  "accept": [
+   "across another person's rights"
+  ],
+  "answer": "across another person's rights",
+  "choices": [
+   "across another person's rights",
+   "the weekly summary",
+   "a held draft",
+   "your own calendar"
+  ],
+  "kind": "exact",
+  "mcAnswer": "across another person's rights",
+  "q": "Latitude never extends across what, however convenient the crossing would be?",
+  "rank": 3,
+  "teach": "From the lesson: a stop point that protects a stranger is not red tape.",
+  "teach2": "\"Latitude never extends across another person's rights, however convenient the crossing would be, and however routine the job feels.\" That line keeps your company's power pointed in a direction you would defend out loud.",
+  "walk": "Walk it through step by step: (1) the lesson names two complications before closing. (2) One concerns people outside your company entirely. (3) Their rights bound all latitude, so that is the answer."
+ },
+ {
+  "keywords": [
+   [
+    "permission",
+    "allowed",
+    "may"
+   ],
+   [
+    "latitude",
+    "alone",
+    "walk",
+    "until"
+   ],
+   [
+    "approval",
+    "approve",
+    "draft",
+    "hold"
+   ],
+   [
+    "money",
+    "promise",
+    "send",
+    "rights"
+   ]
+  ],
+  "kind": "keywords",
+  "need": 3,
+  "q": "In your own words, set the frame for one real job you give Dave: what may he do at all, how far may he go alone within it, and what must always come back to you for approval, and why?",
+  "rank": 3,
+  "teach": "From the lesson: the morning inbox frame is generous on the reversible and firm on the irreversible at the same time.",
+  "teach2": "\"Dave may read everything in the inbox. Dave may search the record and the files for anything the messages refer to.\" Build your frame the same way: permissions kind by kind, distances within them, and a report line naming what always returns to you.",
+  "walk": "Walk it through step by step: (1) list the kinds of acts the job involves and mark each allowed or not. (2) set the solo distance inside each allowed kind. (3) name what always returns for approval, so the answer is your complete frame for one real job."
+ }
+]

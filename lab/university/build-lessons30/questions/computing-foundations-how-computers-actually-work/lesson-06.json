@@ -1,0 +1,221 @@
+[
+ {
+  "accept": [
+   "a named collection of bytes kept in storage"
+  ],
+  "answer": "a named collection of bytes",
+  "choices": [
+   "a named collection of bytes",
+   "the agreement that says how the bytes inside a file are arranged",
+   "the art of describing the same thing with fewer bytes",
+   "other people's servers"
+  ],
+  "kind": "exact",
+  "mcAnswer": "a named collection of bytes",
+  "q": "Professor Kim gives one last definition to keep. What is a file?",
+  "rank": 1,
+  "teach": "From the lesson: the file is the unit of keeping, as the byte is the unit of counting.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A file is a named collection of bytes, kept in storage, that a program can open, read, and write as one thing.' Another way: underneath the icon and the friendly name, a file is bytes with a name, kept where keeping happens.",
+  "walk": "Walk it through: (1) Everything you own digitally, you own in one standard unit. (2) That unit is made of bytes, carries a name, and lives in storage. (3) That unit is a file — a named collection of bytes."
+ },
+ {
+  "accept": [
+   "the agreement for how the bytes are arranged"
+  ],
+  "answer": "the agreement that says how the bytes inside a file are arranged",
+  "choices": [
+   "the agreement that says how the bytes inside a file are arranged",
+   "a named collection of bytes",
+   "a second copy of a file",
+   "data about the data"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the agreement that says how the bytes inside a file are arranged",
+  "q": "A program can only open a file if it knows the file's format. What is a format?",
+  "rank": 1,
+  "teach": "From the lesson: a format is lesson one's representation, grown up and given a filing system.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A format is the agreement that says how the bytes inside a file are arranged, so that a program opening the file knows what the numbers mean.' Another way: the bytes alone are just numbers — the format is the agreement that makes them a photograph or a letter.",
+  "walk": "Walk it through: (1) A file's bytes are numbers, and numbers need an agreement to mean anything. (2) For a whole kind of file, that agreement is written down once. (3) That written agreement is the format."
+ },
+ {
+  "answer": 12000000,
+  "choices": [
+   "12000000",
+   "36000000",
+   "4000",
+   "3000"
+  ],
+  "kind": "number",
+  "mcAnswer": "12000000",
+  "q": "The lesson counts a phone photograph of 4000 pixels wide by 3000 pixels tall. How many pixels does the picture have in total?",
+  "rank": 1,
+  "teach": "From the lesson: multiply the width by the height, the way this class multiplies.",
+  "teach2": "From the lesson, in Professor Kim's words: '4000 times 3000 is 12000000 pixels, twelve million dots, each one needing its colour stored.' Another way: four thousand rows of three thousand would give the same product — twelve million dots either way.",
+  "walk": "Walk it through: (1) The picture is 4000 pixels wide and 3000 pixels tall. (2) The total count of dots is width times height. (3) 4000 times 3000 is 12000000 pixels."
+ },
+ {
+  "accept": [
+   "it announces the file's format"
+  ],
+  "answer": "announces the file's format",
+  "choices": [
+   "announces the file's format",
+   "means data about the data",
+   "kept in a different place from the first",
+   "one accident away from not existing at all"
+  ],
+  "kind": "exact",
+  "mcAnswer": "announces the file's format",
+  "q": "A file's name ends with a short code after a dot, called the extension. What does the extension do?",
+  "rank": 2,
+  "teach": "From the lesson: the extension is a promise about how the bytes inside are arranged.",
+  "teach2": "From the lesson, in Professor Kim's words: 'The second part, after the dot, is called the extension, and it is a short code, usually three or four letters, that announces the file's format.' Another way: the first part of the name is for you — the extension is the file declaring what kind of thing it is.",
+  "walk": "Walk it through: (1) The name has two parts, the human label and the short code after the dot. (2) The code's job is to declare something about the file's insides. (3) The extension announces the file's format."
+ },
+ {
+  "answer": 36000000,
+  "choices": [
+   "36000000",
+   "12000000",
+   "3000",
+   "2000"
+  ],
+  "kind": "number",
+  "mcAnswer": "36000000",
+  "q": "With nothing clever done to it, the lesson's photograph needs three bytes for each of its pixels. How many bytes is the raw picture?",
+  "rank": 2,
+  "teach": "From the lesson: twelve million pixels, three bytes each — multiply.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Twelve million pixels at three bytes each is 36000000 bytes, thirty-six megabytes, for the raw picture with nothing clever done to it.' Another way: the raw size is just the pixel count wearing its three bytes per pixel.",
+  "walk": "Walk it through: (1) The picture has 12000000 pixels. (2) Each pixel's colour takes three bytes, one each for red, green, and blue. (3) 12000000 times three is 36000000 bytes."
+ },
+ {
+  "accept": [
+   "describing the same thing with fewer bytes"
+  ],
+  "answer": "describing the same thing with fewer bytes",
+  "choices": [
+   "describing the same thing with fewer bytes",
+   "data about the data",
+   "a second copy of a file",
+   "where on Earth it was taken"
+  ],
+  "kind": "exact",
+  "mcAnswer": "describing the same thing with fewer bytes",
+  "q": "What is compression, in the lesson's definition?",
+  "rank": 2,
+  "teach": "From the lesson: find the patterns, and write the patterns instead.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Compression is the art of describing the same thing with fewer bytes, by finding patterns in the numbers and writing the patterns instead.' Another way: a sky of repeated blue is written once, with a note about how far it stretches.",
+  "walk": "Walk it through: (1) Files contain patterns — repeated colours, repeated words, repeated shapes. (2) Writing every repetition out in full wastes bytes. (3) Compression is describing the same thing with fewer bytes by writing the patterns instead."
+ },
+ {
+  "accept": [
+   "data about the data"
+  ],
+  "answer": "data about the data",
+  "choices": [
+   "data about the data",
+   "a named collection of bytes",
+   "other people's servers",
+   "the original numbers can be rebuilt exactly"
+  ],
+  "kind": "exact",
+  "mcAnswer": "data about the data",
+  "q": "A photograph's file quietly records when and often where it was taken. What is that extra recorded information called?",
+  "rank": 2,
+  "teach": "From the lesson: metadata is how your photo app can map and sort your pictures unasked.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Alongside the main content, many formats store metadata, which means data about the data.' Another way: the picture is the content — the date, the camera, and the place are the picture's papers, travelling inside the same file.",
+  "walk": "Walk it through: (1) The file holds more than the picture itself: dates, camera details, dimensions, location. (2) All of that is information describing the main information. (3) Data about the data is metadata."
+ },
+ {
+  "answer": 2000,
+  "choices": [
+   "2000",
+   "1500",
+   "3000",
+   "3"
+  ],
+  "kind": "number",
+  "mcAnswer": "2000",
+  "q": "In the lesson's worked example, a full page of writing holds about 2000 characters, and in a plain text format each character is one byte. About how many bytes is the whole page?",
+  "rank": 3,
+  "teach": "From the lesson: words are nearly free to keep — pictures are the heavy furniture.",
+  "teach2": "From the lesson, in Professor Kim's words: 'So the whole page, the whole letter, is about 2000 bytes, two kilobytes, for everything on it.' Another way: one byte per character means the byte count and the character count are the same number.",
+  "walk": "Walk it through: (1) The page holds about 2000 characters. (2) Plain text stores one byte per character. (3) So the page is about 2000 bytes."
+ },
+ {
+  "accept": [
+   "some numbers are thrown away on purpose"
+  ],
+  "answer": "some of the original numbers are thrown away on purpose",
+  "choices": [
+   "some of the original numbers are thrown away on purpose",
+   "the original numbers can be rebuilt exactly",
+   "removes its name and its place from the cabinet's index",
+   "kept in a different place from the first"
+  ],
+  "kind": "exact",
+  "mcAnswer": "some of the original numbers are thrown away on purpose",
+  "q": "The photograph format on your phone uses lossy compression. What does lossy mean?",
+  "rank": 3,
+  "teach": "From the lesson: lossy is a bargain openly made — detail traded for size.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Other compression is lossy, which means some of the original numbers are thrown away on purpose, because a program has judged that your eye or your ear will not miss them.' Another way: lossless keeps everything and describes it cleverly — lossy discards what you would never notice and keeps the change.",
+  "walk": "Walk it through: (1) Compression has two branches, and the phone's photograph format takes the second. (2) That branch achieves its saving by discarding fine detail permanently. (3) Lossy means some of the original numbers are thrown away on purpose."
+ },
+ {
+  "accept": [
+   "other people's servers"
+  ],
+  "answer": "other people's servers",
+  "choices": [
+   "other people's servers",
+   "a named collection of bytes",
+   "the agreement that says how the bytes inside a file are arranged",
+   "a second copy of a file"
+  ],
+  "kind": "exact",
+  "mcAnswer": "other people's servers",
+  "q": "The lesson dissolves a decade of fog about the cloud in one plain sentence. What is the cloud?",
+  "rank": 3,
+  "teach": "From the lesson: there is no sky involved — there are buildings full of servers.",
+  "teach2": "From the lesson, in Professor Kim's words: 'The cloud is other people's servers, computers in data centres, rented out as storage and programs that your machine reaches over the network.' Another way: your photographs rest on real drives, in real buildings, under particular laws — and clear thinking starts there.",
+  "walk": "Walk it through: (1) Your synced files rest somewhere physical, reached over the network. (2) That somewhere is not the sky, and it is not your own machine. (3) The cloud is other people's servers, in data centres."
+ },
+ {
+  "answer": "A copy in the cloud is a genuine second place, which is the cloud's deepest virtue, deeper than convenience.",
+  "choices": [
+   "A copy in the cloud is a genuine second place, which is the cloud's deepest virtue, deeper than convenience.",
+   "there is no sky involved",
+   "the bytes themselves often linger for a while",
+   "words are nearly free to keep"
+  ],
+  "keywords": [
+   [
+    "phone",
+    "device",
+    "storage"
+   ],
+   [
+    "cloud",
+    "servers",
+    "data"
+   ],
+   [
+    "copy",
+    "copies"
+   ],
+   [
+    "different",
+    "second",
+    "place"
+   ]
+  ],
+  "kind": "keywords",
+  "mcAnswer": "A copy in the cloud is a genuine second place, which is the cloud's deepest virtue, deeper than convenience.",
+  "need": 3,
+  "q": "In your own words, where does your data actually live, and what makes a copy count as a real backup?",
+  "rank": 3,
+  "teach": "From the lesson: count the homes of a photograph that matters to you.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A backup is a second copy of a file, kept in a different place from the first, made so that losing the first copy is an inconvenience instead of a disaster.' Another way to hold the whole answer: your data lives in real places — your machine's storage and, when it syncs, servers elsewhere — and only a copy in a different place protects you when one place fails.",
+  "walk": "Walk it through: (1) A saved file lives in your own machine's storage, and a synced file also lives on servers in data centres. (2) A second copy on the same machine shares the first copy's fate, so it is not a backup. (3) In your own words: data lives in countable physical places, and a real backup is a copy kept in a different place from the first."
+ }
+]

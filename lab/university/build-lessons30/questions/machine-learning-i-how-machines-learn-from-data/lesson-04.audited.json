@@ -1,0 +1,210 @@
+[
+ {
+  "q": "What is the method called where you feel the slope, take a step downhill, and repeat until the loss stops falling?",
+  "kind": "exact",
+  "answer": "gradient descent",
+  "accept": [],
+  "choices": [
+   "gradient descent",
+   "gradient",
+   "learning rate",
+   "local minimum"
+  ],
+  "mcAnswer": "gradient descent",
+  "teach": "From the lesson: Feeling the slope and stepping downhill again and again is how the dials are trained.",
+  "teach2": "\"Gradient descent is the simple, disciplined walk that follows from that situation.\" Feeling the slope and stepping downhill again and again is how the dials are trained.",
+  "walk": "Walk it through step by step: (1) The walker feels which way the ground slopes. (2) She steps downhill and repeats. (3) The method's name is gradient descent, so the answer is gradient descent.",
+  "rank": 1
+ },
+ {
+  "q": "What do we call the slope of the loss where you are standing, measured dial by dial?",
+  "kind": "exact",
+  "answer": "gradient",
+  "accept": [
+   "the gradient"
+  ],
+  "choices": [
+   "gradient",
+   "learning rate",
+   "batch",
+   "epoch"
+  ],
+  "mcAnswer": "gradient",
+  "teach": "From the lesson: Stepping against it is stepping downhill toward smaller loss.",
+  "teach2": "\"The gradient is the slope of the loss, measured right where you are standing, together with the direction in which the loss increases fastest.\" Stepping against it is stepping downhill toward smaller loss.",
+  "walk": "Walk it through step by step: (1) The walker needs to know the slope at her position. (2) The lesson named that slope, dial by dial. (3) The name is gradient, so the answer is gradient.",
+  "rank": 1
+ },
+ {
+  "q": "What do we call the number that turns slope into step size, where each step equals that number multiplied by the slope?",
+  "kind": "exact",
+  "answer": "learning rate",
+  "accept": [
+   "the learning rate"
+  ],
+  "choices": [
+   "learning rate",
+   "gradient",
+   "batch",
+   "epoch"
+  ],
+  "mcAnswer": "learning rate",
+  "teach": "From the lesson: Too small and training crawls; too large and the steps overshoot the valley.",
+  "teach2": "\"The learning rate is the number that turns slope into step size.\" Too small and training crawls; too large and the steps overshoot the valley.",
+  "walk": "Walk it through step by step: (1) Slope alone does not say how far to step. (2) A multiplier sets the step size. (3) That multiplier is the learning rate, so the answer is learning rate.",
+  "rank": 1
+ },
+ {
+  "q": "What is one full pass through the whole training set called?",
+  "kind": "exact",
+  "answer": "epoch",
+  "accept": [
+   "an epoch"
+  ],
+  "choices": [
+   "epoch",
+   "batch",
+   "gradient",
+   "learning rate"
+  ],
+  "mcAnswer": "epoch",
+  "teach": "From the lesson: Training circles the dataset again and again, descending a little more each pass.",
+  "teach2": "\"One pass through the whole training set is called an epoch, another word worth owning, and training usually runs for many epochs, the walk circling the dataset again and again, descending a little more each pass, until the loss flattens and further walking buys nothing worth its cost.\" Training circles the dataset again and again, descending a little more each pass.",
+  "walk": "Walk it through step by step: (1) Training works through the examples in batches. (2) Completing the whole set once has a name. (3) That name is epoch, so the answer is epoch.",
+  "rank": 1
+ },
+ {
+  "q": "The dial starts at ten jars, the truth is twenty-one jars, and the loss is the squared error. What is the starting loss, in words?",
+  "kind": "exact",
+  "answer": "one hundred and twenty-one",
+  "accept": [],
+  "choices": [
+   "one hundred and twenty-one",
+   "thirty-six",
+   "nine",
+   "eleven"
+  ],
+  "mcAnswer": "one hundred and twenty-one",
+  "teach": "From the lesson: The error size is eleven jars, and squaring it gives the starting loss in the jam walk.",
+  "teach2": "\"Squared loss is eleven times eleven, one hundred and twenty-one.\" The error size is eleven jars, and squaring it gives the starting loss in the jam walk.",
+  "walk": "Walk it through step by step: (1) Twenty-one minus ten gives an error of eleven. (2) Multiply eleven by eleven. (3) That gives one hundred and twenty-one, so the answer is one hundred and twenty-one.",
+  "rank": 2
+ },
+ {
+  "q": "After a step of five jars the dial says fifteen, against a truth of twenty-one. What is the squared loss now, in words?",
+  "kind": "exact",
+  "answer": "thirty-six",
+  "accept": [],
+  "choices": [
+   "thirty-six",
+   "one hundred and twenty-one",
+   "nine",
+   "eleven"
+  ],
+  "mcAnswer": "thirty-six",
+  "teach": "From the lesson: The loss fell from one hundred and twenty-one as the dial moved toward the truth.",
+  "teach2": "\"Dial now fifteen. Loss is fifteen minus twenty-one, six in size, squared, thirty-six.\" The loss fell from one hundred and twenty-one as the dial moved toward the truth.",
+  "walk": "Walk it through step by step: (1) Twenty-one minus fifteen gives an error of six. (2) Multiply six by six. (3) That gives thirty-six, so the answer is thirty-six.",
+  "rank": 2
+ },
+ {
+  "q": "What is it called when a step is so large that the dial leaps clean over the valley to the far wall?",
+  "kind": "exact",
+  "answer": "overshooting",
+  "accept": [
+   "overshoot"
+  ],
+  "choices": [
+   "overshooting",
+   "divergence",
+   "epoch",
+   "batch"
+  ],
+  "mcAnswer": "overshooting",
+  "teach": "From the lesson: The walker leaps past the lowest point and the loss can end up worse than where she stood.",
+  "teach2": "\"Learning rate too large, and something worse happens. Overshooting.\" The walker leaps past the lowest point and the loss can end up worse than where she stood.",
+  "walk": "Walk it through step by step: (1) The learning rate is set too large. (2) The step jumps past the valley floor. (3) The lesson calls that overshooting, so the answer is overshooting.",
+  "rank": 2
+ },
+ {
+  "q": "What is the failure called when the walk ricochets and the loss grows instead of shrinking, flying apart instead of descending?",
+  "kind": "exact",
+  "answer": "divergence",
+  "accept": [],
+  "choices": [
+   "divergence",
+   "overshooting",
+   "epoch",
+   "local minimum"
+  ],
+  "mcAnswer": "divergence",
+  "teach": "From the lesson: Divergence is what happens when oversized steps keep making the loss worse.",
+  "teach2": "\"The walk does not settle, it ricochets, and the loss can grow instead of shrinking, a failure with the honest name divergence, the walk flying apart instead of descending.\" Divergence is what happens when oversized steps keep making the loss worse.",
+  "walk": "Walk it through step by step: (1) Steps are too large and keep overshooting. (2) The loss grows instead of shrinking. (3) That failure is named divergence, so the answer is divergence.",
+  "rank": 2
+ },
+ {
+  "q": "What is a dip called where every small step leads uphill, so the walker stops, while a deeper valley exists elsewhere?",
+  "kind": "exact",
+  "answer": "local minimum",
+  "accept": [
+   "a local minimum"
+  ],
+  "choices": [
+   "local minimum",
+   "learning rate",
+   "batch",
+   "epoch"
+  ],
+  "mcAnswer": "local minimum",
+  "teach": "From the lesson: Gradient descent guarantees improvement, not the deepest valley on earth.",
+  "teach2": "\"A local minimum is a dip where every small step leads uphill, so the slope-feeling walker stops, believing she has arrived, while a deeper valley exists elsewhere, beyond a ridge she never crossed.\" Gradient descent guarantees improvement, not the deepest valley on earth.",
+  "walk": "Walk it through step by step: (1) The walker stops because every small step goes uphill. (2) A deeper valley exists beyond a ridge. (3) That dip is a local minimum, so the answer is local minimum.",
+  "rank": 3
+ },
+ {
+  "q": "A dial starts at two hours, the true average is eight hours, and you may step one, three or twelve hours. Which first step did the lesson defend?",
+  "kind": "exact",
+  "answer": "a step of three hours",
+  "accept": [
+   "three hours"
+  ],
+  "choices": [
+   "a step of three hours",
+   "a step of twelve hours",
+   "a step of one hour",
+   "five jars"
+  ],
+  "mcAnswer": "a step of three hours",
+  "teach": "From the lesson: Twelve hours overshoots to no progress at all, and one hour crawls, so three hours is the walker's choice.",
+  "teach2": "\"A step of three hours lands at five, loss nine, strong progress with no drama, and the next slope, gentler now, invites a step of two, landing at seven, loss one, then a step of one, landing at eight, loss zero.\" Twelve hours overshoots to no progress at all, and one hour crawls, so three hours is the walker's choice.",
+  "walk": "Walk it through step by step: (1) Twelve hours lands at fourteen, loss thirty-six again, no progress. (2) One hour lands at three, progress but slow. (3) Three hours lands at five, loss nine, so the answer is a step of three hours.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words, explain how gradient descent trains a model even though the machine cannot see the whole landscape.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "slope",
+    "gradient"
+   ],
+   [
+    "downhill",
+    "against"
+   ],
+   [
+    "step"
+   ],
+   [
+    "repeat",
+    "again"
+   ]
+  ],
+  "need": 3,
+  "teach": "From the lesson: The machine feels the slope exactly at each step and steps downhill.",
+  "teach2": "\"Feel the slope. Take a step downhill. Feel the slope again. Take another step downhill.\" A walker who can feel the slope exactly at every step does not need to see the whole hill.",
+  "walk": "Walk it through step by step: (1) The model computes the slope, the gradient, where it stands. (2) It steps against the gradient, downhill. (3) It repeats until the loss flattens, so a good answer covers slope, downhill steps, and repeating.",
+  "rank": 3
+ }
+]

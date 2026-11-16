@@ -1,0 +1,237 @@
+[
+ {
+  "q": "What is a function, in Professor Kim's plain definition?",
+  "kind": "exact",
+  "answer": "a machine for turning inputs into outputs",
+  "accept": [
+   "a machine for turning inputs into outputs"
+  ],
+  "choices": [
+   "a machine for turning inputs into outputs",
+   "a filing cabinet",
+   "trained hands",
+   "a lookup table"
+  ],
+  "mcAnswer": "a machine for turning inputs into outputs",
+  "teach": "From the lesson: something goes in, something comes out, and the function decides.",
+  "teach2": "From the lesson: A function is a machine for turning inputs into outputs. That is the whole definition, and everything else is decoration. Another way: a coffee machine, a recipe, and a vending machine are all functions in this sense — the model is the same kind of thing, with a deciding middle that was grown instead of designed.",
+  "walk": "Walk it through: (1) The lesson strips the mathematical word down to a picture. (2) An input goes in and an output comes out. (3) The thing in the middle that decides is a function.",
+  "rank": 1
+ },
+ {
+  "q": "In the recipe picture, what makes the adjusted recipe a model?",
+  "kind": "exact",
+  "answer": "it was adjusted a million times",
+  "accept": [
+   "adjusted a million times",
+   "it was shaped by examples"
+  ],
+  "choices": [
+   "it was adjusted a million times",
+   "designed rule by rule",
+   "a filing cabinet",
+   "a lookup table"
+  ],
+  "mcAnswer": "it was adjusted a million times",
+  "teach": "From the lesson: nobody wrote the final recipe — it arrived by correction.",
+  "teach2": "From the lesson: Instead it was adjusted a million times — a little more salt, a little less — tasting after every try, until the dinners came out right. Another way: a written recipe is a designed function; the model is the version nobody wrote, corrected taste by taste until the dinners came out right.",
+  "walk": "Walk it through: (1) The lesson starts with an ordinary recipe, a designed function. (2) Then it changes one thing: nobody writes the recipe. (3) It is adjusted a million times instead — and that adjusted recipe is the model.",
+  "rank": 1
+ },
+ {
+  "q": "Where do a model's examples live after training?",
+  "kind": "exact",
+  "answer": "as the shape of the settings",
+  "accept": [
+   "in the shape of the settings",
+   "settled into the settings",
+   "as shape, not items"
+  ],
+  "choices": [
+   "as the shape of the settings",
+   "a filing cabinet",
+   "the album",
+   "the product"
+  ],
+  "mcAnswer": "as the shape of the settings",
+  "teach": "From the lesson: the memory is real, and it is a memory of shape, not of items.",
+  "teach2": "From the lesson: the examples survive only as the shape those numbers were bent into. Another way: like a riverbed that holds no floods but is shaped by every flood, the settings hold no examples — they hold the shape the examples bent them into.",
+  "walk": "Walk it through: (1) The lesson asks whether the examples are stored inside the model. (2) It answers no: the photographs and emails are not in there. (3) What survives is the shape of the settings.",
+  "rank": 1
+ },
+ {
+  "q": "How many bones does the set problem's answer stand on?",
+  "kind": "exact",
+  "answer": "six bones",
+  "accept": [
+   "six",
+   "six bones"
+  ],
+  "choices": [
+   "six bones",
+   "three",
+   "four",
+   "two"
+  ],
+  "mcAnswer": "six bones",
+  "teach": "From the lesson: leave a bone out and the answer wobbles.",
+  "teach2": "From the lesson: It stands on six bones: function, inputs, outputs, parameters, examples, predictions. Another way: function names the kind of thing, inputs and outputs name the flow, parameters name the inside, examples name the shaping, predictions name the product of it all.",
+  "walk": "Walk it through: (1) The lesson works the set problem in full. (2) It names the scaffold the answer stands on. (3) The scaffold has six bones.",
+  "rank": 1
+ },
+ {
+  "q": "What is the field's word for handling a case the system has never seen?",
+  "kind": "exact",
+  "answer": "generalise",
+  "accept": [
+   "generalise",
+   "generalising"
+  ],
+  "choices": [
+   "generalise",
+   "recall",
+   "store",
+   "label"
+  ],
+  "mcAnswer": "generalise",
+  "teach": "From the lesson: generalising is the whole point of the enterprise.",
+  "teach2": "From the lesson: a model can generalise, which is the field's word for handling a case it has never seen. Another way: the filter judges an email written this morning, in fresh wording, because it runs the message through settings shaped by the pattern of all messages — not through stored copies.",
+  "walk": "Walk it through: (1) The filter meets an email that has never existed before. (2) It still judges it correctly, from pattern rather than storage. (3) The field's word for that is generalise.",
+  "rank": 2
+ },
+ {
+  "q": "Why can a model not show you its evidence when you ask why it judged a case the way it did?",
+  "kind": "exact",
+  "answer": "the examples are not stored",
+  "accept": [
+   "because the examples are not stored",
+   "there is nothing to point at"
+  ],
+  "choices": [
+   "the examples are not stored",
+   "the settings",
+   "the screen",
+   "the monthly fee"
+  ],
+  "mcAnswer": "the examples are not stored",
+  "teach": "From the lesson: conclusions without a filing cabinet, judgement without a notebook.",
+  "teach2": "From the lesson: because the examples are not stored, a model cannot show you its evidence. Another way: a person can point at the phrase and the sender; the model has only settings, all contributing a little, none containing a readable reason.",
+  "walk": "Walk it through: (1) Evidence would mean pointing at stored examples. (2) The lesson established that examples survive only as shape. (3) So the model cannot show evidence because the examples are not stored.",
+  "rank": 2
+ },
+ {
+  "q": "In the album and hands contrast, which one is a model?",
+  "kind": "exact",
+  "answer": "hands, not album",
+  "accept": [
+   "hands",
+   "a model is hands, not album"
+  ],
+  "choices": [
+   "hands, not album",
+   "the album",
+   "the photograph",
+   "a lookup table"
+  ],
+  "mcAnswer": "hands, not album",
+  "teach": "From the lesson: expect hands, and the behaviour makes sense.",
+  "teach2": "From the lesson: A model is hands, not album. I keep returning to this because nearly every wrong expectation I correct in this field is an album expectation brought to a hands system. Another way: the album stores and can only speak about what it holds; the hands store nothing and can still handle a new job from the shape of all the old ones.",
+  "walk": "Walk it through: (1) The album stores items and stays silent about anything never stored. (2) The hands embody skill and handle new work. (3) The model works like the hands, not the album.",
+  "rank": 2
+ },
+ {
+  "q": "What does the model half of the lead scorer story never do, however good its short list is?",
+  "kind": "exact",
+  "answer": "understand why anyone buys anything",
+  "accept": [
+   "it does not understand why anyone buys anything",
+   "understand"
+  ],
+  "choices": [
+   "understand why anyone buys anything",
+   "become a paying client",
+   "a short list",
+   "trained hands"
+  ],
+  "mcAnswer": "understand why anyone buys anything",
+  "teach": "From the lesson: a second pair of trained hands — that is all it is, and that is not a small thing.",
+  "teach2": "From the lesson: It does not understand why anyone buys anything, and on the day a strange enquiry arrives carrying none of the old patterns, it will guess with the same confidence and a fraction of the grounds. Another way: the scorer's value is a Monday-morning short list, not insight into loyalty or longing — prediction was the job, and prediction is what it does.",
+  "walk": "Walk it through: (1) The scorer predicts which enquiries become clients. (2) The lesson asks what it does not do alongside that. (3) It never understands why anyone buys anything.",
+  "rank": 3
+ },
+ {
+  "q": "What is the difference between the model and the product, when a tool delights or disappoints you?",
+  "kind": "exact",
+  "answer": "the model is the function, the frozen settings",
+  "accept": [
+   "the model is the function",
+   "the frozen settings"
+  ],
+  "choices": [
+   "the model is the function, the frozen settings",
+   "the screen you type into",
+   "the monthly fee",
+   "the machine it runs on"
+  ],
+  "mcAnswer": "the model is the function, the frozen settings",
+  "teach": "From the lesson: keep the layers apart — model, product, and machine.",
+  "teach2": "From the lesson: The model is the function, the frozen settings. The product is the model plus everything wrapped around it: the screen you type into, the company that hosts it, the monthly fee, the cheerful name. Another way: the product adds the screen, the hosting, the name, and the fee; judging the wrapper when the settings failed, or the settings when the wrapper failed, sends your complaint to the wrong address.",
+  "walk": "Walk it through: (1) The lesson separates three layers. (2) The innermost layer is the trained function itself. (3) That layer — the model — is the function, the frozen settings.",
+  "rank": 3
+ },
+ {
+  "q": "Finish the lesson's summary sentence: a model is its training, remembered as what?",
+  "kind": "exact",
+  "answer": "shape",
+  "accept": [
+   "shape",
+   "remembered as shape"
+  ],
+  "choices": [
+   "shape",
+   "items",
+   "a receipt",
+   "the album"
+  ],
+  "mcAnswer": "shape",
+  "teach": "From the lesson: there is nothing else in the box.",
+  "teach2": "From the lesson: The model is its training, remembered as shape. There is nothing else in the box. Another way: everything the model does, it does out of its past — and that past is carried as the shape of the settings, never as stored cases.",
+  "walk": "Walk it through: (1) The model's past is its training. (2) That past is not stored as items or a library. (3) It is remembered as shape.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words, one paragraph: what is a model, and what did training do to it? Use one example from your own life where prediction, not understanding, was enough.",
+  "kind": "keywords",
+  "answer": "a model is a function — a machine for turning inputs into outputs — whose internal settings were adjusted, over millions of examples, until its predictions matched reality often enough to be useful",
+  "accept": [],
+  "choices": [
+   "a model is a function — a machine for turning inputs into outputs — whose internal settings were adjusted, over millions of examples, until its predictions matched reality often enough to be useful",
+   "a filing cabinet",
+   "rules",
+   "a mind"
+  ],
+  "mcAnswer": "a model is a function — a machine for turning inputs into outputs — whose internal settings were adjusted, over millions of examples, until its predictions matched reality often enough to be useful",
+  "teach": "From the lesson: this is the class's set problem, worked in full in lesson three.",
+  "teach2": "From the lesson: a model is a function — a machine for turning inputs into outputs — whose internal settings were adjusted, over millions of examples, until its predictions matched reality often enough to be useful. Another way: training is that adjustment — and the spam filter is the standing example, since it never understood a word of your email and prediction was enough.",
+  "walk": "Walk it through: (1) Name the kind of thing: a function, inputs in and outputs out. (2) Name what training did: it adjusted the internal settings over millions of examples. (3) Close with your own case where prediction, not understanding, was enough.",
+  "rank": 3,
+  "keywords": [
+   [
+    "model",
+    "function"
+   ],
+   [
+    "training",
+    "adjusted",
+    "settings",
+    "parameters"
+   ],
+   [
+    "examples",
+    "predictions",
+    "prediction"
+   ]
+  ],
+  "need": 2
+ }
+]

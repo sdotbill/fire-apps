@@ -1,0 +1,218 @@
+[
+ {
+  "accept": [
+   "computers connected so they can exchange data"
+  ],
+  "answer": "a set of computers connected",
+  "choices": [
+   "a set of computers connected",
+   "a small piece of a message",
+   "an agreed set of rules for how computers talk",
+   "a computer that waits for requests and answers them"
+  ],
+  "kind": "exact",
+  "mcAnswer": "a set of computers connected",
+  "q": "Professor Kim defines the subject of the lesson right at the start. What is a network?",
+  "rank": 1,
+  "teach": "From the lesson: two computers and a connection is the smallest network there is.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A network is a set of computers connected so that they can exchange data, pass messages, and share what they have.' Another way: one machine alone is a workshop — connect it to another and the two become a network.",
+  "walk": "Walk it through: (1) The lesson begins by joining the lone computer of the first four lessons to others. (2) The definition names what the joining creates. (3) A network is a set of computers connected so they can exchange data."
+ },
+ {
+  "accept": [
+   "a small piece of a message"
+  ],
+  "answer": "a small piece of a message",
+  "choices": [
+   "a small piece of a message",
+   "a set of computers connected",
+   "the address of where it is going",
+   "a network connection made by radio instead of by wire"
+  ],
+  "kind": "exact",
+  "mcAnswer": "a small piece of a message",
+  "q": "Messages on a network do not travel whole. What is a packet?",
+  "rank": 1,
+  "teach": "From the lesson: the right picture is the postal service, not a pipe.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A packet is a small piece of a message, travelling with the address of where it is going and a note of where it belongs in the whole.' Another way: one envelope from a shredded photograph, addressed, and numbered so it can be put back in order.",
+  "walk": "Walk it through: (1) The lesson replaces the pipe picture with the postal picture. (2) In that picture, a message is broken into small addressed pieces. (3) Each small piece is a packet."
+ },
+ {
+  "answer": 4,
+  "choices": [
+   "4",
+   "1500",
+   "100",
+   "8"
+  ],
+  "kind": "number",
+  "mcAnswer": "4",
+  "q": "The classic internet address is made of numbers separated by dots, each number being one byte's worth. How many numbers are in that address?",
+  "rank": 1,
+  "teach": "From the lesson: the classic address is four bytes long, one byte per number.",
+  "teach2": "From the lesson, in Professor Kim's words: 'On the internet, the classic form of the address is 4 numbers separated by dots, each number between zero and two hundred and fifty-five.' Another way: four numbers, four bytes, and each byte runs from zero to two hundred and fifty-five.",
+  "walk": "Walk it through: (1) The lesson gives the classic address a fixed shape, numbers separated by dots. (2) It states the count of those numbers directly. (3) The classic internet address has 4 numbers."
+ },
+ {
+  "accept": [
+   "receive packets and send them onward"
+  ],
+  "answer": "receive packets, read their destination addresses, and send them onward",
+  "choices": [
+   "receive packets, read their destination addresses, and send them onward",
+   "translates the names people remember into the numbers machines use",
+   "waits for requests and answers them",
+   "scrambling a message with a secret key"
+  ],
+  "kind": "exact",
+  "mcAnswer": "receive packets, read their destination addresses, and send them onward",
+  "q": "What is the whole job of a router?",
+  "rank": 2,
+  "teach": "From the lesson: a sorting office that never sleeps, making one local decision per packet.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A router is a computer whose whole job is to receive packets, read their destination addresses, and send them onward along the best available road toward that destination.' Another way: the router never plans the whole journey — it chooses the next hop, and that is enough.",
+  "walk": "Walk it through: (1) Packets pass through several machines on their journey, each making one decision. (2) That decision is based on the destination address written on the packet. (3) The machine doing it, the router, receives packets, reads their addresses, and sends them onward."
+ },
+ {
+  "answer": 1500,
+  "choices": [
+   "1500",
+   "2097",
+   "3145728",
+   "100"
+  ],
+  "kind": "number",
+  "mcAnswer": "1500",
+  "q": "About how many bytes of actual message does a typical packet carry?",
+  "rank": 2,
+  "teach": "From the lesson: small pieces are easy to move, easy to resend, easy to share a road with.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A typical packet carries about 1500 bytes of actual message, plus its addressing.' Another way: roughly one and a half kilobytes of message per envelope, with the address written on the outside.",
+  "walk": "Walk it through: (1) The lesson sizes the packet before counting how many a photograph needs. (2) It states the carrying size plainly, in bytes. (3) A typical packet carries about 1500 bytes."
+ },
+ {
+  "accept": [
+   "agreed rules for how computers talk"
+  ],
+  "answer": "an agreed set of rules for how computers talk",
+  "choices": [
+   "an agreed set of rules for how computers talk",
+   "a small piece of a message",
+   "a computer that waits for requests and answers them",
+   "the internet's phone book"
+  ],
+  "kind": "exact",
+  "mcAnswer": "an agreed set of rules for how computers talk",
+  "q": "Machines built by different companies can talk to each other because of protocols. What is a protocol?",
+  "rank": 2,
+  "teach": "From the lesson: nobody owns these agreements, which is precisely why everyone follows them.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A protocol is an agreed set of rules for how computers talk, so that a machine built by one company can understand a machine built by another.' Another way: it is lesson one's agreed code, grown up to govern whole conversations.",
+  "walk": "Walk it through: (1) Talking between strangers' machines only works if the conversation itself follows shared rules. (2) The lesson gives those rules a name. (3) A protocol is an agreed set of rules for how computers talk."
+ },
+ {
+  "answer": 2097,
+  "choices": [
+   "2097",
+   "1500",
+   "3145728",
+   "4"
+  ],
+  "kind": "number",
+  "mcAnswer": "2097",
+  "q": "In the lesson's worked example, a photograph of 3 megabytes is sent in packets of about 1500 bytes. About how many packets does the photograph become?",
+  "rank": 2,
+  "teach": "From the lesson: divide the whole message by what one packet can carry.",
+  "teach2": "From the lesson, in Professor Kim's words: '3145728 divided by 1500 is about 2097. Your one photograph crosses the world as roughly 2097 separate packets.' Another way: three million bytes, fifteen hundred at a time, needs a little over two thousand envelopes.",
+  "walk": "Walk it through: (1) The photograph is 3145728 bytes in strict bundles. (2) Each packet carries about 1500 bytes. (3) Dividing gives about 2097 packets."
+ },
+ {
+  "accept": [
+   "a computer that waits for requests and answers them"
+  ],
+  "answer": "a computer that waits for requests and answers them",
+  "choices": [
+   "a computer that waits for requests and answers them",
+   "an agreed set of rules for how computers talk",
+   "translates the names people remember into the numbers machines use",
+   "a network connection made by radio instead of by wire"
+  ],
+  "kind": "exact",
+  "mcAnswer": "a computer that waits for requests and answers them",
+  "q": "Your messages wait somewhere while your phone is off, held ready for you. What is a server?",
+  "rank": 3,
+  "teach": "From the lesson: a server is an ordinary computer running a program that waits politely.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A server is a computer that waits for requests and answers them, serving programs, pages, and files to the machines that ask.' Another way: the client asks, and the server's whole existence is answering.",
+  "walk": "Walk it through: (1) One role in a network conversation asks, and the other role answers. (2) The answering machine holds things ready, like your messages while your phone is off. (3) That machine is a server — a computer that waits for requests and answers them."
+ },
+ {
+  "accept": [
+   "scrambling a message so only the intended reader can read it"
+  ],
+  "answer": "scrambling a message with a secret key",
+  "choices": [
+   "scrambling a message with a secret key",
+   "translates the names people remember into the numbers machines use",
+   "a network connection made by radio instead of by wire",
+   "fishing with a lure"
+  ],
+  "kind": "exact",
+  "mcAnswer": "scrambling a message with a secret key",
+  "q": "Packets travel through machines owned by strangers. What is encryption?",
+  "rank": 3,
+  "teach": "From the lesson: the padlock sign means the conversation is scrambled in this way.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Encryption is scrambling a message with a secret key so that anyone who intercepts it sees only nonsense, and only the intended reader can unscramble it.' Another way: strangers may still copy your packets as they pass — what they copy is nonsense to them, and that is the point.",
+  "walk": "Walk it through: (1) On shared roads, anything sent can in principle be copied by strangers. (2) The defence is to make the copied thing unreadable without a secret. (3) That defence, encryption, is scrambling a message with a secret key."
+ },
+ {
+  "answer": 8,
+  "choices": [
+   "8",
+   "100",
+   "800",
+   "4"
+  ],
+  "kind": "number",
+  "mcAnswer": "8",
+  "q": "In the lesson's speed example, a file of 100 megabytes travels on a perfect connection of 100 megabits per second. How many seconds does it take?",
+  "rank": 3,
+  "teach": "From the lesson: count the file in bits, divide by the road in bits per second.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A file of 100 megabytes is 800 megabits of travelling, and on a perfect 100 megabit connection it would take 8 seconds to arrive.' Another way: eight hundred megabits of file, one hundred megabits a second — the division gives the seconds directly.",
+  "walk": "Walk it through: (1) The file is 100 megabytes, and a byte is 8 bits, so the file is 800 megabits. (2) The road carries 100 megabits per second. (3) 800 divided by 100 gives 8 seconds."
+ },
+ {
+  "answer": "A missing packet in a message is worth waiting for, so the checking protocol asks, and asks again, until every envelope has arrived.",
+  "choices": [
+   "A missing packet in a message is worth waiting for, so the checking protocol asks, and asks again, until every envelope has arrived.",
+   "it goes nowhere useful",
+   "nobody can find anybody",
+   "a late packet is a useless packet"
+  ],
+  "keywords": [
+   [
+    "packet",
+    "packets"
+   ],
+   [
+    "lost",
+    "missing",
+    "gap"
+   ],
+   [
+    "again",
+    "resent",
+    "copy"
+   ],
+   [
+    "congestion",
+    "latency",
+    "encryption"
+   ]
+  ],
+  "kind": "keywords",
+  "mcAnswer": "A missing packet in a message is worth waiting for, so the checking protocol asks, and asks again, until every envelope has arrived.",
+  "need": 3,
+  "q": "In your own words, describe what can go wrong when computers talk on a network, and explain how the system answers at least one of those problems.",
+  "rank": 3,
+  "teach": "From the lesson: the honest list — loss, crowding, silence, listeners, and liars.",
+  "teach2": "From the lesson, in Professor Kim's words: 'The checking protocol notices the gap in the sequence numbers, and the receiver asks for that packet again, and the sender sends another copy.' Another way to hold the whole list: the system expects loss and repairs it, expects crowding and queues through it, and answers listeners with scrambling.",
+  "walk": "Walk it through: (1) Name the failures the lesson lists: packets lost, roads congested with latency growing, machines silent, strangers listening, liars sending lures. (2) Pick one repair, such as loss: the sequence numbers reveal the gap. (3) In your own words: the receiver asks for that packet again, and the sender sends another copy."
+ }
+]

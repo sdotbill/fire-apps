@@ -1,0 +1,221 @@
+[
+ {
+  "accept": [
+   "the part that follows instructions"
+  ],
+  "answer": "the part of the computer that follows instructions",
+  "choices": [
+   "the part of the computer that follows instructions",
+   "the complete list of jobs a processor can be told to do",
+   "the clerk's note of which instruction comes next",
+   "a steady tick that keeps every step in time"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the part of the computer that follows instructions",
+  "q": "Professor Kim gives a definition of the processor to keep word for word. What is the processor?",
+  "rank": 1,
+  "teach": "From the lesson: the clerk at his desk is the picture to hold.",
+  "teach2": "From the lesson, in Professor Kim's words: 'The processor is the part of the computer that follows instructions, one after another, exactly as they are written.' Another way: other parts store things or carry things — this is the part that does the following of orders.",
+  "walk": "Walk it through: (1) The lesson introduces one working part above all others, the CPU. (2) Its job is stated in the definition the professor asks you to keep. (3) The processor is the part of the computer that follows instructions."
+ },
+ {
+  "answer": 3,
+  "choices": [
+   "3",
+   "4",
+   "8",
+   "3000000000"
+  ],
+  "kind": "number",
+  "mcAnswer": "3",
+  "q": "The processor's whole working life is one small repeating cycle. How many steps are in that cycle?",
+  "rank": 1,
+  "teach": "From the lesson: fetch, decode, execute — the heartbeat of every computer.",
+  "teach2": "From the lesson, in Professor Kim's words: 'His whole working life is one small cycle of 3 steps, repeated without pause.' Another way: getting the instruction, understanding it, and doing it — three steps, then back to the start.",
+  "walk": "Walk it through: (1) The lesson names the clerk's repeating cycle. (2) The steps are fetch, decode, and execute. (3) Count them and the cycle has 3 steps."
+ },
+ {
+  "accept": [
+   "fetch decode execute"
+  ],
+  "answer": "fetch, decode, execute",
+  "choices": [
+   "fetch, decode, execute",
+   "one after another",
+   "exactly as they are written",
+   "billions of times without a sigh"
+  ],
+  "kind": "exact",
+  "mcAnswer": "fetch, decode, execute",
+  "q": "What are the three steps of the processor's cycle, in order?",
+  "rank": 1,
+  "teach": "From the lesson: say them with the professor — the loop never changes.",
+  "teach2": "From the lesson, in Professor Kim's words: 'That loop is the heartbeat of every computer ever built, and we are going to take each step slowly.' Another way: the clerk fetches the instruction, decodes what it asks, and executes it — then starts again.",
+  "walk": "Walk it through: (1) The cycle begins by getting the next instruction, which is fetch. (2) Then the clerk works out what it asks, which is decode. (3) Then he does the job, which is execute — so the order is fetch, decode, execute."
+ },
+ {
+  "accept": [
+   "the clerk's note of which instruction comes next"
+  ],
+  "answer": "the clerk's note of which instruction comes next",
+  "choices": [
+   "the clerk's note of which instruction comes next",
+   "the complete list of jobs a processor can be told to do",
+   "the fastest storage in the whole machine",
+   "a steady tick that keeps every step in time"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the clerk's note of which instruction comes next",
+  "q": "What is the program counter, in the lesson's own picture of the clerk?",
+  "rank": 2,
+  "teach": "From the lesson: the clerk keeps a note of where he is in the row of instructions.",
+  "teach2": "From the lesson, in Professor Kim's words: 'The program counter is simply the clerk's note of which instruction comes next, the number of the pigeonhole he should visit.' Another way: lose that note and the clerk would not know where to fetch from next.",
+  "walk": "Walk it through: (1) Instructions live in a numbered row, and the clerk works through them in order. (2) He keeps one note so he never loses his place. (3) That note, recording which instruction comes next, is the program counter."
+ },
+ {
+  "accept": [
+   "one of the processor's own tiny storage slots"
+  ],
+  "answer": "the processor's own tiny storage slots",
+  "choices": [
+   "the processor's own tiny storage slots",
+   "a full working processor inside the processor",
+   "the number of the pigeonhole he should visit",
+   "one instruction in one second"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the processor's own tiny storage slots",
+  "q": "The lesson calls the numbers being worked on right now the top of the clerk's desk. What are registers?",
+  "rank": 2,
+  "teach": "From the lesson: registers are the fastest storage in the whole machine.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A register is one of the processor's own tiny storage slots, the fastest storage in the whole machine, sitting right where the work happens.' Another way: memory is the warehouse across town — a register is what is already in the clerk's hands.",
+  "walk": "Walk it through: (1) While executing, the clerk needs the numbers he is working on within instant reach. (2) The lesson gives those holding places a name and a location: on the processor itself. (3) Those tiny, fastest slots are the registers."
+ },
+ {
+  "answer": 3000000000,
+  "choices": [
+   "3000000000",
+   "3",
+   "4",
+   "8"
+  ],
+  "kind": "number",
+  "mcAnswer": "3000000000",
+  "q": "The lesson says a modern processor's clock ticks at around 3 gigahertz. How many times does that clock tick every second?",
+  "rank": 2,
+  "teach": "From the lesson: giga means billion, and the ticks are counted per second.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Giga means billion, so 3 gigahertz means the clock ticks 3000000000 times every second.' Another way: three billion ticks, packed into every single second the machine is running.",
+  "walk": "Walk it through: (1) Clock speed is measured in ticks per second. (2) The lesson gives the speed as 3 gigahertz, and giga means billion. (3) Three billion ticks per second is 3000000000."
+ },
+ {
+  "accept": [
+   "the complete list of jobs a processor can be told to do"
+  ],
+  "answer": "the complete list of jobs a processor can be told to do",
+  "choices": [
+   "the complete list of jobs a processor can be told to do",
+   "the clerk's note of which instruction comes next",
+   "the fastest storage in the whole machine",
+   "a full working processor inside the processor"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the complete list of jobs a processor can be told to do",
+  "q": "What is the instruction set of a processor?",
+  "rank": 2,
+  "teach": "From the lesson: the list is not long — adding, subtracting, comparing, copying, jumping.",
+  "teach2": "From the lesson, in Professor Kim's words: 'The instruction set is the complete list of jobs a processor can be told to do, and it is not long.' Another way: every program ever written is built by stringing together jobs from this one fixed list.",
+  "walk": "Walk it through: (1) The clerk can only do jobs he actually knows how to do. (2) Those jobs are fixed when the chip is built. (3) The full fixed list of them is the instruction set."
+ },
+ {
+  "answer": 8,
+  "choices": [
+   "8",
+   "3",
+   "4",
+   "3000000000"
+  ],
+  "kind": "number",
+  "mcAnswer": "8",
+  "q": "According to the lesson, how many cores do many phones today have?",
+  "rank": 3,
+  "teach": "From the lesson: a core is a whole extra clerk, not a faster one.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A core is a full working processor inside the processor, able to fetch, decode, and execute its own stream of instructions.' Another way: the lesson then counts the clerks in a typical modern phone, and the count is eight.",
+  "walk": "Walk it through: (1) Modern chips hold several complete clerks, each called a core. (2) The lesson gives the number found in many phones today. (3) That number is 8 cores."
+ },
+ {
+  "accept": [
+   "the answers coming out will be wrong"
+  ],
+  "answer": "the answers coming out will be wrong too",
+  "choices": [
+   "the answers coming out will be wrong too",
+   "the machine has not crashed in the sense of breaking",
+   "a faithful, endless errand",
+   "protecting himself from cooking"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the answers coming out will be wrong too",
+  "q": "The lesson teaches the saying garbage in, garbage out. If the instructions or numbers given to the machine are wrong, what does the saying promise about the results?",
+  "rank": 3,
+  "teach": "From the lesson: the clerk amplifies whatever he is given, wisdom or folly.",
+  "teach2": "From the lesson, in Professor Kim's words: 'It means that if the instructions or the numbers given to the machine are wrong, the answers coming out will be wrong too, no matter how fast or expensive the machine is.' Another way: speed cannot clean bad work — it only delivers the bad work faster.",
+  "walk": "Walk it through: (1) The clerk executes faithfully and never checks whether his orders are wise. (2) Wrong orders therefore produce their results exactly as written. (3) So garbage in promises that the answers coming out will be wrong too."
+ },
+ {
+  "accept": [
+   "the clerk looks at the code number"
+  ],
+  "answer": "the clerk looks at the code number",
+  "choices": [
+   "the clerk looks at the code number",
+   "the clerk gets the next instruction",
+   "takes seven and five and makes twelve",
+   "he updates his note to point at the next pigeonhole"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the clerk looks at the code number",
+  "q": "During the decode step of the cycle, what does the clerk actually do?",
+  "rank": 3,
+  "teach": "From the lesson: the instruction arrives as a number, and part of it names the job.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Decode is the moment the clerk looks at the code number and says, in effect, ah, this is an adding instruction, and these are the two numbers it wants me to add.' Another way: fetch brought the instruction to the desk — decode is the clerk reading it and recognising the job.",
+  "walk": "Walk it through: (1) The instruction arrives at the desk as a pattern of bits, a number. (2) Part of that number is a code naming the job to be done. (3) In decode, the clerk looks at the code number and works out what is being asked."
+ },
+ {
+  "answer": "Every computer has one, your phone has one, and by the end of this lesson you will know exactly what he does, how fast he does it, and why you must never, ever blame him for faithfully following a foolish instruction. He has no judgment.",
+  "choices": [
+   "Every computer has one, your phone has one, and by the end of this lesson you will know exactly what he does, how fast he does it, and why you must never, ever blame him for faithfully following a foolish instruction. He has no judgment.",
+   "the clerk never gets bored",
+   "he is simply tireless",
+   "same three steps"
+  ],
+  "keywords": [
+   [
+    "exactly",
+    "written",
+    "follows"
+   ],
+   [
+    "meant",
+    "meaning",
+    "judgment"
+   ],
+   [
+    "billion",
+    "fast"
+   ],
+   [
+    "mistake",
+    "wrong",
+    "garbage"
+   ]
+  ],
+  "kind": "keywords",
+  "mcAnswer": "Every computer has one, your phone has one, and by the end of this lesson you will know exactly what he does, how fast he does it, and why you must never, ever blame him for faithfully following a foolish instruction. He has no judgment.",
+  "need": 3,
+  "q": "In your own words, why does Professor Kim call the processor a very fast, very literal clerk? Explain both the fast part and the literal part in your own phrasing.",
+  "rank": 3,
+  "teach": "From the lesson: the title unpacked — very, fast, literal, clerk.",
+  "teach2": "From the lesson, in Professor Kim's words: 'He does exactly what the instruction says. Not what the instruction meant. Not what a sensible person would have understood. What it says.' Another way to hold the whole title: billions of faithful steps a second, and not one drop of judgment anywhere in him.",
+  "walk": "Walk it through: (1) The speed comes from the clock, ticking billions of times a second, far beyond any human worker. (2) The literal part means he follows the written instruction exactly, never the intention behind it. (3) Put together in your own words: a clerk who works at inhuman speed and obeys the letter of every order, mistakes included."
+ }
+]

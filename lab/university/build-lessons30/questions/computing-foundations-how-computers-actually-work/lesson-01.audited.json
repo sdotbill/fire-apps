@@ -1,0 +1,215 @@
+[
+ {
+  "accept": [
+   "a single choice between two values",
+   "one choice between zero and one"
+  ],
+  "answer": "one single choice between two values",
+  "choices": [
+   "one single choice between two values",
+   "a group of 8 bits",
+   "the push behind electricity",
+   "an agreed code"
+  ],
+  "kind": "exact",
+  "mcAnswer": "one single choice between two values",
+  "q": "Professor Kim defines the smallest piece of the whole story. What is a bit?",
+  "rank": 1,
+  "teach": "From the lesson: the bit is the ground floor of every computer.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A bit is one single choice between two values, and those two values are zero and one.' Another way to hold it: one bit answers one yes-or-no style question, and nothing smaller exists in a computer.",
+  "walk": "Walk it through: (1) The lesson starts at the smallest possible choice a machine can make. (2) That choice has exactly two possible values, zero and one. (3) One single choice between those two values is a bit."
+ },
+ {
+  "answer": 8,
+  "choices": [
+   "8",
+   "5",
+   "10",
+   "256"
+  ],
+  "kind": "number",
+  "mcAnswer": "8",
+  "q": "How many bits are there in one byte?",
+  "rank": 1,
+  "teach": "From the lesson: the byte is the standard bundle of bits.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A byte is a group of 8 bits, always eight, no exceptions. It is the standard bundle, the way a dozen is a standard bundle of twelve eggs.' Another way: bits travel in bundles of eight, and that bundle is the byte.",
+  "walk": "Walk it through: (1) The lesson gives the byte a fixed size that never changes. (2) That size is stated as a group of bits, always the same count. (3) The count is 8 bits in one byte."
+ },
+ {
+  "accept": [
+   "counting based on two"
+  ],
+  "answer": "based on two",
+  "choices": [
+   "based on two",
+   "based on ten",
+   "one single choice between two values",
+   "numbers standing for letters"
+  ],
+  "kind": "exact",
+  "mcAnswer": "based on two",
+  "q": "The lesson says the counting system a computer uses is called binary. What does the word binary mean?",
+  "rank": 1,
+  "teach": "From the lesson: decimal is based on ten, and binary is its two-symbol counterpart.",
+  "teach2": "From the lesson, in Professor Kim's words: 'That system is called binary, and the word binary simply means based on two.' Another way: where your counting uses ten symbols, the computer's counting uses two, and the name just says that.",
+  "walk": "Walk it through: (1) The lesson names the computer's two-symbol counting system binary. (2) It then defines the word itself, plainly. (3) Binary means the system is based on two."
+ },
+ {
+  "answer": 5,
+  "choices": [
+   "5",
+   "6",
+   "7",
+   "10"
+  ],
+  "kind": "number",
+  "mcAnswer": "5",
+  "q": "In the lesson's worked example, the binary number 101 is read by multiplying each digit by its place value and adding. What decimal number is 101 in binary?",
+  "rank": 2,
+  "teach": "From the lesson: places, multiply, add — the method never changes.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Five is written as 101, meaning one four, no twos, and one one.' Another way to check it: the ones in 101 sit over the fours place and the ones place, and four plus one is five.",
+  "walk": "Walk it through: (1) The places in 101 are four, two, and one, from the left. (2) One times four is four, zero times two is zero, and one times one is one. (3) Four plus zero plus one gives the answer, 5."
+ },
+ {
+  "answer": 31,
+  "choices": [
+   "31",
+   "32",
+   "16",
+   "255"
+  ],
+  "kind": "number",
+  "mcAnswer": "31",
+  "q": "When you count in binary on one hand, with each finger worth one, two, four, eight, and sixteen, what is the biggest number that one hand can hold?",
+  "rank": 2,
+  "teach": "From the lesson: your hand is a row of five bits.",
+  "teach2": "From the lesson, in Professor Kim's words: 'One hand, five fingers, and the biggest number it can hold is 31.' Another way: add every finger's value together — sixteen plus eight plus four plus two plus one — and the total is the biggest number.",
+  "walk": "Walk it through: (1) The biggest number comes when every finger is up. (2) The finger values are sixteen, eight, four, two, and one. (3) Adding them all gives 31."
+ },
+ {
+  "accept": [
+   "numbers to stand for other things",
+   "numbers standing for other things by an agreed code"
+  ],
+  "answer": "using numbers to stand for other things",
+  "choices": [
+   "using numbers to stand for other things",
+   "the push behind electricity",
+   "a group of 8 bits",
+   "one hand, five fingers"
+  ],
+  "kind": "exact",
+  "mcAnswer": "using numbers to stand for other things",
+  "q": "What does Professor Kim mean by the word representation in this lesson?",
+  "rank": 2,
+  "teach": "From the lesson: representation is the great trick that turns counting into letters and pictures.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Representation means using numbers to stand for other things, by an agreed code.' Another way: the number itself does not look like a letter or a colour — the shared agreement is what makes it stand for one.",
+  "walk": "Walk it through: (1) The lesson says counting alone only gives you numbers. (2) The turn in the road is giving those numbers a second job. (3) That second job, numbers standing for other things by agreement, is representation."
+ },
+ {
+  "answer": 65,
+  "choices": [
+   "65",
+   "66",
+   "67",
+   "97"
+  ],
+  "kind": "number",
+  "mcAnswer": "65",
+  "q": "In the ASCII code taught in the lesson, what number stands for the capital letter A?",
+  "rank": 2,
+  "teach": "From the lesson: in ASCII, every letter is given a number.",
+  "teach2": "From the lesson, in Professor Kim's words: 'In ASCII, every letter and every common symbol is given a number, and the machine stores the number and trusts the agreement.' Another way: the code gives capital A the first of the capital-letter numbers the lesson lists, and that number is sixty-five.",
+  "walk": "Walk it through: (1) ASCII is the agreed code that gives each letter a number. (2) The lesson lists the capitals in order: A, then B at sixty-six, then C at sixty-seven. (3) The number for capital A is 65."
+ },
+ {
+  "accept": [
+   "as three numbers",
+   "three numbers, one for red, one for green, and one for blue"
+  ],
+  "answer": "three numbers",
+  "choices": [
+   "three numbers",
+   "eight switches",
+   "two values",
+   "sixteen million colours"
+  ],
+  "kind": "exact",
+  "mcAnswer": "three numbers",
+  "q": "The colour of one pixel on a screen is stored in a particular way in the lesson. How is a pixel's colour stored?",
+  "rank": 2,
+  "teach": "From the lesson: a pixel is a tiny dot, and its colour is three bytes at work.",
+  "teach2": "From the lesson, in Professor Kim's words: 'The colour of each pixel is stored as three numbers, one for how much red is in it, one for how much green, and one for how much blue.' Another way: one number could only say how bright the dot is — three numbers can say what colour it is.",
+  "walk": "Walk it through: (1) A screen picture is made of tiny dots called pixels. (2) Each pixel's colour mixes red, green, and blue. (3) The lesson stores one number for each of the three, so a pixel's colour is three numbers."
+ },
+ {
+  "answer": 256,
+  "choices": [
+   "256",
+   "255",
+   "1024",
+   "32"
+  ],
+  "kind": "number",
+  "mcAnswer": "256",
+  "q": "How many different values can one byte hold?",
+  "rank": 3,
+  "teach": "From the lesson: eight switches, and the combinations multiply.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A byte holds 256 different values, the numbers from zero up to 255.' Another way: start at two values for one bit and double eight times, once per bit in the byte, and you land on two hundred and fifty-six.",
+  "walk": "Walk it through: (1) A byte has 8 bits, and each added bit doubles the values. (2) Doubling two eight times gives two hundred and fifty-six. (3) So one byte holds 256 different values."
+ },
+ {
+  "accept": [
+   "do this, if that"
+  ],
+  "answer": "do this if that",
+  "choices": [
+   "do this if that",
+   "numbers standing for letters",
+   "stored instructions",
+   "input and output"
+  ],
+  "kind": "exact",
+  "mcAnswer": "do this if that",
+  "q": "The lesson says conditional branching is one of the things added to counting to get a word processor. What does conditional branching mean, in the lesson's own plain words?",
+  "rank": 3,
+  "teach": "From the lesson: branching is the machine choosing its next step based on what it finds.",
+  "teach2": "From the lesson, in Professor Kim's words: 'You must add conditional branching, which means do this if that, the machine choosing its next step based on what it finds.' Another way: instead of marching straight ahead no matter what, the machine checks a condition and lets the answer pick the path.",
+  "walk": "Walk it through: (1) The worked answer lists four additions to counting, and branching is the third. (2) The lesson defines it in four plain words. (3) Conditional branching means: do this if that."
+ },
+ {
+  "answer": "representation, stored instructions, conditional branching, and input and output",
+  "choices": [
+   "Counting, plus representation, plus stored instructions, plus branching, plus input and output.",
+   "an enormous panel of switches",
+   "sixteen million colours",
+   "the numbers from zero up to 255"
+  ],
+  "keywords": [
+   [
+    "representation"
+   ],
+   [
+    "stored",
+    "instructions",
+    "program"
+   ],
+   [
+    "branching",
+    "conditional"
+   ],
+   [
+    "input",
+    "output"
+   ]
+  ],
+  "kind": "keywords",
+  "mcAnswer": "Counting, plus representation, plus stored instructions, plus branching, plus input and output.",
+  "need": 3,
+  "q": "In your own words, what four things must be added to counting before you get a word processor? Name the additions the lesson's worked answer gives, in your own phrasing.",
+  "rank": 3,
+  "teach": "From the lesson: the class's set problem, worked in full by the professor.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Counting gives you numbers. You must add representation, numbers standing for letters, colours, and sounds by agreed codes.' Another way to hold the whole answer: agreed codes for what numbers mean, instructions the machine keeps and fetches, choices based on conditions, and a way for the world to get in and out.",
+  "walk": "Walk it through: (1) Counting alone gives only numbers, so letters and pictures need representation. (2) The machine needs its instructions stored where it can fetch them, and it needs to branch when conditions differ. (3) The world needs a way in and a way out — so the four additions are representation, stored instructions, conditional branching, and input and output."
+ }
+]

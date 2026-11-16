@@ -1,0 +1,221 @@
+[
+ {
+  "accept": [
+   "instructions stored in memory that the processor follows"
+  ],
+  "answer": "a set of instructions stored in memory",
+  "choices": [
+   "a set of instructions stored in memory",
+   "a method for solving a problem",
+   "a named place in memory that holds a value",
+   "a named set of instructions that does one job"
+  ],
+  "kind": "exact",
+  "mcAnswer": "a set of instructions stored in memory",
+  "q": "Professor Kim gives a definition of a program to keep. What is a program?",
+  "rank": 1,
+  "teach": "From the lesson: written in advance, fetched and followed one by one.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A program is a set of instructions stored in memory, written in advance, that the processor fetches and follows one by one.' Another way: the clerk never invents his orders — a program is the orders, kept where he can fetch them.",
+  "walk": "Walk it through: (1) The clerk from lesson two follows instructions but does not write them. (2) The lesson names the thing that holds those written instructions. (3) A program is a set of instructions stored in memory."
+ },
+ {
+  "accept": [
+   "a method for solving a problem"
+  ],
+  "answer": "a method for solving a problem",
+  "choices": [
+   "a method for solving a problem",
+   "a set of instructions stored in memory",
+   "a named place in memory that holds a value",
+   "the program that runs the machine itself"
+  ],
+  "kind": "exact",
+  "mcAnswer": "a method for solving a problem",
+  "q": "Before a program can be written, something more basic has to exist. What is an algorithm?",
+  "rank": 1,
+  "teach": "From the lesson: a recipe is an algorithm a cook can follow.",
+  "teach2": "From the lesson, in Professor Kim's words: 'An algorithm is a method for solving a problem, written as a clear sequence of steps that always finishes and always gives the answer.' Another way: the clerk needs steps, the algorithm is steps — they were made for each other.",
+  "walk": "Walk it through: (1) The lesson separates the method from the machine's code for it. (2) The method must be a clear sequence of steps that finishes. (3) A method for solving a problem, stated that way, is an algorithm."
+ },
+ {
+  "answer": 15,
+  "choices": [
+   "15",
+   "13",
+   "4",
+   "9"
+  ],
+  "kind": "number",
+  "mcAnswer": "15",
+  "q": "In the lesson's worked program, the three prices are 4, 9, and 2 dollars. What total does the program finish with?",
+  "rank": 1,
+  "teach": "From the lesson: the running total is kept in a variable called total.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Total is now 15. Position becomes three. Jump back. Is position at the end now? Yes, three is past the last price.' Another way: four plus nine plus two, added one at a time by the loop, lands on fifteen.",
+  "walk": "Walk it through: (1) The loop adds each price to the running total in turn. (2) Four makes the total four, nine makes it thirteen, and two makes it fifteen. (3) The program finishes with the total 15."
+ },
+ {
+  "accept": [
+   "a named place in memory that holds a value"
+  ],
+  "answer": "a named place in memory that holds a value",
+  "choices": [
+   "a named place in memory that holds a value",
+   "a method for solving a problem",
+   "a set of instructions stored in memory",
+   "translates the human-written program as it runs"
+  ],
+  "kind": "exact",
+  "mcAnswer": "a named place in memory that holds a value",
+  "q": "The worked program keeps its running total in something called total. What is a variable?",
+  "rank": 2,
+  "teach": "From the lesson: a variable is a labelled box whose contents can change.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A variable is a named place in memory that holds a value, and the value can change as the program runs.' Another way: the name on the box stays fixed while the number inside it moves — that is the whole idea.",
+  "walk": "Walk it through: (1) The program refers to its total by a name, not by an address. (2) The number under that name changes as the loop runs. (3) A named place in memory that holds a value is a variable."
+ },
+ {
+  "answer": 7,
+  "choices": [
+   "7",
+   "3",
+   "15",
+   "13"
+  ],
+  "kind": "number",
+  "mcAnswer": "7",
+  "q": "How many instructions does the lesson's worked program have?",
+  "rank": 2,
+  "teach": "From the lesson: seven instructions containing variables, a loop, a test, and a branch.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Our worked program had 7 instructions. A small phone app might have a million instructions.' Another way: count them in the telling — set total, set position, test, add, advance, jump back, and finish.",
+  "walk": "Walk it through: (1) The lesson lists the program's instructions one by one before tracing them. (2) The recap of sizes at the end states the count directly. (3) The worked program has 7 instructions."
+ },
+ {
+  "accept": [
+   "translates the whole program into machine code before it runs"
+  ],
+  "answer": "translates the whole of a human-written program into machine code",
+  "choices": [
+   "translates the whole of a human-written program into machine code",
+   "translates the human-written program as it runs",
+   "runs the machine itself",
+   "does one job and can be used again and again"
+  ],
+  "kind": "exact",
+  "mcAnswer": "translates the whole of a human-written program into machine code",
+  "q": "What does a compiler do?",
+  "rank": 2,
+  "teach": "From the lesson: the whole book, translated cover to cover, before any of it runs.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A compiler is a program that translates the whole of a human-written program into machine code before any of it runs.' Another way: with a compiler, the translating is finished first, and only the translation ever meets the clerk.",
+  "walk": "Walk it through: (1) People write in a programming language, and the clerk reads only machine code, so translation must happen. (2) One kind of translator does the whole job in advance. (3) That translator, the compiler, translates the whole program into machine code before any of it runs."
+ },
+ {
+  "accept": [
+   "a calculator"
+  ],
+  "answer": "a calculator",
+  "choices": [
+   "a calculator",
+   "the filing cabinet",
+   "the desk",
+   "machine code"
+  ],
+  "kind": "exact",
+  "mcAnswer": "a calculator",
+  "q": "The lesson says the stored program idea is what separates a computer from one simpler machine. Which machine?",
+  "rank": 2,
+  "teach": "From the lesson: that machine's instructions are built into its wiring.",
+  "teach2": "From the lesson, in Professor Kim's words: 'This is called the stored program idea, and it is what separates a computer from a calculator.' Another way: a calculator can only ever do the jobs it was born doing, because its instructions cannot arrive as data.",
+  "walk": "Walk it through: (1) In a computer, instructions arrive as data and can be changed freely. (2) The lesson contrasts this with a machine whose instructions are fixed in its wiring. (3) That fixed-instruction machine is a calculator."
+ },
+ {
+  "accept": [
+   "the program that runs the machine itself"
+  ],
+  "answer": "the program that runs the machine itself",
+  "choices": [
+   "the program that runs the machine itself",
+   "a program that translates the whole of a human-written program",
+   "a named set of instructions that does one job",
+   "a clear sequence of steps"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the program that runs the machine itself",
+  "q": "What is the operating system?",
+  "rank": 3,
+  "teach": "From the lesson: Android, iOS, and Windows are operating systems — and they are programs.",
+  "teach2": "From the lesson, in Professor Kim's words: 'The operating system is the program that runs the machine itself, deciding which programs get the clerk, the desk, and the cabinet, and when.' Another way: every other program asks it for time, space, and saving — it is the manager of the whole machine.",
+  "walk": "Walk it through: (1) Many programs share one clerk, one desk, and one cabinet. (2) Something must decide who gets what, and when. (3) The program with that managing job is the operating system — the program that runs the machine itself."
+ },
+ {
+  "accept": [
+   "a mistake in the instructions"
+  ],
+  "answer": "a mistake in the instructions",
+  "choices": [
+   "a mistake in the instructions",
+   "a method for solving a problem",
+   "a named place in memory",
+   "instructions all the way down"
+  ],
+  "kind": "exact",
+  "mcAnswer": "a mistake in the instructions",
+  "q": "What is a bug, in the lesson's exact sense of the word?",
+  "rank": 3,
+  "teach": "From the lesson: the clerk executes a buggy instruction with perfect fidelity.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A bug is a mistake in the instructions, a place where the program says something other than what its writer meant.' Another way: the machine is rarely broken when a bug bites — the orders were wrong, and the clerk obeyed them beautifully.",
+  "walk": "Walk it through: (1) The clerk does exactly what the program says, never what it meant. (2) So when the program says something other than what its writer meant, the result goes wrong. (3) That place in the instructions is a bug — a mistake in the instructions."
+ },
+ {
+  "answer": 13,
+  "choices": [
+   "13",
+   "15",
+   "4",
+   "7"
+  ],
+  "kind": "number",
+  "mcAnswer": "13",
+  "q": "In the trace of the worked program, what is the running total after the second price has been added?",
+  "rank": 3,
+  "teach": "From the lesson: trace it in order — four first, then nine.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Add the price at position one, which is 9. Total is now 13. Position becomes two. Jump back.' Another way: the first price made the total four, and adding the second price, nine, brings it to thirteen.",
+  "walk": "Walk it through: (1) The total starts at zero and the first price, four, makes it four. (2) The loop goes back and adds the second price, nine. (3) Four plus nine means the running total is 13."
+ },
+ {
+  "answer": "you can change what the machine is, entirely, by changing what is stored in its memory",
+  "choices": [
+   "you can change what the machine is, entirely, by changing what is stored in its memory",
+   "the hardware does not change at all",
+   "new instructions, carried to the cabinet",
+   "the clerk noticed nothing"
+  ],
+  "keywords": [
+   [
+    "instructions",
+    "program"
+   ],
+   [
+    "stored",
+    "memory",
+    "data"
+   ],
+   [
+    "load",
+    "changing",
+    "change"
+   ],
+   [
+    "same",
+    "hardware",
+    "machine"
+   ]
+  ],
+  "kind": "keywords",
+  "mcAnswer": "you can change what the machine is, entirely, by changing what is stored in its memory",
+  "need": 3,
+  "q": "In your own words, explain the stored program idea, and why it lets one and the same machine become a camera, a map, or an office.",
+  "rank": 3,
+  "teach": "From the lesson: instructions are data — the beam the whole building rests on.",
+  "teach2": "From the lesson, in Professor Kim's words: 'This is called the stored program idea, and it is what separates a computer from a calculator.' Another way to hold it: because the orders live in memory as changeable data, swapping the orders swaps the machine, while every wire stays exactly where it was.",
+  "walk": "Walk it through: (1) The idea is that instructions are stored in memory as data, in the same bytes as the numbers. (2) Data can be replaced, so the stored instructions can be replaced. (3) In your own words: load different instructions and the same hardware becomes a different machine."
+ }
+]

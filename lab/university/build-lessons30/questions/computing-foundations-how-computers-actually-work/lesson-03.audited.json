@@ -1,0 +1,219 @@
+[
+ {
+  "accept": [
+   "the desk"
+  ],
+  "answer": "the computer's desk",
+  "choices": [
+   "the computer's desk",
+   "the filing cabinet",
+   "the processor's private shelf",
+   "extra desk space"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the computer's desk",
+  "q": "In the lesson's central picture, what is memory compared to?",
+  "rank": 1,
+  "teach": "From the lesson: every worker needs a desk for today's work.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Memory is the computer's desk, fast and close, where the work in progress sits, and everything on it vanishes when the power goes.' Another way: memory is not where things are kept — it is where things are being worked on.",
+  "walk": "Walk it through: (1) The lesson pictures the processor as a clerk who needs two kinds of space. (2) The space right in front of him, for work in progress, is the desk. (3) That desk is memory."
+ },
+ {
+  "accept": [
+   "the cabinet"
+  ],
+  "answer": "the filing cabinet",
+  "choices": [
+   "the filing cabinet",
+   "the computer's desk",
+   "the processor's private shelf",
+   "a full terabyte"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the filing cabinet",
+  "q": "In the same picture, what is storage compared to?",
+  "rank": 1,
+  "teach": "From the lesson: the cabinet keeps far more than any desk could hold.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Storage is the filing cabinet, slower and far bigger, where things are kept when nobody is working on them, and it keeps them through the dark.' Another way: the desk is for working, and the cabinet is for keeping.",
+  "walk": "Walk it through: (1) The clerk's second kind of space holds records he is not using today, in far greater quantity. (2) That space sits across the room from the desk. (3) That keeping space, the filing cabinet, is storage."
+ },
+ {
+  "answer": 1024,
+  "choices": [
+   "1024",
+   "1048576",
+   "8192",
+   "2048"
+  ],
+  "kind": "number",
+  "mcAnswer": "1024",
+  "q": "Counting the strict way, the way the machine counts, how many bytes are in 1 kilobyte?",
+  "rank": 1,
+  "teach": "From the lesson: the bundles run 1024 at a time, because of lesson one's doubling.",
+  "teach2": "From the lesson, in Professor Kim's words: '1 kilobyte is 1024 bytes. 1 megabyte is 1024 kilobytes, which is 1048576 bytes.' Another way: each bundle is the one below it, multiplied by the power of two nearest a thousand.",
+  "walk": "Walk it through: (1) The lesson counts byte bundles the strict way, in powers of two. (2) The bundle number is two doubled ten times. (3) So 1 kilobyte is 1024 bytes."
+ },
+ {
+  "accept": [
+   "disappears when the power goes"
+  ],
+  "answer": "it disappears when the power goes",
+  "choices": [
+   "it disappears when the power goes",
+   "it does not disappear when the power goes",
+   "keeps them through the dark",
+   "the work in progress sits"
+  ],
+  "kind": "exact",
+  "mcAnswer": "it disappears when the power goes",
+  "q": "The lesson calls memory volatile. What does it mean for something to be volatile?",
+  "rank": 2,
+  "teach": "From the lesson: the desk forgets the moment the power stops.",
+  "teach2": "From the lesson, in Professor Kim's words: 'The technical word for this behaviour is volatile. A thing is volatile if it disappears when the power goes. Memory is volatile.' Another way: volatile things are kept alive by power, and power is the only thing keeping them.",
+  "walk": "Walk it through: (1) Memory holds its bits as patterns that power must keep alive. (2) The lesson gives this behaviour a technical name. (3) Volatile means it disappears when the power goes."
+ },
+ {
+  "answer": 8,
+  "choices": [
+   "8",
+   "16",
+   "32",
+   "128"
+  ],
+  "kind": "number",
+  "mcAnswer": "8",
+  "q": "The lesson gives a typical size for the memory in a modern phone. How many gigabytes of memory does a typical modern phone have?",
+  "rank": 2,
+  "teach": "From the lesson: the desk is measured in gigabytes, and it is much smaller than the cabinet.",
+  "teach2": "From the lesson, in Professor Kim's words: 'A typical modern phone has 8 gigabytes of memory. Eight billion bytes, give or take, spread out on the desk.' Another way: the desk's number is the small one on the box — the cabinet's number is the big one.",
+  "walk": "Walk it through: (1) The lesson sizes the desk in a typical modern phone. (2) It states the size plainly, in gigabytes. (3) A typical modern phone has 8 gigabytes of memory."
+ },
+ {
+  "accept": [
+   "carry finished work from the desk back to the cabinet"
+  ],
+  "answer": "carry this finished work from the desk back to the cabinet",
+  "choices": [
+   "carry this finished work from the desk back to the cabinet",
+   "reach any spot on the desk directly",
+   "using a corner of the cabinet as if it were extra desk space",
+   "copies of the instructions and numbers the clerk is most likely to need next"
+  ],
+  "kind": "exact",
+  "mcAnswer": "carry this finished work from the desk back to the cabinet",
+  "q": "What does pressing save actually do, according to the lesson?",
+  "rank": 2,
+  "teach": "From the lesson: save is the walk across the room.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Save means, carry this finished work from the desk back to the cabinet and write it there.' Another way: until that walk happens, your work lives only on the desk that forgets.",
+  "walk": "Walk it through: (1) Editing happens on the desk, in memory, at full speed. (2) The desk is volatile, so the work is not safe there. (3) Save carries the finished work from the desk back to the cabinet, which is storage."
+ },
+ {
+  "answer": 2048,
+  "choices": [
+   "2048",
+   "8192",
+   "1024",
+   "4"
+  ],
+  "kind": "number",
+  "mcAnswer": "2048",
+  "q": "In the lesson's guided arithmetic, a phone has 8 gigabytes of free storage and each photograph takes about 4 megabytes. How many more photographs can the phone hold?",
+  "rank": 2,
+  "teach": "From the lesson: turn the free space into the same units, then divide by the size of one item.",
+  "teach2": "From the lesson, in Professor Kim's words: '8192 divided by 4 is 2048. Your phone can hold about 2048 more photographs.' Another way: the method matters more than the answer — same units first, then one division.",
+  "walk": "Walk it through: (1) 8 gigabytes is 8 times 1024 megabytes, which is 8192 megabytes. (2) Each photograph takes 4 megabytes. (3) 8192 divided by 4 gives 2048 photographs."
+ },
+ {
+  "accept": [
+   "the processor's private shelf"
+  ],
+  "answer": "the processor's private shelf",
+  "choices": [
+   "the processor's private shelf",
+   "the computer's desk",
+   "the filing cabinet",
+   "a corner of the cabinet"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the processor's private shelf",
+  "q": "The lesson adds one more store between the registers and the desk, called the cache. What is the cache compared to?",
+  "rank": 3,
+  "teach": "From the lesson: the cache keeps what the clerk is most likely to need next.",
+  "teach2": "From the lesson, in Professor Kim's words: 'The cache is the processor's private shelf, a small fast store that keeps copies of the instructions and numbers the clerk is most likely to need next, so he does not have to reach even as far as the desk.' Another way: the shelf is closer than the desk, smaller than the desk, and stocked by guessing well.",
+  "walk": "Walk it through: (1) The ladder runs registers, then a small fast store, then memory, then storage. (2) That small fast store sits inside the processor itself. (3) The lesson pictures it as the processor's private shelf — the cache."
+ },
+ {
+  "accept": [
+   "using part of storage as extra memory"
+  ],
+  "answer": "using a corner of the cabinet as if it were extra desk space",
+  "choices": [
+   "using a corner of the cabinet as if it were extra desk space",
+   "everything on it vanishes when the power goes",
+   "keeps copies of the instructions and numbers the clerk is most likely to need next",
+   "the program that runs the machine itself"
+  ],
+  "kind": "exact",
+  "mcAnswer": "using a corner of the cabinet as if it were extra desk space",
+  "q": "When memory fills completely, the machine uses a trick called swap. What is swap?",
+  "rank": 3,
+  "teach": "From the lesson: swap works, but the walk to the cabinet makes everything feel like wading.",
+  "teach2": "From the lesson, in Professor Kim's words: 'When memory fills completely, the machine begins using a corner of the cabinet as if it were extra desk space, carrying papers back and forth between the real desk and the cabinet as the clerk needs them.' Another way: the job still gets done, but the clerk spends his day on the stairs.",
+  "walk": "Walk it through: (1) Swap begins when the desk, memory, is completely full. (2) The machine still needs somewhere to put work in progress. (3) It uses a corner of the cabinet, storage, as if it were extra desk space — that is swap."
+ },
+ {
+  "answer": 8192,
+  "choices": [
+   "8192",
+   "2048",
+   "1024",
+   "1048576"
+  ],
+  "kind": "number",
+  "mcAnswer": "8192",
+  "q": "In the same guided arithmetic, the first step turns 8 gigabytes into megabytes. How many megabytes is 8 gigabytes?",
+  "rank": 3,
+  "teach": "From the lesson: one gigabyte is 1024 megabytes, so multiply.",
+  "teach2": "From the lesson, in Professor Kim's words: 'One gigabyte is 1024 megabytes, so 8 gigabytes is 8 times 1024, which is 8192 megabytes.' Another way: eight bundles, each holding 1024 of the smaller bundle.",
+  "walk": "Walk it through: (1) The conversion rate is 1024 megabytes in one gigabyte. (2) For 8 gigabytes, multiply 8 by 1024. (3) The result is 8192 megabytes."
+ },
+ {
+  "answer": "Fifth, storage is non-volatile, holding its bits through years without power, in flash chips or on magnetic discs.",
+  "choices": [
+   "Fifth, storage is non-volatile, holding its bits through years without power, in flash chips or on magnetic discs.",
+   "keeps them through the dark",
+   "small and fast at the top",
+   "huge and slow at the bottom"
+  ],
+  "keywords": [
+   [
+    "desk",
+    "memory",
+    "ram"
+   ],
+   [
+    "cabinet",
+    "storage"
+   ],
+   [
+    "volatile",
+    "vanishes",
+    "disappears"
+   ],
+   [
+    "non-volatile",
+    "keeps",
+    "survives",
+    "dark"
+   ]
+  ],
+  "kind": "keywords",
+  "mcAnswer": "Fifth, storage is non-volatile, holding its bits through years without power, in flash chips or on magnetic discs.",
+  "need": 3,
+  "q": "In your own words, what is the difference between memory and storage? Cover where each one sits in the lesson's picture, and what happens to each one when the power goes.",
+  "rank": 3,
+  "teach": "From the lesson: two kinds of space, two different fates when the lights go out.",
+  "teach2": "From the lesson, in Professor Kim's words: 'Memory is the computer's desk, fast and close, where the work in progress sits, and everything on it vanishes when the power goes.' Another way to hold the pair: the desk is fast and forgetful, the cabinet is slower and faithful, and a good machine needs both.",
+  "walk": "Walk it through: (1) Memory is the desk — fast, close, holding work in progress, and volatile, so it vanishes without power. (2) Storage is the filing cabinet — slower, far bigger, and non-volatile, so it keeps things through the dark. (3) In your own words, a full answer names both spaces and both fates."
+ }
+]

@@ -1,0 +1,231 @@
+[
+ {
+  "accept": [
+   "a defined ability the model can call on",
+   "a defined ability with a clear input and a clear output"
+  ],
+  "answer": "a defined ability the model can call on, with a clear input and a clear output, that reaches outside the conversation",
+  "choices": [
+   "a defined ability the model can call on, with a clear input and a clear output, that reaches outside the conversation",
+   "only talks about your inbox",
+   "producing more words about those things",
+   "doing stuff with email"
+  ],
+  "kind": "exact",
+  "mcAnswer": "a defined ability the model can call on, with a clear input and a clear output, that reaches outside the conversation",
+  "q": "What is a tool, as the lesson defines it in plain words?",
+  "rank": 1,
+  "teach": "From the lesson: talking about your inbox is not a tool; touching it through a defined ability is.",
+  "teach2": "\"A tool is a defined ability the model can call on, with a clear input and a clear output, that reaches outside the conversation.\" So a tool is judged by its reach into a real system, not by how knowledgeably the model talks.",
+  "walk": "Walk it through step by step: (1) the lesson defines the term word by word. (2) The ability must be specific, with a clear input and output. (3) It must reach a real system, so that full definition is the answer."
+ },
+ {
+  "accept": [
+   "the boundary of its world"
+  ],
+  "answer": "the boundary of its world",
+  "choices": [
+   "the boundary of its world",
+   "the gentlest rung",
+   "what is within reach",
+   "a clear input and a clear output"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the boundary of its world",
+  "q": "The lesson says the set of tools connected to an agent is what, for that agent?",
+  "rank": 1,
+  "teach": "From the lesson: if no calendar tool is connected, the agent cannot see your calendar, no matter how intelligent the model is.",
+  "teach2": "\"The set of tools connected to an agent is the boundary of its world. If no calendar tool is connected, the agent cannot see your calendar, full stop\" That is why two agents on the same model can differ so much: same mind, different hands.",
+  "walk": "Walk it through step by step: (1) the lesson uses the picture of hands and reach. (2) Hands can only touch what is within reach. (3) So the connected tools form the boundary of its world, and that is the answer."
+ },
+ {
+  "accept": [
+   "Search finds. Reading opens.",
+   "search finds and reading opens"
+  ],
+  "answer": "Search finds. Reading opens.",
+  "choices": [
+   "Search finds. Reading opens.",
+   "Judgment decides. Code executes exactly.",
+   "Read, draft, send.",
+   "Decide, reach, read."
+  ],
+  "kind": "exact",
+  "mcAnswer": "Search finds. Reading opens.",
+  "q": "How does the lesson sum up the difference between a search tool and a reading tool?",
+  "rank": 1,
+  "teach": "From the lesson: when the agent does not yet know where something is, it searches; when it knows exactly what it needs, it reads.",
+  "teach2": "\"When Dave does not yet know where something is, he searches. When he knows exactly which message or file he needs, he reads.\" A good agent searches before it guesses, so the specific fact gets read instead of estimated.",
+  "walk": "Walk it through step by step: (1) the lesson covers the first family, reading and searching. (2) It draws a small distinction between them. (3) Finding comes first, opening comes second, so the answer is Search finds. Reading opens."
+ },
+ {
+  "accept": [
+   "decide, reach, read",
+   "Decide, reach, read."
+  ],
+  "answer": "Decide, reach, read.",
+  "choices": [
+   "Decide, reach, read.",
+   "Read, draft, send.",
+   "Search finds. Reading opens.",
+   "Inform, prepare, commit."
+  ],
+  "kind": "exact",
+  "mcAnswer": "Decide, reach, read.",
+  "q": "What three-step rhythm does the lesson say repeats for every tool use?",
+  "rank": 2,
+  "teach": "From the lesson: the model decides a tool is needed, the tool does the reaching, and the model reads the result.",
+  "teach2": "\"Decide, reach, read. Decide, reach, read. That rhythm repeats for every step of every job an agent ever does for you.\" Once you hear that rhythm, you can follow any piece of agent work step by step.",
+  "walk": "Walk it through step by step: (1) the lesson explains the mechanic underneath tool use. (2) Three things happen in order. (3) They are decide, reach, read, so that is the answer."
+ },
+ {
+  "accept": [
+   "the tool never decides",
+   "The tool never decides."
+  ],
+  "answer": "The tool never decides.",
+  "choices": [
+   "The tool never decides.",
+   "The model always decides",
+   "The tool reaches and returns",
+   "deciding is where errors are born"
+  ],
+  "kind": "exact",
+  "mcAnswer": "The tool never decides.",
+  "q": "Which statement does the lesson make about tools and deciding?",
+  "rank": 2,
+  "teach": "From the lesson: the model always decides, and deciding is where errors are born.",
+  "teach2": "\"The tool never decides. The tool reaches and returns, faithfully and without opinion. The model always decides\" So when work goes wrong, look first at the choosing and the reading, not at the reaching.",
+  "walk": "Walk it through step by step: (1) the lesson separates reaching from deciding. (2) Reaching is faithful and without opinion. (3) Deciding belongs to the model alone, so the answer is The tool never decides."
+ },
+ {
+  "accept": [
+   "it cannot be unsent",
+   "a sent message cannot be unsent"
+  ],
+  "answer": "it cannot be unsent",
+  "choices": [
+   "it cannot be unsent",
+   "Reading changes nothing in the world",
+   "Reading is the gentlest rung",
+   "drafting is still safe"
+  ],
+  "kind": "exact",
+  "mcAnswer": "it cannot be unsent",
+  "q": "Why does the lesson say sending is different in kind from reading and drafting?",
+  "rank": 2,
+  "teach": "From the lesson: reading only informs, and a draft has gone nowhere and promised nothing, but sending commits you.",
+  "teach2": "\"A sent message speaks in your name to another person, and it cannot be unsent.\" That is why sending sits at the top of the ladder of seriousness while drafting stays safely in your control.",
+  "walk": "Walk it through step by step: (1) the lesson builds a ladder, read, draft, send. (2) The lower rungs are reversible. (3) The top rung cannot be taken back, so the answer is it cannot be unsent."
+ },
+ {
+  "accept": [
+   "Code executes exactly.",
+   "code executes exactly"
+  ],
+  "answer": "Code executes exactly.",
+  "choices": [
+   "Code executes exactly.",
+   "The model judges what should be done and why",
+   "searches before it guesses",
+   "holds it for your approval"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Code executes exactly.",
+  "q": "In the lesson's division of labour, what does code do?",
+  "rank": 2,
+  "teach": "From the lesson: counting and repeating the same exact operation many times are jobs for code, because they punish vagueness.",
+  "teach2": "\"The model judges what should be done and why. The code carries out the parts that must be exact.\" Judgment decides, and code performs the exact parts without fatigue or drift.",
+  "walk": "Walk it through step by step: (1) the lesson asks why an agent needs a code tool at all. (2) Some jobs, like counting, must be exact. (3) Exact execution is code's part, so the answer is Code executes exactly."
+ },
+ {
+  "accept": [
+   "Intelligence does not stretch reach.",
+   "intelligence does not stretch reach"
+  ],
+  "answer": "Intelligence does not stretch reach.",
+  "choices": [
+   "Intelligence does not stretch reach.",
+   "more tools is not automatically better",
+   "Tools can fail, quietly or loudly",
+   "Same mind, different hands"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Intelligence does not stretch reach.",
+  "q": "What does the lesson say about intelligence and an agent's reach?",
+  "rank": 3,
+  "teach": "From the lesson: an agent with no sending tool connected can draft forever and never send a thing.",
+  "teach2": "\"Intelligence does not stretch reach. This is why two agents built on the very same model can be wildly different in usefulness.\" Smartness lives in the model, but usefulness lives in the hands it was given.",
+  "walk": "Walk it through step by step: (1) the lesson warns against judging an agent by how smart it sounds. (2) Reach is fixed by the tools connected. (3) No amount of cleverness extends it, so the answer is Intelligence does not stretch reach."
+ },
+ {
+  "accept": [
+   "Absence of evidence, gathered lazily, is not evidence of absence.",
+   "absence of evidence is not evidence of absence"
+  ],
+  "answer": "Absence of evidence, gathered lazily, is not evidence of absence.",
+  "choices": [
+   "Absence of evidence, gathered lazily, is not evidence of absence.",
+   "a badly worded search can miss the very message that mattered",
+   "the specific fact was sitting in your own records waiting to be read",
+   "nothing found after one lazy look"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Absence of evidence, gathered lazily, is not evidence of absence.",
+  "q": "What caution does the lesson give about an agent reporting that a search found nothing?",
+  "rank": 3,
+  "teach": "From the lesson: a badly worded search can miss the very message that mattered, sitting there under different wording.",
+  "teach2": "\"Absence of evidence, gathered lazily, is not evidence of absence.\" Good agents search more than one way before concluding something is not there.",
+  "walk": "Walk it through step by step: (1) the lesson notes that a search returns only what matched the words used. (2) Different wording can hide the key message. (3) So a lazy empty result proves nothing, and that caution is the answer."
+ },
+ {
+  "accept": [
+   "Facts before drafts. Checks before promises. Approval before sending.",
+   "facts before drafts, checks before promises, approval before sending"
+  ],
+  "answer": "Facts before drafts. Checks before promises. Approval before sending.",
+  "choices": [
+   "Facts before drafts. Checks before promises. Approval before sending.",
+   "Decide, reach, read.",
+   "Read, draft, send.",
+   "Inform, prepare, commit."
+  ],
+  "kind": "exact",
+  "mcAnswer": "Facts before drafts. Checks before promises. Approval before sending.",
+  "q": "What order does the lesson teach for briefing an agent well, so the tools fall into line?",
+  "rank": 3,
+  "teach": "From the lesson: you do not need the machinery's vocabulary; you need to think in the order good work naturally follows.",
+  "teach2": "\"Facts before drafts. Checks before promises. Approval before sending.\" Speak your briefs in that order and the tools fall into line behind your thinking, because your thinking was already the shape of the work.",
+  "walk": "Walk it through step by step: (1) the lesson compares a foggy brief with a clear one. (2) The clear brief reads first, checks second, drafts last, sends not at all. (3) Summed up, that order is facts before drafts, checks before promises, approval before sending."
+ },
+ {
+  "keywords": [
+   [
+    "reading",
+    "read",
+    "search"
+   ],
+   [
+    "calendar",
+    "file",
+    "record"
+   ],
+   [
+    "draft"
+   ],
+   [
+    "approval",
+    "approve",
+    "stop",
+    "hold"
+   ]
+  ],
+  "kind": "keywords",
+  "need": 3,
+  "q": "In your own words, take one real job you give Dave and walk it through the tools: what gets read or searched first, what gets checked, what gets drafted, and where does the work stop for your approval?",
+  "rank": 3,
+  "teach": "From the lesson: the worked example checks the message, the record, and the calendar before any draft is written.",
+  "teach2": "\"First, a reading tool opens the customer's actual message, so the reply answers what was truly asked, not what a similar customer asked last month.\" Build your answer the same way: reaches in order, checks before promises, and the stop at approval before anything is sent.",
+  "walk": "Walk it through step by step: (1) name the job and the first reach, reading or searching. (2) name what gets checked, like the calendar or the files. (3) end with the draft held for approval, so the answer is your job walked through decide, reach, read."
+ }
+]

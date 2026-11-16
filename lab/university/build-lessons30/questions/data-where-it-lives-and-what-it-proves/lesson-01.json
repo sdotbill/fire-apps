@@ -1,0 +1,228 @@
+[
+ {
+  "q": "What does Professor Korhonen say data is, in his opening definition?",
+  "kind": "exact",
+  "answer": "recorded observations",
+  "accept": [
+   "recorded observation"
+  ],
+  "choices": [
+   "recorded observations",
+   "random variation",
+   "a thing given",
+   "a poor storage device"
+  ],
+  "mcAnswer": "recorded observations",
+  "rank": 1,
+  "_quote": "First, what data is: recorded observations, written down in a form you can check later.",
+  "_angle": "Data is what was noticed and written down so that someone else can check it later.",
+  "walk": "Walk it through: (1) The lesson opens by defining its central word before any opinions. (2) The definition has two parts: something was observed, and it was recorded where it can be checked. (3) So data is recorded observations.",
+  "teach2": "First, what data is: recorded observations, written down in a form you can check later. Data is what was noticed and written down so that someone else can check it later.",
+  "teach": "From the lesson: Data is what was noticed and written down so that someone else can check it later."
+ },
+ {
+  "q": "In the email example, forty-two customers were emailed and thirty-one opened the message. How many booked a call, in the lesson's own words?",
+  "kind": "exact",
+  "answer": "nine",
+  "accept": [],
+  "choices": [
+   "nine",
+   "thirty-one",
+   "forty-two",
+   "one hundred"
+  ],
+  "mcAnswer": "nine",
+  "rank": 1,
+  "_quote": "Now suppose the owner shows you a list: forty-two customers were emailed last Tuesday, thirty-one opened the message, and nine booked a call.",
+  "_angle": "The three counts were forty-two emailed, thirty-one opened, and nine who booked a call.",
+  "walk": "Walk it through: (1) The example gives three counts: forty-two emailed and thirty-one opened. (2) The third count is the smallest one, the bookings. (3) In the lesson's words, that count is nine.",
+  "teach2": "Now suppose the owner shows you a list: forty-two customers were emailed last Tuesday, thirty-one opened the message, and nine booked a call. The three counts were forty-two emailed, thirty-one opened, and nine who booked a call.",
+  "teach": "From the lesson: The three counts were forty-two emailed, thirty-one opened, and nine who booked a call."
+ },
+ {
+  "q": "What does the word noise mean in this class?",
+  "kind": "exact",
+  "answer": "random variation",
+  "accept": [],
+  "choices": [
+   "random variation",
+   "a real pattern",
+   "recorded observations",
+   "a thing given"
+  ],
+  "mcAnswer": "random variation",
+  "rank": 1,
+  "_quote": "Noise, in this class, means random variation: the ups and downs that happen for no meaningful reason.",
+  "_angle": "Noise is the ups and downs that happen for no meaningful reason, not a real pattern.",
+  "walk": "Walk it through: (1) The lesson defines noise before using it against confident claims. (2) It is not a real pattern and not a record. (3) Noise means random variation.",
+  "teach2": "Noise, in this class, means random variation: the ups and downs that happen for no meaningful reason. Noise is the ups and downs that happen for no meaningful reason, not a real pattern.",
+  "teach": "From the lesson: Noise is the ups and downs that happen for no meaningful reason, not a real pattern."
+ },
+ {
+  "q": "What is a metric, as the lesson defines it?",
+  "kind": "exact",
+  "answer": "a number chosen to stand for something you care about",
+  "accept": [],
+  "choices": [
+   "a number chosen to stand for something you care about",
+   "a statement offered as true",
+   "a single story about a single case",
+   "a real pattern"
+  ],
+  "mcAnswer": "a number chosen to stand for something you care about",
+  "rank": 2,
+  "_quote": "A metric is a number chosen to stand for something you care about.",
+  "_angle": "A metric stands in for something like interest or sales; it is not the thing itself.",
+  "walk": "Walk it through: (1) Clicks and revenue are given as examples of metrics. (2) Each one stands for something else, such as interest or sales. (3) So a metric is a number chosen to stand for something you care about.",
+  "teach2": "A metric is a number chosen to stand for something you care about. A metric stands in for something like interest or sales; it is not the thing itself.",
+  "teach": "From the lesson: A metric stands in for something like interest or sales; it is not the thing itself."
+ },
+ {
+  "q": "What makes the predictions record in the lesson an example of data honesty?",
+  "kind": "exact",
+  "answer": "hits and misses printed together",
+  "accept": [],
+  "choices": [
+   "hits and misses printed together",
+   "written down in a form you can check later",
+   "collected by a rule, not by enthusiasm",
+   "a random result described as if it were a discovery"
+  ],
+  "mcAnswer": "hits and misses printed together",
+  "rank": 2,
+  "_quote": "Each week it writes down, in advance, what it expects to happen — for example, how many enquiries a campaign will produce — and later it writes down what actually happened, hits and misses printed together, at the same size, in the same list.",
+  "_angle": "The record was made in advance and kept whole, the flattering and the unflattering together.",
+  "walk": "Walk it through: (1) The record was written before outcomes were known, so it could not be rewritten afterwards. (2) It kept everything, not only the successes. (3) Its honesty is that hits and misses are printed together.",
+  "teach2": "Each week it writes down, in advance, what it expects to happen — for example, how many enquiries a campaign will produce — and later it writes down what actually happened, hits and misses printed together, at the same size, in the same list. The record was made in advance and kept whole, the flattering and the unflattering together.",
+  "teach": "From the lesson: The record was made in advance and kept whole, the flattering and the unflattering together."
+ },
+ {
+  "q": "When you hear a count of something interesting, what does the lesson's honest habit tell you to ask?",
+  "kind": "exact",
+  "answer": "out of how many",
+  "accept": [],
+  "choices": [
+   "out of how many",
+   "what was observed",
+   "how many observations are there",
+   "where is the record"
+  ],
+  "mcAnswer": "out of how many",
+  "rank": 2,
+  "_quote": "The honest habit is mechanical: every time you hear a count of something interesting, ask, out of how many.",
+  "_angle": "A count means nothing until you know the total it came out of, which is the denominator.",
+  "walk": "Walk it through: (1) Nine complaints out of ten customers would be a catastrophe, while nine out of nine thousand would be a quiet week. (2) The missing piece is the total the count came from. (3) So the habit is to ask: out of how many.",
+  "teach2": "The honest habit is mechanical: every time you hear a count of something interesting, ask, out of how many. A count means nothing until you know the total it came out of, which is the denominator.",
+  "teach": "From the lesson: A count means nothing until you know the total it came out of, which is the denominator."
+ },
+ {
+  "q": "What does survivorship bias mean, as taught in this lesson?",
+  "kind": "exact",
+  "answer": "you only see the cases that survived",
+  "accept": [],
+  "choices": [
+   "you only see the cases that survived",
+   "a difference or a change that is actually there",
+   "the ups and downs that happen for no meaningful reason",
+   "data someone else collected"
+  ],
+  "mcAnswer": "you only see the cases that survived",
+  "rank": 2,
+  "_quote": "Survivorship bias means you only see the cases that survived some process, and the missing cases would have changed the picture.",
+  "_angle": "Interviewing only the customers who stayed cannot tell you why the departed ones left.",
+  "walk": "Walk it through: (1) The business interviewed its happiest current customers. (2) The customers who left were missing from the collection. (3) Seeing only the cases that survived is survivorship bias.",
+  "teach2": "Survivorship bias means you only see the cases that survived some process, and the missing cases would have changed the picture. Interviewing only the customers who stayed cannot tell you why the departed ones left.",
+  "teach": "From the lesson: Interviewing only the customers who stayed cannot tell you why the departed ones left."
+ },
+ {
+  "q": "What does precision mean, in the lesson's exact distinction?",
+  "kind": "exact",
+  "answer": "the number is stated in fine detail",
+  "accept": [],
+  "choices": [
+   "the number is stated in fine detail",
+   "the number is close to the truth",
+   "a number chosen to stand for something you care about",
+   "data someone else collected"
+  ],
+  "mcAnswer": "the number is stated in fine detail",
+  "rank": 3,
+  "_quote": "Precision means the number is stated in fine detail. Accuracy means the number is close to the truth.",
+  "_angle": "Precision is about detail; accuracy, the neighbouring choice, is about closeness to the truth, and the two are not the same.",
+  "walk": "Walk it through: (1) The lesson separates two words people merge. (2) One is about how finely a number is stated, the other about how close it is to the truth. (3) The finely stated one is precision: the number is stated in fine detail.",
+  "teach2": "Precision means the number is stated in fine detail. Accuracy means the number is close to the truth. Precision is about detail; accuracy, the neighbouring choice, is about closeness to the truth, and the two are not the same.",
+  "teach": "From the lesson: Precision is about detail; accuracy, the neighbouring choice, is about closeness to the truth, and the two are not the same."
+ },
+ {
+  "q": "The software seller's figure came from a set number of shops over one spring. How many shops was it, in the lesson's own words?",
+  "kind": "exact",
+  "answer": "twelve",
+  "accept": [],
+  "choices": [
+   "twelve",
+   "forty-two",
+   "one hundred",
+   "nine"
+  ],
+  "mcAnswer": "twelve",
+  "rank": 3,
+  "_quote": "How many observations? He says the figure comes from twelve shops over one spring.",
+  "_angle": "Twelve shops is a real count, but the record behind the figure was never shown.",
+  "walk": "Walk it through: (1) The worked check presses the seller on how many observations stand under his average. (2) He gives a count of shops and a period of one spring. (3) In the lesson's words, the count is twelve.",
+  "teach2": "How many observations? He says the figure comes from twelve shops over one spring. Twelve shops is a real count, but the record behind the figure was never shown.",
+  "teach": "From the lesson: Twelve shops is a real count, but the record behind the figure was never shown."
+ },
+ {
+  "q": "Which judgement does the lesson say is correct for a claim whose record you cannot see?",
+  "kind": "exact",
+  "answer": "unverified",
+  "accept": [],
+  "choices": [
+   "unverified",
+   "false",
+   "testimony",
+   "data"
+  ],
+  "mcAnswer": "unverified",
+  "rank": 3,
+  "_quote": "The correct verdict is unverified: a claim with a shape of data behind it that has not been shown.",
+  "_angle": "The claim may turn out true; you simply may not spend as if it already has.",
+  "walk": "Walk it through: (1) The seller's claim had a shape of data behind it, but the record was not shown and key definitions were unknown. (2) The lesson refuses to call it false. (3) The exact verdict it teaches is unverified.",
+  "teach2": "The correct verdict is unverified: a claim with a shape of data behind it that has not been shown. The claim may turn out true; you simply may not spend as if it already has.",
+  "teach": "From the lesson: The claim may turn out true; you simply may not spend as if it already has."
+ },
+ {
+  "q": "In your own words, explain what makes a record trustworthy rather than just confident. Cover when it was written and whether all of it was kept.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "record",
+    "written",
+    "kept"
+   ],
+   [
+    "advance",
+    "before"
+   ],
+   [
+    "whole",
+    "all",
+    "misses"
+   ]
+  ],
+  "need": 2,
+  "choices": [
+   "A record made in advance, kept whole",
+   "a random result described as if it were a discovery",
+   "the number is stated in fine detail",
+   "a single story about a single case"
+  ],
+  "mcAnswer": "A record made in advance, kept whole",
+  "rank": 3,
+  "_quote": "A record made in advance, kept whole, is the strongest kind of everyday data a small business can own.",
+  "_angle": "Write it before the result is known, and keep the unflattering parts alongside the flattering ones.",
+  "walk": "Walk it through: (1) Timing: the observation was written before the result was known. (2) Completeness: all of it was kept, hits and misses together. (3) A record with both properties can be trusted in a way confidence never can.",
+  "teach2": "A record made in advance, kept whole, is the strongest kind of everyday data a small business can own. Write it before the result is known, and keep the unflattering parts alongside the flattering ones.",
+  "teach": "From the lesson: Write it before the result is known, and keep the unflattering parts alongside the flattering ones."
+ }
+]

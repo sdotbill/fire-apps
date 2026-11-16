@@ -1,0 +1,231 @@
+[
+ {
+  "q": "What is your data, as this lesson defines it?",
+  "kind": "exact",
+  "answer": "the recorded observations of you",
+  "accept": [],
+  "choices": [
+   "the recorded observations of you",
+   "a conclusion a holder's system draws about you",
+   "what you deliberately publish",
+   "a filtered view, not the whole table"
+  ],
+  "mcAnswer": "the recorded observations of you",
+  "rank": 1,
+  "_quote": "Your data is the recorded observations of you: what you bought, where you were, what you clicked, what you searched for, whom you called, and when.",
+  "_angle": "What you bought, where you were, what you clicked, what you searched for, whom you called, and when — each a row in somebody's table.",
+  "walk": "Walk it through: (1) Lesson one defined data as recorded observation. (2) This lesson applies that definition to one person. (3) Your data is the recorded observations of you.",
+  "teach2": "Your data is the recorded observations of you: what you bought, where you were, what you clicked, what you searched for, whom you called, and when. What you bought, where you were, what you clicked, what you searched for, whom you called, and when — each a row in somebody's table.",
+  "teach": "From the lesson: What you bought, where you were, what you clicked, what you searched for, whom you called, and when — each a row in somebody's table."
+ },
+ {
+  "q": "What is a data broker?",
+  "kind": "exact",
+  "answer": "a company whose business is buying, combining, and selling records about people it has never dealt with directly",
+  "accept": [],
+  "choices": [
+   "a company whose business is buying, combining, and selling records about people it has never dealt with directly",
+   "the organisations you deal with directly",
+   "your own devices",
+   "a field that identifies each row uniquely"
+  ],
+  "mcAnswer": "a company whose business is buying, combining, and selling records about people it has never dealt with directly",
+  "rank": 1,
+  "_quote": "A data broker is a company whose business is buying, combining, and selling records about people it has never dealt with directly.",
+  "_angle": "You have no account with a broker, yet it may hold a file on you assembled from other people's rows about you.",
+  "walk": "Walk it through: (1) The lesson sorts holders into kinds. (2) One kind never deals with you at all, yet trades in records about you. (3) That kind is the data broker.",
+  "teach2": "A data broker is a company whose business is buying, combining, and selling records about people it has never dealt with directly. You have no account with a broker, yet it may hold a file on you assembled from other people's rows about you.",
+  "teach": "From the lesson: You have no account with a broker, yet it may hold a file on you assembled from other people's rows about you."
+ },
+ {
+  "q": "Which sentence does the lesson say explains most of the modern world?",
+  "kind": "exact",
+  "answer": "presence is not possession",
+  "accept": [],
+  "choices": [
+   "presence is not possession",
+   "a log is not a diary",
+   "resemblance is not evidence",
+   "memory is a poor storage device"
+  ],
+  "mcAnswer": "presence is not possession",
+  "rank": 1,
+  "_quote": "Presence is not possession. That sentence explains most of the modern world, and we will spend the lesson on its consequences.",
+  "_angle": "You were present for every transaction, but the holder of the record is rarely you.",
+  "walk": "Walk it through: (1) You were there for the sale, the call, and the click. (2) The tables recording them belong to the shop, the phone company, and the platform. (3) So presence is not possession.",
+  "teach2": "Presence is not possession. That sentence explains most of the modern world, and we will spend the lesson on its consequences. You were present for every transaction, but the holder of the record is rarely you.",
+  "teach": "From the lesson: You were present for every transaction, but the holder of the record is rarely you."
+ },
+ {
+  "q": "Why are transaction records strong data, according to the lesson?",
+  "kind": "exact",
+  "answer": "recorded at the moment, by a rule, with money attached to their accuracy",
+  "accept": [],
+  "choices": [
+   "recorded at the moment, by a rule, with money attached to their accuracy",
+   "a record of a screen, not of eyes",
+   "biased toward the digital, the commercial, and the recent",
+   "computed over millions of other people's rows"
+  ],
+  "mcAnswer": "recorded at the moment, by a rule, with money attached to their accuracy",
+  "rank": 2,
+  "_quote": "Transaction records are strong data — recorded at the moment, by a rule, with money attached to their accuracy.",
+  "_angle": "That this card bought this item at this time in this place is the kind of thing your data can genuinely prove.",
+  "walk": "Walk it through: (1) A transaction is recorded when it happens, under a fixed rule. (2) Money depends on the record being right, so errors get fixed. (3) That is why transaction records are strong data.",
+  "teach2": "Transaction records are strong data — recorded at the moment, by a rule, with money attached to their accuracy. That this card bought this item at this time in this place is the kind of thing your data can genuinely prove.",
+  "teach": "From the lesson: That this card bought this item at this time in this place is the kind of thing your data can genuinely prove."
+ },
+ {
+  "q": "What can your data not prove, because a search records the query and not the reason for it?",
+  "kind": "exact",
+  "answer": "intent",
+  "accept": [],
+  "choices": [
+   "intent",
+   "transactions",
+   "presence",
+   "sequences"
+  ],
+  "mcAnswer": "intent",
+  "rank": 2,
+  "_quote": "It cannot prove intent. A search records the query, not the reason for it: the same search is made by the worried, the curious, the novelist researching a character, and the student writing an essay. The record is identical.",
+  "_angle": "The same search is made by the worried, the curious, the novelist, and the student; the record is identical and the intents are opposites.",
+  "walk": "Walk it through: (1) A log holds the query that was typed. (2) It does not hold why it was typed. (3) So anyone reading a motive off the log is adding it themselves: your data cannot prove intent.",
+  "teach2": "It cannot prove intent. A search records the query, not the reason for it: the same search is made by the worried, the curious, the novelist researching a character, and the student writing an essay. The record is identical. The same search is made by the worried, the curious, the novelist, and the student; the record is identical and the intents are opposites.",
+  "teach": "From the lesson: The same search is made by the worried, the curious, the novelist, and the student; the record is identical and the intents are opposites."
+ },
+ {
+  "q": "What does the lesson call the view a holder shows you of your own data, such as a dashboard or history page?",
+  "kind": "exact",
+  "answer": "a filtered view",
+  "accept": [],
+  "choices": [
+   "a filtered view",
+   "the whole table",
+   "a diary",
+   "a pattern of life"
+  ],
+  "mcAnswer": "a filtered view",
+  "rank": 2,
+  "_quote": "Five: a log is not a diary — records made for billing and advertising answer your questions only incidentally, and the view a holder shows you is a filtered view, not the whole table.",
+  "_angle": "Holders keep what serves them and show you an edited view, which lesson two warned you never to mistake for the whole table.",
+  "walk": "Walk it through: (1) The holder's underlying table is larger than what any dashboard displays. (2) The display is the part the holder chooses to show. (3) That is a filtered view, not the whole table.",
+  "teach2": "Five: a log is not a diary — records made for billing and advertising answer your questions only incidentally, and the view a holder shows you is a filtered view, not the whole table. Holders keep what serves them and show you an edited view, which lesson two warned you never to mistake for the whole table.",
+  "teach": "From the lesson: Holders keep what serves them and show you an edited view, which lesson two warned you never to mistake for the whole table."
+ },
+ {
+  "q": "What is an inference, in this lesson?",
+  "kind": "exact",
+  "answer": "a conclusion a holder's system draws about you from your records",
+  "accept": [],
+  "choices": [
+   "a conclusion a holder's system draws about you from your records",
+   "the recorded observations of you",
+   "what you deliberately publish",
+   "the fact of the message, its time, and its size"
+  ],
+  "mcAnswer": "a conclusion a holder's system draws about you from your records",
+  "rank": 3,
+  "_quote": "An inference is a conclusion a holder's system draws about you from your records: a category you are sorted into, a likelihood attached to your name — likely to move, likely to buy, likely to leave.",
+  "_angle": "Inferences are the holder's correlations computed over millions of other people's rows and applied to yours, confounders unhunted.",
+  "walk": "Walk it through: (1) An inference is not an observation; nobody recorded it happening. (2) It is a category or a likelihood a system attaches to your name from your records. (3) So an inference is a conclusion a holder's system draws about you.",
+  "teach2": "An inference is a conclusion a holder's system draws about you from your records: a category you are sorted into, a likelihood attached to your name — likely to move, likely to buy, likely to leave. Inferences are the holder's correlations computed over millions of other people's rows and applied to yours, confounders unhunted.",
+  "teach": "From the lesson: Inferences are the holder's correlations computed over millions of other people's rows and applied to yours, confounders unhunted."
+ },
+ {
+  "q": "In the fitness application example, what did the phone actually observe?",
+  "kind": "exact",
+  "answer": "accelerations",
+  "accept": [
+   "counted accelerations"
+  ],
+  "choices": [
+   "accelerations",
+   "steps, exactly",
+   "a verdict on a person",
+   "the whole table"
+  ],
+  "mcAnswer": "accelerations",
+  "rank": 3,
+  "_quote": "What was observed? Not steps, exactly: the phone observed accelerations, and an algorithm counted some of them as steps — a metric, lesson one, standing for the thing it names.",
+  "_angle": "Steps are a metric — an algorithm counted some accelerations as steps — and the day the phone stayed on the dresser is an empty field, not a zero.",
+  "walk": "Walk it through: (1) The summary reports steps, but a phone has no step sensor. (2) It observed movements of the device itself. (3) What it actually observed was accelerations, which an algorithm counted as steps.",
+  "teach2": "What was observed? Not steps, exactly: the phone observed accelerations, and an algorithm counted some of them as steps — a metric, lesson one, standing for the thing it names. Steps are a metric — an algorithm counted some accelerations as steps — and the day the phone stayed on the dresser is an empty field, not a zero.",
+  "teach": "From the lesson: Steps are a metric — an algorithm counted some accelerations as steps — and the day the phone stayed on the dresser is an empty field, not a zero."
+ },
+ {
+  "q": "How much time does the lesson's practical hour give to each of its three tasks?",
+  "kind": "exact",
+  "answer": "twenty minutes",
+  "accept": [
+   "twenty"
+  ],
+  "choices": [
+   "twenty minutes",
+   "ten minutes",
+   "an hour",
+   "fifteen years"
+  ],
+  "mcAnswer": "twenty minutes",
+  "rank": 3,
+  "_quote": "Twenty minutes: open the activity pages of the two or three services you use most, and read them with the three questions, noting — actually noting, in writing — what was observed, what period the record covers, and whether what you are shown claims to be the whole table or a view of it.",
+  "_angle": "Twenty minutes on the activity pages, twenty on your own documents, and twenty on correcting one wrong thing — an hour, three tasks.",
+  "walk": "Walk it through: (1) The practical hour has three tasks: inspect, gather, correct. (2) The lesson times each task the same way. (3) Each task gets twenty minutes.",
+  "teach2": "Twenty minutes: open the activity pages of the two or three services you use most, and read them with the three questions, noting — actually noting, in writing — what was observed, what period the record covers, and whether what you are shown claims to be the whole table or a view of it. Twenty minutes on the activity pages, twenty on your own documents, and twenty on correcting one wrong thing — an hour, three tasks.",
+  "teach": "From the lesson: Twenty minutes on the activity pages, twenty on your own documents, and twenty on correcting one wrong thing — an hour, three tasks."
+ },
+ {
+  "q": "What does the lesson say the recorded part of a life is, as a sample?",
+  "kind": "exact",
+  "answer": "a biased sample of a life",
+  "accept": [],
+  "choices": [
+   "a biased sample of a life",
+   "a pattern of life",
+   "a filtered view",
+   "strong data"
+  ],
+  "mcAnswer": "a biased sample of a life",
+  "rank": 3,
+  "_quote": "Survivorship's mirror image, from lesson one: the table shows the recorded, and the recorded is a biased sample of a life, biased toward the digital, the commercial, and the recent.",
+  "_angle": "The unrecorded remainder of a life does not appear in the table, and its absence is not evidence about its size.",
+  "walk": "Walk it through: (1) Tables show only what was recorded, and recording favours the digital, the commercial, and the recent. (2) A whole person is the population; the records are only a part of it. (3) That part is a biased sample of a life.",
+  "teach2": "Survivorship's mirror image, from lesson one: the table shows the recorded, and the recorded is a biased sample of a life, biased toward the digital, the commercial, and the recent. The unrecorded remainder of a life does not appear in the table, and its absence is not evidence about its size.",
+  "teach": "From the lesson: The unrecorded remainder of a life does not appear in the table, and its absence is not evidence about its size."
+ },
+ {
+  "q": "In your own words, explain what you should do about your own data, and why keeping your own records matters most.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "records",
+    "documents",
+    "copies"
+   ],
+   [
+    "control",
+    "place you control",
+    "your own"
+   ],
+   [
+    "whole",
+    "correct",
+    "see"
+   ]
+  ],
+  "need": 2,
+  "choices": [
+   "keep your own records, whole, in a place you control",
+   "presence is not possession",
+   "enjoy them as entertainment",
+   "adjusting a flow, not escaping a system"
+  ],
+  "mcAnswer": "keep your own records, whole, in a place you control",
+  "rank": 3,
+  "_quote": "Six: your practical defences are to use your rights to see and correct your files, to reduce what you generate where the cost is low, and above all to keep your own records, whole, in a place you control.",
+  "_angle": "Your own table will never be the largest about you, but it can be the most honest one — and the party with records does not argue from memory.",
+  "walk": "Walk it through: (1) Use your rights to see and correct the files others hold. (2) Reduce what you generate where the cost is low. (3) Above all, keep your own records, whole, in a place you control.",
+  "teach2": "Six: your practical defences are to use your rights to see and correct your files, to reduce what you generate where the cost is low, and above all to keep your own records, whole, in a place you control. Your own table will never be the largest about you, but it can be the most honest one — and the party with records does not argue from memory.",
+  "teach": "From the lesson: Your own table will never be the largest about you, but it can be the most honest one — and the party with records does not argue from memory."
+ }
+]

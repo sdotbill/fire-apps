@@ -1,0 +1,225 @@
+[
+ {
+  "q": "What is the single most important rule of tables in this lesson?",
+  "kind": "exact",
+  "answer": "one row, one thing",
+  "accept": [],
+  "choices": [
+   "one row, one thing",
+   "the part divided by the whole",
+   "the largest value minus the smallest",
+   "the middle value when the values are lined up in order"
+  ],
+  "mcAnswer": "one row, one thing",
+  "rank": 1,
+  "_quote": "The single most important rule of tables is this: one row, one thing.",
+  "_angle": "Every row is the same kind of case, so the table always knows what its rows mean.",
+  "walk": "Walk it through: (1) A row must stand for one case of one kind. (2) Mixing customers, orders and notes in one list breaks every later question you ask the table. (3) The rule is: one row, one thing.",
+  "teach2": "The single most important rule of tables is this: one row, one thing. Every row is the same kind of case, so the table always knows what its rows mean.",
+  "teach": "From the lesson: Every row is the same kind of case, so the table always knows what its rows mean."
+ },
+ {
+  "q": "What is a record, as the lesson defines it?",
+  "kind": "exact",
+  "answer": "one complete row",
+  "accept": [],
+  "choices": [
+   "one complete row",
+   "one cell",
+   "the sum of the other rows",
+   "a story you can interrogate"
+  ],
+  "mcAnswer": "one complete row",
+  "rank": 1,
+  "_quote": "A record is one complete row: all the facts you keep about one case.",
+  "_angle": "A record holds all the facts you keep about one case, in a single row.",
+  "walk": "Walk it through: (1) A table is rows and columns. (2) One horizontal line holds one case with its facts beside it. (3) That complete line is a record.",
+  "teach2": "A record is one complete row: all the facts you keep about one case. A record holds all the facts you keep about one case, in a single row.",
+  "teach": "From the lesson: A record holds all the facts you keep about one case, in a single row."
+ },
+ {
+  "q": "Of the eight hundred customers in the table, two hundred and forty bought a second time. What percentage bought a second time, in the lesson's own words?",
+  "kind": "exact",
+  "answer": "thirty",
+  "accept": [],
+  "choices": [
+   "thirty",
+   "thirty-five",
+   "sixty-five",
+   "twenty-one"
+  ],
+  "mcAnswer": "thirty",
+  "rank": 1,
+  "_quote": "Four: a proportion is the part divided by the whole, and a percentage is that, times one hundred — thirty percent of our eight hundred customers bought twice, and the denominator travels with the figure.",
+  "_angle": "Two hundred and forty divided by eight hundred is zero point three, and the denominator travels with the figure.",
+  "walk": "Walk it through: (1) The part is two hundred and forty and the whole is eight hundred. (2) Divide and you get zero point three. (3) Times one hundred, the percentage is thirty.",
+  "teach2": "Four: a proportion is the part divided by the whole, and a percentage is that, times one hundred — thirty percent of our eight hundred customers bought twice, and the denominator travels with the figure. Two hundred and forty divided by eight hundred is zero point three, and the denominator travels with the figure.",
+  "teach": "From the lesson: Two hundred and forty divided by eight hundred is zero point three, and the denominator travels with the figure."
+ },
+ {
+  "q": "What is a proportion, in the lesson's words?",
+  "kind": "exact",
+  "answer": "the part divided by the whole",
+  "accept": [],
+  "choices": [
+   "the part divided by the whole",
+   "the total divided by the count",
+   "the largest value minus the smallest",
+   "the middle value"
+  ],
+  "mcAnswer": "the part divided by the whole",
+  "rank": 2,
+  "_quote": "A proportion is the part divided by the whole. Two hundred and forty divided by eight hundred is zero point three. A percentage is a proportion multiplied by one hundred.",
+  "_angle": "A percentage is that same proportion multiplied by one hundred.",
+  "walk": "Walk it through: (1) The lesson defines proportion before computing any percentage. (2) You take the part and divide it by the whole. (3) So a proportion is the part divided by the whole.",
+  "teach2": "A proportion is the part divided by the whole. Two hundred and forty divided by eight hundred is zero point three. A percentage is a proportion multiplied by one hundred. A percentage is that same proportion multiplied by one hundred.",
+  "teach": "From the lesson: A percentage is that same proportion multiplied by one hundred."
+ },
+ {
+  "q": "Monday's orders were ten, twenty, thirty, forty and one hundred dollars. What is the median order, in the lesson's own words?",
+  "kind": "exact",
+  "answer": "thirty",
+  "accept": [],
+  "choices": [
+   "thirty",
+   "forty",
+   "two hundred",
+   "ninety"
+  ],
+  "mcAnswer": "thirty",
+  "rank": 2,
+  "_quote": "Line them up: ten, twenty, thirty, forty, one hundred. The middle one is thirty.",
+  "_angle": "Lined up in order, the middle value of the five orders is thirty dollars, while the mean is pulled up to forty by the one large order.",
+  "walk": "Walk it through: (1) Line the five values up in order: ten, twenty, thirty, forty, one hundred. (2) The median is the middle value of the line. (3) The middle value is thirty.",
+  "teach2": "Line them up: ten, twenty, thirty, forty, one hundred. The middle one is thirty. Lined up in order, the middle value of the five orders is thirty dollars, while the mean is pulled up to forty by the one large order.",
+  "teach": "From the lesson: Lined up in order, the middle value of the five orders is thirty dollars, while the mean is pulled up to forty by the one large order."
+ },
+ {
+  "q": "Why does the lesson warn you about empty fields in a table?",
+  "kind": "exact",
+  "answer": "an empty field is not a zero",
+  "accept": [],
+  "choices": [
+   "an empty field is not a zero",
+   "treating an absence as a zero corrupts every average it touches",
+   "the same customer entered twice",
+   "data that was true once"
+  ],
+  "mcAnswer": "an empty field is not a zero",
+  "rank": 2,
+  "_quote": "An empty field is not a zero. Zero is a fact. Empty is an absence, and treating an absence as a zero corrupts every average it touches.",
+  "_angle": "Zero is a recorded fact; empty is an absence, and an absence averaged as zero corrupts the result.",
+  "walk": "Walk it through: (1) A missing date or address means the fact was never recorded. (2) Zero, by contrast, is a fact that was recorded. (3) So an empty field is not a zero, and must not be averaged as one.",
+  "teach2": "An empty field is not a zero. Zero is a fact. Empty is an absence, and treating an absence as a zero corrupts every average it touches. Zero is a recorded fact; empty is an absence, and an absence averaged as zero corrupts the result.",
+  "teach": "From the lesson: Zero is a recorded fact; empty is an absence, and an absence averaged as zero corrupts the result."
+ },
+ {
+  "q": "What does raw mean, for a table that matters?",
+  "kind": "exact",
+  "answer": "unedited, exactly as collected",
+  "accept": [],
+  "choices": [
+   "unedited, exactly as collected",
+   "the version you may improve",
+   "the sum of the other rows",
+   "a field that identifies each row uniquely"
+  ],
+  "mcAnswer": "unedited, exactly as collected",
+  "rank": 2,
+  "_quote": "Raw means unedited, exactly as collected. Working copy means the version you may improve.",
+  "_angle": "Keep the raw version untouched and do all of your correcting in a working copy.",
+  "walk": "Walk it through: (1) The lesson separates the table as it arrived from the version you improve. (2) The as-arrived version must stay untouched so you can start again if an improvement was a mistake. (3) That version is raw: unedited, exactly as collected.",
+  "teach2": "Raw means unedited, exactly as collected. Working copy means the version you may improve. Keep the raw version untouched and do all of your correcting in a working copy.",
+  "teach": "From the lesson: Keep the raw version untouched and do all of your correcting in a working copy."
+ },
+ {
+  "q": "The predictions record holds sixty rows, with thirty-nine hits and twenty-one misses. What is the hit rate, in the lesson's own words?",
+  "kind": "exact",
+  "answer": "sixty-five",
+  "accept": [],
+  "choices": [
+   "sixty-five",
+   "thirty",
+   "thirty-five",
+   "twenty-one"
+  ],
+  "mcAnswer": "sixty-five",
+  "rank": 3,
+  "_quote": "The honest sentence is: sixty-five percent of sixty predictions were hits, twenty-one were misses, and here is the whole list.",
+  "_angle": "Thirty-nine divided by sixty is zero point six five, with the twenty-one misses still counted in the whole.",
+  "walk": "Walk it through: (1) Count all the rows first: sixty, hits and misses together. (2) Divide the hits by all rows: thirty-nine over sixty is zero point six five. (3) So the hit rate is sixty-five.",
+  "teach2": "The honest sentence is: sixty-five percent of sixty predictions were hits, twenty-one were misses, and here is the whole list. Thirty-nine divided by sixty is zero point six five, with the twenty-one misses still counted in the whole.",
+  "teach": "From the lesson: Thirty-nine divided by sixty is zero point six five, with the twenty-one misses still counted in the whole."
+ },
+ {
+  "q": "An advertisement cost fifty dollars and produced one hundred clicks. What is the cost per click?",
+  "kind": "exact",
+  "answer": "fifty cents",
+  "accept": [],
+  "choices": [
+   "fifty cents",
+   "fifty dollars",
+   "four hundred and fifty dollars",
+   "nine hundred"
+  ],
+  "mcAnswer": "fifty cents",
+  "rank": 3,
+  "_quote": "If an advertisement cost fifty dollars and produced one hundred clicks, fifty divided by one hundred is zero point five — fifty cents per click.",
+  "_angle": "Cost per click is total cost divided by total clicks, and fifty divided by one hundred is zero point five.",
+  "walk": "Walk it through: (1) Cost per click is the total cost divided by the total clicks. (2) Fifty divided by one hundred is zero point five. (3) So the cost per click is fifty cents.",
+  "teach2": "If an advertisement cost fifty dollars and produced one hundred clicks, fifty divided by one hundred is zero point five — fifty cents per click. Cost per click is total cost divided by total clicks, and fifty divided by one hundred is zero point five.",
+  "teach": "From the lesson: Cost per click is total cost divided by total clicks, and fifty divided by one hundred is zero point five."
+ },
+ {
+  "q": "What is a key in a table?",
+  "kind": "exact",
+  "answer": "a field that identifies each row uniquely",
+  "accept": [],
+  "choices": [
+   "a field that identifies each row uniquely",
+   "the origin and history of a thing",
+   "the part divided by the whole",
+   "the largest value minus the smallest"
+  ],
+  "mcAnswer": "a field that identifies each row uniquely",
+  "rank": 3,
+  "_quote": "A key is a field that identifies each row uniquely — a customer number, an order number, something that belongs to that row and no other.",
+  "_angle": "A number assigned once, never reused and never edited, lets two tables be joined safely.",
+  "walk": "Walk it through: (1) Names fail as identifiers because two customers can share one name. (2) A field belonging to one row and no other can pick that row out reliably. (3) That field is a key: it identifies each row uniquely.",
+  "teach2": "A key is a field that identifies each row uniquely — a customer number, an order number, something that belongs to that row and no other. A number assigned once, never reused and never edited, lets two tables be joined safely.",
+  "teach": "From the lesson: A number assigned once, never reused and never edited, lets two tables be joined safely."
+ },
+ {
+  "q": "In your own words, explain why a figure that cannot be traced back to individual rows should not be trusted as coming from the table.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "traced",
+    "trace",
+    "rows"
+   ],
+   [
+    "table",
+    "figure"
+   ],
+   [
+    "someone",
+    "impression"
+   ]
+  ],
+  "need": 2,
+  "choices": [
+   "If a figure cannot be traced to rows, it did not come from the table",
+   "it turns soup into sequence",
+   "the denominator travels with the figure",
+   "memory is a poor storage device"
+  ],
+  "mcAnswer": "If a figure cannot be traced to rows, it did not come from the table",
+  "rank": 3,
+  "_quote": "If a figure cannot be traced to rows, it did not come from the table. It came from someone, and someone is not a source.",
+  "_angle": "No rows underneath means no table underneath; what remains is a person's impression.",
+  "walk": "Walk it through: (1) A table's figures are built by counting and dividing its rows. (2) If you cannot follow a figure down to those rows, the chain is broken. (3) What remains is a person's impression, not a table's answer.",
+  "teach2": "If a figure cannot be traced to rows, it did not come from the table. It came from someone, and someone is not a source. No rows underneath means no table underneath; what remains is a person's impression.",
+  "teach": "From the lesson: No rows underneath means no table underneath; what remains is a person's impression."
+ }
+]

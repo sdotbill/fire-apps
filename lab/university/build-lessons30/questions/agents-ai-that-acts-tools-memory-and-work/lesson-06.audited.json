@@ -1,0 +1,223 @@
+[
+ {
+  "accept": [
+   "the fog failure"
+  ],
+  "answer": "the fog failure",
+  "choices": [
+   "the fog failure",
+   "the hasty landing",
+   "approval fatigue",
+   "boundary drift"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the fog failure",
+  "q": "What does the lesson call the failure where a job was never clear enough to be done right, so it was done plausibly instead, in the wrong direction?",
+  "rank": 1,
+  "teach": "From the lesson: vague goal, wandering work; these are brief failures, and the cheapest in the lesson to prevent.",
+  "teach2": "\"In failure language, call it the fog failure, the job was never clear enough to be done right, so it was done plausibly instead, at length, in the wrong direction, with a confident report on top.\" The prevention happens before the work starts, in four calm sentences of brief.",
+  "walk": "Walk it through step by step: (1) the first failure mode returns to lesson one's warning. (2) An unclear goal produces plausible, wrong work. (3) That failure is named the fog failure."
+ },
+ {
+  "accept": [
+   "the stale record failure"
+  ],
+  "answer": "the stale record failure",
+  "choices": [
+   "the stale record failure",
+   "the fog failure",
+   "the silent solving failure",
+   "looping without landing"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the stale record failure",
+  "q": "What does the lesson call the failure where the agent follows an instruction in the record that was once right and is no longer right?",
+  "rank": 1,
+  "teach": "From the lesson: the agent is not malfunctioning in this failure; the archive is.",
+  "teach2": "\"Call it the stale record failure. The agent consults the long record in good faith and follows an instruction that was once right and is no longer right\" The cure is housekeeping: make the new statement govern and mark the old one superseded.",
+  "walk": "Walk it through step by step: (1) the third failure mode lives in memory. (2) The record drifted and an old instruction still looks current. (3) That is the stale record failure, so that is the answer."
+ },
+ {
+  "accept": [
+   "the hasty landing"
+  ],
+  "answer": "the hasty landing",
+  "choices": [
+   "the hasty landing",
+   "looping without landing",
+   "breaking the loop upward",
+   "the fog failure"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the hasty landing",
+  "q": "What does the lesson call the failure where the agent takes the first plausible result as finished and delivers work never checked against the goal?",
+  "rank": 1,
+  "teach": "From the lesson: it is the mirror image of looping without landing, and quieter.",
+  "teach2": "\"Call it the hasty landing. Its guardrail is the discipline of the worked check\" Before reporting done, compare the result against the goal as originally stated, item by item for anything load bearing.",
+  "walk": "Walk it through step by step: (1) the loop failures come in two opposite shapes. (2) One never arrives; the other arrives unchecked. (3) Arriving unchecked is the hasty landing."
+ },
+ {
+  "accept": [
+   "Absence of evidence, gathered lazily, is not evidence of absence."
+  ],
+  "answer": "Absence of evidence, gathered lazily, is not evidence of absence.",
+  "choices": [
+   "Absence of evidence, gathered lazily, is not evidence of absence.",
+   "search more than one way",
+   "Read the source, not only the summary",
+   "What did you check that against?"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Absence of evidence, gathered lazily, is not evidence of absence.",
+  "q": "What warning label does the lesson repeat for the observation failure?",
+  "rank": 2,
+  "teach": "From the lesson: the guardrails are habits of verification, like searching more than one way and reading the source.",
+  "teach2": "\"Absence of evidence, gathered lazily, is not evidence of absence.\" The guardrails here are habits of verification. A message sitting under different wording is missed by wording, not by absence.",
+  "walk": "Walk it through step by step: (1) the observation failure builds on results read too partially. (2) An empty lazy search is its classic disguise. (3) The warning against trusting it is the answer."
+ },
+ {
+  "accept": [
+   "The archive is."
+  ],
+  "answer": "The archive is.",
+  "choices": [
+   "The archive is.",
+   "the long record",
+   "the bright workspace",
+   "the revised date"
+  ],
+  "kind": "exact",
+  "mcAnswer": "The archive is.",
+  "q": "In the stale record failure, the lesson says the agent is not malfunctioning. What is?",
+  "rank": 2,
+  "teach": "From the lesson: the record drifted and nobody made the new statement govern.",
+  "teach2": "\"The agent is not malfunctioning in this failure. The archive is.\" That is why the repair belongs in the record itself, not in scolding the worker who consulted it in good faith.",
+  "walk": "Walk it through step by step: (1) the agent followed the record faithfully. (2) The record contained a superseded instruction. (3) So the malfunction sits in the archive, and that is the answer."
+ },
+ {
+  "accept": [
+   "the one that treats every obstacle as a puzzle to be solved silently"
+  ],
+  "answer": "the one that treats every obstacle as a puzzle to be solved silently",
+  "choices": [
+   "the one that treats every obstacle as a puzzle to be solved silently",
+   "breaking the loop upward",
+   "name their uncertainties",
+   "the stop points in the brief itself"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the one that treats every obstacle as a puzzle to be solved silently",
+  "q": "In the silent solving failure, which agent does the lesson call dangerous?",
+  "rank": 2,
+  "teach": "From the lesson: smoothness is rewarded and problem bringing is punished only if you teach the system that way by your reactions.",
+  "teach2": "\"We said in lesson four that the dangerous agent is never the one that stops and asks. It is the one that treats every obstacle as a puzzle to be solved silently.\" The report from such an agent reads beautifully and is, in the guessed places, fiction.",
+  "walk": "Walk it through step by step: (1) an obstacle can be brought to you or guessed past. (2) Guessing past keeps the report smooth and hides the gap. (3) The silent solver is the dangerous one, so that is the answer."
+ },
+ {
+  "accept": [
+   "sends, promises, money, and other people's rights"
+  ],
+  "answer": "sends, promises, money, and other people's rights",
+  "choices": [
+   "sends, promises, money, and other people's rights",
+   "permission, narrow latitude, real approvals, machinery walls",
+   "time, or tidiness, or a corrected draft",
+   "a missing fact, a contradiction"
+  ],
+  "kind": "exact",
+  "mcAnswer": "sends, promises, money, and other people's rights",
+  "q": "Approvals should be spent where irreversibility lives. Which four things does the lesson name there?",
+  "rank": 3,
+  "teach": "From the lesson: a gate that stops every traveller will eventually be waved through by a tired guard.",
+  "teach2": "\"Spend approvals where irreversibility lives, sends, promises, money, and other people's rights, and let reversible work flow beneath them under wide latitude and honest reporting.\" Aim is the guardrail against approval fatigue.",
+  "walk": "Walk it through step by step: (1) approval fatigue comes from approving everything. (2) The repair is to aim approvals at what cannot be undone. (3) The lesson names sends, promises, money, and other people's rights."
+ },
+ {
+  "accept": [
+   "This is once, or this is standing."
+  ],
+  "answer": "This is once, or this is standing.",
+  "choices": [
+   "This is once, or this is standing.",
+   "the hurry that excused it",
+   "becomes a rumour",
+   "Is the work still inside the frame we set?"
+  ],
+  "kind": "exact",
+  "mcAnswer": "This is once, or this is standing.",
+  "q": "What single sentence is the guardrail against boundary drift when you grant an exception?",
+  "rank": 3,
+  "teach": "From the lesson: the record remembers what was done, not the hurry that excused it.",
+  "teach2": "\"The guardrail is a single sentence spoken at the moment of the exception. This is once, or this is standing. Say which, every time\" Declaring it keeps a one time exception from quietly becoming the standing practice.",
+  "walk": "Walk it through step by step: (1) boundary drift starts with a hurried one time exception. (2) The exception hardens because nobody labelled it. (3) The labelling sentence is the answer."
+ },
+ {
+  "accept": [
+   "the absence of a wall at the right place"
+  ],
+  "answer": "the absence of a wall at the right place",
+  "choices": [
+   "the absence of a wall at the right place",
+   "the absence of intelligence",
+   "no sending tool connected",
+   "a long afternoon"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the absence of a wall at the right place",
+  "q": "The serious failure, the irreversible act taken wrongly, is almost never caused by a lack of intelligence. What does the lesson say causes it?",
+  "rank": 3,
+  "teach": "From the lesson: the stack against it is permission, narrow latitude, real approvals, machinery walls, and early reports.",
+  "teach2": "\"This failure is almost never caused by the absence of intelligence. It is caused by the absence of a wall at the right place.\" Stack the walls and the serious failure becomes rare, small when it happens, and survivable.",
+  "walk": "Walk it through step by step: (1) the lesson treats the serious failure with plainness. (2) It rejects the intelligence explanation. (3) The missing piece is a wall at the right place, so that is the answer."
+ },
+ {
+  "accept": [
+   "Contain, examine, repair at the source, and say it plainly."
+  ],
+  "answer": "Contain, examine, repair at the source, and say it plainly.",
+  "choices": [
+   "Contain, examine, repair at the source, and say it plainly.",
+   "Containment before explanation, always",
+   "merely correcting the single wrong output",
+   "a failure still running is a failure still billing you"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Contain, examine, repair at the source, and say it plainly.",
+  "q": "After a failure has happened despite the walls, what order does the lesson tell you to respond in?",
+  "rank": 3,
+  "teach": "From the lesson: containment before explanation, always, because a failure still running is a failure still billing you.",
+  "teach2": "\"Contain, examine, repair at the source, and say it plainly. That sequence is the difference between a failure that costs you a morning and a failure that costs you a reputation\" Repair the arrangement, not merely the single wrong output.",
+  "walk": "Walk it through step by step: (1) stop the failure repeating first. (2) examine the record and repair where the failure was born. (3) explain honestly to anyone touched, so the full order is the answer."
+ },
+ {
+  "keywords": [
+   [
+    "failure",
+    "fail"
+   ],
+   [
+    "guardrail",
+    "wall",
+    "approval",
+    "gate"
+   ],
+   [
+    "record",
+    "brief",
+    "frame"
+   ],
+   [
+    "reversible",
+    "irreversible",
+    "stop"
+   ]
+  ],
+  "kind": "keywords",
+  "need": 3,
+  "q": "In your own words, take the most important job you give Dave and map its failures: for two failure modes from this lesson, say where each would surface in that job and what wall stands there now, or should.",
+  "rank": 3,
+  "teach": "From the lesson: wherever a wall is missing, you have found next week's light work, named precisely.",
+  "teach2": "\"Because the draft was always going to wait for your approval, nothing has been sent, nothing has been promised, the failure is still entirely inside the reversible world, costing minutes instead of trust.\" Build your map the same way: a named failure, the place it would surface, and the wall that keeps it small.",
+  "walk": "Walk it through step by step: (1) name your most important job. (2) pick two failure modes and place each inside that job honestly. (3) name the wall standing there, or the one you will build, so the answer is your failure map for that job."
+ }
+]

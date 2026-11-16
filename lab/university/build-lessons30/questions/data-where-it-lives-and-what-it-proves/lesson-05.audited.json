@@ -1,0 +1,226 @@
+[
+ {
+  "q": "What is an axis, in a chart?",
+  "kind": "exact",
+  "answer": "the numbered line along the bottom or the side of a chart that gives the scale",
+  "accept": [],
+  "choices": [
+   "the numbered line along the bottom or the side of a chart that gives the scale",
+   "the stretch of time or the set of cases the chart includes",
+   "an argument made with geometry",
+   "an argument wearing a lab coat"
+  ],
+  "mcAnswer": "the numbered line along the bottom or the side of a chart that gives the scale",
+  "rank": 1,
+  "_quote": "An axis is the numbered line along the bottom or the side of a chart that gives the scale.",
+  "_angle": "Your first glance at any bar chart belongs to the axis, not to the bars: where does it start?",
+  "walk": "Walk it through: (1) Bars get their meaning from a scale. (2) The scale is printed as a numbered line along the bottom or the side of the chart. (3) That line is the axis.",
+  "teach2": "An axis is the numbered line along the bottom or the side of a chart that gives the scale. Your first glance at any bar chart belongs to the axis, not to the bars: where does it start?",
+  "teach": "From the lesson: Your first glance at any bar chart belongs to the axis, not to the bars: where does it start?"
+ },
+ {
+  "q": "Monthly enquiries were ninety-six, ninety-eight, one hundred and one hundred and two. With the axis cut to start at ninety, the visible bars are proportional to six, eight, ten and what, in the lesson's own words?",
+  "kind": "exact",
+  "answer": "twelve",
+  "accept": [],
+  "choices": [
+   "twelve",
+   "six",
+   "eight",
+   "ten"
+  ],
+  "mcAnswer": "twelve",
+  "rank": 1,
+  "_quote": "The visible bars are now proportional to six, eight, ten, and twelve, and the last bar stands twice as tall as the first.",
+  "_angle": "One hundred and two minus ninety is twelve, so the last bar stands twice as tall as the first while the real rise is about six percent.",
+  "walk": "Walk it through: (1) With the axis cut at ninety, each visible bar is its value minus ninety. (2) Ninety-six gives six, ninety-eight gives eight, and one hundred gives ten. (3) One hundred and two minus ninety gives twelve.",
+  "teach2": "The visible bars are now proportional to six, eight, ten, and twelve, and the last bar stands twice as tall as the first. One hundred and two minus ninety is twelve, so the last bar stands twice as tall as the first while the real rise is about six percent.",
+  "teach": "From the lesson: One hundred and two minus ninety is twelve, so the last bar stands twice as tall as the first while the real rise is about six percent."
+ },
+ {
+  "q": "Complaints rose from five to ten while customers rose from five hundred to two thousand. What happened to the complaint rate?",
+  "kind": "exact",
+  "answer": "actually fell by half",
+  "accept": [
+   "fell by half"
+  ],
+  "choices": [
+   "actually fell by half",
+   "is a doubling",
+   "a rise of fifty percent",
+   "a rise of one percentage point"
+  ],
+  "mcAnswer": "actually fell by half",
+  "rank": 2,
+  "_quote": "If customers rose in the same period from five hundred to two thousand, then the complaint rate — complaints per customer — actually fell by half: five over five hundred is one percent; ten over two thousand is zero point five percent.",
+  "_angle": "Five over five hundred is one percent, and ten over two thousand is zero point five percent, so the count doubled while the rate halved.",
+  "walk": "Walk it through: (1) Compute the first rate: five complaints over five hundred customers is one percent. (2) Compute the second: ten over two thousand is zero point five percent. (3) The count doubled, but the complaint rate actually fell by half.",
+  "teach2": "If customers rose in the same period from five hundred to two thousand, then the complaint rate — complaints per customer — actually fell by half: five over five hundred is one percent; ten over two thousand is zero point five percent. Five over five hundred is one percent, and ten over two thousand is zero point five percent, so the count doubled while the rate halved.",
+  "teach": "From the lesson: Five over five hundred is one percent, and ten over two thousand is zero point five percent, so the count doubled while the rate halved."
+ },
+ {
+  "q": "When does leaning begin, in the cherry-picked range?",
+  "kind": "exact",
+  "answer": "the choice is made by the conclusion",
+  "accept": [],
+  "choices": [
+   "the choice is made by the conclusion",
+   "the cut without notice",
+   "drawn tall and narrow to make a rise look steep",
+   "priced for the rationing"
+  ],
+  "mcAnswer": "the choice is made by the conclusion",
+  "rank": 2,
+  "_quote": "Leaning begins when the choice is made by the conclusion — when the maker tries start dates and end dates until the picture agrees with the sentence they intend to say, and then publishes that picture as if it were the whole story.",
+  "_angle": "The maker tries start dates and end dates until the picture agrees with the sentence they intend to say.",
+  "walk": "Walk it through: (1) Every chart must include some stretch of time and exclude the rest. (2) The lean begins when the conclusion, not the subject, picks that stretch. (3) So leaning begins when the choice is made by the conclusion.",
+  "teach2": "Leaning begins when the choice is made by the conclusion — when the maker tries start dates and end dates until the picture agrees with the sentence they intend to say, and then publishes that picture as if it were the whole story. The maker tries start dates and end dates until the picture agrees with the sentence they intend to say.",
+  "teach": "From the lesson: The maker tries start dates and end dates until the picture agrees with the sentence they intend to say."
+ },
+ {
+  "q": "What are the three questions in the lesson's method for auditing any chart?",
+  "kind": "exact",
+  "answer": "what is the denominator, what range was chosen and what was left outside it, and does the axis start where honesty starts",
+  "accept": [],
+  "choices": [
+   "what is the denominator, what range was chosen and what was left outside it, and does the axis start where honesty starts",
+   "honest selection, honest geometry",
+   "commit first, look second, publish the whole",
+   "axis, range, base, proportion, colour, title"
+  ],
+  "mcAnswer": "what is the denominator, what range was chosen and what was left outside it, and does the axis start where honesty starts",
+  "rank": 2,
+  "_quote": "The worked answer is a method, not a chart: name the claim, then ask three questions — what is the denominator, what range was chosen and what was left outside it, and does the axis start where honesty starts? A chart that survives all three has earned your belief; one that fails any has told you what it is.",
+  "_angle": "Name the claim first, then ask all three; a chart that fails any one of them has told you what it is.",
+  "walk": "Walk it through: (1) The worked answer for the set problem is a method, not a chart. (2) It names the claim, then checks the base, the included stretch and what sits outside it, and the scale. (3) Those are the three questions: denominator, range, and axis.",
+  "teach2": "The worked answer is a method, not a chart: name the claim, then ask three questions — what is the denominator, what range was chosen and what was left outside it, and does the axis start where honesty starts? A chart that survives all three has earned your belief; one that fails any has told you what it is. Name the claim first, then ask all three; a chart that fails any one of them has told you what it is.",
+  "teach": "From the lesson: Name the claim first, then ask all three; a chart that fails any one of them has told you what it is."
+ },
+ {
+  "q": "In the worked example, complaints fell from forty in March to twenty in June. In the lesson's supposition, what did complaints return to in July, outside the chart's frame, in the lesson's own words?",
+  "kind": "exact",
+  "answer": "thirty-eight",
+  "accept": [],
+  "choices": [
+   "thirty-eight",
+   "forty",
+   "twenty",
+   "sixty"
+  ],
+  "mcAnswer": "thirty-eight",
+  "rank": 3,
+  "_quote": "What lies outside? July, in which complaints, let us suppose, returned to thirty-eight — outside the frame, where inconvenient months live.",
+  "_angle": "July is the month that undid the story, left outside the frame where inconvenient months live.",
+  "walk": "Walk it through: (1) The advertised chart runs from March to June only. (2) The lesson asks what lies just outside the frame. (3) In its supposition, July's complaints returned to thirty-eight.",
+  "teach2": "What lies outside? July, in which complaints, let us suppose, returned to thirty-eight — outside the frame, where inconvenient months live. July is the month that undid the story, left outside the frame where inconvenient months live.",
+  "teach": "From the lesson: July is the month that undid the story, left outside the frame where inconvenient months live."
+ },
+ {
+  "q": "Hits per month were six, seven, five, eight, six and seven. What is the total number of hits, in the lesson's own words?",
+  "kind": "exact",
+  "answer": "thirty-nine",
+  "accept": [],
+  "choices": [
+   "thirty-nine",
+   "twenty-one",
+   "sixty",
+   "thirty-two"
+  ],
+  "mcAnswer": "thirty-nine",
+  "rank": 3,
+  "_quote": "Add them: six plus seven is thirteen, plus five is eighteen, plus eight is twenty-six, plus six is thirty-two, plus seven is thirty-nine.",
+  "_angle": "The six monthly counts add to thirty-nine hits, with twenty-one misses, in sixty predictions.",
+  "walk": "Walk it through: (1) Add the months in order: six and seven make thirteen, plus five makes eighteen. (2) Plus eight makes twenty-six, plus six makes thirty-two. (3) Plus seven makes thirty-nine hits in total.",
+  "teach2": "Add them: six plus seven is thirteen, plus five is eighteen, plus eight is twenty-six, plus six is thirty-two, plus seven is thirty-nine. The six monthly counts add to thirty-nine hits, with twenty-one misses, in sixty predictions.",
+  "teach": "From the lesson: The six monthly counts add to thirty-nine hits, with twenty-one misses, in sixty predictions."
+ },
+ {
+  "q": "A rate moves from two percent to three percent. How does the lesson describe that change, in percentage points?",
+  "kind": "exact",
+  "answer": "one percentage point",
+  "accept": [],
+  "choices": [
+   "one percentage point",
+   "fifty percent",
+   "two percent",
+   "three percent"
+  ],
+  "mcAnswer": "one percentage point",
+  "rank": 3,
+  "_quote": "When a rate moves from two percent to three percent, that is a rise of one percentage point, and also a rise of fifty percent relative to where it started.",
+  "_angle": "It is also a rise of fifty percent relative to where it started, and honest reporting states both forms.",
+  "walk": "Walk it through: (1) Subtract the rates: three percent minus two percent. (2) The difference is a single point. (3) So the change is one percentage point.",
+  "teach2": "When a rate moves from two percent to three percent, that is a rise of one percentage point, and also a rise of fifty percent relative to where it started. It is also a rise of fifty percent relative to where it started, and honest reporting states both forms.",
+  "teach": "From the lesson: It is also a rise of fifty percent relative to where it started, and honest reporting states both forms."
+ },
+ {
+  "q": "What does the lesson call a chart that reliably misleads the reasonable reader?",
+  "kind": "exact",
+  "answer": "a leaning chart",
+  "accept": [],
+  "choices": [
+   "a leaning chart",
+   "a lying chart",
+   "a table",
+   "the whole craft"
+  ],
+  "mcAnswer": "a leaning chart",
+  "rank": 3,
+  "_quote": "A chart that reliably misleads the reasonable reader is a leaning chart, full stop, and the maker's pure heart does not straighten it.",
+  "_angle": "Intent is not the standard; effect is, and the maker's pure heart does not straighten the chart.",
+  "walk": "Walk it through: (1) A chart can mislead with every number true and the maker well-meaning. (2) The lesson judges by what the chart does to a reasonable reader. (3) A chart that reliably misleads that reader is a leaning chart.",
+  "teach2": "A chart that reliably misleads the reasonable reader is a leaning chart, full stop, and the maker's pure heart does not straighten it. Intent is not the standard; effect is, and the maker's pure heart does not straighten the chart.",
+  "teach": "From the lesson: Intent is not the standard; effect is, and the maker's pure heart does not straighten the chart."
+ },
+ {
+  "q": "What does the honest chart do with hits and misses when the subject is a record?",
+  "kind": "exact",
+  "answer": "prints hits and misses together",
+  "accept": [],
+  "choices": [
+   "prints hits and misses together",
+   "chosen by the conclusion",
+   "outside it, unmentioned",
+   "numbers that are false"
+  ],
+  "mcAnswer": "prints hits and misses together",
+  "rank": 3,
+  "_quote": "And it prints hits and misses together when the subject is a record: our business's predictions chart, done honestly, is sixty columns or one line with all sixty points, thirty-nine hits and twenty-one misses in the same colours of dignity, the misses not greyed, not shrunk, not exiled to a footnote.",
+  "_angle": "The misses are not greyed, not shrunk, and not exiled to a footnote; a chart of only the hits would mislead as a collection.",
+  "walk": "Walk it through: (1) A chart of only the hits would be accurate in every element and misleading as a collection. (2) The honest chart keeps the whole record visible. (3) So it prints hits and misses together.",
+  "teach2": "And it prints hits and misses together when the subject is a record: our business's predictions chart, done honestly, is sixty columns or one line with all sixty points, thirty-nine hits and twenty-one misses in the same colours of dignity, the misses not greyed, not shrunk, not exiled to a footnote. The misses are not greyed, not shrunk, and not exiled to a footnote; a chart of only the hits would mislead as a collection.",
+  "teach": "From the lesson: The misses are not greyed, not shrunk, and not exiled to a footnote; a chart of only the hits would mislead as a collection."
+ },
+ {
+  "q": "In your own words, describe how you would audit a chart someone shows you, using the lesson's method.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "denominator"
+   ],
+   [
+    "range",
+    "outside"
+   ],
+   [
+    "axis",
+    "zero",
+    "start"
+   ]
+  ],
+  "need": 2,
+  "choices": [
+   "State the denominator in the title. Mark the axis break.",
+   "the bars are honest and the argument leans",
+   "decoration that argues is leaning",
+   "suspicion alone is a poor instrument"
+  ],
+  "mcAnswer": "State the denominator in the title. Mark the axis break.",
+  "rank": 3,
+  "_quote": "The worked answer is a method, not a chart: name the claim, then ask three questions — what is the denominator, what range was chosen and what was left outside it, and does the axis start where honesty starts? A chart that survives all three has earned your belief; one that fails any has told you what it is.",
+  "_angle": "Denominator, range, axis — in that order, every time, on any chart that asks something of you.",
+  "walk": "Walk it through: (1) Name what the chart wants you to believe. (2) Ask what the denominator is, and what range was chosen, including what sits outside it. (3) Check where the axis starts — a chart failing any question has told you what it is.",
+  "teach2": "The worked answer is a method, not a chart: name the claim, then ask three questions — what is the denominator, what range was chosen and what was left outside it, and does the axis start where honesty starts? A chart that survives all three has earned your belief; one that fails any has told you what it is. Denominator, range, axis — in that order, every time, on any chart that asks something of you.",
+  "teach": "From the lesson: Denominator, range, axis — in that order, every time, on any chart that asks something of you."
+ }
+]

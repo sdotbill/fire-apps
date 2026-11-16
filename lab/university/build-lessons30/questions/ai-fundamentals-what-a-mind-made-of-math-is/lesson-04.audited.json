@@ -1,0 +1,233 @@
+[
+ {
+  "q": "Prediction happens in the wild. Where does training happen?",
+  "kind": "exact",
+  "answer": "in the workshop",
+  "accept": [
+   "the workshop",
+   "in the workshop"
+  ],
+  "choices": [
+   "in the workshop",
+   "in the wild",
+   "on the scoreboard",
+   "on a timeline"
+  ],
+  "mcAnswer": "in the workshop",
+  "teach": "From the lesson: training happens in the workshop, prediction happens in the wild.",
+  "teach2": "From the lesson: Training happens in the workshop. Prediction happens in the wild. Another way to hold the pair: the long before, in which settings are adjusted over millions of examples, and the quick after, in which one fresh case gets one guess.",
+  "walk": "Walk it through: (1) The lesson opens by separating the machine's life into two acts. (2) One act adjusts the settings beforehand. (3) The other produces guesses afterwards — training and prediction.",
+  "rank": 1
+ },
+ {
+  "q": "What is a prediction, in Professor Kim's plain definition?",
+  "kind": "exact",
+  "answer": "a guess about something not yet known",
+  "accept": [
+   "a guess about something not yet known, produced from patterns in things already known"
+  ],
+  "choices": [
+   "a guess about something not yet known",
+   "a stored answer",
+   "a calculation",
+   "a promise"
+  ],
+  "mcAnswer": "a guess about something not yet known",
+  "teach": "From the lesson: a prediction is the memory of examples, pointed at a new case.",
+  "teach2": "From the lesson: A prediction is a guess about something not yet known, produced from patterns in things already known. Another way: because it is a guess, it can be wrong; because it comes from patterns, it is usually better than a coin; both halves matter.",
+  "walk": "Walk it through: (1) The lesson defines the core act part by part. (2) It is a guess, so it can be wrong. (3) And its target is something not yet known.",
+  "rank": 1
+ },
+ {
+  "q": "What is inference, in plain words?",
+  "kind": "exact",
+  "answer": "prediction",
+  "accept": [
+   "prediction, wearing its work clothes",
+   "the using of the frozen model"
+  ],
+  "choices": [
+   "prediction",
+   "training",
+   "the workshop",
+   "a lookup"
+  ],
+  "mcAnswer": "prediction",
+  "teach": "From the lesson: inference is the engineer's word for the using of the model.",
+  "teach2": "From the lesson: Inference is prediction, wearing its work clothes. The pair is worth fixing side by side: training is the showing, inference is the using. Another way: when documentation boasts about inference speed or inference cost, it is boasting about how fast and cheaply the frozen model produces predictions.",
+  "walk": "Walk it through: (1) Engineers have their own word for running a new case through frozen settings. (2) The lesson translates it on sight. (3) Inference is prediction.",
+  "rank": 1
+ },
+ {
+  "q": "In the grading example, the tool's top prediction was right how many times out of twenty enquiries?",
+  "kind": "exact",
+  "answer": "fourteen",
+  "accept": [
+   "fourteen times out of twenty",
+   "fourteen of the twenty"
+  ],
+  "choices": [
+   "fourteen",
+   "six",
+   "twenty",
+   "seventy"
+  ],
+  "mcAnswer": "fourteen",
+  "teach": "From the lesson: count the hits, count the misses, and you have the beginning of knowledge.",
+  "teach2": "From the lesson: this tool's top prediction was right fourteen times out of twenty. Another way to remember the example: fourteen became clients and six did not, and knowing that split on your own cases is worth more than any brochure.",
+  "walk": "Walk it through: (1) The tool made its top call on twenty enquiries. (2) The month ended and the outcomes were counted. (3) Fourteen of the twenty became clients — so the answer is fourteen.",
+  "rank": 1
+ },
+ {
+  "q": "What is sorting, once you look underneath the decisive way a filter moves a message?",
+  "kind": "exact",
+  "answer": "prediction with the uncertainty trimmed off",
+  "accept": [
+   "prediction with the uncertainty trimmed off for display"
+  ],
+  "choices": [
+   "prediction with the uncertainty trimmed off",
+   "a lookup",
+   "a calculation",
+   "understanding"
+  ],
+  "mcAnswer": "prediction with the uncertainty trimmed off",
+  "teach": "From the lesson: the filter's decisiveness is a costume.",
+  "teach2": "From the lesson: Sorting is prediction with the uncertainty trimmed off for display, and once you see that, you will ask the sorter the predictor's question: how often is the sort wrong, and wrong in which direction, because a real enqui Another way: the filter predicted junk was the likely verdict and acted on it — the prediction is still there, with its error rate, under the tidy display.",
+  "walk": "Walk it through: (1) Sorting looks like knowing because it acts decisively. (2) The lesson looks underneath the act. (3) Underneath is prediction with the uncertainty trimmed off.",
+  "rank": 2
+ },
+ {
+  "q": "How does a chatbot produce a paragraph, according to this lesson?",
+  "kind": "exact",
+  "answer": "a predictor running in a loop",
+  "accept": [
+   "prediction running in a loop"
+  ],
+  "choices": [
+   "a predictor running in a loop",
+   "a lookup",
+   "understanding",
+   "a calculation"
+  ],
+  "mcAnswer": "a predictor running in a loop",
+  "teach": "From the lesson: the maker is a predictor running in a loop.",
+  "teach2": "From the lesson: predictor running in a loop. It predicts the next word. Then it predicts the next word after that, given the words so far, including its own. Another way: a paragraph is hundreds of small predictions in a row, each shaped by the memory of examples — fluency is what very good, very fast small predictions feel like.",
+  "walk": "Walk it through: (1) The lesson looks for the prediction inside the maker. (2) It finds the next-word guess. (3) Repeated hundreds of times, that is prediction, in a loop.",
+  "rank": 2
+ },
+ {
+  "q": "Why does the lesson say a system usually does not learn from you while you use it?",
+  "kind": "exact",
+  "answer": "the settings are frozen",
+  "accept": [
+   "because the settings are frozen",
+   "the workshop is elsewhere"
+  ],
+  "choices": [
+   "the settings are frozen",
+   "the wild",
+   "the workshop",
+   "the scoreboard"
+  ],
+  "mcAnswer": "the settings are frozen",
+  "teach": "From the lesson: what feels like learning is prediction with more of your words in the input.",
+  "teach2": "From the lesson: they do not retrain the model. The settings are frozen. The workshop is elsewhere and elsewhen. Another way: your corrections shape the current conversation because the conversation is part of the input — but the long adjustment happened in the workshop, before the system ever met you.",
+  "walk": "Walk it through: (1) The timeline separates training from prediction. (2) Your use of the system is all on the prediction side. (3) Nothing retrains because the settings are frozen.",
+  "rank": 2
+ },
+ {
+  "q": "Why does prediction work at all, when it works?",
+  "kind": "exact",
+  "answer": "the world has habits",
+  "accept": [
+   "because the world has habits"
+  ],
+  "choices": [
+   "the world has habits",
+   "causes",
+   "stored",
+   "the scoreboard"
+  ],
+  "mcAnswer": "the world has habits",
+  "teach": "From the lesson: a model is a very large collection of the world's habits, distilled into settings.",
+  "teach2": "From the lesson: Prediction works because the world has habits. People who ask about price in the first line usually keep asking about price. Another way: people who ask about price first usually keep asking about price, and messages shaped like past junk are usually junk — patterns are the fingerprints of those habits.",
+  "walk": "Walk it through: (1) The lesson asks why guessing from patterns can succeed. (2) It answers with the stability underneath the patterns. (3) Prediction works because the world has habits.",
+  "rank": 3
+ },
+ {
+  "q": "What are patterns silent about, however well they predict?",
+  "kind": "exact",
+  "answer": "what produces what",
+  "accept": [
+   "causes",
+   "what produces what"
+  ],
+  "choices": [
+   "what produces what",
+   "what travels together",
+   "the unknown",
+   "the error rate"
+  ],
+  "mcAnswer": "what produces what",
+  "teach": "From the lesson: patterns tell you what travels together.",
+  "teach2": "From the lesson: Patterns tell you what travels together. They are silent about what produces what. Another way: deadline enquiries becoming clients is a pattern worth ranking by — but ordering every client to mention a deadline would manufacture deadlines, not seriousness.",
+  "walk": "Walk it through: (1) The lesson separates travelling together from causing. (2) Prediction only needs the travelling together. (3) What patterns cannot tell you is what produces what.",
+  "rank": 3
+ },
+ {
+  "q": "What is a prediction that is only remembered afterwards, according to the lesson?",
+  "kind": "exact",
+  "answer": "a story",
+  "accept": [
+   "not a prediction; it is a story",
+   "a story"
+  ],
+  "choices": [
+   "a story",
+   "the scoreboard",
+   "a calculation",
+   "a promise"
+  ],
+  "mcAnswer": "a story",
+  "teach": "From the lesson: write it down, date it, count it later.",
+  "teach2": "From the lesson: A prediction remembered afterwards is not a prediction; it is a story, and stories always grade themselves kindly. Another way: the scoreboard only works when the guess was fixed in writing before the outcome arrived — afterwards, memory edits the guess kindly.",
+  "walk": "Walk it through: (1) Grading requires the prediction to be recorded in advance. (2) A version recalled after the outcome is not fixed. (3) The lesson calls that a story.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words, take one thing a tool does and say what it predicts, from what patterns, about what unknown.",
+  "kind": "keywords",
+  "answer": "the system predicts this, from patterns in that, about this unknown",
+  "accept": [],
+  "choices": [
+   "the system predicts this, from patterns in that, about this unknown",
+   "understanding",
+   "a lookup",
+   "a promise"
+  ],
+  "mcAnswer": "the system predicts this, from patterns in that, about this unknown",
+  "teach": "From the lesson: when you can fill in all three blanks, the tool has no fog left to hide in.",
+  "teach2": "From the lesson: Run that sentence shape over anything a tool does this week: the system predicts this, from patterns in that, about this unknown. Another way: the draft is a prediction of text, the posting time is a prediction of attention, the summary is a prediction of words — same shape, three blanks, every time.",
+  "walk": "Walk it through: (1) Name the output as a prediction. (2) Name the patterns it comes from, the memory of examples. (3) Name the unknown it is about — and the tool is translated.",
+  "rank": 3,
+  "keywords": [
+   [
+    "predict",
+    "predicts",
+    "prediction"
+   ],
+   [
+    "patterns",
+    "examples"
+   ],
+   [
+    "unknown",
+    "future",
+    "attention",
+    "text"
+   ]
+  ],
+  "need": 2
+ }
+]

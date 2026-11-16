@@ -1,0 +1,207 @@
+[
+ {
+  "q": "What is it called when a model matches the training examples too closely, capturing noise and coincidence as if they were the pattern?",
+  "kind": "exact",
+  "answer": "overfitting",
+  "accept": [],
+  "choices": [
+   "overfitting",
+   "underfitting",
+   "early stopping",
+   "noise"
+  ],
+  "mcAnswer": "overfitting",
+  "teach": "From the lesson: The model knows the training examples by heart and understands nothing beyond them.",
+  "teach2": "\"Overfitting is the student who memorised last year's exam answers instead of learning the subject: perfect on the questions already seen, helpless on new ones.\" The model knows the training examples by heart and understands nothing beyond them.",
+  "walk": "Walk it through step by step: (1) The model fits the training examples too exactly. (2) It fails on new cases it never saw. (3) That failure is called overfitting, so the answer is overfitting.",
+  "rank": 1
+ },
+ {
+  "q": "How does the lesson describe overfitting, in the phrase it repeats as the lesson's sentence?",
+  "kind": "exact",
+  "answer": "memorising instead of learning",
+  "accept": [
+   "memorising"
+  ],
+  "choices": [
+   "memorising instead of learning",
+   "learning the pattern",
+   "the practice questions",
+   "early stopping"
+  ],
+  "mcAnswer": "memorising instead of learning",
+  "teach": "From the lesson: A memorising model recites the training examples while a learning model captures the pattern that travels to new cases.",
+  "teach2": "\"Overfitting is the student who memorised last year's exam answers instead of learning the subject: perfect on the questions already seen, helpless on new ones.\" A memorising model recites the training examples while a learning model captures the pattern that travels to new cases.",
+  "walk": "Walk it through step by step: (1) The overfit model is perfect on seen examples. (2) It is helpless on new ones. (3) The lesson's description is memorising instead of learning.",
+  "rank": 1
+ },
+ {
+  "q": "What is the opposite failure called, where a model learns too little and is weak on both training and new examples?",
+  "kind": "exact",
+  "answer": "underfitting",
+  "accept": [],
+  "choices": [
+   "underfitting",
+   "overfitting",
+   "early stopping",
+   "noise"
+  ],
+  "mcAnswer": "underfitting",
+  "teach": "From the lesson: An underfit model misses even the real pattern, so it is mediocre on old questions and new ones alike.",
+  "teach2": "\"Underfitting is the failure of learning too little.\" An underfit model misses even the real pattern, so it is mediocre on old questions and new ones alike.",
+  "walk": "Walk it through step by step: (1) This model has no big gap between seen and unseen scores. (2) It is weak everywhere because the pattern was never captured. (3) That condition is underfitting, so the answer is underfitting.",
+  "rank": 1
+ },
+ {
+  "q": "A model gets one hundred and ninety-six out of two hundred training examples right. What is that score, in words?",
+  "kind": "exact",
+  "answer": "ninety-eight percent",
+  "accept": [],
+  "choices": [
+   "ninety-eight percent",
+   "sixty-one percent",
+   "eighty-six",
+   "ninety percent"
+  ],
+  "mcAnswer": "ninety-eight percent",
+  "teach": "From the lesson: That beautiful training score is only half of the pair of numbers that matter.",
+  "teach2": "\"One hundred and ninety-six out of two hundred is ninety-eight percent.\" That beautiful training score is only half of the pair of numbers that matter.",
+  "walk": "Walk it through step by step: (1) Divide one hundred and ninety-six by two hundred. (2) That gives zero point nine eight. (3) In words that is ninety-eight percent, so the answer is ninety-eight percent.",
+  "rank": 2
+ },
+ {
+  "q": "The same model gets sixty-one out of one hundred fresh, unseen examples right. What is that score, in words?",
+  "kind": "exact",
+  "answer": "sixty-one percent",
+  "accept": [],
+  "choices": [
+   "sixty-one percent",
+   "ninety-eight percent",
+   "eighty-six",
+   "ninety percent"
+  ],
+  "mcAnswer": "sixty-one percent",
+  "teach": "From the lesson: Set beside the training score, that unseen score exposes how little actually travelled.",
+  "teach2": "\"Sixty-one out of one hundred is sixty-one percent. Barely better than a coin flip dressed in statistics.\" Set beside the training score, that unseen score exposes how little actually travelled.",
+  "walk": "Walk it through step by step: (1) Divide sixty-one by one hundred. (2) That is zero point six one. (3) In words that is sixty-one percent, so the answer is sixty-one percent.",
+  "rank": 2
+ },
+ {
+  "q": "What is the gap, in words, between a training score of ninety-eight percent and an unseen score of sixty-one percent?",
+  "kind": "exact",
+  "answer": "thirty-seven",
+  "accept": [
+   "thirty-seven percentage points"
+  ],
+  "choices": [
+   "thirty-seven",
+   "four",
+   "ninety-eight",
+   "sixty-one"
+  ],
+  "mcAnswer": "thirty-seven",
+  "teach": "From the lesson: A healthy model in the lesson had a gap of only four points.",
+  "teach2": "\"The gap is ninety-eight minus sixty-one, which is thirty-seven percentage points.\" A healthy model in the lesson had a gap of only four points.",
+  "walk": "Walk it through step by step: (1) Subtract the unseen score from the training score. (2) Ninety-eight minus sixty-one is thirty-seven. (3) So the answer is thirty-seven.",
+  "rank": 2
+ },
+ {
+  "q": "When a vendor shows you only a training score, what question does the lesson tell you to ask every time?",
+  "kind": "exact",
+  "answer": "What does it score on data it has never seen?",
+  "accept": [],
+  "choices": [
+   "What does it score on data it has never seen?",
+   "last year's exam answers",
+   "the practice questions",
+   "the training examples"
+  ],
+  "mcAnswer": "What does it score on data it has never seen?",
+  "teach": "From the lesson: Memorising aces the training examples by definition, so only unseen data can tell a learner from a parrot.",
+  "teach2": "\"What does it score on data it has never seen? Ask it every time.\" Memorising aces the training examples by definition, so only unseen data can tell a learner from a parrot.",
+  "walk": "Walk it through step by step: (1) A training score alone cannot detect memorising. (2) The missing number is performance on unseen examples. (3) So the question is What does it score on data it has never seen?",
+  "rank": 3
+ },
+ {
+  "q": "What is it called when you watch unseen-example performance during training and stop when it stops improving?",
+  "kind": "exact",
+  "answer": "early stopping",
+  "accept": [],
+  "choices": [
+   "early stopping",
+   "underfitting",
+   "overfitting",
+   "noise"
+  ],
+  "mcAnswer": "early stopping",
+  "teach": "From the lesson: Training longer would let the model start learning the noise instead of the pattern.",
+  "teach2": "\"a practice called early stopping, catches the model at its wisest moment.\" Training longer would let the model start learning the noise instead of the pattern.",
+  "walk": "Walk it through step by step: (1) Overfitting often grows as training continues. (2) Watching unseen performance tells you when learning has peaked. (3) Stopping there is called early stopping, so the answer is early stopping.",
+  "rank": 2
+ },
+ {
+  "q": "Three students are tested. One scores one hundred percent on practice and forty percent on a fresh paper, one scores seventy and sixty-eight, and one scores forty-five and forty-four. Which student is the pure memoriser?",
+  "kind": "exact",
+  "answer": "Student A",
+  "accept": [],
+  "choices": [
+   "Student A",
+   "Student B",
+   "Student C",
+   "the healthy learner"
+  ],
+  "mcAnswer": "Student A",
+  "teach": "From the lesson: The healthy learner shows a small gap, while the underfit student is weak everywhere with no gap.",
+  "teach2": "\"Student A is the pure memoriser, severely overfit, perfect on the seen, helpless on the new, the worked example from the start of this lesson wearing a number.\" The healthy learner shows a small gap, while the underfit student is weak everywhere with no gap.",
+  "walk": "Walk it through step by step: (1) Look for a perfect seen score with a collapse on fresh questions. (2) Only the first student described shows that pattern. (3) So the answer is Student A.",
+  "rank": 3
+ },
+ {
+  "q": "What do we call the random wobble of the world in the data that no pattern explains, which a flexible model may bend its dials to fit?",
+  "kind": "exact",
+  "answer": "noise",
+  "accept": [],
+  "choices": [
+   "noise",
+   "the pattern",
+   "the label",
+   "gradient descent"
+  ],
+  "mcAnswer": "noise",
+  "teach": "From the lesson: Patterns repeat in unseen data while noise, by definition, does not.",
+  "teach2": "\"Real data contains noise, meaning the random wobble of the world that no pattern explains.\" Patterns repeat in unseen data while noise, by definition, does not.",
+  "walk": "Walk it through step by step: (1) Some variation in the labels has no explainable pattern. (2) The lesson gave that wobble a name. (3) The name is noise, so the answer is noise.",
+  "rank": 2
+ },
+ {
+  "q": "In your own words, explain overfitting using a student and an exam, and say what the cure is.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "memorised",
+    "memorising",
+    "memorise"
+   ],
+   [
+    "exam",
+    "questions",
+    "examples"
+   ],
+   [
+    "never seen",
+    "unseen",
+    "new"
+   ],
+   [
+    "grade",
+    "test",
+    "hold back"
+   ]
+  ],
+  "need": 3,
+  "teach": "From the lesson: The cure is to hold back unseen questions and grade on those.",
+  "teach2": "\"The cure is the same in both cases — hold back questions the learner has never seen, and grade on those.\" A student or a model that only recites seen answers has memorised, not learned.",
+  "walk": "Walk it through step by step: (1) Describe the student who memorised last year's exam answers. (2) Note he is perfect on seen questions and helpless on new ones. (3) Add the cure, grading on held-back unseen questions, so a good answer covers memorising, the exam, and unseen grading.",
+  "rank": 3
+ }
+]

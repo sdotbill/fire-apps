@@ -1,0 +1,226 @@
+[
+ {
+  "accept": [
+   "work done in the world"
+  ],
+  "answer": "work done in the world",
+  "choices": [
+   "work done in the world",
+   "a cheerful list of tips",
+   "fixed rules",
+   "a long conversation"
+  ],
+  "kind": "exact",
+  "mcAnswer": "work done in the world",
+  "q": "According to the lesson, what does an agent give you that a model that only answers does not?",
+  "rank": 1,
+  "teach": "From the lesson: an agent acts in the world, an answering model only replies.",
+  "teach2": "\"A model that only answers gives you words. An agent gives you work done in the world.\" In other words, the test is whether a real job got finished, not whether a nice paragraph came back.",
+  "walk": "Walk it through step by step: (1) the lesson opens with the simplest distinction in the whole class. (2) Words are what an answering model returns. (3) Finished jobs, like a sent message or a placed meeting, are what an agent returns, so the answer is work done in the world."
+ },
+ {
+  "accept": [
+   "hands for a model",
+   "hands"
+  ],
+  "answer": "hands for a model",
+  "choices": [
+   "hands for a model",
+   "fixed rules",
+   "a long conversation",
+   "work done in the world"
+  ],
+  "kind": "exact",
+  "mcAnswer": "hands for a model",
+  "q": "In the lesson, what are tools compared to, in the picture Professor Kowalczyk asks you to hold?",
+  "rank": 1,
+  "teach": "From the lesson: tools let the model reach into real systems.",
+  "teach2": "\"Tools are hands for a model. Without hands, the mind can advise you beautifully and still move nothing.\" Put differently, advice becomes action only when the model can actually reach the inbox, the calendar, or the file.",
+  "walk": "Walk it through step by step: (1) the lesson defines a tool as any ability beyond producing words. (2) It then gives a picture to hold onto. (3) That picture is hands, so the answer is hands for a model."
+ },
+ {
+  "accept": [
+   "the outcome the agent is working toward",
+   "the outcome it is working toward"
+  ],
+  "answer": "the outcome the agent is working toward",
+  "choices": [
+   "the outcome the agent is working toward",
+   "a cheerful list of tips",
+   "a long conversation",
+   "fixed rules"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the outcome the agent is working toward",
+  "q": "What does the lesson say a goal is, in an agent working for you?",
+  "rank": 1,
+  "teach": "From the lesson: a goal names the outcome, not every single step.",
+  "teach2": "\"A goal means the outcome the agent is working toward, stated clearly enough that the agent can tell whether it is getting closer or drifting away.\" That is why a good instruction names the finish line and lets the agent work out the middle steps.",
+  "walk": "Walk it through step by step: (1) the lesson unpacks its definition piece by piece. (2) The second piece is the goal. (3) It is defined as the outcome being worked toward, so the answer is the outcome the agent is working toward."
+ },
+ {
+  "accept": [
+   "the freedom to carry out the next steps without asking you about every single one",
+   "carrying out next steps without asking about every one"
+  ],
+  "answer": "the freedom to carry out the next steps without asking you about every single one",
+  "choices": [
+   "the freedom to carry out the next steps without asking you about every single one",
+   "follows fixed rules written in advance",
+   "a report that says done, trust me",
+   "fifty turns"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the freedom to carry out the next steps without asking you about every single one",
+  "q": "What does autonomy mean in this lesson, in plain words?",
+  "rank": 2,
+  "teach": "From the lesson: autonomy comes in degrees, and more of it saves time while giving the agent more room to be wrong.",
+  "teach2": "\"In this class we call that quality autonomy, and autonomy simply means the freedom to carry out the next steps without asking you about every single one.\" So autonomy is not about cleverness, it is about how far the agent may go before it checks back with you.",
+  "walk": "Walk it through step by step: (1) the lesson names the ability to take more than one step on its own. (2) It gives that quality a name, autonomy. (3) It defines it as freedom to proceed without asking about every step, so that is the answer."
+ },
+ {
+  "accept": [
+   "fixed rules written in advance",
+   "fixed rules"
+  ],
+  "answer": "fixed rules written in advance",
+  "choices": [
+   "fixed rules written in advance",
+   "judgment plus tools",
+   "work done in the world",
+   "hands for a model"
+  ],
+  "kind": "exact",
+  "mcAnswer": "fixed rules written in advance",
+  "q": "How does the lesson say ordinary software works, unlike an agent?",
+  "rank": 2,
+  "teach": "From the lesson: a filter that files receipts follows a fixed rule and cannot judge a case its writer never imagined.",
+  "teach2": "\"Ordinary software follows fixed rules written in advance. If this arrives, then do that.\" An agent differs because the model can read a strange, mixed message and judge what it actually is.",
+  "walk": "Walk it through step by step: (1) the lesson asks where ordinary software fits. (2) It answers that ordinary software was programmed ahead of time. (3) What it follows is fixed rules written in advance, so that is the answer."
+ },
+ {
+  "accept": [
+   "Judgment plus tools",
+   "judgment plus tools"
+  ],
+  "answer": "Judgment plus tools",
+  "choices": [
+   "Judgment plus tools",
+   "fixed rules written in advance",
+   "a long conversation",
+   "a cheerful list of tips"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Judgment plus tools",
+  "q": "What short formula does the lesson give for what an agent is?",
+  "rank": 2,
+  "teach": "From the lesson: tools without judgment are just automation, and judgment without tools is just advice.",
+  "teach2": "\"Judgment plus tools, aimed at a goal, over several steps, with a report at the end.\" Remembering that one sentence gives you the whole definition in your pocket.",
+  "walk": "Walk it through step by step: (1) the lesson contrasts automation and advice. (2) Automation is tools without judgment, advice is judgment without tools. (3) An agent combines them, so the answer is Judgment plus tools."
+ },
+ {
+  "accept": [
+   "wandering work"
+  ],
+  "answer": "wandering work",
+  "choices": [
+   "wandering work",
+   "checkable work",
+   "work done in the world",
+   "fixed rules"
+  ],
+  "kind": "exact",
+  "mcAnswer": "wandering work",
+  "q": "According to the lesson, what follows from a vague goal?",
+  "rank": 2,
+  "teach": "From the lesson: an agent drifting without a clear goal still produces motion, and motion can look like progress.",
+  "teach2": "\"So if X is vague, then Y will be wandering work, hold onto that. Vague goal, wandering work. Clear goal, checkable work.\" Said plainly, the quality of the work can never rise above the clarity of the outcome you named.",
+  "walk": "Walk it through step by step: (1) the lesson warns that an unclear goal lets the agent drift. (2) It sums the warning up in a short paired sentence. (3) The result of vagueness is wandering work, so that is the answer."
+ },
+ {
+  "accept": [
+   "speaks in your name",
+   "where an action becomes irreversible"
+  ],
+  "answer": "speaks in your name",
+  "choices": [
+   "speaks in your name",
+   "groups them by what they need",
+   "the receipts and the notices",
+   "draft replies to the routine questions"
+  ],
+  "kind": "exact",
+  "mcAnswer": "speaks in your name",
+  "q": "Where does the lesson say the stop point belongs, when you hand a job to an agent?",
+  "rank": 3,
+  "teach": "From the lesson: the stop point belongs where an action becomes irreversible, spends money, speaks in your name, or touches another person's rights.",
+  "teach2": "\"the stop point belongs where an action becomes irreversible, spends money, speaks in your name, or touches another person's rights\" That line is drawn task by task, and drawing it is the real skill of working with agents.",
+  "walk": "Walk it through step by step: (1) routine, reversible steps can run on their own. (2) Some actions cannot be unsent or undone. (3) Speaking in your name is one of those, so the agent must stop and ask there."
+ },
+ {
+  "accept": [
+   "checkable and reversible"
+  ],
+  "answer": "checkable and reversible",
+  "choices": [
+   "checkable and reversible",
+   "however elegant the words are",
+   "written in advance",
+   "in your own hands"
+  ],
+  "kind": "exact",
+  "mcAnswer": "checkable and reversible",
+  "q": "What two qualities make a job a strong candidate to hand to an agent?",
+  "rank": 3,
+  "teach": "From the lesson: you must be able to tell afterwards whether each step was done right, and undo a wrong step without real harm.",
+  "teach2": "\"If your job is checkable and reversible all the way through, it is a strong candidate to hand to an agent outright.\" If you cannot check it even afterwards, the lesson says to keep it in your own hands for now.",
+  "walk": "Walk it through step by step: (1) the guided moment asks whether you could verify each step afterwards. (2) It asks whether a wrong step could be undone without harm. (3) Jobs passing both tests are checkable and reversible, so that is the answer."
+ },
+ {
+  "accept": [
+   "what it left for you to decide"
+  ],
+  "answer": "what it left for you to decide",
+  "choices": [
+   "what it left for you to decide",
+   "a cheerful list of tips",
+   "fixed rules written in advance",
+   "a long conversation"
+  ],
+  "kind": "exact",
+  "mcAnswer": "what it left for you to decide",
+  "q": "An agent's report must tell you what it did, what it found, and what else, according to the lesson?",
+  "rank": 3,
+  "teach": "From the lesson: a report that just says done, trust me, is not a report.",
+  "teach2": "\"An agent must be able to tell you what it did, what it found, and what it left for you to decide, in language you can check.\" A report like that lets you correct the agent and give a better goal next time.",
+  "walk": "Walk it through step by step: (1) the lesson makes reporting one of the four pieces of an agent. (2) It lists three things the report must cover. (3) Alongside what it did and what it found comes what it left for you to decide, so that is the answer."
+ },
+ {
+  "keywords": [
+   [
+    "checkable"
+   ],
+   [
+    "reversible"
+   ],
+   [
+    "stop",
+    "pause",
+    "ask"
+   ],
+   [
+    "money",
+    "irreversible",
+    "your name",
+    "rights"
+   ]
+  ],
+  "kind": "keywords",
+  "need": 3,
+  "q": "In your own words, name one job in your own life you would hand to an agent, and the exact point where you would want it to stop and ask you. Why there?",
+  "rank": 3,
+  "teach": "From the lesson: there is no single right answer; the shape of a good one is what matters.",
+  "teach2": "\"If your job is checkable and reversible all the way through, it is a strong candidate to hand to an agent outright.\" Build your answer on the same bones: a checkable, reversible job, and a stop point where money, your name, irreversibility, or someone's rights come in.",
+  "walk": "Walk it through step by step: (1) pick a real repeating job, like the morning inbox. (2) Check that its steps can be verified and undone. (3) Name the exact point where it stops being routine, so the answer is your job plus your stop point and the reason for it."
+ }
+]

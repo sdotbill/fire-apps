@@ -1,0 +1,232 @@
+[
+ {
+  "q": "What is a population, in this lesson?",
+  "kind": "exact",
+  "answer": "the whole group you want to learn about",
+  "accept": [],
+  "choices": [
+   "the whole group you want to learn about",
+   "the part of the population you actually examine",
+   "the people chosen for the sample who did not answer",
+   "how widespread a thing is in the population"
+  ],
+  "mcAnswer": "the whole group you want to learn about",
+  "rank": 1,
+  "_quote": "A population is the whole group you want to learn about — all of them, every one.",
+  "_angle": "The population is all of them, every one — customers, orders, voters, or predictions.",
+  "walk": "Walk it through: (1) The lesson defines the whole before the part. (2) The whole group you want to learn about has a name of its own. (3) That name is the population.",
+  "teach2": "A population is the whole group you want to learn about — all of them, every one. The population is all of them, every one — customers, orders, voters, or predictions.",
+  "teach": "From the lesson: The population is all of them, every one — customers, orders, voters, or predictions."
+ },
+ {
+  "q": "In the survey example, two hundred customers were asked and one hundred and sixty replied. How many did not reply, in the lesson's own words?",
+  "kind": "exact",
+  "answer": "forty",
+  "accept": [],
+  "choices": [
+   "forty",
+   "one hundred and sixty",
+   "two hundred",
+   "one hundred and twelve"
+  ],
+  "mcAnswer": "forty",
+  "rank": 1,
+  "_quote": "In our survey, two hundred were asked and one hundred and sixty replied, so forty did not.",
+  "_angle": "Two hundred asked minus one hundred and sixty replies leaves forty who did not answer.",
+  "walk": "Walk it through: (1) The sample chosen was two hundred. (2) The replies numbered one hundred and sixty. (3) Subtract, and the lesson's own count of those who did not reply is forty.",
+  "teach2": "In our survey, two hundred were asked and one hundred and sixty replied, so forty did not. Two hundred asked minus one hundred and sixty replies leaves forty who did not answer.",
+  "teach": "From the lesson: Two hundred asked minus one hundred and sixty replies leaves forty who did not answer."
+ },
+ {
+  "q": "Of the one hundred and sixty who replied, one hundred and twelve said they would recommend the business. What percentage is that, in the lesson's own words?",
+  "kind": "exact",
+  "answer": "seventy",
+  "accept": [],
+  "choices": [
+   "seventy",
+   "eighty",
+   "fifty-two",
+   "sixty-five"
+  ],
+  "mcAnswer": "seventy",
+  "rank": 1,
+  "_quote": "Divide: one hundred and twelve divided by one hundred and sixty is zero point seven.",
+  "_angle": "One hundred and twelve divided by one hundred and sixty is zero point seven, so seventy percent of respondents said yes.",
+  "walk": "Walk it through: (1) Divide the yes answers by all the replies: one hundred and twelve over one hundred and sixty. (2) That gives zero point seven. (3) In the lesson's words, the percentage is seventy.",
+  "teach2": "Divide: one hundred and twelve divided by one hundred and sixty is zero point seven. One hundred and twelve divided by one hundred and sixty is zero point seven, so seventy percent of respondents said yes.",
+  "teach": "From the lesson: One hundred and twelve divided by one hundred and sixty is zero point seven, so seventy percent of respondents said yes."
+ },
+ {
+  "q": "What is the margin of error?",
+  "kind": "exact",
+  "answer": "the amount by which a sample result may reasonably differ from the population value",
+  "accept": [],
+  "choices": [
+   "the amount by which a sample result may reasonably differ from the population value",
+   "the people chosen for the sample who did not answer",
+   "the share who did answer",
+   "a small sample used to test the method itself"
+  ],
+  "mcAnswer": "the amount by which a sample result may reasonably differ from the population value",
+  "rank": 2,
+  "_quote": "The margin of error is the amount by which a sample result may reasonably differ from the population value, purely because you asked some instead of all.",
+  "_angle": "The margin exists purely because you asked some instead of all.",
+  "walk": "Walk it through: (1) A sample gives an estimate, not the exact population value. (2) The reasonable gap between the two has a name. (3) That name is the margin of error.",
+  "teach2": "The margin of error is the amount by which a sample result may reasonably differ from the population value, purely because you asked some instead of all. The margin exists purely because you asked some instead of all.",
+  "teach": "From the lesson: The margin exists purely because you asked some instead of all."
+ },
+ {
+  "q": "What was the response rate in the survey example, in the lesson's own words?",
+  "kind": "exact",
+  "answer": "eighty",
+  "accept": [],
+  "choices": [
+   "eighty",
+   "seventy",
+   "forty",
+   "twenty"
+  ],
+  "mcAnswer": "eighty",
+  "rank": 2,
+  "_quote": "The response rate is the share who did answer: one hundred and sixty divided by two hundred is zero point eight — eighty percent.",
+  "_angle": "The response rate is the share who did answer: one hundred and sixty divided by two hundred is zero point eight.",
+  "walk": "Walk it through: (1) The response rate is the replies divided by those asked. (2) One hundred and sixty over two hundred is zero point eight. (3) In the lesson's words, the response rate is eighty.",
+  "teach2": "The response rate is the share who did answer: one hundred and sixty divided by two hundred is zero point eight — eighty percent. The response rate is the share who did answer: one hundred and sixty divided by two hundred is zero point eight.",
+  "teach": "From the lesson: The response rate is the share who did answer: one hundred and sixty divided by two hundred is zero point eight."
+ },
+ {
+  "q": "Why can a very large sample still be badly wrong?",
+  "kind": "exact",
+  "answer": "no sample size cures it",
+  "accept": [
+   "bias points away from the truth"
+  ],
+  "choices": [
+   "no sample size cures it",
+   "the choosing is the science",
+   "the sample is the population",
+   "intentions are not votes"
+  ],
+  "mcAnswer": "no sample size cures it",
+  "rank": 2,
+  "_quote": "Five: bias is a choosing method that points away from the truth, and no sample size cures it.",
+  "_angle": "Bias points away from the truth in one direction, and a larger sample only makes the wrong answer more precise.",
+  "walk": "Walk it through: (1) Noise wobbles around the truth and shrinks as a sample grows. (2) Bias is a choosing method that favours some members systematically. (3) Growing that sample does not fix the choosing, because no sample size cures it.",
+  "teach2": "Five: bias is a choosing method that points away from the truth, and no sample size cures it. Bias points away from the truth in one direction, and a larger sample only makes the wrong answer more precise.",
+  "teach": "From the lesson: Bias points away from the truth in one direction, and a larger sample only makes the wrong answer more precise."
+ },
+ {
+  "q": "What are convenience samples excellent for, according to the lesson?",
+  "kind": "exact",
+  "answer": "discovering that a problem exists",
+  "accept": [],
+  "choices": [
+   "discovering that a problem exists",
+   "measuring how common anything is",
+   "a guarantee about the future",
+   "the share who did answer"
+  ],
+  "mcAnswer": "discovering that a problem exists",
+  "rank": 3,
+  "_quote": "They are excellent for discovering that a problem exists: if twelve of this week's visitors independently mention the same broken page, the page is broken, and you need no random sample to justify fixing it.",
+  "_angle": "Existence, yes; prevalence — how widespread a thing is — no, because ease of reaching is itself a filter of unknown shape.",
+  "walk": "Walk it through: (1) A convenience sample reaches whoever was easiest to reach, through an unknown filter. (2) Repeated independent complaints can still show a problem exists. (3) So convenience samples are excellent for discovering that a problem exists.",
+  "teach2": "They are excellent for discovering that a problem exists: if twelve of this week's visitors independently mention the same broken page, the page is broken, and you need no random sample to justify fixing it. Existence, yes; prevalence — how widespread a thing is — no, because ease of reaching is itself a filter of unknown shape.",
+  "teach": "From the lesson: Existence, yes; prevalence — how widespread a thing is — no, because ease of reaching is itself a filter of unknown shape."
+ },
+ {
+  "q": "Why does the lesson refuse to treat the predictions record's sixty-five percent as proof about future predictions?",
+  "kind": "exact",
+  "answer": "a census of the past",
+  "accept": [
+   "it is a census, not a sample"
+  ],
+  "choices": [
+   "a census of the past",
+   "a random sample",
+   "a large error with good posture",
+   "an anecdote collection wearing a percentage"
+  ],
+  "mcAnswer": "a census of the past",
+  "rank": 3,
+  "_quote": "Confusing a census of the past with a guarantee about the future is the most respectable error in this entire class, and it is still an error.",
+  "_angle": "For the sixty kept predictions the rate is an exact count about them; the future is a different population under different conditions.",
+  "walk": "Walk it through: (1) The sixty predictions are fully observed, so their rate is a count about those sixty. (2) Future predictions are a different population. (3) The record is a census of the past, not a guarantee about the future.",
+  "teach2": "Confusing a census of the past with a guarantee about the future is the most respectable error in this entire class, and it is still an error. For the sixty kept predictions the rate is an exact count about them; the future is a different population under different conditions.",
+  "teach": "From the lesson: For the sixty kept predictions the rate is an exact count about them; the future is a different population under different conditions."
+ },
+ {
+  "q": "In the town poll, one thousand voters were sampled and five hundred and twenty backed one candidate. What percentage is that, in the lesson's own words?",
+  "kind": "exact",
+  "answer": "fifty-two",
+  "accept": [],
+  "choices": [
+   "fifty-two",
+   "forty-nine",
+   "fifty-five",
+   "forty-eight"
+  ],
+  "mcAnswer": "fifty-two",
+  "rank": 3,
+  "_quote": "Five hundred and twenty divided by one thousand is zero point five two — fifty-two percent.",
+  "_angle": "Five hundred and twenty divided by one thousand is zero point five two, reported with a margin of error near three points.",
+  "walk": "Walk it through: (1) Divide the supporters by the whole sample: five hundred and twenty over one thousand. (2) That is zero point five two. (3) In the lesson's words, the percentage is fifty-two.",
+  "teach2": "Five hundred and twenty divided by one thousand is zero point five two — fifty-two percent. Five hundred and twenty divided by one thousand is zero point five two, reported with a margin of error near three points.",
+  "teach": "From the lesson: Five hundred and twenty divided by one thousand is zero point five two, reported with a margin of error near three points."
+ },
+ {
+  "q": "What does stratified sampling mean?",
+  "kind": "exact",
+  "answer": "dividing the population into groups",
+  "accept": [
+   "sampling from each group deliberately"
+  ],
+  "choices": [
+   "dividing the population into groups",
+   "the sample is the population",
+   "the people chosen for the sample who did not answer",
+   "how widespread a thing is in the population"
+  ],
+  "mcAnswer": "dividing the population into groups",
+  "rank": 3,
+  "_quote": "Stratified sampling means dividing the population into groups — strata — and sampling from each group deliberately, so no group is missed by chance.",
+  "_angle": "The groups are defined in advance, everyone keeps a fair chance within their group, and the proportions are corrected openly in the arithmetic.",
+  "walk": "Walk it through: (1) The population is split into groups that matter, such as new and established customers. (2) Each group is sampled deliberately rather than left to chance. (3) That is stratified sampling: dividing the population into groups and sampling from each.",
+  "teach2": "Stratified sampling means dividing the population into groups — strata — and sampling from each group deliberately, so no group is missed by chance. The groups are defined in advance, everyone keeps a fair chance within their group, and the proportions are corrected openly in the arithmetic.",
+  "teach": "From the lesson: The groups are defined in advance, everyone keeps a fair chance within their group, and the proportions are corrected openly in the arithmetic."
+ },
+ {
+  "q": "In your own words, explain what a complete finding from a sample must include beyond the headline number itself.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "sample",
+    "size"
+   ],
+   [
+    "chosen",
+    "choosing",
+    "method"
+   ],
+   [
+    "answered",
+    "share",
+    "response"
+   ]
+  ],
+  "need": 2,
+  "choices": [
+   "The finding is the number, plus the size of the sample, plus how the sample was chosen, plus the share who answered",
+   "a story with pages torn out",
+   "provisional belief",
+   "a census of stored data"
+  ],
+  "mcAnswer": "The finding is the number, plus the size of the sample, plus how the sample was chosen, plus the share who answered",
+  "rank": 3,
+  "_quote": "The finding is the number, plus the size of the sample, plus how the sample was chosen, plus the share who answered.",
+  "_angle": "A report missing any of the four parts is a story with pages torn out.",
+  "walk": "Walk it through: (1) The headline number is only the estimate. (2) Its trustworthiness depends on how many were asked and how they were chosen. (3) It also depends on how many of those chosen actually answered, so all four parts belong in the finding.",
+  "teach2": "The finding is the number, plus the size of the sample, plus how the sample was chosen, plus the share who answered. A report missing any of the four parts is a story with pages torn out.",
+  "teach": "From the lesson: A report missing any of the four parts is a story with pages torn out."
+ }
+]

@@ -60,5 +60,165 @@
    "audio": "audio/lessons30/espanol-i-speak-from-zero/lesson-12.mp3",
    "minutes": 29.74
   }
+ },
+ "ai-fundamentals-what-a-mind-made-of-math-is": {
+  "lesson-01": {
+   "hash": "5dac3a15252898c66ac3c088a1f2a0296e449af9",
+   "audio": "audio/lessons30/ai-fundamentals-what-a-mind-made-of-math-is/lesson-01.mp3",
+   "minutes": 25.66
+  },
+  "lesson-02": {
+   "hash": "758a252fe1056216adbc5f49a9f15a25d604804a",
+   "audio": "audio/lessons30/ai-fundamentals-what-a-mind-made-of-math-is/lesson-02.mp3",
+   "minutes": 26.2
+  },
+  "lesson-03": {
+   "hash": "a6dbb9e47803bd66362c078d89457856c68bd287",
+   "audio": "audio/lessons30/ai-fundamentals-what-a-mind-made-of-math-is/lesson-03.mp3",
+   "minutes": 26.03
+  },
+  "lesson-04": {
+   "hash": "232336953c58fa560a75cdb77d4d2ec2bed35dc4",
+   "audio": "audio/lessons30/ai-fundamentals-what-a-mind-made-of-math-is/lesson-04.mp3",
+   "minutes": 25.75
+  },
+  "lesson-05": {
+   "hash": "ed0059193a0f9f853ff43c4bf6a2b3e657633773",
+   "audio": "audio/lessons30/ai-fundamentals-what-a-mind-made-of-math-is/lesson-05.mp3",
+   "minutes": 26.0
+  },
+  "lesson-06": {
+   "hash": "8da1017088d87d945056c3b85c660c44abfb75e5",
+   "audio": "audio/lessons30/ai-fundamentals-what-a-mind-made-of-math-is/lesson-06.mp3",
+   "minutes": 27.68
+  }
+ },
+ "machine-learning-i-how-machines-learn-from-data": {
+  "lesson-01": {
+   "hash": "8292d9d6c740d23dae65bd75afc425daced86aae",
+   "audio": "audio/lessons30/machine-learning-i-how-machines-learn-from-data/lesson-01.mp3",
+   "minutes": 29.45
+  },
+  "lesson-02": {
+   "hash": "0b29527bf115ec6c6a4e0fe039f2757fe9c905db",
+   "audio": "audio/lessons30/machine-learning-i-how-machines-learn-from-data/lesson-02.mp3",
+   "minutes": 27.47
+  },
+  "lesson-03": {
+   "hash": "e326e3b3c070ec87f58c739a10bb85c7705ac81e",
+   "audio": "audio/lessons30/machine-learning-i-how-machines-learn-from-data/lesson-03.mp3",
+   "minutes": 29.11
+  },
+  "lesson-04": {
+   "hash": "299dd37da35b479ee8ac72e0b573f626d8858ae7",
+   "audio": "audio/lessons30/machine-learning-i-how-machines-learn-from-data/lesson-04.mp3",
+   "minutes": 29.18
+  },
+  "lesson-05": {
+   "hash": "d07f78c4f6b7e61983bc6ec2515440e483e99f07",
+   "audio": "audio/lessons30/machine-learning-i-how-machines-learn-from-data/lesson-05.mp3",
+   "minutes": 29.51
+  },
+  "lesson-06": {
+   "hash": "012a96f5c2380044de4126fb1b4df42d5f05d11a",
+   "audio": "audio/lessons30/machine-learning-i-how-machines-learn-from-data/lesson-06.mp3",
+   "minutes": 29.56
+  }
+ },
+ "agents-ai-that-acts-tools-memory-and-work": {
+  "lesson-01": {
+   "hash": "5ac21fdaf51492efa234f81e0c0079288aace985",
+   "audio": "audio/lessons30/agents-ai-that-acts-tools-memory-and-work/lesson-01.mp3",
+   "minutes": 26.03
+  },
+  "lesson-02": {
+   "hash": "7bcad0f684966ead3bc1088ae4061bdfc8c1d309",
+   "audio": "audio/lessons30/agents-ai-that-acts-tools-memory-and-work/lesson-02.mp3",
+   "minutes": 26.16
+  },
+  "lesson-03": {
+   "hash": "4448c64b12745a6d74c9214dccd47bded6b48702",
+   "audio": "audio/lessons30/agents-ai-that-acts-tools-memory-and-work/lesson-03.mp3",
+   "minutes": 26.36
+  },
+  "lesson-04": {
+   "hash": "b27d3db49d37cb05e4eea5c2753b63a4d1ef76ad",
+   "audio": "audio/lessons30/agents-ai-that-acts-tools-memory-and-work/lesson-04.mp3",
+   "minutes": 25.83
+  },
+  "lesson-05": {
+   "hash": "a16411b68307f6af684d7c37bb17081dcb9974da",
+   "audio": "audio/lessons30/agents-ai-that-acts-tools-memory-and-work/lesson-05.mp3",
+   "minutes": 26.78
+  },
+  "lesson-06": {
+   "hash": "7d7680e7d3459575398f9efb138fdf3bc82e0188",
+   "audio": "audio/lessons30/agents-ai-that-acts-tools-memory-and-work/lesson-06.mp3",
+   "minutes": 25.98
+  }
+ },
+ "computing-foundations-how-computers-actually-work": {
+  "lesson-01": {
+   "hash": "57d782d1b9a67b2f9d1390ec81ae6d339d46f2ea",
+   "audio": "audio/lessons30/computing-foundations-how-computers-actually-work/lesson-01.mp3",
+   "minutes": 33.1
+  },
+  "lesson-02": {
+   "hash": "6ccfc7377e454322e68c2bccde1bee1c63c1b574",
+   "audio": "audio/lessons30/computing-foundations-how-computers-actually-work/lesson-02.mp3",
+   "minutes": 29.34
+  },
+  "lesson-03": {
+   "hash": "cdeb6761bb5d813a789d6e03fa04dec5c199faea",
+   "audio": "audio/lessons30/computing-foundations-how-computers-actually-work/lesson-03.mp3",
+   "minutes": 30.01
+  },
+  "lesson-04": {
+   "hash": "bcad0df458e386e3bf7e706ea9d9e233f57dfe86",
+   "audio": "audio/lessons30/computing-foundations-how-computers-actually-work/lesson-04.mp3",
+   "minutes": 29.27
+  },
+  "lesson-05": {
+   "hash": "aa20ee87fdc0c51a0c8ce0f293a6af959e2327c6",
+   "audio": "audio/lessons30/computing-foundations-how-computers-actually-work/lesson-05.mp3",
+   "minutes": 29.02
+  },
+  "lesson-06": {
+   "hash": "e9b118d46f19fdedfb600c6ce7f5c29feceef09c",
+   "audio": "audio/lessons30/computing-foundations-how-computers-actually-work/lesson-06.mp3",
+   "minutes": 29.76
+  }
+ },
+ "data-where-it-lives-and-what-it-proves": {
+  "lesson-01": {
+   "hash": "0093b9f0f2cd88dc1ba524116612e2552d37c8aa",
+   "audio": "audio/lessons30/data-where-it-lives-and-what-it-proves/lesson-01.mp3",
+   "minutes": 25.25
+  },
+  "lesson-02": {
+   "hash": "f6b36608a06b58b57499f4796aeffbc8792808d3",
+   "audio": "audio/lessons30/data-where-it-lives-and-what-it-proves/lesson-02.mp3",
+   "minutes": 25.39
+  },
+  "lesson-03": {
+   "hash": "17ae79400807ab6b0f3470528152faba3396e5ac",
+   "audio": "audio/lessons30/data-where-it-lives-and-what-it-proves/lesson-03.mp3",
+   "minutes": 25.69
+  },
+  "lesson-04": {
+   "hash": "35211a8e20aca9bb9d1027212270971538ce0916",
+   "audio": "audio/lessons30/data-where-it-lives-and-what-it-proves/lesson-04.mp3",
+   "minutes": 26.32
+  },
+  "lesson-05": {
+   "hash": "5d3675edf97e09db10a515a502ff249b7af0d0f1",
+   "audio": "audio/lessons30/data-where-it-lives-and-what-it-proves/lesson-05.mp3",
+   "minutes": 25.3
+  },
+  "lesson-06": {
+   "hash": "00d39c81ec3f32a927756fd6d79b5c76957029ef",
+   "audio": "audio/lessons30/data-where-it-lives-and-what-it-proves/lesson-06.mp3",
+   "minutes": 25.61
+  }
  }
 }

@@ -1,0 +1,212 @@
+[
+ {
+  "q": "What do we call the single number that measures how bad a guess was?",
+  "kind": "exact",
+  "answer": "loss",
+  "accept": [
+   "the loss"
+  ],
+  "choices": [
+   "loss",
+   "feature",
+   "label",
+   "model"
+  ],
+  "mcAnswer": "loss",
+  "teach": "From the lesson: Zero loss means a perfect guess and a bigger loss means a worse guess.",
+  "teach2": "\"That number has a name. It is called the loss, and the recipe that produces it is called the loss function.\" Zero loss means a perfect guess and a bigger loss means a worse guess.",
+  "walk": "Walk it through step by step: (1) A guess and the truth go into the funnel. (2) One number comes out measuring wrongness. (3) That number is called the loss, so the answer is loss.",
+  "rank": 1
+ },
+ {
+  "q": "What do we call the recipe that takes a guess and the true label and returns a number measuring how bad the guess was?",
+  "kind": "exact",
+  "answer": "loss function",
+  "accept": [
+   "a loss function"
+  ],
+  "choices": [
+   "loss function",
+   "the funnel",
+   "classification",
+   "accuracy"
+  ],
+  "mcAnswer": "loss function",
+  "teach": "From the lesson: Every training nudge depends on the number this recipe produces.",
+  "teach2": "\"A loss function is a rule that takes a guess and the true label and returns a single number measuring how bad the guess was.\" Every training nudge depends on the number this recipe produces.",
+  "walk": "Walk it through step by step: (1) The funnel takes a guess and the truth. (2) It does arithmetic and returns one number. (3) The recipe inside the funnel is the loss function.",
+  "rank": 1
+ },
+ {
+  "q": "What does a loss of zero mean?",
+  "kind": "exact",
+  "answer": "a perfect guess",
+  "accept": [
+   "perfect guess"
+  ],
+  "choices": [
+   "a perfect guess",
+   "a worse guess",
+   "confident wrongness",
+   "the original units"
+  ],
+  "mcAnswer": "a perfect guess",
+  "teach": "From the lesson: When the guess matches the truth exactly there is nothing to fix on that example.",
+  "teach2": "\"Zero loss means a perfect guess. Bigger loss means a worse guess.\" When the guess matches the truth exactly there is nothing to fix on that example.",
+  "walk": "Walk it through step by step: (1) Loss measures how bad a guess was. (2) The smallest possible value is zero. (3) Zero happens only when the guess is perfect, so the answer is a perfect guess.",
+  "rank": 1
+ },
+ {
+  "q": "The truth is twenty-one jars and the model guesses eighteen jars. What is the size of the error, in words?",
+  "kind": "exact",
+  "answer": "three",
+  "accept": [
+   "three jars"
+  ],
+  "choices": [
+   "three",
+   "eighteen",
+   "twenty-one",
+   "nine"
+  ],
+  "mcAnswer": "three",
+  "teach": "From the lesson: Subtracting the guess from the truth gives the error size.",
+  "teach2": "\"If the truth is twenty-one jars and the guess is eighteen jars, the error is three jars, because twenty-one minus eighteen is three.\" Subtracting the guess from the truth gives the error size.",
+  "walk": "Walk it through step by step: (1) Subtract eighteen from twenty-one. (2) Twenty-one minus eighteen is three. (3) So the answer is three.",
+  "rank": 2
+ },
+ {
+  "q": "An error of three is squared to punish it. What is the squared error, in words?",
+  "kind": "exact",
+  "answer": "nine",
+  "accept": [],
+  "choices": [
+   "nine",
+   "three",
+   "sixteen",
+   "one"
+  ],
+  "mcAnswer": "nine",
+  "teach": "From the lesson: Squaring means multiplying the error by itself, so three becomes nine.",
+  "teach2": "\"Guess eighteen, truth twenty-one, error three, squared error nine.\" Squaring means multiplying the error by itself, so three becomes nine.",
+  "walk": "Walk it through step by step: (1) The error is three. (2) Multiply three by three. (3) That gives nine, so the answer is nine.",
+  "rank": 2
+ },
+ {
+  "q": "What does an error of ten become when it is squared, in words?",
+  "kind": "exact",
+  "answer": "one hundred",
+  "accept": [],
+  "choices": [
+   "one hundred",
+   "ten",
+   "twenty-five",
+   "one"
+  ],
+  "mcAnswer": "one hundred",
+  "teach": "From the lesson: That is why squaring punishes a big miss far more than a small one.",
+  "teach2": "\"An error of one squares to one. An error of two squares to four. An error of three squares to nine. An error of ten squares to one hundred.\" That is why squaring punishes a big miss far more than a small one.",
+  "walk": "Walk it through step by step: (1) The error is ten. (2) Multiply ten by ten. (3) That gives one hundred, so the answer is one hundred.",
+  "rank": 2
+ },
+ {
+  "q": "Which kind of error punishes big misses far more than small ones, so an error of ten costs one hundred times an error of one?",
+  "kind": "exact",
+  "answer": "squared error",
+  "accept": [
+   "the squared error"
+  ],
+  "choices": [
+   "squared error",
+   "absolute error",
+   "accuracy",
+   "noise"
+  ],
+  "mcAnswer": "squared error",
+  "teach": "From the lesson: An error of one costs one while an error of ten costs one hundred under this method.",
+  "teach2": "\"Squaring does not just measure the miss, it punishes big misses far more than small ones.\" An error of one costs one while an error of ten costs one hundred under this method.",
+  "walk": "Walk it through step by step: (1) One squared is one and ten squared is one hundred. (2) The cost grows much faster than the miss. (3) That method is squared error, so the answer is squared error.",
+  "rank": 2
+ },
+ {
+  "q": "Three guesses have squared errors of one, sixteen and one. What is the mean squared error, in words?",
+  "kind": "exact",
+  "answer": "six",
+  "accept": [],
+  "choices": [
+   "six",
+   "eighteen",
+   "sixteen",
+   "two"
+  ],
+  "mcAnswer": "six",
+  "teach": "From the lesson: Averaging the three squared errors gives the training summary from the worked example.",
+  "teach2": "\"One plus sixteen plus one is eighteen. Eighteen divided by three is six.\" Averaging the three squared errors gives the training summary from the worked example.",
+  "walk": "Walk it through step by step: (1) Add one, sixteen and one to get eighteen. (2) Divide eighteen by three examples. (3) That gives six, so the answer is six.",
+  "rank": 3
+ },
+ {
+  "q": "The same three guesses have absolute errors of one, four and one. What is the mean absolute error, in words?",
+  "kind": "exact",
+  "answer": "two",
+  "accept": [
+   "two jars"
+  ],
+  "choices": [
+   "two",
+   "six",
+   "four",
+   "one"
+  ],
+  "mcAnswer": "two",
+  "teach": "From the lesson: Absolute errors ignore the sign and average in the original units.",
+  "teach2": "\"the three errors would be one, four and one, averaging to two, a mean absolute error of two jars.\" Absolute errors ignore the sign and average in the original units.",
+  "walk": "Walk it through step by step: (1) Add one, four and one to get six. (2) Divide six by three. (3) That gives two, so the answer is two.",
+  "rank": 3
+ },
+ {
+  "q": "In classification, what does the loss punish most savagely?",
+  "kind": "exact",
+  "answer": "confident wrongness",
+  "accept": [],
+  "choices": [
+   "confident wrongness",
+   "humble wrongness",
+   "a perfect guess",
+   "the original units"
+  ],
+  "mcAnswer": "confident wrongness",
+  "teach": "From the lesson: A model that is sure and wrong pays a large loss, which teaches it how sure it should be.",
+  "teach2": "\"The loss then punishes confident wrongness savagely and shrugs at humble wrongness.\" A model that is sure and wrong pays a large loss, which teaches it how sure it should be.",
+  "walk": "Walk it through step by step: (1) Classification models guess a confidence between zero and one. (2) Being sure and wrong is the worst case. (3) The loss punishes that most, so the answer is confident wrongness.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words, why does the lesson say choosing a loss function is choosing what the machine will care about?",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "loss"
+   ],
+   [
+    "counts",
+    "put in",
+    "includes"
+   ],
+   [
+    "leave out",
+    "leaves out",
+    "forgot"
+   ],
+   [
+    "machine",
+    "model"
+   ]
+  ],
+  "need": 3,
+  "teach": "From the lesson: The loss only counts what you put in it.",
+  "teach2": "\"The loss function only counts what you put in it. If your loss counts jars missed, the machine will optimise jars missed\" Whatever the loss leaves out, the machine will happily sacrifice, so writing the loss is writing the values.",
+  "walk": "Walk it through step by step: (1) The machine follows the loss number. (2) The loss only counts what was put into it. (3) Anything left out gets sacrificed, so a good answer covers loss, what it counts, and what it leaves out.",
+  "rank": 3
+ }
+]

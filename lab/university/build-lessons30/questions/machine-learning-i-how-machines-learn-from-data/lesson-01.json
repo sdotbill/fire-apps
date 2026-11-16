@@ -1,0 +1,218 @@
+[
+ {
+  "q": "In ordinary programming, what does a person feed into the computer so the computer can produce answers?",
+  "kind": "exact",
+  "answer": "rules",
+  "accept": [
+   "exact rules"
+  ],
+  "choices": [
+   "rules",
+   "examples",
+   "answers",
+   "training data"
+  ],
+  "mcAnswer": "rules",
+  "teach": "From the lesson: The old way starts from rules a person wrote, while the new way starts from examples.",
+  "teach2": "\"A person thinks hard, writes down exact rules, feeds those rules into the computer, and the computer follows the rules to produce answers.\" The old way starts from rules a person wrote, while the new way starts from examples.",
+  "walk": "Walk it through step by step: (1) The lesson drew two diagrams. (2) The top diagram started with rules going into the computer. (3) Answers came out, so the answer is rules.",
+  "rank": 1
+ },
+ {
+  "q": "What do we call the correct answer attached to one example?",
+  "kind": "exact",
+  "answer": "label",
+  "accept": [
+   "a label"
+  ],
+  "choices": [
+   "label",
+   "model",
+   "examples",
+   "rules"
+  ],
+  "mcAnswer": "label",
+  "teach": "From the lesson: Each example carries its own correct answer, and that attached answer is the label.",
+  "teach2": "\"Label is our second new word, and it just means the correct answer attached to an example.\" Each example carries its own correct answer, and that attached answer is the label.",
+  "walk": "Walk it through step by step: (1) An example is one case. (2) The lesson said each case comes with a known correct answer. (3) The name for that attached answer is label, so the answer is label.",
+  "rank": 1
+ },
+ {
+  "q": "What do we call the pile of examples with their labels that the machine learns from?",
+  "kind": "exact",
+  "answer": "training data",
+  "accept": [
+   "the training data"
+  ],
+  "choices": [
+   "training data",
+   "rules",
+   "answers",
+   "examples"
+  ],
+  "mcAnswer": "training data",
+  "teach": "From the lesson: That pile is the material the learning program studies during training.",
+  "teach2": "\"Training is the word for the learning process itself, and training data is the pile the machine learns from.\" That pile is the material the learning program studies during training.",
+  "walk": "Walk it through step by step: (1) Examples are collected. (2) Each example has a label. (3) The whole pile together is named in the lesson, so the answer is training data.",
+  "rank": 1
+ },
+ {
+  "q": "In the jam stall example, sunny days sold twenty jars and twenty-two jars. What is the average number of jars for a sunny day, in words?",
+  "kind": "exact",
+  "answer": "twenty-one",
+  "accept": [
+   "twenty-one jars"
+  ],
+  "choices": [
+   "twenty-one",
+   "twenty",
+   "twenty-two",
+   "eleven"
+  ],
+  "mcAnswer": "twenty-one",
+  "teach": "From the lesson: Adding the two sunny sales and halving gives the sunny average the lesson uses for its rule.",
+  "teach2": "\"Sunny days average twenty-one jars, because twenty and twenty-two average to twenty-one.\" Adding the two sunny sales and halving gives the sunny average the lesson uses for its rule.",
+  "walk": "Walk it through step by step: (1) Add twenty and twenty-two to get forty-two. (2) Divide forty-two by two. (3) That gives twenty-one, so the answer is twenty-one.",
+  "rank": 2
+ },
+ {
+  "q": "In the jam stall example, rainy days sold ten jars and twelve jars. What is the average number of jars for a rainy day, in words?",
+  "kind": "exact",
+  "answer": "eleven",
+  "accept": [
+   "eleven jars"
+  ],
+  "choices": [
+   "eleven",
+   "ten",
+   "twelve",
+   "twenty-one"
+  ],
+  "mcAnswer": "eleven",
+  "teach": "From the lesson: The rainy rule in the lesson is built from that average of the two rainy examples.",
+  "teach2": "\"Rainy days average eleven jars, because ten and twelve average to eleven.\" The rainy rule in the lesson is built from that average of the two rainy examples.",
+  "walk": "Walk it through step by step: (1) Add ten and twelve to get twenty-two. (2) Divide twenty-two by two. (3) That gives eleven, so the answer is eleven.",
+  "rank": 2
+ },
+ {
+  "q": "What do we call the flexible pattern-finder with adjustable settings inside it that learns from the examples?",
+  "kind": "exact",
+  "answer": "model",
+  "accept": [
+   "a model"
+  ],
+  "choices": [
+   "model",
+   "label",
+   "training data",
+   "a calculator"
+  ],
+  "mcAnswer": "model",
+  "teach": "From the lesson: The model is the thing whose dials get nudged until its guesses line up with the examples.",
+  "teach2": "\"A model is a mathematical shape with adjustable settings inside it, a bit like a radio with many dials.\" The model is the thing whose dials get nudged until its guesses line up with the examples.",
+  "walk": "Walk it through step by step: (1) The lesson listed five steps. (2) Step two named the flexible pattern-finder. (3) That name is model, so the answer is model.",
+  "rank": 1
+ },
+ {
+  "q": "Which of these did the lesson use as an example of a job that belongs with ordinary written rules?",
+  "kind": "exact",
+  "answer": "ten percent off",
+  "accept": [
+   "take ten percent off"
+  ],
+  "choices": [
+   "ten percent off",
+   "free money",
+   "a hundred cats and a hundred dogs",
+   "jam"
+  ],
+  "mcAnswer": "ten percent off",
+  "teach": "From the lesson: The discount rule is known and exact, unlike the fuzzy jobs that need learning from examples.",
+  "teach2": "\"if a customer spends more than one hundred dollars, take ten percent off, otherwise charge the full price.\" The discount rule is known and exact, unlike the fuzzy jobs that need learning from examples.",
+  "walk": "Walk it through step by step: (1) Ask whether the rule is already known and exact. (2) The discount rule is known and exact. (3) So it belongs with written rules, and the answer is ten percent off.",
+  "rank": 2
+ },
+ {
+  "q": "According to the lesson, what are the four beats that repeat during training?",
+  "kind": "exact",
+  "answer": "guess, compare with the truth, nudge the dials, repeat",
+  "accept": [
+   "guess, compare, nudge, repeat"
+  ],
+  "choices": [
+   "guess, compare with the truth, nudge the dials, repeat",
+   "examples in, rules out",
+   "rules in, answers out",
+   "stuck is a place, not a person"
+  ],
+  "mcAnswer": "guess, compare with the truth, nudge the dials, repeat",
+  "teach": "From the lesson: Those four beats describe how the dials are adjusted example after example until the guesses improve.",
+  "teach2": "\"training follows four beats, guess, compare with the truth, nudge the dials, repeat, until the guesses line up with the examples.\" Those four beats describe how the dials are adjusted example after example until the guesses improve.",
+  "walk": "Walk it through step by step: (1) The model makes a guess. (2) The guess is compared with the truth and the dials are nudged. (3) The cycle repeats, so the answer is guess, compare with the truth, nudge the dials, repeat.",
+  "rank": 2
+ },
+ {
+  "q": "A bakery owner has sixty mornings of honest records and wants to know which mornings will be busy. Which approach did the lesson say fits this job?",
+  "kind": "exact",
+  "answer": "examples in, rules out",
+  "accept": [
+   "the examples route"
+  ],
+  "choices": [
+   "examples in, rules out",
+   "rules in, answers out",
+   "exact rules",
+   "a calculator"
+  ],
+  "mcAnswer": "examples in, rules out",
+  "teach": "From the lesson: Because the busy pattern was fuzzy and the examples existed, learning from examples fit better than hand-written rules.",
+  "teach2": "\"Then Ana tries the examples route. For sixty mornings she simply records what happened.\" Because the busy pattern was fuzzy and the examples existed, learning from examples fit better than hand-written rules.",
+  "walk": "Walk it through step by step: (1) The pattern joins weather, school and roadworks in a fuzzy way. (2) Sixty labelled examples exist. (3) Fuzzy pattern plus examples means learning, so the answer is examples in, rules out.",
+  "rank": 3
+ },
+ {
+  "q": "What question does the lesson tell you to ask to decide whether a job needs written rules or learning from examples?",
+  "kind": "exact",
+  "answer": "Was the rule already known and exact, or was the pattern hiding in examples?",
+  "accept": [
+   "the sorting question"
+  ],
+  "choices": [
+   "Was the rule already known and exact, or was the pattern hiding in examples?",
+   "What examples did it learn from?",
+   "How do you test it on cases it has never seen?",
+   "How many, and how honestly labelled?"
+  ],
+  "mcAnswer": "Was the rule already known and exact, or was the pattern hiding in examples?",
+  "teach": "From the lesson: Asking that question tells you whether to write the rule or to learn it from examples.",
+  "teach2": "\"Was the rule already known and exact, or was the pattern hiding in examples?\" Asking that question tells you whether to write the rule or to learn it from examples.",
+  "walk": "Walk it through step by step: (1) The lesson gave one sorting question to keep in your pocket. (2) It contrasts a known exact rule with a pattern hiding in examples. (3) So the answer is Was the rule already known and exact, or was the pattern hiding in examples?",
+  "rank": 3
+ },
+ {
+  "q": "In your own words, what does the inversion of programming mean? Explain how machine learning differs from ordinary programming.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "examples"
+   ],
+   [
+    "rules"
+   ],
+   [
+    "ordinary",
+    "old"
+   ],
+   [
+    "flip",
+    "inversion",
+    "opposite"
+   ]
+  ],
+  "need": 3,
+  "teach": "From the lesson: Machine learning flips ordinary programming: examples in, rules out.",
+  "teach2": "\"A person gathers many examples, feeds those examples into a learning program, and the program works out rules of its own.\" The inversion means you feed examples in and the program works out the rules, instead of feeding rules in to get answers out.",
+  "walk": "Walk it through step by step: (1) Ordinary programming starts with rules and produces answers. (2) Machine learning starts with examples. (3) The learning program finds rules from those examples, so a good answer covers examples, rules, and the flip.",
+  "rank": 3
+ }
+]

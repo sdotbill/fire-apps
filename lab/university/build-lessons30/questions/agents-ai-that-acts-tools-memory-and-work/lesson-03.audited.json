@@ -1,0 +1,220 @@
+[
+ {
+  "accept": [
+   "everything the model can see right now, in this working session"
+  ],
+  "answer": "everything the model can see right now, in this working session",
+  "choices": [
+   "everything the model can see right now, in this working session",
+   "the filing cabinet and the archive room",
+   "the conversation so far",
+   "the results the tools just brought back"
+  ],
+  "kind": "exact",
+  "mcAnswer": "everything the model can see right now, in this working session",
+  "q": "What does the lesson say context means, in plain words?",
+  "rank": 1,
+  "teach": "From the lesson: context holds the conversation so far, the goal you gave, and the results the tools just brought back.",
+  "teach2": "\"Context, defined plainly for this class, means everything the model can see right now, in this working session, the conversation so far, the goal you gave\" So context is the bright workspace of the present job, nothing more and nothing less.",
+  "walk": "Walk it through step by step: (1) the lesson builds memory as two storeys. (2) The first storey is what is in view during the work. (3) That is defined as everything the model can see right now, in this working session."
+ },
+ {
+  "accept": [
+   "the stored information an agent can consult beyond the present session"
+  ],
+  "answer": "the stored information an agent can consult beyond the present session",
+  "choices": [
+   "the stored information an agent can consult beyond the present session",
+   "the goal you gave",
+   "notes written down deliberately",
+   "the conversation so far"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the stored information an agent can consult beyond the present session",
+  "q": "What is the long record, as the lesson defines it?",
+  "rank": 1,
+  "teach": "From the lesson: the long record lives in files, messages, documents, and notes written down deliberately.",
+  "teach2": "\"The long record means the stored information an agent can consult beyond the present session, kept in files, in your messages and documents\" Where context is a desk, the long record is the filing cabinet and the archive room.",
+  "walk": "Walk it through step by step: (1) the second storey sits underneath the bright workspace. (2) It survives the end of a session. (3) It is the stored information an agent can consult beyond the present session, so that is the answer."
+ },
+ {
+  "accept": [
+   "what it cannot see, it cannot use"
+  ],
+  "answer": "what it cannot see, it cannot use",
+  "choices": [
+   "what it cannot see, it cannot use",
+   "Listening was never the problem",
+   "Seeing is the problem",
+   "the bright workspace"
+  ],
+  "kind": "exact",
+  "mcAnswer": "what it cannot see, it cannot use",
+  "q": "The lesson asks you to remember one sentence above all about context. What does it say cannot be used?",
+  "rank": 1,
+  "teach": "From the lesson: most disappointments with agent memory are that one sentence arriving in disguise.",
+  "teach2": "\"Context is what the agent can see right now, and what it cannot see, it cannot use, however faithfully it was told.\" Listening was never the problem; seeing is governed by the workspace.",
+  "walk": "Walk it through step by step: (1) the lesson stresses that context is limited and temporary. (2) Facts can slide out of the bright workspace. (3) Once out of view they cannot shape the work, so the answer is what it cannot see, it cannot use."
+ },
+ {
+  "accept": [
+   "small and temporary"
+  ],
+  "answer": "small and temporary",
+  "choices": [
+   "small and temporary",
+   "large and lasting",
+   "invisible until fetched",
+   "kept in files"
+  ],
+  "kind": "exact",
+  "mcAnswer": "small and temporary",
+  "q": "How does the lesson describe context, in contrast to the long record?",
+  "rank": 2,
+  "teach": "From the lesson: the long record is large and lasting but invisible until fetched by search and reading.",
+  "teach2": "\"Context is always in view but small and temporary. The long record is large and lasting but invisible until fetched.\" The two storeys have opposite virtues, which is why neither can do the other's job.",
+  "walk": "Walk it through step by step: (1) the lesson compares the two storeys directly. (2) One is always in view, the other must be fetched. (3) The one always in view is small and temporary, so that is the answer."
+ },
+ {
+  "accept": [
+   "restating the load bearing fact"
+  ],
+  "answer": "restating the load bearing fact",
+  "choices": [
+   "restating the load bearing fact",
+   "record drift",
+   "summaries for steering",
+   "good fetching between them"
+  ],
+  "kind": "exact",
+  "mcAnswer": "restating the load bearing fact",
+  "q": "What does the lesson call the habit of saying the one crucial number, date, or promise again at the moment it matters?",
+  "rank": 2,
+  "teach": "From the lesson: it costs one sentence and protects against the most common memory failure agents have.",
+  "teach2": "\"In this class we call that habit restating the load bearing fact, because like a load bearing wall, that fact is the one the whole structure rests on\" You do not leave load bearing things to chance or to memory.",
+  "walk": "Walk it through step by step: (1) the lesson shows a key number sliding out of a long conversation's workspace. (2) The repair is to place the crucial fact back into view. (3) That habit is named restating the load bearing fact."
+ },
+ {
+  "accept": [
+   "the long record"
+  ],
+  "answer": "the long record",
+  "choices": [
+   "the long record",
+   "the bright workspace",
+   "your Tuesday conversation",
+   "a fresh session"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the long record",
+  "q": "According to the lesson, when an agent seems to learn you over time, what is actually accumulating?",
+  "rank": 2,
+  "teach": "From the lesson: your Tuesday conversation does not quietly retrain the model on Wednesday.",
+  "teach2": "\"What changes, what genuinely accumulates, is the long record.\" The notes get better and the files get richer, and an agent that consults them well feels as if it has learned you.",
+  "walk": "Walk it through step by step: (1) the lesson asks honestly whether the agent learns like a person. (2) The careful answer is mostly no for the model itself. (3) What grows instead is the long record, so that is the answer."
+ },
+ {
+  "accept": [
+   "write it where the record keeps things"
+  ],
+  "answer": "write it where the record keeps things",
+  "choices": [
+   "write it where the record keeps things",
+   "in a conversation that has ended",
+   "part of the furniture of the operation",
+   "living in the weather"
+  ],
+  "kind": "exact",
+  "mcAnswer": "write it where the record keeps things",
+  "q": "What rule does the lesson give for anything that will still matter next month?",
+  "rank": 2,
+  "teach": "From the lesson: a preference living only in an ended conversation is gone, however warm the conversation felt.",
+  "teach2": "\"If it matters next month, write it where the record keeps things. Saying it once, in passing, in a chat, is how important things get lost\" Written plainly where the agent will search, a preference shapes work for years.",
+  "walk": "Walk it through step by step: (1) the lesson contrasts weather with climate in an operation. (2) Spoken once means dependent on one day's context. (3) Written in the record means lasting, so the rule is write it where the record keeps things."
+ },
+ {
+  "accept": [
+   "record drift"
+  ],
+  "answer": "record drift",
+  "choices": [
+   "record drift",
+   "fetching",
+   "That round trip"
+  ],
+  "kind": "exact",
+  "mcAnswer": "record drift",
+  "q": "What does the lesson call the slow accumulation of stale and contradictory material in the long record?",
+  "rank": 3,
+  "teach": "From the lesson: its human version is the shared folder with three versions of one document under nearly the same name.",
+  "teach2": "\"We call it record drift, the slow accumulation of stale and contradictory material in the long record until the record itself becomes a source of error.\" The cure is to make one clear statement govern and mark the rest as superseded.",
+  "walk": "Walk it through step by step: (1) the lesson warns that a record keeping everything with equal weight keeps nothing well. (2) Old and new instructions start arriving side by side. (3) That failure is named record drift, so that is the answer."
+ },
+ {
+  "accept": [
+   "Sources for deciding."
+  ],
+  "answer": "Sources for deciding.",
+  "choices": [
+   "Sources for deciding.",
+   "Summaries for steering.",
+   "the two storeys",
+   "compression loses things"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Sources for deciding.",
+  "q": "The lesson says summaries are for steering. What are sources for?",
+  "rank": 3,
+  "teach": "From the lesson: a summary compresses, and compression loses the small qualifying sentence, the exception, the exact wording.",
+  "teach2": "\"Summaries for steering. Sources for deciding. If you hold that one distinction, you will use summaries well and never be betrayed by one.\" For load bearing facts, fetch the full source itself rather than trusting the bridge.",
+  "walk": "Walk it through step by step: (1) the lesson calls summaries a bridge between the storeys. (2) Bridges steer work but should not carry deciding weight. (3) Deciding belongs to sources, so the answer is Sources for deciding."
+ },
+ {
+  "accept": [
+   "seeing the right things at the moment of the work"
+  ],
+  "answer": "seeing the right things at the moment of the work",
+  "choices": [
+   "seeing the right things at the moment of the work",
+   "not seeing everything",
+   "ten thousand unimportant things",
+   "your whole life in view"
+  ],
+  "kind": "exact",
+  "mcAnswer": "seeing the right things at the moment of the work",
+  "q": "What does the lesson say the art of memory is, for minds and agents alike?",
+  "rank": 3,
+  "teach": "From the lesson: a workspace stuffed with everything is one where the important thing hides among ten thousand unimportant things.",
+  "teach2": "\"The art, for minds and for agents alike, is not seeing everything. It is seeing the right things at the moment of the work.\" Context small and well chosen, record large and well kept, and good fetching between them.",
+  "walk": "Walk it through step by step: (1) the lesson asks why context is not simply made unlimited. (2) Unlimited view would drown judgment in inventory. (3) The art is selection at the moment of need, so the answer is seeing the right things at the moment of the work."
+ },
+ {
+  "keywords": [
+   [
+    "record",
+    "written"
+   ],
+   [
+    "context",
+    "conversation"
+   ],
+   [
+    "update",
+    "superseded",
+    "govern"
+   ],
+   [
+    "search",
+    "found",
+    "fetch"
+   ]
+  ],
+  "kind": "keywords",
+  "need": 3,
+  "q": "In your own words, take three facts Dave's work depends on and say where each one lives right now, in a past conversation or in the written record, and what you would do about any that are not safely in the record.",
+  "rank": 3,
+  "teach": "From the lesson: three facts and three honest answers will show you your agent's memory more clearly than any feature list.",
+  "teach2": "\"If a preference lives only in a conversation that has ended, it is gone, however warm the conversation felt. If a preference is written into the record, stated plainly where the agent will search, it will shape work for years.\" Answer on those bones: name the fact, name its storey, and name the repair.",
+  "walk": "Walk it through step by step: (1) pick a real fact, like how drafts are handled. (2) say honestly whether it lives in context or in the record. (3) if it lives only in conversation, the repair is to write it into the record, so the answer is your three facts with their storeys and repairs."
+ }
+]

@@ -1,0 +1,231 @@
+[
+ {
+  "q": "What are the two master fog words this course refuses, the pair in the final lesson's title?",
+  "kind": "exact",
+  "answer": "no magic, no menace",
+  "accept": [
+   "magic and menace",
+   "no magic, no menace"
+  ],
+  "choices": [
+   "no magic, no menace",
+   "magic",
+   "menace",
+   "the fog"
+  ],
+  "mcAnswer": "no magic, no menace",
+  "teach": "From the lesson: not a slogan, a discipline — every claim gets translated into machinery before it gets believed, priced, or feared.",
+  "teach2": "From the lesson: No magic, no menace: not a slogan, a discipline. It means every claim about this technology gets translated into machinery before it gets believed, priced, or feared.\n\nLet us now run the discipline at full speed, because Another way: magic hides the workings behind wonder, and menace hides them behind imagined intentions — the honest vocabulary refuses both curtains.",
+  "walk": "Walk it through: (1) The final lesson is named for the rule of the room. (2) One word sells wonder, the other sells fear. (3) The pair is magic and menace.",
+  "rank": 1
+ },
+ {
+  "q": "In the honest vocabulary laid out in this lesson, what does the word data mean?",
+  "kind": "exact",
+  "answer": "the examples the system learns from",
+  "accept": [
+   "the examples",
+   "the examples the system learns from"
+  ],
+  "choices": [
+   "the examples the system learns from",
+   "the internal settings",
+   "the showing",
+   "the guesses"
+  ],
+  "mcAnswer": "the examples the system learns from",
+  "teach": "From the lesson: the whole vocabulary, laid out on the table the way we built it.",
+  "teach2": "From the lesson: Data: the examples the system learns from. Parameters: the internal settings inside it, the knobs. Another way: data is ingredient one from lesson two, unchanged — cases, shown to the system, usually with labels attached by people.",
+  "walk": "Walk it through: (1) The lesson restates each honest word with its plain meaning. (2) The first word is the first ingredient. (3) Data means the examples the system learns from.",
+  "rank": 1
+ },
+ {
+  "q": "What is inference, in the honest vocabulary?",
+  "kind": "exact",
+  "answer": "the using of the frozen model",
+  "accept": [
+   "the same act in its work clothes",
+   "the using of the frozen model"
+  ],
+  "choices": [
+   "the using of the frozen model",
+   "the showing",
+   "adjusting",
+   "examples"
+  ],
+  "mcAnswer": "the using of the frozen model",
+  "teach": "From the lesson: inference is prediction in its work clothes.",
+  "teach2": "From the lesson: Inference: the same act in its work clothes, the using of the frozen model. Another way: training froze the settings in the workshop; inference is what happens afterwards, in the wild, one new case at a time.",
+  "walk": "Walk it through: (1) The vocabulary list pairs inference with prediction. (2) Prediction is the act; inference is its working name. (3) It is the using of the frozen model.",
+  "rank": 1
+ },
+ {
+  "q": "What does the honest translation turn the word knows into, when a seller says the system knows your customers?",
+  "kind": "exact",
+  "answer": "predicts from patterns in examples",
+  "accept": [
+   "predicts from patterns",
+   "predicts from patterns in examples"
+  ],
+  "choices": [
+   "predicts from patterns in examples",
+   "understands your customers",
+   "was shaped by examples of",
+   "outputs the highest-ranked guess"
+  ],
+  "mcAnswer": "predicts from patterns in examples",
+  "teach": "From the lesson: run the translation in the half second before you decide what something is worth.",
+  "teach2": "From the lesson: Knows becomes predicts from patterns in examples. Understands becomes was shaped by examples of. Another way: understands becomes was shaped by examples of, and decides becomes outputs the highest-ranked guess — each fog verb has its honest replacement.",
+  "walk": "Walk it through: (1) The lesson lists the translations one by one. (2) The first fog verb is knows. (3) Its honest form is: predicts from patterns in examples.",
+  "rank": 1
+ },
+ {
+  "q": "What is magic, examined honestly, always a claim about?",
+  "kind": "exact",
+  "answer": "the speaker",
+  "accept": [
+   "the speaker, never about the system",
+   "a claim about the speaker"
+  ],
+  "choices": [
+   "the speaker",
+   "the system",
+   "the examples",
+   "the settings"
+  ],
+  "mcAnswer": "the speaker",
+  "teach": "From the lesson: it says I will not show you the workings — either because I cannot, or because I will not.",
+  "teach2": "From the lesson: Magic, examined, is always a claim about the speaker, never about the system. Another way: the first case is ignorance and the second is salesmanship, and neither deserves your money at the price wonder commands.",
+  "walk": "Walk it through: (1) The lesson examines the word magic on its own. (2) It asks what the word actually reports. (3) It reports something about the speaker.",
+  "rank": 2
+ },
+ {
+  "q": "Why does the honest vocabulary have no use for the word magic?",
+  "kind": "exact",
+  "answer": "the honest vocabulary is the workings",
+  "accept": [
+   "because the honest vocabulary is the workings"
+  ],
+  "choices": [
+   "the honest vocabulary is the workings",
+   "the workings",
+   "examples",
+   "settings"
+  ],
+  "mcAnswer": "the honest vocabulary is the workings",
+  "teach": "From the lesson: a thing explained is not diminished — a bridge is more impressive when you understand the loads it carries.",
+  "teach2": "From the lesson: The honest vocabulary has no use for magic because the honest vocabulary is the workings: examples, settings, adjusting, guessing, grading. Another way: magic is a curtain with a price tag, hung over workings that somebody does not want questioned — the vocabulary simply names the workings instead.",
+  "walk": "Walk it through: (1) Magic names a result whose workings will not be discussed. (2) The honest words exist to discuss exactly those workings. (3) So the vocabulary has no use for magic because the honest vocabulary is the workings.",
+  "rank": 2
+ },
+ {
+  "q": "In the headline drill, which word does Professor Kim call the most expensive word in the third headline?",
+  "kind": "exact",
+  "answer": "relax",
+  "accept": [
+   "relax"
+  ],
+  "choices": [
+   "relax",
+   "intelligence",
+   "decisions",
+   "platform"
+  ],
+  "mcAnswer": "relax",
+  "teach": "From the lesson: the third headline invited you to stop being the boundary detector.",
+  "teach2": "From the lesson: Relax is the most expensive word in that headline. Three headlines, three translations, and notice: in every case the machinery underneath was worth taking seriously, and in every case the fog was the part asking for you Another way: the headline said the platform makes the decisions so you can relax — translated, it asks you to surrender the one job lesson five said remains yours.",
+  "walk": "Walk it through: (1) The third headline promises the platform will decide so you can rest. (2) The lesson prices each word of it. (3) The expensive one is relax.",
+  "rank": 2
+ },
+ {
+  "q": "What citizen's skill does the course say you leave with?",
+  "kind": "exact",
+  "answer": "whether it is reporting or theatre",
+  "accept": [
+   "to read any headline about AI and know whether it is reporting or theatre"
+  ],
+  "choices": [
+   "whether it is reporting or theatre",
+   "reporting",
+   "theatre",
+   "the scoreboard"
+  ],
+  "mcAnswer": "whether it is reporting or theatre",
+  "teach": "From the lesson: fog is contagious, and so is clarity.",
+  "teach2": "From the lesson: you will leave able to read any headline about AI and know, within a sentence or two, whether it is reporting or theatre. Another way: within a sentence or two of any headline, the translation tells you whether you are reading about machinery or watching a performance.",
+  "walk": "Walk it through: (1) The lesson names the skill the whole course was building. (2) It concerns headlines about this technology. (3) The skill is knowing whether it is reporting or theatre.",
+  "rank": 2
+ },
+ {
+  "q": "What shape does the one-breath summary take, in honest words?",
+  "kind": "exact",
+  "answer": "it is a model, trained on examples of this, that predicts that, and we grade it by counting this",
+  "accept": [
+   "a model, trained on examples, that predicts, graded by counting"
+  ],
+  "choices": [
+   "it is a model, trained on examples of this, that predicts that, and we grade it by counting this",
+   "your brand",
+   "the examples",
+   "the boundary"
+  ],
+  "mcAnswer": "it is a model, trained on examples of this, that predicts that, and we grade it by counting this",
+  "teach": "From the lesson: if a claim cannot be said in that shape, it is not ready to be believed.",
+  "teach2": "From the lesson: it is a model, trained on examples of this, that predicts that, and we grade it by counting this. Another way: the breath carries the thing, its examples, its act, and its scoreboard — every important fact, and not one fog word.",
+  "walk": "Walk it through: (1) The farewell exercise compresses any honest claim into one breath. (2) It names the model, its training examples, its prediction, and its grading. (3) That is the shape: a model, trained on examples of this, that predicts that, graded by counting this.",
+  "rank": 3
+ },
+ {
+  "q": "What does the course's whole secret come down to, in its one starting sentence?",
+  "kind": "exact",
+  "answer": "a model is a function that was shown so many examples that its guesses became good",
+  "accept": [
+   "a model is a function that was shown so many examples that its guesses became good, and training is the showing"
+  ],
+  "choices": [
+   "a model is a function that was shown so many examples that its guesses became good",
+   "the honest vocabulary is the workings",
+   "you are the boundary detector",
+   "prediction is the core act"
+  ],
+  "mcAnswer": "a model is a function that was shown so many examples that its guesses became good",
+  "teach": "From the lesson: the sentence we started with is the sentence we end with — you know it now from the inside.",
+  "teach2": "From the lesson: a model is a function that was shown so many examples that its guesses became good, and training is the showing. Another way: everything in six lessons — ingredients, functions, predictions, boundaries — is that one sentence, unpacked and repacked.",
+  "walk": "Walk it through: (1) The lesson closes the circle back to lesson one. (2) It restates the whole secret in one line. (3) A model is a function that was shown so many examples that its guesses became good.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words, one paragraph: what is a model, and what did training do to it? Use one example from your own life where prediction, not understanding, was enough.",
+  "kind": "keywords",
+  "answer": "a model is a function, a machine for turning inputs into outputs, whose internal settings were adjusted, over millions of examples, until its predictions matched reality often enough to be useful",
+  "accept": [],
+  "choices": [
+   "a model is a function, a machine for turning inputs into outputs, whose internal settings were adjusted, over millions of examples, until its predictions matched reality often enough to be useful",
+   "a model is a function that was shown so many examples that its guesses became good",
+   "the honest vocabulary is the workings",
+   "you are the boundary detector"
+  ],
+  "mcAnswer": "a model is a function, a machine for turning inputs into outputs, whose internal settings were adjusted, over millions of examples, until its predictions matched reality often enough to be useful",
+  "teach": "From the lesson: the set problem, worked one final time, standing on everything we built.",
+  "teach2": "From the lesson: A model is a function, a machine for turning inputs into outputs, whose internal settings were adjusted, over millions of examples, until its predictions matched reality often enough to be useful. Another way: training is that adjustment — and the spam filter stands as the example, since it never understood a word of your email and prediction was enough.",
+  "walk": "Walk it through: (1) Name the thing: a function, inputs in and outputs out. (2) Name what training did: it adjusted the internal settings over millions of examples. (3) Close with your own example where prediction, not understanding, was enough.",
+  "rank": 3,
+  "keywords": [
+   [
+    "model",
+    "function"
+   ],
+   [
+    "training",
+    "adjusted",
+    "settings"
+   ],
+   [
+    "examples",
+    "predictions",
+    "prediction"
+   ]
+  ],
+  "need": 2
+ }
+]

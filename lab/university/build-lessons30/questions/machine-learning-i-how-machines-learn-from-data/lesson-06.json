@@ -1,0 +1,207 @@
+[
+ {
+  "q": "What do we call the slice of data set aside, untouched by training, used once at the end to grade the finished model?",
+  "kind": "exact",
+  "answer": "test set",
+  "accept": [
+   "test data"
+  ],
+  "choices": [
+   "test set",
+   "training set",
+   "validation set",
+   "the label definition"
+  ],
+  "mcAnswer": "test set",
+  "teach": "From the lesson: Training teaches, validation steers, and the test set delivers the final judgment.",
+  "teach2": "\"Test data is data set aside, untouched by training, used once at the end to grade the finished model on ground it has never walked.\" Training teaches, validation steers, and the test set delivers the final judgment.",
+  "walk": "Walk it through step by step: (1) The pie is sliced before training begins. (2) One slice stays sealed until every decision is made. (3) That slice is the test set, so the answer is test set.",
+  "rank": 1
+ },
+ {
+  "q": "Which set may you grade on repeatedly while you work, to choose features, pick the learning rate, and decide when to stop?",
+  "kind": "exact",
+  "answer": "validation set",
+  "accept": [
+   "the validation set"
+  ],
+  "choices": [
+   "validation set",
+   "test set",
+   "training set",
+   "the label definition"
+  ],
+  "mcAnswer": "validation set",
+  "teach": "From the lesson: That steering slice is distinct from the sealed final exam.",
+  "teach2": "\"The model never trains on it, but you may grade on it repeatedly while you work, choosing features, choosing the learning rate, deciding when to stop, comparing one recipe against another.\" That steering slice is distinct from the sealed final exam.",
+  "walk": "Walk it through step by step: (1) One slice teaches the dials and one slice judges at the end. (2) The middle slice is graded repeatedly to steer decisions. (3) That slice is the validation set, so the answer is validation set.",
+  "rank": 1
+ },
+ {
+  "q": "Which set does the model actually learn from, whose labels drive the dials downhill?",
+  "kind": "exact",
+  "answer": "training set",
+  "accept": [
+   "the training set"
+  ],
+  "choices": [
+   "training set",
+   "test set",
+   "validation set",
+   "the sealed envelope"
+  ],
+  "mcAnswer": "training set",
+  "teach": "From the lesson: Only the training set's labels move the dials during training.",
+  "teach2": "\"Training set for learning. Validation set for steering. Test set for the final, untouched judgment.\" Only the training set's labels move the dials during training.",
+  "walk": "Walk it through step by step: (1) Three slices have three different jobs. (2) Learning from labelled examples is one of those jobs. (3) That job belongs to the training set, so the answer is training set.",
+  "rank": 1
+ },
+ {
+  "q": "A dataset holds two hundred examples and seventy percent is sliced for training. How many examples are in the training set, in words?",
+  "kind": "exact",
+  "answer": "one hundred and forty",
+  "accept": [],
+  "choices": [
+   "one hundred and forty",
+   "thirty",
+   "two hundred",
+   "seventy"
+  ],
+  "mcAnswer": "one hundred and forty",
+  "teach": "From the lesson: The remaining sixty split equally between validation and test.",
+  "teach2": "\"Seventy percent of two hundred is one hundred and forty. So the training set holds one hundred and forty people.\" The remaining sixty split equally between validation and test.",
+  "walk": "Walk it through step by step: (1) Multiply two hundred by seventy percent. (2) That gives one hundred and forty. (3) So the answer is one hundred and forty.",
+  "rank": 2
+ },
+ {
+  "q": "Fifteen percent of the same two hundred examples is sliced for the test set. How many examples are in the test set, in words?",
+  "kind": "exact",
+  "answer": "thirty",
+  "accept": [],
+  "choices": [
+   "thirty",
+   "sixty",
+   "fifteen",
+   "one hundred and forty"
+  ],
+  "mcAnswer": "thirty",
+  "teach": "From the lesson: One hundred and forty plus thirty plus thirty accounts for the whole pie.",
+  "teach2": "\"Fifteen percent of two hundred is thirty. So the validation set holds thirty people, and the test set holds the remaining thirty people.\" One hundred and forty plus thirty plus thirty accounts for the whole pie.",
+  "walk": "Walk it through step by step: (1) Multiply two hundred by fifteen percent. (2) That gives thirty. (3) So the answer is thirty.",
+  "rank": 2
+ },
+ {
+  "q": "A finished model gets twenty-four out of thirty test cases right. What is that score, in words?",
+  "kind": "exact",
+  "answer": "eighty percent",
+  "accept": [],
+  "choices": [
+   "eighty percent",
+   "ninety-one percent",
+   "ninety-nine percent",
+   "eighty-four percent"
+  ],
+  "mcAnswer": "eighty percent",
+  "teach": "From the lesson: The lesson insists that score be reported with its size, as eighty percent on thirty unseen cases.",
+  "teach2": "\"Twenty-four out of thirty is eighty percent. That eighty percent is the headline, and a professional immediately asks the next question.\" The lesson insists that score be reported with its size, as eighty percent on thirty unseen cases.",
+  "walk": "Walk it through step by step: (1) Divide twenty-four by thirty to get zero point eight. (2) In words that is eighty percent. (3) So the answer is eighty percent.",
+  "rank": 2
+ },
+ {
+  "q": "How often should the sealed test set be used to grade the finished model?",
+  "kind": "exact",
+  "answer": "once, at the end",
+  "accept": [
+   "once"
+  ],
+  "choices": [
+   "once, at the end",
+   "repeatedly while you work",
+   "eleven times",
+   "in secret"
+  ],
+  "mcAnswer": "once, at the end",
+  "teach": "From the lesson: Repeated grading turns selection into fitting and the test set into another rehearsal.",
+  "teach2": "\"Test once, at the end, and report what you get, whether it flatters or stings.\" Repeated grading turns selection into fitting and the test set into another rehearsal.",
+  "walk": "Walk it through step by step: (1) Every extra grading that steers a decision fits the model to the exam. (2) The lesson's rule protects the final judgment. (3) That rule is once, at the end, so the answer is once, at the end.",
+  "rank": 2
+ },
+ {
+  "q": "Three claims are judged. The first grades on training data, the second adjusts features eleven times using the test score, and the third grades once on a sealed test set after all decisions were made on validation. Which claim is honest evidence?",
+  "kind": "exact",
+  "answer": "Claim three",
+  "accept": [],
+  "choices": [
+   "Claim three",
+   "Claim one",
+   "Claim two",
+   "the sealed envelope"
+  ],
+  "mcAnswer": "Claim three",
+  "teach": "From the lesson: The first claim cannot detect memorising and the second used the test set as a steering wheel.",
+  "teach2": "\"Claim three is honest evidence, modest and properly reported, score and size together, from an exam that could have failed and was allowed to speak once.\" The first claim cannot detect memorising and the second used the test set as a steering wheel.",
+  "walk": "Walk it through step by step: (1) Training grades prove nothing about unseen performance. (2) Repeated test grading is steering in costume. (3) A sealed, once-touched exam is honest, so the answer is Claim three.",
+  "rank": 3
+ },
+ {
+  "q": "Besides the score itself, what does the lesson tell you to always ask, because a score's trustworthiness depends on the test size?",
+  "kind": "exact",
+  "answer": "How many cases was that graded on?",
+  "accept": [],
+  "choices": [
+   "How many cases was that graded on?",
+   "What does it score on data it has never seen?",
+   "last year's world",
+   "the sealed envelope"
+  ],
+  "mcAnswer": "How many cases was that graded on?",
+  "teach": "From the lesson: Score and size must be reported together, in the same sentence, because the size reveals the uncertainty band.",
+  "teach2": "\"How many cases was that graded on? That question, added to last lesson's question, what does it score on data it has never seen, completes your two-question audit of any machine learning claim on earth.\" Score and size must be reported together, in the same sentence, because the size reveals the uncertainty band.",
+  "walk": "Walk it through step by step: (1) A percentage alone hides how much luck could move it. (2) The test size reveals that uncertainty band. (3) So the question is How many cases was that graded on?",
+  "rank": 3
+ },
+ {
+  "q": "What is the technique called where, when data is scarce, you rotate which slice is held out for validation and average the verdicts?",
+  "kind": "exact",
+  "answer": "cross-validation",
+  "accept": [],
+  "choices": [
+   "cross-validation",
+   "memorising",
+   "selection",
+   "the test set"
+  ],
+  "mcAnswer": "cross-validation",
+  "teach": "From the lesson: It rotates the validation slice fairly for steering while the final test set stays sealed throughout.",
+  "teach2": "\"a technique called cross-validation, named here so the term never intimidates you.\" It rotates the validation slice fairly for steering while the final test set stays sealed throughout.",
+  "walk": "Walk it through step by step: (1) One small validation slice may be too unreliable to steer by. (2) Rotating held-out slices and averaging gives a steadier verdict. (3) That technique is cross-validation, so the answer is cross-validation.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words, explain the three slices of data and the job each one does.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "training"
+   ],
+   [
+    "validation",
+    "steering",
+    "steer"
+   ],
+   [
+    "test"
+   ],
+   [
+    "never seen",
+    "unseen",
+    "sealed"
+   ]
+  ],
+  "need": 3,
+  "teach": "From the lesson: Training teaches, validation steers, test judges once on unseen ground.",
+  "teach2": "\"Training set for learning. Validation set for steering. Test set for the final, untouched judgment.\" The discipline is never letting the slices swap jobs, especially never steering with the sealed test set.",
+  "walk": "Walk it through step by step: (1) Name the training set as the slice the model learns from. (2) Name the validation set as the slice graded repeatedly for steering. (3) Name the test set as the sealed, unseen exam used once, so a good answer covers training, validation, and the sealed test.",
+  "rank": 3
+ }
+]

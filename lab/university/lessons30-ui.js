@@ -591,8 +591,18 @@
       btn.className = 'l30Choice';
       btn.textContent = t;
       btn.addEventListener('click', function () {
-        if (correct != null && String(t) === correct) onPass(qHelp > 0);
-        else { btn.disabled = true; onMiss('choice'); }
+        if (correct != null) {
+          if (String(t) === correct) onPass(qHelp > 0);
+          else { btn.disabled = true; onMiss('choice'); }
+        } else {
+          /* keywords step: correctText is null by design (own-words
+             question), so a pick is graded as an answer attempt with
+             the same keyword check the typed path uses — the lesson's
+             own model answer satisfies its keyword groups, the other
+             choices do not. */
+          check(String(t));
+          if (qStates[qIdx] !== 'pass') btn.disabled = true;
+        }
       });
       host.appendChild(btn);
     });

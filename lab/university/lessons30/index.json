@@ -4,6 +4,31 @@
    "lessons": 12,
    "minutes": 373.6,
    "questions": 140
+  },
+  "ai-fundamentals-what-a-mind-made-of-math-is": {
+   "lessons": 6,
+   "minutes": 157.3,
+   "questions": 66
+  },
+  "machine-learning-i-how-machines-learn-from-data": {
+   "lessons": 6,
+   "minutes": 174.3,
+   "questions": 66
+  },
+  "agents-ai-that-acts-tools-memory-and-work": {
+   "lessons": 6,
+   "minutes": 157.1,
+   "questions": 66
+  },
+  "computing-foundations-how-computers-actually-work": {
+   "lessons": 6,
+   "minutes": 180.5,
+   "questions": 66
+  },
+  "data-where-it-lives-and-what-it-proves": {
+   "lessons": 6,
+   "minutes": 153.6,
+   "questions": 66
   }
  }
 }

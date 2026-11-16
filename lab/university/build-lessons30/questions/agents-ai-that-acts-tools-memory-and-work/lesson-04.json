@@ -1,0 +1,221 @@
+[
+ {
+  "accept": [
+   "an ordered set of intended steps toward a goal, held lightly enough to be changed by evidence"
+  ],
+  "answer": "an ordered set of intended steps toward a goal, held lightly enough to be changed by evidence",
+  "choices": [
+   "an ordered set of intended steps toward a goal, held lightly enough to be changed by evidence",
+   "march through the sequence exactly as written",
+   "because the plan said so",
+   "a script for a play the world has not agreed to perform"
+  ],
+  "kind": "exact",
+  "mcAnswer": "an ordered set of intended steps toward a goal, held lightly enough to be changed by evidence",
+  "q": "What is a plan, as this lesson defines it for an agent?",
+  "rank": 1,
+  "teach": "From the lesson: a plan that cannot be changed by what the tools bring back is not a plan at all.",
+  "teach2": "\"A plan, in this class, means an ordered set of intended steps toward a goal, held lightly enough to be changed by evidence.\" Sequence matters, but evidence outranks the sequence whenever the two disagree.",
+  "walk": "Walk it through step by step: (1) the lesson defines its terms with care. (2) A plan must be ordered, intended, and changeable. (3) That full definition is the answer."
+ },
+ {
+  "accept": [
+   "one full turn of acting, observing what came back, and adjusting the next step in light of it"
+  ],
+  "answer": "one full turn of acting, observing what came back, and adjusting the next step in light of it",
+  "choices": [
+   "one full turn of acting, observing what came back, and adjusting the next step in light of it",
+   "a march with pauses",
+   "the world will hold still for its plan",
+   "what the tools bring back"
+  ],
+  "kind": "exact",
+  "mcAnswer": "one full turn of acting, observing what came back, and adjusting the next step in light of it",
+  "q": "What is a loop, in the lesson's plain definition?",
+  "rank": 1,
+  "teach": "From the lesson: the rhythm of good agent work is act, observe, adjust, repeated.",
+  "teach2": "\"A loop means one full turn of acting, observing what came back, and adjusting the next step in light of it.\" If nothing is allowed to change in the adjust beat, there is no loop, only a march with pauses.",
+  "walk": "Walk it through step by step: (1) the lesson breaks the loop into three beats. (2) Acting, observing, and adjusting must all be present. (3) One full turn of all three is the answer."
+ },
+ {
+  "accept": [
+   "the straight line march"
+  ],
+  "answer": "the straight line march",
+  "choices": [
+   "the straight line march",
+   "breaking the loop upward",
+   "looping without landing",
+   "the adjust beat"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the straight line march",
+  "q": "What does the lesson call the pattern of marching through a plan exactly as written, even as new information arrives?",
+  "rank": 1,
+  "teach": "From the lesson: the march produces work that is orderly, confident, and wrong.",
+  "teach2": "\"I call that pattern the straight line march, and I want you to be able to spot it everywhere after today\" The march continues because the plan said so, even when the customer has already replied and the file has moved.",
+  "walk": "Walk it through step by step: (1) the lesson opens with a failure everyone has watched. (2) Steps are followed exactly while the world changes around them. (3) That pattern is named the straight line march."
+ },
+ {
+  "accept": [
+   "Show me a place where what you found changed what you did next."
+  ],
+  "answer": "Show me a place where what you found changed what you did next.",
+  "choices": [
+   "Show me a place where what you found changed what you did next.",
+   "Where did the plan change, and what evidence changed it?",
+   "Is it done, and if not, what exactly remains?",
+   "How does the agent decide what to observe"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Show me a place where what you found changed what you did next.",
+  "q": "What single question does the lesson give you to test whether a system truly works in loops?",
+  "rank": 2,
+  "teach": "From the lesson: a looping agent can answer that question with examples all day; a marching system changes the subject.",
+  "teach2": "\"Show me a place where what you found changed what you did next. A looping agent can answer that question with examples all day.\" Adjustment proven by an example is the signature of a real loop.",
+  "walk": "Walk it through step by step: (1) the lesson says to test the adjust beat, not the acting. (2) The test demands a concrete example of change caused by evidence. (3) That question, word for word, is the answer."
+ },
+ {
+  "accept": [
+   "The goal stays fixed while the plan stays fluid."
+  ],
+  "answer": "The goal stays fixed while the plan stays fluid.",
+  "choices": [
+   "The goal stays fixed while the plan stays fluid.",
+   "Guard the goal. Release the plan.",
+   "Fast loops on safe ground. Slow loops on serious ground.",
+   "Loops serve landings."
+  ],
+  "kind": "exact",
+  "mcAnswer": "The goal stays fixed while the plan stays fluid.",
+  "q": "What nine-word principle does the lesson call the management secret of the whole class?",
+  "rank": 2,
+  "teach": "From the lesson: guard the goal, release the plan.",
+  "teach2": "\"The goal stays fixed while the plan stays fluid. Read that sentence again, because it is the management secret of this whole class in nine words.\" Frustration with agents is usually born when those two are swapped in practice.",
+  "walk": "Walk it through step by step: (1) the worked chase example keeps its outcome constant. (2) Everything underneath it moves as evidence arrives. (3) So the goal stays fixed while the plan stays fluid."
+ },
+ {
+  "accept": [
+   "breaking the loop upward"
+  ],
+  "answer": "breaking the loop upward",
+  "choices": [
+   "breaking the loop upward",
+   "looping without landing",
+   "the straight line march",
+   "what should be checked"
+  ],
+  "kind": "exact",
+  "mcAnswer": "breaking the loop upward",
+  "q": "What does the lesson call it when the agent stops the loop and brings a problem to you clearly, instead of guessing past it?",
+  "rank": 2,
+  "teach": "From the lesson: this is the correct adjustment when information is missing, instructions contradict each other, or a stop point is near.",
+  "teach2": "\"I call this breaking the loop upward, and I want you to honour it whenever you see it\" An agent that stops and asks is showing the exact virtue you most need in a worker who acts in your name.",
+  "walk": "Walk it through step by step: (1) the observe beat sometimes reveals the job cannot proceed as briefed. (2) The correct move is not a cleverer step. (3) Stopping and bringing the problem to you is breaking the loop upward."
+ },
+ {
+  "accept": [
+   "the one that treats every obstacle as a puzzle to be solved silently"
+  ],
+  "answer": "the one that treats every obstacle as a puzzle to be solved silently",
+  "choices": [
+   "the one that treats every obstacle as a puzzle to be solved silently",
+   "the one that stops and asks",
+   "can answer that question with examples all day",
+   "a looping agent"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the one that treats every obstacle as a puzzle to be solved silently",
+  "q": "According to the lesson, which agent is the dangerous one?",
+  "rank": 3,
+  "teach": "From the lesson: smoothness is not the goal; truth is the goal.",
+  "teach2": "\"The dangerous agent is never the one that stops and asks. The dangerous agent is the one that treats every obstacle as a puzzle to be solved silently\" Guessing past contradictions and missing facts is how smooth work becomes wrong work.",
+  "walk": "Walk it through step by step: (1) the lesson contrasts two responses to an obstacle. (2) Asking exposes the problem; silent solving hides it. (3) The silent solver is the dangerous one, so that is the answer."
+ },
+ {
+  "accept": [
+   "Slow loops on serious ground."
+  ],
+  "answer": "Slow loops on serious ground.",
+  "choices": [
+   "Slow loops on serious ground.",
+   "Fast loops on safe ground.",
+   "small steps wherever observation must be sharp",
+   "the goal stays fixed while the plan stays fluid"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Slow loops on serious ground.",
+  "q": "How should loops run on serious ground, where actions are hard to reverse?",
+  "rank": 3,
+  "teach": "From the lesson: step size should match the stakes and the uncertainty.",
+  "teach2": "\"Fast loops on safe ground. Slow loops on serious ground. That one habit, practised consistently, is most of what experienced agent supervisors actually do\" On serious ground, shrink the steps and observe each one.",
+  "walk": "Walk it through step by step: (1) the lesson teaches step craft as loop craft. (2) Safe, reversible ground allows speed. (3) Serious ground demands slowness, so the answer is Slow loops on serious ground."
+ },
+ {
+  "accept": [
+   "looping without landing"
+  ],
+  "answer": "looping without landing",
+  "choices": [
+   "looping without landing",
+   "breaking the loop upward",
+   "the straight line march",
+   "the adjust beat"
+  ],
+  "kind": "exact",
+  "mcAnswer": "looping without landing",
+  "q": "What does the lesson call the failure where an agent keeps turning the loop faithfully but never arrives?",
+  "rank": 3,
+  "teach": "From the lesson: each observation spawns two new considerations and the goal recedes like a shoreline.",
+  "teach2": "\"We call it looping without landing, the failure where an agent turns the loop faithfully, act, observe, adjust, act, observe, adjust, and yet never arrives\" The cure is a goal with a finish line and a report that answers whether it is done.",
+  "walk": "Walk it through step by step: (1) the lesson warns that every strength casts a shadow. (2) Motion grows while delivery never happens. (3) That failure is named looping without landing."
+ },
+ {
+  "accept": [
+   "Goal, checks, freedoms, fences."
+  ],
+  "answer": "Goal, checks, freedoms, fences.",
+  "choices": [
+   "Goal, checks, freedoms, fences.",
+   "act, observe, adjust",
+   "what evidence should change the plan",
+   "a finish line the agent can recognise"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Goal, checks, freedoms, fences.",
+  "q": "What four things, in order, does the lesson tell you to write when handing an agent a job of any real size?",
+  "rank": 3,
+  "teach": "From the lesson: on the busiest days, write at least the first and the fourth, the goal and the fences.",
+  "teach2": "\"Goal, checks, freedoms, fences. Four short paragraphs at most, and often four sentences will do.\" A brief written that way speeds the work up, because the agent spends its loops on the job itself.",
+  "walk": "Walk it through step by step: (1) the lesson ends with a practical rhythm for briefs. (2) It names four short parts in order. (3) They are goal, checks, freedoms, fences, so that is the answer."
+ },
+ {
+  "keywords": [
+   [
+    "act",
+    "step",
+    "steps"
+   ],
+   [
+    "observe",
+    "found",
+    "evidence"
+   ],
+   [
+    "adjust",
+    "changed",
+    "revised"
+   ],
+   [
+    "goal"
+   ]
+  ],
+  "kind": "keywords",
+  "need": 3,
+  "q": "In your own words, describe one real job where what the agent found partway through should change what it does next. What is the fixed goal, what might it observe, and what would it adjust?",
+  "rank": 3,
+  "teach": "From the lesson: the overdue chase became an answering job when observation showed the customer was waiting on a reply.",
+  "teach2": "\"Reading the calendar, Dave observes that two commitments overlap on Wednesday, a conflict no message has mentioned yet.\" Build your answer the same way: a fixed goal, a real observation, and an adjustment that the observation honestly forces.",
+  "walk": "Walk it through step by step: (1) name the job and fix its goal in one sentence. (2) name a finding the tools could plausibly bring back. (3) name what changes because of that finding, so the answer is your goal, observation, and adjustment together."
+ }
+]

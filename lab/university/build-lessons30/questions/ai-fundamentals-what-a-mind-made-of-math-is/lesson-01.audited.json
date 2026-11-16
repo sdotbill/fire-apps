@@ -1,0 +1,241 @@
+[
+ {
+  "q": "In Professor Kim's one-sentence summary, what is artificial intelligence, underneath the name?",
+  "kind": "exact",
+  "answer": "machinery",
+  "accept": [
+   "machinery, mathematics running at enormous scale on data",
+   "mathematics running at enormous scale on data"
+  ],
+  "choices": [
+   "machinery",
+   "a mind in a box",
+   "magic",
+   "a rival"
+  ],
+  "mcAnswer": "machinery",
+  "teach": "From the lesson: the whole secret fits in one sentence.",
+  "teach2": "From the lesson: Artificial intelligence is not magic, and it is not a mind in a box. It is machinery, mathematics running at enormous scale on data. Another way to hold it: strip the costume off and what remains is mathematics, running very large, on examples.",
+  "walk": "Walk it through: (1) The lesson refuses both magic and a mind in a box. (2) What it puts in their place is mathematics running at enormous scale on data. (3) Mathematics running like that is machinery — so the answer is machinery.",
+  "rank": 1
+ },
+ {
+  "q": "How was the spam filter built, if nobody wrote rules for it?",
+  "kind": "exact",
+  "answer": "examples",
+  "accept": [
+   "from examples",
+   "built from examples",
+   "shown examples"
+  ],
+  "choices": [
+   "examples",
+   "rules",
+   "labelled junk",
+   "capital letters"
+  ],
+  "mcAnswer": "examples",
+  "teach": "From the lesson: the junk folder is where most people met this kind of program.",
+  "teach2": "From the lesson: So the spam filter was not built from rules. It was built from examples. It was shown enormous numbers of messages, some labelled junk and some labelled real, and it found the patterns that tend to separate the two. Another way: instead of a person writing down what junk looks like, the filter was shown junk and real mail until it found the separating patterns itself.",
+  "walk": "Walk it through: (1) Junk senders change their wording daily, so hand-written rules always lag behind. (2) The lesson says the filter was not built from rules. (3) It was built from the other source — examples.",
+  "rank": 1
+ },
+ {
+  "q": "In the older kind of program, where does every behaviour come from?",
+  "kind": "exact",
+  "answer": "rules",
+  "accept": [
+   "written rules",
+   "instructions a person wrote",
+   "a list of rules"
+  ],
+  "choices": [
+   "rules",
+   "examples",
+   "patterns",
+   "guesses"
+  ],
+  "mcAnswer": "rules",
+  "teach": "From the lesson: the contrast between the two kinds of program is where the understanding lives.",
+  "teach2": "From the lesson: In that older kind, a person sits down and writes rules. If this happens, do that. Another way: in the old kind, a human imagines every case in advance and writes the instruction; in the new kind, the machine finds the patterns in examples.",
+  "walk": "Walk it through: (1) The lesson describes the older program first. (2) In it, a person thinks of cases ahead of time and writes them down as instructions. (3) Those written instructions are rules.",
+  "rank": 1
+ },
+ {
+  "q": "What translation does Professor Kim ask you to make every time you hear the phrase artificial intelligence?",
+  "kind": "exact",
+  "answer": "programs that learn patterns from examples",
+  "accept": [
+   "programs that learn patterns from examples",
+   "pattern machinery",
+   "learning from examples"
+  ],
+  "choices": [
+   "programs that learn patterns from examples",
+   "a mind in a box",
+   "magic",
+   "following rules a person wrote by hand"
+  ],
+  "mcAnswer": "programs that learn patterns from examples",
+  "teach": "From the lesson: names have history, and this name outran the work.",
+  "teach2": "From the lesson: Translate artificial intelligence into this: programs that learn patterns from examples. Another way: whenever the big phrase appears, swap in the plain description — a program, patterns, examples — and judge that instead.",
+  "walk": "Walk it through: (1) The phrase was coined in the nineteen fifties and outran the work. (2) Kim gives a plain replacement phrase. (3) That replacement is: programs that learn patterns from examples.",
+  "rank": 2
+ },
+ {
+  "q": "Which member of the family decides, person by person, who sees your post on a social platform?",
+  "kind": "exact",
+  "answer": "the recommender",
+  "accept": [
+   "recommender",
+   "the recommenders"
+  ],
+  "choices": [
+   "the recommender",
+   "the classifier",
+   "the generator",
+   "the predictor"
+  ],
+  "mcAnswer": "the recommender",
+  "teach": "From the lesson: this family member touches your livelihood directly.",
+  "teach2": "From the lesson: The recommender was shown examples of what each person lingered on, clicked on, shared, or scrolled past, and it predicts, for every post, who will probably linger. Another way: the sorter sorts mail and the maker makes drafts, but the one that hands your post to an audience is the recommender.",
+  "walk": "Walk it through: (1) The lesson names four members: sorters, predictors, makers, recommenders. (2) Deciding who sees what next is the recommending job. (3) So the member is the recommender.",
+  "rank": 2
+ },
+ {
+  "q": "What does the spam filter lack, even though it protects your inbox well?",
+  "kind": "exact",
+  "answer": "understanding",
+  "accept": [
+   "understanding",
+   "it does not understand"
+  ],
+  "choices": [
+   "understanding",
+   "scale",
+   "examples",
+   "patterns"
+  ],
+  "mcAnswer": "understanding",
+  "teach": "From the lesson: prediction is not understanding, and prediction is often enough.",
+  "teach2": "From the lesson: Your spam filter predicts, superbly, that a message is junk. It does not understand the message. Another way: it has patterns where understanding would go — and for that job, the patterns are enough.",
+  "walk": "Walk it through: (1) The filter's guesses about junk are superb. (2) But the lesson is explicit that it never grasps what a prize or a lie or money means. (3) What it lacks is understanding.",
+  "rank": 2
+ },
+ {
+  "q": "What are the two directions of fog Professor Kim refuses in his room?",
+  "kind": "exact",
+  "answer": "magic and menace",
+  "accept": [
+   "magic and menace",
+   "magic, and menace"
+  ],
+  "choices": [
+   "magic and menace",
+   "magic",
+   "menace",
+   "understanding"
+  ],
+  "mcAnswer": "magic and menace",
+  "teach": "From the lesson: both fogs assume a mind in the box, and both are wrong in the same place.",
+  "teach2": "From the lesson: Fog direction one says the machine is magic. This is the fog of the salesman and the breathless headline. And the lesson pairs it with its mirror: Fog direction two says the machine is a menace, a mind waking up, a rival, something that wants things and schemes for them. Another way: wonder in one direction, fear in the other — same mistake underneath.",
+  "walk": "Walk it through: (1) One fog is the salesman's: the tool is presented as wonderful beyond questioning. (2) The other fog is the headline's: the tool is presented as a waking rival. (3) The pair is magic and menace.",
+  "rank": 2
+ },
+ {
+  "q": "Every member of the family shares the same shape. What is that shape?",
+  "kind": "exact",
+  "answer": "something goes in and a guess comes out",
+  "accept": [
+   "in, and out",
+   "something goes in, a guess comes out"
+  ],
+  "choices": [
+   "something goes in and a guess comes out",
+   "a mind thinking",
+   "rules a person wrote by hand",
+   "understanding"
+  ],
+  "mcAnswer": "something goes in and a guess comes out",
+  "teach": "From the lesson: the shape of the act never changes.",
+  "teach2": "From the lesson: But the shape of the act never changes, and the shape is not the shape of a mind thinking. And the lesson states the shape itself: something goes in and a guess comes out Another way: input arrives, a prediction leaves — sorting, drafting, and recommending are all that one shape.",
+  "walk": "Walk it through: (1) Sorters, predictors, makers, and recommenders look different from outside. (2) The lesson says one shape sits underneath all of them. (3) That shape is: something goes in and a guess comes out.",
+  "rank": 3
+ },
+ {
+  "q": "A salesman says his platform knows your audience. After this lesson, what should you hear instead?",
+  "kind": "exact",
+  "answer": "guesses from patterns in examples",
+  "accept": [
+   "it guesses from patterns in examples",
+   "guesses",
+   "predictions from examples"
+  ],
+  "choices": [
+   "guesses from patterns in examples",
+   "your audience",
+   "your brand",
+   "a mind"
+  ],
+  "mcAnswer": "guesses from patterns in examples",
+  "teach": "From the lesson: the moment you translate, you know what questions to ask.",
+  "teach2": "From the lesson: The system was shown examples, very likely a great many examples of advertisements and what people clicked on, and it found patterns in them, and now it guesses Another way: knows is the fog word; the machinery underneath it shows examples, finds patterns, and guesses.",
+  "walk": "Walk it through: (1) The lesson translates the salesman's word knows. (2) Underneath it, the system was shown examples and found patterns. (3) What it produces from those patterns is guesses from patterns in examples.",
+  "rank": 3
+ },
+ {
+  "q": "Each working system in the lesson is described as narrow. What does narrow mean here?",
+  "kind": "exact",
+  "answer": "each one does its own job and no other",
+  "accept": [
+   "a single, narrow skill",
+   "one job at a time"
+  ],
+  "choices": [
+   "each one does its own job and no other",
+   "can do all of it",
+   "twenty narrow guessers",
+   "a general glow"
+  ],
+  "mcAnswer": "each one does its own job and no other",
+  "teach": "From the lesson: bundles of narrow systems can look broad from the outside.",
+  "teach2": "From the lesson: Every member of the family I have described is narrow. Each one does its own job and no other. Another way: the spam expert is helpless at directions and the map expert knows nothing about email — one skill each, however good the skill is.",
+  "walk": "Walk it through: (1) The lesson tests the family members against each other's jobs. (2) Each fails outside its own job. (3) That is what narrow means: each one does its own job and no other.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words, what is a model, and what did training do to it? Use the spam filter or another example from the lesson.",
+  "kind": "keywords",
+  "answer": "a model is a function that was shown so many examples that its guesses became good",
+  "accept": [],
+  "choices": [
+   "a model is a function that was shown so many examples that its guesses became good",
+   "a mind in a box",
+   "rules a person wrote by hand",
+   "magic"
+  ],
+  "mcAnswer": "a model is a function that was shown so many examples that its guesses became good",
+  "teach": "From the lesson: this is the class's set problem, and lesson one plants its answer.",
+  "teach2": "From the lesson: a model is a function that was shown so many examples that its guesses became good Another way: training is the long showing of examples that adjusted the model until its predictions matched reality often enough to be useful — the spam filter never understood a word, and prediction was enough.",
+  "walk": "Walk it through: (1) Start with what a model is: a function, inputs in and outputs out. (2) Add what made it good: it was shown examples, over and over. (3) Name that showing — training — and give your own example where prediction, not understanding, was enough.",
+  "rank": 3,
+  "keywords": [
+   [
+    "model",
+    "function"
+   ],
+   [
+    "training",
+    "shown",
+    "examples"
+   ],
+   [
+    "guess",
+    "guesses",
+    "prediction",
+    "predictions"
+   ]
+  ],
+  "need": 2
+ }
+]

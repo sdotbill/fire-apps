@@ -1,0 +1,230 @@
+[
+ {
+  "q": "What is the single design fact that produces both the strengths and the brittleness?",
+  "kind": "exact",
+  "answer": "a function with a memory of examples",
+  "accept": [
+   "a model is a function with a memory of examples"
+  ],
+  "choices": [
+   "a function with a memory of examples",
+   "the settings",
+   "the examples",
+   "the territory"
+  ],
+  "mcAnswer": "a function with a memory of examples",
+  "teach": "From the lesson: everything today is that sentence, cashed out.",
+  "teach2": "From the lesson: a model is a function with a memory of examples, and everything in today's lesson is that sentence, cashed out. Another way: vast, fast, tireless memory explains the power, and a memory with no world and no doubt explains the cracks — one fact, two faces.",
+  "walk": "Walk it through: (1) The lesson promises one design fact behind both lists. (2) It reaches back to lesson three's definition. (3) That definition is: a function with a memory of examples.",
+  "rank": 1
+ },
+ {
+  "q": "Which strength does the lesson name first?",
+  "kind": "exact",
+  "answer": "scale of experience",
+  "accept": [
+   "scale of experience"
+  ],
+  "choices": [
+   "scale of experience",
+   "speed",
+   "tirelessness",
+   "consistency"
+  ],
+  "mcAnswer": "scale of experience",
+  "teach": "From the lesson: more examples than any human will meet in a lifetime.",
+  "teach2": "From the lesson: Strength one: scale of experience. A trained model carries the distilled shape of more examples than any human being will meet in a lifetime. Another way: you have read a few thousand business emails closely in your life; a writing model was shaped by more text than a thousand lifetimes of reading.",
+  "walk": "Walk it through: (1) The lesson lists five strengths in order. (2) The first concerns how much the model has been shaped by. (3) That is scale of experience.",
+  "rank": 1
+ },
+ {
+  "q": "What is the field's word for a system fluently inventing things, like a project that never happened?",
+  "kind": "exact",
+  "answer": "hallucination",
+  "accept": [
+   "hallucination"
+  ],
+  "choices": [
+   "hallucination",
+   "training",
+   "prediction",
+   "the scoreboard"
+  ],
+  "mcAnswer": "hallucination",
+  "teach": "From the lesson: it is not lying — lying requires knowing the truth and choosing otherwise.",
+  "teach2": "From the lesson: The field has a word for the system inventing things in this fluent way, and you should know the word because you will meet it: hallucination. Another way: a machine that produces the next likely words will, when the true words are not in its patterns, produce likely words instead — and likely words are sometimes invented ones.",
+  "walk": "Walk it through: (1) The lesson describes a draft inventing a reference that does not exist. (2) It says the field has a word for inventing in this fluent way. (3) The word is hallucination.",
+  "rank": 1
+ },
+ {
+  "q": "What is the master brittle point, the key to all the others?",
+  "kind": "exact",
+  "answer": "it does not know what it does not know",
+  "accept": [
+   "the model does not know what it does not know"
+  ],
+  "choices": [
+   "it does not know what it does not know",
+   "the territory",
+   "the edge",
+   "confidence"
+  ],
+  "mcAnswer": "it does not know what it does not know",
+  "teach": "From the lesson: the system has no edge detector.",
+  "teach2": "From the lesson: the model knows only its examples, and it does not know what it does not know. Another way: inside the territory its training covered thickly, predictions are usually good; outside it they can be wild — and they arrive in exactly the same confident shape.",
+  "walk": "Walk it through: (1) The lesson names one brittle point as the master key. (2) It concerns the system's knowledge of its own limits. (3) The system does not know what it does not know.",
+  "rank": 1
+ },
+ {
+  "q": "How does the lesson sum up the relationship between the strengths list and the brittleness list?",
+  "kind": "exact",
+  "answer": "one design, two faces",
+  "accept": [
+   "one fact, seen from two sides",
+   "one design, two faces"
+  ],
+  "choices": [
+   "one design, two faces",
+   "the strengths",
+   "the brittleness",
+   "the territory"
+  ],
+  "mcAnswer": "one design, two faces",
+  "teach": "From the lesson: tireless consistency is frozenness that cannot adapt, read from the other side.",
+  "teach2": "From the lesson: One design, two faces. That is the why, and if you remember nothing else today, remember that the strengths and the brittleness are not two facts about the machine. Another way: breadth of pattern is a memory that cannot tell its centre from its edge, and fluency is prediction doing its job so well that it predicts straight past the truth.",
+  "walk": "Walk it through: (1) The lesson works through both lists. (2) It shows each brittleness is a strength read from the other side. (3) Its summary is: one design, two faces.",
+  "rank": 2
+ },
+ {
+  "q": "Into which pile does a furious customer's complaint, handled end to end while you are on holiday, belong?",
+  "kind": "exact",
+  "answer": "the third pile",
+  "accept": [
+   "pile three",
+   "the never pile",
+   "machinery never"
+  ],
+  "choices": [
+   "the third pile",
+   "the first pile",
+   "the second pile",
+   "the strong pile"
+  ],
+  "mcAnswer": "the third pile",
+  "teach": "From the lesson: the customer deserves a person.",
+  "teach2": "From the lesson: A tool offers to handle a furious customer's complaint end to end while you are on holiday. Another way: the patterns of fury are where a memory of examples is weakest, the cost of a wrong tone is a reputation, and an error there is not cheap or easily undone.",
+  "walk": "Walk it through: (1) The piles are sorted by pattern thickness and cost of error. (2) Fury means thin patterns and a dear error. (3) That is the third pile — machinery never, alone.",
+  "rank": 2
+ },
+ {
+  "q": "What are the five things to verify in any draft before it leaves?",
+  "kind": "exact",
+  "answer": "dates, figures, names, prices, and promises",
+  "accept": [
+   "dates, figures, names, prices, and promises"
+  ],
+  "choices": [
+   "dates, figures, names, prices, and promises",
+   "dates",
+   "figures",
+   "promises"
+  ],
+  "mcAnswer": "dates, figures, names, prices, and promises",
+  "teach": "From the lesson: those are where a predicted word and a true word part company most expensively.",
+  "teach2": "From the lesson: Dates, figures, names, prices, and promises are the five things to verify in any draft before it leaves, because those are the places where a predicted word and a true word part company most expensively. Another way: read the draft's warmth for tone if you like — then read those five things like an auditor.",
+  "walk": "Walk it through: (1) The lesson gives a checking habit for fluent drafts. (2) It names the checkable parts where invention costs most. (3) They are dates, figures, names, prices, and promises.",
+  "rank": 2
+ },
+ {
+  "q": "When a system invents a fact in a confident voice, why does the lesson say it is not lying?",
+  "kind": "exact",
+  "answer": "lying requires knowing the truth and choosing otherwise",
+  "accept": [
+   "because lying requires knowing the truth and choosing otherwise"
+  ],
+  "choices": [
+   "lying requires knowing the truth and choosing otherwise",
+   "no stake",
+   "frozenness",
+   "no window"
+  ],
+  "mcAnswer": "lying requires knowing the truth and choosing otherwise",
+  "teach": "From the lesson: it is guessing past the edge of its memory and not knowing it has crossed the edge.",
+  "teach2": "From the lesson: It is not lying. Lying requires knowing the truth and choosing otherwise. Another way: there is no malice to detect in an invention, only confidence to discount — the machine predicted likely words because the true ones were not in its patterns.",
+  "walk": "Walk it through: (1) The lesson asks what lying would require. (2) It requires knowing the truth first. (3) The system does not know it — so the answer is that lying requires knowing the truth and choosing otherwise.",
+  "rank": 3
+ },
+ {
+  "q": "What job remains yours in every arrangement with this technology, according to the lesson's most important sentence?",
+  "kind": "exact",
+  "answer": "you are the boundary detector",
+  "accept": [
+   "the boundary detector",
+   "you are the boundary detector"
+  ],
+  "choices": [
+   "you are the boundary detector",
+   "the boundary",
+   "the scoreboard",
+   "the territory"
+  ],
+  "mcAnswer": "you are the boundary detector",
+  "teach": "From the lesson: the system cannot tell you where its own competence ends.",
+  "teach2": "From the lesson: the system cannot tell you where its own competence ends. You are the boundary detector. Another way: the machine supplies scale and stamina; the human supplies the doubt and the world — and detecting the edge of the examples is the doubt's main job.",
+  "walk": "Walk it through: (1) The lesson asks what the system can never announce about itself. (2) It cannot announce where its competence ends. (3) So that detection falls to you: you are the boundary detector.",
+  "rank": 3
+ },
+ {
+  "q": "What two questions sort any task into the three piles?",
+  "kind": "exact",
+  "answer": "how thick are the patterns, and how dear is an error",
+  "accept": [
+   "how thick are the patterns, and how dear is an error"
+  ],
+  "choices": [
+   "how thick are the patterns, and how dear is an error",
+   "the patterns",
+   "an error",
+   "the territory"
+  ],
+  "mcAnswer": "how thick are the patterns, and how dear is an error",
+  "teach": "From the lesson: match the task's shape to the machine's shape.",
+  "teach2": "From the lesson: how thick are the patterns, and how dear is an error.\n\nWhat comes next is the questions on this lesson, with the full text open beside you, as always; going back to read is learning, not cheating. Another way: thick patterns and cheap errors go to the machine; thin patterns and dear errors stay with the person; everything between gets watched.",
+  "walk": "Walk it through: (1) The recap names the sorting skill as two questions. (2) One is about the examples behind the task. (3) The other is about the cost of being wrong — how thick are the patterns, and how dear is an error.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words, explain why the same system can be strong and brittle at the same time.",
+  "kind": "keywords",
+  "answer": "the model is strong wherever the new cases resemble the remembered ones",
+  "accept": [],
+  "choices": [
+   "the model is strong wherever the new cases resemble the remembered ones",
+   "the strengths",
+   "the brittleness",
+   "the fog"
+  ],
+  "mcAnswer": "the model is strong wherever the new cases resemble the remembered ones",
+  "teach": "From the lesson: strength and brittleness are the same property — resemblance — on two sides of a line.",
+  "teach2": "From the lesson: the model is strong wherever the new cases resemble the remembered ones, because the memory is vast, fast, and tireless. Another way: there is nothing else in the box to consult — no world, no doubt, no stake, no clock — so departure from the examples is where the cracks must appear.",
+  "walk": "Walk it through: (1) Start from the design: a memory of examples. (2) Resemblance to those examples is what the predictions run on. (3) So strength lives where cases resemble the examples, and brittleness where they depart from them.",
+  "rank": 3,
+  "keywords": [
+   [
+    "strong",
+    "strength"
+   ],
+   [
+    "brittle",
+    "weak",
+    "fails"
+   ],
+   [
+    "examples",
+    "resemble",
+    "patterns"
+   ]
+  ],
+  "need": 2
+ }
+]

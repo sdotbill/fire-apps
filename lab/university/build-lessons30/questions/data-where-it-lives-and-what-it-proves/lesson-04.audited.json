@@ -1,0 +1,227 @@
+[
+ {
+  "q": "What does it mean to say two things are correlated?",
+  "kind": "exact",
+  "answer": "they tend to move together",
+  "accept": [],
+  "choices": [
+   "they tend to move together",
+   "one thing makes the other happen",
+   "a pattern in recorded observations",
+   "real in the numbers but meaningless in the world"
+  ],
+  "mcAnswer": "they tend to move together",
+  "rank": 1,
+  "_quote": "Two things are correlated when they tend to move together: when one is high, the other tends to be high — or, in the other direction, when one is high, the other tends to be low.",
+  "_angle": "Correlation is a pattern in recorded observations, and nothing more.",
+  "walk": "Walk it through: (1) The lesson defines correlation before causation. (2) The definition is only about movement: when one is high, the other tends to be high, or low. (3) So correlated means they tend to move together.",
+  "teach2": "Two things are correlated when they tend to move together: when one is high, the other tends to be high — or, in the other direction, when one is high, the other tends to be low. Correlation is a pattern in recorded observations, and nothing more.",
+  "teach": "From the lesson: Correlation is a pattern in recorded observations, and nothing more."
+ },
+ {
+  "q": "What is a confounder?",
+  "kind": "exact",
+  "answer": "a third factor that influences both things you are comparing",
+  "accept": [],
+  "choices": [
+   "a third factor that influences both things you are comparing",
+   "the group you changed",
+   "an account of how the cause would produce the effect",
+   "a pattern in recorded observations"
+  ],
+  "mcAnswer": "a third factor that influences both things you are comparing",
+  "rank": 1,
+  "_quote": "A confounder is a third factor that influences both things you are comparing, making them move together without either one causing the other.",
+  "_angle": "The holiday season pushing both advertising spend and revenue is the lesson's standing example.",
+  "walk": "Walk it through: (1) Spend and revenue move together across the year. (2) A third thing, the season, pushes both of them. (3) A third factor doing that is a confounder.",
+  "teach2": "A confounder is a third factor that influences both things you are comparing, making them move together without either one causing the other. The holiday season pushing both advertising spend and revenue is the lesson's standing example.",
+  "teach": "From the lesson: The holiday season pushing both advertising spend and revenue is the lesson's standing example."
+ },
+ {
+  "q": "In the experiment, the new advertisement's group produced one hundred and twenty enquiries from ten thousand viewers. How many enquiries did the old advertisement's group produce, in the lesson's own words?",
+  "kind": "exact",
+  "answer": "one hundred",
+  "accept": [],
+  "choices": [
+   "one hundred",
+   "one hundred and twenty",
+   "ten thousand",
+   "twenty"
+  ],
+  "mcAnswer": "one hundred",
+  "rank": 1,
+  "_quote": "Suppose the new advertisement's group produces one hundred and twenty enquiries from ten thousand viewers, and the old advertisement's group produces one hundred enquiries from ten thousand viewers.",
+  "_angle": "One hundred enquiries from ten thousand viewers, on equal denominators, in the same week as the new advertisement's group.",
+  "walk": "Walk it through: (1) The experiment holds the week, the spend and the audience size steady. (2) The new advertisement's group produced one hundred and twenty enquiries. (3) In the lesson's words, the old advertisement's group produced one hundred.",
+  "teach2": "Suppose the new advertisement's group produces one hundred and twenty enquiries from ten thousand viewers, and the old advertisement's group produces one hundred enquiries from ten thousand viewers. One hundred enquiries from ten thousand viewers, on equal denominators, in the same week as the new advertisement's group.",
+  "teach": "From the lesson: One hundred enquiries from ten thousand viewers, on equal denominators, in the same week as the new advertisement's group."
+ },
+ {
+  "q": "In the example with ice cream sales and drowning deaths, what is the confounder?",
+  "kind": "exact",
+  "answer": "summer heat",
+  "accept": [],
+  "choices": [
+   "summer heat",
+   "ice cream",
+   "the season",
+   "wealth and age"
+  ],
+  "mcAnswer": "summer heat",
+  "rank": 2,
+  "_quote": "The confounder is summer heat: heat sells ice cream, and heat sends people swimming, and swimming, occasionally and tragically, involves drowning.",
+  "_angle": "Heat sells ice cream and sends people swimming; the two effects march together without either causing the other.",
+  "walk": "Walk it through: (1) Ice cream sales and drowning deaths rise in the same months. (2) Neither plausibly causes the other. (3) The third factor pushing both is summer heat.",
+  "teach2": "The confounder is summer heat: heat sells ice cream, and heat sends people swimming, and swimming, occasionally and tragically, involves drowning. Heat sells ice cream and sends people swimming; the two effects march together without either causing the other.",
+  "teach": "From the lesson: Heat sells ice cream and sends people swimming; the two effects march together without either causing the other."
+ },
+ {
+  "q": "In an experiment, what is the unchanged group called?",
+  "kind": "exact",
+  "answer": "the control group",
+  "accept": [],
+  "choices": [
+   "the control group",
+   "the treatment group",
+   "a comparison group",
+   "a spurious correlation"
+  ],
+  "mcAnswer": "the control group",
+  "rank": 2,
+  "_quote": "That unchanged group is the control group. The group you changed is the treatment group.",
+  "_angle": "The treatment group gets the change; the unchanged group gives you the comparison.",
+  "walk": "Walk it through: (1) An experiment changes one thing and compares the outcome. (2) The comparison requires a group where nothing was changed. (3) That unchanged group is the control group.",
+  "teach2": "That unchanged group is the control group. The group you changed is the treatment group. The treatment group gets the change; the unchanged group gives you the comparison.",
+  "teach": "From the lesson: The treatment group gets the change; the unchanged group gives you the comparison."
+ },
+ {
+  "q": "June revenue was four thousand dollars on four hundred dollars of advertising. What was the revenue per advertising dollar in June, in the lesson's own words?",
+  "kind": "exact",
+  "answer": "ten",
+  "accept": [],
+  "choices": [
+   "ten",
+   "three",
+   "twelve",
+   "one hundred"
+  ],
+  "mcAnswer": "ten",
+  "rank": 2,
+  "_quote": "Revenue per advertising dollar is ten dollars in both months: four thousand over four hundred, twelve thousand over one thousand two hundred.",
+  "_angle": "Four thousand over four hundred is ten, and December's figure was also ten, which is the confounder showing itself in the arithmetic.",
+  "walk": "Walk it through: (1) Divide June's revenue by June's spend: four thousand over four hundred. (2) The result is the revenue per advertising dollar. (3) In the lesson's words, it is ten.",
+  "teach2": "Revenue per advertising dollar is ten dollars in both months: four thousand over four hundred, twelve thousand over one thousand two hundred. Four thousand over four hundred is ten, and December's figure was also ten, which is the confounder showing itself in the arithmetic.",
+  "teach": "From the lesson: Four thousand over four hundred is ten, and December's figure was also ten, which is the confounder showing itself in the arithmetic."
+ },
+ {
+  "q": "Why can correlation not tell you the direction of causation?",
+  "kind": "exact",
+  "answer": "correlation is symmetric",
+  "accept": [],
+  "choices": [
+   "correlation is symmetric",
+   "correlation is not causation",
+   "the data, as collected, are silent about arrows",
+   "the entire causal claim is a verb choice"
+  ],
+  "mcAnswer": "correlation is symmetric",
+  "rank": 3,
+  "_quote": "Correlation is symmetric: if A moves with B, then B moves with A, and the pattern alone cannot tell you which, if either, is the cause.",
+  "_angle": "The newsletter may create loyalty, or loyal customers may simply sign up for newsletters; the pattern looks identical either way.",
+  "walk": "Walk it through: (1) Loyal customers and newsletter readers move together. (2) The pattern is the same whichever way the arrow runs. (3) That is because correlation is symmetric.",
+  "teach2": "Correlation is symmetric: if A moves with B, then B moves with A, and the pattern alone cannot tell you which, if either, is the cause. The newsletter may create loyalty, or loyal customers may simply sign up for newsletters; the pattern looks identical either way.",
+  "teach": "From the lesson: The newsletter may create loyalty, or loyal customers may simply sign up for newsletters; the pattern looks identical either way."
+ },
+ {
+  "q": "What is a mechanism, in a causal argument?",
+  "kind": "exact",
+  "answer": "an account of how the cause would produce the effect",
+  "accept": [],
+  "choices": [
+   "an account of how the cause would produce the effect",
+   "a third factor that influences both things you are comparing",
+   "a group where you changed nothing",
+   "real patterns from trawled coincidences"
+  ],
+  "mcAnswer": "an account of how the cause would produce the effect",
+  "rank": 3,
+  "_quote": "A mechanism is an account of how the cause would produce the effect, step by step.",
+  "_angle": "A causal claim without a mechanism is a story missing its middle.",
+  "walk": "Walk it through: (1) Where experiments are impossible, causation is argued from several kinds of evidence. (2) One of them explains, step by step, how the cause would produce the effect. (3) That account is a mechanism.",
+  "teach2": "A mechanism is an account of how the cause would produce the effect, step by step. A causal claim without a mechanism is a story missing its middle.",
+  "teach": "From the lesson: A causal claim without a mechanism is a story missing its middle."
+ },
+ {
+  "q": "A changed group rose ten percent while an unchanged comparison group rose nine percent in the same weeks. What is the change's honest credit, in the lesson's own words?",
+  "kind": "exact",
+  "answer": "one",
+  "accept": [
+   "about one point"
+  ],
+  "choices": [
+   "one",
+   "ten",
+   "nine",
+   "two"
+  ],
+  "mcAnswer": "one",
+  "rank": 3,
+  "_quote": "If the changed group rose ten percent and the unchanged group rose nine percent in the same weeks, the change's honest credit is about one point, not ten.",
+  "_angle": "The comparison group's change is removed from the treatment group's change, converting applause into an estimate.",
+  "walk": "Walk it through: (1) Both groups lived through the same period, so the same trend lifted both. (2) Subtract the unchanged group's rise from the changed group's rise: ten minus nine. (3) In the lesson's words, the honest credit is one.",
+  "teach2": "If the changed group rose ten percent and the unchanged group rose nine percent in the same weeks, the change's honest credit is about one point, not ten. The comparison group's change is removed from the treatment group's change, converting applause into an estimate.",
+  "teach": "From the lesson: The comparison group's change is removed from the treatment group's change, converting applause into an estimate."
+ },
+ {
+  "q": "What is a spurious correlation?",
+  "kind": "exact",
+  "answer": "real in the numbers but meaningless in the world",
+  "accept": [],
+  "choices": [
+   "real in the numbers but meaningless in the world",
+   "a pattern in recorded observations",
+   "a treatment group, a control group, random assignment",
+   "strength, consistency, timing, and mechanism"
+  ],
+  "mcAnswer": "real in the numbers but meaningless in the world",
+  "rank": 3,
+  "_quote": "One more term, because you will meet it in print: a spurious correlation is a correlation that is real in the numbers but meaningless in the world — produced by a confounder, by coincidence, or by both marching together.",
+  "_angle": "The arithmetic is usually impeccable; the story pasted onto the arithmetic is false.",
+  "walk": "Walk it through: (1) The numbers really do move together. (2) A confounder, or coincidence, or both marching together produced the pattern. (3) A correlation real in the numbers but meaningless in the world is spurious.",
+  "teach2": "One more term, because you will meet it in print: a spurious correlation is a correlation that is real in the numbers but meaningless in the world — produced by a confounder, by coincidence, or by both marching together. The arithmetic is usually impeccable; the story pasted onto the arithmetic is false.",
+  "teach": "From the lesson: The arithmetic is usually impeccable; the story pasted onto the arithmetic is false."
+ },
+ {
+  "q": "In your own words, explain why a correlation, on its own, does not prove that one thing causes another. Mention what else could explain the pattern.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "confounder",
+    "third"
+   ],
+   [
+    "together",
+    "correlation"
+   ],
+   [
+    "cause",
+    "causation",
+    "prove"
+   ]
+  ],
+  "need": 2,
+  "choices": [
+   "correlation is not causation",
+   "drives, boosts, delivers, and fuels are causation words",
+   "Linked to, associated with, and rises with are correlation words",
+   "exactness, not timidity, is the virtue this class is building"
+  ],
+  "mcAnswer": "correlation is not causation",
+  "rank": 3,
+  "_quote": "Correlation is observed. Causation is inferred, argued, and, if you are fortunate and careful, tested.",
+  "_angle": "Moving together is a clue, and a clue is the beginning of an investigation, not the end of one.",
+  "walk": "Walk it through: (1) Correlation only records that two things move together. (2) A confounder, a reversed arrow, or coincidence can each produce that same pattern. (3) Until those are hunted and a controlled comparison is made, causation is unproven.",
+  "teach2": "Correlation is observed. Causation is inferred, argued, and, if you are fortunate and careful, tested. Moving together is a clue, and a clue is the beginning of an investigation, not the end of one.",
+  "teach": "From the lesson: Moving together is a clue, and a clue is the beginning of an investigation, not the end of one."
+ }
+]

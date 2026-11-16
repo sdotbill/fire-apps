@@ -1,0 +1,236 @@
+[
+ {
+  "q": "What is data, in the plain definition Professor Kim gives?",
+  "kind": "exact",
+  "answer": "the examples",
+  "accept": [
+   "examples",
+   "the examples the system learns from"
+  ],
+  "choices": [
+   "the examples",
+   "the knobs",
+   "the showing",
+   "the guesses"
+  ],
+  "mcAnswer": "the examples",
+  "teach": "From the lesson: ingredient one, what the system learns from.",
+  "teach2": "From the lesson: Data is the examples. That is the whole definition, and I want to resist every urge to make it fancier. Another way to hold it: data is not a mystery substance — it is cases, shown to the system, usually with labels attached.",
+  "walk": "Walk it through: (1) The lesson names three ingredients in order. (2) The first one is what the system learns from. (3) What it learns from is the examples — the data.",
+  "rank": 1
+ },
+ {
+  "q": "What are parameters, in the plain definition Professor Kim gives?",
+  "kind": "exact",
+  "answer": "the internal settings",
+  "accept": [
+   "internal settings",
+   "the knobs",
+   "settings"
+  ],
+  "choices": [
+   "the internal settings",
+   "the examples",
+   "the labels",
+   "the loop"
+  ],
+  "mcAnswer": "the internal settings",
+  "teach": "From the lesson: ingredient two, what gets adjusted inside the system.",
+  "teach2": "From the lesson: Parameters are the internal settings inside the system, the knobs. Another way: picture a mixing desk covered in dials — each parameter is one dial, and the combination of settings is what makes the output come out one way rather than another.",
+  "walk": "Walk it through: (1) Data is what the system learns from. (2) The second ingredient is what gets adjusted inside it. (3) Those are the internal settings — the parameters.",
+  "rank": 1
+ },
+ {
+  "q": "What is training, in the plain definition Professor Kim gives?",
+  "kind": "exact",
+  "answer": "the showing",
+  "accept": [
+   "the showing",
+   "the adjusting",
+   "the long process of adjusting the parameters"
+  ],
+  "choices": [
+   "the showing",
+   "the examples",
+   "the knobs",
+   "the labels"
+  ],
+  "mcAnswer": "the showing",
+  "teach": "From the lesson: ingredient three, the adjusting itself.",
+  "teach2": "From the lesson: Training is the showing: the long process of adjusting the parameters against the data until the guesses come out right. Another way: training is not the examples and not the settings — it is the long process that moves the settings, using the examples, until the guesses come out right.",
+  "walk": "Walk it through: (1) The trio runs from, adjusted, adjusting. (2) The adjusting itself is the third ingredient. (3) Kim's plain name for it is the showing — training.",
+  "rank": 1
+ },
+ {
+  "q": "How many ingredients is every system in this department built from?",
+  "kind": "exact",
+  "answer": "three",
+  "accept": [
+   "three ingredients",
+   "exactly three"
+  ],
+  "choices": [
+   "three",
+   "one",
+   "a million",
+   "billions"
+  ],
+  "mcAnswer": "three",
+  "teach": "From the lesson: the list is short on purpose.",
+  "teach2": "From the lesson: inside it there are exactly three ingredients, and every system in this department, every tool anyone will ever try to sell you, is built from those three and nothing else. Another way: flour, water, and heat is also a short list, and it gives you every bread on earth — a short ingredient list means the machinery can be reasoned about.",
+  "walk": "Walk it through: (1) The lesson takes apart the one-sentence definition from lesson one. (2) Inside it, Kim counts the ingredients on his fingers. (3) The count is three.",
+  "rank": 1
+ },
+ {
+  "q": "What does the old computing saying promise will happen if the examples are wrong or mislabelled?",
+  "kind": "exact",
+  "answer": "garbage out",
+  "accept": [
+   "garbage in, garbage out",
+   "garbage out"
+  ],
+  "choices": [
+   "garbage out",
+   "the wrong lesson",
+   "finer patterns",
+   "a frozen list"
+  ],
+  "mcAnswer": "garbage out",
+  "teach": "From the lesson: quality is the quiet governor of the whole enterprise.",
+  "teach2": "From the lesson: garbage in, garbage out. Show a system a mountain of mislabelled email and it will learn, beautifully and precisely, the wrong lesson. Another way: the machinery cannot judge its own examples — feed it wrong lessons and it learns them beautifully, precisely, and at scale.",
+  "walk": "Walk it through: (1) The lesson says the quality of examples governs the quality of patterns. (2) It quotes the old saying about what goes in and what comes out. (3) Bad examples in means garbage out.",
+  "rank": 2
+ },
+ {
+  "q": "Before training, how are a model's parameters set, and how well does the system guess?",
+  "kind": "exact",
+  "answer": "random",
+  "accept": [
+   "at random",
+   "essentially at random"
+  ],
+  "choices": [
+   "random",
+   "frozen",
+   "labelled",
+   "expensive"
+  ],
+  "mcAnswer": "random",
+  "teach": "From the lesson: the only difference between the useless machine and the useful one is the positions of the knobs.",
+  "teach2": "From the lesson: Before training, the parameters are set essentially at random, and the system is useless: shown an email, it guesses junk or not junk no better than a coin. Another way: an untrained system guesses junk or not junk no better than a coin — training is what moves the dials from random positions into useful ones.",
+  "walk": "Walk it through: (1) The lesson compares the same system before and after training. (2) Before, the dials sit in no useful arrangement. (3) They are set essentially at random.",
+  "rank": 2
+ },
+ {
+  "q": "What is the repeating loop at the heart of training, in order?",
+  "kind": "exact",
+  "answer": "guess, compare, nudge",
+  "accept": [
+   "guess, compare, nudge, repeat"
+  ],
+  "choices": [
+   "guess, compare, nudge",
+   "data, parameters, training",
+   "from, adjusted, adjusting",
+   "expensive to train, cheap to run"
+  ],
+  "mcAnswer": "guess, compare, nudge",
+  "teach": "From the lesson: the grandeur is in the scale and the patience, not in any mystery inside the loop.",
+  "teach2": "From the lesson: Guess, compare, nudge, repeat, at a scale no human lifetime could match. Another way: the system guesses on one example, the label says how wrong it was, the settings move a hair, and the next example arrives — millions or billions of times.",
+  "walk": "Walk it through: (1) An example is shown and the system produces an answer. (2) That answer is checked against the label. (3) The settings are nudged — so the loop is guess, compare, nudge.",
+  "rank": 2
+ },
+ {
+  "q": "When a tool's examples labelled clicks as success, what does Professor Kim say the system actually learns?",
+  "kind": "exact",
+  "answer": "the label",
+  "accept": [
+   "the label, not your intention",
+   "the label"
+  ],
+  "choices": [
+   "the label",
+   "your intention",
+   "the territory",
+   "the boundary"
+  ],
+  "mcAnswer": "the label",
+  "teach": "From the lesson: labelling is where your judgement enters the machine.",
+  "teach2": "From the lesson: The system learns the label, not your intention. It cannot learn your intention; your intention was never in the examples. Another way: if success was labelled as clicks, the system chases clicks — including the cheap, curious, never-buying kind — because the label is all it was ever shown.",
+  "walk": "Walk it through: (1) Somebody decided what counted as success in the examples. (2) The system cannot see the intention behind that decision. (3) What it learns is the label.",
+  "rank": 2
+ },
+ {
+  "q": "Underneath everything, what is a trained model, the valuable thing companies guard and sell?",
+  "kind": "exact",
+  "answer": "a very large list of numbers",
+  "accept": [
+   "a list of numbers",
+   "a very large list of numbers"
+  ],
+  "choices": [
+   "a very large list of numbers",
+   "a library",
+   "a creature",
+   "a mountain"
+  ],
+  "mcAnswer": "a very large list of numbers",
+  "teach": "From the lesson: a symphony is at bottom a list of notes — and this is a list of settings.",
+  "teach2": "From the lesson: a very large list of numbers, arrived at by a very long process of adjustment. Another way: the examples are gone home and the program is unchanged — what training leaves behind, and what gets sold, is the adjusted numbers themselves.",
+  "walk": "Walk it through: (1) The lesson asks what training produces. (2) Not stored examples, not a library of facts. (3) It produces settings — a very large list of numbers.",
+  "rank": 3
+ },
+ {
+  "q": "What is the cost shape of these systems that explains why a few companies build the large models and everyone else rents them?",
+  "kind": "exact",
+  "answer": "expensive to train, cheap to run",
+  "accept": [
+   "expensive to train, cheap to run"
+  ],
+  "choices": [
+   "expensive to train, cheap to run",
+   "garbage in, garbage out",
+   "guess, compare, nudge, repeat",
+   "data, parameters, training"
+  ],
+  "mcAnswer": "expensive to train, cheap to run",
+  "teach": "From the lesson: the training cost is paid once, up front, by whoever builds the system.",
+  "teach2": "From the lesson: expensive to train, cheap to run, because it explains the economics of the whole industry: why a few companies build the large models, why everybody else rents them, and why the tool you subscribe to for a monthly fee ca Another way: warehouses of machines run for weeks to set the knobs once; afterwards a single sorted email or produced draft costs a tiny fraction by comparison.",
+  "walk": "Walk it through: (1) Training takes enormous computing power over millions or billions of examples. (2) Each later use costs very little. (3) That shape is: expensive to train, cheap to run.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words, name the three ingredients and say what each one is.",
+  "kind": "keywords",
+  "answer": "data, parameters, and training",
+  "accept": [],
+  "choices": [
+   "data, parameters, and training",
+   "guess, compare, nudge, repeat",
+   "expensive to train, cheap to run",
+   "garbage in, garbage out"
+  ],
+  "mcAnswer": "data, parameters, and training",
+  "teach": "From the lesson: from, adjusted, adjusting.",
+  "teach2": "From the lesson: One: what it learns from, the examples, the data. Two: what gets adjusted inside it, the settings, the parameters. Another way to hold the trio: data is what it learns from, parameters are what gets adjusted inside it, and training is the adjusting itself — the showing.",
+  "walk": "Walk it through: (1) Name what the system learns from: the examples, the data. (2) Name what gets adjusted inside it: the settings, the parameters. (3) Name the adjusting itself: the showing, the training.",
+  "rank": 3,
+  "keywords": [
+   [
+    "data",
+    "examples"
+   ],
+   [
+    "parameters",
+    "settings",
+    "knobs"
+   ],
+   [
+    "training",
+    "showing",
+    "adjusting"
+   ]
+  ],
+  "need": 2
+ }
+]
