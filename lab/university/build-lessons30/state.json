@@ -318,5 +318,12 @@
    "audio": "audio/lessons30/gamma-ray-bursts-prompt-emission-afterglow-and-host-galaxy-budge/lesson-01.mp3",
    "minutes": 14.69
   }
+ },
+ "solar-physics-helioseismology-and-space-weather-in-the-bounce-fr": {
+  "lesson-01": {
+   "hash": "90ee7406fd37237aa58132feb0147ddc7188eeef",
+   "audio": "audio/lessons30/solar-physics-helioseismology-and-space-weather-in-the-bounce-fr/lesson-01.mp3",
+   "minutes": 17.42
+  }
  }
 }

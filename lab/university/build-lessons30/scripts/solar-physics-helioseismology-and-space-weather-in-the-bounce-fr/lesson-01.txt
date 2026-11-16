@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Annika Olsson, and this is Solar Physics, Helioseismology and Space Weather in the Bounce Frame. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Annika Olsson, and this is Solar Physics, Helioseismology and Space Weather in the Bounce Frame. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'The Acoustic Cut-off Frequency of the Solar Atmosphere from Scale Height and Sound Speed, and the Reflection of Five-Minute Oscillations'. Its stated result: The paper computes its solar quantity from published observations and compares it with the torsion bounce frame's fixed scales (bound density 9.72e+54 g/cm3; solar central density at a fraction 1.54e-53 of that bound). Headline computed values: nu ac photosphere mHz = 4.64; nu ac chromosphere mHz = 3.98; five min freq mHz = 3.33; ratio 5min to cutoff = 0.718; period at cutoff min = 3.59.
+
+Now we go one step further into the material.
+
+'Solar Angular Momentum and Wind Braking: The Present Spin-Down Torque and the Braking Timescale It Implies'. Its stated result: The paper computes its solar quantity from published observations and compares it with the torsion bounce frame's fixed scales (bound density 9.72e+54 g/cm3; solar central density at a fraction 1.54e-53 of that bound). Headline computed values: J kg m2 s = 1.540e+41; rotational energy J = 2.080e+35; torque N m = 1.854e+23; braking time Gyr = 26.3; fraction lost per Gyr = 0.038.
+
+The next piece is where this starts to come together.
+
+'Coronal Mass Ejection Kinetic Energies: Observed Speeds, Masses and the Gravitational and Magnetic Ceilings Above Them'. Its stated result: The paper computes its solar quantity from published observations and compares it with the torsion bounce frame's fixed scales (bound density 9.72e+54 g/cm3; solar central density at a fraction 1.54e-53 of that bound). Headline computed values: max KE J = 2.000e+26; escape speed km s = 618; max KE fraction Lsun hour = 1.451e-04.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'From Solar Wind Ram Pressure to Magnetopause Standoff: Quiet Conditions, a Fast Ejection, and the Storm-Time Energy Input at Earth'. Its stated result: The paper computes its solar quantity from published observations and compares it with the torsion bounce frame's fixed scales (bound density 9.72e+54 g/cm3; solar central density at a fraction 1.54e-53 of that bound). Headline computed values: P quiet nPa = 1.34; P storm nPa = 83.6; ratio pressures = 62.5; standoff quiet Re = 10.2; standoff storm Re = 5.13; standoff ratio = 0.502.
+
+We take the pieces in order, because each one stands on the last.
+
+'Depth, Temperature and Convective Flux at the Base of the Solar Convection Zone Compared with the Frame's Energy Bounds'. Its stated result: The paper computes its solar quantity from published observations and compares it with the torsion bounce frame's fixed scales (bound density 9.72e+54 g/cm3; solar central density at a fraction 1.54e-53 of that bound). Headline computed values: r cz Rsun = 0.713; depth km = 1.997e+05; T cz K = 2.300e+06; flux W m2 = 1.238e+08; P gas Pa = 6.225e+12; P rad Pa = 7.057e+09.
+
+Stay with me, because the next piece builds directly on that one.
+
+'The Solar Core Margin: Central Density and Temperature Set Against the Bounce Density and Temperature Ceiling'. Its stated result: The paper computes its solar quantity from published observations and compares it with the torsion bounce frame's fixed scales (bound density 9.72e+54 g/cm3; solar central density at a fraction 1.54e-53 of that bound). Headline computed values: rho c g cm3 = 150; T c K = 1.570e+07; ratio rho = 1.544e-53; T ceiling K = 3.278e+22; ratio T = 4.790e-16; rad energy density J m3 = 4.597e+13.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “The Acoustic Cut-off Frequency of the Solar Atmosphere from Scale Height and Sound Speed, and the Reflection of Five-Minute Oscillations”. Its stated result is: The paper computes its solar quantity from published observations and compares it with the torsion bounce frame's fixed scales (bound density 9.72e+54 g/cm3; solar central density at a fraction 1.54e-53 of that bound). (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'The Acoustic Cut-off Frequency of the Solar Atmosphere from Scale Height and Sound Speed, and the Reflection of Five-Minute Oscillations'; 'Solar Angular Momentum and Wind Braking: The Present Spin-Down Torque and the Braking Timescale It Implies'; 'Coronal Mass Ejection Kinetic Energies: Observed Speeds, Masses and the Gravitational and Magnetic Ceilings Above Them'; 'From Solar Wind Ram Pressure to Magnetopause Standoff: Quiet Conditions, a Fast Ejection, and the Storm-Time Energy Input at Earth'; 'Depth, Temperature and Convective Flux at the Base of the Solar Convection Zone Compared with the Frame's Energy Bounds'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.
