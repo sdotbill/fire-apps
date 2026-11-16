@@ -297,5 +297,12 @@
    "audio": "audio/lessons30/quasi-periodic-oscillations-and-rapid-x-ray-variability-in-accre/lesson-01.mp3",
    "minutes": 20.96
   }
+ },
+ "galactic-stellar-streams-tidal-tails-and-the-magellanic-system-d": {
+  "lesson-01": {
+   "hash": "132e532038a14a2262808b579ecaa7a23c0e2f40",
+   "audio": "audio/lessons30/galactic-stellar-streams-tidal-tails-and-the-magellanic-system-d/lesson-01.mp3",
+   "minutes": 16.4
+  }
  }
 }

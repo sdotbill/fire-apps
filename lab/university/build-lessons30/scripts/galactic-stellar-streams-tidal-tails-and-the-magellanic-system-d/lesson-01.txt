@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Kazuo Watanabe, and this is Galactic Stellar Streams, Tidal Tails and the Magellanic System: Disruption, Orbit and Dark-Matter Substructure Budgets Against Density and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Kazuo Watanabe, and this is Galactic Stellar Streams, Tidal Tails and the Magellanic System: Disruption, Orbit and Dark-Matter Substructure Budgets Against Density and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Cold Streams as Calorimeters: A Velocity-Dispersion Bound on Dark-Matter Substructure Heating'. Its stated result: Headline result (values verbatim from results.json): allowed_heating_km2_s2 = 3.000; max_heating_rate_km2_s2_per_Gyr = 1.000; encounter_rate_per_Gyr = 4.295; single_kick_km_s = 4.096; kick_heating_per_encounter_km2_s2 = 16.78; encounters_allowed = 0.1788; max_subhalo_mass_Msun = 4.229e+06; orbital_period_Gyr = 0.5649; dispersion_to_circular_ratio = 0.0092; free_streaming_scale_proxy_kpc = 6.136.
+
+Now we go one step further into the material.
+
+'Gaia-Enceladus Debris: A Merger Energy, Mass-Ratio and Radialisation Budget'. Its stated result: Headline result (values verbatim from results.json): halo_mass_ratio = 4.000; stellar_mass_ratio_to_mw_stars = 0.1200; specific_radial_energy_km2_s2 = 31,250.0; tangential_dispersion_km_s = 55.90; radial_to_tangential_ratio = 3.162; dynamical_friction_time_Gyr = 0.1756; orbits_since_merger = 24.65; merger_kinetic_energy_erg = 6.214e+58; specific_angular_momentum_scale_kpc_km_s = 838.5; anisotropy_energy_fraction_radi
+
+The next piece is where this starts to come together.
+
+'NGC 5466 and Its Forty-Five Degree Tails: A Mass-Loss Budget for a Low-Concentration Cluster'. Its stated result: Headline result (values verbatim from results.json): tidal_radius_pc = 71.09; orbital_period_Gyr = 0.4350; tail_length_kpc = 12.57; mass_loss_rate_Msun_per_Gyr = 5,747.6; remaining_lifetime_Gyr = 8.699; escape_velocity_km_s = 6.253; tidal_to_half_light_ratio = 6.463; orbits_completed = 27.59; cumulative_mass_lost_Msun = 1.558e+05; crossing_time_Myr = 11.95.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Palomar 5 and Its Tidal Tails: A Cluster Evaporation Budget at the Edge of Dissolution'. Its stated result: Headline result (values verbatim from results.json): tidal_radius_pc = 49.41; orbital_period_Gyr = 0.5144; tail_length_kpc = 8.908; mass_loss_rate_Msun_per_Gyr = 2,332.8; remaining_lifetime_Gyr = 5.144; escape_velocity_km_s = 2.272; relaxation_proxy_Gyr = 0.1973; tail_to_cluster_mass_ratio = 2.236; tidal_to_half_light_ratio = 2.470; dispersion_crossing_time_Myr = 35.56.
+
+We take the pieces in order, because each one stands on the last.
+
+'The ATLAS Stream: Width, Dispersion and the Mass of a Fully Dissolved Progenitor'. Its stated result: Headline result (values verbatim from results.json): stream_length_kpc = 9.774; tidal_radius_implied_pc = 45.00; progenitor_mass_Msun = 4,374.0; orbital_period_Gyr = 0.7406; width_growth_time_Gyr = 0.0440; length_growth_rate_kpc_per_Gyr = 3.258; width_to_length_ratio = 0.0092; circular_velocity_km_s = 207.4; escape_scale_km_s = 0.9144; dispersion_to_escape_ratio = 2.187.
+
+Stay with me, because the next piece builds directly on that one.
+
+'The GD-1 Gap: An Impulse Budget for a Dark Subhalo Encounter with a Cold Stellar Stream'. Its stated result: Headline result (values verbatim from results.json): impulse_kick_km_s = 2.867; gap_length_kpc = 1.466; stream_length_kpc = 9.346; width_to_length_ratio = 0.0070; kick_to_dispersion_ratio = 1.365; encounter_duration_Myr = 3.259; subhalo_mean_density_Msun_per_pc3 = 0.0884; gap_fraction_of_stream = 0.1569; dispersion_energy_km2_s2 = 4.410; max_subhalo_mass_for_kick_below_dispersion_Msun = 7.324e+06.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Cold Streams as Calorimeters: A Velocity-Dispersion Bound on Dark-Matter Substructure Heating”. Its stated result is: Headline result (values verbatim from results.json): allowed_heating_km2_s2 = 3.000; max_heating_rate_km2_s2_per_Gyr = 1.000; encounter_rate_per_Gyr = 4.295; single_kick_km_s = 4.096; kick_heating_per_encounter_km2_s2 = 16.78; encounters_allowed = 0.1788; max_subhalo_mass_Msun = 4.229e+06; orbital_p (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Cold Streams as Calorimeters: A Velocity-Dispersion Bound on Dark-Matter Substructure Heating'; 'Gaia-Enceladus Debris: A Merger Energy, Mass-Ratio and Radialisation Budget'; 'NGC 5466 and Its Forty-Five Degree Tails: A Mass-Loss Budget for a Low-Concentration Cluster'; 'Palomar 5 and Its Tidal Tails: A Cluster Evaporation Budget at the Edge of Dissolution'; 'The ATLAS Stream: Width, Dispersion and the Mass of a Fully Dissolved Progenitor'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.
