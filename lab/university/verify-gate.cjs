@@ -204,8 +204,9 @@ async function beginQuestions(page, clsId) {
   await openClass(page, 'mathematics', 'numbers-proof-foundations-of-mathematics');
   await beginQuestions(page, 'numbers-proof-foundations-of-mathematics');
   const qA = await q(page);
-  check('end-of-class question asks only what the lesson taught',
-    /what does this class mean by/.test(qA), qA.slice(0, 70));
+  check('end-of-class question asks only what the lesson taught, ' +
+    'in plain language',
+    /in your own words/i.test(qA), qA.slice(0, 70));
   const glossStep = GATE['numbers-proof-foundations-of-mathematics'].steps[0];
   await answer(page, glossStep.keywords.map(g => g[0]).join(' '));
   await page.waitForFunction(
@@ -409,6 +410,142 @@ async function beginQuestions(page, clsId) {
     auditBad.length === 0,
     audited + ' questions audited, ' + auditBad.length + ' failures' +
     (auditBad.length ? ' — first: ' + auditBad[0] : ''));
+
+  /* ============ 6b. the MC audit: every stored choice set ======
+     For every question carrying choices: the marked answer must be
+     among them, and every distractor must itself come from the
+     lesson — a value the lesson prints, clearly outside grading
+     tolerance of the answer, or text the lesson contains. */
+  let mcSets = 0, mcBad = [];
+  for (const [cid, c] of Object.entries(GATE)) {
+    const lessonText = (c.lesson || []).map(x => x.teach).join('\n');
+    const lessonNorm = lessonText.toLowerCase()
+      .replace(/[^a-z0-9. ]/g, ' ').replace(/\s+/g, ' ');
+    const lessonNums = extractNumbers(lessonText);
+    for (const st of c.steps) {
+      if (!st.choices) continue;
+      mcSets++;
+      if (!st.mcAnswer || !st.choices.includes(st.mcAnswer))
+        mcBad.push(cid + ': marked answer not among the choices');
+      if (st.choices.length < 2 || st.choices.length > 4)
+        mcBad.push(cid + ': choice count ' + st.choices.length);
+      if (new Set(st.choices).size !== st.choices.length)
+        mcBad.push(cid + ': duplicate choices');
+      for (const t of st.choices) {
+        if (t === st.mcAnswer) continue;
+        if (st.kind === 'number') {
+          const v = extractNumbers(t)[0];
+          const rel = st.answer === 0 ? (v === 0 ? 0 : 9)
+            : Math.abs(v - st.answer) / Math.abs(st.answer);
+          if (!(rel > Math.max(0.06, 2 * (st.tol || 0.03))))
+            mcBad.push(cid + ': distractor within tolerance: ' + t);
+          if (!lessonNums.some(x => Math.abs(x - v) <=
+              Math.max(0.02, Math.abs(v) * 0.03)))
+            mcBad.push(cid + ': distractor value not in lesson: ' + t);
+        } else if (st.kind === 'keywords') {
+          const nt = t.toLowerCase().replace(/[^a-z0-9. ]/g, ' ')
+            .replace(/\s+/g, ' ').trim();
+          /* verbatim lesson text, or — for a hand-authored option —
+             a list built purely from the lesson's own vocabulary:
+             every content word present in the lesson */
+          const words = nt.split(' ')
+            .map(w => w.replace(/^\.+|\.+$/g, ''))
+            .filter(w => w.length >= 3);
+          if (!lessonNorm.includes(nt) &&
+              !(words.length && words.every(w => lessonNorm.includes(w))))
+            mcBad.push(cid + ': distractor text not in lesson: ' +
+              t.slice(0, 40));
+        }
+      }
+    }
+  }
+  check('MC audit: every distractor comes from the lesson ' +
+    '(' + mcSets + ' choice sets)',
+    mcBad.length === 0,
+    mcSets + ' sets audited, ' + mcBad.length + ' failures' +
+    (mcBad.length ? ' — first: ' + mcBad[0] : ''));
+
+  /* ============ 6c. plumbing, cold — Bill's screenshot class ====
+     The class from his 04:14 EST screenshot: it must now open on
+     the lesson, ask plainly, show the choices BY DEFAULT, and a
+     right pick must land as a plain (unassisted) pass. The gate
+     data request must carry the build stamp (?v=). A reload in the
+     same context — the warm-cache return — must serve the same
+     new build. */
+  const pp = await browser.newPage();
+  await pp.setViewport({ width: 390, height: 844 });
+  const gateReqs = [];
+  pp.on('request', r => {
+    if (/gate-data\.json/.test(r.url())) gateReqs.push(r.url());
+  });
+  pp.on('pageerror', e => console.log('PAGE ERROR (plumbing):', e.message));
+  await pp.goto(BASE + '#class/trades/plumbing-i-water-in-water-out',
+    { waitUntil: 'networkidle2', timeout: 60000 });
+  await pp.waitForSelector('#gateBox', { visible: true, timeout: 20000 });
+  const PC = GATE['plumbing-i-water-in-water-out'];
+  check('plumbing opens on its lesson (lesson first)',
+    await disp(pp, 'gtLesson') !== 'none');
+  check('plumbing data: the killed order question is GONE',
+    !JSON.stringify(PC).includes('which unit comes next'),
+    PC.steps.map(s => s.q).join(' | ').slice(0, 120));
+  check('plumbing data: lesson first, then plain questions',
+    PC.lesson.length >= 3 && /in your own words/i.test(PC.steps[0].q),
+    PC.steps[0].q);
+  await pp.click('#gtBeginLesson');
+  for (let i = 0; i < 12; i++) {
+    const done = await pp.evaluate(() =>
+      document.getElementById('gtBegin').style.display !== 'none');
+    if (done) break;
+    await pp.click('#gtContinue'); await sleep(200);
+  }
+  await pp.click('#gtBegin');
+  await pp.waitForFunction(
+    () => document.querySelectorAll('#gtChoices .gtChoice').length >= 2,
+    { timeout: 20000 });
+  const pOpts = await pp.$$eval('#gtChoices .gtChoice',
+    els => els.map(e => e.textContent));
+  check('plumbing: choices on the board BY DEFAULT, before any help',
+    pOpts.length >= 2 && pOpts.includes(PC.steps[0].mcAnswer),
+    pOpts.join(' | '));
+  check('plumbing: gate data fetched with the build stamp (?v=)',
+    gateReqs.some(u => /gate-data\.json\?v=/.test(u)), gateReqs.join(' '));
+  await pp.evaluate((correct) => {
+    const b = Array.from(document.querySelectorAll('#gtChoices .gtChoice'))
+      .find(x => x.textContent !== correct);
+    b.click();
+  }, PC.steps[0].mcAnswer);
+  await sleep(400);
+  check('plumbing: a wrong pick holds the question',
+    /Question 1 of/.test(await pp.$eval('#gtProgress',
+      el => el.textContent)));
+  await pp.evaluate((correct) => {
+    const b = Array.from(document.querySelectorAll('#gtChoices .gtChoice'))
+      .find(x => x.textContent === correct);
+    b.click();
+  }, PC.steps[0].mcAnswer);
+  await pp.waitForFunction(
+    () => /Question 2 of/.test(
+      document.getElementById('gtProgress').textContent),
+    { timeout: 20000 });
+  const plog = await logOf(pp);
+  const pstep = plog.find(e => e.kind === 'gate-step' &&
+    e.classId === 'plumbing-i-water-in-water-out' && e.step === 0);
+  check('plumbing: the right pick is a PLAIN pass (picking is not assisted)',
+    !!pstep && pstep.status === 'pass' && !pstep.assisted,
+    pstep ? JSON.stringify(pstep) : 'missing');
+  await pp.reload({ waitUntil: 'networkidle2', timeout: 60000 });
+  await pp.waitForSelector('#gateBox', { visible: true, timeout: 20000 });
+  /* a returning student goes straight to their questions — what
+     must hold on the warm-cache return is that the question in
+     front of them is the NEW build's plain question, not the
+     killed one */
+  await pp.waitForFunction(
+    () => /Question 2 of/.test(
+      document.getElementById('gtProgress').textContent),
+    { timeout: 20000 });
+  check('plumbing, warm-cache return: still the new build\u2019s questions',
+    (await q(pp)) === PC.steps[1].q, await q(pp));
+  await pp.close();
 
   await browser.close();
   console.log(failures === 0 ? 'ALL CHECKS PASSED' : failures + ' CHECK(S) FAILED');

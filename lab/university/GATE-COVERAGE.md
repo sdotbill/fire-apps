@@ -1,6 +1,6 @@
 # Gate coverage — build-gate-data.py
 
-Every non-language class gets a LESSON taught first — its own material, presented in order — and then end-of-class questions drawn only from that lesson. The containment audit in the generator drops any question whose answer is not in the lesson; the drops are counted in the build output and in the teaching-fix report.
+Every non-language class gets a LESSON taught first — its own material, presented in order — and then end-of-class questions drawn only from that lesson. The containment audit in the generator drops any question whose answer is not in the lesson; the drops are counted in the build output and in the teaching-fix report. Questions are written in plain language, ordered easy to hard, and carry multiple-choice options built from the class's own material wherever an honest choice set exists (the MC audit drops any distractor that is not itself in the lesson).
 
 ## full (172)
 

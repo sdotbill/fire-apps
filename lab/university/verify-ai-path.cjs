@@ -16,11 +16,13 @@
         gated lesson (no live-office-hours deflection);
      5. back at the catalogue door, the path now shows AI
         Fundamentals "In progress — 1 step landed / Continue";
-     6. a fresh student, stuck on AI Fundamentals step 1: the help
-        button shows a hint from the step's own material, then
-        multiple choices built from the class's own answers; a wrong
-        pick holds the step; the right pick advances — and the log
-        records the pass as ASSISTED, not plain.
+     6. a fresh student on AI Fundamentals step 1: the multiple
+        choices are on the board BY DEFAULT (Bill, Nov 16 04:16 —
+        multiple choice first), exactly the set the generator
+        stored from the class's own material; the help button then
+        adds a hint from the step's own material; a wrong pick
+        holds the step; the right pick advances — and because the
+        hint was taken, the log records the pass as ASSISTED.
    Run: NODE_PATH=<owner-lane browser node_modules> node verify-ai-path.cjs <baseUrl>
 */
 'use strict';
@@ -244,34 +246,37 @@ const logOf = page => page.evaluate(
     () => document.getElementById('gtHelp').style.display !== 'none',
     { timeout: 30000 });
   check('the stuck button is on the step', true);
+  /* MULTIPLE CHOICE FIRST (Bill, Nov 16 04:16): the choices are on
+     the board by default, before any help is asked for — read the
+     expected set from the served gate data, never hardcoded */
+  const STEP0 = await hp.evaluate(async (cid) => {
+    const d = await (await fetch('gate-data.json')).json();
+    const s = d.classes[cid].steps[0];
+    return { choices: s.choices || [], mcAnswer: s.mcAnswer || null };
+  }, AI_FUND);
+  const CORRECT = STEP0.mcAnswer;
+  await hp.waitForFunction(
+    () => document.getElementById('gtChoices').style.display !== 'none' &&
+      document.querySelectorAll('#gtChoices .gtChoice').length >= 2,
+    { timeout: 10000 });
+  const opts = await hp.$$eval('#gtChoices .gtChoice',
+    els => els.map(e => e.textContent));
+  check('choices are shown BY DEFAULT (multiple choice first)',
+    opts.length >= 3 && opts.indexOf(CORRECT) !== -1, opts.join(' | '));
+  check('the rendered choices are exactly the stored set — the ' +
+    'class\u2019s own material, nothing fabricated',
+    opts.slice().sort().join('\n') === STEP0.choices.slice().sort().join('\n'),
+    opts.join(' | '));
   await hp.click('#gtHelp');
   await hp.waitForFunction(
     () => document.getElementById('gtHint').style.display !== 'none',
     { timeout: 10000 });
   const hintText = await hp.$eval('#gtHint', el => el.textContent);
-  check('level 1: a hint from the step\u2019s own material',
+  check('the hint is drawn from the step\u2019s own material',
     /Hint — from the material itself/.test(hintText) && hintText.length > 60,
     hintText.slice(0, 80));
-  const helpLabel2 = await hp.$eval('#gtHelp', el => el.textContent);
-  check('the button now offers the choices', /choices/.test(helpLabel2), helpLabel2);
-  await hp.click('#gtHelp');
-  await hp.waitForFunction(
-    () => document.getElementById('gtChoices').style.display !== 'none',
-    { timeout: 10000 });
-  /* the choices for a keyword question are the class's own idea
-     sets — read them from the served gate data, never hardcoded */
-  const CLASS_ANSWERS = await hp.evaluate(async (cid) => {
-    const d = await (await fetch('gate-data.json')).json();
-    return d.classes[cid].steps.map(s =>
-      'An answer built on: ' + s.keywords.map(g => g[0]).join(' · '));
-  }, AI_FUND);
-  const CORRECT = CLASS_ANSWERS[0];
-  const opts = await hp.$$eval('#gtChoices .gtChoice',
-    els => els.map(e => e.textContent));
-  check('level 2: choices shown (correct + same-class distractors)',
-    opts.length >= 3 && opts.indexOf(CORRECT) !== -1, opts.join(' | '));
-  check('every choice is the class\u2019s own material — nothing fabricated',
-    opts.every(t => CLASS_ANSWERS.indexOf(t) !== -1), opts.join(' | '));
+  check('with the choices already up, the hint completes the help kit',
+    await hp.$eval('#gtHelp', el => el.style.display === 'none'));
   await hp.screenshot({ path: 'ai-shot-4-help-choices.png' });
   /* a wrong pick: held, that choice disabled, no advance */
   await hp.evaluate((correct) => {

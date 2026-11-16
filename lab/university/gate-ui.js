@@ -71,10 +71,15 @@
     'counted as skips. Miss the same question twice and your ' +
     'professor <b>walks it through</b> — the reasoning, step by ' +
     'step, until the answer follows — then it is still yours to say. ' +
-    'Stuck is allowed: <b>I\u2019m stuck — help me</b> first gives a ' +
-    'hint drawn from the material itself, then choices to pick from. ' +
-    'A question landed through the choices counts — and your record ' +
-    'says so, as an assisted pass.</p>' +
+    'Most questions also offer <b>choices to pick from</b> — every ' +
+    'choice built from this class\u2019s own lesson. Picking is a ' +
+    'normal way to answer and counts in full; answering out loud ' +
+    'or by typing is always there instead. (The class\u2019s set ' +
+    'problem is the one exception: that one you work in your own ' +
+    'words.) Stuck is still allowed: <b>I\u2019m stuck — help me</b> ' +
+    'gives a hint drawn from the material itself — and a question ' +
+    'landed after taking the hint counts too, with your record ' +
+    'saying so, as an assisted pass.</p>' +
     '<div id="gtLesson" style="display:none">' +
       '<div id="gtLessonMeta"></div>' +
       '<div id="gtLessonText"></div>' +
@@ -112,7 +117,11 @@
     '<hr class="gtSep">';
 
   var GATE_DATA = null, pendingEnter = null;
-  fetch('gate-data.json').then(function (r) { return r.ok ? r.json() : null; })
+  /* the build stamp (index.html's x-uni-build) versions every data
+     fetch, so a new build is never served from an old cache entry */
+  var VQ = (window.UNI_BUILD && window.UNI_BUILD !== 'unstamped')
+    ? '?v=' + encodeURIComponent(window.UNI_BUILD) : '';
+  fetch('gate-data.json' + VQ).then(function (r) { return r.ok ? r.json() : null; })
     .then(function (j) {
       if (j && j.classes) GATE_DATA = j.classes;
       if (GATE_DATA && pendingEnter) {
@@ -361,6 +370,7 @@
     $('gtHear').style.display = (started && st.audio) ? '' : 'none';
     /* help starts fresh on every step */
     helpLevel = 0;
+    choicesShown = false;
     walkIdx = -1;
     var wk = $('gtWalk');
     wk.style.display = 'none'; wk.innerHTML = '';
@@ -370,6 +380,9 @@
     hb.textContent = 'I\u2019m stuck — help me';
     hb.style.display = (started && states[i] !== 'pass') ? '' : 'none';
     renderDots(); renderProgress();
+    /* multiple choice is a normal way to answer: the step's choice
+       set is on the board from the moment the student is working */
+    showDefaultChoices();
     if (states[i] === 'pass') {
       setStatus('This one is landed \u2713 — say it again to keep it warm, or tap another dot.', 'good');
     } else if (states[i] === 'skip') {
@@ -393,9 +406,10 @@
     var res = G.checkAnswer(step(), said);
     $('gtHeard').textContent = 'Your answer: \u201C' + said + '\u201D';
     renderProgress();
-    /* a pass after the choices were shown was landed with the answer
-       set in front of the student — recorded as assisted, honestly */
-    if (res.pass) onPass(helpLevel >= 2);
+    /* a pass after the I'm-stuck hint was taken is recorded as
+       assisted, honestly; the choices alone are a normal way to
+       answer and never make a pass assisted */
+    if (res.pass) onPass(helpLevel >= 1);
     else onMiss(res);
   }
 
@@ -460,13 +474,18 @@
     });
   }
 
-  /* ---------------- help: hint, then choices (Bill, Nov 16 03:07) ----
-     A stuck student can ask for help. Level 1 is a HINT drawn from
-     the step's own material — its re-teach chunk, nothing invented.
-     Level 2 is MULTIPLE CHOICE: the correct answer plus distractors
-     drawn from the SAME class's other steps' own answers — real
-     material, never fabricated facts. Landing a step through the
-     choices is an ASSISTED pass, recorded as one. */
+  /* ---------------- choices + help (Bill, Nov 16 03:07 + 04:16) ----
+     MULTIPLE CHOICE IS A NORMAL WAY TO ANSWER (04:16): every step
+     that carries an honest choice set shows it by default — the
+     options are prebuilt by the generator from the class's own
+     taught material (step.choices, with the correct text stored as
+     step.mcAnswer) and picking the right one is a full, unassisted
+     pass. The runtime derivation below remains as a fallback for
+     any step the generator could not prebuild. HELP is separate:
+     the I'm-stuck button gives a HINT drawn from the step's own
+     material (its re-teach chunk, nothing invented), and a pass
+     landed after the hint — by picking, speaking, or typing — is
+     an ASSISTED pass, recorded as one. */
   function answerText(st) {
     if (!st) return null;
     if (st.kind === 'number') return st.disp || String(st.answer);
@@ -474,9 +493,12 @@
     return st.answer != null ? String(st.answer) : null;
   }
   function correctText(st) {
+    /* the generator stores the correct choice text on the step
+       itself (mcAnswer) beside its prebuilt choices */
+    if (st.mcAnswer) return st.mcAnswer;
     if (st.kind === 'keywords') {
-      /* the capstone's correct choice is its own key ideas — the
-         terms its worked answer stands on, from its own key */
+      /* fallback derivation: a keyword step's correct choice is
+         its own key ideas — the terms its worked answer stands on */
       return 'An answer built on: ' + st.keywords.map(function (g) {
         return g[0];
       }).join(' · ');
@@ -488,6 +510,10 @@
   }
   function buildChoices() {
     var st = step();
+    /* the class's set problem is worked in the student's own
+       words — no choice set is ever derived for it (the generator
+       stores none either) */
+    if (st.capstone) return [];
     var correct = correctText(st);
     var pool = [], seen = {};
     seen[normForChoice(correct)] = true;
@@ -563,22 +589,33 @@
     hint.appendChild(b);
     hint.appendChild(document.createTextNode(st.teach2 || st.teach || ''));
     hint.style.display = '';
-    $('gtHelp').textContent = 'Still stuck — show me the choices';
-    setStatus('There is the piece again, the other way in. Try once ' +
-      'more — or take the choices below the hint.', '');
+    if (choicesShown) {
+      /* the choices are already on the board — the hint completes
+         the help kit for this step */
+      $('gtHelp').style.display = 'none';
+      setStatus('There is the piece again, the other way in — and ' +
+        'the choices are on the board. Land it.', '');
+    } else {
+      $('gtHelp').textContent = 'Still stuck — show me the choices';
+      setStatus('There is the piece again, the other way in. Try once ' +
+        'more — or take the choices below the hint.', '');
+    }
   }
-  function showChoices() {
-    var opts = buildChoices();
-    if (opts.length < 2) { showLookup(); return; }
-    helpLevel = 2;
+  var choicesShown = false;
+  function renderChoices(opts, viaHelp) {
     var host = $('gtChoices');
     host.innerHTML = '';
     var head = document.createElement('p');
     head.style.margin = '0 0 4px';
-    head.innerHTML = '<b>Pick the one the material supports.</b> ' +
-      'Every choice here is real material from this class — only one ' +
-      'answers this step. Landing it this way is recorded as an ' +
-      'assisted pass.';
+    head.innerHTML = viaHelp
+      ? '<b>Pick the one the material supports.</b> Every choice ' +
+        'here is real material from this class — only one answers ' +
+        'this question. Landing it after the hint is recorded as ' +
+        'an assisted pass.'
+      : '<b>Pick your answer</b> — or answer out loud, or type it ' +
+        'below, instead. Every choice here is real material from ' +
+        'this class\u2019s own lesson, and picking the right one ' +
+        'counts in full.';
     host.appendChild(head);
     opts.forEach(function (o) {
       var btn = document.createElement('button');
@@ -588,7 +625,29 @@
       host.appendChild(btn);
     });
     host.style.display = '';
-    $('gtHelp').style.display = 'none';
+    choicesShown = true;
+    if (viaHelp) $('gtHelp').style.display = 'none';
+  }
+  function storedChoices() {
+    var st = step();
+    if (!st.choices || st.choices.length < 2) return null;
+    var correct = correctText(st);
+    return st.choices.map(function (t) {
+      return { t: t, ok: t === correct };
+    });
+  }
+  /* the default presentation: a step with an honest choice set
+     shows it as soon as the student is working on the step */
+  function showDefaultChoices() {
+    if (!started || states[idx] === 'pass') return;
+    var opts = storedChoices() || buildChoices();
+    if (opts.length >= 2) renderChoices(opts, false);
+  }
+  function showChoices() {
+    var opts = storedChoices() || buildChoices();
+    if (opts.length < 2) { showLookup(); return; }
+    helpLevel = 2;
+    renderChoices(opts, true);
     setStatus('Choices are up. Pick the one the material supports.', '');
   }
   /* No honest choice set exists for this step (its class carries no
@@ -599,6 +658,7 @@
      the answer lives. */
   function showLookup() {
     helpLevel = 2;
+    choicesShown = true;
     var st = step();
     var host = $('gtChoices');
     host.innerHTML = '';
@@ -628,19 +688,29 @@
     renderProgress();
     if (!ok) {
       btn.disabled = true;
-      setStatus('Not that one — it belongs to another step of this ' +
-        'class. Look at the hint once more and pick the one this ' +
-        'step\u2019s material supports.', 'bad');
+      /* a second miss on the step earns the walkthrough, however
+         the misses arrived — picked, spoken, or typed */
+      if (attempts >= 2) showWalk();
+      setStatus('Not that one — it is real material from this ' +
+        'class, but it answers a different question. Look at the ' +
+        'piece once more and pick the one this question\u2019s ' +
+        'material supports.' +
+        (walkIdx === idx
+          ? ' The walkthrough is on the board: read how the answer follows.'
+          : ''), 'bad');
       return;
     }
     busy = true;
     $('gtChoices').style.display = 'none';
-    onPass(true);
+    choicesShown = false;
+    /* picking is a normal way to answer — assisted only when the
+       hint was taken first */
+    onPass(helpLevel >= 1);
   }
   function onHelp() {
     if (!started || busy || states[idx] === 'pass') return;
     if (helpLevel === 0) showHint();
-    else if (helpLevel === 1) showChoices();
+    else if (helpLevel === 1 && !choicesShown) showChoices();
   }
   /* assisted passes recorded for this class, among its passed steps */
   function assistedCount() {

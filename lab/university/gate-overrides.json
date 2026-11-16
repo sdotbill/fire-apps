@@ -242,7 +242,14 @@
     ],
     "need": 3,
     "why": "You are doing this because this one sentence is the class — everything else in the department is built on it.",
-    "substantive": true
+    "substantive": true,
+    "mcAnswer": "A function that was shown so many examples that its guesses became good.",
+    "choices": [
+     "Data, parameters, and training: the three ingredients.",
+     "A function that was shown so many examples that its guesses became good.",
+     "The showing — the long process of adjusting those settings against the examples until the guesses come out right.",
+     "Machinery — mathematics, running at enormous scale, on data."
+    ]
    },
    {
     "teach": "From the lesson: the three ingredients every system in this department is built from.",
@@ -266,7 +273,14 @@
     ],
     "need": 3,
     "why": "You are doing this because these three words are the honest vocabulary — every headline about AI is built from them.",
-    "substantive": true
+    "substantive": true,
+    "mcAnswer": "Data, parameters, and training.",
+    "choices": [
+     "Training, prediction, and inference.",
+     "Examples, settings, and guesses.",
+     "Data, parameters, and training.",
+     "Input, output, and function."
+    ]
    },
    {
     "teach": "From the lesson: two acts the whole class turns on keeping apart — training, and prediction.",
@@ -296,7 +310,14 @@
     ],
     "need": 3,
     "why": "You are doing this because confusing these two acts is how almost every bad headline about AI is written.",
-    "substantive": true
+    "substantive": true,
+    "mcAnswer": "Training is the showing: its settings are adjusted over millions of examples, before the system ever meets you. Prediction is the act: afterwards, one new case at a time, the system produces its guess.",
+    "choices": [
+     "Data: the examples the system learns from. Parameters: the internal settings inside it — the knobs.",
+     "Those ideas, arranged with increasing cleverness — the chatbots, the image makers, the agents.",
+     "Training is the showing: its settings are adjusted over millions of examples, before the system ever meets you. Prediction is the act: afterwards, one new case at a time, the system produces its guess.",
+     "A function that was shown so many examples that its guesses became good."
+    ]
    },
    {
     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
@@ -336,7 +357,8 @@
     ],
     "need": 3,
     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
-    "substantive": true
+    "substantive": true,
+    "capstone": true
    }
   ]
  }

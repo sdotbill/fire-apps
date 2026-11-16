@@ -4,6 +4,44 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Exolex University — The Catalogue &amp; The Classrooms</title>
+<!-- Build stamp (Nov 16 2026, the dashboard's pattern): the stamp
+     names the repo revision this copy was minted from
+     (lab/university/stamp-build.sh rewrites it at build time). The
+     self-check below compares the RUNNING copy's stamp against the
+     SERVED copy's stamp and reloads once if they differ — so a
+     phone that holds this page in a warm tab or cache across a
+     deploy converges to the live build instead of being served a
+     stale classroom (Bill, Nov 16 04:14 EST: his phone still
+     showed the pre-fix plumbing class an hour after the fix
+     shipped). The data fetches below carry the stamp as ?v=, so
+     the JSON converges with the page. -->
+<meta name="x-uni-build" content="21c39142-20261116T0929">
+<script>
+window.UNI_BUILD = "21c39142-20261116T0929";
+(function(){
+  var mine = window.UNI_BUILD;
+  if(!mine || mine === "unstamped" || !window.fetch) return;
+  function check(){
+    fetch(location.pathname + "?_stampcheck=" + Date.now(), {cache:"no-store"})
+      .then(function(r){ return r.text(); })
+      .then(function(html){
+        var m = html.match(/name="x-uni-build"\s+content="([^"]+)"/);
+        if(!m || m[1] === mine) return;
+        try{
+          if(sessionStorage.getItem("uni-stamp-reloaded") === m[1]) return;
+          sessionStorage.setItem("uni-stamp-reloaded", m[1]);
+        }catch(e){ return; }
+        location.reload();
+      })
+      .catch(function(){});
+  }
+  window.addEventListener("load", function(){ setTimeout(check, 1500); });
+  document.addEventListener("visibilitychange", function(){
+    if(document.visibilityState === "visible") check();
+  });
+  window.addEventListener("pageshow", function(e){ if(e.persisted) check(); });
+})();
+</script>
 <style>
   :root{
     --paper:#faf7ef; --panel:#fffdf6; --gold:#c9a227; --gold-hi:#d9b23a;
@@ -316,10 +354,10 @@
 
 <div id="toast"></div>
 
-<script src="uni-core.js"></script>
-<script src="trainer-core.js"></script>
-<script src="gate-core.js"></script>
-<script src="gate-ui.js"></script>
+<script src="uni-core.js?v=21c39142-20261116T0929"></script>
+<script src="trainer-core.js?v=21c39142-20261116T0929"></script>
+<script src="gate-core.js?v=21c39142-20261116T0929"></script>
+<script src="gate-ui.js?v=21c39142-20261116T0929"></script>
 <script>
 (function () {
   'use strict';
@@ -969,7 +1007,9 @@
      a browser that cannot listen gets record-and-playback self-check,
      never a dead end. */
   var TR_DATA = null, trPendingClass = null;
-  fetch('trainer-data.json').then(function (r) { return r.ok ? r.json() : null; })
+  var VQ = (window.UNI_BUILD && window.UNI_BUILD !== 'unstamped')
+    ? '?v=' + encodeURIComponent(window.UNI_BUILD) : '';
+  fetch('trainer-data.json' + VQ).then(function (r) { return r.ok ? r.json() : null; })
     .then(function (j) {
       if (j && j.classes) TR_DATA = j.classes;
       if (TR_DATA && trPendingClass && cur && cur.cls.id === trPendingClass) {
@@ -1446,7 +1486,7 @@
   })();
 
   /* ================= load ================= */
-  fetch('catalogue.json').then(function (r) {
+  fetch('catalogue.json' + VQ).then(function (r) {
     if (!r.ok) throw new Error('catalogue ' + r.status);
     return r.json();
   }).then(function (data) {

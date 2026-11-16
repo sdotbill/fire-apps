@@ -20,6 +20,25 @@ material (syllabus-order recall, DOI recall) are deleted.
   · THE CONTAINMENT AUDIT enforces the law mechanically: a question
     ships only if its answer is extractable from the lesson text.
     Failures are dropped and counted — never shipped, never padded.
+  · PLAIN LANGUAGE (Bill, Nov 16 04:16 EST): every question is a
+    full, normal sentence a normal person understands — no
+    shorthand, no summary-of-a-summary phrasing, no syllabus-speak.
+  · MULTIPLE CHOICE FIRST (same order): every question that CAN be
+    multiple choice ships with choices built here — the correct
+    answer plus distractors drawn from the same class's own taught
+    material (sibling questions' answers; for a value question, the
+    other values its own lesson prints). A second audit checks
+    every distractor against the lesson; a distractor that is not
+    in the lesson, or that sits within grading tolerance of the
+    correct answer, is dropped. Picking is a NORMAL way to answer
+    (the interface marks a pass as assisted only when the student
+    took the I'm-stuck hint first).
+  · EASY TO HARD (same order): each class's questions are ordered
+    easiest first — direct recall of a stated number, then the
+    taught definitions in the lesson's own order, and the class's
+    set problem (the capstone) always last. Classes whose questions
+    are hand-written in gate-overrides.json keep their author's
+    order.
 
 Hand-checked classes can be corrected through gate-overrides.json:
   {"<classId>": {"lesson": [...], "steps": [...full replacements...]},
@@ -235,15 +254,17 @@ def value_questions(cls):
             name, val, disp = alt[0]
         used_values.add(val)
         plain = "; ".join("%s = %s" % (n, d) for n, v, d in pairs[:3])
-        teach = ("From the lesson: the paper '%s' and the result it "
-                 "stated. One of the quantities it names is %s."
+        teach = ("Think back to the lesson — the paper '%s'. The "
+                 "result it reported gives a value for %s, and that "
+                 "value is what this question asks for."
                  % (p['t'], name))
-        teach2 = ("Back to the exact passage, from the lesson: %s "
-                  "And the same result with the prose stripped away — "
-                  "just the quantities standing in a row: %s. Find %s "
-                  "in that row; the value beside it is the one this "
-                  "question asks for. Say it in figures, any honest "
-                  "form: as printed, rounded, or written out in full."
+        teach2 = ("Here is the exact passage from the lesson again: "
+                  "%s And here is that same result with the words "
+                  "stripped away — just the quantities standing in a "
+                  "row: %s. Find %s in that row; the value beside it "
+                  "is the one this question asks for. Say it in "
+                  "figures, any honest form: as printed, rounded, or "
+                  "written out in full."
                   % (paper_chunk(p), plain, name))
         walk = ("Walk it through with me, step by step. (1) In the "
                 "lesson, the paper '%s' stated its result. (2) That "
@@ -254,8 +275,8 @@ def value_questions(cls):
                 "form." % (p['t'], plain, name, name, disp, disp))
         steps.append({
             "teach": teach, "teach2": teach2, "walk": walk,
-            "q": ("From the lesson — the paper '%s': what value does "
-                  "its stated result report for %s?" % (p['t'], name)),
+            "q": ("In the lesson, the paper '%s' reported a number "
+                  "for %s. What number did it report?" % (p['t'], name)),
             "kind": "number", "answer": val, "disp": disp, "tol": 0.03,
             "why": WHY_VALUE, "substantive": True,
         })
@@ -386,8 +407,10 @@ def gloss_questions(cls):
         groups = [word_variants(w) for w in words]
         heads = ' · '.join(words)
         out.append({
-            "teach": ("From the lesson: unit %d, '%s' — and the one "
-                      "line that unpacks it." % (j + 1, u)),
+            "teach": ("Think back to the lesson — unit %d was '%s', "
+                      "and the lesson explained it in one line. This "
+                      "question asks for that explanation."
+                      % (j + 1, u)),
             "teach2": ("The exact line, from the lesson: 'Unit %d of "
                        "%d: %s.' Break the unpacking into its pieces: "
                        "%s. An answer standing on those pieces, in your "
@@ -399,9 +422,9 @@ def gloss_questions(cls):
                      "are: %s. (4) Say an answer that stands on those "
                      "ideas — in your own words."
                      % (j + 1, u, gloss, heads)),
-            "q": ("From the lesson: what does this class mean by "
-                  "'%s'? Say it the way the lesson taught it." % topic),
-            "kind": "keywords", "keywords": groups,
+            "q": ("In your own words: what does '%s' mean? Answer "
+                  "the way the lesson explained it." % topic),
+            "kind": "keywords", "keywords": groups, "gloss": gloss,
             "need": min(3, max(2, math.ceil(len(groups) / 2))),
             "why": ("You are doing this because a definition you can "
                     "produce is one you actually hold — and this one "
@@ -441,7 +464,7 @@ def capstone_step(cls):
                   "as my worked example, worked in full. Now it is "
                   "yours to work, in your own words. Take your time: "
                   "say it out loud or type it; either door is open."),
-        "teach2": teach2, "walk": walk,
+        "teach2": teach2, "walk": walk, "capstone": True,
         "q": q, "kind": "keywords", "keywords": groups,
         "need": max(2, min(3, math.ceil(len(groups) / 2))),
         "why": WHY_CAP, "substantive": True,
@@ -554,6 +577,176 @@ def audit_step(step, lesson_norm, lesson_numbers):
             'title key not in the lesson'
     return False, 'unknown kind %s' % kind
 
+# ------------------------------------------------- multiple choice
+# Bill (Nov 16 04:16 EST): multiple choice for every question that
+# can take it — picking is a normal way to answer, not a crutch.
+# The choices are built HERE, in the generator, so a rebuild keeps
+# them: the correct answer plus distractors drawn only from the
+# class's own taught material — sibling questions' answers first
+# (a value among values, an idea set among idea sets), and for a
+# value question, the other values its own lesson prints. Every
+# distractor then faces the MC AUDIT: it must itself be in the
+# lesson, and a value distractor must sit clearly outside grading
+# tolerance of the correct answer (an option the checker would
+# also accept is not a choice, it is a trap). A question that
+# cannot honestly field at least one distractor ships without
+# choices and is answered out loud or by typing, as before.
+
+import random as _random
+
+def correct_text(st):
+    """The choice text that answers this step. A definition
+    question's correct choice is the lesson's own explanation,
+    verbatim — the gloss the lesson printed. (The runtime-built
+    'idea set' strings of the first help build are retired as
+    choices: they read as shorthand, and Bill banned shorthand.)"""
+    kind = st.get('kind')
+    if kind == 'number':
+        return st.get('disp') or str(st.get('answer'))
+    if kind == 'keywords':
+        if st.get('gloss'):
+            return st['gloss']
+        return 'An answer built on: ' + ' · '.join(
+            g[0] for g in st.get('keywords', []))
+    if kind in ('exact', 'title'):
+        return str(st.get('answer'))
+    return None
+
+def _distractor_ok(st, text, lesson_norm, lesson_numbers):
+    """The MC audit for one distractor, against the lesson."""
+    kind = st.get('kind')
+    if kind == 'number':
+        vals = extract_numbers(text)
+        if not vals:
+            return False
+        v = vals[0]
+        want = st.get('answer')
+        if not isinstance(want, (int, float)):
+            return False
+        # clearly not the answer: outside twice the grading tolerance
+        if want == 0:
+            if v == 0:
+                return False
+        elif abs(v - want) / abs(want) <= max(0.06, 2 * (st.get('tol') or 0.03)):
+            return False
+        # and itself a value the lesson prints
+        return any(abs(x - v) <= max(0.02, abs(v) * 0.03)
+                   for x in lesson_numbers)
+    if kind == 'keywords':
+        # a verbatim lesson explanation (a unit's gloss) is
+        # contained by construction — the lesson prints it whole
+        if norm_text(text) in lesson_norm:
+            return True
+        heads = [h.strip() for h in text.split(':', 1)[-1].split(' · ')]
+        heads = [h for h in heads if h]
+        if not heads:
+            return False
+        present = sum(1 for h in heads if norm_text(h) in lesson_norm)
+        return present >= math.ceil(len(heads) / 2)
+    if kind in ('exact', 'title'):
+        return norm_text(text) in lesson_norm
+    return False
+
+def build_choices(steps, i, lesson_text, lesson_norm, lesson_numbers,
+                  rng, ctx=None):
+    """[option, ...] for steps[i] — correct + up to 3 distractors,
+    shuffled — or None when no honest choice set exists. The
+    class's set problem (the capstone) never gets choices: it is
+    the one question the student works in their own words, and a
+    pick-list there would not be the problem Bill set."""
+    st = steps[i]
+    if st.get('capstone'):
+        return None
+    correct = correct_text(st)
+    if correct is None:
+        return None
+    seen = {norm_text(correct)}
+    pooled_values = []
+    pool = []
+
+    def offer(text, audit=True):
+        if text is None or len(pool) >= 3:
+            return
+        n = norm_text(text)
+        if n in seen:
+            return
+        if audit and not _distractor_ok(st, text, lesson_norm,
+                                         lesson_numbers):
+            dropped_mc[st.get('kind')] += 1
+            return
+        if st.get('kind') == 'number':
+            vals = extract_numbers(text)
+            if vals and any(abs(vals[0] - pv) <= max(0.02, abs(pv) * 0.03)
+                            for pv in pooled_values):
+                return  # the same value in another print form
+            if vals:
+                pooled_values.append(vals[0])
+        seen.add(n)
+        pool.append(text)
+
+    if st.get('kind') == 'keywords' and st.get('gloss'):
+        # a definition question offers the lesson's own explanations:
+        # this unit's gloss is the answer; the class's OTHER units'
+        # glosses — every one printed in the lesson — are the choices
+        for g in (ctx or {}).get('glosses', []):
+            offer(g)
+    else:
+        # sibling answers — same kind only (a value question offers
+        # values, an idea question offers idea sets; mixing them
+        # would give the answer away)
+        for o in [o for j, o in enumerate(steps) if j != i]:
+            if o.get('kind') != st.get('kind') or o.get('capstone'):
+                continue
+            offer(correct_text(o))
+        # a value question gone thin: the other values its own
+        # lesson prints, in the lesson's own printed form
+        if st.get('kind') == 'number' and len(pool) < 3:
+            for m in re.finditer(
+                    r'=\s*(-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?)', lesson_text):
+                if len(pool) >= 3:
+                    break
+                offer(m.group(1))
+    if not pool:
+        return None
+    opts = pool + [correct]
+    rng.shuffle(opts)
+    return opts
+
+def validate_preset_choices(st, lesson_norm):
+    """A hand-written question (gate-overrides) may carry its own
+    choices + mcAnswer, authored from the class's lesson. They
+    ship only if the marked answer is among them and every other
+    option is built purely from the lesson's own vocabulary —
+    every content word present in the lesson text."""
+    opts = st.get('choices') or []
+    ans = st.get('mcAnswer')
+    if not ans or ans not in opts:
+        return None
+    kept = [ans]
+    for t in opts:
+        if t == ans:
+            continue
+        words = [w for w in gloss_words(t) if len(w) >= 3]
+        if words and all(w in lesson_norm for w in words):
+            kept.append(t)
+        else:
+            dropped_mc['preset'] += 1
+    if len(kept) < 2:
+        return None
+    return kept
+
+def step_rank(st):
+    """Easy to hard: a stated number recalled directly is the
+    easiest; a taught definition next; the class's set problem —
+    the capstone — is always the hardest and always last."""
+    if st.get('capstone'):
+        return 2
+    if st.get('kind') in ('number', 'exact'):
+        return 0
+    return 1
+
+dropped_mc = Counter()
+
 # ---------------------------------------------------------------- build
 classes = {}
 report = {}
@@ -595,6 +788,7 @@ for s in cat['sections']:
                     steps.append(q)
             cap = ov['capstone'] if 'capstone' in ov else capstone_step(cls)
             if cap:
+                cap['capstone'] = True
                 steps.append(cap)
         steps = steps[:8]
         for st in steps:
@@ -613,6 +807,35 @@ for s in cat['sections']:
             else:
                 dropped['%s: %s' % (st.get('kind'), why)] += 1
         steps = kept
+        # ---- multiple choice first (Bill, Nov 16 04:16): choices
+        # built from the class's own material, every distractor
+        # audited against the lesson; then the set is ordered easy
+        # to hard — hand-written question sets (gate-overrides
+        # 'steps') keep their author's order
+        rng = _random.Random(cid)
+        ctx = {'glosses': [g for g in
+                           (split_gloss(u)[1] for u in cls.get('units') or [])
+                           if g]}
+        for i, st in enumerate(steps):
+            if st.get('choices') and st.get('mcAnswer'):
+                # hand-authored choices (gate-overrides): audited
+                # against the lesson's vocabulary, kept or dropped
+                kept_preset = validate_preset_choices(st, lesson_norm)
+                if kept_preset:
+                    st['choices'] = kept_preset
+                else:
+                    st.pop('choices', None)
+                    st.pop('mcAnswer', None)
+                continue
+            ch = build_choices(steps, i, lesson_text, lesson_norm,
+                               lesson_numbers, rng, ctx)
+            if ch:
+                st['choices'] = ch
+                st['mcAnswer'] = correct_text(st)
+        if ov.get('steps') is None:
+            steps = [st for _, st in sorted(
+                enumerate(steps),
+                key=lambda p: (step_rank(p[1]), p[0]))]
         substantive = sum(1 for st in steps if st.get('substantive'))
         if not steps:
             report[cid] = ('lesson-only',
@@ -650,6 +873,10 @@ print('coverage:', dict(counts))
 print('questions dropped by the containment audit:', sum(dropped.values()))
 for k, v in dropped.most_common():
     print('  dropped', v, '×', k)
+_mc = sum(1 for e in classes.values() for st in e['steps'] if st.get('choices'))
+_tot = sum(len(e['steps']) for e in classes.values())
+print('questions with multiple choice:', _mc, 'of', _tot)
+print('distractors dropped by the MC audit:', sum(dropped_mc.values()))
 
 with open('GATE-COVERAGE.md', 'w', encoding='utf-8') as f:
     f.write("# Gate coverage — build-gate-data.py\n\n")
@@ -658,7 +885,12 @@ with open('GATE-COVERAGE.md', 'w', encoding='utf-8') as f:
             "questions drawn only from that lesson. The containment "
             "audit in the generator drops any question whose answer "
             "is not in the lesson; the drops are counted in the build "
-            "output and in the teaching-fix report.\n\n")
+            "output and in the teaching-fix report. Questions are "
+            "written in plain language, ordered easy to hard, and "
+            "carry multiple-choice options built from the class's "
+            "own material wherever an honest choice set exists "
+            "(the MC audit drops any distractor that is not itself "
+            "in the lesson).\n\n")
     for k in ('full', 'partial', 'lesson-only', 'language'):
         f.write("## %s (%d)\n\n" % (k, counts.get(k, 0)))
         for s in cat['sections']:

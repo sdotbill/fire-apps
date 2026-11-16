@@ -1,14 +1,20 @@
-/* University-wide help sweep (Bill's scope extension, Nov 16 03:11):
-   the hint → choices → assisted-pass flow, driven in headless Chrome
-   on ONE gated class per section (the section's first gated class in
+/* University-wide help sweep (Bill's scope extension, Nov 16 03:11;
+   multiple-choice-first order, Nov 16 04:16): the choices the
+   generator built are on the board BY DEFAULT; the I'm-stuck hint
+   comes from the step's own material; landing the step after the
+   hint records an ASSISTED pass. Driven in headless Chrome on ONE
+   gated class per section (the section's first gated class in
    catalogue order), plus two targeted samples: single-question
    classes, which honestly take the guided look-up fallback. For
-   every sample: lesson first → begin → I'm stuck → hint from
-   the step's own material → choices (or the honest look-up) → land
-   the step → the log records an ASSISTED pass.
-   The expected options are computed here from gate-data.json +
-   catalogue.json with the same derivation gate-ui.js runs; the
-   browser's rendered options must match that set exactly.
+   every sample: lesson first → begin → choices already up (where
+   the step carries them) → I'm stuck → hint → pick the stored
+   correct option (or the honest look-up) → land the step → the
+   log records an ASSISTED pass.
+   The expected options are read from gate-data.json: the stored
+   choice set is the source of truth (the generator audited every
+   distractor against the lesson); for a step the generator could
+   not prebuild, the same runtime derivation gate-ui.js runs is
+   mirrored here. The browser's rendered options must match.
    Run: NODE_PATH=<owner-lane browser node_modules> node verify-help-sweep.cjs <baseUrl>
    Writes sweep-results.json; exits non-zero on any failure.
 */
@@ -33,6 +39,8 @@ function answerText(st) {
   return st.answer != null ? String(st.answer) : null;
 }
 function correctText(st) {
+  /* mirrors gate-ui.js: the stored marked answer wins */
+  if (st.mcAnswer) return st.mcAnswer;
   if (st.kind === 'keywords') {
     return 'An answer built on: ' + st.keywords.map(g => g[0]).join(' · ');
   }
@@ -41,6 +49,10 @@ function correctText(st) {
 function norm(s) { return String(s || '').toLowerCase().replace(/\s+/g, ' ').trim(); }
 function expectedOptions(cid, idx) {
   const d = gd[cid], st = d.steps[idx];
+  /* the generator's stored set is the source of truth */
+  if (st.choices && st.mcAnswer) {
+    return { correct: st.mcAnswer, allowed: new Set(st.choices) };
+  }
   const correct = correctText(st);
   const pool = [], seen = new Set([norm(correct)]);
   const sibs = d.steps.filter((o, i) => i !== idx);
@@ -152,8 +164,13 @@ cat.sections.forEach(s => {
       const hint = await page.$eval('#gtHint', el => el.textContent);
       if (!/Hint — from the material itself/.test(hint) || hint.length < 40)
         throw new Error('hint not honestly present: ' + hint.slice(0, 60));
-      await page.click('#gtHelp');
-      await sleep(600);
+      /* multiple choice first: when the step's choices were already
+         on the board by default, taking the hint completes the help
+         kit and the button retires; only when no choices are up
+         does the second click summon them (or the look-up) */
+      const helpStillUp = await page.evaluate(
+        () => document.getElementById('gtHelp').style.display !== 'none');
+      if (helpStillUp) { await page.click('#gtHelp'); await sleep(600); }
       const choiceTexts = await page.$$eval('#gtChoices .gtChoice',
         els => els.map(e => e.textContent));
       const boxText = await page.$eval('#gtChoices', el => el.textContent);

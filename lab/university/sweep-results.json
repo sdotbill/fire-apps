@@ -76,8 +76,8 @@
   "classId": "mathematical-physics-foundations-the-open-programme",
   "why": "section sample",
   "ok": true,
-  "mode": "choices ×3",
-  "detail": "hint ✓ · choices ×3 · assisted pass logged"
+  "mode": "choices ×2",
+  "detail": "hint ✓ · choices ×2 · assisted pass logged"
  },
  {
   "section": "designs",
@@ -108,32 +108,32 @@
   "classId": "architecture-i-seeing-like-an-architect",
   "why": "section sample",
   "ok": true,
-  "mode": "choices ×3",
-  "detail": "hint ✓ · choices ×3 · assisted pass logged"
+  "mode": "choices ×4",
+  "detail": "hint ✓ · choices ×4 · assisted pass logged"
  },
  {
   "section": "biology",
   "classId": "biology-i-the-cell-where-life-starts",
   "why": "section sample",
   "ok": true,
-  "mode": "choices ×3",
-  "detail": "hint ✓ · choices ×3 · assisted pass logged"
+  "mode": "choices ×4",
+  "detail": "hint ✓ · choices ×4 · assisted pass logged"
  },
  {
   "section": "health",
   "classId": "health-i-your-body-owners-manual",
   "why": "section sample",
   "ok": true,
-  "mode": "choices ×3",
-  "detail": "hint ✓ · choices ×3 · assisted pass logged"
+  "mode": "choices ×4",
+  "detail": "hint ✓ · choices ×4 · assisted pass logged"
  },
  {
   "section": "trades",
   "classId": "plumbing-i-water-in-water-out",
   "why": "section sample",
   "ok": true,
-  "mode": "choices ×3",
-  "detail": "hint ✓ · choices ×3 · assisted pass logged"
+  "mode": "choices ×4",
+  "detail": "hint ✓ · choices ×4 · assisted pass logged"
  },
  {
   "section": "computer-science",
@@ -148,8 +148,8 @@
   "classId": "francais-i-first-words-real-sentences",
   "why": "section sample",
   "ok": true,
-  "mode": "choices ×2",
-  "detail": "hint ✓ · choices ×2 · assisted pass logged"
+  "mode": "choices ×4",
+  "detail": "hint ✓ · choices ×4 · assisted pass logged"
  },
  {
   "section": "chemistry",
@@ -236,24 +236,24 @@
   "classId": "philosophy-philosophy-i-the-love-of-questions",
   "why": "section sample",
   "ok": true,
-  "mode": "choices ×2",
-  "detail": "hint ✓ · choices ×2 · assisted pass logged"
+  "mode": "choices ×3",
+  "detail": "hint ✓ · choices ×3 · assisted pass logged"
  },
  {
   "section": "linguistics",
   "classId": "linguistics-linguistics-i-the-science-of-language",
   "why": "section sample",
   "ok": true,
-  "mode": "choices ×3",
-  "detail": "hint ✓ · choices ×3 · assisted pass logged"
+  "mode": "choices ×4",
+  "detail": "hint ✓ · choices ×4 · assisted pass logged"
  },
  {
   "section": "classics",
   "classId": "classics-classical-civilisation-i-greece",
   "why": "section sample",
   "ok": true,
-  "mode": "choices ×3",
-  "detail": "hint ✓ · choices ×3 · assisted pass logged"
+  "mode": "choices ×2",
+  "detail": "hint ✓ · choices ×2 · assisted pass logged"
  },
  {
   "section": "religious-studies",
@@ -268,8 +268,8 @@
   "classId": "nursing-nursing-foundations-the-nurse-s-craft",
   "why": "section sample",
   "ok": true,
-  "mode": "choices ×3",
-  "detail": "hint ✓ · choices ×3 · assisted pass logged"
+  "mode": "choices ×2",
+  "detail": "hint ✓ · choices ×2 · assisted pass logged"
  },
  {
   "section": "public-health",
@@ -284,8 +284,8 @@
   "classId": "social-work-social-work-foundations-help-that-respects",
   "why": "section sample",
   "ok": true,
-  "mode": "choices ×3",
-  "detail": "hint ✓ · choices ×3 · assisted pass logged"
+  "mode": "choices ×2",
+  "detail": "hint ✓ · choices ×2 · assisted pass logged"
  },
  {
   "section": "kinesiology",
@@ -356,16 +356,16 @@
   "classId": "writing-i-the-clear-sentence",
   "why": "section sample",
   "ok": true,
-  "mode": "choices ×2",
-  "detail": "hint ✓ · choices ×2 · assisted pass logged"
+  "mode": "choices ×3",
+  "detail": "hint ✓ · choices ×3 · assisted pass logged"
  },
  {
   "section": "business",
   "classId": "business-i-what-a-business-is-from-the-ground-up",
   "why": "section sample",
   "ok": true,
-  "mode": "choices ×3",
-  "detail": "hint ✓ · choices ×3 · assisted pass logged"
+  "mode": "choices ×4",
+  "detail": "hint ✓ · choices ×4 · assisted pass logged"
  },
  {
   "section": "communications",
@@ -380,8 +380,8 @@
   "classId": "art-design-art-foundations-seeing-and-making",
   "why": "section sample",
   "ok": true,
-  "mode": "choices ×3",
-  "detail": "hint ✓ · choices ×3 · assisted pass logged"
+  "mode": "choices ×2",
+  "detail": "hint ✓ · choices ×2 · assisted pass logged"
  },
  {
   "section": "theatre-film",
