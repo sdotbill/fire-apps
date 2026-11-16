@@ -5,7 +5,11 @@ todo = []
 for s in cat['sections']:
     for e in s['classes']:
         if e.get('audio') and e.get('lesson'):
-            todo.append((s['professor']['voiceId'], e['lesson'], e['audio']))
+            # The TTS backend deterministically chokes on 'ø' (verified
+            # Nov 16 on the storytelling lesson): feed it the spoken
+            # spelling; the board keeps the correct one.
+            text = e['lesson'].replace('ø', 'o').replace('Ø', 'O')
+            todo.append(((e.get('professor') or s['professor'])['voiceId'], text, e['audio']))
 print(f'{len(todo)} lessons', flush=True)
 for voice, text, out in todo:
     if os.path.exists(out) and os.path.getsize(out) > 10000:

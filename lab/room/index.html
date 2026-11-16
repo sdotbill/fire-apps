@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>The Laboratory — The Room</title>
+<title>The Laboratory — a room of Exolex University</title>
 <style>
   :root{
     --paper:#faf7ef; --panel:#fffdf6; --gold:#c9a227; --gold-hi:#d9b23a;
@@ -120,7 +120,7 @@
 <div id="gl"></div>
 
 <div id="hud">
-  <span class="brand">THE LABORATORY — THE ROOM</span>
+  <span class="brand">THE LABORATORY — A ROOM OF EXOLEX UNIVERSITY</span>
   <span class="stat">Session <b id="clock">0:00</b></span>
   <span class="stat">My hours <b id="myHours">0 min</b></span>
   <span class="spacer"></span>
@@ -333,6 +333,24 @@
   function totalHoursMinutes(localMin) {
     return priorBalanceMinutes(priorBalance) + (localMin || 0);
   }
+  /* Stage B fence (Bill, Nov 16 01:22 EST): the documented balance in
+     prior-balance.json is BILL'S, counted from his record. It joins
+     this display only when the worker confirms the owner session;
+     every other signed-in student sees their own logged hours alone. */
+  var WORKER_URL = 'https://dave-chat.william-ced.workers.dev';
+  function checkOwnerThenBalance() {
+    if (!window.fetch) return;
+    var id = null;
+    try { id = storage.getItem('dave_chat_identity'); } catch (e) {}
+    if (!id) return;
+    fetch(WORKER_URL + '/identity', {
+      method: 'POST', credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ identity: id })
+    }).then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) { if (j && j.owner) loadPriorBalance(); })
+      .catch(function () { /* local-only figures stand */ });
+  }
   function loadPriorBalance() {
     if (!window.fetch) return;
     fetch(PRIOR_URL).then(function (r) {
@@ -413,7 +431,7 @@
   $('btnExport').addEventListener('click', exportLog);
   $('btnExport2').addEventListener('click', exportLog);
   if (Core) refreshHours();
-  loadPriorBalance();
+  checkOwnerThenBalance();
 
   /* ================= Instruments (physics: ../lab-core.js) ================= */
   var instOpen = null;

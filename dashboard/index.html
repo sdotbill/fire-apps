@@ -46,12 +46,13 @@
   .rail button.on{background:var(--panel2);color:var(--amber2);}
   .rail .sp{flex:1;}
   .rail .eye-mini{font-size:1.3rem;color:var(--amber);}
-  /* Lab rail item (Bill, Nov 16 01:04 EST): the Lab sits in the
-     left-hand sidebar itself, word and all — never in the sign-in
-     gate, never in a hamburger. The word rides under the flask so
-     the sidebar SAYS Lab at every width, phone included. */
+  /* Exolex University rail item (Bill, Nov 16 01:04 EST placement;
+     renamed 01:22 EST): the University sits in the left-hand sidebar
+     itself, word and all — never in the sign-in gate, never in a
+     hamburger. The word rides under the flask so the sidebar SAYS
+     Exolex University at every width, phone included. */
   #rail-lab{flex-direction:column;gap:1px;height:auto;min-height:42px;padding:5px 0 4px;}
-  #rail-lab .rail-word{font-size:.6rem;font-weight:700;letter-spacing:.05em;line-height:1.1;color:inherit;}
+  #rail-lab .rail-word{font-size:.52rem;font-weight:700;letter-spacing:.03em;line-height:1.15;color:inherit;text-align:center;}
   .panel{
     flex:none;width:284px;background:var(--panel);border-right:1px solid var(--line);
     display:flex;flex-direction:column;min-height:0;z-index:20;
@@ -289,16 +290,17 @@
     <!-- Projects (Bill, Nov 15 22:28 EST): ONE rail item, owner only —
          it renders solely when the owner binding stands (see
          openDashboard); everything lives inside its panel. -->
-    <button data-view="projects" id="rail-projects" title="Projects" aria-label="Projects" hidden>🗂</button>
-    <!-- Lab (Bill, Nov 16 00:38 EST; placement corrected 01:04 EST):
-         his laboratory desk — ONE item in the LEFT-HAND SIDEBAR,
-         word and all, shown once he is signed in and only then:
-         owner-gated like Projects (it renders solely when the owner
-         binding stands, see openDashboard; hidden again on sign-out).
-         It lives NOWHERE else — not in the sign-in gate, not in any
-         site hamburger, not in any pre-sign-in surface on either
-         domain. The room link and his hours live inside its panel. -->
-    <button data-view="lab" id="rail-lab" title="Lab" aria-label="Lab" hidden>⚗️<span class="rail-word">Lab</span></button>
+    <button data-view="projects" id="rail-projects" title="Projects" aria-label="Projects" hidden>⚗️</button>
+    <!-- Exolex University (Bill, Nov 16 00:38 EST as the Lab desk;
+         placement corrected 01:04 EST; renamed and opened 01:22 EST):
+         ONE item in the LEFT-HAND SIDEBAR, word and all, shown to
+         every signed-in account (see openDashboard; hidden again on
+         sign-out). It lives NOWHERE else — not in the sign-in gate,
+         not in any site hamburger, not in any pre-sign-in surface on
+         either domain. The University's places and the student's own
+         hours live inside its panel; Bill's documented balance is
+         added only for his owner session (see the lab view branch). -->
+    <button data-view="lab" id="rail-lab" title="Exolex University" aria-label="Exolex University" hidden><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4 L22 9 L12 14 L2 9 Z" fill="#1a1a1a"/><path d="M6 11.5 V16 C6 18.2 18 18.2 18 16 V11.5 L12 14.6 Z" fill="#1a1a1a"/><path d="M22 9 V14.5" stroke="#c9a227" stroke-width="1.8" stroke-linecap="round"/><circle cx="22" cy="16.2" r="1.7" fill="#c9a227"/></svg><span class="rail-word">Exolex</span><span class="rail-word">University</span></button>
     <button data-view="settings" title="Settings" aria-label="Settings">⚙️</button>
     <div class="sp"></div>
     <button id="rail-new" title="New chat" aria-label="New chat">➕</button>
@@ -1136,28 +1138,30 @@
       });
     }
     if(view === "lab"){
-      /* Owner only (Bill, Nov 16 00:38 EST): his laboratory desk —
-         the Lab Room one tap from the rail, and his Lab hours read
-         from this device's own Lab log (dave_lab_log — the same
-         store the room itself writes, same origin). Those hours
-         are this device's until the server-side ledger stage ties
-         them to the sign-in; the panel says so on its face rather
-         than dress a local total up as an account total. Account
-         and admin sessions never see the desk — the rail item is
-         owner-gated, and this branch refuses without the binding.
-         The room link is root-relative: this repo serves both
-         domains identically, and /lab/room/ resolves on the Dave
-         host and the Premium Marketing host alike (verified live
-         Nov 16), so one link lands from every door, app included. */
-      t.textContent = "Lab";
-      if(!owner){
-        b.innerHTML = '<p class="mini" style="margin:2px 6px">The Lab lives on the owner\u2019s dashboard.</p>';
-        return;
-      }
-      var lh = '<div class="panel-sec">Your laboratory</div>';
-      lh += '<a class="libitem" id="lab-open-room" href="/lab/room/">\u2697\ufe0f<span>Lab<small>The room \u2014 the Watch Floor \u00b7 the Bench \u00b7 the University Door</small></span></a>';
+      /* Exolex University (Bill, Nov 16 00:38 EST as the Lab desk;
+         renamed and opened to every signed-in account 01:22 EST):
+         the University panel — the classes door, and the Laboratory
+         (room + flat bench) as one of its places — plus the student's
+         University hours read from this device's own log (dave_lab_log
+         — the same store the room and the classrooms write, same
+         origin). Those hours are this device's until the server-side
+         ledger stage ties them to the sign-in; the panel says so on
+         its face rather than dress a local total up as an account
+         total. THE FENCE: the documented balance in prior-balance.json
+         is BILL'S, counted from his record — it is added on top ONLY
+         when this session is the owner's (the `owner` binding); every
+         other account's panel shows its own log alone. The links are
+         root-relative: this repo serves both domains identically, and
+         /lab/room/ resolves on the Dave host and the Premium Marketing
+         host alike (verified live Nov 16), so one link lands from
+         every door, app included. */
+      t.textContent = "Exolex University";
+      var lh = '<div class="panel-sec">The University</div>';
+      lh += '<a class="libitem" href="/lab/university/">\ud83c\udf93<span>The classes<small>The catalogue \u2014 every class, every professor</small></span></a>';
+      lh += '<div class="panel-sec">The Laboratory</div>';
+      lh += '<a class="libitem" id="lab-open-room" href="/lab/room/">\u2697\ufe0f<span>The Laboratory<small>The room \u2014 the Watch Floor \u00b7 the Bench \u00b7 the University Door</small></span></a>';
       lh += '<a class="libitem" href="/lab/">\ud83d\udd2c<span>The flat bench<small>The same instruments on one page</small></span></a>';
-      lh += '<div class="panel-sec">Your Lab hours</div>';
+      lh += '<div class="panel-sec">Your University hours</div>';
       lh += '<div class="setrow"><div class="grow"><strong id="lab-hours-total">\u2026</strong><div class="mini" id="lab-hours-detail">Reading this device\u2019s Lab log\u2026</div></div></div>';
       lh += '<p class="mini" id="lab-hours-note" style="margin:2px 6px">Hours logged on this device \u2014 the ledger ties them to your sign-in in a later stage.</p>';
       b.innerHTML = lh;
@@ -1181,7 +1185,7 @@
          the canonical file arrives — and if it never does — the
          figures above stand as this device's alone, with the
          per-device line untouched. */
-      if(window.fetch){
+      if(owner && window.fetch){
         fetch("/lab/university/prior-balance.json").then(function(r){
           if(!r.ok) throw new Error("balance " + r.status);
           return r.json();
@@ -1197,7 +1201,7 @@
       }
       var roomLink = $("lab-open-room");
       if(roomLink) roomLink.addEventListener("click", function(){
-        feedAdd("Lab opened", "The room \u00b7 from the dashboard desk", "\u2697\ufe0f");
+        feedAdd("The Laboratory opened", "The room \u00b7 from the dashboard desk", "\u2697\ufe0f");
       });
     }
     if(view === "search"){
@@ -1322,8 +1326,9 @@
     /* The Projects rail item exists only for the owner (Bill,
        Nov 15 22:28 EST) — account and admin sessions never see it. */
     $("rail-projects").hidden = !owner;
-    /* The Lab rail item rides the same owner gate (Nov 16 00:38 EST). */
-    $("rail-lab").hidden = !owner;
+    /* The University rail item is open to every signed-in account
+       (Bill, Nov 16 01:22 EST); sign-out hides it again. */
+    $("rail-lab").hidden = false;
     renderThread(); renderFeed(); renderPanel();
     setStatus("Here · live on the cloud");
     pollHealth(); setInterval(pollHealth, 60000);

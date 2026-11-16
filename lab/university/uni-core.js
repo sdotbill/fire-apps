@@ -72,6 +72,9 @@
     'the cards, and I answer them properly.';
 
   function preparedAnswers(cls, section, prof) {
+    /* A class may carry its own authored answer set (cls.qa) — written
+       in its professor's own voice. Bill's Spanish classroom does. */
+    if (cls.qa && cls.qa.length) return cls.qa;
     var about, syllabus;
     if (cls.units) {
       about = cls.title + ' is a founding-curriculum class in ' +

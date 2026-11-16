@@ -140,10 +140,14 @@
 <div id="viewCatalogue">
   <div class="wrap">
     <h1>The Catalogue — every class in the University</h1>
-    <p class="lede">You knocked, the door opened. These are the classes of
-      Exolex University, in sections. The College sections are built from
-      the corpus's own index: each class is a topic, and its syllabus is
-      the real papers — titles and DOIs, exactly as indexed. Pick a class,
+    <p class="lede">You knocked, the door opened. Exolex University is a
+      science, technology and AI school first — mathematics and the
+      sciences are its core, and this is a school that builds things —
+      with the whole curriculum of a real university around that core:
+      languages, humanities, health, law, the trades, the arts. The
+      College sections are built from the corpus's own index: each class
+      is a topic, and its syllabus is the real papers — titles and DOIs,
+      exactly as indexed. Every class has its own professor. Pick a class,
       shut the door, and turn around: you are in its classroom.</p>
     <div class="totals" id="totals"></div>
     <input id="search" type="search" placeholder="Search classes and papers — try &lsquo;bounce&rsquo;, &lsquo;neutrino&rsquo;, &lsquo;French&rsquo;&hellip;" aria-label="Search the catalogue">
@@ -196,8 +200,8 @@
     <div class="panel" id="panel-ask">
       <h3>Ask the professor</h3>
       <p class="note">Prepared answers, written from this class's real
-        material — the professor answers these herself, in her own words.
-        Live questions arrive with the University's next stage.</p>
+        material — the professor answers these personally, in their own
+        words. Live questions arrive with the University's next stage.</p>
       <div class="chips" id="askChips"></div>
       <div id="askLog"></div>
       <div id="askRow">
@@ -291,12 +295,32 @@
     }).catch(function () { /* local-only figures stand */ });
   }
 
+  /* Stage B fence (Bill, Nov 16 01:22 EST): prior-balance.json is
+     BILL'S documented balance, counted from HIS record. It is added
+     to the hours display ONLY when the worker confirms this session
+     is the owner's. Every other signed-in student sees the combined
+     display with their own logged hours alone — no documented line. */
+  var WORKER_URL = 'https://dave-chat.william-ced.workers.dev';
+  function checkOwnerForBalance() {
+    if (!window.fetch) return;
+    var id = null;
+    try { id = storage.getItem('dave_chat_identity'); } catch (e) {}
+    if (!id) return;
+    fetch(WORKER_URL + '/identity', {
+      method: 'POST', credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ identity: id })
+    }).then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) { if (j && j.owner) loadPriorBalance(); })
+      .catch(function () { /* local-only figures stand */ });
+  }
+
   function refreshHours() {
     var s = U.summarizeLog(U.loadLog(storage));
     $('myHours').textContent = U.formatMinutes(totalHoursMinutes(s.totalMinutes));
   }
   refreshHours();
-  loadPriorBalance();
+  checkOwnerForBalance();
 
   /* ================= professor portrait (stylised, drawn) ================= */
   function portraitSVG(p) {
@@ -307,6 +331,8 @@
     if (style === 'straight') back = '<rect x="60" y="54" width="16" height="96" rx="8" fill="' + hair + '"/><rect x="124" y="54" width="16" height="96" rx="8" fill="' + hair + '"/><path d="M62 74 Q100 34 138 74 Q138 52 100 48 Q62 52 62 74Z" fill="' + hair + '"/>';
     if (style === 'curls') { back = ''; [62, 80, 100, 120, 138].forEach(function (x, i) { back += '<circle cx="' + x + '" cy="' + (52 + (i % 2) * 8) + '" r="15" fill="' + hair + '"/>'; }); back += '<circle cx="58" cy="86" r="13" fill="' + hair + '"/><circle cx="142" cy="86" r="13" fill="' + hair + '"/><circle cx="60" cy="112" r="11" fill="' + hair + '"/><circle cx="140" cy="112" r="11" fill="' + hair + '"/>'; }
     if (style === 'bun') front = '<circle cx="100" cy="42" r="15" fill="' + hair + '"/><path d="M64 76 Q100 40 136 76 Q134 56 100 52 Q66 56 64 76Z" fill="' + hair + '"/>';
+    if (style === 'short') front = '<path d="M64 74 Q100 40 136 74 Q134 55 100 51 Q66 55 64 74Z" fill="' + hair + '"/>';
+    var beard = p.beard ? '<path d="M71 102 Q100 146 129 102 Q124 130 100 134 Q76 130 71 102Z" fill="' + hair + '"/>' : '';
     if (style === 'ponytail') front = '<path d="M64 76 Q100 40 136 76 Q134 56 100 52 Q66 56 64 76Z" fill="' + hair + '"/><path d="M134 66 Q156 96 146 140 Q136 148 130 138 Q138 100 128 74Z" fill="' + hair + '"/>';
     if (style === 'bob' || style === 'waves') front = '<path d="M64 78 Q100 42 136 78 Q134 58 100 54 Q66 58 64 78Z" fill="' + hair + '"/>';
     var glasses = p.glasses ?
@@ -318,6 +344,7 @@
       '<path d="M100 138 L84 240 L116 240 Z" fill="rgba(255,255,255,.18)"/>' +
       '<rect x="90" y="118" width="20" height="26" rx="6" fill="' + skin + '"/>' +
       '<ellipse cx="100" cy="94" rx="33" ry="39" fill="' + skin + '"/>' +
+      beard +
       front +
       '<circle cx="88" cy="96" r="2.6" fill="#262019"/><circle cx="112" cy="96" r="2.6" fill="#262019"/>' +
       '<path d="M84 86 Q88 83 93 86 M107 86 Q112 83 116 86" stroke="#262019" stroke-width="1.6" fill="none"/>' +
@@ -337,9 +364,11 @@
   function classRow(section, cls) {
     var row = document.createElement('div');
     row.className = 'classRow';
-    row.setAttribute('data-search', (cls.title + ' ' + section.name).toLowerCase());
+    var rowProf = cls.professor || section.professor;
+    row.setAttribute('data-search', (cls.title + ' ' + section.name + ' ' + rowProf.name).toLowerCase());
     var audioTag = cls.audio ? ' · <span class="cc">professor&rsquo;s voice recorded</span>' : '';
     row.innerHTML = '<span class="ct">' + esc(cls.title) + '</span>' +
+      '<span class="cc">' + esc(rowProf.name) + '</span>' +
       '<span class="cc">' + (cls.units ? cls.units.length + ' units' : cls.count + ' papers') + '</span>' +
       '<span class="src">' + esc(cls.source) + '</span>' + audioTag;
     var btn = document.createElement('button');
@@ -358,7 +387,7 @@
       '<div class="t"><div class="n">' + totals.classes + '</div><div class="k">Classes</div></div>' +
       '<div class="t"><div class="n">' + totals.papers.toLocaleString() + '</div><div class="k">Papers on syllabuses</div></div>' +
       '<div class="t"><div class="n">' + totals.sections + '</div><div class="k">Sections</div></div>' +
-      '<div class="t"><div class="n">17</div><div class="k">Professors</div></div>';
+      '<div class="t"><div class="n">' + totals.professors + '</div><div class="k">Professors</div></div>';
     var host = $('sections');
     host.innerHTML = '';
     var lastGroup = null;
@@ -377,12 +406,18 @@
       det.setAttribute('data-section', section.id);
       var sum = document.createElement('summary');
       sum.innerHTML = '<span class="sname">' + esc(section.name) + '</span>' +
-        '<span class="smeta">' + esc(section.professor.name) + ' · ' +
+        '<span class="smeta">Dept. head: ' + esc(section.professor.name) + ' · ' +
         section.classCount + ' classes · ' +
         (section.paperCount ? section.paperCount.toLocaleString() + ' papers' : 'founding curriculum') +
         ' — tap to open the section</span>';
       det.appendChild(sum);
       var body = document.createElement('div');
+      if (section.note) {
+        var sn = document.createElement('p');
+        sn.className = 'note';
+        sn.textContent = section.note;
+        body.appendChild(sn);
+      }
       section.classes.forEach(function (cls) { body.appendChild(classRow(section, cls)); });
       det.appendChild(body);
       host.appendChild(det);
@@ -496,8 +531,9 @@
     $('viewCatalogue').style.display = 'none';
     $('viewClassroom').style.display = 'block';
     $('crumbClass').textContent = section.name + ' · ' + cls.title;
-    var prof = section.professor;
-    $('profCard').innerHTML = portraitSVG(prof.portrait) +
+    var prof = cls.professor || section.professor;
+    cur.prof = prof;
+    $('profCard').innerHTML = portraitSVG(Object.assign({}, prof.portrait, { name: prof.name })) +
       '<div><div class="pname">' + esc(prof.name) + '</div>' +
       '<div class="psec">' + esc(section.name) + '</div>' +
       '<div class="pvoice">Voice: ' + esc(prof.voiceName) + '</div></div>';
@@ -517,7 +553,7 @@
 
     if (cls.audio) {
       $('lessonIntro').textContent = 'Your professor teaches the opening ' +
-        'lesson aloud, and the board fills as she speaks.';
+        'lesson aloud, and the board fills as the lesson plays.';
       $('btnPlay').style.display = '';
       $('lessonNote').textContent = 'Recorded for this class in ' +
         prof.name + '\u2019s own voice.';
@@ -526,8 +562,10 @@
       $('btnPlay').textContent = '▶ Hear the lesson';
     } else {
       $('lessonIntro').textContent = 'Your professor\u2019s lesson is on the ' +
-        'board for this class — her recorded voice joins the flagship ' +
-        'class of each section in this stage of the University.';
+        'board for this class. Recorded voices live in the flagship ' +
+        'classes, the language rooms, and the founding classes at this ' +
+        'stage of the University; every other classroom teaches on the ' +
+        'board, in its own professor\u2019s words.';
       $('btnPlay').style.display = 'none';
       $('lessonNote').textContent = 'The lesson text is built from this ' +
         'class\u2019s real syllabus — the papers and result lines below.';
@@ -606,10 +644,10 @@
     you.innerHTML = '<div class="who">You</div>';
     you.appendChild(document.createTextNode(qText));
     log.appendChild(you);
-    var ans = prepared || U.matchAnswer(qText, cur.cls, cur.section, cur.section.professor) || U.LIVE_NOTE;
+    var ans = prepared || U.matchAnswer(qText, cur.cls, cur.section, cur.prof) || U.LIVE_NOTE;
     var bub = document.createElement('div');
     bub.className = 'bubble';
-    bub.innerHTML = '<div class="who">' + esc(cur.section.professor.name) + '</div>';
+    bub.innerHTML = '<div class="who">' + esc(cur.prof.name) + '</div>';
     bub.appendChild(document.createTextNode(ans));
     log.appendChild(bub);
     bub.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
