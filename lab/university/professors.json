@@ -58,7 +58,8 @@
      "hairStyle": "short",
      "outfit": "#9a4a1f",
      "glasses": false
-    }
+    },
+    "photo": "portraits/laboratory-and-astrophysical-tests-of-einstein-cartan-torsion.jpg"
    }
   },
   {
@@ -119,7 +120,8 @@
      "hairStyle": "waves",
      "outfit": "#1f4d7a",
      "glasses": false
-    }
+    },
+    "photo": "portraits/matter-energy.jpg"
    }
   },
   {
@@ -259,7 +261,8 @@
      "hairStyle": "short",
      "outfit": "#26332a",
      "glasses": true
-    }
+    },
+    "photo": "portraits/ai-fundamentals-what-a-mind-made-of-math-is.jpg"
    }
   },
   {
@@ -279,7 +282,8 @@
      "hairStyle": "bun",
      "outfit": "#6d4c2a",
      "glasses": true
-    }
+    },
+    "photo": "portraits/architecture-i-seeing-like-an-architect.jpg"
    }
   },
   {
@@ -299,7 +303,8 @@
      "hairStyle": "ponytail",
      "outfit": "#2e5d33",
      "glasses": false
-    }
+    },
+    "photo": "portraits/biology-i-the-cell-where-life-starts.jpg"
    }
   },
   {
@@ -421,7 +426,8 @@
      "hairStyle": "ponytail",
      "outfit": "#8a6508",
      "glasses": false
-    }
+    },
+    "photo": "portraits/chemistry-general-chemistry-i-atoms-bonds-and-reactions.jpg"
    }
   },
   {
@@ -542,7 +548,8 @@
      "hairStyle": "straight",
      "outfit": "#1f4d7a",
      "glasses": true
-    }
+    },
+    "photo": "portraits/anthropology-cultural-anthropology-i-ways-of-being-human.jpg"
    }
   },
   {
@@ -663,7 +670,8 @@
      "hairStyle": "straight",
      "outfit": "#23365c",
      "glasses": true
-    }
+    },
+    "photo": "portraits/classics-classical-civilisation-i-greece.jpg"
    }
   },
   {
@@ -845,7 +853,8 @@
      "hairStyle": "straight",
      "outfit": "#1f4d7a",
      "glasses": false
-    }
+    },
+    "photo": "portraits/agriculture-agricultural-foundations-farming-as-a-system.jpg"
    }
   },
   {
@@ -945,7 +954,8 @@
      "hairStyle": "short",
      "outfit": "#5c2a54",
      "glasses": false
-    }
+    },
+    "photo": "portraits/business-i-what-a-business-is-from-the-ground-up.jpg"
    }
   },
   {
@@ -965,7 +975,8 @@
      "hairStyle": "straight",
      "outfit": "#8a6508",
      "glasses": false
-    }
+    },
+    "photo": "portraits/communications-communication-foundations-messages-and-meanings.jpg"
    }
   },
   {
@@ -985,7 +996,8 @@
      "hairStyle": "curls",
      "outfit": "#5d4630",
      "glasses": false
-    }
+    },
+    "photo": "portraits/art-design-art-foundations-seeing-and-making.jpg"
    }
   },
   {

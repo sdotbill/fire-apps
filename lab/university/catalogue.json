@@ -1638,7 +1638,8 @@
        "hairStyle": "short",
        "outfit": "#7a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/the-aldred-limit-and-its-consequence-tree.jpg"
      }
     },
     {
@@ -1976,7 +1977,8 @@
        "outfit": "#26332a",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/the-cmb-line.jpg"
      }
     },
     {
@@ -2650,7 +2652,8 @@
        "hairStyle": "bob",
        "outfit": "#5c2a54",
        "glasses": true
-      }
+      },
+      "photo": "portraits/quantum-fields-and-particle-creation-through-a-bounce.jpg"
      }
     },
     {
@@ -2762,7 +2765,8 @@
        "hairStyle": "bob",
        "outfit": "#5d4630",
        "glasses": false
-      }
+      },
+      "photo": "portraits/second-generation-propulsion-and-energy-designs-from-the-transit.jpg"
      }
     },
     {
@@ -3658,7 +3662,8 @@
        "hairStyle": "waves",
        "outfit": "#5d4630",
        "glasses": false
-      }
+      },
+      "photo": "portraits/the-21-cm-line-reionisation-and-the-dark-ages-in-a-bounced-cosmo.jpg"
      }
     },
     {
@@ -4443,7 +4448,8 @@
        "hairStyle": "straight",
        "outfit": "#9a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/space-based-instruments-and-mission-designs-from-the-physics.jpg"
      }
     },
     {
@@ -4779,7 +4785,8 @@
        "hairStyle": "bun",
        "outfit": "#2e5d33",
        "glasses": true
-      }
+      },
+      "photo": "portraits/reheating-preheating-and-thermalisation-after-a-torsion-regulate.jpg"
      }
     },
     {
@@ -5115,7 +5122,8 @@
        "hairStyle": "waves",
        "outfit": "#6d1f2c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/sunyaev-zel-dovich-effects-and-hot-intracluster-gas-as-tests-of-.jpg"
      }
     },
     {
@@ -7720,7 +7728,8 @@
      "hairStyle": "short",
      "outfit": "#9a4a1f",
      "glasses": false
-    }
+    },
+    "photo": "portraits/laboratory-and-astrophysical-tests-of-einstein-cartan-torsion.jpg"
    },
    "classes": [
     {
@@ -8307,7 +8316,8 @@
        "outfit": "#2e3d6e",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/astrophysics-the-open-programme.jpg"
      }
     },
     {
@@ -8525,7 +8535,8 @@
        "hairStyle": "short",
        "outfit": "#9a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/laboratory-and-astrophysical-tests-of-einstein-cartan-torsion.jpg"
      }
     },
     {
@@ -9310,7 +9321,8 @@
        "hairStyle": "bob",
        "outfit": "#7a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/asteroids-comets-planetary-rings-and-small-body-dynamics-as-test.jpg"
      }
     },
     {
@@ -9759,7 +9771,8 @@
        "hairStyle": "straight",
        "outfit": "#46536a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/atmospheric-electricity-lightning-transient-luminous-events-and-.jpg"
      }
     },
     {
@@ -10545,7 +10558,8 @@
        "outfit": "#1f5138",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/x-ray-astronomy-hot-gas-x-ray-binaries-and-the-diffuse-x-ray-bac.jpg"
      }
     },
     {
@@ -10771,7 +10785,8 @@
        "outfit": "#6d1f2c",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/brown-dwarfs-free-floating-planets-and-the-bottom-of-the-initial.jpg"
      }
     },
     {
@@ -11333,7 +11348,8 @@
        "hairStyle": "short",
        "outfit": "#4b2a63",
        "glasses": false
-      }
+      },
+      "photo": "portraits/cataclysmic-variables-novae-and-recurrent-novae-against-density-.jpg"
      }
     },
     {
@@ -12454,7 +12470,8 @@
        "hairStyle": "ponytail",
        "outfit": "#5d4630",
        "glasses": true
-      }
+      },
+      "photo": "portraits/asymptotic-giant-branch-stars-mira-variables-and-stellar-mass-lo.jpg"
      }
     },
     {
@@ -14361,7 +14378,8 @@
        "hairStyle": "bob",
        "outfit": "#9a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/chondrules-calcium-aluminium-rich-inclusions-and-early-solar-sys.jpg"
      }
     },
     {
@@ -14787,7 +14805,8 @@
        "outfit": "#1f5138",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/black-holes-remnants.jpg"
      }
     },
     {
@@ -17247,7 +17266,8 @@
      "hairStyle": "waves",
      "outfit": "#1f4d7a",
      "glasses": false
-    }
+    },
+    "photo": "portraits/matter-energy.jpg"
    },
    "classes": [
     {
@@ -17382,7 +17402,8 @@
        "hairStyle": "short",
        "outfit": "#2e5d33",
        "glasses": false
-      }
+      },
+      "photo": "portraits/atomic-molecular-physics-the-open-programme.jpg"
      }
     },
     {
@@ -17511,7 +17532,8 @@
        "hairStyle": "waves",
        "outfit": "#1f4d7a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/matter-energy.jpg"
      }
     },
     {
@@ -18411,7 +18433,8 @@
        "hairStyle": "straight",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/dispersion-and-arrival-time-tests-of-the-limit-frame-from-high-e.jpg"
      }
     },
     {
@@ -18635,7 +18658,8 @@
        "hairStyle": "waves",
        "outfit": "#1f4d7a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/black-hole-shadows-photon-rings-and-horizon-scale-imaging-agains.jpg"
      }
     },
     {
@@ -18748,7 +18772,8 @@
        "outfit": "#8a6508",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/black-hole-ringdown-quasi-normal-modes-and-gravitational-wave-me.jpg"
      }
     },
     {
@@ -19084,7 +19109,8 @@
        "hairStyle": "bob",
        "outfit": "#7a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/astrochemistry-and-molecular-physics-in-cold-clouds-reaction-fre.jpg"
      }
     },
     {
@@ -19196,7 +19222,8 @@
        "hairStyle": "bun",
        "outfit": "#23365c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/cavitation-bubble-dynamics-and-sonoluminescence-collapse-erosion.jpg"
      }
     },
     {
@@ -19620,7 +19647,8 @@
        "hairStyle": "straight",
        "outfit": "#1f5138",
        "glasses": true
-      }
+      },
+      "photo": "portraits/atoms-ions-clocks.jpg"
      }
     },
     {
@@ -21969,7 +21997,8 @@
        "hairStyle": "curls",
        "outfit": "#26332a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/water-the-ground.jpg"
      }
     },
     {
@@ -22657,7 +22686,8 @@
        "outfit": "#5c2a54",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/planetary-volcanism-tectonics-and-interior-heat-flow-against-den.jpg"
      }
     },
     {
@@ -22769,7 +22799,8 @@
        "hairStyle": "ponytail",
        "outfit": "#2e5d33",
        "glasses": false
-      }
+      },
+      "photo": "portraits/the-zodiacal-light-interplanetary-dust-cloud-and-near-earth-dust.jpg"
      }
     },
     {
@@ -23106,7 +23137,8 @@
        "hairStyle": "curls",
        "outfit": "#26332a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/the-earth-s-deep-interior-core-mantle-and-geodynamo-budgets-agai.jpg"
      }
     },
     {
@@ -23219,7 +23251,8 @@
        "outfit": "#6d1f2c",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/the-cryosphere-ice-sheets-glaciers-and-sea-ice-flow-sliding-and-.jpg"
      }
     },
     {
@@ -23780,7 +23813,8 @@
        "outfit": "#b4502e",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/tsunami-generation-transoceanic-propagation-and-run-up-source-di.jpg"
      }
     },
     {
@@ -24004,7 +24038,8 @@
        "hairStyle": "bob",
        "outfit": "#5c2a54",
        "glasses": true
-      }
+      },
+      "photo": "portraits/tropical-cyclones-intensity-wind-pressure-and-storm-surge-budget.jpg"
      }
     },
     {
@@ -24340,7 +24375,8 @@
        "hairStyle": "short",
        "outfit": "#8a6508",
        "glasses": true
-      }
+      },
+      "photo": "portraits/tornadoes-dust-devils-and-small-scale-atmospheric-vortices-vorte.jpg"
      }
     },
     {
@@ -24564,7 +24600,8 @@
        "hairStyle": "curls",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/seismic-wave-propagation-attenuation-and-earth-tomography-travel.jpg"
      }
     },
     {
@@ -24788,7 +24825,8 @@
        "hairStyle": "ponytail",
        "outfit": "#5c2a54",
        "glasses": false
-      }
+      },
+      "photo": "portraits/superconductivity-vortex-pinning-and-critical-current-budgets-in.jpg"
      }
     },
     {
@@ -25348,7 +25386,8 @@
        "hairStyle": "straight",
        "outfit": "#8c1f2e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/river-ice-frazil-freeze-up-ice-jams-and-breakup-dynamics-against.jpg"
      }
     },
     {
@@ -25685,7 +25724,8 @@
        "outfit": "#9a4a1f",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/subglacial-lakes-and-subglacial-hydrology-water-heat-and-exchang.jpg"
      }
     },
     {
@@ -35983,7 +36023,8 @@
        "outfit": "#2e5d33",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/information-computation.jpg"
      }
     },
     {
@@ -37103,7 +37144,8 @@
        "hairStyle": "straight",
        "outfit": "#5d4630",
        "glasses": false
-      }
+      },
+      "photo": "portraits/household-manufactures-wave-6.jpg"
      }
     },
     {
@@ -38001,7 +38043,8 @@
        "hairStyle": "bob",
        "outfit": "#3c3f45",
        "glasses": false
-      }
+      },
+      "photo": "portraits/household-pests-and-stored-goods-protection-wave-8.jpg"
      }
     },
     {
@@ -38338,7 +38381,8 @@
        "outfit": "#1f4d7a",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/household-money-savings-and-bookkeeping-wave-8.jpg"
      }
     },
     {
@@ -39460,7 +39504,8 @@
        "hairStyle": "straight",
        "outfit": "#8a6508",
        "glasses": true
-      }
+      },
+      "photo": "portraits/in-space-manufacturing-assembly-and-recycling-systems-derived-fr.jpg"
      }
     },
     {
@@ -40133,7 +40178,8 @@
        "hairStyle": "waves",
        "outfit": "#46536a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/interstellar-probe-and-lightsail-cruise-systems-derived-from-the.jpg"
      }
     },
     {
@@ -41030,7 +41076,8 @@
        "hairStyle": "waves",
        "outfit": "#7a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/hydroelectric-micro-hydro-and-pumped-storage-power-systems-deriv.jpg"
      }
     },
     {
@@ -41952,7 +41999,8 @@
        "outfit": "#b4502e",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/life-in-the-universe.jpg"
      }
     },
     {
@@ -42140,7 +42188,8 @@
      "hairStyle": "short",
      "outfit": "#26332a",
      "glasses": true
-    }
+    },
+    "photo": "portraits/ai-fundamentals-what-a-mind-made-of-math-is.jpg"
    },
    "classes": [
     {
@@ -42176,7 +42225,8 @@
        "hairStyle": "short",
        "outfit": "#26332a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/ai-fundamentals-what-a-mind-made-of-math-is.jpg"
      }
     },
     {
@@ -42336,7 +42386,8 @@
      "hairStyle": "bun",
      "outfit": "#6d4c2a",
      "glasses": true
-    }
+    },
+    "photo": "portraits/architecture-i-seeing-like-an-architect.jpg"
    },
    "classes": [
     {
@@ -42372,7 +42423,8 @@
        "hairStyle": "bun",
        "outfit": "#6d4c2a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/architecture-i-seeing-like-an-architect.jpg"
      }
     },
     {
@@ -42533,7 +42585,8 @@
      "hairStyle": "ponytail",
      "outfit": "#2e5d33",
      "glasses": false
-    }
+    },
+    "photo": "portraits/biology-i-the-cell-where-life-starts.jpg"
    },
    "classes": [
     {
@@ -42569,7 +42622,8 @@
        "hairStyle": "ponytail",
        "outfit": "#2e5d33",
        "glasses": false
-      }
+      },
+      "photo": "portraits/biology-i-the-cell-where-life-starts.jpg"
      }
     },
     {
@@ -44625,7 +44679,8 @@
        "hairStyle": "ponytail",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/chemistry-general-chemistry-i-atoms-bonds-and-reactions.jpg"
      }
     },
     {
@@ -45272,7 +45327,8 @@
      "hairStyle": "ponytail",
      "outfit": "#8a6508",
      "glasses": false
-    }
+    },
+    "photo": "portraits/chemistry-general-chemistry-i-atoms-bonds-and-reactions.jpg"
    },
    "classCount": 20,
    "paperCount": 0
@@ -48216,7 +48272,8 @@
        "hairStyle": "straight",
        "outfit": "#1f4d7a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/anthropology-cultural-anthropology-i-ways-of-being-human.jpg"
      }
     },
     {
@@ -48663,7 +48720,8 @@
      "hairStyle": "straight",
      "outfit": "#1f4d7a",
      "glasses": true
-    }
+    },
+    "photo": "portraits/anthropology-cultural-anthropology-i-ways-of-being-human.jpg"
    },
    "classCount": 14,
    "paperCount": 0
@@ -51213,7 +51271,8 @@
        "hairStyle": "straight",
        "outfit": "#23365c",
        "glasses": true
-      }
+      },
+      "photo": "portraits/classics-classical-civilisation-i-greece.jpg"
      }
     },
     {
@@ -51279,7 +51338,8 @@
        "hairStyle": "curls",
        "outfit": "#2e3d6e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/classics-greek-language-i-first-steps-in-greek.jpg"
      }
     },
     {
@@ -51312,7 +51372,8 @@
        "hairStyle": "ponytail",
        "outfit": "#26332a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/classics-latin-language-i-first-steps-in-latin.jpg"
      }
     },
     {
@@ -51345,7 +51406,8 @@
        "hairStyle": "waves",
        "outfit": "#5c2a54",
        "glasses": false
-      }
+      },
+      "photo": "portraits/classics-greek-and-roman-epic.jpg"
      }
     },
     {
@@ -51378,7 +51440,8 @@
        "hairStyle": "waves",
        "outfit": "#9a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/classics-greek-tragedy-and-comedy.jpg"
      }
     },
     {
@@ -51411,7 +51474,8 @@
        "hairStyle": "ponytail",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/classics-roman-history-republic-to-empire.jpg"
      }
     },
     {
@@ -51444,7 +51508,8 @@
        "hairStyle": "straight",
        "outfit": "#b4502e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/classics-greek-history-city-states-and-empires.jpg"
      }
     },
     {
@@ -51544,7 +51609,8 @@
        "hairStyle": "bun",
        "outfit": "#8c1f2e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/classics-roman-law-and-daily-life.jpg"
      }
     },
     {
@@ -51594,7 +51660,8 @@
      "hairStyle": "straight",
      "outfit": "#23365c",
      "glasses": true
-    }
+    },
+    "photo": "portraits/classics-classical-civilisation-i-greece.jpg"
    },
    "classCount": 12,
    "paperCount": 0
@@ -55339,7 +55406,8 @@
        "hairStyle": "straight",
        "outfit": "#1f4d7a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/agriculture-agricultural-foundations-farming-as-a-system.jpg"
      }
     },
     {
@@ -55373,7 +55441,8 @@
        "outfit": "#5d4630",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/agriculture-crop-science-i-the-plants-we-eat.jpg"
      }
     },
     {
@@ -55407,7 +55476,8 @@
        "outfit": "#8a6508",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/agriculture-crop-science-ii-growing-well.jpg"
      }
     },
     {
@@ -55539,7 +55609,8 @@
        "hairStyle": "straight",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/agriculture-farm-machinery-and-technology.jpg"
      }
     },
     {
@@ -55605,7 +55676,8 @@
        "hairStyle": "waves",
        "outfit": "#3c3f45",
        "glasses": false
-      }
+      },
+      "photo": "portraits/agriculture-agroecology-and-sustainable-farming.jpg"
      }
     },
     {
@@ -55638,7 +55710,8 @@
        "hairStyle": "straight",
        "outfit": "#4b2a63",
        "glasses": true
-      }
+      },
+      "photo": "portraits/agriculture-agricultural-economics-and-business.jpg"
      }
     },
     {
@@ -55705,7 +55778,8 @@
        "hairStyle": "bun",
        "outfit": "#5d4630",
        "glasses": false
-      }
+      },
+      "photo": "portraits/agriculture-fisheries-and-aquaculture.jpg"
      }
     },
     {
@@ -55806,7 +55880,8 @@
        "outfit": "#8a6508",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/agriculture-food-systems-field-to-fork.jpg"
      }
     },
     {
@@ -55840,7 +55915,8 @@
        "outfit": "#5c2a54",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/agriculture-conservation-and-land-management.jpg"
      }
     }
    ],
@@ -55857,7 +55933,8 @@
      "hairStyle": "straight",
      "outfit": "#1f4d7a",
      "glasses": false
-    }
+    },
+    "photo": "portraits/agriculture-agricultural-foundations-farming-as-a-system.jpg"
    },
    "classCount": 16,
    "paperCount": 0
@@ -56335,7 +56412,8 @@
      "hairStyle": "short",
      "outfit": "#5c2a54",
      "glasses": false
-    }
+    },
+    "photo": "portraits/business-i-what-a-business-is-from-the-ground-up.jpg"
    },
    "classes": [
     {
@@ -56371,7 +56449,8 @@
        "hairStyle": "short",
        "outfit": "#5c2a54",
        "glasses": false
-      }
+      },
+      "photo": "portraits/business-i-what-a-business-is-from-the-ground-up.jpg"
      }
     },
     {
@@ -56515,7 +56594,8 @@
        "hairStyle": "straight",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/communications-communication-foundations-messages-and-meanings.jpg"
      }
     },
     {
@@ -56714,7 +56794,8 @@
        "outfit": "#26332a",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/communications-advertising-and-persuasion.jpg"
      }
     },
     {
@@ -56747,7 +56828,8 @@
        "hairStyle": "curls",
        "outfit": "#3c3f45",
        "glasses": false
-      }
+      },
+      "photo": "portraits/communications-digital-media-and-society.jpg"
      }
     },
     {
@@ -56780,7 +56862,8 @@
        "hairStyle": "short",
        "outfit": "#23365c",
        "glasses": true
-      }
+      },
+      "photo": "portraits/communications-film-and-television-studies.jpg"
      }
     },
     {
@@ -56946,7 +57029,8 @@
        "hairStyle": "waves",
        "outfit": "#8c1f2e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/communications-audio-and-podcasting-the-intimate-medium.jpg"
      }
     },
     {
@@ -57012,7 +57096,8 @@
        "hairStyle": "waves",
        "outfit": "#5d4630",
        "glasses": false
-      }
+      },
+      "photo": "portraits/communications-communication-research-methods.jpg"
      }
     }
    ],
@@ -57029,7 +57114,8 @@
      "hairStyle": "straight",
      "outfit": "#8a6508",
      "glasses": false
-    }
+    },
+    "photo": "portraits/communications-communication-foundations-messages-and-meanings.jpg"
    },
    "classCount": 16,
    "paperCount": 0
@@ -57069,7 +57155,8 @@
        "hairStyle": "curls",
        "outfit": "#5d4630",
        "glasses": false
-      }
+      },
+      "photo": "portraits/art-design-art-foundations-seeing-and-making.jpg"
      }
     },
     {
@@ -57584,7 +57671,8 @@
      "hairStyle": "curls",
      "outfit": "#5d4630",
      "glasses": false
-    }
+    },
+    "photo": "portraits/art-design-art-foundations-seeing-and-making.jpg"
    },
    "classCount": 16,
    "paperCount": 0
