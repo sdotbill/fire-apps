@@ -1,0 +1,177 @@
+{
+ "id": "the-solar-wind-and-the-heliosphere-stream-structure-parker-spira",
+ "title": "The Solar Wind and the Heliosphere: Stream Structure, Parker-Spiral and Energetic-Particle Budgets Against Published Spacecraft Values",
+ "professor": "Professor Dewi Le",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Dewi Le, and this is The Solar Wind and the Heliosphere: Stream Structure, Parker-Spiral and Energetic-Particle Budgets Against Published Spacecraft Values. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Dewi Le, and this is The Solar Wind and the Heliosphere: Stream Structure, Parker-Spiral and Energetic-Particle Budgets Against Published Spacecraft Values. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'Composition at the Stream Interface: Helium Abundance, Oxygen Charge States and Freeze-In Temperature'. Its stated result: Headline result: interface helium slow percent interface = 2; interface helium fast percent interface = 4.5; interface helium interface percent interface = 3.2; interface helium mass share fast percent interface = 15.25; interface helium mass share slow percent interface = 7.407; interface oxygen ratio slow interface = 0.5 Operating principle: Charge states freeze in within a few solar radii and then travel unchanged",
+    "Now we go one step further into the material.",
+    "'Corotating Interaction Regions: Compression Ratios, Pressure Pulse and Recurrence at the Stream Interface'. Its stated result: Headline result: cir density compression ratio cir = 4.167; cir field compression ratio cir = 3.636; cir total pressure npa cir = 0.3663; cir pressure ratio to quiet baseline cir = 0.1928; cir speed shear km per s cir = 430; cir recurrence period days cir = 27.28 Operating principle: Conservation across the pile-up sets the budget: the compressed density follows from the speed difference and the residence time of pla",
+    "The next piece is where this starts to come together.",
+    "'Crossing the Alfvén Surface: Mach Numbers, Critical Radius and the Sub-Alfvénic Interval of April 2021'. Its stated result: Headline result: alfven radius solar radii alfven = 18.7; alfven radius au alfven = 0.08698; alfven speed km per s alfven = 129; alfven wind speed km per s alfven = 100; alfven mach number alfven = 0.7753; alfven field nt alfven = 200 Operating principle: The Alfvén Mach number, wind speed over Alfvén speed, is the heliosphere's master switch: below unity, waves and information travel sunward and the plasma is corona",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'Fast Against Slow: Speed, Density, Temperature and Flux Contrasts of the Two Solar Wind Streams'. Its stated result: Headline result: streams slow speed km per s streams = 320; streams fast speed km per s streams = 750; streams mass flux ratio fast to slow streams = 0.7499; streams momentum flux ratio fast to slow streams = 1.757; streams energy flux ratio fast to slow streams = 4.119; streams slow dynamic pressure npa streams = 1.814 Operating principle: Multiplying the paired values through the standard flux formulae shows which",
+    "We take the pieces in order, because each one stands on the last.",
+    "'GLE 73 of 28 October 2021: Proton Fluence, Spectral Index and the Neutron Monitor Response'. Its stated result: Headline result: gle73 fluence above 10mev cm2 gle73 = 12000000; gle73 fluence above 100mev cm2 gle73 = 600000; gle73 implied spectral index gle73 = 1.301; gle73 fluence ratio 10 to 100 gle73 = 20; gle73 max monitor increase percent gle73 = 10; gle73 flare class x1p0 gle73 = 1 Operating principle: A ground level enhancement is the extreme tail of the SEP distribution, requiring protons above roughly a gigaelectronvol",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Parker Solar Probe at First Perihelion: Wind Speed, Density and Temperature Near 0.17 AU Rescaled to 1 AU'. Its stated result: Headline result: psp heliocentric distance au psp = 0.166; psp distance solar radii psp = 35.69; psp proton speed km per s psp = 380; psp density rescaled to 1au cm3 psp = 6.889; psp radial field rescaled to 1au nt psp = 1.653; psp alfven speed km per s psp = 81.16 Operating principle: Density dropping with the square of heliocentric distance, and a radial field dropping the same way, let a single near-Sun sample be",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Composition at the Stream Interface: Helium Abundance, Oxygen Charge States and Freeze-In Temperature”. Its stated result is: Headline result: interface helium slow percent interface = 2; interface helium fast percent interface = 4.5; interface helium interface percent interface = 3.2; interface helium mass share fast percent interface = 15.25; interface helium mass share slow percent interface = 7.407; interface oxygen ra (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'Composition at the Stream Interface: Helium Abundance, Oxygen Charge States and Freeze-In Temperature'; 'Corotating Interaction Regions: Compression Ratios, Pressure Pulse and Recurrence at the Stream Interface'; 'Crossing the Alfvén Surface: Mach Numbers, Critical Radius and the Sub-Alfvénic Interval of April 2021'; 'Fast Against Slow: Speed, Density, Temperature and Flux Contrasts of the Two Solar Wind Streams'; 'GLE 73 of 28 October 2021: Proton Fluence, Spectral Index and the Neutron Monitor Response'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 1057,
+   "audio": "audio/lessons30/the-solar-wind-and-the-heliosphere-stream-structure-parker-spira/lesson-01.mp3",
+   "minutes": 9.65,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'Composition at the Stream Interface: Helium Abundance, Oxygen Charge States and Freeze-In Temperature'. The result it reported gives a value for helium slow percent interface, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Composition at the Stream Interface: Helium Abundance, Oxygen Charge States and Freeze-In Temperature'. Its stated result: Headline result: interface helium slow percent interface = 2; interface helium fast percent interface = 4.5; interface helium interface percent interface = 3.2; interface helium mass share fast percent interface = 15.25; interface helium mass share slow percent interface = 7.407; interface oxygen ratio slow interface = 0.5 Operating principle: Charge states freeze in within a few solar radii and then travel unchanged And here is that same result with the words stripped away — just the quantities standing in a row: helium slow percent interface = 2; helium fast percent interface = 4.5; helium interface percent interface = 3.2. Find helium slow percent interface in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Composition at the Stream Interface: Helium Abundance, Oxygen Charge States and Freeze-In Temperature' stated its result. (2) That result pairs names with values: helium slow percent interface = 2; helium fast percent interface = 4.5; helium interface percent interface = 3.2. (3) This question asks for the value paired with helium slow percent interface. (4) In that row, helium slow percent interface stands beside 2 — so the answer the lesson gives is 2. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Composition at the Stream Interface: Helium Abundance, Oxygen Charge States and Freeze-In Temperature' reported a number for helium slow percent interface. What number did it report?",
+     "kind": "number",
+     "answer": 2.0,
+     "disp": "2",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "18.7",
+      "4.167",
+      "320",
+      "2"
+     ],
+     "mcAnswer": "2",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Corotating Interaction Regions: Compression Ratios, Pressure Pulse and Recurrence at the Stream Interface'. The result it reported gives a value for density compression ratio cir, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Corotating Interaction Regions: Compression Ratios, Pressure Pulse and Recurrence at the Stream Interface'. Its stated result: Headline result: cir density compression ratio cir = 4.167; cir field compression ratio cir = 3.636; cir total pressure npa cir = 0.3663; cir pressure ratio to quiet baseline cir = 0.1928; cir speed shear km per s cir = 430; cir recurrence period days cir = 27.28 Operating principle: Conservation across the pile-up sets the budget: the compressed density follows from the speed difference and the residence time of pla And here is that same result with the words stripped away — just the quantities standing in a row: density compression ratio cir = 4.167; field compression ratio cir = 3.636; total pressure npa cir = 0.3663. Find density compression ratio cir in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Corotating Interaction Regions: Compression Ratios, Pressure Pulse and Recurrence at the Stream Interface' stated its result. (2) That result pairs names with values: density compression ratio cir = 4.167; field compression ratio cir = 3.636; total pressure npa cir = 0.3663. (3) This question asks for the value paired with density compression ratio cir. (4) In that row, density compression ratio cir stands beside 4.167 — so the answer the lesson gives is 4.167. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Corotating Interaction Regions: Compression Ratios, Pressure Pulse and Recurrence at the Stream Interface' reported a number for density compression ratio cir. What number did it report?",
+     "kind": "number",
+     "answer": 4.167,
+     "disp": "4.167",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "4.167",
+      "320",
+      "2",
+      "18.7"
+     ],
+     "mcAnswer": "4.167",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Crossing the Alfvén Surface: Mach Numbers, Critical Radius and the Sub-Alfvénic Interval of April 2021'. The result it reported gives a value for radius solar radii alfven, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Crossing the Alfvén Surface: Mach Numbers, Critical Radius and the Sub-Alfvénic Interval of April 2021'. Its stated result: Headline result: alfven radius solar radii alfven = 18.7; alfven radius au alfven = 0.08698; alfven speed km per s alfven = 129; alfven wind speed km per s alfven = 100; alfven mach number alfven = 0.7753; alfven field nt alfven = 200 Operating principle: The Alfvén Mach number, wind speed over Alfvén speed, is the heliosphere's master switch: below unity, waves and information travel sunward and the plasma is corona And here is that same result with the words stripped away — just the quantities standing in a row: radius solar radii alfven = 18.7; alfven radius au alfven = 0.08698; km per s alfven = 129. Find radius solar radii alfven in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Crossing the Alfvén Surface: Mach Numbers, Critical Radius and the Sub-Alfvénic Interval of April 2021' stated its result. (2) That result pairs names with values: radius solar radii alfven = 18.7; alfven radius au alfven = 0.08698; km per s alfven = 129. (3) This question asks for the value paired with radius solar radii alfven. (4) In that row, radius solar radii alfven stands beside 18.7 — so the answer the lesson gives is 18.7. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Crossing the Alfvén Surface: Mach Numbers, Critical Radius and the Sub-Alfvénic Interval of April 2021' reported a number for radius solar radii alfven. What number did it report?",
+     "kind": "number",
+     "answer": 18.7,
+     "disp": "18.7",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "4.167",
+      "320",
+      "18.7",
+      "2"
+     ],
+     "mcAnswer": "18.7",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Fast Against Slow: Speed, Density, Temperature and Flux Contrasts of the Two Solar Wind Streams'. The result it reported gives a value for km per s streams, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Fast Against Slow: Speed, Density, Temperature and Flux Contrasts of the Two Solar Wind Streams'. Its stated result: Headline result: streams slow speed km per s streams = 320; streams fast speed km per s streams = 750; streams mass flux ratio fast to slow streams = 0.7499; streams momentum flux ratio fast to slow streams = 1.757; streams energy flux ratio fast to slow streams = 4.119; streams slow dynamic pressure npa streams = 1.814 Operating principle: Multiplying the paired values through the standard flux formulae shows which And here is that same result with the words stripped away — just the quantities standing in a row: km per s streams = 320; fast to slow streams = 0.7499; dynamic pressure npa streams = 1.814. Find km per s streams in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Fast Against Slow: Speed, Density, Temperature and Flux Contrasts of the Two Solar Wind Streams' stated its result. (2) That result pairs names with values: km per s streams = 320; fast to slow streams = 0.7499; dynamic pressure npa streams = 1.814. (3) This question asks for the value paired with km per s streams. (4) In that row, km per s streams stands beside 320 — so the answer the lesson gives is 320. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Fast Against Slow: Speed, Density, Temperature and Flux Contrasts of the Two Solar Wind Streams' reported a number for km per s streams. What number did it report?",
+     "kind": "number",
+     "answer": 320.0,
+     "disp": "320",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "4.167",
+      "2",
+      "18.7",
+      "320"
+     ],
+     "mcAnswer": "320",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'GLE 73 of 28 October 2021: Proton Fluence, Spectral Index and the Neutron Monitor Response'. The result it reported gives a value for above 10mev cm2 gle73, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'GLE 73 of 28 October 2021: Proton Fluence, Spectral Index and the Neutron Monitor Response'. Its stated result: Headline result: gle73 fluence above 10mev cm2 gle73 = 12000000; gle73 fluence above 100mev cm2 gle73 = 600000; gle73 implied spectral index gle73 = 1.301; gle73 fluence ratio 10 to 100 gle73 = 20; gle73 max monitor increase percent gle73 = 10; gle73 flare class x1p0 gle73 = 1 Operating principle: A ground level enhancement is the extreme tail of the SEP distribution, requiring protons above roughly a gigaelectronvol And here is that same result with the words stripped away — just the quantities standing in a row: above 10mev cm2 gle73 = 12000000; above 100mev cm2 gle73 = 600000; implied spectral index gle73 = 1.301. Find above 10mev cm2 gle73 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'GLE 73 of 28 October 2021: Proton Fluence, Spectral Index and the Neutron Monitor Response' stated its result. (2) That result pairs names with values: above 10mev cm2 gle73 = 12000000; above 100mev cm2 gle73 = 600000; implied spectral index gle73 = 1.301. (3) This question asks for the value paired with above 10mev cm2 gle73. (4) In that row, above 10mev cm2 gle73 stands beside 12000000 — so the answer the lesson gives is 12000000. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'GLE 73 of 28 October 2021: Proton Fluence, Spectral Index and the Neutron Monitor Response' reported a number for above 10mev cm2 gle73. What number did it report?",
+     "kind": "number",
+     "answer": 12000000.0,
+     "disp": "12000000",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "12000000",
+      "2",
+      "4.167",
+      "18.7"
+     ],
+     "mcAnswer": "12000000",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Composition at the Stream Interface: Helium Abundance, Oxygen Charge States and Freeze-In Temperature”. Its stated result is: Headline result: interface helium slow percent interface = 2; interface helium fast percent interface = 4.5; interface helium interface percent interface = 3.2; interface helium mass share fast percent interface = 15.25; interface helium mass share slow percent interface = 7.407; interface oxygen ra (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “Composition at the Stream Interface: Helium Abundance, Oxygen Charge States and Freeze-In Temperature”. Its stated result is: Headline result: interface helium slow percent interface = 2; interface helium fast percent interface = 4.5; interface helium interface percent interface = 3.2; interface helium mass share fast percent interface = 15.25; interface helium mass share slow percent interface = 7.407; interface oxygen ra (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}

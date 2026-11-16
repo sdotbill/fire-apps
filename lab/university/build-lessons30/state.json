@@ -542,5 +542,12 @@
    "audio": "audio/lessons30/exoplanet-atmospheres-transmission-emission-and-retrieval-budget/lesson-01.mp3",
    "minutes": 15.69
   }
+ },
+ "the-solar-wind-and-the-heliosphere-stream-structure-parker-spira": {
+  "lesson-01": {
+   "hash": "e15883db55e57b8cf40110999d601abbe39ec9c8",
+   "audio": "audio/lessons30/the-solar-wind-and-the-heliosphere-stream-structure-parker-spira/lesson-01.mp3",
+   "minutes": 9.65
+  }
  }
 }
