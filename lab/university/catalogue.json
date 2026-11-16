@@ -6506,7 +6506,8 @@
        "outfit": "#46536a",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/relativistic-jets-and-synchrotron-outflows-from-compact-objects-.jpg"
      }
     },
     {
@@ -7070,7 +7071,8 @@
        "hairStyle": "bob",
        "outfit": "#14524a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/quasi-periodic-oscillations-and-rapid-x-ray-variability-in-accre.jpg"
      }
     },
     {
@@ -7296,7 +7298,8 @@
        "hairStyle": "bun",
        "outfit": "#3c3f45",
        "glasses": true
-      }
+      },
+      "photo": "portraits/reverberation-mapping-and-broad-line-regions-of-active-galactic-.jpg"
      }
     },
     {
@@ -7521,7 +7524,8 @@
        "outfit": "#3c3f45",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/gamma-ray-bursts-prompt-emission-afterglow-and-host-galaxy-budge.jpg"
      }
     },
     {
@@ -11488,7 +11492,8 @@
        "hairStyle": "short",
        "outfit": "#7a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/magnetic-reconnection-in-astrophysical-and-laboratory-plasmas-ag.jpg"
      }
     },
     {
@@ -11938,7 +11943,8 @@
        "hairStyle": "bob",
        "outfit": "#3c3f45",
        "glasses": false
-      }
+      },
+      "photo": "portraits/magnetars-soft-gamma-repeaters-and-anomalous-x-ray-pulsars-again.jpg"
      }
     },
     {
@@ -12387,7 +12393,8 @@
        "hairStyle": "bun",
        "outfit": "#6d1f2c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/intracluster-light-intergalactic-stars-and-diffuse-stellar-compo.jpg"
      }
     },
     {
@@ -13964,7 +13971,8 @@
        "hairStyle": "ponytail",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/lunar-dust-electrostatic-levitation-and-surface-charging-grain-c.jpg"
      }
     },
     {
@@ -20339,7 +20347,8 @@
        "hairStyle": "straight",
        "outfit": "#1f4d7a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/semiconductor-and-solid-state-electronic-and-thermal-transport-p.jpg"
      }
     },
     {
@@ -20452,7 +20461,8 @@
        "outfit": "#2e3d6e",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/neutron-star-crusts-glitches-and-superfluid-dynamics-against-den.jpg"
      }
     },
     {
@@ -20661,7 +20671,8 @@
        "hairStyle": "straight",
        "outfit": "#14524a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/crystals-lattices-devices.jpg"
      }
     },
     {
@@ -20692,7 +20703,8 @@
        "hairStyle": "curls",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/magnets-cold-matter.jpg"
      }
     }
    ],
@@ -26254,7 +26266,8 @@
      "hairStyle": "short",
      "outfit": "#46536a",
      "glasses": true
-    }
+    },
+    "photo": "portraits/mathematical-physics-foundations-the-open-programme.jpg"
    },
    "classes": [
     {
@@ -28679,7 +28692,8 @@
        "hairStyle": "short",
        "outfit": "#46536a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/mathematical-physics-foundations-the-open-programme.jpg"
      }
     },
     {
@@ -30092,7 +30106,8 @@
        "hairStyle": "ponytail",
        "outfit": "#7a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/particles-cosmos.jpg"
      }
     },
     {
@@ -35983,7 +35998,8 @@
        "hairStyle": "straight",
        "outfit": "#4b2a63",
        "glasses": true
-      }
+      },
+      "photo": "portraits/titan-surface-and-lake-power-thermal-and-mobility-systems-derive.jpg"
      }
     },
     {
@@ -37106,7 +37122,8 @@
        "hairStyle": "waves",
        "outfit": "#14524a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/the-market-stall-wave-6.jpg"
      }
     },
     {
@@ -37781,7 +37798,8 @@
        "outfit": "#6d1f2c",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/sleep-bedding-and-the-night-room-wave-7.jpg"
      }
     },
     {
@@ -38006,7 +38024,8 @@
        "outfit": "#8a6508",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/teeth-oral-care-and-low-resource-dentistry-wave-7.jpg"
      }
     },
     {
@@ -38344,7 +38363,8 @@
        "hairStyle": "bun",
        "outfit": "#23365c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/soap-bathing-and-hygiene-wave-8.jpg"
      }
     },
     {
@@ -39923,7 +39943,8 @@
        "hairStyle": "curls",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/venus-surface-and-deep-atmosphere-power-thermal-and-construction.jpg"
      }
     },
     {
@@ -40149,7 +40170,8 @@
        "hairStyle": "curls",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/subsurface-lava-tube-and-underground-habitat-power-and-construct.jpg"
      }
     },
     {
@@ -40600,7 +40622,8 @@
        "outfit": "#8c1f2e",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/space-based-solar-power-and-wireless-power-beaming-systems-deriv.jpg"
      }
     },
     {
@@ -42214,7 +42237,8 @@
        "hairStyle": "ponytail",
        "outfit": "#6d1f2c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/geometry-euclids-workshop.jpg"
      }
     },
     {
@@ -42250,7 +42274,8 @@
        "hairStyle": "short",
        "outfit": "#2e3d6e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/algebra-the-language-of-unknowns.jpg"
      }
     }
    ],
@@ -43385,7 +43410,8 @@
        "hairStyle": "straight",
        "outfit": "#1f4d7a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/computer-science-computer-systems-from-gates-to-operating-systems.jpg"
      }
     },
     {
@@ -43551,7 +43577,8 @@
        "hairStyle": "straight",
        "outfit": "#5d4630",
        "glasses": true
-      }
+      },
+      "photo": "portraits/computer-science-cybersecurity-foundations-defending-systems.jpg"
      }
     },
     {
@@ -43617,7 +43644,8 @@
        "hairStyle": "waves",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/computer-science-compilers-translating-languages.jpg"
      }
     },
     {
@@ -43683,7 +43711,8 @@
        "hairStyle": "waves",
        "outfit": "#7a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/computer-science-computer-graphics-drawing-with-mathematics.jpg"
      }
     },
     {
@@ -46544,7 +46573,8 @@
        "outfit": "#46536a",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/engineering-statics-forces-at-rest.jpg"
      }
     },
     {
@@ -46611,7 +46641,8 @@
        "hairStyle": "ponytail",
        "outfit": "#26332a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/engineering-mechanics-of-materials-how-solids-carry-load.jpg"
      }
     },
     {
@@ -46677,7 +46708,8 @@
        "hairStyle": "ponytail",
        "outfit": "#14524a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/engineering-fluid-mechanics-water-air-and-everything-between.jpg"
      }
     },
     {
@@ -46880,7 +46912,8 @@
        "hairStyle": "short",
        "outfit": "#1f5138",
        "glasses": false
-      }
+      },
+      "photo": "portraits/engineering-mechanical-engineering-i-machines-and-motion.jpg"
      }
     },
     {
@@ -46913,7 +46946,8 @@
        "hairStyle": "bob",
        "outfit": "#26332a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/engineering-mechanical-engineering-ii-energy-and-hvac.jpg"
      }
     },
     {
@@ -47014,7 +47048,8 @@
        "hairStyle": "bun",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/engineering-materials-engineering-choosing-what-things-are-made-of.jpg"
      }
     },
     {
@@ -47048,7 +47083,8 @@
        "outfit": "#14524a",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/engineering-environmental-engineering-infrastructure-for-a-living-world.jpg"
      }
     },
     {
@@ -47081,7 +47117,8 @@
        "hairStyle": "waves",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/engineering-industrial-engineering-systems-of-work.jpg"
      }
     },
     {
@@ -48418,7 +48455,8 @@
        "hairStyle": "waves",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/anthropology-cultural-anthropology-ii-the-human-mosaic.jpg"
      }
     },
     {
@@ -48520,7 +48558,8 @@
        "hairStyle": "waves",
        "outfit": "#8c1f2e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/anthropology-linguistic-anthropology-language-as-culture.jpg"
      }
     },
     {
@@ -48553,7 +48592,8 @@
        "hairStyle": "short",
        "outfit": "#4b2a63",
        "glasses": false
-      }
+      },
+      "photo": "portraits/anthropology-medical-anthropology-healing-across-cultures.jpg"
      }
     },
     {
@@ -48586,7 +48626,8 @@
        "hairStyle": "straight",
        "outfit": "#26332a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/anthropology-economic-anthropology-livelihoods.jpg"
      }
     },
     {
@@ -48653,7 +48694,8 @@
        "hairStyle": "bun",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/anthropology-visual-and-material-culture.jpg"
      }
     },
     {
@@ -48720,7 +48762,8 @@
        "hairStyle": "short",
        "outfit": "#1f4d7a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/anthropology-human-origins-the-deep-story.jpg"
      }
     },
     {
@@ -48787,7 +48830,8 @@
        "hairStyle": "waves",
        "outfit": "#2e5d33",
        "glasses": true
-      }
+      },
+      "photo": "portraits/anthropology-digital-anthropology-culture-online.jpg"
      }
     },
     {
@@ -48820,7 +48864,8 @@
        "hairStyle": "ponytail",
        "outfit": "#6d1f2c",
        "glasses": true
-      }
+      },
+      "photo": "portraits/anthropology-ethnographic-methods-doing-fieldwork.jpg"
      }
     }
    ],
@@ -50970,7 +51015,8 @@
        "hairStyle": "bob",
        "outfit": "#2e3d6e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/linguistics-linguistics-i-the-science-of-language.jpg"
      }
     },
     {
@@ -51363,7 +51409,8 @@
      "hairStyle": "bob",
      "outfit": "#2e3d6e",
      "glasses": false
-    }
+    },
+    "photo": "portraits/linguistics-linguistics-i-the-science-of-language.jpg"
    },
    "classCount": 12,
    "paperCount": 0
@@ -52684,7 +52731,8 @@
        "hairStyle": "short",
        "outfit": "#6d1f2c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/nursing-allied-health-survey-the-wider-team.jpg"
      }
     }
    ],
@@ -53594,7 +53642,8 @@
        "outfit": "#6d1f2c",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/kinesiology-exercise-physiology-the-body-at-work.jpg"
      }
     },
     {
@@ -53977,7 +54026,8 @@
      "outfit": "#6d1f2c",
      "glasses": true,
      "beard": true
-    }
+    },
+    "photo": "portraits/kinesiology-exercise-physiology-the-body-at-work.jpg"
    },
    "classCount": 12,
    "paperCount": 0
@@ -54575,7 +54625,8 @@
        "hairStyle": "curls",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/law-legal-foundations-what-law-is-and-where-it-lives.jpg"
      }
     },
     {
@@ -55092,7 +55143,8 @@
      "hairStyle": "curls",
      "outfit": "#46536a",
      "glasses": false
-    }
+    },
+    "photo": "portraits/law-legal-foundations-what-law-is-and-where-it-lives.jpg"
    },
    "classCount": 16,
    "paperCount": 0
@@ -56319,7 +56371,8 @@
        "hairStyle": "short",
        "outfit": "#26332a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/music-theory-notes-scales-and-why-songs-work.jpg"
      }
     },
     {
@@ -56355,7 +56408,8 @@
        "hairStyle": "curls",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/rhythm-ear-training.jpg"
      }
     }
    ],

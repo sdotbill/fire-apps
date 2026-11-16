@@ -205,7 +205,8 @@
      "hairStyle": "short",
      "outfit": "#46536a",
      "glasses": true
-    }
+    },
+    "photo": "portraits/mathematical-physics-foundations-the-open-programme.jpg"
    }
   },
   {
@@ -662,7 +663,8 @@
      "hairStyle": "bob",
      "outfit": "#2e3d6e",
      "glasses": false
-    }
+    },
+    "photo": "portraits/linguistics-linguistics-i-the-science-of-language.jpg"
    }
   },
   {
@@ -785,7 +787,8 @@
      "outfit": "#6d1f2c",
      "glasses": true,
      "beard": true
-    }
+    },
+    "photo": "portraits/kinesiology-exercise-physiology-the-body-at-work.jpg"
    }
   },
   {
@@ -826,7 +829,8 @@
      "hairStyle": "curls",
      "outfit": "#46536a",
      "glasses": false
-    }
+    },
+    "photo": "portraits/law-legal-foundations-what-law-is-and-where-it-lives.jpg"
    }
   },
   {
