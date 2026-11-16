@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Wei Huang, and this is Thermonuclear X-Ray Bursts on Accreting Neutron Stars: Ignition, Recurrence and Radius-Expansion Budgets Against Published Burst Values. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Wei Huang, and this is Thermonuclear X-Ray Bursts on Accreting Neutron Stars: Ignition, Recurrence and Radius-Expansion Budgets Against Published Burst Values. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'4U 1608-52: The Cooling Tail, Blackbody Radius Constancy and the Touchdown Flux Budget'. Its stated result: Headline result: u1608 touchdown luminosity erg per s u1608 = 9.574e+37; u1608 touchdown to eddington helium ratio u1608 = 0.2639; u1608 blackbody radius at 2p5kev km u1608 = 3.899; u1608 blackbody radius at 1p5kev km u1608 = 4.016; u1608 radius change percent u1608 = 3.003; u1608 flux ratio predicted from temperatures u1608 = 7.716 Operating principle: After touchdown the whole surface radiates, so flux should fall
+
+Now we go one step further into the material.
+
+'4U 1636-536: Photospheric Radius Expansion, the Eddington Peak and the Touchdown Budget'. Its stated result: Headline result: u1636 peak luminosity erg per s u1636 = 3.016e+38; u1636 eddington luminosity helium erg per s u1636 = 3.753e+38; u1636 eddington luminosity hydrogen erg per s u1636 = 2.208e+38; u1636 peak to eddington helium ratio u1636 = 0.8035; u1636 photospheric radius at 0p6kev km u1636 = 134.3; u1636 photospheric radius at 1kev km u1636 = 48.35 Operating principle: During expansion the luminosity stays pinned
+
+The next piece is where this starts to come together.
+
+'4U 1728-34: Burst Oscillation Frequency Drift, Doppler Broadening and the Expanding-Layer Budget'. Its stated result: Headline result: u1728 fractional frequency drift u1728 = 0.004132; u1728 expansion height m u1728 = 24.79; u1728 equatorial speed km per s u1728 = 2.737e+04; u1728 doppler width hz u1728 = 33.12; u1728 flame speed km per s u1728 = 37.7; u1728 spin period ms u1728 = 2.755 Operating principle: An upward frequency drift is naturally read as an expanding, rotating burning layer that conserves angular momentum: as the la
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'4U 1820-30: Pure Helium Ignition Column, Short Recurrence and the Ultracompact Orbital Budget'. Its stated result: Headline result: u1820 burst energy erg u1820 = 4.147e+39; u1820 helium ignition column g per cm2 u1820 = 3.131e+08; u1820 refill rate grams cm-2 s-1 u1820 = 3.624e+04; u1820 alpha ratio u1820 = 86.4; u1820 binary separation km u1820 = 1.347e+05; u1820 roche lobe radius km u1820 = 4.311e+04 Operating principle: Helium fuel changes every entry in the budget: the nuclear yield per gram falls, the ignition column deepen
+
+We take the pieces in order, because each one stands on the last.
+
+'Aql X-1: Recurrence Scaling Across Accretion Regimes, from Days Between Bursts to Hours'. Its stated result: Headline result: aqlx1 flux recurrence product low epoch aqlx1 = 7.488e-05; aqlx1 flux recurrence product high epoch aqlx1 = 9.216e-05; aqlx1 product ratio high to low aqlx1 = 1.231; aqlx1 ignition column low epoch g per cm2 aqlx1 = 1.049e+08; aqlx1 ignition column high epoch g per cm2 aqlx1 = 4.587e+07; aqlx1 local rate low epoch g per cm2 s aqlx1 = 1120 Operating principle: If the ignition column stays roughly fixe
+
+Stay with me, because the next piece builds directly on that one.
+
+'EXO 0748-676: Alpha, Fluence and the High-Inclination Correction to the Ignition Budget'. Its stated result: Headline result: exo0748 alpha observed exo0748 = 37.03; exo0748 alpha anisotropy corrected exo0748 = 20.57; exo0748 burst energy erg exo0748 = 2.111e+39; exo0748 ignition column g per cm2 exo0748 = 8.292e+07; exo0748 local supply rate g per sq cm per s exo0748 = 7678; exo0748 persistent luminosity erg per s exo0748 = 7.239e+36 Operating principle: Alpha compares the gravitational energy radiated between bursts with
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “4U 1608-52: The Cooling Tail, Blackbody Radius Constancy and the Touchdown Flux Budget”. Its stated result is: Headline result: u1608 touchdown luminosity erg per s u1608 = 9.574e+37; u1608 touchdown to eddington helium ratio u1608 = 0.2639; u1608 blackbody radius at 2p5kev km u1608 = 3.899; u1608 blackbody radius at 1p5kev km u1608 = 4.016; u1608 radius change percent u1608 = 3.003; u1608 flux ratio predict (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; '4U 1608-52: The Cooling Tail, Blackbody Radius Constancy and the Touchdown Flux Budget'; '4U 1636-536: Photospheric Radius Expansion, the Eddington Peak and the Touchdown Budget'; '4U 1728-34: Burst Oscillation Frequency Drift, Doppler Broadening and the Expanding-Layer Budget'; '4U 1820-30: Pure Helium Ignition Column, Short Recurrence and the Ultracompact Orbital Budget'; 'Aql X-1: Recurrence Scaling Across Accretion Regimes, from Days Between Bursts to Hours'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.

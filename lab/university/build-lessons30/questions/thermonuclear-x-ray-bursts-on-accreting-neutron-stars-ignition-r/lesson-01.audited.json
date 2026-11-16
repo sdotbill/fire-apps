@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper '4U 1608-52: The Cooling Tail, Blackbody Radius Constancy and the Touchdown Flux Budget'. The result it reported gives a value for erg per s u1608, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: '4U 1608-52: The Cooling Tail, Blackbody Radius Constancy and the Touchdown Flux Budget'. Its stated result: Headline result: u1608 touchdown luminosity erg per s u1608 = 9.574e+37; u1608 touchdown to eddington helium ratio u1608 = 0.2639; u1608 blackbody radius at 2p5kev km u1608 = 3.899; u1608 blackbody radius at 1p5kev km u1608 = 4.016; u1608 radius change percent u1608 = 3.003; u1608 flux ratio predicted from temperatures u1608 = 7.716 Operating principle: After touchdown the whole surface radiates, so flux should fall And here is that same result with the words stripped away — just the quantities standing in a row: erg per s u1608 = 9.574e+37; eddington helium ratio u1608 = 0.2639; radius change percent u1608 = 3.003. Find erg per s u1608 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper '4U 1608-52: The Cooling Tail, Blackbody Radius Constancy and the Touchdown Flux Budget' stated its result. (2) That result pairs names with values: erg per s u1608 = 9.574e+37; eddington helium ratio u1608 = 0.2639; radius change percent u1608 = 3.003. (3) This question asks for the value paired with erg per s u1608. (4) In that row, erg per s u1608 stands beside 9.574e+37 — so the answer the lesson gives is 9.574e+37. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper '4U 1608-52: The Cooling Tail, Blackbody Radius Constancy and the Touchdown Flux Budget' reported a number for erg per s u1608. What number did it report?",
+  "kind": "number",
+  "answer": 9.574e+37,
+  "disp": "9.574e+37",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "0.004132",
+   "9.574e+37",
+   "3.016e+38",
+   "4.147e+39"
+  ],
+  "mcAnswer": "9.574e+37",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper '4U 1636-536: Photospheric Radius Expansion, the Eddington Peak and the Touchdown Budget'. The result it reported gives a value for erg per s u1636, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: '4U 1636-536: Photospheric Radius Expansion, the Eddington Peak and the Touchdown Budget'. Its stated result: Headline result: u1636 peak luminosity erg per s u1636 = 3.016e+38; u1636 eddington luminosity helium erg per s u1636 = 3.753e+38; u1636 eddington luminosity hydrogen erg per s u1636 = 2.208e+38; u1636 peak to eddington helium ratio u1636 = 0.8035; u1636 photospheric radius at 0p6kev km u1636 = 134.3; u1636 photospheric radius at 1kev km u1636 = 48.35 Operating principle: During expansion the luminosity stays pinned And here is that same result with the words stripped away — just the quantities standing in a row: erg per s u1636 = 3.016e+38; eddington helium ratio u1636 = 0.8035. Find erg per s u1636 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper '4U 1636-536: Photospheric Radius Expansion, the Eddington Peak and the Touchdown Budget' stated its result. (2) That result pairs names with values: erg per s u1636 = 3.016e+38; eddington helium ratio u1636 = 0.8035. (3) This question asks for the value paired with erg per s u1636. (4) In that row, erg per s u1636 stands beside 3.016e+38 — so the answer the lesson gives is 3.016e+38. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper '4U 1636-536: Photospheric Radius Expansion, the Eddington Peak and the Touchdown Budget' reported a number for erg per s u1636. What number did it report?",
+  "kind": "number",
+  "answer": 3.016e+38,
+  "disp": "3.016e+38",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "3.016e+38",
+   "0.004132",
+   "9.574e+37",
+   "4.147e+39"
+  ],
+  "mcAnswer": "3.016e+38",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper '4U 1728-34: Burst Oscillation Frequency Drift, Doppler Broadening and the Expanding-Layer Budget'. The result it reported gives a value for fractional frequency drift u1728, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: '4U 1728-34: Burst Oscillation Frequency Drift, Doppler Broadening and the Expanding-Layer Budget'. Its stated result: Headline result: u1728 fractional frequency drift u1728 = 0.004132; u1728 expansion height m u1728 = 24.79; u1728 equatorial speed km per s u1728 = 2.737e+04; u1728 doppler width hz u1728 = 33.12; u1728 flame speed km per s u1728 = 37.7; u1728 spin period ms u1728 = 2.755 Operating principle: An upward frequency drift is naturally read as an expanding, rotating burning layer that conserves angular momentum: as the la And here is that same result with the words stripped away — just the quantities standing in a row: fractional frequency drift u1728 = 0.004132; expansion height m u1728 = 24.79; km per s u1728 = 2.737e+04. Find fractional frequency drift u1728 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper '4U 1728-34: Burst Oscillation Frequency Drift, Doppler Broadening and the Expanding-Layer Budget' stated its result. (2) That result pairs names with values: fractional frequency drift u1728 = 0.004132; expansion height m u1728 = 24.79; km per s u1728 = 2.737e+04. (3) This question asks for the value paired with fractional frequency drift u1728. (4) In that row, fractional frequency drift u1728 stands beside 0.004132 — so the answer the lesson gives is 0.004132. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper '4U 1728-34: Burst Oscillation Frequency Drift, Doppler Broadening and the Expanding-Layer Budget' reported a number for fractional frequency drift u1728. What number did it report?",
+  "kind": "number",
+  "answer": 0.004132,
+  "disp": "0.004132",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "0.004132",
+   "9.574e+37",
+   "4.147e+39",
+   "3.016e+38"
+  ],
+  "mcAnswer": "0.004132",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper '4U 1820-30: Pure Helium Ignition Column, Short Recurrence and the Ultracompact Orbital Budget'. The result it reported gives a value for burst energy erg u1820, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: '4U 1820-30: Pure Helium Ignition Column, Short Recurrence and the Ultracompact Orbital Budget'. Its stated result: Headline result: u1820 burst energy erg u1820 = 4.147e+39; u1820 helium ignition column g per cm2 u1820 = 3.131e+08; u1820 refill rate grams cm-2 s-1 u1820 = 3.624e+04; u1820 alpha ratio u1820 = 86.4; u1820 binary separation km u1820 = 1.347e+05; u1820 roche lobe radius km u1820 = 4.311e+04 Operating principle: Helium fuel changes every entry in the budget: the nuclear yield per gram falls, the ignition column deepen And here is that same result with the words stripped away — just the quantities standing in a row: burst energy erg u1820 = 4.147e+39; g per cm2 u1820 = 3.131e+08; u1820 = 3.624e+04. Find burst energy erg u1820 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper '4U 1820-30: Pure Helium Ignition Column, Short Recurrence and the Ultracompact Orbital Budget' stated its result. (2) That result pairs names with values: burst energy erg u1820 = 4.147e+39; g per cm2 u1820 = 3.131e+08; u1820 = 3.624e+04. (3) This question asks for the value paired with burst energy erg u1820. (4) In that row, burst energy erg u1820 stands beside 4.147e+39 — so the answer the lesson gives is 4.147e+39. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper '4U 1820-30: Pure Helium Ignition Column, Short Recurrence and the Ultracompact Orbital Budget' reported a number for burst energy erg u1820. What number did it report?",
+  "kind": "number",
+  "answer": 4.147e+39,
+  "disp": "4.147e+39",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "3.016e+38",
+   "9.574e+37",
+   "4.147e+39",
+   "0.004132"
+  ],
+  "mcAnswer": "4.147e+39",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Aql X-1: Recurrence Scaling Across Accretion Regimes, from Days Between Bursts to Hours'. The result it reported gives a value for product low epoch aqlx1, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Aql X-1: Recurrence Scaling Across Accretion Regimes, from Days Between Bursts to Hours'. Its stated result: Headline result: aqlx1 flux recurrence product low epoch aqlx1 = 7.488e-05; aqlx1 flux recurrence product high epoch aqlx1 = 9.216e-05; aqlx1 product ratio high to low aqlx1 = 1.231; aqlx1 ignition column low epoch g per cm2 aqlx1 = 1.049e+08; aqlx1 ignition column high epoch g per cm2 aqlx1 = 4.587e+07; aqlx1 local rate low epoch g per cm2 s aqlx1 = 1120 Operating principle: If the ignition column stays roughly fixe And here is that same result with the words stripped away — just the quantities standing in a row: product low epoch aqlx1 = 7.488e-05; product high epoch aqlx1 = 9.216e-05; high to low aqlx1 = 1.231. Find product low epoch aqlx1 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Aql X-1: Recurrence Scaling Across Accretion Regimes, from Days Between Bursts to Hours' stated its result. (2) That result pairs names with values: product low epoch aqlx1 = 7.488e-05; product high epoch aqlx1 = 9.216e-05; high to low aqlx1 = 1.231. (3) This question asks for the value paired with product low epoch aqlx1. (4) In that row, product low epoch aqlx1 stands beside 7.488e-05 — so the answer the lesson gives is 7.488e-05. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Aql X-1: Recurrence Scaling Across Accretion Regimes, from Days Between Bursts to Hours' reported a number for product low epoch aqlx1. What number did it report?",
+  "kind": "number",
+  "answer": 7.488e-05,
+  "disp": "7.488e-05",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "7.488e-05",
+   "3.016e+38",
+   "0.004132",
+   "9.574e+37"
+  ],
+  "mcAnswer": "7.488e-05",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “4U 1608-52: The Cooling Tail, Blackbody Radius Constancy and the Touchdown Flux Budget”. Its stated result is: Headline result: u1608 touchdown luminosity erg per s u1608 = 9.574e+37; u1608 touchdown to eddington helium ratio u1608 = 0.2639; u1608 blackbody radius at 2p5kev km u1608 = 3.899; u1608 blackbody radius at 1p5kev km u1608 = 4.016; u1608 radius change percent u1608 = 3.003; u1608 flux ratio predict (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “4U 1608-52: The Cooling Tail, Blackbody Radius Constancy and the Touchdown Flux Budget”. Its stated result is: Headline result: u1608 touchdown luminosity erg per s u1608 = 9.574e+37; u1608 touchdown to eddington helium ratio u1608 = 0.2639; u1608 blackbody radius at 2p5kev km u1608 = 3.899; u1608 blackbody radius at 1p5kev km u1608 = 4.016; u1608 radius change percent u1608 = 3.003; u1608 flux ratio predict (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]

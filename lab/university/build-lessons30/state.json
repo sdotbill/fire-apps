@@ -528,5 +528,12 @@
    "audio": "audio/lessons30/chondrules-calcium-aluminium-rich-inclusions-and-early-solar-sys/lesson-01.mp3",
    "minutes": 11.17
   }
+ },
+ "thermonuclear-x-ray-bursts-on-accreting-neutron-stars-ignition-r": {
+  "lesson-01": {
+   "hash": "121bd5e6e0b51d387560f2755cb9833e49f9e9e7",
+   "audio": "audio/lessons30/thermonuclear-x-ray-bursts-on-accreting-neutron-stars-ignition-r/lesson-01.mp3",
+   "minutes": 10.79
+  }
  }
 }
