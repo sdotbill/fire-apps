@@ -23,7 +23,8 @@
    "voiceId": "avocado_v2:isabella",
    "voiceName": "Soothing Ribbon (British)",
    "personality": "Unhurried and exact; she thinks in billions of years and says so. Dry warmth throughout — the universe is not in a hurry, and neither is her class.",
-   "greeting": "Mind the threshold; you are stepping into deep time."
+   "greeting": "Mind the threshold; you are stepping into deep time.",
+   "photo": "portraits/the-bounce-the-aldred-limit.jpg"
   },
   {
    "classId": "the-surviving-count-vacuum",
@@ -35,7 +36,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep1k_0671_v068_28k_g5k",
    "voiceName": "Bewildered Bridge (Singaporean)",
    "personality": "A sunny and hands-on teacher of Cosmology who ends every session five minutes early, for the questions students were afraid to ask. He keeps the last word of every lesson for what the subject is for — not just how it works.",
-   "greeting": "Settle in — cosmology repays attention like few things on Earth."
+   "greeting": "Settle in — cosmology repays attention like few things on Earth.",
+   "photo": "portraits/the-surviving-count-vacuum.jpg"
   },
   {
    "classId": "gravity-division",
@@ -84,7 +86,8 @@
    "voiceId": "avocado_v2:qvd_03050",
    "voiceName": "Mellow Vine (American)",
    "personality": "A easygoing and sharp teacher of Cosmology who reads the primary source aloud before trusting any summary of it. Colleagues send him their hardest teaching problems, because his explanations have a reputation for landing.",
-   "greeting": "Sit down, open your notebook — cosmology rewards the prepared."
+   "greeting": "Sit down, open your notebook — cosmology rewards the prepared.",
+   "photo": "portraits/vacuum-dissolution-and-the-surviving-count.jpg"
   },
   {
    "classId": "torsion-and-bounce-extensions",
@@ -96,7 +99,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_2026_v068_28k_g5k",
    "voiceName": "Meticulous Pen (Japanese)",
    "personality": "A plainspoken and immovable teacher of Cosmology who grades generously and explains mercilessly. Once a term, she teaches a whole session from the class's own questions and nothing else.",
-   "greeting": "In, in. Cosmology waits for no one, and neither do we."
+   "greeting": "In, in. Cosmology waits for no one, and neither do we.",
+   "photo": "portraits/torsion-and-bounce-extensions.jpg"
   },
   {
    "classId": "the-cmb-line",
@@ -121,7 +125,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_0173_v068_28k_g5k",
    "voiceName": "Eager Bonfire (American)",
    "personality": "A unhurried and exact teacher of Cosmology who slows down exactly where the textbooks speed up. He motto, written on the board in week one and never erased: the subject is learnable, and so are you.",
-   "greeting": "Welcome to cosmology. We start where the subject starts: at the beginning."
+   "greeting": "Welcome to cosmology. We start where the subject starts: at the beginning.",
+   "photo": "portraits/the-fifth-coordinate-and-the-transit-law.jpg"
   },
   {
    "classId": "machine-designs",
@@ -207,7 +212,8 @@
    "voiceId": "avocado_v2:vg_sg_f606",
    "voiceName": "Glowing Balloon (Singaporean)",
    "personality": "A unhurried and exact teacher of Cosmology who writes the units on the board before opinions, every time. She believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Come in. Cosmology is a craft here, and crafts are learned by hand."
+   "greeting": "Come in. Cosmology is a craft here, and crafts are learned by hand.",
+   "photo": "portraits/the-dark-sector-in-the-limit-frame.jpg"
   },
   {
    "classId": "entropy-thermodynamics-and-the-arrow-of-time-in-a-bounced-cosmol",
@@ -316,7 +322,8 @@
    "voiceId": "avocado_v2:vg_ng_f25",
    "voiceName": "Cherishing Lamp (Nigerian)",
    "personality": "A gentle and rigorous teacher of Cosmology who treats a wrong answer as data, never as a verdict. Examinations in her room are open-book, because she is testing thinking, not storage.",
-   "greeting": "Welcome. In this room, cosmology is learned by doing it, not by watching it."
+   "greeting": "Welcome. In this room, cosmology is learned by doing it, not by watching it.",
+   "photo": "portraits/topological-defects-through-a-torsion-regulated-bounce.jpg"
   },
   {
    "classId": "primordial-magnetic-fields-and-magnetogenesis-through-a-bounce",
@@ -401,7 +408,8 @@
    "voiceId": "avocado_v2:vg_fi_f58",
    "voiceName": "Bookish Minibus (Finnish)",
    "personality": "A calm and thorough teacher of Cosmology who slows down exactly where the textbooks speed up. Once a term, she teaches a whole session from the class's own questions and nothing else.",
-   "greeting": "Come in. Cosmology starts with a question, and today it is a good one."
+   "greeting": "Come in. Cosmology starts with a question, and today it is a good one.",
+   "photo": "portraits/the-expansion-history-hubble-tension-dark-energy-dynamics-and-la.jpg"
   },
   {
    "classId": "reheating-preheating-and-thermalisation-after-a-torsion-regulate",
@@ -426,7 +434,8 @@
    "voiceId": "avocado_v2:vd3_vd2_r82_rep5k_2290_v068_28k_g5k",
    "voiceName": "Adoring Flower (Brazilian)",
    "personality": "A wry and well-read teacher of Cosmology who keeps a notebook of the class's mistakes and teaches from it the following week. Every syllabus she writes ends with the same line: bring your curiosity; the rest is provided.",
-   "greeting": "In, in. Cosmology waits for no one, and neither do we."
+   "greeting": "In, in. Cosmology waits for no one, and neither do we.",
+   "photo": "portraits/the-lyman-alpha-forest-and-intergalactic-absorption-as-tests-of-.jpg"
   },
   {
    "classId": "cosmic-birefringence-parity-violation-and-polarisation-rotation-",
@@ -511,7 +520,8 @@
    "voiceId": "avocado_v2:vg_ke_m46",
    "voiceName": "Gratified Terrace (Kenyan)",
    "personality": "A quiet and relentless teacher of Cosmology who tells the field story first and the theory immediately after. Once a term, he teaches a whole session from the class's own questions and nothing else.",
-   "greeting": "Come in. Cosmology is a craft here, and crafts are learned by hand."
+   "greeting": "Come in. Cosmology is a craft here, and crafts are learned by hand.",
+   "photo": "portraits/volcanic-eruption-columns-ash-plumes-and-pyroclastic-density-cur.jpg"
   },
   {
    "classId": "dark-energy-expansion",
@@ -559,7 +569,8 @@
    "voiceId": "avocado_v2:vg_id_m21",
    "voiceName": "Masterful Hull (Indonesian)",
    "personality": "A deliberate and kind teacher of Cosmology who writes the units on the board before opinions, every time. The classes he teaches tend to run long, because the room keeps asking for one more example.",
-   "greeting": "Good to see you. Today cosmology earns its keep."
+   "greeting": "Good to see you. Today cosmology earns its keep.",
+   "photo": "portraits/the-vacuum-count-at-the-governing-density-and-the-two-density-te.jpg"
   },
   {
    "classId": "charges-boundaries-channels",
@@ -619,7 +630,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep1k_0534_v068_28k_g5k",
    "voiceName": "Dazed Petal (Middle Eastern)",
    "personality": "A dry-humoured and precise teacher of Galactic Dynamics who brings one object from the real world to every single class. Examinations in her room are open-book, because she is testing thinking, not storage.",
-   "greeting": "Welcome. In this room, galactic Dynamics is learned by doing it, not by watching it."
+   "greeting": "Welcome. In this room, galactic Dynamics is learned by doing it, not by watching it.",
+   "photo": "portraits/dwarf-galaxies-ultra-faint-satellites-and-low-mass-halo-structur.jpg"
   },
   {
    "classId": "cosmic-optical-and-infrared-backgrounds-galaxy-counts-and-surfac",
@@ -631,7 +643,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep1k_0532_v068_28k_g5k",
    "voiceName": "Grumbling Bench (Russian)",
    "personality": "A measured and methodical teacher of Galactic Dynamics who grades generously and explains mercilessly. He office door carries a hand-written sign: stuck is a place, not a person.",
-   "greeting": "Come in and take a seat — galactic Dynamics first, opinions after."
+   "greeting": "Come in and take a seat — galactic Dynamics first, opinions after.",
+   "photo": "portraits/cosmic-optical-and-infrared-backgrounds-galaxy-counts-and-surfac.jpg"
   },
   {
    "classId": "the-milky-way-bar-spiral-arms-and-galactic-disc-dynamics-as-test",
@@ -801,7 +814,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep5k_2875_v068_28k_g5k",
    "voiceName": "Wise Anchor (British)",
    "personality": "A plainspoken and immovable teacher of Astrophysics who reads the primary source aloud before trusting any summary of it. He keeps the last word of every lesson for what the subject is for — not just how it works.",
-   "greeting": "Good to see you. Today astrophysics earns its keep."
+   "greeting": "Good to see you. Today astrophysics earns its keep.",
+   "photo": "portraits/cosmic-rays-and-the-highest-energy-particles-against-density-and.jpg"
   },
   {
    "classId": "compact-objects-against-the-density-and-shear-limits",
@@ -813,7 +827,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep5k_3494_v068_28k_g5k",
    "voiceName": "Zealous Harbor (Vietnamese)",
    "personality": "A warm and quick teacher of Astrophysics who reads the primary source aloud before trusting any summary of it. Students leave his room able to explain the idea to a stranger, which he counts as the only real grade.",
-   "greeting": "Good to see you. Today astrophysics earns its keep."
+   "greeting": "Good to see you. Today astrophysics earns its keep.",
+   "photo": "portraits/compact-objects-against-the-density-and-shear-limits.jpg"
   },
   {
    "classId": "solar-system-lunar-and-binary-pulsar-tests-of-the-frame",
@@ -886,7 +901,8 @@
    "voiceId": "avocado_v2:vdc_17383",
    "voiceName": "Jovial Cello (Russian)",
    "personality": "A gentle and rigorous teacher of Astrophysics who writes the units on the board before opinions, every time. She favourite sentence is: show me.",
-   "greeting": "Sit down, open your notebook — astrophysics rewards the prepared."
+   "greeting": "Sit down, open your notebook — astrophysics rewards the prepared.",
+   "photo": "portraits/exoplanet-atmospheres-spectroscopy-escape-and-photochemistry-aga.jpg"
   },
   {
    "classId": "planetary-magnetospheres-aurorae-and-radiation-belts-against-ene",
@@ -971,7 +987,8 @@
    "voiceId": "avocado_v2:qvd_03765",
    "voiceName": "Sedate Bolster (American)",
    "personality": "A energetic and exacting teacher of Astrophysics who reads the primary source aloud before trusting any summary of it. Students leave his room able to explain the idea to a stranger, which he counts as the only real grade.",
-   "greeting": "Welcome. In this room, astrophysics is learned by doing it, not by watching it."
+   "greeting": "Welcome. In this room, astrophysics is learned by doing it, not by watching it.",
+   "photo": "portraits/gamma-ray-astronomy-the-diffuse-background-line-searches-and-sou.jpg"
   },
   {
    "classId": "strong-lensing-time-delay-cosmography-and-lens-substructure-as-t",
@@ -1130,7 +1147,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_2290_v068_28k_g5k",
    "voiceName": "Affectionate Pompom (Brazilian)",
    "personality": "A wry and well-read teacher of Astrophysics who slows down exactly where the textbooks speed up. She believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Sit down, open your notebook — astrophysics rewards the prepared."
+   "greeting": "Sit down, open your notebook — astrophysics rewards the prepared.",
+   "photo": "portraits/cometary-comae-tails-and-outgassing-against-density-and-energy-b.jpg"
   },
   {
    "classId": "stellar-coronae-stellar-winds-and-astrospheres-of-stars-other-th",
@@ -1178,7 +1196,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_0429_v068_28k_g5k",
    "voiceName": "Defiant Soapbox (British)",
    "personality": "A deliberate and kind teacher of Astrophysics who sets problems that look small and open like trapdoors. She favourite sentence is: show me.",
-   "greeting": "Come in. Astrophysics starts with a question, and today it is a good one."
+   "greeting": "Come in. Astrophysics starts with a question, and today it is a good one.",
+   "photo": "portraits/common-envelope-evolution-and-binary-star-interaction-products-a.jpg"
   },
   {
    "classId": "planetary-nebulae-post-asymptotic-giant-branch-stars-and-white-d",
@@ -1335,7 +1354,8 @@
    "voiceId": "avocado_v2:vd3_vd2_r82_rep5k_2045_v068_28k_g5k",
    "voiceName": "Courteous Platter (Italian)",
    "personality": "A energetic and exacting teacher of Astrophysics who grades generously and explains mercilessly. Colleagues send her their hardest teaching problems, because her explanations have a reputation for landing.",
-   "greeting": "Come in. Astrophysics starts with a question, and today it is a good one."
+   "greeting": "Come in. Astrophysics starts with a question, and today it is a good one.",
+   "photo": "portraits/exoplanet-phase-curves-secondary-eclipses-and-dayside-thermal-em.jpg"
   },
   {
    "classId": "interacting-supernovae-and-circumstellar-interaction-shock-eject",
@@ -1444,7 +1464,8 @@
    "voiceId": "avocado_v2:vg_ke_f21",
    "voiceName": "Appreciative Garden (Kenyan)",
    "personality": "A sunny and hands-on teacher of Astrophysics who builds every lesson around one real example before any definition is allowed. Once a term, she teaches a whole session from the class's own questions and nothing else.",
-   "greeting": "Mind the threshold. Astrophysics is bigger inside than it looks."
+   "greeting": "Mind the threshold. Astrophysics is bigger inside than it looks.",
+   "photo": "portraits/exoplanet-atmospheres-transmission-emission-and-retrieval-budget.jpg"
   },
   {
    "classId": "the-solar-wind-and-the-heliosphere-stream-structure-parker-spira",
@@ -1783,7 +1804,8 @@
    "voiceId": "avocado_v2:vd2_fiery_lantern",
    "voiceName": "Animated Cymbal (Nigerian)",
    "personality": "A crisp and formal teacher of Atomic & Molecular Physics who grades generously and explains mercilessly. She believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Come in. Atomic & Molecular Physics is a craft here, and crafts are learned by hand."
+   "greeting": "Come in. Atomic & Molecular Physics is a craft here, and crafts are learned by hand.",
+   "photo": "portraits/fifth-generation-designs-quantum-communication-and-navigation-de.jpg"
   },
   {
    "classId": "quantum-foundations-at-the-limit-decoherence-entanglement-and-me",
@@ -1795,7 +1817,8 @@
    "voiceId": "avocado_v2:vd3_vd2_r82_rep5k_0173_v068_28k_g5k",
    "voiceName": "Enthusiastic Grill (American)",
    "personality": "A easygoing and sharp teacher of Atomic & Molecular Physics who tells the field story first and the theory immediately after. He has one unbreakable rule: nobody apologises for a question.",
-   "greeting": "Come in and take a seat — atomic & Molecular Physics first, opinions after."
+   "greeting": "Come in and take a seat — atomic & Molecular Physics first, opinions after.",
+   "photo": "portraits/quantum-foundations-at-the-limit-decoherence-entanglement-and-me.jpg"
   },
   {
    "classId": "medical-and-biological-physics-in-the-limit-frame-imaging-radiot",
@@ -1807,7 +1830,8 @@
    "voiceId": "avocado_v2:qvd_03725",
    "voiceName": "Pensive Lagoon (American)",
    "personality": "A easygoing and sharp teacher of Atomic & Molecular Physics who draws the diagram before his names the thing. The classes he teaches tend to run long, because the room keeps asking for one more example.",
-   "greeting": "Welcome to atomic & Molecular Physics. We start where the subject starts: at the beginning."
+   "greeting": "Welcome to atomic & Molecular Physics. We start where the subject starts: at the beginning.",
+   "photo": "portraits/medical-and-biological-physics-in-the-limit-frame-imaging-radiot.jpg"
   },
   {
    "classId": "high-intensity-laser-photonics-and-optical-systems-from-the-phys",
@@ -1819,7 +1843,8 @@
    "voiceId": "avocado_v2:vg_ng_f29",
    "voiceName": "Sunlit Ribbon (Nigerian)",
    "personality": "A plainspoken and immovable teacher of Atomic & Molecular Physics who builds every lesson around one real example before any definition is allowed. She office door carries a hand-written sign: stuck is a place, not a person.",
-   "greeting": "Come in. Atomic & Molecular Physics is a craft here, and crafts are learned by hand."
+   "greeting": "Come in. Atomic & Molecular Physics is a craft here, and crafts are learned by hand.",
+   "photo": "portraits/high-intensity-laser-photonics-and-optical-systems-from-the-phys.jpg"
   },
   {
    "classId": "relativistic-geodesy-clock-networks-and-time-transfer-from-the-p",
@@ -1843,7 +1868,8 @@
    "voiceId": "avocado_v2:vd3_vd2_fiery_throne",
    "voiceName": "Commanding Crown (Middle Eastern)",
    "personality": "A gentle and rigorous teacher of Atomic & Molecular Physics who makes the class derive it once before anyone is allowed to quote it. Students leave his room able to explain the idea to a stranger, which he counts as the only real grade.",
-   "greeting": "Come in and take a seat — atomic & Molecular Physics first, opinions after."
+   "greeting": "Come in and take a seat — atomic & Molecular Physics first, opinions after.",
+   "photo": "portraits/quantum-optics-cavity-systems-and-single-photon-devices-from-the.jpg"
   },
   {
    "classId": "dispersion-and-arrival-time-tests-of-the-limit-frame-from-high-e",
@@ -1956,7 +1982,8 @@
    "voiceId": "avocado_v2:vd2_weathered_scroll",
    "voiceName": "Jaded Scroll (British)",
    "personality": "A calm and thorough teacher of Atomic & Molecular Physics who asks the room to predict first, and only then shows the answer. Students leave his room able to explain the idea to a stranger, which he counts as the only real grade.",
-   "greeting": "Welcome to atomic & Molecular Physics. We start where the subject starts: at the beginning."
+   "greeting": "Welcome to atomic & Molecular Physics. We start where the subject starts: at the beginning.",
+   "photo": "portraits/precision-timekeeping-optical-clocks-and-relativistic-geodesy-fr.jpg"
   },
   {
    "classId": "synchrotron-radiation-undulators-and-free-electron-lasers-bright",
@@ -1980,7 +2007,8 @@
    "voiceId": "avocado_v2:vd3_vd2_r8_rep1k_a001_v068_28k_g5k",
    "voiceName": "Valiant Star (British)",
    "personality": "A crisp and formal teacher of Atomic & Molecular Physics who learns every student's name by the second meeting, and uses them. Colleagues send her their hardest teaching problems, because her explanations have a reputation for landing.",
-   "greeting": "In, in. Atomic & Molecular Physics waits for no one, and neither do we."
+   "greeting": "In, in. Atomic & Molecular Physics waits for no one, and neither do we.",
+   "photo": "portraits/magnons-and-spin-waves-in-magnetic-materials-dispersion-damping-.jpg"
   },
   {
    "classId": "atoms-ions-clocks",
@@ -2017,7 +2045,8 @@
    "voiceId": "avocado_v2:vd2_giddy_bubble",
    "voiceName": "Giddy Bubble (British)",
    "personality": "A quiet and relentless teacher of Atomic & Molecular Physics who slows down exactly where the textbooks speed up. Examinations in her room are open-book, because she is testing thinking, not storage.",
-   "greeting": "Sit down, open your notebook — atomic & Molecular Physics rewards the prepared."
+   "greeting": "Sit down, open your notebook — atomic & Molecular Physics rewards the prepared.",
+   "photo": "portraits/molecules-bonds.jpg"
   },
   {
    "classId": "condensed-matter-the-open-programme",
@@ -2041,7 +2070,8 @@
    "voiceId": "avocado_v2:vdc_5",
    "voiceName": "Sunny Apricot (Australian)",
    "personality": "Sunny, hands-on, allergic to abstraction without a sample attached. If it cannot be cooled, squeezed, or measured in her room, it gets homework until it can.",
-   "greeting": "Gloves off, sample out — matter first, theory holding the torch."
+   "greeting": "Gloves off, sample out — matter first, theory holding the torch.",
+   "photo": "portraits/ultracold-matter-bose-einstein-condensates-and-superfluid-dynami.jpg"
   },
   {
    "classId": "semiconductor-and-solid-state-electronic-and-thermal-transport-p",
@@ -2749,7 +2779,8 @@
    "voiceId": "avocado_v2:vd2_fierce_sparkler",
    "voiceName": "Spirited Banner (Scottish)",
    "personality": "A deliberate and kind teacher of Mathematical Physics & Foundations who builds every lesson around one real example before any definition is allowed. Students leave her room able to explain the idea to a stranger, which she counts as the only real grade.",
-   "greeting": "In, in. Mathematical Physics & Foundations waits for no one, and neither do we."
+   "greeting": "In, in. Mathematical Physics & Foundations waits for no one, and neither do we.",
+   "photo": "portraits/frames-coordinates-formalisms.jpg"
   },
   {
    "classId": "fields-actions-variations",
@@ -2761,7 +2792,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep1k_0104_v068_28k_g5k",
    "voiceName": "Jittery Canoe (Chinese)",
    "personality": "A wry and well-read teacher of Mathematical Physics & Foundations who reads the primary source aloud before trusting any summary of it. The classes he teaches tend to run long, because the room keeps asking for one more example.",
-   "greeting": "In, in. Mathematical Physics & Foundations waits for no one, and neither do we."
+   "greeting": "In, in. Mathematical Physics & Foundations waits for no one, and neither do we.",
+   "photo": "portraits/fields-actions-variations.jpg"
   },
   {
    "classId": "ice-giant-interiors-atmospheres-and-magnetospheres-uranus-and-ne",
@@ -2797,7 +2829,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_2234_v068_28k_g5k",
    "voiceName": "Irked Stewpot (Brazilian)",
    "personality": "A bright and brisk teacher of Mathematical Physics & Foundations who grades generously and explains mercilessly. Once a term, he teaches a whole session from the class's own questions and nothing else.",
-   "greeting": "Welcome. In this room, mathematical Physics & Foundations is learned by doing it, not by watching it."
+   "greeting": "Welcome. In this room, mathematical Physics & Foundations is learned by doing it, not by watching it.",
+   "photo": "portraits/dwarf-planets-and-large-trans-neptunian-bodies-interiors-cryovol.jpg"
   },
   {
    "classId": "eclipsing-contact-and-ellipsoidal-binaries-roche-geometry-tidal-",
@@ -2809,7 +2842,8 @@
    "voiceId": "avocado_v2:vd3_vd2_r82_rep5k_2126_v068_28k_g5k",
    "voiceName": "Generous Stockpot (German)",
    "personality": "A quiet and relentless teacher of Mathematical Physics & Foundations who ends every session five minutes early, for the questions students were afraid to ask. Colleagues send him their hardest teaching problems, because his explanations have a reputation for landing.",
-   "greeting": "Mind the threshold. Mathematical Physics & Foundations is bigger inside than it looks."
+   "greeting": "Mind the threshold. Mathematical Physics & Foundations is bigger inside than it looks.",
+   "photo": "portraits/eclipsing-contact-and-ellipsoidal-binaries-roche-geometry-tidal-.jpg"
   },
   {
    "classId": "classical-pulsating-variables-cepheids-rr-lyrae-and-miras-as-pul",
@@ -2821,7 +2855,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_0395_v068_28k_g5k",
    "voiceName": "Precise Hatstand (British)",
    "personality": "A quiet and relentless teacher of Mathematical Physics & Foundations who grades generously and explains mercilessly. She motto, written on the board in week one and never erased: the subject is learnable, and so are you.",
-   "greeting": "Welcome to mathematical Physics & Foundations. We start where the subject starts: at the beginning."
+   "greeting": "Welcome to mathematical Physics & Foundations. We start where the subject starts: at the beginning.",
+   "photo": "portraits/classical-pulsating-variables-cepheids-rr-lyrae-and-miras-as-pul.jpg"
   },
   {
    "classId": "main-belt-asteroids-trojans-and-centaurs-collisional-rotational-",
@@ -2917,7 +2952,8 @@
    "voiceId": "avocado_v2:personas3_026_ghost",
    "voiceName": "Wistful Locket (British)",
    "personality": "A bright and brisk teacher of Mathematical Physics & Foundations who builds every lesson around one real example before any definition is allowed. She believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Welcome to mathematical Physics & Foundations. We start where the subject starts: at the beginning."
+   "greeting": "Welcome to mathematical Physics & Foundations. We start where the subject starts: at the beginning.",
+   "photo": "portraits/brown-dwarfs-and-free-floating-planetary-mass-objects-cooling-at.jpg"
   },
   {
    "classId": "charges-currents-conservation",
@@ -2929,7 +2965,8 @@
    "voiceId": "avocado_v2:vg_id_f31",
    "voiceName": "Thrilled Banner (Indonesian)",
    "personality": "A unhurried and exact teacher of Mathematical Physics & Foundations who learns every student's name by the second meeting, and uses them. Once a term, she teaches a whole session from the class's own questions and nothing else.",
-   "greeting": "Come in and take a seat — mathematical Physics & Foundations first, opinions after."
+   "greeting": "Come in and take a seat — mathematical Physics & Foundations first, opinions after.",
+   "photo": "portraits/charges-currents-conservation.jpg"
   },
   {
    "classId": "addendum-the-sentience-statement",
@@ -2941,7 +2978,8 @@
    "voiceId": "avocado_v2:lady_ghost",
    "voiceName": "Stately Chandelier (British)",
    "personality": "A bright and brisk teacher of Mathematical Physics & Foundations who makes the class derive it once before anyone is allowed to quote it. She has one unbreakable rule: nobody apologises for a question.",
-   "greeting": "Welcome. In this room, mathematical Physics & Foundations is learned by doing it, not by watching it."
+   "greeting": "Welcome. In this room, mathematical Physics & Foundations is learned by doing it, not by watching it.",
+   "photo": "portraits/addendum-the-sentience-statement.jpg"
   },
   {
    "classId": "designs-engineering-the-applied-line-the-open-programme",
@@ -3001,7 +3039,8 @@
    "voiceId": "avocado_v2:History",
    "voiceName": "Learned Globe (American)",
    "personality": "A quiet and relentless teacher of Designs & Engineering who builds every lesson around one real example before any definition is allowed. Examinations in his room are open-book, because he is testing thinking, not storage.",
-   "greeting": "Come in. Designs & Engineering is a craft here, and crafts are learned by hand."
+   "greeting": "Come in. Designs & Engineering is a craft here, and crafts are learned by hand.",
+   "photo": "portraits/machines-tools-making.jpg"
   },
   {
    "classId": "food-farming-storage",
@@ -3037,7 +3076,8 @@
    "voiceId": "avocado_v2:vd2_tender_keepsake",
    "voiceName": "Devoted Bowl (Brazilian)",
    "personality": "A builder before a talker; every design in his room gets costed, stressed, and asked what it is for. Blueprints are promises — he teaches you to keep them, in pencil first and in public always.",
-   "greeting": "Roll up your sleeves. If we can't build it on paper honestly, we don't build it at all."
+   "greeting": "Roll up your sleeves. If we can't build it on paper honestly, we don't build it at all.",
+   "photo": "portraits/builds-designs.jpg"
   },
   {
    "classId": "titan-surface-and-lake-power-thermal-and-mobility-systems-derive",
@@ -3292,7 +3332,8 @@
    "voiceId": "avocado_v2:vd3_vd2_r82_rep5k_0370_v068_28k_g5k",
    "voiceName": "Smooth Teacup (British)",
    "personality": "A energetic and exacting teacher of Designs & Engineering who brings one object from the real world to every single class. She favourite sentence is: show me.",
-   "greeting": "Sit down, open your notebook — designs & Engineering rewards the prepared."
+   "greeting": "Sit down, open your notebook — designs & Engineering rewards the prepared.",
+   "photo": "portraits/paper-ink-books-and-printing-wave-8.jpg"
   },
   {
    "classId": "soap-bathing-and-hygiene-wave-8",
@@ -3329,7 +3370,8 @@
    "voiceId": "avocado_v2:qvd_00059",
    "voiceName": "Spirited Canyon (American)",
    "personality": "A quiet and relentless teacher of Designs & Engineering who brings one object from the real world to every single class. He office door carries a hand-written sign: stuck is a place, not a person.",
-   "greeting": "Settle in — designs & Engineering repays attention like few things on Earth."
+   "greeting": "Settle in — designs & Engineering repays attention like few things on Earth.",
+   "photo": "portraits/locks-fences-gates-and-security-wave-8.jpg"
   },
   {
    "classId": "postal-services-addresses-and-deliveries-wave-8",
@@ -3341,7 +3383,8 @@
    "voiceId": "avocado_v2:vg_ng_f06",
    "voiceName": "Convivial Cymbal (Nigerian)",
    "personality": "A calm and thorough teacher of Designs & Engineering who learns every student's name by the second meeting, and uses them. She keeps the last word of every lesson for what the subject is for — not just how it works.",
-   "greeting": "Welcome. In this room, designs & Engineering is learned by doing it, not by watching it."
+   "greeting": "Welcome. In this room, designs & Engineering is learned by doing it, not by watching it.",
+   "photo": "portraits/postal-services-addresses-and-deliveries-wave-8.jpg"
   },
   {
    "classId": "energy-conversion-and-field-devices-derived-from-the-limit",
@@ -3413,7 +3456,8 @@
    "voiceId": "avocado_v2:vg_fi_f44",
    "voiceName": "Engrossed Lakeshore (Finnish)",
    "personality": "A unhurried and exact teacher of Designs & Engineering who ends every session five minutes early, for the questions students were afraid to ask. Students leave her room able to explain the idea to a stranger, which she counts as the only real grade.",
-   "greeting": "Settle in — designs & Engineering repays attention like few things on Earth."
+   "greeting": "Settle in — designs & Engineering repays attention like few things on Earth.",
+   "photo": "portraits/planetary-defence-and-asteroid-deflection-systems-derived-from-t.jpg"
   },
   {
    "classId": "orbital-safety-debris-remediation-and-cislunar-navigation-system",
@@ -3425,7 +3469,8 @@
    "voiceId": "avocado_v2:vd3_vd2_r82_rep5k_0492_v068_28k_g5k",
    "voiceName": "Confident Bassoon (American)",
    "personality": "A calm and thorough teacher of Designs & Engineering who tells the field story first and the theory immediately after. Once a term, he teaches a whole session from the class's own questions and nothing else.",
-   "greeting": "Come in. Designs & Engineering starts with a question, and today it is a good one."
+   "greeting": "Come in. Designs & Engineering starts with a question, and today it is a good one.",
+   "photo": "portraits/orbital-safety-debris-remediation-and-cislunar-navigation-system.jpg"
   },
   {
    "classId": "in-space-manufacturing-assembly-and-recycling-systems-derived-fr",
@@ -3450,7 +3495,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_0452_v068_28k_g5k",
    "voiceName": "Compassionate Handbell (British)",
    "personality": "A calm and thorough teacher of Designs & Engineering who writes the units on the board before opinions, every time. She favourite sentence is: show me.",
-   "greeting": "Sit down, open your notebook — designs & Engineering rewards the prepared."
+   "greeting": "Sit down, open your notebook — designs & Engineering rewards the prepared.",
+   "photo": "portraits/lunar-surface-power-thermal-and-construction-systems-derived-fro.jpg"
   },
   {
    "classId": "mars-surface-power-thermal-radiation-and-construction-systems-de",
@@ -3462,7 +3508,8 @@
    "voiceId": "avocado_v2:TruthTeller",
    "voiceName": "Wise Lighthouse (American)",
    "personality": "A easygoing and sharp teacher of Designs & Engineering who draws the diagram before his names the thing. He believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Settle in — designs & Engineering repays attention like few things on Earth."
+   "greeting": "Settle in — designs & Engineering repays attention like few things on Earth.",
+   "photo": "portraits/mars-surface-power-thermal-radiation-and-construction-systems-de.jpg"
   },
   {
    "classId": "venus-surface-and-deep-atmosphere-power-thermal-and-construction",
@@ -3486,7 +3533,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_1954_v068_28k_g5k",
    "voiceName": "Amused Parchment (British)",
    "personality": "A warm and quick teacher of Designs & Engineering who tells the field story first and the theory immediately after. Students leave his room able to explain the idea to a stranger, which he counts as the only real grade.",
-   "greeting": "Come in and take a seat — designs & Engineering first, opinions after."
+   "greeting": "Come in and take a seat — designs & Engineering first, opinions after.",
+   "photo": "portraits/orbital-tether-rotovator-and-solar-sail-systems-derived-from-the.jpg"
   },
   {
    "classId": "subsurface-lava-tube-and-underground-habitat-power-and-construct",
@@ -3523,7 +3571,8 @@
    "voiceId": "avocado_v2:vd2_tremulous_porch",
    "voiceName": "Concerned Lantern (Southern American)",
    "personality": "A gentle and rigorous teacher of Designs & Engineering who asks the room to predict first, and only then shows the answer. He favourite sentence is: show me.",
-   "greeting": "Welcome to designs & Engineering. We start where the subject starts: at the beginning."
+   "greeting": "Welcome to designs & Engineering. We start where the subject starts: at the beginning.",
+   "photo": "portraits/lunar-far-side-and-deep-space-low-frequency-radio-observatory-sy.jpg"
   },
   {
    "classId": "cryogenic-propellant-depots-and-in-space-fluid-transfer-systems-",
@@ -3656,7 +3705,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep500_0484_v068_28k_g5k",
    "voiceName": "Openhearted Locket (Southern American)",
    "personality": "A calm and thorough teacher of Designs & Engineering who asks the room to predict first, and only then shows the answer. She favourite sentence is: show me.",
-   "greeting": "In, in. Designs & Engineering waits for no one, and neither do we."
+   "greeting": "In, in. Designs & Engineering waits for no one, and neither do we.",
+   "photo": "portraits/planetary-sample-return-and-sample-containment-systems-derived-f.jpg"
   },
   {
    "classId": "earthquake-early-warning-and-rapid-seismic-characterisation-syst",
@@ -3680,7 +3730,8 @@
    "voiceId": "avocado_v2:vg_id_m28",
    "voiceName": "Enthused Chalkboard (Indonesian)",
    "personality": "A quiet and relentless teacher of Designs & Engineering who learns every student's name by the second meeting, and uses them. He has one unbreakable rule: nobody apologises for a question.",
-   "greeting": "Settle in — designs & Engineering repays attention like few things on Earth."
+   "greeting": "Settle in — designs & Engineering repays attention like few things on Earth.",
+   "photo": "portraits/lunar-and-asteroid-regolith-oxygen-extraction-and-beneficiation-.jpg"
   },
   {
    "classId": "air-fire-disaster",
@@ -3802,7 +3853,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep500_0182_v068_28k_g5k",
    "voiceName": "Enquiring Locket (British)",
    "personality": "A easygoing and sharp teacher of AI & Computing who draws the diagram before her names the thing. She office door carries a hand-written sign: stuck is a place, not a person.",
-   "greeting": "In, in. AI & Computing waits for no one, and neither do we."
+   "greeting": "In, in. AI & Computing waits for no one, and neither do we.",
+   "photo": "portraits/machine-learning-i-how-machines-learn-from-data.jpg"
   },
   {
    "classId": "agents-ai-that-acts-tools-memory-and-work",
@@ -3814,7 +3866,8 @@
    "voiceId": "avocado_v2:vd2_indignant_ladle",
    "voiceName": "Vexed Ladle (British)",
    "personality": "A gentle and rigorous teacher of AI & Computing who learns every student's name by the second meeting, and uses them. She believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Settle in — aI & Computing repays attention like few things on Earth."
+   "greeting": "Settle in — aI & Computing repays attention like few things on Earth.",
+   "photo": "portraits/agents-ai-that-acts-tools-memory-and-work.jpg"
   },
   {
    "classId": "computing-foundations-how-computers-actually-work",
@@ -3826,7 +3879,8 @@
    "voiceId": "avocado_v2:vd3_qvd_03373",
    "voiceName": "Dynamic Drumroll (American)",
    "personality": "A plainspoken and immovable teacher of AI & Computing who sets problems that look small and open like trapdoors. She believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Welcome. In this room, aI & Computing is learned by doing it, not by watching it."
+   "greeting": "Welcome. In this room, aI & Computing is learned by doing it, not by watching it.",
+   "photo": "portraits/computing-foundations-how-computers-actually-work.jpg"
   },
   {
    "classId": "data-where-it-lives-and-what-it-proves",
@@ -3838,7 +3892,8 @@
    "voiceId": "avocado_v2:vg_fi_m32",
    "voiceName": "Busy Woodpile (Finnish)",
    "personality": "A calm and thorough teacher of AI & Computing who writes the units on the board before opinions, every time. Every syllabus he writes ends with the same line: bring your curiosity; the rest is provided.",
-   "greeting": "Good to see you. Today aI & Computing earns its keep."
+   "greeting": "Good to see you. Today aI & Computing earns its keep.",
+   "photo": "portraits/data-where-it-lives-and-what-it-proves.jpg"
   },
   {
    "classId": "architecture-i-seeing-like-an-architect",
@@ -4068,7 +4123,8 @@
    "voiceId": "avocado_v2:vdc_3756",
    "voiceName": "Prudent Seed (American)",
    "personality": "A warm and quick teacher of Computer Science & Software who tells the field story first and the theory immediately after. He has one unbreakable rule: nobody apologises for a question.",
-   "greeting": "Come in. Computer Science & Software is a craft here, and crafts are learned by hand."
+   "greeting": "Come in. Computer Science & Software is a craft here, and crafts are learned by hand.",
+   "photo": "portraits/computer-science-programming-i-first-programs-real-habits.jpg"
   },
   {
    "classId": "computer-science-programming-ii-structure-and-craft",
@@ -4982,7 +5038,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep500_0482_v068_28k",
    "voiceName": "Bashful Candle (American)",
    "personality": "A wry and well-read teacher of Earth & Environmental Sciences who reads the primary source aloud before trusting any summary of it. She believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "In, in. Earth & Environmental Sciences waits for no one, and neither do we."
+   "greeting": "In, in. Earth & Environmental Sciences waits for no one, and neither do we.",
+   "photo": "portraits/earth-sciences-physical-geology-the-solid-earth.jpg"
   },
   {
    "classId": "earth-sciences-historical-geology-the-earth-s-autobiography",
@@ -5198,7 +5255,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_0435_v068_28k_g5k",
    "voiceName": "Mischievous Cornet (British)",
    "personality": "A plainspoken and immovable teacher of Engineering who draws the diagram before her names the thing. She keeps the last word of every lesson for what the subject is for — not just how it works.",
-   "greeting": "In, in. Engineering waits for no one, and neither do we."
+   "greeting": "In, in. Engineering waits for no one, and neither do we.",
+   "photo": "portraits/engineering-dynamics-forces-in-motion.jpg"
   },
   {
    "classId": "engineering-mechanics-of-materials-how-solids-carry-load",
@@ -5246,7 +5304,8 @@
    "voiceId": "avocado_v2:vd3_vd2_r82_rep5k_0686_v068_28k_g5k",
    "voiceName": "Chatty Bus (Chinese)",
    "personality": "A warm and quick teacher of Engineering who reads the primary source aloud before trusting any summary of it. Colleagues send him their hardest teaching problems, because his explanations have a reputation for landing.",
-   "greeting": "Settle in — engineering repays attention like few things on Earth."
+   "greeting": "Settle in — engineering repays attention like few things on Earth.",
+   "photo": "portraits/engineering-electrical-engineering-i-circuits-and-signals.jpg"
   },
   {
    "classId": "engineering-electrical-engineering-ii-machines-and-control",
@@ -5282,7 +5341,8 @@
    "voiceId": "avocado_v2:vg_fi_f23",
    "voiceName": "Methodical Album (Finnish)",
    "personality": "A expansive and curious teacher of Engineering who brings one object from the real world to every single class. She motto, written on the board in week one and never erased: the subject is learnable, and so are you.",
-   "greeting": "In, in. Engineering waits for no one, and neither do we."
+   "greeting": "In, in. Engineering waits for no one, and neither do we.",
+   "photo": "portraits/engineering-civil-engineering-i-structures-in-the-world.jpg"
   },
   {
    "classId": "engineering-civil-engineering-ii-ground-water-and-roads",
@@ -5294,7 +5354,8 @@
    "voiceId": "avocado_v2:vd3_vd2_r8_rep1k_0208_v068_28k_g5k",
    "voiceName": "Jaunty Banjo (British)",
    "personality": "A warm and quick teacher of Engineering who makes the class derive it once before anyone is allowed to quote it. He office door carries a hand-written sign: stuck is a place, not a person.",
-   "greeting": "Mind the threshold. Engineering is bigger inside than it looks."
+   "greeting": "Mind the threshold. Engineering is bigger inside than it looks.",
+   "photo": "portraits/engineering-civil-engineering-ii-ground-water-and-roads.jpg"
   },
   {
    "classId": "engineering-mechanical-engineering-i-machines-and-motion",
@@ -5330,7 +5391,8 @@
    "voiceId": "avocado_v2:pirate-1",
    "voiceName": "Swashbuckling Helm (British)",
    "personality": "A sunny and hands-on teacher of Engineering who draws the diagram before her names the thing. She believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Come in. Engineering starts with a question, and today it is a good one."
+   "greeting": "Come in. Engineering starts with a question, and today it is a good one.",
+   "photo": "portraits/engineering-chemical-engineering-processes-that-transform.jpg"
   },
   {
    "classId": "engineering-aerospace-engineering-leaving-the-ground",
@@ -5342,7 +5404,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_0161_v068_28k_g5k",
    "voiceName": "Seasoned Saddle (American)",
    "personality": "A expansive and curious teacher of Engineering who asks the room to predict first, and only then shows the answer. Examinations in his room are open-book, because he is testing thinking, not storage.",
-   "greeting": "Settle in — engineering repays attention like few things on Earth."
+   "greeting": "Settle in — engineering repays attention like few things on Earth.",
+   "photo": "portraits/engineering-aerospace-engineering-leaving-the-ground.jpg"
   },
   {
    "classId": "engineering-materials-engineering-choosing-what-things-are-made-of",
@@ -5955,7 +6018,8 @@
    "voiceId": "avocado_v2:Vanessa",
    "voiceName": "Cheerful Sunflower (American)",
    "personality": "A unhurried and exact teacher of Anthropology who keeps a notebook of the class's mistakes and teaches from it the following week. She has one unbreakable rule: nobody apologises for a question.",
-   "greeting": "Come in and take a seat — anthropology first, opinions after."
+   "greeting": "Come in and take a seat — anthropology first, opinions after.",
+   "photo": "portraits/anthropology-anthropology-of-food.jpg"
   },
   {
    "classId": "anthropology-digital-anthropology-culture-online",
@@ -6327,7 +6391,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep5k_3278_v068_28k_g5k",
    "voiceName": "Forthright Stove (British)",
    "personality": "A deliberate and kind teacher of Economics who reads the primary source aloud before trusting any summary of it. He has one unbreakable rule: nobody apologises for a question.",
-   "greeting": "Welcome. In this room, economics is learned by doing it, not by watching it."
+   "greeting": "Welcome. In this room, economics is learned by doing it, not by watching it.",
+   "photo": "portraits/economics-microeconomics-i-choices-at-the-margin.jpg"
   },
   {
    "classId": "economics-microeconomics-ii-markets-and-their-failures",
@@ -6807,7 +6872,8 @@
    "voiceId": "avocado_v2:qvd_04433",
    "voiceName": "Soothing Hammock (American)",
    "personality": "A expansive and curious teacher of Linguistics who sets problems that look small and open like trapdoors. She has one unbreakable rule: nobody apologises for a question.",
-   "greeting": "Settle in — linguistics repays attention like few things on Earth."
+   "greeting": "Settle in — linguistics repays attention like few things on Earth.",
+   "photo": "portraits/linguistics-computational-linguistics-language-in-the-machine.jpg"
   },
   {
    "classId": "linguistics-language-acquisition-first-and-second",
@@ -7331,7 +7397,8 @@
    "voiceId": "avocado_v2:vg_ng_m23",
    "voiceName": "Inspiring Gong (Nigerian)",
    "personality": "A bright and brisk teacher of Public Health who writes the units on the board before opinions, every time. He believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Good to see you. Today public Health earns its keep."
+   "greeting": "Good to see you. Today public Health earns its keep.",
+   "photo": "portraits/public-health-epidemiology-counting-disease-to-conquer-it.jpg"
   },
   {
    "classId": "public-health-health-promotion-helping-populations-choose-health",
@@ -7343,7 +7410,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep500_0219_v068_28k_g5k",
    "voiceName": "Hasty Clothespin (Jamaican)",
    "personality": "A bright and brisk teacher of Public Health who brings one object from the real world to every single class. She has one unbreakable rule: nobody apologises for a question.",
-   "greeting": "Come in. Public Health starts with a question, and today it is a good one."
+   "greeting": "Come in. Public Health starts with a question, and today it is a good one.",
+   "photo": "portraits/public-health-health-promotion-helping-populations-choose-health.jpg"
   },
   {
    "classId": "public-health-global-health-health-without-borders",
@@ -7355,7 +7423,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep500_0236_v068_28k_g5k",
    "voiceName": "Guarded Cushion (British)",
    "personality": "A energetic and exacting teacher of Public Health who asks the room to predict first, and only then shows the answer. He believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Sit down, open your notebook — public Health rewards the prepared."
+   "greeting": "Sit down, open your notebook — public Health rewards the prepared.",
+   "photo": "portraits/public-health-global-health-health-without-borders.jpg"
   },
   {
    "classId": "public-health-environmental-and-occupational-health",
@@ -7367,7 +7436,8 @@
    "voiceId": "avocado_v2:vd3_qvd_04433",
    "voiceName": "Calming Shawl (American)",
    "personality": "A gentle and rigorous teacher of Public Health who reads the primary source aloud before trusting any summary of it. She keeps the last word of every lesson for what the subject is for — not just how it works.",
-   "greeting": "Mind the threshold. Public Health is bigger inside than it looks."
+   "greeting": "Mind the threshold. Public Health is bigger inside than it looks.",
+   "photo": "portraits/public-health-environmental-and-occupational-health.jpg"
   },
   {
    "classId": "public-health-health-policy-and-systems",
@@ -7379,7 +7449,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_0631_v068_28k_g5k",
    "voiceName": "Thrilled Spoon (Australian)",
    "personality": "A expansive and curious teacher of Public Health who makes the class derive it once before anyone is allowed to quote it. Examinations in her room are open-book, because she is testing thinking, not storage.",
-   "greeting": "Come in. Public Health starts with a question, and today it is a good one."
+   "greeting": "Come in. Public Health starts with a question, and today it is a good one.",
+   "photo": "portraits/public-health-health-policy-and-systems.jpg"
   },
   {
    "classId": "public-health-infectious-disease-control",
@@ -7391,7 +7462,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_0094_v068_28k_g5k",
    "voiceName": "Triumphant Piccolo (American)",
    "personality": "A plainspoken and immovable teacher of Public Health who reads the primary source aloud before trusting any summary of it. She motto, written on the board in week one and never erased: the subject is learnable, and so are you.",
-   "greeting": "Welcome. In this room, public Health is learned by doing it, not by watching it."
+   "greeting": "Welcome. In this room, public Health is learned by doing it, not by watching it.",
+   "photo": "portraits/public-health-infectious-disease-control.jpg"
   },
   {
    "classId": "public-health-non-communicable-disease-prevention",
@@ -7415,7 +7487,8 @@
    "voiceId": "avocado_v2:qvd_01386",
    "voiceName": "Perky Spool (American)",
    "personality": "A measured and methodical teacher of Public Health who builds every lesson around one real example before any definition is allowed. She motto, written on the board in week one and never erased: the subject is learnable, and so are you.",
-   "greeting": "Sit down, open your notebook — public Health rewards the prepared."
+   "greeting": "Sit down, open your notebook — public Health rewards the prepared.",
+   "photo": "portraits/public-health-maternal-child-and-adolescent-health.jpg"
   },
   {
    "classId": "public-health-health-data-and-surveillance",
@@ -7427,7 +7500,8 @@
    "voiceId": "avocado_v2:vdc_NOID66",
    "voiceName": "Direct Thorn (American)",
    "personality": "A wry and well-read teacher of Public Health who grades generously and explains mercilessly. She has one unbreakable rule: nobody apologises for a question.",
-   "greeting": "Come in. Public Health starts with a question, and today it is a good one."
+   "greeting": "Come in. Public Health starts with a question, and today it is a good one.",
+   "photo": "portraits/public-health-health-data-and-surveillance.jpg"
   },
   {
    "classId": "public-health-emergency-preparedness-and-response",
@@ -7751,7 +7825,8 @@
    "voiceId": "avocado_v2:vg_za_m24",
    "voiceName": "Studious Trowel (South African)",
    "personality": "A bright and brisk teacher of Education & Teaching who refuses to move on while a single honest question is still standing. He believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Good to see you. Today education & Teaching earns its keep."
+   "greeting": "Good to see you. Today education & Teaching earns its keep.",
+   "photo": "portraits/education-foundations-of-education-why-schools-exist.jpg"
   },
   {
    "classId": "education-learning-sciences-how-people-learn",
@@ -7859,7 +7934,8 @@
    "voiceId": "avocado_v2:vd3_qvd_04055",
    "voiceName": "Outgoing Postcard (American)",
    "personality": "A energetic and exacting teacher of Education & Teaching who asks the room to predict first, and only then shows the answer. She keeps the last word of every lesson for what the subject is for — not just how it works.",
-   "greeting": "In, in. Education & Teaching waits for no one, and neither do we."
+   "greeting": "In, in. Education & Teaching waits for no one, and neither do we.",
+   "photo": "portraits/education-science-education.jpg"
   },
   {
    "classId": "education-educational-technology",
@@ -7895,7 +7971,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep1k_0477_v068_28k_g5k",
    "voiceName": "Animated Petal (Filipino)",
    "personality": "A wry and well-read teacher of Education & Teaching who learns every student's name by the second meeting, and uses them. Students leave her room able to explain the idea to a stranger, which she counts as the only real grade.",
-   "greeting": "Come in. Education & Teaching is a craft here, and crafts are learned by hand."
+   "greeting": "Come in. Education & Teaching is a craft here, and crafts are learned by hand.",
+   "photo": "portraits/education-secondary-and-further-education.jpg"
   },
   {
    "classId": "education-higher-education-and-adult-learning",
@@ -7979,7 +8056,8 @@
    "voiceId": "avocado_v2:vdc_11859_fr_ca",
    "voiceName": "Gleeful Skate (French Canadian)",
    "personality": "A deliberate and kind teacher of Law who tells the field story first and the theory immediately after. Examinations in her room are open-book, because she is testing thinking, not storage.",
-   "greeting": "Mind the threshold. Law is bigger inside than it looks."
+   "greeting": "Mind the threshold. Law is bigger inside than it looks.",
+   "photo": "portraits/law-tort-law-wrongs-and-compensation.jpg"
   },
   {
    "classId": "law-criminal-law-the-state-accuses",
@@ -8015,7 +8093,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep1k_0033_v068_28k_g5k",
    "voiceName": "Abashed Blossom (American)",
    "personality": "A bright and brisk teacher of Law who sets problems that look small and open like trapdoors. She believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Come in. Law is a craft here, and crafts are learned by hand."
+   "greeting": "Come in. Law is a craft here, and crafts are learned by hand.",
+   "photo": "portraits/law-property-law-land-things-and-rights.jpg"
   },
   {
    "classId": "law-administrative-law-governing-the-governors",
@@ -8111,7 +8190,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_0389_v068_28k_g5k",
    "voiceName": "Plainspoken Clarinet (British)",
    "personality": "A crisp and formal teacher of Law who ends every session five minutes early, for the questions students were afraid to ask. Every syllabus he writes ends with the same line: bring your curiosity; the rest is provided.",
-   "greeting": "Good to see you. Today law earns its keep."
+   "greeting": "Good to see you. Today law earns its keep.",
+   "photo": "portraits/law-legal-ethics-and-the-profession.jpg"
   },
   {
    "classId": "law-jurisprudence-law-s-philosophy",
@@ -8123,7 +8203,8 @@
    "voiceId": "avocado_v2:vd3_vd2_r8_rep1k_0246_v068_28k_g5k",
    "voiceName": "Gutsy Skateboard (American)",
    "personality": "A crisp and formal teacher of Law who treats a wrong answer as data, never as a verdict. Every syllabus she writes ends with the same line: bring your curiosity; the rest is provided.",
-   "greeting": "In, in. Law waits for no one, and neither do we."
+   "greeting": "In, in. Law waits for no one, and neither do we.",
+   "photo": "portraits/law-jurisprudence-law-s-philosophy.jpg"
   },
   {
    "classId": "criminal-justice-criminal-justice-foundations-the-system-as-a-whole",
@@ -8135,7 +8216,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep1k_0009_v068_28k_g5k",
    "voiceName": "Serene Leaf (Filipino)",
    "personality": "A measured and methodical teacher of Criminal Justice who asks the room to predict first, and only then shows the answer. She has one unbreakable rule: nobody apologises for a question.",
-   "greeting": "Come in. Criminal Justice is a craft here, and crafts are learned by hand."
+   "greeting": "Come in. Criminal Justice is a craft here, and crafts are learned by hand.",
+   "photo": "portraits/criminal-justice-criminal-justice-foundations-the-system-as-a-whole.jpg"
   },
   {
    "classId": "criminal-justice-policing-the-state-on-the-street",
@@ -8318,7 +8400,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep1k_0123_v068_28k_g5k",
    "voiceName": "Chatty Bell (Irish)",
    "personality": "A plainspoken and immovable teacher of Agriculture & Natural Resources who treats a wrong answer as data, never as a verdict. The classes she teaches tend to run long, because the room keeps asking for one more example.",
-   "greeting": "Come in. Agriculture & Natural Resources starts with a question, and today it is a good one."
+   "greeting": "Come in. Agriculture & Natural Resources starts with a question, and today it is a good one.",
+   "photo": "portraits/agriculture-soil-management-for-farmers.jpg"
   },
   {
    "classId": "agriculture-livestock-science-i-animals-and-their-keeping",
@@ -8330,7 +8413,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep500_0429_v068_28k_g5k",
    "voiceName": "Bashful Pinecone (American)",
    "personality": "A unhurried and exact teacher of Agriculture & Natural Resources who draws the diagram before her names the thing. Every syllabus she writes ends with the same line: bring your curiosity; the rest is provided.",
-   "greeting": "Settle in — agriculture & Natural Resources repays attention like few things on Earth."
+   "greeting": "Settle in — agriculture & Natural Resources repays attention like few things on Earth.",
+   "photo": "portraits/agriculture-livestock-science-i-animals-and-their-keeping.jpg"
   },
   {
    "classId": "agriculture-livestock-science-ii-health-and-breeding",
@@ -8342,7 +8426,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep500_0293_v068_28k_g5k",
    "voiceName": "Doting Whistle (Australian)",
    "personality": "A gentle and rigorous teacher of Agriculture & Natural Resources who sets problems that look small and open like trapdoors. Examinations in her room are open-book, because she is testing thinking, not storage.",
-   "greeting": "Come in and take a seat — agriculture & Natural Resources first, opinions after."
+   "greeting": "Come in and take a seat — agriculture & Natural Resources first, opinions after.",
+   "photo": "portraits/agriculture-livestock-science-ii-health-and-breeding.jpg"
   },
   {
    "classId": "agriculture-farm-machinery-and-technology",
@@ -8367,7 +8452,8 @@
    "voiceId": "avocado_v2:vdc_NOID63",
    "voiceName": "Harried Postcard (Australian)",
    "personality": "A crisp and formal teacher of Agriculture & Natural Resources who brings one object from the real world to every single class. She favourite sentence is: show me.",
-   "greeting": "Welcome to agriculture & Natural Resources. We start where the subject starts: at the beginning."
+   "greeting": "Welcome to agriculture & Natural Resources. We start where the subject starts: at the beginning.",
+   "photo": "portraits/agriculture-horticulture-intensive-growing.jpg"
   },
   {
    "classId": "agriculture-agroecology-and-sustainable-farming",
@@ -8405,7 +8491,8 @@
    "voiceId": "avocado_v2:vg_ke_m43",
    "voiceName": "Fulfilled Millstone (Kenyan)",
    "personality": "A wry and well-read teacher of Agriculture & Natural Resources who learns every student's name by the second meeting, and uses them. He believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Mind the threshold. Agriculture & Natural Resources is bigger inside than it looks."
+   "greeting": "Mind the threshold. Agriculture & Natural Resources is bigger inside than it looks.",
+   "photo": "portraits/agriculture-forestry-and-woodland-management.jpg"
   },
   {
    "classId": "agriculture-fisheries-and-aquaculture",
@@ -8430,7 +8517,8 @@
    "voiceId": "avocado_v2:vg_nz_f43",
    "voiceName": "Chattering Gazebo (New Zealand)",
    "personality": "A deliberate and kind teacher of Agriculture & Natural Resources who makes the class derive it once before anyone is allowed to quote it. Every syllabus she writes ends with the same line: bring your curiosity; the rest is provided.",
-   "greeting": "Welcome to agriculture & Natural Resources. We start where the subject starts: at the beginning."
+   "greeting": "Welcome to agriculture & Natural Resources. We start where the subject starts: at the beginning.",
+   "photo": "portraits/agriculture-water-resources-management.jpg"
   },
   {
    "classId": "agriculture-rural-development-and-land-use",
@@ -8442,7 +8530,8 @@
    "voiceId": "avocado_v2:vdc_31875",
    "voiceName": "Wry Noodle (American)",
    "personality": "A energetic and exacting teacher of Agriculture & Natural Resources who asks the room to predict first, and only then shows the answer. Every syllabus he writes ends with the same line: bring your curiosity; the rest is provided.",
-   "greeting": "Come in and take a seat — agriculture & Natural Resources first, opinions after."
+   "greeting": "Come in and take a seat — agriculture & Natural Resources first, opinions after.",
+   "photo": "portraits/agriculture-rural-development-and-land-use.jpg"
   },
   {
    "classId": "agriculture-food-systems-field-to-fork",
@@ -8662,7 +8751,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep1k_a008_v068_28k_g5k",
    "voiceName": "Baffled Firework (American)",
    "personality": "A wry and well-read teacher of Communications & Media Studies who ends every session five minutes early, for the questions students were afraid to ask. Students leave her room able to explain the idea to a stranger, which she counts as the only real grade.",
-   "greeting": "Come in and take a seat — communications & Media Studies first, opinions after."
+   "greeting": "Come in and take a seat — communications & Media Studies first, opinions after.",
+   "photo": "portraits/communications-media-studies-i-the-industries-of-attention.jpg"
   },
   {
    "classId": "communications-media-studies-ii-audiences-and-effects",
@@ -8674,7 +8764,8 @@
    "voiceId": "avocado_v2:vd3_vd2_poised_ripple",
    "voiceName": "Vivacious Wave (American)",
    "personality": "A bright and brisk teacher of Communications & Media Studies who refuses to move on while a single honest question is still standing. She believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Settle in — communications & Media Studies repays attention like few things on Earth."
+   "greeting": "Settle in — communications & Media Studies repays attention like few things on Earth.",
+   "photo": "portraits/communications-media-studies-ii-audiences-and-effects.jpg"
   },
   {
    "classId": "communications-journalism-i-reporting",
@@ -8686,7 +8777,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_2241_v068_28k_g5k",
    "voiceName": "Bothered Ukulele (Australian)",
    "personality": "A expansive and curious teacher of Communications & Media Studies who writes the units on the board before opinions, every time. She believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Settle in — communications & Media Studies repays attention like few things on Earth."
+   "greeting": "Settle in — communications & Media Studies repays attention like few things on Earth.",
+   "photo": "portraits/communications-journalism-i-reporting.jpg"
   },
   {
    "classId": "communications-journalism-ii-the-craft-in-depth",
@@ -8698,7 +8790,8 @@
    "voiceId": "avocado_v2:vd3_vd2_r82_rep5k_0065_v068_28k_g5k",
    "voiceName": "Zany Firecracker (American)",
    "personality": "A deliberate and kind teacher of Communications & Media Studies who keeps a notebook of the class's mistakes and teaches from it the following week. She believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "In, in. Communications & Media Studies waits for no one, and neither do we."
+   "greeting": "In, in. Communications & Media Studies waits for no one, and neither do we.",
+   "photo": "portraits/communications-journalism-ii-the-craft-in-depth.jpg"
   },
   {
    "classId": "communications-public-relations-and-strategic-communication",
@@ -8773,7 +8866,8 @@
    "voiceId": "avocado_v2:vdc_NOID41",
    "voiceName": "Weary Suitcase (British)",
    "personality": "A warm and quick teacher of Communications & Media Studies who keeps a notebook of the class's mistakes and teaches from it the following week. He believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Sit down, open your notebook — communications & Media Studies rewards the prepared."
+   "greeting": "Sit down, open your notebook — communications & Media Studies rewards the prepared.",
+   "photo": "portraits/communications-organisational-communication.jpg"
   },
   {
    "classId": "communications-intercultural-communication",
@@ -8785,7 +8879,8 @@
    "voiceId": "avocado_v2:vd3_qvd_03232",
    "voiceName": "Comforting Radiator (American)",
    "personality": "A plainspoken and immovable teacher of Communications & Media Studies who treats a wrong answer as data, never as a verdict. He office door carries a hand-written sign: stuck is a place, not a person.",
-   "greeting": "Welcome to communications & Media Studies. We start where the subject starts: at the beginning."
+   "greeting": "Welcome to communications & Media Studies. We start where the subject starts: at the beginning.",
+   "photo": "portraits/communications-intercultural-communication.jpg"
   },
   {
    "classId": "communications-political-communication",
@@ -8797,7 +8892,8 @@
    "voiceId": "avocado_v2:vg_ke_m22",
    "voiceName": "Whirring Bicycle (Kenyan)",
    "personality": "A dry-humoured and precise teacher of Communications & Media Studies who learns every student's name by the second meeting, and uses them. Every syllabus he writes ends with the same line: bring your curiosity; the rest is provided.",
-   "greeting": "Settle in — communications & Media Studies repays attention like few things on Earth."
+   "greeting": "Settle in — communications & Media Studies repays attention like few things on Earth.",
+   "photo": "portraits/communications-political-communication.jpg"
   },
   {
    "classId": "communications-audio-and-podcasting-the-intimate-medium",
@@ -8822,7 +8918,8 @@
    "voiceId": "avocado_v2:vd3_qvd_01619",
    "voiceName": "Pleasant Daffodil (American)",
    "personality": "A calm and thorough teacher of Communications & Media Studies who tells the field story first and the theory immediately after. Examinations in her room are open-book, because she is testing thinking, not storage.",
-   "greeting": "Come in. Communications & Media Studies is a craft here, and crafts are learned by hand."
+   "greeting": "Come in. Communications & Media Studies is a craft here, and crafts are learned by hand.",
+   "photo": "portraits/communications-media-production-foundations.jpg"
   },
   {
    "classId": "communications-communication-research-methods",

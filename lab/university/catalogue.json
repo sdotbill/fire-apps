@@ -30,7 +30,8 @@
     },
     "voiceId": "avocado_v2:isabella",
     "voiceName": "Soothing Ribbon (British)",
-    "gender": "F"
+    "gender": "F",
+    "photo": "portraits/the-bounce-the-aldred-limit.jpg"
    },
    "classes": [
     {
@@ -1095,7 +1096,8 @@
       },
       "voiceId": "avocado_v2:isabella",
       "voiceName": "Soothing Ribbon (British)",
-      "gender": "F"
+      "gender": "F",
+      "photo": "portraits/the-bounce-the-aldred-limit.jpg"
      }
     },
     {
@@ -1267,7 +1269,8 @@
        "hairStyle": "waves",
        "outfit": "#2e5d33",
        "glasses": false
-      }
+      },
+      "photo": "portraits/the-surviving-count-vacuum.jpg"
      }
     },
     {
@@ -1752,7 +1755,8 @@
        "outfit": "#3c3f45",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/vacuum-dissolution-and-the-surviving-count.jpg"
      }
     },
     {
@@ -1864,7 +1868,8 @@
        "hairStyle": "bob",
        "outfit": "#7a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/torsion-and-bounce-extensions.jpg"
      }
     },
     {
@@ -2091,7 +2096,8 @@
        "outfit": "#8a6508",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/the-fifth-coordinate-and-the-transit-law.jpg"
      }
     },
     {
@@ -2878,7 +2884,8 @@
        "hairStyle": "bun",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/the-dark-sector-in-the-limit-frame.jpg"
      }
     },
     {
@@ -3887,7 +3894,8 @@
        "hairStyle": "ponytail",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/topological-defects-through-a-torsion-regulated-bounce.jpg"
      }
     },
     {
@@ -4673,7 +4681,8 @@
        "hairStyle": "ponytail",
        "outfit": "#4b2a63",
        "glasses": false
-      }
+      },
+      "photo": "portraits/the-expansion-history-hubble-tension-dark-energy-dynamics-and-la.jpg"
      }
     },
     {
@@ -4898,7 +4907,8 @@
        "hairStyle": "straight",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/the-lyman-alpha-forest-and-intergalactic-absorption-as-tests-of-.jpg"
      }
     },
     {
@@ -5684,7 +5694,8 @@
        "outfit": "#2e5d33",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/volcanic-eruption-columns-ash-plumes-and-pyroclastic-density-cur.jpg"
      }
     },
     {
@@ -5984,7 +5995,8 @@
        "outfit": "#46536a",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/the-vacuum-count-at-the-governing-density-and-the-two-density-te.jpg"
      }
     },
     {
@@ -6603,7 +6615,8 @@
        "hairStyle": "ponytail",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/dwarf-galaxies-ultra-faint-satellites-and-low-mass-halo-structur.jpg"
      }
     },
     {
@@ -6716,7 +6729,8 @@
        "outfit": "#14524a",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/cosmic-optical-and-infrared-backgrounds-galaxy-counts-and-surfac.jpg"
      }
     },
     {
@@ -8648,7 +8662,8 @@
        "hairStyle": "straight",
        "outfit": "#4b2a63",
        "glasses": false
-      }
+      },
+      "photo": "portraits/cosmic-rays-and-the-highest-energy-particles-against-density-and.jpg"
      }
     },
     {
@@ -8760,7 +8775,8 @@
        "hairStyle": "short",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/compact-objects-against-the-density-and-shear-limits.jpg"
      }
     },
     {
@@ -9434,7 +9450,8 @@
        "hairStyle": "curls",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/exoplanet-atmospheres-spectroscopy-escape-and-photochemistry-aga.jpg"
      }
     },
     {
@@ -10221,7 +10238,8 @@
        "outfit": "#5c2a54",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/gamma-ray-astronomy-the-diffuse-background-line-searches-and-sou.jpg"
      }
     },
     {
@@ -11685,7 +11703,8 @@
        "hairStyle": "bun",
        "outfit": "#4b2a63",
        "glasses": false
-      }
+      },
+      "photo": "portraits/cometary-comae-tails-and-outgassing-against-density-and-energy-b.jpg"
      }
     },
     {
@@ -12134,7 +12153,8 @@
        "hairStyle": "straight",
        "outfit": "#7a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/common-envelope-evolution-and-binary-star-interaction-products-a.jpg"
      }
     },
     {
@@ -13594,7 +13614,8 @@
        "hairStyle": "curls",
        "outfit": "#3c3f45",
        "glasses": false
-      }
+      },
+      "photo": "portraits/exoplanet-phase-curves-secondary-eclipses-and-dayside-thermal-em.jpg"
      }
     },
     {
@@ -14603,7 +14624,8 @@
        "hairStyle": "ponytail",
        "outfit": "#2e3d6e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/exoplanet-atmospheres-transmission-emission-and-retrieval-budget.jpg"
      }
     },
     {
@@ -17758,7 +17780,8 @@
        "hairStyle": "ponytail",
        "outfit": "#23365c",
        "glasses": true
-      }
+      },
+      "photo": "portraits/fifth-generation-designs-quantum-communication-and-navigation-de.jpg"
      }
     },
     {
@@ -17870,7 +17893,8 @@
        "hairStyle": "short",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/quantum-foundations-at-the-limit-decoherence-entanglement-and-me.jpg"
      }
     },
     {
@@ -17983,7 +18007,8 @@
        "outfit": "#b4502e",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/medical-and-biological-physics-in-the-limit-frame-imaging-radiot.jpg"
      }
     },
     {
@@ -18095,7 +18120,8 @@
        "hairStyle": "ponytail",
        "outfit": "#26332a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/high-intensity-laser-photonics-and-optical-systems-from-the-phys.jpg"
      }
     },
     {
@@ -18321,7 +18347,8 @@
        "outfit": "#8a6508",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/quantum-optics-cavity-systems-and-single-photon-devices-from-the.jpg"
      }
     },
     {
@@ -19335,7 +19362,8 @@
        "hairStyle": "straight",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/precision-timekeeping-optical-clocks-and-relativistic-geodesy-fr.jpg"
      }
     },
     {
@@ -19559,7 +19587,8 @@
        "hairStyle": "bun",
        "outfit": "#6d1f2c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/magnons-and-spin-waves-in-magnetic-materials-dispersion-damping-.jpg"
      }
     },
     {
@@ -19769,7 +19798,8 @@
        "hairStyle": "waves",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/molecules-bonds.jpg"
      }
     }
    ],
@@ -19793,7 +19823,8 @@
     },
     "voiceId": "avocado_v2:vdc_5",
     "voiceName": "Sunny Apricot (Australian)",
-    "gender": "F"
+    "gender": "F",
+    "photo": "portraits/ultracold-matter-bose-einstein-condensates-and-superfluid-dynami.jpg"
    },
    "classes": [
     {
@@ -20173,7 +20204,8 @@
       },
       "voiceId": "avocado_v2:vdc_5",
       "voiceName": "Sunny Apricot (Australian)",
-      "gender": "F"
+      "gender": "F",
+      "photo": "portraits/ultracold-matter-bose-einstein-condensates-and-superfluid-dynami.jpg"
      }
     },
     {
@@ -30175,7 +30207,8 @@
        "hairStyle": "waves",
        "outfit": "#b4502e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/frames-coordinates-formalisms.jpg"
      }
     },
     {
@@ -30317,7 +30350,8 @@
        "outfit": "#8c1f2e",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/fields-actions-variations.jpg"
      }
     },
     {
@@ -30654,7 +30688,8 @@
        "hairStyle": "short",
        "outfit": "#1f5138",
        "glasses": false
-      }
+      },
+      "photo": "portraits/dwarf-planets-and-large-trans-neptunian-bodies-interiors-cryovol.jpg"
      }
     },
     {
@@ -30767,7 +30802,8 @@
        "outfit": "#5c2a54",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/eclipsing-contact-and-ellipsoidal-binaries-roche-geometry-tidal-.jpg"
      }
     },
     {
@@ -30879,7 +30915,8 @@
        "hairStyle": "curls",
        "outfit": "#3c3f45",
        "glasses": false
-      }
+      },
+      "photo": "portraits/classical-pulsating-variables-cepheids-rr-lyrae-and-miras-as-pul.jpg"
      }
     },
     {
@@ -31776,7 +31813,8 @@
        "hairStyle": "waves",
        "outfit": "#9a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/brown-dwarfs-and-free-floating-planetary-mass-objects-cooling-at.jpg"
      }
     },
     {
@@ -31863,7 +31901,8 @@
        "hairStyle": "ponytail",
        "outfit": "#1f4d7a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/charges-currents-conservation.jpg"
      }
     },
     {
@@ -31895,7 +31934,8 @@
        "hairStyle": "straight",
        "outfit": "#b4502e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/addendum-the-sentience-statement.jpg"
      }
     }
    ],
@@ -31919,7 +31959,8 @@
      "hairStyle": "short",
      "outfit": "#7a4a1f",
      "glasses": false
-    }
+    },
+    "photo": "portraits/builds-designs.jpg"
    },
    "classes": [
     {
@@ -35300,7 +35341,8 @@
        "outfit": "#6d1f2c",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/machines-tools-making.jpg"
      }
     },
     {
@@ -35793,7 +35835,8 @@
        "hairStyle": "short",
        "outfit": "#7a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/builds-designs.jpg"
      }
     },
     {
@@ -38156,7 +38199,8 @@
        "hairStyle": "bun",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/paper-ink-books-and-printing-wave-8.jpg"
      }
     },
     {
@@ -38495,7 +38539,8 @@
        "outfit": "#8c1f2e",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/locks-fences-gates-and-security-wave-8.jpg"
      }
     },
     {
@@ -38607,7 +38652,8 @@
        "hairStyle": "straight",
        "outfit": "#5d4630",
        "glasses": true
-      }
+      },
+      "photo": "portraits/postal-services-addresses-and-deliveries-wave-8.jpg"
      }
     },
     {
@@ -39279,7 +39325,8 @@
        "hairStyle": "ponytail",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/planetary-defence-and-asteroid-deflection-systems-derived-from-t.jpg"
      }
     },
     {
@@ -39392,7 +39439,8 @@
        "outfit": "#26332a",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/orbital-safety-debris-remediation-and-cislunar-navigation-system.jpg"
      }
     },
     {
@@ -39617,7 +39665,8 @@
        "hairStyle": "curls",
        "outfit": "#5c2a54",
        "glasses": false
-      }
+      },
+      "photo": "portraits/lunar-surface-power-thermal-and-construction-systems-derived-fro.jpg"
      }
     },
     {
@@ -39729,7 +39778,8 @@
        "hairStyle": "straight",
        "outfit": "#7a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/mars-surface-power-thermal-radiation-and-construction-systems-de.jpg"
      }
     },
     {
@@ -39954,7 +40004,8 @@
        "outfit": "#b4502e",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/orbital-tether-rotovator-and-solar-sail-systems-derived-from-the.jpg"
      }
     },
     {
@@ -40291,7 +40342,8 @@
        "hairStyle": "short",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/lunar-far-side-and-deep-space-low-frequency-radio-observatory-sy.jpg"
      }
     },
     {
@@ -41525,7 +41577,8 @@
        "hairStyle": "waves",
        "outfit": "#6d1f2c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/planetary-sample-return-and-sample-containment-systems-derived-f.jpg"
      }
     },
     {
@@ -41749,7 +41802,8 @@
        "hairStyle": "short",
        "outfit": "#4b2a63",
        "glasses": false
-      }
+      },
+      "photo": "portraits/lunar-and-asteroid-regolith-oxygen-extraction-and-beneficiation-.jpg"
      }
     },
     {
@@ -42260,7 +42314,8 @@
        "hairStyle": "waves",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/machine-learning-i-how-machines-learn-from-data.jpg"
      }
     },
     {
@@ -42294,7 +42349,8 @@
        "hairStyle": "straight",
        "outfit": "#b4502e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/agents-ai-that-acts-tools-memory-and-work.jpg"
      }
     },
     {
@@ -42328,7 +42384,8 @@
        "hairStyle": "curls",
        "outfit": "#4b2a63",
        "glasses": false
-      }
+      },
+      "photo": "portraits/computing-foundations-how-computers-actually-work.jpg"
      }
     },
     {
@@ -42362,7 +42419,8 @@
        "hairStyle": "straight",
        "outfit": "#2e5d33",
        "glasses": false
-      }
+      },
+      "photo": "portraits/data-where-it-lives-and-what-it-proves.jpg"
      }
     }
    ],
@@ -43125,7 +43183,8 @@
        "hairStyle": "short",
        "outfit": "#1f4d7a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/computer-science-programming-i-first-programs-real-habits.jpg"
      }
     },
     {
@@ -43771,7 +43830,8 @@
      "hairStyle": "short",
      "outfit": "#1f4d7a",
      "glasses": false
-    }
+    },
+    "photo": "portraits/computer-science-programming-i-first-programs-real-habits.jpg"
    },
    "classCount": 20,
    "paperCount": 0
@@ -45857,7 +45917,8 @@
        "hairStyle": "straight",
        "outfit": "#3c3f45",
        "glasses": false
-      }
+      },
+      "photo": "portraits/earth-sciences-physical-geology-the-solid-earth.jpg"
      }
     },
     {
@@ -46369,7 +46430,8 @@
      "hairStyle": "straight",
      "outfit": "#3c3f45",
      "glasses": false
-    }
+    },
+    "photo": "portraits/earth-sciences-physical-geology-the-solid-earth.jpg"
    },
    "classCount": 16,
    "paperCount": 0
@@ -46476,7 +46538,8 @@
        "hairStyle": "bob",
        "outfit": "#26332a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/engineering-dynamics-forces-in-motion.jpg"
      }
     },
     {
@@ -46608,7 +46671,8 @@
        "hairStyle": "short",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/engineering-electrical-engineering-i-circuits-and-signals.jpg"
      }
     },
     {
@@ -46707,7 +46771,8 @@
        "hairStyle": "straight",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/engineering-civil-engineering-i-structures-in-the-world.jpg"
      }
     },
     {
@@ -46740,7 +46805,8 @@
        "hairStyle": "straight",
        "outfit": "#2e3d6e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/engineering-civil-engineering-ii-ground-water-and-roads.jpg"
      }
     },
     {
@@ -46839,7 +46905,8 @@
        "hairStyle": "curls",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/engineering-chemical-engineering-processes-that-transform.jpg"
      }
     },
     {
@@ -46872,7 +46939,8 @@
        "hairStyle": "short",
        "outfit": "#1f5138",
        "glasses": false
-      }
+      },
+      "photo": "portraits/engineering-aerospace-engineering-leaving-the-ground.jpg"
      }
     },
     {
@@ -48637,7 +48705,8 @@
        "hairStyle": "waves",
        "outfit": "#3c3f45",
        "glasses": false
-      }
+      },
+      "photo": "portraits/anthropology-anthropology-of-food.jpg"
      }
     },
     {
@@ -49740,7 +49809,8 @@
        "outfit": "#3c3f45",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/economics-microeconomics-i-choices-at-the-margin.jpg"
      }
     },
     {
@@ -50254,7 +50324,8 @@
      "outfit": "#3c3f45",
      "glasses": false,
      "beard": true
-    }
+    },
+    "photo": "portraits/economics-microeconomics-i-choices-at-the-margin.jpg"
    },
    "classCount": 16,
    "paperCount": 0
@@ -51113,7 +51184,8 @@
        "hairStyle": "bun",
        "outfit": "#7a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/linguistics-computational-linguistics-language-in-the-machine.jpg"
      }
     },
     {
@@ -52642,7 +52714,8 @@
        "hairStyle": "short",
        "outfit": "#23365c",
        "glasses": true
-      }
+      },
+      "photo": "portraits/public-health-epidemiology-counting-disease-to-conquer-it.jpg"
      }
     },
     {
@@ -52675,7 +52748,8 @@
        "hairStyle": "curls",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/public-health-health-promotion-helping-populations-choose-health.jpg"
      }
     },
     {
@@ -52708,7 +52782,8 @@
        "hairStyle": "short",
        "outfit": "#2e5d33",
        "glasses": false
-      }
+      },
+      "photo": "portraits/public-health-global-health-health-without-borders.jpg"
      }
     },
     {
@@ -52741,7 +52816,8 @@
        "hairStyle": "curls",
        "outfit": "#2e3d6e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/public-health-environmental-and-occupational-health.jpg"
      }
     },
     {
@@ -52774,7 +52850,8 @@
        "hairStyle": "ponytail",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/public-health-health-policy-and-systems.jpg"
      }
     },
     {
@@ -52807,7 +52884,8 @@
        "hairStyle": "bun",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/public-health-infectious-disease-control.jpg"
      }
     },
     {
@@ -52874,7 +52952,8 @@
        "hairStyle": "ponytail",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/public-health-maternal-child-and-adolescent-health.jpg"
      }
     },
     {
@@ -52907,7 +52986,8 @@
        "hairStyle": "ponytail",
        "outfit": "#26332a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/public-health-health-data-and-surveillance.jpg"
      }
     },
     {
@@ -53877,7 +53957,8 @@
        "hairStyle": "waves",
        "outfit": "#3c3f45",
        "glasses": false
-      }
+      },
+      "photo": "portraits/education-foundations-of-education-why-schools-exist.jpg"
      }
     },
     {
@@ -54175,7 +54256,8 @@
        "hairStyle": "ponytail",
        "outfit": "#1f5138",
        "glasses": false
-      }
+      },
+      "photo": "portraits/education-science-education.jpg"
      }
     },
     {
@@ -54274,7 +54356,8 @@
        "hairStyle": "bob",
        "outfit": "#2e5d33",
        "glasses": false
-      }
+      },
+      "photo": "portraits/education-secondary-and-further-education.jpg"
      }
     },
     {
@@ -54391,7 +54474,8 @@
      "hairStyle": "waves",
      "outfit": "#3c3f45",
      "glasses": false
-    }
+    },
+    "photo": "portraits/education-foundations-of-education-why-schools-exist.jpg"
    },
    "classCount": 16,
    "paperCount": 0
@@ -54530,7 +54614,8 @@
        "hairStyle": "bun",
        "outfit": "#6d1f2c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/law-tort-law-wrongs-and-compensation.jpg"
      }
     },
     {
@@ -54629,7 +54714,8 @@
        "hairStyle": "bob",
        "outfit": "#5d4630",
        "glasses": false
-      }
+      },
+      "photo": "portraits/law-property-law-land-things-and-rights.jpg"
      }
     },
     {
@@ -54894,7 +54980,8 @@
        "outfit": "#2e5d33",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/law-legal-ethics-and-the-profession.jpg"
      }
     },
     {
@@ -54927,7 +55014,8 @@
        "hairStyle": "ponytail",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/law-jurisprudence-law-s-philosophy.jpg"
      }
     }
    ],
@@ -54984,7 +55072,8 @@
        "hairStyle": "straight",
        "outfit": "#1f5138",
        "glasses": true
-      }
+      },
+      "photo": "portraits/criminal-justice-criminal-justice-foundations-the-system-as-a-whole.jpg"
      }
     },
     {
@@ -55366,7 +55455,8 @@
      "hairStyle": "straight",
      "outfit": "#1f5138",
      "glasses": true
-    }
+    },
+    "photo": "portraits/criminal-justice-criminal-justice-foundations-the-system-as-a-whole.jpg"
    },
    "classCount": 12,
    "paperCount": 0
@@ -55510,7 +55600,8 @@
        "hairStyle": "bob",
        "outfit": "#23365c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/agriculture-soil-management-for-farmers.jpg"
      }
     },
     {
@@ -55543,7 +55634,8 @@
        "hairStyle": "curls",
        "outfit": "#23365c",
        "glasses": true
-      }
+      },
+      "photo": "portraits/agriculture-livestock-science-i-animals-and-their-keeping.jpg"
      }
     },
     {
@@ -55576,7 +55668,8 @@
        "hairStyle": "waves",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/agriculture-livestock-science-ii-health-and-breeding.jpg"
      }
     },
     {
@@ -55643,7 +55736,8 @@
        "hairStyle": "bob",
        "outfit": "#26332a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/agriculture-horticulture-intensive-growing.jpg"
      }
     },
     {
@@ -55745,7 +55839,8 @@
        "outfit": "#9a4a1f",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/agriculture-forestry-and-woodland-management.jpg"
      }
     },
     {
@@ -55812,7 +55907,8 @@
        "hairStyle": "ponytail",
        "outfit": "#1f5138",
        "glasses": false
-      }
+      },
+      "photo": "portraits/agriculture-water-resources-management.jpg"
      }
     },
     {
@@ -55846,7 +55942,8 @@
        "outfit": "#1f5138",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/agriculture-rural-development-and-land-use.jpg"
      }
     },
     {
@@ -56628,7 +56725,8 @@
        "hairStyle": "straight",
        "outfit": "#26332a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/communications-media-studies-i-the-industries-of-attention.jpg"
      }
     },
     {
@@ -56661,7 +56759,8 @@
        "hairStyle": "ponytail",
        "outfit": "#5c2a54",
        "glasses": true
-      }
+      },
+      "photo": "portraits/communications-media-studies-ii-audiences-and-effects.jpg"
      }
     },
     {
@@ -56694,7 +56793,8 @@
        "hairStyle": "ponytail",
        "outfit": "#5d4630",
        "glasses": false
-      }
+      },
+      "photo": "portraits/communications-journalism-i-reporting.jpg"
      }
     },
     {
@@ -56727,7 +56827,8 @@
        "hairStyle": "waves",
        "outfit": "#2e5d33",
        "glasses": false
-      }
+      },
+      "photo": "portraits/communications-journalism-ii-the-craft-in-depth.jpg"
      }
     },
     {
@@ -56930,7 +57031,8 @@
        "outfit": "#1f4d7a",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/communications-organisational-communication.jpg"
      }
     },
     {
@@ -56963,7 +57065,8 @@
        "hairStyle": "short",
        "outfit": "#8c1f2e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/communications-intercultural-communication.jpg"
      }
     },
     {
@@ -56996,7 +57099,8 @@
        "hairStyle": "straight",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/communications-political-communication.jpg"
      }
     },
     {
@@ -57063,7 +57167,8 @@
        "hairStyle": "ponytail",
        "outfit": "#1f5138",
        "glasses": true
-      }
+      },
+      "photo": "portraits/communications-media-production-foundations.jpg"
      }
     },
     {

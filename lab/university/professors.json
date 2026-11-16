@@ -18,7 +18,8 @@
     },
     "voiceId": "avocado_v2:isabella",
     "voiceName": "Soothing Ribbon (British)",
-    "gender": "F"
+    "gender": "F",
+    "photo": "portraits/the-bounce-the-aldred-limit.jpg"
    }
   },
   {
@@ -141,7 +142,8 @@
     },
     "voiceId": "avocado_v2:vdc_5",
     "voiceName": "Sunny Apricot (Australian)",
-    "gender": "F"
+    "gender": "F",
+    "photo": "portraits/ultracold-matter-bose-einstein-condensates-and-superfluid-dynami.jpg"
    }
   },
   {
@@ -221,7 +223,8 @@
      "hairStyle": "short",
      "outfit": "#7a4a1f",
      "glasses": false
-    }
+    },
+    "photo": "portraits/builds-designs.jpg"
    }
   },
   {
@@ -364,7 +367,8 @@
      "hairStyle": "short",
      "outfit": "#1f4d7a",
      "glasses": false
-    }
+    },
+    "photo": "portraits/computer-science-programming-i-first-programs-real-habits.jpg"
    }
   },
   {
@@ -467,7 +471,8 @@
      "hairStyle": "straight",
      "outfit": "#3c3f45",
      "glasses": false
-    }
+    },
+    "photo": "portraits/earth-sciences-physical-geology-the-solid-earth.jpg"
    }
   },
   {
@@ -610,7 +615,8 @@
      "outfit": "#3c3f45",
      "glasses": false,
      "beard": true
-    }
+    },
+    "photo": "portraits/economics-microeconomics-i-choices-at-the-margin.jpg"
    }
   },
   {
@@ -793,7 +799,8 @@
      "hairStyle": "waves",
      "outfit": "#3c3f45",
      "glasses": false
-    }
+    },
+    "photo": "portraits/education-foundations-of-education-why-schools-exist.jpg"
    }
   },
   {
@@ -833,7 +840,8 @@
      "hairStyle": "straight",
      "outfit": "#1f5138",
      "glasses": true
-    }
+    },
+    "photo": "portraits/criminal-justice-criminal-justice-foundations-the-system-as-a-whole.jpg"
    }
   },
   {
