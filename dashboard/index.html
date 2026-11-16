@@ -7,6 +7,40 @@
 <link rel="icon" type="image/png" href="/assets/baby-dave-64.png">
 <link rel="apple-touch-icon" href="/assets/baby-dave-180.png">
 <meta name="robots" content="noindex, nofollow">
+<!-- Build stamp (parity convergence, Nov 16 2026): ONE dashboard, one
+     source of truth. The stamp names the repo revision this copy was
+     minted from (dashboard/stamp-build.sh rewrites it at build time).
+     The self-check below compares the RUNNING copy's stamp against the
+     SERVED copy's stamp and reloads once if they differ — so a copy
+     held in an installed app's memory across a deploy converges to the
+     live build instead of drifting (Bill, Nov 16 02:01 EST: the app
+     showed an old rail while the site was already correct). -->
+<meta name="x-dash-build" content="a660f701-20261116T0710">
+<script>
+(function(){
+  var mine = document.querySelector('meta[name="x-dash-build"]');
+  mine = mine && mine.getAttribute("content");
+  if(!mine || mine === "unstamped" || !window.fetch) return;
+  function check(){
+    fetch(location.pathname + "?_stampcheck=" + Date.now(), {cache:"no-store"})
+      .then(function(r){ return r.text(); })
+      .then(function(html){
+        var m = html.match(/name="x-dash-build"\s+content="([^"]+)"/);
+        if(!m || m[1] === mine) return;
+        try{
+          if(sessionStorage.getItem("dash-stamp-reloaded") === m[1]) return;
+          sessionStorage.setItem("dash-stamp-reloaded", m[1]);
+        }catch(e){ return; }
+        location.reload();
+      })
+      .catch(function(){});
+  }
+  window.addEventListener("load", function(){ setTimeout(check, 1500); });
+  document.addEventListener("visibilitychange", function(){
+    if(document.visibilityState === "visible") check();
+  });
+})();
+</script>
 <link rel="manifest" href="/dashboard/manifest.webmanifest">
 <meta name="theme-color" content="#c9a227">
 <meta name="mobile-web-app-capable" content="yes">
