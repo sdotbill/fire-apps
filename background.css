@@ -129,3 +129,22 @@ footer a{color:var(--ink-soft)}
 footer a:hover{color:var(--gold-deep)}
 /* ---------- responsive ---------- */
 @media (max-width:760px){body{font-size:16px}.paper-list{grid-template-columns:1fr}}
+
+/* ---------- hamburger menu + company footer (site chrome, Nov 15, 2026) ---------- */
+.menurow{display:flex;align-items:center;padding:14px 0 2px}
+.hamb{position:relative;flex:none;border:0;background:transparent;padding:0;margin:0}
+.hamb summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:transparent;border:1px solid var(--line);color:var(--ink);font-family:inherit;font-weight:700;font-size:1.05rem;line-height:1;padding:0;border-radius:50%;white-space:nowrap}
+.hamb summary::-webkit-details-marker{display:none}
+.hamb summary:hover{border-color:var(--gold-deep);color:var(--gold-deep)}
+.hamb summary:focus-visible{outline:2px solid var(--gold-deep);outline-offset:2px}
+.hambpanel{position:absolute;left:0;top:calc(100% + 10px);width:min(240px,calc(100vw - 24px));background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 22px 54px rgba(42,33,24,.28);padding:10px;z-index:80}
+.hambpanel a{display:block;padding:11px 14px;border-radius:10px;color:var(--ink);text-decoration:none;font-weight:600;font-size:1rem}
+.hambpanel a:hover{background:var(--paper2);color:var(--gold-deep)}
+.sitefoot{margin-top:64px;background:var(--dark);color:#e9e2cd}
+.sitefoot .wrap{padding-top:34px;padding-bottom:30px}
+.sitefoot .fname{font-size:1.3rem}
+.sitefoot nav{display:flex;flex-wrap:wrap;gap:3px 16px;margin-top:14px;font-size:.85rem;line-height:1.9}
+.sitefoot nav a{color:#cbbd8d;text-decoration:none}
+.sitefoot nav a:hover{color:var(--gold-bright);text-decoration:underline}
+.sitefoot .fine{margin-top:16px;font-size:.8rem;color:#a99c72}
+.sitefoot .fine a{color:#cbbd8d}

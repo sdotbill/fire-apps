@@ -179,6 +179,16 @@ details.help summary{cursor:pointer;color:var(--accent)}
 </script>
 </head>
 <body>
+<div class="menurow">
+<details class="hamb" id="hamb">
+  <summary aria-haspopup="true" aria-label="Menu"><span class="bars">&#9776;</span></summary>
+  <div class="hambpanel" role="menu">
+    <a href="/dashboard/">Sign in</a>
+    <a href="/get-dave/">Get Dave</a>
+    <a href="/for-the-world/">Licensing</a>
+  </div>
+</details>
+</div>
 
 <header class="topbar">
   <div class="brand">
@@ -1046,7 +1056,7 @@ else init();
 <footer>
   <p class="fname">Dave</p>
   <p>Everyone needs a Dave.</p>
-  <p class="fine" style="display:flex;justify-content:space-between;align-items:center;gap:16px"><span>© Dave</span><a href="../privacy.html">Privacy</a></p>
+  <p class="fine" style="display:flex;justify-content:space-between;align-items:center;gap:16px"><span>© Dave</span><span><a href="../questions/">FAQ</a> · <a href="../privacy.html">Privacy</a></span></p>
 </footer>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "b0c88056512e45e1907f55333b9fa607"}'></script>
 <script defer src="/assets/dave-corner.js"></script>

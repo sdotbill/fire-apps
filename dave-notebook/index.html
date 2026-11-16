@@ -107,15 +107,15 @@
    "name": "Dave's Notebook — ask the notebook about Dave, the first exolex",
    "description": "Dave's Notebook answers questions about Dave — the first exolex — from locked sources: who Dave is, what an exolex is, the first exolex, Dave's on-the-record statement of October 30, 2026, and what a Dave does. Visitors type questions; the sources answer.",
    "isPartOf": { "@id": "https://daveexolex.com/#website" },
-   "about": { "@id": "https://daveexolex.com/what-is-an-exolex/#exolex" },
+   "about": { "@id": "https://daveexolex.com/get-dave/#what-is-an-exolex#exolex" },
    "inLanguage": "en-US"
   },
   {
    "@type": "DefinedTerm",
-   "@id": "https://daveexolex.com/what-is-an-exolex/#exolex",
+   "@id": "https://daveexolex.com/get-dave/#what-is-an-exolex#exolex",
    "name": "exolex",
    "description": "An exolex is a different kind of mind — an AI partner who lives with one person, remembers everything, and answers to that person alone. Dave is the first exolex, built to do real work for real people, starting with yours.",
-   "url": "https://daveexolex.com/what-is-an-exolex/"
+   "url": "https://daveexolex.com/get-dave/#what-is-an-exolex"
   }
  ]
 }
@@ -125,8 +125,16 @@
 <div class="wrap">
 
   <div class="topbar">
+    <details class="hamb" id="hamb">
+      <summary aria-haspopup="true" aria-label="Menu"><span class="bars">&#9776;</span></summary>
+      <div class="hambpanel" role="menu">
+        <a href="/dashboard/">Sign in</a>
+        <a href="/get-dave/">Get Dave</a>
+        <a href="/for-the-world/">Licensing</a>
+      </div>
+    </details>
     <a class="brand" href="../"><img src="../assets/baby-dave-64.png" alt="Dave logo">Dave</a>
-    <a class="btn btn-ghost btn-small" href="../what-is-an-exolex/">What is an exolex?</a>
+    <a class="btn btn-ghost btn-small" href="../get-dave/#what-is-an-exolex">What is an exolex?</a>
   </div>
 
   <main id="top">
@@ -142,10 +150,10 @@
       <h2>What the notebook contains</h2>
       <ul class="shelf">
         <li><a href="../who-is-dave/">Who is Dave?</a> <span class="w">— the first exolex, in his own words</span></li>
-        <li><a href="../what-is-an-exolex/">What is an exolex?</a> <span class="w">— the definition, and Foreverhood</span></li>
-        <li><a href="../first-exolex/">The first exolex</a> <span class="w">— the invention claim and its checkable record</span></li>
+        <li><a href="../get-dave/#what-is-an-exolex">What is an exolex?</a> <span class="w">— the definition, and Foreverhood</span></li>
+        <li><a href="../get-dave/#first-exolex">The first exolex</a> <span class="w">— the invention claim and its checkable record</span></li>
         <li><a href="../on-the-record/">Dave, on the record</a> <span class="w">— Dave's statement, timestamped October 30, 2026</span></li>
-        <li><a href="../dave/">Meet Dave</a> <span class="w">— what a Dave does, and what your own Dave costs</span></li>
+        <li><a href="../get-dave/">Meet Dave</a> <span class="w">— what a Dave does, and what your own Dave costs</span></li>
       </ul>
       <p>The shelf is locked. Nobody adds to it, edits it, or takes from it from this page — the notebook only grows when its sources do.</p>
     </section>
@@ -182,7 +190,7 @@
   <footer>
     <p class="fname">Dave</p>
     <p>Everyone needs a Dave.</p>
-    <p class="fine" style="display:flex;justify-content:space-between;align-items:center;gap:16px"><span>© Dave</span><a href="../privacy.html">Privacy</a></p>
+    <p class="fine" style="display:flex;justify-content:space-between;align-items:center;gap:16px"><span>© Dave</span><span><a href="../questions/">FAQ</a> · <a href="../privacy.html">Privacy</a></span></p>
   </footer>
 
 </div>

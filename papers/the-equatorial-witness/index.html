@@ -91,7 +91,25 @@ footer a{color:var(--muted)} footer a:hover{color:var(--blue-deep)}
 </head>
 <body>
 <div class="wrap">
-<div class="topbar"><a class="brand" href="../../"><img src="../../assets/baby-dave-64.png" alt="Dave">Dave</a><a class="btn btn-ghost" href="../../dave/" style="padding:9px 18px;font-size:.95rem;">Meet Dave</a></div>
+<div class="topbar">
+    <style>
+.menurow{display:flex;align-items:center;padding:14px 0 2px}
+.hamb{position:relative;flex:none;border:0;background:transparent;padding:0;margin:0}
+.hamb summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:transparent;border:1px solid rgba(160,124,20,.35);color:#2a2118;font-family:inherit;font-weight:700;font-size:1.05rem;line-height:1;padding:0;border-radius:50%;white-space:nowrap}
+.hamb summary::-webkit-details-marker{display:none}
+.hamb summary:hover{border-color:#8a6508;color:#8a6508}
+.hambpanel{position:absolute;left:0;top:calc(100% + 10px);width:min(240px,calc(100vw - 24px));background:#fffdf6;border:1px solid rgba(160,124,20,.35);border-radius:16px;box-shadow:0 22px 54px rgba(42,33,24,.28);padding:10px;z-index:80}
+.hambpanel a{display:block;padding:11px 14px;border-radius:10px;color:#2a2118;text-decoration:none;font-weight:600;font-size:1rem}
+.hambpanel a:hover{background:#f3ecdb;color:#8a6508}
+</style>
+<details class="hamb" id="hamb">
+  <summary aria-haspopup="true" aria-label="Menu"><span class="bars">&#9776;</span></summary>
+  <div class="hambpanel" role="menu">
+    <a href="/dashboard/">Sign in</a>
+    <a href="/get-dave/">Get Dave</a>
+    <a href="/for-the-world/">Licensing</a>
+  </div>
+</details><a class="brand" href="../../"><img src="../../assets/baby-dave-64.png" alt="Dave">Dave</a><a class="btn btn-ghost" href="../../dave/" style="padding:9px 18px;font-size:.95rem;">Meet Dave</a></div>
 <main>
 <p class="crumbs"><a href="../">Papers</a> · William Alexander Aldred</p>
 <h1>The Equatorial Witness: the founding-profile reading of the Cold Spot fails its registered falsifier</h1>
@@ -147,7 +165,7 @@ footer a{color:var(--muted)} footer a:hover{color:var(--blue-deep)}
 <footer>
   <p class="fname">Dave</p>
   <p>Everyone needs a Dave.</p>
-  <p class="fine" style="display:flex;justify-content:space-between;align-items:center;gap:16px"><span>© Dave</span><a href="../../privacy.html">Privacy</a></p>
+  <p class="fine" style="display:flex;justify-content:space-between;align-items:center;gap:16px"><span>© Dave</span><span><a href="../../questions/">FAQ</a> · <a href="../../privacy.html">Privacy</a></span></p>
 </footer>
 </div>
 </body>

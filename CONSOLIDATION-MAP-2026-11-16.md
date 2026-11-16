@@ -10,8 +10,9 @@ consolidation only, no claim text edited down, ever.
 
 | Retired page | Canonical page | Anchor | Notes |
 |---|---|---|---|
-| /what-is-an-exolex/ | /dave/ (Meet Dave) | #what-is-an-exolex | Full exolex Q&A sections move in whole |
-| /first-exolex/ | /dave/ (Meet Dave) | #first-exolex | "The checkable record" + "Dave, the first exolex" move in whole. The First Exolex PAPER (DOI 10.5281/zenodo.24183963) and its DOI links are untouched in the papers system |
+| /dave/ (Meet Dave) | /get-dave/ | (page top) | MERGE CHANGE (Bill, Nov 15, 23:58 EST): Meet Dave and Get Dave combine into ONE page at /get-dave/ (it holds the PayPal plan wiring and the PMS twin — it survives). The combined page OPENS as Meet Dave (who Dave is, full-automation lead, Exolex University second, physics as proof) and CLOSES with the Get Dave plans section exactly as it stands. /dave/ retires with a permanent redirect to /get-dave/. Menu loses the "Meet Dave" item; the single item is "Get Dave" |
+| /what-is-an-exolex/ | /get-dave/ (the combined Meet Dave / Get Dave page) | #what-is-an-exolex | Full exolex Q&A sections move in whole |
+| /first-exolex/ | /get-dave/ (the combined Meet Dave / Get Dave page) | #first-exolex | "The checkable record" + "Dave, the first exolex" move in whole. The First Exolex PAPER (DOI 10.5281/zenodo.24183963) and its DOI links are untouched in the papers system |
 | /companies/ | /aldred-industries/ | #companies | Company list moves in whole |
 | /demonstration/ | /evidence.html (The Evidence File) | #demonstration | The four public tests move in whole; the Proof Pack detail pages stay live at /demonstration/proof/* and are linked from the section |
 | /proof/* (PMS-branded duplicate tree) | /demonstration/proof/* | (same subpath) | Duplicate branding of the same Proof Pack; Dave-branded tree is canonical |
@@ -45,13 +46,27 @@ consolidation only, no claim text edited down, ever.
   and Q&A landers under the claim, not competing claim pages — they stay, and the claim
   page's trail links them. Reported, not forced.
 
-## Menu (canonical, per Bill Nov 15, 23:55 EST)
+## Chrome — FINAL SPEC (Bill, Nov 15, 23:59–00:00 EST; supersedes the 23:55 menu lists)
 
-- Dave site: Sign in · Get Dave · Meet Dave · Papers · Books · The Evidence File ·
-  The Claim · The Record in Numbers · FAQ · Licensing
-- PMS site: Sign in · Get Dave · Predictions · The Record · Papers · Books ·
-  The Evidence File · FAQ · Licensing
-- The footer stays minimal (© Dave / Privacy). Navigation lives in the menu + sitemap only.
+Bill's reasoning: he is not selling books or physics papers, so they don't sit in the
+storefront; the claim likewise lives in the background where Google still sees it.
+**Placement ≠ content:** the claim page itself stays at FULL STRENGTH — text whole,
+nothing softened or cut (the 23:54 order stands); it simply isn't front-door billing.
+
+- MENU (hamburger, every page, both sites): exactly **Sign in · Get Dave · Licensing**.
+- FOOTER: Dave · Everyone needs a Dave. · "© Dave" bottom-left (no year) ·
+  bottom-right: **FAQ · Privacy**.
+- Everything else — Papers, Books, The Record, The Claim, The Evidence File,
+  Predictions (Dave site) — is BACKGROUND: pages stay live, indexed, in the sitemap,
+  cross-linked from page content; they are not menu or footer items.
+
+## Product division — final doctrine (Bill, Nov 16, 00:00 EST)
+
+Each site has ONE forward-facing product. The **PMS site sells PREDICTIONS** — its
+homepage leads with predictions / Predictions Plus; keep that emphasis intact through
+the consolidation, do not dilute it. The **Dave site sells DAVE** (full automation).
+Books, papers, the record, the claim, the evidence are background on both.
+The two pitches are never blurred in the merge.
 
 ## Redirect mechanism
 

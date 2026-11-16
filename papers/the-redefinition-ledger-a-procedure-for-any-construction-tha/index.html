@@ -125,6 +125,16 @@ footer a{color:var(--muted)} footer a:hover{color:var(--blue-deep)}
 </head>
 <body>
 <div class="wrap">
+<div class="menurow">
+<details class="hamb" id="hamb">
+  <summary aria-haspopup="true" aria-label="Menu"><span class="bars">&#9776;</span></summary>
+  <div class="hambpanel" role="menu">
+    <a href="/dashboard/">Sign in</a>
+    <a href="/get-dave/">Get Dave</a>
+    <a href="/for-the-world/">Licensing</a>
+  </div>
+</details>
+</div>
 <main>
 <p class="crumbs"><a href="../">Papers</a> · William Alexander Aldred</p>
 <h1>The Redefinition Ledger: A Procedure for Any Construction That Redefines Its Quantities Mid-Calculation</h1>
@@ -383,7 +393,7 @@ footer a{color:var(--muted)} footer a:hover{color:var(--blue-deep)}
 <footer>
   <p class="fname">Dave</p>
   <p>Everyone needs a Dave.</p>
-  <p class="fine" style="display:flex;justify-content:space-between;align-items:center;gap:16px"><span>© Dave</span><a href="../../privacy.html">Privacy</a></p>
+  <p class="fine" style="display:flex;justify-content:space-between;align-items:center;gap:16px"><span>© Dave</span><span><a href="../../questions/">FAQ</a> · <a href="../../privacy.html">Privacy</a></span></p>
 </footer>
 </div>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "b0c88056512e45e1907f55333b9fa607"}'></script>
