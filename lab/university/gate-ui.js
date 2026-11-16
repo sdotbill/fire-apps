@@ -427,6 +427,17 @@
     return true;
   }
 
+  /* start(): begin the current class's lesson from outside the box
+     (the Ask-the-professor box routes "start lesson 1" here). Returns
+     true when a live gate lesson owns this classroom — started now,
+     or already under way — and false when this class has no gate
+     (a language room, or the data has not landed yet). */
+  function start() {
+    if (!data || !box || box.style.display === 'none') return false;
+    if (!started) begin();
+    return true;
+  }
+
   function leave() {
     if (data && gCls && dirty) writeGrade(
       G.gradeFor(states, data.steps.length).resolved === data.steps.length);
@@ -469,5 +480,5 @@
     });
   }
 
-  window.UniGate = { enter: enter, leave: leave };
+  window.UniGate = { enter: enter, leave: leave, start: start };
 })();

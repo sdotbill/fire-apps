@@ -1,0 +1,209 @@
+/* Browser verification for the AI & Computing syllabus path and the
+   lesson-start wiring (Bill, Nov 16 2026: "I want to be able to do
+   the full syllabus for AI and computing — that's where I want to
+   start my schooling").
+   Drives, in headless Chrome:
+     1. the catalogue: the AI & Computing section renders as a
+        numbered path (catalogue order, fundamentals first), every
+        class "Not started" with a Start door;
+     2. a seeded class-grade in dave_lab_log marks Machine Learning I
+        Completed on the path after reload;
+     3. the AI Fundamentals classroom: entering presents gated step 1
+        ready to begin; a WRONG answer holds the step with the
+        re-teach; the RIGHT answer lands the big green check and
+        advances; the pass is recorded in the log;
+     4. the Ask-the-professor box: "lets start lesson 1" STARTS the
+        gated lesson (no live-office-hours deflection);
+     5. back at the catalogue door, the path now shows AI
+        Fundamentals "In progress — 1 step landed / Continue".
+   Run: NODE_PATH=<owner-lane browser node_modules> node verify-ai-path.cjs <baseUrl>
+*/
+'use strict';
+const puppeteer = require('puppeteer-core');
+
+const BASE = process.argv[2] || 'http://127.0.0.1:8933/';
+const EXE = '/home/hatch/.cache/puppeteer/chrome/linux-156.0.8078.47/chrome-linux64/chrome';
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+let failures = 0;
+function check(name, cond, extra) {
+  console.log((cond ? 'PASS ' : 'FAIL ') + name + (extra ? ' — ' + extra : ''));
+  if (!cond) failures++;
+}
+
+const AI_SEC = 'ai-computing';
+const AI_FUND = 'ai-fundamentals-what-a-mind-made-of-math-is';
+const ML_I = 'machine-learning-i-how-machines-learn-from-data';
+const EXPECTED_ORDER = [/AI Fundamentals/, /Machine Learning I/, /^Agents/,
+                        /Computing Foundations/, /^Data —/];
+
+async function openSection(page) {
+  const det = await page.$('details.section[data-section="' + AI_SEC + '"]');
+  if (!det) throw new Error('ai-computing section not rendered');
+  const open = await page.evaluate(
+    el => el.open, det);
+  if (!open) await page.$eval(
+    'details.section[data-section="' + AI_SEC + '"] summary',
+    el => el.click());
+  await sleep(300);
+}
+const pathRows = page => page.$$eval(
+  'details.section[data-section="' + AI_SEC + '"] .pathRow',
+  els => els.map(e => ({
+    n: e.querySelector('.pnum').textContent.trim(),
+    title: e.querySelector('.ct').textContent.trim(),
+    prog: e.querySelector('.pprog').textContent.trim(),
+    btn: e.querySelector('button').textContent.trim(),
+    cls: e.className
+  })));
+const q = page => page.$eval('#gtQ', el => el.textContent);
+const logOf = page => page.evaluate(
+  () => JSON.parse(localStorage.getItem('dave_lab_log') || '[]'));
+
+(async () => {
+  const browser = await puppeteer.launch({
+    executablePath: EXE, headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage',
+           '--disable-gpu', '--no-first-run', '--no-proxy-server',
+           '--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream',
+           '--autoplay-policy=no-user-gesture-required', '--window-size=1280,1000']
+  });
+  const page = await browser.newPage();
+  await page.setViewport({ width: 1280, height: 1000 });
+  page.on('pageerror', e => console.log('PAGE ERROR:', e.message));
+
+  /* ============ 1. the path renders, in order, all unstarted ============ */
+  await page.goto(BASE, { waitUntil: 'networkidle2', timeout: 60000 });
+  await page.waitForSelector('details.section[data-section="' + AI_SEC + '"]',
+    { timeout: 20000 });
+  await openSection(page);
+  let rows = await pathRows(page);
+  check('path has 5 classes', rows.length === 5, String(rows.length));
+  check('path is numbered 1–5 in order',
+    rows.map(r => r.n).join(',') === '1,2,3,4,5', rows.map(r => r.n).join(','));
+  check('path order is the catalogue order (fundamentals first)',
+    rows.every((r, i) => EXPECTED_ORDER[i].test(r.title)),
+    rows.map(r => r.title).join(' | '));
+  check('every class starts unstarted, with a Start door',
+    rows.every(r => r.prog === 'Not started' && r.btn === 'Start →'),
+    rows.map(r => r.prog + '/' + r.btn).join(' | '));
+
+  /* ============ 2. a completed grade shows on the path ============ */
+  await page.evaluate((mlId) => {
+    const log = JSON.parse(localStorage.getItem('dave_lab_log') || '[]');
+    log.push({
+      date: new Date().toISOString(), minutes: 0, stations: ['university'],
+      stepsCompleted: 4, classId: mlId,
+      classTitle: 'Machine Learning I — How Machines Learn From Data',
+      kind: 'class-grade', passed: 4, skipped: 0, total: 4,
+      attempts: 5, percent: 100, complete: true
+    });
+    localStorage.setItem('dave_lab_log', JSON.stringify(log));
+  }, ML_I);
+  await page.reload({ waitUntil: 'networkidle2' });
+  await page.waitForSelector('details.section[data-section="' + AI_SEC + '"]',
+    { timeout: 20000 });
+  await openSection(page);
+  rows = await pathRows(page);
+  check('Machine Learning I shows Completed from the record',
+    /✓ Completed/.test(rows[1].prog) && rows[1].btn === 'Review the lesson →',
+    rows[1].prog + ' / ' + rows[1].btn);
+  check('AI Fundamentals still Not started',
+    rows[0].prog === 'Not started', rows[0].prog);
+
+  /* ============ 3. AI Fundamentals: the gated lesson ============ */
+  await page.goto(BASE + '#class/' + AI_SEC + '/' + AI_FUND,
+    { waitUntil: 'networkidle2', timeout: 60000 });
+  await page.waitForSelector('#gateBox', { visible: true, timeout: 20000 });
+  const q0 = await q(page);
+  check('entering the class presents gated step 1',
+    /actually names/.test(q0), q0.slice(0, 70));
+  const beginVisible = await page.$eval('#gtBegin',
+    el => el.style.display !== 'none');
+  check('the Begin door is showing — starting is the first move', beginVisible);
+  await page.screenshot({ path: 'ai-shot-1-lesson-presented.png' });
+  await page.click('#gtBegin');
+  await sleep(600);
+
+  /* wrong answer: HOLD + re-teach, no green check */
+  await page.$eval('#gtInput', el => { el.value = 'quantum bananas from outer space'; });
+  await page.click('#gtCheck');
+  await page.waitForFunction(
+    () => /teaches it again/.test(document.getElementById('gtStatus').textContent),
+    { timeout: 15000 });
+  check('wrong answer holds the step (no advance)',
+    /actually names/.test(await q(page)));
+  const checkOnMiss = await page.evaluate(
+    () => document.getElementById('trBoardCheck').classList.contains('on'));
+  check('no green check on a miss', !checkOnMiss);
+
+  /* right answer: green check + advance */
+  await page.waitForFunction(
+    () => /Try again/.test(document.getElementById('gtStatus').textContent),
+    { timeout: 30000 });
+  let checkSeen = false;
+  const watcher = (async () => {
+    for (let i = 0; i < 80 && !checkSeen; i++) {
+      const on = await page.evaluate(
+        () => document.getElementById('trBoardCheck').classList.contains('on')
+      ).catch(() => false);
+      if (on) {
+        checkSeen = true;
+        await page.screenshot({ path: 'ai-shot-2-greencheck.png' });
+      }
+      await sleep(150);
+    }
+  })();
+  await page.$eval('#gtInput',
+    el => { el.value = 'Data, parameters, and training: the three ingredients'; });
+  await page.click('#gtCheck');
+  await page.waitForFunction(
+    () => /Step 2 of/.test(document.getElementById('gtProgress').textContent),
+    { timeout: 30000 });
+  check('right answer advances to step 2', true);
+  await watcher;
+  check('big green check appeared on the board', checkSeen);
+  const log1 = await logOf(page);
+  check('the pass is recorded in the University record',
+    log1.some(e => e.kind === 'gate-step' && e.classId === AI_FUND &&
+      e.step === 0 && e.status === 'pass'));
+
+  /* ============ 4. the Ask box: "lets start lesson 1" ============ */
+  await page.reload({ waitUntil: 'networkidle2' });
+  await page.waitForSelector('#gateBox', { visible: true, timeout: 20000 });
+  await sleep(400);
+  await page.click('.deskbar button[data-panel="ask"]');
+  await page.$eval('#askInput', el => { el.value = 'lets start lesson 1'; });
+  await page.click('#btnAsk');
+  await sleep(800);
+  const lessonOpen = await page.$eval('#panel-lesson',
+    el => el.classList.contains('open'));
+  check('ask intent switches to the lesson panel', lessonOpen);
+  const inputShown = await page.$eval('#gtInput',
+    el => el.style.display !== 'none');
+  const checkShown = await page.$eval('#gtCheck',
+    el => el.style.display !== 'none');
+  check('ask intent STARTS the gated lesson (answer box + check live)',
+    inputShown && checkShown);
+  const askText = await page.$eval('#askLog', el => el.textContent);
+  check('no live-office-hours deflection',
+    !/live office hours/.test(askText), askText.slice(0, 90));
+  check('the professor answers as a beginning, not a refusal',
+    /Then we begin/.test(askText));
+
+  /* ============ 5. the path reflects the work, live ============ */
+  await page.click('#backDoor');
+  await sleep(500);
+  await openSection(page);
+  rows = await pathRows(page);
+  check('AI Fundamentals now In progress — 1 step landed, Continue door',
+    /In progress — 1 step landed/.test(rows[0].prog) &&
+    rows[0].btn === 'Continue →',
+    rows[0].prog + ' / ' + rows[0].btn);
+  check('Machine Learning I still Completed',
+    /✓ Completed/.test(rows[1].prog), rows[1].prog);
+  await page.screenshot({ path: 'ai-shot-3-path-progress.png' });
+
+  await browser.close();
+  console.log(failures ? `\n${failures} FAILURES` : '\nALL AI-PATH BROWSER CHECKS PASSED');
+  process.exit(failures ? 1 : 0);
+})().catch(e => { console.error('VERIFY ERROR:', e.message); process.exit(2); });

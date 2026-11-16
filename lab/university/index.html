@@ -63,6 +63,18 @@
     color:var(--gold-deep);border:1px solid var(--line);border-radius:10px;padding:1px 8px}
   .classRow button{white-space:nowrap}
   #noMatch{display:none;color:var(--ink-soft);font-style:italic;padding:12px 0}
+  /* ---------- the syllabus path (AI & Computing) ---------- */
+  .pathNote{font-size:.92rem;color:var(--ink-soft);margin:10px 0 2px}
+  .pathRow .pnum{flex:0 0 auto;width:30px;height:30px;border-radius:50%;
+    border:2px solid var(--gold);color:var(--gold-deep);font-weight:bold;
+    display:flex;align-items:center;justify-content:center;font-size:.95rem;
+    align-self:center;background:var(--paper)}
+  .pathRow.done .pnum{background:#46a35a;border-color:#46a35a;color:#fff}
+  .pathRow.doing .pnum{background:var(--gold-hi);border-color:var(--gold-hi);color:#fff}
+  .pathRow .pprog{font-size:.82rem;white-space:nowrap}
+  .pathRow .pprog.done{color:#2e7d3b;font-weight:bold}
+  .pathRow .pprog.doing{color:var(--gold-deep);font-weight:bold}
+  .pathRow .pprog.todo{color:var(--ink-soft)}
 
   /* ---------- classroom ---------- */
   #viewClassroom{display:none}
@@ -83,7 +95,15 @@
   #profCard .pname{font-weight:bold;color:var(--gold-deep);margin-top:6px}
   #profCard .psec{font-size:.8rem;color:var(--ink-soft)}
   #boardWrap{flex:1;background:var(--board-edge);border-radius:8px;padding:10px;
-    box-shadow:0 10px 30px rgba(38,32,25,.25);min-height:340px;display:flex}
+    box-shadow:0 10px 30px rgba(38,32,25,.25);min-height:340px;display:flex;position:relative}
+  /* the green check: unmistakable pass feedback, stamped on the board */
+  #trBoardCheck{position:absolute;top:50%;left:50%;z-index:6;display:none;
+    width:170px;height:170px;margin:-85px 0 0 -85px;border-radius:50%;
+    background:#2e9e4f;border:6px solid #eaffea;color:#fff;pointer-events:none;
+    font-family:Georgia,serif;font-size:6.2rem;line-height:158px;text-align:center;
+    box-shadow:0 14px 44px rgba(0,0,0,.45)}
+  #trBoardCheck.on{display:block;animation:trPop .45s cubic-bezier(.2,1.6,.4,1)}
+  @keyframes trPop{0%{transform:scale(.3);opacity:0}100%{transform:scale(1);opacity:1}}
   #board{flex:1;background:var(--board);border-radius:4px;padding:20px 24px;
     overflow:auto;max-height:520px}
   #board .btitle{font-family:'Segoe Print','Bradley Hand',cursive;color:var(--gold-hi);
@@ -124,6 +144,26 @@
     border:1px solid var(--gold);border-radius:4px;background:#fff}
   textarea#hwInput{width:100%;min-height:90px;padding:10px 12px;font-family:inherit;
     font-size:.95rem;border:1px solid var(--gold);border-radius:4px;background:#fff}
+  /* ---------- language trainer (Rosetta-style listen & repeat) ---------- */
+  #trDots{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 4px}
+  #trDots .dot{width:14px;height:14px;border-radius:50%;border:2px solid var(--gold);
+    background:transparent;cursor:pointer;padding:0}
+  #trDots .dot.cur{background:var(--gold-hi)}
+  #trDots .dot.done{background:#46a35a;border-color:#46a35a}
+  #trDots .dot.skipped{background:repeating-linear-gradient(45deg,#fff,#fff 2px,#cbbd8d 2px,#cbbd8d 4px)}
+  #trPhrase{font-size:2rem;font-weight:bold;color:var(--gold-deep);margin:8px 0 0;line-height:1.25}
+  #trMeaning{color:var(--ink-soft);font-size:1rem;margin:2px 0 10px}
+  #trWave{width:100%;height:72px;background:#26332a;border-radius:6px;display:block}
+  #trHeard{min-height:1.4em;font-style:italic;color:var(--ink-soft);margin-top:8px}
+  #trStatus{min-height:1.5em;font-size:1.02rem;margin:4px 0 10px}
+  #trStatus.good{color:#2e7d3b;font-weight:bold}
+  #trStatus.bad{color:#a33b2e}
+  #trBtns{display:flex;gap:8px;flex-wrap:wrap}
+  #trFoot{display:flex;justify-content:space-between;align-items:baseline;margin-top:10px;gap:10px}
+  #trProgress{font-size:.85rem;color:var(--ink-soft)}
+  #trSkip{font-size:.8rem;color:var(--ink-soft);white-space:nowrap}
+  .trSep{border:0;border-top:1px solid var(--line);margin:18px 0 10px}
+
   #toast{position:fixed;z-index:60;bottom:52px;left:50%;transform:translateX(-50%);
     background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:22px;
     font-size:.9rem;display:none;max-width:calc(100vw - 40px);text-align:center}
@@ -173,7 +213,8 @@
         <p class="btitle" id="boardTitle"></p>
         <p class="bsub" id="boardSub"></p>
         <div id="boardLines"></div>
-      </div></div>
+      </div>
+      <div id="trBoardCheck" aria-hidden="true">✓</div></div>
     </div>
 
     <div class="deskbar">
@@ -185,6 +226,39 @@
     </div>
 
     <div class="panel open" id="panel-lesson">
+      <div id="trainerBox" style="display:none">
+        <h3 id="trTitle">Speak with your professor — listen, then say it back</h3>
+        <p>She says the phrase first. Then it pauses, the microphone
+          opens, and the <b>green bar is your voice</b> while you say it
+          back. What you say is checked against her phrase — and the
+          lesson <b>does not move on</b> until it lands. That is how a
+          language is actually learned: out loud, one phrase at a time.</p>
+        <div id="trDots"></div>
+        <div id="trPhrase"></div>
+        <div id="trMeaning"></div>
+        <canvas id="trWave" width="640" height="72"></canvas>
+        <div id="trHeard"></div>
+        <div id="trStatus"></div>
+        <div id="trBtns">
+          <button class="act" id="trBegin">Begin — she speaks first</button>
+          <button class="ghost" id="trHear" style="display:none">🔊 Hear her say it</button>
+          <button class="ghost" id="trSlow" style="display:none">🐌 Hear it slowly</button>
+          <button class="act" id="trSay" style="display:none">🎙 Your turn — say it</button>
+          <button class="act" id="trRecord" style="display:none">🎙 Record yourself</button>
+          <button class="act" id="trYes" style="display:none">✓ That sounded like her</button>
+          <button class="ghost" id="trNo" style="display:none">↺ Not yet</button>
+        </div>
+        <div id="trFoot">
+          <span id="trProgress"></span>
+          <a href="#" id="trSkip" style="display:none">skip for now →</a>
+        </div>
+        <p class="note" id="trFallbackNote" style="display:none"></p>
+        <audio id="trAudio" preload="auto" style="display:none"></audio>
+        <hr class="trSep">
+        <p class="note">Or sit back and hear the whole opening lesson as
+          one recording — it is below. The trainer above is where the
+          learning happens.</p>
+      </div>
       <h3>The opening lesson</h3>
       <p id="lessonIntro"></p>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -234,6 +308,9 @@
 <div id="toast"></div>
 
 <script src="uni-core.js"></script>
+<script src="trainer-core.js"></script>
+<script src="gate-core.js"></script>
+<script src="gate-ui.js"></script>
 <script>
 (function () {
   'use strict';
@@ -374,6 +451,87 @@
     return row;
   }
 
+  /* ================= the syllabus path (AI & Computing) =================
+     Bill starts his schooling here (Nov 16 2026): the section is a
+     PATH — its classes numbered in the catalogue's own order,
+     fundamentals first, each with a Start/Continue door into its
+     gated lesson, and each marked from the student's own University
+     record (dave_lab_log: gate-step passes and class-grade entries,
+     the same entries the classrooms write). Progress is read fresh
+     every time the catalogue is shown, so finishing a class and
+     coming back to the door shows the path as it now stands. */
+  function classProgress(clsId) {
+    var log = U.loadLog(storage);
+    var passedSteps = {}, grade = null, anyStep = false;
+    log.forEach(function (e) {
+      if (!e || e.classId !== clsId) return;
+      if (e.kind === 'gate-step') {
+        anyStep = true;
+        if (e.status === 'pass') passedSteps[e.step] = true;
+      }
+      if (e.kind === 'class-grade') grade = e;   /* the latest stands */
+    });
+    var passed = Object.keys(passedSteps).length;
+    if (grade && grade.passed > passed) passed = grade.passed;
+    if (grade && grade.complete) {
+      return { state: 'done', btn: 'Review the lesson →',
+        label: '✓ Completed — ' + grade.passed + ' of ' + grade.total + ' steps landed' };
+    }
+    if (passed > 0 || anyStep) {
+      return { state: 'doing', btn: 'Continue →',
+        label: passed > 0
+          ? 'In progress — ' + passed + (passed === 1 ? ' step' : ' steps') + ' landed'
+          : 'In progress' };
+    }
+    return { state: 'todo', btn: 'Start →', label: 'Not started' };
+  }
+
+  function pathRow(section, cls, n) {
+    var row = document.createElement('div');
+    row.className = 'classRow pathRow';
+    row.setAttribute('data-class-id', cls.id);
+    var rowProf = cls.professor || section.professor;
+    row.setAttribute('data-search', (cls.title + ' ' + section.name + ' ' + rowProf.name).toLowerCase());
+    row.innerHTML =
+      '<span class="pnum">' + n + '</span>' +
+      '<span class="ct">' + esc(cls.title) + '</span>' +
+      '<span class="cc">' + esc(rowProf.name) + '</span>' +
+      '<span class="cc">' + (cls.units ? cls.units.length + ' units' : cls.count + ' papers') + '</span>' +
+      '<span class="pprog"></span>';
+    var btn = document.createElement('button');
+    btn.className = 'act';
+    btn.addEventListener('click', function () {
+      location.hash = '#class/' + section.id + '/' + cls.id;
+    });
+    row.appendChild(btn);
+    paintPathRow(row, cls);
+    return row;
+  }
+
+  function paintPathRow(row, cls) {
+    var p = classProgress(cls.id);
+    row.classList.remove('done', 'doing');
+    if (p.state !== 'todo') row.classList.add(p.state);
+    var prog = row.querySelector('.pprog');
+    prog.className = 'pprog ' + p.state;
+    prog.textContent = p.label;
+    row.querySelector('button').textContent = p.btn;
+  }
+
+  /* re-read the record and repaint the path where it stands */
+  function refreshPath() {
+    document.querySelectorAll('.pathRow').forEach(function (row) {
+      var det = row.closest('details.section');
+      var section = det ? classIndex[det.getAttribute('data-section')] : null;
+      if (!section) return;
+      var cls = null;
+      section.classes.forEach(function (c) {
+        if (c.id === row.getAttribute('data-class-id')) cls = c;
+      });
+      if (cls) paintPathRow(row, cls);
+    });
+  }
+
   function renderCatalogue() {
     var totals = CAT.totals;
     $('totals').innerHTML =
@@ -411,7 +569,22 @@
         sn.textContent = section.note;
         body.appendChild(sn);
       }
-      section.classes.forEach(function (cls) { body.appendChild(classRow(section, cls)); });
+      if (section.id === 'ai-computing') {
+        /* the starting path: numbered, in the catalogue's own order */
+        var pn = document.createElement('p');
+        pn.className = 'pathNote';
+        pn.textContent = 'Your syllabus path — take these classes in ' +
+          'order, first to last. Each classroom works the same way: ' +
+          'your professor presents a piece of the lesson, you answer, ' +
+          'and nothing moves on until it lands. Your progress is ' +
+          'marked here from your University record.';
+        body.appendChild(pn);
+        section.classes.forEach(function (cls, i) {
+          body.appendChild(pathRow(section, cls, i + 1));
+        });
+      } else {
+        section.classes.forEach(function (cls) { body.appendChild(classRow(section, cls)); });
+      }
       det.appendChild(body);
       host.appendChild(det);
     });
@@ -454,6 +627,8 @@
       date: new Date().toISOString(), minutes: mins,
       classId: cur.cls.id, classTitle: cur.cls.title
     });
+    var tm = Trainer.masteredList();
+    if (tm.length) entry.trainerMastered = tm;
     U.appendEntry(storage, entry);
     classLogged = true;
     refreshHours();
@@ -625,8 +800,47 @@
     $('hwWorked').textContent = cls.homework.worked;
     $('btnHw').disabled = false;
 
+    /* language trainer: language classes teach by listen-and-repeat */
+    var trActive = Trainer.enter(section, cls, prof);
+    /* the general gate: every other class presents, asks, and checks */
+    if (window.UniGate) UniGate.enter(section, cls, prof);
+    if (trActive && cls.audio) {
+      $('lessonIntro').textContent = 'The full recorded lesson, start ' +
+        'to finish, is right here — but the trainer above is where the ' +
+        'learning happens: she speaks, you answer, and nothing moves ' +
+        'on until it lands.';
+    }
+
     openPanel('lesson');
     window.scrollTo(0, 0);
+  }
+
+  /* "lets start lesson 1" is not a question for the cards — it is
+     the student walking to the desk. Bill typed exactly that into
+     this box (Nov 16 2026) and got the office-hours deflection; from
+     now on a lesson-start intent STARTS the lesson: the language
+     trainer's own Begin in a language room, the general gate's
+     begin everywhere else. Other free questions keep the prepared
+     answers, exactly as before — live Q&A is a later stage and is
+     not faked here. */
+  function isLessonStart(qText) {
+    var t = String(qText || '').toLowerCase().trim().replace(/[.!?]+$/, '');
+    if (!t) return false;
+    if (/^(let'?s\s+)?(start|begin|go)$/.test(t)) return true;
+    if (/^lesson\s+\d+$/.test(t)) return true;
+    if (/\b(start|begin|launch)\b[^.?!]*\b(lesson|class|course|unit|gate|steps?)\b/.test(t)) return true;
+    if (/^(i\s+)?(want|ready)\b[^.?!]*\b(start|begin)\b/.test(t)) return true;
+    return false;
+  }
+  function startLessonFromAsk() {
+    var tb = $('trainerBox');
+    if (tb && tb.style.display !== 'none') {
+      var b = $('trBegin');
+      if (b && b.style.display !== 'none') b.click();
+      return true;
+    }
+    if (window.UniGate && UniGate.start()) return true;
+    return false;
   }
 
   function ask(qText, prepared) {
@@ -636,6 +850,21 @@
     you.innerHTML = '<div class="who">You</div>';
     you.appendChild(document.createTextNode(qText));
     log.appendChild(you);
+    if (!prepared && isLessonStart(qText) && startLessonFromAsk()) {
+      var started = document.createElement('div');
+      started.className = 'bubble';
+      started.innerHTML = '<div class="who">' + esc(cur.prof.name) + '</div>';
+      started.appendChild(document.createTextNode(
+        'Then we begin. Your first piece is on your desk in the ' +
+        'lesson panel — I present it, you answer out loud or by ' +
+        'typing, and we do not move on until it lands.'));
+      log.appendChild(started);
+      openPanel('lesson');
+      var gb = document.getElementById('gateBox');
+      var anchor = (gb && gb.style.display !== 'none') ? gb : $('trainerBox');
+      if (anchor) anchor.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      return;
+    }
     var ans = prepared || U.matchAnswer(qText, cur.cls, cur.section, cur.prof) || U.LIVE_NOTE;
     var bub = document.createElement('div');
     bub.className = 'bubble';
@@ -691,11 +920,14 @@
 
   function leaveClassroom() {
     if (cur) { logClassSession(); cur = null; }
+    Trainer.leave();
+    if (window.UniGate) UniGate.leave();
     stopBoard();
     var audio = $('lessonAudio');
     audio.pause();
     $('viewClassroom').style.display = 'none';
     $('viewCatalogue').style.display = 'block';
+    refreshPath();
     window.scrollTo(0, 0);
   }
   $('backDoor').addEventListener('click', function (e) {
@@ -719,6 +951,420 @@
     if (cur) leaveClassroom();
   }
   window.addEventListener('hashchange', route);
+
+  /* ================= language trainer (Rosetta-style) =================
+     Bill's spec (Nov 16 2026): the professor models a phrase, it
+     PAUSES, the mic listens (the green bar is the student's voice),
+     the pronunciation is checked, and the lesson does NOT advance
+     until the phrase lands. Fallbacks are stated plainly on the page:
+     a browser that cannot listen gets record-and-playback self-check,
+     never a dead end. */
+  var TR_DATA = null, trPendingClass = null;
+  fetch('trainer-data.json').then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (j) {
+      if (j && j.classes) TR_DATA = j.classes;
+      if (TR_DATA && trPendingClass && cur && cur.cls.id === trPendingClass) {
+        trPendingClass = null;
+        Trainer.enter(cur.section, cur.cls, cur.prof);
+      }
+    })
+    .catch(function () { /* no trainer data: classrooms stay as they were */ });
+
+  var Trainer = (function () {
+    var T = window.LangTrainer;
+    var data = null, tCls = null, tProf = null;
+    var idx = 0, attempts = 0, mastered = {}, praiseCount = 0;
+    var mode = 'sr';            /* 'sr' = speech recognition | 'self' = self-check */
+    var started = false, busy = false;
+    var stream = null, actx = null, analyser = null, waveRAF = null;
+    var rec = null, listening = false, heardFinal = null, recErrorShown = false;
+    var mediaRec = null, recChunks = [], ownUrl = null;
+
+    function $(id) { return document.getElementById(id); }
+    function step() { return data.steps[idx]; }
+    function profFirst() {
+      var nm = String(tProf.name || '').replace(/^(Professor|Profesora|Professore|Professora|Madame|Herr|Mevrouw)\s+/, '');
+      return nm.split(/\s+/)[0] || 'your professor';
+    }
+    function setStatus(msg, kind) {
+      var s = $('trStatus');
+      s.textContent = msg;
+      s.className = kind || '';
+      s.id = 'trStatus';
+    }
+    function playClip(src, rate) {
+      return new Promise(function (resolve) {
+        var a = $('trAudio');
+        a.pause();
+        a.playbackRate = rate || 1;
+        a.src = src;
+        var done = function () {
+          a.removeEventListener('ended', done);
+          a.removeEventListener('error', done);
+          resolve();
+        };
+        a.addEventListener('ended', done);
+        a.addEventListener('error', done);
+        var p = a.play();
+        if (p && p.catch) p.catch(function () { resolve(); });
+      });
+    }
+    function playSlow() {
+      var st = step();
+      if (st.slowAudio) return playClip(st.slowAudio);
+      return playClip(st.audio, 0.7);
+    }
+
+    /* ----- the green bar: the student's own voice ----- */
+    function startWave() {
+      if (!analyser) return;
+      var cv = $('trWave'), ctx = cv.getContext('2d');
+      var arr = new Uint8Array(analyser.frequencyBinCount);
+      cancelAnimationFrame(waveRAF);
+      (function draw() {
+        waveRAF = requestAnimationFrame(draw);
+        analyser.getByteFrequencyData(arr);
+        ctx.fillStyle = '#26332a'; ctx.fillRect(0, 0, cv.width, cv.height);
+        var bars = 48, bw = cv.width / bars;
+        for (var i = 0; i < bars; i++) {
+          var v = arr[Math.floor(i * arr.length / (bars * 2))] / 255;
+          var h = Math.max(3, v * (cv.height - 8));
+          ctx.fillStyle = '#57d977';
+          ctx.fillRect(i * bw + 1, (cv.height - h) / 2, bw - 2, h);
+        }
+      })();
+    }
+    function idleWave() {
+      cancelAnimationFrame(waveRAF);
+      var cv = $('trWave');
+      if (!cv) return;
+      var ctx = cv.getContext('2d');
+      ctx.fillStyle = '#26332a'; ctx.fillRect(0, 0, cv.width, cv.height);
+      ctx.fillStyle = 'rgba(87,217,119,.45)';
+      ctx.fillRect(0, cv.height / 2 - 1, cv.width, 2);
+    }
+    function getMic() {
+      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia)
+        return Promise.reject(new Error('no-mic-api'));
+      return navigator.mediaDevices.getUserMedia({ audio: true }).then(function (s) {
+        stream = s;
+        var AC = window.AudioContext || window.webkitAudioContext;
+        if (AC) {
+          actx = new AC();
+          analyser = actx.createAnalyser();
+          analyser.fftSize = 2048;
+          actx.createMediaStreamSource(s).connect(analyser);
+        }
+      });
+    }
+
+    /* ----- dots + progress ----- */
+    function renderDots() {
+      var host = $('trDots');
+      host.innerHTML = '';
+      data.steps.forEach(function (st, i) {
+        var d = document.createElement('button');
+        d.className = 'dot' +
+          (mastered[st.target] ? ' done' : '') +
+          (i === idx ? ' cur' : '');
+        d.title = st.display;
+        d.setAttribute('aria-label', 'Phrase ' + (i + 1) + ': ' + st.display);
+        d.addEventListener('click', function () { if (started && !busy) showStep(i); });
+        host.appendChild(d);
+      });
+    }
+    function renderProgress() {
+      var done = data.steps.filter(function (s) { return mastered[s.target]; }).length;
+      $('trProgress').textContent = 'Phrase ' + (idx + 1) + ' of ' + data.steps.length +
+        ' · ' + done + ' landed' +
+        (attempts ? ' · ' + attempts + (attempts === 1 ? ' try' : ' tries') + ' on this one' : '');
+    }
+
+    /* ----- the step flow ----- */
+    function showStep(i) {
+      idx = i; attempts = 0;
+      hideBoardCheck();
+      var st = step();
+      $('trPhrase').textContent = st.display;
+      $('trMeaning').textContent = st.meaning;
+      $('trHeard').textContent = '';
+      $('trYes').style.display = 'none';
+      $('trNo').style.display = 'none';
+      $('trRecord').textContent = '🎙 Record yourself';
+      renderDots(); renderProgress();
+      if (!started) {
+        setStatus('Tap Begin — ' + profFirst() + ' speaks first, then it is your turn.', '');
+        return;
+      }
+      modelThenListen();
+    }
+    function modelThenListen() {
+      busy = true;
+      setStatus('Listen to ' + profFirst() + '…', '');
+      $('trSay').style.display = 'none';
+      playClip(step().audio).then(function () {
+        busy = false;
+        if (mode === 'sr') {
+          setStatus('Your turn — say it out loud.', '');
+          $('trSay').style.display = '';
+          setTimeout(function () { if (!busy && started) startListening(); }, 450);
+        } else {
+          showSelfStep();
+        }
+      });
+    }
+
+    /* ----- speech recognition: the gate ----- */
+    function startListening() {
+      if (mode !== 'sr' || listening || busy || !started) return;
+      var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!SR) { setSelfMode('This browser can\u2019t listen and check pronunciation — Chrome and Edge can. Until then, the honest fallback: record yourself, play it back next to hers, and judge truly.'); showSelfStep(); return; }
+      rec = new SR();
+      rec.lang = data.lang;
+      rec.interimResults = true;
+      rec.maxAlternatives = 3;
+      heardFinal = null; recErrorShown = false;
+      rec.onresult = function (ev) {
+        var interim = '', alts = [];
+        for (var i = ev.resultIndex; i < ev.results.length; i++) {
+          var r = ev.results[i];
+          if (r.isFinal) { for (var k = 0; k < r.length; k++) alts.push(r[k].transcript); }
+          else interim += r[0].transcript;
+        }
+        if (interim) $('trHeard').textContent = '\u2026 ' + interim;
+        if (alts.length) heardFinal = { text: alts[0], alts: alts };
+      };
+      rec.onerror = function (ev) {
+        recErrorShown = true;
+        if (ev.error === 'not-allowed' || ev.error === 'service-not-allowed') {
+          setSelfMode('The microphone is off for this page, so ' + profFirst() +
+            ' can\u2019t check your pronunciation automatically. The honest fallback: ' +
+            'record yourself, play it back next to hers, and judge truly.');
+          showSelfStep();
+        } else if (ev.error === 'network') {
+          setSelfMode('The browser\u2019s listening service could not be reached, so for ' +
+            'now you check yourself against her voice — honestly. The saying is still the learning.');
+          showSelfStep();
+        } else if (ev.error === 'no-speech') {
+          setStatus('I didn\u2019t hear anything — tap \u201cYour turn\u201d and say it out loud, like you mean it.', '');
+          $('trSay').style.display = '';
+        } else {
+          setStatus('The listening hiccupped (' + ev.error + ') — tap \u201cYour turn\u201d to try again.', '');
+          $('trSay').style.display = '';
+        }
+      };
+      rec.onend = function () {
+        var was = listening;
+        listening = false; idleWave();
+        if (heardFinal) { var hf = heardFinal; heardFinal = null; grade(hf); }
+        else if (was && !recErrorShown && mode === 'sr' && !busy) {
+          setStatus('I didn\u2019t catch that — tap \u201cYour turn\u201d and say it once more, out loud.', '');
+          $('trSay').style.display = '';
+        }
+      };
+      try {
+        rec.start();
+        listening = true;
+        startWave();
+        setStatus(profFirst() + ' is listening — say it now.', '');
+        $('trSay').style.display = 'none';
+      } catch (e) { listening = false; }
+    }
+    function grade(hf) {
+      busy = true;
+      attempts++;
+      var best = null;
+      hf.alts.forEach(function (alt) {
+        var g = T.gradeAttempt(step().target, alt);
+        if (!best || g.score > best.score) best = { g: g, heard: alt };
+      });
+      $('trHeard').textContent = 'You said: \u201c' + best.heard + '\u201d';
+      renderProgress();
+      if (best.g.pass) onPass();
+      else onMiss();
+    }
+    function showBoardCheck() { $('trBoardCheck').classList.add('on'); }
+    function hideBoardCheck() { $('trBoardCheck').classList.remove('on'); }
+    function onPass() {
+      var st = step();
+      var isNew = !mastered[st.target];
+      mastered[st.target] = true;
+      showBoardCheck();   /* the big green check lands WITH her praise */
+      if (isNew) {
+        T.recordMastery(storage, {
+          date: new Date().toISOString(), classId: tCls.id,
+          classTitle: tCls.title, phrase: st.target, selfChecked: mode === 'self'
+        });
+      }
+      var pi = praiseCount++ % data.praise.length;
+      setStatus(data.praise[pi], 'good');
+      renderDots(); renderProgress();
+      playClip(data.praiseAudio[pi]).then(function () {
+        busy = false;
+        advance();
+      });
+    }
+    function onMiss() {
+      hideBoardCheck();
+      setStatus('Not yet. ' + profFirst() + ' says it once more — slowly this time.', 'bad');
+      var ri = (attempts - 1) % data.retryAudio.length;
+      playClip(data.retryAudio[ri]).then(function () { return playSlow(); })
+        .then(function () {
+          busy = false;
+          if (mode === 'sr') startListening();
+          else showSelfStep();
+        });
+    }
+    function advance() {
+      if (idx + 1 < data.steps.length) { showStep(idx + 1); return; }
+      var remaining = data.steps.filter(function (s) { return !mastered[s.target]; });
+      if (!remaining.length) { completeLesson(); return; }
+      setStatus('That is the end of the set — ' + remaining.length +
+        (remaining.length === 1 ? ' phrase still' : ' phrases still') +
+        ' to land. Tap a hollow dot above to go back to one.', '');
+      renderProgress();
+    }
+    function completeLesson() {
+      renderDots(); renderProgress();
+      var msg = tCls.id === 'espanol-i-speak-from-zero'
+        ? 'Every phrase landed. All of lesson one is yours, Bill — and tonight\u2019s line most of all: Buenas noches, mi amor. Say it like you mean it, because you do.'
+        : 'Every phrase in this set landed, out loud and checked. That is how a language actually starts — the next lesson builds on these.';
+      setStatus(msg, 'good');
+      showToast('Lesson set complete — every phrase landed in ' + tCls.title + '.');
+    }
+
+    /* ----- self-check fallback ----- */
+    function setSelfMode(why) {
+      if (mode === 'self') return;
+      mode = 'self';
+      var n = $('trFallbackNote');
+      n.style.display = '';
+      n.textContent = why;
+      $('trSay').style.display = 'none';
+    }
+    function showSelfStep() {
+      if (window.MediaRecorder && stream) $('trRecord').style.display = '';
+      else { $('trYes').style.display = ''; $('trNo').style.display = ''; }
+      setStatus('Your turn — say it out loud' +
+        (window.MediaRecorder && stream ? ', record it, and compare it with hers.' : ', then judge honestly: did it sound like her?'), '');
+    }
+    function toggleRecord() {
+      if (mediaRec && mediaRec.state === 'recording') { mediaRec.stop(); return; }
+      if (!stream) {
+        $('trYes').style.display = ''; $('trNo').style.display = '';
+        setStatus('No microphone here — say it out loud anyway, then judge honestly below.', '');
+        return;
+      }
+      recChunks = [];
+      try { mediaRec = new MediaRecorder(stream); } catch (e) {
+        $('trYes').style.display = ''; $('trNo').style.display = '';
+        return;
+      }
+      mediaRec.ondataavailable = function (e) { if (e.data.size) recChunks.push(e.data); };
+      mediaRec.onstop = function () {
+        $('trRecord').textContent = '🎙 Record yourself';
+        idleWave();
+        if (ownUrl) URL.revokeObjectURL(ownUrl);
+        ownUrl = URL.createObjectURL(new Blob(recChunks, { type: 'audio/webm' }));
+        var a = $('trAudio');
+        a.playbackRate = 1; a.src = ownUrl;
+        var p = a.play(); if (p && p.catch) p.catch(function () {});
+        $('trYes').style.display = ''; $('trNo').style.display = '';
+        setStatus('That was you. Hear her once more if you need to — then judge honestly.', '');
+      };
+      mediaRec.start();
+      startWave();
+      $('trRecord').textContent = '⏹ Stop recording';
+      setStatus('Recording — say it now.', '');
+    }
+
+    /* ----- session control ----- */
+    function begin() {
+      if (started) return;
+      started = true;
+      $('trBegin').style.display = 'none';
+      $('trHear').style.display = '';
+      $('trSlow').style.display = '';
+      $('trSkip').style.display = '';
+      var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+      getMic().catch(function () { /* mic unavailable: fallback decides below */ })
+        .then(function () {
+          if (!SR) {
+            setSelfMode('This browser can\u2019t listen and check pronunciation — Chrome and Edge can. Until then, the honest fallback: record yourself, play it back next to hers, and judge truly.');
+          } else if (!stream) {
+            setSelfMode('The microphone is off for this page, so ' + profFirst() +
+              ' can\u2019t check your pronunciation automatically. The honest fallback: ' +
+              'record yourself if you can, play it back next to hers, and judge truly.');
+          }
+          playClip(data.welcomeAudio).then(function () { showStep(idx); });
+        });
+    }
+    function enter(section, clsIn, profIn) {
+      leave();
+      if (!TR_DATA) { trPendingClass = clsIn.id; $('trainerBox').style.display = 'none'; return false; }
+      if (!TR_DATA[clsIn.id] || !T) {
+        $('trainerBox').style.display = 'none';
+        return false;
+      }
+      data = TR_DATA[clsIn.id]; tCls = clsIn; tProf = profIn;
+      mastered = T.loadMastered(storage, clsIn.id);
+      idx = 0; attempts = 0; praiseCount = 0;
+      mode = 'sr'; started = false; busy = false;
+      $('trainerBox').style.display = '';
+      $('trTitle').textContent = 'Speak with ' + profFirst() + ' — listen, then say it back';
+      $('trBegin').style.display = '';
+      $('trBegin').textContent = 'Begin — ' + profFirst() + ' speaks first';
+      ['trHear', 'trSlow', 'trSay', 'trRecord', 'trYes', 'trNo', 'trSkip']
+        .forEach(function (id) { $(id).style.display = 'none'; });
+      $('trFallbackNote').style.display = 'none';
+      var firstOpen = data.steps.findIndex(function (s) { return !mastered[s.target]; });
+      idx = firstOpen === -1 ? 0 : firstOpen;
+      showStep(idx);
+      idleWave();
+      return true;
+    }
+    function leave() {
+      hideBoardCheck();
+      if (rec) { try { rec.abort(); } catch (e) {} rec = null; }
+      listening = false;
+      if (mediaRec && mediaRec.state === 'recording') { try { mediaRec.stop(); } catch (e) {} }
+      if (stream) { stream.getTracks().forEach(function (t) { t.stop(); }); stream = null; }
+      if (actx) { try { actx.close(); } catch (e) {} actx = null; analyser = null; }
+      cancelAnimationFrame(waveRAF);
+      var a = $('trAudio');
+      if (a) { a.pause(); a.removeAttribute('src'); }
+      started = false; busy = false;
+    }
+    function masteredList() {
+      if (!data || !tCls || !cur || cur.cls.id !== tCls.id) return [];
+      return Object.keys(mastered);
+    }
+
+    $('trBegin').addEventListener('click', begin);
+    $('trHear').addEventListener('click', function () { if (!busy) playClip(step().audio); });
+    $('trSlow').addEventListener('click', function () { if (!busy) playSlow(); });
+    $('trSay').addEventListener('click', startListening);
+    $('trRecord').addEventListener('click', toggleRecord);
+    $('trYes').addEventListener('click', function () {
+      if (busy) return;
+      busy = true; attempts++;
+      $('trYes').style.display = 'none'; $('trNo').style.display = 'none';
+      onPass();
+    });
+    $('trNo').addEventListener('click', function () {
+      if (busy) return;
+      busy = true; attempts++;
+      $('trYes').style.display = 'none'; $('trNo').style.display = 'none';
+      onMiss();
+    });
+    $('trSkip').addEventListener('click', function (e) {
+      e.preventDefault();
+      if (!started || busy) return;
+      advance();
+    });
+
+    return { enter: enter, leave: leave, masteredList: masteredList };
+  })();
 
   /* ================= load ================= */
   fetch('catalogue.json').then(function (r) {
