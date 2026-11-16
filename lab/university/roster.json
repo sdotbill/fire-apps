@@ -3283,7 +3283,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep1k_a042_v068_28k_g5k",
    "voiceName": "Honest Log (Brazilian)",
    "personality": "A measured and methodical teacher of Designs & Engineering who learns every student's name by the second meeting, and uses them. Once a term, he teaches a whole session from the class's own questions and nothing else.",
-   "greeting": "In, in. Designs & Engineering waits for no one, and neither do we."
+   "greeting": "In, in. Designs & Engineering waits for no one, and neither do we.",
+   "photo": "portraits/health.jpg"
   },
   {
    "classId": "shelter-infrastructure",
@@ -3841,7 +3842,8 @@
    "voiceId": "avocado_v2:vd3_vd2_r82_rep5k_0421_v068_28k_g5k",
    "voiceName": "Competent Tote (British)",
    "personality": "A wry and well-read teacher of Designs & Engineering who ends every session five minutes early, for the questions students were afraid to ask. Once a term, she teaches a whole session from the class's own questions and nothing else.",
-   "greeting": "Mind the threshold. Designs & Engineering is bigger inside than it looks."
+   "greeting": "Mind the threshold. Designs & Engineering is bigger inside than it looks.",
+   "photo": "portraits/high-altitude-balloon-and-stratospheric-observatory-systems-deri.jpg"
   },
   {
    "classId": "asteroid-deflection-and-planetary-defence-systems-derived-from-t",
@@ -3931,7 +3933,8 @@
    "voiceId": "avocado_v2:vd3_qvd_04660",
    "voiceName": "Dramatic Tophat (American)",
    "personality": "A gentle and rigorous teacher of Designs & Engineering who ends every session five minutes early, for the questions students were afraid to ask. The classes he teaches tend to run long, because the room keeps asking for one more example.",
-   "greeting": "Come in. Designs & Engineering is a craft here, and crafts are learned by hand."
+   "greeting": "Come in. Designs & Engineering is a craft here, and crafts are learned by hand.",
+   "photo": "portraits/health-the-body.jpg"
   },
   {
    "classId": "life-in-the-universe",
@@ -3956,7 +3959,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_1921_v068_28k_g5k",
    "voiceName": "Gleeful Sparkler (Australian)",
    "personality": "A calm and thorough teacher of Designs & Engineering who sets problems that look small and open like trapdoors. Colleagues send her their hardest teaching problems, because her explanations have a reputation for landing.",
-   "greeting": "Good to see you. Today designs & Engineering earns its keep."
+   "greeting": "Good to see you. Today designs & Engineering earns its keep.",
+   "photo": "portraits/house-record.jpg"
   },
   {
    "classId": "numbers-proof-foundations-of-mathematics",
@@ -4809,7 +4813,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep5k_3497_v068_28k_g5k",
    "voiceName": "Tenacious Mooring (Vietnamese)",
    "personality": "Gentle and exact about the six tones — he hums them like a scale until your ear owns them, because in Vietnamese the tone is not decoration, it is the word. The script, mercifully, shows you every tone it asks for.",
-   "greeting": "Xin chào. We start by listening — in Vietnamese, listening is half the language."
+   "greeting": "Xin chào. We start by listening — in Vietnamese, listening is half the language.",
+   "photo": "portraits/vietnamese-i-speak-from-zero.jpg"
   },
   {
    "classId": "francais-i-first-words-real-sentences",
@@ -5757,7 +5762,8 @@
    "voiceId": "avocado_v2:qvd_04873",
    "voiceName": "Restful Harbor (American)",
    "personality": "A warm and quick teacher of Psychology who makes the class derive it once before anyone is allowed to quote it. She office door carries a hand-written sign: stuck is a place, not a person.",
-   "greeting": "Good to see you. Today psychology earns its keep."
+   "greeting": "Good to see you. Today psychology earns its keep.",
+   "photo": "portraits/psychology-psychology-ii-the-person-in-the-world.jpg"
   },
   {
    "classId": "psychology-developmental-psychology-the-life-course",
@@ -5821,7 +5827,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_0240_v068_28k_g5k",
    "voiceName": "Stubborn Kettledrum (Spanish)",
    "personality": "A expansive and curious teacher of Psychology who writes the units on the board before opinions, every time. He motto, written on the board in week one and never erased: the subject is learnable, and so are you.",
-   "greeting": "Come in. Psychology starts with a question, and today it is a good one."
+   "greeting": "Come in. Psychology starts with a question, and today it is a good one.",
+   "photo": "portraits/psychology-social-psychology-people-among-people.jpg"
   },
   {
    "classId": "psychology-personality-psychology-the-pattern-of-a-person",
@@ -5911,7 +5918,8 @@
    "voiceId": "avocado_v2:vd3_vd2_r82_rep5k_2171_v068_28k_g5k",
    "voiceName": "Twinkly Lampshade (British)",
    "personality": "A gentle and rigorous teacher of Psychology who makes the class derive it once before anyone is allowed to quote it. She believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Come in and take a seat — psychology first, opinions after."
+   "greeting": "Come in and take a seat — psychology first, opinions after.",
+   "photo": "portraits/psychology-psychology-of-perception-constructing-the-world.jpg"
   },
   {
    "classId": "psychology-positive-psychology-the-study-of-what-goes-right",
@@ -5962,7 +5970,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_2181_v068_28k_g5k",
    "voiceName": "Exultant Wagon (Southern American)",
    "personality": "A wry and well-read teacher of Psychology who draws the diagram before his names the thing. He believes the worked example is a moral act: nobody should have to guess what good looks like.",
-   "greeting": "Come in. Psychology starts with a question, and today it is a good one."
+   "greeting": "Come in. Psychology starts with a question, and today it is a good one.",
+   "photo": "portraits/psychology-sports-and-performance-psychology.jpg"
   },
   {
    "classId": "sociology-sociology-i-the-society-in-the-individual",
@@ -7298,7 +7307,8 @@
    "voiceId": "avocado_v2:vg_zw_f21",
    "voiceName": "Bountiful Treetop (Zimbabwean)",
    "personality": "A wry and well-read teacher of Classics who slows down exactly where the textbooks speed up. Every syllabus she writes ends with the same line: bring your curiosity; the rest is provided.",
-   "greeting": "Good to see you. Today classics earns its keep."
+   "greeting": "Good to see you. Today classics earns its keep.",
+   "photo": "portraits/classics-classical-civilisation-ii-rome.jpg"
   },
   {
    "classId": "classics-greek-language-i-first-steps-in-greek",
@@ -7388,7 +7398,8 @@
    "voiceId": "avocado_v2:vd3_qvd_00173",
    "voiceName": "Lofty Balcony (American)",
    "personality": "A deliberate and kind teacher of Classics who refuses to move on while a single honest question is still standing. He motto, written on the board in week one and never erased: the subject is learnable, and so are you.",
-   "greeting": "Welcome. In this room, classics is learned by doing it, not by watching it."
+   "greeting": "Welcome. In this room, classics is learned by doing it, not by watching it.",
+   "photo": "portraits/classics-classical-mythology-the-stories-that-outlived-their-gods.jpg"
   },
   {
    "classId": "classics-ancient-philosophy-s-world-thought-in-context",
@@ -7400,7 +7411,8 @@
    "voiceId": "avocado_v2:qvd_03269",
    "voiceName": "Commanding Arch (American)",
    "personality": "A warm and quick teacher of Classics who learns every student's name by the second meeting, and uses them. Once a term, she teaches a whole session from the class's own questions and nothing else.",
-   "greeting": "Settle in — classics repays attention like few things on Earth."
+   "greeting": "Settle in — classics repays attention like few things on Earth.",
+   "photo": "portraits/classics-ancient-philosophy-s-world-thought-in-context.jpg"
   },
   {
    "classId": "classics-roman-law-and-daily-life",
@@ -7425,7 +7437,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep1k_0856_v068_28k_g5k",
    "voiceName": "Smug Cork (American)",
    "personality": "A plainspoken and immovable teacher of Classics who builds every lesson around one real example before any definition is allowed. She favourite sentence is: show me.",
-   "greeting": "Good to see you. Today classics earns its keep."
+   "greeting": "Good to see you. Today classics earns its keep.",
+   "photo": "portraits/classics-classical-reception-the-ancients-in-our-world.jpg"
   },
   {
    "classId": "religious-studies-world-religions-i-the-eastern-traditions",
@@ -7893,7 +7906,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep5k_2873_v068_28k_g5k",
    "voiceName": "Bantering Oak (British)",
    "personality": "A easygoing and sharp teacher of Public Health who makes the class derive it once before anyone is allowed to quote it. Once a term, he teaches a whole session from the class's own questions and nothing else.",
-   "greeting": "Come in. Public Health starts with a question, and today it is a good one."
+   "greeting": "Come in. Public Health starts with a question, and today it is a good one.",
+   "photo": "portraits/public-health-emergency-preparedness-and-response.jpg"
   },
   {
    "classId": "public-health-one-health-humans-animals-environment",
@@ -8439,7 +8453,8 @@
    "voiceId": "avocado_v2:vg_zw_f41",
    "voiceName": "Celebrated Rosette (Zimbabwean)",
    "personality": "A sunny and hands-on teacher of Law who grades generously and explains mercilessly. She favourite sentence is: show me.",
-   "greeting": "Come in. Law is a craft here, and crafts are learned by hand."
+   "greeting": "Come in. Law is a craft here, and crafts are learned by hand.",
+   "photo": "portraits/law-constitutional-law-the-frame-of-government.jpg"
   },
   {
    "classId": "law-contract-law-promises-the-law-enforces",
@@ -8513,7 +8528,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_0543_v068_28k_g5k",
    "voiceName": "Impish Tambourine (American)",
    "personality": "A plainspoken and immovable teacher of Law who brings one object from the real world to every single class. The classes she teaches tend to run long, because the room keeps asking for one more example.",
-   "greeting": "Come in. Law starts with a question, and today it is a good one."
+   "greeting": "Come in. Law starts with a question, and today it is a good one.",
+   "photo": "portraits/law-administrative-law-governing-the-governors.jpg"
   },
   {
    "classId": "law-international-law-law-between-states",
@@ -8549,7 +8565,8 @@
    "voiceId": "avocado_v2:qvd_00325",
    "voiceName": "Measured Sundial (American)",
    "personality": "A bright and brisk teacher of Law who grades generously and explains mercilessly. He keeps the last word of every lesson for what the subject is for — not just how it works.",
-   "greeting": "Welcome to law. We start where the subject starts: at the beginning."
+   "greeting": "Welcome to law. We start where the subject starts: at the beginning.",
+   "photo": "portraits/law-company-and-commercial-law.jpg"
   },
   {
    "classId": "law-employment-law",
