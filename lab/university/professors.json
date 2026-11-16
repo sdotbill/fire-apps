@@ -81,7 +81,8 @@
     },
     "voiceId": "avocado_v2:Caitlin",
     "voiceName": "Heroic Bugle (American, bright)",
-    "gender": "F"
+    "gender": "F",
+    "photo": "portraits/neutrinos-and-lepton-physics-through-a-bounce.jpg"
    }
   },
   {
@@ -102,7 +103,8 @@
      "outfit": "#3c3f45",
      "glasses": true,
      "beard": true
-    }
+    },
+    "photo": "portraits/globular-cluster-multiple-populations-and-light-element-enrichme.jpg"
    }
   },
   {
@@ -164,7 +166,8 @@
      "hairStyle": "short",
      "outfit": "#8c1f2e",
      "glasses": false
-    }
+    },
+    "photo": "portraits/jupiter-and-saturn-interiors-atmospheres-ring-systems-and-magnet.jpg"
    }
   },
   {
@@ -247,7 +250,8 @@
     },
     "voiceId": "avocado_v2:paloma",
     "voiceName": "Lilting Swing (British)",
-    "gender": "F"
+    "gender": "F",
+    "photo": "portraits/numbers-proof-foundations-of-mathematics.jpg"
    }
   },
   {
@@ -351,7 +355,8 @@
      "hairStyle": "ponytail",
      "outfit": "#8a6508",
      "glasses": false
-    }
+    },
+    "photo": "portraits/plumbing-i-water-in-water-out.jpg"
    }
   },
   {
@@ -456,7 +461,8 @@
      "hairStyle": "waves",
      "outfit": "#7a4a1f",
      "glasses": true
-    }
+    },
+    "photo": "portraits/statistics-statistics-i-describing-data-honestly.jpg"
    }
   },
   {
@@ -519,7 +525,8 @@
      "outfit": "#9a4a1f",
      "glasses": true,
      "beard": true
-    }
+    },
+    "photo": "portraits/psychology-psychology-i-the-science-of-mind-and-behaviour.jpg"
    }
   },
   {
@@ -539,7 +546,8 @@
      "hairStyle": "waves",
      "outfit": "#2e3d6e",
      "glasses": true
-    }
+    },
+    "photo": "portraits/sociology-sociology-i-the-society-in-the-individual.jpg"
    }
   },
   {
@@ -580,7 +588,8 @@
      "hairStyle": "waves",
      "outfit": "#2e3d6e",
      "glasses": false
-    }
+    },
+    "photo": "portraits/political-science-political-science-i-power-and-its-arrangements.jpg"
    }
   },
   {
@@ -643,7 +652,8 @@
      "hairStyle": "short",
      "outfit": "#1f4d7a",
      "glasses": true
-    }
+    },
+    "photo": "portraits/philosophy-philosophy-i-the-love-of-questions.jpg"
    }
   },
   {
@@ -705,7 +715,8 @@
      "hairStyle": "waves",
      "outfit": "#3c3f45",
      "glasses": true
-    }
+    },
+    "photo": "portraits/religious-studies-world-religions-i-the-eastern-traditions.jpg"
    }
   },
   {
@@ -725,7 +736,8 @@
      "hairStyle": "straight",
      "outfit": "#8a6508",
      "glasses": false
-    }
+    },
+    "photo": "portraits/nursing-nursing-foundations-the-nurse-s-craft.jpg"
    }
   },
   {
@@ -745,7 +757,8 @@
      "hairStyle": "straight",
      "outfit": "#14524a",
      "glasses": false
-    }
+    },
+    "photo": "portraits/public-health-public-health-i-the-health-of-populations.jpg"
    }
   },
   {
@@ -766,7 +779,8 @@
      "outfit": "#5d4630",
      "glasses": false,
      "beard": true
-    }
+    },
+    "photo": "portraits/social-work-social-work-foundations-help-that-respects.jpg"
    }
   },
   {
@@ -913,7 +927,8 @@
     },
     "voiceId": "avocado_v2:marisol",
     "voiceName": "Zippy Cork (American, bright)",
-    "gender": "F"
+    "gender": "F",
+    "photo": "portraits/singing-i-breath-pitch-and-your-own-voice.jpg"
    }
   },
   {
@@ -954,7 +969,8 @@
     },
     "voiceId": "avocado_v2:Lily",
     "voiceName": "Mellow Saxophone (American, smooth)",
-    "gender": "F"
+    "gender": "F",
+    "photo": "portraits/writing-i-the-clear-sentence.jpg"
    }
   },
   {
@@ -1037,7 +1053,8 @@
      "hairStyle": "straight",
      "outfit": "#14524a",
      "glasses": true
-    }
+    },
+    "photo": "portraits/theatre-film-theatre-foundations-the-live-event.jpg"
    }
   }
  ]
