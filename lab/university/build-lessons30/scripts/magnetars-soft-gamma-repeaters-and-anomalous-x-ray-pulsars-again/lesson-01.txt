@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Francesca Bianchi, and this is Magnetars, Soft Gamma Repeaters and Anomalous X-Ray Pulsars Against Magnetic-Field, Density and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Francesca Bianchi, and this is Magnetars, Soft Gamma Repeaters and Anomalous X-Ray Pulsars Against Magnetic-Field, Density and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Characteristic Ages Against Supernova Remnant Ages: What the Discrepancies Require of Magnetar Birth Periods and Braking Histories'. Its stated result: Headline result (values verbatim from results.json): largest_age_ratio_source = 1E 2259+586; largest_age_ratio = 16.5; smallest_age_ratio = 0.02; sources_tau_c_exceeds_remnant_by_10x = 1. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Now we go one step further into the material.
+
+'Crustal Failure Stresses in Magnetars: Surface Magnetic Stress Against the Breaking Strength of the Neutron Star Crust'. Its stated result: Headline result (values verbatim from results.json): breaking_field_theta0.01_G = 5.01e+14; breaking_field_theta0.1_G = 1.59e+15; sources_surface_stress_above_theta0.01 = 3; highest_stress_source = SGR 1806-20; highest_stress_dyn_cm2 = 1.51e+29. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+The next piece is where this starts to come together.
+
+'Dipole Magnetic Fields of Eighteen Magnetars from Spin-Down: A Catalogue-Wide Recalculation Against the Quantum Critical Field'. Its stated result: Headline result (values verbatim from results.json): highest_B_source = SGR 1806-20; highest_B_G = 1.95e+15; lowest_B_source = SGR 0418+5729; lowest_B_G = 6.10e+12; median_B_G = 2.22e+14; span_in_B = 319.1; sources_above_BQ = 16; n_sources = 18. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Field-Decay Heating and Persistent X-Ray Luminosity: Required Decay Times for the Magnetar Catalogue'. Its stated result: Headline result (values verbatim from results.json): longest_required_decay_time_source = CXOU J164710.2-455216; longest_required_decay_time_yr = 5.28e+06; shortest_required_decay_time_yr = 3.27e+02; sources_Lx_above_Edot = 11; median_Lx_over_decay_power = 0.387. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+We take the pieces in order, because each one stands on the last.
+
+'Giant Flare Energy Budgets: The Three Recorded Events Against the Magnetic Reservoir of Their Host Stars'. Its stated result: Headline result (values verbatim from results.json): largest_flare_source = SGR 1806-20; largest_flare_energy_erg = 2.0e+46; largest_flare_fraction_of_reservoir = 0.032; smallest_flare_fraction_of_reservoir = 2.45e-03; reservoir_SGR1806_erg = 6.31e+47. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Stay with me, because the next piece builds directly on that one.
+
+'Gravitational-Wave Strain from Magnetic Deformation of Magnetars: Ellipticity and Signal Budgets for the Known Population'. Its stated result: Headline result (values verbatim from results.json): largest_h0_source = SGR 1806-20; largest_h0 = 3.3e-32; largest_ellipticity = 3.8e-06; smallest_h0 = 9.5e-37. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Characteristic Ages Against Supernova Remnant Ages: What the Discrepancies Require of Magnetar Birth Periods and Braking Histories”. Its stated result is: Headline result (values verbatim from results.json): largest_age_ratio_source = 1E 2259+586; largest_age_ratio = 16.5; smallest_age_ratio = 0.02; sources_tau_c_exceeds_remnant_by_10x = 1. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Characteristic Ages Against Supernova Remnant Ages: What the Discrepancies Require of Magnetar Birth Periods and Braking Histories'; 'Crustal Failure Stresses in Magnetars: Surface Magnetic Stress Against the Breaking Strength of the Neutron Star Crust'; 'Dipole Magnetic Fields of Eighteen Magnetars from Spin-Down: A Catalogue-Wide Recalculation Against the Quantum Critical Field'; 'Field-Decay Heating and Persistent X-Ray Luminosity: Required Decay Times for the Magnetar Catalogue'; 'Giant Flare Energy Budgets: The Three Recorded Events Against the Magnetic Reservoir of Their Host Stars'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.

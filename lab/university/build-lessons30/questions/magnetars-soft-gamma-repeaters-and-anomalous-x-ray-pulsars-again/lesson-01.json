@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'Characteristic Ages Against Supernova Remnant Ages: What the Discrepancies Require of Magnetar Birth Periods and Braking Histories'. The result it reported gives a value for largest_age_ratio_source, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Characteristic Ages Against Supernova Remnant Ages: What the Discrepancies Require of Magnetar Birth Periods and Braking Histories'. Its stated result: Headline result (values verbatim from results.json): largest_age_ratio_source = 1E 2259+586; largest_age_ratio = 16.5; smallest_age_ratio = 0.02; sources_tau_c_exceeds_remnant_by_10x = 1. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: largest_age_ratio_source = 1; largest_age_ratio = 16.5; smallest_age_ratio = 0.02. Find largest_age_ratio_source in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Characteristic Ages Against Supernova Remnant Ages: What the Discrepancies Require of Magnetar Birth Periods and Braking Histories' stated its result. (2) That result pairs names with values: largest_age_ratio_source = 1; largest_age_ratio = 16.5; smallest_age_ratio = 0.02. (3) This question asks for the value paired with largest_age_ratio_source. (4) In that row, largest_age_ratio_source stands beside 1 — so the answer the lesson gives is 1. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Characteristic Ages Against Supernova Remnant Ages: What the Discrepancies Require of Magnetar Birth Periods and Braking Histories' reported a number for largest_age_ratio_source. What number did it report?",
+  "kind": "number",
+  "answer": 1.0,
+  "disp": "1",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "5.28e+06",
+   "1.95e+15",
+   "1.51e+29",
+   "1"
+  ],
+  "mcAnswer": "1",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Crustal Failure Stresses in Magnetars: Surface Magnetic Stress Against the Breaking Strength of the Neutron Star Crust'. The result it reported gives a value for highest_stress_dyn_cm2, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Crustal Failure Stresses in Magnetars: Surface Magnetic Stress Against the Breaking Strength of the Neutron Star Crust'. Its stated result: Headline result (values verbatim from results.json): breaking_field_theta0.01_G = 5.01e+14; breaking_field_theta0.1_G = 1.59e+15; sources_surface_stress_above_theta0.01 = 3; highest_stress_source = SGR 1806-20; highest_stress_dyn_cm2 = 1.51e+29. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: highest_stress_dyn_cm2 = 1.51e+29. Find highest_stress_dyn_cm2 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Crustal Failure Stresses in Magnetars: Surface Magnetic Stress Against the Breaking Strength of the Neutron Star Crust' stated its result. (2) That result pairs names with values: highest_stress_dyn_cm2 = 1.51e+29. (3) This question asks for the value paired with highest_stress_dyn_cm2. (4) In that row, highest_stress_dyn_cm2 stands beside 1.51e+29 — so the answer the lesson gives is 1.51e+29. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Crustal Failure Stresses in Magnetars: Surface Magnetic Stress Against the Breaking Strength of the Neutron Star Crust' reported a number for highest_stress_dyn_cm2. What number did it report?",
+  "kind": "number",
+  "answer": 1.51e+29,
+  "disp": "1.51e+29",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "1",
+   "5.28e+06",
+   "1.51e+29",
+   "1.95e+15"
+  ],
+  "mcAnswer": "1.51e+29",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Dipole Magnetic Fields of Eighteen Magnetars from Spin-Down: A Catalogue-Wide Recalculation Against the Quantum Critical Field'. The result it reported gives a value for highest_B_G, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Dipole Magnetic Fields of Eighteen Magnetars from Spin-Down: A Catalogue-Wide Recalculation Against the Quantum Critical Field'. Its stated result: Headline result (values verbatim from results.json): highest_B_source = SGR 1806-20; highest_B_G = 1.95e+15; lowest_B_source = SGR 0418+5729; lowest_B_G = 6.10e+12; median_B_G = 2.22e+14; span_in_B = 319.1; sources_above_BQ = 16; n_sources = 18. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: highest_B_G = 1.95e+15; lowest_B_G = 6.10e+12; median_B_G = 2.22e+14. Find highest_B_G in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Dipole Magnetic Fields of Eighteen Magnetars from Spin-Down: A Catalogue-Wide Recalculation Against the Quantum Critical Field' stated its result. (2) That result pairs names with values: highest_B_G = 1.95e+15; lowest_B_G = 6.10e+12; median_B_G = 2.22e+14. (3) This question asks for the value paired with highest_B_G. (4) In that row, highest_B_G stands beside 1.95e+15 — so the answer the lesson gives is 1.95e+15. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Dipole Magnetic Fields of Eighteen Magnetars from Spin-Down: A Catalogue-Wide Recalculation Against the Quantum Critical Field' reported a number for highest_B_G. What number did it report?",
+  "kind": "number",
+  "answer": 1950000000000000.0,
+  "disp": "1.95e+15",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "1.95e+15",
+   "1",
+   "1.51e+29",
+   "5.28e+06"
+  ],
+  "mcAnswer": "1.95e+15",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Field-Decay Heating and Persistent X-Ray Luminosity: Required Decay Times for the Magnetar Catalogue'. The result it reported gives a value for longest_required_decay_time_yr, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Field-Decay Heating and Persistent X-Ray Luminosity: Required Decay Times for the Magnetar Catalogue'. Its stated result: Headline result (values verbatim from results.json): longest_required_decay_time_source = CXOU J164710.2-455216; longest_required_decay_time_yr = 5.28e+06; shortest_required_decay_time_yr = 3.27e+02; sources_Lx_above_Edot = 11; median_Lx_over_decay_power = 0.387. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: longest_required_decay_time_yr = 5.28e+06; shortest_required_decay_time_yr = 3.27e+02; sources_Lx_above_Edot = 11. Find longest_required_decay_time_yr in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Field-Decay Heating and Persistent X-Ray Luminosity: Required Decay Times for the Magnetar Catalogue' stated its result. (2) That result pairs names with values: longest_required_decay_time_yr = 5.28e+06; shortest_required_decay_time_yr = 3.27e+02; sources_Lx_above_Edot = 11. (3) This question asks for the value paired with longest_required_decay_time_yr. (4) In that row, longest_required_decay_time_yr stands beside 5.28e+06 — so the answer the lesson gives is 5.28e+06. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Field-Decay Heating and Persistent X-Ray Luminosity: Required Decay Times for the Magnetar Catalogue' reported a number for longest_required_decay_time_yr. What number did it report?",
+  "kind": "number",
+  "answer": 5280000.0,
+  "disp": "5.28e+06",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "1.95e+15",
+   "1",
+   "5.28e+06",
+   "1.51e+29"
+  ],
+  "mcAnswer": "5.28e+06",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Giant Flare Energy Budgets: The Three Recorded Events Against the Magnetic Reservoir of Their Host Stars'. The result it reported gives a value for largest_flare_energy_erg, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Giant Flare Energy Budgets: The Three Recorded Events Against the Magnetic Reservoir of Their Host Stars'. Its stated result: Headline result (values verbatim from results.json): largest_flare_source = SGR 1806-20; largest_flare_energy_erg = 2.0e+46; largest_flare_fraction_of_reservoir = 0.032; smallest_flare_fraction_of_reservoir = 2.45e-03; reservoir_SGR1806_erg = 6.31e+47. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: largest_flare_energy_erg = 2.0e+46; largest_flare_fraction_of_reservoir = 0.032; smallest_flare_fraction_of_reservoir = 2.45e-03. Find largest_flare_energy_erg in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Giant Flare Energy Budgets: The Three Recorded Events Against the Magnetic Reservoir of Their Host Stars' stated its result. (2) That result pairs names with values: largest_flare_energy_erg = 2.0e+46; largest_flare_fraction_of_reservoir = 0.032; smallest_flare_fraction_of_reservoir = 2.45e-03. (3) This question asks for the value paired with largest_flare_energy_erg. (4) In that row, largest_flare_energy_erg stands beside 2.0e+46 — so the answer the lesson gives is 2.0e+46. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Giant Flare Energy Budgets: The Three Recorded Events Against the Magnetic Reservoir of Their Host Stars' reported a number for largest_flare_energy_erg. What number did it report?",
+  "kind": "number",
+  "answer": 2e+46,
+  "disp": "2.0e+46",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "1",
+   "1.95e+15",
+   "2.0e+46",
+   "1.51e+29"
+  ],
+  "mcAnswer": "2.0e+46",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Characteristic Ages Against Supernova Remnant Ages: What the Discrepancies Require of Magnetar Birth Periods and Braking Histories”. Its stated result is: Headline result (values verbatim from results.json): largest_age_ratio_source = 1E 2259+586; largest_age_ratio = 16.5; smallest_age_ratio = 0.02; sources_tau_c_exceeds_remnant_by_10x = 1. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “Characteristic Ages Against Supernova Remnant Ages: What the Discrepancies Require of Magnetar Birth Periods and Braking Histories”. Its stated result is: Headline result (values verbatim from results.json): largest_age_ratio_source = 1E 2259+586; largest_age_ratio = 16.5; smallest_age_ratio = 0.02; sources_tau_c_exceeds_remnant_by_10x = 1. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]

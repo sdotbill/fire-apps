@@ -423,5 +423,12 @@
    "audio": "audio/lessons30/cometary-comae-tails-and-outgassing-against-density-and-energy-b/lesson-01.mp3",
    "minutes": 9.38
   }
+ },
+ "magnetars-soft-gamma-repeaters-and-anomalous-x-ray-pulsars-again": {
+  "lesson-01": {
+   "hash": "22ea07f7a864da58dd9f2d60a55b8bdd44763184",
+   "audio": "audio/lessons30/magnetars-soft-gamma-repeaters-and-anomalous-x-ray-pulsars-again/lesson-01.mp3",
+   "minutes": 12.25
+  }
  }
 }
