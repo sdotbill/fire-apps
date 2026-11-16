@@ -158,7 +158,7 @@
   <div class="row" style="display:flex;gap:8px;margin:12px 0 16px">
     <a class="act" href="../university/" style="text-decoration:none;display:inline-block;background:var(--gold);color:#fff;border-radius:4px;padding:9px 18px">Open the door — browse the classes →</a>
   </div>
-  <p>Your Lab hours, from your own session receipts. The clock that earns
+  <p id="uniHoursLabel">Your Lab hours, from your own session receipts. The clock that earns
      them runs only while you are in the room with it in front of you.</p>
   <div class="bignum" id="uniHours">0 min</div>
   <p id="uniMeta"></p>
@@ -293,6 +293,62 @@
 
   /* ================= Session + University hours log ================= */
   var storage = window.localStorage;
+
+  /* Bill's documented balance (Nov 16): hours counted from the record
+     of his messages with Dave, served as ONE canonical file —
+     lab/university/prior-balance.json — that the room, the University
+     and the dashboard desk all read. Until it loads, and if it ever
+     fails to, every figure here is this device's log alone, with the
+     panel's original wording: no wrong total is ever dressed up as
+     his balance. */
+  var PRIOR_URL = '../university/prior-balance.json';
+  var priorBalance = null;   /* the parsed balance file, once loaded */
+  function priorThousands(n) {
+    return String(Math.round(n || 0)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  }
+  function priorBalanceMinutes(b) {
+    if (!b || typeof b.active_minutes !== 'number' ||
+        !isFinite(b.active_minutes) || b.active_minutes < 0) return 0;
+    return b.active_minutes;
+  }
+  function priorRangeLabel(b) {
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    function fmt(iso) {
+      var p = String(iso).split('-');
+      return months[parseInt(p[1], 10) - 1] + ' ' + parseInt(p[2], 10);
+    }
+    var found = ((b && b.method) || '').match(/\d{4}-\d{2}-\d{2}/g) || [];
+    if (found.length >= 2)
+      return fmt(found[0]) + ' – ' + fmt(found[found.length - 1]);
+    if (b && b.as_of) return 'as of ' + fmt(b.as_of);
+    return '';
+  }
+  function priorBalanceLabel(b) {
+    var range = priorRangeLabel(b);
+    return 'Your hours with Dave — ' + priorThousands(priorBalanceMinutes(b)) +
+      ' min documented from the record' + (range ? ' (' + range + ')' : '') +
+      ', plus sessions logged here.';
+  }
+  function totalHoursMinutes(localMin) {
+    return priorBalanceMinutes(priorBalance) + (localMin || 0);
+  }
+  function loadPriorBalance() {
+    if (!window.fetch) return;
+    fetch(PRIOR_URL).then(function (r) {
+      if (!r.ok) throw new Error('balance ' + r.status);
+      return r.json();
+    }).then(function (b) {
+      if (!priorBalanceMinutes(b)) return;  /* unusable file: stay local-only */
+      priorBalance = b;
+      var lbl = $('uniHoursLabel');
+      if (lbl) lbl.textContent = priorBalanceLabel(b) +
+        ' The session part is this device’s own log — its clock runs only ' +
+        'while you are in the room with it in front of you.';
+      refreshHours();
+    }).catch(function () { /* local-only figures stand */ });
+  }
+
   var timer = Core ? Core.createSessionTimer() : null;
   var sessionStations = [], sessionSteps = 0, sessionLogged = false;
   if (timer) {
@@ -311,7 +367,7 @@
   }
   function refreshHours() {
     var s = Core.summarizeLog(Core.loadLog(storage));
-    $('myHours').textContent = Core.formatMinutes(s.totalMinutes);
+    $('myHours').textContent = Core.formatMinutes(totalHoursMinutes(s.totalMinutes));
   }
   function endSession(reason) {
     if (!timer || sessionLogged) return null;
@@ -357,6 +413,7 @@
   $('btnExport').addEventListener('click', exportLog);
   $('btnExport2').addEventListener('click', exportLog);
   if (Core) refreshHours();
+  loadPriorBalance();
 
   /* ================= Instruments (physics: ../lab-core.js) ================= */
   var instOpen = null;
@@ -560,7 +617,7 @@
     visitStation('university');
     var log = Core.loadLog(storage);
     var s = Core.summarizeLog(log);
-    $('uniHours').textContent = Core.formatMinutes(s.totalMinutes);
+    $('uniHours').textContent = Core.formatMinutes(totalHoursMinutes(s.totalMinutes));
     $('uniMeta').textContent = s.sessions + ' session(s) logged · ' +
       s.totalSteps + ' guided step(s) completed · this session so far: ' +
       Core.formatMinutes(timer ? timer.elapsedMinutes() : 0) + '.';

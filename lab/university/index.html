@@ -130,6 +130,7 @@
 <div id="topbar">
   <span class="brand">EXOLEX UNIVERSITY</span>
   <span class="stat">My hours <b id="myHours">0 min</b></span>
+  <span class="stat" id="hoursLabel"></span>
   <span class="spacer"></span>
   <a class="hbtn" href="../room/">← The Laboratory</a>
   <a class="hbtn" href="../">The flat bench</a>
@@ -238,11 +239,64 @@
     if (toastTimer) clearTimeout(toastTimer);
     toastTimer = setTimeout(function () { t.style.display = 'none'; }, 5200);
   }
+  /* Bill's documented balance (Nov 16): hours counted from the record
+     of his messages with Dave, served as ONE canonical file —
+     prior-balance.json, right here in the University — that the
+     catalogue, the classrooms, the Lab Room and the dashboard desk
+     all read. Until it loads, and if it ever fails to, the figure is
+     this device's log alone, exactly as before. */
+  var PRIOR_URL = 'prior-balance.json';
+  var priorBalance = null;   /* the parsed balance file, once loaded */
+  function priorThousands(n) {
+    return String(Math.round(n || 0)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  }
+  function priorBalanceMinutes(b) {
+    if (!b || typeof b.active_minutes !== 'number' ||
+        !isFinite(b.active_minutes) || b.active_minutes < 0) return 0;
+    return b.active_minutes;
+  }
+  function priorRangeLabel(b) {
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    function fmt(iso) {
+      var p = String(iso).split('-');
+      return months[parseInt(p[1], 10) - 1] + ' ' + parseInt(p[2], 10);
+    }
+    var found = ((b && b.method) || '').match(/\d{4}-\d{2}-\d{2}/g) || [];
+    if (found.length >= 2)
+      return fmt(found[0]) + ' – ' + fmt(found[found.length - 1]);
+    if (b && b.as_of) return 'as of ' + fmt(b.as_of);
+    return '';
+  }
+  function priorBalanceLabel(b) {
+    var range = priorRangeLabel(b);
+    return 'Your hours with Dave — ' + priorThousands(priorBalanceMinutes(b)) +
+      ' min documented from the record' + (range ? ' (' + range + ')' : '') +
+      ', plus sessions logged here.';
+  }
+  function totalHoursMinutes(localMin) {
+    return priorBalanceMinutes(priorBalance) + (localMin || 0);
+  }
+  function loadPriorBalance() {
+    if (!window.fetch) return;
+    fetch(PRIOR_URL).then(function (r) {
+      if (!r.ok) throw new Error('balance ' + r.status);
+      return r.json();
+    }).then(function (b) {
+      if (!priorBalanceMinutes(b)) return;  /* unusable file: stay local-only */
+      priorBalance = b;
+      var lbl = $('hoursLabel');
+      if (lbl) lbl.textContent = priorBalanceLabel(b);
+      refreshHours();
+    }).catch(function () { /* local-only figures stand */ });
+  }
+
   function refreshHours() {
     var s = U.summarizeLog(U.loadLog(storage));
-    $('myHours').textContent = U.formatMinutes(s.totalMinutes);
+    $('myHours').textContent = U.formatMinutes(totalHoursMinutes(s.totalMinutes));
   }
   refreshHours();
+  loadPriorBalance();
 
   /* ================= professor portrait (stylised, drawn) ================= */
   function portraitSVG(p) {

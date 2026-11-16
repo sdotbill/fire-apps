@@ -416,6 +416,19 @@
     var h = Math.floor(m / 60), rem = m % 60;
     return h + " h " + (rem < 10 ? "0" : "") + rem + " min";
   }
+  /* Bill's documented balance (Nov 16): hours counted from the record
+     of his messages with Dave, served as ONE canonical file —
+     /lab/university/prior-balance.json — that the Lab Room, the
+     University and this desk all read. If it cannot be read, the Lab
+     desk falls back to this device's log alone, with the per-device
+     line, exactly as before. */
+  function labPriorThousands(n){
+    return String(Math.round(n || 0)).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+  function labPriorMinutes(b){
+    if(!b || typeof b.active_minutes !== "number" || !isFinite(b.active_minutes) || b.active_minutes < 0) return 0;
+    return b.active_minutes;
+  }
   function dayLabel(ts){
     var today = nyDay(Date.now()), yest = nyDay(Date.now() - 86400000);
     var d = nyDay(ts);
@@ -1146,7 +1159,7 @@
       lh += '<a class="libitem" href="/lab/">\ud83d\udd2c<span>The flat bench<small>The same instruments on one page</small></span></a>';
       lh += '<div class="panel-sec">Your Lab hours</div>';
       lh += '<div class="setrow"><div class="grow"><strong id="lab-hours-total">\u2026</strong><div class="mini" id="lab-hours-detail">Reading this device\u2019s Lab log\u2026</div></div></div>';
-      lh += '<p class="mini" style="margin:2px 6px">Hours logged on this device \u2014 the ledger ties them to your sign-in in a later stage.</p>';
+      lh += '<p class="mini" id="lab-hours-note" style="margin:2px 6px">Hours logged on this device \u2014 the ledger ties them to your sign-in in a later stage.</p>';
       b.innerHTML = lh;
       var labLog = lsJson("dave_lab_log", []);
       if(!Array.isArray(labLog)) labLog = [];
@@ -1163,6 +1176,24 @@
           labDetEl.textContent = labLog.length + (labLog.length === 1 ? " session" : " sessions") +
             (isNaN(lastTs) ? "" : " \u00b7 last session " + dayLabel(lastTs) + ", " + nyTime(lastTs));
         }
+      }
+      /* Add the documented balance on top of this device's log. Until
+         the canonical file arrives — and if it never does — the
+         figures above stand as this device's alone, with the
+         per-device line untouched. */
+      if(window.fetch){
+        fetch("/lab/university/prior-balance.json").then(function(r){
+          if(!r.ok) throw new Error("balance " + r.status);
+          return r.json();
+        }).then(function(bal){
+          var balMin = labPriorMinutes(bal);
+          if(!balMin) return;  /* unusable file: stay local-only */
+          var totEl = $("lab-hours-total"), detEl = $("lab-hours-detail"), noteEl = $("lab-hours-note");
+          if(totEl) totEl.textContent = fmtLabMinutes(balMin + labTotalMin);
+          if(detEl) detEl.textContent = labPriorThousands(balMin) + " min documented from the record \u00b7 plus " +
+            labLog.length + (labLog.length === 1 ? " session" : " sessions") + " on this device";
+          if(noteEl) noteEl.textContent = "The documented balance is counted from the record of your work with Dave; the sessions added to it are logged on this device.";
+        }).catch(function(){ /* local-only figures stand */ });
       }
       var roomLink = $("lab-open-room");
       if(roomLink) roomLink.addEventListener("click", function(){
