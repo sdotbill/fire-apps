@@ -354,6 +354,40 @@
       seen[n] = true;
       pool.push(t);
     });
+    /* Top-up 1 — a DOI step in a paper class: the class's own
+       SYLLABUS is part of the class, and its other papers' DOIs are
+       the honest plausible set for "what is this paper's DOI". The
+       two-step partial classes (DOI step + capstone) have no sibling
+       answers at all; their syllabuses carry the rescue. */
+    if (pool.length < 3 && st.kind === 'exact' &&
+        /10\.\d+\//.test(String(st.answer)) && gCls && gCls.papers) {
+      gCls.papers.forEach(function (p) {
+        if (pool.length >= 3 || !p.doi) return;
+        var n = normForChoice(p.doi);
+        if (seen[n]) return;
+        seen[n] = true;
+        pool.push(p.doi);
+      });
+    }
+    /* Top-up 2 — a value step gone thin: its own teach chunk states
+       the paper's headline values in a row ("A = x; B = y; …"). The
+       sibling values in that same statement are the step's own
+       material, in the material's own printed form. */
+    if (pool.length < 2 && st.kind === 'number') {
+      var want = typeof st.answer === 'number' ? st.answer : G.parseNumber(st.answer);
+      var tol = st.tol || 0.03;
+      var text = (st.teach || '') + ' ' + (st.teach2 || '');
+      var m, re = /=\s*(-?\d+(?:\.\d+)?(?:e[+-]?\d+)?)/gi;
+      while ((m = re.exec(text)) !== null && pool.length < 2) {
+        var pv = parseFloat(m[1]);
+        if (!isNaN(pv) && want !== null && want !== undefined &&
+            Math.abs(pv - want) / Math.abs(want || 1) <= tol) continue;
+        var n2 = normForChoice(m[1]);
+        if (seen[n2]) continue;
+        seen[n2] = true;
+        pool.push(m[1]);
+      }
+    }
     var opts = [{ t: correct, ok: true }].concat(
       pool.slice(0, 3).map(function (t) { return { t: t, ok: false }; }));
     /* a plain shuffle — position teaches nothing */
@@ -378,6 +412,8 @@
       'more — or take the choices below the hint.', '');
   }
   function showChoices() {
+    var opts = buildChoices();
+    if (opts.length < 2) { showLookup(); return; }
     helpLevel = 2;
     var host = $('gtChoices');
     host.innerHTML = '';
@@ -388,7 +424,7 @@
       'answers this step. Landing it this way is recorded as an ' +
       'assisted pass.';
     host.appendChild(head);
-    buildChoices().forEach(function (o) {
+    opts.forEach(function (o) {
       var btn = document.createElement('button');
       btn.className = 'gtChoice';
       btn.textContent = o.t;
@@ -398,6 +434,37 @@
     host.style.display = '';
     $('gtHelp').style.display = 'none';
     setStatus('Choices are up. Pick the one the material supports.', '');
+  }
+  /* No honest choice set exists for this step (its class carries no
+     sibling answers and no syllabus rescue): help becomes a guided
+     look-up in the class's own materials instead of a fabricated
+     pick. helpLevel still goes to 2, so a pass typed after the
+     look-up is recorded as assisted — the student was shown where
+     the answer lives. */
+  function showLookup() {
+    helpLevel = 2;
+    var st = step();
+    var host = $('gtChoices');
+    host.innerHTML = '';
+    var p = document.createElement('p');
+    p.style.margin = '0 0 4px';
+    var where = st.kind === 'exact'
+      ? 'This step\u2019s answer is printed on the class\u2019s own ' +
+        'Syllabus card. Open the Syllabus tab above, find it there, ' +
+        'and type it here.'
+      : 'This step\u2019s answer is in the piece itself — the hint ' +
+        'above states the material again, the other way in. Read ' +
+        'the answer out of it and type it here.';
+    p.innerHTML = '<b>No set of choices can be honestly built for ' +
+      'this step</b> — this class carries no other answers to pick ' +
+      'from, and invented options would be fabrication. ' + where +
+      ' Landing it after the look-up is recorded as an assisted ' +
+      'pass, honestly.';
+    host.appendChild(p);
+    host.style.display = '';
+    $('gtHelp').style.display = 'none';
+    setStatus('Help, the honest form for this step: look it up in ' +
+      'the class\u2019s own material, then type it.', '');
   }
   function pickChoice(btn, ok) {
     if (busy || !started) return;

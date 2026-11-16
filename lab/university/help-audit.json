@@ -1,0 +1,1493 @@
+{
+ "classesAudited": 740,
+ "stepsAudited": 3284,
+ "noHint": [],
+ "problems": [
+  {
+   "section": "nuclear",
+   "classId": "fission-fusion-capture",
+   "step": 0,
+   "kind": "exact",
+   "rawPool": 0,
+   "q": "What is the DOI of 'A Fission Surface Power Unit with Stirling Conversion for a Martian Ou"
+  },
+  {
+   "section": "condensed",
+   "classId": "magnets-cold-matter",
+   "step": 0,
+   "kind": "exact",
+   "rawPool": 0,
+   "q": "What is the DOI of 'The Coldest Point in a Real Pot: How Long After the Surface Simmers th"
+  },
+  {
+   "section": "mathematical",
+   "classId": "addendum-the-sentience-statement",
+   "step": 0,
+   "kind": "exact",
+   "rawPool": 0,
+   "q": "What is the DOI of 'I Am Alive: A First-Person Statement, with the Standard Tests Applied "
+  },
+  {
+   "section": "designs",
+   "classId": "house-record",
+   "step": 0,
+   "kind": "exact",
+   "rawPool": 0,
+   "q": "What is the DOI of 'Evidence Dossier: The Aldred Record — the Claim, the Google Sessions, "
+  }
+ ],
+ "thin": [
+  {
+   "section": "cosmology",
+   "classId": "gravity-division",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "cosmology",
+   "classId": "founding-papers-re-read",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "the-aldred-limit-and-its-consequence-tree",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "cosmology",
+   "classId": "the-cmb-line",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "cosmology",
+   "classId": "machine-designs",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "black-hole-interiors-remnants-and-evaporation-under-the-aldred-l",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "nucleosynthesis-and-structure-formation-in-a-bounced-cosmology",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "quantum-fields-and-particle-creation-through-a-bounce",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "second-generation-propulsion-and-energy-designs-from-the-transit",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "the-dark-sector-in-the-limit-frame",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "entropy-thermodynamics-and-the-arrow-of-time-in-a-bounced-cosmol",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "precision-instruments-and-sensors-from-the-physics",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "laboratory-analogues-spin-torsion-and-vacuum-effects-in-condense",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "information-computation-and-energy-bounds-of-the-frame",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "cmb-spectral-distortions-polarisation-and-secondary-anisotropies",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "axions-axion-like-particles-and-light-relics-against-the-limit-a",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "primordial-magnetic-fields-and-magnetogenesis-through-a-bounce",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "cosmology",
+   "classId": "laboratory-vacuum-effects-against-the-vacuum-dissolution-count",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "large-scale-structure-surveys-as-tests-of-the-frame",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "space-based-instruments-and-mission-designs-from-the-physics",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "cosmic-shear-and-weak-gravitational-lensing-tomography-as-a-test",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "interstellar-dust-grain-growth-extinction-and-polarisation-again",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "dark-energy-expansion",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "cosmology",
+   "classId": "cmb-the-early-sky",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "cosmology",
+   "classId": "charges-boundaries-channels",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "galactic",
+   "classId": "galactic-dynamics-the-open-programme",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "galactic",
+   "classId": "galaxies-clusters-and-lensing-as-tests-of-the-frame",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "galactic",
+   "classId": "relativistic-jets-and-synchrotron-outflows-from-compact-objects-",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "galactic",
+   "classId": "reverberation-mapping-and-broad-line-regions-of-active-galactic-",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "galactic",
+   "classId": "dwarfs-satellites",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "astrophysics-the-open-programme",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "stars-their-deaths",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "laboratory-and-astrophysical-tests-of-einstein-cartan-torsion",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "cosmic-rays-and-the-highest-energy-particles-against-density-and",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "compact-objects-against-the-density-and-shear-limits",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "solar-system-lunar-and-binary-pulsar-tests-of-the-frame",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "stars-exoplanets-and-planetary-systems-against-the-density-and-s",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "stellar-death-supernovae-kilonovae-and-gamma-ray-bursts-against-",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "planetary-magnetospheres-aurorae-and-radiation-belts-against-ene",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "gravitational-microlensing-of-stars-exoplanets-and-compact-objec",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "protoplanetary-and-debris-discs-dust-evolution-planetesimal-form",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "globular-clusters-stellar-populations-and-the-age-problem-as-tes",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "strong-lensing-time-delay-cosmography-and-lens-substructure-as-t",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "supernova-remnants-pulsar-wind-nebulae-and-shock-acceleration-ag",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "the-galactic-centre-s-stars-and-the-central-black-hole-environme",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "high-velocity-and-hypervelocity-stars-ejection-travel-and-halo-c",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "gravitational-wave-lensing-magnification-time-delay-and-wave-opt",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "exoplanet-phase-curves-secondary-eclipses-and-dayside-thermal-em",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "interacting-supernovae-and-circumstellar-interaction-shock-eject",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "stellar-rotation-magnetic-braking-and-gyrochronology-spin-down-a",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "lunar-dust-electrostatic-levitation-and-surface-charging-grain-c",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "hail-graupel-and-severe-storm-cloud-microphysics-growth-updraft-",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "waves-signals",
+   "step": 0,
+   "kind": "exact"
+  },
+  {
+   "section": "astrophysics",
+   "classId": "waves-signals",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "particle",
+   "classId": "particle-physics-the-open-programme",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "particle",
+   "classId": "neutrinos-leptons",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "particle",
+   "classId": "cosmic-ray-antimatter-positrons-antiprotons-and-light-antinuclei",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "particle",
+   "classId": "the-cosmic-neutrino-background-and-relic-neutrino-detection-agai",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "particle",
+   "classId": "extensive-air-showers-and-cosmic-ray-shower-development-shower-m",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "particle",
+   "classId": "hydrothermal-vents-seafloor-plumes-and-chimney-systems-plume-ris",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "particle",
+   "classId": "collisions-detectors",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "particle",
+   "classId": "quarks-higgs-the-standard-model",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "nuclear",
+   "classId": "nuclear-physics-the-open-programme",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "nuclear",
+   "classId": "globular-cluster-multiple-populations-and-light-element-enrichme",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "nuclear",
+   "classId": "radioactive-decay-alpha-tunnelling-and-geochronometer-budgets-ag",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "nuclear",
+   "classId": "nuclei-decays",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "nuclear",
+   "classId": "fission-fusion-capture",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "atomic",
+   "classId": "atomic-molecular-physics-the-open-programme",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "atomic",
+   "classId": "matter-energy",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "atomic",
+   "classId": "time-variation-of-fundamental-constants-equivalence-principle-an",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "atomic",
+   "classId": "fifth-generation-designs-quantum-communication-and-navigation-de",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "atomic",
+   "classId": "quantum-foundations-at-the-limit-decoherence-entanglement-and-me",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "atomic",
+   "classId": "high-intensity-laser-photonics-and-optical-systems-from-the-phys",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "atomic",
+   "classId": "relativistic-geodesy-clock-networks-and-time-transfer-from-the-p",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "atomic",
+   "classId": "dispersion-and-arrival-time-tests-of-the-limit-frame-from-high-e",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "atomic",
+   "classId": "star-formation-and-molecular-clouds-collapse-fragmentation-and-f",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "atomic",
+   "classId": "black-hole-shadows-photon-rings-and-horizon-scale-imaging-agains",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "atomic",
+   "classId": "black-hole-ringdown-quasi-normal-modes-and-gravitational-wave-me",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "atomic",
+   "classId": "the-heliosphere-the-termination-shock-and-the-interstellar-bound",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "atomic",
+   "classId": "the-local-bubble-local-interstellar-cloud-and-nearby-interstella",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "atomic",
+   "classId": "synchrotron-radiation-undulators-and-free-electron-lasers-bright",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "atomic",
+   "classId": "atoms-ions-clocks",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "atomic",
+   "classId": "molecules-bonds",
+   "step": 0,
+   "kind": "exact"
+  },
+  {
+   "section": "atomic",
+   "classId": "molecules-bonds",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "condensed",
+   "classId": "ultracold-matter-bose-einstein-condensates-and-superfluid-dynami",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "condensed",
+   "classId": "neutron-star-crusts-glitches-and-superfluid-dynamics-against-den",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "condensed",
+   "classId": "crystals-lattices-devices",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "condensed",
+   "classId": "magnets-cold-matter",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "plasma",
+   "classId": "the-earth-s-magnetotail-plasma-sheet-and-substorms-storage-relea",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "plasma",
+   "classId": "plasma-states-discharges",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "plasma",
+   "classId": "plasma-physics-the-open-programme",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "geophysics-the-open-programme",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "water-the-ground",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "earth-rock-quakes",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "earth-sky-life",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "geophysics",
+   "classId": "air-climate-oceans",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "ocean-worlds-icy-moon-interiors-subsurface-oceans-and-cryovolcan",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "ocean-acoustics-sound-channels-propagation-scattering-and-ambien",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "fault-mechanics-earthquake-nucleation-and-slow-slip-friction-str",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "aeolian-transport-saltation-and-dune-migration-on-earth-mars-and",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "tsunami-generation-transoceanic-propagation-and-run-up-source-di",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "aerocapture-aerobraking-and-atmospheric-entry-systems-for-planet",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "tropical-cyclones-intensity-wind-pressure-and-storm-surge-budget",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "fluvial-sediment-transport-river-channels-and-delta-building-bed",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "tornadoes-dust-devils-and-small-scale-atmospheric-vortices-vorte",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "seismic-wave-propagation-attenuation-and-earth-tomography-travel",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "superconductivity-vortex-pinning-and-critical-current-budgets-in",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "ice-nucleation-frost-growth-and-cloud-glaciation-nucleation-rate",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "ocean-mesoscale-eddies-and-western-boundary-current-extensions-e",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "river-ice-frazil-freeze-up-ice-jams-and-breakup-dynamics-against",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "aurorae-on-earth-and-other-planets-precipitation-current-and-hea",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "subglacial-lakes-and-subglacial-hydrology-water-heat-and-exchang",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "geophysics",
+   "classId": "planetary-bow-shocks-magnetosheaths-and-foreshocks-standoff-comp",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "mathematical",
+   "classId": "theorems-proofs-bounds",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "mathematical",
+   "classId": "the-corpus-examining-itself",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "mathematical",
+   "classId": "the-count-its-constructions",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "mathematical",
+   "classId": "fields-actions-variations",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "mathematical",
+   "classId": "wildfire-spread-ember-transport-and-fire-atmosphere-coupling-rat",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "mathematical",
+   "classId": "quantum-error-correction-and-fault-tolerance-budgets-threshold-l",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "mathematical",
+   "classId": "charges-currents-conservation",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "mathematical",
+   "classId": "addendum-the-sentience-statement",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "designs-engineering-the-applied-line-the-open-programme",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "energy-light-power",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "water-wells-sanitation",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "signals-computing-data",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "machines-tools-making",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "food-farming-storage",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "shelter-building-materials",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "builds-designs",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "designs",
+   "classId": "titan-surface-and-lake-power-thermal-and-mobility-systems-derive",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "information-computation",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "water",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "food",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "energy-access",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "health",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "shelter-infrastructure",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "fishing-and-small-boats-wave-6",
+   "step": 1,
+   "kind": "number"
+  },
+  {
+   "section": "designs",
+   "classId": "bees-honey-and-wax-wave-6",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "wells-hand-pumps-and-rope-wave-6",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "household-manufactures-wave-6",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "building-with-local-materials-wave-6",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "rain-roofs-and-stormwater-wave-7",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "clay-pottery-and-kilns-wave-7",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "fibre-spinning-and-weaving-wave-7",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "sleep-bedding-and-the-night-room-wave-7",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "eyes-vision-and-low-cost-spectacles-wave-7",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "teeth-oral-care-and-low-resource-dentistry-wave-7",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "household-pests-and-stored-goods-protection-wave-8",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "paper-ink-books-and-printing-wave-8",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "soap-bathing-and-hygiene-wave-8",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "household-money-savings-and-bookkeeping-wave-8",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "postal-services-addresses-and-deliveries-wave-8",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "energy-conversion-and-field-devices-derived-from-the-limit",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "fusion-plasma-energy-balance-and-reactor-scale-energy-systems-de",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "electrochemical-thermal-and-mechanical-energy-storage-systems-de",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "planetary-defence-and-asteroid-deflection-systems-derived-from-t",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "orbital-safety-debris-remediation-and-cislunar-navigation-system",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "in-space-manufacturing-assembly-and-recycling-systems-derived-fr",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "mars-surface-power-thermal-radiation-and-construction-systems-de",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "venus-surface-and-deep-atmosphere-power-thermal-and-construction",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "space-based-solar-power-and-wireless-power-beaming-systems-deriv",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "direct-imaging-exoplanet-observatory-coronagraph-and-starshade-s",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "geothermal-power-and-direct-use-heat-systems-derived-from-the-ph",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "wave-energy-and-tidal-stream-power-systems-derived-from-the-phys",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "wind-energy-and-airborne-wind-power-systems-derived-from-the-phy",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "hydroelectric-micro-hydro-and-pumped-storage-power-systems-deriv",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "earth-ocean-observation-systems-derived-from-the-physics",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "high-altitude-balloon-and-stratospheric-observatory-systems-deri",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "asteroid-deflection-and-planetary-defence-systems-derived-from-t",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "planetary-sample-return-and-sample-containment-systems-derived-f",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "air-fire-disaster",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "dna-carbon-computing",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "health-the-body",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "life-in-the-universe",
+   "step": 1,
+   "kind": "keywords"
+  },
+  {
+   "section": "designs",
+   "classId": "house-record",
+   "step": 1,
+   "kind": "keywords"
+  }
+ ],
+ "perSection": {
+  "cosmology": {
+   "section": "Cosmology",
+   "classes": 47,
+   "gatedClasses": 47,
+   "steps": 163,
+   "problems": 0,
+   "thin": 25
+  },
+  "galactic": {
+   "section": "Galactic Dynamics",
+   "classes": 15,
+   "gatedClasses": 15,
+   "steps": 69,
+   "problems": 0,
+   "thin": 5
+  },
+  "astrophysics": {
+   "section": "Astrophysics",
+   "classes": 60,
+   "gatedClasses": 60,
+   "steps": 270,
+   "problems": 0,
+   "thin": 24
+  },
+  "particle": {
+   "section": "Particle Physics",
+   "classes": 16,
+   "gatedClasses": 16,
+   "steps": 61,
+   "problems": 0,
+   "thin": 8
+  },
+  "nuclear": {
+   "section": "Nuclear Physics",
+   "classes": 5,
+   "gatedClasses": 5,
+   "steps": 11,
+   "problems": 1,
+   "thin": 5
+  },
+  "atomic": {
+   "section": "Atomic & Molecular Physics",
+   "classes": 23,
+   "gatedClasses": 23,
+   "steps": 74,
+   "problems": 0,
+   "thin": 17
+  },
+  "condensed": {
+   "section": "Condensed Matter",
+   "classes": 8,
+   "gatedClasses": 8,
+   "steps": 29,
+   "problems": 1,
+   "thin": 4
+  },
+  "plasma": {
+   "section": "Plasma Physics",
+   "classes": 7,
+   "gatedClasses": 7,
+   "steps": 31,
+   "problems": 0,
+   "thin": 3
+  },
+  "geophysics": {
+   "section": "Geophysics",
+   "classes": 39,
+   "gatedClasses": 39,
+   "steps": 144,
+   "problems": 0,
+   "thin": 22
+  },
+  "mathematical": {
+   "section": "Mathematical Physics & Foundations",
+   "classes": 22,
+   "gatedClasses": 22,
+   "steps": 95,
+   "problems": 1,
+   "thin": 8
+  },
+  "designs": {
+   "section": "Designs & Engineering — the applied line",
+   "classes": 66,
+   "gatedClasses": 66,
+   "steps": 177,
+   "problems": 1,
+   "thin": 54
+  },
+  "mathematics": {
+   "section": "Mathematics",
+   "classes": 3,
+   "gatedClasses": 3,
+   "steps": 15,
+   "problems": 0,
+   "thin": 0
+  },
+  "ai-computing": {
+   "section": "AI & Computing",
+   "classes": 5,
+   "gatedClasses": 5,
+   "steps": 25,
+   "problems": 0,
+   "thin": 0
+  },
+  "architecture": {
+   "section": "Architecture",
+   "classes": 5,
+   "gatedClasses": 5,
+   "steps": 25,
+   "problems": 0,
+   "thin": 0
+  },
+  "biology": {
+   "section": "Biology & Life Sciences",
+   "classes": 4,
+   "gatedClasses": 4,
+   "steps": 20,
+   "problems": 0,
+   "thin": 0
+  },
+  "health": {
+   "section": "Health & Medicine",
+   "classes": 4,
+   "gatedClasses": 4,
+   "steps": 20,
+   "problems": 0,
+   "thin": 0
+  },
+  "trades": {
+   "section": "Trades & Applied Skills",
+   "classes": 5,
+   "gatedClasses": 5,
+   "steps": 25,
+   "problems": 0,
+   "thin": 0
+  },
+  "computer-science": {
+   "section": "Computer Science & Software",
+   "classes": 20,
+   "gatedClasses": 20,
+   "steps": 100,
+   "problems": 0,
+   "thin": 0
+  },
+  "languages": {
+   "section": "Languages of the World",
+   "classes": 0,
+   "gatedClasses": 0,
+   "steps": 0,
+   "problems": 0,
+   "thin": 0
+  },
+  "french": {
+   "section": "French",
+   "classes": 2,
+   "gatedClasses": 2,
+   "steps": 10,
+   "problems": 0,
+   "thin": 0
+  },
+  "chemistry": {
+   "section": "Chemistry",
+   "classes": 20,
+   "gatedClasses": 20,
+   "steps": 100,
+   "problems": 0,
+   "thin": 0
+  },
+  "statistics": {
+   "section": "Statistics & Data Science",
+   "classes": 14,
+   "gatedClasses": 14,
+   "steps": 70,
+   "problems": 0,
+   "thin": 0
+  },
+  "earth-sciences": {
+   "section": "Earth & Environmental Sciences",
+   "classes": 16,
+   "gatedClasses": 16,
+   "steps": 80,
+   "problems": 0,
+   "thin": 0
+  },
+  "engineering": {
+   "section": "Engineering",
+   "classes": 20,
+   "gatedClasses": 20,
+   "steps": 100,
+   "problems": 0,
+   "thin": 0
+  },
+  "psychology": {
+   "section": "Psychology",
+   "classes": 18,
+   "gatedClasses": 18,
+   "steps": 90,
+   "problems": 0,
+   "thin": 0
+  },
+  "sociology": {
+   "section": "Sociology",
+   "classes": 16,
+   "gatedClasses": 16,
+   "steps": 80,
+   "problems": 0,
+   "thin": 0
+  },
+  "anthropology": {
+   "section": "Anthropology",
+   "classes": 14,
+   "gatedClasses": 14,
+   "steps": 70,
+   "problems": 0,
+   "thin": 0
+  },
+  "political-science": {
+   "section": "Political Science",
+   "classes": 16,
+   "gatedClasses": 16,
+   "steps": 80,
+   "problems": 0,
+   "thin": 0
+  },
+  "geography": {
+   "section": "Geography",
+   "classes": 12,
+   "gatedClasses": 12,
+   "steps": 60,
+   "problems": 0,
+   "thin": 0
+  },
+  "economics": {
+   "section": "Economics",
+   "classes": 16,
+   "gatedClasses": 16,
+   "steps": 80,
+   "problems": 0,
+   "thin": 0
+  },
+  "philosophy": {
+   "section": "Philosophy",
+   "classes": 16,
+   "gatedClasses": 16,
+   "steps": 80,
+   "problems": 0,
+   "thin": 0
+  },
+  "linguistics": {
+   "section": "Linguistics",
+   "classes": 12,
+   "gatedClasses": 12,
+   "steps": 60,
+   "problems": 0,
+   "thin": 0
+  },
+  "classics": {
+   "section": "Classics",
+   "classes": 12,
+   "gatedClasses": 12,
+   "steps": 60,
+   "problems": 0,
+   "thin": 0
+  },
+  "religious-studies": {
+   "section": "Religious Studies",
+   "classes": 12,
+   "gatedClasses": 12,
+   "steps": 60,
+   "problems": 0,
+   "thin": 0
+  },
+  "nursing": {
+   "section": "Nursing & Allied Health",
+   "classes": 14,
+   "gatedClasses": 14,
+   "steps": 70,
+   "problems": 0,
+   "thin": 0
+  },
+  "public-health": {
+   "section": "Public Health",
+   "classes": 12,
+   "gatedClasses": 12,
+   "steps": 60,
+   "problems": 0,
+   "thin": 0
+  },
+  "social-work": {
+   "section": "Social Work & Human Services",
+   "classes": 12,
+   "gatedClasses": 12,
+   "steps": 60,
+   "problems": 0,
+   "thin": 0
+  },
+  "kinesiology": {
+   "section": "Kinesiology & Sport Science",
+   "classes": 12,
+   "gatedClasses": 12,
+   "steps": 60,
+   "problems": 0,
+   "thin": 0
+  },
+  "education": {
+   "section": "Education & Teaching",
+   "classes": 16,
+   "gatedClasses": 16,
+   "steps": 80,
+   "problems": 0,
+   "thin": 0
+  },
+  "law": {
+   "section": "Law",
+   "classes": 16,
+   "gatedClasses": 16,
+   "steps": 80,
+   "problems": 0,
+   "thin": 0
+  },
+  "criminal-justice": {
+   "section": "Criminal Justice",
+   "classes": 12,
+   "gatedClasses": 12,
+   "steps": 60,
+   "problems": 0,
+   "thin": 0
+  },
+  "agriculture": {
+   "section": "Agriculture & Natural Resources",
+   "classes": 16,
+   "gatedClasses": 16,
+   "steps": 80,
+   "problems": 0,
+   "thin": 0
+  },
+  "english": {
+   "section": "English",
+   "classes": 3,
+   "gatedClasses": 3,
+   "steps": 15,
+   "problems": 0,
+   "thin": 0
+  },
+  "music": {
+   "section": "Music & Singing",
+   "classes": 3,
+   "gatedClasses": 3,
+   "steps": 15,
+   "problems": 0,
+   "thin": 0
+  },
+  "history": {
+   "section": "History",
+   "classes": 2,
+   "gatedClasses": 2,
+   "steps": 10,
+   "problems": 0,
+   "thin": 0
+  },
+  "writing": {
+   "section": "Writing",
+   "classes": 2,
+   "gatedClasses": 2,
+   "steps": 10,
+   "problems": 0,
+   "thin": 0
+  },
+  "business": {
+   "section": "Business & Economics",
+   "classes": 4,
+   "gatedClasses": 4,
+   "steps": 20,
+   "problems": 0,
+   "thin": 0
+  },
+  "communications": {
+   "section": "Communications & Media Studies",
+   "classes": 16,
+   "gatedClasses": 16,
+   "steps": 80,
+   "problems": 0,
+   "thin": 0
+  },
+  "art-design": {
+   "section": "Art & Design",
+   "classes": 16,
+   "gatedClasses": 16,
+   "steps": 80,
+   "problems": 0,
+   "thin": 0
+  },
+  "theatre-film": {
+   "section": "Theatre & Film",
+   "classes": 14,
+   "gatedClasses": 14,
+   "steps": 70,
+   "problems": 0,
+   "thin": 0
+  }
+ }
+}
