@@ -1,0 +1,177 @@
+{
+ "id": "open-clusters-stellar-associations-and-young-moving-groups-disso",
+ "title": "Open Clusters, Stellar Associations and Young Moving Groups: Dissolution, Mass Segregation and Kinematic Budgets Against Density and Energy Bounds",
+ "professor": "Professor Rekha Malhotra",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Rekha Malhotra, and this is Open Clusters, Stellar Associations and Young Moving Groups: Dissolution, Mass Segregation and Kinematic Budgets Against Density and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Rekha Malhotra, and this is Open Clusters, Stellar Associations and Young Moving Groups: Dissolution, Mass Segregation and Kinematic Budgets Against Density and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'Binding Energy Budget of Westerlund 2: The Gravitational Account of a Very Massive Young Cluster'. Its stated result: Headline result (values verbatim from results.json): mean_stellar_mass_Msun = 4; crossing_time_Myr = 0.215114; half_mass_relaxation_time_Myr = 13.3004; half_mass_density_Msun_pc3 = 1793.63; half_mass_number_density_pc3 = 448.408; virial_dispersion_km_s = 3.61013; virial_parameter_alpha = 1.5985; escape_speed_at_Rh_km_s = 12.5059; kinetic_energy_J = 1.49135e+42; binding_energy_abs_J = 1.24396e+42; energy_ratio_T_over_",
+    "Now we go one step further into the material.",
+    "'Cluster and Ring Budget of the Lambda Orionis Region: A Small Bound Core Inside an Expanding Shell'. Its stated result: Headline result (values verbatim from results.json): mean_stellar_mass_Msun = 0.833333; crossing_time_Myr = 2.71609; half_mass_relaxation_time_Myr = 44.1339; half_mass_density_Msun_pc3 = 1.90986; half_mass_number_density_pc3 = 2.29183; virial_dispersion_km_s = 0.267735; virial_parameter_alpha = 9.41661; escape_speed_at_Rh_km_s = 0.92746; kinetic_energy_J = 6.03998e+38; binding_energy_abs_J = 8.55223e+37; energy_ratio",
+    "The next piece is where this starts to come together.",
+    "'Coherence Budget of the AB Doradus Moving Group at an Age Beyond One Hundred Million Years'. Its stated result: Headline result (values verbatim from results.json): mean_stellar_mass_Msun = 0.777778; crossing_time_Myr = 12.4446; half_mass_relaxation_time_Myr = 505.726; half_mass_density_Msun_pc3 = 0.00304506; half_mass_number_density_pc3 = 0.00391507; virial_dispersion_km_s = 0.0598673; virial_parameter_alpha = 281.336; escape_speed_at_Rh_km_s = 0.207386; kinetic_energy_J = 2.52635e+38; binding_energy_abs_J = 1.19731e+36; ener",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'Density and Binding Budget of Trumpler 14: A Massive Young Cluster at the Opposite Extreme from an Association'. Its stated result: Headline result (values verbatim from results.json): mean_stellar_mass_Msun = 2.15; crossing_time_Myr = 0.325931; half_mass_relaxation_time_Myr = 11.6348; half_mass_density_Msun_pc3 = 513.275; half_mass_number_density_pc3 = 238.732; virial_dispersion_km_s = 1.75565; virial_parameter_alpha = 2.43323; escape_speed_at_Rh_km_s = 6.08176; kinetic_energy_J = 1.15431e+41; binding_energy_abs_J = 6.32523e+40; energy_ratio_T_o",
+    "We take the pieces in order, because each one stands on the last.",
+    "'Density and Crossing Budget of IC 2602: A Young Southern Cluster Counted in Its Own Crossing Times'. Its stated result: Headline result (values verbatim from results.json): mean_stellar_mass_Msun = 0.571429; crossing_time_Myr = 2.44448; half_mass_relaxation_time_Myr = 39.4523; half_mass_density_Msun_pc3 = 2.98416; half_mass_number_density_pc3 = 5.22227; virial_dispersion_km_s = 0.267735; virial_parameter_alpha = 7.44029; escape_speed_at_Rh_km_s = 0.92746; kinetic_energy_J = 3.81786e+38; binding_energy_abs_J = 6.84178e+37; energy_ratio",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Dispersion and Coherence Budget of Tucana-Horologium: How Long a Young Group Stays Recognisable'. Its stated result: Headline result (values verbatim from results.json): mean_stellar_mass_Msun = 0.5; crossing_time_Myr = 11.7335; half_mass_relaxation_time_Myr = 572.458; half_mass_density_Msun_pc3 = 0.00828932; half_mass_number_density_pc3 = 0.0165786; virial_dispersion_km_s = 0.0846651; virial_parameter_alpha = 116.254; escape_speed_at_Rh_km_s = 0.293289; kinetic_energy_J = 3.57925e+38; binding_energy_abs_J = 4.10507e+36; energy_rat",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Binding Energy Budget of Westerlund 2: The Gravitational Account of a Very Massive Young Cluster”. Its stated result is: Headline result (values verbatim from results.json): mean_stellar_mass_Msun = 4; crossing_time_Myr = 0.215114; half_mass_relaxation_time_Myr = 13.3004; half_mass_density_Msun_pc3 = 1793.63; half_mass_number_density_pc3 = 448.408; virial_dispersion_km_s = 3.61013; virial_parameter_alpha = 1.5985; esc (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'Binding Energy Budget of Westerlund 2: The Gravitational Account of a Very Massive Young Cluster'; 'Cluster and Ring Budget of the Lambda Orionis Region: A Small Bound Core Inside an Expanding Shell'; 'Coherence Budget of the AB Doradus Moving Group at an Age Beyond One Hundred Million Years'; 'Density and Binding Budget of Trumpler 14: A Massive Young Cluster at the Opposite Extreme from an Association'; 'Density and Crossing Budget of IC 2602: A Young Southern Cluster Counted in Its Own Crossing Times'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 867,
+   "audio": "audio/lessons30/open-clusters-stellar-associations-and-young-moving-groups-disso/lesson-01.mp3",
+   "minutes": 15.71,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'Binding Energy Budget of Westerlund 2: The Gravitational Account of a Very Massive Young Cluster'. The result it reported gives a value for mean_stellar_mass_Msun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Binding Energy Budget of Westerlund 2: The Gravitational Account of a Very Massive Young Cluster'. Its stated result: Headline result (values verbatim from results.json): mean_stellar_mass_Msun = 4; crossing_time_Myr = 0.215114; half_mass_relaxation_time_Myr = 13.3004; half_mass_density_Msun_pc3 = 1793.63; half_mass_number_density_pc3 = 448.408; virial_dispersion_km_s = 3.61013; virial_parameter_alpha = 1.5985; escape_speed_at_Rh_km_s = 12.5059; kinetic_energy_J = 1.49135e+42; binding_energy_abs_J = 1.24396e+42; energy_ratio_T_over_ And here is that same result with the words stripped away — just the quantities standing in a row: mean_stellar_mass_Msun = 4; crossing_time_Myr = 0.215114; half_mass_relaxation_time_Myr = 13.3004. Find mean_stellar_mass_Msun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Binding Energy Budget of Westerlund 2: The Gravitational Account of a Very Massive Young Cluster' stated its result. (2) That result pairs names with values: mean_stellar_mass_Msun = 4; crossing_time_Myr = 0.215114; half_mass_relaxation_time_Myr = 13.3004. (3) This question asks for the value paired with mean_stellar_mass_Msun. (4) In that row, mean_stellar_mass_Msun stands beside 4 — so the answer the lesson gives is 4. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Binding Energy Budget of Westerlund 2: The Gravitational Account of a Very Massive Young Cluster' reported a number for mean_stellar_mass_Msun. What number did it report?",
+     "kind": "number",
+     "answer": 4.0,
+     "disp": "4",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.777778",
+      "4",
+      "0.833333",
+      "2.15"
+     ],
+     "mcAnswer": "4",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Cluster and Ring Budget of the Lambda Orionis Region: A Small Bound Core Inside an Expanding Shell'. The result it reported gives a value for mean_stellar_mass_Msun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Cluster and Ring Budget of the Lambda Orionis Region: A Small Bound Core Inside an Expanding Shell'. Its stated result: Headline result (values verbatim from results.json): mean_stellar_mass_Msun = 0.833333; crossing_time_Myr = 2.71609; half_mass_relaxation_time_Myr = 44.1339; half_mass_density_Msun_pc3 = 1.90986; half_mass_number_density_pc3 = 2.29183; virial_dispersion_km_s = 0.267735; virial_parameter_alpha = 9.41661; escape_speed_at_Rh_km_s = 0.92746; kinetic_energy_J = 6.03998e+38; binding_energy_abs_J = 8.55223e+37; energy_ratio And here is that same result with the words stripped away — just the quantities standing in a row: mean_stellar_mass_Msun = 0.833333; crossing_time_Myr = 2.71609; half_mass_relaxation_time_Myr = 44.1339. Find mean_stellar_mass_Msun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Cluster and Ring Budget of the Lambda Orionis Region: A Small Bound Core Inside an Expanding Shell' stated its result. (2) That result pairs names with values: mean_stellar_mass_Msun = 0.833333; crossing_time_Myr = 2.71609; half_mass_relaxation_time_Myr = 44.1339. (3) This question asks for the value paired with mean_stellar_mass_Msun. (4) In that row, mean_stellar_mass_Msun stands beside 0.833333 — so the answer the lesson gives is 0.833333. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Cluster and Ring Budget of the Lambda Orionis Region: A Small Bound Core Inside an Expanding Shell' reported a number for mean_stellar_mass_Msun. What number did it report?",
+     "kind": "number",
+     "answer": 0.833333,
+     "disp": "0.833333",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.833333",
+      "4",
+      "0.777778",
+      "2.15"
+     ],
+     "mcAnswer": "0.833333",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Coherence Budget of the AB Doradus Moving Group at an Age Beyond One Hundred Million Years'. The result it reported gives a value for mean_stellar_mass_Msun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Coherence Budget of the AB Doradus Moving Group at an Age Beyond One Hundred Million Years'. Its stated result: Headline result (values verbatim from results.json): mean_stellar_mass_Msun = 0.777778; crossing_time_Myr = 12.4446; half_mass_relaxation_time_Myr = 505.726; half_mass_density_Msun_pc3 = 0.00304506; half_mass_number_density_pc3 = 0.00391507; virial_dispersion_km_s = 0.0598673; virial_parameter_alpha = 281.336; escape_speed_at_Rh_km_s = 0.207386; kinetic_energy_J = 2.52635e+38; binding_energy_abs_J = 1.19731e+36; ener And here is that same result with the words stripped away — just the quantities standing in a row: mean_stellar_mass_Msun = 0.777778; crossing_time_Myr = 12.4446; half_mass_relaxation_time_Myr = 505.726. Find mean_stellar_mass_Msun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Coherence Budget of the AB Doradus Moving Group at an Age Beyond One Hundred Million Years' stated its result. (2) That result pairs names with values: mean_stellar_mass_Msun = 0.777778; crossing_time_Myr = 12.4446; half_mass_relaxation_time_Myr = 505.726. (3) This question asks for the value paired with mean_stellar_mass_Msun. (4) In that row, mean_stellar_mass_Msun stands beside 0.777778 — so the answer the lesson gives is 0.777778. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Coherence Budget of the AB Doradus Moving Group at an Age Beyond One Hundred Million Years' reported a number for mean_stellar_mass_Msun. What number did it report?",
+     "kind": "number",
+     "answer": 0.777778,
+     "disp": "0.777778",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.833333",
+      "2.15",
+      "4",
+      "0.777778"
+     ],
+     "mcAnswer": "0.777778",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Density and Binding Budget of Trumpler 14: A Massive Young Cluster at the Opposite Extreme from an Association'. The result it reported gives a value for mean_stellar_mass_Msun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Density and Binding Budget of Trumpler 14: A Massive Young Cluster at the Opposite Extreme from an Association'. Its stated result: Headline result (values verbatim from results.json): mean_stellar_mass_Msun = 2.15; crossing_time_Myr = 0.325931; half_mass_relaxation_time_Myr = 11.6348; half_mass_density_Msun_pc3 = 513.275; half_mass_number_density_pc3 = 238.732; virial_dispersion_km_s = 1.75565; virial_parameter_alpha = 2.43323; escape_speed_at_Rh_km_s = 6.08176; kinetic_energy_J = 1.15431e+41; binding_energy_abs_J = 6.32523e+40; energy_ratio_T_o And here is that same result with the words stripped away — just the quantities standing in a row: mean_stellar_mass_Msun = 2.15; crossing_time_Myr = 0.325931; half_mass_relaxation_time_Myr = 11.6348. Find mean_stellar_mass_Msun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Density and Binding Budget of Trumpler 14: A Massive Young Cluster at the Opposite Extreme from an Association' stated its result. (2) That result pairs names with values: mean_stellar_mass_Msun = 2.15; crossing_time_Myr = 0.325931; half_mass_relaxation_time_Myr = 11.6348. (3) This question asks for the value paired with mean_stellar_mass_Msun. (4) In that row, mean_stellar_mass_Msun stands beside 2.15 — so the answer the lesson gives is 2.15. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Density and Binding Budget of Trumpler 14: A Massive Young Cluster at the Opposite Extreme from an Association' reported a number for mean_stellar_mass_Msun. What number did it report?",
+     "kind": "number",
+     "answer": 2.15,
+     "disp": "2.15",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "4",
+      "0.777778",
+      "2.15",
+      "0.833333"
+     ],
+     "mcAnswer": "2.15",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Density and Crossing Budget of IC 2602: A Young Southern Cluster Counted in Its Own Crossing Times'. The result it reported gives a value for mean_stellar_mass_Msun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Density and Crossing Budget of IC 2602: A Young Southern Cluster Counted in Its Own Crossing Times'. Its stated result: Headline result (values verbatim from results.json): mean_stellar_mass_Msun = 0.571429; crossing_time_Myr = 2.44448; half_mass_relaxation_time_Myr = 39.4523; half_mass_density_Msun_pc3 = 2.98416; half_mass_number_density_pc3 = 5.22227; virial_dispersion_km_s = 0.267735; virial_parameter_alpha = 7.44029; escape_speed_at_Rh_km_s = 0.92746; kinetic_energy_J = 3.81786e+38; binding_energy_abs_J = 6.84178e+37; energy_ratio And here is that same result with the words stripped away — just the quantities standing in a row: mean_stellar_mass_Msun = 0.571429; crossing_time_Myr = 2.44448; half_mass_relaxation_time_Myr = 39.4523. Find mean_stellar_mass_Msun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Density and Crossing Budget of IC 2602: A Young Southern Cluster Counted in Its Own Crossing Times' stated its result. (2) That result pairs names with values: mean_stellar_mass_Msun = 0.571429; crossing_time_Myr = 2.44448; half_mass_relaxation_time_Myr = 39.4523. (3) This question asks for the value paired with mean_stellar_mass_Msun. (4) In that row, mean_stellar_mass_Msun stands beside 0.571429 — so the answer the lesson gives is 0.571429. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Density and Crossing Budget of IC 2602: A Young Southern Cluster Counted in Its Own Crossing Times' reported a number for mean_stellar_mass_Msun. What number did it report?",
+     "kind": "number",
+     "answer": 0.571429,
+     "disp": "0.571429",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "4",
+      "0.777778",
+      "0.833333",
+      "0.571429"
+     ],
+     "mcAnswer": "0.571429",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Binding Energy Budget of Westerlund 2: The Gravitational Account of a Very Massive Young Cluster”. Its stated result is: Headline result (values verbatim from results.json): mean_stellar_mass_Msun = 4; crossing_time_Myr = 0.215114; half_mass_relaxation_time_Myr = 13.3004; half_mass_density_Msun_pc3 = 1793.63; half_mass_number_density_pc3 = 448.408; virial_dispersion_km_s = 3.61013; virial_parameter_alpha = 1.5985; esc (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “Binding Energy Budget of Westerlund 2: The Gravitational Account of a Very Massive Young Cluster”. Its stated result is: Headline result (values verbatim from results.json): mean_stellar_mass_Msun = 4; crossing_time_Myr = 0.215114; half_mass_relaxation_time_Myr = 13.3004; half_mass_density_Msun_pc3 = 1793.63; half_mass_number_density_pc3 = 448.408; virial_dispersion_km_s = 3.61013; virial_parameter_alpha = 1.5985; esc (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}

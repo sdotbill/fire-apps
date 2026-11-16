@@ -465,5 +465,12 @@
    "audio": "audio/lessons30/polluted-white-dwarfs-and-planetary-debris-accretion-against-com/lesson-01.mp3",
    "minutes": 24.91
   }
+ },
+ "open-clusters-stellar-associations-and-young-moving-groups-disso": {
+  "lesson-01": {
+   "hash": "99fc0f043e66277a3c4d5828ff174b65d11fa137",
+   "audio": "audio/lessons30/open-clusters-stellar-associations-and-young-moving-groups-disso/lesson-01.mp3",
+   "minutes": 15.71
+  }
  }
 }
