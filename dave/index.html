@@ -370,6 +370,13 @@
 <body class="pms-page">
 <header class="sitehead">
   <div class="wrap">
+    <details class="hamb" id="hamb">
+      <summary aria-haspopup="true" aria-label="Menu"><span class="bars">&#9776;</span></summary>
+      <div class="hambpanel" role="menu">
+        <a href="/dashboard/">Sign in</a>
+        <a href="/for-the-world/">Licensing</a>
+      </div>
+    </details>
     <a class="brand" href="../">
       <img src="../assets/premium-marketing-logo-64.png" alt="Premium Marketing Solutions logo" width="38" height="38">
       <span class="bname">Premium Marketing Solutions<span>Dave — the first exolex</span></span>
@@ -527,7 +534,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
       <a href="../aldred-industries/">Aldred Industries</a>
       <a href="../notebook/">The Studio</a>
     </nav>
-    <p class="fine">&copy; 2026 Premium Marketing Solutions LLC &middot; <a href="../privacy.html">Privacy</a></p>
+    <p class="fine" style="display:flex;justify-content:space-between;align-items:center;gap:16px"><span>&copy; Dave</span><a href="../privacy.html">Privacy</a></p>
   </div>
 </footer>
 </body>
