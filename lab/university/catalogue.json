@@ -10962,7 +10962,8 @@
        "outfit": "#8a6508",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/the-kuiper-belt-trans-neptunian-objects-and-the-outer-solar-syst.jpg"
      }
     },
     {
@@ -11301,7 +11302,8 @@
        "outfit": "#2e3d6e",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/the-galactic-centre-s-stars-and-the-central-black-hole-environme.jpg"
      }
     },
     {
@@ -12997,7 +12999,8 @@
        "hairStyle": "bun",
        "outfit": "#5d4630",
        "glasses": false
-      }
+      },
+      "photo": "portraits/wolf-rayet-stars-luminous-blue-variables-and-massive-star-winds-.jpg"
      }
     },
     {
@@ -14580,7 +14583,8 @@
        "hairStyle": "ponytail",
        "outfit": "#5d4630",
        "glasses": false
-      }
+      },
+      "photo": "portraits/thermonuclear-x-ray-bursts-on-accreting-neutron-stars-ignition-r.jpg"
      }
     },
     {
@@ -14805,7 +14809,8 @@
        "hairStyle": "ponytail",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/the-solar-wind-and-the-heliosphere-stream-structure-parker-spira.jpg"
      }
     },
     {
@@ -14931,7 +14936,8 @@
        "hairStyle": "bob",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/waves-signals.jpg"
      }
     }
    ],
@@ -22699,7 +22705,8 @@
        "hairStyle": "bun",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/ocean-worlds-icy-moon-interiors-subsurface-oceans-and-cryovolcan.jpg"
      }
     },
     {
@@ -23038,7 +23045,8 @@
        "hairStyle": "straight",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/ocean-world-access-melt-probes-cryobots-and-submersible-systems-.jpg"
      }
     },
     {
@@ -23491,7 +23499,8 @@
        "hairStyle": "waves",
        "outfit": "#5d4630",
        "glasses": false
-      }
+      },
+      "photo": "portraits/ocean-tides-and-tidal-heating-dissipation-budgets-in-the-earth-m.jpg"
      }
     },
     {
@@ -24395,7 +24404,8 @@
        "hairStyle": "waves",
        "outfit": "#26332a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/ocean-surface-gravity-waves-swell-and-rogue-waves-energy-dispers.jpg"
      }
     },
     {
@@ -25185,7 +25195,8 @@
        "hairStyle": "straight",
        "outfit": "#7a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/permafrost-and-frozen-ground-thermodynamics-active-layer-thaw-an.jpg"
      }
     },
     {
@@ -26089,7 +26100,8 @@
        "hairStyle": "bun",
        "outfit": "#1f5138",
        "glasses": false
-      }
+      },
+      "photo": "portraits/planetary-bow-shocks-magnetosheaths-and-foreshocks-standoff-comp.jpg"
      }
     },
     {
@@ -33868,7 +33880,8 @@
        "hairStyle": "straight",
        "outfit": "#23365c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/designs-engineering-the-applied-line-the-open-programme.jpg"
      }
     },
     {
@@ -36974,7 +36987,8 @@
        "hairStyle": "straight",
        "outfit": "#4b2a63",
        "glasses": false
-      }
+      },
+      "photo": "portraits/bees-honey-and-wax-wave-6.jpg"
      }
     },
     {
@@ -37425,7 +37439,8 @@
        "hairStyle": "bob",
        "outfit": "#1f5138",
        "glasses": false
-      }
+      },
+      "photo": "portraits/building-with-local-materials-wave-6.jpg"
      }
     },
     {
@@ -37650,7 +37665,8 @@
        "hairStyle": "waves",
        "outfit": "#3c3f45",
        "glasses": true
-      }
+      },
+      "photo": "portraits/clay-pottery-and-kilns-wave-7.jpg"
      }
     },
     {
@@ -39230,7 +39246,8 @@
        "hairStyle": "straight",
        "outfit": "#5d4630",
        "glasses": false
-      }
+      },
+      "photo": "portraits/deep-space-power-and-communication-systems-derived-from-the-phys.jpg"
      }
     },
     {
@@ -40586,7 +40603,8 @@
        "hairStyle": "ponytail",
        "outfit": "#9a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/cryogenic-propellant-depots-and-in-space-fluid-transfer-systems-.jpg"
      }
     },
     {
@@ -41599,7 +41617,8 @@
        "hairStyle": "waves",
        "outfit": "#1f4d7a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/asteroid-deflection-and-planetary-defence-systems-derived-from-t.jpg"
      }
     },
     {
@@ -42044,7 +42063,8 @@
        "hairStyle": "curls",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/air-fire-disaster.jpg"
      }
     },
     {
@@ -42857,7 +42877,8 @@
        "hairStyle": "curls",
        "outfit": "#1f5138",
        "glasses": false
-      }
+      },
+      "photo": "portraits/genetics-dna-inheritance-and-variation.jpg"
      }
     },
     {
@@ -42891,7 +42912,8 @@
        "hairStyle": "waves",
        "outfit": "#6d1f2c",
        "glasses": true
-      }
+      },
+      "photo": "portraits/evolution-the-story-written-in-species.jpg"
      }
     },
     {
@@ -44379,7 +44401,8 @@
        "outfit": "#1f5138",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/dansk-i-speak-from-zero.jpg"
      }
     },
     {
@@ -44559,7 +44582,8 @@
        "hairStyle": "straight",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/arabic-i-speak-from-zero.jpg"
      }
     },
     {
@@ -45045,7 +45069,8 @@
        "hairStyle": "ponytail",
        "outfit": "#5c2a54",
        "glasses": false
-      }
+      },
+      "photo": "portraits/chemistry-analytical-chemistry-measuring-what-is-there.jpg"
      }
     },
     {
@@ -45178,7 +45203,8 @@
        "hairStyle": "ponytail",
        "outfit": "#2e5d33",
        "glasses": true
-      }
+      },
+      "photo": "portraits/chemistry-biochemistry-i-molecules-of-life.jpg"
      }
     },
     {
@@ -45211,7 +45237,8 @@
        "hairStyle": "straight",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/chemistry-biochemistry-ii-pathways-and-regulation.jpg"
      }
     },
     {
@@ -49084,7 +49111,8 @@
        "hairStyle": "waves",
        "outfit": "#9a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/political-science-comparative-politics-how-countries-differ.jpg"
      }
     },
     {
@@ -49117,7 +49145,8 @@
        "hairStyle": "straight",
        "outfit": "#46536a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/political-science-international-relations-i-the-world-without-a-referee.jpg"
      }
     },
     {
@@ -49150,7 +49179,8 @@
        "hairStyle": "curls",
        "outfit": "#23365c",
        "glasses": true
-      }
+      },
+      "photo": "portraits/political-science-international-relations-ii-the-present-order.jpg"
      }
     },
     {
@@ -49250,7 +49280,8 @@
        "outfit": "#46536a",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/political-science-political-behaviour-voters-and-citizens.jpg"
      }
     },
     {
@@ -49283,7 +49314,8 @@
        "hairStyle": "waves",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/political-science-constitutional-politics-rules-that-bind-the-rulers.jpg"
      }
     },
     {
@@ -49384,7 +49416,8 @@
        "hairStyle": "bob",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/political-science-foreign-policy-analysis.jpg"
      }
     },
     {
@@ -49450,7 +49483,8 @@
        "hairStyle": "waves",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/political-science-environmental-politics.jpg"
      }
     },
     {
@@ -49516,7 +49550,8 @@
        "hairStyle": "waves",
        "outfit": "#1f4d7a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/political-science-democracy-and-its-discontents.jpg"
      }
     },
     {
@@ -50111,7 +50146,8 @@
        "hairStyle": "bun",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/economics-macroeconomics-i-the-whole-economy.jpg"
      }
     },
     {
@@ -50178,7 +50214,8 @@
        "outfit": "#6d1f2c",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/economics-econometrics-i-economics-meets-data.jpg"
      }
     },
     {
@@ -50211,7 +50248,8 @@
        "hairStyle": "bun",
        "outfit": "#26332a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/economics-econometrics-ii-advanced-methods.jpg"
      }
     },
     {
@@ -50244,7 +50282,8 @@
        "hairStyle": "curls",
        "outfit": "#5c2a54",
        "glasses": false
-      }
+      },
+      "photo": "portraits/economics-international-economics-trade-and-money-across-borders.jpg"
      }
     },
     {
@@ -50277,7 +50316,8 @@
        "hairStyle": "waves",
        "outfit": "#2e3d6e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/economics-development-economics-why-nations-prosper-or-stall.jpg"
      }
     },
     {
@@ -50310,7 +50350,8 @@
        "hairStyle": "short",
        "outfit": "#1f5138",
        "glasses": true
-      }
+      },
+      "photo": "portraits/economics-labour-economics-work-and-wages.jpg"
      }
     },
     {
@@ -50376,7 +50417,8 @@
        "hairStyle": "waves",
        "outfit": "#2e5d33",
        "glasses": false
-      }
+      },
+      "photo": "portraits/economics-behavioural-economics-humans-not-econs.jpg"
      }
     },
     {
@@ -50409,7 +50451,8 @@
        "hairStyle": "bob",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/economics-financial-economics-markets-for-money.jpg"
      }
     },
     {
@@ -50442,7 +50485,8 @@
        "hairStyle": "waves",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/economics-environmental-economics-pricing-the-planet.jpg"
      }
     },
     {
@@ -50475,7 +50519,8 @@
        "hairStyle": "ponytail",
        "outfit": "#5c2a54",
        "glasses": false
-      }
+      },
+      "photo": "portraits/economics-history-of-economic-thought.jpg"
      }
     },
     {
@@ -50508,7 +50553,8 @@
        "hairStyle": "straight",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/economics-game-theory-strategy-formalised.jpg"
      }
     },
     {
@@ -50541,7 +50587,8 @@
        "hairStyle": "straight",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/economics-economics-of-organisations-and-strategy.jpg"
      }
     }
    ],
@@ -50806,7 +50853,8 @@
        "outfit": "#6d1f2c",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/philosophy-political-philosophy-justice-and-the-state.jpg"
      }
     },
     {
@@ -50839,7 +50887,8 @@
        "hairStyle": "bob",
        "outfit": "#23365c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/philosophy-philosophy-of-science-how-knowledge-grows.jpg"
      }
     },
     {
@@ -53851,7 +53900,8 @@
        "hairStyle": "short",
        "outfit": "#5c2a54",
        "glasses": true
-      }
+      },
+      "photo": "portraits/kinesiology-biomechanics-movement-under-physics.jpg"
      }
     },
     {
@@ -53884,7 +53934,8 @@
        "hairStyle": "bun",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/kinesiology-motor-learning-and-control.jpg"
      }
     },
     {
@@ -53918,7 +53969,8 @@
        "outfit": "#7a4a1f",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/kinesiology-sport-and-exercise-psychology.jpg"
      }
     },
     {
@@ -53951,7 +54003,8 @@
        "hairStyle": "waves",
        "outfit": "#2e3d6e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/kinesiology-strength-and-conditioning.jpg"
      }
     },
     {
@@ -53984,7 +54037,8 @@
        "hairStyle": "curls",
        "outfit": "#14524a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/kinesiology-sports-nutrition.jpg"
      }
     },
     {
@@ -54017,7 +54071,8 @@
        "hairStyle": "bob",
        "outfit": "#2e5d33",
        "glasses": true
-      }
+      },
+      "photo": "portraits/kinesiology-injury-prevention-and-rehabilitation.jpg"
      }
     },
     {
@@ -54050,7 +54105,8 @@
        "hairStyle": "waves",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/kinesiology-physical-education-and-pedagogy.jpg"
      }
     },
     {
@@ -54083,7 +54139,8 @@
        "hairStyle": "bob",
        "outfit": "#5d4630",
        "glasses": false
-      }
+      },
+      "photo": "portraits/kinesiology-sport-management-and-society.jpg"
      }
     },
     {
@@ -54116,7 +54173,8 @@
        "hairStyle": "ponytail",
        "outfit": "#2e5d33",
        "glasses": false
-      }
+      },
+      "photo": "portraits/kinesiology-exercise-and-health-across-the-lifespan.jpg"
      }
     },
     {
@@ -54184,7 +54242,8 @@
        "hairStyle": "short",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/kinesiology-outdoor-and-adventure-education.jpg"
      }
     }
    ],
@@ -55395,7 +55454,8 @@
        "outfit": "#5d4630",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/criminal-justice-policing-the-state-on-the-street.jpg"
      }
     },
     {
@@ -55565,7 +55625,8 @@
        "hairStyle": "waves",
        "outfit": "#1f5138",
        "glasses": false
-      }
+      },
+      "photo": "portraits/criminal-justice-youth-justice.jpg"
      }
     },
     {
@@ -55632,7 +55693,8 @@
        "hairStyle": "waves",
        "outfit": "#5c2a54",
        "glasses": false
-      }
+      },
+      "photo": "portraits/criminal-justice-victimology-and-victim-services.jpg"
      }
     },
     {
@@ -55733,7 +55795,8 @@
        "hairStyle": "waves",
        "outfit": "#8a6508",
        "glasses": true
-      }
+      },
+      "photo": "portraits/criminal-justice-justice-race-and-inequality.jpg"
      }
     }
    ],
@@ -56889,7 +56952,8 @@
        "hairStyle": "short",
        "outfit": "#6d1f2c",
        "glasses": true
-      }
+      },
+      "photo": "portraits/economics-i-scarcity-prices-and-why-markets-move.jpg"
      }
     },
     {
@@ -56923,7 +56987,8 @@
        "hairStyle": "waves",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/money-and-the-books-accounting-without-tears.jpg"
      }
     },
     {
@@ -56957,7 +57022,8 @@
        "hairStyle": "curls",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/selling-the-honest-craft-of-the-deal.jpg"
      }
     }
    ],
