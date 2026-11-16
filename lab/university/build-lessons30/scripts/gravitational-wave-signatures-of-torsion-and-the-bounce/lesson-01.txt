@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Feng Hu, and this is Gravitational-Wave Signatures of Torsion and the Bounce. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Feng Hu, and this is Gravitational-Wave Signatures of Torsion and the Bounce. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Anisotropy of a Stochastic Background from a Bounce: Angular Power from Patch-to-Patch Bounce Variation'. Its stated result: Headline results of the deposited computation: fiducial_variation = 0.001, fiducial_C_l2 = 8.00e-07, fiducial_C_l10 = 1.90e-07, fiducial_dOmega_over_Omega = 2.00e-03. All values are computed from the stated assumptions by the deposited script and are reported as simulated, not measured.
+
+Now we go one step further into the material.
+
+'Black-Hole Ringdown Frequencies Under a Density Limit: The Computed Shift for Astrophysical Masses'. Its stated result: Headline results of the deposited computation: fiducial_mass_Msun = 30, f0_Hz = 4.02e+03, relative_shift = 2.11e-42, absolute_shift_Hz = 8.48e-39. All values are computed from the stated assumptions by the deposited script and are reported as simulated, not measured.
+
+The next piece is where this starts to come together.
+
+'Echo Delay of a Gravitational-Wave Burst Reflected at a Torsion Turnaround: A Computed Timing Signature'. Its stated result: Headline results of the deposited computation: t_Hubble_bounce_s = 4.29e-25, fiducial_delay_proper_s = 8.58e-26, fiducial_delay_observed_s = 1.03e+06, layer_fraction_fiducial = 0.1. All values are computed from the stated assumptions by the deposited script and are reported as simulated, not measured.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'CMB B-Mode Consistency of a Torsion Bounce: Tensor-to-Scalar Ratio Implied by the Contraction History'. Its stated result: Headline results of the deposited computation: r_limit = 3.60e-02, fiducial_r = 1.00e-02, max_consistent_H_over_Mpl = 1.0e-05. All values are computed from the stated assumptions by the deposited script and are reported as simulated, not measured.
+
+We take the pieces in order, because each one stands on the last.
+
+'A Combined Exclusion Map for Torsion Bounce Backgrounds: Interferometer, Timing, Microwave and Nucleosynthesis Bounds Together'. Its stated result: Headline results of the deposited computation: grid_total = 72, grid_excluded = 33, grid_surviving = 39, excluded_fraction = 0.46, max_surviving_Omega_peak = 1.0e-06. All values are computed from the stated assumptions by the deposited script and are reported as simulated, not measured.
+
+Stay with me, because the next piece builds directly on that one.
+
+'Energy Budget of Bounce-Produced Gravitational Waves: Integrated Density Against the Nucleosynthesis Bound'. Its stated result: Headline results of the deposited computation: BBN_bound = 1.80e-06, fiducial_total = 1.17e-06, fiducial_fraction_of_bound = 6.48e-01, n_allowed = 8, n_grid = 16. All values are computed from the stated assumptions by the deposited script and are reported as simulated, not measured.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Anisotropy of a Stochastic Background from a Bounce: Angular Power from Patch-to-Patch Bounce Variation”. Its stated result is: Headline results of the deposited computation: fiducial_variation = 0.001, fiducial_C_l2 = 8.00e-07, fiducial_C_l10 = 1.90e-07, fiducial_dOmega_over_Omega = 2.00e-03. All values are computed from the stated assumptions by the deposited script and are reported as simulated, not measured. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Anisotropy of a Stochastic Background from a Bounce: Angular Power from Patch-to-Patch Bounce Variation'; 'Black-Hole Ringdown Frequencies Under a Density Limit: The Computed Shift for Astrophysical Masses'; 'Echo Delay of a Gravitational-Wave Burst Reflected at a Torsion Turnaround: A Computed Timing Signature'; 'CMB B-Mode Consistency of a Torsion Bounce: Tensor-to-Scalar Ratio Implied by the Contraction History'; 'A Combined Exclusion Map for Torsion Bounce Backgrounds: Interferometer, Timing, Microwave and Nucleosynthesis Bounds Together'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.

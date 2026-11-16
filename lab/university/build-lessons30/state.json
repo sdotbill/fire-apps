@@ -227,5 +227,12 @@
    "audio": "audio/lessons30/cosmology-the-open-programme/lesson-01.mp3",
    "minutes": 9.39
   }
+ },
+ "gravitational-wave-signatures-of-torsion-and-the-bounce": {
+  "lesson-01": {
+   "hash": "b6c54512d701e0586f4461a730f268a63701892e",
+   "audio": "audio/lessons30/gravitational-wave-signatures-of-torsion-and-the-bounce/lesson-01.mp3",
+   "minutes": 17.97
+  }
  }
 }

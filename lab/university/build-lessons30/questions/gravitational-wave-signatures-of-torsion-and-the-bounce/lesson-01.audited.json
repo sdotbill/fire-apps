@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'Anisotropy of a Stochastic Background from a Bounce: Angular Power from Patch-to-Patch Bounce Variation'. The result it reported gives a value for fiducial_variation, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Anisotropy of a Stochastic Background from a Bounce: Angular Power from Patch-to-Patch Bounce Variation'. Its stated result: Headline results of the deposited computation: fiducial_variation = 0.001, fiducial_C_l2 = 8.00e-07, fiducial_C_l10 = 1.90e-07, fiducial_dOmega_over_Omega = 2.00e-03. All values are computed from the stated assumptions by the deposited script and are reported as simulated, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: fiducial_variation = 0.001; fiducial_C_l2 = 8.00e-07; fiducial_C_l10 = 1.90e-07. Find fiducial_variation in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Anisotropy of a Stochastic Background from a Bounce: Angular Power from Patch-to-Patch Bounce Variation' stated its result. (2) That result pairs names with values: fiducial_variation = 0.001; fiducial_C_l2 = 8.00e-07; fiducial_C_l10 = 1.90e-07. (3) This question asks for the value paired with fiducial_variation. (4) In that row, fiducial_variation stands beside 0.001 — so the answer the lesson gives is 0.001. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Anisotropy of a Stochastic Background from a Bounce: Angular Power from Patch-to-Patch Bounce Variation' reported a number for fiducial_variation. What number did it report?",
+  "kind": "number",
+  "answer": 0.001,
+  "disp": "0.001",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "30",
+   "3.60e-02",
+   "4.29e-25",
+   "0.001"
+  ],
+  "mcAnswer": "0.001",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Black-Hole Ringdown Frequencies Under a Density Limit: The Computed Shift for Astrophysical Masses'. The result it reported gives a value for fiducial_mass_Msun, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Black-Hole Ringdown Frequencies Under a Density Limit: The Computed Shift for Astrophysical Masses'. Its stated result: Headline results of the deposited computation: fiducial_mass_Msun = 30, f0_Hz = 4.02e+03, relative_shift = 2.11e-42, absolute_shift_Hz = 8.48e-39. All values are computed from the stated assumptions by the deposited script and are reported as simulated, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: fiducial_mass_Msun = 30; f0_Hz = 4.02e+03; relative_shift = 2.11e-42. Find fiducial_mass_Msun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Black-Hole Ringdown Frequencies Under a Density Limit: The Computed Shift for Astrophysical Masses' stated its result. (2) That result pairs names with values: fiducial_mass_Msun = 30; f0_Hz = 4.02e+03; relative_shift = 2.11e-42. (3) This question asks for the value paired with fiducial_mass_Msun. (4) In that row, fiducial_mass_Msun stands beside 30 — so the answer the lesson gives is 30. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Black-Hole Ringdown Frequencies Under a Density Limit: The Computed Shift for Astrophysical Masses' reported a number for fiducial_mass_Msun. What number did it report?",
+  "kind": "number",
+  "answer": 30.0,
+  "disp": "30",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "72",
+   "30",
+   "3.60e-02",
+   "0.001"
+  ],
+  "mcAnswer": "30",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Echo Delay of a Gravitational-Wave Burst Reflected at a Torsion Turnaround: A Computed Timing Signature'. The result it reported gives a value for t_Hubble_bounce_s, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Echo Delay of a Gravitational-Wave Burst Reflected at a Torsion Turnaround: A Computed Timing Signature'. Its stated result: Headline results of the deposited computation: t_Hubble_bounce_s = 4.29e-25, fiducial_delay_proper_s = 8.58e-26, fiducial_delay_observed_s = 1.03e+06, layer_fraction_fiducial = 0.1. All values are computed from the stated assumptions by the deposited script and are reported as simulated, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: t_Hubble_bounce_s = 4.29e-25; fiducial_delay_proper_s = 8.58e-26; fiducial_delay_observed_s = 1.03e+06. Find t_Hubble_bounce_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Echo Delay of a Gravitational-Wave Burst Reflected at a Torsion Turnaround: A Computed Timing Signature' stated its result. (2) That result pairs names with values: t_Hubble_bounce_s = 4.29e-25; fiducial_delay_proper_s = 8.58e-26; fiducial_delay_observed_s = 1.03e+06. (3) This question asks for the value paired with t_Hubble_bounce_s. (4) In that row, t_Hubble_bounce_s stands beside 4.29e-25 — so the answer the lesson gives is 4.29e-25. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Echo Delay of a Gravitational-Wave Burst Reflected at a Torsion Turnaround: A Computed Timing Signature' reported a number for t_Hubble_bounce_s. What number did it report?",
+  "kind": "number",
+  "answer": 4.29e-25,
+  "disp": "4.29e-25",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "30",
+   "4.29e-25",
+   "0.001",
+   "3.60e-02"
+  ],
+  "mcAnswer": "4.29e-25",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'CMB B-Mode Consistency of a Torsion Bounce: Tensor-to-Scalar Ratio Implied by the Contraction History'. The result it reported gives a value for r_limit, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'CMB B-Mode Consistency of a Torsion Bounce: Tensor-to-Scalar Ratio Implied by the Contraction History'. Its stated result: Headline results of the deposited computation: r_limit = 3.60e-02, fiducial_r = 1.00e-02, max_consistent_H_over_Mpl = 1.0e-05. All values are computed from the stated assumptions by the deposited script and are reported as simulated, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: r_limit = 3.60e-02; fiducial_r = 1.00e-02; max_consistent_H_over_Mpl = 1.0e-05. Find r_limit in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'CMB B-Mode Consistency of a Torsion Bounce: Tensor-to-Scalar Ratio Implied by the Contraction History' stated its result. (2) That result pairs names with values: r_limit = 3.60e-02; fiducial_r = 1.00e-02; max_consistent_H_over_Mpl = 1.0e-05. (3) This question asks for the value paired with r_limit. (4) In that row, r_limit stands beside 3.60e-02 — so the answer the lesson gives is 3.60e-02. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'CMB B-Mode Consistency of a Torsion Bounce: Tensor-to-Scalar Ratio Implied by the Contraction History' reported a number for r_limit. What number did it report?",
+  "kind": "number",
+  "answer": 0.036,
+  "disp": "3.60e-02",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "30",
+   "72",
+   "0.001",
+   "3.60e-02"
+  ],
+  "mcAnswer": "3.60e-02",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'A Combined Exclusion Map for Torsion Bounce Backgrounds: Interferometer, Timing, Microwave and Nucleosynthesis Bounds Together'. The result it reported gives a value for grid_total, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'A Combined Exclusion Map for Torsion Bounce Backgrounds: Interferometer, Timing, Microwave and Nucleosynthesis Bounds Together'. Its stated result: Headline results of the deposited computation: grid_total = 72, grid_excluded = 33, grid_surviving = 39, excluded_fraction = 0.46, max_surviving_Omega_peak = 1.0e-06. All values are computed from the stated assumptions by the deposited script and are reported as simulated, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: grid_total = 72; grid_excluded = 33; grid_surviving = 39. Find grid_total in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'A Combined Exclusion Map for Torsion Bounce Backgrounds: Interferometer, Timing, Microwave and Nucleosynthesis Bounds Together' stated its result. (2) That result pairs names with values: grid_total = 72; grid_excluded = 33; grid_surviving = 39. (3) This question asks for the value paired with grid_total. (4) In that row, grid_total stands beside 72 — so the answer the lesson gives is 72. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'A Combined Exclusion Map for Torsion Bounce Backgrounds: Interferometer, Timing, Microwave and Nucleosynthesis Bounds Together' reported a number for grid_total. What number did it report?",
+  "kind": "number",
+  "answer": 72.0,
+  "disp": "72",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "3.60e-02",
+   "30",
+   "0.001",
+   "72"
+  ],
+  "mcAnswer": "72",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Anisotropy of a Stochastic Background from a Bounce: Angular Power from Patch-to-Patch Bounce Variation”. Its stated result is: Headline results of the deposited computation: fiducial_variation = 0.001, fiducial_C_l2 = 8.00e-07, fiducial_C_l10 = 1.90e-07, fiducial_dOmega_over_Omega = 2.00e-03. All values are computed from the stated assumptions by the deposited script and are reported as simulated, not measured. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “Anisotropy of a Stochastic Background from a Bounce: Angular Power from Patch-to-Patch Bounce Variation”. Its stated result is: Headline results of the deposited computation: fiducial_variation = 0.001, fiducial_C_l2 = 8.00e-07, fiducial_C_l10 = 1.90e-07, fiducial_dOmega_over_Omega = 2.00e-03. All values are computed from the stated assumptions by the deposited script and are reported as simulated, not measured. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]
