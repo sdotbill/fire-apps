@@ -388,5 +388,12 @@
    "audio": "audio/lessons30/the-kuiper-belt-trans-neptunian-objects-and-the-outer-solar-syst/lesson-01.mp3",
    "minutes": 9.82
   }
+ },
+ "interstellar-objects-and-interstellar-traversal-against-density-": {
+  "lesson-01": {
+   "hash": "cbac77027a4b488457079b86a0a7c2735adca79c",
+   "audio": "audio/lessons30/interstellar-objects-and-interstellar-traversal-against-density-/lesson-01.mp3",
+   "minutes": 11.23
+  }
  }
 }

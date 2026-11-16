@@ -1,0 +1,177 @@
+{
+ "id": "interstellar-objects-and-interstellar-traversal-against-density-",
+ "title": "Interstellar Objects and Interstellar Traversal Against Density and Energy Bounds",
+ "professor": "Professor Rania Rahman",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Rania Rahman, and this is Interstellar Objects and Interstellar Traversal Against Density and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Rania Rahman, and this is Interstellar Objects and Interstellar Traversal Against Density and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'Detection Volumes for Interstellar Objects in Current and Forthcoming Wide-Field Surveys'. Its stated result: Headline result (values verbatim from results.json): H = 22.4; d21 = 0.73; d245 = 1.63; V245 = 18. These values were computed by the deposited compute.py from published survey values for the known interstellar objects and the local interstellar medium, under the assumptions stated in the paper; the study is simulated and computed, not measured.",
+    "Now we go one step further into the material.",
+    "'Dust Impact Energies During Relativistic Interstellar Flight'. Its stated result: Headline result (values verbatim from results.json): E01_01c = 5.69e-03; E1_01c = 5.69e+00; col = 8.27e+08. These values were computed by the deposited compute.py from published survey values for the known interstellar objects and the local interstellar medium, under the assumptions stated in the paper; the study is simulated and computed, not measured.",
+    "The next piece is where this starts to come together.",
+    "'Encounter Rates of Interstellar Objects with the Inner Solar System from Their Velocity Dispersion'. Its stated result: Headline result (values verbatim from results.json): vmean = 39.9; r1 = 2.64; r5 = 66.1; f1 = 3.56. These values were computed by the deposited compute.py from published survey values for the known interstellar objects and the local interstellar medium, under the assumptions stated in the paper; the study is simulated and computed, not measured.",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'Equilibrium Temperatures of Interstellar Objects and the Distance at Which Water Ice Becomes Active'. Its stated result: Headline result (values verbatim from results.json): T1 = 278; T025 = 557; r180 = 2.39; T5 = 124. These values were computed by the deposited compute.py from published survey values for the known interstellar objects and the local interstellar medium, under the assumptions stated in the paper; the study is simulated and computed, not measured.",
+    "We take the pieces in order, because each one stands on the last.",
+    "'Gravitational Focusing of Interstellar Objects by the Earth, Jupiter and the Sun'. Its stated result: Headline result (values verbatim from results.json): fE26 = 1.181; fJ26 = 6.12; fS26 = 553. These values were computed by the deposited compute.py from published survey values for the known interstellar objects and the local interstellar medium, under the assumptions stated in the paper; the study is simulated and computed, not measured.",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'How Often Does an Interstellar Object Strike the Earth? Flux and Impact Intervals by Size'. Its stated result: Headline result (values verbatim from results.json): int100 = 2.43e+08; int1km = 7.7e+10; r10 = 1.30e-06. These values were computed by the deposited compute.py from published survey values for the known interstellar objects and the local interstellar medium, under the assumptions stated in the paper; the study is simulated and computed, not measured.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Detection Volumes for Interstellar Objects in Current and Forthcoming Wide-Field Surveys”. Its stated result is: Headline result (values verbatim from results.json): H = 22.4; d21 = 0.73; d245 = 1.63; V245 = 18. These values were computed by the deposited compute.py from published survey values for the known interstellar objects and the local interstellar medium, under the assumptions stated in the paper; the (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'Detection Volumes for Interstellar Objects in Current and Forthcoming Wide-Field Surveys'; 'Dust Impact Energies During Relativistic Interstellar Flight'; 'Encounter Rates of Interstellar Objects with the Inner Solar System from Their Velocity Dispersion'; 'Equilibrium Temperatures of Interstellar Objects and the Distance at Which Water Ice Becomes Active'; 'Gravitational Focusing of Interstellar Objects by the Earth, Jupiter and the Sun'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 916,
+   "audio": "audio/lessons30/interstellar-objects-and-interstellar-traversal-against-density-/lesson-01.mp3",
+   "minutes": 11.23,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'Detection Volumes for Interstellar Objects in Current and Forthcoming Wide-Field Surveys'. The result it reported gives a value for d21, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Detection Volumes for Interstellar Objects in Current and Forthcoming Wide-Field Surveys'. Its stated result: Headline result (values verbatim from results.json): H = 22.4; d21 = 0.73; d245 = 1.63; V245 = 18. These values were computed by the deposited compute.py from published survey values for the known interstellar objects and the local interstellar medium, under the assumptions stated in the paper; the study is simulated and computed, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: d21 = 0.73; d245 = 1.63; V245 = 18. Find d21 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Detection Volumes for Interstellar Objects in Current and Forthcoming Wide-Field Surveys' stated its result. (2) That result pairs names with values: d21 = 0.73; d245 = 1.63; V245 = 18. (3) This question asks for the value paired with d21. (4) In that row, d21 stands beside 0.73 — so the answer the lesson gives is 0.73. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Detection Volumes for Interstellar Objects in Current and Forthcoming Wide-Field Surveys' reported a number for d21. What number did it report?",
+     "kind": "number",
+     "answer": 0.73,
+     "disp": "0.73",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "278",
+      "0.73",
+      "5.69e-03",
+      "39.9"
+     ],
+     "mcAnswer": "0.73",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Dust Impact Energies During Relativistic Interstellar Flight'. The result it reported gives a value for E01_01c, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Dust Impact Energies During Relativistic Interstellar Flight'. Its stated result: Headline result (values verbatim from results.json): E01_01c = 5.69e-03; E1_01c = 5.69e+00; col = 8.27e+08. These values were computed by the deposited compute.py from published survey values for the known interstellar objects and the local interstellar medium, under the assumptions stated in the paper; the study is simulated and computed, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: E01_01c = 5.69e-03; E1_01c = 5.69e+00; col = 8.27e+08. Find E01_01c in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Dust Impact Energies During Relativistic Interstellar Flight' stated its result. (2) That result pairs names with values: E01_01c = 5.69e-03; E1_01c = 5.69e+00; col = 8.27e+08. (3) This question asks for the value paired with E01_01c. (4) In that row, E01_01c stands beside 5.69e-03 — so the answer the lesson gives is 5.69e-03. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Dust Impact Energies During Relativistic Interstellar Flight' reported a number for E01_01c. What number did it report?",
+     "kind": "number",
+     "answer": 0.00569,
+     "disp": "5.69e-03",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "278",
+      "5.69e-03",
+      "39.9",
+      "0.73"
+     ],
+     "mcAnswer": "5.69e-03",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Encounter Rates of Interstellar Objects with the Inner Solar System from Their Velocity Dispersion'. The result it reported gives a value for vmean, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Encounter Rates of Interstellar Objects with the Inner Solar System from Their Velocity Dispersion'. Its stated result: Headline result (values verbatim from results.json): vmean = 39.9; r1 = 2.64; r5 = 66.1; f1 = 3.56. These values were computed by the deposited compute.py from published survey values for the known interstellar objects and the local interstellar medium, under the assumptions stated in the paper; the study is simulated and computed, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: vmean = 39.9; r1 = 2.64; r5 = 66.1. Find vmean in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Encounter Rates of Interstellar Objects with the Inner Solar System from Their Velocity Dispersion' stated its result. (2) That result pairs names with values: vmean = 39.9; r1 = 2.64; r5 = 66.1. (3) This question asks for the value paired with vmean. (4) In that row, vmean stands beside 39.9 — so the answer the lesson gives is 39.9. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Encounter Rates of Interstellar Objects with the Inner Solar System from Their Velocity Dispersion' reported a number for vmean. What number did it report?",
+     "kind": "number",
+     "answer": 39.9,
+     "disp": "39.9",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "278",
+      "39.9",
+      "0.73",
+      "5.69e-03"
+     ],
+     "mcAnswer": "39.9",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Equilibrium Temperatures of Interstellar Objects and the Distance at Which Water Ice Becomes Active'. The result it reported gives a value for T1, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Equilibrium Temperatures of Interstellar Objects and the Distance at Which Water Ice Becomes Active'. Its stated result: Headline result (values verbatim from results.json): T1 = 278; T025 = 557; r180 = 2.39; T5 = 124. These values were computed by the deposited compute.py from published survey values for the known interstellar objects and the local interstellar medium, under the assumptions stated in the paper; the study is simulated and computed, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: T1 = 278; T025 = 557; r180 = 2.39. Find T1 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Equilibrium Temperatures of Interstellar Objects and the Distance at Which Water Ice Becomes Active' stated its result. (2) That result pairs names with values: T1 = 278; T025 = 557; r180 = 2.39. (3) This question asks for the value paired with T1. (4) In that row, T1 stands beside 278 — so the answer the lesson gives is 278. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Equilibrium Temperatures of Interstellar Objects and the Distance at Which Water Ice Becomes Active' reported a number for T1. What number did it report?",
+     "kind": "number",
+     "answer": 278.0,
+     "disp": "278",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.73",
+      "278",
+      "5.69e-03",
+      "39.9"
+     ],
+     "mcAnswer": "278",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Gravitational Focusing of Interstellar Objects by the Earth, Jupiter and the Sun'. The result it reported gives a value for fE26, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Gravitational Focusing of Interstellar Objects by the Earth, Jupiter and the Sun'. Its stated result: Headline result (values verbatim from results.json): fE26 = 1.181; fJ26 = 6.12; fS26 = 553. These values were computed by the deposited compute.py from published survey values for the known interstellar objects and the local interstellar medium, under the assumptions stated in the paper; the study is simulated and computed, not measured. And here is that same result with the words stripped away — just the quantities standing in a row: fE26 = 1.181; fJ26 = 6.12; fS26 = 553. Find fE26 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Gravitational Focusing of Interstellar Objects by the Earth, Jupiter and the Sun' stated its result. (2) That result pairs names with values: fE26 = 1.181; fJ26 = 6.12; fS26 = 553. (3) This question asks for the value paired with fE26. (4) In that row, fE26 stands beside 1.181 — so the answer the lesson gives is 1.181. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Gravitational Focusing of Interstellar Objects by the Earth, Jupiter and the Sun' reported a number for fE26. What number did it report?",
+     "kind": "number",
+     "answer": 1.181,
+     "disp": "1.181",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "39.9",
+      "0.73",
+      "5.69e-03",
+      "1.181"
+     ],
+     "mcAnswer": "1.181",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Detection Volumes for Interstellar Objects in Current and Forthcoming Wide-Field Surveys”. Its stated result is: Headline result (values verbatim from results.json): H = 22.4; d21 = 0.73; d245 = 1.63; V245 = 18. These values were computed by the deposited compute.py from published survey values for the known interstellar objects and the local interstellar medium, under the assumptions stated in the paper; the (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “Detection Volumes for Interstellar Objects in Current and Forthcoming Wide-Field Surveys”. Its stated result is: Headline result (values verbatim from results.json): H = 22.4; d21 = 0.73; d245 = 1.63; V245 = 18. These values were computed by the deposited compute.py from published survey values for the known interstellar objects and the local interstellar medium, under the assumptions stated in the paper; the (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}
