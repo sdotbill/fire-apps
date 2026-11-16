@@ -372,7 +372,7 @@
         });
         return out;
       }
-      try{ var j = JSON.parse(t); return (j && (j.response || j.text)) || ""; }catch(e){ return t; }
+      try{ var j = JSON.parse(t); return (j && (j.reply || j.response || j.text)) || ""; }catch(e){ return t; }
     });
   }
   function checkOwner(){
@@ -425,10 +425,10 @@
     history.forEach(function(m, idx){
       if(m.role !== "user" && m.role !== "assistant") return;
       /* The sign-in exchange is plumbing, not conversation — never rendered. */
-      if(m.role === "assistant" && m.content.indexOf("You are through to Prime") === 0) return;
+      if(m.role === "assistant" && m.content.indexOf("You are through to ") === 0) return;
       if(m.role === "user" && idx + 1 < history.length &&
          history[idx + 1].role === "assistant" &&
-         history[idx + 1].content.indexOf("You are through to Prime") === 0) return;
+         history[idx + 1].content.indexOf("You are through to ") === 0) return;
       var d = document.createElement("div");
       d.className = "msg " + (m.role === "user" ? "msg-user" : "msg-dave");
       d.textContent = m.content;
@@ -459,7 +459,7 @@
         if(reply){
           history.push({role: "assistant", content: reply});
           saveHistory(); renderThread();
-          if(/carried to prime|reached dave/i.test(reply)){
+          if(/will land in this same window/i.test(reply)){
             waiting = true;
             setStatus("Working — your words are on the lane");
             feedAdd("Message carried to Dave", "Queued to the app lane · the full Dave has it", "📨");
@@ -643,7 +643,7 @@
     if(!anchor.length){
       for(var i = 0; i + 1 < history.length; i++){
         if(history[i].role === "user" && history[i + 1].role === "assistant" &&
-           history[i + 1].content.indexOf("You are through to Prime") === 0){
+           history[i + 1].content.indexOf("You are through to ") === 0){
           anchor = [history[i], history[i + 1]];
           lsSet(ANCHOR_KEY, JSON.stringify(anchor));
           break;
