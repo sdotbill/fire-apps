@@ -129,6 +129,13 @@
   .msg-speak.speaking{opacity:1;}
   .chat-turns{margin:2px 2px 8px;color:var(--blue-deep);font-size:.85rem;font-weight:600;}
   .chat-row{display:flex;align-items:center;gap:10px;}
+  .chat-attach{display:flex;gap:8px;margin-top:8px;}
+  .chat-attach button{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);font-size:1.05rem;cursor:pointer;line-height:1;}
+  .chat-attach button.live{background:#b3232a;border-color:#e05555;}
+  .eye-live{position:fixed;right:12px;bottom:12px;width:224px;z-index:60;background:#101014;border:1px solid rgba(255,255,255,.2);border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.5);}
+  .eye-live video{width:100%;display:block;background:#000;}
+  .eye-live-bar{display:flex;align-items:center;justify-content:space-between;padding:6px 10px;font-size:.8rem;color:#eee;}
+  .eye-live-bar button{background:#b3232a;color:#fff;border:0;border-radius:8px;padding:5px 12px;font-weight:700;cursor:pointer;}
   .chat-mic{
     flex:none;width:46px;height:46px;border-radius:999px;border:1.5px solid var(--line);
     background:var(--card);font-size:1.2rem;cursor:pointer;line-height:1;padding:0;
@@ -413,6 +420,22 @@
     <button class="chat-mic" id="chat-mic" type="button" aria-label="Speak to Dave" aria-pressed="false" title="Speak to Dave">🎤</button>
     <input class="chat-input" id="chat-input" type="text" placeholder="Talk to Dave…" aria-label="Message Dave" autocomplete="off">
     <button class="chat-send" id="chat-send" type="button">Talk</button>
+  </div>
+  <div class="chat-attach" id="chat-attach">
+    <button type="button" data-att="camera" title="Take a photo" aria-label="Take a photo">📷</button>
+    <button type="button" data-att="photos" title="Photos" aria-label="Photos">🖼</button>
+    <button type="button" data-att="videos" title="Videos" aria-label="Videos">🎬</button>
+    <button type="button" data-att="file" title="File" aria-label="File">📎</button>
+    <button type="button" data-att="drive" title="Drive" aria-label="Drive">🟦</button>
+    <button type="button" id="eye-live-btn" title="Live view — let Dave see" aria-label="Live view">👁</button>
+    <input type="file" id="att-camera" accept="image/*" capture="environment" hidden>
+    <input type="file" id="att-photos" accept="image/*" multiple hidden>
+    <input type="file" id="att-videos" accept="video/*" multiple hidden>
+    <input type="file" id="att-file" multiple hidden>
+  </div>
+  <div class="eye-live" id="eye-live" hidden>
+    <video id="eye-video" autoplay playsinline muted></video>
+    <div class="eye-live-bar"><span>👁 Live — Dave can see</span><button type="button" id="eye-stop">■ Stop</button></div>
   </div>
   <p class="chat-turns" id="chat-turns" hidden></p>
 </div>
@@ -1460,5 +1483,107 @@
 
 </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "b0c88056512e45e1907f55333b9fa607"}'></script>
+<script>
+/* Attachments + eye live view (2026-11-15): the row under the
+   composer. Files ride POST /upload into the caller's own store on
+   Dave's worker (a bound owner's uploads mirror into his app
+   Dave's lane store, where Dave pulls them in with his tools);
+   the share note goes through the ordinary send path, so in owner
+   mode it reaches the app Dave as a normal message. Live view
+   opens the real camera, shows the preview with a Stop control,
+   and sends a light frame every few seconds to /eye/frame; Stop
+   kills the camera and clears the frame server-side. */
+(function(){
+  "use strict";
+  var WORKER = "https://dave-chat.william-ced.workers.dev";
+  function identity(){ try{ return localStorage.getItem("dave_chat_identity") || ""; }catch(e){ return ""; } }
+  function postJSON(path, body){
+    return fetch(WORKER + path, {method: "POST", credentials: "include",
+      headers: {"Content-Type": "application/json"}, body: JSON.stringify(body)});
+  }
+  function sayNote(text){
+    var inp = document.getElementById("chat-input");
+    var btn = document.getElementById("chat-send");
+    if(inp && btn){ inp.value = text; btn.click(); }
+  }
+  var inputs = {
+    camera: document.getElementById("att-camera"),
+    photos: document.getElementById("att-photos"),
+    videos: document.getElementById("att-videos"),
+    file: document.getElementById("att-file")
+  };
+  var bar = document.getElementById("chat-attach");
+  if(bar){
+    bar.addEventListener("click", function(e){
+      var b = e.target.closest("[data-att]"); if(!b) return;
+      var k = b.getAttribute("data-att");
+      if(k === "drive"){
+        var link = window.prompt("Paste a Drive link and Dave will pull it in:");
+        if(link) sayNote("Here's a Drive link I want you to look at: " + link);
+        return;
+      }
+      if(inputs[k]) inputs[k].click();
+    });
+  }
+  function shareFiles(list){
+    Array.prototype.forEach.call(list || [], function(f){
+      if(f.size > 18 * 1024 * 1024){
+        sayNote("I tried to share " + f.name + " but it is over the app's 18 MB limit.");
+        return;
+      }
+      var rd = new FileReader();
+      rd.onload = function(){
+        var data = String(rd.result || "").split(",")[1] || "";
+        postJSON("/upload", {name: f.name, mime: f.type || "", data: data, identity: identity()})
+          .then(function(r){
+            if(r.ok) sayNote("I just shared a file with you: " + f.name + " (" + (f.type || "file") + ", " + Math.max(1, Math.round(f.size / 1024)) + " KB) — it is in your upload store.");
+            else sayNote("The upload of " + f.name + " did not go through — the app said no.");
+          })
+          .catch(function(){ sayNote("The upload of " + f.name + " did not go through — connection trouble."); });
+      };
+      rd.readAsDataURL(f);
+    });
+  }
+  Object.keys(inputs).forEach(function(k){
+    if(inputs[k]) inputs[k].addEventListener("change", function(){ shareFiles(inputs[k].files); inputs[k].value = ""; });
+  });
+  var liveBtn = document.getElementById("eye-live-btn");
+  var panel = document.getElementById("eye-live");
+  var video = document.getElementById("eye-video");
+  var stopBtn = document.getElementById("eye-stop");
+  var stream = null, timer = null;
+  function frame(){
+    if(!stream || !video.videoWidth) return;
+    var c = document.createElement("canvas");
+    var scale = Math.min(1, 640 / video.videoWidth);
+    c.width = Math.round(video.videoWidth * scale);
+    c.height = Math.round(video.videoHeight * scale);
+    c.getContext("2d").drawImage(video, 0, 0, c.width, c.height);
+    var data = c.toDataURL("image/jpeg", 0.7).split(",")[1] || "";
+    if(data) postJSON("/eye/frame", {image: data, identity: identity()}).catch(function(){});
+  }
+  function startLive(){
+    if(!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia){
+      sayNote("This browser will not open the camera for the live view.");
+      return;
+    }
+    navigator.mediaDevices.getUserMedia({video: {facingMode: "environment"}, audio: false})
+      .then(function(s){
+        stream = s; video.srcObject = s;
+        panel.hidden = false; liveBtn.classList.add("live");
+        setTimeout(frame, 600); timer = setInterval(frame, 4000);
+      })
+      .catch(function(){ sayNote("The camera did not open — it may be blocked in the browser settings."); });
+  }
+  function stopLive(){
+    if(timer) clearInterval(timer); timer = null;
+    if(stream){ stream.getTracks().forEach(function(t){ t.stop(); }); stream = null; }
+    video.srcObject = null; panel.hidden = true; liveBtn.classList.remove("live");
+    postJSON("/eye/stop", {identity: identity()}).catch(function(){});
+  }
+  if(liveBtn) liveBtn.addEventListener("click", function(){ stream ? stopLive() : startLive(); });
+  if(stopBtn) stopBtn.addEventListener("click", stopLive);
+})();
+</script>
 </body>
 </html>
