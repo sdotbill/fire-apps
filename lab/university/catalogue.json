@@ -2213,7 +2213,8 @@
        "outfit": "#7a4a1f",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/machine-designs.jpg"
      }
     },
     {
@@ -2551,7 +2552,8 @@
        "hairStyle": "bun",
        "outfit": "#1f4d7a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/nucleosynthesis-and-structure-formation-in-a-bounced-cosmology.jpg"
      }
     },
     {
@@ -3115,7 +3117,8 @@
        "hairStyle": "bun",
        "outfit": "#7a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/precision-instruments-and-sensors-from-the-physics.jpg"
      }
     },
     {
@@ -3227,7 +3230,8 @@
        "hairStyle": "bun",
        "outfit": "#7a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/primordial-perturbations-non-gaussianity-and-the-power-spectrum-.jpg"
      }
     },
     {
@@ -3339,7 +3343,8 @@
        "hairStyle": "bob",
        "outfit": "#b4502e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/laboratory-analogues-spin-torsion-and-vacuum-effects-in-condense.jpg"
      }
     },
     {
@@ -4017,7 +4022,8 @@
        "outfit": "#2e5d33",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/primordial-magnetic-fields-and-magnetogenesis-through-a-bounce.jpg"
      }
     },
     {
@@ -4242,7 +4248,8 @@
        "hairStyle": "straight",
        "outfit": "#6d1f2c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/laboratory-vacuum-effects-against-the-vacuum-dissolution-count.jpg"
      }
     },
     {
@@ -4354,7 +4361,8 @@
        "hairStyle": "waves",
        "outfit": "#3c3f45",
        "glasses": false
-      }
+      },
+      "photo": "portraits/large-scale-structure-surveys-as-tests-of-the-frame.jpg"
      }
     },
     {
@@ -5370,7 +5378,8 @@
        "hairStyle": "bob",
        "outfit": "#23365c",
        "glasses": true
-      }
+      },
+      "photo": "portraits/interstellar-dust-grain-growth-extinction-and-polarisation-again.jpg"
      }
     },
     {
@@ -5879,7 +5888,8 @@
        "hairStyle": "short",
        "outfit": "#14524a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/matching-modes-across-the-bounce.jpg"
      }
     },
     {
@@ -15273,7 +15283,8 @@
        "hairStyle": "straight",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/particle-physics-the-open-programme.jpg"
      }
     },
     {
@@ -15415,7 +15426,8 @@
        "hairStyle": "ponytail",
        "outfit": "#9a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/neutrinos-leptons.jpg"
      }
     },
     {
@@ -15642,7 +15654,8 @@
        "hairStyle": "bun",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/high-energy-neutrino-astronomy-and-multi-messenger-transients-in.jpg"
      }
     },
     {
@@ -15755,7 +15768,8 @@
        "outfit": "#9a4a1f",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/cosmic-ray-antimatter-positrons-antiprotons-and-light-antinuclei.jpg"
      }
     },
     {
@@ -15867,7 +15881,8 @@
        "hairStyle": "short",
        "outfit": "#1f5138",
        "glasses": true
-      }
+      },
+      "photo": "portraits/the-cosmic-neutrino-background-and-relic-neutrino-detection-agai.jpg"
      }
     },
     {
@@ -15979,7 +15994,8 @@
        "hairStyle": "straight",
        "outfit": "#46536a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/cosmic-ray-muography-and-muon-tomography-attenuation-exposure-an.jpg"
      }
     },
     {
@@ -16091,7 +16107,8 @@
        "hairStyle": "bob",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/precision-particle-physics-electric-dipole-moments-rare-decays-a.jpg"
      }
     },
     {
@@ -16203,7 +16220,8 @@
        "hairStyle": "bun",
        "outfit": "#3c3f45",
        "glasses": true
-      }
+      },
+      "photo": "portraits/geoneutrinos-atmospheric-neutrinos-and-neutrino-earth-tomography.jpg"
      }
     },
     {
@@ -16315,7 +16333,8 @@
        "hairStyle": "bun",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/extensive-air-showers-and-cosmic-ray-shower-development-shower-m.jpg"
      }
     },
     {
@@ -16427,7 +16446,8 @@
        "hairStyle": "straight",
        "outfit": "#26332a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/hydrothermal-vents-seafloor-plumes-and-chimney-systems-plume-ris.jpg"
      }
     },
     {
@@ -16540,7 +16560,8 @@
        "outfit": "#7a4a1f",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/snow-avalanches-slab-fracture-and-powder-clouds-release-fracture.jpg"
      }
     },
     {
@@ -16653,7 +16674,8 @@
        "outfit": "#46536a",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/quantum-thermodynamics-nanoscale-heat-engines-and-fluctuation-th.jpg"
      }
     },
     {
@@ -16765,7 +16787,8 @@
        "hairStyle": "curls",
        "outfit": "#6d1f2c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/planetary-ring-systems-particle-dynamics-resonances-spokes-and-r.jpg"
      }
     },
     {
@@ -16816,7 +16839,8 @@
        "hairStyle": "straight",
        "outfit": "#1f5138",
        "glasses": false
-      }
+      },
+      "photo": "portraits/collisions-detectors.jpg"
      }
     },
     {
@@ -16863,7 +16887,8 @@
        "hairStyle": "bun",
        "outfit": "#6d1f2c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/quarks-higgs-the-standard-model.jpg"
      }
     }
    ],
@@ -17016,7 +17041,8 @@
        "hairStyle": "straight",
        "outfit": "#1f4d7a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/nuclear-physics-the-open-programme.jpg"
      }
     },
     {
@@ -17244,7 +17270,8 @@
        "hairStyle": "waves",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/radioactive-decay-alpha-tunnelling-and-geochronometer-budgets-ag.jpg"
      }
     },
     {
@@ -17310,7 +17337,8 @@
        "hairStyle": "straight",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/nuclei-decays.jpg"
      }
     },
     {
@@ -17342,7 +17370,8 @@
        "hairStyle": "straight",
        "outfit": "#26332a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/fission-fusion-capture.jpg"
      }
     }
    ],
@@ -21014,7 +21043,8 @@
        "hairStyle": "ponytail",
        "outfit": "#4b2a63",
        "glasses": false
-      }
+      },
+      "photo": "portraits/the-earth-s-ionosphere-thermosphere-and-plasmasphere-against-den.jpg"
      }
     },
     {
@@ -21126,7 +21156,8 @@
        "hairStyle": "ponytail",
        "outfit": "#5c2a54",
        "glasses": false
-      }
+      },
+      "photo": "portraits/the-earth-s-magnetotail-plasma-sheet-and-substorms-storage-relea.jpg"
      }
     },
     {
@@ -21238,7 +21269,8 @@
        "hairStyle": "short",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/dusty-complex-plasmas-grain-charging-coupling-and-dust-acoustic-.jpg"
      }
     },
     {
@@ -21350,7 +21382,8 @@
        "hairStyle": "bun",
        "outfit": "#26332a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/interstellar-scintillation-and-plasma-lensing-of-pulsars-and-fas.jpg"
      }
     },
     {
@@ -21404,7 +21437,8 @@
        "hairStyle": "waves",
        "outfit": "#5d4630",
        "glasses": false
-      }
+      },
+      "photo": "portraits/plasma-states-discharges.jpg"
      }
     },
     {
@@ -21447,7 +21481,8 @@
        "hairStyle": "straight",
        "outfit": "#9a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/plasma-physics-the-open-programme.jpg"
      }
     }
    ],
@@ -29332,7 +29367,8 @@
        "hairStyle": "waves",
        "outfit": "#3c3f45",
        "glasses": false
-      }
+      },
+      "photo": "portraits/theorems-proofs-bounds.jpg"
      }
     },
     {
@@ -29803,7 +29839,8 @@
        "hairStyle": "curls",
        "outfit": "#1f5138",
        "glasses": false
-      }
+      },
+      "photo": "portraits/the-corpus-examining-itself.jpg"
      }
     },
     {
@@ -30030,7 +30067,8 @@
        "hairStyle": "straight",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/the-count-its-constructions.jpg"
      }
     },
     {
@@ -30702,7 +30740,8 @@
        "hairStyle": "waves",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/meteors-bolides-and-meteorites-atmospheric-entry-ablation-and-su.jpg"
      }
     },
     {
@@ -31154,7 +31193,8 @@
        "hairStyle": "waves",
        "outfit": "#4b2a63",
        "glasses": false
-      }
+      },
+      "photo": "portraits/main-belt-asteroids-trojans-and-centaurs-collisional-rotational-.jpg"
      }
     },
     {
@@ -31379,7 +31419,8 @@
        "hairStyle": "waves",
        "outfit": "#23365c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/wildfire-spread-ember-transport-and-fire-atmosphere-coupling-rat.jpg"
      }
     },
     {
@@ -31492,7 +31533,8 @@
        "outfit": "#5d4630",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/porous-media-flow-percolation-and-subsurface-fluid-transport-per.jpg"
      }
     },
     {
@@ -31604,7 +31646,8 @@
        "hairStyle": "bun",
        "outfit": "#9a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/quantum-error-correction-and-fault-tolerance-budgets-threshold-l.jpg"
      }
     },
     {
@@ -43231,7 +43274,8 @@
        "hairStyle": "straight",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/electrical-i-circuits-safety-and-the-panel.jpg"
      }
     },
     {
@@ -43299,7 +43343,8 @@
        "hairStyle": "straight",
        "outfit": "#1f5138",
        "glasses": false
-      }
+      },
+      "photo": "portraits/automotive-i-how-a-car-works-and-what-breaks.jpg"
      }
     },
     {
@@ -43333,7 +43378,8 @@
        "hairStyle": "bob",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/the-house-systems-heating-cooling-keeping-a-home-alive.jpg"
      }
     }
    ],
@@ -45714,7 +45760,8 @@
        "hairStyle": "straight",
        "outfit": "#26332a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/statistics-statistics-ii-inference-from-sample-to-population.jpg"
      }
     },
     {
@@ -45748,7 +45795,8 @@
        "outfit": "#14524a",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/statistics-probability-the-mathematics-of-uncertainty.jpg"
      }
     },
     {
@@ -45781,7 +45829,8 @@
        "hairStyle": "waves",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/statistics-regression-lines-through-noise.jpg"
      }
     },
     {
@@ -45815,7 +45864,8 @@
        "outfit": "#9a4a1f",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/statistics-experimental-design-learning-on-purpose.jpg"
      }
     },
     {
@@ -45848,7 +45898,8 @@
        "hairStyle": "waves",
        "outfit": "#5d4630",
        "glasses": true
-      }
+      },
+      "photo": "portraits/statistics-data-science-i-wrangling-and-seeing.jpg"
      }
     },
     {
@@ -45882,7 +45933,8 @@
        "outfit": "#b4502e",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/statistics-data-science-ii-models-in-practice.jpg"
      }
     },
     {
@@ -45915,7 +45967,8 @@
        "hairStyle": "waves",
        "outfit": "#6d1f2c",
        "glasses": true
-      }
+      },
+      "photo": "portraits/statistics-bayesian-statistics-beliefs-with-numbers.jpg"
      }
     },
     {
@@ -45948,7 +46001,8 @@
        "hairStyle": "straight",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/statistics-survey-methods-asking-populations-questions.jpg"
      }
     },
     {
@@ -45981,7 +46035,8 @@
        "hairStyle": "short",
        "outfit": "#26332a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/statistics-time-series-data-with-a-memory.jpg"
      }
     },
     {
@@ -46014,7 +46069,8 @@
        "hairStyle": "waves",
        "outfit": "#4b2a63",
        "glasses": false
-      }
+      },
+      "photo": "portraits/statistics-biostatistics-statistics-for-medicine.jpg"
      }
     },
     {
@@ -46047,7 +46103,8 @@
        "hairStyle": "bun",
        "outfit": "#1f4d7a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/statistics-statistical-computing-the-working-tools.jpg"
      }
     },
     {
@@ -46080,7 +46137,8 @@
        "hairStyle": "curls",
        "outfit": "#7a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/statistics-quality-and-reliability-statistics-in-industry.jpg"
      }
     },
     {
@@ -46113,7 +46171,8 @@
        "hairStyle": "straight",
        "outfit": "#5d4630",
        "glasses": true
-      }
+      },
+      "photo": "portraits/statistics-actuarial-foundations-pricing-risk.jpg"
      }
     }
    ],
@@ -48124,7 +48183,8 @@
        "outfit": "#2e5d33",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/sociology-sociology-ii-structures-that-outlast-us.jpg"
      }
     },
     {
@@ -48157,7 +48217,8 @@
        "hairStyle": "bob",
        "outfit": "#1f4d7a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/sociology-research-methods-in-sociology.jpg"
      }
     },
     {
@@ -48190,7 +48251,8 @@
        "hairStyle": "short",
        "outfit": "#8c1f2e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/sociology-sociology-of-the-family.jpg"
      }
     },
     {
@@ -48223,7 +48285,8 @@
        "hairStyle": "waves",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/sociology-sociology-of-education.jpg"
      }
     },
     {
@@ -48256,7 +48319,8 @@
        "hairStyle": "waves",
        "outfit": "#9a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/sociology-sociology-of-work-and-organisations.jpg"
      }
     },
     {
@@ -48289,7 +48353,8 @@
        "hairStyle": "short",
        "outfit": "#6d1f2c",
        "glasses": true
-      }
+      },
+      "photo": "portraits/sociology-urban-sociology-the-city-as-society.jpg"
      }
     },
     {
@@ -48322,7 +48387,8 @@
        "hairStyle": "ponytail",
        "outfit": "#1f5138",
        "glasses": true
-      }
+      },
+      "photo": "portraits/sociology-sociology-of-health-and-illness.jpg"
      }
     },
     {
@@ -48355,7 +48421,8 @@
        "hairStyle": "bob",
        "outfit": "#7a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/sociology-crime-and-deviance.jpg"
      }
     },
     {
@@ -48388,7 +48455,8 @@
        "hairStyle": "short",
        "outfit": "#8c1f2e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/sociology-race-ethnicity-and-migration.jpg"
      }
     },
     {
@@ -48421,7 +48489,8 @@
        "hairStyle": "ponytail",
        "outfit": "#26332a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/sociology-gender-and-society.jpg"
      }
     },
     {
@@ -48454,7 +48523,8 @@
        "hairStyle": "ponytail",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/sociology-media-and-society.jpg"
      }
     },
     {
@@ -48487,7 +48557,8 @@
        "hairStyle": "curls",
        "outfit": "#46536a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/sociology-religion-in-society.jpg"
      }
     },
     {
@@ -48520,7 +48591,8 @@
        "hairStyle": "bob",
        "outfit": "#26332a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/sociology-political-sociology-power-s-social-roots.jpg"
      }
     },
     {
@@ -48553,7 +48625,8 @@
        "hairStyle": "straight",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/sociology-globalisation-and-development.jpg"
      }
     },
     {
@@ -48587,7 +48660,8 @@
        "outfit": "#3c3f45",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/sociology-sociology-of-technology.jpg"
      }
     }
    ],
@@ -52202,7 +52276,8 @@
        "hairStyle": "curls",
        "outfit": "#5c2a54",
        "glasses": false
-      }
+      },
+      "photo": "portraits/religious-studies-world-religions-ii-the-abrahamic-traditions.jpg"
      }
     },
     {
@@ -52235,7 +52310,8 @@
        "hairStyle": "short",
        "outfit": "#23365c",
        "glasses": true
-      }
+      },
+      "photo": "portraits/religious-studies-sacred-texts-reading-what-believers-read.jpg"
      }
     },
     {
@@ -52268,7 +52344,8 @@
        "hairStyle": "short",
        "outfit": "#23365c",
        "glasses": true
-      }
+      },
+      "photo": "portraits/religious-studies-ritual-and-practice-religion-as-done.jpg"
      }
     },
     {
@@ -52301,7 +52378,8 @@
        "hairStyle": "waves",
        "outfit": "#3c3f45",
        "glasses": true
-      }
+      },
+      "photo": "portraits/religious-studies-religion-and-ethics.jpg"
      }
     },
     {
@@ -52334,7 +52412,8 @@
        "hairStyle": "curls",
        "outfit": "#1f5138",
        "glasses": false
-      }
+      },
+      "photo": "portraits/religious-studies-religion-in-the-modern-world.jpg"
      }
     },
     {
@@ -52368,7 +52447,8 @@
        "outfit": "#4b2a63",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/religious-studies-philosophy-of-religion-the-scholar-s-questions.jpg"
      }
     },
     {
@@ -52401,7 +52481,8 @@
        "hairStyle": "straight",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/religious-studies-myth-and-symbol.jpg"
      }
     },
     {
@@ -52434,7 +52515,8 @@
        "hairStyle": "bob",
        "outfit": "#1f5138",
        "glasses": true
-      }
+      },
+      "photo": "portraits/religious-studies-religion-and-psychology.jpg"
      }
     },
     {
@@ -52467,7 +52549,8 @@
        "hairStyle": "straight",
        "outfit": "#8c1f2e",
        "glasses": true
-      }
+      },
+      "photo": "portraits/religious-studies-new-religious-movements.jpg"
      }
     },
     {
@@ -52501,7 +52584,8 @@
        "outfit": "#7a4a1f",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/religious-studies-religion-art-and-architecture.jpg"
      }
     },
     {
@@ -52534,7 +52618,8 @@
        "hairStyle": "short",
        "outfit": "#26332a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/religious-studies-death-and-the-afterlife-across-traditions.jpg"
      }
     }
    ],
@@ -53332,7 +53417,8 @@
        "outfit": "#5c2a54",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/public-health-non-communicable-disease-prevention.jpg"
      }
     },
     {
@@ -53467,7 +53553,8 @@
        "hairStyle": "straight",
        "outfit": "#6d1f2c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/public-health-one-health-humans-animals-environment.jpg"
      }
     }
    ],
@@ -53560,7 +53647,8 @@
        "hairStyle": "straight",
        "outfit": "#8a6508",
        "glasses": false
-      }
+      },
+      "photo": "portraits/social-work-human-behaviour-and-the-social-environment.jpg"
      }
     },
     {
@@ -53593,7 +53681,8 @@
        "hairStyle": "bun",
        "outfit": "#8c1f2e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/social-work-child-and-family-social-work.jpg"
      }
     },
     {
@@ -53626,7 +53715,8 @@
        "hairStyle": "ponytail",
        "outfit": "#4b2a63",
        "glasses": true
-      }
+      },
+      "photo": "portraits/social-work-social-work-with-adults.jpg"
      }
     },
     {
@@ -53659,7 +53749,8 @@
        "hairStyle": "waves",
        "outfit": "#5c2a54",
        "glasses": false
-      }
+      },
+      "photo": "portraits/social-work-social-policy-the-welfare-landscape.jpg"
      }
     },
     {
@@ -53692,7 +53783,8 @@
        "hairStyle": "ponytail",
        "outfit": "#1f4d7a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/social-work-community-work-and-development.jpg"
      }
     },
     {
@@ -53725,7 +53817,8 @@
        "hairStyle": "waves",
        "outfit": "#1f4d7a",
        "glasses": true
-      }
+      },
+      "photo": "portraits/social-work-social-work-law-and-ethics.jpg"
      }
     },
     {
@@ -53758,7 +53851,8 @@
        "hairStyle": "curls",
        "outfit": "#7a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/social-work-addiction-and-recovery-services.jpg"
      }
     },
     {
@@ -53792,7 +53886,8 @@
        "outfit": "#9a4a1f",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/social-work-criminal-justice-social-work.jpg"
      }
     },
     {
@@ -53825,7 +53920,8 @@
        "hairStyle": "bob",
        "outfit": "#6d1f2c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/social-work-international-and-migration-social-work.jpg"
      }
     },
     {
@@ -53858,7 +53954,8 @@
        "hairStyle": "straight",
        "outfit": "#23365c",
        "glasses": false
-      }
+      },
+      "photo": "portraits/social-work-research-and-evaluation-in-social-services.jpg"
      }
     },
     {
@@ -53891,7 +53988,8 @@
        "hairStyle": "waves",
        "outfit": "#1f5138",
        "glasses": false
-      }
+      },
+      "photo": "portraits/social-work-leadership-in-human-services.jpg"
      }
     }
    ],
@@ -58351,7 +58449,8 @@
        "hairStyle": "curls",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/theatre-film-acting-i-the-craft-of-the-actor.jpg"
      }
     },
     {
@@ -58385,7 +58484,8 @@
        "outfit": "#14524a",
        "glasses": true,
        "beard": true
-      }
+      },
+      "photo": "portraits/theatre-film-acting-ii-styles-and-texts.jpg"
      }
     },
     {
@@ -58418,7 +58518,8 @@
        "hairStyle": "straight",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/theatre-film-drama-and-theatre-history-i-to-the-nineteenth-century.jpg"
      }
     },
     {
@@ -58517,7 +58618,8 @@
        "hairStyle": "waves",
        "outfit": "#14524a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/theatre-film-directing-and-stagecraft.jpg"
      }
     },
     {
@@ -58550,7 +58652,8 @@
        "hairStyle": "waves",
        "outfit": "#3c3f45",
        "glasses": false
-      }
+      },
+      "photo": "portraits/theatre-film-film-foundations-the-language-of-cinema.jpg"
      }
     },
     {
@@ -58583,7 +58686,8 @@
        "hairStyle": "straight",
        "outfit": "#7a4a1f",
        "glasses": false
-      }
+      },
+      "photo": "portraits/theatre-film-film-history-a-century-of-cinema.jpg"
      }
     },
     {
@@ -58616,7 +58720,8 @@
        "hairStyle": "straight",
        "outfit": "#46536a",
        "glasses": false
-      }
+      },
+      "photo": "portraits/theatre-film-screenwriting-stories-for-the-camera.jpg"
      }
     },
     {
@@ -58683,7 +58788,8 @@
        "outfit": "#9a4a1f",
        "glasses": false,
        "beard": true
-      }
+      },
+      "photo": "portraits/theatre-film-documentary-film-the-real-arranged.jpg"
      }
     },
     {
@@ -58716,7 +58822,8 @@
        "hairStyle": "straight",
        "outfit": "#7a4a1f",
        "glasses": true
-      }
+      },
+      "photo": "portraits/theatre-film-film-theory-and-criticism.jpg"
      }
     },
     {
@@ -58749,7 +58856,8 @@
        "hairStyle": "ponytail",
        "outfit": "#b4502e",
        "glasses": false
-      }
+      },
+      "photo": "portraits/theatre-film-performance-studies-performance-everywhere.jpg"
      }
     }
    ],
