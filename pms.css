@@ -79,6 +79,11 @@ h1.display.sm{font-size:clamp(2.2rem,5.2vw,3.4rem)}
 .stat b{display:block;font-size:clamp(1.7rem,3.4vw,2.3rem);line-height:1.05;color:#fff;font-weight:700}
 .stat span{display:block;margin-top:4px;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#d8c88f}
 .statband .sb-note{text-align:center;color:#e9e2cd;font-size:.95rem;margin-top:16px}
+.statband.scoreboard .stats{gap:20px 36px;margin-top:22px}
+.statband.scoreboard .stat{min-width:124px}
+.statband.scoreboard .stat b{font-size:clamp(2.5rem,6vw,3.5rem)}
+.statband.scoreboard .stat span{font-size:.78rem;margin-top:6px}
+.statband.scoreboard .sb-note{margin-top:22px}
 /* ---------- sections & cards ---------- */
 section.block{padding:56px 0 8px}
 .kicker{font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep);font-weight:700;text-align:center}
