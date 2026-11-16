@@ -15,7 +15,7 @@
      held in an installed app's memory across a deploy converges to the
      live build instead of drifting (Bill, Nov 16 02:01 EST: the app
      showed an old rail while the site was already correct). -->
-<meta name="x-dash-build" content="e0682f19-20261116T0828">
+<meta name="x-dash-build" content="da5ddf82-20261116T0943">
 <script>
 (function(){
   var mine = document.querySelector('meta[name="x-dash-build"]');
@@ -351,6 +351,15 @@
          added only for his owner session (see the lab view branch). -->
     <button data-view="lab" id="rail-lab" title="Exolex University" aria-label="Exolex University" hidden><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4 L22 9 L12 14 L2 9 Z" fill="#1a1a1a"/><path d="M6 11.5 V16 C6 18.2 18 18.2 18 16 V11.5 L12 14.6 Z" fill="#1a1a1a"/><path d="M22 9 V14.5" stroke="#c9a227" stroke-width="1.8" stroke-linecap="round"/><circle cx="22" cy="16.2" r="1.7" fill="#c9a227"/></svg></button>
     <button data-view="settings" title="Settings" aria-label="Settings">⚙️</button>
+    <!-- Brain (Bill, Nov 16 04:41 EST): a 🧠 item in the LEFT rail —
+         the one control for the brain panel (eye + status + feed)
+         since the chat-bar eye came out (Nov 16, e0682f19), so he
+         can watch the brain work from the rail. It TOGGLES the
+         panel; it is not a panel view (no data-view). It follows
+         the brain panel's own rule: the panel lives inside the
+         signed-in app, so the item is shown to every signed-in
+         session (see syncRail) and hidden again on sign-out. -->
+    <button id="rail-brain" title="Brain" aria-label="Brain" aria-pressed="false" hidden>🧠</button>
     <div class="sp"></div>
     <button id="rail-new" title="New chat" aria-label="New chat">➕</button>
   </nav>
@@ -937,10 +946,12 @@
      every control flips the same boolean and the class follows it.
      Round 4 (Bill, mirroring Muse): the Chats rail icon opens the
      chats panel (Main chat · Channels · Side chats); the brain
-     panel (eye + status + feed) has exactly ONE control — the eye
-     under the + in the composer — and it sits as its own column
-     beside the chat on desktop: chat shrinks when it opens, full
-     width when not. No other control touches the brain. */
+     panel (eye + status + feed) sits as its own column beside the
+     chat on desktop: chat shrinks when it opens, full width when
+     not. Its ONE control was the eye under the + in the composer;
+     the chat-bar eye came out Nov 16 (e0682f19) and the control is
+     now the 🧠 rail item (Bill, Nov 16 04:41 EST). No other control
+     touches the brain. */
   var view = "";
   var panelOpen = false, brainOpen = false;
   function setPanel(open){
@@ -952,6 +963,7 @@
     brainOpen = open;
     $("brain").classList.toggle("open", open);
     var be = $("brain-eye"); if(be) be.classList.toggle("on", open);
+    var rb = $("rail-brain"); if(rb){ rb.classList.toggle("on", open); rb.setAttribute("aria-pressed", open ? "true" : "false"); }
   }
   function markRail(v){
     document.querySelectorAll(".rail [data-view]").forEach(function(b){
@@ -974,6 +986,7 @@
     setPanel(true);
   });
   var beBtn = $("brain-eye"); if(beBtn) beBtn.addEventListener("click", function(){ setBrain(!brainOpen); });
+  var rbBtn = $("rail-brain"); if(rbBtn) rbBtn.addEventListener("click", function(){ setBrain(!brainOpen); });
   $("rail-new").addEventListener("click", function(){
     /* Keep the sign-in exchange as the invisible anchor before clearing,
        or owner mode would silently fall back to the public seat. */
@@ -1397,18 +1410,22 @@
      place (Bill, Nov 16 02:01 EST): Projects rides every signed-in
      session (per-account since Nov 16 03:23 EST — the panel shows
      the session's own list); the University item rides every
-     signed-in session (Nov 16 01:22 EST). openDashboard calls this on entry, checkOwner calls
+     signed-in session (Nov 16 01:22 EST); the Brain item rides
+     every signed-in session too (Nov 16 04:41 EST — the brain
+     panel's own rule: it lives inside the signed-in app).
+     openDashboard calls this on entry, checkOwner calls
      it whenever an identity check resolves while the dashboard is
      open, and the foreground re-check below calls it when the
      installed app comes back to the front — so the rail always
      matches the session that is actually standing, even on a page
-     the app held in memory across a deploy. Sign-out hides both
-     (see doSignOut). There is no top-bar Sign out control (Bill,
+     the app held in memory across a deploy. Sign-out hides all
+     three (see doSignOut). There is no top-bar Sign out control (Bill,
      Nov 16 02:01 EST): signing out lives in Settings alone. */
   function syncRail(){
     if(app.hidden) return;
     $("rail-projects").hidden = !(owner || admin || accountName);
     $("rail-lab").hidden = false;
+    $("rail-brain").hidden = false;
   }
   function openDashboard(){
     /* The owner's thread is his own (Bill, Nov 15 21:50 EST): the
@@ -1717,6 +1734,7 @@
     $("conv-title").textContent = "Chat with Dave";
     $("rail-projects").hidden = true;
     $("rail-lab").hidden = true;
+    $("rail-brain").hidden = true;
     lsSet(HISTORY_KEY, "[]"); lsSet(ANCHOR_KEY, "[]"); lsDel(PROJ_KEY);
     identity = null; lsDel(IDENTITY_KEY);
     if(!wasOwner){ try{ sessionStorage.setItem(SIGNED_OUT_KEY, "1"); }catch(e){} }
