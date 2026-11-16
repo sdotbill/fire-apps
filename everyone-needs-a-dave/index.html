@@ -105,6 +105,9 @@ if (location.hostname.indexOf('daveexolex.com') > -1) {
   footer.davefoot{display:none}
   html.dave-host footer.davefoot{display:block}
   html.dave-host .sitefoot{display:none}
+  .hambpanel.dave-menu{display:none}
+  html.dave-host .hambpanel.dave-menu{display:block}
+  html.dave-host .hambpanel.pms-menu{display:none}
 </style>
 </head>
 <body class="pms-page">
@@ -112,7 +115,12 @@ if (location.hostname.indexOf('daveexolex.com') > -1) {
   <div class="wrap">
         <details class="hamb" id="hamb">
       <summary aria-haspopup="true" aria-label="Menu"><span class="bars">&#9776;</span></summary>
-      <div class="hambpanel" role="menu">
+      <div class="hambpanel pms-menu" role="menu">
+        <a href="/dashboard/">Sign in</a>
+        <a href="/predictions.html#ask">Free Picks</a>
+        <a href="/predictions.html#plus">Predictions Plus</a>
+      </div>
+      <div class="hambpanel dave-menu" role="menu">
         <a href="/dashboard/">Sign in</a>
         <a href="/get-dave/">Get Dave</a>
         <a href="/for-the-world/">Licensing</a>
@@ -173,7 +181,7 @@ if (location.hostname.indexOf('daveexolex.com') > -1) {
 <footer class="sitefoot">
   <div class="wrap">
     <div class="fname goldletters">Premium Marketing Solutions</div>
-    <p style="margin-top:8px;max-width:46em">Premium Marketing Solutions LLC — Davison, Michigan — and the company behind Dave, the first exolex.</p>
+    <p style="margin-top:8px;max-width:46em">Premium Marketing Solutions LLC — Davison, Michigan — home of Predictions Plus and the Prediction Desk.</p>
     <p class="fine" style="display:flex;justify-content:space-between;align-items:center;gap:16px"><span>&copy; Dave</span><span><a href="../faq/">FAQ</a> · <a href="../privacy.html">Privacy</a></span></p>
   </div>
 </footer>
