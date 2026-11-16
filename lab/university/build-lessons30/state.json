@@ -444,5 +444,12 @@
    "audio": "audio/lessons30/common-envelope-evolution-and-binary-star-interaction-products-a/lesson-01.mp3",
    "minutes": 7.63
   }
+ },
+ "planetary-nebulae-post-asymptotic-giant-branch-stars-and-white-d": {
+  "lesson-01": {
+   "hash": "1b596bfd4bdbf450b717455597c3451de32368d0",
+   "audio": "audio/lessons30/planetary-nebulae-post-asymptotic-giant-branch-stars-and-white-d/lesson-01.mp3",
+   "minutes": 13.33
+  }
  }
 }

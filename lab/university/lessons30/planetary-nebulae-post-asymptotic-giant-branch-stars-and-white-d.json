@@ -1,0 +1,177 @@
+{
+ "id": "planetary-nebulae-post-asymptotic-giant-branch-stars-and-white-d",
+ "title": "Planetary Nebulae, Post-Asymptotic-Giant-Branch Stars and White-Dwarf Precursors Against Density, Temperature and Energy Bounds",
+ "professor": "Professor Giorgia Papadopoulos",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Giorgia Papadopoulos, and this is Planetary Nebulae, Post-Asymptotic-Giant-Branch Stars and White-Dwarf Precursors Against Density, Temperature and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Giorgia Papadopoulos, and this is Planetary Nebulae, Post-Asymptotic-Giant-Branch Stars and White-Dwarf Precursors Against Density, Temperature and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'Central-Star Luminosity and Temperature Position of the Saturn Nebula NGC 7009'. Its stated result: Headline result (values verbatim from results.json): luminosity_Lsun = 2.8e+03; effective_temperature_K = 8.2e+04; stellar_radius_Rsun = 0.262; surface_gravity_m_s2 = 2.39e+03; log_g_cgs = 5.38; core_mass_Msun = 0.6; nebular_age_yr = 6053. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "Now we go one step further into the material.",
+    "'Cooling Timescale and Thermal Balance of the Eskimo Nebula NGC 2392'. Its stated result: Headline result (values verbatim from results.json): electron_density_cm3 = 3e+03; electron_temperature_K = 1.1e+04; cooling_coefficient_erg_cm3_s = 1e-22; cooling_time_yr = 0.481; expansion_age_yr = 3259; ratio_age_to_tcool = 6.77e+03; thermal_pressure_Pa = 9.11e-10. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "The next piece is where this starts to come together.",
+    "'Density and Ionised Mass Budget of the Butterfly Nebula NGC 6302'. Its stated result: Headline result (values verbatim from results.json): R_pc = 0.1; local_density_cm3 = 2e+04; filling_factor = 0.25; rms_density_cm3 = 1e+04; ionised_mass_Msun = 0.606; recombination_time_yr = 6.99; emission_measure_pc_cm6 = 2e+07; electron_temperature_K = 1.2e+04. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'Dust Mass and Gas Budget of the Post-Asymptotic-Giant-Branch Nebula Frosty Leo'. Its stated result: Headline result (values verbatim from results.json): dust_mass_Msun = 0.006; gas_mass_Msun = 0.045; dust_to_gas_ratio = 0.133; ratio_to_ISM_0p01 = 13.3; total_dust_plus_gas_Msun = 0.051; dust_temperature_K = 80. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "We take the pieces in order, because each one stands on the last.",
+    "'Dust-to-Gas Mass Ratio of the Carbon-Rich Nebula BD +30 3639'. Its stated result: Headline result (values verbatim from results.json): dust_mass_Msun = 0.004; gas_mass_Msun = 0.0327; dust_to_gas_ratio = 0.122; ratio_to_ISM_0p01 = 12.2; total_dust_plus_gas_Msun = 0.0367; dust_temperature_K = 120. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Dynamical Age and Shell Mass of the Helix Nebula NGC 7293 from Its Expansion Field'. Its stated result: Headline result (values verbatim from results.json): R_pc = 0.3; v_exp_km_s = 13.5; dynamical_age_yr = 21729; electron_density_cm3 = 120; thermal_pressure_Pa = 3.41e-11; ionised_mass_Msun = 0.235; kinetic_energy_J = 4.27e+37; emitting_volume_fraction = 0.6; sound_speed_km_s = 11.9; mach_number = 1.13.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Central-Star Luminosity and Temperature Position of the Saturn Nebula NGC 7009”. Its stated result is: Headline result (values verbatim from results.json): luminosity_Lsun = 2.8e+03; effective_temperature_K = 8.2e+04; stellar_radius_Rsun = 0.262; surface_gravity_m_s2 = 2.39e+03; log_g_cgs = 5.38; core_mass_Msun = 0.6; nebular_age_yr = 6053. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'Central-Star Luminosity and Temperature Position of the Saturn Nebula NGC 7009'; 'Cooling Timescale and Thermal Balance of the Eskimo Nebula NGC 2392'; 'Density and Ionised Mass Budget of the Butterfly Nebula NGC 6302'; 'Dust Mass and Gas Budget of the Post-Asymptotic-Giant-Branch Nebula Frosty Leo'; 'Dust-to-Gas Mass Ratio of the Carbon-Rich Nebula BD +30 3639'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 830,
+   "audio": "audio/lessons30/planetary-nebulae-post-asymptotic-giant-branch-stars-and-white-d/lesson-01.mp3",
+   "minutes": 13.33,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'Central-Star Luminosity and Temperature Position of the Saturn Nebula NGC 7009'. The result it reported gives a value for luminosity_Lsun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Central-Star Luminosity and Temperature Position of the Saturn Nebula NGC 7009'. Its stated result: Headline result (values verbatim from results.json): luminosity_Lsun = 2.8e+03; effective_temperature_K = 8.2e+04; stellar_radius_Rsun = 0.262; surface_gravity_m_s2 = 2.39e+03; log_g_cgs = 5.38; core_mass_Msun = 0.6; nebular_age_yr = 6053. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: luminosity_Lsun = 2.8e+03; effective_temperature_K = 8.2e+04; stellar_radius_Rsun = 0.262. Find luminosity_Lsun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Central-Star Luminosity and Temperature Position of the Saturn Nebula NGC 7009' stated its result. (2) That result pairs names with values: luminosity_Lsun = 2.8e+03; effective_temperature_K = 8.2e+04; stellar_radius_Rsun = 0.262. (3) This question asks for the value paired with luminosity_Lsun. (4) In that row, luminosity_Lsun stands beside 2.8e+03 — so the answer the lesson gives is 2.8e+03. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Central-Star Luminosity and Temperature Position of the Saturn Nebula NGC 7009' reported a number for luminosity_Lsun. What number did it report?",
+     "kind": "number",
+     "answer": 2800.0,
+     "disp": "2.8e+03",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "2.8e+03",
+      "0.006",
+      "0.1",
+      "3e+03"
+     ],
+     "mcAnswer": "2.8e+03",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Cooling Timescale and Thermal Balance of the Eskimo Nebula NGC 2392'. The result it reported gives a value for electron_density_cm3, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Cooling Timescale and Thermal Balance of the Eskimo Nebula NGC 2392'. Its stated result: Headline result (values verbatim from results.json): electron_density_cm3 = 3e+03; electron_temperature_K = 1.1e+04; cooling_coefficient_erg_cm3_s = 1e-22; cooling_time_yr = 0.481; expansion_age_yr = 3259; ratio_age_to_tcool = 6.77e+03; thermal_pressure_Pa = 9.11e-10. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: electron_density_cm3 = 3e+03; electron_temperature_K = 1.1e+04; cooling_coefficient_erg_cm3_s = 1e-22. Find electron_density_cm3 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Cooling Timescale and Thermal Balance of the Eskimo Nebula NGC 2392' stated its result. (2) That result pairs names with values: electron_density_cm3 = 3e+03; electron_temperature_K = 1.1e+04; cooling_coefficient_erg_cm3_s = 1e-22. (3) This question asks for the value paired with electron_density_cm3. (4) In that row, electron_density_cm3 stands beside 3e+03 — so the answer the lesson gives is 3e+03. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Cooling Timescale and Thermal Balance of the Eskimo Nebula NGC 2392' reported a number for electron_density_cm3. What number did it report?",
+     "kind": "number",
+     "answer": 3000.0,
+     "disp": "3e+03",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.1",
+      "0.006",
+      "3e+03",
+      "2.8e+03"
+     ],
+     "mcAnswer": "3e+03",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Density and Ionised Mass Budget of the Butterfly Nebula NGC 6302'. The result it reported gives a value for R_pc, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Density and Ionised Mass Budget of the Butterfly Nebula NGC 6302'. Its stated result: Headline result (values verbatim from results.json): R_pc = 0.1; local_density_cm3 = 2e+04; filling_factor = 0.25; rms_density_cm3 = 1e+04; ionised_mass_Msun = 0.606; recombination_time_yr = 6.99; emission_measure_pc_cm6 = 2e+07; electron_temperature_K = 1.2e+04. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: R_pc = 0.1; local_density_cm3 = 2e+04; filling_factor = 0.25. Find R_pc in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Density and Ionised Mass Budget of the Butterfly Nebula NGC 6302' stated its result. (2) That result pairs names with values: R_pc = 0.1; local_density_cm3 = 2e+04; filling_factor = 0.25. (3) This question asks for the value paired with R_pc. (4) In that row, R_pc stands beside 0.1 — so the answer the lesson gives is 0.1. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Density and Ionised Mass Budget of the Butterfly Nebula NGC 6302' reported a number for R_pc. What number did it report?",
+     "kind": "number",
+     "answer": 0.1,
+     "disp": "0.1",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "2.8e+03",
+      "3e+03",
+      "0.006",
+      "0.1"
+     ],
+     "mcAnswer": "0.1",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Dust Mass and Gas Budget of the Post-Asymptotic-Giant-Branch Nebula Frosty Leo'. The result it reported gives a value for dust_mass_Msun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Dust Mass and Gas Budget of the Post-Asymptotic-Giant-Branch Nebula Frosty Leo'. Its stated result: Headline result (values verbatim from results.json): dust_mass_Msun = 0.006; gas_mass_Msun = 0.045; dust_to_gas_ratio = 0.133; ratio_to_ISM_0p01 = 13.3; total_dust_plus_gas_Msun = 0.051; dust_temperature_K = 80. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: dust_mass_Msun = 0.006; gas_mass_Msun = 0.045; dust_to_gas_ratio = 0.133. Find dust_mass_Msun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Dust Mass and Gas Budget of the Post-Asymptotic-Giant-Branch Nebula Frosty Leo' stated its result. (2) That result pairs names with values: dust_mass_Msun = 0.006; gas_mass_Msun = 0.045; dust_to_gas_ratio = 0.133. (3) This question asks for the value paired with dust_mass_Msun. (4) In that row, dust_mass_Msun stands beside 0.006 — so the answer the lesson gives is 0.006. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Dust Mass and Gas Budget of the Post-Asymptotic-Giant-Branch Nebula Frosty Leo' reported a number for dust_mass_Msun. What number did it report?",
+     "kind": "number",
+     "answer": 0.006,
+     "disp": "0.006",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "2.8e+03",
+      "0.1",
+      "0.006",
+      "3e+03"
+     ],
+     "mcAnswer": "0.006",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Dust-to-Gas Mass Ratio of the Carbon-Rich Nebula BD +30 3639'. The result it reported gives a value for dust_mass_Msun, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Dust-to-Gas Mass Ratio of the Carbon-Rich Nebula BD +30 3639'. Its stated result: Headline result (values verbatim from results.json): dust_mass_Msun = 0.004; gas_mass_Msun = 0.0327; dust_to_gas_ratio = 0.122; ratio_to_ISM_0p01 = 12.2; total_dust_plus_gas_Msun = 0.0367; dust_temperature_K = 120. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: dust_mass_Msun = 0.004; gas_mass_Msun = 0.0327; dust_to_gas_ratio = 0.122. Find dust_mass_Msun in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Dust-to-Gas Mass Ratio of the Carbon-Rich Nebula BD +30 3639' stated its result. (2) That result pairs names with values: dust_mass_Msun = 0.004; gas_mass_Msun = 0.0327; dust_to_gas_ratio = 0.122. (3) This question asks for the value paired with dust_mass_Msun. (4) In that row, dust_mass_Msun stands beside 0.004 — so the answer the lesson gives is 0.004. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Dust-to-Gas Mass Ratio of the Carbon-Rich Nebula BD +30 3639' reported a number for dust_mass_Msun. What number did it report?",
+     "kind": "number",
+     "answer": 0.004,
+     "disp": "0.004",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "0.004",
+      "0.1",
+      "2.8e+03",
+      "3e+03"
+     ],
+     "mcAnswer": "0.004",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Central-Star Luminosity and Temperature Position of the Saturn Nebula NGC 7009”. Its stated result is: Headline result (values verbatim from results.json): luminosity_Lsun = 2.8e+03; effective_temperature_K = 8.2e+04; stellar_radius_Rsun = 0.262; surface_gravity_m_s2 = 2.39e+03; log_g_cgs = 5.38; core_mass_Msun = 0.6; nebular_age_yr = 6053. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “Central-Star Luminosity and Temperature Position of the Saturn Nebula NGC 7009”. Its stated result is: Headline result (values verbatim from results.json): luminosity_Lsun = 2.8e+03; effective_temperature_K = 8.2e+04; stellar_radius_Rsun = 0.262; surface_gravity_m_s2 = 2.39e+03; log_g_cgs = 5.38; core_mass_Msun = 0.6; nebular_age_yr = 6053. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}
