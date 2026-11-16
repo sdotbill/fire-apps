@@ -409,5 +409,12 @@
    "audio": "audio/lessons30/magnetic-reconnection-in-astrophysical-and-laboratory-plasmas-ag/lesson-01.mp3",
    "minutes": 12.0
   }
+ },
+ "mercury-core-crust-surface-and-exosphere-against-density-and-ene": {
+  "lesson-01": {
+   "hash": "c4d903d21d44b3eb400171e4202de8aaeb35ee82",
+   "audio": "audio/lessons30/mercury-core-crust-surface-and-exosphere-against-density-and-ene/lesson-01.mp3",
+   "minutes": 11.98
+  }
  }
 }

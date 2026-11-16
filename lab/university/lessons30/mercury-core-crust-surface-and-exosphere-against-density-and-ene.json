@@ -1,0 +1,177 @@
+{
+ "id": "mercury-core-crust-surface-and-exosphere-against-density-and-ene",
+ "title": "Mercury: Core, Crust, Surface and Exosphere Against Density and Energy Bounds",
+ "professor": "Professor Andrea Costa",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Andrea Costa, and this is Mercury: Core, Crust, Surface and Exosphere Against Density and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Andrea Costa, and this is Mercury: Core, Crust, Surface and Exosphere Against Density and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'Diurnal Thermal Skin Depth of Mercury's Regolith from Published Thermal Inertia Values'. Its stated result: Headline result (values verbatim from results.json): solar_day_period_days = 176; thermal_diffusivity_m2_s_I30 = 9.000e-10; skin_depth_m_I30 = 0.066. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "Now we go one step further into the material.",
+    "'Field Strength at Mercury's Core-Mantle Boundary from Dipole Extrapolation and the Northward Offset Asymmetry'. Its stated result: Headline result (values verbatim from results.json): dipole_extrapolation_factor = 1.762; equatorial_field_at_cmb_nT = 335; polar_field_at_cmb_nT = 669. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "The next piece is where this starts to come together.",
+    "'Global Ion-Sputtering Source Rate for Mercury's Exosphere from Cusp Precipitation and Sputter Yield'. Its stated result: Headline result (values verbatim from results.json): upstream_ion_flux_m2_s = 1.400e+13; intercepted_ion_rate_s = 5.131e+26; precipitating_ion_rate_s = 1.026e+25. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'Jeans Escape Parameters for Hydrogen, Helium, Oxygen, Sodium and Calcium at Mercury'. Its stated result: Headline result (values verbatim from results.json): exobase_altitude_km = 400; escape_speed_at_exobase_m_s = 3939; jeans_lambda_hydrogen_600K = 1.57. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "We take the pieces in order, because each one stands on the last.",
+    "'Magnetopause Standoff Distance at Mercury from Dipole Pressure Balance Across the Solar-Wind Pressure Range'. Its stated result: Headline result (values verbatim from results.json): subsolar_surface_field_nT = 380; standoff_RM_low_5nPa = 1.502; altitude_km_low_5nPa = 1225. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Mass Bounds for Water Ice in Mercury's Polar Cold Traps from Deposit Area and Thickness Limits'. Its stated result: Headline result (values verbatim from results.json): adopted_deposit_area_km2 = 1e+04; ice_mass_kg_thickness_0p05m = 4.585e+11; ice_mass_kg_thickness_0p5m = 4.585e+12. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Diurnal Thermal Skin Depth of Mercury's Regolith from Published Thermal Inertia Values”. Its stated result is: Headline result (values verbatim from results.json): solar_day_period_days = 176; thermal_diffusivity_m2_s_I30 = 9.000e-10; skin_depth_m_I30 = 0.066. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'Diurnal Thermal Skin Depth of Mercury's Regolith from Published Thermal Inertia Values'; 'Field Strength at Mercury's Core-Mantle Boundary from Dipole Extrapolation and the Northward Offset Asymmetry'; 'Global Ion-Sputtering Source Rate for Mercury's Exosphere from Cusp Precipitation and Sputter Yield'; 'Jeans Escape Parameters for Hydrogen, Helium, Oxygen, Sodium and Calcium at Mercury'; 'Magnetopause Standoff Distance at Mercury from Dipole Pressure Balance Across the Solar-Wind Pressure Range'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 796,
+   "audio": "audio/lessons30/mercury-core-crust-surface-and-exosphere-against-density-and-ene/lesson-01.mp3",
+   "minutes": 11.98,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'Diurnal Thermal Skin Depth of Mercury's Regolith from Published Thermal Inertia Values'. The result it reported gives a value for solar_day_period_days, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Diurnal Thermal Skin Depth of Mercury's Regolith from Published Thermal Inertia Values'. Its stated result: Headline result (values verbatim from results.json): solar_day_period_days = 176; thermal_diffusivity_m2_s_I30 = 9.000e-10; skin_depth_m_I30 = 0.066. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: solar_day_period_days = 176; thermal_diffusivity_m2_s_I30 = 9.000e-10; skin_depth_m_I30 = 0.066. Find solar_day_period_days in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Diurnal Thermal Skin Depth of Mercury's Regolith from Published Thermal Inertia Values' stated its result. (2) That result pairs names with values: solar_day_period_days = 176; thermal_diffusivity_m2_s_I30 = 9.000e-10; skin_depth_m_I30 = 0.066. (3) This question asks for the value paired with solar_day_period_days. (4) In that row, solar_day_period_days stands beside 176 — so the answer the lesson gives is 176. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Diurnal Thermal Skin Depth of Mercury's Regolith from Published Thermal Inertia Values' reported a number for solar_day_period_days. What number did it report?",
+     "kind": "number",
+     "answer": 176.0,
+     "disp": "176",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "176",
+      "400",
+      "1.762",
+      "1.400e+13"
+     ],
+     "mcAnswer": "176",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Field Strength at Mercury's Core-Mantle Boundary from Dipole Extrapolation and the Northward Offset Asymmetry'. The result it reported gives a value for dipole_extrapolation_factor, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Field Strength at Mercury's Core-Mantle Boundary from Dipole Extrapolation and the Northward Offset Asymmetry'. Its stated result: Headline result (values verbatim from results.json): dipole_extrapolation_factor = 1.762; equatorial_field_at_cmb_nT = 335; polar_field_at_cmb_nT = 669. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: dipole_extrapolation_factor = 1.762; equatorial_field_at_cmb_nT = 335; polar_field_at_cmb_nT = 669. Find dipole_extrapolation_factor in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Field Strength at Mercury's Core-Mantle Boundary from Dipole Extrapolation and the Northward Offset Asymmetry' stated its result. (2) That result pairs names with values: dipole_extrapolation_factor = 1.762; equatorial_field_at_cmb_nT = 335; polar_field_at_cmb_nT = 669. (3) This question asks for the value paired with dipole_extrapolation_factor. (4) In that row, dipole_extrapolation_factor stands beside 1.762 — so the answer the lesson gives is 1.762. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Field Strength at Mercury's Core-Mantle Boundary from Dipole Extrapolation and the Northward Offset Asymmetry' reported a number for dipole_extrapolation_factor. What number did it report?",
+     "kind": "number",
+     "answer": 1.762,
+     "disp": "1.762",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "400",
+      "176",
+      "1.400e+13",
+      "1.762"
+     ],
+     "mcAnswer": "1.762",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Global Ion-Sputtering Source Rate for Mercury's Exosphere from Cusp Precipitation and Sputter Yield'. The result it reported gives a value for upstream_ion_flux_m2_s, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Global Ion-Sputtering Source Rate for Mercury's Exosphere from Cusp Precipitation and Sputter Yield'. Its stated result: Headline result (values verbatim from results.json): upstream_ion_flux_m2_s = 1.400e+13; intercepted_ion_rate_s = 5.131e+26; precipitating_ion_rate_s = 1.026e+25. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: upstream_ion_flux_m2_s = 1.400e+13; intercepted_ion_rate_s = 5.131e+26; precipitating_ion_rate_s = 1.026e+25. Find upstream_ion_flux_m2_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Global Ion-Sputtering Source Rate for Mercury's Exosphere from Cusp Precipitation and Sputter Yield' stated its result. (2) That result pairs names with values: upstream_ion_flux_m2_s = 1.400e+13; intercepted_ion_rate_s = 5.131e+26; precipitating_ion_rate_s = 1.026e+25. (3) This question asks for the value paired with upstream_ion_flux_m2_s. (4) In that row, upstream_ion_flux_m2_s stands beside 1.400e+13 — so the answer the lesson gives is 1.400e+13. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Global Ion-Sputtering Source Rate for Mercury's Exosphere from Cusp Precipitation and Sputter Yield' reported a number for upstream_ion_flux_m2_s. What number did it report?",
+     "kind": "number",
+     "answer": 14000000000000.0,
+     "disp": "1.400e+13",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "176",
+      "400",
+      "1.762",
+      "1.400e+13"
+     ],
+     "mcAnswer": "1.400e+13",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Jeans Escape Parameters for Hydrogen, Helium, Oxygen, Sodium and Calcium at Mercury'. The result it reported gives a value for exobase_altitude_km, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Jeans Escape Parameters for Hydrogen, Helium, Oxygen, Sodium and Calcium at Mercury'. Its stated result: Headline result (values verbatim from results.json): exobase_altitude_km = 400; escape_speed_at_exobase_m_s = 3939; jeans_lambda_hydrogen_600K = 1.57. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: exobase_altitude_km = 400; escape_speed_at_exobase_m_s = 3939; jeans_lambda_hydrogen_600K = 1.57. Find exobase_altitude_km in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Jeans Escape Parameters for Hydrogen, Helium, Oxygen, Sodium and Calcium at Mercury' stated its result. (2) That result pairs names with values: exobase_altitude_km = 400; escape_speed_at_exobase_m_s = 3939; jeans_lambda_hydrogen_600K = 1.57. (3) This question asks for the value paired with exobase_altitude_km. (4) In that row, exobase_altitude_km stands beside 400 — so the answer the lesson gives is 400. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Jeans Escape Parameters for Hydrogen, Helium, Oxygen, Sodium and Calcium at Mercury' reported a number for exobase_altitude_km. What number did it report?",
+     "kind": "number",
+     "answer": 400.0,
+     "disp": "400",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "400",
+      "1.400e+13",
+      "176",
+      "1.762"
+     ],
+     "mcAnswer": "400",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Magnetopause Standoff Distance at Mercury from Dipole Pressure Balance Across the Solar-Wind Pressure Range'. The result it reported gives a value for subsolar_surface_field_nT, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Magnetopause Standoff Distance at Mercury from Dipole Pressure Balance Across the Solar-Wind Pressure Range'. Its stated result: Headline result (values verbatim from results.json): subsolar_surface_field_nT = 380; standoff_RM_low_5nPa = 1.502; altitude_km_low_5nPa = 1225. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: subsolar_surface_field_nT = 380; standoff_RM_low_5nPa = 1.502; altitude_km_low_5nPa = 1225. Find subsolar_surface_field_nT in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Magnetopause Standoff Distance at Mercury from Dipole Pressure Balance Across the Solar-Wind Pressure Range' stated its result. (2) That result pairs names with values: subsolar_surface_field_nT = 380; standoff_RM_low_5nPa = 1.502; altitude_km_low_5nPa = 1225. (3) This question asks for the value paired with subsolar_surface_field_nT. (4) In that row, subsolar_surface_field_nT stands beside 380 — so the answer the lesson gives is 380. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Magnetopause Standoff Distance at Mercury from Dipole Pressure Balance Across the Solar-Wind Pressure Range' reported a number for subsolar_surface_field_nT. What number did it report?",
+     "kind": "number",
+     "answer": 380.0,
+     "disp": "380",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "176",
+      "1.400e+13",
+      "380",
+      "1.762"
+     ],
+     "mcAnswer": "380",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Diurnal Thermal Skin Depth of Mercury's Regolith from Published Thermal Inertia Values”. Its stated result is: Headline result (values verbatim from results.json): solar_day_period_days = 176; thermal_diffusivity_m2_s_I30 = 9.000e-10; skin_depth_m_I30 = 0.066. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “Diurnal Thermal Skin Depth of Mercury's Regolith from Published Thermal Inertia Values”. Its stated result is: Headline result (values verbatim from results.json): solar_day_period_days = 176; thermal_diffusivity_m2_s_I30 = 9.000e-10; skin_depth_m_I30 = 0.066. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}
