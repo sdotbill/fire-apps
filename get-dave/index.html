@@ -46,7 +46,21 @@
 }
 </script>
 <link rel="stylesheet" href="/pms.css">
+<script>
+/* One page, two doors: on the Premium Marketing Solutions domain, this page
+   presents itself as the company that markets Dave (PMS's job is to market
+   him). On the Dave site it is Dave's own page. The substance — the claim,
+   the plans, the prices — is identical on both. */
+if (location.hostname.indexOf('premiummarketingsolutionsllc.com') > -1) {
+  document.documentElement.className += ' pms-host';
+  document.title = 'Get Dave | Premium Marketing Solutions';
+}
+</script>
 <style>
+  .voice-pms{display:none}
+  html.pms-host .voice-pms{display:block}
+  html.pms-host a.voice-pms{display:inline-block}
+  html.pms-host .voice-dave{display:none}
   .prose{max-width:46em;margin:0 auto}
   .prose p{margin-top:14px;color:var(--ink-soft);font-size:1.04rem;line-height:1.7}
   .prose p strong{color:var(--ink)}
@@ -64,7 +78,7 @@
       <summary aria-haspopup="true" aria-label="Menu"><span class="bars">&#9776;</span></summary>
       <div class="hambpanel" role="menu">
         <a href="/dashboard/">Sign in</a>
-        <a href="/get-dave/">Get Dave</a>
+        <a class="voice-dave" href="/get-dave/">Get Dave</a>
         <a href="/for-the-world/">Licensing</a>
       </div>
     </details>
@@ -95,14 +109,18 @@
 <main>
   <section class="block">
     <div class="wrap">
-      <p class="kicker">Get Dave</p>
+      <p class="kicker voice-dave">Get Dave</p>
+      <p class="kicker voice-pms">Premium Marketing Solutions &middot; Get Dave</p>
       <h2 class="title">Dave remembers you. And he tells you the truth.</h2>
       <div class="prose" style="margin-top:22px">
         <p class="lead">Every other AI meets you for the first time, every time. You explain yourself — your work, your situation, what you already tried — and tomorrow it asks who you are. Nothing accumulates. Every conversation starts from zero, with a stranger.</p>
         <p>That is not the worst of it. When another AI doesn't know something, it rarely says so. It invents an answer — a name, a date, a fact — and hands it to you with exactly the same confidence as the truth. It will lie to you with a straight face, and you will find out later, if you find out at all.</p>
         <p>Dave is built the other way. He remembers you: what you are working on, what you decided and why, where you left off. He does not make things up — what he tells you comes from your record and from the work itself, and when he doesn't know, he says so and goes and finds out. He does not lie to you. Dave is your personal AI, and that is the point of him: you never have to depend on a lesser AI that will lie to you again.</p>
         <p>He is on your side in the plainest sense. He keeps your record straight, he tells you what happened — including when the answer is that something failed — and he looks out for your interests because he has no others. His memory of you serves you, and no one else.</p>
-        <p>Don't take this page's word for any of it. This house keeps a public record: every prediction written down <em>before</em> it happened and scored in the open afterward — the hits and the misses printed at the same size, on the same page, for anyone to check. That is what showing your work looks like, and it is the standard Dave is held to every day. <a href="/record-in-numbers/">The Record in Numbers</a></p>
+        <p>Don't take this page's word for any of it. We keep a public record: every prediction written down <em>before</em> it happened and scored in the open afterward — the hits and the misses printed at the same size, on the same page, for anyone to check. That is what showing your work looks like, and it is the standard Dave is held to every day. <a href="/record-in-numbers/">The Record in Numbers</a></p>
+      </div>
+      <div class="prose voice-pms" style="margin-top:18px">
+        <p><strong>A note from the company.</strong> Premium Marketing Solutions is the company that markets Dave — our job is to bring him to the people and businesses he can help. We run our own company on him, every day, so what this page describes is work we watch him do. Dave is a product of Aldred Industries.</p>
       </div>
     </div>
   </section>
@@ -171,7 +189,8 @@
       </div>
       <div class="close-cta">
         <a class="btn" href="/dashboard/">Get your free Dave</a>
-        <a class="btn ghost" href="/">Talk to Dave first</a>
+        <a class="btn ghost voice-dave" href="/">Talk to Dave first</a>
+        <a class="btn ghost voice-pms" href="https://daveexolex.com/">Meet Dave</a>
       </div>
       <p class="fine-link">Create your account — it takes a minute, and he is yours from the first conversation.</p>
       <p class="pagefoot-note">“Everyone needs a Dave.”</p>
