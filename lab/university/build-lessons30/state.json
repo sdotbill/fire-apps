@@ -430,5 +430,12 @@
    "audio": "audio/lessons30/magnetars-soft-gamma-repeaters-and-anomalous-x-ray-pulsars-again/lesson-01.mp3",
    "minutes": 12.25
   }
+ },
+ "the-cosmic-web-filaments-walls-and-the-warm-hot-intergalactic-me": {
+  "lesson-01": {
+   "hash": "e4ee86e0e94fc18cd8e71cb0ab41a8512075cc47",
+   "audio": "audio/lessons30/the-cosmic-web-filaments-walls-and-the-warm-hot-intergalactic-me/lesson-01.mp3",
+   "minutes": 16.7
+  }
  }
 }

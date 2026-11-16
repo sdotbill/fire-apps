@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Wulan Rahmawati, and this is The Cosmic Web: Filaments, Walls and the Warm-Hot Intergalactic Medium Baryon Budget Against Density Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Wulan Rahmawati, and this is The Cosmic Web: Filaments, Walls and the Warm-Hot Intergalactic Medium Baryon Budget Against Density Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Accretion Shock Temperatures of Filament Gas: The Inflow Speeds That Manufacture the Warm-Hot Phase'. Its stated result: Headline result (values verbatim from results.json): v_km_s = 100, T_postshock_K = 134000.0, Mach = 7.1, line_density_for_vesc_Msun_per_Mpc = 581000000000.0; v_km_s = 200, T_postshock_K = 536000.0, Mach = 14.0, line_density_for_vesc_Msun_per_Mpc = 2330000000000.0; v_km_s = 300, T_postshock_K = 1210000.0, Mach = 21.0, line_density_for_vesc_Msun_per_Mpc = 5230000000000.0; v_km_s = 400, T_postshock_K = 2140000.0, Mach =
+
+Now we go one step further into the material.
+
+'Baryon Conversion Efficiency by Cosmic-Web Environment: Where Stars Formed from the Available Gas'. Its stated result: Headline result (values verbatim from results.json): global_stellar_share_of_baryons = 0.07; stellar_fraction_of_baryons_in_voids = 0.03231; stellar_fraction_of_baryons_in_walls = 0.06417; stellar_fraction_of_baryons_in_filaments = 0.08; stellar_fraction_of_baryons_in_nodes = 0.08; efficiency_nodes_over_voids = 2.48; efficiency_filaments_over_global = 1.14; unconverted_baryon_share_in_filaments = 0.92.
+
+The next piece is where this starts to come together.
+
+'Broad Lyman-Alpha Absorbers: Temperature Ceilings from Line Widths and the Baryon Share of the Broad-Line Population'. Its stated result: Headline result (values verbatim from results.json): b_km_s = 50.0; T_ceiling_from_b_K = 151000.0; N_HI_cm2 = 30000000000000.0; adopted_f_HI = 1e-05; inferred_NH_cm2 = 3e+18; dNdz = 30.0; BLA_fraction_of_baryons = 0.028; fraction_if_fHI_3e-6 = 0.0933; fraction_if_fHI_3e-5 = 0.00933; b_thermal_at_1e5K_km_s = 41.0; b_thermal_at_3e5K_km_s = 70.0.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Cooling Times and Entropy of Warm-Hot Filament Gas: Why the Phase, Once Heated, Persists'. Its stated result: Headline result (values verbatim from results.json): ne_cm3 = 1e-05, T_K = 1000000.0, t_cool_Gyr = 18.1, tcool_over_tHubble = 1.25, entropy_K_keV_cm2 = 186.0; ne_cm3 = 1e-05, T_K = 10000000.0, t_cool_Gyr = 904.0, tcool_over_tHubble = 62.3, entropy_K_keV_cm2 = 1860.0; ne_cm3 = 0.0001, T_K = 1000000.0, t_cool_Gyr = 1.81, tcool_over_tHubble = 0.125, entropy_K_keV_cm2 = 40.0; ne_cm3 = 0.0001, T_K = 10000000.0, t_cool_Gyr
+
+We take the pieces in order, because each one stands on the last.
+
+'Cosmic Walls: Surface Density, Face-On Columns and Collapse Timescales of the Sheet Component'. Its stated result: Headline result (values verbatim from results.json): wall_overdensity = 5.0; thickness_Mpc = 3.0; baryon_surface_density_Msun_pc2 = 0.0932; NH_face_on_cm2 = 8.85e+18; DM_face_on_pc_cm3 = 3.32; free_fall_time_Gyr = 18.2; Hubble_time_Gyr = 14.5; wall_volume_share_input = 0.16; wall_mass_share_two_phase_estimate = 0.488; electron_column_cm2 = 1.02e+19.
+
+Stay with me, because the next piece builds directly on that one.
+
+'Dispersion and Faraday Rotation per Filament Crossing: The Per-Structure Budgets Behind the Line-of-Sight Totals'. Its stated result: Headline result (values verbatim from results.json): ne_cm3 = 6.6e-06; path_Mpc = 2.5; B_parallel_nG = 20.0; DM_per_crossing_pc_cm3 = 16.5; RM_per_crossing_rad_m2 = 0.267; band_delay_400_800MHz_ms = 321.0; crossings_to_z1 = 22.0; total_filament_DM_to_z1 = 363.0; RM_rms_random_walk_rad_m2 = 1.25; DM_per_crossing_if_overdensity_10 = 5.5; DM_per_crossing_if_overdensity_100 = 55.0.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Accretion Shock Temperatures of Filament Gas: The Inflow Speeds That Manufacture the Warm-Hot Phase”. Its stated result is: Headline result (values verbatim from results.json): v_km_s = 100, T_postshock_K = 134000.0, Mach = 7.1, line_density_for_vesc_Msun_per_Mpc = 581000000000.0; v_km_s = 200, T_postshock_K = 536000.0, Mach = 14.0, line_density_for_vesc_Msun_per_Mpc = 2330000000000.0; v_km_s = 300, T_postshock_K = 12100 (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Accretion Shock Temperatures of Filament Gas: The Inflow Speeds That Manufacture the Warm-Hot Phase'; 'Baryon Conversion Efficiency by Cosmic-Web Environment: Where Stars Formed from the Available Gas'; 'Broad Lyman-Alpha Absorbers: Temperature Ceilings from Line Widths and the Baryon Share of the Broad-Line Population'; 'Cooling Times and Entropy of Warm-Hot Filament Gas: Why the Phase, Once Heated, Persists'; 'Cosmic Walls: Surface Density, Face-On Columns and Collapse Timescales of the Sheet Component'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.

@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'Accretion Shock Temperatures of Filament Gas: The Inflow Speeds That Manufacture the Warm-Hot Phase'. The result it reported gives a value for v_km_s, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Accretion Shock Temperatures of Filament Gas: The Inflow Speeds That Manufacture the Warm-Hot Phase'. Its stated result: Headline result (values verbatim from results.json): v_km_s = 100, T_postshock_K = 134000.0, Mach = 7.1, line_density_for_vesc_Msun_per_Mpc = 581000000000.0; v_km_s = 200, T_postshock_K = 536000.0, Mach = 14.0, line_density_for_vesc_Msun_per_Mpc = 2330000000000.0; v_km_s = 300, T_postshock_K = 1210000.0, Mach = 21.0, line_density_for_vesc_Msun_per_Mpc = 5230000000000.0; v_km_s = 400, T_postshock_K = 2140000.0, Mach = And here is that same result with the words stripped away — just the quantities standing in a row: v_km_s = 100; T_postshock_K = 134000.0; line_density_for_vesc_Msun_per_Mpc = 581000000000.0. Find v_km_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Accretion Shock Temperatures of Filament Gas: The Inflow Speeds That Manufacture the Warm-Hot Phase' stated its result. (2) That result pairs names with values: v_km_s = 100; T_postshock_K = 134000.0; line_density_for_vesc_Msun_per_Mpc = 581000000000.0. (3) This question asks for the value paired with v_km_s. (4) In that row, v_km_s stands beside 100 — so the answer the lesson gives is 100. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Accretion Shock Temperatures of Filament Gas: The Inflow Speeds That Manufacture the Warm-Hot Phase' reported a number for v_km_s. What number did it report?",
+  "kind": "number",
+  "answer": 100.0,
+  "disp": "100",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "50.0",
+   "1e-05",
+   "100",
+   "0.07"
+  ],
+  "mcAnswer": "100",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Baryon Conversion Efficiency by Cosmic-Web Environment: Where Stars Formed from the Available Gas'. The result it reported gives a value for global_stellar_share_of_baryons, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Baryon Conversion Efficiency by Cosmic-Web Environment: Where Stars Formed from the Available Gas'. Its stated result: Headline result (values verbatim from results.json): global_stellar_share_of_baryons = 0.07; stellar_fraction_of_baryons_in_voids = 0.03231; stellar_fraction_of_baryons_in_walls = 0.06417; stellar_fraction_of_baryons_in_filaments = 0.08; stellar_fraction_of_baryons_in_nodes = 0.08; efficiency_nodes_over_voids = 2.48; efficiency_filaments_over_global = 1.14; unconverted_baryon_share_in_filaments = 0.92. And here is that same result with the words stripped away — just the quantities standing in a row: global_stellar_share_of_baryons = 0.07; stellar_fraction_of_baryons_in_voids = 0.03231; stellar_fraction_of_baryons_in_walls = 0.06417. Find global_stellar_share_of_baryons in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Baryon Conversion Efficiency by Cosmic-Web Environment: Where Stars Formed from the Available Gas' stated its result. (2) That result pairs names with values: global_stellar_share_of_baryons = 0.07; stellar_fraction_of_baryons_in_voids = 0.03231; stellar_fraction_of_baryons_in_walls = 0.06417. (3) This question asks for the value paired with global_stellar_share_of_baryons. (4) In that row, global_stellar_share_of_baryons stands beside 0.07 — so the answer the lesson gives is 0.07. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Baryon Conversion Efficiency by Cosmic-Web Environment: Where Stars Formed from the Available Gas' reported a number for global_stellar_share_of_baryons. What number did it report?",
+  "kind": "number",
+  "answer": 0.07,
+  "disp": "0.07",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "50.0",
+   "100",
+   "0.07",
+   "1e-05"
+  ],
+  "mcAnswer": "0.07",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Broad Lyman-Alpha Absorbers: Temperature Ceilings from Line Widths and the Baryon Share of the Broad-Line Population'. The result it reported gives a value for b_km_s, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Broad Lyman-Alpha Absorbers: Temperature Ceilings from Line Widths and the Baryon Share of the Broad-Line Population'. Its stated result: Headline result (values verbatim from results.json): b_km_s = 50.0; T_ceiling_from_b_K = 151000.0; N_HI_cm2 = 30000000000000.0; adopted_f_HI = 1e-05; inferred_NH_cm2 = 3e+18; dNdz = 30.0; BLA_fraction_of_baryons = 0.028; fraction_if_fHI_3e-6 = 0.0933; fraction_if_fHI_3e-5 = 0.00933; b_thermal_at_1e5K_km_s = 41.0; b_thermal_at_3e5K_km_s = 70.0. And here is that same result with the words stripped away — just the quantities standing in a row: b_km_s = 50.0; T_ceiling_from_b_K = 151000.0; N_HI_cm2 = 30000000000000.0. Find b_km_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Broad Lyman-Alpha Absorbers: Temperature Ceilings from Line Widths and the Baryon Share of the Broad-Line Population' stated its result. (2) That result pairs names with values: b_km_s = 50.0; T_ceiling_from_b_K = 151000.0; N_HI_cm2 = 30000000000000.0. (3) This question asks for the value paired with b_km_s. (4) In that row, b_km_s stands beside 50.0 — so the answer the lesson gives is 50.0. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Broad Lyman-Alpha Absorbers: Temperature Ceilings from Line Widths and the Baryon Share of the Broad-Line Population' reported a number for b_km_s. What number did it report?",
+  "kind": "number",
+  "answer": 50.0,
+  "disp": "50.0",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "50.0",
+   "1e-05",
+   "100",
+   "0.07"
+  ],
+  "mcAnswer": "50.0",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Cooling Times and Entropy of Warm-Hot Filament Gas: Why the Phase, Once Heated, Persists'. The result it reported gives a value for ne_cm3, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Cooling Times and Entropy of Warm-Hot Filament Gas: Why the Phase, Once Heated, Persists'. Its stated result: Headline result (values verbatim from results.json): ne_cm3 = 1e-05, T_K = 1000000.0, t_cool_Gyr = 18.1, tcool_over_tHubble = 1.25, entropy_K_keV_cm2 = 186.0; ne_cm3 = 1e-05, T_K = 10000000.0, t_cool_Gyr = 904.0, tcool_over_tHubble = 62.3, entropy_K_keV_cm2 = 1860.0; ne_cm3 = 0.0001, T_K = 1000000.0, t_cool_Gyr = 1.81, tcool_over_tHubble = 0.125, entropy_K_keV_cm2 = 40.0; ne_cm3 = 0.0001, T_K = 10000000.0, t_cool_Gyr And here is that same result with the words stripped away — just the quantities standing in a row: ne_cm3 = 1e-05; T_K = 1000000.0; t_cool_Gyr = 18.1. Find ne_cm3 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Cooling Times and Entropy of Warm-Hot Filament Gas: Why the Phase, Once Heated, Persists' stated its result. (2) That result pairs names with values: ne_cm3 = 1e-05; T_K = 1000000.0; t_cool_Gyr = 18.1. (3) This question asks for the value paired with ne_cm3. (4) In that row, ne_cm3 stands beside 1e-05 — so the answer the lesson gives is 1e-05. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Cooling Times and Entropy of Warm-Hot Filament Gas: Why the Phase, Once Heated, Persists' reported a number for ne_cm3. What number did it report?",
+  "kind": "number",
+  "answer": 1e-05,
+  "disp": "1e-05",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "100",
+   "0.07",
+   "1e-05",
+   "50.0"
+  ],
+  "mcAnswer": "1e-05",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Cosmic Walls: Surface Density, Face-On Columns and Collapse Timescales of the Sheet Component'. The result it reported gives a value for wall_overdensity, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Cosmic Walls: Surface Density, Face-On Columns and Collapse Timescales of the Sheet Component'. Its stated result: Headline result (values verbatim from results.json): wall_overdensity = 5.0; thickness_Mpc = 3.0; baryon_surface_density_Msun_pc2 = 0.0932; NH_face_on_cm2 = 8.85e+18; DM_face_on_pc_cm3 = 3.32; free_fall_time_Gyr = 18.2; Hubble_time_Gyr = 14.5; wall_volume_share_input = 0.16; wall_mass_share_two_phase_estimate = 0.488; electron_column_cm2 = 1.02e+19. And here is that same result with the words stripped away — just the quantities standing in a row: wall_overdensity = 5.0; thickness_Mpc = 3.0; baryon_surface_density_Msun_pc2 = 0.0932. Find wall_overdensity in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Cosmic Walls: Surface Density, Face-On Columns and Collapse Timescales of the Sheet Component' stated its result. (2) That result pairs names with values: wall_overdensity = 5.0; thickness_Mpc = 3.0; baryon_surface_density_Msun_pc2 = 0.0932. (3) This question asks for the value paired with wall_overdensity. (4) In that row, wall_overdensity stands beside 5.0 — so the answer the lesson gives is 5.0. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Cosmic Walls: Surface Density, Face-On Columns and Collapse Timescales of the Sheet Component' reported a number for wall_overdensity. What number did it report?",
+  "kind": "number",
+  "answer": 5.0,
+  "disp": "5.0",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "50.0",
+   "0.07",
+   "100",
+   "5.0"
+  ],
+  "mcAnswer": "5.0",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Accretion Shock Temperatures of Filament Gas: The Inflow Speeds That Manufacture the Warm-Hot Phase”. Its stated result is: Headline result (values verbatim from results.json): v_km_s = 100, T_postshock_K = 134000.0, Mach = 7.1, line_density_for_vesc_Msun_per_Mpc = 581000000000.0; v_km_s = 200, T_postshock_K = 536000.0, Mach = 14.0, line_density_for_vesc_Msun_per_Mpc = 2330000000000.0; v_km_s = 300, T_postshock_K = 12100 (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “Accretion Shock Temperatures of Filament Gas: The Inflow Speeds That Manufacture the Warm-Hot Phase”. Its stated result is: Headline result (values verbatim from results.json): v_km_s = 100, T_postshock_K = 134000.0, Mach = 7.1, line_density_for_vesc_Msun_per_Mpc = 581000000000.0; v_km_s = 200, T_postshock_K = 536000.0, Mach = 14.0, line_density_for_vesc_Msun_per_Mpc = 2330000000000.0; v_km_s = 300, T_postshock_K = 12100 (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]
