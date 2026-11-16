@@ -1,0 +1,21 @@
+# Site consolidation — Nov 16, 2026 (Bill's streamline order, Nov 15 23:54 EST)
+# Every retired URL redirects permanently to its canonical page/anchor.
+# Stub pages also exist at these paths in the house pattern; these rules are the
+# platform-layer record of the same mapping.
+/dave/ /get-dave/ 301
+/what-is-an-exolex/ /get-dave/#what-is-an-exolex 301
+/first-exolex/ /get-dave/#first-exolex 301
+/companies/ /aldred-industries/#companies 301
+/demonstration/ /evidence.html#demonstration 301
+/record/cardoso-endorsement/ /evidence.html#cardoso-endorsement 301
+/proof/ /demonstration/proof/ 301
+/proof/preregistration/ /demonstration/proof/preregistration/ 301
+/proof/responses/ /demonstration/proof/responses/ 301
+/proof/run-log/ /demonstration/proof/run-log/ 301
+/proof/google-record/ /demonstration/proof/google-record/ 301
+/time-traveler/ /time-traveler/claim/ 301
+/time-traveler/claim-dossier/ /time-traveler/claim/#dossier 301
+/time-traveler/evidence/ /time-traveler/claim/#the-audit 301
+/questions/ /faq/ 301
+/questions/:slug/ /faq/:slug/ 301
+/what-we-do/ / 301

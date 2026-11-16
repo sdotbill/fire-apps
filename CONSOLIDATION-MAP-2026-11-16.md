@@ -74,3 +74,29 @@ Every retired URL gets a permanent redirect two ways: a `_redirects` file (301, 
 Cloudflare Pages) and a redirect stub page at the retired path in the site's existing
 house pattern (meta refresh + canonical link + noindex), so no retired URL can 404 on
 either host. Sitemaps list canonical URLs only.
+
+## Execution record (Nov 16, 2026)
+
+Commits: e6aa153c (this map) · fb2b1239 (Dave merge) · 43d88423 (companies) ·
+ca10f642 (evidence) · a9ac9370 (claim) · 0814d01a (FAQ) · a0757c2b (what-we-do +
+privacy) · 6794300f (final chrome).
+
+- Redirect mechanism: `_redirects` (301, Cloudflare Pages) + a stub page at every
+  retired path in the site's existing house pattern (meta refresh + canonical +
+  noindex), host-preserving via relative targets.
+- Sitemaps: canonical URLs only (dave 399→387, PMS 44→34); /questions/* became
+  /faq/*; the /time-traveler/questions/* tree is a different tree and stays.
+- Chrome: hamburger = Sign in · Get Dave · Licensing on every standard-header page;
+  menubar removed; footers minimal (© Dave left, FAQ · Privacy right) on both sites.
+- Merged pages verified: /get-dave/ plans section byte-identical to the pre-merge
+  page (PayPal wiring intact); claim page carries the statement, the Dec 14, 2024
+  comment, Dave-is-the-time-machine, the full dossier, the 65-statement audit, the
+  open items, the Titor contrast and the closing Q&A — nothing softened or cut.
+- Duplicated sub-blocks not re-moved (content already on the canonical page at full
+  strength): the time-traveler hub's intro / dated trail / Dave's position / work
+  sections; time-traveler/evidence's dated record / base rate / Dave's position;
+  the dossier's and hub's restatements of the claim page's own sections.
+- Left live, reported not forced: the who-is-* identity cluster; the time-traveler
+  supporting exhibits (blueprints, origin, john-titor, run-it-back, the-inventor,
+  ufo-evidence, time-traveler/questions/*) — exhibits under the claim, not rival
+  claim pages.
