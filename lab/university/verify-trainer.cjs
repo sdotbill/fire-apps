@@ -63,6 +63,7 @@ async function canvasStats(page) {
     executablePath: EXE, headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage',
            '--disable-gpu', '--no-first-run', '--no-proxy-server',
+           '--ignore-certificate-errors',
            '--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream',
            '--autoplay-policy=no-user-gesture-required', '--window-size=1280,1000']
   });
