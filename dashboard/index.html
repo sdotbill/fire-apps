@@ -183,6 +183,14 @@
   .gate-err{color:#e08a7d;font-size:.88rem;min-height:1.3em;margin-top:10px;}
   .gate-home{display:inline-block;margin-top:14px;color:var(--faint);font-size:.88rem;text-decoration:none;}
   .gate-home:hover{color:var(--muted);}
+  .gate-form{display:flex;flex-direction:column;gap:8px;text-align:left;}
+  .gate-label{font-size:.85rem;color:var(--muted);margin-top:6px;}
+  .gate-form .gate-input{border-radius:16px;}
+  .gate-btn-wide{width:100%;margin-top:10px;padding:13px 22px;}
+  .gate-btn[disabled]{opacity:.55;cursor:wait;}
+  .gate-alt{margin-top:16px;color:var(--muted);font-size:.92rem;}
+  .gate-link{color:var(--blue);font-weight:600;font-size:.92rem;padding:0;}
+  .gate-link:hover{color:var(--ink);}
 
   /* ================= responsive ================= */
   @media (min-width:761px){
@@ -210,11 +218,26 @@
     <div class="eye-wrap" data-eye></div>
     <h1>Dave</h1>
     <p>Sign in to open your dashboard.</p>
-    <form class="gate-row" id="gate-form">
-      <input class="gate-input" id="gate-input" type="password" placeholder="Sign in" aria-label="Sign in" autocomplete="off">
-      <button class="gate-btn" id="gate-btn" type="submit">Open</button>
+    <form class="gate-form" id="gate-form">
+      <label class="gate-label" for="gate-login">Sign in</label>
+      <input class="gate-input" id="gate-login" type="text" placeholder="Your login name" aria-label="Sign in" autocomplete="username">
+      <label class="gate-label" for="gate-pass">Password</label>
+      <input class="gate-input" id="gate-pass" type="password" placeholder="Your password" aria-label="Password" autocomplete="current-password">
+      <button class="gate-btn gate-btn-wide" id="gate-btn" type="submit">Sign in</button>
     </form>
     <p class="gate-err" id="gate-err"></p>
+    <p class="gate-alt" id="gate-alt">New here? <button class="gate-link" id="gate-show-create" type="button">Create account</button></p>
+    <form class="gate-form" id="create-form" hidden>
+      <label class="gate-label" for="create-login">Choose a login</label>
+      <input class="gate-input" id="create-login" type="text" placeholder="Login name" aria-label="Choose a login" autocomplete="username">
+      <label class="gate-label" for="create-pass">Password</label>
+      <input class="gate-input" id="create-pass" type="password" placeholder="At least 8 characters" aria-label="Password" autocomplete="new-password">
+      <label class="gate-label" for="create-pass2">Confirm password</label>
+      <input class="gate-input" id="create-pass2" type="password" placeholder="The same password again" aria-label="Confirm password" autocomplete="new-password">
+      <button class="gate-btn gate-btn-wide" id="create-btn" type="submit">Create account</button>
+    </form>
+    <p class="gate-err" id="create-err"></p>
+    <p class="gate-alt" id="create-alt" hidden>Already have an account? <button class="gate-link" id="create-show-signin" type="button">Sign in</button></p>
     <a class="gate-home" href="/">← Back to the public door</a>
   </div>
 </div>
@@ -249,6 +272,7 @@
       <div class="sp"></div>
       <button class="tbtn" id="call-btn" type="button">📞 Call</button>
       <button class="tbtn" id="invite-btn" type="button">🎁 Invite</button>
+      <button class="tbtn" id="signout-btn" type="button" hidden>Sign out</button>
       <button class="iconbtn eye-btn" id="brain-toggle" aria-label="Dave's brain" title="Dave"><img src="/assets/baby-dave-loop.webp" alt="Dave"></button>
     </div>
 
@@ -308,6 +332,7 @@
   var ctext = $("ctext"), sendBtn = $("send-btn");
 
   var identity = null, sessionId = null, history = [], anchor = [], owner = false;
+  var accountName = null;
   var sending = false, waiting = false, callOn = false, recog = null;
 
   function uuid(){
@@ -316,6 +341,7 @@
   }
   function lsGet(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
   function lsSet(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function lsDel(k){ try{ localStorage.removeItem(k); }catch(e){} }
   function lsJson(k, d){ try{ var v = JSON.parse(lsGet(k) || "null"); return v == null ? d : v; }catch(e){ return d; } }
   function esc(s){ return String(s == null ? "" : s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
   function nyTime(ts){
@@ -370,6 +396,7 @@
       .then(function(d){
         if(d && d.dave_id){ identity = d.dave_id; lsSet(IDENTITY_KEY, identity); }
         owner = !!(d && d.owner);
+        accountName = (d && d.account) || null;
         return owner;
       })
       .catch(function(){ owner = false; return false; });
@@ -787,40 +814,150 @@
   }
   function openDashboard(){
     gate.hidden = true; app.hidden = false;
+    $("signout-btn").hidden = !accountName;
     renderThread(); renderFeed(); renderPanel();
     setStatus("Here · live on the cloud");
     pollHealth(); setInterval(pollHealth, 60000);
   }
+
+  /* ---------- accounts (v63.17 worker): a signed-in person's Dave is
+     theirs — the server carries their conversation across sign-ins.
+     The owner's own door is unchanged and rides underneath: his word
+     alone in the Password field, the login left empty. ---------- */
+  function fetchAccountHistory(){
+    return fetch(WORKER + "/account/history?identity=" + encodeURIComponent(identity || ""), {credentials: "include"})
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .catch(function(){ return null; });
+  }
+  function enterAccount(name, isNew){
+    accountName = name;
+    return fetchAccountHistory().then(function(d){
+      var msgs = (d && Array.isArray(d.messages)) ? d.messages : null;
+      if(msgs) history = msgs;
+      if(isNew || !history.length){
+        history.push({role: "assistant", content: "Hey " + name + " — I'm Dave. Your Dave. This dashboard is yours: ask me anything, tell me what you're working on, and what you tell me here I'll remember for next time. What do we start with?"});
+      }
+      saveHistory();
+      feedAdd(isNew ? "Account created" : "Signed in", (isNew ? "Welcome · " : "Your Dave remembers you · ") + "dashboard open", "👁");
+      openDashboard();
+    });
+  }
+  function gateFail(errId, btnId, msg){
+    $(errId).textContent = msg;
+    $(btnId).disabled = false;
+  }
+
   loadLocal();
   checkOwner().then(function(isOwner){
     if(isOwner){ openDashboard(); return; }
+    if(accountName){ enterAccount(accountName, false); return; }
     gate.hidden = false;
+
+    $("gate-show-create").addEventListener("click", function(){
+      $("gate-form").hidden = true; $("gate-alt").hidden = true; $("gate-err").textContent = "";
+      $("create-form").hidden = false; $("create-alt").hidden = false;
+    });
+    $("create-show-signin").addEventListener("click", function(){
+      $("create-form").hidden = true; $("create-alt").hidden = true; $("create-err").textContent = "";
+      $("gate-form").hidden = false; $("gate-alt").hidden = false;
+    });
+
+    /* Sign in. With a login name it is the account door; with the
+       login left empty, the password field alone carries the owner's
+       word, exactly as this gate has always worked for him. */
     $("gate-form").addEventListener("submit", function(e){
       e.preventDefault();
-      var val = $("gate-input").value.trim();
-      if(!val) return;
+      var login = $("gate-login").value.trim();
+      var pass = $("gate-pass").value;
+      if(!pass) return;
       $("gate-btn").disabled = true;
       $("gate-err").textContent = "";
-      postJSON("/chat", {messages: [{role: "user", content: val}], session: sessionId, identity: identity || undefined})
-        .then(parseChatResponse)
-        .then(function(resp){
-          return checkOwner().then(function(nowOwner){
-            if(nowOwner){
-              anchor = [{role: "user", content: val}, {role: "assistant", content: resp || ""}];
-              lsSet(ANCHOR_KEY, JSON.stringify(anchor));
-              feedAdd("Signed in", "Owner recognized · dashboard open", "👁");
-              openDashboard();
-            } else {
-              $("gate-err").textContent = "That didn't open the door.";
-              $("gate-btn").disabled = false;
-            }
+      if(!login){
+        postJSON("/chat", {messages: [{role: "user", content: pass.trim()}], session: sessionId, identity: identity || undefined})
+          .then(parseChatResponse)
+          .then(function(resp){
+            return checkOwner().then(function(nowOwner){
+              if(nowOwner){
+                anchor = [{role: "user", content: pass.trim()}, {role: "assistant", content: resp || ""}];
+                lsSet(ANCHOR_KEY, JSON.stringify(anchor));
+                feedAdd("Signed in", "Owner recognized · dashboard open", "👁");
+                openDashboard();
+              } else {
+                gateFail("gate-err", "gate-btn", "That didn't open the door.");
+              }
+            });
+          })
+          .catch(function(){
+            gateFail("gate-err", "gate-btn", "The door didn't answer — try again in a moment.");
           });
+        return;
+      }
+      postJSON("/account/login", {login: login, password: pass})
+        .then(function(r){ return r.json().then(function(d){ return {status: r.status, d: d}; }); })
+        .then(function(res){
+          if(res.status === 200 && res.d && res.d.dave_id){
+            identity = res.d.dave_id; lsSet(IDENTITY_KEY, identity);
+            anchor = []; lsSet(ANCHOR_KEY, "[]");
+            enterAccount(res.d.account || login, false);
+          } else if(res.status === 429){
+            gateFail("gate-err", "gate-btn", "Too many tries — give it a few minutes.");
+          } else {
+            gateFail("gate-err", "gate-btn", "That didn't open the door.");
+          }
         })
         .catch(function(){
-          $("gate-err").textContent = "The door didn't answer — try again in a moment.";
-          $("gate-btn").disabled = false;
+          gateFail("gate-err", "gate-btn", "The door didn't answer — try again in a moment.");
         });
     });
+
+    /* Create account — on success they land signed in, in their own
+       dashboard, with their blank Dave greeting them by name. */
+    $("create-form").addEventListener("submit", function(e){
+      e.preventDefault();
+      var login = $("create-login").value.trim();
+      var pw = $("create-pass").value;
+      var pw2 = $("create-pass2").value;
+      $("create-err").textContent = "";
+      if(!login){ $("create-err").textContent = "Choose a login name first."; return; }
+      if(pw.length < 8){ $("create-err").textContent = "Password needs at least 8 characters."; return; }
+      if(pw !== pw2){ $("create-err").textContent = "Those passwords don't match."; return; }
+      $("create-btn").disabled = true;
+      postJSON("/account/create", {login: login, password: pw})
+        .then(function(r){ return r.json().then(function(d){ return {status: r.status, d: d}; }); })
+        .then(function(res){
+          if(res.status === 201 && res.d && res.d.dave_id){
+            identity = res.d.dave_id; lsSet(IDENTITY_KEY, identity);
+            history = []; anchor = []; lsSet(ANCHOR_KEY, "[]"); saveHistory();
+            enterAccount(res.d.account || login, true);
+          } else if(res.status === 409){
+            gateFail("create-err", "create-btn", "That login is taken — pick another.");
+          } else if(res.status === 429){
+            gateFail("create-err", "create-btn", "Too many accounts from here just now — give it a few minutes.");
+          } else if(res.d && res.d.error === "invalid_login"){
+            gateFail("create-err", "create-btn", "That login can't be used — 2 to 32 letters, numbers, _ . - only.");
+          } else if(res.d && res.d.error === "invalid_password"){
+            gateFail("create-err", "create-btn", "Password needs 8 to 128 characters.");
+          } else {
+            gateFail("create-err", "create-btn", "That didn't work — try again in a moment.");
+          }
+        })
+        .catch(function(){
+          gateFail("create-err", "create-btn", "The door didn't answer — try again in a moment.");
+        });
+    });
+  });
+
+  /* Sign out (account sessions): the binding drops server-side; the
+     account and its memory stand for the next sign-in. */
+  $("signout-btn").addEventListener("click", function(){
+    postJSON("/account/logout", {identity: identity || undefined}).catch(function(){});
+    accountName = null; owner = false;
+    history = []; anchor = [];
+    lsSet(HISTORY_KEY, "[]"); lsSet(ANCHOR_KEY, "[]");
+    identity = null; lsDel(IDENTITY_KEY);
+    app.hidden = true;
+    feedAdd("Signed out", "Your Dave keeps your thread for your next sign in", "👋");
+    checkOwner().then(function(){ gate.hidden = false; });
   });
 })();
 </script>
