@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Inês Papadopoulos, and this is Cometary Comae, Tails and Outgassing Against Density and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Inês Papadopoulos, and this is Cometary Comae, Tails and Outgassing Against Density and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Adiabatic Cooling and Thermal Balance of Gas Expanding in the Coma'. Its stated result: Headline result (values verbatim from results.json): surface_gas_temperature_K = 200.0; adiabatic_index = 1.333; T_at_10km_K = 68.4. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Now we go one step further into the material.
+
+'Bounds on the Dust-to-Gas Mass Ratio from Production Rates of a Jupiter-Family Comet'. Its stated result: Headline result (values verbatim from results.json): gas_mass_rate_kg_s = 149.6; dust_rate_low_kg_s = 100.0; dust_rate_central_kg_s = 300.0. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+The next piece is where this starts to come together.
+
+'Carbon Monoxide and Carbon Dioxide Production Ratios in a Distantly Active Comet'. Its stated result: Headline result (values verbatim from results.json): Q_H2O_molecules_s = 1e+26; Q_CO_molecules_s = 2e+26; Q_CO2_molecules_s = 5e+25. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Coma Gas Number Density Profile from a Haser Description of Outgassing'. Its stated result: Headline result (values verbatim from results.json): Q_molecules_s = 1e+27; expansion_speed_m_s = 800.0; parent_scale_length_km = 80000.0. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+We take the pieces in order, because each one stands on the last.
+
+'Dust Mass Production Inferred from the Af-Rho Parameter for an Active Comet'. Its stated result: Headline result (values verbatim from results.json): Afrho_cm = 1000.0; grain_albedo = 0.04; aperture_radius_km = 10000.0. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Stay with me, because the next piece builds directly on that one.
+
+'Energy Bounds for a Major Outburst of a Distant Centaur-Like Comet'. Its stated result: Headline result (values verbatim from results.json): ejected_mass_kg = 100000000.0; ejection_speed_m_s = 50.0; kinetic_energy_J = 125000000000.0. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Adiabatic Cooling and Thermal Balance of Gas Expanding in the Coma”. Its stated result is: Headline result (values verbatim from results.json): surface_gas_temperature_K = 200.0; adiabatic_index = 1.333; T_at_10km_K = 68.4. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Adiabatic Cooling and Thermal Balance of Gas Expanding in the Coma'; 'Bounds on the Dust-to-Gas Mass Ratio from Production Rates of a Jupiter-Family Comet'; 'Carbon Monoxide and Carbon Dioxide Production Ratios in a Distantly Active Comet'; 'Coma Gas Number Density Profile from a Haser Description of Outgassing'; 'Dust Mass Production Inferred from the Af-Rho Parameter for an Active Comet'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.

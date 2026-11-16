@@ -1,0 +1,177 @@
+{
+ "id": "cometary-comae-tails-and-outgassing-against-density-and-energy-b",
+ "title": "Cometary Comae, Tails and Outgassing Against Density and Energy Bounds",
+ "professor": "Professor Inês Papadopoulos",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Inês Papadopoulos, and this is Cometary Comae, Tails and Outgassing Against Density and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Inês Papadopoulos, and this is Cometary Comae, Tails and Outgassing Against Density and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'Adiabatic Cooling and Thermal Balance of Gas Expanding in the Coma'. Its stated result: Headline result (values verbatim from results.json): surface_gas_temperature_K = 200.0; adiabatic_index = 1.333; T_at_10km_K = 68.4. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "Now we go one step further into the material.",
+    "'Bounds on the Dust-to-Gas Mass Ratio from Production Rates of a Jupiter-Family Comet'. Its stated result: Headline result (values verbatim from results.json): gas_mass_rate_kg_s = 149.6; dust_rate_low_kg_s = 100.0; dust_rate_central_kg_s = 300.0. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "The next piece is where this starts to come together.",
+    "'Carbon Monoxide and Carbon Dioxide Production Ratios in a Distantly Active Comet'. Its stated result: Headline result (values verbatim from results.json): Q_H2O_molecules_s = 1e+26; Q_CO_molecules_s = 2e+26; Q_CO2_molecules_s = 5e+25. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'Coma Gas Number Density Profile from a Haser Description of Outgassing'. Its stated result: Headline result (values verbatim from results.json): Q_molecules_s = 1e+27; expansion_speed_m_s = 800.0; parent_scale_length_km = 80000.0. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "We take the pieces in order, because each one stands on the last.",
+    "'Dust Mass Production Inferred from the Af-Rho Parameter for an Active Comet'. Its stated result: Headline result (values verbatim from results.json): Afrho_cm = 1000.0; grain_albedo = 0.04; aperture_radius_km = 10000.0. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Energy Bounds for a Major Outburst of a Distant Centaur-Like Comet'. Its stated result: Headline result (values verbatim from results.json): ejected_mass_kg = 100000000.0; ejection_speed_m_s = 50.0; kinetic_energy_J = 125000000000.0. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Adiabatic Cooling and Thermal Balance of Gas Expanding in the Coma”. Its stated result is: Headline result (values verbatim from results.json): surface_gas_temperature_K = 200.0; adiabatic_index = 1.333; T_at_10km_K = 68.4. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'Adiabatic Cooling and Thermal Balance of Gas Expanding in the Coma'; 'Bounds on the Dust-to-Gas Mass Ratio from Production Rates of a Jupiter-Family Comet'; 'Carbon Monoxide and Carbon Dioxide Production Ratios in a Distantly Active Comet'; 'Coma Gas Number Density Profile from a Haser Description of Outgassing'; 'Dust Mass Production Inferred from the Af-Rho Parameter for an Active Comet'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 776,
+   "audio": "audio/lessons30/cometary-comae-tails-and-outgassing-against-density-and-energy-b/lesson-01.mp3",
+   "minutes": 9.38,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'Adiabatic Cooling and Thermal Balance of Gas Expanding in the Coma'. The result it reported gives a value for surface_gas_temperature_K, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Adiabatic Cooling and Thermal Balance of Gas Expanding in the Coma'. Its stated result: Headline result (values verbatim from results.json): surface_gas_temperature_K = 200.0; adiabatic_index = 1.333; T_at_10km_K = 68.4. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: surface_gas_temperature_K = 200.0; adiabatic_index = 1.333; T_at_10km_K = 68.4. Find surface_gas_temperature_K in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Adiabatic Cooling and Thermal Balance of Gas Expanding in the Coma' stated its result. (2) That result pairs names with values: surface_gas_temperature_K = 200.0; adiabatic_index = 1.333; T_at_10km_K = 68.4. (3) This question asks for the value paired with surface_gas_temperature_K. (4) In that row, surface_gas_temperature_K stands beside 200.0 — so the answer the lesson gives is 200.0. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Adiabatic Cooling and Thermal Balance of Gas Expanding in the Coma' reported a number for surface_gas_temperature_K. What number did it report?",
+     "kind": "number",
+     "answer": 200.0,
+     "disp": "200.0",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "149.6",
+      "1e+26",
+      "1e+27",
+      "200.0"
+     ],
+     "mcAnswer": "200.0",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Bounds on the Dust-to-Gas Mass Ratio from Production Rates of a Jupiter-Family Comet'. The result it reported gives a value for gas_mass_rate_kg_s, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Bounds on the Dust-to-Gas Mass Ratio from Production Rates of a Jupiter-Family Comet'. Its stated result: Headline result (values verbatim from results.json): gas_mass_rate_kg_s = 149.6; dust_rate_low_kg_s = 100.0; dust_rate_central_kg_s = 300.0. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: gas_mass_rate_kg_s = 149.6; dust_rate_low_kg_s = 100.0; dust_rate_central_kg_s = 300.0. Find gas_mass_rate_kg_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Bounds on the Dust-to-Gas Mass Ratio from Production Rates of a Jupiter-Family Comet' stated its result. (2) That result pairs names with values: gas_mass_rate_kg_s = 149.6; dust_rate_low_kg_s = 100.0; dust_rate_central_kg_s = 300.0. (3) This question asks for the value paired with gas_mass_rate_kg_s. (4) In that row, gas_mass_rate_kg_s stands beside 149.6 — so the answer the lesson gives is 149.6. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Bounds on the Dust-to-Gas Mass Ratio from Production Rates of a Jupiter-Family Comet' reported a number for gas_mass_rate_kg_s. What number did it report?",
+     "kind": "number",
+     "answer": 149.6,
+     "disp": "149.6",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1e+27",
+      "1e+26",
+      "200.0",
+      "149.6"
+     ],
+     "mcAnswer": "149.6",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Carbon Monoxide and Carbon Dioxide Production Ratios in a Distantly Active Comet'. The result it reported gives a value for Q_H2O_molecules_s, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Carbon Monoxide and Carbon Dioxide Production Ratios in a Distantly Active Comet'. Its stated result: Headline result (values verbatim from results.json): Q_H2O_molecules_s = 1e+26; Q_CO_molecules_s = 2e+26; Q_CO2_molecules_s = 5e+25. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: Q_H2O_molecules_s = 1e+26; Q_CO_molecules_s = 2e+26; Q_CO2_molecules_s = 5e+25. Find Q_H2O_molecules_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Carbon Monoxide and Carbon Dioxide Production Ratios in a Distantly Active Comet' stated its result. (2) That result pairs names with values: Q_H2O_molecules_s = 1e+26; Q_CO_molecules_s = 2e+26; Q_CO2_molecules_s = 5e+25. (3) This question asks for the value paired with Q_H2O_molecules_s. (4) In that row, Q_H2O_molecules_s stands beside 1e+26 — so the answer the lesson gives is 1e+26. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Carbon Monoxide and Carbon Dioxide Production Ratios in a Distantly Active Comet' reported a number for Q_H2O_molecules_s. What number did it report?",
+     "kind": "number",
+     "answer": 1e+26,
+     "disp": "1e+26",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1e+26",
+      "1e+27",
+      "200.0",
+      "149.6"
+     ],
+     "mcAnswer": "1e+26",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Coma Gas Number Density Profile from a Haser Description of Outgassing'. The result it reported gives a value for Q_molecules_s, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Coma Gas Number Density Profile from a Haser Description of Outgassing'. Its stated result: Headline result (values verbatim from results.json): Q_molecules_s = 1e+27; expansion_speed_m_s = 800.0; parent_scale_length_km = 80000.0. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: Q_molecules_s = 1e+27; expansion_speed_m_s = 800.0; parent_scale_length_km = 80000.0. Find Q_molecules_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Coma Gas Number Density Profile from a Haser Description of Outgassing' stated its result. (2) That result pairs names with values: Q_molecules_s = 1e+27; expansion_speed_m_s = 800.0; parent_scale_length_km = 80000.0. (3) This question asks for the value paired with Q_molecules_s. (4) In that row, Q_molecules_s stands beside 1e+27 — so the answer the lesson gives is 1e+27. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Coma Gas Number Density Profile from a Haser Description of Outgassing' reported a number for Q_molecules_s. What number did it report?",
+     "kind": "number",
+     "answer": 1e+27,
+     "disp": "1e+27",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "200.0",
+      "149.6",
+      "1e+26",
+      "1e+27"
+     ],
+     "mcAnswer": "1e+27",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Dust Mass Production Inferred from the Af-Rho Parameter for an Active Comet'. The result it reported gives a value for Afrho_cm, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Dust Mass Production Inferred from the Af-Rho Parameter for an Active Comet'. Its stated result: Headline result (values verbatim from results.json): Afrho_cm = 1000.0; grain_albedo = 0.04; aperture_radius_km = 10000.0. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: Afrho_cm = 1000.0; grain_albedo = 0.04; aperture_radius_km = 10000.0. Find Afrho_cm in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Dust Mass Production Inferred from the Af-Rho Parameter for an Active Comet' stated its result. (2) That result pairs names with values: Afrho_cm = 1000.0; grain_albedo = 0.04; aperture_radius_km = 10000.0. (3) This question asks for the value paired with Afrho_cm. (4) In that row, Afrho_cm stands beside 1000.0 — so the answer the lesson gives is 1000.0. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Dust Mass Production Inferred from the Af-Rho Parameter for an Active Comet' reported a number for Afrho_cm. What number did it report?",
+     "kind": "number",
+     "answer": 1000.0,
+     "disp": "1000.0",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1000.0",
+      "149.6",
+      "200.0",
+      "1e+26"
+     ],
+     "mcAnswer": "1000.0",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Adiabatic Cooling and Thermal Balance of Gas Expanding in the Coma”. Its stated result is: Headline result (values verbatim from results.json): surface_gas_temperature_K = 200.0; adiabatic_index = 1.333; T_at_10km_K = 68.4. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “Adiabatic Cooling and Thermal Balance of Gas Expanding in the Coma”. Its stated result is: Headline result (values verbatim from results.json): surface_gas_temperature_K = 200.0; adiabatic_index = 1.333; T_at_10km_K = 68.4. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}

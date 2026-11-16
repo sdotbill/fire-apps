@@ -416,5 +416,12 @@
    "audio": "audio/lessons30/mercury-core-crust-surface-and-exosphere-against-density-and-ene/lesson-01.mp3",
    "minutes": 11.98
   }
+ },
+ "cometary-comae-tails-and-outgassing-against-density-and-energy-b": {
+  "lesson-01": {
+   "hash": "9dbc34dc9682b2807fde268e67983a88592aa554",
+   "audio": "audio/lessons30/cometary-comae-tails-and-outgassing-against-density-and-energy-b/lesson-01.mp3",
+   "minutes": 9.38
+  }
  }
 }
