@@ -500,5 +500,12 @@
    "audio": "audio/lessons30/intermediate-mass-black-holes-in-dense-clusters-and-dwarf-nuclei/lesson-01.mp3",
    "minutes": 16.94
   }
+ },
+ "planetary-migration-resonances-and-system-architecture-orbital-e": {
+  "lesson-01": {
+   "hash": "52fe02b279bd7556a8ae6d56b9273dab105fc606",
+   "audio": "audio/lessons30/planetary-migration-resonances-and-system-architecture-orbital-e/lesson-01.mp3",
+   "minutes": 14.62
+  }
  }
 }

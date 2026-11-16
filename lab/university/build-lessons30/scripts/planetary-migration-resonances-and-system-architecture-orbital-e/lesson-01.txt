@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Rami Habib, and this is Planetary Migration, Resonances and System Architecture: Orbital Evolution, Tidal and Disc-Torque Budgets Against Energy and Density Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Rami Habib, and this is Planetary Migration, Resonances and System Architecture: Orbital Evolution, Tidal and Disc-Torque Budgets Against Energy and Density Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'GJ 876 and the Laplace Resonance: Three-Planet Libration, Torques and Tidal Damping'. Its stated result: Headline result (values verbatim from results.json): innermost_semi_major_axis_AU = 0.13094; innermost_migration_timescale_yr = 162.60998633785346; outermost_semi_major_axis_AU = 0.336768; outermost_migration_timescale_yr = 12869.011767814694; max_abs_period_ratio_deviation_percent = 1.716; total_orbital_energy_J = -4.528258500172236e+36.
+
+Now we go one step further into the material.
+
+'HD 110067: A Six-Planet Resonant Chain and Its Undisturbed Migration History'. Its stated result: Headline result (values verbatim from results.json): innermost_semi_major_axis_AU = 0.079204; innermost_migration_timescale_yr = 18643.590715912087; outermost_semi_major_axis_AU = 0.261799; outermost_migration_timescale_yr = 23000.45189447677; max_abs_period_ratio_deviation_percent = 11.113; total_orbital_energy_J = -5.7550245608529045e+35.
+
+The next piece is where this starts to come together.
+
+'HR 8799: Four Massive Planets in Resonance, Libration and Long-Term Stability Budgets'. Its stated result: Headline result (values verbatim from results.json): innermost_semi_major_axis_AU = 14.539748; innermost_migration_timescale_yr = 2336.447429239774; outermost_semi_major_axis_AU = 34.595637; outermost_migration_timescale_yr = 5690.571639671004; max_abs_period_ratio_deviation_percent = 44.481; total_orbital_energy_J = -2.4365551474699926e+36.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Jupiter and the Grand Tack: Disc Torque Reversal, Migration Distance and Energy Budget'. Its stated result: Headline result (values verbatim from results.json): innermost_semi_major_axis_AU = 5.201211; innermost_migration_timescale_yr = 2484.47213596176; outermost_semi_major_axis_AU = 9.537913; outermost_migration_timescale_yr = 11231.183221880738; max_abs_period_ratio_deviation_percent = 0.669; total_orbital_energy_J = -1.8830663017823467e+35.
+
+We take the pieces in order, because each one stands on the last.
+
+'K2-138: A Near-Resonant Chain of Sub-Neptunes and Its Torque History'. Its stated result: Headline result (values verbatim from results.json): innermost_semi_major_axis_AU = 0.033795; innermost_migration_timescale_yr = 31301.9415137948; outermost_semi_major_axis_AU = 0.230691; outermost_migration_timescale_yr = 63381.842687551856; max_abs_period_ratio_deviation_percent = 9.646; total_orbital_energy_J = -1.419677801460969e+36.
+
+Stay with me, because the next piece builds directly on that one.
+
+'Kepler-11 Migration Budgets: Type I Torques and the Inward Drift of Six Low-Mass Planets'. Its stated result: Headline result (values verbatim from results.json): innermost_semi_major_axis_AU = 0.09145; innermost_migration_timescale_yr = 73540.54238739383; outermost_semi_major_axis_AU = 0.465615; outermost_migration_timescale_yr = 63056.83105468402; max_abs_period_ratio_deviation_percent = 15.485; total_orbital_energy_J = -3.943233464047151e+35.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “GJ 876 and the Laplace Resonance: Three-Planet Libration, Torques and Tidal Damping”. Its stated result is: Headline result (values verbatim from results.json): innermost_semi_major_axis_AU = 0.13094; innermost_migration_timescale_yr = 162.60998633785346; outermost_semi_major_axis_AU = 0.336768; outermost_migration_timescale_yr = 12869.011767814694; max_abs_period_ratio_deviation_percent = 1.716; total_or (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'GJ 876 and the Laplace Resonance: Three-Planet Libration, Torques and Tidal Damping'; 'HD 110067: A Six-Planet Resonant Chain and Its Undisturbed Migration History'; 'HR 8799: Four Massive Planets in Resonance, Libration and Long-Term Stability Budgets'; 'Jupiter and the Grand Tack: Disc Torque Reversal, Migration Distance and Energy Budget'; 'K2-138: A Near-Resonant Chain of Sub-Neptunes and Its Torque History'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.

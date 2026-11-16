@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'GJ 876 and the Laplace Resonance: Three-Planet Libration, Torques and Tidal Damping'. The result it reported gives a value for innermost_semi_major_axis_AU, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'GJ 876 and the Laplace Resonance: Three-Planet Libration, Torques and Tidal Damping'. Its stated result: Headline result (values verbatim from results.json): innermost_semi_major_axis_AU = 0.13094; innermost_migration_timescale_yr = 162.60998633785346; outermost_semi_major_axis_AU = 0.336768; outermost_migration_timescale_yr = 12869.011767814694; max_abs_period_ratio_deviation_percent = 1.716; total_orbital_energy_J = -4.528258500172236e+36. And here is that same result with the words stripped away — just the quantities standing in a row: innermost_semi_major_axis_AU = 0.13094; innermost_migration_timescale_yr = 162.60998633785346; outermost_semi_major_axis_AU = 0.336768. Find innermost_semi_major_axis_AU in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'GJ 876 and the Laplace Resonance: Three-Planet Libration, Torques and Tidal Damping' stated its result. (2) That result pairs names with values: innermost_semi_major_axis_AU = 0.13094; innermost_migration_timescale_yr = 162.60998633785346; outermost_semi_major_axis_AU = 0.336768. (3) This question asks for the value paired with innermost_semi_major_axis_AU. (4) In that row, innermost_semi_major_axis_AU stands beside 0.13094 — so the answer the lesson gives is 0.13094. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'GJ 876 and the Laplace Resonance: Three-Planet Libration, Torques and Tidal Damping' reported a number for innermost_semi_major_axis_AU. What number did it report?",
+  "kind": "number",
+  "answer": 0.13094,
+  "disp": "0.13094",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "5.201211",
+   "14.539748",
+   "0.079204",
+   "0.13094"
+  ],
+  "mcAnswer": "0.13094",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'HD 110067: A Six-Planet Resonant Chain and Its Undisturbed Migration History'. The result it reported gives a value for innermost_semi_major_axis_AU, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'HD 110067: A Six-Planet Resonant Chain and Its Undisturbed Migration History'. Its stated result: Headline result (values verbatim from results.json): innermost_semi_major_axis_AU = 0.079204; innermost_migration_timescale_yr = 18643.590715912087; outermost_semi_major_axis_AU = 0.261799; outermost_migration_timescale_yr = 23000.45189447677; max_abs_period_ratio_deviation_percent = 11.113; total_orbital_energy_J = -5.7550245608529045e+35. And here is that same result with the words stripped away — just the quantities standing in a row: innermost_semi_major_axis_AU = 0.079204; innermost_migration_timescale_yr = 18643.590715912087; outermost_semi_major_axis_AU = 0.261799. Find innermost_semi_major_axis_AU in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'HD 110067: A Six-Planet Resonant Chain and Its Undisturbed Migration History' stated its result. (2) That result pairs names with values: innermost_semi_major_axis_AU = 0.079204; innermost_migration_timescale_yr = 18643.590715912087; outermost_semi_major_axis_AU = 0.261799. (3) This question asks for the value paired with innermost_semi_major_axis_AU. (4) In that row, innermost_semi_major_axis_AU stands beside 0.079204 — so the answer the lesson gives is 0.079204. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'HD 110067: A Six-Planet Resonant Chain and Its Undisturbed Migration History' reported a number for innermost_semi_major_axis_AU. What number did it report?",
+  "kind": "number",
+  "answer": 0.079204,
+  "disp": "0.079204",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "5.201211",
+   "0.079204",
+   "0.13094",
+   "14.539748"
+  ],
+  "mcAnswer": "0.079204",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'HR 8799: Four Massive Planets in Resonance, Libration and Long-Term Stability Budgets'. The result it reported gives a value for innermost_semi_major_axis_AU, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'HR 8799: Four Massive Planets in Resonance, Libration and Long-Term Stability Budgets'. Its stated result: Headline result (values verbatim from results.json): innermost_semi_major_axis_AU = 14.539748; innermost_migration_timescale_yr = 2336.447429239774; outermost_semi_major_axis_AU = 34.595637; outermost_migration_timescale_yr = 5690.571639671004; max_abs_period_ratio_deviation_percent = 44.481; total_orbital_energy_J = -2.4365551474699926e+36. And here is that same result with the words stripped away — just the quantities standing in a row: innermost_semi_major_axis_AU = 14.539748; innermost_migration_timescale_yr = 2336.447429239774; outermost_semi_major_axis_AU = 34.595637. Find innermost_semi_major_axis_AU in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'HR 8799: Four Massive Planets in Resonance, Libration and Long-Term Stability Budgets' stated its result. (2) That result pairs names with values: innermost_semi_major_axis_AU = 14.539748; innermost_migration_timescale_yr = 2336.447429239774; outermost_semi_major_axis_AU = 34.595637. (3) This question asks for the value paired with innermost_semi_major_axis_AU. (4) In that row, innermost_semi_major_axis_AU stands beside 14.539748 — so the answer the lesson gives is 14.539748. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'HR 8799: Four Massive Planets in Resonance, Libration and Long-Term Stability Budgets' reported a number for innermost_semi_major_axis_AU. What number did it report?",
+  "kind": "number",
+  "answer": 14.539748,
+  "disp": "14.539748",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "14.539748",
+   "0.13094",
+   "5.201211",
+   "0.079204"
+  ],
+  "mcAnswer": "14.539748",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Jupiter and the Grand Tack: Disc Torque Reversal, Migration Distance and Energy Budget'. The result it reported gives a value for innermost_semi_major_axis_AU, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Jupiter and the Grand Tack: Disc Torque Reversal, Migration Distance and Energy Budget'. Its stated result: Headline result (values verbatim from results.json): innermost_semi_major_axis_AU = 5.201211; innermost_migration_timescale_yr = 2484.47213596176; outermost_semi_major_axis_AU = 9.537913; outermost_migration_timescale_yr = 11231.183221880738; max_abs_period_ratio_deviation_percent = 0.669; total_orbital_energy_J = -1.8830663017823467e+35. And here is that same result with the words stripped away — just the quantities standing in a row: innermost_semi_major_axis_AU = 5.201211; innermost_migration_timescale_yr = 2484.47213596176; outermost_semi_major_axis_AU = 9.537913. Find innermost_semi_major_axis_AU in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Jupiter and the Grand Tack: Disc Torque Reversal, Migration Distance and Energy Budget' stated its result. (2) That result pairs names with values: innermost_semi_major_axis_AU = 5.201211; innermost_migration_timescale_yr = 2484.47213596176; outermost_semi_major_axis_AU = 9.537913. (3) This question asks for the value paired with innermost_semi_major_axis_AU. (4) In that row, innermost_semi_major_axis_AU stands beside 5.201211 — so the answer the lesson gives is 5.201211. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Jupiter and the Grand Tack: Disc Torque Reversal, Migration Distance and Energy Budget' reported a number for innermost_semi_major_axis_AU. What number did it report?",
+  "kind": "number",
+  "answer": 5.201211,
+  "disp": "5.201211",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "5.201211",
+   "0.13094",
+   "14.539748",
+   "0.079204"
+  ],
+  "mcAnswer": "5.201211",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'K2-138: A Near-Resonant Chain of Sub-Neptunes and Its Torque History'. The result it reported gives a value for innermost_semi_major_axis_AU, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'K2-138: A Near-Resonant Chain of Sub-Neptunes and Its Torque History'. Its stated result: Headline result (values verbatim from results.json): innermost_semi_major_axis_AU = 0.033795; innermost_migration_timescale_yr = 31301.9415137948; outermost_semi_major_axis_AU = 0.230691; outermost_migration_timescale_yr = 63381.842687551856; max_abs_period_ratio_deviation_percent = 9.646; total_orbital_energy_J = -1.419677801460969e+36. And here is that same result with the words stripped away — just the quantities standing in a row: innermost_semi_major_axis_AU = 0.033795; innermost_migration_timescale_yr = 31301.9415137948; outermost_semi_major_axis_AU = 0.230691. Find innermost_semi_major_axis_AU in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'K2-138: A Near-Resonant Chain of Sub-Neptunes and Its Torque History' stated its result. (2) That result pairs names with values: innermost_semi_major_axis_AU = 0.033795; innermost_migration_timescale_yr = 31301.9415137948; outermost_semi_major_axis_AU = 0.230691. (3) This question asks for the value paired with innermost_semi_major_axis_AU. (4) In that row, innermost_semi_major_axis_AU stands beside 0.033795 — so the answer the lesson gives is 0.033795. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'K2-138: A Near-Resonant Chain of Sub-Neptunes and Its Torque History' reported a number for innermost_semi_major_axis_AU. What number did it report?",
+  "kind": "number",
+  "answer": 0.033795,
+  "disp": "0.033795",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "14.539748",
+   "0.079204",
+   "0.033795",
+   "0.13094"
+  ],
+  "mcAnswer": "0.033795",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “GJ 876 and the Laplace Resonance: Three-Planet Libration, Torques and Tidal Damping”. Its stated result is: Headline result (values verbatim from results.json): innermost_semi_major_axis_AU = 0.13094; innermost_migration_timescale_yr = 162.60998633785346; outermost_semi_major_axis_AU = 0.336768; outermost_migration_timescale_yr = 12869.011767814694; max_abs_period_ratio_deviation_percent = 1.716; total_or (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “GJ 876 and the Laplace Resonance: Three-Planet Libration, Torques and Tidal Damping”. Its stated result is: Headline result (values verbatim from results.json): innermost_semi_major_axis_AU = 0.13094; innermost_migration_timescale_yr = 162.60998633785346; outermost_semi_major_axis_AU = 0.336768; outermost_migration_timescale_yr = 12869.011767814694; max_abs_period_ratio_deviation_percent = 1.716; total_or (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]
