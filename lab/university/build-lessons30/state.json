@@ -325,5 +325,12 @@
    "audio": "audio/lessons30/solar-physics-helioseismology-and-space-weather-in-the-bounce-fr/lesson-01.mp3",
    "minutes": 17.42
   }
+ },
+ "asteroids-comets-planetary-rings-and-small-body-dynamics-as-test": {
+  "lesson-01": {
+   "hash": "4b0ba591f7609e3e0161831ea65c557a1ab81f1d",
+   "audio": "audio/lessons30/asteroids-comets-planetary-rings-and-small-body-dynamics-as-test/lesson-01.mp3",
+   "minutes": 8.52
+  }
  }
 }

@@ -1,0 +1,177 @@
+{
+ "id": "asteroids-comets-planetary-rings-and-small-body-dynamics-as-test",
+ "title": "Asteroids, Comets, Planetary Rings and Small-Body Dynamics as Tests of the Frame",
+ "professor": "Professor Giorgia Nikolaidis",
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Lesson 1 — Settle in.",
+   "paragraphs": [
+    "Welcome in. I am Professor Giorgia Nikolaidis, and this is Asteroids, Comets, Planetary Rings and Small-Body Dynamics as Tests of the Frame. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.",
+    "Settle in. I am Professor Giorgia Nikolaidis, and this is Asteroids, Comets, Planetary Rings and Small-Body Dynamics as Tests of the Frame. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "'Active Asteroids and Mass Loss Without Ice: Recoil and Dust Production for a Phaethon-Scale Body'. Its stated result: The deposited calculation gives the headline values mass_kg = 1.74e+14; dv_per_orbit_mm_s = 0.29; mean_accel = 6.38e-12. These values were computed from the stated inputs in compute.py, are reproduced in results.json, and support the paper's comparison with published small-body observations and its stated bound on any torsion-type correction at small-body densities.",
+    "Now we go one step further into the material.",
+    "'Asteroid Family Ages from Yarkovsky Spreading: The Width of a Family in Semimajor Axis as a Clock'. Its stated result: The deposited calculation gives the headline values age_2km_Myr = 250; age_5km_Myr = 625; dadt_2km = 2e-04. These values were computed from the stated inputs in compute.py, are reproduced in results.json, and support the paper's comparison with published small-body observations and its stated bound on any torsion-type correction at small-body densities.",
+    "The next piece is where this starts to come together.",
+    "'Binary Asteroid Evolution Under Tides and BYORP: Competing Timescales for a Kilometre-Scale Pair'. Its stated result: The deposited calculation gives the headline values mean_motion = 1.47e-04; t_change_kyr_at_5cm_yr = 0; separation_km = 1.18. These values were computed from the stated inputs in compute.py, are reproduced in results.json, and support the paper's comparison with published small-body observations and its stated bound on any torsion-type correction at small-body densities.",
+    "Listen carefully here — this piece carries weight in the questions later.",
+    "'Rings Around Small Bodies: Stability Distances for the Chariklo and Haumea Ring Systems'. Its stated result: The deposited calculation gives the headline values roche_chariklo_km = 313; ring_chariklo_km = 391; roche_haumea_km = 2509; ring_haumea_km = 2285. These values were computed from the stated inputs in compute.py, are reproduced in results.json, and support the paper's comparison with published small-body observations and its stated bound on any torsion-type correction at small-body densities.",
+    "We take the pieces in order, because each one stands on the last.",
+    "'Comet Non-Gravitational Accelerations from Water-Ice Sublimation: Recoil Magnitudes for a Kilometre Nucleus'. Its stated result: The deposited calculation gives the headline values mdot_kg_s = 300; thrust_N = 4.50e+04; accel = 2.24e-09; accel_rel_solar_grav = 3.77e-07. These values were computed from the stated inputs in compute.py, are reproduced in results.json, and support the paper's comparison with published small-body observations and its stated bound on any torsion-type correction at small-body densities.",
+    "Stay with me, because the next piece builds directly on that one.",
+    "'Comet Nucleus Tensile Strength Inferred from Rotation and Tidal Breakup: Pascal-Scale Cohesion'. Its stated result: The deposited calculation gives the headline values sigma_12h_2km_Pa = 25; sigma_5h_1km_Pa = 37. These values were computed from the stated inputs in compute.py, are reproduced in results.json, and support the paper's comparison with published small-body observations and its stated bound on any torsion-type correction at small-body densities.",
+    "Here is the next piece of the material, in the order the class presents it.",
+    "Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Active Asteroids and Mass Loss Without Ice: Recoil and Dust Production for a Phaethon-Scale Body”. Its stated result is: The deposited calculation gives the headline values mass_kg = 1.74e+14; dv_per_orbit_mm_s = 0.29; mean_accel = 6.38e-12. These values were computed from the stated inputs in compute.py, are reproduced in results.json, and support the paper's comparison with published small-body observations and its (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.",
+    "Let us gather what this lesson taught, in order: Settle in; 'Active Asteroids and Mass Loss Without Ice: Recoil and Dust Production for a Phaethon-Scale Body'; 'Asteroid Family Ages from Yarkovsky Spreading: The Width of a Family in Semimajor Axis as a Clock'; 'Binary Asteroid Evolution Under Tides and BYORP: Competing Timescales for a Kilometre-Scale Pair'; 'Rings Around Small Bodies: Stability Distances for the Chariklo and Haumea Ring Systems'; 'Comet Non-Gravitational Accelerations from Water-Ice Sublimation: Recoil Magnitudes for a Kilometre Nucleus'. Those are the pieces — hold them in that order, because the questions follow the same road.",
+    "That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin."
+   ],
+   "words": 920,
+   "audio": "audio/lessons30/asteroids-comets-planetary-rings-and-small-body-dynamics-as-test/lesson-01.mp3",
+   "minutes": 8.52,
+   "phrases": [],
+   "questions": [
+    {
+     "teach": "Think back to the lesson — the paper 'Active Asteroids and Mass Loss Without Ice: Recoil and Dust Production for a Phaethon-Scale Body'. The result it reported gives a value for headline values mass_kg, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Active Asteroids and Mass Loss Without Ice: Recoil and Dust Production for a Phaethon-Scale Body'. Its stated result: The deposited calculation gives the headline values mass_kg = 1.74e+14; dv_per_orbit_mm_s = 0.29; mean_accel = 6.38e-12. These values were computed from the stated inputs in compute.py, are reproduced in results.json, and support the paper's comparison with published small-body observations and its stated bound on any torsion-type correction at small-body densities. And here is that same result with the words stripped away — just the quantities standing in a row: headline values mass_kg = 1.74e+14; dv_per_orbit_mm_s = 0.29; mean_accel = 6.38e-12. Find headline values mass_kg in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Active Asteroids and Mass Loss Without Ice: Recoil and Dust Production for a Phaethon-Scale Body' stated its result. (2) That result pairs names with values: headline values mass_kg = 1.74e+14; dv_per_orbit_mm_s = 0.29; mean_accel = 6.38e-12. (3) This question asks for the value paired with headline values mass_kg. (4) In that row, headline values mass_kg stands beside 1.74e+14 — so the answer the lesson gives is 1.74e+14. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Active Asteroids and Mass Loss Without Ice: Recoil and Dust Production for a Phaethon-Scale Body' reported a number for headline values mass_kg. What number did it report?",
+     "kind": "number",
+     "answer": 174000000000000.0,
+     "disp": "1.74e+14",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "250",
+      "313",
+      "1.74e+14",
+      "1.47e-04"
+     ],
+     "mcAnswer": "1.74e+14",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Asteroid Family Ages from Yarkovsky Spreading: The Width of a Family in Semimajor Axis as a Clock'. The result it reported gives a value for headline values age_2km_Myr, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Asteroid Family Ages from Yarkovsky Spreading: The Width of a Family in Semimajor Axis as a Clock'. Its stated result: The deposited calculation gives the headline values age_2km_Myr = 250; age_5km_Myr = 625; dadt_2km = 2e-04. These values were computed from the stated inputs in compute.py, are reproduced in results.json, and support the paper's comparison with published small-body observations and its stated bound on any torsion-type correction at small-body densities. And here is that same result with the words stripped away — just the quantities standing in a row: headline values age_2km_Myr = 250; age_5km_Myr = 625; dadt_2km = 2e-04. Find headline values age_2km_Myr in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Asteroid Family Ages from Yarkovsky Spreading: The Width of a Family in Semimajor Axis as a Clock' stated its result. (2) That result pairs names with values: headline values age_2km_Myr = 250; age_5km_Myr = 625; dadt_2km = 2e-04. (3) This question asks for the value paired with headline values age_2km_Myr. (4) In that row, headline values age_2km_Myr stands beside 250 — so the answer the lesson gives is 250. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Asteroid Family Ages from Yarkovsky Spreading: The Width of a Family in Semimajor Axis as a Clock' reported a number for headline values age_2km_Myr. What number did it report?",
+     "kind": "number",
+     "answer": 250.0,
+     "disp": "250",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1.47e-04",
+      "313",
+      "1.74e+14",
+      "250"
+     ],
+     "mcAnswer": "250",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Binary Asteroid Evolution Under Tides and BYORP: Competing Timescales for a Kilometre-Scale Pair'. The result it reported gives a value for headline values mean_motion, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Binary Asteroid Evolution Under Tides and BYORP: Competing Timescales for a Kilometre-Scale Pair'. Its stated result: The deposited calculation gives the headline values mean_motion = 1.47e-04; t_change_kyr_at_5cm_yr = 0; separation_km = 1.18. These values were computed from the stated inputs in compute.py, are reproduced in results.json, and support the paper's comparison with published small-body observations and its stated bound on any torsion-type correction at small-body densities. And here is that same result with the words stripped away — just the quantities standing in a row: headline values mean_motion = 1.47e-04; t_change_kyr_at_5cm_yr = 0; separation_km = 1.18. Find headline values mean_motion in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Binary Asteroid Evolution Under Tides and BYORP: Competing Timescales for a Kilometre-Scale Pair' stated its result. (2) That result pairs names with values: headline values mean_motion = 1.47e-04; t_change_kyr_at_5cm_yr = 0; separation_km = 1.18. (3) This question asks for the value paired with headline values mean_motion. (4) In that row, headline values mean_motion stands beside 1.47e-04 — so the answer the lesson gives is 1.47e-04. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Binary Asteroid Evolution Under Tides and BYORP: Competing Timescales for a Kilometre-Scale Pair' reported a number for headline values mean_motion. What number did it report?",
+     "kind": "number",
+     "answer": 0.000147,
+     "disp": "1.47e-04",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1.47e-04",
+      "1.74e+14",
+      "250",
+      "313"
+     ],
+     "mcAnswer": "1.47e-04",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Rings Around Small Bodies: Stability Distances for the Chariklo and Haumea Ring Systems'. The result it reported gives a value for headline values roche_chariklo_km, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Rings Around Small Bodies: Stability Distances for the Chariklo and Haumea Ring Systems'. Its stated result: The deposited calculation gives the headline values roche_chariklo_km = 313; ring_chariklo_km = 391; roche_haumea_km = 2509; ring_haumea_km = 2285. These values were computed from the stated inputs in compute.py, are reproduced in results.json, and support the paper's comparison with published small-body observations and its stated bound on any torsion-type correction at small-body densities. And here is that same result with the words stripped away — just the quantities standing in a row: headline values roche_chariklo_km = 313; ring_chariklo_km = 391; roche_haumea_km = 2509. Find headline values roche_chariklo_km in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Rings Around Small Bodies: Stability Distances for the Chariklo and Haumea Ring Systems' stated its result. (2) That result pairs names with values: headline values roche_chariklo_km = 313; ring_chariklo_km = 391; roche_haumea_km = 2509. (3) This question asks for the value paired with headline values roche_chariklo_km. (4) In that row, headline values roche_chariklo_km stands beside 313 — so the answer the lesson gives is 313. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Rings Around Small Bodies: Stability Distances for the Chariklo and Haumea Ring Systems' reported a number for headline values roche_chariklo_km. What number did it report?",
+     "kind": "number",
+     "answer": 313.0,
+     "disp": "313",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "313",
+      "1.47e-04",
+      "1.74e+14",
+      "250"
+     ],
+     "mcAnswer": "313",
+     "rank": 1
+    },
+    {
+     "teach": "Think back to the lesson — the paper 'Comet Non-Gravitational Accelerations from Water-Ice Sublimation: Recoil Magnitudes for a Kilometre Nucleus'. The result it reported gives a value for headline values mdot_kg_s, and that value is what this question asks for.",
+     "teach2": "Here is the exact passage from the lesson again: 'Comet Non-Gravitational Accelerations from Water-Ice Sublimation: Recoil Magnitudes for a Kilometre Nucleus'. Its stated result: The deposited calculation gives the headline values mdot_kg_s = 300; thrust_N = 4.50e+04; accel = 2.24e-09; accel_rel_solar_grav = 3.77e-07. These values were computed from the stated inputs in compute.py, are reproduced in results.json, and support the paper's comparison with published small-body observations and its stated bound on any torsion-type correction at small-body densities. And here is that same result with the words stripped away — just the quantities standing in a row: headline values mdot_kg_s = 300; thrust_N = 4.50e+04; accel_rel_solar_grav = 3.77e-07. Find headline values mdot_kg_s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+     "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Comet Non-Gravitational Accelerations from Water-Ice Sublimation: Recoil Magnitudes for a Kilometre Nucleus' stated its result. (2) That result pairs names with values: headline values mdot_kg_s = 300; thrust_N = 4.50e+04; accel_rel_solar_grav = 3.77e-07. (3) This question asks for the value paired with headline values mdot_kg_s. (4) In that row, headline values mdot_kg_s stands beside 300 — so the answer the lesson gives is 300. Now it is yours: say that value, in any honest form.",
+     "q": "In the lesson, the paper 'Comet Non-Gravitational Accelerations from Water-Ice Sublimation: Recoil Magnitudes for a Kilometre Nucleus' reported a number for headline values mdot_kg_s. What number did it report?",
+     "kind": "number",
+     "answer": 300.0,
+     "disp": "300",
+     "tol": 0.03,
+     "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+     "substantive": true,
+     "choices": [
+      "1.74e+14",
+      "300",
+      "1.47e-04",
+      "250"
+     ],
+     "mcAnswer": "300",
+     "rank": 1
+    },
+    {
+     "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+     "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Active Asteroids and Mass Loss Without Ice: Recoil and Dust Production for a Phaethon-Scale Body”. Its stated result is: The deposited calculation gives the headline values mass_kg = 1.74e+14; dv_per_orbit_mm_s = 0.29; mean_accel = 6.38e-12. These values were computed from the stated inputs in compute.py, are reproduced in results.json, and support the paper's comparison with published small-body observations and its (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+     "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+     "capstone": true,
+     "q": "Take the paper “Active Asteroids and Mass Loss Without Ice: Recoil and Dust Production for a Phaethon-Scale Body”. Its stated result is: The deposited calculation gives the headline values mass_kg = 1.74e+14; dv_per_orbit_mm_s = 0.29; mean_accel = 6.38e-12. These values were computed from the stated inputs in compute.py, are reproduced in results.json, and support the paper's comparison with published small-body observations and its (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+     "kind": "keywords",
+     "keywords": [
+      [
+       "restate",
+       "restates"
+      ],
+      [
+       "borrow",
+       "borrowing"
+      ],
+      [
+       "recompute"
+      ],
+      [
+       "re-measure"
+      ],
+      [
+       "headline"
+      ],
+      [
+       "quantity"
+      ],
+      [
+       "against"
+      ],
+      [
+       "number"
+      ]
+     ],
+     "need": 3,
+     "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+     "substantive": true,
+     "rank": 3
+    }
+   ]
+  }
+ ]
+}
