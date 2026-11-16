@@ -283,5 +283,12 @@
    "audio": "audio/lessons30/the-milky-way-bar-spiral-arms-and-galactic-disc-dynamics-as-test/lesson-01.mp3",
    "minutes": 14.08
   }
+ },
+ "the-fermi-and-erosita-bubbles-and-milky-way-outflows-against-ene": {
+  "lesson-01": {
+   "hash": "c8d4e6653a45d19ed1cb7432764a07f8bd815c2b",
+   "audio": "audio/lessons30/the-fermi-and-erosita-bubbles-and-milky-way-outflows-against-ene/lesson-01.mp3",
+   "minutes": 14.98
+  }
  }
 }

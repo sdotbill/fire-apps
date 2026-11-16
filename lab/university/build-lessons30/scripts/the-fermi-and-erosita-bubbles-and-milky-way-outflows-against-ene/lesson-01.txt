@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Terrence Washington, and this is The Fermi and eROSITA Bubbles and Milky Way Outflows Against Energy and Density Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Terrence Washington, and this is The Fermi and eROSITA Bubbles and Milky Way Outflows Against Energy and Density Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Cosmic-Ray Energy Density Inside the Fermi Bubbles from Gamma-Ray and Radio Constraints'. Its stated result: Headline result (values verbatim from results.json): pp_cooling_time_Gyr = 23.49; hadronic_CR_energy_erg = 8.985e+55; hadronic_energy_density_eV_cm3 = 5.06. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Now we go one step further into the material.
+
+'Distribution of Bubble Energy with Galactic Latitude from the Surface-Brightness Profile'. Its stated result: Headline result (values verbatim from results.json): total_model_volume_one_lobe_kpc3 = 183.3; half_volume_height_kpc = 4.09; energy_fraction_z_0_2kpc_percent = 19.3. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+The next piece is where this starts to come together.
+
+'Edge Thickness, Sound-Crossing Time and Buoyant Rise Scale of the Fermi Bubbles'. Its stated result: Headline result (values verbatim from results.json): edge_thickness_upper_kpc = 0.29; sound_speed_interior_kms = 262.0; sound_crossing_edge_Myr = 1.07. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Enthalpy Content and Flux Bounds for the Hot Gas in the Galactic Bubbles'. Its stated result: Headline result (values verbatim from results.json): pressure_dyne_cm2 = 2.211e-12; thermal_energy_erg = 2.057e+56; enthalpy_erg = 3.429e+56. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+We take the pieces in order, because each one stands on the last.
+
+'Expansion Velocity and Dynamical Age Bounds for the Galactic Bubbles'. Its stated result: Headline result (values verbatim from results.json): sound_speed_0p3keV_kms = 282.0; sound_speed_interior_kms = 262.0; age_Myr_energy_driven_L1e41 = 93.69. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Stay with me, because the next piece builds directly on that one.
+
+'Flow Quantities in the Galactic Centre Chimneys Feeding the Bubbles'. Its stated result: Headline result (values verbatim from results.json): chimney_volume_pc3 = 8835729.0; chimney_gas_mass_Msun = 124499.0; mass_flux_Msun_yr = 0.255. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Cosmic-Ray Energy Density Inside the Fermi Bubbles from Gamma-Ray and Radio Constraints”. Its stated result is: Headline result (values verbatim from results.json): pp_cooling_time_Gyr = 23.49; hadronic_CR_energy_erg = 8.985e+55; hadronic_energy_density_eV_cm3 = 5.06. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Cosmic-Ray Energy Density Inside the Fermi Bubbles from Gamma-Ray and Radio Constraints'; 'Distribution of Bubble Energy with Galactic Latitude from the Surface-Brightness Profile'; 'Edge Thickness, Sound-Crossing Time and Buoyant Rise Scale of the Fermi Bubbles'; 'Enthalpy Content and Flux Bounds for the Hot Gas in the Galactic Bubbles'; 'Expansion Velocity and Dynamical Age Bounds for the Galactic Bubbles'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.
