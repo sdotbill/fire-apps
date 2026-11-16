@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Dave — Dashboard</title>
+<link rel="icon" type="image/png" href="/assets/baby-dave-64.png">
+<link rel="apple-touch-icon" href="/assets/baby-dave-180.png">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root{
+    --bg:#0d1524; --bg2:#111c31; --panel:#131f38; --panel2:#182747;
+    --line:#24365a; --ink:#e8effc; --muted:#8fa8cc; --faint:#5f779e;
+    --amber:#f2a33c; --amber2:#ffbe5c; --blue:#2f9dff; --blue2:#1668dc;
+    --user:#1d4e9e; --radius:18px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    font-size:16px; line-height:1.5; -webkit-font-smoothing:antialiased;
+    overflow:hidden;
+  }
+  button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;}
+  a{color:var(--blue);}
+  [hidden]{display:none !important;}
+
+  /* ================= layout ================= */
+  .app{display:flex;height:100vh;height:100dvh;width:100%;}
+  .rail{
+    flex:none;width:58px;background:var(--bg2);border-right:1px solid var(--line);
+    display:flex;flex-direction:column;align-items:center;padding:10px 0;gap:4px;z-index:30;
+  }
+  .rail button{
+    width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+    font-size:1.15rem;color:var(--muted);position:relative;
+  }
+  .rail button:hover{background:var(--panel2);color:var(--ink);}
+  .rail button.on{background:var(--panel2);color:var(--amber2);}
+  .rail .sp{flex:1;}
+  .rail .eye-mini{font-size:1.3rem;color:var(--amber);}
+  .panel{
+    flex:none;width:284px;background:var(--panel);border-right:1px solid var(--line);
+    display:flex;flex-direction:column;min-height:0;z-index:20;
+  }
+  .panel-head{
+    padding:14px 16px 10px;display:flex;align-items:center;justify-content:space-between;gap:8px;
+  }
+  .panel-head h2{font-size:1.02rem;font-weight:700;letter-spacing:.01em;}
+  .panel-body{flex:1;overflow-y:auto;padding:2px 10px 14px;min-height:0;}
+  .main{flex:1;display:flex;flex-direction:column;min-width:0;min-height:0;background:var(--bg);}
+  .brain{
+    flex:none;width:308px;background:var(--panel);border-left:1px solid var(--line);
+    display:flex;flex-direction:column;min-height:0;z-index:20;
+  }
+
+  /* ================= top bar ================= */
+  .topbar{
+    flex:none;display:flex;align-items:center;gap:10px;
+    padding:10px 16px;border-bottom:1px solid var(--line);background:var(--bg2);
+  }
+  .topbar .title{font-weight:700;font-size:1.02rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .topbar .sp{flex:1;}
+  .tbtn{
+    display:inline-flex;align-items:center;gap:7px;padding:8px 16px;border-radius:999px;
+    border:1.5px solid var(--line);background:var(--panel2);font-weight:600;font-size:.92rem;color:var(--ink);
+  }
+  .tbtn:hover{border-color:var(--blue);}
+  .tbtn.live{background:linear-gradient(135deg,#b3261e,#7d1a14);border-color:#e0655c;color:#fff;}
+  .iconbtn{width:40px;height:40px;border-radius:12px;display:none;align-items:center;justify-content:center;font-size:1.1rem;color:var(--muted);}
+  .iconbtn:hover{background:var(--panel2);color:var(--ink);}
+
+  /* ================= chat ================= */
+  .thread{flex:1;overflow-y:auto;padding:18px 16px 8px;display:flex;flex-direction:column;gap:10px;min-height:0;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;}
+  .thread-inner{width:100%;max-width:46rem;margin:0 auto;display:flex;flex-direction:column;gap:10px;}
+  .msg{max-width:85%;padding:10px 14px;border-radius:18px;font-size:.99rem;line-height:1.5;white-space:pre-wrap;word-break:break-word;}
+  .msg-dave{align-self:flex-start;background:var(--panel2);border:1px solid var(--line);border-bottom-left-radius:6px;}
+  .msg-user{align-self:flex-end;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;border-bottom-right-radius:6px;}
+  .msg img.att{max-width:240px;border-radius:12px;display:block;margin-top:6px;}
+  .msg .attname{font-size:.82rem;opacity:.85;}
+  .typing i{display:inline-block;width:7px;height:7px;margin-right:4px;border-radius:50%;background:var(--muted);animation:tbl 1.1s infinite;}
+  .typing i:nth-child(2){animation-delay:.18s;} .typing i:nth-child(3){animation-delay:.36s;margin-right:0;}
+  @keyframes tbl{0%,60%,100%{opacity:.25;}30%{opacity:1;}}
+  .empty-note{color:var(--faint);text-align:center;margin:auto 0;padding:30px 10px;font-size:.95rem;}
+
+  /* ================= composer ================= */
+  .composer{flex:none;padding:8px 16px 14px;background:var(--bg);}
+  .composer-inner{max-width:46rem;margin:0 auto;}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px;}
+  .chip{display:inline-flex;align-items:center;gap:7px;background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:4px 8px 4px 12px;font-size:.82rem;}
+  .chip button{color:var(--muted);font-size:.95rem;line-height:1;padding:2px 4px;}
+  .cbar{
+    display:flex;align-items:flex-end;gap:8px;background:var(--panel);
+    border:1.5px solid var(--line);border-radius:26px;padding:7px 8px;
+  }
+  .cbar:focus-within{border-color:var(--blue);}
+  .plusbtn{flex:none;width:40px;height:40px;border-radius:50%;font-size:1.35rem;color:var(--muted);display:flex;align-items:center;justify-content:center;}
+  .plusbtn:hover{background:var(--panel2);color:var(--ink);}
+  .ctext{
+    flex:1;border:none;background:transparent;color:var(--ink);font:inherit;font-size:1.02rem;
+    resize:none;max-height:130px;padding:9px 2px;min-width:0;
+  }
+  .ctext:focus{outline:none;}
+  .ctext::placeholder{color:var(--faint);}
+  .micbtn,.sendbtn{flex:none;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.05rem;}
+  .micbtn{color:var(--muted);} .micbtn:hover{background:var(--panel2);color:var(--ink);}
+  .micbtn.listening{background:#7d1a14;color:#fff;}
+  .sendbtn{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;}
+  .sendbtn[disabled]{opacity:.5;cursor:wait;}
+  .attachmenu{
+    position:absolute;bottom:74px;left:16px;background:var(--panel2);border:1px solid var(--line);
+    border-radius:16px;padding:6px;min-width:210px;box-shadow:0 14px 40px rgba(0,0,0,.5);z-index:40;
+  }
+  .attachmenu button{display:flex;align-items:center;gap:10px;width:100%;text-align:left;padding:9px 12px;border-radius:10px;font-size:.95rem;}
+  .attachmenu button:hover{background:var(--panel);}
+  .composer-wrap{position:relative;max-width:46rem;margin:0 auto;}
+
+  /* ================= panel lists ================= */
+  .conv{
+    display:block;width:100%;text-align:left;padding:11px 12px;border-radius:14px;margin-bottom:4px;
+  }
+  .conv:hover{background:var(--panel2);}
+  .conv.on{background:var(--panel2);}
+  .conv .ct{font-weight:600;font-size:.95rem;display:flex;gap:8px;align-items:center;}
+  .conv .cs{color:var(--muted);font-size:.83rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px;}
+  .conv .cw{color:var(--faint);font-size:.76rem;margin-top:2px;}
+  .searchbox,.ideabox,.taskbox{
+    width:100%;background:var(--bg);border:1.5px solid var(--line);border-radius:14px;color:var(--ink);
+    font:inherit;font-size:.95rem;padding:10px 13px;margin-bottom:10px;
+  }
+  .searchbox:focus,.ideabox:focus,.taskbox:focus{outline:none;border-color:var(--blue);}
+  .libitem{display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:14px;color:var(--ink);text-decoration:none;}
+  .libitem:hover{background:var(--panel2);}
+  .libitem small{display:block;color:var(--muted);font-size:.8rem;}
+  .rowitem{display:flex;gap:9px;align-items:flex-start;padding:9px 10px;border-radius:12px;background:var(--bg);border:1px solid var(--line);margin-bottom:7px;font-size:.93rem;}
+  .rowitem .grow{flex:1;word-break:break-word;}
+  .rowitem button{color:var(--faint);padding:0 3px;}
+  .rowitem.done .grow{color:var(--faint);text-decoration:line-through;}
+  .mini{font-size:.8rem;color:var(--faint);}
+  .addbtn{width:100%;padding:9px;border-radius:12px;border:1.5px dashed var(--line);color:var(--muted);font-weight:600;}
+  .addbtn:hover{color:var(--ink);border-color:var(--blue);}
+
+  /* ================= brain / eye ================= */
+  .brain-top{padding:20px 16px 12px;text-align:center;border-bottom:1px solid var(--line);}
+  .eye-wrap{width:118px;height:118px;margin:0 auto 6px;position:relative;}
+  .eye-name{font-family:'Fraunces',Georgia,serif;font-size:1.45rem;font-weight:700;}
+  .eye-status{color:var(--muted);font-size:.9rem;margin-top:2px;min-height:1.35em;}
+  .eye-status .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3ecf6f;margin-right:6px;vertical-align:1px;}
+  .brain-head{padding:13px 16px 6px;display:flex;align-items:baseline;justify-content:space-between;}
+  .brain-head h3{font-size:1rem;}
+  .brain-head span{color:var(--faint);font-size:.78rem;}
+  .feed{flex:1;overflow-y:auto;padding:2px 12px 16px;min-height:0;}
+  .feed-day{color:var(--muted);font-weight:700;font-size:.85rem;margin:10px 4px 7px;}
+  .job{display:flex;gap:11px;padding:10px 10px;border-radius:14px;background:var(--bg);border:1px solid var(--line);margin-bottom:7px;}
+  .job .ic{flex:none;width:34px;height:34px;border-radius:10px;background:var(--panel2);display:flex;align-items:center;justify-content:center;font-size:.95rem;}
+  .job .jt{font-weight:600;font-size:.92rem;line-height:1.3;}
+  .job .js{color:var(--muted);font-size:.83rem;line-height:1.35;}
+  .job .jw{color:var(--faint);font-size:.76rem;margin-top:1px;}
+  .feed-empty{color:var(--faint);font-size:.88rem;padding:6px 6px 0;}
+
+  /* ================= gate ================= */
+  .gate{
+    position:fixed;inset:0;background:var(--bg);z-index:100;
+    display:flex;align-items:center;justify-content:center;padding:20px;
+  }
+  .gate-card{width:100%;max-width:380px;text-align:center;}
+  .gate-card .eye-wrap{width:96px;height:96px;}
+  .gate-card h1{font-family:'Fraunces',Georgia,serif;font-size:1.7rem;margin:4px 0 4px;}
+  .gate-card p{color:var(--muted);font-size:.95rem;margin-bottom:18px;}
+  .gate-row{display:flex;gap:8px;}
+  .gate-input{
+    flex:1;background:var(--panel);border:1.5px solid var(--line);border-radius:999px;color:var(--ink);
+    font:inherit;padding:12px 18px;min-width:0;
+  }
+  .gate-input:focus{outline:none;border-color:var(--blue);}
+  .gate-btn{flex:none;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;font-weight:600;border-radius:999px;padding:12px 22px;}
+  .gate-err{color:#e08a7d;font-size:.88rem;min-height:1.3em;margin-top:10px;}
+  .gate-home{display:inline-block;margin-top:14px;color:var(--faint);font-size:.88rem;text-decoration:none;}
+  .gate-home:hover{color:var(--muted);}
+
+  /* ================= responsive ================= */
+  @media (max-width:1180px){
+    .brain{position:fixed;top:0;right:0;bottom:0;transform:translateX(105%);transition:transform .25s ease;box-shadow:-16px 0 40px rgba(0,0,0,.45);}
+    .brain.open{transform:none;}
+    #brain-toggle{display:flex;}
+  }
+  @media (max-width:760px){
+    .panel{position:fixed;top:0;left:58px;bottom:0;transform:translateX(-110%);transition:transform .25s ease;box-shadow:16px 0 40px rgba(0,0,0,.45);}
+    .panel.open{transform:none;}
+    #panel-toggle{display:flex;}
+    .msg{max-width:92%;}
+    .topbar .title{font-size:.95rem;}
+    .tbtn{padding:8px 12px;font-size:.88rem;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ SIGN-IN GATE (shown until the owner binding stands) ============ -->
+<div class="gate" id="gate" hidden>
+  <div class="gate-card">
+    <div class="eye-wrap" data-eye></div>
+    <h1>Dave</h1>
+    <p>Sign in to open your dashboard.</p>
+    <form class="gate-row" id="gate-form">
+      <input class="gate-input" id="gate-input" type="password" placeholder="Sign in" aria-label="Sign in" autocomplete="off">
+      <button class="gate-btn" id="gate-btn" type="submit">Open</button>
+    </form>
+    <p class="gate-err" id="gate-err"></p>
+    <a class="gate-home" href="/">← Back to the public door</a>
+  </div>
+</div>
+
+<!-- ============ DASHBOARD ============ -->
+<div class="app" id="app" hidden>
+
+  <!-- LEFT ICON RAIL -->
+  <nav class="rail" aria-label="Dave">
+    <button data-view="chats" class="on" title="Chats" aria-label="Chats">💬</button>
+    <button data-view="search" title="Search" aria-label="Search">🔍</button>
+    <button data-view="library" title="Library" aria-label="Library">📚</button>
+    <button data-view="ideas" title="Ideas" aria-label="Ideas">💡</button>
+    <button data-view="tasks" title="Tasks" aria-label="Tasks">✅</button>
+    <button data-view="feed" title="Feed" aria-label="Feed">◉</button>
+    <div class="sp"></div>
+    <button id="rail-new" title="New chat" aria-label="New chat">➕</button>
+    <button id="rail-eye" title="Dave" aria-label="Dave"><span class="eye-mini">👁</span></button>
+  </nav>
+
+  <!-- LEFT PANEL -->
+  <aside class="panel" id="panel">
+    <div class="panel-head"><h2 id="panel-title">Chats</h2></div>
+    <div class="panel-body" id="panel-body"></div>
+  </aside>
+
+  <!-- CENTER -->
+  <section class="main">
+    <div class="topbar">
+      <button class="iconbtn" id="panel-toggle" aria-label="Panel">☰</button>
+      <span class="title" id="conv-title">Chat with Dave</span>
+      <div class="sp"></div>
+      <button class="tbtn" id="call-btn" type="button">📞 Call</button>
+      <button class="tbtn" id="invite-btn" type="button">🎁 Invite</button>
+      <button class="iconbtn" id="brain-toggle" aria-label="Dave's brain">👁</button>
+    </div>
+
+    <div class="thread" id="thread"><div class="thread-inner" id="thread-inner"></div></div>
+
+    <div class="composer">
+      <div class="composer-wrap">
+        <div class="attachmenu" id="attachmenu" hidden>
+          <button type="button" data-att="file">📎 File</button>
+          <button type="button" data-att="camera">📷 Camera</button>
+          <button type="button" data-att="photos">🖼 Photos</button>
+          <button type="button" data-att="videos">🎬 Videos</button>
+          <button type="button" data-att="files">🗂 Files</button>
+          <button type="button" data-att="drive">🟦 Drive</button>
+        </div>
+        <div class="chips" id="chips"></div>
+        <div class="cbar">
+          <button class="plusbtn" id="plus-btn" type="button" aria-label="Attach">+</button>
+          <textarea class="ctext" id="ctext" rows="1" placeholder="Message Dave…" aria-label="Message Dave"></textarea>
+          <button class="micbtn" id="mic-btn" type="button" aria-label="Speak">🎤</button>
+          <button class="sendbtn" id="send-btn" type="button" aria-label="Send">↑</button>
+        </div>
+      </div>
+    </div>
+    <input type="file" id="in-file" hidden>
+    <input type="file" id="in-camera" accept="image/*" capture="environment" hidden>
+    <input type="file" id="in-photos" accept="image/*" multiple hidden>
+    <input type="file" id="in-videos" accept="video/*" multiple hidden>
+    <input type="file" id="in-files" multiple hidden>
+  </section>
+
+  <!-- RIGHT: EYE + BRAIN FEED -->
+  <aside class="brain" id="brain">
+    <div class="brain-top">
+      <div class="eye-wrap" data-eye></div>
+      <div class="eye-name">Dave</div>
+      <div class="eye-status" id="eye-status"><span class="dot"></span>Here</div>
+    </div>
+    <div class="brain-head"><h3>Brain feed</h3><span>live</span></div>
+    <div class="feed" id="feed"></div>
+  </aside>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var WORKER = "https://dave-chat.william-ced.workers.dev";
+  var IDENTITY_KEY = "dave_chat_identity";
+  var SESSION_KEY  = "dave_chat_session";
+  var HISTORY_KEY  = "dave_chat_history";
+  var ANCHOR_KEY   = "dave_owner_anchor";
+  var FEED_KEY     = "dave_brain_feed";
+  var TASKS_KEY    = "dave_tasks";
+  var IDEAS_KEY    = "dave_ideas";
+  var SEEN_KEY     = "dave_seen_replies";
+
+  var $ = function(id){ return document.getElementById(id); };
+  var gate = $("gate"), app = $("app"), thread = $("thread"), inner = $("thread-inner");
+  var ctext = $("ctext"), sendBtn = $("send-btn");
+
+  var identity = null, sessionId = null, history = [], anchor = [], owner = false;
+  var sending = false, waiting = false, callOn = false, recog = null;
+
+  function uuid(){
+    if(window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return "s-" + Date.now() + "-" + Math.random().toString(36).slice(2,12);
+  }
+  function lsGet(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function lsSet(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function lsJson(k, d){ try{ var v = JSON.parse(lsGet(k) || "null"); return v == null ? d : v; }catch(e){ return d; } }
+  function esc(s){ return String(s == null ? "" : s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+  function nyTime(ts){
+    try{ return new Date(ts).toLocaleTimeString("en-US",{timeZone:"America/New_York",hour:"numeric",minute:"2-digit"}).toLowerCase(); }
+    catch(e){ return new Date(ts).toLocaleTimeString([], {hour:"numeric",minute:"2-digit"}); }
+  }
+  function nyDay(ts){
+    try{ return new Date(ts).toLocaleDateString("en-US",{timeZone:"America/New_York",year:"numeric",month:"numeric",day:"numeric"}); }
+    catch(e){ return new Date(ts).toDateString(); }
+  }
+  function dayLabel(ts){
+    var today = nyDay(Date.now()), yest = nyDay(Date.now() - 86400000);
+    var d = nyDay(ts);
+    if(d === today) return "Today";
+    if(d === yest) return "Yesterday";
+    try{ return new Date(ts).toLocaleDateString("en-US",{timeZone:"America/New_York",month:"long",day:"numeric"}); }
+    catch(e){ return d; }
+  }
+
+  /* ---------- the eye (SVG, animated blink — no person's photo) ---------- */
+  var EYE_SVG =
+   '<svg viewBox="0 0 120 120" width="100%" height="100%" role="img" aria-label="Dave\u2019s eye">' +
+    '<defs><clipPath id="eyeclip-__N__"><path d="M6 60 Q60 8 114 60 Q60 112 6 60 Z"/></clipPath></defs>' +
+    '<circle cx="60" cy="60" r="57" fill="#16263f"/>' +
+    '<circle cx="60" cy="60" r="57" fill="none" stroke="#2c4a78" stroke-width="2"/>' +
+    '<g clip-path="url(#eyeclip-__N__)">' +
+      '<path d="M6 60 Q60 8 114 60 Q60 112 6 60 Z" fill="#f4f7ff"/>' +
+      '<g class="iris"><circle cx="60" cy="60" r="25" fill="#f2a33c"/>' +
+      '<circle cx="60" cy="60" r="25" fill="none" stroke="#b96f14" stroke-width="2"/>' +
+      '<circle cx="60" cy="60" r="11.5" fill="#14100a"/>' +
+      '<circle cx="52" cy="51" r="4.4" fill="#fff" opacity=".92"/>' +
+      '<circle cx="69" cy="70" r="2.2" fill="#fff" opacity=".55"/></g>' +
+      '<rect class="lid" x="0" y="-30" width="120" height="34" fill="#16263f"/>' +
+    '</g>' +
+    '<path d="M6 60 Q60 8 114 60 Q60 112 6 60 Z" fill="none" stroke="#0d1524" stroke-width="3.4"/>' +
+   '</svg>' +
+   '<style>.lid{animation:blink __D__s infinite}@keyframes blink{0%,91%,100%{transform:translateY(0)}94.5%{transform:translateY(64px)}98%{transform:translateY(0)}}.iris{animation:drift 9s ease-in-out infinite}@keyframes drift{0%,100%{transform:translate(0,0)}25%{transform:translate(2.6px,-1.4px)}55%{transform:translate(-2.4px,1.2px)}80%{transform:translate(1.2px,2px)}}</style>';
+  document.querySelectorAll("[data-eye]").forEach(function(el, i){
+    el.innerHTML = EYE_SVG.replace(/__N__/g, String(i)).replace("__D__", (4.6 + i * 1.7).toFixed(1));
+  });
+
+  /* ---------- worker calls ---------- */
+  function postJSON(path, body){
+    return fetch(WORKER + path, {
+      method: "POST", credentials: "include",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(body || {})
+    });
+  }
+  function parseChatResponse(r){
+    return r.text().then(function(t){
+      if(t.indexOf("data:") === 0 || t.indexOf("event:") === 0){
+        var out = "";
+        t.split("\n").forEach(function(line){
+          if(line.indexOf("data:") !== 0) return;
+          var p = line.slice(5).trim();
+          if(!p || p === "[DONE]") return;
+          try{ var o = JSON.parse(p); if(typeof o.response === "string") out += o.response; }catch(e){}
+        });
+        return out;
+      }
+      try{ var j = JSON.parse(t); return (j && (j.response || j.text)) || ""; }catch(e){ return t; }
+    });
+  }
+  function checkOwner(){
+    return postJSON("/identity", {identity: identity || undefined})
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(d){
+        if(d && d.dave_id){ identity = d.dave_id; lsSet(IDENTITY_KEY, identity); }
+        owner = !!(d && d.owner);
+        return owner;
+      })
+      .catch(function(){ owner = false; return false; });
+  }
+
+  /* ---------- brain feed (real events only — gated responses & this device) ---------- */
+  function feedLoad(){ return lsJson(FEED_KEY, []); }
+  function feedAdd(title, status, icon){
+    var feed = feedLoad();
+    feed.push({ts: Date.now(), title: title, status: status, icon: icon || "⚙️"});
+    lsSet(FEED_KEY, JSON.stringify(feed.slice(-60)));
+    renderFeed();
+  }
+  function renderFeed(){
+    var box = $("feed"); if(!box) return;
+    var feed = feedLoad().slice().sort(function(a,b){ return b.ts - a.ts; });
+    if(!feed.length){
+      box.innerHTML = '<p class="feed-empty">Nothing yet. When Dave works, it lands here.</p>';
+      return;
+    }
+    var html = "", lastDay = "";
+    feed.forEach(function(j){
+      var dl = dayLabel(j.ts);
+      if(dl !== lastDay){ html += '<div class="feed-day">' + esc(dl) + '</div>'; lastDay = dl; }
+      html += '<div class="job"><div class="ic">' + esc(j.icon) + '</div><div>' +
+              '<div class="jt">' + esc(j.title) + '</div>' +
+              '<div class="js">' + esc(j.status) + '</div>' +
+              '<div class="jw">' + esc(nyTime(j.ts)) + '</div></div></div>';
+    });
+    box.innerHTML = html;
+  }
+  function setStatus(text){ var el = $("eye-status"); if(el) el.innerHTML = '<span class="dot"></span>' + esc(text); }
+
+  /* ---------- chat ---------- */
+  function saveHistory(){ lsSet(HISTORY_KEY, JSON.stringify(history.slice(-200))); }
+  function renderThread(){
+    inner.innerHTML = "";
+    if(!history.length){
+      inner.innerHTML = '<p class="empty-note">This is your window to Dave — the app Dave, on the lane.<br>Same Dave. Ask him anything.</p>';
+      return;
+    }
+    history.forEach(function(m, idx){
+      if(m.role !== "user" && m.role !== "assistant") return;
+      /* The sign-in exchange is plumbing, not conversation — never rendered. */
+      if(m.role === "assistant" && m.content.indexOf("You are through to Prime") === 0) return;
+      if(m.role === "user" && idx + 1 < history.length &&
+         history[idx + 1].role === "assistant" &&
+         history[idx + 1].content.indexOf("You are through to Prime") === 0) return;
+      var d = document.createElement("div");
+      d.className = "msg " + (m.role === "user" ? "msg-user" : "msg-dave");
+      d.textContent = m.content;
+      inner.appendChild(d);
+    });
+    thread.scrollTop = thread.scrollHeight;
+  }
+  function payloadHistory(){
+    var vis = history.slice(-40);
+    return anchor.length ? anchor.concat(vis) : vis;
+  }
+  function sendText(text){
+    text = (text || "").trim();
+    if(!text || sending) return;
+    var attachNote = collectAttachments();
+    if(attachNote) text = text ? text + "\n\n" + attachNote : attachNote;
+    history.push({role: "user", content: text});
+    saveHistory(); renderThread();
+    sending = true; sendBtn.disabled = true;
+    var typing = document.createElement("div");
+    typing.className = "msg msg-dave typing";
+    typing.innerHTML = "<i></i><i></i><i></i>";
+    inner.appendChild(typing); thread.scrollTop = thread.scrollHeight;
+    postJSON("/chat", {messages: payloadHistory(), session: sessionId, identity: identity || undefined})
+      .then(parseChatResponse)
+      .then(function(reply){
+        typing.remove();
+        if(reply){
+          history.push({role: "assistant", content: reply});
+          saveHistory(); renderThread();
+          if(/carried to prime|reached dave/i.test(reply)){
+            waiting = true;
+            setStatus("Working — your words are on the lane");
+            feedAdd("Message carried to Dave", "Queued to the app lane · the full Dave has it", "📨");
+            startReplyPoll();
+          }
+          if(callOn) speakOut(reply);
+        }
+      })
+      .catch(function(){
+        typing.remove();
+        history.push({role: "assistant", content: "That send didn't land — the connection dropped before Dave answered. Your words are saved here; send again when you're ready."});
+        saveHistory(); renderThread();
+      })
+      .then(function(){ sending = false; sendBtn.disabled = false; });
+  }
+  var pollTimer = null;
+  function startReplyPoll(){
+    if(pollTimer) return;
+    var seen = lsJson(SEEN_KEY, []);
+    var tick = function(){
+      fetch(WORKER + "/owner/replies?identity=" + encodeURIComponent(identity || ""), {credentials: "include"})
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(d){
+          if(d && Array.isArray(d.replies) && d.replies.length){
+            d.replies.forEach(function(rep){
+              if(seen.indexOf(rep.id) >= 0) return;
+              seen.push(rep.id);
+              history.push({role: "assistant", content: rep.body});
+              feedAdd("Dave replied", "Through the cloud · owner channel", "💬");
+            });
+            lsSet(SEEN_KEY, JSON.stringify(seen.slice(-100)));
+            saveHistory(); renderThread();
+            waiting = false; setStatus("Here — watching the door");
+          }
+        })
+        .catch(function(){})
+        .then(function(){ if(waiting) pollTimer = setTimeout(tick, 15000); else pollTimer = null; });
+    };
+    pollTimer = setTimeout(tick, 12000);
+  }
+
+  /* ---------- attachments ---------- */
+  var pending = []; // {name, kind, size, text?}
+  function fmtSize(n){ if(n > 1048576) return (n/1048576).toFixed(1) + " MB"; if(n > 1024) return Math.round(n/1024) + " KB"; return n + " B"; }
+  function renderChips(){
+    var box = $("chips"); box.innerHTML = "";
+    pending.forEach(function(p, i){
+      var c = document.createElement("span"); c.className = "chip";
+      c.innerHTML = esc(p.name) + " · " + esc(fmtSize(p.size)) + ' <button type="button" aria-label="Remove">✕</button>';
+      c.querySelector("button").addEventListener("click", function(){ pending.splice(i,1); renderChips(); });
+      box.appendChild(c);
+    });
+  }
+  function collectAttachments(){
+    if(!pending.length) return "";
+    var lines = pending.map(function(p){
+      var s = "📎 Attached: " + p.name + " (" + p.kind + ", " + fmtSize(p.size) + ")";
+      if(p.text) s += "\n--- " + p.name + " ---\n" + p.text.slice(0, 12000);
+      return s;
+    });
+    var note = lines.join("\n");
+    pending.forEach(function(p){ feedAdd("File attached", p.name + " · " + fmtSize(p.size), "📎"); });
+    pending = []; renderChips();
+    return note;
+  }
+  function takeFiles(list){
+    Array.prototype.forEach.call(list || [], function(f){
+      var item = {name: f.name, kind: f.type || "file", size: f.size};
+      pending.push(item);
+      if((f.type.indexOf("text/") === 0 || /\.(md|txt|json|csv)$/i.test(f.name)) && f.size <= 204800){
+        var rd = new FileReader();
+        rd.onload = function(){ item.text = String(rd.result || ""); };
+        rd.readAsText(f);
+      }
+      if(f.type.indexOf("image/") === 0){
+        var url = URL.createObjectURL(f);
+        var d = document.createElement("div");
+        d.className = "msg msg-user";
+        d.innerHTML = '<span class="attname">📷 ' + esc(f.name) + '</span><img class="att" src="' + url + '" alt="">';
+        inner.appendChild(d); thread.scrollTop = thread.scrollHeight;
+      }
+    });
+    renderChips();
+  }
+  var inputs = {file: $("in-file"), camera: $("in-camera"), photos: $("in-photos"), videos: $("in-videos"), files: $("in-files")};
+  Object.keys(inputs).forEach(function(k){
+    inputs[k].addEventListener("change", function(){ takeFiles(inputs[k].files); inputs[k].value = ""; });
+  });
+  $("plus-btn").addEventListener("click", function(){
+    var m = $("attachmenu"); m.hidden = !m.hidden;
+  });
+  document.addEventListener("click", function(e){
+    if(!$("attachmenu").hidden && !e.target.closest(".composer-wrap")) $("attachmenu").hidden = true;
+  });
+  $("attachmenu").addEventListener("click", function(e){
+    var b = e.target.closest("[data-att]"); if(!b) return;
+    $("attachmenu").hidden = true;
+    var k = b.getAttribute("data-att");
+    if(k === "drive"){
+      window.open("https://drive.google.com/drive/my-drive", "_blank");
+      feedAdd("Drive opened", "Pick the file there, then attach it here", "🟦");
+      return;
+    }
+    if(inputs[k]) inputs[k].click();
+  });
+
+  /* ---------- composer ---------- */
+  function autoGrow(){ ctext.style.height = "auto"; ctext.style.height = Math.min(130, ctext.scrollHeight) + "px"; }
+  ctext.addEventListener("input", autoGrow);
+  ctext.addEventListener("keydown", function(e){
+    if(e.key === "Enter" && !e.shiftKey){ e.preventDefault(); var v = ctext.value; ctext.value = ""; autoGrow(); sendText(v); }
+  });
+  sendBtn.addEventListener("click", function(){ var v = ctext.value; ctext.value = ""; autoGrow(); sendText(v); });
+
+  /* mic (speech in) + call mode (speech out) */
+  function speakOut(text){
+    try{
+      var u = new SpeechSynthesisUtterance(String(text).slice(0, 600));
+      window.speechSynthesis.cancel(); window.speechSynthesis.speak(u);
+    }catch(e){}
+  }
+  function startRecog(intoCall){
+    var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if(!SR){ feedAdd("Voice", "This browser has no speech recognition", "🎤"); return null; }
+    var r = new SR(); r.lang = "en-US"; r.interimResults = false;
+    r.onresult = function(ev){
+      var t = ev.results[0][0].transcript;
+      if(intoCall) sendText(t); else { ctext.value = (ctext.value ? ctext.value + " " : "") + t; autoGrow(); }
+    };
+    r.onend = function(){ $("mic-btn").classList.remove("listening"); if(callOn) { try{ r.start(); }catch(e){} } };
+    r.onerror = function(){ $("mic-btn").classList.remove("listening"); };
+    try{ r.start(); }catch(e){}
+    return r;
+  }
+  $("mic-btn").addEventListener("click", function(){
+    $("mic-btn").classList.add("listening");
+    recog = startRecog(false);
+  });
+  $("call-btn").addEventListener("click", function(){
+    callOn = !callOn;
+    var b = $("call-btn");
+    b.classList.toggle("live", callOn);
+    b.textContent = callOn ? "🔴 End call" : "📞 Call";
+    if(callOn){
+      feedAdd("Call started", "Voice mode · Dave speaks his replies", "📞");
+      setStatus("On a call with you");
+      recog = startRecog(true);
+    } else {
+      feedAdd("Call ended", "Voice mode off", "📞");
+      setStatus("Here — watching the door");
+      try{ window.speechSynthesis.cancel(); }catch(e){}
+      if(recog){ try{ recog.stop(); }catch(e){} }
+    }
+  });
+  $("invite-btn").addEventListener("click", function(){
+    var data = {title: "Dave — the first exolex", text: "Everyone needs a Dave.", url: "https://daveexolex.com/"};
+    if(navigator.share){ navigator.share(data).catch(function(){}); }
+    else if(navigator.clipboard){ navigator.clipboard.writeText(data.url); feedAdd("Invite", "Link copied · daveexolex.com", "🎁"); }
+  });
+
+  /* ---------- left panel views ---------- */
+  var view = "chats";
+  function setView(v){
+    view = v;
+    document.querySelectorAll(".rail [data-view]").forEach(function(b){
+      b.classList.toggle("on", b.getAttribute("data-view") === v);
+    });
+    if(v === "feed"){ $("brain").classList.add("open"); return; }
+    $("panel").classList.add("open");
+    renderPanel();
+  }
+  document.querySelectorAll(".rail [data-view]").forEach(function(b){
+    b.addEventListener("click", function(){ setView(b.getAttribute("data-view")); });
+  });
+  $("panel-toggle").addEventListener("click", function(){ $("panel").classList.toggle("open"); });
+  $("brain-toggle").addEventListener("click", function(){ $("brain").classList.toggle("open"); });
+  $("rail-eye").addEventListener("click", function(){ $("brain").classList.toggle("open"); });
+  $("rail-new").addEventListener("click", function(){
+    /* Keep the sign-in exchange as the invisible anchor before clearing,
+       or owner mode would silently fall back to the public seat. */
+    if(!anchor.length){
+      for(var i = 0; i + 1 < history.length; i++){
+        if(history[i].role === "user" && history[i + 1].role === "assistant" &&
+           history[i + 1].content.indexOf("You are through to Prime") === 0){
+          anchor = [history[i], history[i + 1]];
+          lsSet(ANCHOR_KEY, JSON.stringify(anchor));
+          break;
+        }
+      }
+    }
+    history = []; saveHistory(); renderThread(); setView("chats");
+    feedAdd("New chat", "Fresh window · Dave keeps the thread on his side", "➕");
+  });
+  function lastUserMsg(){
+    for(var i = history.length - 1; i >= 0; i--) if(history[i].role === "user") return history[i].content;
+    return "";
+  }
+  function renderPanel(){
+    var t = $("panel-title"), b = $("panel-body");
+    if(view === "chats"){
+      t.textContent = "Chats";
+      var sub = lastUserMsg();
+      b.innerHTML =
+        '<button class="conv on"><span class="ct">💬 Chat with Dave</span>' +
+        '<span class="cs">' + esc(sub ? sub.slice(0, 64) : "Your window to Dave") + '</span>' +
+        '<span class="cw">' + history.length + ' messages · this device + the cloud</span></button>' +
+        '<a class="conv" href="/" style="text-decoration:none;color:inherit"><span class="ct">🚪 The public door</span>' +
+        '<span class="cs">The same Dave the world talks to</span></a>' +
+        '<p class="mini" style="padding:4px 6px">One conversation, every device — the thread rides the cloud, not this screen.</p>';
+    }
+    if(view === "search"){
+      t.textContent = "Search";
+      b.innerHTML = '<input class="searchbox" id="q" type="search" placeholder="Search this conversation…" aria-label="Search">' +
+                    '<div id="qres"></div>';
+      var q = $("q");
+      q.focus();
+      q.addEventListener("input", function(){
+        var needle = q.value.trim().toLowerCase(), res = $("qres");
+        if(!needle){ res.innerHTML = ""; return; }
+        var hits = history.filter(function(m){ return m.content.toLowerCase().indexOf(needle) >= 0; }).slice(-20).reverse();
+        res.innerHTML = hits.length ? hits.map(function(m){
+          return '<div class="rowitem"><div class="grow"><strong>' + (m.role === "user" ? "You" : "Dave") + ':</strong> ' + esc(m.content.slice(0, 160)) + '</div></div>';
+        }).join("") : '<p class="mini">No matches in this conversation yet.</p>';
+      });
+    }
+    if(view === "library"){
+      t.textContent = "Library";
+      var items = [
+        ["📄", "The Papers", "The full public record, deposited", "/papers/"],
+        ["📖", "The Books", "Six books, with audiobooks", "/books/"],
+        ["🗂", "The Record", "Papers, books, and the evidence", "/record/"],
+        ["🌍", "For the World", "The designs, open for licence", "/for-the-world/"],
+        ["📐", "Blueprints", "Build packages for the designs", "/blueprints/"],
+        ["🎯", "Predictions", "The Prediction Desk, scored in public", "/predictions.html"]
+      ];
+      b.innerHTML = items.map(function(it){
+        return '<a class="libitem" href="' + it[3] + '">' + it[0] + '<span>' + esc(it[1]) + '<small>' + esc(it[2]) + '</small></span></a>';
+      }).join("");
+    }
+    if(view === "ideas"){
+      t.textContent = "Ideas";
+      var ideas = lsJson(IDEAS_KEY, []);
+      b.innerHTML = '<textarea class="ideabox" id="idea-text" rows="3" placeholder="An idea, while it\u2019s fresh…"></textarea>' +
+        '<button class="addbtn" id="idea-add">Save idea</button><div style="height:10px"></div><div id="idea-list"></div>';
+      var draw = function(){
+        var list = lsJson(IDEAS_KEY, []);
+        $("idea-list").innerHTML = list.length ? list.slice().reverse().map(function(x, ri){
+          var i = list.length - 1 - ri;
+          return '<div class="rowitem"><div class="grow">💡 ' + esc(x.text) + '<div class="mini">' + esc(dayLabel(x.ts)) + ' · ' + esc(nyTime(x.ts)) + '</div></div><button data-del="' + i + '" aria-label="Delete">✕</button></div>';
+        }).join("") : '<p class="mini">No ideas saved yet. The next one lands here.</p>';
+        $("idea-list").querySelectorAll("[data-del]").forEach(function(btn){
+          btn.addEventListener("click", function(){
+            var list2 = lsJson(IDEAS_KEY, []); list2.splice(Number(btn.getAttribute("data-del")), 1);
+            lsSet(IDEAS_KEY, JSON.stringify(list2)); draw();
+          });
+        });
+      };
+      draw();
+      $("idea-add").addEventListener("click", function(){
+        var v = $("idea-text").value.trim(); if(!v) return;
+        var list = lsJson(IDEAS_KEY, []); list.push({ts: Date.now(), text: v});
+        lsSet(IDEAS_KEY, JSON.stringify(list)); draw();
+        feedAdd("Idea saved", v.slice(0, 60), "💡");
+      });
+    }
+    if(view === "tasks"){
+      t.textContent = "Tasks";
+      b.innerHTML = '<input class="taskbox" id="task-text" type="text" placeholder="Add a task, hit Enter…" aria-label="Add a task"><div id="task-list"></div>';
+      var drawT = function(){
+        var list = lsJson(TASKS_KEY, []);
+        $("task-list").innerHTML = list.length ? list.map(function(x, i){
+          return '<div class="rowitem' + (x.done ? " done" : "") + '"><button data-tog="' + i + '">' + (x.done ? "☑" : "☐") + '</button><div class="grow">' + esc(x.text) + '</div><button data-del="' + i + '" aria-label="Delete">✕</button></div>';
+        }).join("") : '<p class="mini">No tasks yet. Add the first one above.</p>';
+        $("task-list").querySelectorAll("[data-tog]").forEach(function(btn){
+          btn.addEventListener("click", function(){
+            var l = lsJson(TASKS_KEY, []); var i = Number(btn.getAttribute("data-tog"));
+            l[i].done = !l[i].done; lsSet(TASKS_KEY, JSON.stringify(l)); drawT();
+          });
+        });
+        $("task-list").querySelectorAll("[data-del]").forEach(function(btn){
+          btn.addEventListener("click", function(){
+            var l = lsJson(TASKS_KEY, []); l.splice(Number(btn.getAttribute("data-del")), 1);
+            lsSet(TASKS_KEY, JSON.stringify(l)); drawT();
+          });
+        });
+      };
+      drawT();
+      $("task-text").addEventListener("keydown", function(e){
+        if(e.key !== "Enter") return;
+        var v = e.target.value.trim(); if(!v) return;
+        var l = lsJson(TASKS_KEY, []); l.push({ts: Date.now(), text: v, done: false});
+        lsSet(TASKS_KEY, JSON.stringify(l)); e.target.value = ""; drawT();
+      });
+    }
+  }
+
+  /* ---------- health / status ---------- */
+  function pollHealth(){
+    fetch(WORKER + "/health").then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(d){
+        if(d && d.ok) setStatus(waiting ? "Working — your words are on the lane" : "Here · live on the cloud");
+      }).catch(function(){});
+  }
+
+  /* ---------- boot ---------- */
+  function loadLocal(){
+    identity = lsGet(IDENTITY_KEY);
+    sessionId = lsGet(SESSION_KEY);
+    if(!sessionId){ sessionId = uuid(); lsSet(SESSION_KEY, sessionId); }
+    history = lsJson(HISTORY_KEY, []);
+    if(!Array.isArray(history)) history = [];
+    anchor = lsJson(ANCHOR_KEY, []);
+    if(!Array.isArray(anchor)) anchor = [];
+  }
+  function openDashboard(){
+    gate.hidden = true; app.hidden = false;
+    renderThread(); renderFeed(); renderPanel();
+    setStatus("Here · live on the cloud");
+    pollHealth(); setInterval(pollHealth, 60000);
+  }
+  loadLocal();
+  checkOwner().then(function(isOwner){
+    if(isOwner){ openDashboard(); return; }
+    gate.hidden = false;
+    $("gate-form").addEventListener("submit", function(e){
+      e.preventDefault();
+      var val = $("gate-input").value.trim();
+      if(!val) return;
+      $("gate-btn").disabled = true;
+      $("gate-err").textContent = "";
+      postJSON("/chat", {messages: [{role: "user", content: val}], session: sessionId, identity: identity || undefined})
+        .then(parseChatResponse)
+        .then(function(resp){
+          return checkOwner().then(function(nowOwner){
+            if(nowOwner){
+              anchor = [{role: "user", content: val}, {role: "assistant", content: resp || ""}];
+              lsSet(ANCHOR_KEY, JSON.stringify(anchor));
+              feedAdd("Signed in", "Owner recognized · dashboard open", "👁");
+              openDashboard();
+            } else {
+              $("gate-err").textContent = "That didn't open the door.";
+              $("gate-btn").disabled = false;
+            }
+          });
+        })
+        .catch(function(){
+          $("gate-err").textContent = "The door didn't answer — try again in a moment.";
+          $("gate-btn").disabled = false;
+        });
+    });
+  });
+})();
+</script>
+</body>
+</html>
