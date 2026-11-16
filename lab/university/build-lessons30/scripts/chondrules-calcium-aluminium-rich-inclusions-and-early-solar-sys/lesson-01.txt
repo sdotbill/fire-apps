@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Megan Wilson, and this is Chondrules, Calcium-Aluminium-Rich Inclusions and Early Solar-System Solids: Thermal, Cooling and Age Budgets Against Published Meteoritic Values. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Megan Wilson, and this is Chondrules, Calcium-Aluminium-Rich Inclusions and Early Solar-System Solids: Thermal, Cooling and Age Budgets Against Published Meteoritic Values. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Allende CAIs: Size, Abundance and Refractory Element Budget of CV3 Inclusions'. Its stated result: Headline result: allende cai volume percent allende = 3; allende cai mass fraction percent allende = 2.431; allende representative inclusion mg allende = 97.18; allende inclusions per kg rock allende = 250.1; allende aluminium share from cai percent allende = 18.23; allende calcium share from cai percent allende = 20.47 Operating principle: A stated volume abundance, a stated representative inclusion size and stated
+
+Now we go one step further into the material.
+
+'CO Chondrite Chondrules: Small Droplets, Tight Size Spread and Refractory Enrichment'. Its stated result: Headline result: co median diameter mm co = 0.2; co mass mean diameter mm co = 0.3071; co mass mean droplet mg co = 0.05003; co droplets per kg co = 1.999e+07; co spread factor one sigma co = 1.419; co share above 0p5mm percent co = 0.4423 Operating principle: A stated small mean and narrow spread fix droplet mass, count per kilogram and tail shares, while a stated aluminium enrichment converts into the refractory sh
+
+The next piece is where this starts to come together.
+
+'CR Chondrite Chondrules: Low-Iron Melt Droplets, Large Sizes and Slow Cooling'. Its stated result: Headline result: cr mean diameter mm cr = 1; cr mean droplet mass mg cr = 1.728; cr droplets per kg chondrules cr = 5.787e+05; cr cooling duration hours cr = 17.5; cr cooling rate K per hour cr = 20; cr crystallisation interval K cr = 350 Operating principle: Large droplet mass scales with the cube of diameter, so a stated CR mean size fixes droplet mass and count per kilogram, while a stated slow cooling rate across
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Calcium-Aluminium-Rich Inclusions: The Formation Interval Between Pb-Pb and Al-Mg Chronometers'. Its stated result: Headline result: cai anchor age PbPb Ma cai = 4567; cai interval at ratio 4p5e5 Myr cai = 0.1595; cai interval at ratio 1e5 Myr cai = 1.715; cai interval at ratio 5e6 Myr cai = 2.432; cai ratio after 1Myr cai = 1.997e-05; cai ratio after 3Myr cai = 2.888e-06 Operating principle: The aluminium-26 clock converts a ratio difference into a time through its 0.717 million year half-life, so a stated canonical initial ratio
+
+We take the pieces in order, because each one stands on the last.
+
+'Chondrule Density and Nebular Sorting: Size-Density Coupling and Stokes Numbers'. Its stated result: Headline result: stokes stopping time years chondrule = 0.0003139; stokes number 0p3mm droplet chondrule = 0.0003794; stokes drift speed m per s chondrule = 0.03794; stokes metal rich density kg per m3 chondrule = 5200; stokes metal rich St ratio over ferromagnesian chondrule = 1.576; stokes 1mm St chondrule = 0.0006323 Operating principle: The Epstein stopping time is proportional to droplet radius times density ove
+
+Stay with me, because the next piece builds directly on that one.
+
+'Chondrule Size Distribution in Bjurböle: Mean Diameter, Mass Budget and Aerodynamic Sorting'. Its stated result: Headline result: bjurböle median diameter mm bjurböle = 0.4; bjurböle number mean diameter mm bjurböle = 0.4426; bjurböle mass mean diameter mm bjurböle = 0.8126; bjurböle mass mean droplet mg bjurböle = 0.9271; bjurböle droplets per kg at mass mean bjurböle = 1.079e+06; bjurböle mass ratio massmean over numbermean bjurböle = 1.836 Operating principle: A lognormal population stated by its median and spread has defini
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Allende CAIs: Size, Abundance and Refractory Element Budget of CV3 Inclusions”. Its stated result is: Headline result: allende cai volume percent allende = 3; allende cai mass fraction percent allende = 2.431; allende representative inclusion mg allende = 97.18; allende inclusions per kg rock allende = 250.1; allende aluminium share from cai percent allende = 18.23; allende calcium share from cai pe (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Allende CAIs: Size, Abundance and Refractory Element Budget of CV3 Inclusions'; 'CO Chondrite Chondrules: Small Droplets, Tight Size Spread and Refractory Enrichment'; 'CR Chondrite Chondrules: Low-Iron Melt Droplets, Large Sizes and Slow Cooling'; 'Calcium-Aluminium-Rich Inclusions: The Formation Interval Between Pb-Pb and Al-Mg Chronometers'; 'Chondrule Density and Nebular Sorting: Size-Density Coupling and Stokes Numbers'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.

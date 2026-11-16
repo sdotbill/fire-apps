@@ -521,5 +521,12 @@
    "audio": "audio/lessons30/solar-prominences-filaments-and-coronal-mass-ejection-initiation/lesson-01.mp3",
    "minutes": 11.09
   }
+ },
+ "chondrules-calcium-aluminium-rich-inclusions-and-early-solar-sys": {
+  "lesson-01": {
+   "hash": "76a66bc562a6195f91cd890b2f2922f48d5c2255",
+   "audio": "audio/lessons30/chondrules-calcium-aluminium-rich-inclusions-and-early-solar-sys/lesson-01.mp3",
+   "minutes": 11.17
+  }
  }
 }

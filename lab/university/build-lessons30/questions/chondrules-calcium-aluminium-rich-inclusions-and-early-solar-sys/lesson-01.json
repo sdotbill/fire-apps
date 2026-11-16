@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'Allende CAIs: Size, Abundance and Refractory Element Budget of CV3 Inclusions'. The result it reported gives a value for cai volume percent allende, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Allende CAIs: Size, Abundance and Refractory Element Budget of CV3 Inclusions'. Its stated result: Headline result: allende cai volume percent allende = 3; allende cai mass fraction percent allende = 2.431; allende representative inclusion mg allende = 97.18; allende inclusions per kg rock allende = 250.1; allende aluminium share from cai percent allende = 18.23; allende calcium share from cai percent allende = 20.47 Operating principle: A stated volume abundance, a stated representative inclusion size and stated And here is that same result with the words stripped away — just the quantities standing in a row: cai volume percent allende = 3; mass fraction percent allende = 2.431; representative inclusion mg allende = 97.18. Find cai volume percent allende in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Allende CAIs: Size, Abundance and Refractory Element Budget of CV3 Inclusions' stated its result. (2) That result pairs names with values: cai volume percent allende = 3; mass fraction percent allende = 2.431; representative inclusion mg allende = 97.18. (3) This question asks for the value paired with cai volume percent allende. (4) In that row, cai volume percent allende stands beside 3 — so the answer the lesson gives is 3. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Allende CAIs: Size, Abundance and Refractory Element Budget of CV3 Inclusions' reported a number for cai volume percent allende. What number did it report?",
+  "kind": "number",
+  "answer": 3.0,
+  "disp": "3",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "0.2",
+   "3",
+   "4567",
+   "1"
+  ],
+  "mcAnswer": "3",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'CO Chondrite Chondrules: Small Droplets, Tight Size Spread and Refractory Enrichment'. The result it reported gives a value for median diameter mm co, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'CO Chondrite Chondrules: Small Droplets, Tight Size Spread and Refractory Enrichment'. Its stated result: Headline result: co median diameter mm co = 0.2; co mass mean diameter mm co = 0.3071; co mass mean droplet mg co = 0.05003; co droplets per kg co = 1.999e+07; co spread factor one sigma co = 1.419; co share above 0p5mm percent co = 0.4423 Operating principle: A stated small mean and narrow spread fix droplet mass, count per kilogram and tail shares, while a stated aluminium enrichment converts into the refractory sh And here is that same result with the words stripped away — just the quantities standing in a row: median diameter mm co = 0.2; mean diameter mm co = 0.3071; mean droplet mg co = 0.05003. Find median diameter mm co in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'CO Chondrite Chondrules: Small Droplets, Tight Size Spread and Refractory Enrichment' stated its result. (2) That result pairs names with values: median diameter mm co = 0.2; mean diameter mm co = 0.3071; mean droplet mg co = 0.05003. (3) This question asks for the value paired with median diameter mm co. (4) In that row, median diameter mm co stands beside 0.2 — so the answer the lesson gives is 0.2. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'CO Chondrite Chondrules: Small Droplets, Tight Size Spread and Refractory Enrichment' reported a number for median diameter mm co. What number did it report?",
+  "kind": "number",
+  "answer": 0.2,
+  "disp": "0.2",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "0.2",
+   "4567",
+   "3",
+   "1"
+  ],
+  "mcAnswer": "0.2",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'CR Chondrite Chondrules: Low-Iron Melt Droplets, Large Sizes and Slow Cooling'. The result it reported gives a value for mean diameter mm cr, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'CR Chondrite Chondrules: Low-Iron Melt Droplets, Large Sizes and Slow Cooling'. Its stated result: Headline result: cr mean diameter mm cr = 1; cr mean droplet mass mg cr = 1.728; cr droplets per kg chondrules cr = 5.787e+05; cr cooling duration hours cr = 17.5; cr cooling rate K per hour cr = 20; cr crystallisation interval K cr = 350 Operating principle: Large droplet mass scales with the cube of diameter, so a stated CR mean size fixes droplet mass and count per kilogram, while a stated slow cooling rate across And here is that same result with the words stripped away — just the quantities standing in a row: mean diameter mm cr = 1; droplet mass mg cr = 1.728; per kg chondrules cr = 5.787e+05. Find mean diameter mm cr in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'CR Chondrite Chondrules: Low-Iron Melt Droplets, Large Sizes and Slow Cooling' stated its result. (2) That result pairs names with values: mean diameter mm cr = 1; droplet mass mg cr = 1.728; per kg chondrules cr = 5.787e+05. (3) This question asks for the value paired with mean diameter mm cr. (4) In that row, mean diameter mm cr stands beside 1 — so the answer the lesson gives is 1. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'CR Chondrite Chondrules: Low-Iron Melt Droplets, Large Sizes and Slow Cooling' reported a number for mean diameter mm cr. What number did it report?",
+  "kind": "number",
+  "answer": 1.0,
+  "disp": "1",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "4567",
+   "0.2",
+   "3",
+   "1"
+  ],
+  "mcAnswer": "1",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Calcium-Aluminium-Rich Inclusions: The Formation Interval Between Pb-Pb and Al-Mg Chronometers'. The result it reported gives a value for age PbPb Ma cai, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Calcium-Aluminium-Rich Inclusions: The Formation Interval Between Pb-Pb and Al-Mg Chronometers'. Its stated result: Headline result: cai anchor age PbPb Ma cai = 4567; cai interval at ratio 4p5e5 Myr cai = 0.1595; cai interval at ratio 1e5 Myr cai = 1.715; cai interval at ratio 5e6 Myr cai = 2.432; cai ratio after 1Myr cai = 1.997e-05; cai ratio after 3Myr cai = 2.888e-06 Operating principle: The aluminium-26 clock converts a ratio difference into a time through its 0.717 million year half-life, so a stated canonical initial ratio And here is that same result with the words stripped away — just the quantities standing in a row: age PbPb Ma cai = 4567; ratio 4p5e5 Myr cai = 0.1595; ratio 1e5 Myr cai = 1.715. Find age PbPb Ma cai in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Calcium-Aluminium-Rich Inclusions: The Formation Interval Between Pb-Pb and Al-Mg Chronometers' stated its result. (2) That result pairs names with values: age PbPb Ma cai = 4567; ratio 4p5e5 Myr cai = 0.1595; ratio 1e5 Myr cai = 1.715. (3) This question asks for the value paired with age PbPb Ma cai. (4) In that row, age PbPb Ma cai stands beside 4567 — so the answer the lesson gives is 4567. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Calcium-Aluminium-Rich Inclusions: The Formation Interval Between Pb-Pb and Al-Mg Chronometers' reported a number for age PbPb Ma cai. What number did it report?",
+  "kind": "number",
+  "answer": 4567.0,
+  "disp": "4567",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "3",
+   "1",
+   "0.2",
+   "4567"
+  ],
+  "mcAnswer": "4567",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Chondrule Density and Nebular Sorting: Size-Density Coupling and Stokes Numbers'. The result it reported gives a value for stopping time years chondrule, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Chondrule Density and Nebular Sorting: Size-Density Coupling and Stokes Numbers'. Its stated result: Headline result: stokes stopping time years chondrule = 0.0003139; stokes number 0p3mm droplet chondrule = 0.0003794; stokes drift speed m per s chondrule = 0.03794; stokes metal rich density kg per m3 chondrule = 5200; stokes metal rich St ratio over ferromagnesian chondrule = 1.576; stokes 1mm St chondrule = 0.0006323 Operating principle: The Epstein stopping time is proportional to droplet radius times density ove And here is that same result with the words stripped away — just the quantities standing in a row: stopping time years chondrule = 0.0003139; number 0p3mm droplet chondrule = 0.0003794; m per s chondrule = 0.03794. Find stopping time years chondrule in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Chondrule Density and Nebular Sorting: Size-Density Coupling and Stokes Numbers' stated its result. (2) That result pairs names with values: stopping time years chondrule = 0.0003139; number 0p3mm droplet chondrule = 0.0003794; m per s chondrule = 0.03794. (3) This question asks for the value paired with stopping time years chondrule. (4) In that row, stopping time years chondrule stands beside 0.0003139 — so the answer the lesson gives is 0.0003139. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Chondrule Density and Nebular Sorting: Size-Density Coupling and Stokes Numbers' reported a number for stopping time years chondrule. What number did it report?",
+  "kind": "number",
+  "answer": 0.0003139,
+  "disp": "0.0003139",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "1",
+   "0.2",
+   "3",
+   "0.0003139"
+  ],
+  "mcAnswer": "0.0003139",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Allende CAIs: Size, Abundance and Refractory Element Budget of CV3 Inclusions”. Its stated result is: Headline result: allende cai volume percent allende = 3; allende cai mass fraction percent allende = 2.431; allende representative inclusion mg allende = 97.18; allende inclusions per kg rock allende = 250.1; allende aluminium share from cai percent allende = 18.23; allende calcium share from cai pe (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “Allende CAIs: Size, Abundance and Refractory Element Budget of CV3 Inclusions”. Its stated result is: Headline result: allende cai volume percent allende = 3; allende cai mass fraction percent allende = 2.431; allende representative inclusion mg allende = 97.18; allende inclusions per kg rock allende = 250.1; allende aluminium share from cai percent allende = 18.23; allende calcium share from cai pe (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]
