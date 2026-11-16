@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'Arcade Cooling After the Bastille Day Flare of 14 July 2000: Loop Lengths, Densities and the Two-Stage Decay'. The result it reported gives a value for early loop conductive s, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Arcade Cooling After the Bastille Day Flare of 14 July 2000: Loop Lengths, Densities and the Two-Stage Decay'. Its stated result: Headline result: early loop conductive s = 10.42; early loop radiative s = 4143; early combined s = 10.4; late loop conductive s = 1334; late loop radiative s = 1381; late combined s = 678.6 Operating principle: in a growing post-eruption arcade the cooling time lengthens with loop length and falls with density, so the observed two-stage decay, fast while the loops are short and hot, slow once they are long and cool, And here is that same result with the words stripped away — just the quantities standing in a row: early loop conductive s = 10.42; early loop radiative s = 4143; early combined s = 10.4. Find early loop conductive s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Arcade Cooling After the Bastille Day Flare of 14 July 2000: Loop Lengths, Densities and the Two-Stage Decay' stated its result. (2) That result pairs names with values: early loop conductive s = 10.42; early loop radiative s = 4143; early combined s = 10.4. (3) This question asks for the value paired with early loop conductive s. (4) In that row, early loop conductive s stands beside 10.42 — so the answer the lesson gives is 10.42. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Arcade Cooling After the Bastille Day Flare of 14 July 2000: Loop Lengths, Densities and the Two-Stage Decay' reported a number for early loop conductive s. What number did it report?",
+  "kind": "number",
+  "answer": 10.42,
+  "disp": "10.42",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "10.42",
+   "1.2e+16",
+   "1e+34",
+   "10000000000"
+  ],
+  "mcAnswer": "10.42",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Energy Storage for the Great Flare of AD Leonis, 12 April 1985: Starspot Area, Field Strength and the Magnetic Reservoir'. The result it reported gives a value for radiated energy erg, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Energy Storage for the Great Flare of AD Leonis, 12 April 1985: Starspot Area, Field Strength and the Magnetic Reservoir'. Its stated result: Headline result: radiated energy erg = 1e+34; area at 2kG cm2 = 1.58e+19; area at 3kG cm2 = 9.204e+18; area at 4kG cm2 = 6.272e+18; fraction at 3kG of surface = 0.0008709; stellar surface area cm2 = 1.057e+22 Operating principle: a flare cannot radiate more energy than its magnetic reservoir stores, and the reservoir of an active region scales as the field energy density times a volume set by the spot area, so a meas And here is that same result with the words stripped away — just the quantities standing in a row: radiated energy erg = 1e+34; area at 2kG cm2 = 1.58e+19; area at 3kG cm2 = 9.204e+18. Find radiated energy erg in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Energy Storage for the Great Flare of AD Leonis, 12 April 1985: Starspot Area, Field Strength and the Magnetic Reservoir' stated its result. (2) That result pairs names with values: radiated energy erg = 1e+34; area at 2kG cm2 = 1.58e+19; area at 3kG cm2 = 9.204e+18. (3) This question asks for the value paired with radiated energy erg. (4) In that row, radiated energy erg stands beside 1e+34 — so the answer the lesson gives is 1e+34. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Energy Storage for the Great Flare of AD Leonis, 12 April 1985: Starspot Area, Field Strength and the Magnetic Reservoir' reported a number for radiated energy erg. What number did it report?",
+  "kind": "number",
+  "answer": 1e+34,
+  "disp": "1e+34",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "1.2e+16",
+   "10000000000",
+   "10.42",
+   "1e+34"
+  ],
+  "mcAnswer": "1e+34",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Flare Versus Ejection on 28 October 2003: The Kinetic Energy Budget of the Halloween Halo CME'. The result it reported gives a value for cme mass g, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Flare Versus Ejection on 28 October 2003: The Kinetic Energy Budget of the Halloween Halo CME'. Its stated result: Headline result: cme mass g = 1.2e+16; cme speed km s = 2459; kinetic energy erg = 3.628e+32; flare radiated energy erg = 4.3e+32; ratio kinetic to radiated = 0.8437; projection corrected speed km s = 2893 Operating principle: an ejection's kinetic energy follows from its mass and speed alone, and setting that energy beside the flare's radiated energy from the same event measures how the released magnetic energy was And here is that same result with the words stripped away — just the quantities standing in a row: cme mass g = 1.2e+16; cme speed km s = 2459; kinetic energy erg = 3.628e+32. Find cme mass g in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Flare Versus Ejection on 28 October 2003: The Kinetic Energy Budget of the Halloween Halo CME' stated its result. (2) That result pairs names with values: cme mass g = 1.2e+16; cme speed km s = 2459; kinetic energy erg = 3.628e+32. (3) This question asks for the value paired with cme mass g. (4) In that row, cme mass g stands beside 1.2e+16 — so the answer the lesson gives is 1.2e+16. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Flare Versus Ejection on 28 October 2003: The Kinetic Energy Budget of the Halloween Halo CME' reported a number for cme mass g. What number did it report?",
+  "kind": "number",
+  "answer": 1.2e+16,
+  "disp": "1.2e+16",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "10.42",
+   "10000000000",
+   "1e+34",
+   "1.2e+16"
+  ],
+  "mcAnswer": "1.2e+16",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Loop Cooling in the X2.2 Flare of 15 February 2011: Conductive and Radiative Times Against the Observed Decay'. The result it reported gives a value for loop density cm3, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Loop Cooling in the X2.2 Flare of 15 February 2011: Conductive and Radiative Times Against the Observed Decay'. Its stated result: Headline result: loop density cm3 = 10000000000; loop half length cm = 3000000000; loop temperature K = 12000000; conductive cooling time s = 74.75; radiative cooling time s = 2486; combined cooling time s = 72.57 Operating principle: a hot flare loop cools by thermal conduction to the chromosphere and by radiation, with the conductive time falling steeply as temperature rises and the radiative time taking over as th And here is that same result with the words stripped away — just the quantities standing in a row: loop density cm3 = 10000000000; loop half length cm = 3000000000; loop temperature K = 12000000. Find loop density cm3 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Loop Cooling in the X2.2 Flare of 15 February 2011: Conductive and Radiative Times Against the Observed Decay' stated its result. (2) That result pairs names with values: loop density cm3 = 10000000000; loop half length cm = 3000000000; loop temperature K = 12000000. (3) This question asks for the value paired with loop density cm3. (4) In that row, loop density cm3 stands beside 10000000000 — so the answer the lesson gives is 10000000000. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Loop Cooling in the X2.2 Flare of 15 February 2011: Conductive and Radiative Times Against the Observed Decay' reported a number for loop density cm3. What number did it report?",
+  "kind": "number",
+  "answer": 10000000000.0,
+  "disp": "10000000000",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "1e+34",
+   "10.42",
+   "10000000000",
+   "1.2e+16"
+  ],
+  "mcAnswer": "10000000000",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Loop Length From Decay: The 2016 Superflare on Proxima Centauri and the Reale Scaling Law'. The result it reported gives a value for decay time s, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Loop Length From Decay: The 2016 Superflare on Proxima Centauri and the Reale Scaling Law'. Its stated result: Headline result: decay time s = 400; peak temperature K = 20000000; heating factor F = 1.5; loop half length cm = 3.223e+09; loop half length 1e9cm = 3.223; stellar radius cm = 10700000000 Operating principle: for a freely cooling flare loop the decay time and peak temperature together determine the loop length through the thermodynamic scaling law calibrated on solar and stellar flares, provided the decay is not sus And here is that same result with the words stripped away — just the quantities standing in a row: decay time s = 400; peak temperature K = 20000000; heating factor F = 1.5. Find decay time s in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Loop Length From Decay: The 2016 Superflare on Proxima Centauri and the Reale Scaling Law' stated its result. (2) That result pairs names with values: decay time s = 400; peak temperature K = 20000000; heating factor F = 1.5. (3) This question asks for the value paired with decay time s. (4) In that row, decay time s stands beside 400 — so the answer the lesson gives is 400. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Loop Length From Decay: The 2016 Superflare on Proxima Centauri and the Reale Scaling Law' reported a number for decay time s. What number did it report?",
+  "kind": "number",
+  "answer": 400.0,
+  "disp": "400",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "400",
+   "10.42",
+   "1e+34",
+   "1.2e+16"
+  ],
+  "mcAnswer": "400",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Arcade Cooling After the Bastille Day Flare of 14 July 2000: Loop Lengths, Densities and the Two-Stage Decay”. Its stated result is: Headline result: early loop conductive s = 10.42; early loop radiative s = 4143; early combined s = 10.4; late loop conductive s = 1334; late loop radiative s = 1381; late combined s = 678.6 Operating principle: in a growing post-eruption arcade the cooling time lengthens with loop length and falls (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “Arcade Cooling After the Bastille Day Flare of 14 July 2000: Loop Lengths, Densities and the Two-Stage Decay”. Its stated result is: Headline result: early loop conductive s = 10.42; early loop radiative s = 4143; early combined s = 10.4; late loop conductive s = 1334; late loop radiative s = 1381; late combined s = 678.6 Operating principle: in a growing post-eruption arcade the cooling time lengthens with loop length and falls (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]
