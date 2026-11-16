@@ -1,0 +1,213 @@
+[
+ {
+  "q": "What does 'Tengo hambre' mean?",
+  "kind": "exact",
+  "answer": "I am hungry",
+  "accept": [
+   "I have hunger"
+  ],
+  "choices": [
+   "I am hungry",
+   "I am thirsty",
+   "I want coffee",
+   "it is delicious"
+  ],
+  "mcAnswer": "I am hungry",
+  "teach": "From the lesson: Spanish says you have hunger, the way you have a coat or a key.",
+  "teach2": "From the lesson, in Carmen's words: 'Tengo hambre — I am hungry. Word for word, I have hunger. Tengo means I have. Hambre means hunger.' Another way to hold it: tengo is I have, and hambre is the hunger you are carrying.",
+  "walk": "Walk it through: (1) The lesson starts in your body, before the restaurant. (2) Tengo means I have, and hambre means hunger. (3) I have hunger is how Spanish says: I am hungry.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'Tengo sed' mean?",
+  "kind": "exact",
+  "answer": "I am thirsty",
+  "accept": [
+   "I have thirst"
+  ],
+  "choices": [
+   "I am thirsty",
+   "I am hungry",
+   "I want water",
+   "the check, please"
+  ],
+  "mcAnswer": "I am thirsty",
+  "teach": "From the lesson: thirst is built the exact same way as hunger.",
+  "teach2": "From the lesson: 'Tengo sed — I am thirsty. I have thirst. Sed means thirst. Tengo sed. Notice sed is a short word, one clean beat: sed.' From the lesson, in Carmen's words: 'Tengo sed — I am thirsty. I have thirst. Sed means thirst. Tengo sed.' Another way: hambre and sed are brothers — tengo carries both, hunger and thirst.",
+  "walk": "Walk it through: (1) Tengo hambre means I am hungry, built on tengo, I have. (2) Sed is the word Carmen defines as thirst. (3) So tengo sed means: I am thirsty.",
+  "rank": 1
+ },
+ {
+  "q": "What does the word 'quiero' mean?",
+  "kind": "exact",
+  "answer": "I want",
+  "accept": [
+   "want"
+  ],
+  "choices": [
+   "I want",
+   "I have",
+   "it is",
+   "for her"
+  ],
+  "mcAnswer": "I want",
+  "teach": "From the lesson: quiero is the verb that runs every restaurant on earth.",
+  "teach2": "From the lesson, in Carmen's words: 'Quiero — I want. Quiero. It comes from querer — to want, and also to love' Another way: quiero is the handle — attach any dish or drink to it and you have an order.",
+  "walk": "Walk it through: (1) The lesson gives one strong handle for ordering. (2) That handle is quiero, from querer. (3) Quiero means: I want.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'el agua' mean?",
+  "kind": "exact",
+  "answer": "the water",
+  "accept": [
+   "water"
+  ],
+  "choices": [
+   "the water",
+   "the coffee",
+   "the rice",
+   "the chicken"
+  ],
+  "mcAnswer": "the water",
+  "teach": "From the lesson: the first thing on the table, in any country where the sun is hot.",
+  "teach2": "From the lesson, in Carmen's words: 'El agua — the water. Agua means water. And I know, your eye just caught something' Another way: agua lives inside words like aquarium — the water is right there in it.",
+  "walk": "Walk it through: (1) Carmen puts the first drink on the table before anything else. (2) Agua is the word she defines as water. (3) El agua means: the water.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'sin hielo' mean?",
+  "kind": "exact",
+  "answer": "without ice",
+  "accept": [
+   "no ice"
+  ],
+  "choices": [
+   "without ice",
+   "with chicken",
+   "for me",
+   "the water"
+  ],
+  "mcAnswer": "without ice",
+  "teach": "From the lesson: the detail that separates ordering like you live there from pointing at a picture.",
+  "teach2": "From the lesson, in Carmen's words: 'Sin hielo — without ice. Sin means without. Hielo means ice. And there is our silent h again' Another way: sin is without, hielo is ice — hielo sounds like YEH-loh, its h silent.",
+  "walk": "Walk it through: (1) Sin means without — the lesson defines it directly. (2) Hielo means ice. (3) Together, sin hielo means: without ice.",
+  "rank": 1
+ },
+ {
+  "q": "What is 'el desayuno'?",
+  "kind": "exact",
+  "answer": "breakfast",
+  "accept": [
+   "the breakfast"
+  ],
+  "choices": [
+   "breakfast",
+   "the check",
+   "the chicken",
+   "the coffee"
+  ],
+  "mcAnswer": "breakfast",
+  "teach": "From the lesson: the first meal of the day, the fast-breaker.",
+  "teach2": "From the lesson, in Carmen's words: 'El desayuno — breakfast. Desayuno means breakfast. It is a longer word, so let us walk it in pieces' Another way: desayuno and breakfast tell the same story — both mean breaking the night's fast.",
+  "walk": "Walk it through: (1) Carmen pauses the drinks to put the first meal of the day on the table. (2) That meal is el desayuno. (3) El desayuno is: breakfast.",
+  "rank": 2
+ },
+ {
+  "q": "Bill wants the famous plate, rice with chicken, and wants to order it politely. What should he say?",
+  "kind": "exact",
+  "answer": "Quiero arroz con pollo, por favor",
+  "accept": [
+   "I want rice with chicken, please"
+  ],
+  "choices": [
+   "Quiero arroz con pollo, por favor",
+   "Quiero agua sin hielo, por favor",
+   "La cuenta, por favor",
+   "Está delicioso"
+  ],
+  "mcAnswer": "Quiero arroz con pollo, por favor",
+  "teach": "From the lesson: quiero, the thing, por favor — the whole machine in one breath.",
+  "teach2": "From the lesson, in Carmen's words: 'Quiero arroz con pollo, por favor — I want rice with chicken, please. Say it with me, slowly first' Another way: arroz con pollo is rice with chicken, quiero asks for it, and por favor keeps it gentlemanly.",
+  "walk": "Walk it through: (1) Quiero means I want, and por favor is the polite ending. (2) The famous plate is arroz con pollo, rice with chicken. (3) Joined in the lesson's order, the order is: Quiero arroz con pollo, por favor.",
+  "rank": 2
+ },
+ {
+  "q": "The first bite is wonderful, and Bill wants to pay the cook the compliment Carmen taught him. What does 'Está delicioso' mean?",
+  "kind": "exact",
+  "answer": "it is delicious",
+  "accept": [
+   "delicious",
+   "It is delicious"
+  ],
+  "choices": [
+   "it is delicious",
+   "I am hungry",
+   "for her",
+   "the check, please"
+  ],
+  "mcAnswer": "it is delicious",
+  "teach": "From the lesson: the sentence that turns a customer into a guest.",
+  "teach2": "From the lesson, in Carmen's words: 'Está delicioso — it is delicious. Está means it is — the is for how something is right now, its condition in this moment. Delicioso means delicious.' Another way: está describes how the food is right now, and delicioso is the cook's favorite word to hear.",
+  "walk": "Walk it through: (1) Está means it is, for how something is in this moment. (2) Delicioso means delicious. (3) Está delicioso means: it is delicious.",
+  "rank": 2
+ },
+ {
+  "q": "Bill is ordering drinks for the table. Jillian takes her water without ice. What line orders her water the way she takes it?",
+  "kind": "exact",
+  "answer": "Para ella, agua sin hielo, por favor",
+  "accept": [
+   "for her, water without ice, please"
+  ],
+  "choices": [
+   "Para ella, agua sin hielo, por favor",
+   "Para mí, café",
+   "Quiero café, por favor",
+   "La cuenta, por favor"
+  ],
+  "mcAnswer": "Para ella, agua sin hielo, por favor",
+  "teach": "From the lesson: para ella is the signpost that tells the waiter where her glass belongs.",
+  "teach2": "From the lesson, in Carmen's words: 'Para ella, agua sin hielo, por favor — for her, water without ice, please. Because you know how she takes it, Bill.' Another way: para ella means for her, agua is water, and sin hielo handles the ice.",
+  "walk": "Walk it through: (1) Para ella means for her — the order is for Jillian. (2) Agua is water, and she takes it sin hielo, without ice. (3) The full line is: Para ella, agua sin hielo, por favor.",
+  "rank": 2
+ },
+ {
+  "q": "The meal is finished and Bill is ready to settle up like a gentleman. What does he say?",
+  "kind": "exact",
+  "answer": "La cuenta, por favor",
+  "accept": [
+   "the check, please"
+  ],
+  "choices": [
+   "La cuenta, por favor",
+   "Está delicioso",
+   "Tengo hambre",
+   "Quiero desayuno"
+  ],
+  "mcAnswer": "La cuenta, por favor",
+  "teach": "From the lesson: the last scene of every good meal has its own line.",
+  "teach2": "From the lesson, in Carmen's words: 'La cuenta, por favor — the check, please. Cuenta means the check, the bill, the account of the meal.' Another way: cuenta is family to count and account — la cuenta is the counting of the meal.",
+  "walk": "Walk it through: (1) Tengo hambre opens a meal; it cannot close one. (2) Cuenta means the check, the account of the meal. (3) With por favor keeping it polite, the closing line is: La cuenta, por favor.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words: what does 'tengo' literally mean, and how does Carmen use it to build both the hunger sentence and the thirst sentence?",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "have"
+   ],
+   [
+    "hunger"
+   ],
+   [
+    "thirst"
+   ]
+  ],
+  "need": 2,
+  "teach": "From the lesson: tengo is the frame, and hambre and sed are what it carries.",
+  "teach2": "From the lesson, in Carmen's words: 'Tengo plus a thing you feel in your body equals how you say you feel it. Tengo hambre, tengo sed.'",
+  "walk": "Walk it through: (1) Tengo means I have. (2) Hambre is hunger and sed is thirst. (3) So Spanish reports both feelings the same way: I have hunger, I have thirst.",
+  "rank": 3
+ }
+]

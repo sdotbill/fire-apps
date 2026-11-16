@@ -1,0 +1,220 @@
+[
+ {
+  "q": "Carmen walks Bill through a house room by room. What does 'La cocina' mean?",
+  "kind": "exact",
+  "answer": "the kitchen",
+  "accept": [
+   "kitchen"
+  ],
+  "choices": [
+   "the kitchen",
+   "the bathroom",
+   "the living room",
+   "the street"
+  ],
+  "mcAnswer": "the kitchen",
+  "teach": "From the lesson: the room Carmen calls the heart with appliances.",
+  "teach2": "From the lesson, in Carmen's words: 'From the sala, every house hunter on earth walks to the same place next, because the kitchen tells the truth about a house: La cocina — the kitchen.' Another way to hold it: la cocina is where the coffee happens in the morning — it is the kitchen.",
+  "walk": "Walk it through: (1) The lesson walks the house in order: door, living room, then the room that tells the truth about a house. (2) That room is la cocina. (3) Carmen translates it on sight: the kitchen.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'El baño' mean?",
+  "kind": "exact",
+  "answer": "the bathroom",
+  "accept": [
+   "bathroom"
+  ],
+  "choices": [
+   "the bathroom",
+   "the kitchen",
+   "the bedroom",
+   "the door"
+  ],
+  "mcAnswer": "the bathroom",
+  "teach": "From the lesson: the small room down the hall, from the word for a bath.",
+  "teach2": "From the lesson, in Carmen's words: 'here is the small room every guest asks about and every buyer checks twice: El baño — the bathroom.' Another way: it is the room every guest asks about in a new house — the bathroom.",
+  "walk": "Walk it through: (1) Baño comes from the word for a bath. (2) The room for washing and getting ready is the bathroom. (3) So el baño means: the bathroom.",
+  "rank": 1
+ },
+ {
+  "q": "Which Spanish word from the lesson means 'big'?",
+  "kind": "exact",
+  "answer": "Grande",
+  "accept": [
+   "grande"
+  ],
+  "choices": [
+   "Grande",
+   "Pequeño",
+   "Nuevo",
+   "Aquí"
+  ],
+  "mcAnswer": "Grande",
+  "teach": "From the lesson: the describing words that ride on la casa.",
+  "teach2": "From the lesson, in Carmen's words: 'Grande — big, large. Say it with me: Grande. Una casa grande — a big house.' Another way: una casa grande is a big house — grande is doing the bigness.",
+  "walk": "Walk it through: (1) The lesson teaches three describing words: grande, pequeño, nuevo. (2) Pequeño is small and nuevo is new. (3) The one left, meaning big, is grande.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'La calle' mean?",
+  "kind": "exact",
+  "answer": "the street",
+  "accept": [
+   "street"
+  ],
+  "choices": [
+   "the street",
+   "the window",
+   "the house",
+   "the door"
+  ],
+  "mcAnswer": "the street",
+  "teach": "From the lesson: where the house meets the world.",
+  "teach2": "From the lesson, in Carmen's words: 'Now we step outside, because a house is not only its rooms, and you know this in your bones from every place you have ever lived: La calle — the street.' Another way: una calle tranquila is a quiet street — calle is the street itself.",
+  "walk": "Walk it through: (1) After the rooms, the lesson steps outside the house. (2) Outside is la calle, where the neighbors and the quiet or the noise are. (3) La calle means: the street.",
+  "rank": 1
+ },
+ {
+  "q": "Bill is at a viewing and needs the bathroom. What question does Carmen teach him to ask?",
+  "kind": "exact",
+  "answer": "¿Dónde está el baño?",
+  "accept": [
+   "Donde esta el bano"
+  ],
+  "choices": [
+   "¿Dónde está el baño?",
+   "La cocina está aquí",
+   "El baño es nuevo",
+   "Busco una casa"
+  ],
+  "mcAnswer": "¿Dónde está el baño?",
+  "teach": "From the lesson: ¿dónde está? plus a room asks where anything is.",
+  "teach2": "From the lesson, in Carmen's words: '¿Dónde está el baño? — where is the bathroom? — the question every human asks in every new house, and now you ask it in Spanish.' Another way: dónde asks where, está says is-located, and el baño is the room he needs.",
+  "walk": "Walk it through: (1) To ask where something is, the lesson uses ¿dónde está? (2) The bathroom is el baño. (3) Joined, the question is: ¿Dónde está el baño?",
+  "rank": 2
+ },
+ {
+  "q": "What does 'Necesito una cocina grande' mean?",
+  "kind": "exact",
+  "answer": "I need a big kitchen",
+  "accept": [
+   "I need a big kitchen"
+  ],
+  "choices": [
+   "I need a big kitchen",
+   "I am looking for a big house",
+   "the kitchen is here",
+   "the kitchen is small"
+  ],
+  "mcAnswer": "I need a big kitchen",
+  "teach": "From the lesson: necesito, the first engine — I need.",
+  "teach2": "From the lesson, in Carmen's words: 'Necesito una cocina grande — I need a big kitchen. Say it with me: Necesito una cocina grande.' Another way: it is the firm engine, necesito, stating a need that is not negotiable.",
+  "walk": "Walk it through: (1) Necesito means I need, with the I hidden inside the verb. (2) Una cocina is a kitchen and grande is big. (3) The whole sentence means: I need a big kitchen.",
+  "rank": 2
+ },
+ {
+  "q": "Carmen teaches two brother words: es tells what a thing is like. Which word tells where a thing is?",
+  "kind": "exact",
+  "answer": "está",
+  "accept": [
+   "esta"
+  ],
+  "choices": [
+   "está",
+   "es",
+   "grande",
+   "aquí"
+  ],
+  "mcAnswer": "está",
+  "teach": "From the lesson: es for nature, está for place.",
+  "teach2": "From the lesson, in Carmen's words: 'Está is its brother, and está answers a different question: where is it, and how is it right now?' Another way: la casa está en la calle — the house is on the street — está carries the place.",
+  "walk": "Walk it through: (1) La casa es grande describes what the house is like — that is es. (2) Saying where the house stands is a different job. (3) The brother word that answers where is: está.",
+  "rank": 2
+ },
+ {
+  "q": "An agent points down the street and answers with 'allí'. What does 'allí' mean?",
+  "kind": "exact",
+  "answer": "there",
+  "accept": [
+   "there"
+  ],
+  "choices": [
+   "there",
+   "here",
+   "big",
+   "new"
+  ],
+  "mcAnswer": "there",
+  "teach": "From the lesson: the two faithful answers to ¿dónde está?",
+  "teach2": "From the lesson, in Carmen's words: 'And Allí — there. Say it: Allí. Also leaning on the end: ah-YEE, with that double l singing its soft y again.' Another way: la cocina está aquí is near; el baño está allí is over there.",
+  "walk": "Walk it through: (1) ¿Dónde está? is answered with one of two small words. (2) Aquí means here, close to the speaker. (3) The other one, pointing away, allí, means: there.",
+  "rank": 2
+ },
+ {
+  "q": "Bill walks into an agent's office to open the conversation and say he is looking for a house. Which line does Carmen give him?",
+  "kind": "exact",
+  "answer": "Busco una casa",
+  "accept": [
+   "busco una casa"
+  ],
+  "choices": [
+   "Busco una casa",
+   "Necesito una cocina grande",
+   "El baño está allí",
+   "¿Dónde está la puerta?"
+  ],
+  "mcAnswer": "Busco una casa",
+  "teach": "From the lesson: busco, the hunter's engine, opens a search.",
+  "teach2": "From the lesson, in Carmen's words: 'Busco una casa — I am looking for a house. Say it with me, like you are saying it to a real agent on a real morning: Busco una casa.' Another way: an agent hears busco and reaches for her keys — it is the opener.",
+  "walk": "Walk it through: (1) Carmen teaches two engines: necesito states a firm need, busco starts a search. (2) Opening a conversation with an agent calls for the search engine. (3) That line is: Busco una casa.",
+  "rank": 3
+ },
+ {
+  "q": "What is the full dream sentence Carmen most wants Bill to be able to say to any agent, without notes?",
+  "kind": "exact",
+  "answer": "Busco una casa grande en una calle tranquila",
+  "accept": [
+   "busco una casa grande en una calle tranquila"
+  ],
+  "choices": [
+   "Busco una casa grande en una calle tranquila",
+   "Necesito una cocina grande",
+   "La sala es grande",
+   "La cocina es pequeña, pero bonita"
+  ],
+  "mcAnswer": "Busco una casa grande en una calle tranquila",
+  "teach": "From the lesson: the whole sentence — the search, the size, and the street.",
+  "teach2": "From the lesson, in Carmen's words: 'Busco una casa grande en una calle tranquila — I am looking for a big house on a quiet street.' Another way: it is busco plus everything Bill and Jillian actually want, in one breath.",
+  "walk": "Walk it through: (1) The sentence needs the search engine, busco. (2) It needs the house described: una casa grande. (3) And the street it stands on: en una calle tranquila. Joined, it is: Busco una casa grande en una calle tranquila.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words: what is the difference Carmen teaches between necesito and busco, and when should Bill lead with each one?",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "need",
+    "firm",
+    "must"
+   ],
+   [
+    "search",
+    "looking",
+    "hunting",
+    "open"
+   ],
+   [
+    "conversation",
+    "opening",
+    "line",
+    "matters"
+   ]
+  ],
+  "need": 2,
+  "teach": "From the lesson: two engines — one states, one searches.",
+  "teach2": "From the lesson, in Carmen's words: 'Necesito states a need — it is firm, it is about what must be true. Busco starts a search — it is open, it is about what you are hunting, and it invites the other person to hunt with you.'",
+  "walk": "Walk it through: (1) Necesito states a need — firm, about what must be true; lead with it when drawing a line that matters. (2) Busco starts a search — open, inviting the other person to hunt with you. (3) So: busco opens conversations; necesito states what is not negotiable.",
+  "rank": 3
+ }
+]

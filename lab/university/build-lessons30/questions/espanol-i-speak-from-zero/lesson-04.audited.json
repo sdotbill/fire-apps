@@ -1,0 +1,241 @@
+[
+ {
+  "accept": [
+   "company",
+   "the company"
+  ],
+  "answer": "the company",
+  "choices": [
+   "the office",
+   "the phone",
+   "the work",
+   "the company"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the company",
+  "q": "What does 'La empresa' mean?",
+  "rank": 1,
+  "teach": "From the lesson: empresa comes from an old word for an undertaking — the thing a man takes on with both hands.",
+  "teach2": "From the lesson, in Carmen's words: 'La empresa — the company, the business as a whole, the thing you built.' Another way to hold it: empresa comes from an old word for an undertaking — the thing a man takes on with both hands",
+  "walk": "Walk it through: (1) Carmen opens with the biggest word of the day, the house everything else lives in. (2) That word is la empresa. (3) It means: the company."
+ },
+ {
+  "accept": [
+   "business",
+   "the business"
+  ],
+  "answer": "the business",
+  "choices": [
+   "the meeting",
+   "the clients",
+   "the computer",
+   "the business"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the business",
+  "q": "What does 'El negocio' mean?",
+  "rank": 1,
+  "teach": "From the lesson: if empresa is the house, negocio is the work that happens inside the house — the business in motion.",
+  "teach2": "From the lesson, in Carmen's words: 'El negocio — the business, the deal, the work of making a living. El negocio.' Another way to hold it: if empresa is the house, negocio is the work that happens inside the house — the business in motion",
+  "walk": "Walk it through: (1) The lesson gives two big words: empresa for the company as a whole. (2) Its everyday brother is el negocio. (3) Negocio means: the business."
+ },
+ {
+  "accept": [
+   "clients",
+   "the clients",
+   "the customers"
+  ],
+  "answer": "the clients",
+  "choices": [
+   "the family",
+   "the office",
+   "the work",
+   "the clients"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the clients",
+  "q": "What does 'Los clientes' mean?",
+  "rank": 1,
+  "teach": "From the lesson: clientes and clients are cousins — the same word wearing Spanish clothes — and they are Bill's people at work.",
+  "teach2": "From the lesson, in Carmen's words: 'Los clientes — the clients, the customers, the people who trust you with their money and their name.' Another way to hold it: clientes and clients are cousins — the same word wearing Spanish clothes — and they are Bill's people at work",
+  "walk": "Walk it through: (1) A company is people, and the lesson names the people on the other side of the desk. (2) Their word sounds almost like its English cousin. (3) Los clientes means: the clients."
+ },
+ {
+  "accept": [
+   "work",
+   "the work",
+   "the job"
+  ],
+  "answer": "the work",
+  "choices": [
+   "the business",
+   "the call",
+   "the mail",
+   "the work"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the work",
+  "q": "What does 'El trabajo' mean?",
+  "rank": 1,
+  "teach": "From the lesson: trabajo is a word with sweat in it — the labor, the job, the whole working life.",
+  "teach2": "From the lesson, in Carmen's words: 'El trabajo — the work, the job. El trabajo. Say it: El trabajo. Trabajo is a word with sweat in it — in the old language underneath Spanish, its root carried the idea of effort, of something that costs you something.' Another way to hold it: trabajo is a word with sweat in it — the labor, the job, the whole working life",
+  "walk": "Walk it through: (1) Clientes and the company do something together: they work. (2) The word for that work itself is el trabajo. (3) It means: the work."
+ },
+ {
+  "accept": [
+   "Tengo una llamada"
+  ],
+  "answer": "Tengo una llamada",
+  "choices": [
+   "La computadora",
+   "El correo",
+   "Tengo una llamada",
+   "Una reunión"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Tengo una llamada",
+  "q": "Which phrase means 'I have a call'?",
+  "rank": 2,
+  "teach": "From the lesson: tengo is I have, from lesson three, and llamada is a call — llamar, to call, wearing a noun's clothes.",
+  "teach2": "From the lesson, in Carmen's words: 'Tengo una llamada — I have a call, I have a phone call. Tengo una llamada.' Another way to hold it: tengo is I have, from lesson three, and llamada is a call — llamar, to call, wearing a noun's clothes",
+  "walk": "Walk it through: (1) Tengo means I have — tengo dinero, I have money. (2) A call is una llamada. (3) Joined, I have a call is: Tengo una llamada."
+ },
+ {
+  "accept": [
+   "a meeting",
+   "meeting"
+  ],
+  "answer": "a meeting",
+  "choices": [
+   "an office",
+   "the email",
+   "a meeting",
+   "a call"
+  ],
+  "kind": "exact",
+  "mcAnswer": "a meeting",
+  "q": "What does 'Una reunión' mean?",
+  "rank": 2,
+  "teach": "From the lesson: reunión is built from unir, to unite — a bringing-together-again of people with work to do.",
+  "teach2": "From the lesson, in Carmen's words: 'Una reunión means a meeting — a gathering, a coming-together; reunión is built from unir, to unite, to bring together, with re- in front of it: a bringing-together-again.' Another way to hold it: reunión is built from unir, to unite — a bringing-together-again of people with work to do",
+  "walk": "Walk it through: (1) The lesson names the event that fills a businessman's calendar. (2) It is built on the idea of people coming together. (3) Una reunión means: a meeting."
+ },
+ {
+  "accept": [
+   "La computadora",
+   "computadora"
+  ],
+  "answer": "La computadora",
+  "choices": [
+   "El teléfono",
+   "El correo",
+   "La computadora",
+   "La oficina"
+  ],
+  "kind": "exact",
+  "mcAnswer": "La computadora",
+  "q": "Which Spanish word means 'the computer'?",
+  "rank": 2,
+  "teach": "From the lesson: computadora names the machine by what it does — the machine that computes — and it is where el correo lives.",
+  "teach2": "From the lesson: 'La computadora — the computer. La computadora. Say it: La computadora. Computadora, the machine that computes — longer than the English word, more honest too; it names the machine by what it does.' From the lesson, in Carmen's words: 'La computadora — the computer. La computadora. Say it: La computadora.' Another way to hold it: computadora names the machine by what it does — the machine that computes — and it is where el correo lives",
+  "walk": "Walk it through: (1) The lesson names the desk piece by piece: oficina, teléfono, correo. (2) The machine among them is la computadora. (3) It means: the computer."
+ },
+ {
+  "accept": [
+   "trabajo"
+  ],
+  "answer": "Trabajo",
+  "choices": [
+   "Vendo",
+   "Trabajar",
+   "Trabajo",
+   "Hablo"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Trabajo",
+  "q": "Carmen teaches the -ar verbs by feel: trabajar is 'to work.' What is 'I work'?",
+  "rank": 2,
+  "teach": "From the lesson: the -ar ending steps aside and the verb signs with -o — and the o means I.",
+  "teach2": "From the lesson, in Carmen's words: 'Trabajar, to work, becomes: Trabajo — I work. Trabajo. Say it with me, and stand up a little straighter when you say it, because it is a working man's sentence in one word: Trabajo.' Another way to hold it: the -ar ending steps aside and the verb signs with -o — and the o means I",
+  "walk": "Walk it through: (1) Trabajar is the full form, to work. (2) When Bill himself does the action, Carmen changes the ending to -o. (3) So I work is: Trabajo."
+ },
+ {
+  "accept": [
+   "I speak with the clients"
+  ],
+  "answer": "I speak with the clients",
+  "choices": [
+   "I sell",
+   "I speak with the clients",
+   "I work in my company",
+   "I have a call"
+  ],
+  "kind": "exact",
+  "mcAnswer": "I speak with the clients",
+  "q": "What does 'Hablo con los clientes' mean?",
+  "rank": 3,
+  "teach": "From the lesson: hablo is I speak — hablar wearing the -o — and con means with.",
+  "teach2": "From the lesson, in Carmen's words: 'Hablo con los clientes — I speak with the clients. Con means with. Hablo con los clientes.' Another way to hold it: hablo is I speak — hablar wearing the -o — and con means with",
+  "walk": "Walk it through: (1) Hablo is the I form of hablar, to speak. (2) Con means with, and los clientes are the clients. (3) Whole: I speak with the clients."
+ },
+ {
+  "accept": [
+   "I sell"
+  ],
+  "answer": "I sell",
+  "choices": [
+   "I buy",
+   "I sell",
+   "I work",
+   "I call"
+  ],
+  "kind": "exact",
+  "mcAnswer": "I sell",
+  "q": "What does 'Vendo' mean?",
+  "rank": 3,
+  "teach": "From the lesson: vender is to sell, from the second verb family, and vendo is the I form a businessman needs at a desk.",
+  "teach2": "From the lesson, in Carmen's words: 'Vendo — I sell. Vendo. Say it: Vendo. Hear the difference in the ending: the -ar family signs with -o after dropping -ar — trabajo — and vender signs vendo, I sell.' Another way to hold it: vender is to sell, from the second verb family, and vendo is the I form a businessman needs at a desk",
+  "walk": "Walk it through: (1) The lesson introduces vender, to sell. (2) Its I form is the seller's statement. (3) Vendo means: I sell."
+ },
+ {
+  "accept": [
+   "Mi ayudante se llama Dave"
+  ],
+  "answer": "Mi ayudante se llama Dave",
+  "choices": [
+   "Hablo español",
+   "Mi ayudante se llama Dave",
+   "Mi empresa se llama",
+   "Tengo una llamada"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Mi ayudante se llama Dave",
+  "q": "Which sentence does Carmen teach for naming Bill's assistant, Dave?",
+  "rank": 3,
+  "teach": "From the lesson: ayudante is the assistant, the helper — and se llama is the same naming shape that names Bill, Jillian, and the empresa.",
+  "teach2": "From the lesson, in Carmen's words: 'Mi ayudante se llama Dave — my assistant is called Dave, my helper's name is Dave.' Another way to hold it: ayudante is the assistant, the helper — and se llama is the same naming shape that names Bill, Jillian, and the empresa",
+  "walk": "Walk it through: (1) Ayudante means assistant or helper. (2) Se llama is the naming shape from lesson one. (3) The sentence is: Mi ayudante se llama Dave."
+ },
+ {
+  "keywords": [
+   [
+    "ending",
+    "ends"
+   ],
+   [
+    "o"
+   ],
+   [
+    "I",
+    "I form"
+   ]
+  ],
+  "kind": "keywords",
+  "need": 2,
+  "q": "In your own words: what happens to a verb like 'trabajar' when Bill is the one doing the action, and what does the new ending say?",
+  "rank": 3,
+  "teach": "From the lesson: the verb puts on the o, and the o is Bill's signature on the verb — it says: I am the one doing this.",
+  "teach2": "From the lesson, in Carmen's words: 'In Spanish, when a verb's full form ends in -ar, the I form ends in -o — and you do not need to recite that rule to anyone, ever.' Another way to hold it: the verb puts on the o, and the o is Bill's signature on the verb — it says: I am the one doing this",
+  "walk": "Walk it through: (1) Trabajar, hablar, llamar, comprar all end in -ar. (2) Carmen changes the ending for the I form. (3) The new ending is -o, and it means I: trabajo, hablo, llamo, compro."
+ }
+]

@@ -15,9 +15,9 @@
      showed the pre-fix plumbing class an hour after the fix
      shipped). The data fetches below carry the stamp as ?v=, so
      the JSON converges with the page. -->
-<meta name="x-uni-build" content="21c39142-20261116T0929">
+<meta name="x-uni-build" content="20c871c3-20261116T1432">
 <script>
-window.UNI_BUILD = "21c39142-20261116T0929";
+window.UNI_BUILD = "20c871c3-20261116T1432";
 (function(){
   var mine = window.UNI_BUILD;
   if(!mine || mine === "unstamped" || !window.fetch) return;
@@ -354,10 +354,11 @@ window.UNI_BUILD = "21c39142-20261116T0929";
 
 <div id="toast"></div>
 
-<script src="uni-core.js?v=21c39142-20261116T0929"></script>
-<script src="trainer-core.js?v=21c39142-20261116T0929"></script>
-<script src="gate-core.js?v=21c39142-20261116T0929"></script>
-<script src="gate-ui.js?v=21c39142-20261116T0929"></script>
+<script src="uni-core.js?v=20c871c3-20261116T1432"></script>
+<script src="trainer-core.js?v=20c871c3-20261116T1432"></script>
+<script src="gate-core.js?v=20c871c3-20261116T1432"></script>
+<script src="gate-ui.js?v=20c871c3-20261116T1432"></script>
+<script src="lessons30-ui.js?v=20c871c3-20261116T1432"></script>
 <script>
 (function () {
   'use strict';
@@ -851,6 +852,9 @@ window.UNI_BUILD = "21c39142-20261116T0929";
     var trActive = Trainer.enter(section, cls, prof);
     /* the general gate: every other class presents, asks, and checks */
     if (window.UniGate) UniGate.enter(section, cls, prof);
+    /* the 30-minute lesson room: where a class has full lessons, it
+       takes precedence and hides the trainer/gate boxes itself */
+    if (window.UniLessons30) UniLessons30.enter(section, cls, prof);
     if (trActive && cls.audio) {
       $('lessonIntro').textContent = 'The full recorded lesson, start ' +
         'to finish, is right here — but the trainer above is where the ' +
@@ -880,6 +884,7 @@ window.UNI_BUILD = "21c39142-20261116T0929";
     return false;
   }
   function startLessonFromAsk() {
+    if (window.UniLessons30 && UniLessons30.start()) return true;
     var tb = $('trainerBox');
     if (tb && tb.style.display !== 'none') {
       var b = $('trBegin');
@@ -908,7 +913,9 @@ window.UNI_BUILD = "21c39142-20261116T0929";
       log.appendChild(started);
       openPanel('lesson');
       var gb = document.getElementById('gateBox');
-      var anchor = (gb && gb.style.display !== 'none') ? gb : $('trainerBox');
+      var l30 = document.getElementById('lessons30Box');
+      var anchor = (l30 && l30.style.display !== 'none') ? l30
+        : (gb && gb.style.display !== 'none') ? gb : $('trainerBox');
       if (anchor) anchor.scrollIntoView({ block: 'start', behavior: 'smooth' });
       return;
     }
@@ -969,6 +976,7 @@ window.UNI_BUILD = "21c39142-20261116T0929";
     if (cur) { logClassSession(); cur = null; }
     Trainer.leave();
     if (window.UniGate) UniGate.leave();
+    if (window.UniLessons30) UniLessons30.leave();
     stopBoard();
     var audio = $('lessonAudio');
     audio.pause();

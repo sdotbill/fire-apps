@@ -1,0 +1,227 @@
+[
+ {
+  "q": "What does 'Ayer' mean?",
+  "kind": "exact",
+  "answer": "yesterday",
+  "accept": [
+   "Yesterday"
+  ],
+  "choices": [
+   "yesterday",
+   "last night",
+   "last week",
+   "tonight"
+  ],
+  "mcAnswer": "yesterday",
+  "teach": "From the lesson: the three flags that plant a story in the past.",
+  "teach2": "From the lesson, in Carmen's words: 'Ayer is the flag for the whole day that just finished: ayer trabajé — yesterday I worked — and we will build that sentence together very soon.' Another way: ayer opens the day in Bill's told story — ayer trabajé mucho.",
+  "walk": "Walk it through: (1) The lesson teaches three time flags: anoche, ayer, la semana pasada. (2) Anoche is the night and la semana pasada is the week. (3) The flag for the whole day that just finished, ayer, means: yesterday.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'Trabajé' mean?",
+  "kind": "exact",
+  "answer": "I worked",
+  "accept": [
+   "I worked"
+  ],
+  "choices": [
+   "I worked",
+   "I ate",
+   "I slept",
+   "I called"
+  ],
+  "mcAnswer": "I worked",
+  "teach": "From the lesson: trabajar in its past coat — the verb of Bill's day.",
+  "teach2": "From the lesson, in Carmen's words: 'Trabajar — to work. And in the finished past, wearing the same faithful é coat: Trabajé — I worked.' Another way: ayer trabajé mucho — yesterday I worked a lot.",
+  "walk": "Walk it through: (1) Trabajar means to work. (2) In the finished past, for I, it puts on the é coat and becomes trabajé. (3) Trabajé means: I worked.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'Anoche dormí bien' mean?",
+  "kind": "exact",
+  "answer": "last night I slept well",
+  "accept": [
+   "Last night I slept well"
+  ],
+  "choices": [
+   "last night I slept well",
+   "yesterday I worked a lot",
+   "I ate well",
+   "I got home"
+  ],
+  "mcAnswer": "last night I slept well",
+  "teach": "From the lesson: the night flag and the sleeping verb — a natural pair.",
+  "teach2": "From the lesson, in Carmen's words: 'Anoche dormí bien — last night I slept well. Say it: Anoche dormí bien.' Another way: anoche closes the day that ayer opened.",
+  "walk": "Walk it through: (1) Anoche means last night. (2) Dormí means I slept, and bien means well. (3) The whole sentence means: last night I slept well.",
+  "rank": 1
+ },
+ {
+  "q": "Which past-tense verb does Carmen call the rebel of the lesson?",
+  "kind": "exact",
+  "answer": "Fui",
+  "accept": [
+   "fui"
+  ],
+  "choices": [
+   "Fui",
+   "Hablé",
+   "Comí",
+   "Llegué"
+  ],
+  "mcAnswer": "Fui",
+  "teach": "From the lesson: the one verb that refuses every coat.",
+  "teach2": "From the lesson, in Carmen's words: 'Fui is fui — ir is the great irregular of Spanish, the rebel verb, and he is irregular in almost every language on earth' Another way: English did the same thing — go and went are strangers to each other too.",
+  "walk": "Walk it through: (1) Hablé, comí and llegué all wear a past coat with an accented ending. (2) One verb refuses both coats and goes its own way. (3) That rebel, from ir, to go, is: Fui.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'Llamé a Jillian' mean?",
+  "kind": "exact",
+  "answer": "I called Jillian",
+  "accept": [
+   "I called Jillian"
+  ],
+  "choices": [
+   "I called Jillian",
+   "I spoke with Jillian",
+   "I bought flowers",
+   "I got home"
+  ],
+  "mcAnswer": "I called Jillian",
+  "teach": "From the lesson: llamar — the verb of lesson one — in its past coat.",
+  "teach2": "From the lesson, in Carmen's words: 'Llamé a Jillian — I called Jillian. A — to, at — the little word Spanish puts before the person you called' Another way: hablé con Jillian is speaking with her; llamé is the call itself.",
+  "walk": "Walk it through: (1) Llamar means to call, and llamé is I called. (2) The little a stands before the person called, as a courtesy. (3) The sentence means: I called Jillian.",
+  "rank": 2
+ },
+ {
+  "q": "Carmen teaches that verbs ending in ar, for 'I' in the finished past, land on one strong accented ending. What is that ending?",
+  "kind": "exact",
+  "answer": "é",
+  "accept": [
+   "e",
+   "accented e"
+  ],
+  "choices": [
+   "é",
+   "í",
+   "ayer",
+   "fui"
+  ],
+  "mcAnswer": "é",
+  "teach": "From the lesson: the pattern your ear learns by noticing — hablé, llamé, trabajé, compré.",
+  "teach2": "From the lesson, in Carmen's words: 'if the verb ends in ar and the action is finished and it was you who did it, then the past coat ends in é, and your voice lands on that é like a period at the end of a sentence' Another way: the í ending belongs to the other family — comí, dormí.",
+  "walk": "Walk it through: (1) Hablé, llamé, trabajé and compré are all ar verbs in the past, for I. (2) They share one landing sound at the end. (3) That shared, accented ending is: é.",
+  "rank": 2
+ },
+ {
+  "q": "What does 'Comí bien' mean?",
+  "kind": "exact",
+  "answer": "I ate well",
+  "accept": [
+   "I ate well"
+  ],
+  "choices": [
+   "I ate well",
+   "I slept well",
+   "I worked a lot",
+   "I went home"
+  ],
+  "mcAnswer": "I ate well",
+  "teach": "From the lesson: comer in the í family — the eating and sleeping verbs.",
+  "teach2": "From the lesson, in Carmen's words: 'Comí bien — I ate well. Bien — well — from lesson nine's estoy bien — I am well. Say it: Comí bien.' Another way: ayer comí bien — yesterday I ate well.",
+  "walk": "Walk it through: (1) Comer means to eat, and in the past for I it becomes comí. (2) Bien means well. (3) Comí bien means: I ate well.",
+  "rank": 2
+ },
+ {
+  "q": "What does 'La semana pasada' mean?",
+  "kind": "exact",
+  "answer": "last week",
+  "accept": [
+   "Last week"
+  ],
+  "choices": [
+   "last week",
+   "last night",
+   "yesterday",
+   "the house"
+  ],
+  "mcAnswer": "last week",
+  "teach": "From the lesson: the widest of the three past flags.",
+  "teach2": "From the lesson, in Carmen's words: 'La semana pasada — last week. Semana — week. Pasada — past, gone by. La semana pasada: the week that has passed.' Another way: it stretches the same told story wider — la semana pasada trabajé mucho.",
+  "walk": "Walk it through: (1) Semana means week. (2) Pasada means past, gone by. (3) Together, la semana pasada means: last week.",
+  "rank": 2
+ },
+ {
+  "q": "Bill wants to tell Jillian that he got home yesterday. What does he say?",
+  "kind": "exact",
+  "answer": "Ayer llegué a casa",
+  "accept": [
+   "ayer llegué a casa"
+  ],
+  "choices": [
+   "Ayer llegué a casa",
+   "Fui a Key West",
+   "Compré flores",
+   "Anoche dormí bien"
+  ],
+  "mcAnswer": "Ayer llegué a casa",
+  "teach": "From the lesson: llegué a casa — the homecoming, the hinge of the day.",
+  "teach2": "From the lesson, in Carmen's words: 'Ayer llegué a casa — yesterday I got home. Say it: Ayer llegué a casa.' Another way: everything before this sentence is the world; everything after it is home.",
+  "walk": "Walk it through: (1) The flag for yesterday is ayer. (2) Llegué a casa means I got home. (3) Joined, his sentence is: Ayer llegué a casa.",
+  "rank": 3
+ },
+ {
+  "q": "Which sentence tells Jillian that Bill bought flowers for her?",
+  "kind": "exact",
+  "answer": "Compré flores para ti",
+  "accept": [
+   "compre flores para ti"
+  ],
+  "choices": [
+   "Compré flores para ti",
+   "Compré flores",
+   "Hablé con Jillian",
+   "Llamé a un cliente"
+  ],
+  "mcAnswer": "Compré flores para ti",
+  "teach": "From the lesson: his telling at her table — true sentences, aimed at the listener.",
+  "teach2": "From the lesson, in Carmen's words: 'Compré flores para ti — I bought flowers for you. Para ti — for you — ti, you, the word that turns a sentence toward the person listening.' Another way: compré is I bought, flores is flowers, and para ti puts them in her hands.",
+  "walk": "Walk it through: (1) Compré flores says he bought flowers, but not who they are for. (2) Para ti means for you — it turns the sentence toward Jillian. (3) The sentence that tells her is: Compré flores para ti.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words: what are the four moves Carmen teaches for building the nightly telling of your day?",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "flag",
+    "ayer",
+    "anoche",
+    "semana"
+   ],
+   [
+    "work",
+    "trabajé"
+   ],
+   [
+    "people",
+    "called",
+    "spoke",
+    "llamé",
+    "hablé"
+   ],
+   [
+    "home",
+    "llegué",
+    "slept",
+    "dormí"
+   ]
+  ],
+  "need": 2,
+  "teach": "From the lesson: a frame that holds any true day you pour into it.",
+  "teach2": "From the lesson, in Carmen's words: 'We will build your telling from your own true yesterday, in four moves, and I will show you the moves so you can rebuild it every night with whatever the day actually held.'",
+  "walk": "Walk it through: (1) Move one: plant the flag — ayer, anoche, or la semana pasada. (2) Move two: the work sentence — trabajé. (3) Move three: the people sentence — llamé or hablé. (4) Move four: the home sentence — llegué a casa, and anoche dormí bien if the night was kind.",
+  "rank": 3
+ }
+]

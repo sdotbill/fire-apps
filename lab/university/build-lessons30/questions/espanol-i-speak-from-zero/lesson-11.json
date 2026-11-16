@@ -1,0 +1,241 @@
+[
+ {
+  "q": "What does 'Voy a trabajar' mean?",
+  "kind": "exact",
+  "answer": "I am going to work",
+  "accept": [
+   "I am going to work"
+  ],
+  "choices": [
+   "I am going to work",
+   "I am going to call you",
+   "We are going to get married",
+   "I promise you that I am going to call you"
+  ],
+  "mcAnswer": "I am going to work",
+  "teach": "From the lesson: the first full future sentence Carmen builds with the key.",
+  "teach2": "From the lesson, in Carmen's words: 'Voy a trabajar — I am going to work. Trabajar — to work. You know this word's family already; trabajo — work, the job' Another way: trabajar is to work, and voy a in front of it points it at the future.",
+  "walk": "Walk it through: (1) Voy a is the engine — I am going to. (2) Trabajar means to work. (3) Joined, the sentence is: I am going to work.",
+  "rank": 1
+ },
+ {
+  "q": "Carmen calls 'voy a' the one key that opens the whole future. What does 'Voy a' mean?",
+  "kind": "exact",
+  "answer": "I am going to",
+  "accept": [
+   "I am going to"
+  ],
+  "choices": [
+   "I am going to",
+   "We are going to",
+   "I promise you",
+   "One day"
+  ],
+  "mcAnswer": "I am going to",
+  "teach": "From the lesson: the engine that every future sentence today is built on.",
+  "teach2": "From the lesson, in Carmen's words: 'Voy a… — I am going to… Voy comes from the verb ir — to go. I want you to feel that in your bones, because English does the exact same' Another way: voy comes from ir, to go — the same trick English uses in 'I am going to work.'",
+  "walk": "Walk it through: (1) Carmen teaches one pattern for everyday future plans. (2) Its first-person form starts every 'I' future sentence in the lesson. (3) That form, voy a, means: I am going to.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'El próximo año' mean?",
+  "kind": "exact",
+  "answer": "next year",
+  "accept": [
+   "next year"
+  ],
+  "choices": [
+   "next year",
+   "soon",
+   "one day",
+   "tonight"
+  ],
+  "mcAnswer": "next year",
+  "teach": "From the lesson: one of the time signposts for the future.",
+  "teach2": "From the lesson, in Carmen's words: 'El próximo año — next year. Próximo means next, the one coming; año means year. Vamos a casarnos el próximo año — we are going to' Another way: próximo means next, the one coming, and año means year.",
+  "walk": "Walk it through: (1) The lesson dresses the wedding sentence with a time signpost. (2) Próximo means next and año means year. (3) So el próximo año means: next year.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'Pronto' mean?",
+  "kind": "exact",
+  "answer": "soon",
+  "accept": [
+   "soon"
+  ],
+  "choices": [
+   "soon",
+   "tomorrow",
+   "next year",
+   "today"
+  ],
+  "mcAnswer": "soon",
+  "teach": "From the lesson: a warm time word that promises nearness, not a date.",
+  "teach2": "From the lesson, in Carmen's words: 'Pronto — soon. Pronto is a warm word; it does not promise a date, it promises nearness. Voy a llamarte pronto — I am' Another way: pronto does not promise a date; it promises nearness.",
+  "walk": "Walk it through: (1) Carmen adds three time words to your pocket in this lesson. (2) The first one promises nearness without naming a date. (3) That word, pronto, means: soon.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'Vamos a casarnos' mean?",
+  "kind": "exact",
+  "answer": "We are going to get married",
+  "accept": [
+   "We are going to get married"
+  ],
+  "choices": [
+   "We are going to get married",
+   "I am going to call you",
+   "I am going to work",
+   "We are going to eat"
+  ],
+  "mcAnswer": "We are going to get married",
+  "teach": "From the lesson: the sentence the whole lesson was built to give Bill.",
+  "teach2": "From the lesson, in Carmen's words: 'Vamos a casarnos — we are going to get married. Take it apart with me slowly, because every piece of it is doing honest work.' Another way: vamos a is the we form, and casarnos is to marry each other, with the two of you folded into the end of the word.",
+  "walk": "Walk it through: (1) Vamos a means we are going to — the we form of the key. (2) Casarnos means to get married, to marry each other. (3) Joined: we are going to get married.",
+  "rank": 1
+ },
+ {
+  "q": "What does the whole sentence 'Voy a llamarte' mean?",
+  "kind": "exact",
+  "answer": "I am going to call you",
+  "accept": [
+   "I am going to call you"
+  ],
+  "choices": [
+   "I am going to call you",
+   "I am going to work",
+   "We are going to travel",
+   "I promise you"
+  ],
+  "mcAnswer": "I am going to call you",
+  "teach": "From the lesson: the tender version of the pattern, for calling Jillian.",
+  "teach2": "From the lesson, in Carmen's words: 'Voy a llamarte — I am going to call you. Look closely, because something sweet just happened to llamar — to call. The little word' Another way: llamar is to call, and the little word te, you, rides at the end of it: llamarte, to call you.",
+  "walk": "Walk it through: (1) Voy a means I am going to. (2) Llamar means to call, and te attached at the end means you. (3) So voy a llamarte means: I am going to call you.",
+  "rank": 2
+ },
+ {
+  "q": "Carmen says the pattern is generous because of what happens to the action word after 'voy a'. What happens to it?",
+  "kind": "keywords",
+  "accept": [
+   "the action stays whole",
+   "stays whole",
+   "It stays whole"
+  ],
+  "teach": "From the lesson: the reason this future needs no chart of endings.",
+  "teach2": "From the lesson, in Carmen's words: 'after voy a, the action stays whole. Voy a, plus the whole action, equals the future. If you can say voy a, and you can name one action,' Another way: you never hunt through endings with this pattern — voy a plus the whole action equals the future.",
+  "walk": "Walk it through: (1) Carmen contrasts this pattern with the formal future and its special endings. (2) With voy a, the action — trabajar, llamar, comer — is used exactly as it is. (3) So the action: stays whole.",
+  "rank": 2,
+  "keywords": [
+   [
+    "whole",
+    "never changes"
+   ],
+   [
+    "infinitive",
+    "verb",
+    "action word"
+   ]
+  ],
+  "need": 2
+ },
+ {
+  "q": "Carmen calls one time phrase 'the dreamer of the family' — the one where big hopes without dates yet live. Which phrase is it?",
+  "kind": "exact",
+  "answer": "Un día",
+  "accept": [
+   "Un día",
+   "one day"
+  ],
+  "choices": [
+   "Un día",
+   "Pronto",
+   "El próximo año",
+   "Esta noche"
+  ],
+  "mcAnswer": "Un día",
+  "teach": "From the lesson: the signpost for someday hopes, not scheduled plans.",
+  "teach2": "From the lesson, in Carmen's words: 'Un día — one day, someday. Un día is where the big hopes live, the ones without dates yet. Un día, vamos a… — one day,' Another way: un día is a direction, not a date — the hopes live there until they earn a date.",
+  "walk": "Walk it through: (1) Pronto promises nearness and el próximo año names next year. (2) Carmen gives the undated hopes their own phrase and calls it the dreamer of the family. (3) That phrase is: un día.",
+  "rank": 2
+ },
+ {
+  "q": "Carmen talks about something Bill and Jillian will do together — getting married in Key West. Which form of the pattern does she use for 'we are going to'?",
+  "kind": "exact",
+  "answer": "Vamos a",
+  "accept": [
+   "vamos a",
+   "Vamos a casarnos"
+  ],
+  "choices": [
+   "Vamos a",
+   "Voy a",
+   "Te prometo",
+   "El próximo año"
+  ],
+  "mcAnswer": "Vamos a",
+  "teach": "From the lesson: the one small warning — the two engines, I and we.",
+  "teach2": "From the lesson, in Carmen's words: 'voy a is for I — one man, alone, speaking about himself — and vamos a is for we — two or more, the team speaking about itself. Voy a' Another way: mine alone takes voy a; ours takes vamos a — nobody marries himself.",
+  "walk": "Walk it through: (1) Carmen warns about mixing up the two engines. (2) Voy a is for I, one man speaking about himself. (3) The other engine is used when the subject is: we.",
+  "rank": 2
+ },
+ {
+  "q": "It is evening, and Bill wants to tell Jillian, in Spanish, that he is going to call her tonight. What is the exact line Carmen teaches for that?",
+  "kind": "exact",
+  "answer": "Voy a llamarte esta noche",
+  "accept": [
+   "Voy a llamarte esta noche"
+  ],
+  "choices": [
+   "Voy a llamarte esta noche",
+   "Voy a trabajar mañana",
+   "Vamos a casarnos",
+   "Vamos a comprar una casa"
+  ],
+  "mcAnswer": "Voy a llamarte esta noche",
+  "teach": "From the lesson: the nightly call, promised in one sentence.",
+  "teach2": "From the lesson, in Carmen's words: 'Voy a llamarte esta noche — I am going to call you tonight. Say it: Voy a llamarte esta noche. Bill, that is a complete,' Another way: esta noche, tonight, just climbs aboard at the end — the engine never changes.",
+  "walk": "Walk it through: (1) Calling her is voy a llamarte — I am going to call you. (2) Tonight is esta noche. (3) Joined, the line is: Voy a llamarte esta noche.",
+  "rank": 3
+ },
+ {
+  "q": "Bill wants to do more than make a plan — he wants to promise Jillian that he will be here for her. Which line does Carmen teach for that promise?",
+  "kind": "exact",
+  "answer": "Te prometo que voy a estar aquí",
+  "accept": [
+   "Te prometo que voy a estar aquí"
+  ],
+  "choices": [
+   "Te prometo que voy a estar aquí",
+   "Voy a trabajar hoy",
+   "Vamos a comer",
+   "Un día, vamos a viajar"
+  ],
+  "mcAnswer": "Te prometo que voy a estar aquí",
+  "teach": "From the lesson: a promise is a plan with prometo making it sacred.",
+  "teach2": "From the lesson, in Carmen's words: 'Te prometo que voy a estar aquí — I promise you that I am going to be here. Estar — to be, in the sense of being somewhere, being present —' Another way: estar is to be present somewhere, and aquí is here — being here when she comes home is the promise.",
+  "walk": "Walk it through: (1) A plain plan uses voy a on its own. (2) A promise adds te prometo que — I promise you that — in front of it. (3) To promise to be here, the line is: Te prometo que voy a estar aquí.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words: how does the 'voy a' pattern work, and why does Carmen call it one key that opens the whole future?",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "voy a"
+   ],
+   [
+    "whole",
+    "untouched"
+   ],
+   [
+    "future",
+    "action"
+   ]
+  ],
+  "need": 2,
+  "teach": "From the lesson: the capstone idea of Lesson 11, in your own words.",
+  "teach2": "From the lesson, in Carmen's words: 'Voy a, plus the whole action, equals the future. If you can say voy a, and you can name one action, you can make a future' Another way: one engine plus any whole action makes a future sentence — that is why one key opens every door.",
+  "walk": "Walk it through: (1) Start with voy a — I am going to. (2) Add any action in its whole form, unchanged. (3) You have a future sentence — one key, every action you will ever learn.",
+  "rank": 3
+ }
+]

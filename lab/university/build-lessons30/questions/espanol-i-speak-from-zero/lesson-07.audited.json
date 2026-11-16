@@ -1,0 +1,234 @@
+[
+ {
+  "q": "What does 'la boda' mean?",
+  "kind": "exact",
+  "answer": "the wedding",
+  "accept": [
+   "wedding"
+  ],
+  "choices": [
+   "the wedding",
+   "the ring",
+   "the beach",
+   "the dress"
+  ],
+  "mcAnswer": "the wedding",
+  "teach": "From the lesson: the word for the day itself — March the twenty-fifth, Key West.",
+  "teach2": "From the lesson, in Carmen's words: 'La boda — the wedding. Boda means wedding. La boda. Say it with me: La boda. Again, like a man who has a date with it: La boda.' Another way: la boda is the day — the ceremony and the celebration — not the marriage that comes after.",
+  "walk": "Walk it through: (1) Lesson seven is built around one day in Key West. (2) Boda is the word Carmen defines for that day's event. (3) La boda means: the wedding.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'el anillo' mean?",
+  "kind": "exact",
+  "answer": "the ring",
+  "accept": [
+   "ring"
+  ],
+  "choices": [
+   "the ring",
+   "the wedding",
+   "the vows",
+   "forever"
+  ],
+  "mcAnswer": "the ring",
+  "teach": "From the lesson: the smallest and heaviest object of the day — a circle with no end.",
+  "teach2": "From the lesson, in Carmen's words: 'El anillo — the ring. Anillo means ring. El anillo. It sounds like ah-NEE-yoh' Another way: anillo hides the same y sound as llamo — the ring and the name travel together.",
+  "walk": "Walk it through: (1) Carmen teaches the objects of the day one at a time. (2) The small circle Bill will hold in its box is el anillo. (3) El anillo means: the ring.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'la playa' mean?",
+  "kind": "exact",
+  "answer": "the beach",
+  "accept": [
+   "beach"
+  ],
+  "choices": [
+   "the beach",
+   "the dress",
+   "the wedding",
+   "my wife"
+  ],
+  "mcAnswer": "the beach",
+  "teach": "From the lesson: where this wedding happens — sand, warm water, and that Key West light.",
+  "teach2": "From the lesson, in Carmen's words: 'La playa — the beach. Playa means beach. La playa. Say it: La playa. Key West gives you playa in every direction' Another way: la boda es en la playa — the wedding is on the beach; playa is the place in that sentence.",
+  "walk": "Walk it through: (1) The lesson places the wedding in the spot Bill and Jillian chose. (2) Playa is the word for that spot. (3) La playa means: the beach.",
+  "rank": 1
+ },
+ {
+  "q": "The officiant asks the big question, and Bill answers with the two words the whole day leans on. What does 'Sí, acepto' mean?",
+  "kind": "exact",
+  "answer": "yes, I accept",
+  "accept": [
+   "Yes, I accept"
+  ],
+  "choices": [
+   "yes, I accept",
+   "forever",
+   "the vows",
+   "I love you"
+  ],
+  "mcAnswer": "yes, I accept",
+  "teach": "From the lesson: sí is yes — the accent tells it apart from si, which means if.",
+  "teach2": "From the lesson, in Carmen's words: 'Sí, acepto — yes, I accept. Sí means yes — and notice sí carries an accent mark' Another way: acepto is I accept, and sí, said like a door opening, is yes.",
+  "walk": "Walk it through: (1) Sí means yes, and its accent mark separates it from si, if. (2) Acepto means I accept. (3) Sí, acepto means: yes, I accept.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'para siempre' mean?",
+  "kind": "exact",
+  "answer": "forever",
+  "accept": [
+   "for always"
+  ],
+  "choices": [
+   "forever",
+   "the wedding",
+   "my wife",
+   "to get married"
+  ],
+  "mcAnswer": "forever",
+  "teach": "From the lesson: the time signature of a wedding — the promise that refuses a date.",
+  "teach2": "From the lesson, in Carmen's words: 'Para siempre — forever. Para means for — you own para from lesson five, para mí, para ella — for me, for her. Siempre means always. Para siempre: for always — forever.' Another way: para is for, siempre is always — for always is forever.",
+  "walk": "Walk it through: (1) Para means for, from para mí and para ella. (2) Siempre means always. (3) For always is: forever.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'el vestido' mean?",
+  "kind": "exact",
+  "answer": "the dress",
+  "accept": [
+   "dress"
+  ],
+  "choices": [
+   "the dress",
+   "the ring",
+   "the beach",
+   "the vows"
+  ],
+  "mcAnswer": "the dress",
+  "teach": "From the lesson: the one everybody will talk about — Jillian's, unseen until the day.",
+  "teach2": "From the lesson, in Carmen's words: 'El vestido — the dress. Vestido means dress. El vestido. Say it: El vestido.' Another way: vestido is family to the English word vest — clothing words, both of them.",
+  "walk": "Walk it through: (1) The lesson's second object of the day is the one Jillian wears. (2) Vestido is the word Carmen defines for it. (3) El vestido means: the dress.",
+  "rank": 2
+ },
+ {
+  "q": "What does 'casarse' mean, and what word hides inside it?",
+  "kind": "exact",
+  "answer": "to get married",
+  "accept": [
+   "to marry"
+  ],
+  "choices": [
+   "to get married",
+   "the wedding",
+   "forever",
+   "my wife"
+  ],
+  "mcAnswer": "to get married",
+  "teach": "From the lesson: the verb of the day, with casa — house, home — built inside it.",
+  "teach2": "From the lesson, in Carmen's words: 'Casarse — to get married, to marry. Casarse means to get married. It is built on casa — house, home — and that is not an accident' Another way: in the deep logic of Spanish, marrying is making a home — casarse carries the house inside it.",
+  "walk": "Walk it through: (1) Casarse is the action the whole day exists for. (2) It is built on casa, house. (3) Casarse means: to get married.",
+  "rank": 2
+ },
+ {
+  "q": "What are 'los votos'?",
+  "kind": "exact",
+  "answer": "the vows",
+  "accept": [
+   "vows"
+  ],
+  "choices": [
+   "the vows",
+   "the wedding",
+   "the ring",
+   "the beach"
+  ],
+  "mcAnswer": "the vows",
+  "teach": "From the lesson: the heart of the ceremony — words that change a life, said in front of witnesses.",
+  "teach2": "From the lesson: 'La boda — the wedding — in Key West, with the love words, the vows, and the day itself.' From the lesson, in Carmen's words: 'Los votos — the vows. Votos means vows. Los votos. Say it: Los votos.' Another way: la playa is the room and el anillo is the symbol — los votos are the act itself.",
+  "walk": "Walk it through: (1) The ceremony's heart is spoken, not worn or carried. (2) Votos are the solemn promises the couple states out loud. (3) Los votos are: the vows.",
+  "rank": 2
+ },
+ {
+  "q": "Carmen teaches two ways to say I love you. Which one is the deep one — the oath, saved for the vow and the biggest moments?",
+  "kind": "exact",
+  "answer": "Te amo",
+  "accept": [
+   "te amo"
+  ],
+  "choices": [
+   "Te amo",
+   "Te quiero",
+   "Sí, acepto",
+   "Para siempre"
+  ],
+  "mcAnswer": "Te amo",
+  "teach": "From the lesson: te quiero is the river, flowing every day; te amo is the source.",
+  "teach2": "From the lesson, in Carmen's words: 'Te amo is the deep one. Amo comes from amar — to love, in the full, solemn, whole-life sense of the word. Te amo is not for the door.' Another way: te quiero lives in the house, for the door and the coffee; te amo is for vows and summits.",
+  "walk": "Walk it through: (1) Te quiero is the everyday I love you, taught in lesson one. (2) Lesson seven introduces its deeper brother for the biggest moments. (3) The deep one is: Te amo.",
+  "rank": 2
+ },
+ {
+  "q": "After the ceremony — after sí, acepto, los votos, and el anillo — what does 'mi esposa' mean?",
+  "kind": "exact",
+  "answer": "my wife",
+  "accept": [
+   "wife"
+  ],
+  "choices": [
+   "my wife",
+   "my fiancée",
+   "my love",
+   "my heart"
+  ],
+  "mcAnswer": "my wife",
+  "teach": "From the lesson: the after word — prometida before the ceremony, this word after it.",
+  "teach2": "From the lesson: 'Because when the ceremony ends, a word changes, and I told you to hold that thought — here it is, the last new word of the lesson, and you must use it correctly, because using it early is a mistake and using it after is a joy: Mi esposa — my wife.' From the lesson, in Carmen's words: 'Mi esposa — my wife. Esposa means wife. Mi esposa. Say it: Mi esposa.' Another way: before the day she is mi prometida, the promised one; after the day she is mi esposa.",
+  "walk": "Walk it through: (1) Mi prometida names Jillian before the ceremony. (2) The ceremony changes the word. (3) The after word, mi esposa, means: my wife.",
+  "rank": 3
+ },
+ {
+  "q": "What is the full short vow Carmen builds for Bill to say on the beach?",
+  "kind": "exact",
+  "answer": "Jillian, te amo. Hoy, en la playa, te doy mi corazón para siempre.",
+  "accept": [
+   "Jillian, I love you. Today, on the beach, I give you my heart forever."
+  ],
+  "choices": [
+   "Jillian, te amo. Hoy, en la playa, te doy mi corazón para siempre.",
+   "Te amo, Jillian",
+   "Mi esposa se llama Jillian",
+   "Para siempre"
+  ],
+  "mcAnswer": "Jillian, te amo. Hoy, en la playa, te doy mi corazón para siempre.",
+  "teach": "From the lesson: four pieces joined — her name and te amo, the day and the beach, the gift of his heart, and forever.",
+  "teach2": "From the lesson, in Carmen's words: 'Jillian, te amo. Hoy, en la playa, te doy mi corazón para siempre. Jillian, I love you. Today, on the beach, I give you my heart forever.' Another way: the vow opens with the deep one, te amo — not the everyday te quiero — because the vow is a summit.",
+  "walk": "Walk it through: (1) The vow starts with her name and the deep I love you: Jillian, te amo. (2) It sets the scene: hoy, en la playa — today, on the beach. (3) It gives the gift and the time: te doy mi corazón para siempre — I give you my heart forever.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words: why does Carmen say the word 'casarse' tells you what the wedding day is for?",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "casa",
+    "house"
+   ],
+   [
+    "home"
+   ],
+   [
+    "married",
+    "marrying",
+    "marriage"
+   ]
+  ],
+  "need": 2,
+  "teach": "From the lesson: the verb of the day carries a house inside it.",
+  "teach2": "From the lesson, in Carmen's words: 'Casarse means to get married. It is built on casa — house, home — and that is not an accident and it is not small: casarse, getting married, carries the house inside it'",
+  "walk": "Walk it through: (1) Casarse is built on casa, which means house, home. (2) So the word for getting married carries the home inside it. (3) Marrying, in Spanish's deep logic, is founding a house — making a home.",
+  "rank": 3
+ }
+]

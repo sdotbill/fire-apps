@@ -17,7 +17,7 @@ cd "$(dirname "$0")"
 STAMP="$(git rev-parse --short HEAD)-$(date -u +%Y%m%dT%H%M)"
 sed -i "s/name=\"x-uni-build\" content=\"[^\"]*\"/name=\"x-uni-build\" content=\"$STAMP\"/" index.html
 sed -i "s/window\.UNI_BUILD = \"[^\"]*\"/window.UNI_BUILD = \"$STAMP\"/" index.html
-for f in uni-core trainer-core gate-core gate-ui; do
+for f in uni-core trainer-core gate-core gate-ui lessons30-ui; do
   sed -i "s|src=\"$f\.js?v=[^\"]*\"|src=\"$f.js?v=$STAMP\"|" index.html
 done
 grep -o 'name="x-uni-build" content="[^"]*"' index.html

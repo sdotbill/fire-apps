@@ -1,0 +1,64 @@
+{
+ "espanol-i-speak-from-zero": {
+  "lesson-01": {
+   "hash": "f57a19b27615f05d7f4f045ce7649c00c2cacc97",
+   "audio": "audio/lessons30/espanol-i-speak-from-zero/lesson-01.mp3",
+   "minutes": 28.72
+  },
+  "lesson-02": {
+   "hash": "4c589b6843efe6c25c37ed3b41e7f06ae19a2d3c",
+   "audio": "audio/lessons30/espanol-i-speak-from-zero/lesson-02.mp3",
+   "minutes": 33.56
+  },
+  "lesson-03": {
+   "hash": "050bbe7cf81ab33e5d59bc57fa3dbae52400f823",
+   "audio": "audio/lessons30/espanol-i-speak-from-zero/lesson-03.mp3",
+   "minutes": 32.54
+  },
+  "lesson-04": {
+   "hash": "cca6ea5c8fc6116f05698cf341412b4925f3e808",
+   "audio": "audio/lessons30/espanol-i-speak-from-zero/lesson-04.mp3",
+   "minutes": 30.38
+  },
+  "lesson-05": {
+   "hash": "f7b516ede6a769fdca21f8f6320272170b3a45b6",
+   "audio": "audio/lessons30/espanol-i-speak-from-zero/lesson-05.mp3",
+   "minutes": 32.41
+  },
+  "lesson-06": {
+   "hash": "29814dd6a6b0e044b954e212527b22fec243dbcd",
+   "audio": "audio/lessons30/espanol-i-speak-from-zero/lesson-06.mp3",
+   "minutes": 31.07
+  },
+  "lesson-07": {
+   "hash": "283328cb5a6bcaca38625fd3a1c524fbcf1dc3b5",
+   "audio": "audio/lessons30/espanol-i-speak-from-zero/lesson-07.mp3",
+   "minutes": 31.27
+  },
+  "lesson-08": {
+   "hash": "38a350e7ed6b16b5e6dea123ce68fd7bf347a507",
+   "audio": "audio/lessons30/espanol-i-speak-from-zero/lesson-08.mp3",
+   "minutes": 33.13
+  },
+  "lesson-09": {
+   "hash": "082cdac221c45774eecc49c9dda141fd49a8b5c2",
+   "audio": "audio/lessons30/espanol-i-speak-from-zero/lesson-09.mp3",
+   "minutes": 30.11
+  },
+  "lesson-10": {
+   "hash": "4b28643eaccc280785fb881c61f75921a1e975a4",
+   "audio": "audio/lessons30/espanol-i-speak-from-zero/lesson-10.mp3",
+   "minutes": 30.32
+  },
+  "lesson-11": {
+   "hash": "902594f8b8c361b25abc99e0344779ca0e82ef0a",
+   "audio": "audio/lessons30/espanol-i-speak-from-zero/lesson-11.mp3",
+   "minutes": 30.34
+  },
+  "lesson-12": {
+   "hash": "62ea9bbb9ca1f8951a7b8e9791660bb0d0821c80",
+   "audio": "audio/lessons30/espanol-i-speak-from-zero/lesson-12.mp3",
+   "minutes": 29.74
+  }
+ }
+}

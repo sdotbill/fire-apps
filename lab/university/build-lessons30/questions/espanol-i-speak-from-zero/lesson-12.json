@@ -1,0 +1,244 @@
+[
+ {
+  "q": "The capstone conversation opens in the morning. What does 'Buenos días, mi amor' mean?",
+  "kind": "exact",
+  "answer": "good morning, my love",
+  "accept": [
+   "good morning, my love",
+   "Good morning, my love"
+  ],
+  "choices": [
+   "good morning, my love",
+   "good night, my love",
+   "how was your day?",
+   "dinner is ready"
+  ],
+  "mcAnswer": "good morning, my love",
+  "teach": "From the lesson: scene one — the morning greeting that opens the whole conversation.",
+  "teach2": "From the lesson, in Carmen's words: 'Buenos días, mi amor — good morning, my love. Say it with me, morning volume, warm and unhurried: Buenos días, mi amor. Again:' Another way: the day's first greeting and the sweet word for her arrive in the same breath.",
+  "walk": "Walk it through: (1) Scene one is the morning, so the greeting is buenos días. (2) Mi amor is the sweet name for Jillian — my love. (3) The line means: good morning, my love.",
+  "rank": 1
+ },
+ {
+  "q": "What does '¿Cómo fue tu día?' mean?",
+  "kind": "exact",
+  "answer": "how was your day?",
+  "accept": [
+   "how was your day",
+   "How was your day?"
+  ],
+  "choices": [
+   "how was your day?",
+   "how are you?",
+   "are you hungry?",
+   "what is your name?"
+  ],
+  "mcAnswer": "how was your day?",
+  "teach": "From the lesson: scene four — asking about her day when she comes home.",
+  "teach2": "From the lesson, in Carmen's words: '¿Cómo fue tu día? — how was your day? Fue — was, it went. Tu día — your day. ¿Cómo fue tu día? Say it at kitchen-door volume,' Another way: fue is was, it went, and tu día is your day.",
+  "walk": "Walk it through: (1) Carmen calls this the question that matters most on ordinary days. (2) It asks about her day, the hospital day, after it happened. (3) It means: how was your day?",
+  "rank": 1
+ },
+ {
+  "q": "What does 'La cena está lista' mean?",
+  "kind": "exact",
+  "answer": "dinner is ready",
+  "accept": [
+   "dinner is ready",
+   "Dinner is ready"
+  ],
+  "choices": [
+   "dinner is ready",
+   "we are going to eat",
+   "it is delicious",
+   "I am tired"
+  ],
+  "mcAnswer": "dinner is ready",
+  "teach": "From the lesson: scene five — calling her to the table.",
+  "teach2": "From the lesson, in Carmen's words: 'La cena está lista — dinner is ready. La cena — dinner, the evening meal. Está lista — is ready. La cena está lista. Say it like' Another way: la cena is dinner, the evening meal, and está lista is is ready.",
+  "walk": "Walk it through: (1) Scene five is the table scene. (2) La cena means dinner and está lista means is ready. (3) So the line means: dinner is ready.",
+  "rank": 1
+ },
+ {
+  "q": "In the family scene, what does 'Los quiero mucho' mean?",
+  "kind": "exact",
+  "answer": "I love them very much",
+  "accept": [
+   "I love them very much"
+  ],
+  "choices": [
+   "I love them very much",
+   "my family is important",
+   "I love you very much",
+   "we are going to get married"
+  ],
+  "mcAnswer": "I love them very much",
+  "teach": "From the lesson: scene three — the sentence that covers all his people at once.",
+  "teach2": "From the lesson, in Carmen's words: 'Los quiero mucho — I love them very much. Quiero — I love, from that same querer — to want, to love — that gave you te quiero, and mucho —' Another way: quiero is I love, from querer, and mucho is much, very much — said about his family, them, not just one person.",
+  "walk": "Walk it through: (1) In scene three Bill talks about his family, his people. (2) Quiero means I love and mucho means very much. (3) Said about them, it means: I love them very much.",
+  "rank": 1
+ },
+ {
+  "q": "The whole conversation — and the whole course — ends at the bedroom door. What does 'Buenas noches, mi amor' mean?",
+  "kind": "exact",
+  "answer": "good night, my love",
+  "accept": [
+   "good night, my love",
+   "Good night, my love"
+  ],
+  "choices": [
+   "good night, my love",
+   "good morning, my love",
+   "rest well",
+   "see you tomorrow"
+  ],
+  "mcAnswer": "good night, my love",
+  "teach": "From the lesson: scene eight — the line the entire course was built to give him.",
+  "teach2": "From the lesson, in Carmen's words: 'Buenas noches, mi amor — good night, my love. Buenas noches — good night — doing its second job, the bedtime job, and mi amor' Another way: buenas noches doing its bedtime job, with mi amor riding at the end like it was always there.",
+  "walk": "Walk it through: (1) The last scene is good night, so the greeting is buenas noches in its good-night job. (2) Mi amor is my love. (3) The closing line means: good night, my love.",
+  "rank": 1
+ },
+ {
+  "q": "In scene four, Jillian answers 'Estoy cansada.' What is she telling Bill?",
+  "kind": "exact",
+  "answer": "I am tired",
+  "accept": [
+   "I am tired"
+  ],
+  "choices": [
+   "I am tired",
+   "I am well",
+   "I am hungry",
+   "I am here"
+  ],
+  "mcAnswer": "I am tired",
+  "teach": "From the lesson: her honest answer after a long shift, in the form a woman uses for herself.",
+  "teach2": "From the lesson, in Carmen's words: 'Estoy cansada — I am tired — cansada, tired, in the form a woman uses for herself, and I am teaching you her form on purpose,' Another way: Carmen teaches Bill her form on purpose, so he recognizes it when she says it.",
+  "walk": "Walk it through: (1) She has come home from a long hospital shift and said fue largo — it was long. (2) Her next line describes how she herself feels. (3) Estoy cansada means: I am tired.",
+  "rank": 2
+ },
+ {
+  "q": "Carmen teaches that 'Lo siento' literally says more than 'sorry.' What does it mean in the lesson?",
+  "kind": "exact",
+  "answer": "I am sorry",
+  "accept": [
+   "I am sorry",
+   "I feel it",
+   "I feel it with you"
+  ],
+  "choices": [
+   "I am sorry",
+   "I am here",
+   "thank you",
+   "you are welcome"
+  ],
+  "mcAnswer": "I am sorry",
+  "teach": "From the lesson: one of the two small sentences that hold a person up.",
+  "teach2": "From the lesson, in Carmen's words: 'Lo siento — I am sorry — I feel it, that is what it literally says, I feel it with you. Say it: Lo siento. And: Estoy aquí — I am here. The' Another way: it is not a formal apology — it says: I feel this with you.",
+  "walk": "Walk it through: (1) She has said her day was long and she is tired. (2) Carmen gives Bill two sentences that receive that, without fixing or rushing. (3) The first of them, lo siento, means: I am sorry.",
+  "rank": 2
+ },
+ {
+  "q": "At the table, Bill wants to ask Jillian if she is hungry. Which question does Carmen give him?",
+  "kind": "exact",
+  "answer": "¿Tienes hambre?",
+  "accept": [
+   "¿Tienes hambre?",
+   "Tienes hambre"
+  ],
+  "choices": [
+   "¿Tienes hambre?",
+   "¿Cómo fue tu día?",
+   "¿Cómo estás?",
+   "¿Cómo te llamas?"
+  ],
+  "mcAnswer": "¿Tienes hambre?",
+  "teach": "From the lesson: scene five opens with the simplest kindness there is.",
+  "teach2": "From the lesson, in Carmen's words: '¿Tienes hambre? — are you hungry? Tienes — you have; hambre — hunger; in Spanish you do not say I am hungry, you say I have' Another way: in Spanish you have hunger — tienes is you have, and hambre is hunger.",
+  "walk": "Walk it through: (1) Each scene has its own question: her day, her name, how she is. (2) The table scene asks about hunger. (3) That question is: ¿Tienes hambre?",
+  "rank": 2
+ },
+ {
+  "q": "Bill is introducing Jillian to someone new in Key West. Which line names her, with pride, as his fiancée?",
+  "kind": "exact",
+  "answer": "Mi prometida se llama Jillian",
+  "accept": [
+   "Mi prometida se llama Jillian"
+  ],
+  "choices": [
+   "Mi prometida se llama Jillian",
+   "Me llamo Bill",
+   "Soy de Michigan",
+   "Mi familia es importante"
+  ],
+  "mcAnswer": "Mi prometida se llama Jillian",
+  "teach": "From the lesson: scene two — the moment rehearsed since Lesson 1, in front of a witness.",
+  "teach2": "From the lesson, in Carmen's words: 'Mi prometida se llama Jillian — my fiancée's name is Jillian. Mi prometida — my fiancée, my promised one. Se llama — her name is.' Another way: mi prometida is my fiancée, my promised one, and se llama is her name is.",
+  "walk": "Walk it through: (1) Me llamo Bill names Bill himself. (2) To name the woman beside him, the line uses prometida and se llama. (3) That line is: Mi prometida se llama Jillian.",
+  "rank": 2
+ },
+ {
+  "q": "What does 'Que descanses' mean, in the good-night scene?",
+  "kind": "exact",
+  "answer": "rest well",
+  "accept": [
+   "rest well",
+   "may you rest well"
+  ],
+  "choices": [
+   "rest well",
+   "see you tomorrow",
+   "good night, my love",
+   "we are going to be fine"
+  ],
+  "mcAnswer": "rest well",
+  "teach": "From the lesson: the gentlest good night wish Spanish owns.",
+  "teach2": "From the lesson, in Carmen's words: 'Que descanses — rest well — may you rest well, descansar — to rest — wearing its wishing form, the gentlest good night wish Spanish owns.' Another way: descansar is to rest, and this is its wishing form — a wish for her rest, not a command.",
+  "walk": "Walk it through: (1) Scene eight closes the day. (2) Hasta mañana looks to tomorrow, and buenas noches says good night. (3) The wish for her rest itself is: Que descanses — rest well.",
+  "rank": 3
+ },
+ {
+  "q": "Jillian has come home after a long, hard shift. Which pair of lines does Carmen teach Bill to receive her day with — not to fix it, just to hold her up?",
+  "kind": "exact",
+  "answer": "Lo siento. Estoy aquí",
+  "accept": [
+   "Lo siento. Estoy aquí",
+   "Lo siento, estoy aquí"
+  ],
+  "choices": [
+   "Lo siento. Estoy aquí",
+   "Vamos a comer. La cena está lista",
+   "Buenas noches, mi amor",
+   "¿Cómo fue tu día?"
+  ],
+  "mcAnswer": "Lo siento. Estoy aquí",
+  "teach": "From the lesson: scene four — Carmen calls these the two small sentences that hold a person up.",
+  "teach2": "From the lesson, in Carmen's words: 'Lo siento. Estoy aquí. Bill, a woman can work a twelve-hour shift inside those two sentences and come home to them and be all right. That is scene' Another way: lo siento says I feel it with you, and estoy aquí is the promise from Lesson 11 standing in the present tense, kept.",
+  "walk": "Walk it through: (1) She said fue largo and estoy cansada — the day was long and she is tired. (2) Carmen says: do not fix, do not rush, receive it. (3) The two receiving lines are: Lo siento. Estoy aquí.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words: what was the goal of this whole Spanish course, and what can Bill do now, in Lesson 12, that he could not do in Lesson 1?",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "conversation"
+   ],
+   [
+    "Jillian"
+   ],
+   [
+    "Spanish"
+   ],
+   [
+    "wedding",
+    "love"
+   ]
+  ],
+  "need": 2,
+  "teach": "From the lesson: the course capstone, in your own words.",
+  "teach2": "From the lesson, in Carmen's words: 'you are going to hold a real, gentle conversation with Jillian in Spanish. Not a performance. Not a party trick. A conversation. Good' Another way: in Lesson 1 that was the promise; in Lesson 12 Bill speaks the whole conversation himself, start to finish.",
+  "walk": "Walk it through: (1) Lesson 1 gave Bill hola and one good-night line. (2) Eleven lessons added names, family, her day, food, plans, and the sweet words. (3) The goal was never a grade — it was a whole gentle conversation with Jillian, in Spanish, by the wedding.",
+  "rank": 3
+ }
+]

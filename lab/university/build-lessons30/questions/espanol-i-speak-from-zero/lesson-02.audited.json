@@ -1,0 +1,241 @@
+[
+ {
+  "accept": [
+   "family",
+   "the family"
+  ],
+  "answer": "the family",
+  "choices": [
+   "my father",
+   "my sister",
+   "my children",
+   "the family"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the family",
+  "q": "What does 'La familia' mean?",
+  "rank": 1,
+  "teach": "From the lesson: familia is the whole circle, the people who are yours — the word that holds every other family word inside it.",
+  "teach2": "From the lesson, in Carmen's words: 'La familia — the family. Familia is the whole circle, the people who are yours.' Another way to hold it: familia is the whole circle, the people who are yours — the word that holds every other family word inside it",
+  "walk": "Walk it through: (1) Carmen opens the lesson with the biggest word of the day. (2) She defines la familia as the whole circle, the people who are yours. (3) That is: the family."
+ },
+ {
+  "accept": [
+   "dad",
+   "my dad"
+  ],
+  "answer": "my dad",
+  "choices": [
+   "my father",
+   "my mother",
+   "my brother",
+   "my dad"
+  ],
+  "kind": "exact",
+  "mcAnswer": "my dad",
+  "q": "What does 'Mi papá' mean?",
+  "rank": 1,
+  "teach": "From the lesson: padre is the formal word for father; papá is the warmer, everyday word, the one used at the kitchen table — dad.",
+  "teach2": "From the lesson, in Carmen's words: 'Mi papá — my dad. Papá is the warmer, everyday word, the word a son uses at the kitchen table.' Another way to hold it: padre is the formal word for father; papá is the warmer, everyday word, the one used at the kitchen table — dad",
+  "walk": "Walk it through: (1) The lesson gives two words for the same man: padre and papá. (2) Padre is the formal, respectful one. (3) Papá is the warm, everyday one — my dad."
+ },
+ {
+  "accept": [
+   "mother",
+   "my mother"
+  ],
+  "answer": "my mother",
+  "choices": [
+   "my father",
+   "my sister",
+   "my daughter",
+   "my mother"
+  ],
+  "kind": "exact",
+  "mcAnswer": "my mother",
+  "q": "What does 'Mi madre' mean?",
+  "rank": 1,
+  "teach": "From the lesson: madre is mother, and like padre it carries respect in it; it is the partner word to mi padre.",
+  "teach2": "From the lesson, in Carmen's words: 'Mi madre — my mother. Madre is mother, and like padre, it carries respect in it.' Another way to hold it: madre is mother, and like padre it carries respect in it; it is the partner word to mi padre",
+  "walk": "Walk it through: (1) Mi means my. (2) Carmen defines madre right beside padre, as its partner word. (3) Madre is mother — so mi madre is my mother."
+ },
+ {
+  "accept": [
+   "mis hijos"
+  ],
+  "answer": "Mis hijos",
+  "choices": [
+   "Mi hijo",
+   "Mi hija",
+   "Mi hermana",
+   "Mis hijos"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Mis hijos",
+  "q": "Which Spanish phrase means 'my children'?",
+  "rank": 1,
+  "teach": "From the lesson: hijos can mean sons, and it can also mean children together, sons and daughters in one word.",
+  "teach2": "From the lesson, in Carmen's words: 'Mis hijos — my children. Hijos can mean sons, and it can also mean children together, sons and daughters in one word.' Another way to hold it: hijos can mean sons, and it can also mean children together, sons and daughters in one word",
+  "walk": "Walk it through: (1) Mi hijo is one son and mi hija is one daughter. (2) For all the children together, the lesson uses the plural form. (3) That phrase is: Mis hijos."
+ },
+ {
+  "accept": [
+   "Mi hermana",
+   "mi hermana"
+  ],
+  "answer": "Mi hermana Chelsea",
+  "choices": [
+   "Mi hermano",
+   "Mi hija Abigail",
+   "Mi madre",
+   "Mi hermana Chelsea"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Mi hermana Chelsea",
+  "q": "Bill's sister Chelsea — which phrase names her in Spanish?",
+  "rank": 1,
+  "teach": "From the lesson: hermana is sister, and Carmen names Chelsea with it directly: mi hermana Chelsea.",
+  "teach2": "From the lesson, in Carmen's words: 'Mi hermana — my sister. Hermana is sister, and Chelsea is yours. Mi hermana.' Another way to hold it: hermana is sister, and Carmen names Chelsea with it directly: mi hermana Chelsea",
+  "walk": "Walk it through: (1) Hermana means sister, and hermano means brother. (2) Chelsea is Bill's sister. (3) So she is named: Mi hermana Chelsea."
+ },
+ {
+  "accept": [
+   "mis"
+  ],
+  "answer": "mis",
+  "choices": [
+   "ella",
+   "él",
+   "mis",
+   "tu"
+  ],
+  "kind": "exact",
+  "mcAnswer": "mis",
+  "q": "Carmen teaches that 'mi' means my for one person. What does 'mi' become in front of more than one person, as in 'my children'?",
+  "rank": 2,
+  "teach": "From the lesson: Spanish shows the number right on the word: mi for one, mis for more than one — mi hijo, mis hijos.",
+  "teach2": "From the lesson, in Carmen's words: 'Mi is for one thing, one person. Mis is for more than one. That is the entire rule, and it is a friendly rule, because English hides this — English says my for one child and my for five children and never blinks.' Another way to hold it: Spanish shows the number right on the word: mi for one, mis for more than one — mi hijo, mis hijos",
+  "walk": "Walk it through: (1) In front of one person — padre, hermana, hijo — the word is mi. (2) In front of hijos, more than one, Carmen says it changes its coat. (3) The plural form is: mis."
+ },
+ {
+  "accept": [
+   "your"
+  ],
+  "answer": "your",
+  "choices": [
+   "she",
+   "he",
+   "your",
+   "my"
+  ],
+  "kind": "exact",
+  "mcAnswer": "your",
+  "q": "What does the little word 'tu' mean, as in 'tu familia'?",
+  "rank": 2,
+  "teach": "From the lesson: mi is my, for your own side of the table; tu is your, the friendly your used with family and friends.",
+  "teach2": "From the lesson, in Carmen's words: 'Tu means your, the friendly your, the your you use with family and friends and people you are warm with.' Another way to hold it: mi is my, for your own side of the table; tu is your, the friendly your used with family and friends",
+  "walk": "Walk it through: (1) Mi familia is my family — mi is my. (2) Carmen teaches the matching word for the other side of the table. (3) That word, tu, means: your."
+ },
+ {
+  "accept": [
+   "Te presento a Jillian",
+   "te presento a"
+  ],
+  "answer": "Te presento a Jillian",
+  "choices": [
+   "Mis hijos",
+   "¿Quién es?",
+   "Te presento a Jillian",
+   "Ella es mi prometida"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Te presento a Jillian",
+  "q": "Which phrase does Carmen teach for introducing someone — 'let me introduce you to Jillian'?",
+  "rank": 2,
+  "teach": "From the lesson: te presento a… is the presentation ceremony: let me introduce you to — and it works for anyone you love.",
+  "teach2": "From the lesson, in Carmen's words: 'Te presento a Jillian — I present to you Jillian, let me introduce you to Jillian.' Another way to hold it: te presento a… is the presentation ceremony: let me introduce you to — and it works for anyone you love",
+  "walk": "Walk it through: (1) The lesson's ceremony has two parts: presenting the person, then saying who they are. (2) The presenting phrase is built on te presento a. (3) For Jillian, it is: Te presento a Jillian."
+ },
+ {
+  "accept": [
+   "She is my fiancée",
+   "my fiancée"
+  ],
+  "answer": "she is my fiancée",
+  "choices": [
+   "she is my mother",
+   "let me introduce you to Jillian",
+   "she is my fiancée",
+   "she is my sister"
+  ],
+  "kind": "exact",
+  "mcAnswer": "she is my fiancée",
+  "q": "What does 'Ella es mi prometida' mean?",
+  "rank": 2,
+  "teach": "From the lesson: ella es means she is, and prometida is the fiancée — the promised one — so the sentence presents Jillian as Bill's fiancée.",
+  "teach2": "From the lesson, in Carmen's words: 'Ella es mi prometida. Let me introduce you to Jillian. She is my fiancée.' Another way to hold it: ella es means she is, and prometida is the fiancée — the promised one — so the sentence presents Jillian as Bill's fiancée",
+  "walk": "Walk it through: (1) Ella means she, and es means is. (2) Prometida, from lesson one, is the fiancée. (3) Joined: she is my fiancée."
+ },
+ {
+  "accept": [
+   "Quién es",
+   "quien es"
+  ],
+  "answer": "¿Quién es?",
+  "choices": [
+   "Te presento a Jillian",
+   "¿Quién es?",
+   "¿Cómo te llamas?",
+   "Mucho gusto"
+  ],
+  "kind": "exact",
+  "mcAnswer": "¿Quién es?",
+  "q": "Someone points at a photograph and wants to ask who the person is. What question does Carmen teach?",
+  "rank": 3,
+  "teach": "From the lesson: quién means who, and es means is — the question for asking about a person in a photograph or across a room.",
+  "teach2": "From the lesson, in Carmen's words: '¿Quién es? — who is he, who is she, who is that? Quién means who. ¿Quién es? Say it with me, with the curiosity in it: ¿Quién es? Someone shows you a family photograph — a beautiful old picture, a man you do not know standing tall — and you ask: ¿Quién es? And the answer comes back in exactly the shapes you now own: Es mi padre — he is my father.' Another way to hold it: quién means who, and es means is — the question for asking about a person in a photograph or across a room",
+  "walk": "Walk it through: (1) The lesson teaches the mirror of presenting: asking who someone is. (2) Quién means who. (3) The question is: ¿Quién es?"
+ },
+ {
+  "accept": [
+   "esposa",
+   "my wife",
+   "wife"
+  ],
+  "answer": "mi esposa",
+  "choices": [
+   "mi hija",
+   "mi esposa",
+   "mi prometida",
+   "mi hermana"
+  ],
+  "kind": "exact",
+  "mcAnswer": "mi esposa",
+  "q": "Carmen previews two words for after the wedding on March the twenty-fifth. After that day, what will Jillian be in Spanish — Bill's what?",
+  "rank": 3,
+  "teach": "From the lesson: today Jillian is mi prometida, the fiancée; after the wedding, Spanish gives her a new title — esposa, wife.",
+  "teach2": "From the lesson, in Carmen's words: 'Esposa — wife. La esposa — the wife. Mi esposa — my wife. Say it with me, just to taste the future: Mi esposa.' Another way to hold it: today Jillian is mi prometida, the fiancée; after the wedding, Spanish gives her a new title — esposa, wife",
+  "walk": "Walk it through: (1) The lesson previews the future pair: esposo, husband, and esposa, wife. (2) Jillian is the woman, so her word takes the -a form. (3) After the wedding she is: mi esposa."
+ },
+ {
+  "keywords": [
+   [
+    "one",
+    "single"
+   ],
+   [
+    "more",
+    "plural",
+    "two",
+    "many"
+   ]
+  ],
+  "kind": "keywords",
+  "need": 2,
+  "q": "In your own words: what is the difference between 'mi' and 'mis', and when do you use each one?",
+  "rank": 3,
+  "teach": "From the lesson: one machine, two settings: the word for my changes to show whether one person or more than one stands after it.",
+  "teach2": "From the lesson, in Carmen's words: 'Mi is for one thing, one person. Mis is for more than one. That is the entire rule, and it is a friendly rule, because English hides this — English says my for one child and my for five children and never blinks.' Another way to hold it: one machine, two settings: the word for my changes to show whether one person or more than one stands after it",
+  "walk": "Walk it through: (1) Both words mean my. (2) In front of one person — mi padre, mi hijo — Carmen uses mi. (3) In front of more than one — mis hijos — the word becomes mis."
+ }
+]

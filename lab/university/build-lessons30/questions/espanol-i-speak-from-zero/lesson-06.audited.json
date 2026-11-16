@@ -1,0 +1,236 @@
+[
+ {
+  "q": "What does 'hoy' mean?",
+  "kind": "exact",
+  "answer": "today",
+  "accept": [
+   "this day"
+  ],
+  "choices": [
+   "today",
+   "tomorrow",
+   "yesterday",
+   "the week"
+  ],
+  "mcAnswer": "today",
+  "teach": "From the lesson: the first of the three days you actually live in.",
+  "teach2": "From the lesson, in Carmen's words: 'Hoy means today. It is a small word with that silent h doing its invisible work again' Another way: hoy is the day you are standing in — everything before midnight tonight happens hoy.",
+  "walk": "Walk it through: (1) The lesson teaches three days: ayer, hoy, mañana. (2) Hoy is the middle one, the day under your feet. (3) Hoy means: today.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'mañana' mean?",
+  "kind": "exact",
+  "answer": "tomorrow",
+  "accept": [
+   "morning",
+   "tomorrow morning"
+  ],
+  "choices": [
+   "tomorrow",
+   "today",
+   "yesterday",
+   "early"
+  ],
+  "mcAnswer": "tomorrow",
+  "teach": "From the lesson: the sweetest word in Spanish — tomorrow is just the next morning arriving.",
+  "teach2": "From the lesson, in Carmen's words: 'Mañana — tomorrow. Mañana means tomorrow. And mañana has a secret I want you to hold gently: the same word, mañana, also means morning' Another way: mañana does two jobs — tomorrow, and morning — because tomorrow is the next morning.",
+  "walk": "Walk it through: (1) Ayer is yesterday and hoy is today. (2) The third day, the hopeful one, is mañana. (3) Mañana means: tomorrow.",
+  "rank": 1
+ },
+ {
+  "q": "What does '¿Qué hora es?' mean?",
+  "kind": "exact",
+  "answer": "what time is it",
+  "accept": [
+   "What time is it?"
+  ],
+  "choices": [
+   "what time is it",
+   "what day is it",
+   "I have an appointment",
+   "see you later"
+  ],
+  "mcAnswer": "what time is it",
+  "teach": "From the lesson: the question that unlocks the hours, in stations, lobbies, and your own kitchen.",
+  "teach2": "From the lesson, in Carmen's words: '¿Qué hora es? — what time is it? Word for word: what hour is it. Qué means what.' Another way: qué is what, and hora is hour — the question asks what hour it is.",
+  "walk": "Walk it through: (1) Hora means hour, a cousin of the English word hour. (2) ¿Qué hora es? asks about the hour. (3) It means: what time is it?",
+  "rank": 1
+ },
+ {
+  "q": "The clock says one o'clock. What is the correct answer to '¿Qué hora es?'?",
+  "kind": "exact",
+  "answer": "Es la una",
+  "accept": [
+   "it is one o'clock"
+  ],
+  "choices": [
+   "Es la una",
+   "Son las dos",
+   "Son las cinco",
+   "Hoy es lunes"
+  ],
+  "mcAnswer": "Es la una",
+  "teach": "From the lesson: one o'clock is the special one — the only hour that gets es la.",
+  "teach2": "From the lesson: 'For one o'clock, you say: Es la una — it is one o'clock. Es, it is. La una, the one.' From the lesson, in Carmen's words: 'Es la una — it is one o'clock. Es, it is. La una, the one. Una is one' Another way: one hour is singular, so it stands alone with es la; the plural hours use son las.",
+  "walk": "Walk it through: (1) Every hour after one uses son las. (2) One o'clock is the exception, because there is only one of it. (3) One o'clock is: Es la una.",
+  "rank": 1
+ },
+ {
+  "q": "The clock says two o'clock. What is the correct answer to '¿Qué hora es?'?",
+  "kind": "exact",
+  "answer": "Son las dos",
+  "accept": [
+   "it is two o'clock"
+  ],
+  "choices": [
+   "Son las dos",
+   "Es la una",
+   "Hoy es viernes",
+   "Tengo una cita"
+  ],
+  "mcAnswer": "Son las dos",
+  "teach": "From the lesson: every hour after one stands in a crowd, so the verb grows to match.",
+  "teach2": "From the lesson, in Carmen's words: 'Son las dos — it is two o'clock. Son means they are, it is, for the plural hours.' Another way: the frame is son las plus the number — dos is two, so son las dos is two o'clock.",
+  "walk": "Walk it through: (1) Es la una belongs to one o'clock only. (2) Two is a plural hour, so it takes son las. (3) With dos, two, the answer is: Son las dos.",
+  "rank": 1
+ },
+ {
+  "q": "Which day of the week is 'miércoles'?",
+  "kind": "exact",
+  "answer": "Wednesday",
+  "accept": [
+   "miercoles"
+  ],
+  "choices": [
+   "Wednesday",
+   "Monday",
+   "Friday",
+   "Sunday"
+  ],
+  "mcAnswer": "Wednesday",
+  "teach": "From the lesson: the long one in the middle of the parade of days.",
+  "teach2": "From the lesson, in Carmen's words: 'Miércoles — Wednesday. Miércoles is the long one, so walk it in pieces: mee-EHR-koh-les.' Another way: the week runs lunes, martes, miércoles — Wednesday is the third soldier in the parade.",
+  "walk": "Walk it through: (1) Los días de la semana run lunes, martes, miércoles, jueves, viernes, sábado, domingo. (2) The third day is miércoles. (3) Counting from Monday, the third day is: Wednesday.",
+  "rank": 2
+ },
+ {
+  "q": "What does 'Tengo una cita' mean?",
+  "kind": "exact",
+  "answer": "I have an appointment",
+  "accept": [
+   "I have a date"
+  ],
+  "choices": [
+   "I have an appointment",
+   "I am hungry",
+   "it is late",
+   "see you later"
+  ],
+  "mcAnswer": "I have an appointment",
+  "teach": "From the lesson: tengo doing its second job — I have, carrying an appointment this time.",
+  "teach2": "From the lesson, in Carmen's words: 'Tengo una cita — I have an appointment. Una cita means an appointment' Another way: una cita can also be a date, the romantic kind — context, and your face, tell everyone which.",
+  "walk": "Walk it through: (1) Tengo means I have — the same tengo as tengo hambre. (2) Una cita is an appointment. (3) Together they mean: I have an appointment.",
+  "rank": 2
+ },
+ {
+  "q": "What does 'temprano' mean?",
+  "kind": "exact",
+  "answer": "early",
+  "accept": [
+   "on time"
+  ],
+  "choices": [
+   "early",
+   "late",
+   "tomorrow",
+   "today"
+  ],
+  "mcAnswer": "early",
+  "teach": "From the lesson: one of the two words that decide whether a man is calm or running.",
+  "teach2": "From the lesson, in Carmen's words: 'Temprano — early. Temprano means early. Tem-PRAH-no. Say it: Temprano. And its opposite: Tarde — late.' Another way: temprano is the calm word; its opposite, tarde, is late.",
+  "walk": "Walk it through: (1) Carmen teaches the pair together: temprano and tarde. (2) Tarde is the late one. (3) So temprano means: early.",
+  "rank": 2
+ },
+ {
+  "q": "Jillian is heading out the door, and Bill wants to bless her day the way Carmen taught him. What does 'Que tengas un buen día' mean?",
+  "kind": "exact",
+  "answer": "have a good day",
+  "accept": [
+   "may you have a good day",
+   "Have a good day"
+  ],
+  "choices": [
+   "have a good day",
+   "see you later",
+   "good morning",
+   "I love you"
+  ],
+  "mcAnswer": "have a good day",
+  "teach": "From the lesson: the second line of the door ceremony — a wish you send out the door with her.",
+  "teach2": "From the lesson, in Carmen's words: 'Que tengas un buen día — have a good day. Word for word, it is a wish: may you have a good day.' Another way: un buen día is a good day, and the sentence wishes it to her as she leaves.",
+  "walk": "Walk it through: (1) Día means day, and buen means good. (2) The sentence is a wish for her day, said at the door. (3) Que tengas un buen día means: have a good day.",
+  "rank": 2
+ },
+ {
+  "q": "Bill has a wedding-week errand at the license office. Which sentence tells the hotel desk it is tomorrow at three o'clock?",
+  "kind": "exact",
+  "answer": "Mañana tengo una cita a las tres",
+  "accept": [
+   "tomorrow I have an appointment at three o'clock"
+  ],
+  "choices": [
+   "Mañana tengo una cita a las tres",
+   "Hoy es lunes",
+   "Es la una",
+   "Hasta luego"
+  ],
+  "mcAnswer": "Mañana tengo una cita a las tres",
+  "teach": "From the lesson: a full schedule sentence — day, cita, and hour stacked in order.",
+  "teach2": "From the lesson, in Carmen's words: 'Mañana tengo una cita a las tres — tomorrow I have an appointment at three o'clock.' Another way: mañana sets the day, tengo una cita sets the appointment, and a las tres sets the hour.",
+  "walk": "Walk it through: (1) The errand is mañana, tomorrow — not hoy. (2) It is una cita, an appointment, at a las tres, at three o'clock. (3) Stacked in order: Mañana tengo una cita a las tres.",
+  "rank": 3
+ },
+ {
+  "q": "Jillian is leaving for the hospital, and Bill wants the soft goodbye — the one that is a pause, not an ending. What does he say?",
+  "kind": "exact",
+  "answer": "Hasta luego",
+  "accept": [
+   "see you later"
+  ],
+  "choices": [
+   "Hasta luego",
+   "Buenos días",
+   "Tengo una cita",
+   "Es la una"
+  ],
+  "mcAnswer": "Hasta luego",
+  "teach": "From the lesson: hasta luego — until later — nobody says goodbye forever at a kitchen door.",
+  "teach2": "From the lesson, in Carmen's words: 'Hasta luego — see you later. Hasta means until. Luego means later, soon. Hasta luego: until later.' Another way: hasta is until and luego is later — until later, because he will see her at dinner.",
+  "walk": "Walk it through: (1) Buenos días greets the morning; it does not say goodbye. (2) The lesson's soft goodbye is built from hasta, until, and luego, later. (3) That goodbye is: Hasta luego.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words: why does one o'clock get 'es la una' while two o'clock gets 'son las dos'?",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "one",
+    "una"
+   ],
+   [
+    "singular",
+    "only one"
+   ],
+   [
+    "plural",
+    "crowd"
+   ]
+  ],
+  "need": 2,
+  "teach": "From the lesson: the whole law of the Spanish clock, in one breath.",
+  "teach2": "From the lesson, in Carmen's words: 'Only one o'clock gets es la — because there is only one of it. One hour, singular, es la una.'",
+  "walk": "Walk it through: (1) One o'clock is a single hour, singular, so it uses es la una. (2) Two and every hour after stand plural, in a crowd. (3) Plural hours use son las — son las dos.",
+  "rank": 3
+ }
+]

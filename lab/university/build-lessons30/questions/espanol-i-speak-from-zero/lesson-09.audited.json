@@ -1,0 +1,226 @@
+[
+ {
+  "q": "What does '¿Cómo estás?' mean?",
+  "kind": "exact",
+  "answer": "how are you",
+  "accept": [
+   "How are you"
+  ],
+  "choices": [
+   "how are you",
+   "who is it",
+   "how much does it cost",
+   "when is the wedding"
+  ],
+  "mcAnswer": "how are you",
+  "teach": "From the lesson: cómo, the kindest key — it asks after people.",
+  "teach2": "From the lesson, in Carmen's words: '¿Cómo estás? — how are you? Say it with me, warmly, the way you would say it to someone you actually care about: ¿Cómo estás?' Another way: it asks after a person's present weather — how they are today, in this hour.",
+  "walk": "Walk it through: (1) Cómo means how. (2) Estás means you are, right now. (3) Asked of a person, the question means: how are you.",
+  "rank": 1
+ },
+ {
+  "q": "Which question word from the lesson means 'who'?",
+  "kind": "exact",
+  "answer": "Quién",
+  "accept": [
+   "quien",
+   "Quién"
+  ],
+  "choices": [
+   "Quién",
+   "Qué",
+   "Cuándo",
+   "Cuánto"
+  ],
+  "mcAnswer": "Quién",
+  "teach": "From the lesson: the ring of seven keys, each with its own answer shape.",
+  "teach2": "From the lesson, in Carmen's words: 'Quién — who. Say it with me: Quién. Kee-EHN, the accent leaning on the end. Quién. This key asks after a person' Another way: ¿quién es? is the question for the knock at the door — who is it.",
+  "walk": "Walk it through: (1) Each key on the ring asks for one kind of answer. (2) The key whose answer is a person asks who. (3) That key is: Quién.",
+  "rank": 1
+ },
+ {
+  "q": "What does '¿Cuánto cuesta?' mean?",
+  "kind": "exact",
+  "answer": "how much does it cost",
+  "accept": [
+   "How much does it cost",
+   "how much is it"
+  ],
+  "choices": [
+   "how much does it cost",
+   "how are you",
+   "where is the kitchen",
+   "tell me"
+  ],
+  "mcAnswer": "how much does it cost",
+  "teach": "From the lesson: cuánto, the key your wallet will thank you for.",
+  "teach2": "From the lesson, in Carmen's words: '¿Cuánto cuesta? — how much does it cost? Cuesta — it costs, from costar, to cost.' Another way: Carmen calls it a complete negotiation in two words.",
+  "walk": "Walk it through: (1) Cuánto asks after amount — quantity, number, price. (2) Cuesta means it costs. (3) Together they ask: how much does it cost.",
+  "rank": 1
+ },
+ {
+  "q": "What does 'la boda' mean?",
+  "kind": "exact",
+  "answer": "the wedding",
+  "accept": [
+   "wedding",
+   "the wedding"
+  ],
+  "choices": [
+   "the wedding",
+   "the house",
+   "the kitchen",
+   "the street"
+  ],
+  "mcAnswer": "the wedding",
+  "teach": "From the lesson: the word Carmen teaches on the most important date in Bill's life.",
+  "teach2": "From the lesson, in Carmen's words: 'Boda — wedding. La boda — the wedding. Say the question with me, and smile when you say it, Spanish can hear a smile: ¿Cuándo es la boda?' Another way: ¿cuándo es la boda? — when is the wedding?",
+  "walk": "Walk it through: (1) The lesson teaches cuándo — when — on one special date. (2) The event on that date, el veinticinco de marzo in Key West, is la boda. (3) La boda means: the wedding.",
+  "rank": 1
+ },
+ {
+  "q": "Jillian turns the question around and asks Bill how he is, and he is fine. What does he answer?",
+  "kind": "exact",
+  "answer": "Estoy bien",
+  "accept": [
+   "estoy bien"
+  ],
+  "choices": [
+   "Estoy bien",
+   "Estoy un poco cansado",
+   "Te escucho",
+   "Cuéntame"
+  ],
+  "mcAnswer": "Estoy bien",
+  "teach": "From the lesson: the answer that belongs to ¿cómo estás?",
+  "teach2": "From the lesson, in Carmen's words: 'Estoy bien — I am well, I am fine. Say it with me: Estoy bien. Estoy — I am, right now' Another way: estoy bien is the well answer; the tired answer is a different sentence.",
+  "walk": "Walk it through: (1) ¿Cómo estás? asks how you are right now. (2) Estoy is I am, right now, and bien is well. (3) The answer for a man who is fine is: Estoy bien.",
+  "rank": 2
+ },
+ {
+  "q": "Carmen says every question word on the ring wears something that tells your voice where to lean. What is it?",
+  "kind": "exact",
+  "answer": "a written accent",
+  "accept": [
+   "written accent",
+   "an accent",
+   "the accent"
+  ],
+  "choices": [
+   "a written accent",
+   "the upside-down question mark",
+   "intonation",
+   "porque"
+  ],
+  "mcAnswer": "a written accent",
+  "teach": "From the lesson: one system — two marks, one lift, and an accent on every key.",
+  "teach2": "From the lesson, in Carmen's words: 'every question word on our ring wears a written accent — quién, qué, dónde, cuándo, cuánto, cómo — every single one leans, and the accent tells your voice exactly where to lean' Another way to hold it: if a word is asking, the accent is sitting on it.",
+  "walk": "Walk it through: (1) The lesson says a question word in Spanish always carries something that shows where the beat falls. (2) It sits on quién, qué, dónde, cuándo, cuánto and cómo alike. (3) That something is: a written accent.",
+  "rank": 2
+ },
+ {
+  "q": "What is the answer word that faithfully pairs with '¿Por qué?' — why?",
+  "kind": "exact",
+  "answer": "Porque",
+  "accept": [
+   "porque"
+  ],
+  "choices": [
+   "Porque",
+   "Cuéntame",
+   "aquí",
+   "Esto"
+  ],
+  "mcAnswer": "Porque",
+  "teach": "From the lesson: why asks, and its partner answers with the reason.",
+  "teach2": "From the lesson, in Carmen's words: 'Porque — because. No accent, no question marks, one word run together — porque is why's answer, the reason itself.' Another way: ¿por qué? Porque. Why? Because. The smallest philosophy lesson in the world.",
+  "walk": "Walk it through: (1) Por qué asks after reasons. (2) Every key on the ring has its answer shape, and why's answer begins with one word. (3) That word, meaning because, is: Porque.",
+  "rank": 2
+ },
+ {
+  "q": "Bill is holding an object he cannot name and wants to ask what it is. What does Carmen teach him to say?",
+  "kind": "exact",
+  "answer": "¿Qué es esto?",
+  "accept": [
+   "Que es esto"
+  ],
+  "choices": [
+   "¿Qué es esto?",
+   "¿Quién es?",
+   "¿Cuándo es la boda?",
+   "¿Dónde está?"
+  ],
+  "mcAnswer": "¿Qué es esto?",
+  "teach": "From the lesson: qué, the widest key — the beginner's best friend.",
+  "teach2": "From the lesson, in Carmen's words: '¿Qué es esto? — what is this? Esto — this, this thing here. Say it with me: ¿Qué es esto?' Another way: you point, you ask, and the world names it for you.",
+  "walk": "Walk it through: (1) Qué asks after things and meanings, not people or places. (2) Esto means this, this thing here. (3) Pointing at the object, he asks: ¿Qué es esto?",
+  "rank": 2
+ },
+ {
+  "q": "Jillian has come home tired from the hospital. What is the question Carmen most wants Bill to ask her?",
+  "kind": "exact",
+  "answer": "¿Cómo fue tu día, mi corazón?",
+  "accept": [
+   "Como fue tu dia, mi corazon"
+  ],
+  "choices": [
+   "¿Cómo fue tu día, mi corazón?",
+   "¿Cuánto cuesta?",
+   "¿Quién es ella?",
+   "¿Qué es esto?"
+  ],
+  "mcAnswer": "¿Cómo fue tu día, mi corazón?",
+  "teach": "From the lesson: the Spanish-for-Jillian strand — asking about her day, and meaning it.",
+  "teach2": "From the lesson, in Carmen's words: 'You do not ask her about dinner first. You do not ask her about the house, or the wedding, or the list. You ask her this: ¿Cómo fue tu día, mi corazón?' Another way: cómo asking after the whole day, with the sweet word riding at the end where it belongs.",
+  "walk": "Walk it through: (1) The strand teaches Bill to ask after her day before dinner, the house, or the list. (2) The question asks how her day went, and it ends with mi corazón — my heart. (3) The question is: ¿Cómo fue tu día, mi corazón?",
+  "rank": 3
+ },
+ {
+  "q": "She asks Bill how he is, and the true answer that day is that he is a little tired. What does he say?",
+  "kind": "exact",
+  "answer": "Estoy un poco cansado",
+  "accept": [
+   "estoy un poco cansado"
+  ],
+  "choices": [
+   "Estoy un poco cansado",
+   "Estoy bien",
+   "Te escucho",
+   "Cuéntame"
+  ],
+  "mcAnswer": "Estoy un poco cansado",
+  "teach": "From the lesson: honest answers — this course teaches talking, not performing.",
+  "teach2": "From the lesson, in Carmen's words: 'Estoy un poco cansado — I am a little tired. Un poco — a little, a bit. Say the whole true sentence: Estoy un poco cansado.' Another way: not estoy bien, which would be performing — the lesson wants the honest one.",
+  "walk": "Walk it through: (1) Estoy cansado means I am tired, in the form a man uses for himself. (2) Un poco softens it: a little. (3) The true sentence is: Estoy un poco cansado.",
+  "rank": 3
+ },
+ {
+  "q": "In your own words: why does Carmen teach that por qué — why — should be asked freely of things but gently of people?",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "machine",
+    "things",
+    "world",
+    "curiosity"
+   ],
+   [
+    "cross-examination",
+    "scalpel",
+    "accus"
+   ],
+   [
+    "tired",
+    "softly",
+    "rarely",
+    "gently",
+    "whole answer"
+   ]
+  ],
+  "need": 2,
+  "teach": "From the lesson: por qué is a scalpel, not a hammer.",
+  "teach2": "From the lesson, in Carmen's words: '¿Por qué? asked of a machine is curiosity. ¿Por qué? asked of a tired woman at the end of a hard day can sound like a cross-examination, even when your heart means only love.'",
+  "walk": "Walk it through: (1) Asked of a machine or the world, por qué is plain curiosity. (2) Asked of a tired person at the end of a hard day, it can land like a cross-examination, even when the heart means love. (3) So Carmen's rule: ask it of things freely; of people, rarely, softly, and ready for the whole answer.",
+  "rank": 3
+ }
+]

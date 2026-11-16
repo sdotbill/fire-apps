@@ -1,0 +1,243 @@
+[
+ {
+  "accept": [
+   "Good morning"
+  ],
+  "answer": "good morning",
+  "choices": [
+   "good morning",
+   "good afternoon",
+   "good night",
+   "thank you"
+  ],
+  "kind": "exact",
+  "mcAnswer": "good morning",
+  "q": "Carmen teaches a greeting for each part of the day. What does 'Buenos días' mean?",
+  "rank": 1,
+  "teach": "From the lesson: the day has three parts, and Spanish greets each one.",
+  "teach2": "From the lesson, in Carmen's words: 'In the morning, you say: Buenos días — good morning. Buenos días. Let me take it apart for you, because you will see this pattern all year.' Another way to hold it: días is the day — this is the greeting the day starts with.",
+  "walk": "Walk it through: (1) The lesson splits the day into morning, afternoon, and evening. (2) Días means day, and buenos días is the first of the three greetings taught. (3) The first part of the day is the morning — so buenos días is good morning."
+ },
+ {
+  "accept": [
+   "hola"
+  ],
+  "answer": "Hola",
+  "choices": [
+   "Hola",
+   "Buenas noches",
+   "Mucho gusto",
+   "De nada"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Hola",
+  "q": "Which greeting does Carmen say works at any hour, for any person, at any door?",
+  "rank": 1,
+  "teach": "From the lesson: your very first word in Spanish.",
+  "teach2": "From the lesson, in Carmen's words: 'Your first word in Spanish, and the most useful word in any language on earth: Hola. That is hello — for any hour, any person, any door you ever walk through.' Another way: the three day-greetings each own a part of the day; this one owns all of it.",
+  "walk": "Walk it through: (1) Buenos días, buenas tardes, and buenas noches each belong to one part of the day. (2) Carmen taught one greeting that belongs to every hour. (3) That greeting is the first word of the lesson: Hola."
+ },
+ {
+  "accept": [
+   "h",
+   "the h",
+   "H"
+  ],
+  "answer": "the letter h",
+  "choices": [
+   "the letter h",
+   "the double l",
+   "the written accent",
+   "five vowel sounds"
+  ],
+  "kind": "exact",
+  "mcAnswer": "the letter h",
+  "q": "In the word 'Hola', one letter is written but never heard. Which letter is it?",
+  "rank": 1,
+  "teach": "From the lesson: Spanish has one letter that breaks the pattern by doing nothing at all.",
+  "teach2": "From the lesson, in Carmen's words: 'In Spanish, the h is silent — completely silent, always. It is written, but it is never heard.' Another way to hear it: that is why hola sounds like OH-lah — the first letter never speaks.",
+  "walk": "Walk it through: (1) The lesson says Spanish letters almost always make their sound. (2) One letter is the exception: it is written but never heard. (3) Hola begins with that letter — the h."
+ },
+ {
+  "accept": [
+   "my name is Bill",
+   "I call myself Bill"
+  ],
+  "answer": "My name is Bill",
+  "choices": [
+   "My name is Bill",
+   "I am from Michigan",
+   "Pleased to meet you",
+   "I love you"
+  ],
+  "kind": "exact",
+  "mcAnswer": "My name is Bill",
+  "q": "What does 'Me llamo Bill' mean?",
+  "rank": 1,
+  "teach": "From the lesson: the most useful sentence in any language — saying who you are.",
+  "teach2": "From the lesson, in Carmen's words: 'Me llamo Bill. That is my name is Bill — but look at what it literally says, because Spanish is charming here.' Another way: it is the sentence you answer with when someone asks your name — it gives your name, so it means: my name is Bill.",
+  "walk": "Walk it through: (1) Me llamo is how the lesson says a person introduces himself. (2) Bill is the name being given. (3) A sentence that gives your name means: my name is Bill."
+ },
+ {
+  "accept": [
+   "gracias"
+  ],
+  "answer": "Gracias",
+  "choices": [
+   "Gracias",
+   "Por favor",
+   "De nada",
+   "Mucho gusto"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Gracias",
+  "q": "Carmen calls por favor and gracias the two keys that open every door in Spanish. Which of the two keys means 'thank you'?",
+  "rank": 1,
+  "teach": "From the lesson: please and thank you — the two keys.",
+  "teach2": "From the lesson, in Carmen's words: 'The second key: Gracias — thank you. Gracias. And when someone thanks you, Spanish answers: De nada.' Another way: por favor is the asking key, please; the thanking key is the other one.",
+  "walk": "Walk it through: (1) The two keys are por favor and gracias. (2) Por favor means please — the lesson pairs them in that order. (3) So the key that means thank you is gracias."
+ },
+ {
+  "accept": [
+   "Cómo te llamas",
+   "Como te llamas"
+  ],
+  "answer": "¿Cómo te llamas?",
+  "choices": [
+   "¿Cómo te llamas?",
+   "Me llamo Bill",
+   "Mucho gusto",
+   "¿De dónde eres?"
+  ],
+  "kind": "exact",
+  "mcAnswer": "¿Cómo te llamas?",
+  "q": "Carmen wants to ask a new person their name. What question does she teach for that?",
+  "rank": 2,
+  "teach": "From the lesson: the question that turns 'me llamo' around.",
+  "teach2": "From the lesson, in Carmen's words: 'And because a conversation has two sides, here is the question that turns your sentence around: ¿Cómo te llamas? — what is your name?' Another way: llamas is 'you call yourself' — the question asks how you call yourself.",
+  "walk": "Walk it through: (1) Me llamo Bill states your own name. (2) To ask someone else's, the lesson turns the sentence into a question with llamas — you call yourself. (3) That question is: ¿Cómo te llamas?"
+ },
+ {
+  "accept": [
+   "I am"
+  ],
+  "answer": "I am",
+  "choices": [
+   "I am",
+   "I want",
+   "my name",
+   "from where"
+  ],
+  "kind": "exact",
+  "mcAnswer": "I am",
+  "q": "In 'Soy de Michigan', what does the word 'soy' mean?",
+  "rank": 2,
+  "teach": "From the lesson: soy is the giant — the first word of a man's description of himself.",
+  "teach2": "From the lesson, in Carmen's words: 'Soy is the giant here: soy means I am. It is the first word of a man's description of himself, so say it like one: Soy.' Another way: soy de Michigan and soy empresario both start with it, and both describe what Bill is — because soy means I am.",
+  "walk": "Walk it through: (1) Soy de Michigan means I am from Michigan, and soy empresario means I am a businessman. (2) The word both sentences share, at the front, is soy. (3) The shared meaning is: I am."
+ },
+ {
+  "accept": [
+   "My heart"
+  ],
+  "answer": "my heart",
+  "choices": [
+   "my heart",
+   "my love",
+   "my fiancée",
+   "my name"
+  ],
+  "kind": "exact",
+  "mcAnswer": "my heart",
+  "q": "What does 'Mi corazón' literally mean?",
+  "rank": 2,
+  "teach": "From the lesson: the sweet words — Spanish means this one literally.",
+  "teach2": "From the lesson, in Carmen's words: 'Corazón means heart — the actual word, the organ, the thing in your chest. Spanish does not hide behind poetry here; it means it literally.' Another way: mi amor is my love; corazón is the other sweet word, and it names the heart itself.",
+  "walk": "Walk it through: (1) Mi means my — the lesson teaches that inside mi amor and mi prometida. (2) Corazón is the word Carmen defines as the organ in your chest. (3) So mi corazón literally means: my heart."
+ },
+ {
+  "accept": [
+   "I love you"
+  ],
+  "answer": "I love you",
+  "choices": [
+   "I love you",
+   "good night",
+   "thank you",
+   "you are welcome"
+  ],
+  "kind": "exact",
+  "mcAnswer": "I love you",
+  "q": "What does 'Te quiero' mean?",
+  "rank": 2,
+  "teach": "From the lesson: the everyday way to say it — the one that lives in the house.",
+  "teach2": "From the lesson, in Carmen's words: 'And now the sentence itself: Te quiero — I love you. This is the everyday way to say it in Spanish.' Another way: te quiero is said at the door in the morning and over a cup of coffee — it is the daily form of I love you.",
+  "walk": "Walk it through: (1) The lesson saves its most important sentence for the sweet words. (2) Te quiero comes from querer, to want and to love. (3) Said to Jillian, it means: I love you."
+ },
+ {
+  "accept": [
+   "fiancee",
+   "my fiancée",
+   "promised one"
+  ],
+  "answer": "fiancée",
+  "choices": [
+   "fiancée",
+   "my love",
+   "my heart",
+   "a neighbor"
+  ],
+  "kind": "exact",
+  "mcAnswer": "fiancée",
+  "q": "In 'Mi prometida se llama Jillian', what does the word 'prometida' mean?",
+  "rank": 3,
+  "teach": "From the lesson: the word is built from the word promise.",
+  "teach2": "From the lesson, in Carmen's words: 'Prometida means fiancée — your promised one; in Spanish the word for the woman you are engaged to is built from the word promise.' Another way: Jillian is the woman Bill is engaged to marry — his prometida.",
+  "walk": "Walk it through: (1) The sentence names Jillian, the woman Bill is engaged to. (2) Carmen breaks the word open: it is built from promise — the promised one. (3) The word for a woman you are engaged to is: fiancée."
+ },
+ {
+  "accept": [
+   "Buenas noches, mi amor",
+   "buenas noches mi amor"
+  ],
+  "answer": "Buenas noches, mi amor",
+  "choices": [
+   "Buenas noches, mi amor",
+   "Buenos días, mi amor",
+   "Te quiero, Jillian",
+   "Buenas tardes"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Buenas noches, mi amor",
+  "q": "It is the end of the day, and Bill is saying good night to Jillian. What is the exact line this whole lesson was built to give him?",
+  "rank": 3,
+  "teach": "From the lesson: buenas noches doing its second job, with mi amor riding on the end.",
+  "teach2": "From the lesson, in Carmen's words: 'you say the line this entire lesson was built to give you: Buenas noches, mi amor — good night, my love.' Another way: it is the evening greeting plus the sweet word for her — the lesson's first line and its heart, in one sentence.",
+  "walk": "Walk it through: (1) Saying good night uses buenas noches, in its good-night job. (2) The sweet name the lesson teaches for Jillian is mi amor. (3) Joined, the line is: Buenas noches, mi amor."
+ },
+ {
+  "keywords": [
+   [
+    "call",
+    "calls",
+    "calling"
+   ],
+   [
+    "myself"
+   ],
+   [
+    "name",
+    "hand",
+    "offer",
+    "answer"
+   ]
+  ],
+  "kind": "keywords",
+  "need": 2,
+  "q": "In your own words: what does 'Me llamo' literally say, and why does Carmen love teaching it that way?",
+  "rank": 3,
+  "teach": "From the lesson: the set problem — Carmen's favorite sentence, in your own words.",
+  "teach2": "From the lesson, in Carmen's words: 'Llamo comes from llamar, to call. Me llamo is I call myself. Me llamo Bill: I call myself Bill. I love teaching this, because it is true in a way the English version is not: a name is what you call yourself, what you answer to, what you offer a stranger like a hand.'",
+  "walk": "Walk it through: (1) Llamo comes from llamar, to call. (2) So me llamo says, word for word: I call myself. (3) Carmen loves it because a name really is what you call yourself and offer a stranger — like a hand."
+ }
+]

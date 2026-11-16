@@ -1,0 +1,220 @@
+[
+ {
+  "answer": "ten",
+  "kind": "exact",
+  "q": "Carmen counts the first ten in Spanish: cero, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez. What number is 'diez'?",
+  "rank": 1,
+  "teach": "From the lesson: the first staircase, zero to ten.",
+  "teach2": "From the lesson, in Carmen's words: 'Seis, siete, ocho, nueve, diez — six, seven, eight, nine, ten. Again, slower: Seis… siete… ocho… nueve… diez.' Another way to hold it: diez is the last word of the first count — the number the first floor of the building stands on.",
+  "walk": "Walk it through: (1) The count runs cero, uno, dos, tres, cuatro, cinco for zero through five. (2) Then seis, siete, ocho, nueve. (3) The count ends at diez — the tenth number after zero: 10.",
+  "accept": [
+   "ten"
+  ]
+ },
+ {
+  "answer": "twenty",
+  "kind": "exact",
+  "q": "What number is 'veinte'?",
+  "rank": 1,
+  "teach": "From the lesson: the round number that closes the first twenty.",
+  "teach2": "From the lesson, in Carmen's words: 'Veinte — twenty. Veinte is twenty, a word of its own, VEIN-teh. Say it: Veinte.' Another way: veinte is the gate between the teens and the tens — the number that closes the first twenty.",
+  "walk": "Walk it through: (1) The lesson counts zero to twenty in order. (2) The last number of that count, after diecinueve, is veinte. (3) Veinte is: 20.",
+  "accept": [
+   "twenty"
+  ]
+ },
+ {
+  "accept": [
+   "money",
+   "the money"
+  ],
+  "answer": "money",
+  "choices": [
+   "flowers",
+   "a ring",
+   "your family",
+   "money"
+  ],
+  "kind": "exact",
+  "mcAnswer": "money",
+  "q": "What does 'El dinero' mean?",
+  "rank": 1,
+  "teach": "From the lesson: dinero is the word for money itself — the thing the whole counting lesson is for.",
+  "teach2": "From the lesson, in Carmen's words: 'El dinero — money. Dinero is the word for money itself. El dinero. Say it: El dinero.' Another way to hold it: dinero is the word for money itself — the thing the whole counting lesson is for",
+  "walk": "Walk it through: (1) After the numbers, Carmen gives them their natural home. (2) That home is el dinero. (3) Dinero means: money."
+ },
+ {
+  "accept": [
+   "Cuánto cuesta",
+   "cuanto cuesta"
+  ],
+  "answer": "¿Cuánto cuesta?",
+  "choices": [
+   "Es barato",
+   "Tengo dinero",
+   "Buenas noches",
+   "¿Cuánto cuesta?"
+  ],
+  "kind": "exact",
+  "mcAnswer": "¿Cuánto cuesta?",
+  "q": "Which phrase asks how much something costs?",
+  "rank": 1,
+  "teach": "From the lesson: cuánto means how much and cuesta comes from costar, to cost — Carmen calls this question the money key.",
+  "teach2": "From the lesson, in Carmen's words: '¿Cuánto cuesta? — how much does it cost? Cuánto means how much, cuesta comes from costar, to cost.' Another way to hold it: cuánto means how much and cuesta comes from costar, to cost — Carmen calls this question the money key",
+  "walk": "Walk it through: (1) The lesson bends toward one question for shops and markets. (2) It is built from cuánto, how much, and cuesta, costs. (3) The question is: ¿Cuánto cuesta?"
+ },
+ {
+  "answer": "forty",
+  "kind": "exact",
+  "q": "In Carmen's Key West flower shop story, the shopkeeper answers 'Cuesta cuarenta dólares.' How many dollars does the arrangement cost?",
+  "rank": 2,
+  "teach": "From the lesson: cuarenta is the forty ten — cuatro's grown-up form — and the story's price rides on it.",
+  "teach2": "From the lesson, in Carmen's words: 'Cuesta cuarenta dólares — it costs forty dollars. Forty. Cuarenta. You built that number today; you hear it land cleanly.' Another way to hold it: cuarenta is the forty ten — cuatro's grown-up form — and the story's price rides on it",
+  "walk": "Walk it through: (1) The answer's shape is cuesta, then the number, then dólares. (2) The number in the story is cuarenta. (3) Cuarenta is forty — so the price is 40 dollars.",
+  "accept": [
+   "forty",
+   "forty dollars"
+  ]
+ },
+ {
+  "accept": [
+   "it is cheap",
+   "cheap",
+   "a good price",
+   "it is a bargain"
+  ],
+  "answer": "it is a good price",
+  "choices": [
+   "I have money",
+   "I want to buy",
+   "it is a good price",
+   "it is expensive"
+  ],
+  "kind": "exact",
+  "mcAnswer": "it is a good price",
+  "q": "What does 'Es barato' mean?",
+  "rank": 2,
+  "teach": "From the lesson: barato is a happy word in Spanish — a bargain, a good deal — not an insult to the goods.",
+  "teach2": "From the lesson, in Carmen's words: 'Es barato — it is cheap, it is a good price, the price that makes you smile.' Another way to hold it: barato is a happy word in Spanish — a bargain, a good deal — not an insult to the goods",
+  "walk": "Walk it through: (1) Es means it is. (2) Carmen pairs caro and barato as opposite opinions about a price. (3) Barato is the smiling one: it is a good price."
+ },
+ {
+  "accept": [
+   "expensive",
+   "it is expensive"
+  ],
+  "answer": "it is expensive",
+  "choices": [
+   "it costs twenty dollars",
+   "I have no money",
+   "it is expensive",
+   "it is a good price"
+  ],
+  "kind": "exact",
+  "mcAnswer": "it is expensive",
+  "q": "What does 'Es caro' mean?",
+  "rank": 2,
+  "teach": "From the lesson: caro is the price that makes you whistle; barato is its opposite, the price that makes you smile.",
+  "teach2": "From the lesson, in Carmen's words: 'Es caro — it is expensive. Caro is expensive, the price that makes you whistle.' Another way to hold it: caro is the price that makes you whistle; barato is its opposite, the price that makes you smile",
+  "walk": "Walk it through: (1) Es means it is. (2) Of the lesson's two price opinions, caro is the expensive one. (3) So es caro means: it is expensive."
+ },
+ {
+  "accept": [
+   "noventa y nueve"
+  ],
+  "answer": "Noventa y nueve",
+  "choices": [
+   "Treinta y dos",
+   "Cuarenta y cinco",
+   "Noventa y nueve",
+   "Ochenta y uno"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Noventa y nueve",
+  "q": "Carmen builds numbers between the tens with the word 'y' — and. Which phrase is ninety-nine?",
+  "rank": 2,
+  "teach": "From the lesson: you do not memorize ninety-nine; you build it — noventa, y, nueve, ninety and nine.",
+  "teach2": "From the lesson, in Carmen's words: 'Noventa y nueve — ninety-nine, the last stop before cien. Do you feel it, Bill? You do not know ninety-nine as a memorized word.' Another way to hold it: you do not memorize ninety-nine; you build it — noventa, y, nueve, ninety and nine",
+  "walk": "Walk it through: (1) Ninety is noventa and nine is nueve. (2) Between the tens, Spanish joins the parts with y, and. (3) Built, ninety-nine is: Noventa y nueve."
+ },
+ {
+  "accept": [
+   "I want to buy flowers"
+  ],
+  "answer": "I want to buy flowers",
+  "choices": [
+   "I like your smile",
+   "I want to buy flowers",
+   "I have money",
+   "I want to buy a ring"
+  ],
+  "kind": "exact",
+  "mcAnswer": "I want to buy flowers",
+  "q": "What does 'Quiero comprar flores' mean?",
+  "rank": 3,
+  "teach": "From the lesson: quiero is I want, comprar is to buy, and flores is flowers — the sentence Bill says in the flower shop.",
+  "teach2": "From the lesson, in Carmen's words: 'Quiero comprar flores — I want to buy flowers. Flores means flowers. Quiero comprar flores.' Another way to hold it: quiero is I want, comprar is to buy, and flores is flowers — the sentence Bill says in the flower shop",
+  "walk": "Walk it through: (1) Quiero means I want, from querer. (2) Comprar means to buy, and flores means flowers. (3) Whole: I want to buy flowers."
+ },
+ {
+  "accept": [
+   "te ves hermosa hoy"
+  ],
+  "answer": "Te ves hermosa hoy",
+  "choices": [
+   "Buenas noches, mi amor",
+   "Te ves hermosa hoy",
+   "Eres muy bonita",
+   "Me gusta tu sonrisa"
+  ],
+  "kind": "exact",
+  "mcAnswer": "Te ves hermosa hoy",
+  "q": "Which compliment does Carmen teach for 'you look beautiful today'?",
+  "rank": 3,
+  "teach": "From the lesson: the compliment with hoy in it — today — so it can be said every day.",
+  "teach2": "From the lesson, in Carmen's words: 'Te ves hermosa hoy — you look beautiful today. Take it apart gently. Te ves means you look — how you appear, what the eyes see.' Another way: hermosa is the deeper word for beautiful, and hoy — today — is what makes the compliment live in the present.",
+  "walk": "Walk it through: (1) The lesson teaches three compliments: bonita, hermosa hoy, and the smile. (2) Only one of them carries hoy, today. (3) That one is: Te ves hermosa hoy."
+ },
+ {
+  "accept": [
+   "I like your smile"
+  ],
+  "answer": "I like your smile",
+  "choices": [
+   "I want to buy flowers",
+   "I like your smile",
+   "you are very pretty",
+   "you look beautiful today"
+  ],
+  "kind": "exact",
+  "mcAnswer": "I like your smile",
+  "q": "What does 'Me gusta tu sonrisa' mean?",
+  "rank": 3,
+  "teach": "From the lesson: this compliment is not about beauty but about joy — her smile itself is the thing he loves looking at.",
+  "teach2": "From the lesson, in Carmen's words: 'Me gusta tu sonrisa — I like your smile. Sonrisa is smile. Me gusta means I like, it pleases me — literally, it pleases me, your smile pleases me.' Another way to hold it: this compliment is not about beauty but about joy — her smile itself is the thing he loves looking at",
+  "walk": "Walk it through: (1) Tu, from lesson two, means your. (2) Sonrisa is the word Carmen defines as smile. (3) Me gusta says I like — so the sentence means: I like your smile."
+ },
+ {
+  "keywords": [
+   [
+    "treinta",
+    "thirty"
+   ],
+   [
+    "y",
+    "and"
+   ],
+   [
+    "siete",
+    "seven"
+   ]
+  ],
+  "kind": "keywords",
+  "need": 2,
+  "q": "In your own words: how does Carmen build a number like thirty-seven in Spanish?",
+  "rank": 3,
+  "teach": "From the lesson: between the tens, Spanish joins the ten and the small number with y — and — instead of making you memorize a new word.",
+  "teach2": "From the lesson, in Carmen's words: 'treinta y siete — thirty and seven. Say it: Treinta y siete. Forty-two: cuarenta y dos.' Another way to hold it: between the tens, Spanish joins the ten and the small number with y — and — instead of making you memorize a new word",
+  "walk": "Walk it through: (1) Thirty is treinta and seven is siete. (2) Carmen joins a ten and a small number with y, and. (3) So thirty-seven is built as treinta y siete."
+ }
+]
