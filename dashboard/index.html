@@ -15,7 +15,7 @@
      held in an installed app's memory across a deploy converges to the
      live build instead of drifting (Bill, Nov 16 02:01 EST: the app
      showed an old rail while the site was already correct). -->
-<meta name="x-dash-build" content="a660f701-20261116T0710">
+<meta name="x-dash-build" content="e5deb8c7-20261116T0816">
 <script>
 (function(){
   var mine = document.querySelector('meta[name="x-dash-build"]');
@@ -147,7 +147,7 @@
   .chip{display:inline-flex;align-items:center;gap:7px;background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:4px 8px 4px 12px;font-size:.82rem;}
   .chip button{color:var(--muted);font-size:.95rem;line-height:1;padding:2px 4px;}
   .cbar{
-    display:flex;align-items:flex-end;gap:8px;background:var(--panel);
+    display:flex;align-items:center;gap:8px;background:var(--panel);
     border:1.5px solid var(--line);border-radius:26px;padding:7px 8px;
   }
   .cbar:focus-within{border-color:var(--gold-deep);}
@@ -373,10 +373,7 @@
         </div>
         <div class="chips" id="chips"></div>
         <div class="cbar">
-          <div class="cstack">
-            <button class="plusbtn" id="plus-btn" type="button" aria-label="Attach">+</button>
-            <button class="eyebtn" id="brain-eye" type="button" aria-label="Dave's brain" title="Dave's brain"><img src="/assets/dave-eye-living.webp" alt=""></button>
-          </div>
+          <button class="plusbtn" id="plus-btn" type="button" aria-label="Attach">+</button>
           <textarea class="ctext" id="ctext" rows="1" placeholder="Message Dave…" aria-label="Message Dave"></textarea>
           <button class="micbtn" id="mic-btn" type="button" aria-label="Speak">🎤</button>
           <button class="sendbtn" id="send-btn" type="button" aria-label="Send">↑</button>
@@ -969,7 +966,7 @@
   function setBrain(open){
     brainOpen = open;
     $("brain").classList.toggle("open", open);
-    $("brain-eye").classList.toggle("on", open);
+    var be = $("brain-eye"); if(be) be.classList.toggle("on", open);
   }
   function markRail(v){
     document.querySelectorAll(".rail [data-view]").forEach(function(b){
@@ -991,7 +988,7 @@
     if(!view){ view = "chats"; markRail("chats"); renderPanel(); }
     setPanel(true);
   });
-  $("brain-eye").addEventListener("click", function(){ setBrain(!brainOpen); });
+  var beBtn = $("brain-eye"); if(beBtn) beBtn.addEventListener("click", function(){ setBrain(!brainOpen); });
   $("rail-new").addEventListener("click", function(){
     /* Keep the sign-in exchange as the invisible anchor before clearing,
        or owner mode would silently fall back to the public seat. */
