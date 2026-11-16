@@ -41,6 +41,15 @@
     '#gtSkip{font-size:.8rem;color:var(--ink-soft);white-space:nowrap}',
     '#gtGrade{border:1px solid #46a35a;background:#f2f9f2;border-radius:6px;padding:12px 16px;margin-top:12px}',
     '#gtHint{display:none;border:1px solid var(--gold);background:#fdf6dd;border-radius:6px;padding:10px 14px;margin:10px 0 0;font-size:.96rem}',
+    '#gtWalk{display:none;border:1px solid #4a6b8a;background:#eef4fa;border-radius:6px;padding:10px 14px;margin:10px 0 0;font-size:.96rem;line-height:1.5}',
+    '#gtWalk b{color:#33536e}',
+    '#gtLesson{border:1px solid var(--gold);background:#fffdf4;border-radius:6px;padding:12px 16px;margin:10px 0 0}',
+    '#gtLessonMeta{font-size:.82rem;color:var(--ink-soft);letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px}',
+    '#gtLessonText{font-size:1.05rem;line-height:1.55}',
+    '#gtLessonBtns{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:baseline}',
+    '#gtToQuestions{font-size:.82rem;color:var(--ink-soft)}',
+    '#gtRef{display:none;border:1px solid var(--line);background:#fffdf4;border-radius:6px;padding:10px 14px;margin:10px 0 0;font-size:.95rem;line-height:1.5;max-height:320px;overflow:auto}',
+    '#gtRef p{margin:0 0 8px}',
     '#gtChoices{display:none;margin:10px 0 0}',
     '#gtChoices .gtChoice{display:block;width:100%;text-align:left;margin:6px 0;background:var(--panel);border:1px solid var(--gold);color:var(--ink);border-radius:6px;padding:9px 14px;font-family:inherit;font-size:.98rem;cursor:pointer}',
     '#gtChoices .gtChoice:hover:not(:disabled){background:var(--gold);color:#fff}',
@@ -49,18 +58,34 @@
   ].join('\n');
 
   var HTML =
-    '<h3 id="gtTitle">Work it with your professor — answer, and earn each step</h3>' +
-    '<p>Your professor presents a piece of the lesson, then asks you ' +
-    'about it — a problem to solve, a value to produce, a question to ' +
-    'answer. <b>Say your answer out loud or type it.</b> It is checked ' +
-    'against the class\u2019s own material, and the lesson <b>does not ' +
-    'move on</b> until it lands: miss, and your professor teaches the ' +
-    'piece again, a different way. Your grade for the set is recorded ' +
-    'in your University record — passes, and skips counted as skips. ' +
+    '<h3 id="gtTitle">First the lesson — then the questions</h3>' +
+    '<p>First, your professor <b>teaches the lesson</b> — the ' +
+    'class\u2019s real material, presented in order, the whole of it. ' +
+    'Then come the <b>questions</b>: every one drawn from what was ' +
+    'just taught, and nothing else — nobody is expected to just know ' +
+    'an answer that was not taught. <b>Say your answer out loud or ' +
+    'type it.</b> It is checked against the lesson, and the class ' +
+    '<b>does not move on</b> until it lands: miss, and your professor ' +
+    'shows you the exact passage again, taught a different way. Your ' +
+    'grade is recorded in your University record — passes, and skips ' +
+    'counted as skips. Miss the same question twice and your ' +
+    'professor <b>walks it through</b> — the reasoning, step by ' +
+    'step, until the answer follows — then it is still yours to say. ' +
     'Stuck is allowed: <b>I\u2019m stuck — help me</b> first gives a ' +
     'hint drawn from the material itself, then choices to pick from. ' +
-    'A step landed through the choices counts — and your record says ' +
-    'so, as an assisted pass.</p>' +
+    'A question landed through the choices counts — and your record ' +
+    'says so, as an assisted pass.</p>' +
+    '<div id="gtLesson" style="display:none">' +
+      '<div id="gtLessonMeta"></div>' +
+      '<div id="gtLessonText"></div>' +
+      '<div id="gtLessonBtns">' +
+        '<button class="act" id="gtBeginLesson">Begin — your professor teaches</button>' +
+        '<button class="act" id="gtContinue" style="display:none">Continue \u2192</button>' +
+        '<button class="ghost" id="gtHearLesson" style="display:none">\uD83D\uDD0A Hear this part</button>' +
+        '<a href="#" id="gtToQuestions" style="display:none">skip the lesson — straight to the questions \u2192</a>' +
+      '</div>' +
+    '</div>' +
+    '<div id="gtRef"></div>' +
     '<div id="gtDots"></div>' +
     '<div id="gtTeach"></div>' +
     '<div id="gtWhy"></div>' +
@@ -74,9 +99,11 @@
       '<button class="ghost" id="gtMic" style="display:none">\uD83C\uDFA4 Answer out loud</button>' +
       '<button class="ghost" id="gtHear" style="display:none">\uD83D\uDD0A Hear that again</button>' +
       '<button class="ghost" id="gtHelp" style="display:none">I\u2019m stuck — help me</button>' +
+      '<button class="ghost" id="gtRefBtn" style="display:none">\uD83D\uDCD6 The lesson</button>' +
     '</div>' +
     '<div id="gtStatus"></div>' +
     '<div id="gtHint"></div>' +
+    '<div id="gtWalk"></div>' +
     '<div id="gtChoices"></div>' +
     '<div id="gtFoot"><span id="gtProgress"></span>' +
     '<a href="#" id="gtSkip" style="display:none">skip for now \u2192</a></div>' +
@@ -119,8 +146,11 @@
 
   /* ---------------- state ---------------- */
   var data = null, gCls = null, gProf = null;
+  var phase = 'questions';   /* 'lesson' first, then 'questions' */
+  var lessonIdx = 0, lessonStarted = false;
   var idx = 0, attempts = 0, sessionAttempts = 0, praiseCount = 0;
   var helpLevel = 0;   /* per step: 0 none · 1 hint shown · 2 choices shown */
+  var walkIdx = -1;    /* the step the walkthrough is shown for (-1: none) */
   var states = {}, started = false, busy = false, dirty = false, gradeWritten = false;
   var stream = null, actx = null, analyser = null, waveRAF = null;
   var rec = null, listening = false, heardFinal = null;
@@ -217,10 +247,103 @@
   }
   function renderProgress() {
     var g = G.gradeFor(states, data.steps.length);
-    $('gtProgress').textContent = 'Step ' + (idx + 1) + ' of ' + data.steps.length +
+    $('gtProgress').textContent = 'Question ' + (idx + 1) + ' of ' + data.steps.length +
       ' · ' + g.passed + ' landed' +
       (g.skipped ? ' · ' + g.skipped + (g.skipped === 1 ? ' skip' : ' skips') : '') +
       (attempts ? ' · ' + attempts + (attempts === 1 ? ' try' : ' tries') + ' on this one' : '');
+  }
+
+  /* ---------------- the lesson phase ----------------
+     Bill's model: the class is TAUGHT first — the lesson passages
+     presented in order, read or heard — and only then do the
+     questions begin. A student with recorded progress in the class
+     enters at the questions (the lesson stays one tap away, in the
+     reference panel); a first-time student gets the lesson, with a
+     quiet skip door for anyone who has already read it elsewhere. */
+  var QIDS = ['gtDots', 'gtTeach', 'gtWhy', 'gtQ', 'gtWave', 'gtHeard',
+    'gtInput', 'gtBtns', 'gtStatus', 'gtHint', 'gtWalk', 'gtChoices',
+    'gtFoot', 'gtGrade'];
+  function setQuestionChrome(show) {
+    QIDS.forEach(function (id) {
+      var el = $(id);
+      if (el) el.style.display = show ? '' : 'none';
+    });
+    if (!show) { var r = $('gtRef'); if (r) r.style.display = 'none'; }
+  }
+  function hasLesson() { return !!(data && data.lesson && data.lesson.length); }
+  function showLessonChunk() {
+    var chunks = data.lesson;
+    var ch = chunks[lessonIdx];
+    $('gtLessonMeta').textContent = 'The lesson — part ' + (lessonIdx + 1) +
+      ' of ' + chunks.length;
+    $('gtLessonText').textContent = ch.teach;
+    $('gtBeginLesson').style.display = lessonStarted ? 'none' : '';
+    $('gtContinue').style.display = lessonStarted ? '' : 'none';
+    $('gtContinue').textContent = lessonIdx + 1 < chunks.length
+      ? 'Continue \u2192' : 'Begin the questions \u2192';
+    $('gtHearLesson').style.display = (lessonStarted && ch.audio) ? '' : 'none';
+    $('gtToQuestions').style.display = '';
+  }
+  function playLessonChunk() {
+    if (!hasLesson()) return Promise.resolve();
+    return playClip(data.lesson[lessonIdx].audio);
+  }
+  function beginLesson() {
+    if (lessonStarted) return;
+    lessonStarted = true;
+    showLessonChunk();
+    playLessonChunk();
+  }
+  function continueLesson() {
+    if (!lessonStarted) { beginLesson(); return; }
+    if (lessonIdx + 1 < data.lesson.length) {
+      lessonIdx++;
+      showLessonChunk();
+      playLessonChunk();
+    } else if (data.steps.length) {
+      toQuestions();
+    } else {
+      /* a lesson-only class (none in the current build, but the
+         data format allows it): the lesson is the whole sitting */
+      $('gtLessonMeta').textContent = 'The lesson — complete';
+      $('gtContinue').style.display = 'none';
+      $('gtHearLesson').style.display = 'none';
+      $('gtToQuestions').style.display = 'none';
+    }
+  }
+  function toQuestions() {
+    if (!data.steps.length) return;
+    phase = 'questions';
+    $('gtLesson').style.display = 'none';
+    setQuestionChrome(true);
+    /* restore the pre-Begin pattern of the question controls */
+    $('gtInput').style.display = 'none';
+    $('gtGrade').style.display = 'none';
+    $('gtHint').style.display = 'none';
+    $('gtWalk').style.display = 'none';
+    $('gtChoices').style.display = 'none';
+    $('gtWave').style.display = 'none';
+    ['gtCheck', 'gtMic', 'gtHear', 'gtSkip', 'gtHelp', 'gtRefBtn']
+      .forEach(function (id) { $(id).style.display = 'none'; });
+    $('gtBegin').style.display = '';
+    $('gtBegin').textContent = 'Begin — ' + profFirst() + ' asks the questions';
+    showStep(idx);
+  }
+  function toggleRef() {
+    var r = $('gtRef');
+    if (r.style.display !== 'none') { r.style.display = 'none'; return; }
+    r.innerHTML = '';
+    var h = document.createElement('p');
+    var hb = document.createElement('b');
+    hb.textContent = 'The lesson, for reference — everything the questions draw on:';
+    h.appendChild(hb);
+    r.appendChild(h);
+    data.lesson.forEach(function (ch) {
+      var p = document.createElement('p');
+      p.textContent = ch.teach;
+      r.appendChild(p);
+    });
+    r.style.display = '';
   }
 
   /* ---------------- the step flow ---------------- */
@@ -238,6 +361,9 @@
     $('gtHear').style.display = (started && st.audio) ? '' : 'none';
     /* help starts fresh on every step */
     helpLevel = 0;
+    walkIdx = -1;
+    var wk = $('gtWalk');
+    wk.style.display = 'none'; wk.innerHTML = '';
     var hint = $('gtHint'), ch = $('gtChoices'), hb = $('gtHelp');
     hint.style.display = 'none'; hint.innerHTML = '';
     ch.style.display = 'none'; ch.innerHTML = '';
@@ -296,16 +422,41 @@
     });
   }
 
+  /* the walkthrough: after the SECOND miss on a step, the professor
+     stops re-asking and teaches the reasoning itself — how the
+     answer follows, step by step, from the step's own material.
+     The student still has to produce the answer; the walkthrough
+     never passes the step for them. (Bill, Nov 16: "the re-teach
+     claims to show a different side but never actually gives it" —
+     the walkthrough IS the side, given.) */
+  function showWalk() {
+    var st = step();
+    if (!st.walk || walkIdx === idx) return;
+    walkIdx = idx;
+    var wk = $('gtWalk');
+    wk.innerHTML = '';
+    var b = document.createElement('b');
+    b.textContent = profFirst() + ' walks it through — how the answer follows: ';
+    wk.appendChild(b);
+    wk.appendChild(document.createTextNode(st.walk));
+    wk.style.display = '';
+  }
+
   function onMiss(res) {
     hideBoardCheck();
     var ri = (attempts - 1) % data.retry.length;
     setStatus(data.retry[ri] + ' ' + profFirst() + ' teaches it again, another way:', 'bad');
     /* the re-teach: the same piece, a different way in — then retry */
     $('gtTeach').textContent = step().teach2 || step().teach;
+    /* a second miss earns the walkthrough, on the board immediately */
+    if (attempts >= 2) showWalk();
     renderProgress();
     playClip(data.retryAudio && data.retryAudio[ri]).then(function () {
       busy = false;
-      setStatus(data.retry[ri] + ' Try again — it does not move on until it lands.', 'bad');
+      setStatus(data.retry[ri] + ' Try again — it does not move on until it lands.' +
+        (walkIdx === idx
+          ? ' The walkthrough is on the board: read how the answer follows, then say it yourself — it still has to come from you.'
+          : ' Stuck? The help button under the question is there any time: a hint first, then choices.'), 'bad');
     });
   }
 
@@ -347,7 +498,12 @@
       return (b.kind === st.kind ? 1 : 0) - (a.kind === st.kind ? 1 : 0);
     });
     sibs.forEach(function (o) {
-      var t = answerText(o);
+      /* a keyword step's "answer", for choice purposes, is its idea
+         set — the terms its material stands on. A class of keyword
+         questions thus offers its own idea sets as the choices:
+         real material from this class, only one set answers this
+         question. */
+      var t = o.kind === 'keywords' ? correctText(o) : answerText(o);
       if (!t) return;
       var n = normForChoice(t);
       if (seen[n]) return;
@@ -536,15 +692,15 @@
     var p = document.createElement('p');
     p.style.margin = '6px 0 0';
     var assistedN = assistedCount();
-    p.textContent = g.passed + ' of ' + g.total + ' steps landed' +
+    p.textContent = g.passed + ' of ' + g.total + ' questions landed' +
       (g.skipped ? ', ' + g.skipped + ' skipped (counted as skips, never as passes)' : '') +
       (assistedN ? ', ' + assistedN + ' landed with help (recorded as assisted passes)' : '') +
       ' \u2014 ' + g.percent + '%. ' +
       (g.percent === 100
-        ? 'Every step earned. That is the whole lesson, proven in session.'
+        ? 'Every question earned. That is the whole lesson, proven in session.'
         : 'Revisit a striped dot any time to land what was skipped \u2014 the grade updates when you do.');
     panel.appendChild(p);
-    setStatus('Every step in this set is resolved. Well worked.', 'good');
+    setStatus('Every question in this set is resolved. Well worked.', 'good');
     showBoardCheck();
   }
 
@@ -615,8 +771,22 @@
     var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (SR) $('gtMic').style.display = '';
     if (step().audio) $('gtHear').style.display = '';
+    /* the help door is on the step from the FIRST attempt — visible,
+       not discovered later (Bill, Nov 16) */
+    $('gtHelp').style.display = states[idx] !== 'pass' ? '' : 'none';
+    /* the lesson stays one tap away while the questions run */
+    if (hasLesson()) $('gtRefBtn').style.display = '';
     getMic().catch(function () { /* mic unavailable: typing still works */ });
-    playClip(step().audio).then(function () { showStep(idx); });
+    /* the opening clip shares one audio element with every later
+       clip, so this promise can resolve late — when the RETRY clip
+       ends, not the opening one. If the student has already
+       answered by then, the check flow owns the board: a late
+       showStep here would reset the attempt count mid-question
+       (a fast first miss lost its attempt — Nov 16 verification). */
+    var stamp = sessionAttempts;
+    playClip(step().audio).then(function () {
+      if (sessionAttempts === stamp) showStep(idx);
+    });
   }
 
   function enter(section, cls, prof) {
@@ -636,16 +806,30 @@
     sessionAttempts = 0; praiseCount = 0;
     started = false; busy = false; dirty = false; gradeWritten = false;
     box.style.display = '';
-    $('gtTitle').textContent = 'Work it with ' + profFirst() + ' \u2014 answer, and earn each step';
-    $('gtBegin').style.display = '';
-    $('gtBegin').textContent = 'Begin \u2014 ' + profFirst() + ' presents the first piece';
-    ['gtCheck', 'gtMic', 'gtHear', 'gtSkip', 'gtHelp'].forEach(function (id) { $(id).style.display = 'none'; });
-    $('gtInput').style.display = 'none';
-    $('gtGrade').style.display = 'none';
-    $('gtWave').style.display = 'none';
+    $('gtTitle').textContent = 'First the lesson \u2014 then the questions, with ' + profFirst();
     var firstOpen = data.steps.findIndex(function (s, i) { return !states[i]; });
     idx = firstOpen === -1 ? 0 : firstOpen;
-    showStep(idx);
+    var hasProgress = Object.keys(states).length > 0;
+    if (hasLesson() && !hasProgress && data.steps.length) {
+      /* first time in this class: the lesson is taught first */
+      phase = 'lesson';
+      lessonIdx = 0; lessonStarted = false;
+      setQuestionChrome(false);
+      $('gtBegin').style.display = 'none';
+      $('gtLesson').style.display = '';
+      showLessonChunk();
+    } else {
+      phase = 'questions';
+      $('gtLesson').style.display = 'none';
+      setQuestionChrome(true);
+      $('gtBegin').style.display = '';
+      $('gtBegin').textContent = 'Begin \u2014 ' + profFirst() + ' asks the questions';
+      ['gtCheck', 'gtMic', 'gtHear', 'gtSkip', 'gtHelp', 'gtRefBtn'].forEach(function (id) { $(id).style.display = 'none'; });
+      $('gtInput').style.display = 'none';
+      $('gtGrade').style.display = 'none';
+      $('gtWave').style.display = 'none';
+      showStep(idx);
+    }
     return true;
   }
 
@@ -656,6 +840,7 @@
      (a language room, or the data has not landed yet). */
   function start() {
     if (!data || !box || box.style.display === 'none') return false;
+    if (phase === 'lesson') { beginLesson(); return true; }
     if (!started) begin();
     return true;
   }
@@ -672,11 +857,22 @@
     var a = $('gtAudio');
     if (a) { a.pause(); a.removeAttribute('src'); }
     started = false; busy = false;
+    phase = 'questions'; lessonIdx = 0; lessonStarted = false;
+    var lp = $('gtLesson'); if (lp) lp.style.display = 'none';
+    var rp = $('gtRef'); if (rp) rp.style.display = 'none';
     data = null; gCls = null;
     if (box) box.style.display = 'none';
   }
 
   function wire() {
+    $('gtBeginLesson').addEventListener('click', beginLesson);
+    $('gtContinue').addEventListener('click', continueLesson);
+    $('gtHearLesson').addEventListener('click', function () { playLessonChunk(); });
+    $('gtToQuestions').addEventListener('click', function (e) {
+      e.preventDefault();
+      if (phase === 'lesson') toQuestions();
+    });
+    $('gtRefBtn').addEventListener('click', toggleRef);
     $('gtBegin').addEventListener('click', begin);
     $('gtCheck').addEventListener('click', function () { check(); });
     $('gtMic').addEventListener('click', startListening);

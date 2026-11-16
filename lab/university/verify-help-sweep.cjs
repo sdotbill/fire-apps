@@ -1,9 +1,9 @@
 /* University-wide help sweep (Bill's scope extension, Nov 16 03:11):
    the hint → choices → assisted-pass flow, driven in headless Chrome
    on ONE gated class per section (the section's first gated class in
-   catalogue order), plus two targeted samples: a rescued two-step
-   class (syllabus-DOI choices) and a single-paper class (guided
-   look-up fallback). For every sample: begin → I'm stuck → hint from
+   catalogue order), plus two targeted samples: single-question
+   classes, which honestly take the guided look-up fallback. For
+   every sample: lesson first → begin → I'm stuck → hint from
    the step's own material → choices (or the honest look-up) → land
    the step → the log records an ASSISTED pass.
    The expected options are computed here from gate-data.json +
@@ -46,7 +46,9 @@ function expectedOptions(cid, idx) {
   const sibs = d.steps.filter((o, i) => i !== idx);
   sibs.sort((a, b) => (b.kind === st.kind ? 1 : 0) - (a.kind === st.kind ? 1 : 0));
   sibs.forEach(o => {
-    const t = answerText(o);
+    /* mirrors gate-ui.js: a keyword step's choice text is its
+       idea set; other steps offer their answer strings */
+    const t = o.kind === 'keywords' ? correctText(o) : answerText(o);
     if (!t) return;
     const n = norm(t);
     if (seen.has(n)) return;
@@ -86,11 +88,11 @@ function expectedOptions(cid, idx) {
 const onlyArg = process.argv[3] || '';
 const plan = [];
 cat.sections.forEach(s => {
-  const first = s.classes.find(c => gd[c.id]);
+  const first = s.classes.find(c => gd[c.id] && gd[c.id].steps.length);
   if (first) plan.push({ section: s.id, sectionName: s.name, classId: first.id, why: 'section sample' });
 });
-[['cosmology', 'founding-papers-re-read', 'rescued two-step class (syllabus choices)'],
- ['designs', 'house-record', 'single-paper class (look-up fallback)']
+[['cosmology', 'founding-papers-re-read', 'single-question class (look-up fallback)'],
+ ['designs', 'house-record', 'single-question class (look-up fallback)']
 ].forEach(([sec, cid, why]) => {
   if (gd[cid] && !plan.some(p => p.classId === cid)) {
     const s = cat.sections.find(x => x.id === sec);
@@ -125,6 +127,17 @@ cat.sections.forEach(s => {
       await page.goto(BASE + '#class/' + item.section + '/' + item.classId,
         { waitUntil: 'networkidle2', timeout: 60000 });
       await page.waitForSelector('#gateBox', { visible: true, timeout: 20000 });
+      /* lesson-first build: walk the lesson, then begin the questions */
+      const lessonVisible = await page.evaluate(
+        () => document.getElementById('gtLesson').style.display !== 'none');
+      if (lessonVisible) {
+        const n = (gd[item.classId].lesson || []).length;
+        await page.click('#gtBeginLesson');
+        for (let i = 0; i < n; i++) { await page.click('#gtContinue'); await sleep(100); }
+        await page.waitForFunction(
+          () => document.getElementById('gtBegin').style.display !== 'none',
+          { timeout: 15000 });
+      }
       await page.click('#gtBegin');
       /* the step is presented when the professor's spoken piece
          ends — a recorded step clip can run past two minutes, so
@@ -157,15 +170,18 @@ cat.sections.forEach(s => {
       } else if (/No set of choices can be honestly built/.test(boxText)) {
         r.mode = 'look-up fallback';
         const st = gd[item.classId].steps[0];
-        const typed = st.kind === 'keywords' ? null : String(st.answer);
-        if (typed === null) throw new Error('look-up fallback on a keywords step — cannot type-verify');
+        /* a keyword question is landed by typing an answer built
+           on its taught terms; other kinds by their value */
+        const typed = st.kind === 'keywords'
+          ? st.keywords.map(g => g[0]).join(' ')
+          : String(st.answer);
         await page.$eval('#gtInput', (el, t) => { el.value = t; }, typed);
         await page.click('#gtCheck');
       } else {
         throw new Error('neither choices nor the look-up appeared');
       }
       await page.waitForFunction(
-        () => /Step 2 of/.test(document.getElementById('gtProgress').textContent) ||
+        () => /Question 2 of/.test(document.getElementById('gtProgress').textContent) ||
               document.getElementById('gtGrade').style.display !== 'none',
         { timeout: 30000 });
       const log = await page.evaluate(

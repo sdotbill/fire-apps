@@ -107,7 +107,15 @@
     got.forEach(function (w) { gotSet[w] = 1; });
     var hit = 0;
     want.forEach(function (w) { if (gotSet[w]) hit++; });
-    var need = Math.max(1, Math.ceil(want.length * 0.75));
+    /* the substance of a unit title is its content nouns — a student
+       who produces them has produced the unit ("data, parameters and
+       training" IS the unit "Data, parameters, and training: the
+       three ingredients"). The bar is 60% of the content words with
+       precision doing the guarding: a syllabus dump still fails on
+       precision, and a different unit still scores zero. (The old
+       75% bar failed the natural short form of a title outright —
+       a checker trap, found live in AI Fundamentals, Nov 16.) */
+    var need = Math.max(1, Math.ceil(want.length * 0.6));
     var precision = hit / got.length;
     var ok = hit >= need && precision >= 0.45;
     return { pass: ok, score: hit / want.length, why: ok ? 'title' : 'title-miss',

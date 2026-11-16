@@ -1,757 +1,754 @@
 # Gate coverage — build-gate-data.py
 
-Every non-language class gets a gated lesson built only from its own material.
+Every non-language class gets a LESSON taught first — its own material, presented in order — and then end-of-class questions drawn only from that lesson. The containment audit in the generator drops any question whose answer is not in the lesson; the drops are counted in the build output and in the teaching-fix report.
 
-## full (563)
+## full (172)
 
-- `cosmology-the-open-programme` (cosmology) — 6 steps, 6 substantive
-- `the-surviving-count-vacuum` (cosmology) — 3 steps, 3 substantive
-- `vacuum-dissolution-and-the-surviving-count` (cosmology) — 4 steps, 4 substantive
-- `torsion-and-bounce-extensions` (cosmology) — 6 steps, 6 substantive
-- `the-fifth-coordinate-and-the-transit-law` (cosmology) — 4 steps, 4 substantive
-- `gravitational-wave-signatures-of-torsion-and-the-bounce` (cosmology) — 6 steps, 6 substantive
-- `primordial-perturbations-non-gaussianity-and-the-power-spectrum-` (cosmology) — 6 steps, 6 substantive
-- `the-21-cm-line-reionisation-and-the-dark-ages-in-a-bounced-cosmo` (cosmology) — 6 steps, 6 substantive
-- `topological-defects-through-a-torsion-regulated-bounce` (cosmology) — 6 steps, 6 substantive
-- `baryogenesis-leptogenesis-and-the-matter-antimatter-asymmetry-th` (cosmology) — 3 steps, 3 substantive
-- `early-universe-phase-transitions-and-vacuum-decay-under-the-dens` (cosmology) — 5 steps, 5 substantive
-- `the-expansion-history-hubble-tension-dark-energy-dynamics-and-la` (cosmology) — 6 steps, 6 substantive
-- `reheating-preheating-and-thermalisation-after-a-torsion-regulate` (cosmology) — 5 steps, 5 substantive
-- `the-lyman-alpha-forest-and-intergalactic-absorption-as-tests-of-` (cosmology) — 6 steps, 6 substantive
-- `cosmic-birefringence-parity-violation-and-polarisation-rotation-` (cosmology) — 6 steps, 6 substantive
-- `sunyaev-zel-dovich-effects-and-hot-intracluster-gas-as-tests-of-` (cosmology) — 6 steps, 6 substantive
-- `exoplanet-detection-budgets-direct-imaging-transit-photometry-an` (cosmology) — 3 steps, 3 substantive
-- `exomoons-orbital-stability-tidal-evolution-and-detection-budgets` (cosmology) — 6 steps, 6 substantive
-- `volcanic-eruption-columns-ash-plumes-and-pyroclastic-density-cur` (cosmology) — 6 steps, 6 substantive
-- `the-vacuum-count-at-the-governing-density-and-the-two-density-te` (cosmology) — 3 steps, 3 substantive
-- `dwarf-galaxies-ultra-faint-satellites-and-low-mass-halo-structur` (galactic) — 6 steps, 6 substantive
-- `cosmic-optical-and-infrared-backgrounds-galaxy-counts-and-surfac` (galactic) — 6 steps, 6 substantive
-- `the-milky-way-bar-spiral-arms-and-galactic-disc-dynamics-as-test` (galactic) — 6 steps, 6 substantive
-- `the-fermi-and-erosita-bubbles-and-milky-way-outflows-against-ene` (galactic) — 6 steps, 6 substantive
-- `quasi-periodic-oscillations-and-rapid-x-ray-variability-in-accre` (galactic) — 6 steps, 6 substantive
-- `galactic-stellar-streams-tidal-tails-and-the-magellanic-system-d` (galactic) — 6 steps, 6 substantive
-- `the-circumgalactic-medium-absorption-cooling-and-baryon-budgets-` (galactic) — 6 steps, 6 substantive
-- `gamma-ray-bursts-prompt-emission-afterglow-and-host-galaxy-budge` (galactic) — 6 steps, 6 substantive
-- `fast-radio-bursts-dispersion-energetics-and-host-galaxy-budgets-` (galactic) — 6 steps, 6 substantive
-- `rotation-haloes` (galactic) — 3 steps, 3 substantive
-- `solar-physics-helioseismology-and-space-weather-in-the-bounce-fr` (astrophysics) — 6 steps, 6 substantive
-- `asteroids-comets-planetary-rings-and-small-body-dynamics-as-test` (astrophysics) — 6 steps, 6 substantive
-- `exoplanet-atmospheres-spectroscopy-escape-and-photochemistry-aga` (astrophysics) — 6 steps, 6 substantive
-- `atmospheric-electricity-lightning-transient-luminous-events-and-` (astrophysics) — 6 steps, 6 substantive
-- `protoplanetary-and-debris-discs-dust-evolution-planetesimal-form` (astrophysics) — 3 steps, 3 substantive
-- `stellar-asteroseismology-and-white-dwarf-cooling-as-tests-of-the` (astrophysics) — 6 steps, 6 substantive
-- `gamma-ray-astronomy-the-diffuse-background-line-searches-and-sou` (astrophysics) — 3 steps, 3 substantive
-- `the-first-stars-and-early-metal-enrichment-in-a-bounced-cosmolog` (astrophysics) — 6 steps, 6 substantive
-- `x-ray-astronomy-hot-gas-x-ray-binaries-and-the-diffuse-x-ray-bac` (astrophysics) — 6 steps, 6 substantive
-- `solar-wind-turbulence-the-parker-spiral-and-the-interplanetary-m` (astrophysics) — 6 steps, 6 substantive
-- `brown-dwarfs-free-floating-planets-and-the-bottom-of-the-initial` (astrophysics) — 6 steps, 6 substantive
-- `the-kuiper-belt-trans-neptunian-objects-and-the-outer-solar-syst` (astrophysics) — 6 steps, 6 substantive
-- `interstellar-objects-and-interstellar-traversal-against-density-` (astrophysics) — 6 steps, 6 substantive
-- `cataclysmic-variables-novae-and-recurrent-novae-against-density-` (astrophysics) — 6 steps, 6 substantive
-- `magnetic-reconnection-in-astrophysical-and-laboratory-plasmas-ag` (astrophysics) — 6 steps, 6 substantive
-- `mercury-core-crust-surface-and-exosphere-against-density-and-ene` (astrophysics) — 6 steps, 6 substantive
-- `cometary-comae-tails-and-outgassing-against-density-and-energy-b` (astrophysics) — 6 steps, 6 substantive
-- `stellar-coronae-stellar-winds-and-astrospheres-of-stars-other-th` (astrophysics) — 6 steps, 6 substantive
-- `magnetars-soft-gamma-repeaters-and-anomalous-x-ray-pulsars-again` (astrophysics) — 6 steps, 6 substantive
-- `the-cosmic-web-filaments-walls-and-the-warm-hot-intergalactic-me` (astrophysics) — 6 steps, 6 substantive
-- `common-envelope-evolution-and-binary-star-interaction-products-a` (astrophysics) — 6 steps, 6 substantive
-- `planetary-nebulae-post-asymptotic-giant-branch-stars-and-white-d` (astrophysics) — 6 steps, 6 substantive
-- `intracluster-light-intergalactic-stars-and-diffuse-stellar-compo` (astrophysics) — 6 steps, 6 substantive
-- `asymptotic-giant-branch-stars-mira-variables-and-stellar-mass-lo` (astrophysics) — 6 steps, 6 substantive
-- `polluted-white-dwarfs-and-planetary-debris-accretion-against-com` (astrophysics) — 6 steps, 6 substantive
-- `open-clusters-stellar-associations-and-young-moving-groups-disso` (astrophysics) — 6 steps, 6 substantive
-- `symbiotic-stars-and-interacting-wind-binaries-accretion-nebular-` (astrophysics) — 6 steps, 6 substantive
-- `wolf-rayet-stars-luminous-blue-variables-and-massive-star-winds-` (astrophysics) — 6 steps, 6 substantive
-- `solar-and-reactor-neutrinos-production-oscillation-and-detection` (astrophysics) — 6 steps, 6 substantive
-- `intermediate-mass-black-holes-in-dense-clusters-and-dwarf-nuclei` (astrophysics) — 6 steps, 6 substantive
-- `planetary-migration-resonances-and-system-architecture-orbital-e` (astrophysics) — 6 steps, 6 substantive
-- `stellar-flares-and-superflares-flare-energy-loop-and-ejection-as` (astrophysics) — 6 steps, 6 substantive
-- `solar-prominences-filaments-and-coronal-mass-ejection-initiation` (astrophysics) — 6 steps, 6 substantive
-- `chondrules-calcium-aluminium-rich-inclusions-and-early-solar-sys` (astrophysics) — 6 steps, 6 substantive
-- `thermonuclear-x-ray-bursts-on-accreting-neutron-stars-ignition-r` (astrophysics) — 6 steps, 6 substantive
-- `exoplanet-atmospheres-transmission-emission-and-retrieval-budget` (astrophysics) — 6 steps, 6 substantive
-- `the-solar-wind-and-the-heliosphere-stream-structure-parker-spira` (astrophysics) — 6 steps, 6 substantive
-- `black-holes-remnants` (astrophysics) — 6 steps, 6 substantive
-- `neutrinos-and-lepton-physics-through-a-bounce` (particle) — 6 steps, 6 substantive
-- `high-energy-neutrino-astronomy-and-multi-messenger-transients-in` (particle) — 3 steps, 3 substantive
-- `cosmic-ray-muography-and-muon-tomography-attenuation-exposure-an` (particle) — 6 steps, 6 substantive
-- `precision-particle-physics-electric-dipole-moments-rare-decays-a` (particle) — 6 steps, 6 substantive
-- `geoneutrinos-atmospheric-neutrinos-and-neutrino-earth-tomography` (particle) — 6 steps, 6 substantive
-- `snow-avalanches-slab-fracture-and-powder-clouds-release-fracture` (particle) — 6 steps, 6 substantive
-- `quantum-thermodynamics-nanoscale-heat-engines-and-fluctuation-th` (particle) — 6 steps, 6 substantive
-- `planetary-ring-systems-particle-dynamics-resonances-spokes-and-r` (particle) — 6 steps, 6 substantive
-- `medical-and-biological-physics-in-the-limit-frame-imaging-radiot` (atomic) — 6 steps, 6 substantive
-- `quantum-optics-cavity-systems-and-single-photon-devices-from-the` (atomic) — 6 steps, 6 substantive
-- `astrochemistry-and-molecular-physics-in-cold-clouds-reaction-fre` (atomic) — 6 steps, 6 substantive
-- `cavitation-bubble-dynamics-and-sonoluminescence-collapse-erosion` (atomic) — 6 steps, 6 substantive
-- `precision-timekeeping-optical-clocks-and-relativistic-geodesy-fr` (atomic) — 6 steps, 6 substantive
-- `magnons-and-spin-waves-in-magnetic-materials-dispersion-damping-` (atomic) — 6 steps, 6 substantive
-- `spectra-light` (atomic) — 3 steps, 3 substantive
-- `condensed-matter-the-open-programme` (condensed) — 4 steps, 4 substantive
-- `semiconductor-and-solid-state-electronic-and-thermal-transport-p` (condensed) — 6 steps, 6 substantive
-- `topological-matter-and-quantum-hall-transport-quantisation-edge-` (condensed) — 6 steps, 6 substantive
-- `superconductors-condensates` (condensed) — 4 steps, 4 substantive
-- `jupiter-and-saturn-interiors-atmospheres-ring-systems-and-magnet` (plasma) — 6 steps, 6 substantive
-- `the-earth-s-ionosphere-thermosphere-and-plasmasphere-against-den` (plasma) — 6 steps, 6 substantive
-- `dusty-complex-plasmas-grain-charging-coupling-and-dust-acoustic-` (plasma) — 6 steps, 6 substantive
-- `interstellar-scintillation-and-plasma-lensing-of-pulsars-and-fas` (plasma) — 6 steps, 6 substantive
-- `atmospheric-oceanic-and-planetary-climate-dynamics-against-vacuu` (geophysics) — 6 steps, 6 substantive
-- `planetary-volcanism-tectonics-and-interior-heat-flow-against-den` (geophysics) — 6 steps, 6 substantive
-- `the-zodiacal-light-interplanetary-dust-cloud-and-near-earth-dust` (geophysics) — 6 steps, 6 substantive
-- `ocean-world-access-melt-probes-cryobots-and-submersible-systems-` (geophysics) — 6 steps, 6 substantive
-- `exoplanet-interiors-super-earths-sub-neptunes-and-gas-rich-rocky` (geophysics) — 6 steps, 6 substantive
-- `the-earth-s-deep-interior-core-mantle-and-geodynamo-budgets-agai` (geophysics) — 6 steps, 6 substantive
-- `the-cryosphere-ice-sheets-glaciers-and-sea-ice-flow-sliding-and-` (geophysics) — 6 steps, 6 substantive
-- `ocean-surface-gravity-waves-swell-and-rogue-waves-energy-dispers` (geophysics) — 6 steps, 6 substantive
-- `ocean-internal-waves-internal-tides-and-deep-mixing-displacement` (geophysics) — 6 steps, 6 substantive
-- `impact-cratering-ejecta-and-planetary-surface-modification-crate` (geophysics) — 6 steps, 6 substantive
-- `permafrost-and-frozen-ground-thermodynamics-active-layer-thaw-an` (geophysics) — 6 steps, 6 substantive
-- `icebergs-calving-drift-deterioration-and-meltwater-budgets-again` (geophysics) — 6 steps, 6 substantive
-- `estuaries-and-tidal-bores-salt-intrusion-stratification-and-flus` (geophysics) — 6 steps, 6 substantive
-- `geomagnetic-storms-and-ground-induced-currents-field-geoelectric` (geophysics) — 6 steps, 6 substantive
-- `atmospheric-rivers-moisture-transport-landfall-and-precipitation` (geophysics) — 6 steps, 6 substantive
-- `el-ninosouthern-oscillation-ocean-heat-content-kelvin-wave-and-s` (geophysics) — 6 steps, 6 substantive
-- `mathematical-physics-foundations-the-open-programme` (mathematical) — 6 steps, 6 substantive
-- `theorems-proofs-bounds` (mathematical) — 3 steps, 3 substantive
-- `particles-cosmos` (mathematical) — 5 steps, 5 substantive
-- `ice-giant-interiors-atmospheres-and-magnetospheres-uranus-and-ne` (mathematical) — 6 steps, 6 substantive
-- `meteors-bolides-and-meteorites-atmospheric-entry-ablation-and-su` (mathematical) — 6 steps, 6 substantive
-- `dwarf-planets-and-large-trans-neptunian-bodies-interiors-cryovol` (mathematical) — 6 steps, 6 substantive
-- `eclipsing-contact-and-ellipsoidal-binaries-roche-geometry-tidal-` (mathematical) — 6 steps, 6 substantive
-- `classical-pulsating-variables-cepheids-rr-lyrae-and-miras-as-pul` (mathematical) — 6 steps, 6 substantive
-- `main-belt-asteroids-trojans-and-centaurs-collisional-rotational-` (mathematical) — 6 steps, 6 substantive
-- `porous-media-flow-percolation-and-subsurface-fluid-transport-per` (mathematical) — 6 steps, 6 substantive
-- `lakes-and-reservoirs-stratification-seiches-mixing-and-ice-cover` (mathematical) — 6 steps, 6 substantive
-- `lightning-and-upper-atmospheric-discharges-channel-charge-and-op` (mathematical) — 6 steps, 6 substantive
-- `brown-dwarfs-and-free-floating-planetary-mass-objects-cooling-at` (mathematical) — 6 steps, 6 substantive
-- `locks-fences-gates-and-security-wave-8` (designs) — 4 steps, 4 substantive
-- `habitat-shielding-and-closed-loop-life-support-designs-from-the-` (designs) — 6 steps, 6 substantive
-- `deep-space-power-and-communication-systems-derived-from-the-phys` (designs) — 6 steps, 6 substantive
-- `lunar-surface-power-thermal-and-construction-systems-derived-fro` (designs) — 6 steps, 6 substantive
-- `orbital-tether-rotovator-and-solar-sail-systems-derived-from-the` (designs) — 6 steps, 6 substantive
-- `subsurface-lava-tube-and-underground-habitat-power-and-construct` (designs) — 6 steps, 6 substantive
-- `interstellar-probe-and-lightsail-cruise-systems-derived-from-the` (designs) — 6 steps, 6 substantive
-- `lunar-far-side-and-deep-space-low-frequency-radio-observatory-sy` (designs) — 6 steps, 6 substantive
-- `cryogenic-propellant-depots-and-in-space-fluid-transfer-systems-` (designs) — 6 steps, 6 substantive
-- `earthquake-early-warning-and-rapid-seismic-characterisation-syst` (designs) — 6 steps, 6 substantive
-- `lunar-and-asteroid-regolith-oxygen-extraction-and-beneficiation-` (designs) — 6 steps, 6 substantive
-- `numbers-proof-foundations-of-mathematics` (mathematics) — 5 steps, 5 substantive
-- `geometry-euclids-workshop` (mathematics) — 5 steps, 5 substantive
-- `algebra-the-language-of-unknowns` (mathematics) — 5 steps, 5 substantive
-- `ai-fundamentals-what-a-mind-made-of-math-is` (ai-computing) — 5 steps, 5 substantive
-- `machine-learning-i-how-machines-learn-from-data` (ai-computing) — 5 steps, 5 substantive
-- `agents-ai-that-acts-tools-memory-and-work` (ai-computing) — 5 steps, 5 substantive
-- `computing-foundations-how-computers-actually-work` (ai-computing) — 5 steps, 5 substantive
-- `data-where-it-lives-and-what-it-proves` (ai-computing) — 5 steps, 5 substantive
-- `architecture-i-seeing-like-an-architect` (architecture) — 5 steps, 5 substantive
-- `structures-how-buildings-stand` (architecture) — 5 steps, 5 substantive
-- `the-blueprint-reading-and-drawing-plans` (architecture) — 5 steps, 5 substantive
-- `design-studio-i-your-first-building` (architecture) — 5 steps, 5 substantive
-- `history-of-building-pyramids-to-skyscrapers` (architecture) — 5 steps, 5 substantive
-- `biology-i-the-cell-where-life-starts` (biology) — 5 steps, 5 substantive
-- `genetics-dna-inheritance-and-variation` (biology) — 5 steps, 5 substantive
-- `evolution-the-story-written-in-species` (biology) — 5 steps, 5 substantive
-- `ecology-living-systems-and-how-they-hold` (biology) — 5 steps, 5 substantive
-- `health-i-your-body-owners-manual` (health) — 5 steps, 5 substantive
-- `first-aid-what-to-do-before-help-arrives` (health) — 5 steps, 5 substantive
-- `nutrition-fuel-repair-and-the-long-game` (health) — 5 steps, 5 substantive
-- `medicine-how-healing-works-and-doctors-think` (health) — 5 steps, 5 substantive
-- `plumbing-i-water-in-water-out` (trades) — 5 steps, 5 substantive
-- `electrical-i-circuits-safety-and-the-panel` (trades) — 5 steps, 5 substantive
-- `carpentry-i-measure-cut-join` (trades) — 5 steps, 5 substantive
-- `automotive-i-how-a-car-works-and-what-breaks` (trades) — 5 steps, 5 substantive
-- `the-house-systems-heating-cooling-keeping-a-home-alive` (trades) — 5 steps, 5 substantive
-- `computer-science-programming-i-first-programs-real-habits` (computer-science) — 5 steps, 5 substantive
-- `computer-science-programming-ii-structure-and-craft` (computer-science) — 5 steps, 5 substantive
-- `computer-science-data-structures-shapes-that-data-takes` (computer-science) — 5 steps, 5 substantive
-- `computer-science-algorithms-the-recipes-that-matter` (computer-science) — 5 steps, 5 substantive
-- `computer-science-discrete-mathematics-for-computing` (computer-science) — 5 steps, 5 substantive
-- `computer-science-computer-systems-from-gates-to-operating-systems` (computer-science) — 5 steps, 5 substantive
-- `computer-science-databases-memory-that-organisations-trust` (computer-science) — 5 steps, 5 substantive
-- `computer-science-networks-and-the-internet-how-machines-talk` (computer-science) — 5 steps, 5 substantive
-- `computer-science-software-engineering-building-with-others` (computer-science) — 5 steps, 5 substantive
-- `computer-science-web-development-the-universal-client` (computer-science) — 5 steps, 5 substantive
-- `computer-science-cybersecurity-foundations-defending-systems` (computer-science) — 5 steps, 5 substantive
-- `computer-science-operating-systems-in-depth` (computer-science) — 5 steps, 5 substantive
-- `computer-science-compilers-translating-languages` (computer-science) — 5 steps, 5 substantive
-- `computer-science-human-computer-interaction-designing-for-people` (computer-science) — 5 steps, 5 substantive
-- `computer-science-computer-graphics-drawing-with-mathematics` (computer-science) — 5 steps, 5 substantive
-- `computer-science-theory-of-computation-what-can-be-computed` (computer-science) — 5 steps, 5 substantive
-- `computer-science-mobile-and-embedded-systems` (computer-science) — 5 steps, 5 substantive
-- `computer-science-cloud-and-distributed-systems` (computer-science) — 5 steps, 5 substantive
-- `computer-science-game-development-interactive-worlds` (computer-science) — 5 steps, 5 substantive
-- `computer-science-open-source-and-the-commons-of-code` (computer-science) — 5 steps, 5 substantive
-- `francais-i-first-words-real-sentences` (french) — 5 steps, 5 substantive
-- `francais-ii-conversation-the-passe-compose` (french) — 5 steps, 5 substantive
-- `chemistry-general-chemistry-i-atoms-bonds-and-reactions` (chemistry) — 5 steps, 5 substantive
-- `chemistry-general-chemistry-ii-equilibrium-and-energy` (chemistry) — 5 steps, 5 substantive
-- `chemistry-organic-chemistry-i-the-carbon-compounds` (chemistry) — 5 steps, 5 substantive
-- `chemistry-organic-chemistry-ii-synthesis-and-the-great-families` (chemistry) — 5 steps, 5 substantive
-- `chemistry-analytical-chemistry-measuring-what-is-there` (chemistry) — 5 steps, 5 substantive
-- `chemistry-physical-chemistry-i-thermodynamics-and-kinetics` (chemistry) — 5 steps, 5 substantive
-- `chemistry-physical-chemistry-ii-quantum-chemistry-and-spectra` (chemistry) — 5 steps, 5 substantive
-- `chemistry-inorganic-chemistry-the-whole-table` (chemistry) — 5 steps, 5 substantive
-- `chemistry-biochemistry-i-molecules-of-life` (chemistry) — 5 steps, 5 substantive
-- `chemistry-biochemistry-ii-pathways-and-regulation` (chemistry) — 5 steps, 5 substantive
-- `chemistry-environmental-chemistry-chemistry-of-the-real-world` (chemistry) — 5 steps, 5 substantive
-- `chemistry-medicinal-chemistry-designing-molecules-that-heal` (chemistry) — 5 steps, 5 substantive
-- `chemistry-polymer-chemistry-giant-molecules` (chemistry) — 5 steps, 5 substantive
-- `chemistry-chemistry-laboratory-i-bench-foundations` (chemistry) — 5 steps, 5 substantive
-- `chemistry-chemistry-laboratory-ii-synthesis-and-analysis` (chemistry) — 5 steps, 5 substantive
-- `chemistry-computational-chemistry-molecules-in-the-machine` (chemistry) — 5 steps, 5 substantive
-- `chemistry-industrial-chemistry-chemistry-at-scale` (chemistry) — 5 steps, 5 substantive
-- `chemistry-geochemistry-chemistry-of-the-earth` (chemistry) — 5 steps, 5 substantive
-- `chemistry-food-chemistry-the-chemistry-of-eating` (chemistry) — 5 steps, 5 substantive
-- `chemistry-forensic-chemistry-chemistry-in-court` (chemistry) — 5 steps, 5 substantive
-- `statistics-statistics-i-describing-data-honestly` (statistics) — 5 steps, 5 substantive
-- `statistics-statistics-ii-inference-from-sample-to-population` (statistics) — 5 steps, 5 substantive
-- `statistics-probability-the-mathematics-of-uncertainty` (statistics) — 5 steps, 5 substantive
-- `statistics-regression-lines-through-noise` (statistics) — 5 steps, 5 substantive
-- `statistics-experimental-design-learning-on-purpose` (statistics) — 5 steps, 5 substantive
-- `statistics-data-science-i-wrangling-and-seeing` (statistics) — 5 steps, 5 substantive
-- `statistics-data-science-ii-models-in-practice` (statistics) — 5 steps, 5 substantive
-- `statistics-bayesian-statistics-beliefs-with-numbers` (statistics) — 5 steps, 5 substantive
-- `statistics-survey-methods-asking-populations-questions` (statistics) — 5 steps, 5 substantive
-- `statistics-time-series-data-with-a-memory` (statistics) — 5 steps, 5 substantive
-- `statistics-biostatistics-statistics-for-medicine` (statistics) — 5 steps, 5 substantive
-- `statistics-statistical-computing-the-working-tools` (statistics) — 5 steps, 5 substantive
-- `statistics-quality-and-reliability-statistics-in-industry` (statistics) — 5 steps, 5 substantive
-- `statistics-actuarial-foundations-pricing-risk` (statistics) — 5 steps, 5 substantive
-- `earth-sciences-physical-geology-the-solid-earth` (earth-sciences) — 5 steps, 5 substantive
-- `earth-sciences-historical-geology-the-earth-s-autobiography` (earth-sciences) — 5 steps, 5 substantive
-- `earth-sciences-mineralogy-crystals-and-their-logic` (earth-sciences) — 5 steps, 5 substantive
-- `earth-sciences-petrology-how-rocks-are-born` (earth-sciences) — 5 steps, 5 substantive
-- `earth-sciences-oceanography-the-other-three-quarters` (earth-sciences) — 5 steps, 5 substantive
-- `earth-sciences-meteorology-weather-explained` (earth-sciences) — 5 steps, 5 substantive
-- `earth-sciences-climatology-weather-s-long-memory` (earth-sciences) — 5 steps, 5 substantive
-- `earth-sciences-hydrology-water-on-the-land` (earth-sciences) — 5 steps, 5 substantive
-- `earth-sciences-soil-science-the-living-ground` (earth-sciences) — 5 steps, 5 substantive
-- `earth-sciences-environmental-science-i-systems-and-pressures` (earth-sciences) — 5 steps, 5 substantive
-- `earth-sciences-environmental-science-ii-solutions-and-trade-offs` (earth-sciences) — 5 steps, 5 substantive
-- `earth-sciences-natural-hazards-when-the-earth-pushes-back` (earth-sciences) — 5 steps, 5 substantive
-- `earth-sciences-geographic-information-systems-maps-that-compute` (earth-sciences) — 5 steps, 5 substantive
-- `earth-sciences-paleontology-life-in-deep-time` (earth-sciences) — 5 steps, 5 substantive
-- `earth-sciences-planetary-science-other-worlds-same-physics` (earth-sciences) — 5 steps, 5 substantive
-- `earth-sciences-field-geology-reading-the-ground-yourself` (earth-sciences) — 5 steps, 5 substantive
-- `engineering-engineering-foundations-how-engineers-think` (engineering) — 5 steps, 5 substantive
-- `engineering-statics-forces-at-rest` (engineering) — 5 steps, 5 substantive
-- `engineering-dynamics-forces-in-motion` (engineering) — 5 steps, 5 substantive
-- `engineering-mechanics-of-materials-how-solids-carry-load` (engineering) — 5 steps, 5 substantive
-- `engineering-thermodynamics-for-engineers` (engineering) — 5 steps, 5 substantive
-- `engineering-fluid-mechanics-water-air-and-everything-between` (engineering) — 5 steps, 5 substantive
-- `engineering-electrical-engineering-i-circuits-and-signals` (engineering) — 5 steps, 5 substantive
-- `engineering-electrical-engineering-ii-machines-and-control` (engineering) — 5 steps, 5 substantive
-- `engineering-electronics-devices-that-switch-and-amplify` (engineering) — 5 steps, 5 substantive
-- `engineering-civil-engineering-i-structures-in-the-world` (engineering) — 5 steps, 5 substantive
-- `engineering-civil-engineering-ii-ground-water-and-roads` (engineering) — 5 steps, 5 substantive
-- `engineering-mechanical-engineering-i-machines-and-motion` (engineering) — 5 steps, 5 substantive
-- `engineering-mechanical-engineering-ii-energy-and-hvac` (engineering) — 5 steps, 5 substantive
-- `engineering-chemical-engineering-processes-that-transform` (engineering) — 5 steps, 5 substantive
-- `engineering-aerospace-engineering-leaving-the-ground` (engineering) — 5 steps, 5 substantive
-- `engineering-materials-engineering-choosing-what-things-are-made-of` (engineering) — 5 steps, 5 substantive
-- `engineering-environmental-engineering-infrastructure-for-a-living-world` (engineering) — 5 steps, 5 substantive
-- `engineering-industrial-engineering-systems-of-work` (engineering) — 5 steps, 5 substantive
-- `engineering-engineering-mathematics-the-working-toolkit` (engineering) — 5 steps, 5 substantive
-- `engineering-engineering-design-project-brief-to-prototype` (engineering) — 5 steps, 5 substantive
-- `psychology-psychology-i-the-science-of-mind-and-behaviour` (psychology) — 5 steps, 5 substantive
-- `psychology-psychology-ii-the-person-in-the-world` (psychology) — 5 steps, 5 substantive
-- `psychology-developmental-psychology-the-life-course` (psychology) — 5 steps, 5 substantive
-- `psychology-cognitive-psychology-the-mind-s-machinery` (psychology) — 5 steps, 5 substantive
-- `psychology-abnormal-psychology-when-mind-and-life-collide` (psychology) — 5 steps, 5 substantive
-- `psychology-biological-psychology-brain-body-behaviour` (psychology) — 5 steps, 5 substantive
-- `psychology-social-psychology-people-among-people` (psychology) — 5 steps, 5 substantive
-- `psychology-personality-psychology-the-pattern-of-a-person` (psychology) — 5 steps, 5 substantive
-- `psychology-health-psychology-mind-in-the-body-s-service` (psychology) — 5 steps, 5 substantive
-- `psychology-educational-psychology-how-learning-works` (psychology) — 5 steps, 5 substantive
-- `psychology-organisational-psychology-people-at-work` (psychology) — 5 steps, 5 substantive
-- `psychology-clinical-psychology-assessment-and-therapy` (psychology) — 5 steps, 5 substantive
-- `psychology-psychological-research-methods-asking-minds-questions` (psychology) — 5 steps, 5 substantive
-- `psychology-psychology-of-perception-constructing-the-world` (psychology) — 5 steps, 5 substantive
-- `psychology-positive-psychology-the-study-of-what-goes-right` (psychology) — 5 steps, 5 substantive
-- `psychology-forensic-psychology-mind-and-law` (psychology) — 5 steps, 5 substantive
-- `psychology-consumer-psychology-why-we-buy` (psychology) — 5 steps, 5 substantive
-- `psychology-sports-and-performance-psychology` (psychology) — 5 steps, 5 substantive
-- `sociology-sociology-i-the-society-in-the-individual` (sociology) — 5 steps, 5 substantive
-- `sociology-sociology-ii-structures-that-outlast-us` (sociology) — 5 steps, 5 substantive
-- `sociology-research-methods-in-sociology` (sociology) — 5 steps, 5 substantive
-- `sociology-sociology-of-the-family` (sociology) — 5 steps, 5 substantive
-- `sociology-sociology-of-education` (sociology) — 5 steps, 5 substantive
-- `sociology-sociology-of-work-and-organisations` (sociology) — 5 steps, 5 substantive
-- `sociology-urban-sociology-the-city-as-society` (sociology) — 5 steps, 5 substantive
-- `sociology-sociology-of-health-and-illness` (sociology) — 5 steps, 5 substantive
-- `sociology-crime-and-deviance` (sociology) — 5 steps, 5 substantive
-- `sociology-race-ethnicity-and-migration` (sociology) — 5 steps, 5 substantive
-- `sociology-gender-and-society` (sociology) — 5 steps, 5 substantive
-- `sociology-media-and-society` (sociology) — 5 steps, 5 substantive
-- `sociology-religion-in-society` (sociology) — 5 steps, 5 substantive
-- `sociology-political-sociology-power-s-social-roots` (sociology) — 5 steps, 5 substantive
-- `sociology-globalisation-and-development` (sociology) — 5 steps, 5 substantive
-- `sociology-sociology-of-technology` (sociology) — 5 steps, 5 substantive
-- `anthropology-cultural-anthropology-i-ways-of-being-human` (anthropology) — 5 steps, 5 substantive
-- `anthropology-cultural-anthropology-ii-the-human-mosaic` (anthropology) — 5 steps, 5 substantive
-- `anthropology-biological-anthropology-the-animal-that-we-are` (anthropology) — 5 steps, 5 substantive
-- `anthropology-archaeology-reading-the-buried-record` (anthropology) — 5 steps, 5 substantive
-- `anthropology-linguistic-anthropology-language-as-culture` (anthropology) — 5 steps, 5 substantive
-- `anthropology-medical-anthropology-healing-across-cultures` (anthropology) — 5 steps, 5 substantive
-- `anthropology-economic-anthropology-livelihoods` (anthropology) — 5 steps, 5 substantive
-- `anthropology-anthropology-of-religion` (anthropology) — 5 steps, 5 substantive
-- `anthropology-visual-and-material-culture` (anthropology) — 5 steps, 5 substantive
-- `anthropology-applied-anthropology-knowledge-at-work` (anthropology) — 5 steps, 5 substantive
-- `anthropology-human-origins-the-deep-story` (anthropology) — 5 steps, 5 substantive
-- `anthropology-anthropology-of-food` (anthropology) — 5 steps, 5 substantive
-- `anthropology-digital-anthropology-culture-online` (anthropology) — 5 steps, 5 substantive
-- `anthropology-ethnographic-methods-doing-fieldwork` (anthropology) — 5 steps, 5 substantive
-- `political-science-political-science-i-power-and-its-arrangements` (political-science) — 5 steps, 5 substantive
-- `political-science-comparative-politics-how-countries-differ` (political-science) — 5 steps, 5 substantive
-- `political-science-international-relations-i-the-world-without-a-referee` (political-science) — 5 steps, 5 substantive
-- `political-science-international-relations-ii-the-present-order` (political-science) — 5 steps, 5 substantive
-- `political-science-political-theory-the-great-arguments` (political-science) — 5 steps, 5 substantive
-- `political-science-public-policy-how-decisions-become-outcomes` (political-science) — 5 steps, 5 substantive
-- `political-science-political-behaviour-voters-and-citizens` (political-science) — 5 steps, 5 substantive
-- `political-science-constitutional-politics-rules-that-bind-the-rulers` (political-science) — 5 steps, 5 substantive
-- `political-science-political-economy-markets-and-states-together` (political-science) — 5 steps, 5 substantive
-- `political-science-public-administration-the-state-at-work` (political-science) — 5 steps, 5 substantive
-- `political-science-foreign-policy-analysis` (political-science) — 5 steps, 5 substantive
-- `political-science-politics-of-development` (political-science) — 5 steps, 5 substantive
-- `political-science-environmental-politics` (political-science) — 5 steps, 5 substantive
-- `political-science-political-research-methods` (political-science) — 5 steps, 5 substantive
-- `political-science-democracy-and-its-discontents` (political-science) — 5 steps, 5 substantive
-- `political-science-security-studies-force-and-its-futures` (political-science) — 5 steps, 5 substantive
-- `geography-human-geography-i-people-on-the-land` (geography) — 5 steps, 5 substantive
-- `geography-human-geography-ii-economies-in-space` (geography) — 5 steps, 5 substantive
-- `geography-physical-geography-the-stage-itself` (geography) — 5 steps, 5 substantive
-- `geography-cartography-the-craft-of-maps` (geography) — 5 steps, 5 substantive
-- `geography-urban-geography-inside-the-city` (geography) — 5 steps, 5 substantive
-- `geography-political-geography-power-on-the-map` (geography) — 5 steps, 5 substantive
-- `geography-economic-geography-why-there` (geography) — 5 steps, 5 substantive
-- `geography-environmental-geography-people-and-planet-together` (geography) — 5 steps, 5 substantive
-- `geography-regional-geography-the-world-region-by-region` (geography) — 5 steps, 5 substantive
-- `geography-geography-of-health` (geography) — 5 steps, 5 substantive
-- `geography-tourism-and-place` (geography) — 5 steps, 5 substantive
-- `geography-geographical-methods-field-lab-and-map` (geography) — 5 steps, 5 substantive
-- `economics-microeconomics-i-choices-at-the-margin` (economics) — 5 steps, 5 substantive
-- `economics-microeconomics-ii-markets-and-their-failures` (economics) — 5 steps, 5 substantive
-- `economics-macroeconomics-i-the-whole-economy` (economics) — 5 steps, 5 substantive
-- `economics-macroeconomics-ii-growth-and-cycles` (economics) — 5 steps, 5 substantive
-- `economics-econometrics-i-economics-meets-data` (economics) — 5 steps, 5 substantive
-- `economics-econometrics-ii-advanced-methods` (economics) — 5 steps, 5 substantive
-- `economics-international-economics-trade-and-money-across-borders` (economics) — 5 steps, 5 substantive
-- `economics-development-economics-why-nations-prosper-or-stall` (economics) — 5 steps, 5 substantive
-- `economics-labour-economics-work-and-wages` (economics) — 5 steps, 5 substantive
-- `economics-public-economics-the-state-s-wallet` (economics) — 5 steps, 5 substantive
-- `economics-behavioural-economics-humans-not-econs` (economics) — 5 steps, 5 substantive
-- `economics-financial-economics-markets-for-money` (economics) — 5 steps, 5 substantive
-- `economics-environmental-economics-pricing-the-planet` (economics) — 5 steps, 5 substantive
-- `economics-history-of-economic-thought` (economics) — 5 steps, 5 substantive
-- `economics-game-theory-strategy-formalised` (economics) — 5 steps, 5 substantive
-- `economics-economics-of-organisations-and-strategy` (economics) — 5 steps, 5 substantive
-- `philosophy-philosophy-i-the-love-of-questions` (philosophy) — 5 steps, 5 substantive
-- `philosophy-ethics-how-should-we-live` (philosophy) — 5 steps, 5 substantive
-- `philosophy-logic-the-machinery-of-argument` (philosophy) — 5 steps, 5 substantive
-- `philosophy-philosophy-of-mind-what-is-it-like-to-be` (philosophy) — 5 steps, 5 substantive
-- `philosophy-epistemology-knowledge-and-its-limits` (philosophy) — 5 steps, 5 substantive
-- `philosophy-metaphysics-the-furniture-of-reality` (philosophy) — 5 steps, 5 substantive
-- `philosophy-political-philosophy-justice-and-the-state` (philosophy) — 5 steps, 5 substantive
-- `philosophy-philosophy-of-science-how-knowledge-grows` (philosophy) — 5 steps, 5 substantive
-- `philosophy-aesthetics-art-and-beauty-interrogated` (philosophy) — 5 steps, 5 substantive
-- `philosophy-philosophy-of-religion-god-argued-carefully` (philosophy) — 5 steps, 5 substantive
-- `philosophy-ancient-philosophy-the-greeks-and-romans` (philosophy) — 5 steps, 5 substantive
-- `philosophy-modern-philosophy-descartes-to-kant` (philosophy) — 5 steps, 5 substantive
-- `philosophy-philosophy-of-language-meaning-and-its-mechanics` (philosophy) — 5 steps, 5 substantive
-- `philosophy-ethics-of-technology-and-ai` (philosophy) — 5 steps, 5 substantive
-- `philosophy-existentialism-freedom-and-its-weight` (philosophy) — 5 steps, 5 substantive
-- `philosophy-philosophy-of-law-rules-and-their-reasons` (philosophy) — 5 steps, 5 substantive
-- `linguistics-linguistics-i-the-science-of-language` (linguistics) — 5 steps, 5 substantive
-- `linguistics-linguistics-ii-meaning-and-use` (linguistics) — 5 steps, 5 substantive
-- `linguistics-phonetics-and-phonology-in-depth` (linguistics) — 5 steps, 5 substantive
-- `linguistics-syntax-the-architecture-of-sentences` (linguistics) — 5 steps, 5 substantive
-- `linguistics-semantics-and-pragmatics-meaning-meant-and-implied` (linguistics) — 5 steps, 5 substantive
-- `linguistics-sociolinguistics-language-in-society` (linguistics) — 5 steps, 5 substantive
-- `linguistics-historical-linguistics-languages-over-time` (linguistics) — 5 steps, 5 substantive
-- `linguistics-psycholinguistics-language-in-the-mind` (linguistics) — 5 steps, 5 substantive
-- `linguistics-computational-linguistics-language-in-the-machine` (linguistics) — 5 steps, 5 substantive
-- `linguistics-language-acquisition-first-and-second` (linguistics) — 5 steps, 5 substantive
-- `linguistics-writing-systems-marks-that-speak` (linguistics) — 5 steps, 5 substantive
-- `linguistics-field-linguistics-documenting-the-world-s-languages` (linguistics) — 5 steps, 5 substantive
-- `classics-classical-civilisation-i-greece` (classics) — 5 steps, 5 substantive
-- `classics-classical-civilisation-ii-rome` (classics) — 5 steps, 5 substantive
-- `classics-greek-language-i-first-steps-in-greek` (classics) — 5 steps, 5 substantive
-- `classics-latin-language-i-first-steps-in-latin` (classics) — 5 steps, 5 substantive
-- `classics-greek-and-roman-epic` (classics) — 5 steps, 5 substantive
-- `classics-greek-tragedy-and-comedy` (classics) — 5 steps, 5 substantive
-- `classics-roman-history-republic-to-empire` (classics) — 5 steps, 5 substantive
-- `classics-greek-history-city-states-and-empires` (classics) — 5 steps, 5 substantive
-- `classics-classical-mythology-the-stories-that-outlived-their-gods` (classics) — 5 steps, 5 substantive
-- `classics-ancient-philosophy-s-world-thought-in-context` (classics) — 5 steps, 5 substantive
-- `classics-roman-law-and-daily-life` (classics) — 5 steps, 5 substantive
-- `classics-classical-reception-the-ancients-in-our-world` (classics) — 5 steps, 5 substantive
-- `religious-studies-world-religions-i-the-eastern-traditions` (religious-studies) — 5 steps, 5 substantive
-- `religious-studies-world-religions-ii-the-abrahamic-traditions` (religious-studies) — 5 steps, 5 substantive
-- `religious-studies-sacred-texts-reading-what-believers-read` (religious-studies) — 5 steps, 5 substantive
-- `religious-studies-ritual-and-practice-religion-as-done` (religious-studies) — 5 steps, 5 substantive
-- `religious-studies-religion-and-ethics` (religious-studies) — 5 steps, 5 substantive
-- `religious-studies-religion-in-the-modern-world` (religious-studies) — 5 steps, 5 substantive
-- `religious-studies-philosophy-of-religion-the-scholar-s-questions` (religious-studies) — 5 steps, 5 substantive
-- `religious-studies-myth-and-symbol` (religious-studies) — 5 steps, 5 substantive
-- `religious-studies-religion-and-psychology` (religious-studies) — 5 steps, 5 substantive
-- `religious-studies-new-religious-movements` (religious-studies) — 5 steps, 5 substantive
-- `religious-studies-religion-art-and-architecture` (religious-studies) — 5 steps, 5 substantive
-- `religious-studies-death-and-the-afterlife-across-traditions` (religious-studies) — 5 steps, 5 substantive
-- `nursing-nursing-foundations-the-nurse-s-craft` (nursing) — 5 steps, 5 substantive
-- `nursing-anatomy-and-physiology-for-nurses` (nursing) — 5 steps, 5 substantive
-- `nursing-health-assessment-reading-the-patient` (nursing) — 5 steps, 5 substantive
-- `nursing-pharmacology-for-nurses-medicines-in-practice` (nursing) — 5 steps, 5 substantive
-- `nursing-medical-surgical-nursing-i` (nursing) — 5 steps, 5 substantive
-- `nursing-medical-surgical-nursing-ii` (nursing) — 5 steps, 5 substantive
-- `nursing-maternal-and-newborn-nursing` (nursing) — 5 steps, 5 substantive
-- `nursing-paediatric-nursing-children-are-not-small-adults` (nursing) — 5 steps, 5 substantive
-- `nursing-mental-health-nursing` (nursing) — 5 steps, 5 substantive
-- `nursing-community-and-public-health-nursing` (nursing) — 5 steps, 5 substantive
-- `nursing-critical-care-nursing` (nursing) — 5 steps, 5 substantive
-- `nursing-gerontological-nursing-care-in-later-life` (nursing) — 5 steps, 5 substantive
-- `nursing-nursing-research-and-evidence-based-practice` (nursing) — 5 steps, 5 substantive
-- `nursing-allied-health-survey-the-wider-team` (nursing) — 5 steps, 5 substantive
-- `public-health-public-health-i-the-health-of-populations` (public-health) — 5 steps, 5 substantive
-- `public-health-epidemiology-counting-disease-to-conquer-it` (public-health) — 5 steps, 5 substantive
-- `public-health-health-promotion-helping-populations-choose-health` (public-health) — 5 steps, 5 substantive
-- `public-health-global-health-health-without-borders` (public-health) — 5 steps, 5 substantive
-- `public-health-environmental-and-occupational-health` (public-health) — 5 steps, 5 substantive
-- `public-health-health-policy-and-systems` (public-health) — 5 steps, 5 substantive
-- `public-health-infectious-disease-control` (public-health) — 5 steps, 5 substantive
-- `public-health-non-communicable-disease-prevention` (public-health) — 5 steps, 5 substantive
-- `public-health-maternal-child-and-adolescent-health` (public-health) — 5 steps, 5 substantive
-- `public-health-health-data-and-surveillance` (public-health) — 5 steps, 5 substantive
-- `public-health-emergency-preparedness-and-response` (public-health) — 5 steps, 5 substantive
-- `public-health-one-health-humans-animals-environment` (public-health) — 5 steps, 5 substantive
-- `social-work-social-work-foundations-help-that-respects` (social-work) — 5 steps, 5 substantive
-- `social-work-human-behaviour-and-the-social-environment` (social-work) — 5 steps, 5 substantive
-- `social-work-child-and-family-social-work` (social-work) — 5 steps, 5 substantive
-- `social-work-social-work-with-adults` (social-work) — 5 steps, 5 substantive
-- `social-work-social-policy-the-welfare-landscape` (social-work) — 5 steps, 5 substantive
-- `social-work-community-work-and-development` (social-work) — 5 steps, 5 substantive
-- `social-work-social-work-law-and-ethics` (social-work) — 5 steps, 5 substantive
-- `social-work-addiction-and-recovery-services` (social-work) — 5 steps, 5 substantive
-- `social-work-criminal-justice-social-work` (social-work) — 5 steps, 5 substantive
-- `social-work-international-and-migration-social-work` (social-work) — 5 steps, 5 substantive
-- `social-work-research-and-evaluation-in-social-services` (social-work) — 5 steps, 5 substantive
-- `social-work-leadership-in-human-services` (social-work) — 5 steps, 5 substantive
-- `kinesiology-exercise-physiology-the-body-at-work` (kinesiology) — 5 steps, 5 substantive
-- `kinesiology-biomechanics-movement-under-physics` (kinesiology) — 5 steps, 5 substantive
-- `kinesiology-motor-learning-and-control` (kinesiology) — 5 steps, 5 substantive
-- `kinesiology-sport-and-exercise-psychology` (kinesiology) — 5 steps, 5 substantive
-- `kinesiology-strength-and-conditioning` (kinesiology) — 5 steps, 5 substantive
-- `kinesiology-sports-nutrition` (kinesiology) — 5 steps, 5 substantive
-- `kinesiology-injury-prevention-and-rehabilitation` (kinesiology) — 5 steps, 5 substantive
-- `kinesiology-physical-education-and-pedagogy` (kinesiology) — 5 steps, 5 substantive
-- `kinesiology-sport-management-and-society` (kinesiology) — 5 steps, 5 substantive
-- `kinesiology-exercise-and-health-across-the-lifespan` (kinesiology) — 5 steps, 5 substantive
-- `kinesiology-anatomy-for-movement` (kinesiology) — 5 steps, 5 substantive
-- `kinesiology-outdoor-and-adventure-education` (kinesiology) — 5 steps, 5 substantive
-- `education-foundations-of-education-why-schools-exist` (education) — 5 steps, 5 substantive
-- `education-learning-sciences-how-people-learn` (education) — 5 steps, 5 substantive
-- `education-curriculum-design-deciding-what-is-taught` (education) — 5 steps, 5 substantive
-- `education-assessment-and-evaluation` (education) — 5 steps, 5 substantive
-- `education-classroom-practice-the-craft-of-teaching` (education) — 5 steps, 5 substantive
-- `education-child-and-adolescent-development-for-teachers` (education) — 5 steps, 5 substantive
-- `education-inclusive-education-every-learner-in-the-room` (education) — 5 steps, 5 substantive
-- `education-literacy-education-reading-and-writing-across-school` (education) — 5 steps, 5 substantive
-- `education-numeracy-and-mathematics-education` (education) — 5 steps, 5 substantive
-- `education-science-education` (education) — 5 steps, 5 substantive
-- `education-educational-technology` (education) — 5 steps, 5 substantive
-- `education-early-childhood-education` (education) — 5 steps, 5 substantive
-- `education-secondary-and-further-education` (education) — 5 steps, 5 substantive
-- `education-higher-education-and-adult-learning` (education) — 5 steps, 5 substantive
-- `education-educational-leadership-and-policy` (education) — 5 steps, 5 substantive
-- `education-comparative-and-international-education` (education) — 5 steps, 5 substantive
-- `law-legal-foundations-what-law-is-and-where-it-lives` (law) — 5 steps, 5 substantive
-- `law-constitutional-law-the-frame-of-government` (law) — 5 steps, 5 substantive
-- `law-contract-law-promises-the-law-enforces` (law) — 5 steps, 5 substantive
-- `law-tort-law-wrongs-and-compensation` (law) — 5 steps, 5 substantive
-- `law-criminal-law-the-state-accuses` (law) — 5 steps, 5 substantive
-- `law-criminal-procedure-and-evidence` (law) — 5 steps, 5 substantive
-- `law-property-law-land-things-and-rights` (law) — 5 steps, 5 substantive
-- `law-administrative-law-governing-the-governors` (law) — 5 steps, 5 substantive
-- `law-international-law-law-between-states` (law) — 5 steps, 5 substantive
-- `law-human-rights-law` (law) — 5 steps, 5 substantive
-- `law-company-and-commercial-law` (law) — 5 steps, 5 substantive
-- `law-employment-law` (law) — 5 steps, 5 substantive
-- `law-family-law` (law) — 5 steps, 5 substantive
-- `law-environmental-law` (law) — 5 steps, 5 substantive
-- `law-legal-ethics-and-the-profession` (law) — 5 steps, 5 substantive
-- `law-jurisprudence-law-s-philosophy` (law) — 5 steps, 5 substantive
-- `criminal-justice-criminal-justice-foundations-the-system-as-a-whole` (criminal-justice) — 5 steps, 5 substantive
-- `criminal-justice-policing-the-state-on-the-street` (criminal-justice) — 5 steps, 5 substantive
-- `criminal-justice-courts-and-prosecution` (criminal-justice) — 5 steps, 5 substantive
-- `criminal-justice-corrections-and-punishment` (criminal-justice) — 5 steps, 5 substantive
-- `criminal-justice-criminology-i-explaining-crime` (criminal-justice) — 5 steps, 5 substantive
-- `criminal-justice-criminology-ii-patterns-and-prevention` (criminal-justice) — 5 steps, 5 substantive
-- `criminal-justice-youth-justice` (criminal-justice) — 5 steps, 5 substantive
-- `criminal-justice-forensic-science-for-justice` (criminal-justice) — 5 steps, 5 substantive
-- `criminal-justice-victimology-and-victim-services` (criminal-justice) — 5 steps, 5 substantive
-- `criminal-justice-comparative-criminal-justice` (criminal-justice) — 5 steps, 5 substantive
-- `criminal-justice-crime-and-the-media` (criminal-justice) — 5 steps, 5 substantive
-- `criminal-justice-justice-race-and-inequality` (criminal-justice) — 5 steps, 5 substantive
-- `agriculture-agricultural-foundations-farming-as-a-system` (agriculture) — 5 steps, 5 substantive
-- `agriculture-crop-science-i-the-plants-we-eat` (agriculture) — 5 steps, 5 substantive
-- `agriculture-crop-science-ii-growing-well` (agriculture) — 5 steps, 5 substantive
-- `agriculture-soil-management-for-farmers` (agriculture) — 5 steps, 5 substantive
-- `agriculture-livestock-science-i-animals-and-their-keeping` (agriculture) — 5 steps, 5 substantive
-- `agriculture-livestock-science-ii-health-and-breeding` (agriculture) — 5 steps, 5 substantive
-- `agriculture-farm-machinery-and-technology` (agriculture) — 5 steps, 5 substantive
-- `agriculture-horticulture-intensive-growing` (agriculture) — 5 steps, 5 substantive
-- `agriculture-agroecology-and-sustainable-farming` (agriculture) — 5 steps, 5 substantive
-- `agriculture-agricultural-economics-and-business` (agriculture) — 5 steps, 5 substantive
-- `agriculture-forestry-and-woodland-management` (agriculture) — 5 steps, 5 substantive
-- `agriculture-fisheries-and-aquaculture` (agriculture) — 5 steps, 5 substantive
-- `agriculture-water-resources-management` (agriculture) — 5 steps, 5 substantive
-- `agriculture-rural-development-and-land-use` (agriculture) — 5 steps, 5 substantive
-- `agriculture-food-systems-field-to-fork` (agriculture) — 5 steps, 5 substantive
-- `agriculture-conservation-and-land-management` (agriculture) — 5 steps, 5 substantive
-- `english-grammar-the-sentence` (english) — 5 steps, 5 substantive
-- `literature-stories-that-built-the-language` (english) — 5 steps, 5 substantive
-- `composition-saying-it-plain` (english) — 5 steps, 5 substantive
-- `singing-i-breath-pitch-and-your-own-voice` (music) — 5 steps, 5 substantive
-- `music-theory-notes-scales-and-why-songs-work` (music) — 5 steps, 5 substantive
-- `rhythm-ear-training` (music) — 5 steps, 5 substantive
-- `world-history-from-river-valleys-to-railways` (history) — 5 steps, 5 substantive
-- `american-history-the-republics-argument-with-itself` (history) — 5 steps, 5 substantive
-- `writing-i-the-clear-sentence` (writing) — 5 steps, 5 substantive
-- `storytelling-structure-scene-and-voice` (writing) — 5 steps, 5 substantive
-- `business-i-what-a-business-is-from-the-ground-up` (business) — 5 steps, 5 substantive
-- `economics-i-scarcity-prices-and-why-markets-move` (business) — 5 steps, 5 substantive
-- `money-and-the-books-accounting-without-tears` (business) — 5 steps, 5 substantive
-- `selling-the-honest-craft-of-the-deal` (business) — 5 steps, 5 substantive
-- `communications-communication-foundations-messages-and-meanings` (communications) — 5 steps, 5 substantive
-- `communications-media-studies-i-the-industries-of-attention` (communications) — 5 steps, 5 substantive
-- `communications-media-studies-ii-audiences-and-effects` (communications) — 5 steps, 5 substantive
-- `communications-journalism-i-reporting` (communications) — 5 steps, 5 substantive
-- `communications-journalism-ii-the-craft-in-depth` (communications) — 5 steps, 5 substantive
-- `communications-public-relations-and-strategic-communication` (communications) — 5 steps, 5 substantive
-- `communications-advertising-and-persuasion` (communications) — 5 steps, 5 substantive
-- `communications-digital-media-and-society` (communications) — 5 steps, 5 substantive
-- `communications-film-and-television-studies` (communications) — 5 steps, 5 substantive
-- `communications-speech-and-rhetoric-the-spoken-word` (communications) — 5 steps, 5 substantive
-- `communications-organisational-communication` (communications) — 5 steps, 5 substantive
-- `communications-intercultural-communication` (communications) — 5 steps, 5 substantive
-- `communications-political-communication` (communications) — 5 steps, 5 substantive
-- `communications-audio-and-podcasting-the-intimate-medium` (communications) — 5 steps, 5 substantive
-- `communications-media-production-foundations` (communications) — 5 steps, 5 substantive
-- `communications-communication-research-methods` (communications) — 5 steps, 5 substantive
-- `art-design-art-foundations-seeing-and-making` (art-design) — 5 steps, 5 substantive
-- `art-design-art-history-i-from-caves-to-cathedrals` (art-design) — 5 steps, 5 substantive
-- `art-design-art-history-ii-renaissance-to-revolution` (art-design) — 5 steps, 5 substantive
-- `art-design-art-history-iii-modern-and-contemporary` (art-design) — 5 steps, 5 substantive
-- `art-design-drawing-the-fundamental-discipline` (art-design) — 5 steps, 5 substantive
-- `art-design-painting-colour-in-matter` (art-design) — 5 steps, 5 substantive
-- `art-design-sculpture-and-three-dimensions` (art-design) — 5 steps, 5 substantive
-- `art-design-printmaking-the-multiplied-image` (art-design) — 5 steps, 5 substantive
-- `art-design-graphic-design-communication-in-visual-form` (art-design) — 5 steps, 5 substantive
-- `art-design-photography-writing-with-light` (art-design) — 5 steps, 5 substantive
-- `art-design-design-studies-objects-and-their-meanings` (art-design) — 5 steps, 5 substantive
-- `art-design-textiles-and-fashion-design` (art-design) — 5 steps, 5 substantive
-- `art-design-illustration-drawing-that-tells` (art-design) — 5 steps, 5 substantive
-- `art-design-digital-art-and-new-media` (art-design) — 5 steps, 5 substantive
-- `art-design-art-education-and-community-arts` (art-design) — 5 steps, 5 substantive
-- `art-design-professional-practice-for-artists` (art-design) — 5 steps, 5 substantive
-- `theatre-film-theatre-foundations-the-live-event` (theatre-film) — 5 steps, 5 substantive
-- `theatre-film-acting-i-the-craft-of-the-actor` (theatre-film) — 5 steps, 5 substantive
-- `theatre-film-acting-ii-styles-and-texts` (theatre-film) — 5 steps, 5 substantive
-- `theatre-film-drama-and-theatre-history-i-to-the-nineteenth-century` (theatre-film) — 5 steps, 5 substantive
-- `theatre-film-drama-and-theatre-history-ii-the-modern-stage` (theatre-film) — 5 steps, 5 substantive
-- `theatre-film-playwriting-and-dramaturgy` (theatre-film) — 5 steps, 5 substantive
-- `theatre-film-directing-and-stagecraft` (theatre-film) — 5 steps, 5 substantive
-- `theatre-film-film-foundations-the-language-of-cinema` (theatre-film) — 5 steps, 5 substantive
-- `theatre-film-film-history-a-century-of-cinema` (theatre-film) — 5 steps, 5 substantive
-- `theatre-film-screenwriting-stories-for-the-camera` (theatre-film) — 5 steps, 5 substantive
-- `theatre-film-film-production-from-script-to-screen` (theatre-film) — 5 steps, 5 substantive
-- `theatre-film-documentary-film-the-real-arranged` (theatre-film) — 5 steps, 5 substantive
-- `theatre-film-film-theory-and-criticism` (theatre-film) — 5 steps, 5 substantive
-- `theatre-film-performance-studies-performance-everywhere` (theatre-film) — 5 steps, 5 substantive
+- `cosmology-the-open-programme` (cosmology) — 6 questions on a lesson of 8 passages
+- `the-surviving-count-vacuum` (cosmology) — 3 questions on a lesson of 8 passages
+- `vacuum-dissolution-and-the-surviving-count` (cosmology) — 4 questions on a lesson of 8 passages
+- `torsion-and-bounce-extensions` (cosmology) — 4 questions on a lesson of 8 passages
+- `gravitational-wave-signatures-of-torsion-and-the-bounce` (cosmology) — 6 questions on a lesson of 8 passages
+- `the-21-cm-line-reionisation-and-the-dark-ages-in-a-bounced-cosmo` (cosmology) — 6 questions on a lesson of 8 passages
+- `topological-defects-through-a-torsion-regulated-bounce` (cosmology) — 5 questions on a lesson of 8 passages
+- `early-universe-phase-transitions-and-vacuum-decay-under-the-dens` (cosmology) — 4 questions on a lesson of 8 passages
+- `the-expansion-history-hubble-tension-dark-energy-dynamics-and-la` (cosmology) — 3 questions on a lesson of 8 passages
+- `reheating-preheating-and-thermalisation-after-a-torsion-regulate` (cosmology) — 3 questions on a lesson of 8 passages
+- `the-lyman-alpha-forest-and-intergalactic-absorption-as-tests-of-` (cosmology) — 6 questions on a lesson of 8 passages
+- `cosmic-birefringence-parity-violation-and-polarisation-rotation-` (cosmology) — 6 questions on a lesson of 8 passages
+- `sunyaev-zel-dovich-effects-and-hot-intracluster-gas-as-tests-of-` (cosmology) — 6 questions on a lesson of 8 passages
+- `exoplanet-detection-budgets-direct-imaging-transit-photometry-an` (cosmology) — 3 questions on a lesson of 8 passages
+- `exomoons-orbital-stability-tidal-evolution-and-detection-budgets` (cosmology) — 6 questions on a lesson of 8 passages
+- `volcanic-eruption-columns-ash-plumes-and-pyroclastic-density-cur` (cosmology) — 6 questions on a lesson of 8 passages
+- `the-vacuum-count-at-the-governing-density-and-the-two-density-te` (cosmology) — 3 questions on a lesson of 8 passages
+- `dwarf-galaxies-ultra-faint-satellites-and-low-mass-halo-structur` (galactic) — 6 questions on a lesson of 8 passages
+- `cosmic-optical-and-infrared-backgrounds-galaxy-counts-and-surfac` (galactic) — 6 questions on a lesson of 8 passages
+- `the-milky-way-bar-spiral-arms-and-galactic-disc-dynamics-as-test` (galactic) — 6 questions on a lesson of 8 passages
+- `the-fermi-and-erosita-bubbles-and-milky-way-outflows-against-ene` (galactic) — 6 questions on a lesson of 8 passages
+- `quasi-periodic-oscillations-and-rapid-x-ray-variability-in-accre` (galactic) — 6 questions on a lesson of 8 passages
+- `galactic-stellar-streams-tidal-tails-and-the-magellanic-system-d` (galactic) — 6 questions on a lesson of 8 passages
+- `the-circumgalactic-medium-absorption-cooling-and-baryon-budgets-` (galactic) — 6 questions on a lesson of 8 passages
+- `gamma-ray-bursts-prompt-emission-afterglow-and-host-galaxy-budge` (galactic) — 6 questions on a lesson of 8 passages
+- `fast-radio-bursts-dispersion-energetics-and-host-galaxy-budgets-` (galactic) — 6 questions on a lesson of 8 passages
+- `rotation-haloes` (galactic) — 3 questions on a lesson of 4 passages
+- `solar-physics-helioseismology-and-space-weather-in-the-bounce-fr` (astrophysics) — 6 questions on a lesson of 8 passages
+- `asteroids-comets-planetary-rings-and-small-body-dynamics-as-test` (astrophysics) — 6 questions on a lesson of 8 passages
+- `exoplanet-atmospheres-spectroscopy-escape-and-photochemistry-aga` (astrophysics) — 6 questions on a lesson of 8 passages
+- `atmospheric-electricity-lightning-transient-luminous-events-and-` (astrophysics) — 6 questions on a lesson of 8 passages
+- `stellar-asteroseismology-and-white-dwarf-cooling-as-tests-of-the` (astrophysics) — 6 questions on a lesson of 8 passages
+- `the-first-stars-and-early-metal-enrichment-in-a-bounced-cosmolog` (astrophysics) — 6 questions on a lesson of 8 passages
+- `x-ray-astronomy-hot-gas-x-ray-binaries-and-the-diffuse-x-ray-bac` (astrophysics) — 6 questions on a lesson of 8 passages
+- `solar-wind-turbulence-the-parker-spiral-and-the-interplanetary-m` (astrophysics) — 6 questions on a lesson of 8 passages
+- `brown-dwarfs-free-floating-planets-and-the-bottom-of-the-initial` (astrophysics) — 6 questions on a lesson of 8 passages
+- `the-kuiper-belt-trans-neptunian-objects-and-the-outer-solar-syst` (astrophysics) — 6 questions on a lesson of 8 passages
+- `interstellar-objects-and-interstellar-traversal-against-density-` (astrophysics) — 6 questions on a lesson of 8 passages
+- `cataclysmic-variables-novae-and-recurrent-novae-against-density-` (astrophysics) — 6 questions on a lesson of 8 passages
+- `magnetic-reconnection-in-astrophysical-and-laboratory-plasmas-ag` (astrophysics) — 6 questions on a lesson of 8 passages
+- `mercury-core-crust-surface-and-exosphere-against-density-and-ene` (astrophysics) — 6 questions on a lesson of 8 passages
+- `cometary-comae-tails-and-outgassing-against-density-and-energy-b` (astrophysics) — 6 questions on a lesson of 8 passages
+- `stellar-coronae-stellar-winds-and-astrospheres-of-stars-other-th` (astrophysics) — 5 questions on a lesson of 8 passages
+- `magnetars-soft-gamma-repeaters-and-anomalous-x-ray-pulsars-again` (astrophysics) — 6 questions on a lesson of 8 passages
+- `the-cosmic-web-filaments-walls-and-the-warm-hot-intergalactic-me` (astrophysics) — 6 questions on a lesson of 8 passages
+- `common-envelope-evolution-and-binary-star-interaction-products-a` (astrophysics) — 6 questions on a lesson of 8 passages
+- `planetary-nebulae-post-asymptotic-giant-branch-stars-and-white-d` (astrophysics) — 6 questions on a lesson of 8 passages
+- `intracluster-light-intergalactic-stars-and-diffuse-stellar-compo` (astrophysics) — 6 questions on a lesson of 8 passages
+- `asymptotic-giant-branch-stars-mira-variables-and-stellar-mass-lo` (astrophysics) — 6 questions on a lesson of 8 passages
+- `polluted-white-dwarfs-and-planetary-debris-accretion-against-com` (astrophysics) — 6 questions on a lesson of 8 passages
+- `open-clusters-stellar-associations-and-young-moving-groups-disso` (astrophysics) — 6 questions on a lesson of 8 passages
+- `symbiotic-stars-and-interacting-wind-binaries-accretion-nebular-` (astrophysics) — 6 questions on a lesson of 8 passages
+- `wolf-rayet-stars-luminous-blue-variables-and-massive-star-winds-` (astrophysics) — 6 questions on a lesson of 8 passages
+- `solar-and-reactor-neutrinos-production-oscillation-and-detection` (astrophysics) — 6 questions on a lesson of 8 passages
+- `intermediate-mass-black-holes-in-dense-clusters-and-dwarf-nuclei` (astrophysics) — 6 questions on a lesson of 8 passages
+- `planetary-migration-resonances-and-system-architecture-orbital-e` (astrophysics) — 6 questions on a lesson of 8 passages
+- `stellar-flares-and-superflares-flare-energy-loop-and-ejection-as` (astrophysics) — 6 questions on a lesson of 8 passages
+- `solar-prominences-filaments-and-coronal-mass-ejection-initiation` (astrophysics) — 6 questions on a lesson of 8 passages
+- `chondrules-calcium-aluminium-rich-inclusions-and-early-solar-sys` (astrophysics) — 6 questions on a lesson of 8 passages
+- `thermonuclear-x-ray-bursts-on-accreting-neutron-stars-ignition-r` (astrophysics) — 6 questions on a lesson of 8 passages
+- `exoplanet-atmospheres-transmission-emission-and-retrieval-budget` (astrophysics) — 6 questions on a lesson of 8 passages
+- `the-solar-wind-and-the-heliosphere-stream-structure-parker-spira` (astrophysics) — 6 questions on a lesson of 8 passages
+- `black-holes-remnants` (astrophysics) — 6 questions on a lesson of 8 passages
+- `neutrinos-and-lepton-physics-through-a-bounce` (particle) — 6 questions on a lesson of 8 passages
+- `cosmic-ray-muography-and-muon-tomography-attenuation-exposure-an` (particle) — 6 questions on a lesson of 8 passages
+- `precision-particle-physics-electric-dipole-moments-rare-decays-a` (particle) — 6 questions on a lesson of 8 passages
+- `geoneutrinos-atmospheric-neutrinos-and-neutrino-earth-tomography` (particle) — 6 questions on a lesson of 8 passages
+- `snow-avalanches-slab-fracture-and-powder-clouds-release-fracture` (particle) — 6 questions on a lesson of 8 passages
+- `quantum-thermodynamics-nanoscale-heat-engines-and-fluctuation-th` (particle) — 6 questions on a lesson of 8 passages
+- `planetary-ring-systems-particle-dynamics-resonances-spokes-and-r` (particle) — 6 questions on a lesson of 8 passages
+- `medical-and-biological-physics-in-the-limit-frame-imaging-radiot` (atomic) — 6 questions on a lesson of 8 passages
+- `quantum-optics-cavity-systems-and-single-photon-devices-from-the` (atomic) — 6 questions on a lesson of 8 passages
+- `astrochemistry-and-molecular-physics-in-cold-clouds-reaction-fre` (atomic) — 6 questions on a lesson of 8 passages
+- `cavitation-bubble-dynamics-and-sonoluminescence-collapse-erosion` (atomic) — 6 questions on a lesson of 8 passages
+- `precision-timekeeping-optical-clocks-and-relativistic-geodesy-fr` (atomic) — 6 questions on a lesson of 8 passages
+- `magnons-and-spin-waves-in-magnetic-materials-dispersion-damping-` (atomic) — 6 questions on a lesson of 8 passages
+- `condensed-matter-the-open-programme` (condensed) — 4 questions on a lesson of 5 passages
+- `semiconductor-and-solid-state-electronic-and-thermal-transport-p` (condensed) — 6 questions on a lesson of 8 passages
+- `topological-matter-and-quantum-hall-transport-quantisation-edge-` (condensed) — 6 questions on a lesson of 8 passages
+- `superconductors-condensates` (condensed) — 4 questions on a lesson of 5 passages
+- `jupiter-and-saturn-interiors-atmospheres-ring-systems-and-magnet` (plasma) — 6 questions on a lesson of 8 passages
+- `the-earth-s-ionosphere-thermosphere-and-plasmasphere-against-den` (plasma) — 6 questions on a lesson of 8 passages
+- `dusty-complex-plasmas-grain-charging-coupling-and-dust-acoustic-` (plasma) — 6 questions on a lesson of 8 passages
+- `interstellar-scintillation-and-plasma-lensing-of-pulsars-and-fas` (plasma) — 6 questions on a lesson of 8 passages
+- `atmospheric-oceanic-and-planetary-climate-dynamics-against-vacuu` (geophysics) — 6 questions on a lesson of 8 passages
+- `planetary-volcanism-tectonics-and-interior-heat-flow-against-den` (geophysics) — 6 questions on a lesson of 8 passages
+- `the-zodiacal-light-interplanetary-dust-cloud-and-near-earth-dust` (geophysics) — 6 questions on a lesson of 8 passages
+- `ocean-world-access-melt-probes-cryobots-and-submersible-systems-` (geophysics) — 6 questions on a lesson of 8 passages
+- `exoplanet-interiors-super-earths-sub-neptunes-and-gas-rich-rocky` (geophysics) — 6 questions on a lesson of 8 passages
+- `the-earth-s-deep-interior-core-mantle-and-geodynamo-budgets-agai` (geophysics) — 6 questions on a lesson of 8 passages
+- `the-cryosphere-ice-sheets-glaciers-and-sea-ice-flow-sliding-and-` (geophysics) — 6 questions on a lesson of 8 passages
+- `ocean-surface-gravity-waves-swell-and-rogue-waves-energy-dispers` (geophysics) — 5 questions on a lesson of 8 passages
+- `ocean-internal-waves-internal-tides-and-deep-mixing-displacement` (geophysics) — 6 questions on a lesson of 8 passages
+- `impact-cratering-ejecta-and-planetary-surface-modification-crate` (geophysics) — 6 questions on a lesson of 8 passages
+- `permafrost-and-frozen-ground-thermodynamics-active-layer-thaw-an` (geophysics) — 6 questions on a lesson of 8 passages
+- `icebergs-calving-drift-deterioration-and-meltwater-budgets-again` (geophysics) — 6 questions on a lesson of 8 passages
+- `estuaries-and-tidal-bores-salt-intrusion-stratification-and-flus` (geophysics) — 6 questions on a lesson of 8 passages
+- `geomagnetic-storms-and-ground-induced-currents-field-geoelectric` (geophysics) — 6 questions on a lesson of 8 passages
+- `atmospheric-rivers-moisture-transport-landfall-and-precipitation` (geophysics) — 6 questions on a lesson of 8 passages
+- `el-ninosouthern-oscillation-ocean-heat-content-kelvin-wave-and-s` (geophysics) — 6 questions on a lesson of 8 passages
+- `mathematical-physics-foundations-the-open-programme` (mathematical) — 3 questions on a lesson of 8 passages
+- `particles-cosmos` (mathematical) — 3 questions on a lesson of 8 passages
+- `ice-giant-interiors-atmospheres-and-magnetospheres-uranus-and-ne` (mathematical) — 6 questions on a lesson of 8 passages
+- `meteors-bolides-and-meteorites-atmospheric-entry-ablation-and-su` (mathematical) — 6 questions on a lesson of 8 passages
+- `dwarf-planets-and-large-trans-neptunian-bodies-interiors-cryovol` (mathematical) — 6 questions on a lesson of 8 passages
+- `eclipsing-contact-and-ellipsoidal-binaries-roche-geometry-tidal-` (mathematical) — 6 questions on a lesson of 8 passages
+- `classical-pulsating-variables-cepheids-rr-lyrae-and-miras-as-pul` (mathematical) — 6 questions on a lesson of 8 passages
+- `main-belt-asteroids-trojans-and-centaurs-collisional-rotational-` (mathematical) — 6 questions on a lesson of 8 passages
+- `porous-media-flow-percolation-and-subsurface-fluid-transport-per` (mathematical) — 6 questions on a lesson of 8 passages
+- `lakes-and-reservoirs-stratification-seiches-mixing-and-ice-cover` (mathematical) — 6 questions on a lesson of 8 passages
+- `lightning-and-upper-atmospheric-discharges-channel-charge-and-op` (mathematical) — 6 questions on a lesson of 8 passages
+- `brown-dwarfs-and-free-floating-planetary-mass-objects-cooling-at` (mathematical) — 6 questions on a lesson of 8 passages
+- `locks-fences-gates-and-security-wave-8` (designs) — 4 questions on a lesson of 8 passages
+- `habitat-shielding-and-closed-loop-life-support-designs-from-the-` (designs) — 6 questions on a lesson of 8 passages
+- `deep-space-power-and-communication-systems-derived-from-the-phys` (designs) — 6 questions on a lesson of 8 passages
+- `lunar-surface-power-thermal-and-construction-systems-derived-fro` (designs) — 6 questions on a lesson of 8 passages
+- `orbital-tether-rotovator-and-solar-sail-systems-derived-from-the` (designs) — 6 questions on a lesson of 8 passages
+- `subsurface-lava-tube-and-underground-habitat-power-and-construct` (designs) — 6 questions on a lesson of 8 passages
+- `interstellar-probe-and-lightsail-cruise-systems-derived-from-the` (designs) — 6 questions on a lesson of 8 passages
+- `lunar-far-side-and-deep-space-low-frequency-radio-observatory-sy` (designs) — 6 questions on a lesson of 8 passages
+- `cryogenic-propellant-depots-and-in-space-fluid-transfer-systems-` (designs) — 6 questions on a lesson of 8 passages
+- `earthquake-early-warning-and-rapid-seismic-characterisation-syst` (designs) — 6 questions on a lesson of 8 passages
+- `lunar-and-asteroid-regolith-oxygen-extraction-and-beneficiation-` (designs) — 6 questions on a lesson of 8 passages
+- `ai-fundamentals-what-a-mind-made-of-math-is` (ai-computing) — 4 questions on a lesson of 5 passages
+- `machine-learning-i-how-machines-learn-from-data` (ai-computing) — 3 questions on a lesson of 8 passages
+- `agents-ai-that-acts-tools-memory-and-work` (ai-computing) — 3 questions on a lesson of 8 passages
+- `computing-foundations-how-computers-actually-work` (ai-computing) — 3 questions on a lesson of 8 passages
+- `data-where-it-lives-and-what-it-proves` (ai-computing) — 3 questions on a lesson of 8 passages
+- `architecture-i-seeing-like-an-architect` (architecture) — 3 questions on a lesson of 10 passages
+- `structures-how-buildings-stand` (architecture) — 3 questions on a lesson of 8 passages
+- `the-blueprint-reading-and-drawing-plans` (architecture) — 3 questions on a lesson of 8 passages
+- `design-studio-i-your-first-building` (architecture) — 3 questions on a lesson of 8 passages
+- `history-of-building-pyramids-to-skyscrapers` (architecture) — 3 questions on a lesson of 8 passages
+- `biology-i-the-cell-where-life-starts` (biology) — 3 questions on a lesson of 10 passages
+- `genetics-dna-inheritance-and-variation` (biology) — 3 questions on a lesson of 8 passages
+- `evolution-the-story-written-in-species` (biology) — 3 questions on a lesson of 8 passages
+- `ecology-living-systems-and-how-they-hold` (biology) — 3 questions on a lesson of 8 passages
+- `health-i-your-body-owners-manual` (health) — 3 questions on a lesson of 10 passages
+- `first-aid-what-to-do-before-help-arrives` (health) — 3 questions on a lesson of 8 passages
+- `nutrition-fuel-repair-and-the-long-game` (health) — 3 questions on a lesson of 8 passages
+- `medicine-how-healing-works-and-doctors-think` (health) — 3 questions on a lesson of 8 passages
+- `plumbing-i-water-in-water-out` (trades) — 3 questions on a lesson of 10 passages
+- `electrical-i-circuits-safety-and-the-panel` (trades) — 3 questions on a lesson of 8 passages
+- `carpentry-i-measure-cut-join` (trades) — 3 questions on a lesson of 8 passages
+- `automotive-i-how-a-car-works-and-what-breaks` (trades) — 3 questions on a lesson of 8 passages
+- `the-house-systems-heating-cooling-keeping-a-home-alive` (trades) — 3 questions on a lesson of 8 passages
+- `computer-science-programming-i-first-programs-real-habits` (computer-science) — 3 questions on a lesson of 7 passages
+- `francais-ii-conversation-the-passe-compose` (french) — 3 questions on a lesson of 9 passages
+- `sociology-sociology-i-the-society-in-the-individual` (sociology) — 3 questions on a lesson of 7 passages
+- `anthropology-cultural-anthropology-i-ways-of-being-human` (anthropology) — 3 questions on a lesson of 7 passages
+- `anthropology-biological-anthropology-the-animal-that-we-are` (anthropology) — 3 questions on a lesson of 7 passages
+- `political-science-political-science-i-power-and-its-arrangements` (political-science) — 3 questions on a lesson of 7 passages
+- `philosophy-ethics-how-should-we-live` (philosophy) — 3 questions on a lesson of 7 passages
+- `linguistics-linguistics-i-the-science-of-language` (linguistics) — 3 questions on a lesson of 7 passages
+- `classics-classical-civilisation-i-greece` (classics) — 3 questions on a lesson of 7 passages
+- `religious-studies-world-religions-i-the-eastern-traditions` (religious-studies) — 3 questions on a lesson of 7 passages
+- `nursing-nursing-foundations-the-nurse-s-craft` (nursing) — 3 questions on a lesson of 7 passages
+- `social-work-social-work-foundations-help-that-respects` (social-work) — 3 questions on a lesson of 7 passages
+- `kinesiology-exercise-physiology-the-body-at-work` (kinesiology) — 3 questions on a lesson of 7 passages
+- `literature-stories-that-built-the-language` (english) — 3 questions on a lesson of 9 passages
+- `composition-saying-it-plain` (english) — 3 questions on a lesson of 9 passages
+- `singing-i-breath-pitch-and-your-own-voice` (music) — 3 questions on a lesson of 9 passages
+- `music-theory-notes-scales-and-why-songs-work` (music) — 3 questions on a lesson of 9 passages
+- `rhythm-ear-training` (music) — 3 questions on a lesson of 9 passages
+- `world-history-from-river-valleys-to-railways` (history) — 3 questions on a lesson of 9 passages
+- `american-history-the-republics-argument-with-itself` (history) — 3 questions on a lesson of 9 passages
+- `storytelling-structure-scene-and-voice` (writing) — 3 questions on a lesson of 9 passages
+- `business-i-what-a-business-is-from-the-ground-up` (business) — 3 questions on a lesson of 10 passages
+- `economics-i-scarcity-prices-and-why-markets-move` (business) — 3 questions on a lesson of 8 passages
+- `money-and-the-books-accounting-without-tears` (business) — 3 questions on a lesson of 8 passages
+- `selling-the-honest-craft-of-the-deal` (business) — 3 questions on a lesson of 8 passages
+- `art-design-art-foundations-seeing-and-making` (art-design) — 3 questions on a lesson of 7 passages
 
-## partial (177)
+## partial (568)
 
-- `the-bounce-the-aldred-limit` (cosmology) — 3 steps, 2 substantive
-- `gravity-division` (cosmology) — 3 steps, 2 substantive
-- `founding-papers-re-read` (cosmology) — 2 steps, 1 substantive
-- `the-aldred-limit-and-its-consequence-tree` (cosmology) — 3 steps, 2 substantive
-- `the-cmb-line` (cosmology) — 3 steps, 2 substantive
-- `machine-designs` (cosmology) — 2 steps, 1 substantive
-- `black-hole-interiors-remnants-and-evaporation-under-the-aldred-l` (cosmology) — 2 steps, 1 substantive
-- `nucleosynthesis-and-structure-formation-in-a-bounced-cosmology` (cosmology) — 2 steps, 1 substantive
-- `quantum-fields-and-particle-creation-through-a-bounce` (cosmology) — 2 steps, 1 substantive
-- `second-generation-propulsion-and-energy-designs-from-the-transit` (cosmology) — 2 steps, 1 substantive
-- `the-dark-sector-in-the-limit-frame` (cosmology) — 2 steps, 1 substantive
-- `entropy-thermodynamics-and-the-arrow-of-time-in-a-bounced-cosmol` (cosmology) — 2 steps, 1 substantive
-- `precision-instruments-and-sensors-from-the-physics` (cosmology) — 2 steps, 1 substantive
-- `laboratory-analogues-spin-torsion-and-vacuum-effects-in-condense` (cosmology) — 2 steps, 1 substantive
-- `information-computation-and-energy-bounds-of-the-frame` (cosmology) — 2 steps, 1 substantive
-- `cmb-spectral-distortions-polarisation-and-secondary-anisotropies` (cosmology) — 2 steps, 1 substantive
-- `axions-axion-like-particles-and-light-relics-against-the-limit-a` (cosmology) — 2 steps, 1 substantive
-- `primordial-magnetic-fields-and-magnetogenesis-through-a-bounce` (cosmology) — 3 steps, 2 substantive
-- `laboratory-vacuum-effects-against-the-vacuum-dissolution-count` (cosmology) — 2 steps, 1 substantive
-- `large-scale-structure-surveys-as-tests-of-the-frame` (cosmology) — 2 steps, 1 substantive
-- `space-based-instruments-and-mission-designs-from-the-physics` (cosmology) — 2 steps, 1 substantive
-- `cosmic-shear-and-weak-gravitational-lensing-tomography-as-a-test` (cosmology) — 2 steps, 1 substantive
-- `interstellar-dust-grain-growth-extinction-and-polarisation-again` (cosmology) — 2 steps, 1 substantive
-- `dark-energy-expansion` (cosmology) — 2 steps, 1 substantive
-- `matching-modes-across-the-bounce` (cosmology) — 3 steps, 2 substantive
-- `cmb-the-early-sky` (cosmology) — 3 steps, 2 substantive
-- `charges-boundaries-channels` (cosmology) — 2 steps, 1 substantive
-- `galactic-dynamics-the-open-programme` (galactic) — 3 steps, 2 substantive
-- `galaxies-clusters-and-lensing-as-tests-of-the-frame` (galactic) — 3 steps, 2 substantive
-- `relativistic-jets-and-synchrotron-outflows-from-compact-objects-` (galactic) — 2 steps, 1 substantive
-- `reverberation-mapping-and-broad-line-regions-of-active-galactic-` (galactic) — 2 steps, 1 substantive
-- `dwarfs-satellites` (galactic) — 2 steps, 1 substantive
-- `astrophysics-the-open-programme` (astrophysics) — 2 steps, 1 substantive
-- `stars-their-deaths` (astrophysics) — 2 steps, 1 substantive
-- `laboratory-and-astrophysical-tests-of-einstein-cartan-torsion` (astrophysics) — 3 steps, 2 substantive
-- `cosmic-rays-and-the-highest-energy-particles-against-density-and` (astrophysics) — 2 steps, 1 substantive
-- `compact-objects-against-the-density-and-shear-limits` (astrophysics) — 3 steps, 2 substantive
-- `solar-system-lunar-and-binary-pulsar-tests-of-the-frame` (astrophysics) — 2 steps, 1 substantive
-- `stars-exoplanets-and-planetary-systems-against-the-density-and-s` (astrophysics) — 3 steps, 2 substantive
-- `stellar-death-supernovae-kilonovae-and-gamma-ray-bursts-against-` (astrophysics) — 2 steps, 1 substantive
-- `planetary-magnetospheres-aurorae-and-radiation-belts-against-ene` (astrophysics) — 2 steps, 1 substantive
-- `gravitational-microlensing-of-stars-exoplanets-and-compact-objec` (astrophysics) — 2 steps, 1 substantive
-- `globular-clusters-stellar-populations-and-the-age-problem-as-tes` (astrophysics) — 2 steps, 1 substantive
-- `strong-lensing-time-delay-cosmography-and-lens-substructure-as-t` (astrophysics) — 3 steps, 2 substantive
-- `supernova-remnants-pulsar-wind-nebulae-and-shock-acceleration-ag` (astrophysics) — 2 steps, 1 substantive
-- `the-galactic-centre-s-stars-and-the-central-black-hole-environme` (astrophysics) — 2 steps, 1 substantive
-- `high-velocity-and-hypervelocity-stars-ejection-travel-and-halo-c` (astrophysics) — 2 steps, 1 substantive
-- `gravitational-wave-lensing-magnification-time-delay-and-wave-opt` (astrophysics) — 2 steps, 1 substantive
-- `exoplanet-phase-curves-secondary-eclipses-and-dayside-thermal-em` (astrophysics) — 2 steps, 1 substantive
-- `interacting-supernovae-and-circumstellar-interaction-shock-eject` (astrophysics) — 2 steps, 1 substantive
-- `stellar-rotation-magnetic-braking-and-gyrochronology-spin-down-a` (astrophysics) — 2 steps, 1 substantive
-- `lunar-dust-electrostatic-levitation-and-surface-charging-grain-c` (astrophysics) — 2 steps, 1 substantive
-- `hail-graupel-and-severe-storm-cloud-microphysics-growth-updraft-` (astrophysics) — 2 steps, 1 substantive
-- `waves-signals` (astrophysics) — 2 steps, 1 substantive
-- `particle-physics-the-open-programme` (particle) — 2 steps, 1 substantive
-- `neutrinos-leptons` (particle) — 2 steps, 1 substantive
-- `cosmic-ray-antimatter-positrons-antiprotons-and-light-antinuclei` (particle) — 2 steps, 1 substantive
-- `the-cosmic-neutrino-background-and-relic-neutrino-detection-agai` (particle) — 2 steps, 1 substantive
-- `extensive-air-showers-and-cosmic-ray-shower-development-shower-m` (particle) — 2 steps, 1 substantive
-- `hydrothermal-vents-seafloor-plumes-and-chimney-systems-plume-ris` (particle) — 2 steps, 1 substantive
-- `collisions-detectors` (particle) — 2 steps, 1 substantive
-- `quarks-higgs-the-standard-model` (particle) — 2 steps, 1 substantive
-- `nuclear-physics-the-open-programme` (nuclear) — 2 steps, 1 substantive
-- `globular-cluster-multiple-populations-and-light-element-enrichme` (nuclear) — 3 steps, 2 substantive
-- `radioactive-decay-alpha-tunnelling-and-geochronometer-budgets-ag` (nuclear) — 2 steps, 1 substantive
-- `nuclei-decays` (nuclear) — 2 steps, 1 substantive
-- `fission-fusion-capture` (nuclear) — 2 steps, 1 substantive
-- `atomic-molecular-physics-the-open-programme` (atomic) — 2 steps, 1 substantive
-- `matter-energy` (atomic) — 3 steps, 2 substantive
-- `time-variation-of-fundamental-constants-equivalence-principle-an` (atomic) — 2 steps, 1 substantive
-- `fifth-generation-designs-quantum-communication-and-navigation-de` (atomic) — 3 steps, 2 substantive
-- `quantum-foundations-at-the-limit-decoherence-entanglement-and-me` (atomic) — 2 steps, 1 substantive
-- `high-intensity-laser-photonics-and-optical-systems-from-the-phys` (atomic) — 2 steps, 1 substantive
-- `relativistic-geodesy-clock-networks-and-time-transfer-from-the-p` (atomic) — 2 steps, 1 substantive
-- `dispersion-and-arrival-time-tests-of-the-limit-frame-from-high-e` (atomic) — 3 steps, 2 substantive
-- `star-formation-and-molecular-clouds-collapse-fragmentation-and-f` (atomic) — 2 steps, 1 substantive
-- `black-hole-shadows-photon-rings-and-horizon-scale-imaging-agains` (atomic) — 2 steps, 1 substantive
-- `black-hole-ringdown-quasi-normal-modes-and-gravitational-wave-me` (atomic) — 2 steps, 1 substantive
-- `the-heliosphere-the-termination-shock-and-the-interstellar-bound` (atomic) — 2 steps, 1 substantive
-- `the-local-bubble-local-interstellar-cloud-and-nearby-interstella` (atomic) — 2 steps, 1 substantive
-- `synchrotron-radiation-undulators-and-free-electron-lasers-bright` (atomic) — 2 steps, 1 substantive
-- `atoms-ions-clocks` (atomic) — 2 steps, 1 substantive
-- `molecules-bonds` (atomic) — 2 steps, 1 substantive
-- `ultracold-matter-bose-einstein-condensates-and-superfluid-dynami` (condensed) — 3 steps, 2 substantive
-- `neutron-star-crusts-glitches-and-superfluid-dynamics-against-den` (condensed) — 2 steps, 1 substantive
-- `crystals-lattices-devices` (condensed) — 2 steps, 1 substantive
-- `magnets-cold-matter` (condensed) — 2 steps, 1 substantive
-- `the-earth-s-magnetotail-plasma-sheet-and-substorms-storage-relea` (plasma) — 3 steps, 2 substantive
-- `plasma-states-discharges` (plasma) — 2 steps, 1 substantive
-- `plasma-physics-the-open-programme` (plasma) — 2 steps, 1 substantive
-- `geophysics-the-open-programme` (geophysics) — 2 steps, 1 substantive
-- `water-the-ground` (geophysics) — 2 steps, 1 substantive
-- `earth-rock-quakes` (geophysics) — 2 steps, 1 substantive
-- `earth-sky-life` (geophysics) — 3 steps, 2 substantive
-- `air-climate-oceans` (geophysics) — 2 steps, 1 substantive
-- `ocean-worlds-icy-moon-interiors-subsurface-oceans-and-cryovolcan` (geophysics) — 2 steps, 1 substantive
-- `ocean-tides-and-tidal-heating-dissipation-budgets-in-the-earth-m` (geophysics) — 3 steps, 2 substantive
-- `ocean-acoustics-sound-channels-propagation-scattering-and-ambien` (geophysics) — 2 steps, 1 substantive
-- `fault-mechanics-earthquake-nucleation-and-slow-slip-friction-str` (geophysics) — 2 steps, 1 substantive
-- `aeolian-transport-saltation-and-dune-migration-on-earth-mars-and` (geophysics) — 2 steps, 1 substantive
-- `tsunami-generation-transoceanic-propagation-and-run-up-source-di` (geophysics) — 2 steps, 1 substantive
-- `aerocapture-aerobraking-and-atmospheric-entry-systems-for-planet` (geophysics) — 2 steps, 1 substantive
-- `tropical-cyclones-intensity-wind-pressure-and-storm-surge-budget` (geophysics) — 2 steps, 1 substantive
-- `fluvial-sediment-transport-river-channels-and-delta-building-bed` (geophysics) — 2 steps, 1 substantive
-- `tornadoes-dust-devils-and-small-scale-atmospheric-vortices-vorte` (geophysics) — 2 steps, 1 substantive
-- `seismic-wave-propagation-attenuation-and-earth-tomography-travel` (geophysics) — 2 steps, 1 substantive
-- `superconductivity-vortex-pinning-and-critical-current-budgets-in` (geophysics) — 2 steps, 1 substantive
-- `ice-nucleation-frost-growth-and-cloud-glaciation-nucleation-rate` (geophysics) — 2 steps, 1 substantive
-- `ocean-mesoscale-eddies-and-western-boundary-current-extensions-e` (geophysics) — 2 steps, 1 substantive
-- `river-ice-frazil-freeze-up-ice-jams-and-breakup-dynamics-against` (geophysics) — 2 steps, 1 substantive
-- `aurorae-on-earth-and-other-planets-precipitation-current-and-hea` (geophysics) — 2 steps, 1 substantive
-- `subglacial-lakes-and-subglacial-hydrology-water-heat-and-exchang` (geophysics) — 2 steps, 1 substantive
-- `planetary-bow-shocks-magnetosheaths-and-foreshocks-standoff-comp` (geophysics) — 2 steps, 1 substantive
-- `the-corpus-examining-itself` (mathematical) — 2 steps, 1 substantive
-- `the-count-its-constructions` (mathematical) — 2 steps, 1 substantive
-- `frames-coordinates-formalisms` (mathematical) — 3 steps, 2 substantive
-- `fields-actions-variations` (mathematical) — 3 steps, 2 substantive
-- `granular-matter-powders-and-regolith-mechanics-shear-flow-and-co` (mathematical) — 3 steps, 2 substantive
-- `wildfire-spread-ember-transport-and-fire-atmosphere-coupling-rat` (mathematical) — 2 steps, 1 substantive
-- `quantum-error-correction-and-fault-tolerance-budgets-threshold-l` (mathematical) — 2 steps, 1 substantive
-- `charges-currents-conservation` (mathematical) — 2 steps, 1 substantive
-- `addendum-the-sentience-statement` (mathematical) — 2 steps, 1 substantive
-- `designs-engineering-the-applied-line-the-open-programme` (designs) — 2 steps, 1 substantive
-- `energy-light-power` (designs) — 2 steps, 1 substantive
-- `water-wells-sanitation` (designs) — 2 steps, 1 substantive
-- `signals-computing-data` (designs) — 2 steps, 1 substantive
-- `machines-tools-making` (designs) — 2 steps, 1 substantive
-- `food-farming-storage` (designs) — 2 steps, 1 substantive
-- `shelter-building-materials` (designs) — 2 steps, 1 substantive
-- `builds-designs` (designs) — 3 steps, 2 substantive
-- `titan-surface-and-lake-power-thermal-and-mobility-systems-derive` (designs) — 2 steps, 1 substantive
-- `information-computation` (designs) — 2 steps, 1 substantive
-- `water` (designs) — 2 steps, 1 substantive
-- `food` (designs) — 2 steps, 1 substantive
-- `energy-access` (designs) — 2 steps, 1 substantive
-- `health` (designs) — 2 steps, 1 substantive
-- `shelter-infrastructure` (designs) — 2 steps, 1 substantive
-- `fishing-and-small-boats-wave-6` (designs) — 3 steps, 2 substantive
-- `bees-honey-and-wax-wave-6` (designs) — 2 steps, 1 substantive
-- `wells-hand-pumps-and-rope-wave-6` (designs) — 2 steps, 1 substantive
-- `the-market-stall-wave-6` (designs) — 3 steps, 2 substantive
-- `household-manufactures-wave-6` (designs) — 2 steps, 1 substantive
-- `building-with-local-materials-wave-6` (designs) — 2 steps, 1 substantive
-- `rain-roofs-and-stormwater-wave-7` (designs) — 2 steps, 1 substantive
-- `clay-pottery-and-kilns-wave-7` (designs) — 2 steps, 1 substantive
-- `fibre-spinning-and-weaving-wave-7` (designs) — 2 steps, 1 substantive
-- `sleep-bedding-and-the-night-room-wave-7` (designs) — 2 steps, 1 substantive
-- `eyes-vision-and-low-cost-spectacles-wave-7` (designs) — 2 steps, 1 substantive
-- `teeth-oral-care-and-low-resource-dentistry-wave-7` (designs) — 2 steps, 1 substantive
-- `household-pests-and-stored-goods-protection-wave-8` (designs) — 2 steps, 1 substantive
-- `paper-ink-books-and-printing-wave-8` (designs) — 2 steps, 1 substantive
-- `soap-bathing-and-hygiene-wave-8` (designs) — 2 steps, 1 substantive
-- `household-money-savings-and-bookkeeping-wave-8` (designs) — 2 steps, 1 substantive
-- `postal-services-addresses-and-deliveries-wave-8` (designs) — 2 steps, 1 substantive
-- `energy-conversion-and-field-devices-derived-from-the-limit` (designs) — 2 steps, 1 substantive
-- `fusion-plasma-energy-balance-and-reactor-scale-energy-systems-de` (designs) — 2 steps, 1 substantive
-- `electrochemical-thermal-and-mechanical-energy-storage-systems-de` (designs) — 2 steps, 1 substantive
-- `planetary-defence-and-asteroid-deflection-systems-derived-from-t` (designs) — 2 steps, 1 substantive
-- `orbital-safety-debris-remediation-and-cislunar-navigation-system` (designs) — 2 steps, 1 substantive
-- `in-space-manufacturing-assembly-and-recycling-systems-derived-fr` (designs) — 2 steps, 1 substantive
-- `mars-surface-power-thermal-radiation-and-construction-systems-de` (designs) — 2 steps, 1 substantive
-- `venus-surface-and-deep-atmosphere-power-thermal-and-construction` (designs) — 2 steps, 1 substantive
-- `space-based-solar-power-and-wireless-power-beaming-systems-deriv` (designs) — 2 steps, 1 substantive
-- `direct-imaging-exoplanet-observatory-coronagraph-and-starshade-s` (designs) — 2 steps, 1 substantive
-- `geothermal-power-and-direct-use-heat-systems-derived-from-the-ph` (designs) — 2 steps, 1 substantive
-- `wave-energy-and-tidal-stream-power-systems-derived-from-the-phys` (designs) — 2 steps, 1 substantive
-- `wind-energy-and-airborne-wind-power-systems-derived-from-the-phy` (designs) — 2 steps, 1 substantive
-- `hydroelectric-micro-hydro-and-pumped-storage-power-systems-deriv` (designs) — 2 steps, 1 substantive
-- `earth-ocean-observation-systems-derived-from-the-physics` (designs) — 2 steps, 1 substantive
-- `high-altitude-balloon-and-stratospheric-observatory-systems-deri` (designs) — 2 steps, 1 substantive
-- `asteroid-deflection-and-planetary-defence-systems-derived-from-t` (designs) — 2 steps, 1 substantive
-- `planetary-sample-return-and-sample-containment-systems-derived-f` (designs) — 2 steps, 1 substantive
-- `air-fire-disaster` (designs) — 2 steps, 1 substantive
-- `dna-carbon-computing` (designs) — 2 steps, 1 substantive
-- `health-the-body` (designs) — 2 steps, 1 substantive
-- `life-in-the-universe` (designs) — 2 steps, 1 substantive
-- `house-record` (designs) — 2 steps, 1 substantive
+- `the-bounce-the-aldred-limit` (cosmology) — 2 questions on a lesson of 8 passages
+- `gravity-division` (cosmology) — 1 questions on a lesson of 8 passages
+- `founding-papers-re-read` (cosmology) — 1 questions on a lesson of 2 passages
+- `the-aldred-limit-and-its-consequence-tree` (cosmology) — 2 questions on a lesson of 8 passages
+- `the-cmb-line` (cosmology) — 1 questions on a lesson of 8 passages
+- `the-fifth-coordinate-and-the-transit-law` (cosmology) — 1 questions on a lesson of 8 passages
+- `machine-designs` (cosmology) — 1 questions on a lesson of 8 passages
+- `black-hole-interiors-remnants-and-evaporation-under-the-aldred-l` (cosmology) — 1 questions on a lesson of 8 passages
+- `nucleosynthesis-and-structure-formation-in-a-bounced-cosmology` (cosmology) — 1 questions on a lesson of 8 passages
+- `quantum-fields-and-particle-creation-through-a-bounce` (cosmology) — 1 questions on a lesson of 8 passages
+- `second-generation-propulsion-and-energy-designs-from-the-transit` (cosmology) — 1 questions on a lesson of 8 passages
+- `the-dark-sector-in-the-limit-frame` (cosmology) — 1 questions on a lesson of 8 passages
+- `entropy-thermodynamics-and-the-arrow-of-time-in-a-bounced-cosmol` (cosmology) — 1 questions on a lesson of 8 passages
+- `precision-instruments-and-sensors-from-the-physics` (cosmology) — 1 questions on a lesson of 8 passages
+- `primordial-perturbations-non-gaussianity-and-the-power-spectrum-` (cosmology) — 2 questions on a lesson of 8 passages
+- `laboratory-analogues-spin-torsion-and-vacuum-effects-in-condense` (cosmology) — 1 questions on a lesson of 8 passages
+- `information-computation-and-energy-bounds-of-the-frame` (cosmology) — 1 questions on a lesson of 8 passages
+- `cmb-spectral-distortions-polarisation-and-secondary-anisotropies` (cosmology) — 1 questions on a lesson of 8 passages
+- `axions-axion-like-particles-and-light-relics-against-the-limit-a` (cosmology) — 1 questions on a lesson of 8 passages
+- `primordial-magnetic-fields-and-magnetogenesis-through-a-bounce` (cosmology) — 1 questions on a lesson of 8 passages
+- `baryogenesis-leptogenesis-and-the-matter-antimatter-asymmetry-th` (cosmology) — 1 questions on a lesson of 8 passages
+- `laboratory-vacuum-effects-against-the-vacuum-dissolution-count` (cosmology) — 1 questions on a lesson of 8 passages
+- `large-scale-structure-surveys-as-tests-of-the-frame` (cosmology) — 1 questions on a lesson of 8 passages
+- `space-based-instruments-and-mission-designs-from-the-physics` (cosmology) — 1 questions on a lesson of 8 passages
+- `cosmic-shear-and-weak-gravitational-lensing-tomography-as-a-test` (cosmology) — 1 questions on a lesson of 8 passages
+- `interstellar-dust-grain-growth-extinction-and-polarisation-again` (cosmology) — 1 questions on a lesson of 8 passages
+- `dark-energy-expansion` (cosmology) — 1 questions on a lesson of 2 passages
+- `matching-modes-across-the-bounce` (cosmology) — 2 questions on a lesson of 3 passages
+- `cmb-the-early-sky` (cosmology) — 2 questions on a lesson of 4 passages
+- `charges-boundaries-channels` (cosmology) — 1 questions on a lesson of 2 passages
+- `galactic-dynamics-the-open-programme` (galactic) — 2 questions on a lesson of 8 passages
+- `galaxies-clusters-and-lensing-as-tests-of-the-frame` (galactic) — 2 questions on a lesson of 9 passages
+- `relativistic-jets-and-synchrotron-outflows-from-compact-objects-` (galactic) — 1 questions on a lesson of 8 passages
+- `reverberation-mapping-and-broad-line-regions-of-active-galactic-` (galactic) — 1 questions on a lesson of 8 passages
+- `dwarfs-satellites` (galactic) — 1 questions on a lesson of 3 passages
+- `astrophysics-the-open-programme` (astrophysics) — 1 questions on a lesson of 8 passages
+- `stars-their-deaths` (astrophysics) — 1 questions on a lesson of 3 passages
+- `laboratory-and-astrophysical-tests-of-einstein-cartan-torsion` (astrophysics) — 2 questions on a lesson of 9 passages
+- `cosmic-rays-and-the-highest-energy-particles-against-density-and` (astrophysics) — 1 questions on a lesson of 8 passages
+- `compact-objects-against-the-density-and-shear-limits` (astrophysics) — 2 questions on a lesson of 8 passages
+- `solar-system-lunar-and-binary-pulsar-tests-of-the-frame` (astrophysics) — 1 questions on a lesson of 8 passages
+- `stars-exoplanets-and-planetary-systems-against-the-density-and-s` (astrophysics) — 1 questions on a lesson of 8 passages
+- `stellar-death-supernovae-kilonovae-and-gamma-ray-bursts-against-` (astrophysics) — 1 questions on a lesson of 8 passages
+- `planetary-magnetospheres-aurorae-and-radiation-belts-against-ene` (astrophysics) — 1 questions on a lesson of 8 passages
+- `gravitational-microlensing-of-stars-exoplanets-and-compact-objec` (astrophysics) — 1 questions on a lesson of 8 passages
+- `protoplanetary-and-debris-discs-dust-evolution-planetesimal-form` (astrophysics) — 2 questions on a lesson of 8 passages
+- `globular-clusters-stellar-populations-and-the-age-problem-as-tes` (astrophysics) — 1 questions on a lesson of 8 passages
+- `gamma-ray-astronomy-the-diffuse-background-line-searches-and-sou` (astrophysics) — 2 questions on a lesson of 8 passages
+- `strong-lensing-time-delay-cosmography-and-lens-substructure-as-t` (astrophysics) — 1 questions on a lesson of 8 passages
+- `supernova-remnants-pulsar-wind-nebulae-and-shock-acceleration-ag` (astrophysics) — 1 questions on a lesson of 8 passages
+- `the-galactic-centre-s-stars-and-the-central-black-hole-environme` (astrophysics) — 1 questions on a lesson of 8 passages
+- `high-velocity-and-hypervelocity-stars-ejection-travel-and-halo-c` (astrophysics) — 1 questions on a lesson of 8 passages
+- `gravitational-wave-lensing-magnification-time-delay-and-wave-opt` (astrophysics) — 1 questions on a lesson of 8 passages
+- `exoplanet-phase-curves-secondary-eclipses-and-dayside-thermal-em` (astrophysics) — 1 questions on a lesson of 8 passages
+- `interacting-supernovae-and-circumstellar-interaction-shock-eject` (astrophysics) — 1 questions on a lesson of 8 passages
+- `stellar-rotation-magnetic-braking-and-gyrochronology-spin-down-a` (astrophysics) — 1 questions on a lesson of 8 passages
+- `lunar-dust-electrostatic-levitation-and-surface-charging-grain-c` (astrophysics) — 1 questions on a lesson of 8 passages
+- `hail-graupel-and-severe-storm-cloud-microphysics-growth-updraft-` (astrophysics) — 1 questions on a lesson of 8 passages
+- `waves-signals` (astrophysics) — 1 questions on a lesson of 2 passages
+- `particle-physics-the-open-programme` (particle) — 1 questions on a lesson of 2 passages
+- `neutrinos-leptons` (particle) — 1 questions on a lesson of 5 passages
+- `high-energy-neutrino-astronomy-and-multi-messenger-transients-in` (particle) — 2 questions on a lesson of 8 passages
+- `cosmic-ray-antimatter-positrons-antiprotons-and-light-antinuclei` (particle) — 1 questions on a lesson of 8 passages
+- `the-cosmic-neutrino-background-and-relic-neutrino-detection-agai` (particle) — 1 questions on a lesson of 8 passages
+- `extensive-air-showers-and-cosmic-ray-shower-development-shower-m` (particle) — 1 questions on a lesson of 8 passages
+- `hydrothermal-vents-seafloor-plumes-and-chimney-systems-plume-ris` (particle) — 1 questions on a lesson of 8 passages
+- `collisions-detectors` (particle) — 1 questions on a lesson of 6 passages
+- `quarks-higgs-the-standard-model` (particle) — 1 questions on a lesson of 2 passages
+- `nuclear-physics-the-open-programme` (nuclear) — 1 questions on a lesson of 2 passages
+- `globular-cluster-multiple-populations-and-light-element-enrichme` (nuclear) — 2 questions on a lesson of 9 passages
+- `radioactive-decay-alpha-tunnelling-and-geochronometer-budgets-ag` (nuclear) — 1 questions on a lesson of 8 passages
+- `nuclei-decays` (nuclear) — 1 questions on a lesson of 5 passages
+- `fission-fusion-capture` (nuclear) — 1 questions on a lesson of 3 passages
+- `atomic-molecular-physics-the-open-programme` (atomic) — 1 questions on a lesson of 2 passages
+- `matter-energy` (atomic) — 2 questions on a lesson of 9 passages
+- `time-variation-of-fundamental-constants-equivalence-principle-an` (atomic) — 1 questions on a lesson of 8 passages
+- `fifth-generation-designs-quantum-communication-and-navigation-de` (atomic) — 1 questions on a lesson of 8 passages
+- `quantum-foundations-at-the-limit-decoherence-entanglement-and-me` (atomic) — 1 questions on a lesson of 8 passages
+- `high-intensity-laser-photonics-and-optical-systems-from-the-phys` (atomic) — 1 questions on a lesson of 8 passages
+- `relativistic-geodesy-clock-networks-and-time-transfer-from-the-p` (atomic) — 1 questions on a lesson of 8 passages
+- `dispersion-and-arrival-time-tests-of-the-limit-frame-from-high-e` (atomic) — 1 questions on a lesson of 8 passages
+- `star-formation-and-molecular-clouds-collapse-fragmentation-and-f` (atomic) — 1 questions on a lesson of 8 passages
+- `black-hole-shadows-photon-rings-and-horizon-scale-imaging-agains` (atomic) — 1 questions on a lesson of 8 passages
+- `black-hole-ringdown-quasi-normal-modes-and-gravitational-wave-me` (atomic) — 1 questions on a lesson of 8 passages
+- `the-heliosphere-the-termination-shock-and-the-interstellar-bound` (atomic) — 1 questions on a lesson of 8 passages
+- `the-local-bubble-local-interstellar-cloud-and-nearby-interstella` (atomic) — 1 questions on a lesson of 8 passages
+- `synchrotron-radiation-undulators-and-free-electron-lasers-bright` (atomic) — 1 questions on a lesson of 8 passages
+- `atoms-ions-clocks` (atomic) — 1 questions on a lesson of 3 passages
+- `spectra-light` (atomic) — 2 questions on a lesson of 8 passages
+- `molecules-bonds` (atomic) — 1 questions on a lesson of 2 passages
+- `ultracold-matter-bose-einstein-condensates-and-superfluid-dynami` (condensed) — 2 questions on a lesson of 9 passages
+- `neutron-star-crusts-glitches-and-superfluid-dynamics-against-den` (condensed) — 1 questions on a lesson of 8 passages
+- `crystals-lattices-devices` (condensed) — 1 questions on a lesson of 2 passages
+- `magnets-cold-matter` (condensed) — 1 questions on a lesson of 2 passages
+- `the-earth-s-magnetotail-plasma-sheet-and-substorms-storage-relea` (plasma) — 2 questions on a lesson of 8 passages
+- `plasma-states-discharges` (plasma) — 1 questions on a lesson of 5 passages
+- `plasma-physics-the-open-programme` (plasma) — 1 questions on a lesson of 2 passages
+- `geophysics-the-open-programme` (geophysics) — 1 questions on a lesson of 3 passages
+- `water-the-ground` (geophysics) — 1 questions on a lesson of 3 passages
+- `earth-rock-quakes` (geophysics) — 1 questions on a lesson of 8 passages
+- `earth-sky-life` (geophysics) — 2 questions on a lesson of 9 passages
+- `air-climate-oceans` (geophysics) — 1 questions on a lesson of 3 passages
+- `ocean-worlds-icy-moon-interiors-subsurface-oceans-and-cryovolcan` (geophysics) — 1 questions on a lesson of 8 passages
+- `ocean-tides-and-tidal-heating-dissipation-budgets-in-the-earth-m` (geophysics) — 2 questions on a lesson of 8 passages
+- `ocean-acoustics-sound-channels-propagation-scattering-and-ambien` (geophysics) — 1 questions on a lesson of 8 passages
+- `fault-mechanics-earthquake-nucleation-and-slow-slip-friction-str` (geophysics) — 1 questions on a lesson of 8 passages
+- `aeolian-transport-saltation-and-dune-migration-on-earth-mars-and` (geophysics) — 1 questions on a lesson of 8 passages
+- `tsunami-generation-transoceanic-propagation-and-run-up-source-di` (geophysics) — 1 questions on a lesson of 8 passages
+- `aerocapture-aerobraking-and-atmospheric-entry-systems-for-planet` (geophysics) — 1 questions on a lesson of 8 passages
+- `tropical-cyclones-intensity-wind-pressure-and-storm-surge-budget` (geophysics) — 1 questions on a lesson of 8 passages
+- `fluvial-sediment-transport-river-channels-and-delta-building-bed` (geophysics) — 1 questions on a lesson of 8 passages
+- `tornadoes-dust-devils-and-small-scale-atmospheric-vortices-vorte` (geophysics) — 1 questions on a lesson of 8 passages
+- `seismic-wave-propagation-attenuation-and-earth-tomography-travel` (geophysics) — 1 questions on a lesson of 8 passages
+- `superconductivity-vortex-pinning-and-critical-current-budgets-in` (geophysics) — 1 questions on a lesson of 8 passages
+- `ice-nucleation-frost-growth-and-cloud-glaciation-nucleation-rate` (geophysics) — 1 questions on a lesson of 8 passages
+- `ocean-mesoscale-eddies-and-western-boundary-current-extensions-e` (geophysics) — 1 questions on a lesson of 8 passages
+- `river-ice-frazil-freeze-up-ice-jams-and-breakup-dynamics-against` (geophysics) — 1 questions on a lesson of 8 passages
+- `aurorae-on-earth-and-other-planets-precipitation-current-and-hea` (geophysics) — 1 questions on a lesson of 8 passages
+- `subglacial-lakes-and-subglacial-hydrology-water-heat-and-exchang` (geophysics) — 1 questions on a lesson of 8 passages
+- `planetary-bow-shocks-magnetosheaths-and-foreshocks-standoff-comp` (geophysics) — 1 questions on a lesson of 8 passages
+- `theorems-proofs-bounds` (mathematical) — 2 questions on a lesson of 8 passages
+- `the-corpus-examining-itself` (mathematical) — 1 questions on a lesson of 2 passages
+- `the-count-its-constructions` (mathematical) — 1 questions on a lesson of 6 passages
+- `frames-coordinates-formalisms` (mathematical) — 2 questions on a lesson of 6 passages
+- `fields-actions-variations` (mathematical) — 1 questions on a lesson of 8 passages
+- `granular-matter-powders-and-regolith-mechanics-shear-flow-and-co` (mathematical) — 2 questions on a lesson of 8 passages
+- `wildfire-spread-ember-transport-and-fire-atmosphere-coupling-rat` (mathematical) — 1 questions on a lesson of 8 passages
+- `quantum-error-correction-and-fault-tolerance-budgets-threshold-l` (mathematical) — 1 questions on a lesson of 8 passages
+- `charges-currents-conservation` (mathematical) — 1 questions on a lesson of 6 passages
+- `addendum-the-sentience-statement` (mathematical) — 1 questions on a lesson of 3 passages
+- `designs-engineering-the-applied-line-the-open-programme` (designs) — 1 questions on a lesson of 2 passages
+- `energy-light-power` (designs) — 1 questions on a lesson of 2 passages
+- `water-wells-sanitation` (designs) — 1 questions on a lesson of 2 passages
+- `signals-computing-data` (designs) — 1 questions on a lesson of 2 passages
+- `machines-tools-making` (designs) — 1 questions on a lesson of 2 passages
+- `food-farming-storage` (designs) — 1 questions on a lesson of 2 passages
+- `shelter-building-materials` (designs) — 1 questions on a lesson of 2 passages
+- `builds-designs` (designs) — 1 questions on a lesson of 8 passages
+- `titan-surface-and-lake-power-thermal-and-mobility-systems-derive` (designs) — 1 questions on a lesson of 8 passages
+- `information-computation` (designs) — 1 questions on a lesson of 8 passages
+- `water` (designs) — 1 questions on a lesson of 8 passages
+- `food` (designs) — 1 questions on a lesson of 8 passages
+- `energy-access` (designs) — 1 questions on a lesson of 8 passages
+- `health` (designs) — 1 questions on a lesson of 8 passages
+- `shelter-infrastructure` (designs) — 1 questions on a lesson of 8 passages
+- `fishing-and-small-boats-wave-6` (designs) — 1 questions on a lesson of 8 passages
+- `bees-honey-and-wax-wave-6` (designs) — 1 questions on a lesson of 8 passages
+- `wells-hand-pumps-and-rope-wave-6` (designs) — 1 questions on a lesson of 8 passages
+- `the-market-stall-wave-6` (designs) — 1 questions on a lesson of 8 passages
+- `household-manufactures-wave-6` (designs) — 1 questions on a lesson of 8 passages
+- `building-with-local-materials-wave-6` (designs) — 1 questions on a lesson of 8 passages
+- `rain-roofs-and-stormwater-wave-7` (designs) — 1 questions on a lesson of 8 passages
+- `clay-pottery-and-kilns-wave-7` (designs) — 1 questions on a lesson of 8 passages
+- `fibre-spinning-and-weaving-wave-7` (designs) — 1 questions on a lesson of 8 passages
+- `sleep-bedding-and-the-night-room-wave-7` (designs) — 1 questions on a lesson of 8 passages
+- `eyes-vision-and-low-cost-spectacles-wave-7` (designs) — 1 questions on a lesson of 8 passages
+- `teeth-oral-care-and-low-resource-dentistry-wave-7` (designs) — 1 questions on a lesson of 8 passages
+- `household-pests-and-stored-goods-protection-wave-8` (designs) — 1 questions on a lesson of 8 passages
+- `paper-ink-books-and-printing-wave-8` (designs) — 1 questions on a lesson of 8 passages
+- `soap-bathing-and-hygiene-wave-8` (designs) — 1 questions on a lesson of 8 passages
+- `household-money-savings-and-bookkeeping-wave-8` (designs) — 1 questions on a lesson of 8 passages
+- `postal-services-addresses-and-deliveries-wave-8` (designs) — 1 questions on a lesson of 8 passages
+- `energy-conversion-and-field-devices-derived-from-the-limit` (designs) — 1 questions on a lesson of 8 passages
+- `fusion-plasma-energy-balance-and-reactor-scale-energy-systems-de` (designs) — 1 questions on a lesson of 8 passages
+- `electrochemical-thermal-and-mechanical-energy-storage-systems-de` (designs) — 1 questions on a lesson of 8 passages
+- `planetary-defence-and-asteroid-deflection-systems-derived-from-t` (designs) — 1 questions on a lesson of 8 passages
+- `orbital-safety-debris-remediation-and-cislunar-navigation-system` (designs) — 1 questions on a lesson of 8 passages
+- `in-space-manufacturing-assembly-and-recycling-systems-derived-fr` (designs) — 1 questions on a lesson of 8 passages
+- `mars-surface-power-thermal-radiation-and-construction-systems-de` (designs) — 1 questions on a lesson of 8 passages
+- `venus-surface-and-deep-atmosphere-power-thermal-and-construction` (designs) — 1 questions on a lesson of 8 passages
+- `space-based-solar-power-and-wireless-power-beaming-systems-deriv` (designs) — 1 questions on a lesson of 8 passages
+- `direct-imaging-exoplanet-observatory-coronagraph-and-starshade-s` (designs) — 1 questions on a lesson of 8 passages
+- `geothermal-power-and-direct-use-heat-systems-derived-from-the-ph` (designs) — 1 questions on a lesson of 8 passages
+- `wave-energy-and-tidal-stream-power-systems-derived-from-the-phys` (designs) — 1 questions on a lesson of 8 passages
+- `wind-energy-and-airborne-wind-power-systems-derived-from-the-phy` (designs) — 1 questions on a lesson of 8 passages
+- `hydroelectric-micro-hydro-and-pumped-storage-power-systems-deriv` (designs) — 1 questions on a lesson of 8 passages
+- `earth-ocean-observation-systems-derived-from-the-physics` (designs) — 1 questions on a lesson of 8 passages
+- `high-altitude-balloon-and-stratospheric-observatory-systems-deri` (designs) — 1 questions on a lesson of 8 passages
+- `asteroid-deflection-and-planetary-defence-systems-derived-from-t` (designs) — 1 questions on a lesson of 8 passages
+- `planetary-sample-return-and-sample-containment-systems-derived-f` (designs) — 1 questions on a lesson of 8 passages
+- `air-fire-disaster` (designs) — 1 questions on a lesson of 8 passages
+- `dna-carbon-computing` (designs) — 1 questions on a lesson of 7 passages
+- `health-the-body` (designs) — 1 questions on a lesson of 2 passages
+- `life-in-the-universe` (designs) — 1 questions on a lesson of 5 passages
+- `house-record` (designs) — 1 questions on a lesson of 3 passages
+- `numbers-proof-foundations-of-mathematics` (mathematics) — 2 questions on a lesson of 9 passages
+- `geometry-euclids-workshop` (mathematics) — 2 questions on a lesson of 9 passages
+- `algebra-the-language-of-unknowns` (mathematics) — 1 questions on a lesson of 9 passages
+- `computer-science-programming-ii-structure-and-craft` (computer-science) — 1 questions on a lesson of 7 passages
+- `computer-science-data-structures-shapes-that-data-takes` (computer-science) — 1 questions on a lesson of 7 passages
+- `computer-science-algorithms-the-recipes-that-matter` (computer-science) — 1 questions on a lesson of 7 passages
+- `computer-science-discrete-mathematics-for-computing` (computer-science) — 2 questions on a lesson of 7 passages
+- `computer-science-computer-systems-from-gates-to-operating-systems` (computer-science) — 1 questions on a lesson of 7 passages
+- `computer-science-databases-memory-that-organisations-trust` (computer-science) — 2 questions on a lesson of 7 passages
+- `computer-science-networks-and-the-internet-how-machines-talk` (computer-science) — 1 questions on a lesson of 7 passages
+- `computer-science-software-engineering-building-with-others` (computer-science) — 2 questions on a lesson of 7 passages
+- `computer-science-web-development-the-universal-client` (computer-science) — 1 questions on a lesson of 7 passages
+- `computer-science-cybersecurity-foundations-defending-systems` (computer-science) — 1 questions on a lesson of 7 passages
+- `computer-science-operating-systems-in-depth` (computer-science) — 1 questions on a lesson of 7 passages
+- `computer-science-compilers-translating-languages` (computer-science) — 1 questions on a lesson of 7 passages
+- `computer-science-human-computer-interaction-designing-for-people` (computer-science) — 1 questions on a lesson of 7 passages
+- `computer-science-computer-graphics-drawing-with-mathematics` (computer-science) — 1 questions on a lesson of 7 passages
+- `computer-science-theory-of-computation-what-can-be-computed` (computer-science) — 1 questions on a lesson of 7 passages
+- `computer-science-mobile-and-embedded-systems` (computer-science) — 1 questions on a lesson of 7 passages
+- `computer-science-cloud-and-distributed-systems` (computer-science) — 2 questions on a lesson of 7 passages
+- `computer-science-game-development-interactive-worlds` (computer-science) — 1 questions on a lesson of 7 passages
+- `computer-science-open-source-and-the-commons-of-code` (computer-science) — 1 questions on a lesson of 7 passages
+- `francais-i-first-words-real-sentences` (french) — 2 questions on a lesson of 9 passages
+- `chemistry-general-chemistry-i-atoms-bonds-and-reactions` (chemistry) — 2 questions on a lesson of 7 passages
+- `chemistry-general-chemistry-ii-equilibrium-and-energy` (chemistry) — 1 questions on a lesson of 7 passages
+- `chemistry-organic-chemistry-i-the-carbon-compounds` (chemistry) — 2 questions on a lesson of 7 passages
+- `chemistry-organic-chemistry-ii-synthesis-and-the-great-families` (chemistry) — 1 questions on a lesson of 7 passages
+- `chemistry-analytical-chemistry-measuring-what-is-there` (chemistry) — 1 questions on a lesson of 7 passages
+- `chemistry-physical-chemistry-i-thermodynamics-and-kinetics` (chemistry) — 1 questions on a lesson of 7 passages
+- `chemistry-physical-chemistry-ii-quantum-chemistry-and-spectra` (chemistry) — 1 questions on a lesson of 7 passages
+- `chemistry-inorganic-chemistry-the-whole-table` (chemistry) — 1 questions on a lesson of 7 passages
+- `chemistry-biochemistry-i-molecules-of-life` (chemistry) — 1 questions on a lesson of 7 passages
+- `chemistry-biochemistry-ii-pathways-and-regulation` (chemistry) — 1 questions on a lesson of 7 passages
+- `chemistry-environmental-chemistry-chemistry-of-the-real-world` (chemistry) — 1 questions on a lesson of 7 passages
+- `chemistry-medicinal-chemistry-designing-molecules-that-heal` (chemistry) — 1 questions on a lesson of 7 passages
+- `chemistry-polymer-chemistry-giant-molecules` (chemistry) — 1 questions on a lesson of 7 passages
+- `chemistry-chemistry-laboratory-i-bench-foundations` (chemistry) — 2 questions on a lesson of 7 passages
+- `chemistry-chemistry-laboratory-ii-synthesis-and-analysis` (chemistry) — 1 questions on a lesson of 7 passages
+- `chemistry-computational-chemistry-molecules-in-the-machine` (chemistry) — 1 questions on a lesson of 7 passages
+- `chemistry-industrial-chemistry-chemistry-at-scale` (chemistry) — 1 questions on a lesson of 7 passages
+- `chemistry-geochemistry-chemistry-of-the-earth` (chemistry) — 1 questions on a lesson of 7 passages
+- `chemistry-food-chemistry-the-chemistry-of-eating` (chemistry) — 1 questions on a lesson of 7 passages
+- `chemistry-forensic-chemistry-chemistry-in-court` (chemistry) — 2 questions on a lesson of 7 passages
+- `statistics-statistics-i-describing-data-honestly` (statistics) — 1 questions on a lesson of 7 passages
+- `statistics-statistics-ii-inference-from-sample-to-population` (statistics) — 1 questions on a lesson of 7 passages
+- `statistics-probability-the-mathematics-of-uncertainty` (statistics) — 1 questions on a lesson of 7 passages
+- `statistics-regression-lines-through-noise` (statistics) — 1 questions on a lesson of 7 passages
+- `statistics-experimental-design-learning-on-purpose` (statistics) — 1 questions on a lesson of 7 passages
+- `statistics-data-science-i-wrangling-and-seeing` (statistics) — 2 questions on a lesson of 7 passages
+- `statistics-data-science-ii-models-in-practice` (statistics) — 1 questions on a lesson of 7 passages
+- `statistics-bayesian-statistics-beliefs-with-numbers` (statistics) — 1 questions on a lesson of 7 passages
+- `statistics-survey-methods-asking-populations-questions` (statistics) — 1 questions on a lesson of 7 passages
+- `statistics-time-series-data-with-a-memory` (statistics) — 2 questions on a lesson of 7 passages
+- `statistics-biostatistics-statistics-for-medicine` (statistics) — 1 questions on a lesson of 7 passages
+- `statistics-statistical-computing-the-working-tools` (statistics) — 1 questions on a lesson of 7 passages
+- `statistics-quality-and-reliability-statistics-in-industry` (statistics) — 1 questions on a lesson of 7 passages
+- `statistics-actuarial-foundations-pricing-risk` (statistics) — 1 questions on a lesson of 7 passages
+- `earth-sciences-physical-geology-the-solid-earth` (earth-sciences) — 1 questions on a lesson of 7 passages
+- `earth-sciences-historical-geology-the-earth-s-autobiography` (earth-sciences) — 1 questions on a lesson of 7 passages
+- `earth-sciences-mineralogy-crystals-and-their-logic` (earth-sciences) — 2 questions on a lesson of 7 passages
+- `earth-sciences-petrology-how-rocks-are-born` (earth-sciences) — 2 questions on a lesson of 7 passages
+- `earth-sciences-oceanography-the-other-three-quarters` (earth-sciences) — 1 questions on a lesson of 7 passages
+- `earth-sciences-meteorology-weather-explained` (earth-sciences) — 1 questions on a lesson of 7 passages
+- `earth-sciences-climatology-weather-s-long-memory` (earth-sciences) — 2 questions on a lesson of 7 passages
+- `earth-sciences-hydrology-water-on-the-land` (earth-sciences) — 1 questions on a lesson of 7 passages
+- `earth-sciences-soil-science-the-living-ground` (earth-sciences) — 1 questions on a lesson of 7 passages
+- `earth-sciences-environmental-science-i-systems-and-pressures` (earth-sciences) — 2 questions on a lesson of 7 passages
+- `earth-sciences-environmental-science-ii-solutions-and-trade-offs` (earth-sciences) — 1 questions on a lesson of 7 passages
+- `earth-sciences-natural-hazards-when-the-earth-pushes-back` (earth-sciences) — 1 questions on a lesson of 7 passages
+- `earth-sciences-geographic-information-systems-maps-that-compute` (earth-sciences) — 1 questions on a lesson of 7 passages
+- `earth-sciences-paleontology-life-in-deep-time` (earth-sciences) — 1 questions on a lesson of 7 passages
+- `earth-sciences-planetary-science-other-worlds-same-physics` (earth-sciences) — 1 questions on a lesson of 7 passages
+- `earth-sciences-field-geology-reading-the-ground-yourself` (earth-sciences) — 1 questions on a lesson of 7 passages
+- `engineering-engineering-foundations-how-engineers-think` (engineering) — 2 questions on a lesson of 7 passages
+- `engineering-statics-forces-at-rest` (engineering) — 1 questions on a lesson of 7 passages
+- `engineering-dynamics-forces-in-motion` (engineering) — 1 questions on a lesson of 7 passages
+- `engineering-mechanics-of-materials-how-solids-carry-load` (engineering) — 1 questions on a lesson of 7 passages
+- `engineering-thermodynamics-for-engineers` (engineering) — 1 questions on a lesson of 7 passages
+- `engineering-fluid-mechanics-water-air-and-everything-between` (engineering) — 1 questions on a lesson of 7 passages
+- `engineering-electrical-engineering-i-circuits-and-signals` (engineering) — 1 questions on a lesson of 7 passages
+- `engineering-electrical-engineering-ii-machines-and-control` (engineering) — 1 questions on a lesson of 7 passages
+- `engineering-electronics-devices-that-switch-and-amplify` (engineering) — 1 questions on a lesson of 7 passages
+- `engineering-civil-engineering-i-structures-in-the-world` (engineering) — 1 questions on a lesson of 7 passages
+- `engineering-civil-engineering-ii-ground-water-and-roads` (engineering) — 1 questions on a lesson of 7 passages
+- `engineering-mechanical-engineering-i-machines-and-motion` (engineering) — 2 questions on a lesson of 7 passages
+- `engineering-mechanical-engineering-ii-energy-and-hvac` (engineering) — 2 questions on a lesson of 7 passages
+- `engineering-chemical-engineering-processes-that-transform` (engineering) — 2 questions on a lesson of 7 passages
+- `engineering-aerospace-engineering-leaving-the-ground` (engineering) — 2 questions on a lesson of 7 passages
+- `engineering-materials-engineering-choosing-what-things-are-made-of` (engineering) — 2 questions on a lesson of 7 passages
+- `engineering-environmental-engineering-infrastructure-for-a-living-world` (engineering) — 1 questions on a lesson of 7 passages
+- `engineering-industrial-engineering-systems-of-work` (engineering) — 1 questions on a lesson of 7 passages
+- `engineering-engineering-mathematics-the-working-toolkit` (engineering) — 1 questions on a lesson of 7 passages
+- `engineering-engineering-design-project-brief-to-prototype` (engineering) — 1 questions on a lesson of 7 passages
+- `psychology-psychology-i-the-science-of-mind-and-behaviour` (psychology) — 1 questions on a lesson of 7 passages
+- `psychology-psychology-ii-the-person-in-the-world` (psychology) — 2 questions on a lesson of 7 passages
+- `psychology-developmental-psychology-the-life-course` (psychology) — 2 questions on a lesson of 7 passages
+- `psychology-cognitive-psychology-the-mind-s-machinery` (psychology) — 2 questions on a lesson of 7 passages
+- `psychology-abnormal-psychology-when-mind-and-life-collide` (psychology) — 2 questions on a lesson of 7 passages
+- `psychology-biological-psychology-brain-body-behaviour` (psychology) — 1 questions on a lesson of 7 passages
+- `psychology-social-psychology-people-among-people` (psychology) — 1 questions on a lesson of 7 passages
+- `psychology-personality-psychology-the-pattern-of-a-person` (psychology) — 1 questions on a lesson of 7 passages
+- `psychology-health-psychology-mind-in-the-body-s-service` (psychology) — 1 questions on a lesson of 7 passages
+- `psychology-educational-psychology-how-learning-works` (psychology) — 1 questions on a lesson of 7 passages
+- `psychology-organisational-psychology-people-at-work` (psychology) — 1 questions on a lesson of 7 passages
+- `psychology-clinical-psychology-assessment-and-therapy` (psychology) — 1 questions on a lesson of 7 passages
+- `psychology-psychological-research-methods-asking-minds-questions` (psychology) — 2 questions on a lesson of 7 passages
+- `psychology-psychology-of-perception-constructing-the-world` (psychology) — 1 questions on a lesson of 7 passages
+- `psychology-positive-psychology-the-study-of-what-goes-right` (psychology) — 1 questions on a lesson of 7 passages
+- `psychology-forensic-psychology-mind-and-law` (psychology) — 1 questions on a lesson of 7 passages
+- `psychology-consumer-psychology-why-we-buy` (psychology) — 1 questions on a lesson of 7 passages
+- `psychology-sports-and-performance-psychology` (psychology) — 1 questions on a lesson of 7 passages
+- `sociology-sociology-ii-structures-that-outlast-us` (sociology) — 2 questions on a lesson of 7 passages
+- `sociology-research-methods-in-sociology` (sociology) — 1 questions on a lesson of 7 passages
+- `sociology-sociology-of-the-family` (sociology) — 1 questions on a lesson of 7 passages
+- `sociology-sociology-of-education` (sociology) — 1 questions on a lesson of 7 passages
+- `sociology-sociology-of-work-and-organisations` (sociology) — 1 questions on a lesson of 7 passages
+- `sociology-urban-sociology-the-city-as-society` (sociology) — 1 questions on a lesson of 7 passages
+- `sociology-sociology-of-health-and-illness` (sociology) — 1 questions on a lesson of 7 passages
+- `sociology-crime-and-deviance` (sociology) — 1 questions on a lesson of 7 passages
+- `sociology-race-ethnicity-and-migration` (sociology) — 1 questions on a lesson of 7 passages
+- `sociology-gender-and-society` (sociology) — 1 questions on a lesson of 7 passages
+- `sociology-media-and-society` (sociology) — 1 questions on a lesson of 7 passages
+- `sociology-religion-in-society` (sociology) — 1 questions on a lesson of 7 passages
+- `sociology-political-sociology-power-s-social-roots` (sociology) — 1 questions on a lesson of 7 passages
+- `sociology-globalisation-and-development` (sociology) — 1 questions on a lesson of 7 passages
+- `sociology-sociology-of-technology` (sociology) — 1 questions on a lesson of 7 passages
+- `anthropology-cultural-anthropology-ii-the-human-mosaic` (anthropology) — 1 questions on a lesson of 7 passages
+- `anthropology-archaeology-reading-the-buried-record` (anthropology) — 1 questions on a lesson of 7 passages
+- `anthropology-linguistic-anthropology-language-as-culture` (anthropology) — 1 questions on a lesson of 7 passages
+- `anthropology-medical-anthropology-healing-across-cultures` (anthropology) — 1 questions on a lesson of 7 passages
+- `anthropology-economic-anthropology-livelihoods` (anthropology) — 1 questions on a lesson of 7 passages
+- `anthropology-anthropology-of-religion` (anthropology) — 1 questions on a lesson of 7 passages
+- `anthropology-visual-and-material-culture` (anthropology) — 1 questions on a lesson of 7 passages
+- `anthropology-applied-anthropology-knowledge-at-work` (anthropology) — 1 questions on a lesson of 7 passages
+- `anthropology-human-origins-the-deep-story` (anthropology) — 1 questions on a lesson of 7 passages
+- `anthropology-anthropology-of-food` (anthropology) — 1 questions on a lesson of 7 passages
+- `anthropology-digital-anthropology-culture-online` (anthropology) — 1 questions on a lesson of 7 passages
+- `anthropology-ethnographic-methods-doing-fieldwork` (anthropology) — 1 questions on a lesson of 7 passages
+- `political-science-comparative-politics-how-countries-differ` (political-science) — 1 questions on a lesson of 7 passages
+- `political-science-international-relations-i-the-world-without-a-referee` (political-science) — 1 questions on a lesson of 7 passages
+- `political-science-international-relations-ii-the-present-order` (political-science) — 2 questions on a lesson of 7 passages
+- `political-science-political-theory-the-great-arguments` (political-science) — 1 questions on a lesson of 7 passages
+- `political-science-public-policy-how-decisions-become-outcomes` (political-science) — 2 questions on a lesson of 7 passages
+- `political-science-political-behaviour-voters-and-citizens` (political-science) — 1 questions on a lesson of 7 passages
+- `political-science-constitutional-politics-rules-that-bind-the-rulers` (political-science) — 1 questions on a lesson of 7 passages
+- `political-science-political-economy-markets-and-states-together` (political-science) — 1 questions on a lesson of 7 passages
+- `political-science-public-administration-the-state-at-work` (political-science) — 1 questions on a lesson of 7 passages
+- `political-science-foreign-policy-analysis` (political-science) — 1 questions on a lesson of 7 passages
+- `political-science-politics-of-development` (political-science) — 1 questions on a lesson of 7 passages
+- `political-science-environmental-politics` (political-science) — 1 questions on a lesson of 7 passages
+- `political-science-political-research-methods` (political-science) — 1 questions on a lesson of 7 passages
+- `political-science-democracy-and-its-discontents` (political-science) — 1 questions on a lesson of 7 passages
+- `political-science-security-studies-force-and-its-futures` (political-science) — 1 questions on a lesson of 7 passages
+- `geography-human-geography-i-people-on-the-land` (geography) — 2 questions on a lesson of 7 passages
+- `geography-human-geography-ii-economies-in-space` (geography) — 1 questions on a lesson of 7 passages
+- `geography-physical-geography-the-stage-itself` (geography) — 1 questions on a lesson of 7 passages
+- `geography-cartography-the-craft-of-maps` (geography) — 1 questions on a lesson of 7 passages
+- `geography-urban-geography-inside-the-city` (geography) — 1 questions on a lesson of 7 passages
+- `geography-political-geography-power-on-the-map` (geography) — 1 questions on a lesson of 7 passages
+- `geography-economic-geography-why-there` (geography) — 1 questions on a lesson of 7 passages
+- `geography-environmental-geography-people-and-planet-together` (geography) — 1 questions on a lesson of 7 passages
+- `geography-regional-geography-the-world-region-by-region` (geography) — 1 questions on a lesson of 7 passages
+- `geography-geography-of-health` (geography) — 1 questions on a lesson of 7 passages
+- `geography-tourism-and-place` (geography) — 1 questions on a lesson of 7 passages
+- `geography-geographical-methods-field-lab-and-map` (geography) — 1 questions on a lesson of 7 passages
+- `economics-microeconomics-i-choices-at-the-margin` (economics) — 1 questions on a lesson of 7 passages
+- `economics-microeconomics-ii-markets-and-their-failures` (economics) — 1 questions on a lesson of 7 passages
+- `economics-macroeconomics-i-the-whole-economy` (economics) — 1 questions on a lesson of 7 passages
+- `economics-macroeconomics-ii-growth-and-cycles` (economics) — 1 questions on a lesson of 7 passages
+- `economics-econometrics-i-economics-meets-data` (economics) — 1 questions on a lesson of 7 passages
+- `economics-econometrics-ii-advanced-methods` (economics) — 1 questions on a lesson of 7 passages
+- `economics-international-economics-trade-and-money-across-borders` (economics) — 1 questions on a lesson of 7 passages
+- `economics-development-economics-why-nations-prosper-or-stall` (economics) — 1 questions on a lesson of 7 passages
+- `economics-labour-economics-work-and-wages` (economics) — 1 questions on a lesson of 7 passages
+- `economics-public-economics-the-state-s-wallet` (economics) — 1 questions on a lesson of 7 passages
+- `economics-behavioural-economics-humans-not-econs` (economics) — 1 questions on a lesson of 7 passages
+- `economics-financial-economics-markets-for-money` (economics) — 1 questions on a lesson of 7 passages
+- `economics-environmental-economics-pricing-the-planet` (economics) — 1 questions on a lesson of 7 passages
+- `economics-history-of-economic-thought` (economics) — 1 questions on a lesson of 7 passages
+- `economics-game-theory-strategy-formalised` (economics) — 2 questions on a lesson of 7 passages
+- `economics-economics-of-organisations-and-strategy` (economics) — 1 questions on a lesson of 7 passages
+- `philosophy-philosophy-i-the-love-of-questions` (philosophy) — 2 questions on a lesson of 7 passages
+- `philosophy-logic-the-machinery-of-argument` (philosophy) — 1 questions on a lesson of 7 passages
+- `philosophy-philosophy-of-mind-what-is-it-like-to-be` (philosophy) — 1 questions on a lesson of 7 passages
+- `philosophy-epistemology-knowledge-and-its-limits` (philosophy) — 2 questions on a lesson of 7 passages
+- `philosophy-metaphysics-the-furniture-of-reality` (philosophy) — 2 questions on a lesson of 7 passages
+- `philosophy-political-philosophy-justice-and-the-state` (philosophy) — 2 questions on a lesson of 7 passages
+- `philosophy-philosophy-of-science-how-knowledge-grows` (philosophy) — 1 questions on a lesson of 7 passages
+- `philosophy-aesthetics-art-and-beauty-interrogated` (philosophy) — 1 questions on a lesson of 7 passages
+- `philosophy-philosophy-of-religion-god-argued-carefully` (philosophy) — 2 questions on a lesson of 7 passages
+- `philosophy-ancient-philosophy-the-greeks-and-romans` (philosophy) — 1 questions on a lesson of 7 passages
+- `philosophy-modern-philosophy-descartes-to-kant` (philosophy) — 2 questions on a lesson of 7 passages
+- `philosophy-philosophy-of-language-meaning-and-its-mechanics` (philosophy) — 2 questions on a lesson of 7 passages
+- `philosophy-ethics-of-technology-and-ai` (philosophy) — 1 questions on a lesson of 7 passages
+- `philosophy-existentialism-freedom-and-its-weight` (philosophy) — 2 questions on a lesson of 7 passages
+- `philosophy-philosophy-of-law-rules-and-their-reasons` (philosophy) — 2 questions on a lesson of 7 passages
+- `linguistics-linguistics-ii-meaning-and-use` (linguistics) — 2 questions on a lesson of 7 passages
+- `linguistics-phonetics-and-phonology-in-depth` (linguistics) — 1 questions on a lesson of 7 passages
+- `linguistics-syntax-the-architecture-of-sentences` (linguistics) — 1 questions on a lesson of 7 passages
+- `linguistics-semantics-and-pragmatics-meaning-meant-and-implied` (linguistics) — 1 questions on a lesson of 7 passages
+- `linguistics-sociolinguistics-language-in-society` (linguistics) — 1 questions on a lesson of 7 passages
+- `linguistics-historical-linguistics-languages-over-time` (linguistics) — 1 questions on a lesson of 7 passages
+- `linguistics-psycholinguistics-language-in-the-mind` (linguistics) — 1 questions on a lesson of 7 passages
+- `linguistics-computational-linguistics-language-in-the-machine` (linguistics) — 2 questions on a lesson of 7 passages
+- `linguistics-language-acquisition-first-and-second` (linguistics) — 1 questions on a lesson of 7 passages
+- `linguistics-writing-systems-marks-that-speak` (linguistics) — 1 questions on a lesson of 7 passages
+- `linguistics-field-linguistics-documenting-the-world-s-languages` (linguistics) — 1 questions on a lesson of 7 passages
+- `classics-classical-civilisation-ii-rome` (classics) — 2 questions on a lesson of 7 passages
+- `classics-greek-language-i-first-steps-in-greek` (classics) — 1 questions on a lesson of 7 passages
+- `classics-latin-language-i-first-steps-in-latin` (classics) — 1 questions on a lesson of 7 passages
+- `classics-greek-and-roman-epic` (classics) — 1 questions on a lesson of 7 passages
+- `classics-greek-tragedy-and-comedy` (classics) — 1 questions on a lesson of 7 passages
+- `classics-roman-history-republic-to-empire` (classics) — 1 questions on a lesson of 7 passages
+- `classics-greek-history-city-states-and-empires` (classics) — 1 questions on a lesson of 7 passages
+- `classics-classical-mythology-the-stories-that-outlived-their-gods` (classics) — 2 questions on a lesson of 7 passages
+- `classics-ancient-philosophy-s-world-thought-in-context` (classics) — 1 questions on a lesson of 7 passages
+- `classics-roman-law-and-daily-life` (classics) — 2 questions on a lesson of 7 passages
+- `classics-classical-reception-the-ancients-in-our-world` (classics) — 1 questions on a lesson of 7 passages
+- `religious-studies-world-religions-ii-the-abrahamic-traditions` (religious-studies) — 1 questions on a lesson of 7 passages
+- `religious-studies-sacred-texts-reading-what-believers-read` (religious-studies) — 1 questions on a lesson of 7 passages
+- `religious-studies-ritual-and-practice-religion-as-done` (religious-studies) — 2 questions on a lesson of 7 passages
+- `religious-studies-religion-and-ethics` (religious-studies) — 1 questions on a lesson of 7 passages
+- `religious-studies-religion-in-the-modern-world` (religious-studies) — 1 questions on a lesson of 7 passages
+- `religious-studies-philosophy-of-religion-the-scholar-s-questions` (religious-studies) — 1 questions on a lesson of 7 passages
+- `religious-studies-myth-and-symbol` (religious-studies) — 1 questions on a lesson of 7 passages
+- `religious-studies-religion-and-psychology` (religious-studies) — 1 questions on a lesson of 7 passages
+- `religious-studies-new-religious-movements` (religious-studies) — 1 questions on a lesson of 7 passages
+- `religious-studies-religion-art-and-architecture` (religious-studies) — 2 questions on a lesson of 7 passages
+- `religious-studies-death-and-the-afterlife-across-traditions` (religious-studies) — 1 questions on a lesson of 7 passages
+- `nursing-anatomy-and-physiology-for-nurses` (nursing) — 1 questions on a lesson of 7 passages
+- `nursing-health-assessment-reading-the-patient` (nursing) — 1 questions on a lesson of 7 passages
+- `nursing-pharmacology-for-nurses-medicines-in-practice` (nursing) — 1 questions on a lesson of 7 passages
+- `nursing-medical-surgical-nursing-i` (nursing) — 1 questions on a lesson of 7 passages
+- `nursing-medical-surgical-nursing-ii` (nursing) — 1 questions on a lesson of 7 passages
+- `nursing-maternal-and-newborn-nursing` (nursing) — 1 questions on a lesson of 7 passages
+- `nursing-paediatric-nursing-children-are-not-small-adults` (nursing) — 1 questions on a lesson of 7 passages
+- `nursing-mental-health-nursing` (nursing) — 1 questions on a lesson of 7 passages
+- `nursing-community-and-public-health-nursing` (nursing) — 1 questions on a lesson of 7 passages
+- `nursing-critical-care-nursing` (nursing) — 1 questions on a lesson of 7 passages
+- `nursing-gerontological-nursing-care-in-later-life` (nursing) — 1 questions on a lesson of 7 passages
+- `nursing-nursing-research-and-evidence-based-practice` (nursing) — 1 questions on a lesson of 7 passages
+- `nursing-allied-health-survey-the-wider-team` (nursing) — 1 questions on a lesson of 7 passages
+- `public-health-public-health-i-the-health-of-populations` (public-health) — 1 questions on a lesson of 7 passages
+- `public-health-epidemiology-counting-disease-to-conquer-it` (public-health) — 1 questions on a lesson of 7 passages
+- `public-health-health-promotion-helping-populations-choose-health` (public-health) — 2 questions on a lesson of 7 passages
+- `public-health-global-health-health-without-borders` (public-health) — 1 questions on a lesson of 7 passages
+- `public-health-environmental-and-occupational-health` (public-health) — 1 questions on a lesson of 7 passages
+- `public-health-health-policy-and-systems` (public-health) — 1 questions on a lesson of 7 passages
+- `public-health-infectious-disease-control` (public-health) — 1 questions on a lesson of 7 passages
+- `public-health-non-communicable-disease-prevention` (public-health) — 2 questions on a lesson of 7 passages
+- `public-health-maternal-child-and-adolescent-health` (public-health) — 1 questions on a lesson of 7 passages
+- `public-health-health-data-and-surveillance` (public-health) — 1 questions on a lesson of 7 passages
+- `public-health-emergency-preparedness-and-response` (public-health) — 1 questions on a lesson of 7 passages
+- `public-health-one-health-humans-animals-environment` (public-health) — 1 questions on a lesson of 7 passages
+- `social-work-human-behaviour-and-the-social-environment` (social-work) — 1 questions on a lesson of 7 passages
+- `social-work-child-and-family-social-work` (social-work) — 1 questions on a lesson of 7 passages
+- `social-work-social-work-with-adults` (social-work) — 1 questions on a lesson of 7 passages
+- `social-work-social-policy-the-welfare-landscape` (social-work) — 1 questions on a lesson of 7 passages
+- `social-work-community-work-and-development` (social-work) — 1 questions on a lesson of 7 passages
+- `social-work-social-work-law-and-ethics` (social-work) — 1 questions on a lesson of 7 passages
+- `social-work-addiction-and-recovery-services` (social-work) — 1 questions on a lesson of 7 passages
+- `social-work-criminal-justice-social-work` (social-work) — 2 questions on a lesson of 7 passages
+- `social-work-international-and-migration-social-work` (social-work) — 1 questions on a lesson of 7 passages
+- `social-work-research-and-evaluation-in-social-services` (social-work) — 1 questions on a lesson of 7 passages
+- `social-work-leadership-in-human-services` (social-work) — 1 questions on a lesson of 7 passages
+- `kinesiology-biomechanics-movement-under-physics` (kinesiology) — 1 questions on a lesson of 7 passages
+- `kinesiology-motor-learning-and-control` (kinesiology) — 1 questions on a lesson of 7 passages
+- `kinesiology-sport-and-exercise-psychology` (kinesiology) — 1 questions on a lesson of 7 passages
+- `kinesiology-strength-and-conditioning` (kinesiology) — 1 questions on a lesson of 7 passages
+- `kinesiology-sports-nutrition` (kinesiology) — 1 questions on a lesson of 7 passages
+- `kinesiology-injury-prevention-and-rehabilitation` (kinesiology) — 1 questions on a lesson of 7 passages
+- `kinesiology-physical-education-and-pedagogy` (kinesiology) — 1 questions on a lesson of 7 passages
+- `kinesiology-sport-management-and-society` (kinesiology) — 1 questions on a lesson of 7 passages
+- `kinesiology-exercise-and-health-across-the-lifespan` (kinesiology) — 1 questions on a lesson of 7 passages
+- `kinesiology-anatomy-for-movement` (kinesiology) — 1 questions on a lesson of 7 passages
+- `kinesiology-outdoor-and-adventure-education` (kinesiology) — 1 questions on a lesson of 7 passages
+- `education-foundations-of-education-why-schools-exist` (education) — 1 questions on a lesson of 7 passages
+- `education-learning-sciences-how-people-learn` (education) — 1 questions on a lesson of 7 passages
+- `education-curriculum-design-deciding-what-is-taught` (education) — 1 questions on a lesson of 7 passages
+- `education-assessment-and-evaluation` (education) — 1 questions on a lesson of 7 passages
+- `education-classroom-practice-the-craft-of-teaching` (education) — 1 questions on a lesson of 7 passages
+- `education-child-and-adolescent-development-for-teachers` (education) — 1 questions on a lesson of 7 passages
+- `education-inclusive-education-every-learner-in-the-room` (education) — 1 questions on a lesson of 7 passages
+- `education-literacy-education-reading-and-writing-across-school` (education) — 1 questions on a lesson of 7 passages
+- `education-numeracy-and-mathematics-education` (education) — 1 questions on a lesson of 7 passages
+- `education-science-education` (education) — 1 questions on a lesson of 7 passages
+- `education-educational-technology` (education) — 1 questions on a lesson of 7 passages
+- `education-early-childhood-education` (education) — 1 questions on a lesson of 7 passages
+- `education-secondary-and-further-education` (education) — 1 questions on a lesson of 7 passages
+- `education-higher-education-and-adult-learning` (education) — 1 questions on a lesson of 7 passages
+- `education-educational-leadership-and-policy` (education) — 1 questions on a lesson of 7 passages
+- `education-comparative-and-international-education` (education) — 1 questions on a lesson of 7 passages
+- `law-legal-foundations-what-law-is-and-where-it-lives` (law) — 2 questions on a lesson of 7 passages
+- `law-constitutional-law-the-frame-of-government` (law) — 1 questions on a lesson of 7 passages
+- `law-contract-law-promises-the-law-enforces` (law) — 2 questions on a lesson of 7 passages
+- `law-tort-law-wrongs-and-compensation` (law) — 2 questions on a lesson of 7 passages
+- `law-criminal-law-the-state-accuses` (law) — 1 questions on a lesson of 7 passages
+- `law-criminal-procedure-and-evidence` (law) — 1 questions on a lesson of 7 passages
+- `law-property-law-land-things-and-rights` (law) — 1 questions on a lesson of 7 passages
+- `law-administrative-law-governing-the-governors` (law) — 1 questions on a lesson of 7 passages
+- `law-international-law-law-between-states` (law) — 1 questions on a lesson of 7 passages
+- `law-human-rights-law` (law) — 1 questions on a lesson of 7 passages
+- `law-company-and-commercial-law` (law) — 1 questions on a lesson of 7 passages
+- `law-employment-law` (law) — 1 questions on a lesson of 7 passages
+- `law-family-law` (law) — 2 questions on a lesson of 7 passages
+- `law-environmental-law` (law) — 2 questions on a lesson of 7 passages
+- `law-legal-ethics-and-the-profession` (law) — 1 questions on a lesson of 7 passages
+- `law-jurisprudence-law-s-philosophy` (law) — 1 questions on a lesson of 7 passages
+- `criminal-justice-criminal-justice-foundations-the-system-as-a-whole` (criminal-justice) — 1 questions on a lesson of 7 passages
+- `criminal-justice-policing-the-state-on-the-street` (criminal-justice) — 2 questions on a lesson of 7 passages
+- `criminal-justice-courts-and-prosecution` (criminal-justice) — 1 questions on a lesson of 7 passages
+- `criminal-justice-corrections-and-punishment` (criminal-justice) — 2 questions on a lesson of 7 passages
+- `criminal-justice-criminology-i-explaining-crime` (criminal-justice) — 1 questions on a lesson of 7 passages
+- `criminal-justice-criminology-ii-patterns-and-prevention` (criminal-justice) — 2 questions on a lesson of 7 passages
+- `criminal-justice-youth-justice` (criminal-justice) — 1 questions on a lesson of 7 passages
+- `criminal-justice-forensic-science-for-justice` (criminal-justice) — 1 questions on a lesson of 7 passages
+- `criminal-justice-victimology-and-victim-services` (criminal-justice) — 1 questions on a lesson of 7 passages
+- `criminal-justice-comparative-criminal-justice` (criminal-justice) — 1 questions on a lesson of 7 passages
+- `criminal-justice-crime-and-the-media` (criminal-justice) — 1 questions on a lesson of 7 passages
+- `criminal-justice-justice-race-and-inequality` (criminal-justice) — 1 questions on a lesson of 7 passages
+- `agriculture-agricultural-foundations-farming-as-a-system` (agriculture) — 2 questions on a lesson of 7 passages
+- `agriculture-crop-science-i-the-plants-we-eat` (agriculture) — 2 questions on a lesson of 7 passages
+- `agriculture-crop-science-ii-growing-well` (agriculture) — 1 questions on a lesson of 7 passages
+- `agriculture-soil-management-for-farmers` (agriculture) — 1 questions on a lesson of 7 passages
+- `agriculture-livestock-science-i-animals-and-their-keeping` (agriculture) — 2 questions on a lesson of 7 passages
+- `agriculture-livestock-science-ii-health-and-breeding` (agriculture) — 1 questions on a lesson of 7 passages
+- `agriculture-farm-machinery-and-technology` (agriculture) — 1 questions on a lesson of 7 passages
+- `agriculture-horticulture-intensive-growing` (agriculture) — 2 questions on a lesson of 7 passages
+- `agriculture-agroecology-and-sustainable-farming` (agriculture) — 1 questions on a lesson of 7 passages
+- `agriculture-agricultural-economics-and-business` (agriculture) — 2 questions on a lesson of 7 passages
+- `agriculture-forestry-and-woodland-management` (agriculture) — 2 questions on a lesson of 7 passages
+- `agriculture-fisheries-and-aquaculture` (agriculture) — 1 questions on a lesson of 7 passages
+- `agriculture-water-resources-management` (agriculture) — 1 questions on a lesson of 7 passages
+- `agriculture-rural-development-and-land-use` (agriculture) — 1 questions on a lesson of 7 passages
+- `agriculture-food-systems-field-to-fork` (agriculture) — 1 questions on a lesson of 7 passages
+- `agriculture-conservation-and-land-management` (agriculture) — 1 questions on a lesson of 7 passages
+- `english-grammar-the-sentence` (english) — 2 questions on a lesson of 9 passages
+- `writing-i-the-clear-sentence` (writing) — 2 questions on a lesson of 9 passages
+- `communications-communication-foundations-messages-and-meanings` (communications) — 1 questions on a lesson of 7 passages
+- `communications-media-studies-i-the-industries-of-attention` (communications) — 1 questions on a lesson of 7 passages
+- `communications-media-studies-ii-audiences-and-effects` (communications) — 1 questions on a lesson of 7 passages
+- `communications-journalism-i-reporting` (communications) — 2 questions on a lesson of 7 passages
+- `communications-journalism-ii-the-craft-in-depth` (communications) — 1 questions on a lesson of 7 passages
+- `communications-public-relations-and-strategic-communication` (communications) — 1 questions on a lesson of 7 passages
+- `communications-advertising-and-persuasion` (communications) — 1 questions on a lesson of 7 passages
+- `communications-digital-media-and-society` (communications) — 1 questions on a lesson of 7 passages
+- `communications-film-and-television-studies` (communications) — 1 questions on a lesson of 7 passages
+- `communications-speech-and-rhetoric-the-spoken-word` (communications) — 1 questions on a lesson of 7 passages
+- `communications-organisational-communication` (communications) — 1 questions on a lesson of 7 passages
+- `communications-intercultural-communication` (communications) — 1 questions on a lesson of 7 passages
+- `communications-political-communication` (communications) — 1 questions on a lesson of 7 passages
+- `communications-audio-and-podcasting-the-intimate-medium` (communications) — 1 questions on a lesson of 7 passages
+- `communications-media-production-foundations` (communications) — 1 questions on a lesson of 7 passages
+- `communications-communication-research-methods` (communications) — 1 questions on a lesson of 7 passages
+- `art-design-art-history-i-from-caves-to-cathedrals` (art-design) — 1 questions on a lesson of 7 passages
+- `art-design-art-history-ii-renaissance-to-revolution` (art-design) — 1 questions on a lesson of 7 passages
+- `art-design-art-history-iii-modern-and-contemporary` (art-design) — 1 questions on a lesson of 7 passages
+- `art-design-drawing-the-fundamental-discipline` (art-design) — 1 questions on a lesson of 7 passages
+- `art-design-painting-colour-in-matter` (art-design) — 2 questions on a lesson of 7 passages
+- `art-design-sculpture-and-three-dimensions` (art-design) — 1 questions on a lesson of 7 passages
+- `art-design-printmaking-the-multiplied-image` (art-design) — 1 questions on a lesson of 7 passages
+- `art-design-graphic-design-communication-in-visual-form` (art-design) — 1 questions on a lesson of 7 passages
+- `art-design-photography-writing-with-light` (art-design) — 1 questions on a lesson of 7 passages
+- `art-design-design-studies-objects-and-their-meanings` (art-design) — 2 questions on a lesson of 7 passages
+- `art-design-textiles-and-fashion-design` (art-design) — 1 questions on a lesson of 7 passages
+- `art-design-illustration-drawing-that-tells` (art-design) — 1 questions on a lesson of 7 passages
+- `art-design-digital-art-and-new-media` (art-design) — 1 questions on a lesson of 7 passages
+- `art-design-art-education-and-community-arts` (art-design) — 1 questions on a lesson of 7 passages
+- `art-design-professional-practice-for-artists` (art-design) — 1 questions on a lesson of 7 passages
+- `theatre-film-theatre-foundations-the-live-event` (theatre-film) — 1 questions on a lesson of 7 passages
+- `theatre-film-acting-i-the-craft-of-the-actor` (theatre-film) — 1 questions on a lesson of 7 passages
+- `theatre-film-acting-ii-styles-and-texts` (theatre-film) — 1 questions on a lesson of 7 passages
+- `theatre-film-drama-and-theatre-history-i-to-the-nineteenth-century` (theatre-film) — 1 questions on a lesson of 7 passages
+- `theatre-film-drama-and-theatre-history-ii-the-modern-stage` (theatre-film) — 1 questions on a lesson of 7 passages
+- `theatre-film-playwriting-and-dramaturgy` (theatre-film) — 2 questions on a lesson of 7 passages
+- `theatre-film-directing-and-stagecraft` (theatre-film) — 2 questions on a lesson of 7 passages
+- `theatre-film-film-foundations-the-language-of-cinema` (theatre-film) — 1 questions on a lesson of 7 passages
+- `theatre-film-film-history-a-century-of-cinema` (theatre-film) — 1 questions on a lesson of 7 passages
+- `theatre-film-screenwriting-stories-for-the-camera` (theatre-film) — 2 questions on a lesson of 7 passages
+- `theatre-film-film-production-from-script-to-screen` (theatre-film) — 2 questions on a lesson of 7 passages
+- `theatre-film-documentary-film-the-real-arranged` (theatre-film) — 1 questions on a lesson of 7 passages
+- `theatre-film-film-theory-and-criticism` (theatre-film) — 1 questions on a lesson of 7 passages
+- `theatre-film-performance-studies-performance-everywhere` (theatre-film) — 1 questions on a lesson of 7 passages
 
-## orientation (0)
-
-
-## none (0)
+## lesson-only (0)
 
 
 ## language (20)

@@ -119,15 +119,28 @@ const logOf = page => page.evaluate(
   await page.goto(BASE + '#class/' + AI_SEC + '/' + AI_FUND,
     { waitUntil: 'networkidle2', timeout: 60000 });
   await page.waitForSelector('#gateBox', { visible: true, timeout: 20000 });
-  const q0 = await q(page);
-  check('entering the class presents gated step 1',
-    /actually names/.test(q0), q0.slice(0, 70));
+  /* lesson-first (Bill's law, Nov 16): the class is TAUGHT before
+     any question exists on the page */
+  const lessonShown = await page.$eval('#gtLesson',
+    el => el.style.display !== 'none');
+  const lessonPart1 = await page.$eval('#gtLessonText', el => el.textContent);
+  check('entering the class presents the LESSON first',
+    lessonShown && /a model is a function/.test(lessonPart1),
+    lessonPart1.slice(0, 70));
+  await page.screenshot({ path: 'ai-shot-1-lesson-presented.png' });
+  await page.click('#gtBeginLesson');
+  for (let i = 0; i < 5; i++) { await page.click('#gtContinue'); await sleep(150); }
+  await page.waitForFunction(
+    () => document.getElementById('gtBegin').style.display !== 'none',
+    { timeout: 15000 });
   const beginVisible = await page.$eval('#gtBegin',
     el => el.style.display !== 'none');
-  check('the Begin door is showing — starting is the first move', beginVisible);
-  await page.screenshot({ path: 'ai-shot-1-lesson-presented.png' });
+  check('after the lesson, the questions door is showing', beginVisible);
   await page.click('#gtBegin');
   await sleep(600);
+  const q0 = await q(page);
+  check('question 1 asks only what the lesson taught (what a model is)',
+    /what is a model/.test(q0), q0.slice(0, 70));
 
   /* wrong answer: HOLD + re-teach, no green check */
   await page.$eval('#gtInput', el => { el.value = 'quantum bananas from outer space'; });
@@ -135,8 +148,8 @@ const logOf = page => page.evaluate(
   await page.waitForFunction(
     () => /teaches it again/.test(document.getElementById('gtStatus').textContent),
     { timeout: 15000 });
-  check('wrong answer holds the step (no advance)',
-    /actually names/.test(await q(page)));
+  check('wrong answer holds the question (no advance)',
+    /what is a model/.test(await q(page)));
   const checkOnMiss = await page.evaluate(
     () => document.getElementById('trBoardCheck').classList.contains('on'));
   check('no green check on a miss', !checkOnMiss);
@@ -159,12 +172,12 @@ const logOf = page => page.evaluate(
     }
   })();
   await page.$eval('#gtInput',
-    el => { el.value = 'Data, parameters, and training: the three ingredients'; });
+    el => { el.value = 'A model is a function that was shown so many examples that its guesses became good'; });
   await page.click('#gtCheck');
   await page.waitForFunction(
-    () => /Step 2 of/.test(document.getElementById('gtProgress').textContent),
+    () => /Question 2 of/.test(document.getElementById('gtProgress').textContent),
     { timeout: 30000 });
-  check('right answer advances to step 2', true);
+  check('right answer advances to question 2', true);
   await watcher;
   check('big green check appeared on the board', checkSeen);
   const log1 = await logOf(page);
@@ -218,9 +231,15 @@ const logOf = page => page.evaluate(
   await hp.goto(BASE + '#class/' + AI_SEC + '/' + AI_FUND,
     { waitUntil: 'networkidle2', timeout: 60000 });
   await hp.waitForSelector('#gateBox', { visible: true, timeout: 20000 });
+  /* lesson first, then the questions */
+  await hp.click('#gtBeginLesson');
+  for (let i = 0; i < 5; i++) { await hp.click('#gtContinue'); await sleep(150); }
+  await hp.waitForFunction(
+    () => document.getElementById('gtBegin').style.display !== 'none',
+    { timeout: 15000 });
   await hp.click('#gtBegin');
-  /* the gate presents the step when the professor's opening clip
-     ends — wait for the stuck button to actually be on the step */
+  /* the gate presents the question when the professor's opening
+     clip ends — wait for the stuck button to actually be on it */
   await hp.waitForFunction(
     () => document.getElementById('gtHelp').style.display !== 'none',
     { timeout: 30000 });
@@ -239,11 +258,14 @@ const logOf = page => page.evaluate(
   await hp.waitForFunction(
     () => document.getElementById('gtChoices').style.display !== 'none',
     { timeout: 10000 });
-  const CORRECT = 'Data, parameters, and training: the three ingredients';
-  const CLASS_ANSWERS = [CORRECT,
-    'What a model is — a function with a memory of examples',
-    'Prediction as the core act',
-    'The honest vocabulary: no magic, no menace'];
+  /* the choices for a keyword question are the class's own idea
+     sets — read them from the served gate data, never hardcoded */
+  const CLASS_ANSWERS = await hp.evaluate(async (cid) => {
+    const d = await (await fetch('gate-data.json')).json();
+    return d.classes[cid].steps.map(s =>
+      'An answer built on: ' + s.keywords.map(g => g[0]).join(' · '));
+  }, AI_FUND);
+  const CORRECT = CLASS_ANSWERS[0];
   const opts = await hp.$$eval('#gtChoices .gtChoice',
     els => els.map(e => e.textContent));
   check('level 2: choices shown (correct + same-class distractors)',
@@ -259,7 +281,7 @@ const logOf = page => page.evaluate(
   await hp.waitForFunction(
     () => /Not that one/.test(document.getElementById('gtStatus').textContent),
     { timeout: 10000 });
-  check('a wrong pick holds the step', /actually names/.test(await q(hp)));
+  check('a wrong pick holds the step', /what is a model/.test(await q(hp)));
   /* the right pick: advance, recorded as an ASSISTED pass */
   let assistedNoteSeen = false;
   const noteWatch = (async () => {
@@ -275,7 +297,7 @@ const logOf = page => page.evaluate(
     btns.find(b => b.textContent === correct).click();
   }, CORRECT);
   await hp.waitForFunction(
-    () => /Step 2 of/.test(document.getElementById('gtProgress').textContent),
+    () => /Question 2 of/.test(document.getElementById('gtProgress').textContent),
     { timeout: 30000 });
   check('the right pick advances the lesson', true);
   await noteWatch;

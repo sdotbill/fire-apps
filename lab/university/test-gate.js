@@ -48,6 +48,17 @@ check('unit title near-verbatim passes', G.checkAnswer(tt, 'Integers, rationals,
 check('different unit holds', !G.checkAnswer(tt, 'Counting and the natural numbers').pass);
 check('syllabus dump fails precision', !G.checkAnswer(tt,
   'counting integers rationals fractions irrational numbers proof induction sets functions').pass);
+/* the AI Fundamentals trap (found live, Nov 16): the natural short
+   form of a title is its substance and must pass; the tail alone
+   ("the three ingredients") is not the unit and must hold */
+const ai = { kind: 'title', answer: 'Data, parameters, and training: the three ingredients' };
+check('title substance passes (AI Fundamentals step 1)',
+  G.checkAnswer(ai, 'data parameters and training').pass);
+check('title full form passes',
+  G.checkAnswer(ai, 'Data, parameters, and training: the three ingredients').pass);
+check('title tail alone holds', !G.checkAnswer(ai, 'the three ingredients').pass);
+check('neighbouring unit holds', !G.checkAnswer(ai,
+  'What a model is — a function with a memory of examples').pass);
 
 /* --- keyword gate (conceptual answers) --- */
 const kw = { kind: 'keywords',

@@ -205,5 +205,139 @@
     "substantive": true
    }
   ]
+ },
+ "ai-fundamentals-what-a-mind-made-of-math-is": {
+  "lesson": [
+   "Come in. I am Professor David Kim, and this is AI Fundamentals. Before anything else, we clear the fog: artificial intelligence is not magic, and it is not a mind in a box. It is machinery — mathematics, running at enormous scale, on data. Here is the whole secret in one sentence: a model is a function that was shown so many examples that its guesses became good. Training is the showing.",
+   "The course's second unit names the three ingredients every system in this department is built from. Data: the examples the system learns from. Parameters: the internal settings inside it — the knobs. Training: the showing — the long process of adjusting those settings against the examples until the guesses come out right.",
+   "Two acts, and the whole class turns on keeping them apart. Training is the showing: before the system ever meets you, its settings are adjusted over millions of examples. Prediction is the act: afterwards, one new case at a time, the system produces its guess. Training happens in the workshop. Prediction happens in the wild.",
+   "Everything else — the chatbots, the image makers, the agents you will meet in this department's later classes — is those ideas, arranged with increasing cleverness. In this class we learn the honest vocabulary: data, parameters, training, inference — and we learn where these systems are strong, where they are brittle, and why both are true at once. You will leave able to read any headline about AI and know, within a sentence or two, whether it is reporting or theatre. The course walks six units in order: 1. What 'artificial intelligence' actually names · 2. Data, parameters, and training: the three ingredients · 3. What a model is — a function with a memory of examples · 4. Prediction as the core act · 5. Where AI is strong, where it is brittle, and why · 6. The honest vocabulary: no magic, no menace. That map is the course's shape, and it is yours for reference — the questions at the end are on what this lesson taught, not on the map.",
+   "Now my worked example — this class's set problem, worked in full. The problem: In your own words, one paragraph: what is a model, and what did training do to it? Use one example from your own life where prediction — not understanding — was enough. The worked answer: A model is a function — a machine for turning inputs into outputs — whose internal settings (parameters) were adjusted, over millions of examples, until its predictions matched reality often enough to be useful. Training is that adjustment. A spam filter never understood a word of your email; prediction was enough, and knowing the difference between the two is the whole first lesson."
+  ],
+  "steps": [
+   {
+    "teach": "From the lesson's opening: the fog cleared, and a model defined in one sentence.",
+    "teach2": "Back to the exact passage, from the lesson: Come in. I am Professor David Kim, and this is AI Fundamentals. Before anything else, we clear the fog: artificial intelligence is not magic, and it is not a mind in a box. It is machinery — mathematics, running at enormous scale, on data. Here is the whole secret in one sentence: a model is a function that was shown so many examples that its guesses became good. Training is the showing. Another way in — picture a recipe. A recipe is a function: ingredients in, dinner out. Now picture a recipe nobody wrote. Instead it was adjusted a million times — a little more salt, a little less — tasting after every try, until the dinners came out right. That adjusted recipe is a model: a function shaped by examples until its output — its guess — is usually good.",
+    "walk": "Walk it through with me, step by step. (1) A function takes something in and gives something out. (2) A model is a function whose settings were not written by hand. (3) They were adjusted over enormous numbers of examples. (4) Adjusted until its guesses became good. So: a model is a function shaped by examples until its guesses are good. Now say it in your own words.",
+    "q": "In your own words: what is a model? Say what it is, and what made its guesses good.",
+    "kind": "keywords",
+    "keywords": [
+     [
+      "function"
+     ],
+     [
+      "examples"
+     ],
+     [
+      "guesses",
+      "guess",
+      "predictions"
+     ],
+     [
+      "shown",
+      "shaped",
+      "trained",
+      "training"
+     ]
+    ],
+    "need": 3,
+    "why": "You are doing this because this one sentence is the class — everything else in the department is built on it.",
+    "substantive": true
+   },
+   {
+    "teach": "From the lesson: the three ingredients every system in this department is built from.",
+    "teach2": "Back to the exact passage, from the lesson: The course's second unit names the three ingredients every system in this department is built from. Data: the examples the system learns from. Parameters: the internal settings inside it — the knobs. Training: the showing — the long process of adjusting those settings against the examples until the guesses come out right. Count them on your fingers. One: what it learns FROM — the examples, the data. Two: what gets ADJUSTED inside it — the settings, the parameters. Three: the ADJUSTING itself — the showing, the training. From, adjusted, adjusting: data, parameters, training.",
+    "walk": "Walk it through with me, step by step. (1) Nothing learns from nothing: it needs examples — data. (2) Inside it are settings that can be tuned — parameters. (3) Tuning them against the examples, over and over, is training. (4) So the three ingredients are data, parameters, and training. Name them, with a few words on each.",
+    "q": "Name the three ingredients, and say in a few words what each one is.",
+    "kind": "keywords",
+    "keywords": [
+     [
+      "data"
+     ],
+     [
+      "parameters",
+      "settings",
+      "knobs"
+     ],
+     [
+      "training",
+      "showing"
+     ]
+    ],
+    "need": 3,
+    "why": "You are doing this because these three words are the honest vocabulary — every headline about AI is built from them.",
+    "substantive": true
+   },
+   {
+    "teach": "From the lesson: two acts the whole class turns on keeping apart — training, and prediction.",
+    "teach2": "Back to the exact passage, from the lesson: Two acts, and the whole class turns on keeping them apart. Training is the showing: before the system ever meets you, its settings are adjusted over millions of examples. Prediction is the act: afterwards, one new case at a time, the system produces its guess. Training happens in the workshop. Prediction happens in the wild. Lay it on a timeline. On the left, the long before: millions of examples, settings adjusted again and again — that is training. On the right, the quick after: one fresh case arrives, and out comes a guess — that is prediction. Before and after; workshop and wild.",
+    "walk": "Walk it through with me, step by step. (1) First comes training: examples are shown and the settings are adjusted. (2) It happens before the system is used, over millions of examples. (3) Then comes prediction: a new case arrives. (4) The system answers with a guess, one case at a time. Say the difference back to me.",
+    "q": "What is the difference between training and prediction? Say what happens in each, and when.",
+    "kind": "keywords",
+    "keywords": [
+     [
+      "examples"
+     ],
+     [
+      "adjust",
+      "adjusted",
+      "settings"
+     ],
+     [
+      "prediction",
+      "predict",
+      "guess"
+     ],
+     [
+      "new",
+      "afterwards",
+      "after"
+     ]
+    ],
+    "need": 3,
+    "why": "You are doing this because confusing these two acts is how almost every bad headline about AI is written.",
+    "substantive": true
+   },
+   {
+    "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+    "teach2": "Back to the exact passage, from the lesson: Now my worked example — this class's set problem, worked in full. The problem: In your own words, one paragraph: what is a model, and what did training do to it? Use one example from your own life where prediction — not understanding — was enough. The worked answer: A model is a function — a machine for turning inputs into outputs — whose internal settings (parameters) were adjusted, over millions of examples, until its predictions matched reality often enough to be useful. Training is that adjustment. A spam filter never understood a word of your email; prediction was enough, and knowing the difference between the two is the whole first lesson. And here is the shape of that answer: it stands on function · inputs · outputs · parameters · examples · predictions. Build yours on the same bones, in your own words — and do not forget the example from your own life.",
+    "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A model is a function — a machine for turning inputs into outputs — whose internal settings (parameters) were adjusted, over millions of examples, until its predictions matched reality often enough to be useful. (2) Training is that adjustment. (3) A spam filter never understood a word of your email; prediction was enough, and knowing the difference between the two is the whole first lesson. An answer of yours that touches function, inputs and outputs, parameters, examples and predictions walks the same road — plus one example from your own life where prediction, not understanding, was enough. Now put it in your own words.",
+    "q": "In your own words, one paragraph: what is a model, and what did training do to it? Use one example from your own life where prediction — not understanding — was enough.",
+    "kind": "keywords",
+    "keywords": [
+     [
+      "Training"
+     ],
+     [
+      "function"
+     ],
+     [
+      "machine"
+     ],
+     [
+      "turn",
+      "turning"
+     ],
+     [
+      "input",
+      "inputs"
+     ],
+     [
+      "output",
+      "outputs"
+     ],
+     [
+      "internal"
+     ],
+     [
+      "setting",
+      "settings"
+     ]
+    ],
+    "need": 3,
+    "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+    "substantive": true
+   }
+  ]
  }
 }

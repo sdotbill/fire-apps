@@ -3,8 +3,9 @@
 carry a recorded lesson — in each professor's own roster voice, the
 same Helio TTS pipeline as gen-audio.py / build-trainer-audio.py.
 
-Clips per class: one presentation per step (the teach text), the
-praise lines, the retry line. Paths come from gate-data.json
+Clips per class: one presentation per lesson passage and per
+question (the teach texts), the praise lines, the retry lines.
+Paths come from gate-data.json
 (audio/gate/<classId>/...). Idempotent — existing clips over 3 KB are
 skipped, so a re-run only fills gaps, and the same script extends to
 more classes whenever their audio paths are written into the data.
@@ -32,6 +33,9 @@ for cid, d in data.items():
     if 'audioBase' not in d:
         continue
     voice = voice_of[cid]
+    for ch in d.get('lesson', []):
+        if ch.get('audio'):
+            jobs.append((voice, speakable(ch['teach']), ch['audio']))
     for st in d['steps']:
         if st.get('audio'):
             jobs.append((voice, speakable(st['teach']), st['audio']))
