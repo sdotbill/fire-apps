@@ -367,5 +367,12 @@
    "audio": "audio/lessons30/x-ray-astronomy-hot-gas-x-ray-binaries-and-the-diffuse-x-ray-bac/lesson-01.mp3",
    "minutes": 12.94
   }
+ },
+ "solar-wind-turbulence-the-parker-spiral-and-the-interplanetary-m": {
+  "lesson-01": {
+   "hash": "871aab39b424f5b1dd7c775dabb2fc58da76b263",
+   "audio": "audio/lessons30/solar-wind-turbulence-the-parker-spiral-and-the-interplanetary-m/lesson-01.mp3",
+   "minutes": 14.63
+  }
  }
 }

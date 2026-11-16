@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'Correlation Length Growth and the Spectral Break: How Much Inertial Range Does the Wind Contain?'. The result it reported gives a value for lam_1au_Mm, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Correlation Length Growth and the Spectral Break: How Much Inertial Range Does the Wind Contain?'. Its stated result: Headline computed values from results.json: lam_1au_Mm = 2992.0; fb_1au_Hz = 2.13e-05; fb_01_Hz = 6.73e-05; lam_01_Mm = 946.1; decades_1au = 4.51; di_1au_km = 93. The correlation length grows from 946.1 megametres at 0.1 AU to 2992.0 megametres at 1 AU, the break frequency falls from 6.73e-05 to 2.13e-05 hertz, and the inertial range spans 4.51 decades at 1 AU against a 93-kilometre ion inertial length. And here is that same result with the words stripped away — just the quantities standing in a row: lam_1au_Mm = 2992.0; fb_1au_Hz = 2.13e-05; fb_01_Hz = 6.73e-05. Find lam_1au_Mm in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Correlation Length Growth and the Spectral Break: How Much Inertial Range Does the Wind Contain?' stated its result. (2) That result pairs names with values: lam_1au_Mm = 2992.0; fb_1au_Hz = 2.13e-05; fb_01_Hz = 6.73e-05. (3) This question asks for the value paired with lam_1au_Mm. (4) In that row, lam_1au_Mm stands beside 2992.0 — so the answer the lesson gives is 2992.0. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Correlation Length Growth and the Spectral Break: How Much Inertial Range Does the Wind Contain?' reported a number for lam_1au_Mm. What number did it report?",
+  "kind": "number",
+  "answer": 2992.0,
+  "disp": "2992.0",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "2992.0",
+   "0.56",
+   "3.1",
+   "0.64"
+  ],
+  "mcAnswer": "2992.0",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Cross-Helicity Decay Bounds: How Alfvénic Can the Wind Remain at 1 AU?'. The result it reported gives a value for sigma_slow_1au, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Cross-Helicity Decay Bounds: How Alfvénic Can the Wind Remain at 1 AU?'. Its stated result: Headline computed values from results.json: sigma_slow_1au = 0.64; sigma_fast_1au = 0.32; z_slow_1au = 2.12; z_fast_1au = 1.39; sigma_slow_5au = 0.50. From 0.90 at 0.1 AU, cross-helicity at 1 AU is bracketed between 0.64 and 0.32, Elsasser ratios 2.12 and 1.39, falling to 0.50 at 5 AU even on the slow bound. And here is that same result with the words stripped away — just the quantities standing in a row: sigma_slow_1au = 0.64; sigma_fast_1au = 0.32; z_slow_1au = 2.12. Find sigma_slow_1au in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Cross-Helicity Decay Bounds: How Alfvénic Can the Wind Remain at 1 AU?' stated its result. (2) That result pairs names with values: sigma_slow_1au = 0.64; sigma_fast_1au = 0.32; z_slow_1au = 2.12. (3) This question asks for the value paired with sigma_slow_1au. (4) In that row, sigma_slow_1au stands beside 0.64 — so the answer the lesson gives is 0.64. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Cross-Helicity Decay Bounds: How Alfvénic Can the Wind Remain at 1 AU?' reported a number for sigma_slow_1au. What number did it report?",
+  "kind": "number",
+  "answer": 0.64,
+  "disp": "0.64",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "0.64",
+   "2992.0",
+   "0.56",
+   "3.1"
+  ],
+  "mcAnswer": "0.64",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Density Fluctuation Bounds: Why the Wind's Compressibility Excludes a Purely Alfvénic Fluctuation Field'. The result it reported gives a value for Ms_1au, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Density Fluctuation Bounds: Why the Wind's Compressibility Excludes a Purely Alfvénic Fluctuation Field'. Its stated result: Headline computed values from results.json: Ms_1au = 0.56; MA_1au = 0.56; bound_1au = 0.36; Ms_015 = 0.55; bound_015 = 0.35; alfven_prediction = 0.00. Fluctuation Mach numbers of 0.56 at 1 AU give a compressibility bound of 0.36, and 0.55 with a bound of 0.35 at 0.15 AU, against a purely Alfvénic prediction of exactly 0.00. And here is that same result with the words stripped away — just the quantities standing in a row: Ms_1au = 0.56; MA_1au = 0.56; bound_1au = 0.36. Find Ms_1au in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Density Fluctuation Bounds: Why the Wind's Compressibility Excludes a Purely Alfvénic Fluctuation Field' stated its result. (2) That result pairs names with values: Ms_1au = 0.56; MA_1au = 0.56; bound_1au = 0.36. (3) This question asks for the value paired with Ms_1au. (4) In that row, Ms_1au stands beside 0.56 — so the answer the lesson gives is 0.56. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Density Fluctuation Bounds: Why the Wind's Compressibility Excludes a Purely Alfvénic Fluctuation Field' reported a number for Ms_1au. What number did it report?",
+  "kind": "number",
+  "answer": 0.56,
+  "disp": "0.56",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "0.64",
+   "2992.0",
+   "0.56",
+   "3.1"
+  ],
+  "mcAnswer": "0.56",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Expansion Versus Nonlinearity: Counting Turbulent Turnovers Between 0.1 and 1 AU'. The result it reported gives a value for chi_1au, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Expansion Versus Nonlinearity: Counting Turbulent Turnovers Between 0.1 and 1 AU'. Its stated result: Headline computed values from results.json: chi_1au = 3.1; chi_01 = 1.76; tau_exp_1au_days = 4.33; tau_nl_1au_h = 33.2; turnovers_01_to_1 = 5.5. The expansion-to-nonlinear time ratio is 1.76 at 0.1 AU and 3.1 at 1 AU, and only about 5.5 outer-scale turnovers accumulate across the whole transit. And here is that same result with the words stripped away — just the quantities standing in a row: chi_1au = 3.1; chi_01 = 1.76; tau_exp_1au_days = 4.33. Find chi_1au in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Expansion Versus Nonlinearity: Counting Turbulent Turnovers Between 0.1 and 1 AU' stated its result. (2) That result pairs names with values: chi_1au = 3.1; chi_01 = 1.76; tau_exp_1au_days = 4.33. (3) This question asks for the value paired with chi_1au. (4) In that row, chi_1au stands beside 3.1 — so the answer the lesson gives is 3.1. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Expansion Versus Nonlinearity: Counting Turbulent Turnovers Between 0.1 and 1 AU' reported a number for chi_1au. What number did it report?",
+  "kind": "number",
+  "answer": 3.1,
+  "disp": "3.1",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "0.56",
+   "0.64",
+   "2992.0",
+   "3.1"
+  ],
+  "mcAnswer": "3.1",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Field-Line Length and Energetic Particle Transit: The Spiral Path Delay From Sun to Earth'. The result it reported gives a value for L_400, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Field-Line Length and Energetic Particle Transit: The Spiral Path Delay From Sun to Earth'. Its stated result: Headline computed values from results.json: L_400 = 1.167; L_300 = 1.276; L_600 = 1.080; t03_400_min = 32.4; delay_03_min = 24.0; photon_min = 8.32. The Sun-to-Earth field line is 1.276, 1.167 or 1.080 AU long for wind speeds of 300, 400 or 600 kilometres per second. At 0.3c in the 400 kilometre per second case the transit is 32.4 minutes, a geometric delay of 24.0 minutes over the photon baseline. And here is that same result with the words stripped away — just the quantities standing in a row: L_400 = 1.167; L_300 = 1.276; L_600 = 1.080. Find L_400 in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Field-Line Length and Energetic Particle Transit: The Spiral Path Delay From Sun to Earth' stated its result. (2) That result pairs names with values: L_400 = 1.167; L_300 = 1.276; L_600 = 1.080. (3) This question asks for the value paired with L_400. (4) In that row, L_400 stands beside 1.167 — so the answer the lesson gives is 1.167. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Field-Line Length and Energetic Particle Transit: The Spiral Path Delay From Sun to Earth' reported a number for L_400. What number did it report?",
+  "kind": "number",
+  "answer": 1.167,
+  "disp": "1.167",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "0.56",
+   "2992.0",
+   "0.64",
+   "1.167"
+  ],
+  "mcAnswer": "1.167",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Correlation Length Growth and the Spectral Break: How Much Inertial Range Does the Wind Contain?”. Its stated result is: Headline computed values from results.json: lam_1au_Mm = 2992.0; fb_1au_Hz = 2.13e-05; fb_01_Hz = 6.73e-05; lam_01_Mm = 946.1; decades_1au = 4.51; di_1au_km = 93. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “Correlation Length Growth and the Spectral Break: How Much Inertial Range Does the Wind Contain?”. Its stated result is: Headline computed values from results.json: lam_1au_Mm = 2992.0; fb_1au_Hz = 2.13e-05; fb_01_Hz = 6.73e-05; lam_01_Mm = 946.1; decades_1au = 4.51; di_1au_km = 93. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]

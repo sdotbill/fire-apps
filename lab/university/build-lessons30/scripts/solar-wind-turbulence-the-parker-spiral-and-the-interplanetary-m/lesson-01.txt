@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Hung Dang, and this is Solar-Wind Turbulence, the Parker Spiral and the Interplanetary Magnetic Field Against Energy and Density Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Hung Dang, and this is Solar-Wind Turbulence, the Parker Spiral and the Interplanetary Magnetic Field Against Energy and Density Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Correlation Length Growth and the Spectral Break: How Much Inertial Range Does the Wind Contain?'. Its stated result: Headline computed values from results.json: lam_1au_Mm = 2992.0; fb_1au_Hz = 2.13e-05; fb_01_Hz = 6.73e-05; lam_01_Mm = 946.1; decades_1au = 4.51; di_1au_km = 93. The correlation length grows from 946.1 megametres at 0.1 AU to 2992.0 megametres at 1 AU, the break frequency falls from 6.73e-05 to 2.13e-05 hertz, and the inertial range spans 4.51 decades at 1 AU against a 93-kilometre ion inertial length.
+
+Now we go one step further into the material.
+
+'Cross-Helicity Decay Bounds: How Alfvénic Can the Wind Remain at 1 AU?'. Its stated result: Headline computed values from results.json: sigma_slow_1au = 0.64; sigma_fast_1au = 0.32; z_slow_1au = 2.12; z_fast_1au = 1.39; sigma_slow_5au = 0.50. From 0.90 at 0.1 AU, cross-helicity at 1 AU is bracketed between 0.64 and 0.32, Elsasser ratios 2.12 and 1.39, falling to 0.50 at 5 AU even on the slow bound.
+
+The next piece is where this starts to come together.
+
+'Density Fluctuation Bounds: Why the Wind's Compressibility Excludes a Purely Alfvénic Fluctuation Field'. Its stated result: Headline computed values from results.json: Ms_1au = 0.56; MA_1au = 0.56; bound_1au = 0.36; Ms_015 = 0.55; bound_015 = 0.35; alfven_prediction = 0.00. Fluctuation Mach numbers of 0.56 at 1 AU give a compressibility bound of 0.36, and 0.55 with a bound of 0.35 at 0.15 AU, against a purely Alfvénic prediction of exactly 0.00.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Expansion Versus Nonlinearity: Counting Turbulent Turnovers Between 0.1 and 1 AU'. Its stated result: Headline computed values from results.json: chi_1au = 3.1; chi_01 = 1.76; tau_exp_1au_days = 4.33; tau_nl_1au_h = 33.2; turnovers_01_to_1 = 5.5. The expansion-to-nonlinear time ratio is 1.76 at 0.1 AU and 3.1 at 1 AU, and only about 5.5 outer-scale turnovers accumulate across the whole transit.
+
+We take the pieces in order, because each one stands on the last.
+
+'Field-Line Length and Energetic Particle Transit: The Spiral Path Delay From Sun to Earth'. Its stated result: Headline computed values from results.json: L_400 = 1.167; L_300 = 1.276; L_600 = 1.080; t03_400_min = 32.4; delay_03_min = 24.0; photon_min = 8.32. The Sun-to-Earth field line is 1.276, 1.167 or 1.080 AU long for wind speeds of 300, 400 or 600 kilometres per second. At 0.3c in the 400 kilometre per second case the transit is 32.4 minutes, a geometric delay of 24.0 minutes over the photon baseline.
+
+Stay with me, because the next piece builds directly on that one.
+
+'Interplanetary Magnetic Field Strength Falloff: A Flux-Conserving Bound Against Parker Solar Probe Values'. Its stated result: Headline computed values from results.json: B_1au = 4.40; B_psp = 334.1; Br_psp = 332.4; B_025 = 49.7; B_5au = 0.65; ratio_psp_1au = 76.0. Flux conservation with a spiral geometry gives 4.40 nanotesla at 1 AU, 49.7 nanotesla at 0.25 AU and 0.65 nanotesla at 5 AU, but 334.1 nanotesla at 0.095 AU, about three times the typical perihelion scale reported by Parker Solar Probe.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Correlation Length Growth and the Spectral Break: How Much Inertial Range Does the Wind Contain?”. Its stated result is: Headline computed values from results.json: lam_1au_Mm = 2992.0; fb_1au_Hz = 2.13e-05; fb_01_Hz = 6.73e-05; lam_01_Mm = 946.1; decades_1au = 4.51; di_1au_km = 93. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Correlation Length Growth and the Spectral Break: How Much Inertial Range Does the Wind Contain?'; 'Cross-Helicity Decay Bounds: How Alfvénic Can the Wind Remain at 1 AU?'; 'Density Fluctuation Bounds: Why the Wind's Compressibility Excludes a Purely Alfvénic Fluctuation Field'; 'Expansion Versus Nonlinearity: Counting Turbulent Turnovers Between 0.1 and 1 AU'; 'Field-Line Length and Energetic Particle Transit: The Spiral Path Delay From Sun to Earth'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.
