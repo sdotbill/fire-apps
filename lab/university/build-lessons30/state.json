@@ -486,5 +486,12 @@
    "audio": "audio/lessons30/wolf-rayet-stars-luminous-blue-variables-and-massive-star-winds-/lesson-01.mp3",
    "minutes": 16.26
   }
+ },
+ "solar-and-reactor-neutrinos-production-oscillation-and-detection": {
+  "lesson-01": {
+   "hash": "b760e1d8107764f30f09b5d7e9a54a4b10d2d410",
+   "audio": "audio/lessons30/solar-and-reactor-neutrinos-production-oscillation-and-detection/lesson-01.mp3",
+   "minutes": 10.37
+  }
  }
 }

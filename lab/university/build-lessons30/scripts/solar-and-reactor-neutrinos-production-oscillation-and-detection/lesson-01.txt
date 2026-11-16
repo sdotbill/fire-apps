@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Harold Vaughn, and this is Solar and Reactor Neutrinos: Production, Oscillation and Detection Budgets Against Density and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Harold Vaughn, and this is Solar and Reactor Neutrinos: Production, Oscillation and Detection Budgets Against Density and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Borexino Geoneutrinos: Detector Background and Signal Budget with Reactor Antineutrino Background'. Its stated result: Headline result (values verbatim from results.json): geo_events_expected = 40.4; reactor_events_expected = 68.5; signal_to_reactor_background_ratio = 0.59; signal_significance_approx_sigma = 5.88; total_IBD_rate_TNU = 126.6. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Now we go one step further into the material.
+
+'Daya Bay: The Theta-13 Measurement as a Near-Far Rate Budget'. Its stated result: Headline result (values verbatim from results.json): deficit_percent = 6.0; far_events_per_day_implied = 611.0; deficit_significance_sigma = 5.45; sin22theta13_from_ratio_adopted_factor = 0.084; far_oscillation_phase_rad = 1.28. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+The next piece is where this starts to come together.
+
+'Gallium Experiments: The pp-Neutrino Capture Budget in Solar Neutrino Units'. Its stated result: Headline result (values verbatim from results.json): combined_measured_SNU = 67.35; measured_to_predicted_ratio = 0.514; pp_share_of_prediction_percent = 53.2; pp_alone_to_measured_ratio = 1.035; non_pp_predicted_SNU = 61.3; experiment_difference_SNU = 3.9. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'JUNO: Reactor Antineutrino Event-Rate and Mass-Ordering Sensitivity Budget'. Its stated result: Headline result (values verbatim from results.json): IBD_events_per_day_raw = 76.1; IBD_events_per_day_detected = 62.4; IBD_events_in_six_years = 136831; mass_ordering_significance_six_years_sigma = 3.18; events_per_day_per_kilotonne = 3.12. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+We take the pieces in order, because each one stands on the last.
+
+'KamLAND Reactor Antineutrinos: Oscillation Survival and Event-Rate Budget'. Its stated result: Headline result (values verbatim from results.json): events_per_day_no_oscillation = 1.35; events_per_day_with_survival = 0.65; events_per_year_with_survival = 235.8; suppression_percent = 40.0; oscillation_phase_at_mean_energy = 4.293. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Stay with me, because the next piece builds directly on that one.
+
+'Matter-Enhanced Oscillation in the Sun: The MSW Resonance Energy as a Density Budget'. Its stated result: Headline result (values verbatim from results.json): rho_res_E1MeV_g_cm3 = 289.03; rho_res_E2MeV_g_cm3 = 144.52; rho_res_E5MeV_g_cm3 = 57.81; rho_res_E10MeV_g_cm3 = 28.9; cos2theta12 = 0.3927; resonance_energy_at_centre_MeV = 1.927; pp_survival_approx = 0.577. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Borexino Geoneutrinos: Detector Background and Signal Budget with Reactor Antineutrino Background”. Its stated result is: Headline result (values verbatim from results.json): geo_events_expected = 40.4; reactor_events_expected = 68.5; signal_to_reactor_background_ratio = 0.59; signal_significance_approx_sigma = 5.88; total_IBD_rate_TNU = 126.6. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Borexino Geoneutrinos: Detector Background and Signal Budget with Reactor Antineutrino Background'; 'Daya Bay: The Theta-13 Measurement as a Near-Far Rate Budget'; 'Gallium Experiments: The pp-Neutrino Capture Budget in Solar Neutrino Units'; 'JUNO: Reactor Antineutrino Event-Rate and Mass-Ordering Sensitivity Budget'; 'KamLAND Reactor Antineutrinos: Oscillation Survival and Event-Rate Budget'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.

@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'Borexino Geoneutrinos: Detector Background and Signal Budget with Reactor Antineutrino Background'. The result it reported gives a value for geo_events_expected, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Borexino Geoneutrinos: Detector Background and Signal Budget with Reactor Antineutrino Background'. Its stated result: Headline result (values verbatim from results.json): geo_events_expected = 40.4; reactor_events_expected = 68.5; signal_to_reactor_background_ratio = 0.59; signal_significance_approx_sigma = 5.88; total_IBD_rate_TNU = 126.6. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: geo_events_expected = 40.4; reactor_events_expected = 68.5; signal_to_reactor_background_ratio = 0.59. Find geo_events_expected in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Borexino Geoneutrinos: Detector Background and Signal Budget with Reactor Antineutrino Background' stated its result. (2) That result pairs names with values: geo_events_expected = 40.4; reactor_events_expected = 68.5; signal_to_reactor_background_ratio = 0.59. (3) This question asks for the value paired with geo_events_expected. (4) In that row, geo_events_expected stands beside 40.4 — so the answer the lesson gives is 40.4. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Borexino Geoneutrinos: Detector Background and Signal Budget with Reactor Antineutrino Background' reported a number for geo_events_expected. What number did it report?",
+  "kind": "number",
+  "answer": 40.4,
+  "disp": "40.4",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "6.0",
+   "76.1",
+   "67.35",
+   "40.4"
+  ],
+  "mcAnswer": "40.4",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Daya Bay: The Theta-13 Measurement as a Near-Far Rate Budget'. The result it reported gives a value for deficit_percent, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Daya Bay: The Theta-13 Measurement as a Near-Far Rate Budget'. Its stated result: Headline result (values verbatim from results.json): deficit_percent = 6.0; far_events_per_day_implied = 611.0; deficit_significance_sigma = 5.45; sin22theta13_from_ratio_adopted_factor = 0.084; far_oscillation_phase_rad = 1.28. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: deficit_percent = 6.0; far_events_per_day_implied = 611.0; deficit_significance_sigma = 5.45. Find deficit_percent in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Daya Bay: The Theta-13 Measurement as a Near-Far Rate Budget' stated its result. (2) That result pairs names with values: deficit_percent = 6.0; far_events_per_day_implied = 611.0; deficit_significance_sigma = 5.45. (3) This question asks for the value paired with deficit_percent. (4) In that row, deficit_percent stands beside 6.0 — so the answer the lesson gives is 6.0. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Daya Bay: The Theta-13 Measurement as a Near-Far Rate Budget' reported a number for deficit_percent. What number did it report?",
+  "kind": "number",
+  "answer": 6.0,
+  "disp": "6.0",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "40.4",
+   "67.35",
+   "76.1",
+   "6.0"
+  ],
+  "mcAnswer": "6.0",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Gallium Experiments: The pp-Neutrino Capture Budget in Solar Neutrino Units'. The result it reported gives a value for combined_measured_SNU, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Gallium Experiments: The pp-Neutrino Capture Budget in Solar Neutrino Units'. Its stated result: Headline result (values verbatim from results.json): combined_measured_SNU = 67.35; measured_to_predicted_ratio = 0.514; pp_share_of_prediction_percent = 53.2; pp_alone_to_measured_ratio = 1.035; non_pp_predicted_SNU = 61.3; experiment_difference_SNU = 3.9. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: combined_measured_SNU = 67.35; measured_to_predicted_ratio = 0.514; pp_share_of_prediction_percent = 53.2. Find combined_measured_SNU in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Gallium Experiments: The pp-Neutrino Capture Budget in Solar Neutrino Units' stated its result. (2) That result pairs names with values: combined_measured_SNU = 67.35; measured_to_predicted_ratio = 0.514; pp_share_of_prediction_percent = 53.2. (3) This question asks for the value paired with combined_measured_SNU. (4) In that row, combined_measured_SNU stands beside 67.35 — so the answer the lesson gives is 67.35. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Gallium Experiments: The pp-Neutrino Capture Budget in Solar Neutrino Units' reported a number for combined_measured_SNU. What number did it report?",
+  "kind": "number",
+  "answer": 67.35,
+  "disp": "67.35",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "76.1",
+   "40.4",
+   "67.35",
+   "6.0"
+  ],
+  "mcAnswer": "67.35",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'JUNO: Reactor Antineutrino Event-Rate and Mass-Ordering Sensitivity Budget'. The result it reported gives a value for IBD_events_per_day_raw, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'JUNO: Reactor Antineutrino Event-Rate and Mass-Ordering Sensitivity Budget'. Its stated result: Headline result (values verbatim from results.json): IBD_events_per_day_raw = 76.1; IBD_events_per_day_detected = 62.4; IBD_events_in_six_years = 136831; mass_ordering_significance_six_years_sigma = 3.18; events_per_day_per_kilotonne = 3.12. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: IBD_events_per_day_raw = 76.1; IBD_events_per_day_detected = 62.4; IBD_events_in_six_years = 136831. Find IBD_events_per_day_raw in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'JUNO: Reactor Antineutrino Event-Rate and Mass-Ordering Sensitivity Budget' stated its result. (2) That result pairs names with values: IBD_events_per_day_raw = 76.1; IBD_events_per_day_detected = 62.4; IBD_events_in_six_years = 136831. (3) This question asks for the value paired with IBD_events_per_day_raw. (4) In that row, IBD_events_per_day_raw stands beside 76.1 — so the answer the lesson gives is 76.1. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'JUNO: Reactor Antineutrino Event-Rate and Mass-Ordering Sensitivity Budget' reported a number for IBD_events_per_day_raw. What number did it report?",
+  "kind": "number",
+  "answer": 76.1,
+  "disp": "76.1",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "6.0",
+   "76.1",
+   "40.4",
+   "67.35"
+  ],
+  "mcAnswer": "76.1",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'KamLAND Reactor Antineutrinos: Oscillation Survival and Event-Rate Budget'. The result it reported gives a value for events_per_day_no_oscillation, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'KamLAND Reactor Antineutrinos: Oscillation Survival and Event-Rate Budget'. Its stated result: Headline result (values verbatim from results.json): events_per_day_no_oscillation = 1.35; events_per_day_with_survival = 0.65; events_per_year_with_survival = 235.8; suppression_percent = 40.0; oscillation_phase_at_mean_energy = 4.293. These values were computed by the deposited compute.py from published values, under the assumptions stated in the paper. And here is that same result with the words stripped away — just the quantities standing in a row: events_per_day_no_oscillation = 1.35; events_per_day_with_survival = 0.65; events_per_year_with_survival = 235.8. Find events_per_day_no_oscillation in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'KamLAND Reactor Antineutrinos: Oscillation Survival and Event-Rate Budget' stated its result. (2) That result pairs names with values: events_per_day_no_oscillation = 1.35; events_per_day_with_survival = 0.65; events_per_year_with_survival = 235.8. (3) This question asks for the value paired with events_per_day_no_oscillation. (4) In that row, events_per_day_no_oscillation stands beside 1.35 — so the answer the lesson gives is 1.35. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'KamLAND Reactor Antineutrinos: Oscillation Survival and Event-Rate Budget' reported a number for events_per_day_no_oscillation. What number did it report?",
+  "kind": "number",
+  "answer": 1.35,
+  "disp": "1.35",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "1.35",
+   "6.0",
+   "67.35",
+   "40.4"
+  ],
+  "mcAnswer": "1.35",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Borexino Geoneutrinos: Detector Background and Signal Budget with Reactor Antineutrino Background”. Its stated result is: Headline result (values verbatim from results.json): geo_events_expected = 40.4; reactor_events_expected = 68.5; signal_to_reactor_background_ratio = 0.59; signal_significance_approx_sigma = 5.88; total_IBD_rate_TNU = 126.6. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “Borexino Geoneutrinos: Detector Background and Signal Budget with Reactor Antineutrino Background”. Its stated result is: Headline result (values verbatim from results.json): geo_events_expected = 40.4; reactor_events_expected = 68.5; signal_to_reactor_background_ratio = 0.59; signal_significance_approx_sigma = 5.88; total_IBD_rate_TNU = 126.6. (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]
