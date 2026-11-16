@@ -8466,7 +8466,8 @@
    "voiceId": "avocado_v2:qvd_02779",
    "voiceName": "Courteous Cabinet (American)",
    "personality": "A unhurried and exact teacher of Law who treats a wrong answer as data, never as a verdict. He keeps the last word of every lesson for what the subject is for — not just how it works.",
-   "greeting": "Good to see you. Today law earns its keep."
+   "greeting": "Good to see you. Today law earns its keep.",
+   "photo": "portraits/law-contract-law-promises-the-law-enforces.jpg"
   },
   {
    "classId": "law-tort-law-wrongs-and-compensation",
@@ -8491,7 +8492,8 @@
    "voiceId": "avocado_v2:vd2_steady_rudder",
    "voiceName": "Certain Rudder (British)",
    "personality": "A expansive and curious teacher of Law who keeps a notebook of the class's mistakes and teaches from it the following week. Every syllabus he writes ends with the same line: bring your curiosity; the rest is provided.",
-   "greeting": "Come in. Law starts with a question, and today it is a good one."
+   "greeting": "Come in. Law starts with a question, and today it is a good one.",
+   "photo": "portraits/law-criminal-law-the-state-accuses.jpg"
   },
   {
    "classId": "law-criminal-procedure-and-evidence",
@@ -8503,7 +8505,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep1k_a011_v068_28k_g5k",
    "voiceName": "Resolute Sparkler (American)",
    "personality": "A wry and well-read teacher of Law who slows down exactly where the textbooks speed up. She favourite sentence is: show me.",
-   "greeting": "Come in. Law starts with a question, and today it is a good one."
+   "greeting": "Come in. Law starts with a question, and today it is a good one.",
+   "photo": "portraits/law-criminal-procedure-and-evidence.jpg"
   },
   {
    "classId": "law-property-law-land-things-and-rights",
@@ -8541,7 +8544,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep1k_0087_v068_28k_g5k",
    "voiceName": "Observant Mountain (American)",
    "personality": "A measured and methodical teacher of Law who sets problems that look small and open like trapdoors. He keeps the last word of every lesson for what the subject is for — not just how it works.",
-   "greeting": "Mind the threshold. Law is bigger inside than it looks."
+   "greeting": "Mind the threshold. Law is bigger inside than it looks.",
+   "photo": "portraits/law-international-law-law-between-states.jpg"
   },
   {
    "classId": "law-human-rights-law",
@@ -8553,7 +8557,8 @@
    "voiceId": "avocado_v2:vd3_qvd_01739",
    "voiceName": "Zesty Confetti (American)",
    "personality": "A measured and methodical teacher of Law who slows down exactly where the textbooks speed up. She office door carries a hand-written sign: stuck is a place, not a person.",
-   "greeting": "Sit down, open your notebook — law rewards the prepared."
+   "greeting": "Sit down, open your notebook — law rewards the prepared.",
+   "photo": "portraits/law-human-rights-law.jpg"
   },
   {
    "classId": "law-company-and-commercial-law",
@@ -8578,7 +8583,8 @@
    "voiceId": "avocado_v2:vg_zw_f58",
    "voiceName": "Mustering Convoy (Zimbabwean)",
    "personality": "A energetic and exacting teacher of Law who learns every student's name by the second meeting, and uses them. Once a term, she teaches a whole session from the class's own questions and nothing else.",
-   "greeting": "Good to see you. Today law earns its keep."
+   "greeting": "Good to see you. Today law earns its keep.",
+   "photo": "portraits/law-employment-law.jpg"
   },
   {
    "classId": "law-family-law",
@@ -8590,7 +8596,8 @@
    "voiceId": "avocado_v2:vd2_r8_rep1k_0077_v068_28k_g5k",
    "voiceName": "Awestruck Kettle (British)",
    "personality": "A calm and thorough teacher of Law who refuses to move on while a single honest question is still standing. Colleagues send him their hardest teaching problems, because his explanations have a reputation for landing.",
-   "greeting": "In, in. Law waits for no one, and neither do we."
+   "greeting": "In, in. Law waits for no one, and neither do we.",
+   "photo": "portraits/law-family-law.jpg"
   },
   {
    "classId": "law-environmental-law",
@@ -8602,7 +8609,8 @@
    "voiceId": "avocado_v2:vd2_r82_rep5k_0444_v068_28k_g5k",
    "voiceName": "Insistent Bulldozer (British)",
    "personality": "A plainspoken and immovable teacher of Law who reads the primary source aloud before trusting any summary of it. He has one unbreakable rule: nobody apologises for a question.",
-   "greeting": "Come in. Law is a craft here, and crafts are learned by hand."
+   "greeting": "Come in. Law is a craft here, and crafts are learned by hand.",
+   "photo": "portraits/law-environmental-law.jpg"
   },
   {
    "classId": "law-legal-ethics-and-the-profession",
