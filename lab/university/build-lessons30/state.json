@@ -451,5 +451,12 @@
    "audio": "audio/lessons30/planetary-nebulae-post-asymptotic-giant-branch-stars-and-white-d/lesson-01.mp3",
    "minutes": 13.33
   }
+ },
+ "asymptotic-giant-branch-stars-mira-variables-and-stellar-mass-lo": {
+  "lesson-01": {
+   "hash": "79ddb21a1307c7d3a5d4dcc4e9d71dfa37ae9f4b",
+   "audio": "audio/lessons30/asymptotic-giant-branch-stars-mira-variables-and-stellar-mass-lo/lesson-01.mp3",
+   "minutes": 14.04
+  }
  }
 }

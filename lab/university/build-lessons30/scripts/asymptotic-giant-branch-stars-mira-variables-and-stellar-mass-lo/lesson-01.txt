@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Zofia Petrov, and this is Asymptotic Giant Branch Stars, Mira Variables and Stellar Mass Loss Against Density and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Zofia Petrov, and this is Asymptotic Giant Branch Stars, Mira Variables and Stellar Mass Loss Against Density and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Carbon Dust Budget and Wind Number Density of IRC+10216 (CW Leonis)'. Its stated result: Headline result (values verbatim from results.json): stellar_radius_Rsun = 986; mean_density_kg_m3 = 2.95e-06; pulsation_constant_Q_days = 0.0297; momentum_ratio_to_L_over_c = 1.02; kinetic_power_Lsun = 0.346; number_density_at_condensation_cm3 = 3.26e+09; shell_mass_Msun = 0.2; envelope_depletion_time_yr = 35000.
+
+Now we go one step further into the material.
+
+'Carbon-Star Wind Acceleration Budget and Shell Age of S Cephei'. Its stated result: Headline result (values verbatim from results.json): stellar_radius_Rsun = 645; mean_density_kg_m3 = 8.39e-06; pulsation_constant_Q_days = 0.0376; momentum_ratio_to_L_over_c = 1.39; kinetic_power_Lsun = 0.346; number_density_at_condensation_cm3 = 2.21e+09; shell_mass_Msun = 0.08; envelope_depletion_time_yr = 60000.
+
+The next piece is where this starts to come together.
+
+'Circumstellar Shell Budget and Envelope Density of OH 26.5+0.6'. Its stated result: Headline result (values verbatim from results.json): envelope_depletion_time_yr = 6670; shell_mass_Msun = 0.36; dust_mass_in_shell_Msun = 0.00288; number_density_at_10Rstar_cm3 = 2.55e+08; crossing_time_to_0p1pc_yr = 6520; eddington_ratio = 0.304; stellar_radius_Rsun = 1180; pulsation_cycles_in_depletion_time = 1570.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Envelope Depletion Time and Dust Production Rate of R Leonis'. Its stated result: Headline result (values verbatim from results.json): stellar_radius_Rsun = 299; surface_gravity_m_s2 = 0.00308; escape_velocity_km_s = 35.8; dust_mass_loss_rate_Msun_yr = 4e-10; shell_mass_Msun = 0.0008; dust_mass_in_shell_Msun = 3.2e-06; envelope_depletion_time_yr = 3.5e+06; crossing_time_to_0p1pc_yr = 9780.
+
+We take the pieces in order, because each one stands on the last.
+
+'Escape Speed Comparison and Slow Wind Energetics of R Doradus'. Its stated result: Headline result (values verbatim from results.json): stellar_radius_Rsun = 358; surface_gravity_m_s2 = 0.00257; escape_velocity_km_s = 35.8; dust_mass_loss_rate_Msun_yr = 6.4e-10; shell_mass_Msun = 0.00144; dust_mass_in_shell_Msun = 5.76e-06; envelope_depletion_time_yr = 2.5e+06; crossing_time_to_0p1pc_yr = 17200.
+
+Stay with me, because the next piece builds directly on that one.
+
+'Long-Period Pulsation Density and Circumstellar Mass Budget of Z Puppis'. Its stated result: Headline result (values verbatim from results.json): condensation_radius_Rstar = 2; condensation_radius_AU = 5.89; number_density_at_condensation_cm3 = 3.75e+08; number_density_at_10Rstar_cm3 = 1.5e+07; number_density_at_1000AU_cm3 = 13000; mach_number_terminal = 5.64; shell_mass_Msun = 0.0165; momentum_ratio_to_L_over_c = 0.271.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Carbon Dust Budget and Wind Number Density of IRC+10216 (CW Leonis)”. Its stated result is: Headline result (values verbatim from results.json): stellar_radius_Rsun = 986; mean_density_kg_m3 = 2.95e-06; pulsation_constant_Q_days = 0.0297; momentum_ratio_to_L_over_c = 1.02; kinetic_power_Lsun = 0.346; number_density_at_condensation_cm3 = 3.26e+09; shell_mass_Msun = 0.2; envelope_depletion_t (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Carbon Dust Budget and Wind Number Density of IRC+10216 (CW Leonis)'; 'Carbon-Star Wind Acceleration Budget and Shell Age of S Cephei'; 'Circumstellar Shell Budget and Envelope Density of OH 26.5+0.6'; 'Envelope Depletion Time and Dust Production Rate of R Leonis'; 'Escape Speed Comparison and Slow Wind Energetics of R Doradus'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.
