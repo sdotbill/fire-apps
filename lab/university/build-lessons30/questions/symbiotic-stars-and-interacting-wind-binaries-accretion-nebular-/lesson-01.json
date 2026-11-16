@@ -1,0 +1,142 @@
+[
+ {
+  "teach": "Think back to the lesson — the paper 'Bondi-Hoyle Accretion Radius and Accretion Power Budget of CH Cygni'. The result it reported gives a value for separation_AU, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Bondi-Hoyle Accretion Radius and Accretion Power Budget of CH Cygni'. Its stated result: Headline result (values verbatim from results.json): separation_AU = 8.69; wind_number_density_at_wd_cm3 = 1.9e+07; bondi_hoyle_rate_Msun_yr = 5.92e-09; accretion_luminosity_Lsun = 13; accretion_radius_AU = 2.25; capture_fraction = 0.0197; roche_filling_factor = 0.273; relative_wind_velocity_km_s = 23.5. And here is that same result with the words stripped away — just the quantities standing in a row: separation_AU = 8.69; wind_number_density_at_wd_cm3 = 1.9e+07; bondi_hoyle_rate_Msun_yr = 5.92e-09. Find separation_AU in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Bondi-Hoyle Accretion Radius and Accretion Power Budget of CH Cygni' stated its result. (2) That result pairs names with values: separation_AU = 8.69; wind_number_density_at_wd_cm3 = 1.9e+07; bondi_hoyle_rate_Msun_yr = 5.92e-09. (3) This question asks for the value paired with separation_AU. (4) In that row, separation_AU stands beside 8.69 — so the answer the lesson gives is 8.69. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Bondi-Hoyle Accretion Radius and Accretion Power Budget of CH Cygni' reported a number for separation_AU. What number did it report?",
+  "kind": "number",
+  "answer": 8.69,
+  "disp": "8.69",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "193",
+   "1.49",
+   "0.0651",
+   "8.69"
+  ],
+  "mcAnswer": "8.69",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Eclipse-Scale Wind Column and Accretion Budget of AX Persei'. The result it reported gives a value for capture_fraction, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Eclipse-Scale Wind Column and Accretion Budget of AX Persei'. Its stated result: Headline result (values verbatim from results.json): capture_fraction = 0.0651; accretion_radius_AU = 0.876; bondi_hoyle_rate_Msun_yr = 7.81e-09; accretion_luminosity_Lsun = 14.7; accretion_to_burning_ratio = 0.0164; ignition_accumulation_time_yr = 1280; wind_number_density_at_wd_cm3 = 1.12e+08; separation_AU = 2.03. And here is that same result with the words stripped away — just the quantities standing in a row: capture_fraction = 0.0651; accretion_radius_AU = 0.876; bondi_hoyle_rate_Msun_yr = 7.81e-09. Find capture_fraction in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Eclipse-Scale Wind Column and Accretion Budget of AX Persei' stated its result. (2) That result pairs names with values: capture_fraction = 0.0651; accretion_radius_AU = 0.876; bondi_hoyle_rate_Msun_yr = 7.81e-09. (3) This question asks for the value paired with capture_fraction. (4) In that row, capture_fraction stands beside 0.0651 — so the answer the lesson gives is 0.0651. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Eclipse-Scale Wind Column and Accretion Budget of AX Persei' reported a number for capture_fraction. What number did it report?",
+  "kind": "number",
+  "answer": 0.0651,
+  "disp": "0.0651",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "8.69",
+   "0.0651",
+   "193",
+   "1.49"
+  ],
+  "mcAnswer": "0.0651",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Ejecta Kinetic Energy Against Accreted Mass Budget of RS Ophiuchi'. The result it reported gives a value for separation_AU, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Ejecta Kinetic Energy Against Accreted Mass Budget of RS Ophiuchi'. Its stated result: Headline result (values verbatim from results.json): separation_AU = 1.49; wind_number_density_at_wd_cm3 = 1.07e+08; bondi_hoyle_rate_Msun_yr = 2.15e-08; accretion_luminosity_Lsun = 91.3; accretion_radius_AU = 1.35; capture_fraction = 0.215; roche_filling_factor = 0.552; relative_wind_velocity_km_s = 42.2. And here is that same result with the words stripped away — just the quantities standing in a row: separation_AU = 1.49; wind_number_density_at_wd_cm3 = 1.07e+08; bondi_hoyle_rate_Msun_yr = 2.15e-08. Find separation_AU in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Ejecta Kinetic Energy Against Accreted Mass Budget of RS Ophiuchi' stated its result. (2) That result pairs names with values: separation_AU = 1.49; wind_number_density_at_wd_cm3 = 1.07e+08; bondi_hoyle_rate_Msun_yr = 2.15e-08. (3) This question asks for the value paired with separation_AU. (4) In that row, separation_AU stands beside 1.49 — so the answer the lesson gives is 1.49. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Ejecta Kinetic Energy Against Accreted Mass Budget of RS Ophiuchi' reported a number for separation_AU. What number did it report?",
+  "kind": "number",
+  "answer": 1.49,
+  "disp": "1.49",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "8.69",
+   "0.0651",
+   "193",
+   "1.49"
+  ],
+  "mcAnswer": "1.49",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Ignition Mass Accumulation Time and Accretion Budget of T Coronae Borealis'. The result it reported gives a value for stroemgren_radius_AU, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Ignition Mass Accumulation Time and Accretion Budget of T Coronae Borealis'. Its stated result: Headline result (values verbatim from results.json): stroemgren_radius_AU = 193; stroemgren_to_separation_ratio = 194; ionised_mass_Msun = 0.000119; emission_measure_pc_cm6 = 3450; recombination_time_days = 54.9; ionising_photon_rate_s = 2.13e+46; separation_AU = 0.997; nebular_thermal_energy_erg = 5.45e+41. And here is that same result with the words stripped away — just the quantities standing in a row: stroemgren_radius_AU = 193; stroemgren_to_separation_ratio = 194; ionised_mass_Msun = 0.000119. Find stroemgren_radius_AU in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Ignition Mass Accumulation Time and Accretion Budget of T Coronae Borealis' stated its result. (2) That result pairs names with values: stroemgren_radius_AU = 193; stroemgren_to_separation_ratio = 194; ionised_mass_Msun = 0.000119. (3) This question asks for the value paired with stroemgren_radius_AU. (4) In that row, stroemgren_radius_AU stands beside 193 — so the answer the lesson gives is 193. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Ignition Mass Accumulation Time and Accretion Budget of T Coronae Borealis' reported a number for stroemgren_radius_AU. What number did it report?",
+  "kind": "number",
+  "answer": 193.0,
+  "disp": "193",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "8.69",
+   "1.49",
+   "193",
+   "0.0651"
+  ],
+  "mcAnswer": "193",
+  "rank": 1
+ },
+ {
+  "teach": "Think back to the lesson — the paper 'Ionised Nebula Radius and Emission Measure Budget of AG Pegasi'. The result it reported gives a value for stroemgren_radius_AU, and that value is what this question asks for.",
+  "teach2": "Here is the exact passage from the lesson again: 'Ionised Nebula Radius and Emission Measure Budget of AG Pegasi'. Its stated result: Headline result (values verbatim from results.json): stroemgren_radius_AU = 85.8; stroemgren_to_separation_ratio = 35.5; ionised_mass_Msun = 5.22e-05; emission_measure_pc_cm6 = 7540; recombination_time_days = 11.7; ionising_photon_rate_s = 4.4e+46; separation_AU = 2.41; nebular_thermal_energy_erg = 2.57e+41. And here is that same result with the words stripped away — just the quantities standing in a row: stroemgren_radius_AU = 85.8; stroemgren_to_separation_ratio = 35.5; ionised_mass_Msun = 5.22e-05. Find stroemgren_radius_AU in that row; the value beside it is the one this question asks for. Say it in figures, any honest form: as printed, rounded, or written out in full.",
+  "walk": "Walk it through with me, step by step. (1) In the lesson, the paper 'Ionised Nebula Radius and Emission Measure Budget of AG Pegasi' stated its result. (2) That result pairs names with values: stroemgren_radius_AU = 85.8; stroemgren_to_separation_ratio = 35.5; ionised_mass_Msun = 5.22e-05. (3) This question asks for the value paired with stroemgren_radius_AU. (4) In that row, stroemgren_radius_AU stands beside 85.8 — so the answer the lesson gives is 85.8. Now it is yours: say that value, in any honest form.",
+  "q": "In the lesson, the paper 'Ionised Nebula Radius and Emission Measure Budget of AG Pegasi' reported a number for stroemgren_radius_AU. What number did it report?",
+  "kind": "number",
+  "answer": 85.8,
+  "disp": "85.8",
+  "tol": 0.03,
+  "why": "You are doing this because a number you can produce from memory — and defend — is worth ten you have only seen glide past.",
+  "substantive": true,
+  "choices": [
+   "8.69",
+   "0.0651",
+   "85.8",
+   "1.49"
+  ],
+  "mcAnswer": "85.8",
+  "rank": 1
+ },
+ {
+  "teach": "The class's set problem — you met it in the lesson as my worked example, worked in full. Now it is yours to work, in your own words. Take your time: say it out loud or type it; either door is open.",
+  "teach2": "Back to the exact passage, from the lesson — my worked example: Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Bondi-Hoyle Accretion Radius and Accretion Power Budget of CH Cygni”. Its stated result is: Headline result (values verbatim from results.json): separation_AU = 8.69; wind_number_density_at_wd_cm3 = 1.9e+07; bondi_hoyle_rate_Msun_yr = 5.92e-09; accretion_luminosity_Lsun = 13; accretion_radius_AU = 2.25; capture_fraction = 0.0197; roche_filling_factor = 0.273; relative_wind_velocity_km_s = (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. And here is the shape of that answer: it stands on restate · borrow · recompute · re-measure · headline · quantity · against · number. Build yours on the same bones, in your own words — it does not have to sound like the book; it has to stand on the same ideas.",
+  "walk": "Walk it through with me, step by step, along the worked answer's own road. (1) A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions. An answer of yours that touches restate · borrow · recompute · re-measure · headline · quantity · against · number walks the same road. Now put it in your own words and say it.",
+  "capstone": true,
+  "q": "Take the paper “Bondi-Hoyle Accretion Radius and Accretion Power Budget of CH Cygni”. Its stated result is: Headline result (values verbatim from results.json): separation_AU = 8.69; wind_number_density_at_wd_cm3 = 1.9e+07; bondi_hoyle_rate_Msun_yr = 5.92e-09; accretion_luminosity_Lsun = 13; accretion_radius_AU = 2.25; capture_fraction = 0.0197; roche_filling_factor = 0.273; relative_wind_velocity_km_s = (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong.",
+  "kind": "keywords",
+  "keywords": [
+   [
+    "restate",
+    "restates"
+   ],
+   [
+    "borrow",
+    "borrowing"
+   ],
+   [
+    "recompute"
+   ],
+   [
+    "re-measure"
+   ],
+   [
+    "headline"
+   ],
+   [
+    "quantity"
+   ],
+   [
+    "against"
+   ],
+   [
+    "number"
+   ]
+  ],
+  "need": 3,
+  "why": "You are doing this because this is the class's real problem — the one your professor set. It is answered here, in session, not taken away as homework.",
+  "substantive": true,
+  "rank": 3
+ }
+]

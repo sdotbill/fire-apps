@@ -1,0 +1,37 @@
+# Lesson 1 — Settle in.
+
+Welcome in. I am Professor Fernando González, and this is Symbiotic Stars and Interacting Wind Binaries: Accretion, Nebular and Outburst Budgets Against Density and Energy Bounds. This is lesson 1 of 1 in the full thirty-minute build of this class. In this lesson we take the class's own material in order — nothing here is imported, and nothing is asked later that is not taught here first. We begin here: Settle in.
+
+Settle in. I am Professor Fernando González, and this is Symbiotic Stars and Interacting Wind Binaries: Accretion, Nebular and Outburst Budgets Against Density and Energy Bounds. This class is built on real papers — deposited, citable work. I will present each paper and what it reports; that presentation is the lesson. At the end I will ask you questions on what was taught here — nothing else.
+
+Here is the next piece of the material, in the order the class presents it.
+
+'Bondi-Hoyle Accretion Radius and Accretion Power Budget of CH Cygni'. Its stated result: Headline result (values verbatim from results.json): separation_AU = 8.69; wind_number_density_at_wd_cm3 = 1.9e+07; bondi_hoyle_rate_Msun_yr = 5.92e-09; accretion_luminosity_Lsun = 13; accretion_radius_AU = 2.25; capture_fraction = 0.0197; roche_filling_factor = 0.273; relative_wind_velocity_km_s = 23.5.
+
+Now we go one step further into the material.
+
+'Eclipse-Scale Wind Column and Accretion Budget of AX Persei'. Its stated result: Headline result (values verbatim from results.json): capture_fraction = 0.0651; accretion_radius_AU = 0.876; bondi_hoyle_rate_Msun_yr = 7.81e-09; accretion_luminosity_Lsun = 14.7; accretion_to_burning_ratio = 0.0164; ignition_accumulation_time_yr = 1280; wind_number_density_at_wd_cm3 = 1.12e+08; separation_AU = 2.03.
+
+The next piece is where this starts to come together.
+
+'Ejecta Kinetic Energy Against Accreted Mass Budget of RS Ophiuchi'. Its stated result: Headline result (values verbatim from results.json): separation_AU = 1.49; wind_number_density_at_wd_cm3 = 1.07e+08; bondi_hoyle_rate_Msun_yr = 2.15e-08; accretion_luminosity_Lsun = 91.3; accretion_radius_AU = 1.35; capture_fraction = 0.215; roche_filling_factor = 0.552; relative_wind_velocity_km_s = 42.2.
+
+Listen carefully here — this piece carries weight in the questions later.
+
+'Ignition Mass Accumulation Time and Accretion Budget of T Coronae Borealis'. Its stated result: Headline result (values verbatim from results.json): stroemgren_radius_AU = 193; stroemgren_to_separation_ratio = 194; ionised_mass_Msun = 0.000119; emission_measure_pc_cm6 = 3450; recombination_time_days = 54.9; ionising_photon_rate_s = 2.13e+46; separation_AU = 0.997; nebular_thermal_energy_erg = 5.45e+41.
+
+We take the pieces in order, because each one stands on the last.
+
+'Ionised Nebula Radius and Emission Measure Budget of AG Pegasi'. Its stated result: Headline result (values verbatim from results.json): stroemgren_radius_AU = 85.8; stroemgren_to_separation_ratio = 35.5; ionised_mass_Msun = 5.22e-05; emission_measure_pc_cm6 = 7540; recombination_time_days = 11.7; ionising_photon_rate_s = 4.4e+46; separation_AU = 2.41; nebular_thermal_energy_erg = 2.57e+41.
+
+Stay with me, because the next piece builds directly on that one.
+
+'Ionising Photon Output and Nebular Emission Budget of RR Telescopii'. Its stated result: Headline result (values verbatim from results.json): separation_AU = 8.3; wind_number_density_at_wd_cm3 = 1.54e+07; bondi_hoyle_rate_Msun_yr = 5.52e-09; accretion_luminosity_Lsun = 11.3; accretion_radius_AU = 2.53; capture_fraction = 0.0276; roche_filling_factor = 0.256; relative_wind_velocity_km_s = 21.3.
+
+Here is the next piece of the material, in the order the class presents it.
+
+Now my worked example — this class's set problem, worked in full. The problem: Take the paper “Bondi-Hoyle Accretion Radius and Accretion Power Budget of CH Cygni”. Its stated result is: Headline result (values verbatim from results.json): separation_AU = 8.69; wind_number_density_at_wd_cm3 = 1.9e+07; bondi_hoyle_rate_Msun_yr = 5.92e-09; accretion_luminosity_Lsun = 13; accretion_radius_AU = 2.25; capture_fraction = 0.0197; roche_filling_factor = 0.273; relative_wind_velocity_km_s = (a) Restate the claim in your own words. (b) Name one observation or computation that could prove it wrong. The worked answer: A strong answer restates the claim without borrowing the paper’s wording, then names a test the paper itself would accept — here, the natural test is to recompute or re-measure the headline quantity in the stated result and check it against the paper’s own number, under the paper’s own stated assumptions.
+
+Let us gather what this lesson taught, in order: Settle in; 'Bondi-Hoyle Accretion Radius and Accretion Power Budget of CH Cygni'; 'Eclipse-Scale Wind Column and Accretion Budget of AX Persei'; 'Ejecta Kinetic Energy Against Accreted Mass Budget of RS Ophiuchi'; 'Ignition Mass Accumulation Time and Accretion Budget of T Coronae Borealis'; 'Ionised Nebula Radius and Emission Measure Budget of AG Pegasi'. Those are the pieces — hold them in that order, because the questions follow the same road.
+
+That is the lesson, whole. Below it are the questions — every one of them drawn from what was just taught, and nothing else. The full text of this lesson stays open beside the questions, and going back to read a piece again is learning, not cheating. When you are ready, begin.

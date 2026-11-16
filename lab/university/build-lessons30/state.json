@@ -472,5 +472,12 @@
    "audio": "audio/lessons30/open-clusters-stellar-associations-and-young-moving-groups-disso/lesson-01.mp3",
    "minutes": 15.71
   }
+ },
+ "symbiotic-stars-and-interacting-wind-binaries-accretion-nebular-": {
+  "lesson-01": {
+   "hash": "4810a2eeac626228992d95c45a4e9f067f7b3433",
+   "audio": "audio/lessons30/symbiotic-stars-and-interacting-wind-binaries-accretion-nebular-/lesson-01.mp3",
+   "minutes": 13.65
+  }
  }
 }
