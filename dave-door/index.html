@@ -164,6 +164,13 @@
   .msg-typing .dots i:nth-child(3){animation-delay:.36s;margin-right:0;}
   @keyframes tblink{0%,60%,100%{opacity:.25;}30%{opacity:1;}}
 
+  /* The front door's lead, one quiet line under the headline (positioning
+     pass, Nov 15, 2026): free education first, then the work Dave does.
+     Hidden on short screens so the chat keeps the room there. */
+  .door-lead{max-width:34rem;margin:16px auto 0;color:var(--muted);font-size:1rem;line-height:1.55;}
+  .door-lead a{font-weight:600;text-decoration:none;}
+  .door-lead a:hover{text-decoration:underline;}
+  @media (max-height:560px){ .door-lead{display:none} }
 </style>
 <link rel="stylesheet" href="../background.css">
 
@@ -427,6 +434,7 @@
   <p class="chat-turns" id="chat-turns" hidden></p>
 </div>
     <h1>Everyone needs a Dave.</h1>
+    <p class="door-lead">Exolex University is free — Dave teaches anything, to anyone who asks. And when there is work to do, Dave does it: tell him what you need, and it gets handled. <a href="/dave/">Meet Dave&nbsp;&rarr;</a></p>
 <div class="thread-wrap" id="chat-thread-wrap" hidden>
   <div class="chat-thread" id="chat-thread" aria-live="polite"></div>
 </div>
