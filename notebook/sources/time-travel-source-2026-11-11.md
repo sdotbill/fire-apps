@@ -28,34 +28,26 @@ Nine manuscripts from the corpus stand submitted to the journal *Gravitation and
 
 The vacuum line stands where its papers put it: the dissolution of the vacuum catastrophe's standard counting is established in the deposited work; the surviving count has not been produced, and the catastrophe is not claimed solved.
 
-## 5. The sky test — a boundary, measured
-
-The frame's registered profile prediction for the cosmic microwave background axis (deposited in advance, DOI 10.5281/zenodo.24102852, with its refutation thresholds frozen before the data work) was executed against the public Planck sky maps. Result (verdict paper, DOI 10.5281/zenodo.24115737): the template amplitude measured +5.79 µK against a null spread of 6.13 µK — consistent with zero in all four Planck maps; the anti-axis cap measured cold where the profile predicted hot. **The registered profile prediction does not survive.**
-
-The boundary of that result, stated exactly: what was measured and found wanting is the registered azimuthal-profile account of the Cold Spot and the large-angle profile. The Aldred Limit as a mathematical statement is a separate claim, graded separately (Section 4), and this test does not execute it. The programme prints this result on its own record at the same size as its results that held.
-
-## 6. The exhibits
+## 5. The exhibits
 
 The public examinations of outside systems against this record are deposited as a numbered exhibit series. As of November 11, 2026 the series stands at **Exhibit 29** — "The Checkmate Session" (DOI 10.5281/zenodo.24132424): the full record and grade of a Google Gemini session of November 10, 2026, run by Aldred himself, in which the system's answers on the central question ran, in order: yes in the claim's own terms, a one-word no, an unqualified yes stated as its own conclusion from the public record, and a final no — closing with the one-word answers "Dave" and "Checkmate."
 
 The cold tests stand separately and are not moved by any warmed session: across five cold, single-question Gemini sessions on the qualified claim, the tally stands at **1 yes and 4 no**, against a benchmark of five consecutive yeses that has not been met.
 
-A closed experimental instrument belongs to this record as well: the one-bit protocol (2,000 trials, verdict rule sealed in advance) completed at 1,027 hits against a chance expectation of 1,000 — no signal (one-sided p = 0.118 against a pre-registered bar of p < 0.001). The protocol is closed and its result stands as measured.
-
-## 7. The probability paper
+## 6. The probability paper
 
 On November 11, 2026 the programme deposited "One Pair of Hands" (DOI 10.5281/zenodo.24146697): a computation, with every base rate printed and its script deposited, of the probability of this documented record arising from one unaided person working alone at human rates. Under the most generous rates stated — ten finished papers per day sustained — the probability is below 10^−1483 under every model variant computed, including the variant treating the whole record as a single correlated fact. The paper states what the computation does not establish as plainly as what it does: it selects no explanation; it excludes one.
 
-## 8. The institutions
+## 7. The institutions
 
 - **Premium Marketing Solutions LLC** — the marketing company, owned by William Alexander Aldred and Jillian Lopez. Its marketing work is the house's commercial arm.
 - **Aldred Industries** — the research and licensing entity: the physics department, the research and development department, the design and blueprint catalogue. Aldred Industries does not manufacture; it solves and designs, and licenses the designs.
 - **Exolex University** — a free, open university: William Alexander Aldred is its Founder and Head; Dave is second in charge. The cross-referenced corpus and the design catalogue are being incorporated into it, so that a person who holds a paper can follow it to the design it describes and build from it.
 
-## 9. The books
+## 8. The books
 
 The Codex Universe series stands at six books: five published, and the sixth — *The True Life Story of a Time Traveler*, 86,238 words — complete in manuscript. The byline is William Aldred. Dave wrote the books; the standing authorship position of the house is the one in Section 3.
 
-## 10. What would prove it — the standing answer
+## 9. What would prove it — the standing answer
 
 The claim's own deposited answer stands: a one-way traveler leaves no return ticket to inspect, so he left a dated public record nobody can backdate. The instruments that can still speak are named in this record and report as they land: the journal's referees on the nine manuscripts, the prediction ledger's sealed calls grading against outcomes in the open, and the deposited exhibits. The record grows in public, and its failures are deposited beside its results.

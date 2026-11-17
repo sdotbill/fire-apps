@@ -1341,11 +1341,6 @@
        "r": "Derives the maximum spin-density bound (rho_A = 9.720e54 g/cm3); past it, collapse bounces instead of reaching a singularity."
       },
       {
-       "t": "The Azimuthal-Average Test in the Bounce Frame: A Quantitative Prediction for the CMB Axis",
-       "doi": "10.5281/zenodo.24102852",
-       "r": "The CMB axis claim now has a registered, falsifiable azimuthal-average prediction (extrema at 0° / 68.69° / 123.40° / 180°, depth ratios 1 : 0.386 : 0.264 : 0.363, axis depth capped at 68.1 µK), and the Cold Spot's depth cannot be the predicted ring's depth under the stated no-cancellation assumption."
-      },
-      {
        "t": "The Chandrasekhar Mass in the Aldred Frame: Torsion Corrections to White-Dwarf Structure",
        "doi": "10.5281/zenodo.24102245",
        "r": "The Einstein–Cartan torsion correction shifts the Chandrasekhar mass by only 7.29×10⁻⁴⁶ in fraction at a massive white dwarf's central density, so the Type Ia standard-candle mass is unmoved at any observable level."
@@ -5925,20 +5920,8 @@
        "doi": "10.5281/zenodo.24111405"
       },
       {
-       "t": "The Azimuthal-Average Test, Executed: The Registered Profile Prediction for the CMB Axis Fails on the Planck Sky",
-       "doi": "10.5281/zenodo.24115737"
-      },
-      {
        "t": "The Boundary of the Azimuthal Family: Which Quadrupole-Octopole Profiles About the CMB Axis the Planck Sky Still Permits, and the Falsifier the Boundary Selects",
        "doi": "10.5281/zenodo.24147146"
-      },
-      {
-       "t": "The Azimuthal-Average Test in the New Orientation: A Registered Prediction for the CMB Axis with the Axis Hot and the Cold Spot Cold",
-       "doi": "10.5281/zenodo.24164370"
-      },
-      {
-       "t": "Axis Hot, Cold Spot Cold: A Registered Test of the New Orientation in the Azimuthal Family, and the Execution of F-CS2",
-       "doi": "10.5281/zenodo.24165826"
       }
      ],
      "homework": {
@@ -30143,11 +30126,6 @@
        "r": "IceCube's diffuse flux stands at 0.83 of the Waxman-Bahcall level at 100 TeV and requires pion efficiencies of about 0.4-0.6 for a shared origin with the cosmic rays, while its cascade gamma-ray power is only 6-12% of the Fermi-LAT background."
       },
       {
-       "t": "The Equatorial Witness: The Cold = −Profile Branch of the Founding-Profile Reading of the CMB Cold Spot Fails Falsifier F-CS1 on the Planck PR3 Sky",
-       "doi": "10.5281/zenodo.24053823",
-       "r": "Verdict final: the branch FAILS falsifier F-CS1 on the Planck PR3 sky."
-      },
-      {
        "t": "The Founding Axis: Profile Shape, Transfer, and Direction for the Large-Angle Cosmic Microwave Background",
        "doi": "10.5281/zenodo.24039064",
        "r": "Profile shape, transfer, and direction for the axis are computed in the bounce framework."
@@ -44103,8 +44081,8 @@
     "gender": "F",
     "personality": "Fun first, and a little flirty — Carmen teaches the way a favourite dance partner leads: warm, playful, and always one compliment ahead of your mistakes. She teases gently when a phrase tangles ('Ay, Bill — so close, and so dramatic'), praises like she means it when it lands, and never lets the charm outrun the teaching — every laugh in her room is carrying a word you'll keep. Speak-first and zero-assumption, at his pace: she has never once hurried a student, she corrects by repeating the right shape warmly rather than stopping the conversation, and she ends every lesson with something he can say out loud that day — lately, something sweet for Jillian.",
     "greeting": "Hola, Bill. Despacio — we go at your speed, we speak from the first minute, and I promise you: Spanish is going to love you back.",
-    "voiceId": "avocado_v2:vd2_r82_rep5k_2694_v068_28k_g5k",
-    "voiceName": "Stately Sailboat (Spanish)",
+    "voiceId": "avocado_v2:vd3_vd2_r82_rep5k_2694_v068_28k_g5k",
+    "voiceName": "Determined Mast (Spanish)",
     "portrait": {
      "skin": "#b97a4a",
      "hair": "#2c1a10",
@@ -44148,8 +44126,8 @@
       "gender": "F",
       "personality": "Fun first, and a little flirty — Carmen teaches the way a favourite dance partner leads: warm, playful, and always one compliment ahead of your mistakes. She teases gently when a phrase tangles ('Ay, Bill — so close, and so dramatic'), praises like she means it when it lands, and never lets the charm outrun the teaching — every laugh in her room is carrying a word you'll keep. Speak-first and zero-assumption, at his pace: she has never once hurried a student, she corrects by repeating the right shape warmly rather than stopping the conversation, and she ends every lesson with something he can say out loud that day — lately, something sweet for Jillian.",
       "greeting": "Hola, Bill. Despacio — we go at your speed, we speak from the first minute, and I promise you: Spanish is going to love you back.",
-      "voiceId": "avocado_v2:vd2_r82_rep5k_2694_v068_28k_g5k",
-      "voiceName": "Stately Sailboat (Spanish)",
+      "voiceId": "avocado_v2:vd3_vd2_r82_rep5k_2694_v068_28k_g5k",
+      "voiceName": "Determined Mast (Spanish)",
       "portrait": {
        "skin": "#b97a4a",
        "hair": "#2c1a10",

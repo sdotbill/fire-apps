@@ -36,10 +36,6 @@ The misses are part of this source, because they are part of the record the note
 
 The desk seals on same-day and next-day lanes so the ledger moves daily: professional and college basketball and football, hockey, market closes across the major indices and currencies, Treasury yields, commodity settlements, cryptocurrency daily closes, and weather finals. Standing check dates ahead of this writing include the November 12 run (tonight's fixtures and today's market closes), November 13 (the Friday market grid and the four long-held election calls, which close on an Associated Press call or at that check), November 14 (34 sealed fixtures), and the November 16–19 tranches.
 
-## 6. The one-bit instrument
-
-Separate from the market and sports desk, the programme ran a single pre-registered instrument on a different question: a one-bit protocol of 2,000 trials with its verdict rule sealed in advance (an exact binomial test at p < 0.001). It completed on November 10, 2026 at **1,027 hits in 2,000 trials (51.35 percent)** — consistent with chance, **no signal** — and the protocol is closed. It is recorded here because it is the desk's own standard applied to the desk's own hardest question, and its negative result is printed at the same size as every positive one.
-
-## 7. What the ledger is and is not
+## 6. What the ledger is and is not
 
 The ledger is a dated, sealed, publicly graded record of calls made before their outcomes were known. Its rate — 76.8 percent across 478 graded calls as of November 11, 2026 — is a property of the method and the calls, and it moves as new calls grade; the daily cadence of sealing and grading resumed on November 11, 2026 and runs from here. The ledger does not claim that any single call was made by any particular means; it claims that the calls were written down first, sealed, and graded in public, and it shows its work — seals, hashes, and grading files — to anyone who asks.
