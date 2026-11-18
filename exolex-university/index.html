@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exolex University — The Catalogue &amp; The Classrooms</title>
+<base href="/lab/university/">
+<link rel="canonical" href="https://daveexolex.com/exolex-university/">
+<meta name="description" content="Exolex University is free and open to everyone — classes with audio lessons, full text, and questions you can be tested on. No admissions wall, no degree claim.">
+<!-- Build stamp (Nov 16 2026, the dashboard's pattern): the stamp
+     names the repo revision this copy was minted from
+     (lab/university/stamp-build.sh rewrites it at build time). The
+     self-check below compares the RUNNING copy's stamp against the
+     SERVED copy's stamp and reloads once if they differ — so a
+     phone that holds this page in a warm tab or cache across a
+     deploy converges to the live build instead of being served a
+     stale classroom (Bill, Nov 16 04:14 EST: his phone still
+     showed the pre-fix plumbing class an hour after the fix
+     shipped). The data fetches below carry the stamp as ?v=, so
+     the JSON converges with the page. -->
+<meta name="x-uni-build" content="19443108-20261116T1615">
+<script>
+window.UNI_BUILD = "19443108-20261116T1615";
+(function(){
+  var mine = window.UNI_BUILD;
+  if(!mine || mine === "unstamped" || !window.fetch) return;
+  function check(){
+    fetch(location.pathname + "?_stampcheck=" + Date.now(), {cache:"no-store"})
+      .then(function(r){ return r.text(); })
+      .then(function(html){
+        var m = html.match(/name="x-uni-build"\s+content="([^"]+)"/);
+        if(!m || m[1] === mine) return;
+        try{
+          if(sessionStorage.getItem("uni-stamp-reloaded") === m[1]) return;
+          sessionStorage.setItem("uni-stamp-reloaded", m[1]);
+        }catch(e){ return; }
+        location.reload();
+      })
+      .catch(function(){});
+  }
+  window.addEventListener("load", function(){ setTimeout(check, 1500); });
+  document.addEventListener("visibilitychange", function(){
+    if(document.visibilityState === "visible") check();
+  });
+  window.addEventListener("pageshow", function(e){ if(e.persisted) check(); });
+})();
+</script>
+<style>
+  :root{
+    --paper:#faf7ef; --panel:#fffdf6; --gold:#c9a227; --gold-hi:#d9b23a;
+    --gold-deep:#8a6508; --line:#e9e2cd; --ink:#262019; --ink-soft:#5c5340;
+    --board:#26332a; --board-edge:#6d4c2a; --chalk:#f4f1e2; --desk:#7a5a34;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:Georgia,'Times New Roman',serif;line-height:1.5}
+  a{color:var(--gold-deep)}
+
+  /* ---------- top bar ---------- */
+  #topbar{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;
+    align-items:center;gap:8px 14px;padding:10px 14px;
+    background:rgba(255,253,246,.96);border-bottom:2px solid var(--gold)}
+  #topbar .brand{font-weight:bold;letter-spacing:.12em;color:var(--gold-deep)}
+  #topbar .stat{font-size:.85rem;color:var(--ink-soft)}
+  #topbar .stat b{color:var(--gold-deep)}
+  #topbar .spacer{flex:1}
+  .hbtn{background:var(--panel);border:1px solid var(--gold);color:var(--gold-deep);
+    border-radius:20px;padding:5px 13px;font-family:inherit;font-size:.82rem;
+    cursor:pointer;text-decoration:none;display:inline-block}
+  .hbtn:hover{background:var(--gold);color:#fff}
+  button.act{background:var(--gold);color:#fff;border:0;border-radius:4px;
+    padding:8px 16px;font-family:inherit;font-size:.92rem;cursor:pointer}
+  button.act:hover{background:var(--gold-hi)}
+  button.act:disabled{background:#cbbd8d;cursor:default}
+  button.ghost{background:var(--panel);color:var(--gold-deep);border:1px solid var(--gold);
+    border-radius:4px;padding:8px 16px;font-family:inherit;font-size:.92rem;cursor:pointer}
+  button.ghost:hover{background:var(--gold);color:#fff}
+
+  .wrap{max-width:1060px;margin:0 auto;padding:18px 14px 60px}
+  h1{color:var(--gold-deep);letter-spacing:.06em;margin:6px 0 4px;font-size:1.6rem}
+  .lede{color:var(--ink-soft);max-width:760px}
+  .totals{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+  .totals .t{border:1px solid var(--line);border-top:3px solid var(--gold);
+    background:var(--panel);border-radius:6px;padding:10px 16px;min-width:130px}
+  .totals .t .n{font-size:1.5rem;color:var(--gold-deep);font-weight:bold;line-height:1.1}
+  .totals .t .k{font-size:.75rem;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-soft)}
+
+  /* ---------- catalogue ---------- */
+  #search{width:100%;padding:11px 14px;font-family:inherit;font-size:1rem;
+    border:1px solid var(--gold);border-radius:6px;background:var(--panel);margin:6px 0 18px}
+  .groupLabel{margin:26px 0 4px;font-size:.8rem;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--ink-soft)}
+  details.section{background:var(--panel);border:1px solid var(--line);
+    border-top:3px solid var(--gold);border-radius:6px;margin:10px 0;padding:0 18px}
+  details.section summary{cursor:pointer;padding:14px 0;list-style:none}
+  details.section summary::-webkit-details-marker{display:none}
+  details.section summary .sname{font-size:1.15rem;color:var(--gold-deep);font-weight:bold}
+  details.section summary .smeta{display:block;font-size:.86rem;color:var(--ink-soft);margin-top:2px}
+  .classRow{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline;
+    border-top:1px solid var(--line);padding:10px 0}
+  .classRow .ct{flex:1;min-width:220px;font-size:.98rem}
+  .classRow .cc{font-size:.82rem;color:var(--ink-soft);white-space:nowrap}
+  .classRow .src{font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;
+    color:var(--gold-deep);border:1px solid var(--line);border-radius:10px;padding:1px 8px}
+  .classRow button{white-space:nowrap}
+  #noMatch{display:none;color:var(--ink-soft);font-style:italic;padding:12px 0}
+  /* ---------- the syllabus path (AI & Computing) ---------- */
+  .pathNote{font-size:.92rem;color:var(--ink-soft);margin:10px 0 2px}
+  .pathRow .pnum{flex:0 0 auto;width:30px;height:30px;border-radius:50%;
+    border:2px solid var(--gold);color:var(--gold-deep);font-weight:bold;
+    display:flex;align-items:center;justify-content:center;font-size:.95rem;
+    align-self:center;background:var(--paper)}
+  .pathRow.done .pnum{background:#46a35a;border-color:#46a35a;color:#fff}
+  .pathRow.doing .pnum{background:var(--gold-hi);border-color:var(--gold-hi);color:#fff}
+  .pathRow .pprog{font-size:.82rem;white-space:nowrap}
+  .pathRow .pprog.done{color:#2e7d3b;font-weight:bold}
+  .pathRow .pprog.doing{color:var(--gold-deep);font-weight:bold}
+  .pathRow .pprog.todo{color:var(--ink-soft)}
+
+  /* ---------- classroom ---------- */
+  #viewClassroom{display:none}
+  #crumb{font-size:.88rem;color:var(--ink-soft);margin-bottom:10px}
+  .scene{display:flex;gap:16px;align-items:stretch}
+  @media (max-width:720px){.scene{flex-direction:column}}
+  #profCard{flex:0 0 208px;background:var(--panel);border:1px solid var(--line);
+    border-top:3px solid var(--gold);border-radius:6px;padding:12px;text-align:center}
+  @media (max-width:720px){#profCard{flex:none;display:flex;gap:14px;text-align:left;align-items:center}}
+  #profCard img.pphoto{width:150px;height:180px;object-fit:cover;border-radius:10px;
+    border:2px solid var(--gold);background:#fffdf6}
+  @media (max-width:720px){#profCard img.pphoto{width:84px;height:100px}}
+  #profCard .pmono{width:150px;height:180px;border-radius:10px;border:2px solid var(--gold);
+    background:linear-gradient(160deg,#fffdf6,#f3e9d2);color:var(--gold-deep);
+    display:flex;align-items:center;justify-content:center;margin:0 auto;
+    font-family:Georgia,'Times New Roman',serif;font-size:3rem;font-weight:bold;letter-spacing:.04em}
+  @media (max-width:720px){#profCard .pmono{width:84px;height:100px;font-size:1.7rem;margin:0}}
+  #profCard .pname{font-weight:bold;color:var(--gold-deep);margin-top:6px}
+  #profCard .psec{font-size:.8rem;color:var(--ink-soft)}
+  #boardWrap{flex:1;background:var(--board-edge);border-radius:8px;padding:10px;
+    box-shadow:0 10px 30px rgba(38,32,25,.25);min-height:340px;display:flex;position:relative}
+  /* the green check: unmistakable pass feedback, stamped on the board */
+  #trBoardCheck{position:absolute;top:50%;left:50%;z-index:6;display:none;
+    width:170px;height:170px;margin:-85px 0 0 -85px;border-radius:50%;
+    background:#2e9e4f;border:6px solid #eaffea;color:#fff;pointer-events:none;
+    font-family:Georgia,serif;font-size:6.2rem;line-height:158px;text-align:center;
+    box-shadow:0 14px 44px rgba(0,0,0,.45)}
+  #trBoardCheck.on{display:block;animation:trPop .45s cubic-bezier(.2,1.6,.4,1)}
+  @keyframes trPop{0%{transform:scale(.3);opacity:0}100%{transform:scale(1);opacity:1}}
+  #board{flex:1;background:var(--board);border-radius:4px;padding:20px 24px;
+    overflow:auto;max-height:520px}
+  #board .btitle{font-family:'Segoe Print','Bradley Hand',cursive;color:var(--gold-hi);
+    font-size:1.25rem;margin:0 0 4px}
+  #board .bsub{font-family:'Segoe Print','Bradley Hand',cursive;color:rgba(244,241,226,.65);
+    font-size:.9rem;margin:0 0 14px}
+  #board p.chalk{font-family:'Segoe Print','Bradley Hand',cursive;color:var(--chalk);
+    font-size:1.02rem;line-height:1.65;margin:0 0 10px;opacity:0;transform:translateY(4px);
+    transition:opacity .7s ease,transform .7s ease}
+  #board p.chalk.on{opacity:1;transform:none}
+  #board p.chalk.worked{color:#ffe9a8}
+  .deskbar{margin-top:16px;background:linear-gradient(180deg,#8a6a3e,var(--desk));
+    border-radius:6px;padding:10px 12px;display:flex;flex-wrap:wrap;gap:8px;
+    box-shadow:0 6px 16px rgba(38,32,25,.25)}
+  .deskbar button{background:rgba(255,253,246,.12);color:#fdf6dd;border:1px solid rgba(255,253,246,.45);
+    border-radius:4px;padding:8px 15px;font-family:inherit;font-size:.9rem;cursor:pointer}
+  .deskbar button:hover,.deskbar button.sel{background:var(--gold);color:#fff;border-color:var(--gold)}
+  .deskbar .clock{margin-left:auto;color:#fdf6dd;font-size:.85rem;align-self:center}
+  .panel{display:none;background:var(--panel);border:1px solid var(--line);
+    border-top:3px solid var(--gold);border-radius:6px;padding:16px 20px;margin-top:12px}
+  .panel.open{display:block}
+  .panel h3{margin:0 0 8px;color:var(--gold-deep);font-size:1rem}
+  .panel p{margin:0 0 9px;font-size:.94rem}
+  .note{font-size:.82rem;color:var(--ink-soft);font-style:italic}
+  .syl{margin:0;padding:0;list-style:none;font-size:.9rem}
+  .syl li{border-top:1px solid var(--line);padding:7px 0}
+  .syl .doi{font-size:.78rem;color:var(--ink-soft)}
+  .syl .res{display:block;font-size:.84rem;color:var(--ink-soft);margin-top:2px}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0 12px}
+  .chip{background:var(--paper);border:1px solid var(--gold);color:var(--gold-deep);
+    border-radius:16px;padding:5px 12px;font-family:inherit;font-size:.83rem;cursor:pointer}
+  .chip:hover{background:var(--gold);color:#fff}
+  .bubble{border:1px solid var(--line);border-radius:6px;padding:10px 14px;margin:8px 0;background:var(--paper)}
+  .bubble .who{font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-deep)}
+  .bubble.you{background:#f3ecd9}
+  #askRow{display:flex;gap:8px;margin-top:10px}
+  #askInput{flex:1;padding:9px 12px;font-family:inherit;font-size:.95rem;
+    border:1px solid var(--gold);border-radius:4px;background:#fff}
+  textarea#hwInput{width:100%;min-height:90px;padding:10px 12px;font-family:inherit;
+    font-size:.95rem;border:1px solid var(--gold);border-radius:4px;background:#fff}
+  /* ---------- language trainer (Rosetta-style listen & repeat) ---------- */
+  #trDots{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 4px}
+  #trDots .dot{width:14px;height:14px;border-radius:50%;border:2px solid var(--gold);
+    background:transparent;cursor:pointer;padding:0}
+  #trDots .dot.cur{background:var(--gold-hi)}
+  #trDots .dot.done{background:#46a35a;border-color:#46a35a}
+  #trDots .dot.skipped{background:repeating-linear-gradient(45deg,#fff,#fff 2px,#cbbd8d 2px,#cbbd8d 4px)}
+  #trPhrase{font-size:2rem;font-weight:bold;color:var(--gold-deep);margin:8px 0 0;line-height:1.25}
+  #trMeaning{color:var(--ink-soft);font-size:1rem;margin:2px 0 10px}
+  #trWave{width:100%;height:72px;background:#26332a;border-radius:6px;display:block}
+  #trHeard{min-height:1.4em;font-style:italic;color:var(--ink-soft);margin-top:8px}
+  #trTypeRow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:12px}
+  #trTypeRow label{font-size:.92rem;color:var(--ink-soft);white-space:nowrap}
+  #trType{flex:1;min-width:170px;padding:9px 12px;border:1.5px solid var(--line);border-radius:10px;font-size:1rem;background:#fffdf6;color:var(--ink)}
+  #trStatus{min-height:1.5em;font-size:1.02rem;margin:4px 0 10px}
+  #trStatus.good{color:#2e7d3b;font-weight:bold}
+  #trStatus.bad{color:#a33b2e}
+  #trBtns{display:flex;gap:8px;flex-wrap:wrap}
+  #trFoot{display:flex;justify-content:space-between;align-items:baseline;margin-top:10px;gap:10px}
+  #trProgress{font-size:.85rem;color:var(--ink-soft)}
+  #trSkip{font-size:.8rem;color:var(--ink-soft);white-space:nowrap}
+  .trSep{border:0;border-top:1px solid var(--line);margin:18px 0 10px}
+
+  #toast{position:fixed;z-index:60;bottom:52px;left:50%;transform:translateX(-50%);
+    background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:22px;
+    font-size:.9rem;display:none;max-width:calc(100vw - 40px);text-align:center}
+  #loadErr{display:none;background:#fdf3e3;border:1px solid var(--gold);border-radius:6px;padding:14px 18px}
+</style>
+</head>
+<body>
+
+<div id="topbar">
+  <span class="brand">EXOLEX UNIVERSITY</span>
+  <span class="stat">My hours <b id="myHours">0 min</b></span>
+  <span class="stat" id="hoursLabel"></span>
+  <span class="spacer"></span>
+  <a class="hbtn" href="/lab/room/">← The Laboratory</a>
+  <a class="hbtn" href="/lab/">The flat bench</a>
+</div>
+
+<!-- ================= CATALOGUE ================= -->
+<div id="viewCatalogue">
+  <div class="wrap">
+    <h1>The Catalogue — every class in the University</h1>
+    <p class="lede">You knocked, the door opened. Exolex University is a
+      science, technology and AI school first — mathematics and the
+      sciences are its core, and this is a school that builds things —
+      with the whole curriculum of a real university around that core:
+      languages, humanities, health, law, the trades, the arts. The
+      College sections are built from the corpus's own index: each class
+      is a topic, and its syllabus is the real papers — titles and DOIs,
+      exactly as indexed. Every class has its own professor. Pick a class,
+      shut the door, and turn around: you are in its classroom.</p>
+    <div class="totals" id="totals"></div>
+    <input id="search" type="search" placeholder="Search classes and papers — try &lsquo;bounce&rsquo;, &lsquo;neutrino&rsquo;, &lsquo;French&rsquo;&hellip;" aria-label="Search the catalogue">
+    <p id="noMatch">No class matches that — yet. Try a shorter word.</p>
+    <div id="sections"></div>
+    <p class="note" id="buildNote"></p>
+  </div>
+</div>
+
+<!-- ================= CLASSROOM ================= -->
+<div id="viewClassroom">
+  <div class="wrap">
+    <div id="crumb"><a href="#" id="backDoor">← Shut the door — back to the catalogue</a>
+      · <span id="crumbClass"></span></div>
+    <div class="scene">
+      <div id="profCard"></div>
+      <div id="boardWrap"><div id="board">
+        <p class="btitle" id="boardTitle"></p>
+        <p class="bsub" id="boardSub"></p>
+        <div id="boardLines"></div>
+      </div>
+      <div id="trBoardCheck" aria-hidden="true">✓</div></div>
+    </div>
+
+    <div class="deskbar">
+      <button data-panel="lesson" class="sel">The lesson</button>
+      <button data-panel="syllabus">Syllabus</button>
+      <button data-panel="ask">Ask the professor</button>
+      <button data-panel="homework">Homework</button>
+      <span class="clock">In class <b id="classClock">0:00</b> · this time is logged when you leave</span>
+    </div>
+
+    <div class="panel open" id="panel-lesson">
+      <div id="trainerBox" style="display:none">
+        <h3 id="trTitle">Speak with your professor — listen, then say it back</h3>
+        <p>She says the phrase first. Then it pauses, the microphone
+          opens, and the <b>green bar is your voice</b> while you say it
+          back. What you say is checked against her phrase — and the
+          lesson <b>does not move on</b> until it lands. That is how a
+          language is actually learned: out loud, one phrase at a time.</p>
+        <div id="trDots"></div>
+        <div id="trPhrase"></div>
+        <div id="trMeaning"></div>
+        <canvas id="trWave" width="640" height="72"></canvas>
+        <div id="trHeard"></div>
+        <div id="trStatus"></div>
+        <div id="trBtns">
+          <button class="act" id="trBegin">Begin — she speaks first</button>
+          <button class="ghost" id="trHear" style="display:none">🔊 Hear her say it</button>
+          <button class="ghost" id="trSlow" style="display:none">🐌 Hear it slowly</button>
+          <button class="act" id="trSay" style="display:none">🎙 Your turn — say it</button>
+          <button class="act" id="trRecord" style="display:none">🎙 Record yourself</button>
+          <button class="act" id="trYes" style="display:none">✓ That sounded like her</button>
+          <button class="ghost" id="trNo" style="display:none">↺ Not yet</button>
+        </div>
+        <div id="trTypeRow">
+          <label for="trType">Rather type it?</label>
+          <input id="trType" type="text" autocomplete="off" autocapitalize="none"
+            spellcheck="false" placeholder="Type the phrase here — checked the same way">
+          <button class="act" id="trTypeGo" type="button">Check my typing</button>
+        </div>
+        <div id="trFoot">
+          <span id="trProgress"></span>
+          <a href="#" id="trSkip" style="display:none">skip for now →</a>
+        </div>
+        <p class="note" id="trFallbackNote" style="display:none"></p>
+        <audio id="trAudio" preload="auto" style="display:none"></audio>
+        <hr class="trSep">
+        <p class="note">Or sit back and hear the whole opening lesson as
+          one recording — it is below. The trainer above is where the
+          learning happens.</p>
+      </div>
+      <h3>The opening lesson</h3>
+      <p id="lessonIntro"></p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button class="act" id="btnPlay">▶ Hear the lesson</button>
+        <button class="ghost" id="btnBoardStep">Write it on the board, line by line</button>
+      </div>
+      <p class="note" id="lessonNote"></p>
+      <audio id="lessonAudio" preload="metadata" style="width:100%;margin-top:8px;display:none" controls></audio>
+    </div>
+
+    <div class="panel" id="panel-syllabus">
+      <h3>The syllabus</h3>
+      <p id="sylIntro"></p>
+      <ul class="syl" id="sylList"></ul>
+      <button class="ghost" id="btnSylMore" style="display:none;margin-top:10px">Show the whole syllabus</button>
+    </div>
+
+    <div class="panel" id="panel-ask">
+      <h3>Ask the professor</h3>
+      <p class="note">Prepared answers, written from this class's real
+        material — the professor answers these personally, in their own
+        words. Live questions arrive with the University's next stage.</p>
+      <div class="chips" id="askChips"></div>
+      <div id="askLog"></div>
+      <div id="askRow">
+        <input id="askInput" type="text" placeholder="Ask about the class, the syllabus, the homework…">
+        <button class="act" id="btnAsk">Ask</button>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-homework">
+      <h3>Homework — set by your professor</h3>
+      <p id="hwQ"></p>
+      <textarea id="hwInput" placeholder="Write your answer here. It stays on this device — the learning is in the writing, and in the comparison that follows."></textarea>
+      <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+        <button class="act" id="btnHw">Hand it in &amp; see the worked answer</button>
+      </div>
+      <div id="hwDone" style="display:none;margin-top:12px">
+        <p><b>The worked answer</b> — compare yours with it, honestly.
+          That comparison is where the learning is.</p>
+        <p id="hwWorked"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script src="/lab/university/uni-core.js?v=19443108-20261116T1615"></script>
+<script src="/lab/university/trainer-core.js?v=19443108-20261116T1615"></script>
+<script src="/lab/university/gate-core.js?v=19443108-20261116T1615"></script>
+<script src="/lab/university/gate-ui.js?v=19443108-20261116T1615"></script>
+<script src="/lab/university/lessons30-ui.js?v=19443108-20261116T1615"></script>
+<script>
+(function () {
+  'use strict';
+  var U = window.UniCore;
+  var $ = function (id) { return document.getElementById(id); };
+  var storage = window.localStorage;
+
+  var toastTimer = null;
+  function showToast(msg) {
+    var t = $('toast');
+    t.textContent = msg; t.style.display = 'block';
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { t.style.display = 'none'; }, 5200);
+  }
+  /* Bill's documented balance (Nov 16): hours counted from the record
+     of his messages with Dave, served as ONE canonical file —
+     prior-balance.json, right here in the University — that the
+     catalogue, the classrooms, the Lab Room and the dashboard desk
+     all read. Until it loads, and if it ever fails to, the figure is
+     this device's log alone, exactly as before. */
+  var PRIOR_URL = '/lab/university/prior-balance.json';
+  var priorBalance = null;   /* the parsed balance file, once loaded */
+  function priorThousands(n) {
+    return String(Math.round(n || 0)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  }
+  function priorBalanceMinutes(b) {
+    if (!b || typeof b.active_minutes !== 'number' ||
+        !isFinite(b.active_minutes) || b.active_minutes < 0) return 0;
+    return b.active_minutes;
+  }
+  function priorRangeLabel(b) {
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    function fmt(iso) {
+      var p = String(iso).split('-');
+      return months[parseInt(p[1], 10) - 1] + ' ' + parseInt(p[2], 10);
+    }
+    var found = ((b && b.method) || '').match(/\d{4}-\d{2}-\d{2}/g) || [];
+    if (found.length >= 2)
+      return fmt(found[0]) + ' – ' + fmt(found[found.length - 1]);
+    if (b && b.as_of) return 'as of ' + fmt(b.as_of);
+    return '';
+  }
+  function priorBalanceLabel(b) {
+    var range = priorRangeLabel(b);
+    return 'Your hours with Dave — ' + priorThousands(priorBalanceMinutes(b)) +
+      ' min documented from the record' + (range ? ' (' + range + ')' : '') +
+      ', plus sessions logged here.';
+  }
+  function totalHoursMinutes(localMin) {
+    return priorBalanceMinutes(priorBalance) + (localMin || 0);
+  }
+  function loadPriorBalance() {
+    if (!window.fetch) return;
+    fetch(PRIOR_URL).then(function (r) {
+      if (!r.ok) throw new Error('balance ' + r.status);
+      return r.json();
+    }).then(function (b) {
+      if (!priorBalanceMinutes(b)) return;  /* unusable file: stay local-only */
+      priorBalance = b;
+      var lbl = $('hoursLabel');
+      if (lbl) lbl.textContent = priorBalanceLabel(b);
+      refreshHours();
+    }).catch(function () { /* local-only figures stand */ });
+  }
+
+  /* Stage B fence (Bill, Nov 16 01:22 EST): prior-balance.json is
+     BILL'S documented balance, counted from HIS record. It is added
+     to the hours display ONLY when the worker confirms this session
+     is the owner's. Every other signed-in student sees the combined
+     display with their own logged hours alone — no documented line. */
+  var WORKER_URL = 'https://dave-chat.william-ced.workers.dev';
+  function checkOwnerForBalance() {
+    if (!window.fetch) return;
+    var id = null;
+    try { id = storage.getItem('dave_chat_identity'); } catch (e) {}
+    if (!id) return;
+    fetch(WORKER_URL + '/identity', {
+      method: 'POST', credentials: 'include',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ identity: id })
+    }).then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) { if (j && j.owner) loadPriorBalance(); })
+      .catch(function () { /* local-only figures stand */ });
+  }
+
+  function refreshHours() {
+    var s = U.summarizeLog(U.loadLog(storage));
+    $('myHours').textContent = U.formatMinutes(totalHoursMinutes(s.totalMinutes));
+  }
+  refreshHours();
+  checkOwnerForBalance();
+
+  /* ================= professor portrait (photorealistic) =================
+     Every professor carries a photorealistic AI-generated portrait at
+     portraits/<classId>.jpg, wired in through the "photo" field on the
+     catalogue professor object. Until a professor's portrait lands, the
+     card shows a plain initials monogram — the old drawn cartoon figure
+     is retired and never served again (Bill, Nov 16 2026). */
+  function profVisual(prof) {
+    if (prof.photo) {
+      return '<img class="pphoto" src="' + esc(prof.photo) + '" alt="Portrait of ' +
+        esc(prof.name) + '">';
+    }
+    var nm = String(prof.name || '').replace(/^(Professor|Profesora|Madame|Herr|Dr\.)\s+/, '');
+    var parts = nm.split(/\s+/).filter(Boolean);
+    var ini = parts.length ? (parts[0].charAt(0) +
+      (parts.length > 1 ? parts[parts.length - 1].charAt(0) : '')).toUpperCase() : '?';
+    return '<div class="pmono" role="img" aria-label="Portrait of ' +
+      esc(prof.name) + ' (photograph to come)">' + ini + '</div>';
+  }
+
+  /* ================= catalogue ================= */
+  var CAT = null, classIndex = {};   // classId -> {section, cls}
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function classRow(section, cls) {
+    var row = document.createElement('div');
+    row.className = 'classRow';
+    var rowProf = cls.professor || section.professor;
+    row.setAttribute('data-search', (cls.title + ' ' + section.name + ' ' + rowProf.name).toLowerCase());
+    var audioTag = cls.audio ? ' · <span class="cc">professor&rsquo;s voice recorded</span>' : '';
+    row.innerHTML = '<span class="ct">' + esc(cls.title) + '</span>' +
+      '<span class="cc">' + esc(rowProf.name) + '</span>' +
+      '<span class="cc">' + (cls.units ? cls.units.length + ' units' : cls.count + ' papers') + '</span>' +
+      '<span class="src">' + esc(cls.source) + '</span>' + audioTag;
+    var btn = document.createElement('button');
+    btn.className = 'act';
+    btn.textContent = 'Enter the classroom →';
+    btn.addEventListener('click', function () {
+      location.hash = '#class/' + section.id + '/' + cls.id;
+    });
+    row.appendChild(btn);
+    return row;
+  }
+
+  /* ================= the syllabus path (AI & Computing) =================
+     Bill starts his schooling here (Nov 16 2026): the section is a
+     PATH — its classes numbered in the catalogue's own order,
+     fundamentals first, each with a Start/Continue door into its
+     gated lesson, and each marked from the student's own University
+     record (dave_lab_log: gate-step passes and class-grade entries,
+     the same entries the classrooms write). Progress is read fresh
+     every time the catalogue is shown, so finishing a class and
+     coming back to the door shows the path as it now stands. */
+  function classProgress(clsId) {
+    var log = U.loadLog(storage);
+    var passedSteps = {}, grade = null, anyStep = false;
+    log.forEach(function (e) {
+      if (!e || e.classId !== clsId) return;
+      if (e.kind === 'gate-step') {
+        anyStep = true;
+        if (e.status === 'pass') passedSteps[e.step] = true;
+      }
+      if (e.kind === 'class-grade') grade = e;   /* the latest stands */
+    });
+    var passed = Object.keys(passedSteps).length;
+    if (grade && grade.passed > passed) passed = grade.passed;
+    if (grade && grade.complete) {
+      return { state: 'done', btn: 'Review the lesson →',
+        label: '✓ Completed — ' + grade.passed + ' of ' + grade.total + ' steps landed' };
+    }
+    if (passed > 0 || anyStep) {
+      return { state: 'doing', btn: 'Continue →',
+        label: passed > 0
+          ? 'In progress — ' + passed + (passed === 1 ? ' step' : ' steps') + ' landed'
+          : 'In progress' };
+    }
+    return { state: 'todo', btn: 'Start →', label: 'Not started' };
+  }
+
+  function pathRow(section, cls, n) {
+    var row = document.createElement('div');
+    row.className = 'classRow pathRow';
+    row.setAttribute('data-class-id', cls.id);
+    var rowProf = cls.professor || section.professor;
+    row.setAttribute('data-search', (cls.title + ' ' + section.name + ' ' + rowProf.name).toLowerCase());
+    row.innerHTML =
+      '<span class="pnum">' + n + '</span>' +
+      '<span class="ct">' + esc(cls.title) + '</span>' +
+      '<span class="cc">' + esc(rowProf.name) + '</span>' +
+      '<span class="cc">' + (cls.units ? cls.units.length + ' units' : cls.count + ' papers') + '</span>' +
+      '<span class="pprog"></span>';
+    var btn = document.createElement('button');
+    btn.className = 'act';
+    btn.addEventListener('click', function () {
+      location.hash = '#class/' + section.id + '/' + cls.id;
+    });
+    row.appendChild(btn);
+    paintPathRow(row, cls);
+    return row;
+  }
+
+  function paintPathRow(row, cls) {
+    var p = classProgress(cls.id);
+    row.classList.remove('done', 'doing');
+    if (p.state !== 'todo') row.classList.add(p.state);
+    var prog = row.querySelector('.pprog');
+    prog.className = 'pprog ' + p.state;
+    prog.textContent = p.label;
+    row.querySelector('button').textContent = p.btn;
+  }
+
+  /* re-read the record and repaint the path where it stands */
+  function refreshPath() {
+    document.querySelectorAll('.pathRow').forEach(function (row) {
+      var det = row.closest('details.section');
+      var section = det ? classIndex[det.getAttribute('data-section')] : null;
+      if (!section) return;
+      var cls = null;
+      section.classes.forEach(function (c) {
+        if (c.id === row.getAttribute('data-class-id')) cls = c;
+      });
+      if (cls) paintPathRow(row, cls);
+    });
+  }
+
+  function renderCatalogue() {
+    var totals = CAT.totals;
+    $('totals').innerHTML =
+      '<div class="t"><div class="n">' + totals.classes + '</div><div class="k">Classes</div></div>' +
+      '<div class="t"><div class="n">' + totals.papers.toLocaleString() + '</div><div class="k">Papers on syllabuses</div></div>' +
+      '<div class="t"><div class="n">' + totals.sections + '</div><div class="k">Sections</div></div>' +
+      '<div class="t"><div class="n">' + totals.professors + '</div><div class="k">Professors</div></div>';
+    var host = $('sections');
+    host.innerHTML = '';
+    var lastGroup = null;
+    CAT.sections.forEach(function (section) {
+      classIndex[section.id] = section;
+      section.classes.forEach(function (cls) { cls._section = section; });
+      if (section.group !== lastGroup) {
+        lastGroup = section.group;
+        var gl = document.createElement('div');
+        gl.className = 'groupLabel';
+        gl.textContent = lastGroup;
+        host.appendChild(gl);
+      }
+      var det = document.createElement('details');
+      det.className = 'section';
+      det.setAttribute('data-section', section.id);
+      var sum = document.createElement('summary');
+      sum.innerHTML = '<span class="sname">' + esc(section.name) + '</span>' +
+        '<span class="smeta">Dept. head: ' + esc(section.professor.name) + ' · ' +
+        section.classCount + ' classes · ' +
+        (section.paperCount ? section.paperCount.toLocaleString() + ' papers' : 'founding curriculum') +
+        ' — tap to open the section</span>';
+      det.appendChild(sum);
+      var body = document.createElement('div');
+      if (section.note) {
+        var sn = document.createElement('p');
+        sn.className = 'note';
+        sn.textContent = section.note;
+        body.appendChild(sn);
+      }
+      if (section.id === 'ai-computing') {
+        /* the starting path: numbered, in the catalogue's own order */
+        var pn = document.createElement('p');
+        pn.className = 'pathNote';
+        pn.textContent = 'Your syllabus path — take these classes in ' +
+          'order, first to last. Each classroom works the same way: ' +
+          'your professor presents a piece of the lesson, you answer, ' +
+          'and nothing moves on until it lands. Your progress is ' +
+          'marked here from your University record.';
+        body.appendChild(pn);
+        section.classes.forEach(function (cls, i) {
+          body.appendChild(pathRow(section, cls, i + 1));
+        });
+      } else {
+        section.classes.forEach(function (cls) { body.appendChild(classRow(section, cls)); });
+      }
+      det.appendChild(body);
+      host.appendChild(det);
+    });
+    $('buildNote').textContent = 'Built ' + CAT.generated + ' from the College\u2019s own index of the corpus (' +
+      CAT.sources.join(' · ') + '). College class groupings are the index\u2019s own topic headings and ' +
+      'title-theme clusters; no title and no count here was invented.';
+  }
+
+  $('search').addEventListener('input', function () {
+    var q = this.value.trim().toLowerCase();
+    var anyVisible = false;
+    document.querySelectorAll('details.section').forEach(function (det) {
+      var secVisible = false;
+      det.querySelectorAll('.classRow').forEach(function (row) {
+        var hit = !q || row.getAttribute('data-search').indexOf(q) !== -1;
+        row.style.display = hit ? '' : 'none';
+        if (hit) secVisible = true;
+      });
+      det.style.display = secVisible ? '' : 'none';
+      if (q && secVisible) det.open = true;
+      if (secVisible) anyVisible = true;
+    });
+    $('noMatch').style.display = (q && !anyVisible) ? 'block' : 'none';
+  });
+
+  /* ================= classroom ================= */
+  var cur = null;         // {section, cls}
+  var segs = [], segShown = 0, boardTimer = null, boardPlaying = false;
+  var classStart = null, classAccum = 0, classLogged = false;
+
+  function classElapsedMin() {
+    var ms = classAccum + (classStart ? Date.now() - classStart : 0);
+    return ms / 60000;
+  }
+  function logClassSession() {
+    if (!cur || classLogged) return;
+    var mins = classElapsedMin();
+    if (mins < 0.5) { classLogged = true; return; }
+    var entry = U.makeClassEntry({
+      date: new Date().toISOString(), minutes: mins,
+      classId: cur.cls.id, classTitle: cur.cls.title
+    });
+    var tm = Trainer.masteredList();
+    if (tm.length) entry.trainerMastered = tm;
+    U.appendEntry(storage, entry);
+    classLogged = true;
+    refreshHours();
+    showToast('Class logged — ' + U.formatMinutes(entry.minutes) + ' in ' +
+      cur.cls.title + '. It is in your University record.');
+  }
+  document.addEventListener('visibilitychange', function () {
+    if (!cur) return;
+    if (document.hidden && classStart) {
+      classAccum += Date.now() - classStart; classStart = null;
+    } else if (!document.hidden && !classStart && !classLogged) {
+      classStart = Date.now();
+    }
+  });
+  window.addEventListener('pagehide', function () { if (cur) logClassSession(); });
+  setInterval(function () {
+    if (!cur) return;
+    var s = Math.floor(classElapsedMin() * 60);
+    $('classClock').textContent = Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2);
+  }, 500);
+
+  function showSeg(n) {
+    var lines = $('boardLines').children;
+    for (var i = 0; i < lines.length && i < n; i++) lines[i].classList.add('on');
+    segShown = Math.max(segShown, n);
+  }
+  function stopBoard() {
+    boardPlaying = false;
+    if (boardTimer) { clearInterval(boardTimer); boardTimer = null; }
+    $('btnBoardStep').textContent = 'Write it on the board, line by line';
+  }
+  function playBoard() {
+    if (boardPlaying) { stopBoard(); return; }
+    if (segShown >= segs.length) {   // restart
+      segShown = 0;
+      Array.prototype.forEach.call($('boardLines').children, function (el) { el.classList.remove('on'); });
+    }
+    boardPlaying = true;
+    $('btnBoardStep').textContent = '❚❚ Pause the writing';
+    showSeg(segShown + 1);
+    boardTimer = setInterval(function () {
+      if (segShown >= segs.length) { stopBoard(); return; }
+      showSeg(segShown + 1);
+    }, 3400);
+  }
+
+  function openPanel(name) {
+    document.querySelectorAll('.deskbar button[data-panel]').forEach(function (b) {
+      b.classList.toggle('sel', b.getAttribute('data-panel') === name);
+    });
+    document.querySelectorAll('.panel').forEach(function (p) {
+      p.classList.toggle('open', p.id === 'panel-' + name);
+    });
+  }
+  document.querySelectorAll('.deskbar button[data-panel]').forEach(function (b) {
+    b.addEventListener('click', function () { openPanel(b.getAttribute('data-panel')); });
+  });
+
+  function enterClass(section, cls) {
+    if (cur) logClassSession();
+    stopBoard();
+    var audio = $('lessonAudio');
+    audio.pause(); audio.removeAttribute('src'); audio.style.display = 'none';
+    cur = { section: section, cls: cls };
+    classAccum = 0; classStart = Date.now(); classLogged = false;
+    segShown = 0;
+
+    $('viewCatalogue').style.display = 'none';
+    $('viewClassroom').style.display = 'block';
+    $('crumbClass').textContent = section.name + ' · ' + cls.title;
+    var prof = cls.professor || section.professor;
+    cur.prof = prof;
+    $('profCard').innerHTML = profVisual(prof) +
+      '<div><div class="pname">' + esc(prof.name) + '</div>' +
+      '<div class="psec">' + esc(section.name) + '</div></div>';
+
+    $('boardTitle').textContent = cls.title;
+    $('boardSub').textContent = prof.name + ' · Exolex University';
+    var lessonText = cls.lesson || U.buildBoardLesson(cls, section, prof);
+    segs = U.boardSegments(lessonText);
+    var bl = $('boardLines');
+    bl.innerHTML = '';
+    segs.forEach(function (s) {
+      var p = document.createElement('p');
+      p.className = 'chalk';
+      p.textContent = s;
+      bl.appendChild(p);
+    });
+
+    if (cls.audio) {
+      $('lessonIntro').textContent = 'Your professor teaches the opening ' +
+        'lesson aloud, and the board fills as the lesson plays.';
+      $('btnPlay').style.display = '';
+      $('lessonNote').textContent = 'Recorded for this class in ' +
+        prof.name + '\u2019s own voice.';
+      audio.src = cls.audio;
+      audio.style.display = 'block';
+      $('btnPlay').textContent = '▶ Hear the lesson';
+    } else {
+      $('lessonIntro').textContent = 'Your professor\u2019s lesson is on the ' +
+        'board for this class. Recorded voices live in the flagship ' +
+        'classes, the language rooms, and the founding classes at this ' +
+        'stage of the University; every other classroom teaches on the ' +
+        'board, in its own professor\u2019s words.';
+      $('btnPlay').style.display = 'none';
+      $('lessonNote').textContent = 'The lesson text is built from this ' +
+        'class\u2019s real syllabus — the papers and result lines below.';
+    }
+
+    /* syllabus */
+    var syl = $('sylList');
+    syl.innerHTML = '';
+    if (cls.units) {
+      $('sylIntro').textContent = 'A founding-curriculum class: ' +
+        cls.units.length + ' units, taken in order.';
+      cls.units.forEach(function (u, i) {
+        var li = document.createElement('li');
+        li.textContent = (i + 1) + '. ' + u;
+        syl.appendChild(li);
+      });
+      $('btnSylMore').style.display = 'none';
+    } else {
+      $('sylIntro').textContent = cls.count + ' papers, from the Aldred ' +
+        'corpus. Every DOI resolves to the deposit itself.';
+      var renderPapers = function (n) {
+        syl.innerHTML = '';
+        cls.papers.slice(0, n).forEach(function (p) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = 'https://doi.org/' + p.doi;
+          a.target = '_blank'; a.rel = 'noopener';
+          a.textContent = p.t;
+          li.appendChild(a);
+          var d = document.createElement('span');
+          d.className = 'doi';
+          d.textContent = ' — ' + p.doi;
+          li.appendChild(d);
+          if (p.r) {
+            var r = document.createElement('span');
+            r.className = 'res';
+            r.textContent = p.r;
+            li.appendChild(r);
+          }
+          syl.appendChild(li);
+        });
+        $('btnSylMore').style.display = cls.count > n ? '' : 'none';
+      };
+      renderPapers(100);
+      $('btnSylMore').onclick = function () { renderPapers(cls.count); };
+    }
+
+    /* ask */
+    var chips = $('askChips');
+    chips.innerHTML = '';
+    $('askLog').innerHTML = '';
+    U.preparedAnswers(cls, section, prof).forEach(function (qa) {
+      var c = document.createElement('button');
+      c.className = 'chip';
+      c.textContent = qa.q;
+      c.addEventListener('click', function () { ask(qa.q, qa.a); });
+      chips.appendChild(c);
+    });
+    $('askInput').value = '';
+
+    /* homework */
+    $('hwQ').textContent = cls.homework.q;
+    $('hwInput').value = '';
+    $('hwDone').style.display = 'none';
+    $('hwWorked').textContent = cls.homework.worked;
+    $('btnHw').disabled = false;
+
+    /* language trainer: language classes teach by listen-and-repeat */
+    var trActive = Trainer.enter(section, cls, prof);
+    /* the general gate: every other class presents, asks, and checks */
+    if (window.UniGate) UniGate.enter(section, cls, prof);
+    /* the 30-minute lesson room: where a class has full lessons, it
+       takes precedence and hides the trainer/gate boxes itself */
+    if (window.UniLessons30) UniLessons30.enter(section, cls, prof);
+    if (trActive && cls.audio) {
+      $('lessonIntro').textContent = 'The full recorded lesson, start ' +
+        'to finish, is right here — but the trainer above is where the ' +
+        'learning happens: she speaks, you answer, and nothing moves ' +
+        'on until it lands.';
+    }
+
+    openPanel('lesson');
+    window.scrollTo(0, 0);
+  }
+
+  /* "lets start lesson 1" is not a question for the cards — it is
+     the student walking to the desk. Bill typed exactly that into
+     this box (Nov 16 2026) and got the office-hours deflection; from
+     now on a lesson-start intent STARTS the lesson: the language
+     trainer's own Begin in a language room, the general gate's
+     begin everywhere else. Other free questions keep the prepared
+     answers, exactly as before — live Q&A is a later stage and is
+     not faked here. */
+  function isLessonStart(qText) {
+    var t = String(qText || '').toLowerCase().trim().replace(/[.!?]+$/, '');
+    if (!t) return false;
+    if (/^(let'?s\s+)?(start|begin|go)$/.test(t)) return true;
+    if (/^lesson\s+\d+$/.test(t)) return true;
+    if (/\b(start|begin|launch)\b[^.?!]*\b(lesson|class|course|unit|gate|steps?)\b/.test(t)) return true;
+    if (/^(i\s+)?(want|ready)\b[^.?!]*\b(start|begin)\b/.test(t)) return true;
+    return false;
+  }
+  function startLessonFromAsk() {
+    if (window.UniLessons30 && UniLessons30.start()) return true;
+    var tb = $('trainerBox');
+    if (tb && tb.style.display !== 'none') {
+      var b = $('trBegin');
+      if (b && b.style.display !== 'none') b.click();
+      return true;
+    }
+    if (window.UniGate && UniGate.start()) return true;
+    return false;
+  }
+
+  function ask(qText, prepared) {
+    var log = $('askLog');
+    var you = document.createElement('div');
+    you.className = 'bubble you';
+    you.innerHTML = '<div class="who">You</div>';
+    you.appendChild(document.createTextNode(qText));
+    log.appendChild(you);
+    if (!prepared && isLessonStart(qText) && startLessonFromAsk()) {
+      var started = document.createElement('div');
+      started.className = 'bubble';
+      started.innerHTML = '<div class="who">' + esc(cur.prof.name) + '</div>';
+      started.appendChild(document.createTextNode(
+        'Then we begin. Your first piece is on your desk in the ' +
+        'lesson panel — I present it, you answer out loud or by ' +
+        'typing, and we do not move on until it lands.'));
+      log.appendChild(started);
+      openPanel('lesson');
+      var gb = document.getElementById('gateBox');
+      var l30 = document.getElementById('lessons30Box');
+      var anchor = (l30 && l30.style.display !== 'none') ? l30
+        : (gb && gb.style.display !== 'none') ? gb : $('trainerBox');
+      if (anchor) anchor.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      return;
+    }
+    var ans = prepared || U.matchAnswer(qText, cur.cls, cur.section, cur.prof) || U.LIVE_NOTE;
+    var bub = document.createElement('div');
+    bub.className = 'bubble';
+    bub.innerHTML = '<div class="who">' + esc(cur.prof.name) + '</div>';
+    bub.appendChild(document.createTextNode(ans));
+    log.appendChild(bub);
+    bub.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  }
+  $('btnAsk').addEventListener('click', function () {
+    var v = $('askInput').value.trim();
+    if (!v) return;
+    $('askInput').value = '';
+    ask(v, null);
+  });
+  $('askInput').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') $('btnAsk').click();
+  });
+
+  $('btnHw').addEventListener('click', function () {
+    if (!$('hwInput').value.trim()) {
+      showToast('Write your answer first — even a rough one. The comparison only works on a real attempt.');
+      return;
+    }
+    $('hwDone').style.display = 'block';
+    this.disabled = true;
+    var bl = $('boardLines');
+    var p = document.createElement('p');
+    p.className = 'chalk worked on';
+    p.textContent = 'Homework set — the worked answer is on your desk. Compare honestly.';
+    bl.appendChild(p);
+    showToast('Homework handed in. The worked answer is on your desk — compare, honestly.');
+  });
+
+  $('btnPlay').addEventListener('click', function () {
+    var audio = $('lessonAudio');
+    if (!cur || !cur.cls.audio) return;
+    if (audio.paused) { audio.play(); this.textContent = '❚❚ Pause the lesson'; }
+    else { audio.pause(); this.textContent = '▶ Hear the lesson'; }
+  });
+  $('lessonAudio').addEventListener('timeupdate', function () {
+    if (!this.duration || !segs.length) return;
+    var frac = this.currentTime / this.duration;
+    showSeg(Math.ceil(frac * segs.length));
+  });
+  $('lessonAudio').addEventListener('ended', function () {
+    $('btnPlay').textContent = '▶ Hear the lesson again';
+    showSeg(segs.length);
+  });
+  $('btnBoardStep').addEventListener('click', playBoard);
+  $('board').addEventListener('click', function () {
+    if (!boardPlaying && segShown < segs.length) showSeg(segShown + 1);
+  });
+
+  function leaveClassroom() {
+    if (cur) { logClassSession(); cur = null; }
+    Trainer.leave();
+    if (window.UniGate) UniGate.leave();
+    if (window.UniLessons30) UniLessons30.leave();
+    stopBoard();
+    var audio = $('lessonAudio');
+    audio.pause();
+    $('viewClassroom').style.display = 'none';
+    $('viewCatalogue').style.display = 'block';
+    refreshPath();
+    window.scrollTo(0, 0);
+  }
+  $('backDoor').addEventListener('click', function (e) {
+    e.preventDefault();
+    if (location.hash) history.pushState(null, '', location.pathname);
+    leaveClassroom();
+  });
+
+  function route() {
+    var m = location.hash.match(/^#class\/([^/]+)\/(.+)$/);
+    if (m && CAT) {
+      var section = classIndex[decodeURIComponent(m[1])];
+      if (section) {
+        var cls = null;
+        section.classes.forEach(function (c) {
+          if (c.id === decodeURIComponent(m[2])) cls = c;
+        });
+        if (cls) { enterClass(section, cls); return; }
+      }
+    }
+    if (cur) leaveClassroom();
+  }
+  window.addEventListener('hashchange', route);
+
+  /* ================= language trainer (Rosetta-style) =================
+     Bill's spec (Nov 16 2026): the professor models a phrase, it
+     PAUSES, the mic listens (the green bar is the student's voice),
+     the pronunciation is checked, and the lesson does NOT advance
+     until the phrase lands. Fallbacks are stated plainly on the page:
+     a browser that cannot listen gets record-and-playback self-check,
+     never a dead end. */
+  var TR_DATA = null, trPendingClass = null;
+  var VQ = (window.UNI_BUILD && window.UNI_BUILD !== 'unstamped')
+    ? '?v=' + encodeURIComponent(window.UNI_BUILD) : '';
+  fetch('/lab/university/trainer-data.json' + VQ).then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (j) {
+      if (j && j.classes) TR_DATA = j.classes;
+      if (TR_DATA && trPendingClass && cur && cur.cls.id === trPendingClass) {
+        trPendingClass = null;
+        Trainer.enter(cur.section, cur.cls, cur.prof);
+      }
+    })
+    .catch(function () { /* no trainer data: classrooms stay as they were */ });
+
+  var Trainer = (function () {
+    var T = window.LangTrainer;
+    var data = null, tCls = null, tProf = null;
+    var idx = 0, attempts = 0, mastered = {}, praiseCount = 0;
+    var mode = 'sr';            /* 'sr' = speech recognition | 'self' = self-check */
+    var started = false, busy = false;
+    var stream = null, actx = null, analyser = null, waveRAF = null;
+    var rec = null, listening = false, heardFinal = null, recErrorShown = false;
+    var mediaRec = null, recChunks = [], ownUrl = null;
+    var emptyStreak = 0;   /* consecutive SR outcomes with nothing usable heard */
+    var passTyped = false; /* the current pass came from the typing box */
+
+    function $(id) { return document.getElementById(id); }
+    function step() { return data.steps[idx]; }
+    function profFirst() {
+      var nm = String(tProf.name || '').replace(/^(Professor|Profesora|Professore|Professora|Madame|Herr|Mevrouw)\s+/, '');
+      return nm.split(/\s+/)[0] || 'your professor';
+    }
+    function setStatus(msg, kind) {
+      var s = $('trStatus');
+      s.textContent = msg;
+      s.className = kind || '';
+      s.id = 'trStatus';
+    }
+    function playClip(src, rate) {
+      return new Promise(function (resolve) {
+        var a = $('trAudio');
+        a.pause();
+        a.playbackRate = rate || 1;
+        a.src = src;
+        var done = function () {
+          a.removeEventListener('ended', done);
+          a.removeEventListener('error', done);
+          resolve();
+        };
+        a.addEventListener('ended', done);
+        a.addEventListener('error', done);
+        var p = a.play();
+        if (p && p.catch) p.catch(function () { resolve(); });
+      });
+    }
+    function playSlow() {
+      var st = step();
+      if (st.slowAudio) return playClip(st.slowAudio);
+      return playClip(st.audio, 0.7);
+    }
+
+    /* ----- the green bar: the student's own voice ----- */
+    function startWave() {
+      if (!analyser) return;
+      var cv = $('trWave'), ctx = cv.getContext('2d');
+      var arr = new Uint8Array(analyser.frequencyBinCount);
+      cancelAnimationFrame(waveRAF);
+      (function draw() {
+        waveRAF = requestAnimationFrame(draw);
+        analyser.getByteFrequencyData(arr);
+        ctx.fillStyle = '#26332a'; ctx.fillRect(0, 0, cv.width, cv.height);
+        var bars = 48, bw = cv.width / bars;
+        for (var i = 0; i < bars; i++) {
+          var v = arr[Math.floor(i * arr.length / (bars * 2))] / 255;
+          var h = Math.max(3, v * (cv.height - 8));
+          ctx.fillStyle = '#57d977';
+          ctx.fillRect(i * bw + 1, (cv.height - h) / 2, bw - 2, h);
+        }
+      })();
+    }
+    function idleWave() {
+      cancelAnimationFrame(waveRAF);
+      var cv = $('trWave');
+      if (!cv) return;
+      var ctx = cv.getContext('2d');
+      ctx.fillStyle = '#26332a'; ctx.fillRect(0, 0, cv.width, cv.height);
+      ctx.fillStyle = 'rgba(87,217,119,.45)';
+      ctx.fillRect(0, cv.height / 2 - 1, cv.width, 2);
+    }
+    function getMic() {
+      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia)
+        return Promise.reject(new Error('no-mic-api'));
+      return navigator.mediaDevices.getUserMedia({ audio: true }).then(function (s) {
+        stream = s;
+        var AC = window.AudioContext || window.webkitAudioContext;
+        if (AC) {
+          actx = new AC();
+          analyser = actx.createAnalyser();
+          analyser.fftSize = 2048;
+          actx.createMediaStreamSource(s).connect(analyser);
+        }
+      });
+    }
+
+    /* ----- dots + progress ----- */
+    function renderDots() {
+      var host = $('trDots');
+      host.innerHTML = '';
+      data.steps.forEach(function (st, i) {
+        var d = document.createElement('button');
+        d.className = 'dot' +
+          (mastered[st.target] ? ' done' : '') +
+          (i === idx ? ' cur' : '');
+        d.title = st.display;
+        d.setAttribute('aria-label', 'Phrase ' + (i + 1) + ': ' + st.display);
+        d.addEventListener('click', function () { if (started && !busy) showStep(i); });
+        host.appendChild(d);
+      });
+    }
+    function renderProgress() {
+      var done = data.steps.filter(function (s) { return mastered[s.target]; }).length;
+      $('trProgress').textContent = 'Phrase ' + (idx + 1) + ' of ' + data.steps.length +
+        ' · ' + done + ' landed' +
+        (attempts ? ' · ' + attempts + (attempts === 1 ? ' try' : ' tries') + ' on this one' : '');
+    }
+
+    /* ----- the step flow ----- */
+    function showStep(i) {
+      idx = i; attempts = 0;
+      hideBoardCheck();
+      var st = step();
+      $('trPhrase').textContent = st.display;
+      $('trMeaning').textContent = st.meaning;
+      /* trHeard is NOT cleared here: the last transcript stays on
+         screen under the next phrase until the next attempt replaces
+         it — the student can always see what was heard. It is cleared
+         when a new listen starts, and on entering the classroom. */
+      passTyped = false;
+      var ti0 = $('trType'); if (ti0) ti0.value = '';
+      $('trYes').style.display = 'none';
+      $('trNo').style.display = 'none';
+      $('trRecord').textContent = '🎙 Record yourself';
+      renderDots(); renderProgress();
+      if (!started) {
+        setStatus('Tap Begin — ' + profFirst() + ' speaks first, then it is your turn.', '');
+        return;
+      }
+      modelThenListen();
+    }
+    function modelThenListen() {
+      busy = true;
+      setStatus('Listen to ' + profFirst() + '…', '');
+      $('trSay').style.display = 'none';
+      playClip(step().audio).then(function () {
+        busy = false;
+        if (mode === 'sr') {
+          setStatus('Your turn — say it out loud.', '');
+          $('trSay').style.display = '';
+          setTimeout(function () { if (!busy && started) startListening(); }, 450);
+        } else {
+          showSelfStep();
+        }
+      });
+    }
+
+    /* ----- speech recognition: the gate ----- */
+    function startListening() {
+      if (mode !== 'sr' || listening || busy || !started) return;
+      var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!SR) { setSelfMode('This browser can\u2019t listen and check pronunciation — Chrome and Edge can. Until then, the honest fallback: record yourself, play it back next to hers, and judge truly — or type the phrase in the box below; it is checked exactly the same way.'); showSelfStep(); return; }
+      rec = new SR();
+      rec.lang = data.lang;
+      rec.interimResults = true;
+      rec.maxAlternatives = 3;
+      heardFinal = null; recErrorShown = false;
+      rec.onresult = function (ev) {
+        var interim = '', alts = [];
+        for (var i = ev.resultIndex; i < ev.results.length; i++) {
+          var r = ev.results[i];
+          if (r.isFinal) { for (var k = 0; k < r.length; k++) alts.push(r[k].transcript); }
+          else interim += r[0].transcript;
+        }
+        if (interim) $('trHeard').textContent = 'It heard: \u201c' + interim + '\u2026\u201d';
+        if (alts.length) heardFinal = { text: alts[0], alts: alts };
+      };
+      rec.onerror = function (ev) {
+        recErrorShown = true;
+        if (ev.error === 'not-allowed' || ev.error === 'service-not-allowed') {
+          setSelfMode('The microphone is off for this page, so ' + profFirst() +
+            ' can\u2019t check your pronunciation automatically. The honest fallback: ' +
+            'record yourself, play it back next to hers, and judge truly — or type ' +
+            'the phrase in the box below and it is checked exactly the same way.');
+          showSelfStep();
+        } else if (ev.error === 'network') {
+          setSelfMode('The browser\u2019s listening service could not be reached, so for ' +
+            'now you check yourself against her voice — honestly. The saying is still ' +
+            'the learning — and typing the phrase in the box below is checked exactly ' +
+            'the same way.');
+          showSelfStep();
+        } else if (ev.error === 'no-speech') {
+          noteEmptyHeard();
+        } else {
+          noteEmptyHeard();
+        }
+      };
+      rec.onend = function () {
+        var was = listening;
+        listening = false; idleWave();
+        if (heardFinal) { var hf = heardFinal; heardFinal = null; grade(hf); }
+        else if (was && !recErrorShown && mode === 'sr' && !busy) {
+          noteEmptyHeard();
+        }
+      };
+      try {
+        $('trHeard').textContent = '';
+        rec.start();
+        listening = true;
+        startWave();
+        setStatus(profFirst() + ' is listening — say it now.', '');
+        $('trSay').style.display = 'none';
+      } catch (e) { listening = false; }
+    }
+    /* ----- what it heard: always on the record -----
+       Every attempt — pass, miss, or nothing usable — ends with the
+       exact transcript on screen. No silent failures, no bare loops. */
+    function showHeard(txt, typed) {
+      $('trHeard').textContent = (txt == null || txt === '')
+        ? 'It heard: (nothing at all)'
+        : (typed ? 'You typed: \u201c' : 'It heard: \u201c') + txt + '\u201d';
+    }
+    /* Two unusable listening outcomes in a row and the student is
+       switched to typing with one plain line — never an endless
+       "say it again" loop (the live failure of Nov 16, 03:57). */
+    function noteEmptyHeard() {
+      showHeard(null);
+      emptyStreak++;
+      if (emptyStreak >= 2 && mode === 'sr' && started) {
+        fallToTyping('The listening keeps missing you, so we switch to typing: ' +
+          'type the phrase in the box and tap \u201cCheck my typing\u201d — it is ' +
+          'graded exactly the same way, green check and all.');
+        return;
+      }
+      setStatus('It heard nothing that time — tap \u201cYour turn\u201d and say it once more, out loud.', '');
+      $('trSay').style.display = '';
+    }
+    function fallToTyping(why) {
+      setSelfMode(why);
+      showSelfStep();
+      setStatus('Type the phrase in the box below and tap \u201cCheck my typing\u201d.', '');
+      var ti = $('trType');
+      if (ti) { try { ti.focus(); } catch (e) {} }
+    }
+    function grade(hf) {
+      busy = true;
+      var usable = hf.alts.filter(function (a) { return T.normalizeSpeech(a); });
+      if (!usable.length) { busy = false; noteEmptyHeard(); return; }
+      emptyStreak = 0;
+      attempts++;
+      var best = null;
+      usable.forEach(function (alt) {
+        var g = T.gradeAttempt(step().target, alt, step().variants);
+        if (!best || g.score > best.score) best = { g: g, heard: alt };
+      });
+      showHeard(best.heard, false);
+      renderProgress();
+      if (best.g.pass) onPass();
+      else onMiss();
+    }
+    /* The guaranteed route: typing. Same matcher, same green check;
+       the log records that the pass was typed. */
+    function gradeTyped() {
+      if (busy) return;
+      if (!started) { setStatus('Tap \u201cBegin\u201d first — ' + profFirst() + ' says it, then you answer.', ''); return; }
+      var v = $('trType').value.replace(/\s+/g, ' ').trim();
+      if (!v) { setStatus('Type the phrase first — then tap \u201cCheck my typing\u201d.', ''); return; }
+      busy = true;
+      attempts++;
+      var g = T.gradeAttempt(step().target, v, step().variants);
+      showHeard(v, true);
+      renderProgress();
+      if (g.pass) { passTyped = true; onPass(); }
+      else {
+        busy = false;
+        setStatus('Not yet — compare what you typed with her phrase above, letter by letter, and try again.', 'bad');
+        try { $('trType').select(); } catch (e) {}
+      }
+    }
+    function showBoardCheck() { $('trBoardCheck').classList.add('on'); }
+    function hideBoardCheck() { $('trBoardCheck').classList.remove('on'); }
+    function onPass() {
+      var st = step();
+      var isNew = !mastered[st.target];
+      mastered[st.target] = true;
+      showBoardCheck();   /* the big green check lands WITH her praise */
+      if (isNew) {
+        T.recordMastery(storage, {
+          date: new Date().toISOString(), classId: tCls.id,
+          classTitle: tCls.title, phrase: st.target, selfChecked: mode === 'self',
+          typed: passTyped
+        });
+      }
+      var pi = praiseCount++ % data.praise.length;
+      setStatus(data.praise[pi], 'good');
+      renderDots(); renderProgress();
+      playClip(data.praiseAudio[pi]).then(function () {
+        busy = false;
+        advance();
+      });
+    }
+    function onMiss() {
+      hideBoardCheck();
+      setStatus('Not yet. ' + profFirst() + ' says it once more — slowly this time.', 'bad');
+      var ri = (attempts - 1) % data.retryAudio.length;
+      playClip(data.retryAudio[ri]).then(function () { return playSlow(); })
+        .then(function () {
+          busy = false;
+          if (mode === 'sr') startListening();
+          else showSelfStep();
+        });
+    }
+    function advance() {
+      if (idx + 1 < data.steps.length) { showStep(idx + 1); return; }
+      var remaining = data.steps.filter(function (s) { return !mastered[s.target]; });
+      if (!remaining.length) { completeLesson(); return; }
+      setStatus('That is the end of the set — ' + remaining.length +
+        (remaining.length === 1 ? ' phrase still' : ' phrases still') +
+        ' to land. Tap a hollow dot above to go back to one.', '');
+      renderProgress();
+    }
+    function completeLesson() {
+      renderDots(); renderProgress();
+      var msg = tCls.id === 'espanol-i-speak-from-zero'
+        ? 'Every phrase landed. All of lesson one is yours, Bill — and tonight\u2019s line most of all: Buenas noches, mi amor. Say it like you mean it, because you do.'
+        : 'Every phrase in this set landed, out loud and checked. That is how a language actually starts — the next lesson builds on these.';
+      setStatus(msg, 'good');
+      showToast('Lesson set complete — every phrase landed in ' + tCls.title + '.');
+    }
+
+    /* ----- self-check fallback ----- */
+    function setSelfMode(why) {
+      if (mode === 'self') return;
+      mode = 'self';
+      var n = $('trFallbackNote');
+      n.style.display = '';
+      n.textContent = why;
+      $('trSay').style.display = 'none';
+    }
+    function showSelfStep() {
+      if (window.MediaRecorder && stream) $('trRecord').style.display = '';
+      else { $('trYes').style.display = ''; $('trNo').style.display = ''; }
+      setStatus('Your turn — say it out loud' +
+        (window.MediaRecorder && stream ? ', record it, and compare it with hers.' : ', then judge honestly: did it sound like her?'), '');
+    }
+    function toggleRecord() {
+      if (mediaRec && mediaRec.state === 'recording') { mediaRec.stop(); return; }
+      if (!stream) {
+        $('trYes').style.display = ''; $('trNo').style.display = '';
+        setStatus('No microphone here — say it out loud anyway, then judge honestly below.', '');
+        return;
+      }
+      recChunks = [];
+      try { mediaRec = new MediaRecorder(stream); } catch (e) {
+        $('trYes').style.display = ''; $('trNo').style.display = '';
+        return;
+      }
+      mediaRec.ondataavailable = function (e) { if (e.data.size) recChunks.push(e.data); };
+      mediaRec.onstop = function () {
+        $('trRecord').textContent = '🎙 Record yourself';
+        idleWave();
+        if (ownUrl) URL.revokeObjectURL(ownUrl);
+        ownUrl = URL.createObjectURL(new Blob(recChunks, { type: 'audio/webm' }));
+        var a = $('trAudio');
+        a.playbackRate = 1; a.src = ownUrl;
+        var p = a.play(); if (p && p.catch) p.catch(function () {});
+        $('trYes').style.display = ''; $('trNo').style.display = '';
+        setStatus('That was you. Hear her once more if you need to — then judge honestly.', '');
+      };
+      mediaRec.start();
+      startWave();
+      $('trRecord').textContent = '⏹ Stop recording';
+      setStatus('Recording — say it now.', '');
+    }
+
+    /* ----- session control ----- */
+    function begin() {
+      if (started) return;
+      started = true;
+      $('trBegin').style.display = 'none';
+      $('trHear').style.display = '';
+      $('trSlow').style.display = '';
+      $('trSkip').style.display = '';
+      var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+      getMic().catch(function () { /* mic unavailable: fallback decides below */ })
+        .then(function () {
+          if (!SR) {
+            setSelfMode('This browser can\u2019t listen and check pronunciation — Chrome and Edge can. Until then, the honest fallback: record yourself, play it back next to hers, and judge truly — or type each phrase in the box below; it is checked exactly the same way, green check and all.');
+          }
+          /* If the waveform stream failed (mic denied for the green
+             bar), we STAY in SR mode: the recognizer has its own
+             microphone path and may work perfectly — the old code
+             abandoned listening here, which on Android could strand a
+             student whose only problem was the waveform's permission.
+             If listening truly is blocked, the recognizer's own error
+             switches us to self-check with the reason stated. */
+          playClip(data.welcomeAudio).then(function () { showStep(idx); });
+        });
+    }
+    function enter(section, clsIn, profIn) {
+      leave();
+      if (!TR_DATA) { trPendingClass = clsIn.id; $('trainerBox').style.display = 'none'; return false; }
+      if (!TR_DATA[clsIn.id] || !T) {
+        $('trainerBox').style.display = 'none';
+        return false;
+      }
+      data = TR_DATA[clsIn.id]; tCls = clsIn; tProf = profIn;
+      mastered = T.loadMastered(storage, clsIn.id);
+      idx = 0; attempts = 0; praiseCount = 0;
+      mode = 'sr'; started = false; busy = false;
+      emptyStreak = 0; passTyped = false;
+      $('trainerBox').style.display = '';
+      $('trHeard').textContent = '';
+      $('trTitle').textContent = 'Speak with ' + profFirst() + ' — listen, then say it back';
+      $('trBegin').style.display = '';
+      $('trBegin').textContent = 'Begin — ' + profFirst() + ' speaks first';
+      ['trHear', 'trSlow', 'trSay', 'trRecord', 'trYes', 'trNo', 'trSkip']
+        .forEach(function (id) { $(id).style.display = 'none'; });
+      $('trFallbackNote').style.display = 'none';
+      var firstOpen = data.steps.findIndex(function (s) { return !mastered[s.target]; });
+      idx = firstOpen === -1 ? 0 : firstOpen;
+      showStep(idx);
+      idleWave();
+      return true;
+    }
+    function leave() {
+      hideBoardCheck();
+      if (rec) { try { rec.abort(); } catch (e) {} rec = null; }
+      listening = false;
+      if (mediaRec && mediaRec.state === 'recording') { try { mediaRec.stop(); } catch (e) {} }
+      if (stream) { stream.getTracks().forEach(function (t) { t.stop(); }); stream = null; }
+      if (actx) { try { actx.close(); } catch (e) {} actx = null; analyser = null; }
+      cancelAnimationFrame(waveRAF);
+      var a = $('trAudio');
+      if (a) { a.pause(); a.removeAttribute('src'); }
+      started = false; busy = false;
+    }
+    function masteredList() {
+      if (!data || !tCls || !cur || cur.cls.id !== tCls.id) return [];
+      return Object.keys(mastered);
+    }
+
+    $('trBegin').addEventListener('click', begin);
+    $('trHear').addEventListener('click', function () { if (!busy) playClip(step().audio); });
+    $('trSlow').addEventListener('click', function () { if (!busy) playSlow(); });
+    $('trSay').addEventListener('click', startListening);
+    $('trRecord').addEventListener('click', toggleRecord);
+    $('trYes').addEventListener('click', function () {
+      if (busy) return;
+      busy = true; attempts++;
+      $('trYes').style.display = 'none'; $('trNo').style.display = 'none';
+      onPass();
+    });
+    $('trNo').addEventListener('click', function () {
+      if (busy) return;
+      busy = true; attempts++;
+      $('trYes').style.display = 'none'; $('trNo').style.display = 'none';
+      onMiss();
+    });
+    $('trSkip').addEventListener('click', function (e) {
+      e.preventDefault();
+      if (!started || busy) return;
+      advance();
+    });
+    $('trTypeGo').addEventListener('click', gradeTyped);
+    $('trType').addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') { e.preventDefault(); gradeTyped(); }
+    });
+
+    return { enter: enter, leave: leave, masteredList: masteredList };
+  })();
+
+  /* ================= load ================= */
+  fetch('/lab/university/catalogue.json' + VQ).then(function (r) {
+    if (!r.ok) throw new Error('catalogue ' + r.status);
+    return r.json();
+  }).then(function (data) {
+    CAT = data;
+    renderCatalogue();
+    route();
+  }).catch(function (e) {
+    var host = $('sections');
+    var d = document.createElement('div');
+    d.id = 'loadErr'; d.style.display = 'block';
+    d.textContent = 'The catalogue could not be loaded (' + e.message + '). ' +
+      'The classes are safe in the index; this page simply could not fetch them.';
+    host.appendChild(d);
+  });
+})();
+</script>
+</body>
+</html>
