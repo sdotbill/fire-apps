@@ -21,3 +21,8 @@
 /what-we-do/ / 301
 /picks/record/ /record/ 301
 /papers/the-equatorial-witness/ /papers/ 301
+# Added Nov 17, 2026 (SEO §1.5 same-host + §2.1): the university alias and
+# the Dave homepage redirect, and page 1 of the papers register.
+/lab/university/ /exolex-university/ 301
+/dave-door/ / 301
+/papers/page/1/ /papers/ 301
