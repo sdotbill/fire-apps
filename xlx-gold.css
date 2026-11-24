@@ -1,0 +1,103 @@
+/* XLX shared white-and-gold design system — Exolex + Premium Marketing Solutions.
+   One system for both sites (Prime Two spec, Nov 24 2026; fixes review Finding A).
+   Tokens are the house gold values (identical to background.css / pms.css), so this
+   is the SAME gold system the rest of the sites use — not a competing one.
+   Presentation only: this file changes how pages look, never what they say.
+   White surfaces, gold as the primary accent, dark warm ink, accessible contrast.
+   Dave and PMS keep distinct identities via the body class:
+     <body class="brand-dave">  — Exolex/Dave pages (brand wordmark in gold)
+     <body class="brand-pms">   — PMS pages (brand wordmark in dark ink)
+   Load with: <link rel="stylesheet" href="/xlx-gold.css">
+   Per-page container width is set by a one-line inline style, e.g.
+   <style>:root{--max:1160px}</style> (default 1120px). */
+
+:root{
+  color-scheme:light;
+  --paper:#faf7ef;      /* warm white page */
+  --paper2:#f3ecdb;     /* warm cream alt surface */
+  --card:#fffdf6;       /* white card */
+  --surface:#ffffff;    /* pure white */
+  --ink:#2a2118;        /* dark warm ink — body text */
+  --ink-soft:#5c5142;   /* muted text */
+  --ink-faint:#97865c;  /* faint text */
+  --gold:#c9a227;       /* primary gold — rules, borders, large display */
+  --gold-deep:#8a6508;  /* text-safe gold — links, eyebrows, tags, buttons */
+  --gold-bright:#eed268;/* highlight gold */
+  --gold2:#d9b23a;      /* secondary gold */
+  --gold-deeper:#6e5206;/* button hover gold */
+  --line:rgba(160,124,20,.35);      /* gold-tinted border */
+  --line-soft:rgba(160,124,20,.18); /* soft gold-tinted border */
+  --dark:#171208;       /* darkest ink */
+  --shadow:0 10px 34px rgba(138,101,8,.16);
+  --radius:16px;
+  --max:1120px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--paper);scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img,video{max-width:100%;height:auto}
+a{color:var(--gold-deep)}
+a:hover{color:var(--ink)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+::selection{background:var(--gold-bright);color:var(--ink)}
+
+/* ---------- layout ---------- */
+.wrap{width:min(var(--max),calc(100% - 40px));margin:0 auto}
+
+/* ---------- header / nav ---------- */
+header{border-top:4px solid var(--gold);border-bottom:1px solid var(--line);background:var(--paper)}
+nav{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:72px}
+.brand{font-weight:800;letter-spacing:.08em;text-decoration:none}
+.brand-dave .brand{color:var(--gold-deep)}
+.brand-pms .brand{color:var(--ink)}
+.navlinks,.links{display:flex;gap:22px;flex-wrap:wrap}
+.navlinks a,.links a{text-decoration:none;font-size:.92rem;color:var(--ink)}
+.navlinks a:hover,.links a:hover{color:var(--gold-deep)}
+
+/* ---------- hero ---------- */
+.hero{padding:76px 0 58px;background:linear-gradient(180deg,var(--card),var(--paper))}
+.brand-dave .hero{background:radial-gradient(ellipse at 75% 0,rgba(201,162,39,.16),transparent 55%),linear-gradient(180deg,var(--card),var(--paper))}
+.eyebrow{color:var(--gold-deep);text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:800}
+h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.05;max-width:850px;margin:16px 0;color:var(--ink)}
+h2{font-size:clamp(1.7rem,3vw,2.5rem);line-height:1.15;margin:0 0 16px;color:var(--ink)}
+h2::before{content:"";display:block;width:56px;height:4px;background:var(--gold);margin-bottom:14px;border-radius:2px}
+h3{margin:0 0 8px;color:var(--ink)}
+.lead{font-size:1.2rem;color:var(--ink-soft);max-width:760px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-block;padding:12px 19px;border-radius:7px;text-decoration:none;font-weight:750;background:var(--gold-deep);color:#fff}
+.btn:hover{background:var(--gold-deeper);color:#fff}
+.btn.secondary,.btn.alt{background:var(--surface);color:var(--ink);border:1px solid var(--gold)}
+.btn.secondary:hover,.btn.alt:hover{border-color:var(--gold-deep);color:var(--gold-deep)}
+
+/* ---------- sections / cards ---------- */
+.section{padding:68px 0}
+.section.alt{background:var(--paper2)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+.grid.cols-2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;box-shadow:var(--shadow)}
+.card p{color:var(--ink-soft);margin-bottom:0}
+.pill{display:inline-block;border:1px solid var(--gold);border-radius:99px;padding:3px 10px;color:var(--gold-deep);font-size:.8rem;margin-bottom:12px}
+.tag{font-size:.78rem;color:var(--gold-deep);text-transform:uppercase;letter-spacing:.1em;font-weight:800}
+
+/* ---------- notes / notices ---------- */
+.note,.notice{border-left:4px solid var(--gold);padding:16px 19px;background:var(--paper2);color:var(--ink-soft);margin:25px 0}
+
+/* ---------- pricing / steps (dave-for-business) ---------- */
+.price{font-size:2.5rem;font-weight:900;letter-spacing:-.04em;color:var(--gold-deep)}
+.price small{font-size:1rem;font-weight:600;color:var(--ink-soft);letter-spacing:0}
+.steps{padding-left:22px}
+.steps li{padding:6px 0}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--ink-soft)}
+
+/* ---------- mobile ---------- */
+@media(max-width:760px){
+  .navlinks,.links{display:none}
+  .grid,.grid.cols-2{grid-template-columns:1fr}
+  .hero{padding:54px 0 42px}
+  .section{padding:48px 0}
+}
