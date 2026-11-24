@@ -31,7 +31,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Top-level directories that belong to PMS (excluded from the Dave tree).
-PMS_DIRS = {"picks", "record", "contact", "notebook", "what-we-do"}
+PMS_DIRS = {"picks", "record", "contact", "notebook", "what-we-do", "dave-for-business"}
 # Root files that belong to PMS (excluded; index.html is replaced, not
 # merely excluded).
 PMS_ROOT_FILES = {"predictions.html", "the-bridge.html"}

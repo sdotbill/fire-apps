@@ -67,6 +67,7 @@ PMS_PREFIXES = (
     "/contact/",
     "/the-bridge.html",
     "/notebook/",
+    "/dave-for-business/",
 )
 # App surfaces / machinery: never in either sitemap.
 EXCLUDE_PREFIXES = ("/lab/", "/dashboard/")
