@@ -87,7 +87,7 @@ explicit pass before any submission.
   Appendix B row records the 9 dust-curve/threshold gates.
 - Appendix B "Bibliography" row: "LaTeX not compiled (no toolchain on
   this machine)" → compile record (25 November 2026, pdfTeX
-  3.141592653-2.6-1.40.25, 14 pages).
+  3.141592653-2.6-1.40.25, 15 pages).
 - Planck-regime and closure limitations remain prominent (§5 domain
   statement, Conclusion, §9). 98/98 is arithmetic self-consistency, not
   independent physical validation — the manuscript already says so
@@ -97,8 +97,8 @@ explicit pass before any submission.
 
 | File | sha256 | Size / lines |
 |---|---|---|
-| `aldred-limit-v5.tex` (revised) | `e0aced485e128edadedf173e4aef0f022cef0ecb66c678666ab67731f64569cd` | 914 lines |
-| `aldred-limit-v5.pdf` (revised) | `b2d17f1421b6772507021088c04662d6d8d897f0fbe3edb94f03acf641fdece3` | 434,618 bytes, 14 pages |
+| `aldred-limit-v5.tex` (revised, final) | `3bcefb5df01ade0a09bc4cfe13593b72d6f18eb91e29f4ec4d46d13df7250925` | 914 lines |
+| `aldred-limit-v5.pdf` (revised, final) | `d06131946a1b58a6649f2d6895795bb099f92026b85ec0643b512b920a280878` | 435,163 bytes, 15 pages |
 | `aldred-limit-v5.tex` (pre-revision, 10:06) | `3dc4a2bf1f4c8b3008f727fe911f85da4ccddc95f5d9741692a9f2355e38de09` | 889 lines |
 | `aldred-limit-v5.pdf` (pre-revision, 10:06) | `d0a433ebb4606e02593efba53d7d6c51fa5198f70e04c21183b86352b0e18350` | 432,885 bytes, 14 pages |
 
@@ -130,12 +130,22 @@ Pre-revision files preserved in the build folder:
   update attempt; a stale apt lock from it was waited out, not forced.
 - **Compile:** `/usr/bin/pdflatex -interaction=nonstopmode
   aldred-limit-v5.tex`, run twice. Both passes exit 0, **0 errors**.
-  `Output written on aldred-limit-v5.pdf (14 pages, 434618 bytes).`
-  Log: `aldred-limit-v5.log` (25 Nov 2026 19:23).
-- **One pre-existing warning:** a single overfull `\hbox` (1266.31pt) in
-  the Appendix B verification table — identical in the pre-revision log
-  (lines 774–797, now 798–822 after the added lines). A table row running
-  past the margin, not a compile failure; not caused by this revision.
+  `Output written on aldred-limit-v5.pdf (15 pages, 435163 bytes).`
+  Log: `aldred-limit-v5.log` (25 Nov 2026 20:06).
+- **Layout fix (25 Nov 2026, Prime Two blocker):** the Appendix B
+  verification table (`tab:verify`) was `\begin{tabular}{ll}` with long
+  unbreakable Status entries — overfull `\hbox` 1266.31pt, content running
+  far beyond the page. Rebuilt as `tabularx {\textwidth}{lX}` (Status
+  column now wraps); `tabularx` added to the preamble. Recompiled
+  pdflatex ×2: both passes exit 0, **0 errors, 0 overfull**. Page 15 of
+  the compiled PDF visually inspected — Table 5 sits fully inside the
+  text block, every row legible. The Bibliography row in the same table
+  was corrected 14 → 15 pages. Final hashes in the table above; arXiv ZIP
+  rebuilt from the final source (sha256
+  `cecaf296ef0cdc64277ba13641c8fba5fc61e740592bf837c320420f3aa2627f`,
+  248,427 bytes) and verified from a clean directory (pdflatex ×2, 0
+  errors, 0 overfull, 15 pages). Prime Two PASS on the final package
+  (25 Nov 2026).
 
 ## What was NOT done
 
