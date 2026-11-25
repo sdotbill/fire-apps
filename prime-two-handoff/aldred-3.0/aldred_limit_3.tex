@@ -1,0 +1,109 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\geometry{margin=1in}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+
+\title{The Aldred Limit 3.0: Spin-Fluid Density Ceilings and Hartree--Fock Axial Four-Fermion Corrections in Einstein--Cartan--Dirac Theory}
+\author{William Alexander Aldred}
+\date{November 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We examine density ceilings and torsion-regulated dynamics in Einstein--Cartan (EC) gravity across classical spin-fluid closures and a bounded microscopic Einstein--Cartan--Dirac (ECD) calculation. First, we write the quadratic spin-fluid energy density with explicit physical constants $(\hbar, c, G)$ and Planck scale $\varepsilon_{\mathrm{Pl}} = c^7/(\hbar G^2)$, clarify convention factors such as $C = 1/8$ versus $C = 1/32$, derive the peak $\rho_{\mathrm{eff},\max} = \rho_A/4$ at $\rho = \rho_A/2$ for $\rho_{\mathrm{eff}} = \rho - \rho^2/\rho_A$, and state the equatorial mass-derivative bound $m_{\mathrm{geom}}'(r) \le \pi (G/c^2)\rho_A^{\mathrm{phys}} r^2$ alongside its physical regime limits. Second, we evaluate the axial four-fermion interaction from torsion elimination in a zero-temperature, unpolarized Dirac Fermi sea under covariant four-dimensional renormalization and first-order Hartree--Fock (HF) approximation, report numerical values at $x_F = 1$ and $x_F = 10$ as well as the ultra-relativistic zero at $n_0 = \sqrt{24/\pi}\,\ell_{\mathrm{Pl}}^{-3}$, and explicitly note the unresolved discrepancy between the naive local Belinfante--Rosenfeld spatial stress expectation value and the variational HF pressure.
+\end{abstract}
+
+\section{Conventions and Scope}
+We use metric signature $(-,+,+,+)$, torsion tensor $T^\lambda{}_{\mu\nu} = 2\Gamma^\lambda{}_{[\mu\nu]}$, contorsion $K_{\lambda\mu\nu} = \frac{1}{2}(T_{\lambda\mu\nu} + T_{\mu\lambda\nu} + T_{\nu\lambda\mu})$, and $\kappa_{\mathrm{EC}} = 8\pi G/c^4$. Planck units are defined by $\ell_{\mathrm{Pl}} = \sqrt{\hbar G/c^3}$, $m_{\mathrm{Pl}} = \sqrt{\hbar c/G}$, and $\varepsilon_{\mathrm{Pl}} = \rho_{\mathrm{Pl}} c^2 = c^7/(\hbar G^2)$. All claims below are separated by whether they follow from exact algebraic/variational identities, renormalization choices, first-order HF approximations, or semiclassical domain limits.
+
+\section{Spin-Fluid Closures, Convention Factors, and Equatorial Bound}
+In a spin-fluid closure where an effective spin-density energy contribution scales as $n^2$ with fermion number density $n$, write
+\begin{equation}
+\varepsilon_{\mathrm{spin}}(n) = C_{\mathrm{eff}}\,\frac{8\pi G\hbar^2}{c^2}\,n^2, \qquad \rho_{\mathrm{spin}}(n) = \frac{\varepsilon_{\mathrm{spin}}(n)}{c^2}.
+\end{equation}
+Factors such as $C = 1/8$ versus $C = 1/32$ arise from differences in spin-averaging, spin-tensor component normalization, and fluid-closure conventions rather than an empirical measurement or a unique field-theoretic constant. Rescaling $C_{\mathrm{eff}} \to k\,C_{\mathrm{eff}}$ scales a threshold mass density $\rho_A$ as $1/k$ and any stiff-fluid crossover density ratio as $1/k^2$.
+
+For a quadratic subtraction $\rho_{\mathrm{eff}}(\rho) = \rho - \rho^2/\rho_A$ ($\rho \ge 0$), differentiating with respect to $\rho$ gives $d\rho_{\mathrm{eff}}/d\rho = 1 - 2\rho/\rho_A = 0$ at $\rho = \rho_A/2$, yielding the maximum
+\begin{equation}
+\rho_{\mathrm{eff},\max} = \frac{\rho_A}{4}, \qquad \rho_{\mathrm{eff}}(\rho_A) = 0.
+\end{equation}
+Extrapolating non-relativistic neutron-matter densities up to $\sim 10^{54}\text{--}10^{55}\,\mathrm{g\,cm^{-3}}$ lies outside the domain of physical validity of a cold non-relativistic nucleon gas because interparticle spacing drops well below nucleon scales and Fermi momenta become relativistic.
+
+On the equatorial plane ($\theta = \pi/2$, $\Sigma = r^2$) of a G\"urses--G\"ursey spacetime with geometric mass function $m_{\mathrm{geom}}(r) = (G/c^2)M_{\mathrm{phys}}(r)$ and proper equatorial energy density $\rho_g^{\mathrm{phys}} \le \rho_A^{\mathrm{phys}}/4$, the Einstein equation yields the necessary bound
+\begin{equation}
+m_{\mathrm{geom}}'(r) \le \pi\frac{G}{c^2}\,\rho_A^{\mathrm{phys}}\,r^2,
+\end{equation}
+which constrains a single equatorial eigenvalue rather than providing a complete rotating interior matched to an exterior Kerr metric.
+
+\section{Microscopic Einstein--Cartan--Dirac Investigation}
+\subsection{Torsion Elimination and Axial Contact Interaction}
+For a minimally coupled Dirac field $\psi$ of mass $m$ in Riemann--Cartan spacetime, varying the first-order action with respect to torsion/contorsion yields totally antisymmetric torsion proportional to the axial current $J_5^\mu = \bar{\psi}\gamma_5\gamma^\mu\psi$ (with $\gamma_5 = -i\gamma^0\gamma^1\gamma^2\gamma^3$ and $\{\gamma^A, \gamma^B\} = -2\eta^{AB}$). Substituting the algebraic torsion solution back into the action gives
+\begin{equation}
+S_{\mathrm{eff}}[e,\psi,\bar{\psi}] = \int d^4x\,e\left[ -\frac{1}{2\kappa_{\mathrm{EC}}}R(\{\}) + \frac{i\hbar c}{2}\left(\bar{\psi}\gamma^\mu\nabla_\mu\psi - (\nabla_\mu\bar{\psi})\gamma^\mu\psi\right) - mc^2\bar{\psi}\psi - \frac{3\kappa_{\mathrm{EC}}\hbar^2 c^2}{32}\,\eta_{AB} J_5^A J_5^B \right],
+\end{equation}
+where $e = \det(e^A{}_\mu) = \sqrt{-g}$.
+
+\subsection{Unpolarized Fermi Sea, Axial Correlators, and HF Pressure Issue}
+In a homogeneous, isotropic, unpolarized zero-temperature Fermi sea with $x_F \equiv p_F/(mc)$, rotational and parity invariance give $\langle J_5^\mu \rangle = 0$ for the direct expectation value. In a Lorentz-invariant four-dimensional regulator, odd loop-momentum integrals vanish identically, leaving a covariant vacuum--medium cross term proportional to $\eta^{\mu\nu}\langle\bar{\psi}\psi\rangle$ that is absorbed by a local scalar mass counterterm under vacuum normal ordering / pole-mass matching.
+
+In dimensionless units ($m = \hbar = c = 1$), define
+\begin{equation}
+I_0(x_F) = \frac{x_F^3}{6\pi^2}, \qquad I_m(x_F) = \frac{x_F\sqrt{1+x_F^2} - \operatorname{asinh}(x_F)}{4\pi^2}.
+\end{equation}
+The normal-ordered exchange correlator components are $\mathcal{A}_0 = -(I_0^2 + I_m^2)$ and $\mathcal{A}_s = -3(I_0^2 - I_m^2)$. In first-order HF approximation, the interaction energy density and corresponding variational/thermodynamic pressure (in units of $\frac{3\pi G}{2}m^6$) are
+\begin{equation}
+\epsilon_{\mathrm{int}}(x_F) = 2I_m^2 - I_0^2, \qquad p_{\mathrm{int}}(x_F) = \frac{4I_0 I_m}{\sqrt{1+x_F^2}} - 2I_m^2 - I_0^2.
+\end{equation}
+
+\begin{remark}[Unresolved Stress-Tensor Discrepancy]
+While the variational HF energy functional and its thermodynamic derivative $p_{\mathrm{thermo}} = n(d\epsilon/dn) - \epsilon$ agree within the HF approximation, the naive single-particle expectation value of the local Belinfante--Rosenfeld spatial stress tensor on HF states does not match $p_{\mathrm{thermo}}$. Reconciling the local Belinfante spatial stress directly at the operator level remains open.
+\end{remark}
+
+\subsection{Numerical Benchmarks and Ultra-Relativistic Zero}
+Evaluating the dimensionless expressions above gives:
+\begin{itemize}
+\item For $x_F = 1$: $I_0 \approx 0.016886863940390$, $I_m \approx 0.013496994248694$, $\epsilon_{\mathrm{int}} \approx +7.9171533757 \times 10^{-5}$, and $p_{\mathrm{int}} \approx -4.8433814509 \times 10^{-6}$.
+\item For $x_F = 10$: $I_0 \approx 16.886863940390$, $I_m \approx 2.469717358939$, $\epsilon_{\mathrm{int}} \approx -272.967166075$, and $p_{\mathrm{int}} \approx -280.765660146$.
+\item The sign change of $\epsilon_{\mathrm{int}}(x_F) = 2I_m^2 - I_0^2$ occurs at $x_F^* \approx 1.349105399$.
+\end{itemize}
+For $x_F < x_F^*$, $\epsilon_{\mathrm{int}} > 0$. For $x_F \gg 1$, $\varepsilon_{\mathrm{int}} \simeq -\frac{3\pi G\hbar^2}{8c^2}n^2 < 0$ and $p_{\mathrm{int}} \simeq -\frac{3\pi G\hbar^2}{8c^2}n^2 < 0$. Against a single-species ultra-relativistic Fermi gas $\varepsilon_{\mathrm{FG}}(n) \simeq \frac{3}{4}\hbar c(3\pi^2)^{1/3}n^{4/3}$, a formal zero of $\varepsilon_{\mathrm{FG}} + \varepsilon_{\mathrm{int}}$ occurs at
+\begin{gather}
+n_0 = \sqrt{\frac{24}{\pi}}\,\ell_{\mathrm{Pl}}^{-3} \approx 2.763953\,\ell_{\mathrm{Pl}}^{-3}, \\ p_{F,0} = (3\pi^2 n_0\ell_{\mathrm{Pl}}^{3})^{1/3}m_{\mathrm{Pl}}c \approx 4.341608\,m_{\mathrm{Pl}}c, \\ d_0 = n_0^{-1/3} = (\pi/24)^{1/6}\ell_{\mathrm{Pl}} \approx 0.712563\,\ell_{\mathrm{Pl}},
+\end{gather}
+where $n_0^2 = 24/\pi$ in Planck units, and $\varepsilon_{\mathrm{FG}}(n_0)/\varepsilon_{\mathrm{Pl}} = \frac{3\pi}{8}n_0^2 = 9$ exactly. At $n_0$, $\varepsilon_{\mathrm{tot}} + p_{\mathrm{tot}} = -\frac{2}{3}\varepsilon_{\mathrm{FG}}(n_0) < 0$ gives $\dot{H} > 0$ formally, but at $\sim 9\,\varepsilon_{\mathrm{Pl}}$ and $d_0 \approx 0.71\,\ell_{\mathrm{Pl}}$, well outside a physically controlled semiclassical regime.
+
+\section{Summary of Status}
+\begin{table}[h]
+\centering
+\begin{tabular}{p{4.3cm}p{9.1cm}}
+\toprule
+Status Category & Summary \\
+\midrule
+Exact \& Convention Results & Torsion elimination to $\eta_{AB}J_5^A J_5^B$; $C=1/8$ vs.\ $C=1/32$ convention audit; $\rho_{\mathrm{eff},\max} = \rho_A/4$ at $\rho_A/2$; equatorial bound $m_{\mathrm{geom}}'(r) \le \pi(G/c^2)\rho_A^{\mathrm{phys}}r^2$; numerical evaluations at $x_F=1, 10$ and $x_F^*$ (50-digit arithmetic). \\
+Renormalization- \& HF-Dependent & Covariant cross-term removal via scalar counterterm; correlators $\mathcal{A}_0, \mathcal{A}_s$; HF $\epsilon_{\mathrm{int}}, p_{\mathrm{int}}$; formal ultra-relativistic zero at $n_0 = \sqrt{24/\pi}\,\ell_{\mathrm{Pl}}^{-3}$ ($=9\,\varepsilon_{\mathrm{Pl}}$). \\
+Unresolved / Open & Operator-level reconciliation of naive Belinfante spatial stress with variational HF pressure; non-perturbative Planck-scale physics; spin-polarized ($\langle J_5^\mu\rangle \neq 0$), finite-$T$, and non-minimal torsion extensions. \\
+\bottomrule
+\end{tabular}
+\caption{Status of results in \emph{Aldred Limit 3.0}.}
+\end{table}
+
+\begin{thebibliography}{9}
+\bibitem{Kibble1961} T.~W.~B. Kibble, \emph{J. Math. Phys.} \textbf{2}, 212 (1961).
+\bibitem{Sciama1962} D.~W. Sciama, in \emph{Recent Developments in General Relativity} (Pergamon, 1962), p.~415.
+\bibitem{Trautman1973} A. Trautman, \emph{Nature Phys. Sci.} \textbf{242}, 7 (1973).
+\bibitem{GursesGursey1975} M. G\"urses and F. G\"ursey, \emph{J. Math. Phys.} \textbf{16}, 2385 (1975).
+\bibitem{Hehl1976} F.~W. Hehl, P. von der Heyde, G.~D. Kerlick, and J.~M. Nester, \emph{Rev. Mod. Phys.} \textbf{48}, 393 (1976).
+\bibitem{Nurgaliev1983} I.~S. Nurgaliev and V.~N. Ponomariev, \emph{Phys. Lett. B} \textbf{130}, 378 (1983).
+\bibitem{Gasperini1986} M. Gasperini, \emph{Phys. Rev. Lett.} \textbf{56}, 2873 (1986).
+\bibitem{Poplawski2010} N.~J. Pop\l awski, \emph{Phys. Lett. B} \textbf{694}, 181 (2010).
+\end{thebibliography}
+
+\end{document}

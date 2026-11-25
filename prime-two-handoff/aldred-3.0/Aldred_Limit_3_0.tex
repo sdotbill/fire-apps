@@ -1,0 +1,332 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{authblk}
+\title{The Aldred Limit 3.0: Spin-Density Thresholds in Einstein--Cartan Gravity and a Microscopic Dirac-Fermion Cross-Check}
+\author{William Alexander Aldred}
+\affil{Aldred Industries}
+\date{22 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Einstein--Cartan (EC) gravity couples spacetime torsion algebraically to intrinsic spin. After torsion is eliminated, or after a suitable spin-fluid average is performed, quadratic spin terms can oppose the ordinary energy density at sufficiently high fermion number density. This paper gives a convention-explicit account of the resulting density scale, which we call the Aldred limit, and separates that scale from a maximum of the effective density and from a cosmological bounce condition. For an unpolarized Weyssenhoff-type fluid with $s^2=(\hbar c n)^2/8$, the Pop\l{}awski effective source contains the correction $\alpha n^2$, with $\alpha=\kappa(\hbar c)^2/32=\pi G\hbar^2/(4c^2)$. The factors $1/8$ and $1/32$ therefore occur at different stages of the same prescription and are not competing closure coefficients. For a single carrier species of rest mass $m$, the dust balance occurs at $n_A=mc^2/\alpha$ and $\epsilon_A=m^2c^4/\alpha$. In a spatially flat FLRW model with the same averaged source and conserved particle number, the zero of the effective density is a bounce, while the effective density itself reaches its maximum at half that carrier density. These are conditional results of the specified closure, not a universal density bound or a demonstrated result for realistic collapse.
+
+A separate microscopic Einstein--Cartan--Dirac Hartree--Fock calculation is summarized as a cross-check, with its assumptions and unresolved stress-tensor and renormalization issues made explicit. The finite-density exchange integrals give a sign change in the interaction energy at $x_F\simeq1.3491054$. In the ultrarelativistic asymptotic model, the formal cancellation with a free Fermi gas occurs at $n\ell_{\rm Pl}^3=\sqrt{24/\pi}$ and total free-gas energy density $9\,\epsilon_{\rm Pl}$. This lies beyond the regime in which a classical EC theory and a first-order Hartree--Fock truncation are controlled. It is consequently reported as a formal extrapolation, not as evidence for a physical Planck-scale bounce. The defensible result of Aldred Limit 3.0 is a transparent, internally normalized comparison of the macroscopic closure and microscopic calculation, together with a precise statement of what each does and does not establish.
+\end{abstract}
+
+\section{Scope and status of the result}
+The purpose of this work is to define and audit a density scale associated with quadratic spin corrections in EC gravity. The name \emph{Aldred limit} will refer only to the density at which the specified spin correction equals the specified positive matter energy density. It is not assumed to be a universal upper bound on matter density, a theorem about all EC matter sources, or a demonstrated endpoint of gravitational collapse.
+
+Three quantities must be kept distinct:
+\begin{enumerate}
+\item the \emph{carrier balance density}, where the ordinary matter energy density equals the magnitude of the quadratic spin correction;
+\item the \emph{maximum effective density}, obtained by maximizing the effective density as a function of the uncorrected density for a fixed quadratic model;
+\item the \emph{bounce condition}, which is a statement about the coupled cosmological evolution equations, not merely an algebraic density equality.
+\end{enumerate}
+The first two follow algebraically from a chosen closure. The third additionally requires a consistent pressure prescription, conservation law, and cosmological geometry. The paper treats the macroscopic spin-fluid model and the microscopic Dirac calculation as distinct descriptions; their coefficients are not interchangeable without an explicit mapping of definitions and averaging prescriptions.
+
+\section{Conventions}
+For the macroscopic sections, $G$ is Newton's constant, $c$ the speed of light, $\hbar$ the reduced Planck constant, and
+\begin{equation}
+\kappa=\frac{8\pi G}{c^4}.
+\label{eq:kappa}
+\end{equation}
+The symbol $n$ denotes proper number density, $m$ the rest mass of one carrier, and $\epsilon$ and $p$ are rest-frame energy density and pressure. Thus dust has $\epsilon=mc^2n$ and $p=0$. We use the spin-fluid convention
+\begin{equation}
+s^2=\frac12 s_{\mu\nu}s^{\mu\nu},
+\label{eq:sdef}
+\end{equation}
+with the averaged $s^2$ positive. The metric signature in the microscopic Dirac subsection is $(-,+,+,+)$; natural units $c=\hbar=1$ are used there except where Planck units are explicitly restored. The microscopic gamma-matrix and interaction conventions are stated locally because the sign and numerical coefficient of the torsion-eliminated four-fermion operator depend on the action and current normalization.
+
+\section{Macroscopic spin-fluid source and the coefficient map}
+For a randomly oriented Weyssenhoff-type spin fluid, the mean spin tensor vanishes while its quadratic average can remain nonzero. In the standard averaged source used by Pop\l{}awski \cite{Poplawski2010,Poplawski2016}, the effective energy density and pressure are
+\begin{equation}
+\epsilon_{\rm eff}=\epsilon-\frac{\kappa}{4}s^2,
+\qquad
+p_{\rm eff}=p-\frac{\kappa}{4}s^2.
+\label{eq:effective-source}
+\end{equation}
+The derivative spin-gradient term in the unaveraged field equation is omitted only after the stated random-orientation/spacetime averaging; it is not identically zero for an arbitrary spin configuration.
+
+For an unpolarized fermion fluid, the prescription quoted in this convention is
+\begin{equation}
+s^2=\frac18(\hbar c n)^2.
+\label{eq:spin-closure}
+\end{equation}
+Substitution into Eq.~(\ref{eq:effective-source}) gives
+\begin{align}
+\frac{\kappa}{4}s^2
+&=\frac{1}{4}\frac{8\pi G}{c^4}\frac18\hbar^2c^2n^2\\
+&=\frac{\pi G\hbar^2}{4c^2}n^2
+=\frac{\kappa(\hbar c)^2}{32}n^2.
+\label{eq:alpha-derivation}
+\end{align}
+Define
+\begin{equation}
+\alpha\equiv\frac{\kappa(\hbar c)^2}{32}
+=\frac{\pi G\hbar^2}{4c^2}.
+\label{eq:alpha}
+\end{equation}
+Then
+\begin{equation}
+\boxed{\epsilon_{\rm eff}=\epsilon-\alpha n^2,\qquad
+p_{\rm eff}=p-\alpha n^2.}
+\label{eq:effective-alpha}
+\end{equation}
+This calculation resolves a frequent coefficient ambiguity: $1/8$ belongs to the spin invariant in Eq.~(\ref{eq:spin-closure}); $1/32$ appears after multiplying that invariant by $\kappa/4$ in the effective source. They are not two competing values for the same quantity. Other spin-fluid models may use different definitions of $s^2$, different microscopic averages, or correlators such as $\langle n^2\rangle$ rather than $n^2$. Replacing $\langle n^2\rangle$ by $n^2$ is an additional factorization/closure assumption, not an identity.
+
+\section{The Aldred carrier-balance scale}
+For a single species whose ordinary contribution is approximated as dust,
+\begin{equation}
+\epsilon=mc^2n.
+\label{eq:dust}
+\end{equation}
+The effective density is therefore
+\begin{equation}
+\epsilon_{\rm eff}=mc^2n-\alpha n^2.
+\label{eq:dust-effective}
+\end{equation}
+The nonzero density at which the spin correction balances the ordinary rest-energy density is obtained by setting $\epsilon_{\rm eff}=0$:
+\begin{equation}
+mc^2n_A=\alpha n_A^2
+\quad\Longrightarrow\quad
+\boxed{n_A=\frac{mc^2}{\alpha}
+=\frac{4mc^4}{\pi G\hbar^2}.}
+\label{eq:nA}
+\end{equation}
+The corresponding ordinary energy density is
+\begin{equation}
+\boxed{\epsilon_A=mc^2n_A
+=\frac{m^2c^4}{\alpha}
+=\frac{4m^2c^6}{\pi G\hbar^2}.}
+\label{eq:epsilonA}
+\end{equation}
+Equivalently, eliminating $n$ from Eq.~(\ref{eq:dust-effective}) gives
+\begin{equation}
+\boxed{\epsilon_{\rm eff}=\epsilon-\frac{\epsilon^2}{\epsilon_A}.}
+\label{eq:quadratic-epsilon}
+\end{equation}
+Equations (\ref{eq:nA})--(\ref{eq:quadratic-epsilon}) are derived for the specific closure in Eq.~(\ref{eq:spin-closure}) and the dust carrier model. They are not species-independent: the scale depends on $m^2$ in energy-density form. A different spin ensemble, carrier content, equation of state, or correlation function changes the coefficient and potentially the density dependence. Moreover, a cold fermion gas becomes degenerate as its density rises; the dust equation of state is not a controlled description at the balance point. The dust threshold is therefore a closure-defined reference scale, not a realistic neutron-star or collapse prediction. A relativistic equation of state must be used before drawing conclusions about a physical system.
+
+\subsection{Maximum effective density is not the balance density}
+As a function of the uncorrected density $\epsilon$, Eq.~(\ref{eq:quadratic-epsilon}) is a concave quadratic. Differentiating gives
+\begin{equation}
+\frac{d\epsilon_{\rm eff}}{d\epsilon}=1-\frac{2\epsilon}{\epsilon_A}=0
+\quad\Longrightarrow\quad \epsilon=\frac{\epsilon_A}{2}.
+\end{equation}
+At that point,
+\begin{equation}
+\boxed{\epsilon_{\rm eff,max}=\frac{\epsilon_A}{4}.}
+\label{eq:max-effective}
+\end{equation}
+The effective density reaches zero again at $\epsilon=\epsilon_A$. Thus the carrier-balance density is twice the uncorrected density at which the effective density is maximal. Calling both values a single ``maximum density'' would be incorrect.
+
+\section{Flat FLRW bounce within the averaged closure}
+Consider a spatially flat FLRW spacetime sourced by the effective perfect fluid of Eq.~(\ref{eq:effective-alpha}). The Friedmann equation is
+\begin{equation}
+H^2=\frac{\kappa}{3}\epsilon_{\rm eff},
+\label{eq:friedmann}
+\end{equation}
+and the acceleration/Raychaudhuri equation is
+\begin{equation}
+\dot H=-\frac{\kappa}{2}(\epsilon_{\rm eff}+p_{\rm eff})
+\label{eq:hdot}
+\end{equation}
+for $k=0$. Assume conserved particle number,
+\begin{equation}
+\dot n+3Hn=0,
+\label{eq:number-conservation}
+\end{equation}
+and dust matter, $p=0$, $\epsilon=mc^2n$. Equations (\ref{eq:effective-alpha}) and (\ref{eq:nA}) imply
+\begin{equation}
+\epsilon_{\rm eff}=mc^2n-\alpha n^2,
+\qquad p_{\rm eff}=-\alpha n^2.
+\end{equation}
+The effective source is conserved under the assumed particle-number law:
+\begin{align}
+\dot\epsilon_{\rm eff}+3H(\epsilon_{\rm eff}+p_{\rm eff})
+&=(mc^2-2\alpha n)(-3Hn)+3H(mc^2n-2\alpha n^2)=0.
+\end{align}
+At $n=n_A$, $\epsilon_{\rm eff}=0$, so Eq.~(\ref{eq:friedmann}) gives $H=0$. At the same point,
+\begin{align}
+\epsilon_{\rm eff}+p_{\rm eff}
+&=mc^2n_A-2\alpha n_A^2\\
+&=-mc^2n_A<0,
+\end{align}
+where $\alpha n_A=mc^2$. Consequently,
+\begin{equation}
+\boxed{\dot H\big|_{n_A}=\frac{\kappa}{2}mc^2n_A>0.}
+\label{eq:bounce}
+\end{equation}
+A contracting flat solution ($H<0$) therefore reaches $H=0$ and can pass to expansion ($H>0$): within this averaged dust model, the zero of the effective density is a local bounce. This is a derivation within the stated homogeneous closure, not a proof that generic inhomogeneous collapse bounces, that a black-hole interior is nonsingular, or that the assumed spin-fluid average remains valid at the threshold. The same distinction is emphasized in the EC collapse literature, where outcomes depend on the source and averaging assumptions \cite{Ziaie2014}.
+
+\section{Microscopic Einstein--Cartan--Dirac Hartree--Fock calculation}
+The macroscopic Weyssenhoff closure is not identical to a microscopic Dirac field. To test the scale from a separate description, we summarize the finite-density exchange calculation performed for a homogeneous, isotropic, unpolarized zero-temperature Fermi sea. The subsection is deliberately presented as a conditional first-order Hartree--Fock (HF) calculation, not as a completed nonperturbative treatment of quantum gravity.
+
+\subsection{Interaction convention and medium integrals}
+After algebraic torsion is eliminated, minimal EC--Dirac theory can be written as a local axial-current four-fermion interaction \cite{Hehl1976,Shapiro2002,Poplawski2012}. For this subsection we adopt the explicit normalization
+\begin{equation}
+\mathcal L_{4f}=-\frac{3\kappa}{32}J_{5A}J_5^{A},
+\qquad J_5^A=\bar\psi\gamma^A\gamma_5\psi,
+\label{eq:4f}
+\end{equation}
+with the tetrad-index contraction and gamma-matrix convention fixed by the displayed action. The numerical coefficient and its sign must be rederived if the normalization of $J_5^A$, the gamma matrices, the curvature scalar, or the EC action is changed. We do not claim that the coefficient in Eq.~(\ref{eq:4f}) is convention-independent.
+
+In natural units, let $m$ be the fermion mass, $p_F$ the Fermi momentum, and $x_F=p_F/m$. The two finite-density integrals are
+\begin{align}
+I_0&=\frac{x_F^3}{6\pi^2},\\
+I_m&=\frac{1}{2\pi^2}\int_0^{p_F/m}
+\frac{q^2}{\sqrt{1+q^2}}\,dq
+=\frac{x_F\sqrt{1+x_F^2}-\operatorname{asinh}x_F}{4\pi^2}.
+\label{eq:integrals}
+\end{align}
+Here $I_0=n/(2m^3)$ for the two-spin-state species in this normalization. The medium axial-current contractions in the adopted trace prescription are
+\begin{equation}
+\mathcal A_0=-(I_0^2+I_m^2),
+\qquad
+\mathcal A_s=-3(I_0^2-I_m^2).
+\label{eq:axial-traces}
+\end{equation}
+The direct Hartree term vanishes for the unpolarized isotropic state because $\langle J_5^A\rangle=0$. The exchange/Fock contraction remains nonzero. With the interaction normalization above, its first-order energy density is
+\begin{equation}
+\epsilon_{\rm int}=\frac{3\pi Gm^6}{2}
+\left(2I_m^2-I_0^2\right).
+\label{eq:epsHF}
+\end{equation}
+The corresponding fixed-number thermodynamic pressure obtained from this energy functional is
+\begin{equation}
+p_{\rm int}=\frac{3\pi Gm^6}{2}
+\left(\frac{4I_0I_m}{\sqrt{1+x_F^2}}-2I_m^2-I_0^2\right).
+\label{eq:pHF}
+\end{equation}
+The pressure in Eq.~(\ref{eq:pHF}) follows from $p=n\,d\epsilon/dn-\epsilon$ for the specified homogeneous energy functional. It is not, by itself, a proof that the result equals the expectation value of the fully renormalized local Belinfante--Rosenfeld stress tensor.
+
+\subsection{Numerical checks and sign change}
+Direct evaluation of Eqs.~(\ref{eq:integrals})--(\ref{eq:pHF}) gives the following dimensionless values, where $\epsilon_{\rm int}$ and $p_{\rm int}$ are divided by $3\pi Gm^6/2$:
+\begin{center}
+\begin{tabular}{rrrrr}
+\toprule
+$x_F$ & $I_0$ & $I_m$ & $\epsilon_{\rm int}/(3\pi Gm^6/2)$ & $p_{\rm int}/(3\pi Gm^6/2)$\\
+\midrule
+1 & 0.01688686394 & 0.01349699425 & $7.9171534\times10^{-5}$ & $-4.8433815\times10^{-6}$\\
+10 & 16.88686394 & 2.469717359 & $-272.9671661$ & $-280.7656601$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The interaction-energy sign changes when $2I_m^2-I_0^2=0$. Numerically,
+\begin{equation}
+\boxed{x_F^*=1.349105399\ldots.}
+\label{eq:root}
+\end{equation}
+This is a sign change in the first-order interaction contribution, not a density ceiling and not a bounce criterion. In the ultrarelativistic limit $I_m/I_0\to0$, the leading interaction term becomes
+\begin{equation}
+\epsilon_{\rm int}\simeq-\frac{3\pi G}{8}n^2,
+\qquad
+p_{\rm int}\simeq-\frac{3\pi G}{8}n^2,
+\label{eq:URinteraction}
+\end{equation}
+where $n$ is the physical number density and $c=\hbar=1$.
+
+\subsection{Formal ultrarelativistic balance}
+For a free, zero-temperature, ultrarelativistic Fermi gas with two spin states,
+\begin{equation}
+\epsilon_{\rm FG}=\frac34(3\pi^2)^{1/3}n^{4/3},
+\qquad p_{\rm FG}=\frac13\epsilon_{\rm FG}
+\label{eq:FG}
+\end{equation}
+in natural units. Balancing the magnitude of Eq.~(\ref{eq:URinteraction}) against Eq.~(\ref{eq:FG}) gives
+\begin{equation}
+\frac34(3\pi^2)^{1/3}n^{4/3}
+=\frac{3\pi G}{8}n^2.
+\end{equation}
+Solving,
+\begin{equation}
+n^{2/3}=\frac{2(3\pi^2)^{1/3}}{\pi G},
+\qquad
+n_0=\sqrt{\frac{24}{\pi}}\,\ell_{\rm Pl}^{-3},
+\label{eq:n0}
+\end{equation}
+where $\ell_{\rm Pl}=\sqrt{G\hbar/c^3}$ after restoring units. In Planck units this gives
+\begin{equation}
+\boxed{n_0\ell_{\rm Pl}^3=2.7639532\ldots,\qquad
+\epsilon_{\rm FG}(n_0)=9\,\epsilon_{\rm Pl}.}
+\label{eq:planckresult}
+\end{equation}
+The corresponding Fermi momentum and mean interparticle spacing are
+\begin{equation}
+p_F=\hbar(3\pi^2n_0)^{1/3}
+\simeq4.34161\,m_{\rm Pl}c,
+\qquad n_0^{-1/3}\simeq0.71256\,\ell_{\rm Pl}.
+\end{equation}
+At the formal cancellation point, the total enthalpy density of this truncated model is
+\begin{equation}
+\epsilon_{\rm tot}+p_{\rm tot}
+=\left(\frac13-1\right)\epsilon_{\rm FG}
+=-\frac23\epsilon_{\rm FG}<0,
+\end{equation}
+so inserting this source into the flat-FLRW Raychaudhuri equation would formally give $\dot H>0$ at $H=0$. However, Eq.~(\ref{eq:planckresult}) places the result at several Planck energy densities, with sub-Planck-length mean spacing. A classical EC action, a free quasiparticle Fermi sea, and a first-order HF truncation are not controlled there. This is therefore only a formal extrapolation of the truncated equations. It is not a physical prediction of a bounce.
+
+\section{What remains unresolved in the microscopic calculation}
+Two issues prevent the HF subsection from being promoted to a controlled gravitational source.
+
+\paragraph{Stress tensor and metric variation.}
+The thermodynamic identity $p=n\,d\epsilon/dn-\epsilon$ is valid for the stated homogeneous energy functional at fixed particle number. A gravitational source, however, must be obtained from a consistent metric/tetrad variation of the same approximation. In a self-consistent HF treatment the propagator, occupied Fermi surface, and exchange functional depend on the metric. The corresponding vertex and state-variation terms must be included. The available calculation does not establish that its thermodynamic pressure equals the local Belinfante--Rosenfeld pressure, nor does it demonstrate the covariant conservation identity for the truncated stress tensor. The pressure is therefore reported as a thermodynamic HF result only.
+
+\paragraph{Composite-operator renormalization.}
+The local operator $J_{5A}J_5^A$ requires a specified composite-operator renormalization prescription. Subtracting the vacuum contribution or normal-ordering the finite-density contraction is a prescription for defining the medium expectation value; it does not automatically prove that all vacuum--medium cross terms and operator-mixing counterterms are removed by the fermion pole-mass counterterm. A complete covariant renormalization of the four-fermion composite operator, including its mixing and the associated stress tensor, has not been established here; these are precisely the kinds of issues that arise in quantum field theory with torsion \cite{Shapiro2002}. Accordingly, no claim is made that the HF result is a fully renormalized quantum expectation value in curved spacetime.
+
+These are substantive limitations, not cosmetic qualifications. Resolving them requires a single covariant effective-action or 2PI/\,$\Phi$-derivable construction, a consistent metric variation, and a declared renormalization scheme for the local axial-current operator. Until that is done, the microscopic result remains a useful algebraic and numerical cross-check, but not a validated replacement for the macroscopic spin-fluid closure.
+
+\section{Relation to earlier Einstein--Cartan work and scope of novelty}
+The qualitative mechanism by which algebraic torsion produces spin--spin interactions and can modify high-density cosmological evolution is established in the EC literature. It is not claimed as a new discovery of this paper. Earlier work developed EC spin-fluid cosmologies and bounce scenarios, including the analyses of Pop\l{}awski and subsequent studies of homogeneous spin-fluid collapse. Those results also make clear that the outcome depends on the matter model, averaging prescription, and dynamical setting.
+
+The contribution made here is narrower and reproducible: (i) the spin-invariant coefficient and effective-density coefficient are explicitly mapped so that the $1/8$ and $1/32$ factors are not misidentified as competing closures; (ii) the carrier-balance density, maximum effective density, and FLRW bounce condition are separated and derived independently; (iii) the macroscopic closure is distinguished from the microscopic Dirac axial-current calculation; and (iv) the latter's numerical balance is corrected and its stress-tensor and renormalization limitations are stated rather than hidden. These clarifications define the present version's result. They do not establish a universal maximum density, a generic singularity-resolution theorem, or a controlled Planck-scale prediction.
+
+\section{Conclusion}
+For the random-spin Weyssenhoff prescription $s^2=(\hbar c n)^2/8$, the EC effective source subtracts $\alpha n^2$ from both energy density and pressure, with $\alpha=\kappa(\hbar c)^2/32$. The nonzero dust balance density is $n_A=mc^2/\alpha$, and the associated ordinary energy density is $\epsilon_A=m^2c^4/\alpha$. The effective density has its maximum $\epsilon_A/4$ at $\epsilon=\epsilon_A/2$ and returns to zero at $\epsilon=\epsilon_A$. In a flat FLRW model with conserved dust number and this same effective pressure, the zero is a bounce because $\dot H>0$ there. All of these statements are conditional on the specified macroscopic closure.
+
+The separate microscopic HF calculation yields a reproducible exchange-energy sign change at $x_F\simeq1.3491054$ and a formal ultrarelativistic cancellation at $n\ell_{\rm Pl}^3=\sqrt{24/\pi}$, corresponding to $9$ Planck energy densities. Its Planckian location, unresolved stress-tensor variation, and incomplete composite-operator renormalization preclude interpreting that cancellation as a controlled physical bounce. The defensible conclusion is therefore a clarified, model-dependent EC spin-density threshold and a qualified microscopic cross-check—not a universal density limit of nature.
+
+\begin{thebibliography}{9}
+\bibitem{Hehl1976}
+F. W. Hehl, P. von der Heyde, G. D. Kerlick, and J. M. Nester,
+``General relativity with spin and torsion: Foundations and prospects,''
+\emph{Rev. Mod. Phys.} \textbf{48}, 393--416 (1976).
+\href{https://doi.org/10.1103/RevModPhys.48.393}{doi:10.1103/RevModPhys.48.393}.
+
+\bibitem{Shapiro2002}
+I. L. Shapiro,
+``Physical aspects of the space-time torsion,''
+\emph{Phys. Rep.} \textbf{357}, 113--213 (2002).
+\href{https://doi.org/10.1016/S0370-1573(01)00030-8}{doi:10.1016/S0370-1573(01)00030-8}.
+
+\bibitem{Poplawski2010}
+N. J. Pop\l{}awski,
+``Cosmology with torsion: An alternative to cosmic inflation,''
+\emph{Phys. Lett. B} \textbf{694}, 181--185 (2010).
+\href{https://doi.org/10.1016/j.physletb.2010.09.056}{doi:10.1016/j.physletb.2010.09.056}.
+
+\bibitem{Poplawski2012}
+N. J. Pop\l{}awski,
+``Nonsingular, big-bounce cosmology from spinor-torsion coupling,''
+\emph{Phys. Rev. D} \textbf{85}, 107502 (2012).
+\href{https://doi.org/10.1103/PhysRevD.85.107502}{doi:10.1103/PhysRevD.85.107502}.
+
+\bibitem{Poplawski2016}
+N. J. Pop\l{}awski,
+``Universe in a black hole in Einstein--Cartan gravity,''
+\emph{Astrophys. J.} \textbf{832}, 96 (2016).
+\href{https://doi.org/10.3847/0004-637X/832/2/96}{doi:10.3847/0004-637X/832/2/96}.
+
+\bibitem{Ziaie2014}
+A. H. Ziaie, P. V. Moniz, A. Ranjbar, and H. R. Sepangi,
+``Einstein--Cartan gravitational collapse of a homogeneous Weyssenhoff fluid,''
+\emph{Eur. Phys. J. C} \textbf{74}, 3154 (2014).
+\href{https://doi.org/10.1140/epjc/s10052-014-3154-2}{doi:10.1140/epjc/s10052-014-3154-2}.
+
+\end{thebibliography}
+
+\end{document}
