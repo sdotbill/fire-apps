@@ -1,0 +1,856 @@
+{
+  "run": "v5_verify.py",
+  "gates_pass": 94,
+  "gates_fail": 0,
+  "gates_total": 94,
+  "n_grid": 10000,
+  "figure_note": "figures regenerated: fig1a_ur_branch_v5.png, fig1b_dust_v5.png",
+  "gates": [
+    {
+      "id": "T1-W",
+      "name": "Table 1 rho_A, W",
+      "computed": "3.88711071235e+55",
+      "expected": "3.8871e+55",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1n-W",
+      "name": "Table 1 n_A, W",
+      "computed": "2.32076356553e+85",
+      "expected": "2.3208e+85",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1-B",
+      "name": "Table 1 rho_A, B",
+      "computed": "9.71777678087e+54",
+      "expected": "9.7178e+54",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1n-B",
+      "name": "Table 1 n_A, B",
+      "computed": "5.80190891382e+84",
+      "expected": "5.8019e+84",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1-D",
+      "name": "Table 1 rho_A, D",
+      "computed": "2.1595059513e+54",
+      "expected": "2.1595e+54",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1n-D",
+      "name": "Table 1 n_A, D",
+      "computed": "1.28931309196e+84",
+      "expected": "1.2893e+84",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1-aligned-W",
+      "name": "Table 1 rho_A, aligned-W",
+      "computed": "1.94355535617e+55",
+      "expected": "1.9436e+55",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1n-aligned-W",
+      "name": "Table 1 n_A, aligned-W",
+      "computed": "1.16038178276e+85",
+      "expected": "1.1604e+85",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1-aligned-B",
+      "name": "Table 1 rho_A, aligned-B",
+      "computed": "4.85888839044e+54",
+      "expected": "4.8589e+54",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1n-aligned-B",
+      "name": "Table 1 n_A, aligned-B",
+      "computed": "2.90095445691e+84",
+      "expected": "2.901e+84",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1-ratio-on-B",
+      "name": "Table 1 rho_A, ratio-on-B",
+      "computed": "2.91533303426e+55",
+      "expected": "2.9153e+55",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1n-ratio-on-B",
+      "name": "Table 1 n_A, ratio-on-B",
+      "computed": "1.74057267414e+85",
+      "expected": "1.7406e+85",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1-ratio-on-W",
+      "name": "Table 1 rho_A, ratio-on-W",
+      "computed": "1.1661332137e+56",
+      "expected": "1.1661e+56",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1n-ratio-on-W",
+      "name": "Table 1 n_A, ratio-on-W",
+      "computed": "6.96229069658e+85",
+      "expected": "6.9623e+85",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1d-W",
+      "name": "Table 1 d_A, W",
+      "computed": "3.50582069827e-29",
+      "expected": "3.51e-29",
+      "tolerance": "rel 2e-3",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1d-B",
+      "name": "Table 1 d_A, B",
+      "computed": "5.56514346444e-29",
+      "expected": "5.57e-29",
+      "tolerance": "rel 2e-3",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1d-D",
+      "name": "Table 1 d_A, D",
+      "computed": "9.18784942462e-29",
+      "expected": "9.19e-29",
+      "tolerance": "rel 2e-3",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1d-aligned-W",
+      "name": "Table 1 d_A, aligned-W",
+      "computed": "4.4170572949e-29",
+      "expected": "4.42e-29",
+      "tolerance": "rel 2e-3",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1d-aligned-B",
+      "name": "Table 1 d_A, aligned-B",
+      "computed": "7.01164139653e-29",
+      "expected": "7.01e-29",
+      "tolerance": "rel 2e-3",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1d-ratio-on-B",
+      "name": "Table 1 d_A, ratio-on-B",
+      "computed": "3.85865496445e-29",
+      "expected": "3.86e-29",
+      "tolerance": "rel 2e-3",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "T1d-ratio-on-W",
+      "name": "Table 1 d_A, ratio-on-W",
+      "computed": "2.430800307e-29",
+      "expected": "2.43e-29",
+      "tolerance": "rel 2e-3",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "RATIO-WB",
+      "name": "rho_A(W)/rho_A(B)",
+      "computed": "4.0",
+      "expected": "4.0",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "RATIO-WD",
+      "name": "rho_A(W)/rho_A(D)",
+      "computed": "18.0",
+      "expected": "18.0",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "PF-W",
+      "name": "p_F/(m_n c) at n_A, W",
+      "computed": "1.85329012292e+13",
+      "expected": "1.853e+13",
+      "tolerance": "rel 1e-3",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "PF-B",
+      "name": "p_F/(m_n c) at n_A, B",
+      "computed": "1.16749961872e+13",
+      "expected": "1.167e+13",
+      "tolerance": "rel 1e-3",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "PF-D",
+      "name": "p_F/(m_n c) at n_A, D",
+      "computed": "7.07162533098e+12",
+      "expected": "7.072e+12",
+      "tolerance": "rel 1e-3",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "SPACING-B",
+      "name": "spacing at n_A (B)",
+      "computed": "5.56514346444e-29",
+      "expected": "5.5651e-29",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "SPACING-W",
+      "name": "spacing at n_A (W)",
+      "computed": "3.50582069827e-29",
+      "expected": "3.5058e-29",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "RADIUS-RATIO",
+      "name": "charge radius / spacing (B)",
+      "computed": "1.5093950504e+13",
+      "expected": "1.51e+13",
+      "tolerance": "1e11",
+      "pass": true,
+      "note": "0.84 fm nucleon charge radius"
+    },
+    {
+      "id": "PLANCK-GAP",
+      "name": "rho_Pl / rho_A (B)",
+      "computed": "5.3045054607e+38",
+      "expected": "5.3046e+38",
+      "tolerance": "1e34",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "UR-W-alpha",
+      "name": "UR alpha, W",
+      "computed": "0.222222222222",
+      "expected": "0.2222222222",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "UR-W-x_sec",
+      "name": "UR x_sec, W",
+      "computed": "5.0625",
+      "expected": "5.0625",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "UR-W-x_max",
+      "name": "UR x_max, W",
+      "computed": "9.0",
+      "expected": "9.0",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "UR-W-x_eff_max",
+      "name": "UR x_eff_max, W",
+      "computed": "3.0",
+      "expected": "3.0",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "UR-W-x_0",
+      "name": "UR x_0, W",
+      "computed": "20.25",
+      "expected": "20.25",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "UR-B-alpha",
+      "name": "UR alpha, B",
+      "computed": "0.888888888889",
+      "expected": "0.8888888889",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "UR-B-x_sec",
+      "name": "UR x_sec, B",
+      "computed": "0.31640625",
+      "expected": "0.31640625",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "UR-B-x_max",
+      "name": "UR x_max, B",
+      "computed": "0.5625",
+      "expected": "0.5625",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "UR-B-x_eff_max",
+      "name": "UR x_eff_max, B",
+      "computed": "0.1875",
+      "expected": "0.1875",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "UR-B-x_0",
+      "name": "UR x_0, B",
+      "computed": "1.265625",
+      "expected": "1.265625",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "UR-D-x0",
+      "name": "UR x_0, D (algebraic zero only)",
+      "computed": "0.0625",
+      "expected": "0.0625",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "EQ7-W",
+      "name": "Eq. (7) printed form 81/(64 beta^2), W",
+      "computed": "20.25",
+      "expected": "20.25",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "EQ7-B",
+      "name": "Eq. (7) printed form 81/(64 beta^2), B",
+      "computed": "1.265625",
+      "expected": "1.265625",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "EQ7-D",
+      "name": "Eq. (7) printed form 81/(64 beta^2), D",
+      "computed": "0.0625",
+      "expected": "0.0625",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "D-SEC-AT-ZERO",
+      "name": "D SEC combination at the D zero is +0.25, never 0",
+      "computed": "0.25",
+      "expected": "0.25",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "G10K-W-xmax",
+      "name": "10000-grid x_max, W",
+      "computed": "9.0001125",
+      "expected": "9.0",
+      "tolerance": "0.018",
+      "pass": true,
+      "note": "grid step 1.5*x0/10000"
+    },
+    {
+      "id": "G10K-W-ymax",
+      "name": "10000-grid x_eff,max, W",
+      "computed": "2.99999999965",
+      "expected": "3.0",
+      "tolerance": "0.006",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "G10K-W-root",
+      "name": "10000-grid root x_0, W",
+      "computed": "20.2499999241",
+      "expected": "20.25",
+      "tolerance": "0.0405",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "G10K-W-sec",
+      "name": "10000-grid SEC onset, W",
+      "computed": "5.06249969619",
+      "expected": "5.0625",
+      "tolerance": "0.010125",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "G10K-B-xmax",
+      "name": "10000-grid x_max, B",
+      "computed": "0.56250703125",
+      "expected": "0.5625",
+      "tolerance": "0.001125",
+      "pass": true,
+      "note": "grid step 1.5*x0/10000"
+    },
+    {
+      "id": "G10K-B-ymax",
+      "name": "10000-grid x_eff,max, B",
+      "computed": "0.187499999978",
+      "expected": "0.1875",
+      "tolerance": "0.000375",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "G10K-B-root",
+      "name": "10000-grid root x_0, B",
+      "computed": "1.26562499525",
+      "expected": "1.265625",
+      "tolerance": "0.00253125",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "G10K-B-sec",
+      "name": "10000-grid SEC onset, B",
+      "computed": "0.316406231012",
+      "expected": "0.31640625",
+      "tolerance": "0.0006328125",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "FERMI-B",
+      "name": "full Fermi-gas balance eps/eps_P, B",
+      "computed": "1.265625",
+      "expected": "1.265625",
+      "tolerance": "rel 1e-12",
+      "pass": true,
+      "note": "gate tightened to 1e-12 in the Round 2 revision (was 1e-9); the claim 'better than one part in 1e12' is now the gate"
+    },
+    {
+      "id": "FERMI-W",
+      "name": "full Fermi-gas balance eps/eps_P, W",
+      "computed": "20.25",
+      "expected": "20.25",
+      "tolerance": "rel 1e-12",
+      "pass": true,
+      "note": "gate tightened to 1e-12 in the Round 2 revision (was 1e-9); the claim 'better than one part in 1e12' is now the gate"
+    },
+    {
+      "id": "UR-HDOT-RATIO",
+      "name": "p_eff/eps at the UR zero",
+      "computed": "-0.666666666667",
+      "expected": "-0.6666666667",
+      "tolerance": "1e-9",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "UR-HDOT-SIGN",
+      "name": "eps_eff + p_eff at the UR zero is negative",
+      "computed": "True",
+      "expected": "True",
+      "tolerance": "-",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "DUST-f0",
+      "name": "x(1-x) at x=0",
+      "computed": "0.0",
+      "expected": "0.0",
+      "tolerance": "0",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "DUST-f0.5",
+      "name": "x(1-x) at x=0.5",
+      "computed": "0.25",
+      "expected": "0.25",
+      "tolerance": "0",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "DUST-f1",
+      "name": "x(1-x) at x=1",
+      "computed": "0.0",
+      "expected": "0.0",
+      "tolerance": "0",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "HDOT-B",
+      "name": "Hdot at bounce (B), s^-2",
+      "computed": "8.15046725016e+48",
+      "expected": "8.1505e+48",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "HDOT-W",
+      "name": "Hdot at bounce (W), s^-2",
+      "computed": "3.26018690006e+49",
+      "expected": "3.2602e+49",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "HDOT-POS",
+      "name": "Hdot at bounce is positive",
+      "computed": "True",
+      "expected": "True",
+      "tolerance": "-",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "THRESH-0.25",
+      "name": "threshold combination at rho=0.25 rho_A",
+      "computed": "0.0",
+      "expected": "0.0",
+      "tolerance": "1000000000000000000000000000000.0",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "THRESH-0.5",
+      "name": "threshold combination at rho=0.5 rho_A",
+      "computed": "0.0",
+      "expected": "0.0",
+      "tolerance": "1000000000000000000000000000000.0",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "TORS-W",
+      "name": "T_A (W), m^-1",
+      "computed": "2.69349109414e+16",
+      "expected": "2.6935e+16",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "TORS-B",
+      "name": "T_A (B), m^-1",
+      "computed": "1.34674554707e+16",
+      "expected": "1.3467e+16",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "TORS-2S",
+      "name": "T_A in T=2S convention (W) is 2x",
+      "computed": "5.38698218828e+16",
+      "expected": "5.387e+16",
+      "tolerance": "1e12",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "RDS-B",
+      "name": "r_dS (stated assumption), B",
+      "computed": "1.28610100946e-16",
+      "expected": "1.286e-16",
+      "tolerance": "rel 1e-3",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "RDS-W",
+      "name": "r_dS (stated assumption), W",
+      "computed": "6.43050504729e-17",
+      "expected": "6.431e-17",
+      "tolerance": "rel 1e-3",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "RHO-KT",
+      "name": "rho_A(W) c^2 in eV^4",
+      "computed": "1.67539545495e+74",
+      "expected": "1.6754e+74",
+      "tolerance": "rel 1e-3",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "AXIS-SEP-METHOD",
+      "name": "axis-Cold Spot separation (method check only)",
+      "computed": "44.7349792153",
+      "expected": "44.6",
+      "tolerance": "0.2",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "COUNT-RHOL-GEV4",
+      "name": "rho_L in GeV^4 (derived, single bench)",
+      "computed": "2.51927129399e-47",
+      "expected": "2.5193e-47",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "COUNT-W-PC",
+      "name": "N* W, Planck-central bench",
+      "computed": "281.77538324",
+      "expected": "281.775",
+      "tolerance": "0.005",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "COUNT-B-PC",
+      "name": "N* B, Planck-central bench",
+      "computed": "279.77538324",
+      "expected": "279.775",
+      "tolerance": "0.005",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "COUNT-RB-PC",
+      "name": "N* ratio-on-B, Planck-central bench",
+      "computed": "281.36034574",
+      "expected": "281.36",
+      "tolerance": "0.005",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "COUNT-RW-PC",
+      "name": "N* ratio-on-W, Planck-central bench",
+      "computed": "283.36034574",
+      "expected": "283.36",
+      "tolerance": "0.005",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "COUNT-THUMB",
+      "name": "thumbnail anchor density, g/cm^3",
+      "computed": "2.32011535e-30",
+      "expected": "2.3201e-30",
+      "tolerance": "rel 1e-4",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "COUNT-SEV-W",
+      "name": "N* W, sever bench (thumbnail anchor)",
+      "computed": "283.10838973",
+      "expected": "283.108",
+      "tolerance": "0.005",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "COUNT-SEV-B",
+      "name": "N* B, sever bench (thumbnail anchor)",
+      "computed": "281.10838973",
+      "expected": "281.108",
+      "tolerance": "0.005",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "COUNT-SEV-RB",
+      "name": "N* RB, sever bench (thumbnail anchor)",
+      "computed": "282.693352231",
+      "expected": "282.693",
+      "tolerance": "0.005",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "COUNT-SEV-RW",
+      "name": "N* RW, sever bench (thumbnail anchor)",
+      "computed": "284.693352231",
+      "expected": "284.693",
+      "tolerance": "0.005",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "COUNT-SEV-XCHECK",
+      "name": "sever rB = 84.6219 dex + log2(3)",
+      "computed": "282.692829553",
+      "expected": "282.693",
+      "tolerance": "0.005",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "SEAM-SEV",
+      "name": "sever bench: direct minus dex route, bits",
+      "computed": "0.000522677535377",
+      "expected": "0.0005",
+      "tolerance": "0.0001",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "COUNT-DENS-RB",
+      "name": "282-cell density / measured, ratio-on-B",
+      "computed": "0.641866753051",
+      "expected": "0.643",
+      "tolerance": "0.002",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "COUNT-DENS-W",
+      "name": "282-cell density / measured, W",
+      "computed": "0.855822337402",
+      "expected": "0.855",
+      "tolerance": "0.002",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "COUNT-ERR",
+      "name": "N* uncertainty from Planck Lambda, bits",
+      "computed": "0.0257375614136",
+      "expected": "0.026",
+      "tolerance": "0.002",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "COUNT-282-W-PC",
+      "name": "282 inside +-0.5 of W-PC",
+      "computed": "True",
+      "expected": "see report",
+      "tolerance": "-",
+      "pass": true,
+      "note": "|282 - N*| = 0.224617"
+    },
+    {
+      "id": "COUNT-282-W-SEV",
+      "name": "282 inside +-0.5 of W-SEV",
+      "computed": "False",
+      "expected": "see report",
+      "tolerance": "-",
+      "pass": true,
+      "note": "|282 - N*| = 1.10839"
+    },
+    {
+      "id": "COUNT-282-RB-PC",
+      "name": "282 inside +-0.5 of RB-PC",
+      "computed": "False",
+      "expected": "see report",
+      "tolerance": "-",
+      "pass": true,
+      "note": "|282 - N*| = 0.639654"
+    },
+    {
+      "id": "BECK-LAMBDA",
+      "name": "Beck 2009 Lambda, m^-2",
+      "computed": "1.3628523283e-52",
+      "expected": "1.3628e-52",
+      "tolerance": "rel 1e-3",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "BECK-BITS",
+      "name": "Beck 2009 miss, bits",
+      "computed": "0.314618814293",
+      "expected": "0.32",
+      "tolerance": "0.02",
+      "pass": true,
+      "note": "Beck lands closer than 282 on the corrected bench (0.64 bits)"
+    },
+    {
+      "id": "BECK-RATIO",
+      "name": "Beck/observed ratio",
+      "computed": "1.2436830067",
+      "expected": "1.25",
+      "tolerance": "0.02",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "BECK-RATIO-BENCH",
+      "name": "Beck/measured-bench ratio",
+      "computed": "1.24928092096",
+      "expected": "1.25",
+      "tolerance": "0.01",
+      "pass": true,
+      "note": ""
+    }
+  ]
+}
