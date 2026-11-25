@@ -1,8 +1,8 @@
 {
   "run": "v5_verify.py",
-  "gates_pass": 94,
+  "gates_pass": 98,
   "gates_fail": 0,
-  "gates_total": 94,
+  "gates_total": 98,
   "n_grid": 10000,
   "figure_note": "figures regenerated: fig1a_ur_branch_v5.png, fig1b_dust_v5.png",
   "gates": [
@@ -574,20 +574,56 @@
       "note": ""
     },
     {
-      "id": "THRESH-0.25",
-      "name": "threshold combination at rho=0.25 rho_A",
+      "id": "THRESH-0.25-RESID",
+      "name": "SEC normalised residual at rho=0.25 rho_A",
       "computed": "0.0",
       "expected": "0.0",
-      "tolerance": "1000000000000000000000000000000.0",
+      "tolerance": "1e-40",
       "pass": true,
       "note": ""
     },
     {
-      "id": "THRESH-0.5",
-      "name": "threshold combination at rho=0.5 rho_A",
+      "id": "THRESH-0.25-LOW",
+      "name": "SEC combination positive at x=0.249",
+      "computed": "True",
+      "expected": "True",
+      "tolerance": "-",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "THRESH-0.25-HIGH",
+      "name": "SEC combination negative at x=0.251",
+      "computed": "True",
+      "expected": "True",
+      "tolerance": "-",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "THRESH-0.5-RESID",
+      "name": "NEC normalised residual at rho=0.5 rho_A",
       "computed": "0.0",
       "expected": "0.0",
-      "tolerance": "1000000000000000000000000000000.0",
+      "tolerance": "1e-40",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "THRESH-0.5-LOW",
+      "name": "NEC combination positive at x=0.499",
+      "computed": "True",
+      "expected": "True",
+      "tolerance": "-",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "THRESH-0.5-HIGH",
+      "name": "NEC combination negative at x=0.501",
+      "computed": "True",
+      "expected": "True",
+      "tolerance": "-",
       "pass": true,
       "note": ""
     },

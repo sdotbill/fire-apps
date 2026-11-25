@@ -25,13 +25,15 @@ neutrons, as a stated choice on grounds of sourcing and consistency ---
 the factor of four between it and the literature value,
 $\rhoA = 9.7178\times10^{54}\ \mathrm{g\,cm^{-3}}$, is unresolved, and
 the literature value is carried beside it at every step. A
-normal-ordered Dirac evaluation gives a negative spin-squared sign that
-would remove the bounce entirely; that evaluation has not been done.
+preliminary normal-ordered calculation, reported in the house files and
+not deposited with this paper, gives a negative spin-squared sign that
+would remove the bounce entirely; the full covariant Wigner-function
+evaluation that would settle the sign has not been done.
 With the full relativistic Fermi-gas energy density the balance moves to
 $20.25\,\epsPl$ on the adopted normalisation and $1.27\,\epsPl$ on the
 literature one: the bounce sits at or above the Planck density, outside
 the demonstrated validity of classical Einstein--Cartan theory. The flat
-Friedmann bounce is demonstrated; a black-hole interior bounce, a baby
+Friedmann bounce is demonstrated on the dust model; a black-hole interior bounce, a baby
 universe, and a rotating-progenitor signature are not. The galaxy-spin
 axis test is inconclusive. The vacuum-count check passes its tolerance
 rule on one combination only --- the adopted normalisation on the
@@ -100,9 +102,13 @@ B\"ohmer and co-workers write the effective mass density as
 \end{equation}
 their Eq.~(22) \cite{Bohmer18}, with
 \begin{equation}
-\langle S^2\rangle = \frac18\hbar^2 n^2
+\langle S^2\rangle = \frac18\hbar^2\langle n^2\rangle
 \end{equation}
-for unpolarised fermions, their Eq.~(41). Substituting, the spin
+for unpolarised fermions, their Eq.~(41). The average in Eq.~(2) is
+$\langle n^2\rangle$, the mean of the squared number density, not
+$n^2$. This paper adopts the factorisation $\langle n^2\rangle = n^2$
+as a stated closure assumption, and every number that follows from
+Eq.~(2) is conditional on it: substituting the factorisation, the spin
 correction to the mass density is $\pi G\hbar^2 n^2/c^4$. Hehl, von der
 Heyde and Kerlick write the same physics in energy-density units as
 $\varepsilon_{\mathrm{eff}} = \varepsilon - \kappa_H s^2/4$ and
@@ -111,12 +117,20 @@ $p_{\mathrm{eff}} = p - \kappa_H s^2/4$, with $\kappa_H = 8\pi G/c^4$
 $s^2 = (\hbar c n)^2/8$ for unpolarised
 fermions \cite{Hehl76,Poplawski10}. Dividing by $c^2$, that is
 $\rho_{\mathrm{eff}} = \rho - (\kappa^2/4)\langle S^2\rangle$ with the
-same average $\langle S^2\rangle = \hbar^2 n^2/8$. The two writings
-differ by a factor of four in the prefactor, $\kappa^2/4$ against
-$\kappa^2$, applied to the same average. The average itself is not in
-dispute: Pop{\l}awski gives $s^2 = \tfrac18\hbar^2 n_f^2$ citing
-Nurgaliev and Ponomariev, Gasperini, and Brechet and co-workers
-\cite{Poplawski10,Poplawski16,Gasperini86,Nurgaliev83}. The prefactor is.
+same average $\langle S^2\rangle = \hbar^2\langle n^2\rangle/8$,
+again under the factorisation $\langle n^2\rangle = n^2$. The two
+writings differ by a factor of four in the prefactor, $\kappa^2/4$
+against $\kappa^2$, applied to the same average. The prefactor is in
+dispute; the factorisation is a separate assumption, and it is stated
+here rather than hidden inside the average. Pop{\l}awski gives
+$s^2 = \tfrac18\hbar^2 n_f^2$ citing Nurgaliev and Ponomariev,
+Gasperini, and Brechet and co-workers
+\cite{Poplawski10,Poplawski16,Gasperini86,Nurgaliev83}: that is a
+statement about $n_f^2$, the square of the mean density, and it is not
+the same quantity as $\langle n^2\rangle$. This paper does not claim
+the two averages coincide; the B prescription, $\beta = 1$, is the
+literature value under the factorisation, and if the factorisation
+fails, B moves with it.
 
 I write the correction in one form for all three prescriptions. Let
 \begin{equation}
@@ -162,9 +176,10 @@ B is kept beside W in every table, and the vacuum count played no part
 in the choice.
 
 Random orientation is assumed at the bound: the average
-$\langle S^2\rangle = \hbar^2 n^2/8$ is the unpolarised average, and the
-weak spin-flip rate that would establish equilibration at bounce
-conditions has not been computed. The aligned rows of Table~1 show what
+$\langle S^2\rangle = \hbar^2\langle n^2\rangle/8$ is the unpolarised
+average, taken under the factorisation $\langle n^2\rangle = n^2$
+stated above, and the weak spin-flip rate that would establish
+equilibration at bounce conditions has not been computed. The aligned rows of Table~1 show what
 full alignment would do; nothing in this paper shows that alignment
 occurs.
 
@@ -277,7 +292,8 @@ the axis test of Section~7, which is inconclusive.
 
 The classical fluid is not the only way to average the spin, and the
 difference matters. A free Dirac gas does not give the classical
-$\langle S^2\rangle = \hbar^2 n^2/8$. The ratio of the quantum average
+$\langle S^2\rangle = \hbar^2\langle n^2\rangle/8$ (with the
+factorisation of Section~2). The ratio of the quantum average
 to the classical average is $1/3$ in the ultra-relativistic limit, which
 is where the ratio rows of Table~\ref{tab:bound} come from: $\beta =
 1/3$ on B, $\beta = 1/12$ on W. But the sign is not established, and
@@ -381,7 +397,7 @@ y = x - \alpha x^{3/2}, \qquad \alpha = \frac{8\beta}{9}.
 The landmarks are exact fractions. For W and B, the
 strong-energy-condition onset is at $x_{\mathrm{SEC}} = 81/(256\beta^2)$;
 the maximum $y_{\max} = 3/(16\beta^2)$ sits at $x_{\max} = 9/(16\beta^2)$;
-the zero, the flat-Friedmann bounce, is at $x_0 = 81/(64\beta^2)$. In
+the zero, the flat-Friedmann turnaround, is at $x_0 = 81/(64\beta^2)$. In
 scaled variables the curve is the same for every $\beta$: with
 $u = x/x_0$ and $Y = y/x_0 = \varepsilon_{\mathrm{eff}}/(x_0\epsPl)$,
 $Y = u(1-\sqrt{u})$, maximum $(4/9, 4/27)$, root $(1, 0)$.
@@ -400,7 +416,7 @@ onset, Section~4).
 \caption{The ultra-relativistic branch in scaled variables,
 $Y = u(1-\sqrt{u})$, where $Y = \varepsilon_{\mathrm{eff}}/(x_0\epsPl)$
 and $u = \varepsilon/(x_0\epsPl)$. Maximum $(4/9, 4/27)$; root $(1, 0)$, the
-flat-Friedmann bounce; closed-model threshold $(1/4, 1/8)$, where
+flat-Friedmann turnaround; closed-model threshold $(1/4, 1/8)$, where
 $\varepsilon_{\mathrm{eff}} + 3p_{\mathrm{eff}} = 0$. The dashed
 continuation past the root is the formal negative branch and is not
 physical.}\label{fig:ur}
@@ -417,8 +433,11 @@ $x = \rho/\rhoA$ the two curves coincide as $x(1-x)$. The B curve is
 cut at $y = -2$; its tail continues below.}\label{fig:dust}
 \end{figure}
 
-The zero is a bounce, and I show it rather than asserting it. This
-proof covers W and B only. At the
+The zero is a formal turnaround of the stated effective model, and I show
+the algebra rather than asserting it. This holds for W and B only, as a
+property of the model, not as a demonstrated physical bounce: the turnaround
+sits at or above the Planck density, where the classical theory has no
+demonstrated validity (see the domain statement below). At the
 relativistic zero the spin energy density equals the gas energy density,
 $\varepsilon_{\mathrm{spin}} = \varepsilon$, and the gas pressure is
 $p = \varepsilon/3$, so the effective pressure is
@@ -429,7 +448,8 @@ $\dot H = -(4\pi G/c^2)(\varepsilon_{\mathrm{eff}} + p_{\mathrm{eff}})
 > 0$ at the zero, so a contracting solution turns around there. The
 dust proof of Section~3 does not cover this case, because the
 relativistic gas has non-zero pressure; the three lines above are the
-proof for the relativistic branch on W and B. For D the proof fails:
+formal turnaround for the relativistic branch on W and B. For D the formal
+turnaround fails:
 the Dirac pressure correction has the opposite sign
 ($\tilde\varepsilon = -\tilde p$, Section~4), so at the D zero
 $\varepsilon_{\mathrm{eff}} + p_{\mathrm{eff}} = 4\varepsilon/3 > 0$
@@ -452,7 +472,7 @@ thousand points at a time, for both prescriptions.
 \caption{Ultra-relativistic branch landmarks, in units of the Planck
 energy density $\epsPl$. $x_{\mathrm{SEC}}$ is the strong-energy-condition
 onset, $x_{\max}$ the location of the maximum effective density,
-$y_{\max}$ the maximum, $x_0$ the zero (the flat-Friedmann bounce on W
+$y_{\max}$ the maximum, $x_0$ the zero (the flat-Friedmann turnaround on W
 and B; an algebraic zero only on D). The $x_{\mathrm{SEC}}$ column is the
 stiff-fluid (W/B) combination only; for D the Dirac pressure correction
 has the opposite sign ($\tilde\varepsilon = -\tilde p$), so
@@ -683,7 +703,8 @@ the paper has been making since the first draft: the
 Kopczy\'nski--Trautman bound for a neutron gas is
 $\rhoA = 3.8871\times10^{55}\ \mathrm{g\,cm^{-3}}$ on the adopted
 normalisation and $9.7178\times10^{54}\ \mathrm{g\,cm^{-3}}$ on the
-literature one, the flat Friedmann bounce at that bound is demonstrated,
+literature one, the flat Friedmann bounce at that bound is demonstrated
+on the dust model,
 and everything beyond that --- a black-hole interior, a baby universe, a
 rotating progenitor, a vacuum count --- is a separate claim that stands
 or falls on its own evidence. The claim is falsifiable, and the paper
@@ -722,12 +743,15 @@ to send it is Bill's alone, and the draft is held until he says so.
 \section{Conclusion}
 
 The bound is computed, in three normalisations, and the core is
-verified: 94 gates pass in the verification script, the
+verified: 98 gates pass in the verification script, the
 ultra-relativistic landmarks are confirmed by a 10,000-point grid and a
 full Fermi-gas integration, and the figures are plotted from the same
 numbers the tables print. The flat Friedmann bounce is demonstrated on
-the dust model and on the relativistic branch (W and B), with the turnaround
-computed rather than asserted. The relativistic branch puts the bounce
+the dust model, with the turnaround computed rather than asserted. On the
+relativistic branch (W and B) the turnaround is a formal result of the stated
+effective model, not a demonstrated physical bounce: the bounce sits at or
+above the Planck density, outside the demonstrated validity of the classical
+theory. The relativistic branch puts the bounce
 at or above the Planck density, and the paper says plainly that the
 classical theory has no demonstrated validity there. The sign problem
 may remove the bounce entirely, and the paper says that plainly too. The
@@ -763,7 +787,7 @@ $\varepsilon_{\mathrm{spin}} = \varepsilon$, so $p_{\mathrm{eff}} =
 
 Every number in Tables 1--4 is recomputed from CODATA 2018 constants by
 a verification script that runs from the deposited files alone; the
-script passes 94 gates. The observational numbers in Section~7 are not
+script passes 98 gates. The observational numbers in Section~7 are not
 covered by that script, and neither are the reported house calculations
 of Section~4. The status of each item in the paper is as follows
 (Table~\ref{tab:verify}).
@@ -777,6 +801,7 @@ Item & Status \\
 \midrule
 Table~1 densities & Script, 21 gates \\
 $\dot H$ on B and W & Script, 3 gates \\
+Dust curve and thresholds & Script, 9 gates (3 dust-curve; 6 threshold: normalised residuals at $x = 0.25$ and $0.5$ plus sign checks at $x = 0.249/0.251$ and $0.499/0.501$) \\
 Table~2 landmarks & Script, 11 gates (UR turnaround: 2 further gates) \\
 10,000-point grid & Script, 8 gates; root, SEC onset $\sim10^{-7}$--$10^{-8}$; max $\sim10^{-5}$ (grid step) \\
 Fermi-gas balance & Script, 2 gates; gate at $10^{-12}$; numerical check of the algebra, not an independent physical verification \\
@@ -791,7 +816,7 @@ Sign numbers & Non-relativistic $-(3/8)$: exchange calculation of 17 November 20
 Entropy ansatz & Cut from the body. Calibrations: maximum-matching $\rho_{\mathrm{Aldred}} = \rhoA/2$; least-squares $0.417\,\rhoA$, RMS $4.4\%$ \\
 Correction paper & Deposited file still carries its ``Draft'' status line; corrected source undeposited; standalone script 75/75 (not the deposited script) \\
 Spin-flip rate & Not computed; random-orientation assumption stated in Section~2 \\
-Bibliography & Verified entries listed below; LaTeX not compiled (no toolchain on this machine) \\
+Bibliography & Verified entries listed below; LaTeX compiled 25 November 2026 (pdfTeX 3.141592653-2.6-1.40.25), 14 pages; see the pre-submission checklist for the compile record \\
 \bottomrule
 \end{tabular}
 \end{table}

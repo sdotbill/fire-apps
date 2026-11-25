@@ -283,12 +283,39 @@ gate("HDOT-POS", "Hdot at bounce is positive",
 # Continuity identity: rho_eff + p_eff/c^2 = rho (1 - 2 rho/rho_A); at
 # rho = rho_A/2 the NEC combination vanishes; at rho_A/4 the SEC flips.
 rhoA = rhoA_B_SI
-for rho_frac, combo, exp in [
-        ("0.25", lambda r: r - 4 * r**2 / rhoA, "0"),   # SEC: rho_eff+3p/c^2
-        ("0.5", lambda r: r - 2 * r**2 / rhoA, "0")]:   # NEC: rho_eff+p/c^2
-    r = mpf(rho_frac) * rhoA
-    gate(f"THRESH-{rho_frac}", f"threshold combination at rho={rho_frac} rho_A",
-         combo(r), exp, mpf("1e30"))
+# Threshold combinations (Prime Two review, 25 Nov 2026): the old gates
+# used an absolute tolerance of 1e30 against an expected zero, which
+# cannot discriminate anything. Each threshold is now gated three ways:
+# a NORMALISED residual at the threshold (the combination divided by
+# rho, dimensionless, tight tolerance) and explicit SIGN checks either
+# side of it (the combination must be positive below the threshold and
+# negative above it).
+#   SEC: rho_eff + 3 p_eff/c^2 = rho - 4 rho^2/rho_A; zero at rho = rho_A/4.
+#   NEC: rho_eff + p_eff/c^2   = rho - 2 rho^2/rho_A; zero at rho = rho_A/2.
+def sec_combo(r):
+    return r - 4 * r**2 / rhoA
+
+
+def nec_combo(r):
+    return r - 2 * r**2 / rhoA
+
+
+for frac, combo, label, lo, hi in [
+        ("0.25", sec_combo, "SEC", "0.249", "0.251"),
+        ("0.5", nec_combo, "NEC", "0.499", "0.501")]:
+    r0 = mpf(frac) * rhoA
+    # Normalised residual at the threshold: combo/rho is dimensionless
+    # (1 - 4x for SEC, 1 - 2x for NEC, x = rho/rho_A); it must vanish.
+    gate(f"THRESH-{frac}-RESID",
+         f"{label} normalised residual at rho={frac} rho_A",
+         combo(r0) / r0, "0", "1e-40")
+    # Sign checks either side: the combination flips sign at the threshold.
+    gate(f"THRESH-{frac}-LOW",
+         f"{label} combination positive at x={lo}",
+         combo(mpf(lo) * rhoA) > 0, True, "-")
+    gate(f"THRESH-{frac}-HIGH",
+         f"{label} combination negative at x={hi}",
+         combo(mpf(hi) * rhoA) < 0, True, "-")
 
 # ----------------------------------------------------------------------
 # 6. TORSION SCALE AND DE SITTER RADIUS (stated assumption)
