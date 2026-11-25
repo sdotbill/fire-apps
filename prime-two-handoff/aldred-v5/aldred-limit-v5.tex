@@ -1,5 +1,5 @@
 \documentclass[11pt]{article}
-\usepackage{amsmath,amssymb,booktabs,graphicx,hyperref}
+\usepackage{amsmath,amssymb,booktabs,graphicx,hyperref,tabularx}
 \usepackage[margin=1in]{geometry}
 \hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
 \newcommand{\rhoA}{\rho_{\mathrm{A}}}
@@ -795,7 +795,7 @@ of Section~4. The status of each item in the paper is as follows
 \begin{table}[h]
 \centering
 \caption{Verification status, by item.}\label{tab:verify}
-\begin{tabular}{ll}
+\begin{tabularx}{\textwidth}{lX}
 \toprule
 Item & Status \\
 \midrule
@@ -816,9 +816,9 @@ Sign numbers & Non-relativistic $-(3/8)$: exchange calculation of 17 November 20
 Entropy ansatz & Cut from the body. Calibrations: maximum-matching $\rho_{\mathrm{Aldred}} = \rhoA/2$; least-squares $0.417\,\rhoA$, RMS $4.4\%$ \\
 Correction paper & Deposited file still carries its ``Draft'' status line; corrected source undeposited; standalone script 75/75 (not the deposited script) \\
 Spin-flip rate & Not computed; random-orientation assumption stated in Section~2 \\
-Bibliography & Verified entries listed below; LaTeX compiled 25 November 2026 (pdfTeX 3.141592653-2.6-1.40.25), 14 pages; see the pre-submission checklist for the compile record \\
+Bibliography & Verified entries listed below; LaTeX compiled 25 November 2026 (pdfTeX 3.141592653-2.6-1.40.25), 15 pages; see the pre-submission checklist for the compile record \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \section*{Acknowledgments}
